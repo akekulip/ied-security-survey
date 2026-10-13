@@ -7,6 +7,7 @@ import heapq
 import io
 import json
 import os
+import random
 import re
 import sys
 import time
@@ -24,7 +25,7 @@ from urllib.request import Request, HTTPRedirectHandler, build_opener
 
 from protego import Protego
 
-VERSION = '1.4.0'
+VERSION = '1.5.0'
 # Bumped only when extraction or lead rules change. Replay compares this, so a report-only release keeps runs replayable.
 EXTRACTION = '1.3.0'
 UA_TOKEN = 'IEDSecuritySurvey'
@@ -81,8 +82,15 @@ REDIRECTS = (301, 302, 303, 307, 308)
 RETRY_STATUS = (429, 502, 503, 504)
 KEEP_HEADERS = ('content-type', 'content-length', 'content-disposition', 'content-language', 'last-modified', 'etag', 'date')
 KNOWN_KEYS = {'sampling', 'title', 'max_depth', 'max_pages_per_product', 'delay_seconds', 'timeout_seconds', 'max_bytes',
-              'follow_pattern', 'robots_follow_redirects', 'retries', 'products'}
-RELEVANT = re.compile(r'secur|cyber|manual|instruction|guide|communicat|protocol|dnp|data\s?sheet', re.I)
+              'follow_pattern', 'robots_follow_redirects', 'retries', 'products',
+              'seed', 'per_stratum', 'census', 'inventory', 'frame'}
+# Which link to follow first when the page budget is short: the documents that state capabilities most directly.
+LINK_WEIGHTS = [(re.compile(p, re.I), w) for p, w in (
+    (r'device[\s_-]*profile', 4), (r'conformance|\bpics\b|\bpixit\b', 3), (r'secur|cyber|hardening', 2),
+    (r'manual|instruction|user[\s_-]*guide', 2), (r'communicat|protocol|dnp|61850|ethernet|network', 1),
+    (r'data[\s_-]?sheet|brochure|catalog|flyer|guide', 1))]
+# A link that leads to a sign-in page marks a document that exists but is not public. It is recorded, never fetched.
+LOGIN = re.compile(r'/(?:log-?in|sign-?in|sso|passport|oauth2?|authorize)(?:[/?.]|$)|//(?:idp|login|sso|auth|account)\.', re.I)
 # Soft hyphens, zero-width characters and trademark signs vanish; typographic hyphens become '-'.
 TIDY = {**dict.fromkeys(map(ord, '\u00ad\u200b\u200c\u200d\u2060\ufeff\u2122\u00ae\u2120')),
         **dict.fromkeys(map(ord, '\u2010\u2011\u2012\u2013\u2212'), '-')}
@@ -90,6 +98,10 @@ TIDY = {**dict.fromkeys(map(ord, '\u00ad\u200b\u200c\u200d\u2060\ufeff\u2122\u00
 
 def digest(b):
     return hashlib.sha256(b).hexdigest()
+
+
+# Hashed when the tool starts, so a manifest names the code that ran even if the file is edited during a long crawl.
+SCRIPT_SHA256 = digest(Path(__file__).read_bytes())
 
 
 def now():
@@ -269,9 +281,13 @@ class Fetcher:
     def load_robots(self, host, domains):
         first = url = f'https://{host}/robots.txt'
         try:
+            follow = self.config.get('robots_follow_redirects')
+            if isinstance(follow, list):  # Opted in for named domains only.
+                name = urlsplit(first).hostname
+                follow = any(name == d or name.endswith('.' + d) for d in follow)
             for _ in range(6):  # RFC 9309 asks crawlers to follow at least five consecutive redirects.
                 status, headers, body = self.raw(url)
-                if status not in REDIRECTS or not self.config.get('robots_follow_redirects'):
+                if status not in REDIRECTS or not follow:
                     break
                 if not header(headers, 'location'):
                     raise ValueError('redirect without Location')
@@ -319,6 +335,8 @@ class Fetcher:
                 if not header(headers, 'location'):
                     raise ValueError('redirect without Location')
                 url = urljoin(url, header(headers, 'location'))
+                if LOGIN.search(url):
+                    raise ValueError(f'login required: redirected to {url}')
                 continue
             if status != 200:
                 raise ValueError(f'HTTP {status}')
@@ -627,6 +645,10 @@ def validate_config(cfg):
                 raise ValueError(f'{pid}: {key} must be a list of strings')
         if p.get('lifecycle') and p['lifecycle'] not in LIFECYCLES:
             raise ValueError(f'{pid}: lifecycle must be one of {", ".join(LIFECYCLES)}')
+        try:
+            re.compile(p.get('follow_pattern', ''))
+        except re.error as e:
+            raise ValueError(f'{pid}: follow_pattern is not a valid regular expression: {e}')
         warnings += [f'{pid}: missing {k}' for k in ('vendor', 'model', 'category') if not p.get(k)]
         warnings += [f'{pid}: seed is not an allowlisted public HTTPS URL: {u}' for u in p['seeds'] if not allowed(u, p['domains'])]
         if not p['seeds']:
@@ -636,7 +658,7 @@ def validate_config(cfg):
 
 def link_score(url, text, alias):
     blob = url + ' ' + text
-    return len({m.lower() for m in RELEVANT.findall(blob)}) + (2 if alias and alias.search(blob) else 0)
+    return sum(w for pattern, w in LINK_WEIGHTS if pattern.search(blob)) + (2 if alias and alias.search(blob) else 0)
 
 
 def describe(rec, segs, facts, out, alias):
@@ -667,7 +689,7 @@ def finish(out, cfg, config_sha256, sources, hits, warnings, **extra):
     """Manifest and the two templates a reviewer fills in. Only a finished run has a manifest."""
     dump(out / 'manifest.json', {'tool_version': VERSION, 'extraction_version': EXTRACTION, 'finished_at': now(),
         'config_sha256': config_sha256, 'python': sys.version,
-        'script_sha256': digest(Path(__file__).read_bytes()),
+        'script_sha256': SCRIPT_SHA256,
         'complete': True, 'source_count': len(sources),
         'candidate_count': sum(h['lead_type'] != 'statement' for h in hits),
         'lead_counts': dict(Counter(h['lead_type'] for h in hits)),
@@ -687,9 +709,14 @@ def finish(out, cfg, config_sha256, sources, hits, warnings, **extra):
           for s in sources if s['status'] == 'extracted'])
 
 
-def crawl(config_path, out, cache, resume=False):
+def crawl(config_path, out, cache, resume=False, reuse=None, only=None):
     config_bytes = Path(config_path).read_bytes()
     cfg = json.loads(config_bytes)
+    if only:
+        # The run's config lists what the run covers; the manifest keeps the hash of the file it was cut from.
+        cfg['products'] = [p for p in cfg.get('products', []) if re.search(only, f"{p.get('id')} {p.get('vendor', '')}", re.I)]
+        if not cfg['products']:
+            raise ValueError('--only matches no product')
     warnings = validate_config(cfg)
     for w in warnings:
         print('config warning:', w, file=sys.stderr)
@@ -710,12 +737,20 @@ def crawl(config_path, out, cache, resume=False):
     f.audit = audit
     prior = {(s['product_id'], s['url']): s for s in sources}
     byid = {s['id']: s for s in sources}
-    depth_limit, budget = cfg.get('max_depth', 0), cfg.get('max_pages_per_product', 3)
-    follow = re.compile(cfg.get('follow_pattern', r'manual|security|datasheet|\.pdf'), re.I)
+    # Bytes an earlier run already fetched are not requested again; the record says where they came from.
+    known = {}
+    for s in load(Path(reuse) / 'sources.json') if reuse else []:
+        if s['status'] == 'login_required' or s['status'] in ('extracted', 'duplicate') and (cache / s['sha256']).exists():
+            known.setdefault(s['url'], s)
+    products = cfg['products']
     # Product provenance remains separate even when a family document is shared.
-    for product in cfg['products']:
+    for number, product in enumerate(products, 1):
         aliases = product.get('aliases', [])
         alias = alias_pattern(aliases)
+        # A vendor's site decides how deep and what to follow, so a product may override the run's settings.
+        depth_limit = product.get('max_depth', cfg.get('max_depth', 0))
+        budget = product.get('max_pages_per_product', cfg.get('max_pages_per_product', 3))
+        follow = re.compile(product.get('follow_pattern', cfg.get('follow_pattern', r'manual|security|datasheet|\.pdf')), re.I)
         queue, seen, shas, attempted = [], set(), {}, 0
         for seed in product['seeds']:
             try:
@@ -740,9 +775,18 @@ def crawl(config_path, out, cache, resume=False):
                 if depth and attempted >= budget:
                     rec.update(status='skipped', error='page budget reached before this link')
                     byid[via]['links_skipped'] = byid[via].get('links_skipped', 0) + 1
+                elif known.get(url, {}).get('status') == 'login_required':
+                    # The earlier run was told this document needs a sign-in. It is not asked for again.
+                    rec.update(status='login_required', error=known[url]['error'], reused_from=str(reuse))
                 else:
                     try:
-                        meta, body = f.fetch(url, product['domains'])
+                        if url in known:
+                            meta = {k: known[url][k] for k in ('final_url', 'sha256', 'bytes', 'headers', 'robots_basis',
+                                                               'redirect_chain', 'retrieved_at') if k in known[url]}
+                            meta['reused_from'] = str(reuse)
+                            body = (cache / meta['sha256']).read_bytes()
+                        else:
+                            meta, body = f.fetch(url, product['domains'])
                         rec.update(meta)
                         if meta['sha256'] in shas:
                             rec.update(status='duplicate', duplicate_of=shas[meta['sha256']])
@@ -754,29 +798,44 @@ def crawl(config_path, out, cache, resume=False):
                             rec['status'] = 'extracted'
                             hits.extend(candidates(rec, segs, aliases))
                     except Exception as e:
-                        rec.update(status='failed', error=f'{type(e).__name__}: {e}')
+                        gated = isinstance(e, ValueError) and str(e).startswith('login required')
+                        rec.update(status='login_required' if gated else 'failed', error=f'{type(e).__name__}: {e}')
                 sources.append(rec)
                 byid[rec['id']] = rec
             elif rec['status'] == 'extracted' and depth < depth_limit:
                 # Resumed run: rebuild this page's links from the retained bytes instead of the network.
                 links = parse((cache / rec['sha256']).read_bytes(), rec['headers'])[1]
-            if rec['status'] != 'skipped':
+            if rec['status'] not in ('skipped', 'login_required'):
                 attempted += 1
             if rec['status'] == 'extracted':
                 shas.setdefault(rec['sha256'], rec['id'])
                 if fresh:
                     rec['links_found'] = len(links)
                 if depth < depth_limit:
-                    matched = set()
+                    matched, gates = set(), {}
                     for href, text in links:
                         try:
                             full = canonical(urljoin(rec['final_url'], href))
                         except ValueError:
                             continue
+                        if full in gates:
+                            gates[full]['link_count'] += 1  # One sign-in address often stands for a list of documents.
                         if full in seen or full in matched:
                             continue  # Already attempted, e.g. a fragment link back to this page.
                         if allowed(full, product['domains']) and follow.search(full + ' ' + text):
                             matched.add(full)
+                            if LOGIN.search(full):
+                                # The document exists but sits behind a sign-in. It is counted, not requested.
+                                seen.add(full)
+                                gate = {'id': digest((product['id'] + full).encode())[:20], 'product_id': product['id'],
+                                        'url': full, 'depth': depth + 1, 'via': rec['id'], 'started_at': now(),
+                                        'status': 'login_required', 'link_text': text, 'link_count': 1,
+                                        'error': 'link leads to a sign-in page; not requested'}
+                                gates[full] = gate
+                                if fresh and (product['id'], full) not in prior:
+                                    sources.append(gate)
+                                    byid[gate['id']] = gate
+                                continue
                             heapq.heappush(queue, (depth + 1, -link_score(full, text, alias), order, full, rec['id']))
                             order += 1
                     if fresh:
@@ -786,12 +845,13 @@ def crawl(config_path, out, cache, resume=False):
                 dump(out / 'sources.json', sources)
                 save_leads(out, hits)
                 dump(out / 'requests.json', f.audit)
-                print(product['id'], rec['status'], url, flush=True)
+                print(f'[{number}/{len(products)}]', product['id'], rec['status'], url, flush=True)
     # Written once more so a run without any seeds still has all its files.
     dump(out / 'sources.json', sources)
     save_leads(out, hits)
     dump(out / 'requests.json', f.audit)
-    finish(out, cfg, digest(config_bytes), sources, hits, warnings)
+    finish(out, cfg, digest(config_bytes), sources, hits, warnings,
+           **({'only': only} if only else {}), **({'reused_from': str(reuse)} if reuse else {}))
 
 
 def rebuild(run, cache, dest):
@@ -1028,7 +1088,7 @@ def report(run, review_path, dest, require_evidence=False, source_notes=None):
             signed = members or [r for r in rows if r['product_id'] == pid and not scope(r)]
             used = list(dict.fromkeys(sid for m in members for sid in m['source_ids']))
             table.append({
-                'Manufacturer': p.get('vendor', ''), 'Model': p.get('model') or pid, 'Lifecycle': lifecycle(pid),
+                'pid': pid, 'Manufacturer': p.get('vendor', ''), 'Model': p.get('model') or pid, 'Lifecycle': lifecycle(pid),
                 'Category': category(pid), 'Interface class': kind,
                 'Searched': '; '.join(searched[id(m)] for m in members if id(m) in searched),
                 'Firmware': '; '.join(dict.fromkeys(flat(m['firmware']) for m in members)) or 'not established',
@@ -1078,21 +1138,45 @@ def report(run, review_path, dest, require_evidence=False, source_notes=None):
         return 'unknown' if (pid, feature) in reviewed else None
 
     totals = Counter(s['status'] for s in sources)
-    line = (f"Products/families in seed inventory: {len(products)}. Sources attempted: {len(sources) - totals['skipped']}; "
+    line = (f"Products/families in seed inventory: {len(products)}. "
+            f"Sources attempted: {len(sources) - totals['skipped'] - totals['login_required']}; "
             f"extracted: {totals['extracted']}; failed: {totals['failed']}")
     if totals['duplicate']:
         line += f"; duplicate of another source: {totals['duplicate']}"
     if totals['skipped']:
         line += f"; matched links not followed (page budget): {totals['skipped']}"
+    if totals['login_required']:
+        line += f"; documents behind a sign-in, not requested: {sum(s.get('link_count', 1) for s in sources if s['status'] == 'login_required')}"
     text = [f"# {cfg.get('title', 'IED security documentation survey')}", '',
             f"Sampling: {cfg['sampling']}", '', line + '.', '',
             'This measures documented capabilities, not enabled settings, installed-base coverage or plaintext prevalence. Unknown is not unsupported. Family-level evidence is not proof for every model/firmware. Capability categories overlap, so counts below are review cells and must not be added up as devices.', '',
             'Reviewers on record: ' + ('; '.join(f'{md(name)} ({n} rows)' for name, n in Counter(r['reviewer'] for r in rows).items()) or 'none') + '.', '',
             f'Lifecycle (active, legacy or discontinued) is recorded for {recorded} of {len(products)} products. "Not documented" means a complete manual, device profile or conformance statement was searched and does not mention the capability. It is not a vendor statement that the capability is absent.', '',
-            '## Findings by product and interface', '',
-            'One row per product and interface. Encryption and authentication are stated for that interface only; a result for a management interface says nothing about control traffic. Full quotes are under "Findings and evidence" and in findings_table.csv; source references are resolved under "Sources examined".', '',
-            '| ' + ' | '.join(COLUMNS) + ' |', '|' + '---|' * len(COLUMNS)]
-    text.extend('| ' + ' | '.join(md(shown(row) if c == 'Evidence' else row[c]) for c in COLUMNS) + ' |' for row in table)
+            '## Summary by vendor, category and lifecycle', '',
+            'Devices, counted once each, by what the review established for a control protocol. "In the catalogue" is the number of classified entries in the vendor catalogue for that stratum, where the config was drawn from an inventory. A stratum with few devices in this run supports no generalisation.', '',
+            '| Vendor | Category | Lifecycle | In the catalogue | In this run | Encryption of a control protocol | Authentication of a control protocol |',
+            '|---|---|---|---|---|---|---|']
+    wording = (('supported', 'supported'), ('conditional', 'conditional'), ('explicitly_unsupported', 'explicitly unsupported'),
+               ('not_documented', 'not documented'), ('conflicting', 'conflicting'), ('other', 'other interface only'),
+               ('unknown', 'unknown'), (None, 'not reviewed'))
+    strata, listed = {}, {(x['vendor'], x['category'], x['lifecycle']): x['in_catalogue'] for x in cfg.get('frame') or []}
+    for pid, p in products.items():
+        strata.setdefault((p.get('vendor', ''), category(pid), lifecycle(pid)), []).append(pid)
+    for key in sorted(set(strata) | set(listed)):
+        cells = []
+        for feature in ('encryption', 'authentication'):
+            tally = Counter(bucket(pid, feature) for pid in strata.get(key, []))
+            cells.append(', '.join(f'{tally[k]} {name}' for k, name in wording if tally[k]) or '-')
+        text.append(f"| {md(key[0])} | {md(key[1])} | {key[2]} | {listed.get(key, '-')} | {len(strata.get(key, []))} | {cells[0]} | {cells[1]} |")
+    # A census has hundreds of devices and no review yet; a table row per unreviewed device would bury the reviewed ones.
+    bare = {pid for pid in products if not any(r['product_id'] == pid for r in rows)}
+    bare = bare if len(bare) > 25 else set()
+    text.extend(['', '## Findings by product and interface', '',
+                 'One row per product and interface. Encryption and authentication are stated for that interface only; a result for a management interface says nothing about control traffic. Full quotes are under "Findings and evidence" and in findings_table.csv; source references are resolved under "Sources examined".', '']
+                + ([f'{len(bare)} products have no review row yet. They are left out of this table and counted as not reviewed in the summary above.', ''] if bare else [])
+                + ['| ' + ' | '.join(COLUMNS) + ' |', '|' + '---|' * len(COLUMNS)])
+    text.extend('| ' + ' | '.join(md(shown(row) if c == 'Evidence' else row[c]) for c in COLUMNS) + ' |'
+                for row in table if row['pid'] not in bare)
     order = ['supported', 'conditional', 'explicitly_unsupported', 'not_documented', 'conflicting', 'other', 'unknown', None]
     text.extend(['', '## Counts by category', '',
                  'Products, not leads or table rows. Each product is counted once per capability, under its most favourable documented status for a control protocol. "Other interface only" means a result exists for a management or network interface but none for a control protocol. The last column is the denominator.', '',
@@ -1104,9 +1188,11 @@ def report(run, review_path, dest, require_evidence=False, source_notes=None):
             tally = Counter(bucket(pid, c) for pid in members)
             text.append(f'| {md(stratum)} | {c} | ' + ' | '.join(str(tally[k]) for k in order) + f' | {len(members)} |')
     text.extend(['', '## Capability matrix', '',
-                 'S supported, C conditional, X explicitly unsupported, N not documented in a complete document, ? unknown, ! conflicting, - not reviewed. A mark in parentheses is established only for a management or network interface, not for a control protocol.', '',
-                 '| Product | Category | ' + ' | '.join(CAPABILITIES) + ' |', '|---|---|' + '---|' * len(CAPABILITIES)])
-    text.extend(f'| {model(pid)} | {md(stratum_of(pid))} | ' + ' | '.join(matrix(pid, c) for c in CAPABILITIES) + ' |' for pid in products)
+                 'S supported, C conditional, X explicitly unsupported, N not documented in a complete document, ? unknown, ! conflicting, - not reviewed. A mark in parentheses is established only for a management or network interface, not for a control protocol.', '']
+                + ([f'{len(bare)} products without a review row are left out; every cell of theirs is "not reviewed".', ''] if bare else [])
+                + ['| Product | Category | ' + ' | '.join(CAPABILITIES) + ' |', '|---|---|' + '---|' * len(CAPABILITIES)])
+    text.extend(f'| {model(pid)} | {md(stratum_of(pid))} | ' + ' | '.join(matrix(pid, c) for c in CAPABILITIES) + ' |'
+                for pid in products if pid not in bare)
     if claims:
         # The scope and the quoted words sit next to each result, so a second reader can check them without the CSV.
         text.extend(['', '## Findings and evidence', '',
@@ -1129,8 +1215,9 @@ def report(run, review_path, dest, require_evidence=False, source_notes=None):
     unresolved = {pid: [c for c in CAPABILITIES if not any(x in ('supported', 'conditional', 'explicitly_unsupported', 'not_documented')
                                                            for x in results(pid, c, INTERFACE_CLASSES))] for pid in products}
     text.extend(['', '## Unresolved cells', '',
-                 f'{sum(map(len, unresolved.values()))} of {expected} cells are unknown, conflicting or not reviewed on every interface.', ''])
-    text.extend(f"- {model(pid)}: {', '.join(left)}" for pid, left in unresolved.items() if left)
+                 f'{sum(map(len, unresolved.values()))} of {expected} cells are unknown, conflicting or not reviewed on every interface.', '']
+                + ([f'This includes all {len(bare) * len(CAPABILITIES)} cells of the {len(bare)} products without a review row, which are not listed one by one.', ''] if bare else []))
+    text.extend(f"- {model(pid)}: {', '.join(left)}" for pid, left in unresolved.items() if left and pid not in bare)
     profiles = [(s, load(run / (s['id'] + '.profile.json'))) for s in sources if s.get('profile_items')]
     if profiles:
         text.extend(['', '## Device profile statements', '',
@@ -1138,11 +1225,27 @@ def report(run, review_path, dest, require_evidence=False, source_notes=None):
                      '| Product | Source | Item | Title | Options that appear marked | Location |', '|---|---|---|---|---|---|'])
         text.extend(f"| {model(s['product_id'])} | {s['ref']} | {i['item']} | {md(i['title'])} | "
                     f"{md('; '.join(i['marked']) or 'none detected')} | {i['location']} |" for s, items in profiles for i in items)
+    read = [s for s in sources if s['status'] == 'extracted']
+    used = {sid for r in rows for sid in r['source_ids']}
+    wide = len(read) > 60
+    if wide:
+        # What kind of document the survey rests on, per vendor, says more at this scale than a row per source.
+        text.extend(['', '## What was read', '',
+                     'Extracted sources by vendor and document type. A type marked "suggested" is the tool\'s guess from the title, URL and opening text until a reviewer confirms it in the source notes. A vendor whose sources are mostly product pages and brochures has little that can settle a capability either way.', '',
+                     '| Vendor | Document type | Sources | PDF pages |', '|---|---|---|---|'])
+        kinds, pages = Counter(), Counter()
+        for s in read:
+            kind = s['document']['doc_type'] or (s['doc_type_suggested'] + ' (suggested)' if s.get('doc_type_suggested') else 'not established')
+            key = (products[s['product_id']].get('vendor', ''), kind.replace('_', ' '))
+            kinds[key] += 1
+            pages[key] += s.get('pages') or 0
+        text.extend(f'| {md(v)} | {kind} | {n} | {pages[v, kind] or "-"} |' for (v, kind), n in sorted(kinds.items()))
     text.extend(['', '## Sources examined', '',
-                 'Type, number, revision and document date are what a reviewer confirmed or read off the document; "not established" and "suggested" mean nobody has yet. Types are listed in the README from most to least direct about what one product and firmware can do. Titles and PDF dates are what the file says about itself, and a PDF creation date is not necessarily a publication date.', '',
-                 '| Ref | Product | Document | Type | Number and revision | Document date | Retrieved | SHA-256 | URL |', '|---|---|---|---|---|---|---|---|---|'])
+                 'Type, number, revision and document date are what a reviewer confirmed or read off the document; "not established" and "suggested" mean nobody has yet. Types are listed in the README from most to least direct about what one product and firmware can do. Titles and PDF dates are what the file says about itself, and a PDF creation date is not necessarily a publication date.', '']
+                + ([f'Of {len(read)} extracted sources, the {len(used & {s["id"] for s in read})} cited by a review row are listed here. sources.json lists all of them.', ''] if wide else [])
+                + ['| Ref | Product | Document | Type | Number and revision | Document date | Retrieved | SHA-256 | URL |', '|---|---|---|---|---|---|---|---|---|'])
     for s in sources:
-        if s['status'] == 'extracted':
+        if s['status'] == 'extracted' and (not wide or s['id'] in used):
             made = re.match(r'D:(\d{4})(\d{2})(\d{2})', s.get('pdf_created', ''))
             facts = [s.get('title') or 'untitled'] + ([f"{s['pages']} PDF pages"] if s.get('pages') else []) + (['PDF created ' + '-'.join(made.groups())] if made else [])
             doc = s['document']
@@ -1151,8 +1254,20 @@ def report(run, review_path, dest, require_evidence=False, source_notes=None):
             text.append(f"| {s['ref']} | {model(s['product_id'])} | {md(', '.join(facts))} | {kind.replace('_', ' ')} | "
                         f"{md(', '.join(filter(None, [doc['document_id'], doc['revision'] and 'revision ' + doc['revision']])) or 'not established')} | "
                         f"{md(doc['document_date'] or 'not established')} | {s.get('retrieved_at', '')[:10]} | {s['sha256']} | {md(s['final_url'])} |")
-    missing = [s for s in sources if s['status'] in ('failed', 'duplicate')]
-    if missing:
+    missing = [s for s in sources if s['status'] in ('failed', 'duplicate', 'login_required')]
+    if len(missing) > 40:
+        # Too many to list one by one; sources.json has every URL. What matters here is how much each vendor withholds.
+        text.extend(['', '## Sources without extracted text', '',
+                     'Counted by vendor and outcome; every URL is in sources.json. "Sign-in" rows count links to documents that exist but are not public, so they were not requested.', '',
+                     '| Vendor | Outcome | Sources |', '|---|---|---|'])
+        kinds = Counter()
+        for s in missing:
+            kinds[products[s['product_id']].get('vendor', ''),
+                  'behind a sign-in, not requested' if s['status'] == 'login_required'
+                  else 'duplicate of another source' if s['status'] == 'duplicate'
+                  else re.sub(r'https?://\S+', '<url>', s.get('error', ''))[:80]] += s.get('link_count', 1)
+        text.extend(f'| {md(v)} | {md(outcome)} | {n} |' for (v, outcome), n in sorted(kinds.items()))
+    elif missing:
         text.extend(['', '## Sources without extracted text', '', '| Product | URL | Outcome |', '|---|---|---|'])
         text.extend(f"| {model(s['product_id'])} | {md(s['url'])} | "
                     f"{md(s.get('error') or 'duplicate of ' + s['duplicate_of'])} |" for s in missing)
@@ -1254,7 +1369,21 @@ def sitemap(urls, host, domains, match, dest, cache, limit=20, delay=1.0):
     if host:
         f.robot(f'https://{host}/', domains)
         queue += f.robots[host]['sitemaps']
-    files, found = [], set()
+    files, found, queue = sitemap_urls(f, queue, domains, limit)
+    chosen = sorted(u for u in found if re.search(match, u, re.I))
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    dump(dest, {'tool_version': VERSION, 'retrieved_at': now(), 'domains': domains, 'match': match,
+                'files': files, 'not_fetched': queue, 'total_urls': len(found), 'matched_urls': len(chosen),
+                'urls': chosen, 'requests': f.audit})
+    print(f'{len(chosen)} of {len(found)} URLs match; {len(queue)} sitemap files not fetched')
+
+
+CATEGORIES = ('protective_relay', 'controller_rtu', 'plc', 'meter')
+
+
+def sitemap_urls(f, queue, domains, limit=20, only=None):
+    """Reads sitemap files, following index files, and returns a record per file, the page URLs and what was left."""
+    queue, files, found = list(queue), [], set()
     while queue and len(files) < limit:
         rec = {'url': queue.pop(0)}
         try:
@@ -1266,7 +1395,8 @@ def sitemap(urls, host, domains, match, dest, cache, limit=20, delay=1.0):
                     for x in re.findall(r'<loc>(.*?)</loc>', text, re.S | re.I)]
             index = bool(re.search(r'<sitemapindex', text, re.I))
             if index:
-                queue += locs
+                # A large site splits its sitemap by content type; only the listed kinds are worth a request.
+                queue += [u for u in locs if not only or re.search(only, u, re.I)]
             else:
                 found.update(locs)
             rec.update(final_url=meta['final_url'], sha256=meta['sha256'], retrieved_at=meta['retrieved_at'],
@@ -1275,12 +1405,274 @@ def sitemap(urls, host, domains, match, dest, cache, limit=20, delay=1.0):
             rec['error'] = f'{type(e).__name__}: {e}'
         files.append(rec)
         print(rec.get('kind', 'failed'), rec.get('entries', rec.get('error')), rec['url'], flush=True)
-    chosen = sorted(u for u in found if re.search(match, u, re.I))
-    dest.parent.mkdir(parents=True, exist_ok=True)
-    dump(dest, {'tool_version': VERSION, 'retrieved_at': now(), 'domains': domains, 'match': match,
-                'files': files, 'not_fetched': queue, 'total_urls': len(found), 'matched_urls': len(chosen),
-                'urls': chosen, 'requests': f.audit})
-    print(f'{len(chosen)} of {len(found)} URLs match; {len(queue)} sitemap files not fetched')
+    return files, found, queue
+
+
+def sel_product_selector(f, spec):
+    """SEL product pages are empty without JavaScript, so the catalogue is the JSON list those pages load."""
+    meta, body = f.fetch(spec['catalogue_api'], spec['domains'])
+    items = []
+    for i in json.loads(body)['items']:
+        content, form = i.get('content') or {}, i.get('smartForm') or {}
+        if content.get('quicklink'):
+            kind, teaser = (' '.join(unescape(re.sub(r'<[^>]+>', ' ', x if isinstance(x, str) else '')).split())
+                            for x in (form.get('subtitle'), content.get('teaser')))
+            # The subtitle is the vendor's own one-line statement of what the product is; rules classify on it.
+            items.append({'url': urljoin(spec['catalogue_api'], content['quicklink']), 'model': content.get('title') or '',
+                          'kind': kind, 'summary': '. '.join(x for x in (kind, teaser) if x),
+                          'documents': [urljoin(spec['catalogue_api'], f"/api/download/{d['id']}/")
+                                        for d in form.get('selectDownloads') or [] if isinstance(d, dict) and d.get('id')]})
+    return [{'url': spec['catalogue_api'], 'final_url': meta['final_url'], 'sha256': meta['sha256'],
+             'retrieved_at': meta['retrieved_at'], 'kind': 'product list', 'entries': len(items)}], items
+
+
+ADAPTERS = {'sel_product_selector': sel_product_selector}
+
+
+def model_name(url):
+    slug = re.sub(r'^\d{2,}-', '', re.sub(r'\.html?$', '', url.rstrip('/').rsplit('/', 1)[-1]))
+    return ' '.join(w.upper() if re.search(r'\d', w) else w.capitalize() for w in slug.split('-') if w)
+
+
+def first_rule(rules, fields):
+    """The first rule that matches. Each rule reads one field: 'url', 'slug' (last path segment) or 'text'."""
+    return next((r for r in rules or [] if fields.get(r.get('on', 'url')) and re.search(r['match'], fields[r.get('on', 'url')], re.I)), None)
+
+
+def classify(key, spec, items):
+    """One entry per catalogue item in scope: included, excluded with a reason, or unclassified. Nothing is dropped."""
+    entries, ids = [], set()
+    for item in sorted(items, key=lambda x: x['url']):
+        url = item['url']
+        if not re.search(spec.get('scope', ''), url, re.I):
+            continue
+        model = item.get('model') or model_name(url)
+        slug = re.sub(r'[^a-z0-9]+', '_', model.lower()).strip('_')
+        stem = base = slug if slug.startswith(key + '_') else f'{key}_{slug}'
+        while stem in ids:
+            stem = f'{base}_{len(ids)}'
+        ids.add(stem)
+        entry = {'id': stem, 'vendor_key': key, 'vendor': spec['vendor'], 'model': model, 'model_basis': 'catalogue listing',
+                 'product_url': url, 'domains': spec['domains'], 'category': 'unclassified', 'included': False,
+                 'reason': 'no category rule matched'}
+        entry.update({k: item[k] for k in ('summary', 'documents') if item.get(k)})
+        fields = {'url': url, 'slug': re.sub(r'\.html?$', '', url.rstrip('/').rsplit('/', 1)[-1]).lower(),
+                  'text': f"{model} {item.get('kind', '')}".strip()}
+        decide(entry, spec, fields, 'catalogue listing')
+        life = first_rule(spec.get('lifecycle'), fields)
+        entry.update(lifecycle=life['value'] if life else spec.get('default_lifecycle', 'active'),
+                     lifecycle_basis=f"catalogue listing matches {life['match']}" if life
+                     else 'listed in the current catalogue without a legacy marker')
+        entries.append(entry)
+    return entries
+
+
+def decide(entry, spec, fields, basis):
+    """Applies a vendor's category and exclusion rules to what is known about one entry. An exclusion always wins."""
+    rule, out = first_rule(spec.get('rules'), fields), first_rule(spec.get('exclude'), fields)
+    if rule:
+        entry.update(category=rule['category'], category_basis=f"{basis} matches {rule['match']}", included=True, reason='')
+    if out:
+        entry.update(included=False, reason=out['reason'], excluded_by=f"{basis} matches {out['match']}")
+
+
+def write_inventory(dest, inv):
+    """inventory.json for the tool, inventory.csv for a person; both list every entry with the rule that placed it."""
+    counts = Counter()
+    for e in inv['entries']:
+        state = 'included' if e['included'] else 'excluded' if e.get('excluded_by') else 'unclassified'
+        counts[e['vendor'], e['category'], e['lifecycle'], state] += 1
+    inv['summary'] = [{'vendor': v, 'category': c, 'lifecycle': life, 'state': state, 'entries': n}
+                      for (v, c, life, state), n in sorted(counts.items())]
+    dump(dest / 'inventory.json', inv)
+    columns = ['id', 'vendor', 'model', 'category', 'lifecycle', 'included', 'reason', 'product_url', 'category_basis',
+               'lifecycle_basis', 'lifecycle_evidence', 'excluded_by', 'model_basis', 'page_status', 'summary']
+    with (dest / 'inventory.csv').open('w', newline='', encoding='utf-8') as fp:
+        w = csv.DictWriter(fp, fieldnames=columns, extrasaction='ignore')
+        w.writeheader()
+        w.writerows(inv['entries'])
+    for vendor in dict.fromkeys(e['vendor'] for e in inv['entries']):
+        mine = [e for e in inv['entries'] if e['vendor'] == vendor]
+        kept = Counter((e['category'], e['lifecycle']) for e in mine if e['included'])
+        print(f"{vendor}: {len(mine)} in scope; included {sum(kept.values())} "
+              f"{dict(sorted((f'{c}/{life}', n) for (c, life), n in kept.items()))}; "
+              f"excluded {sum(bool(e.get('excluded_by')) for e in mine)}; "
+              f"unclassified {sum(not e['included'] and not e.get('excluded_by') for e in mine)}", flush=True)
+
+
+def check_rules(spec):
+    """A rules file is refused as a whole before anything is fetched or written."""
+    for key, v in spec['vendors'].items():
+        for rule in v.get('rules', []):
+            if rule.get('category') not in CATEGORIES:
+                raise ValueError(f'{key}: rule category must be one of {", ".join(CATEGORIES)}')
+        for rule in v.get('lifecycle', []) + v.get('lifecycle_text', []):
+            if rule.get('value') not in LIFECYCLES:
+                raise ValueError(f'{key}: lifecycle value must be one of {", ".join(LIFECYCLES)}')
+        for rule in v.get('rules', []) + v.get('exclude', []) + v.get('lifecycle', []) + v.get('lifecycle_text', []):
+            re.compile(rule['match'])
+    return spec
+
+
+def inventory(vendors_path, dest, cache, source=None, delay=1.2):
+    """Lists every catalogue device of the configured vendors from their own sitemaps. A person decides what to change."""
+    dest = Path(dest)
+    if dest.exists():
+        raise FileExistsError(dest)
+    spec = check_rules(load(vendors_path))
+    # A saved listing lets the rules be changed and re-applied without asking the vendors again.
+    listing = load(Path(source) / 'catalogue.json') if source else {}
+    f = Fetcher({'delay_seconds': delay, 'max_bytes': 80000000, 'timeout_seconds': 60,
+                 'robots_follow_redirects': spec.get('robots_follow_redirects', False)}, cache)
+    entries = []
+    for key, v in spec['vendors'].items():
+        if key not in listing:
+            if v.get('adapter'):
+                files, items = ADAPTERS[v['adapter']](f, v)
+                left = []
+            else:
+                files, found, left = sitemap_urls(f, v['sitemaps'], v['domains'], v.get('max_files', 20), v.get('sitemap_filter'))
+                items = [{'url': u} for u in sorted(found)]
+            listing[key] = {'files': files, 'not_fetched': left, 'items': items}
+        entries += classify(key, v, listing[key]['items'])
+    dest.mkdir(parents=True)
+    dump(dest / 'catalogue.json', listing)
+    # Re-applied rules keep the log of the requests that produced the listing they were applied to.
+    dump(dest / 'requests.json', (load(Path(source) / 'requests.json') if source else []) + f.audit)
+    write_inventory(dest, {'tool_version': VERSION, 'created_at': now(), 'vendors_sha256': digest(Path(vendors_path).read_bytes()),
+                           'reapplied_from': str(source) if source else None, 'spec': spec, 'entries': entries})
+
+
+def enrich(inventory_path, run, dest, vendors=None):
+    """Adds what each product page says about itself: its title, and wording about its lifecycle, with the sentence kept."""
+    dest, run = Path(dest), Path(run)
+    if dest.exists():
+        raise FileExistsError(dest)
+    inv = load(inventory_path)
+    if vendors:
+        # Page wording is only known once the pages have been read, so these rules are usually written afterwards.
+        inv.update(spec=check_rules(load(vendors)), vendors_sha256=digest(Path(vendors).read_bytes()))
+    # Only the product page itself speaks for the entry; a document seeded in its place does not rename the device.
+    pages = {(s['product_id'], s['url']): s for s in load(run / 'sources.json')}
+    for e in inv['entries']:
+        s, spec = pages.get((e['id'], canonical(e['product_url']))), inv['spec']['vendors'][e['vendor_key']]
+        if not s:
+            continue
+        e['page_status'] = s['status'] + (f": {s['error']}" if s.get('error') else '')
+        if s['status'] != 'extracted':
+            continue
+        title = (s.get('title') or '').split(' | ')[0].strip()
+        if title:
+            e.update(model=title, model_basis='product page title')
+        text = ' '.join(squash(g['text']) for g in load(run / (s['id'] + '.segments.json')))
+        if not e['included'] and not e.get('excluded_by'):
+            # A catalogue URL that names no category: the page's own opening words decide, or it stays unclassified.
+            decide(e, spec, {'text': f'{title} {text[:800]}'}, 'product page text')
+        # 'within' keeps a rule to the opening of the page, where a notice is about this product and not a variant of it.
+        life = next(((r, m) for r in spec.get('lifecycle_text', [])
+                     for m in [re.search(r['match'], text[:r.get('within')], re.I)] if m), None)
+        if life:
+            e.update(lifecycle=life[0]['value'], lifecycle_basis='product page wording',
+                     lifecycle_evidence=passage(text, life[1].start(), life[1].end(), 120, 160))
+    dest.mkdir(parents=True)
+    inv.update(tool_version=VERSION, enriched_at=now(), enriched_from={'run': str(run), 'inventory': str(inventory_path)})
+    write_inventory(dest, inv)
+
+
+def sample(inventory_path, dest, per_stratum=None, seed=0, census=False):
+    """Writes a crawl config from the inventory: every catalogue entry, or a seeded draw per vendor, category and lifecycle."""
+    dest = Path(dest)
+    if dest.exists():
+        raise FileExistsError(dest)
+    inv = load(inventory_path)
+    kept = [e for e in inv['entries'] if e['included']]
+    strata = {}
+    for e in kept:
+        strata.setdefault((e['vendor'], e['category'], e['lifecycle']), []).append(e)
+    if census:
+        # Unclassified pages are crawled too, so that their own text can classify them afterwards.
+        chosen = [e for e in inv['entries'] if e['included'] or not (
+            e.get('excluded_by') or inv['spec']['vendors'][e['vendor_key']].get('page_needs_javascript'))]
+        how = (f"Census of the vendor catalogues: one product page for each of {len(chosen)} catalogue entries "
+               f"({len(kept)} classified, {len(chosen) - len(kept)} awaiting classification from their own page).")
+    else:
+        if not per_stratum or per_stratum < 1:
+            raise ValueError('sample needs --per-stratum of at least 1, or --census')
+        chosen = []
+        for key in sorted(strata):
+            members = sorted(strata[key], key=lambda e: e['id'])
+            # Each stratum has its own generator, so adding a vendor or a category never changes another stratum's draw.
+            rng = random.Random(f'{seed}:' + '|'.join(key))
+            chosen += members if len(members) <= per_stratum else sorted(rng.sample(members, per_stratum), key=lambda e: e['id'])
+        how = (f"Stratified random sample: up to {per_stratum} devices per vendor, category and lifecycle stratum, seed {seed}, "
+               f"drawn from {len(kept)} classified catalogue entries; strata with fewer entries are taken whole. "
+               "A sample of catalogue entries, not of installed devices.")
+    picked = Counter((e['vendor'], e['category'], e['lifecycle']) for e in chosen if e['included'])
+    products = []
+    for e in chosen:
+        spec = inv['spec']['vendors'][e['vendor_key']]
+        p = {'id': e['id'], 'vendor': e['vendor'], 'model': e['model'], 'category': e['category'], 'lifecycle': e['lifecycle'],
+             'domains': e['domains'], 'seeds': [] if spec.get('page_needs_javascript') else [e['product_url']]}
+        # Where the product page cannot be read, the census takes the product's first public document in its place.
+        p['seeds'] += e.get('documents', [])[:spec.get('census_documents', 0) if census else spec.get('document_seeds', 3)]
+        if not census:
+            p.update(spec.get('crawl', {}))
+        products.append(p)
+    dump(dest, {'title': inv['spec'].get('title', 'IED security documentation survey'),
+                'sampling': how + f" Inventory of {inv['created_at'][:10]}; categories and lifecycle come from the vendors' own catalogues and pages.",
+                'seed': seed, 'per_stratum': per_stratum, 'census': census,
+                'inventory': {'path': str(inventory_path), 'sha256': digest(Path(inventory_path).read_bytes()), 'created_at': inv['created_at']},
+                'frame': [{'vendor': v, 'category': c, 'lifecycle': life, 'in_catalogue': len(members), 'selected': picked[v, c, life]}
+                          for (v, c, life), members in sorted(strata.items())],
+                'max_depth': 0, 'max_pages_per_product': 4, 'delay_seconds': 1.2, 'timeout_seconds': 60, 'max_bytes': 60000000,
+                'robots_follow_redirects': inv['spec'].get('robots_follow_redirects', False), 'products': products})
+    print(f'{len(products)} products written to {dest}')
+
+
+def worksheet(run, dest):
+    """Lays the leads out per product and capability for a reviewer. It organises; it proposes no result."""
+    run, dest = Path(run), Path(dest)
+    if dest.exists():
+        raise FileExistsError(dest)
+    cfg, sources, leads = load(run / 'config.json'), load(run / 'sources.json'), load_leads(run)
+    refs = {s['id']: f'S{n}' for n, s in enumerate((s for s in sources if s['status'] == 'extracted'), 1)}
+    found = {}
+    for h in leads:
+        found.setdefault((h['product_id'], h['feature']), []).append(h)
+
+    def places(hits):
+        shown = '; '.join(f"{refs[h['source_id']]} {h['location']} [{', '.join(h['matched'][:3]) or h.get('profile_item', '')}]" for h in hits[:8])
+        return shown + (f' and {len(hits) - 8} more' if len(hits) > 8 else '')
+
+    text = ['# Review worksheet', '',
+            'Where each term occurs, per product and capability. A lead is a place to read, not a finding, and "no lead" in a source is not a statement that the device lacks the capability. Source references are local to this worksheet.', '']
+    hints = {}
+    for p in cfg['products']:
+        mine = [s for s in sources if s['product_id'] == p['id']]
+        read = [s for s in mine if s['status'] == 'extracted']
+        text += ['', f"## {p.get('model') or p['id']}", '',
+                 f"{p.get('vendor', '')}; {p.get('category', '')}; lifecycle {p.get('lifecycle') or 'not recorded'}; id `{p['id']}`", '']
+        text += [f"- {refs.get(s['id'], '--')} {s['status']}"
+                 + (f", {s['doc_type_suggested'].replace('_', ' ')} (suggested)" if s.get('doc_type_suggested') else '')
+                 + (f", {s['pages']} PDF pages" if s.get('pages') else '') + (f": {s['error']}" if s.get('error') else '')
+                 + f" <{s['url']}>" for s in mine] or ['- no source']
+        text.append('')
+        for c in CAPABILITIES + STATEMENTS:
+            hits = found.get((p['id'], c), [])
+            silent = [refs[s['id']] for s in read if not any(h['source_id'] == s['id'] for h in hits)]
+            if c in CAPABILITIES:
+                hints[p['id'], c] = {'leads': len(hits), 'where': [f"{refs[h['source_id']]} {h['location']}" for h in hits[:8]],
+                                     'no_lead_in': silent}
+            if hits:
+                text.append(f'- **{c}**: {len(hits)} leads: {places(hits)}')
+            elif c in CAPABILITIES:
+                text.append(f"- **{c}**: no lead" + (f" in {', '.join(silent)}" if silent else ''))
+    dest.mkdir(parents=True)
+    (dest / 'worksheet.md').write_text('\n'.join(text) + '\n', encoding='utf-8', newline='\n')
+    # The same template the crawl wrote, with the hints beside each cell. Hints are not review fields and are ignored.
+    dump(dest / 'review_template.json', [dict(row, _hints=hints.get((row['product_id'], row['feature']), {}))
+                                         for row in load(run / 'review_template.json')])
+    print(f'Worksheet for {len(cfg["products"])} products written to {dest}')
 
 
 def main():
@@ -1289,7 +1681,11 @@ def main():
             stream.reconfigure(errors='backslashreplace')  # Document text may not fit the console code page.
     p = argparse.ArgumentParser(description=__doc__)
     sub = p.add_subparsers(dest='cmd', required=True)
-    c = sub.add_parser('crawl'); c.add_argument('--config', required=True); c.add_argument('--out', required=True); c.add_argument('--cache', default='cache'); c.add_argument('--resume', action='store_true')
+    c = sub.add_parser('crawl'); c.add_argument('--config', required=True); c.add_argument('--out', required=True); c.add_argument('--cache', default='cache'); c.add_argument('--resume', action='store_true'); c.add_argument('--reuse'); c.add_argument('--only')
+    i = sub.add_parser('inventory'); i.add_argument('--vendors', required=True); i.add_argument('--out', required=True); i.add_argument('--cache', default='cache'); i.add_argument('--from', dest='source')
+    e = sub.add_parser('enrich'); e.add_argument('--inventory', required=True); e.add_argument('--run', required=True); e.add_argument('--out', required=True); e.add_argument('--vendors')
+    s = sub.add_parser('sample'); s.add_argument('--inventory', required=True); s.add_argument('--out', required=True); s.add_argument('--per-stratum', type=int); s.add_argument('--seed', type=int, default=0); s.add_argument('--census', action='store_true')
+    w = sub.add_parser('worksheet'); w.add_argument('--run', required=True); w.add_argument('--out', required=True)
     r = sub.add_parser('report'); r.add_argument('--run', required=True); r.add_argument('--reviews', required=True); r.add_argument('--out', required=True); r.add_argument('--require-evidence', action='store_true'); r.add_argument('--source-notes')
     v = sub.add_parser('verify'); v.add_argument('--run', required=True); v.add_argument('--cache', default='cache')
     x = sub.add_parser('replay'); x.add_argument('--run', required=True); x.add_argument('--cache', default='cache'); x.add_argument('--out', required=True)
@@ -1299,7 +1695,11 @@ def main():
     m.add_argument('--match', default='.'); m.add_argument('--out', required=True); m.add_argument('--cache', default='cache'); m.add_argument('--max-files', type=int, default=20); m.add_argument('--delay', type=float, default=1.0)
     args = p.parse_args()
     try:
-        if args.cmd == 'crawl': crawl(args.config, args.out, args.cache, args.resume)
+        if args.cmd == 'crawl': crawl(args.config, args.out, args.cache, args.resume, args.reuse, args.only)
+        elif args.cmd == 'inventory': inventory(args.vendors, args.out, args.cache, args.source)
+        elif args.cmd == 'enrich': enrich(args.inventory, args.run, args.out, args.vendors)
+        elif args.cmd == 'sample': sample(args.inventory, args.out, args.per_stratum, args.seed, args.census)
+        elif args.cmd == 'worksheet': worksheet(args.run, args.out)
         elif args.cmd == 'report': report(args.run, args.reviews, args.out, args.require_evidence, args.source_notes)
         elif args.cmd == 'verify': verify(args.run, args.cache)
         elif args.cmd == 'replay': replay(args.run, args.cache, args.out)

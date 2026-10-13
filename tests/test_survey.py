@@ -1,5 +1,6 @@
 import gzip
 import io
+from collections import Counter as Counter_
 import json
 import tempfile
 import unittest
@@ -880,6 +881,305 @@ class SurveyTests(unittest.TestCase):
         base['products'][0]['lifecycle'] = 'old'
         with self.assertRaisesRegex(ValueError,'lifecycle must be one of'): s.validate_config(base)
         self.assertIn('not_documented', s.STATUSES)
+
+    # --- 1.5.0 ---
+
+    VENDORS = {'title': 'Test inventory', 'robots_follow_redirects': ['vendor.test'], 'vendors': {'acme': {
+        'vendor': 'Acme', 'domains': ['vendor.test'], 'sitemaps': ['https://vendor.test/sitemap.xml'],
+        'scope': '^https://vendor\\.test/products/[^/]+/[^/]+$',
+        'exclude': [{'on': 'url', 'match': '/accessories/', 'reason': 'accessory'},
+                    {'on': 'slug', 'match': 'software', 'reason': 'software'},
+                    {'on': 'text', 'match': 'test set', 'reason': 'test equipment'}],
+        'rules': [{'on': 'url', 'match': '/relays/', 'category': 'protective_relay'},
+                  {'on': 'slug', 'match': '^pm[0-9]', 'category': 'meter'},
+                  {'on': 'text', 'match': 'feeder protection', 'category': 'protective_relay'}],
+        'lifecycle': [{'on': 'slug', 'match': 'legacy', 'value': 'legacy'}],
+        'lifecycle_text': [{'match': 'has been discontinued', 'value': 'discontinued'}],
+        'crawl': {'max_depth': 1, 'max_pages_per_product': 3, 'follow_pattern': 'manual'}}}}
+    SITEMAP = (b'<urlset><url><loc>https://vendor.test/products/relays/r100</loc></url><url><loc>https://vendor.test/products/relays/r90-legacy</loc></url>'
+               b'<url><loc>https://vendor.test/products/meters/pm800</loc></url><url><loc>https://vendor.test/products/accessories/cable</loc></url>'
+               b'<url><loc>https://vendor.test/products/relays/setup-software</loc></url><url><loc>https://vendor.test/products/misc/x7</loc></url>'
+               b'<url><loc>https://vendor.test/about/us</loc></url><url><loc>https://vendor.test/products/relays</loc></url></urlset>')
+
+    def catalogue(self, p, calls, pages=None):
+        s.dump(p/'vendors.json', self.VENDORS)
+        with self.site(dict({'https://vendor.test/sitemap.xml': self.SITEMAP}, **(pages or {})), calls):
+            s.inventory(p/'vendors.json', p/'inv', p/'cache')
+        return s.load(p/'inv'/'inventory.json')
+
+    def test_inventory_places_every_catalogue_entry_and_drops_none(self):
+        with tempfile.TemporaryDirectory() as td:
+            p, calls = Path(td), []
+            inv = self.catalogue(p, calls)
+            got = {e['product_url'].rsplit('/', 1)[-1]: e for e in inv['entries']}
+            self.assertEqual(sorted(got), ['cable', 'pm800', 'r100', 'r90-legacy', 'setup-software', 'x7'])
+            self.assertEqual([(k, got[k]['category'], got[k]['lifecycle'], got[k]['included']) for k in ('r100', 'r90-legacy', 'pm800')],
+                             [('r100','protective_relay','active',True), ('r90-legacy','protective_relay','legacy',True), ('pm800','meter','active',True)])
+            self.assertEqual((got['cable']['included'], got['cable']['reason']), (False, 'accessory'))
+            self.assertEqual((got['setup-software']['included'], got['setup-software']['reason'], got['setup-software']['category']), (False, 'software', 'protective_relay'))
+            self.assertEqual((got['x7']['included'], got['x7']['category'], got['x7']['reason'], 'excluded_by' in got['x7']), (False, 'unclassified', 'no category rule matched', False))
+            self.assertEqual((got['r100']['id'], got['r100']['model'], got['r100']['vendor'], got['r100']['domains']), ('acme_r100', 'R100', 'Acme', ['vendor.test']))
+            self.assertIn('legacy marker', got['r100']['lifecycle_basis'])
+            self.assertEqual(calls, ['https://vendor.test/sitemap.xml'])
+            self.assertEqual(len((p/'inv'/'inventory.csv').read_text(encoding='utf-8').splitlines()), 7)
+            self.assertEqual(len(s.load(p/'inv'/'catalogue.json')['acme']['items']), 8)
+            with self.assertRaises(FileExistsError): s.inventory(p/'vendors.json', p/'inv', p/'cache')
+            # Changed rules are re-applied to the saved listing without asking the vendor again.
+            changed = json.loads(json.dumps(self.VENDORS)); changed['vendors']['acme']['rules'].append({'on': 'slug', 'match': '^x7$', 'category': 'plc'})
+            s.dump(p/'vendors2.json', changed)
+            with self.site({}, calls): s.inventory(p/'vendors2.json', p/'inv2', p/'cache', source=p/'inv')
+            self.assertEqual(len(calls), 1)
+            self.assertEqual([(e['category'], e['included']) for e in s.load(p/'inv2'/'inventory.json')['entries'] if e['id'] == 'acme_x7'], [('plc', True)])
+            for broken in ({'rules': [{'match': 'x', 'category': 'switch'}]}, {'lifecycle': [{'match': 'x', 'value': 'old'}]}, {'rules': [{'match': '(', 'category': 'plc'}]}):
+                bad = json.loads(json.dumps(self.VENDORS)); bad['vendors']['acme'].update(broken); s.dump(p/'bad.json', bad)
+                with self.subTest(broken=broken), self.assertRaises(Exception): s.inventory(p/'bad.json', p/'inv3', p/'cache', source=p/'inv')
+                self.assertFalse((p/'inv3').exists())
+
+    def test_product_list_adapter_classifies_on_the_vendor_one_line_product_type(self):
+        body = json.dumps({'items': [
+            {'content': {'title': 'SEL-751', 'quicklink': '/products/751/', 'teaser': '<p>Complete protection with a display panel.</p>'},
+             'smartForm': {'subtitle': 'Feeder Protection Relay', 'selectDownloads': [{'id': 11}, {'id': 12}, {'id': 13}, {'id': 14}]}},
+            {'content': {'title': 'SEL-4000', 'quicklink': '/products/4000/', 'teaser': 'Tests a feeder protection scheme.'}, 'smartForm': {'subtitle': 'Relay <span>Test Set</span>'}},
+            {'content': {'title': 'No link'}, 'smartForm': {}}]}).encode()
+        spec = json.loads(json.dumps(self.VENDORS))
+        spec['vendors']['acme'].update(adapter='sel_product_selector', catalogue_api='https://vendor.test/api/list/', page_needs_javascript=True,
+                                       census_documents=1, document_seeds=2, scope='^https://vendor\\.test/products/[^/]+/$')
+        with tempfile.TemporaryDirectory() as td:
+            p, calls = Path(td), []
+            s.dump(p/'vendors.json', spec)
+            with self.site({'https://vendor.test/api/list/': body}, calls): s.inventory(p/'vendors.json', p/'inv', p/'cache')
+            tester, relay = s.load(p/'inv'/'inventory.json')['entries']  # in URL order
+            self.assertEqual((relay['model'], relay['category'], relay['included'], relay['product_url']), ('SEL-751', 'protective_relay', True, 'https://vendor.test/products/751/'))
+            self.assertEqual(relay['documents'][:2], ['https://vendor.test/api/download/11/', 'https://vendor.test/api/download/12/'])
+            self.assertEqual(relay['summary'], 'Feeder Protection Relay. Complete protection with a display panel.')
+            self.assertEqual((tester['included'], tester['reason']), (False, 'test equipment'))
+            s.sample(p/'inv'/'inventory.json', p/'census.json', census=True)
+            s.sample(p/'inv'/'inventory.json', p/'deep.json', per_stratum=5, seed=1)
+            self.assertEqual([x['seeds'] for x in s.load(p/'census.json')['products']], [['https://vendor.test/api/download/11/']])
+            self.assertEqual([x['seeds'] for x in s.load(p/'deep.json')['products']], [['https://vendor.test/api/download/11/', 'https://vendor.test/api/download/12/']])
+
+    def frame_inventory(self, p):
+        entries = []
+        for vendor, category, lifecycle, n in [('Acme','protective_relay','active',6), ('Acme','protective_relay','legacy',2), ('Acme','meter','active',1), ('Bolt','plc','active',5)]:
+            for i in range(n):
+                entries.append({'id': f'{vendor}_{category}_{lifecycle}_{i}'.lower(), 'vendor_key': 'acme', 'vendor': vendor, 'model': f'M{i}', 'category': category,
+                                'lifecycle': lifecycle, 'included': True, 'reason': '', 'product_url': f'https://vendor.test/{vendor}/{category}/{lifecycle}/{i}', 'domains': ['vendor.test']})
+        entries.append(dict(entries[0], id='acme_excluded', included=False, reason='accessory', excluded_by='x'))
+        entries.append(dict(entries[0], id='acme_unclassified', included=False, category='unclassified', reason='no category rule matched'))
+        s.dump(p/'inventory.json', {'created_at': '2026-10-13T00:00:00+00:00', 'spec': self.VENDORS, 'entries': entries})
+        return p/'inventory.json'
+
+    def test_sample_is_seeded_stratified_and_states_its_own_frame(self):
+        with tempfile.TemporaryDirectory() as td:
+            p = Path(td); inv = self.frame_inventory(p)
+            s.sample(inv, p/'a.json', per_stratum=2, seed=7)
+            s.sample(inv, p/'b.json', per_stratum=2, seed=7)
+            s.sample(inv, p/'c.json', per_stratum=2, seed=8)
+            self.assertEqual((p/'a.json').read_bytes(), (p/'b.json').read_bytes())
+            a, c = s.load(p/'a.json'), s.load(p/'c.json')
+            self.assertEqual(Counter_((x['vendor'], x['category'], x['lifecycle']) for x in a['products']),
+                             {('Acme','protective_relay','active'): 2, ('Acme','protective_relay','legacy'): 2, ('Acme','meter','active'): 1, ('Bolt','plc','active'): 2})
+            self.assertNotEqual([x['id'] for x in a['products']], [x['id'] for x in c['products']])
+            self.assertEqual({(f['vendor'], f['category'], f['lifecycle']): (f['in_catalogue'], f['selected']) for f in a['frame']},
+                             {('Acme','meter','active'): (1, 1), ('Acme','protective_relay','active'): (6, 2), ('Acme','protective_relay','legacy'): (2, 2), ('Bolt','plc','active'): (5, 2)})
+            self.assertIn('seed 7', a['sampling']); self.assertIn('14 classified catalogue entries', a['sampling'])
+            self.assertEqual((a['seed'], a['per_stratum'], a['robots_follow_redirects'], a['inventory']['sha256']), (7, 2, ['vendor.test'], s.digest(inv.read_bytes())))
+            self.assertEqual({(x['max_depth'], x['follow_pattern']) for x in a['products']}, {(1, 'manual')})
+            self.assertEqual(s.validate_config(a), [])
+            s.sample(inv, p/'census.json', census=True)
+            census = s.load(p/'census.json')
+            self.assertEqual(len(census['products']), 15)
+            self.assertIn('acme_unclassified', [x['id'] for x in census['products']])
+            self.assertNotIn('acme_excluded', [x['id'] for x in census['products']])
+            self.assertNotIn('max_depth', census['products'][0])
+            self.assertIn('Census', census['sampling'])
+            for bad in ({}, {'per_stratum': 0}):
+                with self.subTest(bad=bad), self.assertRaises(ValueError): s.sample(inv, p/'bad.json', **bad)
+            with self.assertRaises(FileExistsError): s.sample(inv, p/'a.json', per_stratum=2, seed=7)
+
+    def test_enrich_reads_title_lifecycle_and_category_off_the_product_page(self):
+        with tempfile.TemporaryDirectory() as td:
+            p, calls = Path(td), []
+            pages = {'https://vendor.test/products/relays/r100': b'<title>R100 Feeder Relay | Acme</title><p>Numerical relay.</p>',
+                     'https://vendor.test/products/relays/r90-legacy': b'<title>R90 | Acme</title><p>Overview. Manufacturing for the R90 has been discontinued. Use the R100.</p>',
+                     'https://vendor.test/products/misc/x7': b'<title>X7 | Acme</title><p>The X7 gives feeder protection for small substations.</p>'}
+            self.catalogue(p, calls, pages)
+            s.sample(p/'inv'/'inventory.json', p/'census.json', census=True)
+            with self.site(pages, calls): s.crawl(p/'census.json', p/'run', p/'cache')
+            s.enrich(p/'inv'/'inventory.json', p/'run', p/'inv2')
+            got = {e['id']: e for e in s.load(p/'inv2'/'inventory.json')['entries']}
+            self.assertEqual((got['acme_r100']['model'], got['acme_r100']['model_basis'], got['acme_r100']['lifecycle']), ('R100 Feeder Relay', 'product page title', 'active'))
+            old = got['acme_r90_legacy']
+            self.assertEqual((old['lifecycle'], old['lifecycle_basis']), ('discontinued', 'product page wording'))
+            self.assertIn('Manufacturing for the R90 has been discontinued.', old['lifecycle_evidence'])
+            self.assertEqual((got['acme_x7']['category'], got['acme_x7']['included']), ('protective_relay', True))
+            self.assertIn('product page text', got['acme_x7']['category_basis'])
+            self.assertTrue(got['acme_pm800']['page_status'].startswith('failed: ValueError: HTTP 404'))
+            self.assertNotIn('page_status', got['acme_cable'])
+            self.assertIn('enriched_from', s.load(p/'inv2'/'inventory.json'))
+            with self.assertRaises(FileExistsError): s.enrich(p/'inv'/'inventory.json', p/'run', p/'inv2')
+            # Wording rules are written after the pages are read. One limited to the page opening ignores a later notice.
+            narrow = json.loads(json.dumps(self.VENDORS)); narrow['vendors']['acme']['lifecycle_text'][0]['within'] = 30
+            s.dump(p/'narrow.json', narrow)
+            s.enrich(p/'inv'/'inventory.json', p/'run', p/'inv3', vendors=p/'narrow.json')
+            again = s.load(p/'inv3'/'inventory.json')
+            self.assertEqual([(e['lifecycle'], 'lifecycle_evidence' in e) for e in again['entries'] if e['id'] == 'acme_r90_legacy'], [('legacy', False)])
+            self.assertEqual((again['vendors_sha256'], again['spec']), (s.digest((p/'narrow.json').read_bytes()), narrow))
+            narrow['vendors']['acme']['lifecycle_text'][0]['value'] = 'old'; s.dump(p/'narrow.json', narrow)
+            with self.assertRaisesRegex(ValueError,'lifecycle value'): s.enrich(p/'inv'/'inventory.json', p/'run', p/'inv4', vendors=p/'narrow.json')
+
+    def test_a_product_may_override_depth_and_follow_pattern_and_only_narrows_the_run(self):
+        with tempfile.TemporaryDirectory() as td:
+            p, calls = Path(td), []
+            pages = {'https://vendor.test/a': b'<p>A</p><a href="/a-manual">Manual</a><a href="/a-brochure">Brochure</a>', 'https://vendor.test/a-manual': b'<p>TLS</p>',
+                     'https://vendor.test/b': b'<p>B</p><a href="/b-manual">Manual</a>', 'https://vendor.test/b-manual': b'<p>SSH</p>'}
+            cfg = self.config(p, [{'id':'a','seeds':['https://vendor.test/a'],'max_depth':1,'max_pages_per_product':5,'follow_pattern':'manual'},
+                                  {'id':'b','seeds':['https://vendor.test/b']}], max_depth=0)
+            with self.site(pages, calls): s.crawl(cfg, p/'run', p/'cache')
+            self.assertEqual(calls, ['https://vendor.test/a', 'https://vendor.test/a-manual', 'https://vendor.test/b'])
+            del calls[:]
+            with self.site(pages, calls): s.crawl(cfg, p/'only', p/'cache', only='^b ')
+            self.assertEqual(calls, ['https://vendor.test/b'])
+            self.assertEqual((s.load(p/'only'/'manifest.json')['only'], {r['product_id'] for r in s.load(p/'only'/'review_template.json')}), ('^b ', {'b'}))
+            # The run's own config lists what the run covered, so its report and worksheet do not show the rest as unread.
+            self.assertEqual([x['id'] for x in s.load(p/'only'/'config.json')['products']], ['b'])
+            self.assertEqual(s.load(p/'only'/'manifest.json')['config_sha256'], s.digest(Path(cfg).read_bytes()))
+            with self.assertRaisesRegex(ValueError,'matches no product'): s.crawl(cfg, p/'none', p/'cache', only='^zzz')
+            self.assertFalse((p/'none').exists())
+            bad = self.config(p, [{'id':'a','seeds':[],'follow_pattern':'('}])
+            with self.assertRaisesRegex(ValueError,'follow_pattern'): s.crawl(bad, p/'bad', p/'cache')
+
+    def test_reuse_does_not_request_what_an_earlier_run_already_fetched(self):
+        with tempfile.TemporaryDirectory() as td:
+            p, calls = Path(td), []
+            pages = {'https://vendor.test/a': b'<p>TLS</p><a href="/manual">Manual</a>', 'https://vendor.test/manual': b'<p>SSH</p>'}
+            first = self.config(p, [{'id':'a','seeds':['https://vendor.test/a']}])
+            with self.site(pages, calls): s.crawl(first, p/'census', p/'cache')
+            del calls[:]
+            deep = self.config(p, [{'id':'a','seeds':['https://vendor.test/a'],'max_depth':1}])
+            with self.site(pages, calls): s.crawl(deep, p/'deep', p/'cache', reuse=p/'census')
+            self.assertEqual(calls, ['https://vendor.test/manual'])
+            page, manual = s.load(p/'deep'/'sources.json')
+            self.assertEqual((page['status'], page['reused_from'], page['sha256']), ('extracted', str(p/'census'), s.load(p/'census'/'sources.json')[0]['sha256']))
+            self.assertNotIn('reused_from', manual)
+            self.assertEqual(s.load(p/'deep'/'manifest.json')['reused_from'], str(p/'census'))
+            s.replay(p/'deep', p/'cache', p/'replay')
+
+    def test_sign_in_walls_are_counted_and_never_requested(self):
+        with tempfile.TemporaryDirectory() as td:
+            p, calls = Path(td), []
+            pages = {'https://vendor.test/a': b'<p>A</p><a href="/passport/login?destination=/files/manuals">Download manual</a><a href="/open-manual">Manual</a>'
+                                              b'<a href="/passport/login?destination=/files/manuals">Download communications manual</a>',
+                     'https://vendor.test/open-manual': ValueError('login required: redirected to https://vendor.test/login?next=x')}
+            cfg = self.config(p, [{'id':'a','seeds':['https://vendor.test/a'],'max_depth':1,'max_pages_per_product':5}])
+            with self.site(pages, calls): s.crawl(cfg, p/'run', p/'cache')
+            self.assertEqual(calls, ['https://vendor.test/a', 'https://vendor.test/open-manual'])
+            recs = s.load(p/'run'/'sources.json')
+            self.assertEqual([(r['status'], r['url'].split('vendor.test')[1][:16]) for r in recs], [('extracted','/a'), ('login_required','/passport/login?'), ('login_required','/open-manual')])
+            # One sign-in address stood for two documents, so it counts twice; the redirected request counts once.
+            self.assertEqual((recs[1]['link_text'], recs[1]['link_count'], recs[1]['via'], recs[0]['links_matched']), ('Download manual', 2, recs[0]['id'], 2))
+            s.report(p/'run', p/'run'/'review_template.json', p/'report')
+            text = (p/'report'/'REPORT.md').read_text(encoding='utf-8')
+            self.assertIn('Sources attempted: 1; extracted: 1; failed: 0; documents behind a sign-in, not requested: 3.', text)
+            # A later run that builds on this one does not ask again for a document it was told needs a sign-in.
+            del calls[:]
+            with self.site(pages, calls): s.crawl(cfg, p/'again', p/'cache', reuse=p/'run')
+            self.assertEqual(calls, [])
+            self.assertEqual([(r['status'], 'reused_from' in r) for r in s.load(p/'again'/'sources.json')], [('extracted',True), ('login_required',False), ('login_required',True)])
+            f, raw = self.scripted(td, {'https://vendor.test/robots.txt': (404,{},b''), 'https://vendor.test/doc': (302,{'Location':'https://vendor.test/account/sign-in?return=/doc'},b'')})
+            with raw as seen, self.assertRaisesRegex(ValueError,'login required'): f.fetch('https://vendor.test/doc', ['vendor.test'])
+            self.assertEqual(seen.call_count, 2)
+            for url, gated in [('https://v.test/passport/login?x=1', True), ('https://idp.v.test/a', True), ('https://v.test/login', True), ('https://v.test/signin/', True),
+                               ('https://v.test/docs/logging-in-guide.pdf', False), ('https://v.test/products/loginet-relay', False), ('https://v.test/manual.pdf', False)]:
+                with self.subTest(url=url): self.assertEqual(bool(s.LOGIN.search(url)), gated)
+
+    def test_robots_redirect_option_can_be_limited_to_named_domains(self):
+        replies = {'https://lit.vendor.test/robots.txt': (301,{'Location':'https://www.vendor.test/home'},b''), 'https://www.vendor.test/home': (200,{},b'<html></html>'),
+                   'https://lit.other.test/robots.txt': (301,{'Location':'https://www.other.test/home'},b''), 'https://www.other.test/home': (200,{},b'<html></html>')}
+        with tempfile.TemporaryDirectory() as td:
+            f, raw = self.scripted(td, replies, {'robots_follow_redirects': ['vendor.test']})
+            with raw:
+                f.robot('https://lit.vendor.test/a.pdf', ['vendor.test'])
+                with self.assertRaisesRegex(ValueError,'robots unresolved: HTTP 301'): f.robot('https://lit.other.test/a.pdf', ['other.test'])
+            self.assertEqual(f.robots['lit.vendor.test']['basis'], 'redirected:https://www.vendor.test/home')
+
+    def test_links_to_device_profiles_and_manuals_are_followed_before_brochures(self):
+        score = lambda url, text: s.link_score(url, text, None)
+        self.assertGreater(score('https://v.test/x1', 'DNP3 Device Profile'), score('https://v.test/x2', 'Instruction Manual'))
+        self.assertGreater(score('https://v.test/x2', 'Instruction Manual'), score('https://v.test/x3', 'Brochure'))
+        self.assertGreater(score('https://v.test/x3', 'Brochure'), score('https://v.test/x4', 'Careers'))
+        self.assertEqual(score('https://v.test/manual.pdf', 'M'), score('https://v.test/security', 'S'))
+        self.assertGreater(score('https://v.test/x5', 'IEC 61850 Communications User Manual'), score('https://v.test/x6', 'RTD Scanner User Manual'))
+
+    def test_worksheet_lays_out_leads_and_proposes_no_result(self):
+        with tempfile.TemporaryDirectory() as td:
+            p, calls = Path(td), []
+            pages = {'https://vendor.test/a': b'<title>A relay</title><p>TLS 1.2 is supported. TLS is not used for Modbus.</p>'}
+            cfg = self.config(p, [{'id':'a','lifecycle':'legacy','seeds':['https://vendor.test/a','https://vendor.test/gone']},{'id':'b','seeds':[]}])
+            with self.site(pages, calls): s.crawl(cfg, p/'run', p/'cache')
+            s.worksheet(p/'run', p/'sheet')
+            text = (p/'sheet'/'worksheet.md').read_text(encoding='utf-8')
+            for expected in ['## A', 'v; relay; lifecycle legacy; id `a`', '- S1 extracted, product page (suggested) <https://vendor.test/a>', '- -- failed: ValueError: HTTP 404 <https://vendor.test/gone>',
+                             '- **tls**: 1 leads: S1 html-block:2 [TLS 1.2, TLS]', '- **ssh**: no lead in S1', '- **non_support_statement**: 1 leads: S1 html-block:2 [TLS is not used]',
+                             '## B', '- no source', '- **tls**: no lead', 'not a finding']:
+                self.assertIn(expected, text)
+            rows = s.load(p/'sheet'/'review_template.json')
+            self.assertEqual(rows[1]['_hints'], {'leads': 1, 'where': ['S1 html-block:2'], 'no_lead_in': []})
+            self.assertEqual(rows[6]['_hints'], {'leads': 0, 'where': [], 'no_lead_in': ['S1']})
+            self.assertTrue(all(map(s.untouched, rows)))
+            s.report(p/'run', p/'sheet'/'review_template.json', p/'report')
+            self.assertIn('Review coverage: 0/14', (p/'report'/'REPORT.md').read_text(encoding='utf-8'))
+            with self.assertRaises(FileExistsError): s.worksheet(p/'run', p/'sheet')
+
+    def test_report_shows_the_sampling_frame_and_keeps_unreviewed_devices_out_of_the_table(self):
+        with tempfile.TemporaryDirectory() as td:
+            p = Path(td)
+            products = [{'id': f'r{i}', 'lifecycle': 'legacy' if i < 10 else 'active', 'seeds': []} for i in range(30)]
+            cfg = self.config(p, products, frame=[{'vendor':'v','category':'relay','lifecycle':'active','in_catalogue':80,'selected':20},
+                                                   {'vendor':'v','category':'relay','lifecycle':'legacy','in_catalogue':40,'selected':10},
+                                                   {'vendor':'v','category':'meter','lifecycle':'active','in_catalogue':9,'selected':0}])
+            with self.site({}, []): s.crawl(cfg, p/'run', p/'cache')
+            s.report(p/'run', p/'run'/'review_template.json', p/'report')
+            text = (p/'report'/'REPORT.md').read_text(encoding='utf-8')
+            for expected in ['## Summary by vendor, category and lifecycle', '| v | relay | active | 80 | 20 | 20 not reviewed | 20 not reviewed |',
+                             '| v | relay | legacy | 40 | 10 | 10 not reviewed | 10 not reviewed |', '| v | meter | active | 9 | 0 | - | - |',
+                             '30 products have no review row yet.']:
+                self.assertIn(expected, text)
+            self.assertNotIn('No control protocol established', text)
+            self.assertEqual(len((p/'report'/'findings_table.csv').read_text(encoding='utf-8').splitlines()), 31)
+            # The matrix and the unresolved list count the unreviewed devices too, without a line for each.
+            self.assertIn('30 products without a review row are left out', text)
+            self.assertIn('210 of 210 cells are unknown, conflicting or not reviewed on every interface.', text)
+            self.assertIn('This includes all 210 cells of the 30 products without a review row', text)
+            self.assertNotIn(' | - | - | - | - | - | - | - |', text)
+            self.assertNotIn(': dnp3_secure_authentication, tls, ipsec', text)
+
+    def test_report_says_what_kind_of_document_was_read_once_sources_are_too_many_to_list(self):
+        with tempfile.TemporaryDirectory() as td:
+            p = Path(td)
+            pages = {f'https://vendor.test/p{i}': f'<title>Relay {i}</title><p>Relay {i} has a web server.</p>'.encode() for i in range(61)}
+            cfg = self.config(p, [{'id': f'r{i}', 'seeds': [f'https://vendor.test/p{i}']} for i in range(61)])
+            with self.site(pages, []): s.crawl(cfg, p/'run', p/'cache')
+            s.report(p/'run', p/'run'/'review_template.json', p/'report')
+            text = (p/'report'/'REPORT.md').read_text(encoding='utf-8')
+            self.assertIn('## What was read', text)
+            self.assertRegex(text, r'\| v \| [a-z ()]+ \| 61 \| - \|')
+            self.assertIn('Of 61 extracted sources, the 0 cited by a review row are listed here. sources.json lists all of them.', text)
+            self.assertNotIn('| S1 |', text)
+            self.assertEqual(len(s.load(p/'report'/'sources.json')), 61)
+
+    def test_report_counts_unread_sources_by_vendor_once_there_are_too_many_to_list(self):
+        with tempfile.TemporaryDirectory() as td:
+            p = Path(td)
+            pages = {'https://vendor.test/gated': ValueError('login required: redirected to https://vendor.test/login?next=x')}
+            cfg = self.config(p, [{'id': f'r{i}', 'seeds': [f'https://vendor.test/missing{i}', 'https://vendor.test/gated']} for i in range(21)])
+            with self.site(pages, []): s.crawl(cfg, p/'run', p/'cache')
+            s.report(p/'run', p/'run'/'review_template.json', p/'report')
+            text = (p/'report'/'REPORT.md').read_text(encoding='utf-8')
+            self.assertIn('Sources attempted: 21; extracted: 0; failed: 21; documents behind a sign-in, not requested: 21.', text)
+            self.assertIn('| v | ValueError: HTTP 404 | 21 |', text)
+            self.assertIn('| v | behind a sign-in, not requested | 21 |', text)
+            self.assertNotIn('https://vendor.test/missing3 ', text)
 
     def test_resume_continues_an_interrupted_run_without_refetching(self):
         with tempfile.TemporaryDirectory() as td:

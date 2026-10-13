@@ -35,11 +35,15 @@ Download failures, robots exclusions, unsupported formats and empty extraction a
 | `timeout_seconds` | `25` | Per-request timeout. |
 | `max_bytes` | `25000000` | Larger responses are failures. Full instruction manuals can exceed this. |
 | `retries` | `0` | Extra attempts after a timeout, connection error or HTTP 429/502/503/504. Honours `Retry-After`. Every attempt is logged. |
-| `robots_follow_redirects` | `false` | Follow up to five robots.txt redirects, each inside the product allowlist, as RFC 9309 describes. |
+| `robots_follow_redirects` | `false` | Follow up to five robots.txt redirects, each inside the product allowlist, as RFC 9309 describes. `true` for every host, or a list of domains such as `["rockwellautomation.com"]` to allow it for those hosts only. |
 
-Per product: `id`, `domains` and `seeds` are required; `vendor`, `model` and `category` are needed by the report; `aliases` is an optional list of model strings; `lifecycle` is `active`, `legacy` or `discontinued` (see Legacy devices). Other product keys are kept untouched, so inventory fields such as lifecycle status or catalog source can live in the same file. The config is checked before the first request. Structural errors stop the run; everything else is printed and stored in the manifest as `config_warnings`.
+Per product: `id`, `domains` and `seeds` are required; `vendor`, `model` and `category` are needed by the report; `aliases` is an optional list of model strings; `lifecycle` is `active`, `legacy` or `discontinued` (see Legacy devices). A product may set its own `max_depth`, `max_pages_per_product` and `follow_pattern`, since vendors lay out their sites differently. Other product keys are kept untouched, so inventory fields such as lifecycle status or catalog source can live in the same file. The config is checked before the first request. Structural errors stop the run; everything else is printed and stored in the manifest as `config_warnings`.
 
-Enabling `robots_follow_redirects` is a methods decision, not a technical one. Example: `literature.rockwellautomation.com/robots.txt` redirects to the vendor's home page, so that host has no robots rules of its own and every Rockwell manual PDF on it is unreachable under the default. With the option on, the document is fetched and its record says `robots_basis: redirected:<final URL>`, so the paper can disclose it.
+Enabling `robots_follow_redirects` is a methods decision, not a technical one. Example: `literature.rockwellautomation.com/robots.txt` redirects to the vendor's home page, so that host has no robots rules of its own and every Rockwell manual PDF on it is unreachable under the default. With the option on, the document is fetched and its record says `robots_basis: redirected:<final URL>`, so the paper can disclose it. A host that answers its robots.txt request with an error such as 403 stays off limits whatever this option says.
+
+`crawl` takes two further options. `--only <pattern>` limits a run to the products whose `id` and vendor match, and the manifest records it. `--reuse <run>` takes any URL that an earlier run already fetched from the cache instead of requesting it again; the source record then says `reused_from`.
+
+A document that sits behind a sign-in is not fetched. A link that points at a login address, or a request that is redirected to one, gets a source record with status `login_required`. A vendor page often lists many manuals whose download buttons all lead to the same sign-in address; the record's `link_count` says how many links did. The report counts these links apart from failures: they are documents that exist and were not used.
 
 ## Review, then report
 
@@ -167,13 +171,81 @@ It is widely said that legacy devices have no security. The survey does not assu
 
 What this supports in the paper: "for N of M legacy devices, the complete product manual documents no authentication or encryption for DNP3". It does not support "these devices cannot be secured", since an external gateway or a later firmware may add protection, and it says nothing about how many such devices are deployed.
 
-## Sampling before scaling
+## From five products to the vendor catalogues
 
-The supplied five-product/family inventory is purposive and security-keyword informed. It exercises all five vendors and multiple document types. It includes controllers as well as protection devices and contains no smart-meter sample yet. It cannot estimate vendor-wide or industry-wide percentages.
+The pilot's five products were hand-picked with security keywords in mind, one per vendor. That exercises the tool. It cannot say anything about a vendor's range. The wide survey takes its devices from each vendor's own catalogue instead, by device category and not by security search hits, in the steps below. Every step writes files a person can read and correct before the next one runs.
 
-For the paper, first freeze an inventory from vendor product catalogs using device categories, not security search hits. Record the inventory date, inclusion/exclusion rule, model identifiers, active/discontinued status and firmware scope. Include smart meters and relays explicitly; keep PLCs, RTACs and gateways separate. Then search every included device with the same query templates. Count missing documents and unknown outcomes. Do not discard devices that support security because they weaken a desired argument.
+```bash
+DATA=~/ied_survey_data     # cache and runs; keep them out of a synced folder such as OneDrive
+python survey.py inventory --vendors configs/vendors.json --out inventory/2026-10-13 --cache $DATA/cache
+python survey.py sample    --inventory inventory/2026-10-13/inventory.json --census --out configs/census.json
+python survey.py crawl     --config configs/census.json --out $DATA/runs/census --cache $DATA/cache
+python survey.py enrich    --inventory inventory/2026-10-13/inventory.json --run $DATA/runs/census --vendors configs/vendors.json --out inventory/2026-10-13-pages
+python survey.py sample    --inventory inventory/2026-10-13-pages/inventory.json --per-stratum 4 --seed 20261013 --out configs/sample.json
+python survey.py crawl     --config configs/sample.json --out $DATA/runs/sample --cache $DATA/cache --reuse $DATA/runs/census
+python survey.py worksheet --run $DATA/runs/sample --out reports/sample_worksheet
+```
 
-A vendor's own sitemap is a catalog that needs no search engine. The `sitemap` command lists one, filters it and writes a dated, hashed JSON file. It never edits a config; a person decides what enters the inventory.
+### 1. Inventory
+
+`configs/vendors.json` says, per vendor, where the catalogue is and how to read it:
+
+| Key | Meaning |
+|---|---|
+| `sitemaps`, `sitemap_filter` | The vendor's sitemap files. The filter picks which parts of a sitemap index are worth a request. |
+| `scope` | Pattern for the sitemap URLs that are product pages of the kinds surveyed. |
+| `rules` | Ordered rules giving a category: `protective_relay`, `controller_rtu`, `plc` or `meter`. |
+| `exclude` | Ordered rules with a `reason`: accessories, software, test equipment, I/O modules, family index pages. An exclusion beats a category. |
+| `lifecycle` | Rules on the listing, for example a GE URL ending in `-legacy`. Without a match the entry is `active`. |
+| `lifecycle_text` | Wording on the product page that marks a device as legacy or discontinued. Applied by `enrich`. A rule may set `within`, the number of opening characters of the page it reads. |
+| `crawl` | `max_depth`, `max_pages_per_product` and `follow_pattern` for that vendor's pages in the sampled crawl. |
+| `adapter` | Used where the catalogue is not a sitemap. SEL product pages are empty without JavaScript, so its list is read from the JSON the site's own product selector loads. |
+
+Each rule reads one field, named by `on`: `url`, `slug` (the last path segment) or `text` (the model name and, where the listing has one, the vendor's one-line product type). The first matching rule wins.
+
+`inventory` fetches the listings through the same robots-checked, cached and logged fetcher as a crawl and writes `inventory.json`, `inventory.csv`, `catalogue.json` (the raw listing) and `requests.json`. Every catalogue entry in scope ends up in exactly one state, with the rule that put it there:
+
+- included, with a category and a lifecycle;
+- excluded, with the reason;
+- unclassified, when no rule matched. These are listed, never dropped. Their product pages are read in the census so that the page's own opening words can classify them.
+
+Read `inventory.csv` before going on. The rules are judgment calls about what counts as a device, and the file is where a reader checks them. After changing a rule, `inventory --from <previous inventory directory>` applies the new rules to the saved listing without asking the vendors again.
+
+### 2. Census, then what the product pages say
+
+`sample --census` writes a crawl config with one product page per catalogue entry and no link-following. `enrich` then reads those pages back into a new inventory directory: the page title becomes the model name, unclassified entries are classified from their page text or stay unclassified, and a `lifecycle_text` match sets the lifecycle with the matched sentence kept as `lifecycle_evidence`. Where a product page cannot be read without JavaScript, the census requests the product's listed public documents in its place.
+
+The wording a vendor uses is only known once its pages have been read, so `lifecycle_text` rules are written at this point. `enrich --vendors` applies the current rules file and stores it, with its hash, in the new inventory; without the option the rules saved in the inventory are used. Check every `lifecycle_evidence` sentence in `inventory.csv` after a change. Two things went wrong on the first pass over real pages and shaped the delivered rules: a family page that says one variant "has been discontinued" is not a discontinued family, which is what `within` is for, and words such as "migrate" appear on current products too.
+
+Lifecycle is what the vendor's catalogue and page say on the inventory date. `discontinued` means the page says the product is no longer made or sold. `legacy` means the vendor lists it as legacy, or says only part of the family is withdrawn, without such a notice. A device still listed without either is `active` here even if the design is twenty years old, so "legacy" in this survey means "marked as such by the vendor" and nothing wider. A vendor whose catalogue shows no lifecycle wording at all has every device recorded as `active`.
+
+### 3. Sample
+
+`sample --per-stratum N --seed S` draws up to N devices from every stratum of vendor, category and lifecycle. Strata with fewer entries are taken whole. The same inventory and seed give a byte-identical config, each stratum has its own generator so that adding a vendor does not move another vendor's draw, and the config records the seed, the inventory's SHA-256 and the `frame`: per stratum, how many entries the catalogue has and how many were selected. The report prints that frame, so every count has its denominator beside it.
+
+This is a sample of catalogue entries. It supports statements such as "of the 4 sampled GE legacy relays, public documents establish DNP3 Secure Authentication for none". It does not support statements about installed devices, and with a handful of devices per stratum it does not support percentages.
+
+### 4. Sampled crawl and worksheet
+
+The sampled config applies each vendor's `crawl` settings, so documents linked from the product page are followed. Links are tried in order of how directly the document type speaks about one product: DNP3 device profile first, then conformance statements, security guides and manuals, then data sheets and brochures. A communications or protocol manual is tried before other manuals. `--reuse` keeps the census pages from being requested twice.
+
+Each vendor's `crawl` settings were written after looking at what its product pages link to, and they are the place to look when a run fetches the wrong things. Two examples from the first run: a GE product page links to resource lists and only those lists link to files, so GE needs depth 2 and a budget that leaves room for files after the lists; and a pattern as loose as `catalog` also matches a web shop's catalogue tree.
+
+`worksheet` lays the result out for the reviewer: per product its sources with their suggested types, and per capability where the leads are, with the matched words, or which sources have none. It also writes a copy of the review template with those hints in a `_hints` field beside each cell. The worksheet proposes no result. A lead is a place to read, and "no lead" in a product page is not a statement about the device.
+
+### What a wide run can and cannot show
+
+Only public documents are read. Full instruction manuals of several vendors sit behind a sign-in, or on hosts whose robots.txt cannot be read, and those documents are counted and left alone. For many devices the public material is therefore a product page and a brochure, and most of their cells stay `unknown`. The share of devices for which the public documentation settles nothing is itself a result, reported per vendor, category and lifecycle. It must not be read as those devices lacking security, and `not_documented` still needs a complete manual (see Legacy devices).
+
+A report on a wide run stays readable before and during the review:
+
+- With more than 25 unreviewed products, the findings table, the capability matrix and the list of unresolved cells show only products that have a review row, and each says how many it left out. The summary by vendor, category and lifecycle and the counts by category cover every product.
+- With more than 60 extracted sources, "What was read" counts them by vendor and document type, and "Sources examined" lists only the sources a review row cites. `sources.json` in the report directory lists all of them.
+- With more than 40 sources that yielded no text, they are counted by vendor and outcome instead of listed.
+
+### One vendor's sitemap by hand
+
+The `sitemap` command lists a single sitemap, filters it and writes a dated, hashed JSON file. It is the manual counterpart of `inventory` for a vendor that has no entry in `configs/vendors.json` yet.
 
 ```bash
 python survey.py sitemap --url https://www.gevernova.com/electrification/sitemap.xml \
@@ -222,6 +294,6 @@ Before depositing data with a paper, review vendor licensing and repository poli
 
 ## Limits and next work
 
-This is version 1.4: serial bounded crawling, HTML/text-PDF extraction, RFC 9309 robots handling, content-addressed source retention, per-interface review validation with checked evidence quotes, and report generation. It has no headless browser, OCR, automatic search-engine integration, production scheduler, automatic model inventory or automatic semantic verdicts. Those are deliberate scope limits for a supporting paper study.
+This is version 1.5: a rule-based catalogue inventory, seeded stratified sampling, serial bounded crawling, HTML/text-PDF extraction, RFC 9309 robots handling, content-addressed source retention, per-interface review validation with checked evidence quotes, and report generation. It has no headless browser, OCR, automatic search-engine integration, production scheduler or automatic semantic verdicts, and it reads nothing behind a sign-in. Those are deliberate scope limits for a supporting paper study.
 
-The immediate next work is author verification of the pilot and a category-based inventory. A second reviewer should independently check a sample, resolve disagreements and retain the original judgments. Report counts and denominators only after that protocol is frozen. Keep mechanism engineering as the main project priority.
+The immediate next work is author review of the sampled devices, starting from the worksheet, and of the inventory rules in `configs/vendors.json`. A second reviewer should independently check a sample, resolve disagreements and retain the original judgments. Report counts and denominators only after that protocol is frozen. Keep mechanism engineering as the main project priority.

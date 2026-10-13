@@ -1,0 +1,140 @@
+{
+  "title": "IED security documentation survey: catalogue inventory",
+  "note": "Rules that turn each vendor's own catalogue listing into inventory entries. A rule reads one field: 'url', 'slug' (last path segment) or 'text' (model name and, where the vendor gives one, its one-line product type; during enrich, the product page's title and opening words). The first matching rule wins and an exclusion always beats a category. A lifecycle_text rule reads the product page and may carry 'within', the number of opening characters it looks at, so that a notice about one variant further down the page does not mark the whole product. Change a rule and re-apply it with: survey.py inventory --from <previous inventory>.",
+  "robots_follow_redirects": ["rockwellautomation.com"],
+  "vendors": {
+    "ge": {
+      "vendor": "GE Vernova / Multilin",
+      "domains": ["gevernova.com"],
+      "sitemaps": ["https://www.gevernova.com/electrification/sitemap.xml"],
+      "scope": "^https://www\\.gevernova\\.com/electrification/automation/protection-control-metering/[^/]+(/[^/]+)?$",
+      "exclude": [
+        {"on": "url", "match": "/protection-control-metering/(generator-protection|transformer-protection|line-protection|bus-protection|feeder-protection|motor-protection|metering|single-function|accessories|controllers|gateways-rtus|merging-units|fault-recorders-pmus|epm|gateways-and-rtus|single-function-protection-products|multilin-agile)$", "reason": "category index page, not a product"},
+        {"on": "url", "match": "/accessories/", "reason": "accessory"},
+        {"on": "slug", "match": "test-probes|tool-kit|test-set|blocking-and-test|indicating-lamps|light-emitting|software|fiber-optic-system|fiber-subsystem|modbus-monitor|quickpanel|hardfiber|io-modules?$|essential-transformer|gridbeats|typical-applications|enclosures|communicator|energy-aggregator", "reason": "accessory, software, test equipment or communications hardware"},
+        {"on": "slug", "match": "auxiliary|trip-relays|multicontact|hinged-armature|annunciator|lockout|static-timing|prima-plug|^(mcaa|mvaa|mvap-22|mvaw|mvax-.*|mmlz|mhor04|mvtt|mvaz-legacy|mvua-legacy|mvaj-.*)$|^(hea|hsa|haa|hfa|hma|nga|hga|esa|naa)-", "reason": "auxiliary or electromechanical relay without a communications interface"},
+        {"on": "url", "match": "/(merging-units|fault-recorders-pmus)/", "reason": "merging unit or recorder, outside the four categories"},
+        {"on": "slug", "match": "mu320|^legacy-mu-|^ddfr", "reason": "merging unit or recorder, outside the four categories"},
+        {"on": "text", "match": "electromechanical|auxiliary relay|test (plug|probe|block|set)", "reason": "auxiliary, electromechanical or test equipment"}
+      ],
+      "rules": [
+        {"on": "url", "match": "/(line|feeder|motor|bus|transformer|generator)-protection/[^/]+$|/single-function/[^/]+$", "category": "protective_relay"},
+        {"on": "url", "match": "/metering/[^/]+$", "category": "meter"},
+        {"on": "url", "match": "/(controllers|gateways-rtus)/[^/]+$", "category": "controller_rtu"},
+        {"on": "slug", "match": "^(epm|pqm|ppqm|mpm)(-|$)|bitronics|istat|power-quality-meter|sub-meter|metering-system", "category": "meter"},
+        {"on": "slug", "match": "substation-contr|field-rtu|d20|^d25|d400|dapserver|^dart-|ibox|h500|switch-controller|regulator-controller|capacitor-bank-controller|tap-changer-controller|c90plus|ds-agile", "category": "controller_rtu"},
+        {"on": "slug", "match": "relay|protection|differential|overcurrent|distance|reclos|micom|agile-p|^p[0-9]|multilin-[0-9a-z]|sr-family|ur-family|8-series|feeder|synchron|^mm[0-9]|^mi[bcdfgnvw]|^k-series|^kavr|^kavs|^kvtr|^kitz", "category": "protective_relay"},
+        {"on": "text", "match": "\\bmeter\\b|power quality", "category": "meter"},
+        {"on": "text", "match": "relay|protection (system|relay|&|and control)|protective", "category": "protective_relay"},
+        {"on": "text", "match": "controller|\\brtu\\b|gateway|substation automation", "category": "controller_rtu"}
+      ],
+      "lifecycle": [
+        {"on": "slug", "match": "discontinued", "value": "discontinued"},
+        {"on": "slug", "match": "legacy", "value": "legacy"}
+      ],
+      "lifecycle_text": [
+        {"match": "\\(discontinued\\)|[-\u2013(] ?legacy\\b[^.]{0,260}?\\b(has|have|as) (been )?discontinued|manufacturing for (this|the) product (has|as) been discontinued", "within": 500, "value": "discontinued"}
+      ],
+      "crawl": {"max_depth": 2, "max_pages_per_product": 9, "follow_pattern": "resources\\?prod=[^ ]*&type=(1L?|3|4|13)&|/sites/default/files/[^ ]*\\.pdf"}
+    },
+    "siemens": {
+      "vendor": "Siemens",
+      "domains": ["siemens.com"],
+      "sitemaps": ["https://www.siemens.com/en-us/sitemap-en-us.xml"],
+      "scope": "^https://www\\.siemens\\.com/en-us/products/((siprotec|sicam|reyrolle)/[^/]+|sentron/(sentron-)?measuring-devices|simatic/(s7-[^/]+|distributed-controllers|advanced-controller|[^/]*et-200[^/]*))/$",
+      "exclude": [
+        {"on": "slug", "match": "digsi|sigra|digitaltwin|license-manager|^tools$|iec-61850|process-bus|web-ui|configurator|engineering-software|device-manager|toolbox|siapp|^pas$|^pqs|pq-advisor|pq-analyzer|^hmi|ot-asset|power-control|reydisp|plcsim|connector|offerings|^web$|protocol-test|power-quality-production|dynamic-load|load-shedding|plant-control|siprotec-v|disturbance-data|arc-suppression", "reason": "software, tool or solution page, not a device"},
+        {"on": "slug", "match": "^6mu|^7ke|fault-indicator|fault-passage|fault-sensor|fault-collector|grid-sensor|condition-monitor|^fcm|voltage-detection|^6md84", "reason": "merging unit, recorder, sensor or I/O box, outside the four categories"},
+        {"on": "slug", "match": "^7pg|^7pj|^7xg", "reason": "auxiliary relay or test block without a communications interface"},
+        {"on": "slug", "match": "et-200", "reason": "distributed I/O, not a controller"}
+      ],
+      "rules": [
+        {"on": "url", "match": "/siprotec/6md8[56]", "category": "controller_rtu"},
+        {
+          "on": "url",
+          "match": "/siprotec/7[a-z]{2}[0-9]",
+          "category": "protective_relay"
+        },
+        {"on": "url", "match": "/reyrolle/7s[rg][0-9]", "category": "protective_relay"},
+        {"on": "url", "match": "/sicam/(a8000|s8000|multipurpose-automation-box)", "category": "controller_rtu"},
+        {"on": "url", "match": "/sicam/(p50|power-meter|p855|q100|q200|mmu|transducer)", "category": "meter"},
+        {"on": "url", "match": "/simatic/(s7-|distributed-controllers|advanced-controller)", "category": "plc"},
+        {"on": "url", "match": "/sentron/(sentron-)?measuring-devices", "category": "meter"}
+      ],
+      "lifecycle": [],
+      "lifecycle_text": [
+        {"match": "phased? out|phase-out|discontinued|no longer available|product cancellation", "value": "legacy"}
+      ],
+      "crawl": {"max_depth": 1, "max_pages_per_product": 4, "follow_pattern": "/assets/api/[^ ]*\\.pdf|\\bmanuals?\\b|siemens\\.com/catalog-"}
+    },
+    "rockwell": {
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "domains": ["rockwellautomation.com"],
+      "sitemaps": ["https://www.rockwellautomation.com/en-us/sitemapindex.xml"],
+      "sitemap_filter": "sitemap\\.(content|docs)",
+      "scope": "^https://www\\.rockwellautomation\\.com/en-us/products/hardware/(programmable-controllers/[^/]+|circuit-and-load-protection/8(57|65)-[^/]+|energy-monitoring/[^/]+)\\.html$",
+      "exclude": [
+        {"on": "slug", "match": "plug-in-modules|embedded-edge-compute|in-chassis-compute|logix-sis|standard-controllers", "reason": "module, compute platform or family overview, not a controller"},
+        {"on": "slug", "match": "accessory-kit|current-transformers|voltage-monitor", "reason": "accessory or sensor, not a meter"}
+      ],
+      "rules": [
+        {"on": "url", "match": "/programmable-controllers/[^/]+\\.html$", "category": "plc"},
+        {"on": "url", "match": "/circuit-and-load-protection/8(57|65)-", "category": "protective_relay"},
+        {"on": "url", "match": "/energy-monitoring/[0-9]+-powermonitor-[0-9]", "category": "meter"}
+      ],
+      "lifecycle": [],
+      "lifecycle_text": [
+        {"match": "\\bsome\\b[^.]{0,80}\\b(are|is) discontinued", "within": 600, "value": "legacy"},
+        {"match": "\\b(are|is|will be|has been|have been) discontinued and no longer available", "within": 600, "value": "discontinued"},
+        {"match": "active mature", "value": "legacy"}
+      ],
+      "crawl": {"max_depth": 1, "max_pages_per_product": 6, "follow_pattern": "literature\\.rockwellautomation\\.com/[^ ]*-(um|rm|at|td|sg|pp)[0-9]{3}|/docs/"}
+    },
+    "schneider": {
+      "vendor": "Schneider Electric",
+      "domains": ["se.com"],
+      "sitemaps": ["https://www.se.com/us/en/product-range/google-range-sitemapindex-US-en.xml"],
+      "scope": "^https://www\\.se\\.com/us/en/product-range/[0-9]+-[^/]*(micom|sepam|vamp|easergy|powerlogic|scadapack|saitel|sage-remote|foxboro-scada|modicon|twido|compact-plc|pm[0-9]{3,4}-series|iem3000)[^/]*/$",
+      "exclude": [
+        {"on": "slug", "match": "studio|esetup|software|twidosuite|accessor|enclosure|test-block|expert|engineering|startup|tesys|ion-eem", "reason": "software, accessory, enclosure or service, not a device"},
+        {"on": "slug", "match": "modicon-(tm[0-9]|x80|abe|abl|etb|edge|m168-programming|otb|stb|networking)|pacdrive", "reason": "I/O, power supply or motion system, not a controller"},
+        {"on": "slug", "match": "flair|flite|accusine|pfc-capacitor|current-sensors|powerlogic-dvr|easergy-l500|powerlogic-a1-and-a3", "reason": "fault indicator, power-quality correction equipment or sensor, outside the four categories"}
+      ],
+      "rules": [
+        {"on": "slug", "match": "micom-c[0-9]|scadapack-[0-9]|saitel|sage-remote|foxboro-scada-rtus|powerlogic-t[0-9]|-rtu$", "category": "controller_rtu"},
+        {"on": "slug", "match": "micom-[ep][0-9]|powerlogic-micom|powerlogic-p[0-9]|sepam-series|vamp-|easergy-p[0-9]", "category": "protective_relay"},
+        {"on": "slug", "match": "modicon-(m[0-9]|mc80|mcm|momentum|premium|quantum|lmc)|compact-plc|twido", "category": "plc"},
+        {"on": "slug", "match": "powerlogic-(ion|pm|em)[0-9]|pm[0-9]{3,4}-series|iem3000|powerlogic-hdpm|powerlogic-energy-meters|powerlogic-enercept", "category": "meter"}
+      ],
+      "lifecycle": [
+        {"on": "slug", "match": "legacy", "value": "legacy"}
+      ],
+      "lifecycle_text": [
+        {"match": "\\bDiscontinued (Ask the community )?Contact sales|\\bObsolete [A-Z][a-z]+ [0-9]{4}", "value": "discontinued"}
+      ],
+      "crawl": {"max_depth": 0, "max_pages_per_product": 3}
+    },
+    "sel": {
+      "vendor": "SEL",
+      "domains": ["selinc.com"],
+      "adapter": "sel_product_selector",
+      "catalogue_api": "https://selinc.com/api/cms/contenttype/productselector/",
+      "page_needs_javascript": true,
+      "census_documents": 3,
+      "document_seeds": 3,
+      "scope": "^https://selinc\\.com/products/[^/]+/$",
+      "exclude": [
+        {"on": "text", "match": "software|test system|tester|\\bHMI\\b|merging unit|conversion kit|\\bAPI\\b|driver for|trending|download organization|network management|application suite|synchrowave|meter reports|^SEL-3533", "reason": "software, test equipment, operator panel or merging unit"},
+        {"on": "text", "match": "ethernet switch|network switch|transfer switch|clock|transceiver|\\bcables?\\b|fault indicat|sensor|power suppl|adapter|converter|computing platform|I/O module|RTD module|distribution module|divider module|test module|power module|ground module|alarm panel|annunciator|radio|router|gateway|modem|antenna|firewall|surge|arc suppressor|assemblies|demodulator|cable guide|phasor|server|isolator|detector|locator|transmitter|current transformer|voltage indicator|fault counter|optical network|teleprotection|control switch|coil monitor|power monitor|serial shield|data logger|interconnection kit|^LINAM|^SFP", "reason": "communications, timing, sensing or accessory product, outside the four categories"}
+      ],
+      "rules": [
+        {"on": "text", "match": "revenue meter", "category": "meter"},
+        {"on": "text", "match": "automation controller|\\(RTAC\\)|automation platform|communications processor|logic processor|axion|capacitor bank control|voltage regulator control|monitoring and control system", "category": "controller_rtu"},
+        {"on": "text", "match": "\\brelay\\b|protection system|protection, automation|protection and automation|recloser control|line protection", "category": "protective_relay"}
+      ],
+      "lifecycle": [],
+      "lifecycle_text": [],
+      "crawl": {"max_depth": 0, "max_pages_per_product": 3}
+    }
+  }
+}
