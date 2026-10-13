@@ -1,3 +1,5 @@
+import gzip
+import io
 import json
 import tempfile
 import unittest
@@ -5,6 +7,38 @@ from pathlib import Path
 from unittest.mock import patch
 
 import survey as s
+
+ROOT = Path(__file__).resolve().parent.parent
+
+
+class Reply(io.BytesIO):
+    def __init__(self, body=b'', code=200, headers=None):
+        super().__init__(body)
+        self.code, self.headers = code, headers or {}
+
+
+def tiny_pdf(pages, bookmark=None):
+    """Smallest text PDF pypdf will read: one font, one content stream per page, optional bookmark (title, page index)."""
+    n = len(pages)
+    info, outlines = 4 + 2 * n, 5 + 2 * n
+    objs = [f'<< /Type /Catalog /Pages 2 0 R{f" /Outlines {outlines} 0 R" if bookmark else ""} >>'.encode(),
+            f'<< /Type /Pages /Kids [{" ".join(f"{4 + 2 * i} 0 R" for i in range(n))}] /Count {n} >>'.encode(),
+            b'<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>']
+    for i, text in enumerate(pages):
+        stream = f'BT /F1 12 Tf 72 720 Td ({text}) Tj ET'.encode() if text else b''
+        objs.append(f'<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents {5 + 2 * i} 0 R >>'.encode())
+        objs.append(b'<< /Length %d >>\nstream\n%s\nendstream' % (len(stream), stream))
+    objs.append(b'<< /Title (Test Relay Manual) /CreationDate (D:20260102030405Z) >>')
+    if bookmark:
+        objs.append(f'<< /Type /Outlines /First {outlines + 1} 0 R /Last {outlines + 1} 0 R /Count 1 >>'.encode())
+        objs.append(f'<< /Title ({bookmark[0]}) /Parent {outlines} 0 R /Dest [{4 + 2 * bookmark[1]} 0 R /Fit] >>'.encode())
+    out, offsets = b'%PDF-1.4\n', []
+    for i, o in enumerate(objs):
+        offsets.append(len(out))
+        out += b'%d 0 obj\n%s\nendobj\n' % (i + 1, o)
+    xref = len(out)
+    out += b'xref\n0 %d\n0000000000 65535 f \n' % (len(objs) + 1) + b''.join(b'%010d 00000 n \n' % x for x in offsets)
+    return out + b'trailer\n<< /Size %d /Root 1 0 R /Info %d 0 R >>\nstartxref\n%d\n%%%%EOF\n' % (len(objs) + 1, info, xref)
 
 
 class SurveyTests(unittest.TestCase):
@@ -148,6 +182,443 @@ class SurveyTests(unittest.TestCase):
             s.dump(p/'review.json',rows); s.report(run,p/'review.json',p/'report')
             self.assertIn('unknown',(p/'report'/'REPORT.md').read_text())
             with self.assertRaises(FileExistsError): s.crawl(p/'cfg.json',run,cache)
+
+    # --- 1.1.0 ---
+
+    def leads(self, text, location='html-block:1'):
+        hits = s.candidates({'id':'x','product_id':'p'}, [{'location':location,'text':text}])
+        self.assertTrue(all(h['status']=='unreviewed' for h in hits))
+        return [h['feature'] for h in hits]
+
+    def scripted(self, td, replies, config=None):
+        """Fetcher whose raw() answers from a {url: (status, headers, body)} table and logs like the real one."""
+        f = s.Fetcher(config or {}, td)
+        def raw(url):
+            f.audit.append({'url':url})
+            if isinstance(replies[url], Exception): raise replies[url]
+            return replies[url]
+        return f, patch.object(f, 'raw', side_effect=raw)
+
+    def site(self, pages, calls):
+        """Fetcher.fetch stand-in serving {url: html bytes}; an Exception value is raised instead."""
+        def fetch(fetcher, url, domains):
+            calls.append(url)
+            if isinstance(pages.get(url), BaseException): raise pages[url]
+            if url not in pages: raise ValueError('HTTP 404')
+            h = s.digest(pages[url]); (fetcher.cache/h).write_bytes(pages[url])
+            return {'sha256':h,'headers':{'Content-Type':'text/html'},'final_url':url,'retrieved_at':'2026-10-13T00:00:00+00:00'}, pages[url]
+        return patch.object(s.Fetcher, 'fetch', fetch)
+
+    def config(self, p, products, **options):
+        cfg = {'sampling':'synthetic', **options, 'products':[{'vendor':'v','model':x['id'].upper(),'category':'relay','domains':['vendor.test'], **x} for x in products]}
+        s.dump(p/'cfg.json', cfg)
+        return p/'cfg.json'
+
+    def test_lead_regression_table(self):
+        table = {
+            'Supports TLSv1.2 for DNP3': ['tls'],
+            'TLS1.3 sessions': ['tls'],
+            'con\ufb01gure mutual TLS': ['tls'],
+            'DNP3 SAv5 is supported': ['dnp3_secure_authentication'],
+            'Secure Authentication (SA) per IEEE 1815-2012': ['dnp3_secure_authentication','authentication'],
+            'conforms to IEC 62351\u20115': ['dnp3_secure_authentication','iec_62351'],
+            'secure authentication of web users via LDAP': ['authentication'],
+            'the relay authenticates the master': ['authentication'],
+            'authenti-\ncation of users': ['authentication'],
+            'supports 802.1X port control': ['authentication'],
+            'DNP3 traffic is unencrypted': ['encryption','plaintext_statement'],
+            'does not support encryption of DNP3': ['encryption','plaintext_statement'],
+            'data is sent in plain text': ['plaintext_statement'],
+            'messages are sent in clear text': ['plaintext_statement'],
+            'AES-256 cipher suites': ['encryption'],
+            'MACsec (IEEE 802.1AE) link encryption': ['encryption','macsec'],
+            'IKEv2 VPN tunnel': ['ipsec'],
+            'Helps meet NERC CIP security requirements': [],
+            'NERC CIP Security standards': [],
+            'Supports CIP Security\u2122 on EtherNet/IP': ['cip_security'],
+            'before you implement CIP\u2122 Security': ['cip_security'],
+            'firmware is digitally signed': [],
+        }
+        for text, expected in table.items():
+            with self.subTest(text=text): self.assertEqual(self.leads(text), expected)
+
+    def test_dnp3_sa_lead_may_be_qualified_by_heading_or_neighbouring_block(self):
+        bare = {'location':'html-block:2','text':'Secure Authentication is optional.'}
+        for segs in ([dict(bare, heading='DNP3 settings')], [{'location':'html-block:1','text':'DNP3 outstation'}, bare]):
+            hits = s.candidates({'id':'x','product_id':'p'}, segs)
+            self.assertIn(('html-block:2','dnp3_secure_authentication'), [(h['location'],h['feature']) for h in hits])
+        self.assertNotIn('dnp3_secure_authentication', self.leads(bare['text']))
+
+    def test_lead_groups_do_not_change_review_cells(self):
+        self.assertEqual(s.CAPABILITIES, ('dnp3_secure_authentication','tls','ipsec','cip_security','authentication','encryption','ssh'))
+        self.assertLess(set(s.CAPABILITIES), set(s.PATTERNS))
+
+    def test_candidate_carries_count_heading_and_model_mention(self):
+        segs = [{'location':'html-block:3','text':'The B90 supports TLS; TLS 1.2 is the default.','heading':'Security'},
+                {'location':'html-block:4','text':'The AB900 uses SSH.'}]
+        tls, ssh = s.candidates({'id':'x','product_id':'p'}, segs, ['B90'])
+        self.assertEqual((tls['match_count'], tls['heading'], tls['model_mentioned']), (2, 'Security', True))
+        self.assertFalse(ssh['model_mentioned'])
+        self.assertNotIn('model_mentioned', s.candidates({'id':'x','product_id':'p'}, segs)[0])
+
+    def test_html_tables_headings_and_anchor_text(self):
+        segs, links, facts = s.parse(b'<html><head><title>B90</title></head><body><h2>Chapter 5 <span>Security</span></h2>'
+            b'<table><tr><td>Protocol</td><td>TLS</td><td>1.2</td></tr></table><p>See <a href="a b.pdf">the <b>instruction</b> manual</a>.</p>'
+            b'<nav><a href="/cybersecurity">Security</a></nav><footer><a href="/psirt">PSIRT</a></footer>'
+            b'<svg><title>Expand SSH</title></svg><select><option>Albania</option></select><noscript><p>Static contents</p></noscript>tail</body></html>',
+            {'Content-Type':'text/html; charset=bogus-cs'})
+        self.assertEqual([x['text'] for x in segs], ['B90','Chapter 5 Security','Protocol | TLS | 1.2','See the instruction manual.','Static contents','tail'])
+        self.assertEqual(segs[2].get('heading'), 'Chapter 5 Security')
+        self.assertNotIn('heading', segs[1])
+        self.assertEqual(links, [('a b.pdf','the instruction manual')])
+        self.assertEqual(facts, {'kind':'html','title':'B90'})
+        self.assertEqual([h['feature'] for h in s.candidates({'id':'x','product_id':'p'}, segs)], ['tls'])
+
+    def test_pdf_pages_metadata_and_bookmarks(self):
+        body = tiny_pdf(['Device overview', '', 'DNP3 Secure Authentication SAv5 is optional'], bookmark=('DNP3 settings', 2))
+        segs, links, facts = s.parse(body, {'Content-Type':'application/pdf'})
+        self.assertEqual([x['location'] for x in segs], ['pdf-page:1','pdf-page:2','pdf-page:3'])
+        self.assertEqual((facts['kind'], facts['pages'], facts['empty_pages'], facts['encrypted'], facts['page_errors']), ('pdf', 3, 1, False, []))
+        self.assertEqual((facts['title'], facts['pdf_created']), ('Test Relay Manual', 'D:20260102030405Z'))
+        self.assertEqual(segs[2]['heading'], 'DNP3 settings')
+        self.assertNotIn('heading', segs[0])
+        hit = s.candidates({'id':'x','product_id':'p'}, segs)[0]
+        self.assertEqual((hit['feature'], hit['location'], hit['heading']), ('dnp3_secure_authentication','pdf-page:3','DNP3 settings'))
+        self.assertEqual(s.parse(b'\xef\xbb\xbf\n' + body, {})[2]['pages'], 3)
+
+    def test_unreadable_pdf_page_does_not_hide_the_others(self):
+        with patch('pypdf.PageObject.extract_text', side_effect=['TLS on page one', RuntimeError('bad font'), 'three']):
+            segs, _, facts = s.parse(tiny_pdf(['a','b','c']), {})
+        self.assertEqual([x['text'] for x in segs], ['TLS on page one','','three'])
+        self.assertEqual(facts['page_errors'], [{'location':'pdf-page:2','error':'RuntimeError: bad font'}])
+
+    def test_text_hash_ignores_markup_only_changes(self):
+        a = s.parse(b'<script>var nonce="1"</script><div class="x1"><p>TLS is  supported.</p></div>', {'Content-Type':'text/html'})[0]
+        b = s.parse(b'<script>var nonce="2"</script><div class="x2"><p>TLS is supported.</p></div><!-- t=9 -->', {'Content-Type':'text/html'})[0]
+        c = s.parse(b'<p>TLS is not supported.</p>', {'Content-Type':'text/html'})[0]
+        self.assertEqual(s.text_digest(a), s.text_digest(b))
+        self.assertNotEqual(s.text_digest(a), s.text_digest(c))
+
+    def test_canonical_encodes_and_normalises(self):
+        for raw, want in {'https://vendor.test/docs/My Manual.pdf':'https://vendor.test/docs/My%20Manual.pdf',
+                          ' https://vendor.test:443/a ':'https://vendor.test/a',
+                          'https://vendor.test/a?x=1&y=a b':'https://vendor.test/a?x=1&y=a%20b',
+                          'https://vendor.test/a%20b/$/c':'https://vendor.test/a%20b/$/c'}.items():
+            self.assertEqual(s.canonical(raw), want)
+
+    def test_pilot_seed_ids_are_unchanged(self):
+        seeds = {(p['id'], u) for p in s.load(ROOT/'configs'/'pilot.json')['products'] for u in p['seeds']}
+        recorded = {(x['product_id'], x['url']): x['id'] for x in s.load(ROOT/'pilot'/'sources.json')}
+        self.assertEqual(seeds, set(recorded))
+        for (pid, url), sid in recorded.items():
+            self.assertEqual(s.digest((pid + s.canonical(url)).encode())[:20], sid)
+
+    def test_utf8_lf_and_atomic_dump(self):
+        with tempfile.TemporaryDirectory() as td:
+            p = Path(td); text = 'R \u2265 10 \u03a9 \u2192 con\ufb01dentiality'
+            s.dump(p/'x.json', [{'text':text}])
+            self.assertEqual(s.load(p/'x.json'), [{'text':text}])
+            self.assertIn(text.encode('utf-8'), (p/'x.json').read_bytes())
+            self.assertNotIn(b'\r', (p/'x.json').read_bytes())
+            self.assertEqual([x.name for x in p.iterdir()], ['x.json'])
+
+    def test_robots_wildcards_and_longest_match(self):
+        rules = (b'User-agent: *\nDisallow: /*.pdf$\nDisallow: /*/_theme/\nDisallow: /*jcr:content*\nDisallow: */ecommerce\n'
+                 b'Disallow: /software/sites/default/files/*.pdf\nDisallow: /private/\nAllow: /private/public/\nCrawl-delay: 7\n')
+        with tempfile.TemporaryDirectory() as td:
+            f, raw = self.scripted(td, {'https://vendor.test/robots.txt':(200,{},rules)})
+            with raw as calls:
+                for path in ['/docs/a.pdf','/en/_theme/x.css','/a/jcr:content/b','/en-us/ecommerce','/software/sites/default/files/x/y.pdf','/private/a']:
+                    with self.subTest(path=path), self.assertRaisesRegex(ValueError,'robots disallow'): f.robot('https://vendor.test'+path)
+                for path in ['/docs/a.html','/docs/a.pdf?download=1','/private/public/a']:
+                    with self.subTest(path=path): f.robot('https://vendor.test'+path)
+                self.assertEqual(calls.call_count, 1)
+            self.assertEqual((f.robots['vendor.test']['gap'], f.robots['vendor.test']['basis']), (7, '200'))
+
+    def test_robots_group_named_for_this_crawler_wins(self):
+        with tempfile.TemporaryDirectory() as td:
+            f, raw = self.scripted(td, {'https://vendor.test/robots.txt':(200,{},b'User-agent: *\nDisallow:\n\nUser-agent: IEDSecuritySurvey\nDisallow: /\n')})
+            with raw, self.assertRaisesRegex(ValueError,'robots disallow'): f.robot('https://vendor.test/a')
+
+    def test_unresolved_robots_is_asked_once_per_host(self):
+        for reply in [(503,{},b'unavailable'), TimeoutError('timed out')]:
+            with tempfile.TemporaryDirectory() as td:
+                f, raw = self.scripted(td, {'https://lit.vendor.test/robots.txt':reply})
+                with raw as calls:
+                    for path in '/a.pdf', '/b.pdf', '/c.pdf':
+                        with self.assertRaisesRegex(ValueError,'robots unresolved'): f.robot('https://lit.vendor.test'+path)
+                    self.assertEqual(calls.call_count, 1)
+
+    def test_robots_redirect_is_opt_in_and_stays_inside_the_allowlist(self):
+        replies = {'https://lit.vendor.test/robots.txt':(301,{'Location':'https://www.vendor.test/library'},b''),
+                   'https://www.vendor.test/library':(302,{'Location':'/en-us.html'},b''),
+                   'https://www.vendor.test/en-us.html':(200,{'Content-Type':'text/html'},b'<html><body>Literature</body></html>'),
+                   'https://lit.vendor.test/a.pdf':(200,{'Content-Type':'text/html','Set-Cookie':'sid=1','ETag':'"e"'},b'<p>x</p>'),
+                   'https://out.vendor.test/robots.txt':(301,{'Location':'https://evil.test/robots.txt'},b'')}
+        with tempfile.TemporaryDirectory() as td:
+            f, raw = self.scripted(td, replies)
+            with raw as calls, self.assertRaisesRegex(ValueError,'robots unresolved: HTTP 301'): f.robot('https://lit.vendor.test/a.pdf',['vendor.test'])
+            self.assertEqual(calls.call_count, 1)
+            f, raw = self.scripted(td, replies, {'robots_follow_redirects':True})
+            with raw as calls:
+                meta, _ = f.fetch('https://lit.vendor.test/a.pdf',['vendor.test'])
+                self.assertEqual(meta['robots_basis'], 'redirected:https://www.vendor.test/en-us.html')
+                self.assertEqual(meta['headers'], {'Content-Type':'text/html','ETag':'"e"'})
+                self.assertEqual([x['url'] for x in f.audit], list(replies)[:4])
+                self.assertIn('sha256', f.audit[2])
+                with self.assertRaisesRegex(ValueError,'outside vendor allowlist'): f.robot('https://out.vendor.test/a',['vendor.test'])
+                with self.assertRaisesRegex(ValueError,'outside vendor allowlist'): f.robot('https://out.vendor.test/b',['vendor.test'])
+                self.assertEqual(calls.call_count, 5)
+            f, raw = self.scripted(td, replies, {'robots_follow_redirects':True})
+            with raw, self.assertRaisesRegex(ValueError,'outside vendor allowlist'): f.robot('https://lit.vendor.test/a.pdf')
+
+    def test_failed_attempts_stay_in_the_request_log(self):
+        with tempfile.TemporaryDirectory() as td:
+            f = s.Fetcher({'delay_seconds':0,'max_bytes':4}, td)
+            with patch.object(f.opener,'open',side_effect=TimeoutError('timed out')), self.assertRaises(TimeoutError): f.raw('https://vendor.test/a')
+            with patch.object(f.opener,'open',return_value=Reply(b'too large')), self.assertRaises(ValueError): f.raw('https://vendor.test/b')
+            self.assertEqual([x['url'] for x in f.audit], ['https://vendor.test/a','https://vendor.test/b'])
+            self.assertIn('TimeoutError', f.audit[0]['error'])
+            self.assertIn('byte limit', f.audit[1]['error'])
+            self.assertEqual(f.audit[1]['status'], 200)
+
+    def test_truncated_body_is_rejected(self):
+        with tempfile.TemporaryDirectory() as td:
+            f = s.Fetcher({'delay_seconds':0}, td)
+            with patch.object(f.opener,'open',return_value=Reply(b'short',headers={'Content-Length':'100'})):
+                with self.assertRaisesRegex(ValueError,'shorter than its Content-Length'): f.raw('https://vendor.test/a')
+            with patch.object(f.opener,'open',return_value=Reply(b'whole',headers={'content-length':'5'})):
+                self.assertEqual(f.raw('https://vendor.test/a')[2], b'whole')
+
+    def test_retries_are_opt_in_bounded_and_logged(self):
+        script = lambda: [TimeoutError('timed out'), Reply(b'busy',503,{'Retry-After':'7'}), Reply(b'ok')]
+        with tempfile.TemporaryDirectory() as td, patch.object(s.time,'sleep') as sleep:
+            f = s.Fetcher({'delay_seconds':0}, td)
+            with patch.object(f.opener,'open',side_effect=script()), self.assertRaises(TimeoutError): f.raw('https://vendor.test/a')
+            self.assertEqual(len(f.audit), 1)
+            f = s.Fetcher({'delay_seconds':0,'retries':2}, td)
+            with patch.object(f.opener,'open',side_effect=script()): self.assertEqual(f.raw('https://vendor.test/a')[::2], (200, b'ok'))
+            self.assertEqual([(x.get('status'), x.get('retried', False)) for x in f.audit], [(None,True),(503,True),(200,False)])
+            self.assertIn(7, [c.args[0] for c in sleep.call_args_list])
+            f = s.Fetcher({'delay_seconds':0,'retries':1}, td)
+            with patch.object(f.opener,'open',side_effect=script()): self.assertEqual(f.raw('https://vendor.test/a')[0], 503)
+            with patch.object(f.opener,'open',return_value=Reply(b'gone',404)): self.assertEqual(f.raw('https://vendor.test/a')[0], 404)
+            self.assertEqual(len(f.audit), 3)
+
+    def test_seeds_are_never_dropped_and_unfollowed_links_are_recorded(self):
+        with tempfile.TemporaryDirectory() as td:
+            p, calls = Path(td), []
+            seeds = [f'https://vendor.test/{i}' for i in range(3)]
+            pages = {u: f'<p>TLS {u}</p><a href="/manual.pdf">Manual</a><a href="/about">About</a>'.encode() for u in seeds}
+            cfg = self.config(p, [{'id':'p','seeds':seeds}], max_depth=1, max_pages_per_product=2)
+            with self.site(pages, calls): s.crawl(cfg, p/'run', p/'cache')
+            self.assertEqual(calls, seeds)
+            recs = s.load(p/'run'/'sources.json')
+            self.assertEqual([x['status'] for x in recs], ['extracted']*3+['skipped'])
+            self.assertEqual((recs[3]['url'], recs[3]['via'], recs[3]['depth']), ('https://vendor.test/manual.pdf', recs[0]['id'], 1))
+            self.assertEqual((recs[0]['links_found'], recs[0]['links_matched'], recs[0]['links_skipped']), (2, 1, 1))
+            self.assertEqual(s.load(p/'run'/'manifest.json')['source_status'], {'extracted':3,'skipped':1})
+            template = s.load(p/'run'/'review_template.json')
+            self.assertEqual([x['feature'] for x in template], list(s.CAPABILITIES))
+            s.verify(p/'run', p/'cache')
+
+    def test_followed_links_are_ranked_and_matched_on_anchor_text(self):
+        with tempfile.TemporaryDirectory() as td:
+            p, calls = Path(td), []
+            seed = 'https://vendor.test/b90'
+            pages = {seed: b'<p>B90</p><a href="/api/download/1/">Brochure</a><a href="/x.pdf">Datasheet</a>'
+                           b'<a href="/api/download/2/">B90 Instruction Manual</a><a href="https://evil.test/manual.pdf">Manual</a><a href="#top">manual top</a>',
+                     'https://vendor.test/api/download/2/': b'<p>SSH</p>', 'https://vendor.test/x.pdf': b'<p>TLS</p>'}
+            cfg = self.config(p, [{'id':'p','seeds':[seed],'aliases':['B90']}], max_depth=1, max_pages_per_product=3)
+            with self.site(pages, calls): s.crawl(cfg, p/'run', p/'cache')
+            self.assertEqual(calls, [seed,'https://vendor.test/api/download/2/','https://vendor.test/x.pdf'])
+            recs = s.load(p/'run'/'sources.json')
+            self.assertEqual((recs[0]['links_found'], recs[0]['links_matched'], recs[0]['model_mentions']), (5, 2, 1))
+            self.assertEqual(recs[1]['model_mentions'], 0)
+            s.replay(p/'run', p/'cache', p/'replay')
+
+    def test_identical_bytes_within_a_product_are_marked_duplicate(self):
+        with tempfile.TemporaryDirectory() as td:
+            p, calls = Path(td), []
+            pages = {'https://vendor.test/a': b'<p>TLS</p>', 'https://vendor.test/b': b'<p>TLS</p>'}
+            cfg = self.config(p, [{'id':'p','seeds':list(pages)},{'id':'q','seeds':['https://vendor.test/a']}])
+            with self.site(pages, calls): s.crawl(cfg, p/'run', p/'cache')
+            recs = s.load(p/'run'/'sources.json')
+            self.assertEqual([x['status'] for x in recs], ['extracted','duplicate','extracted'])
+            self.assertEqual(recs[1]['duplicate_of'], recs[0]['id'])
+            self.assertEqual([h['product_id'] for h in s.load(p/'run'/'candidates.json')], ['p','q'])
+
+    def test_config_is_validated_before_anything_is_written(self):
+        base = {'sampling':'x','products':[{'id':'p','vendor':'v','model':'m','category':'c','domains':['vendor.test'],'seeds':['https://vendor.test/a']}]}
+        self.assertEqual(s.validate_config(base), [])
+        self.assertEqual(s.validate_config(s.load(ROOT/'configs'/'pilot.json')), [])
+        for broken in [{**base,'sampling':''}, {**base,'products':[]}, {**base,'products':base['products']*2}, {**base,'follow_pattern':'('},
+                       {**base,'products':[{**base['products'][0],'seeds':'https://vendor.test/a'}]}, {**base,'products':[{'id':'p','seeds':[]}]}]:
+            with self.subTest(broken=broken), self.assertRaises(ValueError): s.validate_config(broken)
+        loose = {**base,'max_depht':1,'products':[{'id':'p','domains':['vendor.test'],'seeds':['http://vendor.test/a','https://other.test/b']},
+                                                  {'id':'q','vendor':'v','model':'m','category':'c','domains':[],'seeds':[]}]}
+        warnings = s.validate_config(loose)
+        for expected in ['unknown config key: max_depht','p: missing vendor','http://vendor.test/a','https://other.test/b','q: no seeds']:
+            self.assertTrue(any(expected in w for w in warnings), expected)
+        with tempfile.TemporaryDirectory() as td:
+            p = Path(td); s.dump(p/'cfg.json', {**base,'sampling':''})
+            with self.assertRaises(ValueError): s.crawl(p/'cfg.json', p/'run', p/'cache')
+            self.assertFalse((p/'run').exists())
+
+    def test_evidence_quote_must_be_in_the_cited_segment(self):
+        segments = lambda sid: [{'location':'pdf-page:2','text':'Note:  TLS is supported\nfor DNP3 sessions on port 20000.'},
+                                {'location':'pdf-page:3','text':'Unrelated page about HTTPS administration.'}]
+        def check(evidence, **kw):
+            source,row=self.fixture(); row['evidence']=evidence
+            s.validate_reviews([row],[source],{'p'},segments,**kw)
+        good = {'source_id':'s','location':'pdf-page:2','quote':'TLS is supported for DNP3 sessions'}
+        check([good], require_evidence=True)
+        check([])
+        for bad in [dict(good,location='pdf-page:3'), dict(good,location='page 2'), dict(good,quote='TLS is always supported for DNP3 sessions'),
+                    dict(good,quote='TLS is supported'), dict(good,source_id='other')]:
+            with self.subTest(bad=bad), self.assertRaises(ValueError): check([bad])
+        with self.assertRaisesRegex(ValueError,'verbatim evidence quote'): check([], require_evidence=True)
+        source,row=self.fixture(); row.update(status='unknown', source_ids=[], source_hashes={})
+        s.validate_reviews([row],[source],{'p'},segments,require_evidence=True)
+
+    def test_report_builds_matrix_denominators_and_evidence_index(self):
+        with tempfile.TemporaryDirectory() as td:
+            p, calls = Path(td), []
+            pages = {'https://vendor.test/r': b'<h2>DNP3</h2><p>TLS is supported for DNP3 sessions when the option is licensed.</p>'}
+            cfg = self.config(p, [{'id':'r1','seeds':['https://vendor.test/r','https://vendor.test/gone']},{'id':'m1','category':'meter','seeds':[]}], title='Synthetic survey')
+            with self.site(pages, calls): s.crawl(cfg, p/'run', p/'cache')
+            source = s.load(p/'run'/'sources.json')[0]
+            rows = s.load(p/'run'/'review_template.json')
+            for row in rows: row.update(reviewer='A. Reviewer', reviewed_at='2026-10-13', rationale='not assessed')
+            rows[1].update(status='conditional', source_ids=[source['id']], source_hashes={source['id']:source['sha256']}, location='html-block:2',
+                           protocol='DNP3 over TLS', interface='SCADA', firmware='unknown', implementation='licensed option', rationale='Explicit | licensed',
+                           evidence=[{'source_id':source['id'],'location':'html-block:2','quote':'TLS is supported for DNP3 sessions'}])
+            s.dump(p/'reviews.json', rows[:-1])
+            s.report(p/'run', p/'reviews.json', p/'report', require_evidence=True)
+            text = (p/'report'/'REPORT.md').read_text(encoding='utf-8')
+            for expected in ['# Synthetic survey', 'Sources attempted: 2; extracted: 1; failed: 1.', 'A. Reviewer (13 cells)',
+                             '| R1 | relay | ? | C | ? | ? | ? | ? | ? |', '| M1 | meter | ? | ? | ? | ? | ? | ? | - |',
+                             '| relay | tls | 0 | 1 | 0 | 0 | 0 | 0 | 1 |', '| meter | ssh | 0 | 0 | 0 | 0 | 0 | 1 | 1 |',
+                             '13 of 14 cells are unknown, conflicting or not reviewed.', '| R1 | https://vendor.test/gone | ValueError: HTTP 404 |',
+                             'Review coverage: 13/14', 'Evidence quotes: 1 of 1 cells', 'Explicit / licensed',
+                             '## Findings and evidence', '### R1: tls (conditional)', '- Protocol: DNP3 over TLS', '- Implementation: licensed option',
+                             '- Evidence, html-block:2: "TLS is supported for DNP3 sessions"', '- Source: https://vendor.test/r',
+                             '| R1 | untitled | 2026-10-13 | https://vendor.test/r |']:
+                self.assertIn(expected, text)
+            self.assertNotIn('%', text.replace('No population percentages', ''))
+            index = s.load(p/'report'/'evidence_index.json')
+            self.assertEqual([(x['product_id'],x['feature'],x['location'],x['sha256']) for x in index], [('r1','tls','html-block:2',source['sha256'])])
+            self.assertEqual(s.load(p/'report'/'candidate_counts.json'), {'r1':{'total':1,'by_group':{'tls':1}},'m1':{'total':0,'by_group':{}}})
+            rows[1]['evidence'][0]['quote'] = 'TLS is supported for all DNP3 sessions'
+            s.dump(p/'reviews.json', rows)
+            with self.assertRaisesRegex(ValueError,'evidence quote not found'): s.report(p/'run', p/'reviews.json', p/'report2')
+
+    def test_untouched_template_rows_count_as_not_reviewed_but_partial_rows_fail(self):
+        with tempfile.TemporaryDirectory() as td:
+            p, calls = Path(td), []
+            cfg = self.config(p, [{'id':'r1','seeds':['https://vendor.test/r']}])
+            with self.site({'https://vendor.test/r': b'<p>TLS</p>'}, calls): s.crawl(cfg, p/'run', p/'cache')
+            template = p/'run'/'review_template.json'
+            s.report(p/'run', template, p/'report', require_evidence=True)
+            text = (p/'report'/'REPORT.md').read_text(encoding='utf-8')
+            for expected in ['Reviewers on record: none.', '| R1 | relay | - | - | - | - | - | - | - |', 'Review coverage: 0/7', '7 of 7 cells are unknown, conflicting or not reviewed.']:
+                self.assertIn(expected, text)
+            self.assertEqual(s.load(p/'report'/'findings.json'), [])
+            rows = s.load(template)
+            rows[0].update(reviewer='A. Reviewer', reviewed_at='2026-10-13', rationale='Examined; not established.')
+            rows[1]['rationale'] = 'started but unsigned'
+            s.dump(p/'reviews.json', rows)
+            with self.assertRaisesRegex(ValueError, r"identity/date/rationale required.*'r1', 'tls'"): s.report(p/'run', p/'reviews.json', p/'report')
+            rows[1]['rationale'] = ''
+            s.dump(p/'reviews.json', rows)
+            s.report(p/'run', p/'reviews.json', p/'report')
+            self.assertIn('| R1 | relay | ? | - | - | - | - | - | - |', (p/'report'/'REPORT.md').read_text(encoding='utf-8'))
+
+    def test_command_line_refusals_are_one_line_errors(self):
+        with tempfile.TemporaryDirectory() as td:
+            p = Path(td); s.dump(p/'bad.json', {'sampling':'','products':[]}); (p/'taken').mkdir()
+            good = self.config(p, [{'id':'p','seeds':[]}])
+            for argv, expected in [(['crawl','--config',str(p/'bad.json'),'--out',str(p/'run')], 'error: config needs a sampling statement'),
+                                   (['crawl','--config',str(good),'--out',str(p/'taken'),'--cache',str(p/'cache')], 'error: already exists, refusing to overwrite'),
+                                   (['verify','--run',str(p/'missing')], 'error: not found')]:
+                with self.subTest(argv=argv[0]), patch.object(s.sys, 'argv', ['survey.py']+argv), self.assertRaises(SystemExit) as stop: s.main()
+                self.assertIn(expected, str(stop.exception.code))
+
+    def test_resume_continues_an_interrupted_run_without_refetching(self):
+        with tempfile.TemporaryDirectory() as td:
+            p, calls = Path(td), []
+            pages = {'https://vendor.test/a': b'<p>TLS</p><a href="/manual.pdf">Manual</a>', 'https://vendor.test/manual.pdf': KeyboardInterrupt(),
+                     'https://vendor.test/b': b'<p>SSH</p>'}
+            cfg = self.config(p, [{'id':'p','seeds':['https://vendor.test/a']},{'id':'q','seeds':['https://vendor.test/b']}], max_depth=1)
+            with self.site(pages, calls), self.assertRaises(KeyboardInterrupt): s.crawl(cfg, p/'run', p/'cache')
+            self.assertFalse((p/'run'/'manifest.json').exists())
+            self.assertEqual(len(s.load(p/'run'/'sources.json')), 1)
+            pages['https://vendor.test/manual.pdf'] = b'<p>IPsec</p>'
+            del calls[:]
+            with self.site(pages, calls): s.crawl(cfg, p/'run', p/'cache', resume=True)
+            self.assertEqual(calls, ['https://vendor.test/manual.pdf','https://vendor.test/b'])
+            self.assertEqual([x['url'][-1] for x in s.load(p/'run'/'sources.json')], ['a','f','b'])
+            self.assertEqual([h['feature'] for h in s.load(p/'run'/'candidates.json')], ['tls','ipsec','ssh'])
+            self.assertTrue(s.load(p/'run'/'manifest.json')['complete'])
+            s.replay(p/'run', p/'cache', p/'replay')
+            with self.assertRaisesRegex(ValueError,'already complete'): s.crawl(cfg, p/'run', p/'cache', resume=True)
+            (p/'run'/'manifest.json').unlink()
+            other = self.config(p, [{'id':'p','seeds':['https://vendor.test/a']}])
+            with self.assertRaisesRegex(ValueError,'config the run was started with'): s.crawl(other, p/'run', p/'cache', resume=True)
+
+    def test_replay_refuses_a_run_from_another_tool_version(self):
+        with tempfile.TemporaryDirectory() as td:
+            p, calls = Path(td), []
+            cfg = self.config(p, [{'id':'p','seeds':['https://vendor.test/a']}])
+            with self.site({'https://vendor.test/a': b'<p>TLS</p>'}, calls): s.crawl(cfg, p/'run', p/'cache')
+            manifest = s.load(p/'run'/'manifest.json'); manifest['tool_version'] = '1.0.0'; s.dump(p/'run'/'manifest.json', manifest)
+            with self.assertRaisesRegex(ValueError,'tool version 1.0.0'): s.replay(p/'run', p/'cache', p/'replay')
+            self.assertFalse((p/'replay').exists())
+
+    def test_recheck_locates_old_excerpts_in_a_fresh_run(self):
+        with tempfile.TemporaryDirectory() as td:
+            p, calls = Path(td), []
+            pages = {'https://vendor.test/a': b'<p>intro</p><p>TLS is not  supported for DNP3.</p>', 'https://vendor.test/b': b'<p>SSH</p>'}
+            cfg = self.config(p, [{'id':'p','seeds':list(pages)+['https://vendor.test/gone']}])
+            with self.site(pages, calls): s.crawl(cfg, p/'run', p/'cache')
+            (p/'old').mkdir()
+            s.dump(p/'old'/'sources.json', [
+                {'id':'o1','product_id':'p','url':'https://vendor.test/a','status':'extracted','sha256':'0'*64},
+                {'id':'o2','product_id':'p','url':'https://vendor.test/b','status':'extracted','sha256':s.digest(pages['https://vendor.test/b'])},
+                {'id':'o3','product_id':'p','url':'https://vendor.test/gone','status':'failed','error':'ValueError: HTTP 404'},
+                {'id':'o4','product_id':'p','url':'https://vendor.test/dropped','status':'extracted','sha256':'1'*64}])
+            s.dump(p/'old'/'evidence_index.json', [
+                {'source_id':'o1','location':'html-block:9','excerpt':'TLS is not supported for DNP3.'},
+                {'source_id':'o2','location':'html-block:1','excerpt':'This sentence is no longer there.'}])
+            a, b, gone, dropped = s.recheck(p/'old', p/'run', p/'recheck.json')
+            self.assertEqual((a['raw_bytes'], a['extracted_text']), ('different','no text hash in old run'))
+            self.assertEqual((a['excerpts'][0]['found_at'], a['excerpts'][0]['same_location']), (['html-block:2'], False))
+            self.assertEqual((b['raw_bytes'], b['excerpts'][0]['found_at']), ('same', []))
+            self.assertEqual((gone['old_status'], gone['new_status'], dropped['new_status']), ('failed','failed','not in new run'))
+            self.assertEqual(len(s.load(p/'recheck.json')['sources']), 4)
+            with self.assertRaises(FileExistsError): s.recheck(p/'old', p/'run', p/'recheck.json')
+            self.assertEqual(s.recheck(p/'run', p/'run')[0]['extracted_text'], 'same')
+
+    def test_sitemap_lists_and_filters_without_touching_any_config(self):
+        index = 'https://vendor.test/sitemap_index.xml'
+        pages = {index: b'<sitemapindex><sitemap><loc>https://vendor.test/s1.xml</loc></sitemap><sitemap><loc> https://vendor.test/s2.xml.gz </loc></sitemap><sitemap><loc>https://vendor.test/s3.xml</loc></sitemap></sitemapindex>',
+                 'https://vendor.test/s1.xml': b'<urlset><url><loc>https://vendor.test/relays/r1</loc></url><url><loc>https://vendor.test/news/a&amp;b</loc></url></urlset>',
+                 'https://vendor.test/s2.xml.gz': gzip.compress(b'<urlset><url><loc><![CDATA[https://vendor.test/relays/r2]]></loc></url></urlset>')}
+        with tempfile.TemporaryDirectory() as td:
+            p, calls = Path(td), []
+            with self.site(pages, calls):
+                s.sitemap([index], None, [], 'relays', p/'inventory'/'vendor.json', p/'cache')
+                result = s.load(p/'inventory'/'vendor.json')
+                self.assertEqual(result['urls'], ['https://vendor.test/relays/r1','https://vendor.test/relays/r2'])
+                self.assertEqual((result['total_urls'], result['matched_urls'], result['domains'], result['not_fetched']), (3, 2, ['vendor.test'], []))
+                self.assertEqual([(x.get('kind'), x.get('entries')) for x in result['files']], [('index',3),('urlset',2),('urlset',1),(None,None)])
+                self.assertIn('HTTP 404', result['files'][3]['error'])
+                with self.assertRaises(FileExistsError): s.sitemap([index], None, [], '.', p/'inventory'/'vendor.json', p/'cache')
+                s.sitemap([index], None, [], '.', p/'limited.json', p/'cache', limit=2)
+                self.assertEqual(s.load(p/'limited.json')['not_fetched'], ['https://vendor.test/s2.xml.gz','https://vendor.test/s3.xml'])
+            f, raw = self.scripted(td, {'https://vendor.test/robots.txt':(200,{},b'Sitemap: https://vendor.test/sitemap_index.xml\n')})
+            with raw: f.robot('https://vendor.test/')
+            self.assertEqual(f.robots['vendor.test']['sitemaps'], [index])
 
 
 if __name__=='__main__': unittest.main()
