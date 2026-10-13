@@ -37,7 +37,7 @@ Download failures, robots exclusions, unsupported formats and empty extraction a
 | `retries` | `0` | Extra attempts after a timeout, connection error or HTTP 429/502/503/504. Honours `Retry-After`. Every attempt is logged. |
 | `robots_follow_redirects` | `false` | Follow up to five robots.txt redirects, each inside the product allowlist, as RFC 9309 describes. |
 
-Per product: `id`, `domains` and `seeds` are required; `vendor`, `model` and `category` are needed by the report; `aliases` is an optional list of model strings. Other product keys are kept untouched, so inventory fields such as lifecycle status or catalog source can live in the same file. The config is checked before the first request. Structural errors stop the run; everything else is printed and stored in the manifest as `config_warnings`.
+Per product: `id`, `domains` and `seeds` are required; `vendor`, `model` and `category` are needed by the report; `aliases` is an optional list of model strings; `lifecycle` is `active`, `legacy` or `discontinued` (see Legacy devices). Other product keys are kept untouched, so inventory fields such as lifecycle status or catalog source can live in the same file. The config is checked before the first request. Structural errors stop the run; everything else is printed and stored in the manifest as `config_warnings`.
 
 Enabling `robots_follow_redirects` is a methods decision, not a technical one. Example: `literature.rockwellautomation.com/robots.txt` redirects to the vendor's home page, so that host has no robots rules of its own and every Rockwell manual PDF on it is unreachable under the default. With the option on, the document is fetched and its record says `robots_basis: redirected:<final URL>`, so the paper can disclose it.
 
@@ -112,11 +112,13 @@ The notes also carry `doc_type`. The tool fills `doc_type_suggested` from the ti
 | `advisory` | Vulnerability advisory: says what was wrong, and only indirectly what exists |
 | `other` | Anything else; say what in `note` |
 
+`coverage` says whether the source is the whole document (`complete`) or an excerpt such as one chapter or one web page of a manual (`partial`). Only a complete device profile, conformance statement or manual can support `not_documented`.
+
 The order is guidance for weighing evidence, not a score. A manual for the exact firmware can outweigh a device profile for another one. The report shows the type beside every evidence reference, for example `S1 [manual]`, and `[type not confirmed]` until someone has set it.
 
 ### The report
 
-`REPORT.md` opens with the findings table, one row per product and interface: manufacturer, model, firmware, protocol/interface, encryption, authentication, conditions, evidence, review status. `findings_table.csv` holds the same rows with every quote and the source URL and hash.
+`REPORT.md` opens with the findings table, one row per product and interface: manufacturer, model, lifecycle, firmware, protocol/interface, encryption, authentication, conditions, evidence, review status. `findings_table.csv` holds the same rows with every quote and the source URL and hash.
 
 - The encryption and authentication columns show what the `encryption` and `authentication` rows for that interface say. Nothing is inferred from a mechanism: where only a `tls` or `ssh` row exists, the cell points to it and says the property was not assessed.
 - Every product has a control-protocol row, even when nothing is established, so that silence about DNP3 is stated as unknown.
@@ -134,7 +136,8 @@ The delivered `pilot/` contains the reviewed pilot, request/source manifests, sh
 | supported | Explicit documentation for this product/family and stated interface; configuration may still be required. |
 | conditional | Explicit support with a material firmware, feature-selection, module or licensing condition. State it. |
 | explicitly_unsupported | Explicit vendor statement of non-support for the scoped feature. Silence is insufficient. |
-| unknown | Available examined evidence does not establish support or non-support. Also use for unavailable evidence. |
+| not_documented | A complete manual, device profile or conformance statement was searched in full and does not mention the feature. A statement about the documentation, not about the device. |
+| unknown | Available examined evidence does not establish support or non-support. Also use for unavailable evidence, and whenever only part of the documentation was read. |
 | conflicting | Applicable sources disagree; retain both and resolve firmware/date/scope before analysis. |
 
 Always separate:
@@ -151,6 +154,18 @@ Always separate:
 Those seven are the review cells and the only source of denominators. A capability group holds only terms that name that capability. Neighbouring terms have their own lead-only groups that never become cells: `vpn`, `sftp`, `macsec` and `iec_62351`. A recommendation to use a VPN does not establish native IPsec support, and an SFTP mention is not an explicit SSH statement. `non_support_statement` and `plaintext_statement` are a third kind, kept in their own file as described under Leads. Whether MACsec or IEC 62351 should become review cells is a protocol decision to take before the inventory is frozen, because it changes every denominator.
 
 `cip_security` means ODVA CIP Security. NERC CIP is excluded from that group. A bare "secure authentication" counts as a DNP3 Secure Authentication lead only when DNP3, IEEE 1815 or IEC 62351-5 is mentioned on the same PDF page, in the block's heading, or within three HTML blocks.
+
+## Legacy devices
+
+It is widely said that legacy devices have no security. The survey does not assume it; it records it, device by device, in a form a reader can check.
+
+1. Put legacy and discontinued products in the inventory on purpose, and give every product a `lifecycle`: `active`, `legacy` or `discontinued`. Note in the product entry where that status comes from, for example the vendor's legacy-product list. Counts and the matrix are then split by category and lifecycle, so legacy and current devices are never pooled.
+2. Seed the product's complete manual, and its DNP3 Device Profile if one exists. A product page or a single chapter cannot carry a finding of absence.
+3. In the source notes, set `doc_type` and `coverage: complete` only when the source is the whole document.
+4. Where the manual is silent, record `not_documented` for the capability on that interface, with the firmware scope the manual states. No quote is possible for silence. Instead `report` checks the row mechanically: every cited source must be a complete manual, device profile or conformance statement, and the keyword search must have found no lead for that capability in it. If leads exist, the report refuses the row until they are reviewed.
+5. Where the vendor says so in words, for example a device profile marked "TLS is not used", record `explicitly_unsupported` with the quote. That is stronger evidence and the two are counted apart.
+
+What this supports in the paper: "for N of M legacy devices, the complete product manual documents no authentication or encryption for DNP3". It does not support "these devices cannot be secured", since an external gateway or a later firmware may add protection, and it says nothing about how many such devices are deployed.
 
 ## Sampling before scaling
 
@@ -184,7 +199,7 @@ Record queries and search dates in a JSON log; put verified official URLs into t
 
 `cache/` stores source bytes by SHA-256. `verify` checks these bytes; `replay` re-extracts them without the network and compares all candidates exactly. Retain the private cache alongside your run if institutional rules allow. Run directories are checkpointed after each source; interruption leaves an incomplete run without a completed manifest. `crawl --resume` with the same config, output directory and cache continues such a run without refetching recorded sources. Recorded failures stay failures; use a new run for a documented retry.
 
-Extraction rules and block numbering belong to a tool version, so `replay` refuses a run made by another version. `rebuild` applies the current version to sources that were already fetched:
+Extraction and lead rules have their own version, recorded in each manifest as `extraction_version`. `replay` refuses a run made under other rules; a release that only changes reviewing or reporting keeps earlier runs replayable. `rebuild` applies the current version to sources that were already fetched:
 
 ```bash
 python survey.py rebuild --run runs/my_pilot --cache cache --out runs/my_pilot_v1_2
@@ -207,6 +222,6 @@ Before depositing data with a paper, review vendor licensing and repository poli
 
 ## Limits and next work
 
-This is version 1.3: serial bounded crawling, HTML/text-PDF extraction, RFC 9309 robots handling, content-addressed source retention, per-interface review validation with checked evidence quotes, and report generation. It has no headless browser, OCR, automatic search-engine integration, production scheduler, automatic model inventory or automatic semantic verdicts. Those are deliberate scope limits for a supporting paper study.
+This is version 1.4: serial bounded crawling, HTML/text-PDF extraction, RFC 9309 robots handling, content-addressed source retention, per-interface review validation with checked evidence quotes, and report generation. It has no headless browser, OCR, automatic search-engine integration, production scheduler, automatic model inventory or automatic semantic verdicts. Those are deliberate scope limits for a supporting paper study.
 
 The immediate next work is author verification of the pilot and a category-based inventory. A second reviewer should independently check a sample, resolve disagreements and retain the original judgments. Report counts and denominators only after that protocol is frozen. Keep mechanism engineering as the main project priority.

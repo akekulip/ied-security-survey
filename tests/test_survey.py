@@ -514,18 +514,18 @@ class SurveyTests(unittest.TestCase):
             text = (p/'report'/'REPORT.md').read_text(encoding='utf-8')
             for expected in ['# Synthetic survey', 'Sources attempted: 2; extracted: 1; failed: 1.', 'A. Reviewer (13 rows)',
                              '| R1 | relay | ? | C | ? | ? | ? | ? | ? |', '| M1 | meter | ? | ? | ? | ? | ? | ? | - |',
-                             '| relay | tls | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 1 |', '| meter | ssh | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 |',
+                             '| relay | tls | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |', '| meter | ssh | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 |',
                              '13 of 14 cells are unknown, conflicting or not reviewed on every interface.', '| R1 | https://vendor.test/gone | ValueError: HTTP 404 |',
                              'Review coverage: 13/14', 'Evidence quotes: 1 of 1 rows', 'Explicit / licensed',
                              '## Findings and evidence', '### R1: tls (conditional)', '- Interface: SCADA (control protocol)', '- Protocol: DNP3 over TLS',
                              '- Implementation: licensed option', '- Conditions: needs the TLS licence', '- Review status: draft (A. Reviewer)',
                              '- Evidence, html-block:2: "TLS is supported for DNP3 sessions"', '- Source: S1 [type not confirmed] https://vendor.test/r',
-                             '| v | R1 | unknown | SCADA (control protocol) | unknown; see tls (conditional) | unknown; see tls (conditional) | needs the TLS licence | S1 [type not confirmed] html-block:2: "TLS is supported for DNP3 sessions" | draft (A. Reviewer) |',
-                             '| v | M1 | not established | No control protocol established from the examined sources | unknown | unknown | - | none | draft (A. Reviewer) |',
+                             '| v | R1 | not recorded | unknown | SCADA (control protocol) | unknown; see tls (conditional) | unknown; see tls (conditional) | needs the TLS licence | S1 [type not confirmed] html-block:2: "TLS is supported for DNP3 sessions" | draft (A. Reviewer) |',
+                             '| v | M1 | not recorded | not established | No control protocol established from the examined sources | unknown | unknown | - | none | draft (A. Reviewer) |',
                              f"| S1 | R1 | untitled | suggested: product page | not established | not established | 2026-10-13 | {source['sha256']} | https://vendor.test/r |"]:
                 self.assertIn(expected, text)
             table = (p/'report'/'findings_table.csv').read_text(encoding='utf-8').splitlines()
-            self.assertEqual(table[0], 'Manufacturer,Model,Category,Firmware,Protocol / interface,Interface class,Encryption,Authentication,Conditions,Evidence,Review status,Sources')
+            self.assertEqual(table[0], 'Manufacturer,Model,Lifecycle,Category,Firmware,Protocol / interface,Interface class,Encryption,Authentication,Conditions,Evidence,Review status,Sources')
             self.assertEqual(len(table), 3)
             self.assertIn('sha256:' + source['sha256'], table[1])
             self.assertNotIn('%', text.replace('No population percentages', ''))
@@ -547,7 +547,7 @@ class SurveyTests(unittest.TestCase):
             s.report(p/'run', template, p/'report', require_evidence=True)
             text = (p/'report'/'REPORT.md').read_text(encoding='utf-8')
             for expected in ['Reviewers on record: none.', '| R1 | relay | - | - | - | - | - | - | - |', 'Review coverage: 0/7', '7 of 7 cells are unknown, conflicting or not reviewed on every interface.',
-                             '| v | R1 | not established | No control protocol established from the examined sources | not reviewed | not reviewed | - | none | not reviewed |']:
+                             '| v | R1 | not recorded | not established | No control protocol established from the examined sources | not reviewed | not reviewed | - | none | not reviewed |']:
                 self.assertIn(expected, text)
             self.assertEqual(s.load(p/'report'/'findings.json'), [])
             rows = s.load(template)
@@ -695,14 +695,14 @@ class SurveyTests(unittest.TestCase):
             text = (p/'report'/'REPORT.md').read_text(encoding='utf-8')
             self.assertLess(text.index('## Findings by product and interface'), text.index('## Capability matrix'))
             for expected in [
-                '| v | A | v2 or later | DNP3 server (control protocol) | supported: encryption detail | unknown; see tls (supported) | none stated | S1 [type not confirmed] html-block:1: "TLS is supported for DNP3 sessions." (+1 more) | draft (A. Reviewer); confirmed (P. Author) |',
-                '| v | A | v2 or later | Web interface (management) | not reviewed | conditional: authentication detail | password must be set | S1 [type not confirmed] html-block:2: "The web interface requires a user login" | draft (A. Reviewer) |',
-                '| v | B | not established | No control protocol established from the examined sources | unknown | not reviewed | - | none | draft (A. Reviewer) |',
-                '| v | B | v2 or later | Web interface (management) | unknown | supported: authentication detail | none stated | S2 [type not confirmed] html-block:1: "The web interface requires a user login" | draft (A. Reviewer) |',
-                '| v | M | not established | No control protocol established from the examined sources | not reviewed | not reviewed | - | none | not reviewed |',
+                '| v | A | not recorded | v2 or later | DNP3 server (control protocol) | supported: encryption detail | unknown; see tls (supported) | none stated | S1 [type not confirmed] html-block:1: "TLS is supported for DNP3 sessions." (+1 more) | draft (A. Reviewer); confirmed (P. Author) |',
+                '| v | A | not recorded | v2 or later | Web interface (management) | not reviewed | conditional: authentication detail | password must be set | S1 [type not confirmed] html-block:2: "The web interface requires a user login" | draft (A. Reviewer) |',
+                '| v | B | not recorded | not established | No control protocol established from the examined sources | unknown | not reviewed | - | none | draft (A. Reviewer) |',
+                '| v | B | not recorded | v2 or later | Web interface (management) | unknown | supported: authentication detail | none stated | S2 [type not confirmed] html-block:1: "The web interface requires a user login" | draft (A. Reviewer) |',
+                '| v | M | not recorded | not established | No control protocol established from the examined sources | not reviewed | not reviewed | - | none | not reviewed |',
                 '| A | relay | - | S | - | - | (C) | S | ? |', '| B | relay | - | ? | - | - | (S) | ? | - |', '| M | meter | - | - | - | - | - | - | - |',
-                '| relay | tls | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 2 |', '| relay | authentication | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 2 |',
-                '| relay | encryption | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 2 |', '| meter | tls | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 |',
+                '| relay | tls | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 2 |', '| relay | authentication | 0 | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 2 |',
+                '| relay | encryption | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 2 |', '| meter | tls | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 |',
                 'A. Reviewer (7 rows); P. Author (1 rows)', 'Review coverage: 7/21', '| A | authentication | Web interface | conditional | explicit |']:
                 self.assertIn(expected, text)
             self.assertEqual(text.count('| v | A |'), 2)
@@ -822,6 +822,65 @@ class SurveyTests(unittest.TestCase):
                 self.assertEqual(s.suggest_doc_type(title, url, [{'location':where,'text':opening}]), expected)
         self.assertIn('device_profile', s.DOC_TYPES)
 
+    # --- 1.4.0 ---
+
+    def test_legacy_devices_are_captured_by_what_a_complete_manual_does_not_say(self):
+        with tempfile.TemporaryDirectory() as td:
+            p = Path(td)
+            pages = {'https://vendor.test/old': b'<p>The relay supports DNP3 and Modbus over serial links.</p><p>Passwords protect front panel access.</p>',
+                     'https://vendor.test/new': b'<p>TLS is supported for DNP3 sessions.</p>'}
+            cfg = self.config(p, [{'id':'old','lifecycle':'legacy','seeds':['https://vendor.test/old']},
+                                  {'id':'new','lifecycle':'active','seeds':['https://vendor.test/new']}, {'id':'unk','seeds':[]}])
+            with self.site(pages, []): s.crawl(cfg, p/'run', p/'cache')
+            src = {x['product_id']: x for x in s.load(p/'run'/'sources.json')}
+            def row(pid, feature, status, **more):
+                base = {'product_id':pid,'feature':feature,'status':status,'source_ids':[src[pid]['id']],'source_hashes':{src[pid]['id']:src[pid]['sha256']},
+                        'location':'','protocol':'','interface':'DNP3 serial and Ethernet','interface_class':'control_protocol','firmware':'all versions covered by manual rev C',
+                        'implementation':'','conditions':'','evidence':[],'rationale':'searched in full','reviewer':'A. Reviewer','reviewed_at':'2026-10-13','review_status':'draft'}
+                return dict(base, **more)
+            silent = [row('old','encryption','not_documented'), row('old','tls','not_documented')]
+            claim = row('new','tls','supported', location='html-block:1', protocol='DNP3 over TLS', implementation='native',
+                        evidence=[{'source_id':src['new']['id'],'location':'html-block:1','quote':'TLS is supported for DNP3 sessions.'}])
+            note = lambda pid, kind, coverage: {'source_id':src[pid]['id'],'doc_type':kind,'coverage':coverage}
+            def run(rows, notes):
+                s.dump(p/'reviews.json', rows); s.dump(p/'notes.json', notes)
+                s.report(p/'run', p/'reviews.json', p/'report', require_evidence=True, source_notes=p/'notes.json')
+            for notes in ([], [note('old','product_page','complete')], [note('old','manual','partial')], [note('old','manual','')]):
+                with self.subTest(notes=notes), self.assertRaisesRegex(ValueError,'not_documented needs a complete'): run(silent, notes)
+            with self.assertRaisesRegex(ValueError,'1 leads for tls exist'): run([row('new','tls','not_documented')], [note('new','manual','complete')])
+            with self.assertRaisesRegex(ValueError,'coverage must be'): run(silent, [note('old','manual','whole')])
+            run(silent + [claim], [note('old','manual','complete')])
+            text = (p/'report'/'REPORT.md').read_text(encoding='utf-8')
+            for expected in [
+                'Lifecycle (active, legacy or discontinued) is recorded for 2 of 3 products.',
+                '| v | OLD | legacy | all versions covered by manual rev C | DNP3 serial and Ethernet (control protocol) | '
+                'not documented: the complete documentation searched does not mention it | not assessed; see tls (not documented) | none stated | '
+                'S1 [manual] searched in full: no lead for encryption; S1 [manual] searched in full: no lead for tls | draft (A. Reviewer) |',
+                '| v | NEW | active | all versions covered by manual rev C | DNP3 serial and Ethernet (control protocol) | not assessed; see tls (supported) |',
+                '| v | UNK | not recorded | not established | No control protocol established from the examined sources |',
+                '| OLD | relay, legacy | - | N | - | - | - | N | - |', '| NEW | relay, active | - | S | - | - | - | - | - |',
+                '| relay, legacy | tls | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 1 |', '| relay, active | tls | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |',
+                '| relay, not recorded | tls | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 |', '| relay, legacy | encryption | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 1 |',
+                '### OLD: tls (not documented)', '- Searched: S1 [manual] searched in full: no lead for tls', '| manual, complete |',
+                'Evidence quotes: 1 of 1 rows', 'Not documented: 2 rows', 'N not documented in a complete document',
+                '18 of 21 cells are unknown, conflicting or not reviewed on every interface.']:
+                self.assertIn(expected, text)
+            table = (p/'report'/'findings_table.csv').read_text(encoding='utf-8').splitlines()
+            self.assertIn('legacy', table[1].split(',')[2])
+            self.assertIn('searched in full: no lead for tls', table[1])
+
+    def test_not_documented_and_lifecycle_are_validated(self):
+        source, row = self.fixture()
+        silent = dict(row, status='not_documented', location='', protocol='', implementation='', interface='DNP3', interface_class='control_protocol')
+        s.validate_reviews([silent], [source], {'p'}, require_evidence=True)
+        for change in [{'interface_class':''}, {'firmware':''}, {'interface':''}, {'source_ids':[]}]:
+            with self.subTest(change=change), self.assertRaises(ValueError): s.validate_reviews([dict(silent, **change)], [source], {'p'})
+        base = {'sampling':'x','products':[{'id':'p','vendor':'v','model':'m','category':'c','lifecycle':'legacy','domains':['vendor.test'],'seeds':[]}]}
+        self.assertEqual(s.validate_config(base), ['p: no seeds, so every cell stays unknown'])
+        base['products'][0]['lifecycle'] = 'old'
+        with self.assertRaisesRegex(ValueError,'lifecycle must be one of'): s.validate_config(base)
+        self.assertIn('not_documented', s.STATUSES)
+
     def test_resume_continues_an_interrupted_run_without_refetching(self):
         with tempfile.TemporaryDirectory() as td:
             p, calls = Path(td), []
@@ -849,8 +908,15 @@ class SurveyTests(unittest.TestCase):
             p, calls = Path(td), []
             cfg = self.config(p, [{'id':'p','seeds':['https://vendor.test/a']}])
             with self.site({'https://vendor.test/a': b'<p>TLS</p>'}, calls): s.crawl(cfg, p/'run', p/'cache')
-            manifest = s.load(p/'run'/'manifest.json'); manifest['tool_version'] = '1.0.0'; s.dump(p/'run'/'manifest.json', manifest)
-            with self.assertRaisesRegex(ValueError,'tool version 1.0.0'): s.replay(p/'run', p/'cache', p/'replay')
+            manifest = s.load(p/'run'/'manifest.json')
+            self.assertEqual(manifest['extraction_version'], s.EXTRACTION)
+            s.dump(p/'run'/'manifest.json', dict(manifest, tool_version='9.9.9'))
+            s.replay(p/'run', p/'cache', p/'replay_same_rules')
+            s.dump(p/'run'/'manifest.json', dict(manifest, extraction_version='1.0.0'))
+            with self.assertRaisesRegex(ValueError,'extraction rules 1.0.0'): s.replay(p/'run', p/'cache', p/'replay')
+            older = {k: v for k, v in manifest.items() if k != 'extraction_version'}
+            s.dump(p/'run'/'manifest.json', dict(older, tool_version='1.2.0'))
+            with self.assertRaisesRegex(ValueError,'extraction rules 1.2.0'): s.replay(p/'run', p/'cache', p/'replay')
             self.assertFalse((p/'replay').exists())
 
     def test_recheck_locates_old_excerpts_in_a_fresh_run(self):
