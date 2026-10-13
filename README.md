@@ -47,19 +47,57 @@ Open `runs/my_pilot/candidates.json` and the `*.segments.json` files. Candidates
 
 ```bash
 cp runs/my_pilot/review_template.json reviews.json
-# Edit reviews.json; fill reviewer, date, rationale, supporting source hashes and evidence quotes.
-python survey.py report --run runs/my_pilot --reviews reviews.json --out reports/my_pilot --require-evidence
+cp runs/my_pilot/source_notes_template.json source_notes.json
+# Edit reviews.json: result, interface, conditions, evidence quotes, reviewer, date, rationale.
+# Edit source_notes.json: each document's own number, revision and date.
+python survey.py report --run runs/my_pilot --reviews reviews.json --out reports/my_pilot \
+    --require-evidence --source-notes source_notes.json
 python survey.py verify --run runs/my_pilot --cache cache
 python survey.py replay --run runs/my_pilot --cache cache --out runs/my_pilot_replay
 ```
 
 The review can be done in stages. Rows left exactly as the template wrote them are ignored and shown as not reviewed, so `report` runs at any point and its coverage line shows how far the review has got. A row that is partly filled in is an error that names the cell; it is never dropped silently.
 
-Each candidate carries `match_count` for its page or block, the nearest preceding `heading` (HTML heading or PDF bookmark), and, when the product has `aliases`, whether the model string appears in the same passage. These help find and scope a passage. They are not verdicts and every candidate stays `unreviewed`.
+### Leads
 
-A review cell may carry `evidence`, a list of `{"source_id", "location", "quote"}` with the exact segment location (`pdf-page:10`, `html-block:42`) and a verbatim quote of at least 20 characters. `report` checks that each quote occurs in that segment, ignoring whitespace and typographic differences. `--require-evidence` makes a quote mandatory for every result other than `unknown`. The check proves the words are in the cited passage. It does not prove they support the claim.
+Each candidate carries:
 
-Report produces CSV, JSON and Markdown, plus `evidence_index.json` and `candidate_counts.json`. The Markdown has a product by capability matrix, each finding with its scope and quoted evidence, counts per product category with the number of products as an explicit denominator, the unresolved cells, the documents examined, and the sources that yielded no text. Validation rejects records without reviewer, date and rationale, unbound hashes, evidence from another product, failed-source support claims, misquoted evidence and duplicate product–capability cells. A single cell may describe multiple interface constraints in its rationale; do not silently generalize them. The reviewer must establish semantic correctness; hash and quote checking cannot do that.
+- `matched`, the words that matched, and `match_count` for its page or block. `["SFTP"]` is not an SSH statement and `["VPN"]` is not IPsec, and the lead says which it was.
+- `context`, widened to whole sentences, and for HTML `context_before` and `context_after`, the two neighbouring blocks on each side. A heading or table label is never shown alone.
+- the nearest preceding `heading` (HTML heading or PDF bookmark) and, when the product has `aliases`, whether the model string appears in the same passage.
+- `lead_type`: `capability` for the seven review cells, `related` for neighbouring terms, `statement` for plaintext statements.
+
+These help find and scope a passage. They are not verdicts and every candidate stays `unreviewed`. A lead is a place where a term occurs. Several leads in one document are still one document about one product, so lead counts are never device counts.
+
+`statement_leads.json` holds the `plaintext_statement` leads, apart from `candidates.json`. A statement about the product itself ("DNP3 messages are not encrypted") can support `explicitly_unsupported` after review. A general statement ("information is often transmitted in plain text") supports nothing about a product. It is a literature lead for the paper's motivation, to be cited as what that vendor wrote, and never a measured share of deployments.
+
+### Review rows
+
+A capability is recorded once per interface, because TLS for a web page and TLS for DNP3 are different findings. Every row with a result other than `unknown` states:
+
+- `interface`: a short label, written the same way on every row that belongs to that interface, for example `DNP3 server to SCADA master`. Rows of one product with the same label are consolidated into one line of the findings table.
+- `interface_class`: `control_protocol` (DNP3, IEC 61850, CIP and similar traffic), `management` (engineering tools, web, user login, logging, file transfer) or `network` (protection applied below the protocol, such as IPsec or MACsec).
+- `protocol`, `firmware`, `implementation`, and `conditions`. `conditions` is required when the result is `conditional`.
+- `review_status`: `draft` until a person has checked the row against the source, then `confirmed`. An empty value counts as `draft`.
+
+To say that nothing is established for control traffic while something is established for management, keep an `unknown` row with an empty `interface` next to the management row.
+
+A row may carry `evidence`, a list of `{"source_id", "location", "quote"}` with the exact segment location (`pdf-page:10`, `html-block:42`) and a verbatim quote of at least 20 characters. A location may also be a short run of consecutive segments, `html-block:10-13`. `report` checks that each quote occurs there, ignoring whitespace, typographic differences and hyphens between letters, since a PDF line break hides whether a hyphen belongs to the word. `--require-evidence` makes a quote mandatory for every result other than `unknown`. The check proves the words are in the cited passage. It does not prove they support the claim.
+
+### Source notes
+
+`sources.json` links every source to its URL, retrieval time and SHA-256. The document's own number, revision and date are read off the document by a person and entered in a copy of `source_notes_template.json`, keyed by `source_id`. `document_hints` in that template are snippets found near revision and date markers; they are aids, not answers. Leave a field empty when the document does not say. The report then shows "not established".
+
+### The report
+
+`REPORT.md` opens with the findings table, one row per product and interface: manufacturer, model, firmware, protocol/interface, encryption, authentication, conditions, evidence, review status. `findings_table.csv` holds the same rows with every quote and the source URL and hash.
+
+- The encryption and authentication columns show what the `encryption` and `authentication` rows for that interface say. Nothing is inferred from a mechanism: where only a `tls` or `ssh` row exists, the cell points to it and says the property was not assessed.
+- Every product has a control-protocol row, even when nothing is established, so that silence about DNP3 is stated as unknown.
+- The capability matrix puts a mark in parentheses when a result exists only for a management or network interface.
+- "Counts by category" counts products, never leads or table rows, with the number of products as the denominator.
+
+The report also writes `findings.csv`, `findings.json`, `evidence_index.json`, `candidate_counts.json` (leads by type, never device counts) and `sources.json`, the source manifest with the notes merged in. The Markdown further lists each finding with its quotes, the unresolved cells, the documents examined, and the sources that yielded no text. Validation rejects records without reviewer, date and rationale, unbound hashes, evidence from another product, failed-source support claims, misquoted evidence, results without an interface class, conditional results without conditions, and duplicate rows for one product, capability and interface. The reviewer must establish semantic correctness; hash and quote checking cannot do that.
 
 The delivered `pilot/` contains the reviewed pilot, request/source manifests, short evidence excerpts and tests log. Review identity is explicitly `Codex AI review; author confirmation pending`. It is a working research artifact, **not a publication-ready population survey**. All outcomes, including the failed Siemens PDF request, are retained. `pilot/REPORT.md` is the entry point.
 
@@ -84,7 +122,7 @@ Always separate:
 
 `ipsec`, `tls`, `cip_security`, `dnp3_secure_authentication`, `authentication`, `encryption`, and `ssh` are overlapping search categories, not disjoint counts. In particular, do not add their totals as device counts. Decryption is generally the counterpart of documented encrypted communication; do not infer an independently supported interface from that word alone.
 
-Those seven are the review cells and the only source of denominators. The keyword search also has lead-only groups that never become cells: `plaintext_statement` (unencrypted, plain or clear text, "not encrypted", "does not support encryption"), `macsec` and `iec_62351`. `plaintext_statement` exists so that explicit statements of non-support are searched for as deliberately as statements of support. Whether MACsec or IEC 62351 should become review cells is a protocol decision to take before the inventory is frozen, because it changes every denominator.
+Those seven are the review cells and the only source of denominators. A capability group holds only terms that name that capability. Neighbouring terms have their own lead-only groups that never become cells: `vpn`, `sftp`, `macsec` and `iec_62351`. A recommendation to use a VPN does not establish native IPsec support, and an SFTP mention is not an explicit SSH statement. `plaintext_statement` (unencrypted, plain or clear text, "not encrypted", "does not support encryption") is a third kind, kept in its own file as described under Leads. Whether MACsec or IEC 62351 should become review cells is a protocol decision to take before the inventory is frozen, because it changes every denominator.
 
 `cip_security` means ODVA CIP Security. NERC CIP is excluded from that group. A bare "secure authentication" counts as a DNP3 Secure Authentication lead only when DNP3, IEEE 1815 or IEC 62351-5 is mentioned on the same PDF page, in the block's heading, or within three HTML blocks.
 
@@ -120,7 +158,13 @@ Record queries and search dates in a JSON log; put verified official URLs into t
 
 `cache/` stores source bytes by SHA-256. `verify` checks these bytes; `replay` re-extracts them without the network and compares all candidates exactly. Retain the private cache alongside your run if institutional rules allow. Run directories are checkpointed after each source; interruption leaves an incomplete run without a completed manifest. `crawl --resume` with the same config, output directory and cache continues such a run without refetching recorded sources. Recorded failures stay failures; use a new run for a documented retry.
 
-Extraction rules and block numbering belong to a tool version, so `replay` refuses a run made by another version. `pilot/` was produced by 1.0.0, kept as git tag `v1.0.0-pilot`, and `PACKAGE_SHA256.json` describes that delivery.
+Extraction rules and block numbering belong to a tool version, so `replay` refuses a run made by another version. `rebuild` applies the current version to sources that were already fetched:
+
+```bash
+python survey.py rebuild --run runs/my_pilot --cache cache --out runs/my_pilot_v1_2
+```
+
+It re-derives segments and leads from the retained bytes into a new run directory, without the network. Source hashes and retrieval times are unchanged, so existing reviews stay bound to the same sources, though block numbers in their evidence may need updating. The manifest records what the run was rebuilt from. `pilot/` was produced by 1.0.0, kept as git tag `v1.0.0-pilot`, and `PACKAGE_SHA256.json` describes that delivery.
 
 Vendor manuals, full HTML and extracted full text are **excluded from this distribution**. The pilot contains URLs, hashes, scope, short excerpts and results. Recrawling may obtain a newer document and different hash; do not silently replace a source under an old review. A new source needs a new review. Without the exact retained source bytes, this package reproduces the procedure, not a guarantee of the vendor's historical bytes.
 
@@ -137,6 +181,6 @@ Before depositing data with a paper, review vendor licensing and repository poli
 
 ## Limits and next work
 
-This is version 1.1: serial bounded crawling, HTML/text-PDF extraction, RFC 9309 robots handling, content-addressed source retention, review validation with checked evidence quotes, and report generation. It has no headless browser, OCR, automatic search-engine integration, production scheduler, automatic model inventory or automatic semantic verdicts. Those are deliberate scope limits for a supporting paper study.
+This is version 1.2: serial bounded crawling, HTML/text-PDF extraction, RFC 9309 robots handling, content-addressed source retention, per-interface review validation with checked evidence quotes, and report generation. It has no headless browser, OCR, automatic search-engine integration, production scheduler, automatic model inventory or automatic semantic verdicts. Those are deliberate scope limits for a supporting paper study.
 
 The immediate next work is author verification of the pilot and a category-based inventory. A second reviewer should independently check a sample, resolve disagreements and retain the original judgments. Report counts and denominators only after that protocol is frozen. Keep mechanism engineering as the main project priority.

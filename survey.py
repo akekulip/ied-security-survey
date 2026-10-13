@@ -24,21 +24,24 @@ from urllib.request import Request, HTTPRedirectHandler, build_opener
 
 from protego import Protego
 
-VERSION = '1.1.0'
+VERSION = '1.2.0'
 UA_TOKEN = 'IEDSecuritySurvey'
-UA = UA_TOKEN + '/1.1 (public-document research; no device scanning)'
+UA = f"{UA_TOKEN}/{VERSION.rsplit('.', 1)[0]} (public-document research; no device scanning)"
 # Review cells. Changing this tuple changes every denominator; lead groups below may grow freely.
 CAPABILITIES = ('dnp3_secure_authentication', 'tls', 'ipsec', 'cip_security', 'authentication', 'encryption', 'ssh')
 PATTERNS = {
     'dnp3_secure_authentication': r'secure\s+auth\w*|\b(?-i:SA)\s*v\d\b|\bDNP\s*3?.{0,80}?\b(?-i:SA)\b|\bIEC\s*62351-5\b',
     'tls': r'\bm?TLS(?:\s?v?\d(?:\.\d)?)?\b|transport\s+layer\s+security|\bSSL\b',
-    'ipsec': r'\bIP\s?sec\b|\bIP\s+security\b|\b(?-i:IKE)(?:v[12])?\b|\bVPN\b',
+    'ipsec': r'\bIP\s?sec\b|\bIP\s+security\b|\b(?-i:IKE)(?:v[12])?\b',
     # ODVA's CIP Security, not NERC CIP: the two share an acronym and nothing else.
     'cip_security': r'(?-i:(?<!NERC[\s-])\bCIP\s+Security(?![a-z]))',
     'authentication': r'\bauthenticat\w*|\bRADIUS\b|\b802\.1X\b|\bLDAP\b|\bKerberos\b|\bTACACS\b',
     'encryption': r'\b(?:un|non-?)?encrypt\w*|\bDTLS\b|\bAES\b|\bcipher\w*',
-    'ssh': r'\bSSH\b|secure\s+shell|\bSFTP\b',
-    # Lead-only groups below: shown to the reviewer, never review cells.
+    'ssh': r'\bSSH\b|secure\s+shell',
+    # Lead-only groups below: shown to the reviewer, never review cells. A capability group above holds only terms
+    # that name that capability, so a VPN recommendation is not filed as IPsec, nor SFTP as SSH.
+    'vpn': r'\bVPN\b',
+    'sftp': r'\bSFTP\b',
     'plaintext_statement': r'\bunencrypted\b|\bnon-?encrypted\b|\bnot\s+(?:be\s+|been\s+|being\s+)?encrypted\b'
                            r'|\bno\s+encryption\b|\bwithout\s+encryption\b'
                            r"|\b(?:not|n['\u2019]t)\s+(?:support|provide|offer|include|implement|use)\w*\s+(?:\w+\s+){0,3}?encryption\b"
@@ -50,6 +53,12 @@ LEADS = {k: re.compile(v, re.I | re.S) for k, v in PATTERNS.items()}
 # A lead in these groups also needs the qualifying term close by.
 NEAR = {'dnp3_secure_authentication': re.compile(r'\bDNP|\b1815\b|62351-5', re.I)}
 STATUSES = {'supported', 'conditional', 'explicitly_unsupported', 'unknown', 'conflicting'}
+# The distinction the study turns on: protection of control traffic is not protection of management access.
+INTERFACE_CLASSES = ('control_protocol', 'management', 'network')
+REVIEW_STATUSES = ('draft', 'confirmed')
+# Pointers only: which mechanism rows a reader should look at when no explicit property row exists.
+RELATES = {'encryption': ('tls', 'ipsec', 'cip_security', 'ssh'),
+           'authentication': ('dnp3_secure_authentication', 'tls', 'ipsec', 'cip_security', 'ssh')}
 REDIRECTS = (301, 302, 303, 307, 308)
 RETRY_STATUS = (429, 502, 503, 504)
 KEEP_HEADERS = ('content-type', 'content-length', 'content-disposition', 'content-language', 'last-modified', 'etag', 'date')
@@ -99,6 +108,53 @@ def norm(text):
 
 def squash(text):
     return ' '.join(norm(text).split())
+
+
+def loose(text):
+    # For matching a quote to its source: a hyphen at a PDF line break may or may not belong to the word,
+    # so "self-signed", "self- signed" and "selfsigned" are treated as the same words.
+    return re.sub(r'(?<=[a-z])-\s?(?=[a-z])', '', squash(text))
+
+
+def lead_type(feature):
+    # A plaintext statement is a literature lead, never a measurement of how equipment is deployed.
+    return 'capability' if feature in CAPABILITIES else 'statement' if feature == 'plaintext_statement' else 'related'
+
+
+STOP = re.compile(r"""(?<=[.!?])(["')\]]*)\s+(?=[A-Z0-9"'(\[])""")
+
+
+def passage(text, start, end, before=220, after=350, slack=240):
+    """Window around a match, widened to sentence boundaries so a reviewer reads whole sentences."""
+    a, b = max(0, start - before), min(len(text), end + after)
+    head = tail = ''
+    if a:
+        earlier = [m.end() for m in STOP.finditer(text, max(0, a - slack), a)]
+        later = [m.end() for m in STOP.finditer(text, a, start)]
+        if earlier:
+            a = earlier[-1]
+        elif a - slack <= 0:
+            a = 0
+        elif later:
+            a = later[0]
+        else:
+            head = '[...] '
+    if b < len(text):
+        later = [m.end(1) for m in STOP.finditer(text, b, min(len(text), b + slack))]
+        earlier = [m.end(1) for m in STOP.finditer(text, end, b)]
+        if later:
+            b = later[0]
+        elif b + slack >= len(text):
+            b = len(text)
+        elif earlier:
+            b = earlier[-1]
+        else:
+            tail = ' [...]'
+    return head + text[a:b].strip() + tail
+
+
+def clip(text, limit=300):
+    return text if len(text) <= limit else text[:limit].rsplit(' ', 1)[0] + ' [...]'
 
 
 def text_digest(segments):
@@ -261,10 +317,13 @@ HEADINGS = ('h1', 'h2', 'h3', 'h4', 'h5', 'h6')
 BLOCKS = HEADINGS + ('p', 'div', 'li', 'br', 'tr', 'table', 'dt', 'dd', 'pre', 'section', 'article', 'title')
 
 
+INLINE = re.compile(r'display\s*:\s*inline', re.I)
+
+
 class TextHTML(HTMLParser):
     def __init__(self):
         super().__init__(convert_charrefs=True)
-        self.blocks, self.links, self.skip = [], [], 0
+        self.blocks, self.links, self.skip, self.open = [], [], 0, []
         self.buf, self.kind, self.heading, self.title, self.anchor = [], None, '', '', None
 
     def flush(self):
@@ -294,8 +353,13 @@ class TextHTML(HTMLParser):
         if tag in ('td', 'th') and ''.join(self.buf).strip():
             self.buf.append(' | ')
         if tag in BLOCKS:
-            self.flush()
-            self.kind = 'heading' if tag in HEADINGS else 'title' if tag == 'title' else self.kind
+            # Some sites style a div as inline text. Breaking there cuts one sentence into several blocks.
+            inline = tag not in HEADINGS + ('br', 'title') and bool(INLINE.search(dict(attrs).get('style') or ''))
+            if tag != 'br':
+                self.open.append((tag, inline))
+            if not inline:
+                self.flush()
+                self.kind = 'heading' if tag in HEADINGS else 'title' if tag == 'title' else self.kind
 
     def handle_endtag(self, tag):
         if tag in SKIP and self.skip:
@@ -303,9 +367,16 @@ class TextHTML(HTMLParser):
         if tag == 'a':
             self.end_anchor()
         if tag in BLOCKS:
-            self.flush()
-            if tag in HEADINGS or tag == 'title':
-                self.kind = None
+            inline = False
+            for j in range(len(self.open) - 1, -1, -1):
+                if self.open[j][0] == tag:
+                    inline = self.open[j][1]
+                    del self.open[j:]  # Also drops tags left unclosed inside this one.
+                    break
+            if not inline:
+                self.flush()
+                if tag in HEADINGS or tag == 'title':
+                    self.kind = None
 
     def handle_data(self, data):
         if not self.skip:
@@ -340,6 +411,30 @@ def outline(pdf):
     return titles
 
 
+MARKER = re.compile(r'date\s+code|publication\s+date|last\s+update|current\s+version|\brevision\b|\u00a9'
+                    r'|copyright\s+(?:\(c\)|\d{4})', re.I)
+
+
+def hints(segments):
+    """Snippets around revision and date markers. Aids only: the reviewer decides what identifies the document."""
+    found, keys = [], set()
+    for i, segment in enumerate(segments):
+        text = ' '.join(norm(segment['text']).split())
+        for m in MARKER.finditer(text):
+            key = text[m.start():m.end() + 24].lower()
+            if key in keys:
+                continue
+            keys.add(key)
+            snippet = text[max(0, m.start() - 60):m.end() + 60]
+            # A table label and its value are often neighbouring blocks.
+            if segment['location'].startswith('html-block') and not re.search(r'\w', text[m.end():]) and i + 1 < len(segments):
+                snippet += ' ' + ' '.join(segments[i + 1]['text'].split())[:60]
+            found.append(snippet)
+            if len(found) == 8:
+                return found
+    return found
+
+
 def parse(body, headers):
     """Segments, (href, anchor text) links and document facts for the source record."""
     if b'%PDF' in body[:1024]:
@@ -361,7 +456,7 @@ def parse(body, headers):
                           (('title', '/Title'), ('pdf_created', '/CreationDate'), ('pdf_modified', '/ModDate')) if v in meta})
         except Exception:
             pass
-        return segs, [], facts
+        return segs, [], dict(facts, document_hints=hints(segs))
     ct = header(headers, 'content-type')
     if 'html' not in ct.lower():
         raise ValueError('unsupported content type: ' + ct)
@@ -377,7 +472,7 @@ def parse(body, headers):
     page.flush()
     segs = [{'location': f'html-block:{i + 1}', 'text': t, **({'heading': h} if h else {})}
             for i, (t, h) in enumerate(page.blocks)]
-    return segs, page.links, {'kind': 'html', 'title': page.title}
+    return segs, page.links, {'kind': 'html', 'title': page.title, 'document_hints': hints(segs)}
 
 
 def extract(body, headers):
@@ -408,10 +503,19 @@ def candidates(source, segments, aliases=()):
                     continue
             match = found[0]
             cid = digest((source['id'] + segment['location'] + feature).encode())[:20]
+            terms = {}
+            for m in found:
+                terms.setdefault(' '.join(m.group(0).split()).lower(), ' '.join(m.group(0).split()))
             hit = {'id': cid, 'source_id': source['id'], 'product_id': source['product_id'],
-                   'feature': feature, 'location': segment['location'],
-                   'context': text[max(0, match.start()-220):match.end()+350],
+                   'feature': feature, 'lead_type': lead_type(feature), 'location': segment['location'],
+                   # The words that matched, so SFTP is never read as an SSH statement nor VPN as IPsec.
+                   'matched': list(terms.values())[:12],
+                   'context': passage(text, match.start(), match.end()),
                    'match_count': len(found), 'status': 'unreviewed'}
+            if segment['location'].startswith('html-block'):
+                # A heading or table label alone decides nothing; its neighbours travel with it.
+                hit['context_before'] = [clip(t) for t in texts[max(0, i - 2):i]]
+                hit['context_after'] = [clip(t) for t in texts[i + 1:i + 3]]
             if segment.get('heading'):
                 hit['heading'] = segment['heading']
             if alias:
@@ -453,6 +557,39 @@ def link_score(url, text, alias):
     return len({m.lower() for m in RELEVANT.findall(blob)}) + (2 if alias and alias.search(blob) else 0)
 
 
+def save_leads(out, hits):
+    # Statements get their own file so nobody reads them as product capability leads.
+    dump(out / 'candidates.json', [h for h in hits if h['lead_type'] != 'statement'])
+    dump(out / 'statement_leads.json', [h for h in hits if h['lead_type'] == 'statement'])
+
+
+def load_leads(run):
+    return [h for name in ('candidates.json', 'statement_leads.json') if (run / name).exists() for h in load(run / name)]
+
+
+def finish(out, cfg, config_sha256, sources, hits, warnings, **extra):
+    """Manifest and the two templates a reviewer fills in. Only a finished run has a manifest."""
+    dump(out / 'manifest.json', {'tool_version': VERSION, 'finished_at': now(),
+        'config_sha256': config_sha256, 'python': sys.version,
+        'script_sha256': digest(Path(__file__).read_bytes()),
+        'complete': True, 'source_count': len(sources),
+        'candidate_count': sum(h['lead_type'] != 'statement' for h in hits),
+        'lead_counts': dict(Counter(h['lead_type'] for h in hits)),
+        'source_status': dict(Counter(s['status'] for s in sources)),
+        'config_warnings': warnings, 'sampling': cfg['sampling'], **extra})
+    dump(out / 'review_template.json',
+         [{'product_id': p['id'], 'feature': feature, 'status': 'unknown',
+           'source_ids': [], 'source_hashes': {}, 'location': '', 'protocol': '',
+           'interface': '', 'interface_class': '', 'firmware': 'not established', 'implementation': 'not established',
+           'conditions': '', 'evidence': [], 'rationale': '', 'reviewer': '', 'reviewed_at': '', 'review_status': ''}
+          for p in cfg['products'] for feature in CAPABILITIES])
+    # What a document says about its own number, revision and date is for a person to read off, not for a regex.
+    dump(out / 'source_notes_template.json',
+         [{'source_id': s['id'], 'product_id': s['product_id'], 'url': s['final_url'], 'title': s.get('title', ''),
+           'document_hints': s.get('document_hints', []), 'document_id': '', 'revision': '', 'document_date': '', 'note': ''}
+          for s in sources if s['status'] == 'extracted'])
+
+
 def crawl(config_path, out, cache, resume=False):
     config_bytes = Path(config_path).read_bytes()
     cfg = json.loads(config_bytes)
@@ -467,8 +604,8 @@ def crawl(config_path, out, cache, resume=False):
             raise ValueError('run is already complete; nothing to resume')
         if load(out / 'config.json') != cfg:
             raise ValueError('resume needs the config the run was started with')
-        sources, hits, audit = (load(out / n) if (out / n).exists() else []
-                                for n in ('sources.json', 'candidates.json', 'requests.json'))
+        sources, audit = (load(out / n) if (out / n).exists() else [] for n in ('sources.json', 'requests.json'))
+        hits = load_leads(out)
     else:
         out.mkdir(parents=True, exist_ok=False)
         dump(out / 'config.json', cfg)
@@ -552,35 +689,64 @@ def crawl(config_path, out, cache, resume=False):
             if fresh:
                 # Checkpoints survive interrupted runs; incomplete runs are never called complete.
                 dump(out / 'sources.json', sources)
-                dump(out / 'candidates.json', hits)
+                save_leads(out, hits)
                 dump(out / 'requests.json', f.audit)
                 print(product['id'], rec['status'], url, flush=True)
-    # Written once more so a run without any seeds still has all three files.
+    # Written once more so a run without any seeds still has all its files.
     dump(out / 'sources.json', sources)
-    dump(out / 'candidates.json', hits)
+    save_leads(out, hits)
     dump(out / 'requests.json', f.audit)
-    dump(out / 'manifest.json', {'tool_version': VERSION, 'finished_at': now(),
-        'config_sha256': digest(config_bytes), 'python': sys.version,
-        'script_sha256': digest(Path(__file__).read_bytes()),
-        'complete': True, 'source_count': len(sources), 'candidate_count': len(hits),
-        'source_status': dict(Counter(s['status'] for s in sources)),
-        'config_warnings': warnings, 'sampling': cfg['sampling']})
-    template = [{'product_id': p['id'], 'feature': feature, 'status': 'unknown',
-                 'source_ids': [], 'source_hashes': {}, 'location': '', 'protocol': '',
-                 'interface': '', 'firmware': 'not established', 'implementation': 'not established',
-                 'evidence': [], 'rationale': '', 'reviewer': '', 'reviewed_at': ''}
-                for p in cfg['products'] for feature in CAPABILITIES]
-    dump(out / 'review_template.json', template)
+    finish(out, cfg, digest(config_bytes), sources, hits, warnings)
+
+
+def rebuild(run, cache, dest):
+    """Re-derives segments and leads from retained bytes with this tool version. No network; hashes are unchanged."""
+    run, cache, dest = Path(run), Path(cache), Path(dest)
+    verify(run, cache)
+    cfg = load(run / 'config.json')
+    made = load(run / 'manifest.json') if (run / 'manifest.json').exists() else {}
+    dest.mkdir(parents=True, exist_ok=False)
+    dump(dest / 'config.json', cfg)
+    aliases = {p['id']: p.get('aliases', []) for p in cfg['products']}
+    sources, hits = [], []
+    for s in load(run / 'sources.json'):
+        if s['status'] == 'extracted':
+            segs, _, facts = parse((cache / s['sha256']).read_bytes(), s['headers'])
+            s.update(facts, text_sha256=text_digest(segs))
+            alias = alias_pattern(aliases.get(s['product_id']))
+            if alias:
+                s['model_mentions'] = sum(bool(alias.search(norm(g['text']))) for g in segs)
+            dump(dest / (s['id'] + '.segments.json'), segs)
+            hits.extend(candidates(s, segs, aliases.get(s['product_id'], [])))
+        sources.append(s)
+    dump(dest / 'sources.json', sources)
+    save_leads(dest, hits)
+    dump(dest / 'requests.json', load(run / 'requests.json') if (run / 'requests.json').exists() else [])
+    finish(dest, cfg, made.get('config_sha256'), sources, hits, made.get('config_warnings', []),
+           rebuilt_from={'run': str(run), 'tool_version': made.get('tool_version'), 'finished_at': made.get('finished_at')})
+    print(f'Rebuilt {sum(s["status"] == "extracted" for s in sources)} sources into {dest} with tool version {VERSION}')
+
+
+def cited(segments, location):
+    """Text at a location: one segment, or a short run of consecutive ones written as html-block:10-13."""
+    m = re.fullmatch(r'(html-block:|pdf-page:)(\d+)(?:-(\d+))?', location or '')
+    if not m or not int(m[2]) <= int(m[3] or m[2]) < int(m[2]) + 10:
+        return None
+    text = {x['location']: x['text'] for x in segments}
+    parts = [text.get(m[1] + str(n)) for n in range(int(m[2]), int(m[3] or m[2]) + 1)]
+    return None if None in parts else ' '.join(parts)
 
 
 def validate_reviews(rows, sources, products, segments=None, require_evidence=False):
     byid = {s['id']: s for s in sources}
-    seen = set()
+    seen, classes = set(), {}
     for r in rows:
         key = r['product_id'], r['feature']
-        if key in seen or key[0] not in products or key[1] not in CAPABILITIES:
+        scope = squash(r.get('interface') or '').lower()
+        # One capability may be recorded once per interface: TLS for DNP3 and TLS for a web page are different findings.
+        if key + (scope,) in seen or key[0] not in products or key[1] not in CAPABILITIES:
             raise ValueError(f'duplicate/unknown review key: {key}')
-        seen.add(key)
+        seen.add(key + (scope,))
         if r['status'] not in STATUSES:
             raise ValueError(f'invalid status: {key}')
         if not all(r.get(k) for k in ('reviewer', 'reviewed_at', 'rationale')):
@@ -589,6 +755,15 @@ def validate_reviews(rows, sources, products, segments=None, require_evidence=Fa
             raise ValueError(f'claim requires source evidence: {key}')
         if r['status'] != 'unknown' and not all(r.get(k) for k in ('location','protocol','interface','firmware','implementation')):
             raise ValueError(f'claim scope is incomplete: {key}')
+        kind = r.get('interface_class') or ''
+        if kind not in INTERFACE_CLASSES + (('',) if r['status'] == 'unknown' else ()):
+            raise ValueError(f'claim needs interface_class, one of {", ".join(INTERFACE_CLASSES)}: {key}')
+        if scope and kind and classes.setdefault((key[0], scope), kind) != kind:
+            raise ValueError(f'one interface is filed under two interface classes: {key}')
+        if r['status'] == 'conditional' and not r.get('conditions'):
+            raise ValueError(f'conditional result must state its conditions: {key}')
+        if (r.get('review_status') or 'draft') not in REVIEW_STATUSES:
+            raise ValueError(f'review_status must be one of {", ".join(REVIEW_STATUSES)}: {key}')
         for sid in r['source_ids']:
             s = byid.get(sid)
             if not s or s['status'] != 'extracted' or s['product_id'] != r['product_id']:
@@ -600,24 +775,31 @@ def validate_reviews(rows, sources, products, segments=None, require_evidence=Fa
             raise ValueError(f'claim requires a verbatim evidence quote: {key}')
         # A quote proves the words are in the cited passage; whether they support the claim stays the reviewer's call.
         for e in evidence:
-            wanted = squash(e.get('quote', ''))
+            wanted = loose(e.get('quote', ''))
             if e.get('source_id') not in r['source_ids']:
                 raise ValueError(f'evidence cites a source outside this review: {key}')
             if len(wanted) < 20:
                 raise ValueError(f'evidence quote too short to identify a passage: {key}')
             if segments:
-                text = next((x['text'] for x in segments(e['source_id']) if x['location'] == e.get('location')), None)
-                if text is None or wanted not in squash(text):
+                text = cited(segments(e['source_id']), e.get('location'))
+                if text is None or wanted not in loose(text):
                     raise ValueError(f"evidence quote not found at {e.get('location')} of source {e['source_id']}: {key}")
 
 
 def untouched(row):
     """A template row nobody has filled in. It is not a finding: it is left out and counted as not reviewed."""
-    blank = ('reviewer', 'reviewed_at', 'rationale', 'source_ids', 'source_hashes', 'evidence', 'location', 'protocol', 'interface')
+    blank = ('reviewer', 'reviewed_at', 'rationale', 'source_ids', 'source_hashes', 'evidence', 'location', 'protocol',
+             'interface', 'interface_class', 'conditions', 'review_status')
     return row.get('status') == 'unknown' and not any(row.get(k) for k in blank)
 
 
-def report(run, review_path, dest, require_evidence=False):
+COLUMNS = ('Manufacturer', 'Model', 'Firmware', 'Protocol / interface', 'Encryption', 'Authentication', 'Conditions',
+           'Evidence', 'Review status')
+MARK = {'supported': 'S', 'conditional': 'C', 'explicitly_unsupported': 'X', 'unknown': '?', 'conflicting': '!'}
+RANK = ('supported', 'conditional', 'conflicting', 'explicitly_unsupported')
+
+
+def report(run, review_path, dest, require_evidence=False, source_notes=None):
     run, dest = Path(run), Path(dest)
     cfg, sources, rows = load(run / 'config.json'), load(run / 'sources.json'), load(review_path)
     products = {p['id']: p for p in cfg['products']}
@@ -625,23 +807,34 @@ def report(run, review_path, dest, require_evidence=False):
     blank = sum(map(untouched, rows))
     rows = [r for r in rows if not untouched(r)]
     validate_reviews(rows, sources, products, lambda sid: load(run / (sid + '.segments.json')), require_evidence)
-    dest.mkdir(parents=True, exist_ok=True)
     byid = {s['id']: s for s in sources}
+    notes = {n['source_id']: n for n in (load(source_notes) if source_notes else [])}
+    if set(notes) - set(byid):
+        raise ValueError(f'source notes name sources that are not in this run: {sorted(set(notes) - set(byid))}')
+    dest.mkdir(parents=True, exist_ok=True)
+    # The source manifest: URL, retrieval time and hash come from the crawl, the document's own number and date from a reviewer.
+    refs = {}
+    for s in sources:
+        if s['status'] == 'extracted':
+            refs[s['id']] = s['ref'] = f'S{len(refs) + 1}'
+            s['document'] = {k: notes.get(s['id'], {}).get(k, '') for k in ('document_id', 'revision', 'document_date', 'note')}
     dump(dest / 'findings.json', rows)
     dump(dest / 'sources.json', sources)
     dump(dest / 'evidence_index.json', [
-        {'product_id': r['product_id'], 'feature': r['feature'], 'status': r['status'], 'source_id': e['source_id'],
+        {'product_id': r['product_id'], 'feature': r['feature'], 'status': r['status'], 'interface': r.get('interface', ''),
+         'interface_class': r.get('interface_class', ''), 'source_id': e['source_id'], 'source_ref': refs[e['source_id']],
          'url': byid[e['source_id']]['final_url'], 'sha256': byid[e['source_id']]['sha256'],
          'location': e['location'], 'quote': e['quote'], 'retrieved_at': byid[e['source_id']].get('retrieved_at')}
         for r in rows for e in r.get('evidence') or []])
-    if (run / 'candidates.json').exists():
-        leads = {p: Counter() for p in products}
-        for h in load(run / 'candidates.json'):
-            leads[h['product_id']][h['feature']] += 1
-        dump(dest / 'candidate_counts.json',
-             {p: {'total': sum(c.values()), 'by_group': dict(sorted(c.items()))} for p, c in leads.items()})
-    columns = ['product_id','vendor','model','category','feature','status','protocol','interface',
-               'firmware','implementation','location','rationale','reviewer','reviewed_at','source_urls','source_hashes','evidence']
+    # Lead counts say how much text mentioned a term. They are never device counts, and statements are kept apart.
+    leads = {p: {t: Counter() for t in ('capability', 'related', 'statement')} for p in products}
+    for h in load_leads(run):
+        leads[h['product_id']][h.get('lead_type') or lead_type(h['feature'])][h['feature']] += 1
+    dump(dest / 'candidate_counts.json', {p: {t: {'total': sum(c.values()), 'by_group': dict(sorted(c.items()))}
+                                              for t, c in kinds.items()} for p, kinds in leads.items()})
+    columns = ['product_id','vendor','model','category','feature','status','protocol','interface','interface_class',
+               'firmware','implementation','conditions','location','rationale','reviewer','reviewed_at','review_status',
+               'source_urls','source_hashes','evidence']
     with (dest / 'findings.csv').open('w', newline='', encoding='utf-8') as fp:
         w = csv.DictWriter(fp, fieldnames=columns)
         w.writeheader()
@@ -657,16 +850,95 @@ def report(run, review_path, dest, require_evidence=False):
     def md(x):
         return str(x).replace('|', '/').replace('\n', ' ')
 
+    def flat(x):
+        return ' '.join(str(x).split())
+
     def model(pid):
         return md(products[pid].get('model') or pid)
 
     def category(pid):
         return products[pid].get('category') or 'uncategorised'
 
-    totals = Counter(s['status'] for s in sources)
-    cells = {(r['product_id'], r['feature']): r['status'] for r in rows}
-    expected = len(products) * len(CAPABILITIES)
+    def label(status):
+        return status.replace('_', ' ')
+
+    def scope(r):
+        return squash(r.get('interface') or '').lower()
+
     claims = [r for r in rows if r['status'] != 'unknown']
+    cell = {(r['product_id'], r['feature'], scope(r)): r for r in rows}
+    reviewed = {(r['product_id'], r['feature']) for r in rows}
+    expected = len(products) * len(CAPABILITIES)
+
+    def prop(pid, where, members, feature):
+        """What the review says about one property on one interface. Mechanism rows are pointed to, never read as a result."""
+        r = cell.get((pid, feature, where)) or cell.get((pid, feature, ''))
+        if r and r['status'] != 'unknown':
+            return f"{label(r['status'])}: {flat(r['protocol'])}"
+        see = [f"{m['feature']} ({label(m['status'])})" for m in members if m['feature'] in RELATES[feature]]
+        return ('unknown' if r else 'not assessed' if see else 'not reviewed') + ('; see ' + ', '.join(see) if see else '')
+
+    # One row per product and interface. Repeated keyword matches cannot add rows; only reviewed findings can.
+    table = []
+    for pid, p in products.items():
+        found = {}
+        for r in claims:
+            if r['product_id'] == pid:
+                found.setdefault((r['interface_class'], scope(r)), []).append(r)
+        found = sorted(found.items(), key=lambda g: INTERFACE_CLASSES.index(g[0][0]))
+        if not found or found[0][0][0] != 'control_protocol':
+            # The study asks about control traffic, so its absence is stated instead of left out.
+            found.insert(0, (('control_protocol', ''), []))
+        for (kind, where), members in found:
+            signed = members or [r for r in rows if r['product_id'] == pid and not scope(r)]
+            used = list(dict.fromkeys(sid for m in members for sid in m['source_ids']))
+            table.append({
+                'Manufacturer': p.get('vendor', ''), 'Model': p.get('model') or pid, 'Category': category(pid),
+                'Interface class': kind,
+                'Firmware': '; '.join(dict.fromkeys(flat(m['firmware']) for m in members)) or 'not established',
+                'Protocol / interface': (f"{flat(members[0]['interface'])} ({kind.replace('_', ' ')})" if members
+                                         else 'No control protocol established from the examined sources'),
+                'Encryption': prop(pid, where, members, 'encryption'),
+                'Authentication': prop(pid, where, members, 'authentication'),
+                'Conditions': ('; '.join(dict.fromkeys(flat(m['conditions']) for m in members if m.get('conditions')))
+                               or ('none stated' if members else '-')),
+                'Evidence': [(refs[e['source_id']], e['location'], flat(e['quote'])) for m in members for e in m.get('evidence') or []],
+                'Review status': '; '.join(dict.fromkeys(f"{m.get('review_status') or 'draft'} ({flat(m['reviewer'])})"
+                                                         for m in signed)) or 'not reviewed',
+                'Sources': '; '.join(f"{refs[sid]} {byid[sid]['final_url']} sha256:{byid[sid]['sha256']}" for sid in used)})
+
+    def shown(quotes):
+        if not quotes:
+            return 'none'
+        ref, where, text = quotes[0]
+        return f'{ref} {where}: "{clip(text, 110)}"' + (f' (+{len(quotes) - 1} more)' if len(quotes) > 1 else '')
+
+    with (dest / 'findings_table.csv').open('w', newline='', encoding='utf-8') as fp:
+        w = csv.DictWriter(fp, fieldnames=list(COLUMNS[:2]) + ['Category'] + list(COLUMNS[2:4]) + ['Interface class'] + list(COLUMNS[4:]) + ['Sources'])
+        w.writeheader()
+        for row in table:
+            w.writerow(dict(row, Evidence=' || '.join(f'{ref} {where}: "{text}"' for ref, where, text in row['Evidence']) or 'none'))
+
+    def results(pid, feature, kinds):
+        return [r['status'] for r in claims if r['product_id'] == pid and r['feature'] == feature and r['interface_class'] in kinds]
+
+    def matrix(pid, feature):
+        control, other = results(pid, feature, ('control_protocol',)), results(pid, feature, ('management', 'network'))
+        if control:
+            return '/'.join(dict.fromkeys(MARK[x] for x in control))
+        if other:
+            return '(' + '/'.join(dict.fromkeys(MARK[x] for x in other)) + ')'
+        return '?' if (pid, feature) in reviewed else '-'
+
+    def bucket(pid, feature):
+        control = results(pid, feature, ('control_protocol',))
+        if control:
+            return min(control, key=RANK.index)
+        if results(pid, feature, ('management', 'network')):
+            return 'other'
+        return 'unknown' if (pid, feature) in reviewed else None
+
+    totals = Counter(s['status'] for s in sources)
     line = (f"Products/families in seed inventory: {len(products)}. Sources attempted: {len(sources) - totals['skipped']}; "
             f"extracted: {totals['extracted']}; failed: {totals['failed']}")
     if totals['duplicate']:
@@ -676,61 +948,68 @@ def report(run, review_path, dest, require_evidence=False):
     text = [f"# {cfg.get('title', 'IED security documentation survey')}", '',
             f"Sampling: {cfg['sampling']}", '', line + '.', '',
             'This measures documented capabilities, not enabled settings, installed-base coverage or plaintext prevalence. Unknown is not unsupported. Family-level evidence is not proof for every model/firmware. Capability categories overlap, so counts below are review cells and must not be added up as devices.', '',
-            'Reviewers on record: ' + ('; '.join(f'{md(name)} ({n} cells)' for name, n in Counter(r['reviewer'] for r in rows).items()) or 'none') + '.', '',
-            '## Review matrix', '',
-            'S supported, C conditional, X explicitly unsupported, ? unknown, ! conflicting, - not reviewed.', '',
-            '| Product | Category | ' + ' | '.join(CAPABILITIES) + ' |', '|---|---|' + '---|' * len(CAPABILITIES)]
-    mark = {'supported': 'S', 'conditional': 'C', 'explicitly_unsupported': 'X', 'unknown': '?', 'conflicting': '!'}
-    for pid in products:
-        text.append(f'| {model(pid)} | {md(category(pid))} | ' + ' | '.join(mark.get(cells.get((pid, c)), '-') for c in CAPABILITIES) + ' |')
-    if claims:
-        # The scope and the quoted words sit next to each result, so a second reader can check them without the CSV.
-        text.extend(['', '## Findings and evidence', '',
-                     'Every cell with a result other than unknown. Quotes are verbatim from the cited location of the retained source.'])
-        for r in claims:
-            text.extend(['', f"### {model(r['product_id'])}: {r['feature']} ({r['status'].replace('_', ' ')})", ''])
-            text.extend(f"- {label}: {' '.join(str(r[key]).split())}" for label, key in
-                        (('Protocol', 'protocol'), ('Interface', 'interface'), ('Firmware', 'firmware'),
-                         ('Implementation', 'implementation'), ('Location', 'location')))
-            text.extend(f'- Evidence, {e["location"]}: "{" ".join(e["quote"].split())}"' for e in r.get('evidence') or [])
-            text.extend(f"- Source: {byid[sid]['final_url']}" for sid in r['source_ids'])
-    order = ['supported', 'conditional', 'explicitly_unsupported', 'unknown', 'conflicting', None]
+            'Reviewers on record: ' + ('; '.join(f'{md(name)} ({n} rows)' for name, n in Counter(r['reviewer'] for r in rows).items()) or 'none') + '.', '',
+            '## Findings by product and interface', '',
+            'One row per product and interface. Encryption and authentication are stated for that interface only; a result for a management interface says nothing about control traffic. Full quotes are under "Findings and evidence" and in findings_table.csv; source references are resolved under "Sources examined".', '',
+            '| ' + ' | '.join(COLUMNS) + ' |', '|' + '---|' * len(COLUMNS)]
+    text.extend('| ' + ' | '.join(md(shown(row[c]) if c == 'Evidence' else row[c]) for c in COLUMNS) + ' |' for row in table)
+    order = ['supported', 'conditional', 'explicitly_unsupported', 'conflicting', 'other', 'unknown', None]
     text.extend(['', '## Counts by category', '',
-                 'Each row counts the products in one category; the last column is the denominator.', '',
-                 '| Category | Capability | Supported | Conditional | Explicitly unsupported | Unknown | Conflicting | Not reviewed | Products |',
-                 '|---|---|---|---|---|---|---|---|---|'])
+                 'Products, not leads or table rows. Each product is counted once per capability, under its most favourable documented status for a control protocol. "Other interface only" means a result exists for a management or network interface but none for a control protocol. The last column is the denominator.', '',
+                 '| Category | Capability | Supported | Conditional | Explicitly unsupported | Conflicting | Other interface only | Unknown | Not reviewed | Products |',
+                 '|---|---|---|---|---|---|---|---|---|---|'])
     for stratum in dict.fromkeys(map(category, products)):
         members = [pid for pid in products if category(pid) == stratum]
         for c in CAPABILITIES:
-            tally = Counter(cells.get((pid, c)) for pid in members)
+            tally = Counter(bucket(pid, c) for pid in members)
             text.append(f'| {md(stratum)} | {c} | ' + ' | '.join(str(tally[k]) for k in order) + f' | {len(members)} |')
-    text.extend(['', '## Reviewed cells', '', '| Product | Capability | Review result | Scope |', '|---|---|---|---|'])
+    text.extend(['', '## Capability matrix', '',
+                 'S supported, C conditional, X explicitly unsupported, ? unknown, ! conflicting, - not reviewed. A mark in parentheses is established only for a management or network interface, not for a control protocol.', '',
+                 '| Product | Category | ' + ' | '.join(CAPABILITIES) + ' |', '|---|---|' + '---|' * len(CAPABILITIES)])
+    text.extend(f'| {model(pid)} | {md(category(pid))} | ' + ' | '.join(matrix(pid, c) for c in CAPABILITIES) + ' |' for pid in products)
+    if claims:
+        # The scope and the quoted words sit next to each result, so a second reader can check them without the CSV.
+        text.extend(['', '## Findings and evidence', '',
+                     'Every row with a result other than unknown. Quotes are verbatim from the cited location of the retained source.'])
+        for r in claims:
+            text.extend(['', f"### {model(r['product_id'])}: {r['feature']} ({label(r['status'])})", '',
+                         f"- Interface: {flat(r['interface'])} ({r['interface_class'].replace('_', ' ')})"])
+            text.extend(f'- {name}: {flat(r[key])}' for name, key in
+                        (('Protocol', 'protocol'), ('Firmware', 'firmware'), ('Implementation', 'implementation'),
+                         ('Conditions', 'conditions'), ('Location', 'location')) if r.get(key))
+            text.extend(f'- Evidence, {e["location"]}: "{flat(e["quote"])}"' for e in r.get('evidence') or [])
+            text.extend(f"- Source: {refs[sid]} {byid[sid]['final_url']}" for sid in r['source_ids'])
+            text.append(f"- Review status: {r.get('review_status') or 'draft'} ({flat(r['reviewer'])})")
+    text.extend(['', '## Reviewed rows', '', '| Product | Capability | Interface | Review result | Scope |', '|---|---|---|---|---|'])
     for r in rows:
-        text.append('| ' + ' | '.join(md(x) for x in
-                    [model(r['product_id']), r['feature'], r['status'], r['rationale']]) + ' |')
-    unresolved = {pid: [c for c in CAPABILITIES if cells.get((pid, c)) not in ('supported', 'conditional', 'explicitly_unsupported')]
-                  for pid in products}
+        text.append('| ' + ' | '.join(md(x) for x in [model(r['product_id']), r['feature'], flat(r.get('interface') or '') or '-',
+                                                     r['status'], r['rationale']]) + ' |')
+    unresolved = {pid: [c for c in CAPABILITIES if not any(x in ('supported', 'conditional', 'explicitly_unsupported')
+                                                           for x in results(pid, c, INTERFACE_CLASSES))] for pid in products}
     text.extend(['', '## Unresolved cells', '',
-                 f'{sum(map(len, unresolved.values()))} of {expected} cells are unknown, conflicting or not reviewed.', ''])
+                 f'{sum(map(len, unresolved.values()))} of {expected} cells are unknown, conflicting or not reviewed on every interface.', ''])
     text.extend(f"- {model(pid)}: {', '.join(left)}" for pid, left in unresolved.items() if left)
     text.extend(['', '## Sources examined', '',
-                 'Titles and PDF dates are what each file says about itself; a PDF creation date is not necessarily a publication date.', '',
-                 '| Product | Document | Retrieved | URL |', '|---|---|---|---|'])
+                 'Number, revision and document date are what a reviewer read off the document; "not established" means nobody has yet. Titles and PDF dates are what the file says about itself, and a PDF creation date is not necessarily a publication date.', '',
+                 '| Ref | Product | Document | Number and revision | Document date | Retrieved | SHA-256 | URL |', '|---|---|---|---|---|---|---|---|'])
     for s in sources:
         if s['status'] == 'extracted':
             made = re.match(r'D:(\d{4})(\d{2})(\d{2})', s.get('pdf_created', ''))
             facts = [s.get('title') or 'untitled'] + ([f"{s['pages']} PDF pages"] if s.get('pages') else []) + (['PDF created ' + '-'.join(made.groups())] if made else [])
-            text.append(f"| {model(s['product_id'])} | {md(', '.join(facts))} | {s.get('retrieved_at', '')[:10]} | {md(s['final_url'])} |")
+            doc = s['document']
+            text.append(f"| {s['ref']} | {model(s['product_id'])} | {md(', '.join(facts))} | "
+                        f"{md(', '.join(filter(None, [doc['document_id'], doc['revision'] and 'revision ' + doc['revision']])) or 'not established')} | "
+                        f"{md(doc['document_date'] or 'not established')} | {s.get('retrieved_at', '')[:10]} | {s['sha256']} | {md(s['final_url'])} |")
     missing = [s for s in sources if s['status'] in ('failed', 'duplicate')]
     if missing:
         text.extend(['', '## Sources without extracted text', '', '| Product | URL | Outcome |', '|---|---|---|'])
         text.extend(f"| {model(s['product_id'])} | {md(s['url'])} | "
                     f"{md(s.get('error') or 'duplicate of ' + s['duplicate_of'])} |" for s in missing)
-    text.extend(['', f'Review coverage: {len(rows)}/{expected} product–capability cells. Unreviewed cells carry no result.', '',
-                 f"Evidence quotes: {sum(bool(r.get('evidence')) for r in claims)} of {len(claims)} cells with a result other than unknown carry a quote that was checked against the cited passage.", '',
+    text.extend(['', f'Review coverage: {len(reviewed)}/{expected} product–capability cells. Unreviewed cells carry no result.', '',
+                 f"Evidence quotes: {sum(bool(r.get('evidence')) for r in claims)} of {len(claims)} rows with a result other than unknown carry a quote that was checked against the cited passage.", '',
                  'See findings.csv for source URLs, hashes, interface, firmware and review provenance. No population percentages are computed.'])
     (dest / 'REPORT.md').write_text('\n'.join(text) + '\n', encoding='utf-8', newline='\n')
-    print(f'Report written to {dest}: {len(rows)} of {expected} cells reviewed'
+    print(f'Report written to {dest}: {len(reviewed)} of {expected} cells reviewed in {len(rows)} rows'
           + (f'; {blank} untouched template rows left out as not reviewed' if blank else ''))
 
 
@@ -761,10 +1040,10 @@ def replay(run, cache, dest):
             segs, _ = extract((Path(cache) / s['sha256']).read_bytes(), s['headers'])
             dump(dest / (s['id'] + '.segments.json'), segs)
             hits.extend(candidates(s, segs, aliases.get(s['product_id'], [])))
-    dump(dest / 'candidates.json', hits)
-    old = load(run / 'candidates.json')
-    if hits != old:
-        raise ValueError('extraction differs from recorded run; investigate tool/version changes')
+    save_leads(dest, hits)
+    for name in ('candidates.json', 'statement_leads.json'):
+        if load(dest / name) != (load(run / name) if (run / name).exists() else []):
+            raise ValueError('extraction differs from recorded run; investigate tool/version changes')
     print('Offline extraction and candidates match recorded run exactly')
 
 
@@ -788,10 +1067,10 @@ def recheck(old, new, dest=None):
             n = byid[n['duplicate_of']]
         mine = [q for q in quotes if q['source_id'] == s['id']]
         if mine and n and n['status'] == 'extracted':
-            segs = [(x['location'], squash(x['text'])) for x in load(new / (n['id'] + '.segments.json'))]
+            segs = [(x['location'], loose(x['text'])) for x in load(new / (n['id'] + '.segments.json'))]
             row['excerpts'] = []
             for q in mine:
-                wanted = squash(q.get('quote') or q.get('excerpt', ''))
+                wanted = loose(q.get('quote') or q.get('excerpt', ''))
                 found = [location for location, text in segs if wanted and wanted in text]
                 row['excerpts'].append({'excerpt': q.get('quote') or q.get('excerpt', ''), 'old_location': q.get('location'),
                                         'found_at': found[:5], 'same_location': q.get('location') in found})
@@ -857,18 +1136,20 @@ def main():
     p = argparse.ArgumentParser(description=__doc__)
     sub = p.add_subparsers(dest='cmd', required=True)
     c = sub.add_parser('crawl'); c.add_argument('--config', required=True); c.add_argument('--out', required=True); c.add_argument('--cache', default='cache'); c.add_argument('--resume', action='store_true')
-    r = sub.add_parser('report'); r.add_argument('--run', required=True); r.add_argument('--reviews', required=True); r.add_argument('--out', required=True); r.add_argument('--require-evidence', action='store_true')
+    r = sub.add_parser('report'); r.add_argument('--run', required=True); r.add_argument('--reviews', required=True); r.add_argument('--out', required=True); r.add_argument('--require-evidence', action='store_true'); r.add_argument('--source-notes')
     v = sub.add_parser('verify'); v.add_argument('--run', required=True); v.add_argument('--cache', default='cache')
     x = sub.add_parser('replay'); x.add_argument('--run', required=True); x.add_argument('--cache', default='cache'); x.add_argument('--out', required=True)
+    b = sub.add_parser('rebuild'); b.add_argument('--run', required=True); b.add_argument('--cache', default='cache'); b.add_argument('--out', required=True)
     k = sub.add_parser('recheck'); k.add_argument('--old', required=True); k.add_argument('--new', required=True); k.add_argument('--out')
     m = sub.add_parser('sitemap'); m.add_argument('--url', action='append', default=[]); m.add_argument('--host'); m.add_argument('--domain', action='append', default=[])
     m.add_argument('--match', default='.'); m.add_argument('--out', required=True); m.add_argument('--cache', default='cache'); m.add_argument('--max-files', type=int, default=20); m.add_argument('--delay', type=float, default=1.0)
     args = p.parse_args()
     try:
         if args.cmd == 'crawl': crawl(args.config, args.out, args.cache, args.resume)
-        elif args.cmd == 'report': report(args.run, args.reviews, args.out, args.require_evidence)
+        elif args.cmd == 'report': report(args.run, args.reviews, args.out, args.require_evidence, args.source_notes)
         elif args.cmd == 'verify': verify(args.run, args.cache)
         elif args.cmd == 'replay': replay(args.run, args.cache, args.out)
+        elif args.cmd == 'rebuild': rebuild(args.run, args.cache, args.out)
         elif args.cmd == 'recheck': recheck(args.old, args.new, args.out)
         elif not args.url and not args.host: p.error('sitemap needs --url or --host')
         else: sitemap(args.url, args.host, args.domain, args.match, args.out, args.cache, args.max_files, args.delay)

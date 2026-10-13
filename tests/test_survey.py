@@ -105,7 +105,7 @@ class SurveyTests(unittest.TestCase):
         source={'id':'s','product_id':'p','status':'extracted','sha256':'abc'}
         row={'product_id':'p','feature':'tls','status':'supported','source_ids':['s'],
              'source_hashes':{'s':'abc'},'reviewer':'test','reviewed_at':'2026-10-13','rationale':'explicit',
-             'protocol':'HTTPS','interface':'management','firmware':'unknown','implementation':'native','location':'page 2'}
+             'protocol':'HTTPS','interface':'management','interface_class':'management','firmware':'unknown','implementation':'native','location':'page 2'}
         return source,row
 
     def test_review_hash_binding(self):
@@ -232,7 +232,10 @@ class SurveyTests(unittest.TestCase):
             'messages are sent in clear text': ['plaintext_statement'],
             'AES-256 cipher suites': ['encryption'],
             'MACsec (IEEE 802.1AE) link encryption': ['encryption','macsec'],
-            'IKEv2 VPN tunnel': ['ipsec'],
+            'IKEv2 tunnel between sites': ['ipsec'],
+            'protect network access with firewalls, segmentation, VPN': ['vpn'],
+            'HTTP, TFTP, SFTP and MMS file transfer': ['sftp'],
+            'engineering access over SSH': ['ssh'],
             'Helps meet NERC CIP security requirements': [],
             'NERC CIP Security standards': [],
             'Supports CIP Security\u2122 on EtherNet/IP': ['cip_security'],
@@ -271,7 +274,7 @@ class SurveyTests(unittest.TestCase):
         self.assertEqual(segs[2].get('heading'), 'Chapter 5 Security')
         self.assertNotIn('heading', segs[1])
         self.assertEqual(links, [('a b.pdf','the instruction manual')])
-        self.assertEqual(facts, {'kind':'html','title':'B90'})
+        self.assertEqual(facts, {'kind':'html','title':'B90','document_hints':[]})
         self.assertEqual([h['feature'] for h in s.candidates({'id':'x','product_id':'p'}, segs)], ['tls'])
 
     def test_pdf_pages_metadata_and_bookmarks(self):
@@ -478,6 +481,10 @@ class SurveyTests(unittest.TestCase):
                     dict(good,quote='TLS is supported'), dict(good,source_id='other')]:
             with self.subTest(bad=bad), self.assertRaises(ValueError): check([bad])
         with self.assertRaisesRegex(ValueError,'verbatim evidence quote'): check([], require_evidence=True)
+        broken = lambda sid: [{'location':'pdf-page:9','text':'By default, all RTACs have a self-\nsigned X.509 certificate enabled.'}]
+        for spelling in ['self-signed', 'self- signed', 'selfsigned']:
+            source,row=self.fixture(); row['evidence']=[{'source_id':'s','location':'pdf-page:9','quote':f'all RTACs have a {spelling} X.509 certificate'}]
+            with self.subTest(spelling=spelling): s.validate_reviews([row],[source],{'p'},broken)
         source,row=self.fixture(); row.update(status='unknown', source_ids=[], source_hashes={})
         s.validate_reviews([row],[source],{'p'},segments,require_evidence=True)
 
@@ -491,24 +498,34 @@ class SurveyTests(unittest.TestCase):
             rows = s.load(p/'run'/'review_template.json')
             for row in rows: row.update(reviewer='A. Reviewer', reviewed_at='2026-10-13', rationale='not assessed')
             rows[1].update(status='conditional', source_ids=[source['id']], source_hashes={source['id']:source['sha256']}, location='html-block:2',
-                           protocol='DNP3 over TLS', interface='SCADA', firmware='unknown', implementation='licensed option', rationale='Explicit | licensed',
+                           protocol='DNP3 over TLS', interface='SCADA', interface_class='control_protocol', firmware='unknown', implementation='licensed option',
+                           conditions='needs the TLS licence', rationale='Explicit | licensed',
                            evidence=[{'source_id':source['id'],'location':'html-block:2','quote':'TLS is supported for DNP3 sessions'}])
             s.dump(p/'reviews.json', rows[:-1])
             s.report(p/'run', p/'reviews.json', p/'report', require_evidence=True)
             text = (p/'report'/'REPORT.md').read_text(encoding='utf-8')
-            for expected in ['# Synthetic survey', 'Sources attempted: 2; extracted: 1; failed: 1.', 'A. Reviewer (13 cells)',
+            for expected in ['# Synthetic survey', 'Sources attempted: 2; extracted: 1; failed: 1.', 'A. Reviewer (13 rows)',
                              '| R1 | relay | ? | C | ? | ? | ? | ? | ? |', '| M1 | meter | ? | ? | ? | ? | ? | ? | - |',
-                             '| relay | tls | 0 | 1 | 0 | 0 | 0 | 0 | 1 |', '| meter | ssh | 0 | 0 | 0 | 0 | 0 | 1 | 1 |',
-                             '13 of 14 cells are unknown, conflicting or not reviewed.', '| R1 | https://vendor.test/gone | ValueError: HTTP 404 |',
-                             'Review coverage: 13/14', 'Evidence quotes: 1 of 1 cells', 'Explicit / licensed',
-                             '## Findings and evidence', '### R1: tls (conditional)', '- Protocol: DNP3 over TLS', '- Implementation: licensed option',
-                             '- Evidence, html-block:2: "TLS is supported for DNP3 sessions"', '- Source: https://vendor.test/r',
-                             '| R1 | untitled | 2026-10-13 | https://vendor.test/r |']:
+                             '| relay | tls | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 1 |', '| meter | ssh | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 |',
+                             '13 of 14 cells are unknown, conflicting or not reviewed on every interface.', '| R1 | https://vendor.test/gone | ValueError: HTTP 404 |',
+                             'Review coverage: 13/14', 'Evidence quotes: 1 of 1 rows', 'Explicit / licensed',
+                             '## Findings and evidence', '### R1: tls (conditional)', '- Interface: SCADA (control protocol)', '- Protocol: DNP3 over TLS',
+                             '- Implementation: licensed option', '- Conditions: needs the TLS licence', '- Review status: draft (A. Reviewer)',
+                             '- Evidence, html-block:2: "TLS is supported for DNP3 sessions"', '- Source: S1 https://vendor.test/r',
+                             '| v | R1 | unknown | SCADA (control protocol) | unknown; see tls (conditional) | unknown; see tls (conditional) | needs the TLS licence | S1 html-block:2: "TLS is supported for DNP3 sessions" | draft (A. Reviewer) |',
+                             '| v | M1 | not established | No control protocol established from the examined sources | unknown | unknown | - | none | draft (A. Reviewer) |',
+                             f"| S1 | R1 | untitled | not established | not established | 2026-10-13 | {source['sha256']} | https://vendor.test/r |"]:
                 self.assertIn(expected, text)
+            table = (p/'report'/'findings_table.csv').read_text(encoding='utf-8').splitlines()
+            self.assertEqual(table[0], 'Manufacturer,Model,Category,Firmware,Protocol / interface,Interface class,Encryption,Authentication,Conditions,Evidence,Review status,Sources')
+            self.assertEqual(len(table), 3)
+            self.assertIn('sha256:' + source['sha256'], table[1])
             self.assertNotIn('%', text.replace('No population percentages', ''))
             index = s.load(p/'report'/'evidence_index.json')
             self.assertEqual([(x['product_id'],x['feature'],x['location'],x['sha256']) for x in index], [('r1','tls','html-block:2',source['sha256'])])
-            self.assertEqual(s.load(p/'report'/'candidate_counts.json'), {'r1':{'total':1,'by_group':{'tls':1}},'m1':{'total':0,'by_group':{}}})
+            none = {'total':0,'by_group':{}}
+            self.assertEqual(s.load(p/'report'/'candidate_counts.json'), {'r1':{'capability':{'total':1,'by_group':{'tls':1}},'related':none,'statement':none},
+                                                                          'm1':{'capability':none,'related':none,'statement':none}})
             rows[1]['evidence'][0]['quote'] = 'TLS is supported for all DNP3 sessions'
             s.dump(p/'reviews.json', rows)
             with self.assertRaisesRegex(ValueError,'evidence quote not found'): s.report(p/'run', p/'reviews.json', p/'report2')
@@ -521,7 +538,8 @@ class SurveyTests(unittest.TestCase):
             template = p/'run'/'review_template.json'
             s.report(p/'run', template, p/'report', require_evidence=True)
             text = (p/'report'/'REPORT.md').read_text(encoding='utf-8')
-            for expected in ['Reviewers on record: none.', '| R1 | relay | - | - | - | - | - | - | - |', 'Review coverage: 0/7', '7 of 7 cells are unknown, conflicting or not reviewed.']:
+            for expected in ['Reviewers on record: none.', '| R1 | relay | - | - | - | - | - | - | - |', 'Review coverage: 0/7', '7 of 7 cells are unknown, conflicting or not reviewed on every interface.',
+                             '| v | R1 | not established | No control protocol established from the examined sources | not reviewed | not reviewed | - | none | not reviewed |']:
                 self.assertIn(expected, text)
             self.assertEqual(s.load(p/'report'/'findings.json'), [])
             rows = s.load(template)
@@ -543,6 +561,178 @@ class SurveyTests(unittest.TestCase):
                                    (['verify','--run',str(p/'missing')], 'error: not found')]:
                 with self.subTest(argv=argv[0]), patch.object(s.sys, 'argv', ['survey.py']+argv), self.assertRaises(SystemExit) as stop: s.main()
                 self.assertIn(expected, str(stop.exception.code))
+
+    # --- 1.2.0 ---
+
+    def test_lead_records_matched_terms_and_type(self):
+        hits = {h['feature']: h for h in s.candidates({'id':'x','product_id':'p'}, [{'location':'pdf-page:1',
+            'text':'The relay supports TLS 1.2 and tls 1.2; SSL is disabled. File transfer uses SFTP. Use a VPN. Data is sent in clear text.'}])}
+        self.assertEqual(hits['tls']['matched'], ['TLS 1.2', 'SSL'])
+        self.assertEqual((hits['tls']['match_count'], hits['tls']['lead_type']), (3, 'capability'))
+        self.assertEqual((hits['sftp']['matched'], hits['sftp']['lead_type']), (['SFTP'], 'related'))
+        self.assertEqual((hits['vpn']['matched'], hits['vpn']['lead_type']), (['VPN'], 'related'))
+        self.assertEqual(hits['plaintext_statement']['lead_type'], 'statement')
+        self.assertNotIn('ssh', hits)
+        self.assertNotIn('ipsec', hits)
+
+    def test_lead_context_keeps_whole_sentences(self):
+        filler = ' '.join(f'Sentence number {n} describes an unrelated setting of the device.' for n in range(40))
+        text = filler + ' The outstation supports TLS for the DNP3 link. ' + filler
+        hit = s.candidates({'id':'x','product_id':'p'}, [{'location':'pdf-page:1','text':text}])[0]
+        self.assertIn('The outstation supports TLS for the DNP3 link.', hit['context'])
+        self.assertTrue(hit['context'].startswith('Sentence number'))
+        self.assertTrue(hit['context'].endswith('of the device.'))
+        self.assertLess(len(hit['context']), 1200)
+        self.assertNotIn('context_before', hit)
+        unbroken = 'x' * 900 + ' TLS ' + 'y' * 900
+        self.assertRegex(s.candidates({'id':'x','product_id':'p'}, [{'location':'pdf-page:1','text':unbroken}])[0]['context'], r'^\[\.\.\.\] .*TLS.* \[\.\.\.\]$')
+
+    def test_html_lead_carries_its_neighbouring_blocks(self):
+        segs = [{'location':f'html-block:{i+1}','text':t} for i, t in enumerate(
+            ['Communications', 'Supported protocols', 'CIP Security', 'lets devices authenticate each other.', 'Requires firmware 33 or later.', 'Ordering'])]
+        hit = next(h for h in s.candidates({'id':'x','product_id':'p'}, segs) if h['feature'] == 'cip_security')
+        self.assertEqual((hit['location'], hit['context']), ('html-block:3', 'CIP Security'))
+        self.assertEqual(hit['context_before'], ['Communications', 'Supported protocols'])
+        self.assertEqual(hit['context_after'], ['lets devices authenticate each other.', 'Requires firmware 33 or later.'])
+
+    def test_inline_styled_block_tags_do_not_split_a_sentence(self):
+        body = (b'<h2 class="title"><div style="display: inline;">CIP Security</div></h2><div class="p"><div style="display:inline">'
+                b'<span class="ph"><div style="display: inline;">CIP Security<span class="tm">&trade;</span></div></span> lets '
+                b'<div style="DISPLAY: inline-block">CIP</div>-connected devices authenticate each other.</div></div><div>Next block<p>unclosed<div>inner</div></div>tail')
+        segs = s.parse(body, {'Content-Type':'text/html'})[0]
+        self.assertEqual([x['text'] for x in segs], ['CIP Security', 'CIP Security\u2122 lets CIP-connected devices authenticate each other.', 'Next block', 'unclosed', 'inner', 'tail'])
+        self.assertEqual(segs[1]['heading'], 'CIP Security')
+        self.assertEqual([h['feature'] for h in s.candidates({'id':'x','product_id':'p'}, segs)], ['cip_security', 'cip_security', 'authentication'])
+
+    def test_document_hints_are_short_snippets_around_revision_and_date_markers(self):
+        pdf = [{'location':f'pdf-page:{n}','text':f'{n} Body text. SEL White Paper LWP0018-01 Date Code 20160111'} for n in (1, 2)]
+        self.assertEqual(s.hints(pdf), ['1 Body text. SEL White Paper LWP0018-01 Date Code 20160111'])
+        html = [{'location':'html-block:1','text':'Publication Date: |'}, {'location':'html-block:2','text':'2024-07-09'},
+                {'location':'html-block:3','text':'Current Version: | V1.2'}, {'location':'html-block:4','text':'\u00a9 Siemens 2025'},
+                {'location':'html-block:5','text':'protected under applicable copyright laws'}]
+        self.assertEqual(s.hints(html), ['Publication Date: | 2024-07-09', 'Current Version: | V1.2', '\u00a9 Siemens 2025'])
+        self.assertEqual(s.parse(b'<p>Revision B, 2020</p>', {'Content-Type':'text/html'})[2]['document_hints'], ['Revision B, 2020'])
+
+    def test_statement_leads_live_in_their_own_file(self):
+        with tempfile.TemporaryDirectory() as td:
+            p, calls = Path(td), []
+            pages = {'https://vendor.test/a': b'<p>DNP3 data is sent in clear text.</p><p>TLS is optional. Use a VPN.</p>'}
+            cfg = self.config(p, [{'id':'p','seeds':list(pages)}])
+            with self.site(pages, calls): s.crawl(cfg, p/'run', p/'cache')
+            self.assertEqual([h['feature'] for h in s.load(p/'run'/'candidates.json')], ['tls','vpn'])
+            self.assertEqual([h['feature'] for h in s.load(p/'run'/'statement_leads.json')], ['plaintext_statement'])
+            manifest = s.load(p/'run'/'manifest.json')
+            self.assertEqual((manifest['candidate_count'], manifest['lead_counts']), (2, {'statement':1,'capability':1,'related':1}))
+            s.replay(p/'run', p/'cache', p/'replay')
+            s.report(p/'run', p/'run'/'review_template.json', p/'report')
+            self.assertEqual(s.load(p/'report'/'candidate_counts.json')['p'], {'capability':{'total':1,'by_group':{'tls':1}},
+                'related':{'total':1,'by_group':{'vpn':1}}, 'statement':{'total':1,'by_group':{'plaintext_statement':1}}})
+            notes = s.load(p/'run'/'source_notes_template.json')
+            self.assertEqual([(n['url'], n['document_id'], n['revision'], n['document_date']) for n in notes], [('https://vendor.test/a','','','')])
+            self.assertEqual(s.load(p/'run'/'review_template.json')[0]['interface_class'], '')
+
+    def test_a_capability_is_recorded_once_per_interface(self):
+        def check(*changes):
+            source, row = self.fixture()
+            rows = [dict(row, **c) for c in changes]
+            s.validate_reviews(rows, [source], {'p'})
+        dnp = {'interface':'DNP3 server', 'interface_class':'control_protocol'}
+        web = {'interface':'Web interface', 'interface_class':'management'}
+        check(dnp, web)
+        check(dict(dnp, status='conditional', conditions='needs option board', review_status='confirmed'))
+        check({'status':'unknown','interface':'','interface_class':'','source_ids':[],'source_hashes':{}}, dnp)
+        for bad in [(dnp, dict(dnp, interface=' dnp3  SERVER ')), ({'interface_class':''},), ({'interface_class':'scada'},),
+                    (dnp, dict(dnp, feature='ssh', interface_class='management')), (dict(dnp, status='conditional'),),
+                    (dict(dnp, review_status='verified'),)]:
+            with self.subTest(bad=bad), self.assertRaises(ValueError): check(*bad)
+
+    def test_evidence_may_cite_a_short_range_of_segments(self):
+        blocks = [{'location':f'html-block:{i+1}','text':t} for i, t in enumerate(['CIP Security', 'lets devices', 'authenticate each other.', 'Other'])]
+        def check(location, quote='CIP Security lets devices authenticate each other.'):
+            source, row = self.fixture(); row['evidence'] = [{'source_id':'s','location':location,'quote':quote}]
+            s.validate_reviews([row],[source],{'p'},lambda sid: blocks)
+        check('html-block:1-3')
+        check('html-block:2-3', 'lets devices authenticate each other.')
+        for bad in ['html-block:1-2', 'html-block:3-1', 'html-block:1-12', 'html-block:3-9', 'block 1 to 3']:
+            with self.subTest(bad=bad), self.assertRaises(ValueError): check(bad)
+
+    def reviewed_run(self, p):
+        """One relay with TLS for DNP3 and a login for its web page, one relay with only a web login, one unreviewed meter."""
+        pages = {'https://vendor.test/a': b'<p>TLS is supported for DNP3 sessions.</p><p>The web interface requires a user login with a password.</p>',
+                 'https://vendor.test/b': b'<p>The web interface requires a user login with a password.</p>'}
+        cfg = self.config(p, [{'id':'a','seeds':['https://vendor.test/a']},{'id':'b','seeds':['https://vendor.test/b']},{'id':'m','category':'meter','seeds':[]}])
+        with self.site(pages, []): s.crawl(cfg, p/'run', p/'cache')
+        src = {x['product_id']: x for x in s.load(p/'run'/'sources.json')}
+        def row(pid, feature, status, interface='', kind='', quote='', **more):
+            base = {'product_id':pid,'feature':feature,'status':status,'source_ids':[src[pid]['id']],'source_hashes':{src[pid]['id']:src[pid]['sha256']},
+                    'location':'html-block:1','protocol':f'{feature} detail','interface':interface,'interface_class':kind,'firmware':'v2 or later',
+                    'implementation':'native','conditions':'','evidence':[{'source_id':src[pid]['id'],'location':more.pop('at','html-block:1'),'quote':quote}] if quote else [],
+                    'rationale':'explicit','reviewer':'A. Reviewer','reviewed_at':'2026-10-13','review_status':'draft'}
+            return dict(base, **more)
+        login = 'The web interface requires a user login'
+        rows = [row('a','tls','supported','DNP3 server','control_protocol','TLS is supported for DNP3 sessions.'),
+                row('a','encryption','supported','DNP3 server','control_protocol','TLS is supported for DNP3 sessions.', review_status='confirmed', reviewer='P. Author'),
+                row('a','authentication','conditional','Web interface','management',login, at='html-block:2', conditions='password must be set'),
+                row('a','authentication','unknown'), row('a','ssh','unknown'),
+                row('b','authentication','supported','Web interface','management',login),
+                row('b','encryption','unknown'), row('b','tls','unknown')]
+        s.dump(p/'reviews.json', rows)
+        return src
+
+    def test_findings_table_keeps_control_traffic_apart_from_management(self):
+        with tempfile.TemporaryDirectory() as td:
+            p = Path(td); self.reviewed_run(p)
+            s.report(p/'run', p/'reviews.json', p/'report', require_evidence=True)
+            text = (p/'report'/'REPORT.md').read_text(encoding='utf-8')
+            self.assertLess(text.index('## Findings by product and interface'), text.index('## Capability matrix'))
+            for expected in [
+                '| v | A | v2 or later | DNP3 server (control protocol) | supported: encryption detail | unknown; see tls (supported) | none stated | S1 html-block:1: "TLS is supported for DNP3 sessions." (+1 more) | draft (A. Reviewer); confirmed (P. Author) |',
+                '| v | A | v2 or later | Web interface (management) | not reviewed | conditional: authentication detail | password must be set | S1 html-block:2: "The web interface requires a user login" | draft (A. Reviewer) |',
+                '| v | B | not established | No control protocol established from the examined sources | unknown | not reviewed | - | none | draft (A. Reviewer) |',
+                '| v | B | v2 or later | Web interface (management) | unknown | supported: authentication detail | none stated | S2 html-block:1: "The web interface requires a user login" | draft (A. Reviewer) |',
+                '| v | M | not established | No control protocol established from the examined sources | not reviewed | not reviewed | - | none | not reviewed |',
+                '| A | relay | - | S | - | - | (C) | S | ? |', '| B | relay | - | ? | - | - | (S) | ? | - |', '| M | meter | - | - | - | - | - | - | - |',
+                '| relay | tls | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 2 |', '| relay | authentication | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 2 |',
+                '| relay | encryption | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 2 |', '| meter | tls | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 |',
+                'A. Reviewer (7 rows); P. Author (1 rows)', 'Review coverage: 7/21', '| A | authentication | Web interface | conditional | explicit |']:
+                self.assertIn(expected, text)
+            self.assertEqual(text.count('| v | A |'), 2)
+            self.assertEqual(len((p/'report'/'findings_table.csv').read_text(encoding='utf-8').splitlines()), 6)
+            self.assertEqual({(x['interface'], x['interface_class'], x['source_ref']) for x in s.load(p/'report'/'evidence_index.json')},
+                             {('DNP3 server','control_protocol','S1'), ('Web interface','management','S1'), ('Web interface','management','S2')})
+
+    def test_source_notes_complete_the_source_manifest(self):
+        with tempfile.TemporaryDirectory() as td:
+            p = Path(td); src = self.reviewed_run(p)
+            notes = s.load(p/'run'/'source_notes_template.json')
+            notes[0].update(document_id='LWP0018-01', revision='', document_date='2016-01-11', note='date code 20160111')
+            s.dump(p/'notes.json', notes[:1])
+            s.report(p/'run', p/'reviews.json', p/'report', source_notes=p/'notes.json')
+            text = (p/'report'/'REPORT.md').read_text(encoding='utf-8')
+            self.assertIn(f"| S1 | A | untitled | LWP0018-01 | 2016-01-11 | 2026-10-13 | {src['a']['sha256']} | https://vendor.test/a |", text)
+            self.assertIn(f"| S2 | B | untitled | not established | not established | 2026-10-13 | {src['b']['sha256']} | https://vendor.test/b |", text)
+            exported = s.load(p/'report'/'sources.json')
+            self.assertEqual((exported[0]['ref'], exported[0]['document']['document_id'], exported[1]['document']['document_id']), ('S1','LWP0018-01',''))
+            s.dump(p/'notes.json', [dict(notes[0], source_id='nope')])
+            with self.assertRaisesRegex(ValueError,'not in this run'): s.report(p/'run', p/'reviews.json', p/'report', source_notes=p/'notes.json')
+
+    def test_rebuild_rederives_leads_offline_and_keeps_source_identity(self):
+        with tempfile.TemporaryDirectory() as td:
+            p = Path(td); self.reviewed_run(p)
+            before = s.load(p/'run'/'sources.json')
+            manifest = s.load(p/'run'/'manifest.json'); manifest['tool_version'] = '1.1.0'; s.dump(p/'run'/'manifest.json', manifest)
+            s.dump(p/'run'/'candidates.json', [])
+            with patch.object(s.Fetcher, 'fetch', side_effect=AssertionError('network must not be used')):
+                s.rebuild(p/'run', p/'cache', p/'rebuilt')
+            after = s.load(p/'rebuilt'/'sources.json')
+            self.assertEqual([(x['id'], x['sha256'], x.get('retrieved_at')) for x in after], [(x['id'], x['sha256'], x.get('retrieved_at')) for x in before])
+            made = s.load(p/'rebuilt'/'manifest.json')
+            self.assertEqual((made['tool_version'], made['rebuilt_from']['tool_version'], made['complete']), (s.VERSION, '1.1.0', True))
+            self.assertEqual([(h['product_id'], h['feature'], h['matched']) for h in s.load(p/'rebuilt'/'candidates.json')], [('a','tls',['TLS'])])
+            s.replay(p/'rebuilt', p/'cache', p/'replay')
+            s.report(p/'rebuilt', p/'reviews.json', p/'report', require_evidence=True)
+            self.assertEqual(s.load(p/'run'/'candidates.json'), [])
+            with self.assertRaises(FileExistsError): s.rebuild(p/'run', p/'cache', p/'rebuilt')
 
     def test_resume_continues_an_interrupted_run_without_refetching(self):
         with tempfile.TemporaryDirectory() as td:
