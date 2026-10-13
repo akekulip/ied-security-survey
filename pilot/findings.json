@@ -1,0 +1,667 @@
+[
+  {
+    "product_id": "sel_rtac",
+    "feature": "dnp3_secure_authentication",
+    "status": "unknown",
+    "source_ids": [
+      "b8d90efe1e476caca1e9"
+    ],
+    "source_hashes": {
+      "b8d90efe1e476caca1e9": "379cfbfd5432e521e9dcf3028633cf34d07570aeed3e1a26f89c33dbbb1a2f20"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "rationale": "Examined pilot sources do not establish this capability for the scoped product/interface; not a non-support finding.",
+    "reviewer": "Codex AI review; author confirmation pending",
+    "reviewed_at": "2026-10-13T14:17:38.546747+00:00"
+  },
+  {
+    "product_id": "sel_rtac",
+    "feature": "tls",
+    "status": "conditional",
+    "source_ids": [
+      "b8d90efe1e476caca1e9"
+    ],
+    "source_hashes": {
+      "b8d90efe1e476caca1e9": "379cfbfd5432e521e9dcf3028633cf34d07570aeed3e1a26f89c33dbbb1a2f20"
+    },
+    "location": "pdf-page:10, Figures 9-10",
+    "protocol": "DNP3 server over TLS",
+    "interface": "SCADA server; engineering HTTPS is a separate documented interface",
+    "firmware": "Not specified; historical guide dated 2016-01-11",
+    "implementation": "RTAC server feature with certificates and tunnel configuration; not a downstream relay capability",
+    "rationale": "Guide documents TLS-protected DNP3 server sessions and optional mutual certificate authentication; confirm current model/firmware before generalizing.",
+    "reviewer": "Codex AI review; author confirmation pending",
+    "reviewed_at": "2026-10-13T14:17:38.546773+00:00"
+  },
+  {
+    "product_id": "sel_rtac",
+    "feature": "ipsec",
+    "status": "unknown",
+    "source_ids": [
+      "b8d90efe1e476caca1e9"
+    ],
+    "source_hashes": {
+      "b8d90efe1e476caca1e9": "379cfbfd5432e521e9dcf3028633cf34d07570aeed3e1a26f89c33dbbb1a2f20"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "rationale": "Examined pilot sources do not establish this capability for the scoped product/interface; not a non-support finding.",
+    "reviewer": "Codex AI review; author confirmation pending",
+    "reviewed_at": "2026-10-13T14:17:38.546776+00:00"
+  },
+  {
+    "product_id": "sel_rtac",
+    "feature": "cip_security",
+    "status": "unknown",
+    "source_ids": [
+      "b8d90efe1e476caca1e9"
+    ],
+    "source_hashes": {
+      "b8d90efe1e476caca1e9": "379cfbfd5432e521e9dcf3028633cf34d07570aeed3e1a26f89c33dbbb1a2f20"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "rationale": "Examined pilot sources do not establish this capability for the scoped product/interface; not a non-support finding.",
+    "reviewer": "Codex AI review; author confirmation pending",
+    "reviewed_at": "2026-10-13T14:17:38.546779+00:00"
+  },
+  {
+    "product_id": "sel_rtac",
+    "feature": "authentication",
+    "status": "conditional",
+    "source_ids": [
+      "b8d90efe1e476caca1e9"
+    ],
+    "source_hashes": {
+      "b8d90efe1e476caca1e9": "379cfbfd5432e521e9dcf3028633cf34d07570aeed3e1a26f89c33dbbb1a2f20"
+    },
+    "location": "pdf-page:10, Figures 9-10",
+    "protocol": "DNP3 server over TLS",
+    "interface": "SCADA server; engineering HTTPS is a separate documented interface",
+    "firmware": "Not specified; historical guide dated 2016-01-11",
+    "implementation": "RTAC server feature with certificates and tunnel configuration; not a downstream relay capability",
+    "rationale": "Guide documents TLS-protected DNP3 server sessions and optional mutual certificate authentication; confirm current model/firmware before generalizing.",
+    "reviewer": "Codex AI review; author confirmation pending",
+    "reviewed_at": "2026-10-13T14:17:38.546781+00:00"
+  },
+  {
+    "product_id": "sel_rtac",
+    "feature": "encryption",
+    "status": "conditional",
+    "source_ids": [
+      "b8d90efe1e476caca1e9"
+    ],
+    "source_hashes": {
+      "b8d90efe1e476caca1e9": "379cfbfd5432e521e9dcf3028633cf34d07570aeed3e1a26f89c33dbbb1a2f20"
+    },
+    "location": "pdf-page:10, Figures 9-10",
+    "protocol": "DNP3 server over TLS",
+    "interface": "SCADA server; engineering HTTPS is a separate documented interface",
+    "firmware": "Not specified; historical guide dated 2016-01-11",
+    "implementation": "RTAC server feature with certificates and tunnel configuration; not a downstream relay capability",
+    "rationale": "Guide documents TLS-protected DNP3 server sessions and optional mutual certificate authentication; confirm current model/firmware before generalizing.",
+    "reviewer": "Codex AI review; author confirmation pending",
+    "reviewed_at": "2026-10-13T14:17:38.546782+00:00"
+  },
+  {
+    "product_id": "sel_rtac",
+    "feature": "ssh",
+    "status": "unknown",
+    "source_ids": [
+      "b8d90efe1e476caca1e9"
+    ],
+    "source_hashes": {
+      "b8d90efe1e476caca1e9": "379cfbfd5432e521e9dcf3028633cf34d07570aeed3e1a26f89c33dbbb1a2f20"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "rationale": "Examined pilot sources do not establish this capability for the scoped product/interface; not a non-support finding.",
+    "reviewer": "Codex AI review; author confirmation pending",
+    "reviewed_at": "2026-10-13T14:17:38.546784+00:00"
+  },
+  {
+    "product_id": "schneider_advc",
+    "feature": "dnp3_secure_authentication",
+    "status": "conditional",
+    "source_ids": [
+      "dbdf6052530d465705e3"
+    ],
+    "source_hashes": {
+      "dbdf6052530d465705e3": "e7b97028739f8c8a3ad1e44f10ffe8828f8036910208b6d40d6743e9a864572a"
+    },
+    "location": "html-block:2132-2148 and 2162-2217, DNP3 Security",
+    "protocol": "DNP3-SA v5 / IEEE 1815-2012",
+    "interface": "DNP3 application authentication; not payload confidentiality",
+    "firmware": "Not specified; manual PKR39809-02",
+    "implementation": "Controller feature enabled/configured through WSOS Feature Selection",
+    "rationale": "Manual explicitly describes SA v5, feature selection and critical-request authentication. It does not establish encrypted DNP3 payloads.",
+    "reviewer": "Codex AI review; author confirmation pending",
+    "reviewed_at": "2026-10-13T14:17:38.546786+00:00"
+  },
+  {
+    "product_id": "schneider_advc",
+    "feature": "tls",
+    "status": "unknown",
+    "source_ids": [
+      "dbdf6052530d465705e3"
+    ],
+    "source_hashes": {
+      "dbdf6052530d465705e3": "e7b97028739f8c8a3ad1e44f10ffe8828f8036910208b6d40d6743e9a864572a"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "rationale": "Examined pilot sources do not establish this capability for the scoped product/interface; not a non-support finding.",
+    "reviewer": "Codex AI review; author confirmation pending",
+    "reviewed_at": "2026-10-13T14:17:38.546788+00:00"
+  },
+  {
+    "product_id": "schneider_advc",
+    "feature": "ipsec",
+    "status": "unknown",
+    "source_ids": [
+      "dbdf6052530d465705e3"
+    ],
+    "source_hashes": {
+      "dbdf6052530d465705e3": "e7b97028739f8c8a3ad1e44f10ffe8828f8036910208b6d40d6743e9a864572a"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "rationale": "Examined pilot sources do not establish this capability for the scoped product/interface; not a non-support finding.",
+    "reviewer": "Codex AI review; author confirmation pending",
+    "reviewed_at": "2026-10-13T14:17:38.546790+00:00"
+  },
+  {
+    "product_id": "schneider_advc",
+    "feature": "cip_security",
+    "status": "unknown",
+    "source_ids": [
+      "dbdf6052530d465705e3"
+    ],
+    "source_hashes": {
+      "dbdf6052530d465705e3": "e7b97028739f8c8a3ad1e44f10ffe8828f8036910208b6d40d6743e9a864572a"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "rationale": "Examined pilot sources do not establish this capability for the scoped product/interface; not a non-support finding.",
+    "reviewer": "Codex AI review; author confirmation pending",
+    "reviewed_at": "2026-10-13T14:17:38.546792+00:00"
+  },
+  {
+    "product_id": "schneider_advc",
+    "feature": "authentication",
+    "status": "conditional",
+    "source_ids": [
+      "dbdf6052530d465705e3"
+    ],
+    "source_hashes": {
+      "dbdf6052530d465705e3": "e7b97028739f8c8a3ad1e44f10ffe8828f8036910208b6d40d6743e9a864572a"
+    },
+    "location": "html-block:2132-2148 and 2162-2217, DNP3 Security",
+    "protocol": "DNP3-SA v5 / IEEE 1815-2012",
+    "interface": "DNP3 application authentication; not payload confidentiality",
+    "firmware": "Not specified; manual PKR39809-02",
+    "implementation": "Controller feature enabled/configured through WSOS Feature Selection",
+    "rationale": "Manual explicitly describes SA v5, feature selection and critical-request authentication. It does not establish encrypted DNP3 payloads.",
+    "reviewer": "Codex AI review; author confirmation pending",
+    "reviewed_at": "2026-10-13T14:17:38.546793+00:00"
+  },
+  {
+    "product_id": "schneider_advc",
+    "feature": "encryption",
+    "status": "unknown",
+    "source_ids": [
+      "dbdf6052530d465705e3"
+    ],
+    "source_hashes": {
+      "dbdf6052530d465705e3": "e7b97028739f8c8a3ad1e44f10ffe8828f8036910208b6d40d6743e9a864572a"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "rationale": "Examined pilot sources do not establish this capability for the scoped product/interface; not a non-support finding.",
+    "reviewer": "Codex AI review; author confirmation pending",
+    "reviewed_at": "2026-10-13T14:17:38.546795+00:00"
+  },
+  {
+    "product_id": "schneider_advc",
+    "feature": "ssh",
+    "status": "unknown",
+    "source_ids": [
+      "dbdf6052530d465705e3"
+    ],
+    "source_hashes": {
+      "dbdf6052530d465705e3": "e7b97028739f8c8a3ad1e44f10ffe8828f8036910208b6d40d6743e9a864572a"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "rationale": "Examined pilot sources do not establish this capability for the scoped product/interface; not a non-support finding.",
+    "reviewer": "Codex AI review; author confirmation pending",
+    "reviewed_at": "2026-10-13T14:17:38.546797+00:00"
+  },
+  {
+    "product_id": "rockwell_5580",
+    "feature": "dnp3_secure_authentication",
+    "status": "unknown",
+    "source_ids": [
+      "cab8a6e6a9edf8c162ac"
+    ],
+    "source_hashes": {
+      "cab8a6e6a9edf8c162ac": "49ce248a86b32c391e1286c3ea89cf857d2bba8cf79a23037aa366a1cf90c4ea"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "rationale": "Examined pilot sources do not establish this capability for the scoped product/interface; not a non-support finding.",
+    "reviewer": "Codex AI review; author confirmation pending",
+    "reviewed_at": "2026-10-13T14:17:38.546798+00:00"
+  },
+  {
+    "product_id": "rockwell_5580",
+    "feature": "tls",
+    "status": "unknown",
+    "source_ids": [
+      "cab8a6e6a9edf8c162ac"
+    ],
+    "source_hashes": {
+      "cab8a6e6a9edf8c162ac": "49ce248a86b32c391e1286c3ea89cf857d2bba8cf79a23037aa366a1cf90c4ea"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "rationale": "Examined pilot sources do not establish this capability for the scoped product/interface; not a non-support finding.",
+    "reviewer": "Codex AI review; author confirmation pending",
+    "reviewed_at": "2026-10-13T14:17:38.546800+00:00"
+  },
+  {
+    "product_id": "rockwell_5580",
+    "feature": "ipsec",
+    "status": "unknown",
+    "source_ids": [
+      "cab8a6e6a9edf8c162ac"
+    ],
+    "source_hashes": {
+      "cab8a6e6a9edf8c162ac": "49ce248a86b32c391e1286c3ea89cf857d2bba8cf79a23037aa366a1cf90c4ea"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "rationale": "Examined pilot sources do not establish this capability for the scoped product/interface; not a non-support finding.",
+    "reviewer": "Codex AI review; author confirmation pending",
+    "reviewed_at": "2026-10-13T14:17:38.546802+00:00"
+  },
+  {
+    "product_id": "rockwell_5580",
+    "feature": "cip_security",
+    "status": "unknown",
+    "source_ids": [
+      "cab8a6e6a9edf8c162ac"
+    ],
+    "source_hashes": {
+      "cab8a6e6a9edf8c162ac": "49ce248a86b32c391e1286c3ea89cf857d2bba8cf79a23037aa366a1cf90c4ea"
+    },
+    "location": "html-block:9-47",
+    "protocol": "CIP Security / EtherNet/IP",
+    "interface": "Control communication",
+    "firmware": "Exact CIP-compatible firmware not established in this pilot",
+    "implementation": "Version/software-dependent; explicit compatibility table not retrieved",
+    "rationale": "User manual describes CIP Security and confidentiality but refers to a separate compatibility guide. That PDF fetch was blocked by unresolved robots redirect; do not infer exact firmware support from nearby IEC-62443 claims.",
+    "reviewer": "Codex AI review; author confirmation pending",
+    "reviewed_at": "2026-10-13T14:17:38.546804+00:00"
+  },
+  {
+    "product_id": "rockwell_5580",
+    "feature": "authentication",
+    "status": "unknown",
+    "source_ids": [
+      "cab8a6e6a9edf8c162ac"
+    ],
+    "source_hashes": {
+      "cab8a6e6a9edf8c162ac": "49ce248a86b32c391e1286c3ea89cf857d2bba8cf79a23037aa366a1cf90c4ea"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "rationale": "Examined pilot sources do not establish this capability for the scoped product/interface; not a non-support finding.",
+    "reviewer": "Codex AI review; author confirmation pending",
+    "reviewed_at": "2026-10-13T14:17:38.546805+00:00"
+  },
+  {
+    "product_id": "rockwell_5580",
+    "feature": "encryption",
+    "status": "unknown",
+    "source_ids": [
+      "cab8a6e6a9edf8c162ac"
+    ],
+    "source_hashes": {
+      "cab8a6e6a9edf8c162ac": "49ce248a86b32c391e1286c3ea89cf857d2bba8cf79a23037aa366a1cf90c4ea"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "rationale": "Examined pilot sources do not establish this capability for the scoped product/interface; not a non-support finding.",
+    "reviewer": "Codex AI review; author confirmation pending",
+    "reviewed_at": "2026-10-13T14:17:38.546807+00:00"
+  },
+  {
+    "product_id": "rockwell_5580",
+    "feature": "ssh",
+    "status": "unknown",
+    "source_ids": [
+      "cab8a6e6a9edf8c162ac"
+    ],
+    "source_hashes": {
+      "cab8a6e6a9edf8c162ac": "49ce248a86b32c391e1286c3ea89cf857d2bba8cf79a23037aa366a1cf90c4ea"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "rationale": "Examined pilot sources do not establish this capability for the scoped product/interface; not a non-support finding.",
+    "reviewer": "Codex AI review; author confirmation pending",
+    "reviewed_at": "2026-10-13T14:17:38.546809+00:00"
+  },
+  {
+    "product_id": "ge_b90",
+    "feature": "dnp3_secure_authentication",
+    "status": "unknown",
+    "source_ids": [
+      "7d34db2ffda82aa29001"
+    ],
+    "source_hashes": {
+      "7d34db2ffda82aa29001": "bf08ebae53ad44e5180f54f474b183366be8ab9154c980609cad72cc16c7806f"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "rationale": "Examined pilot sources do not establish this capability for the scoped product/interface; not a non-support finding.",
+    "reviewer": "Codex AI review; author confirmation pending",
+    "reviewed_at": "2026-10-13T14:17:38.546810+00:00"
+  },
+  {
+    "product_id": "ge_b90",
+    "feature": "tls",
+    "status": "unknown",
+    "source_ids": [
+      "7d34db2ffda82aa29001"
+    ],
+    "source_hashes": {
+      "7d34db2ffda82aa29001": "bf08ebae53ad44e5180f54f474b183366be8ab9154c980609cad72cc16c7806f"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "rationale": "Examined pilot sources do not establish this capability for the scoped product/interface; not a non-support finding.",
+    "reviewer": "Codex AI review; author confirmation pending",
+    "reviewed_at": "2026-10-13T14:17:38.546813+00:00"
+  },
+  {
+    "product_id": "ge_b90",
+    "feature": "ipsec",
+    "status": "unknown",
+    "source_ids": [
+      "7d34db2ffda82aa29001"
+    ],
+    "source_hashes": {
+      "7d34db2ffda82aa29001": "bf08ebae53ad44e5180f54f474b183366be8ab9154c980609cad72cc16c7806f"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "rationale": "Examined pilot sources do not establish this capability for the scoped product/interface; not a non-support finding.",
+    "reviewer": "Codex AI review; author confirmation pending",
+    "reviewed_at": "2026-10-13T14:17:38.546815+00:00"
+  },
+  {
+    "product_id": "ge_b90",
+    "feature": "cip_security",
+    "status": "unknown",
+    "source_ids": [
+      "7d34db2ffda82aa29001"
+    ],
+    "source_hashes": {
+      "7d34db2ffda82aa29001": "bf08ebae53ad44e5180f54f474b183366be8ab9154c980609cad72cc16c7806f"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "rationale": "Examined pilot sources do not establish this capability for the scoped product/interface; not a non-support finding.",
+    "reviewer": "Codex AI review; author confirmation pending",
+    "reviewed_at": "2026-10-13T14:17:38.546817+00:00"
+  },
+  {
+    "product_id": "ge_b90",
+    "feature": "authentication",
+    "status": "conditional",
+    "source_ids": [
+      "7d34db2ffda82aa29001"
+    ],
+    "source_hashes": {
+      "7d34db2ffda82aa29001": "bf08ebae53ad44e5180f54f474b183366be8ab9154c980609cad72cc16c7806f"
+    },
+    "location": "html-block:147-158",
+    "protocol": "RADIUS / user authentication",
+    "interface": "Management and role-based access, not DNP3 message authentication",
+    "firmware": "CyberSentry section FW v7.4xx; exact model option configuration not established",
+    "implementation": "CyberSentry feature; deployment/configuration requirements require follow-up",
+    "rationale": "Product page documents user authentication and roles with CyberSentry. This is not evidence that DNP3 control messages are authenticated or encrypted.",
+    "reviewer": "Codex AI review; author confirmation pending",
+    "reviewed_at": "2026-10-13T14:17:38.546819+00:00"
+  },
+  {
+    "product_id": "ge_b90",
+    "feature": "encryption",
+    "status": "unknown",
+    "source_ids": [
+      "7d34db2ffda82aa29001"
+    ],
+    "source_hashes": {
+      "7d34db2ffda82aa29001": "bf08ebae53ad44e5180f54f474b183366be8ab9154c980609cad72cc16c7806f"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "rationale": "Examined pilot sources do not establish this capability for the scoped product/interface; not a non-support finding.",
+    "reviewer": "Codex AI review; author confirmation pending",
+    "reviewed_at": "2026-10-13T14:17:38.546821+00:00"
+  },
+  {
+    "product_id": "ge_b90",
+    "feature": "ssh",
+    "status": "unknown",
+    "source_ids": [
+      "7d34db2ffda82aa29001"
+    ],
+    "source_hashes": {
+      "7d34db2ffda82aa29001": "bf08ebae53ad44e5180f54f474b183366be8ab9154c980609cad72cc16c7806f"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "rationale": "Examined pilot sources do not establish this capability for the scoped product/interface; not a non-support finding.",
+    "reviewer": "Codex AI review; author confirmation pending",
+    "reviewed_at": "2026-10-13T14:17:38.546823+00:00"
+  },
+  {
+    "product_id": "siemens_sip5",
+    "feature": "dnp3_secure_authentication",
+    "status": "unknown",
+    "source_ids": [
+      "7e433d70887ae9b0be5d"
+    ],
+    "source_hashes": {
+      "7e433d70887ae9b0be5d": "16b5f949dc1b8046d54701991f82f9430d504c6ee7110e9bf6fc3a8eb79e5098"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "rationale": "Examined pilot sources do not establish this capability for the scoped product/interface; not a non-support finding.",
+    "reviewer": "Codex AI review; author confirmation pending",
+    "reviewed_at": "2026-10-13T14:17:38.546826+00:00"
+  },
+  {
+    "product_id": "siemens_sip5",
+    "feature": "tls",
+    "status": "conditional",
+    "source_ids": [
+      "7e433d70887ae9b0be5d"
+    ],
+    "source_hashes": {
+      "7e433d70887ae9b0be5d": "16b5f949dc1b8046d54701991f82f9430d504c6ee7110e9bf6fc3a8eb79e5098"
+    },
+    "location": "html-block:24-28, 576 and 593; SSA-750499",
+    "protocol": "TLS for web, DIGSI 5 and syslog",
+    "interface": "Management/engineering/logging; DNP3 traffic unspecified",
+    "firmware": "Advisory affected-product/version list; e.g. 7SA82 CP100 before V8.90, not a general support matrix",
+    "implementation": "Affected device/module configurations; check exact listed hardware and firmware",
+    "rationale": "Official advisory confirms encrypted management services while reporting weak ciphers in affected versions. Presence of encryption is not proof of adequate security or encrypted DNP3.",
+    "reviewer": "Codex AI review; author confirmation pending",
+    "reviewed_at": "2026-10-13T14:17:38.546828+00:00"
+  },
+  {
+    "product_id": "siemens_sip5",
+    "feature": "ipsec",
+    "status": "unknown",
+    "source_ids": [
+      "7e433d70887ae9b0be5d"
+    ],
+    "source_hashes": {
+      "7e433d70887ae9b0be5d": "16b5f949dc1b8046d54701991f82f9430d504c6ee7110e9bf6fc3a8eb79e5098"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "rationale": "Examined pilot sources do not establish this capability for the scoped product/interface; not a non-support finding.",
+    "reviewer": "Codex AI review; author confirmation pending",
+    "reviewed_at": "2026-10-13T14:17:38.546830+00:00"
+  },
+  {
+    "product_id": "siemens_sip5",
+    "feature": "cip_security",
+    "status": "unknown",
+    "source_ids": [
+      "7e433d70887ae9b0be5d"
+    ],
+    "source_hashes": {
+      "7e433d70887ae9b0be5d": "16b5f949dc1b8046d54701991f82f9430d504c6ee7110e9bf6fc3a8eb79e5098"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "rationale": "Examined pilot sources do not establish this capability for the scoped product/interface; not a non-support finding.",
+    "reviewer": "Codex AI review; author confirmation pending",
+    "reviewed_at": "2026-10-13T14:17:38.546831+00:00"
+  },
+  {
+    "product_id": "siemens_sip5",
+    "feature": "authentication",
+    "status": "unknown",
+    "source_ids": [
+      "7e433d70887ae9b0be5d"
+    ],
+    "source_hashes": {
+      "7e433d70887ae9b0be5d": "16b5f949dc1b8046d54701991f82f9430d504c6ee7110e9bf6fc3a8eb79e5098"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "rationale": "Examined pilot sources do not establish this capability for the scoped product/interface; not a non-support finding.",
+    "reviewer": "Codex AI review; author confirmation pending",
+    "reviewed_at": "2026-10-13T14:17:38.546833+00:00"
+  },
+  {
+    "product_id": "siemens_sip5",
+    "feature": "encryption",
+    "status": "conditional",
+    "source_ids": [
+      "7e433d70887ae9b0be5d"
+    ],
+    "source_hashes": {
+      "7e433d70887ae9b0be5d": "16b5f949dc1b8046d54701991f82f9430d504c6ee7110e9bf6fc3a8eb79e5098"
+    },
+    "location": "html-block:24-28, 576 and 593; SSA-750499",
+    "protocol": "TLS for web, DIGSI 5 and syslog",
+    "interface": "Management/engineering/logging; DNP3 traffic unspecified",
+    "firmware": "Advisory affected-product/version list; e.g. 7SA82 CP100 before V8.90, not a general support matrix",
+    "implementation": "Affected device/module configurations; check exact listed hardware and firmware",
+    "rationale": "Official advisory confirms encrypted management services while reporting weak ciphers in affected versions. Presence of encryption is not proof of adequate security or encrypted DNP3.",
+    "reviewer": "Codex AI review; author confirmation pending",
+    "reviewed_at": "2026-10-13T14:17:38.546835+00:00"
+  },
+  {
+    "product_id": "siemens_sip5",
+    "feature": "ssh",
+    "status": "unknown",
+    "source_ids": [
+      "7e433d70887ae9b0be5d"
+    ],
+    "source_hashes": {
+      "7e433d70887ae9b0be5d": "16b5f949dc1b8046d54701991f82f9430d504c6ee7110e9bf6fc3a8eb79e5098"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "rationale": "Examined pilot sources do not establish this capability for the scoped product/interface; not a non-support finding.",
+    "reviewer": "Codex AI review; author confirmation pending",
+    "reviewed_at": "2026-10-13T14:17:38.546840+00:00"
+  }
+]

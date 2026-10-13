@@ -1,0 +1,72 @@
+{
+  "sampling": "Purposive five-vendor pilot, selected to test extraction and distinctions; not representative and not an estimate of prevalence.",
+  "max_depth": 0,
+  "max_pages_per_product": 2,
+  "delay_seconds": 1.0,
+  "timeout_seconds": 20,
+  "max_bytes": 25000000,
+  "products": [
+    {
+      "id": "sel_rtac",
+      "vendor": "SEL",
+      "model": "RTAC family (guide scope)",
+      "category": "automation_controller",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/112760/"
+      ]
+    },
+    {
+      "id": "schneider_advc",
+      "vendor": "Schneider Electric",
+      "model": "PowerLogic ADVC Controller",
+      "category": "recloser_controller",
+      "domains": [
+        "productinfo.se.com"
+      ],
+      "seeds": [
+        "https://productinfo.se.com/advc-operationsmanual/pkr39809_advc_operations-manual/English/BM_ADVC3%20Operations%20Manual_0000999204.xml/$/TPC_ADVC3_OM_DNP3SecurityCPT_0001009251"
+      ]
+    },
+    {
+      "id": "rockwell_5580",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "ControlLogix 5580",
+      "category": "plc",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/docs/technical/logix5000/_online/1756-um543/controllogix-5580-and-guardlogix-5580-controllers-/controllogix-and-guardlogix-systems/secure-controller-systems.html",
+        "https://literature.rockwellautomation.com/idc/groups/literature/documents/at/secure-at001_-en-p.pdf"
+      ]
+    },
+    {
+      "id": "ge_b90",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin B90",
+      "category": "protective_relay",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/bus-protection/multilin-b90"
+      ]
+    },
+    {
+      "id": "siemens_sip5",
+      "vendor": "Siemens",
+      "model": "SIPROTEC 5 family",
+      "category": "protective_relay",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://cache.industry.siemens.com/dl/files/768/109821768/att_1145217/v1/SIP5_DIGSI5_Security_Conformance_Statement_EN.pdf",
+        "https://cert-portal.siemens.com/productcert/html/ssa-750499.html"
+      ]
+    }
+  ]
+}

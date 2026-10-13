@@ -1,0 +1,47 @@
+[
+  {
+    "source_id": "b8d90efe1e476caca1e9",
+    "product_id": "sel_rtac",
+    "url": "https://selinc.com/api/download/112760/",
+    "sha256": "379cfbfd5432e521e9dcf3028633cf34d07570aeed3e1a26f89c33dbbb1a2f20",
+    "location": "pdf-page:10",
+    "excerpt": "Configuring a DNP3 Server to Support TLS One-Way Authentication in ACSELERATOR RTAC",
+    "retrieved_at": "2026-10-13T14:14:16.561893+00:00"
+  },
+  {
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "url": "https://productinfo.se.com/advc-operationsmanual/pkr39809_advc_operations-manual/English/BM_ADVC3%20Operations%20Manual_0000999204.xml/$/TPC_ADVC3_OM_DNP3SecurityCPT_0001009251",
+    "sha256": "e7b97028739f8c8a3ad1e44f10ffe8828f8036910208b6d40d6743e9a864572a",
+    "location": "html-block:2137",
+    "excerpt": "The PowerLogic ADVC Controller implements version 5 of the secure authentication feature",
+    "retrieved_at": "2026-10-13T14:14:27.370597+00:00"
+  },
+  {
+    "source_id": "cab8a6e6a9edf8c162ac",
+    "product_id": "rockwell_5580",
+    "url": "https://www.rockwellautomation.com/en-us/docs/technical/logix5000/_online/1756-um543/controllogix-5580-and-guardlogix-5580-controllers-/controllogix-and-guardlogix-systems/secure-controller-systems.html",
+    "sha256": "49ce248a86b32c391e1286c3ea89cf857d2bba8cf79a23037aa366a1cf90c4ea",
+    "location": "html-block:38",
+    "excerpt": "See the requirements for your products to verify the correct product versions for your solution.",
+    "retrieved_at": "2026-10-13T14:14:37.569220+00:00"
+  },
+  {
+    "source_id": "7d34db2ffda82aa29001",
+    "product_id": "ge_b90",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/bus-protection/multilin-b90",
+    "sha256": "bf08ebae53ad44e5180f54f474b183366be8ab9154c980609cad72cc16c7806f",
+    "location": "html-block:153",
+    "excerpt": "AAA Server Support (Radius)",
+    "retrieved_at": "2026-10-13T14:14:57.965127+00:00"
+  },
+  {
+    "source_id": "7e433d70887ae9b0be5d",
+    "product_id": "siemens_sip5",
+    "url": "https://cert-portal.siemens.com/productcert/html/ssa-750499.html",
+    "sha256": "16b5f949dc1b8046d54701991f82f9430d504c6ee7110e9bf6fc3a8eb79e5098",
+    "location": "html-block:593",
+    "excerpt": "The affected devices are supporting weak ciphers on several ports",
+    "retrieved_at": "2026-10-13T14:15:31.606243+00:00"
+  }
+]

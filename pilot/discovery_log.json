@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-13",
+  "method": "Manual official-source discovery with web search; crawler fetches listed seeds directly. No search-engine API is built into the crawler.",
+  "queries": [
+    "site.selinc.com DNP3 TLS RTAC",
+    "site.productinfo.schneider-electric.com DNP3 Security Authentication",
+    "site.gevernova.com Multilin UR DNP3 secure authentication",
+    "site.siemens.com SIPROTEC 5 DNP3 TLS security",
+    "site.rockwellautomation.com ControlLogix 5580 CIP Security TLS DTLS"
+  ],
+  "selection": "Purposive pilot. GE selected B90 from family results; Siemens substituted official advisory after PDF 404. Failed Rockwell compatibility source retained. No claim of exhaustive discovery."
+}

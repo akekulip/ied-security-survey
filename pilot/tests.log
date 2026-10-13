@@ -1,0 +1,28 @@
+test_bounded_link_discovery (test_survey.SurveyTests.test_bounded_link_discovery) ... p extracted https://vendor.test/a
+p extracted https://vendor.test/manual.pdf
+ok
+test_complete_offline_pipeline (test_survey.SurveyTests.test_complete_offline_pipeline) ... p extracted https://vendor.test/a
+ok
+test_corrupted_cache_detected (test_survey.SurveyTests.test_corrupted_cache_detected) ... ok
+test_domain_boundary (test_survey.SurveyTests.test_domain_boundary) ... ok
+test_download_size_limit (test_survey.SurveyTests.test_download_size_limit) ... ok
+test_duplicate_cells_rejected (test_survey.SurveyTests.test_duplicate_cells_rejected) ... ok
+test_fetch_redirect_rejected_before_destination_contact (test_survey.SurveyTests.test_fetch_redirect_rejected_before_destination_contact) ... ok
+test_hash_fragment_removed_query_retained (test_survey.SurveyTests.test_hash_fragment_removed_query_retained) ... ok
+test_html_no_script_or_nav (test_survey.SurveyTests.test_html_no_script_or_nav) ... ok
+test_https_is_not_control_encryption (test_survey.SurveyTests.test_https_is_not_control_encryption) ... ok
+test_negation_is_never_positive_classification (test_survey.SurveyTests.test_negation_is_never_positive_classification) ... ok
+test_redirect_checks_robots_each_hop (test_survey.SurveyTests.test_redirect_checks_robots_each_hop) ... ok
+test_redirect_loop_is_bounded (test_survey.SurveyTests.test_redirect_loop_is_bounded) ... ok
+test_review_hash_binding (test_survey.SurveyTests.test_review_hash_binding) ... ok
+test_robots_404_allows_and_records (test_survey.SurveyTests.test_robots_404_allows_and_records) ... ok
+test_robots_denial_and_errors_fail_closed (test_survey.SurveyTests.test_robots_denial_and_errors_fail_closed) ... ok
+test_unreviewed_claim_and_empty_evidence_rejected (test_survey.SurveyTests.test_unreviewed_claim_and_empty_evidence_rejected) ... ok
+test_wrong_product_or_failed_source_rejected (test_survey.SurveyTests.test_wrong_product_or_failed_source_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.039s
+
+OK
+All recorded source bytes verified
+Offline extraction and candidates match recorded run exactly

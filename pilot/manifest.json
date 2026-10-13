@@ -1,0 +1,11 @@
+{
+  "tool_version": "1.0.0",
+  "finished_at": "2026-10-13T14:15:31.642719+00:00",
+  "config_sha256": "e4e585e5e9c7e1c9fcbb6add07f51d0277505f79b864764efc581a6140b22e46",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "script_sha256": "6f2542d4bd4cd882b5bc90aaae179bda01ba1ded89d7adacb9ec042b5bfb2083",
+  "complete": true,
+  "source_count": 7,
+  "candidate_count": 82,
+  "sampling": "Purposive five-vendor pilot, selected to test extraction and distinctions; not representative and not an estimate of prevalence."
+}
