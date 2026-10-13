@@ -24,11 +24,13 @@ from urllib.request import Request, HTTPRedirectHandler, build_opener
 
 from protego import Protego
 
-VERSION = '1.2.0'
+VERSION = '1.3.0'
 UA_TOKEN = 'IEDSecuritySurvey'
 UA = f"{UA_TOKEN}/{VERSION.rsplit('.', 1)[0]} (public-document research; no device scanning)"
 # Review cells. Changing this tuple changes every denominator; lead groups below may grow freely.
 CAPABILITIES = ('dnp3_secure_authentication', 'tls', 'ipsec', 'cip_security', 'authentication', 'encryption', 'ssh')
+# A capability named in a sentence that denies it. Encryption wording is left to plaintext_statement where both apply.
+TERM = r'(?:m?TLS|SSL|DTLS|IP\s?sec|SSH|MACsec|secure\s+authentication|authentication|encryption|CIP\s+Security)'
 PATTERNS = {
     'dnp3_secure_authentication': r'secure\s+auth\w*|\b(?-i:SA)\s*v\d\b|\bDNP\s*3?.{0,80}?\b(?-i:SA)\b|\bIEC\s*62351-5\b',
     'tls': r'\bm?TLS(?:\s?v?\d(?:\.\d)?)?\b|transport\s+layer\s+security|\bSSL\b',
@@ -44,15 +46,25 @@ PATTERNS = {
     'sftp': r'\bSFTP\b',
     'plaintext_statement': r'\bunencrypted\b|\bnon-?encrypted\b|\bnot\s+(?:be\s+|been\s+|being\s+)?encrypted\b'
                            r'|\bno\s+encryption\b|\bwithout\s+encryption\b'
-                           r"|\b(?:not|n['\u2019]t)\s+(?:support|provide|offer|include|implement|use)\w*\s+(?:\w+\s+){0,3}?encryption\b"
                            r'|\bplain\s?-?text\b|\bclear\s?-?text\b|\bin\s+the\s+clear\b',
+    # Explicit denials are searched for as deliberately as claims; they are the only route to explicitly_unsupported.
+    'non_support_statement': rf'\b{TERM}\b[^.]{{0,60}}?\b(?:is|are|was|were)\s+not\s+(?:used|supported|available|implemented|provided|offered)\b'
+                             rf"|(?:\b(?:does|do|did|will)\s+not|\b(?:does|do|did|wo)n['\u2019]t)\s+(?:support|provide|implement|offer|use|include)\b[^.]{{0,60}}?\b{TERM}\b"
+                             rf'|\b{TERM}\b[^.\w]{{0,6}}(?:not\s+supported|unsupported|not\s+available)\b'
+                             r'|\bno\s+(?:support\s+for\s+)?(?:m?TLS|SSL|DTLS|IP\s?sec|SSH|MACsec|secure\s+authentication|authentication|CIP\s+Security)\b',
     'macsec': r'\bMACsec\b|\b802\.1AE\b',
     'iec_62351': r'\bIEC(?:/TS)?\s*62351(?:-\d+)?\b',
 }
 LEADS = {k: re.compile(v, re.I | re.S) for k, v in PATTERNS.items()}
 # A lead in these groups also needs the qualifying term close by.
 NEAR = {'dnp3_secure_authentication': re.compile(r'\bDNP|\b1815\b|62351-5', re.I)}
+# "If the device does not support ..." states a condition, not a fact about the product.
+HYPOTHETICAL = re.compile(r'\b(?:if|whether|unless|when|where|in\s+case)\b[^.]{0,60}$', re.I)
+STATEMENTS = ('plaintext_statement', 'non_support_statement')
 STATUSES = {'supported', 'conditional', 'explicitly_unsupported', 'unknown', 'conflicting'}
+# Roughly from most to least direct about what one product and firmware can do. Guidance for the reviewer, not a score.
+DOC_TYPES = ('device_profile', 'conformance_statement', 'security_guide', 'manual', 'datasheet', 'product_page',
+             'advisory', 'other')
 # The distinction the study turns on: protection of control traffic is not protection of management access.
 INTERFACE_CLASSES = ('control_protocol', 'management', 'network')
 REVIEW_STATUSES = ('draft', 'confirmed')
@@ -117,8 +129,8 @@ def loose(text):
 
 
 def lead_type(feature):
-    # A plaintext statement is a literature lead, never a measurement of how equipment is deployed.
-    return 'capability' if feature in CAPABILITIES else 'statement' if feature == 'plaintext_statement' else 'related'
+    # A statement is something a document says in so many words. It is never a measurement of how equipment is deployed.
+    return 'capability' if feature in CAPABILITIES else 'statement' if feature in STATEMENTS else 'related'
 
 
 STOP = re.compile(r"""(?<=[.!?])(["')\]]*)\s+(?=[A-Z0-9"'(\[])""")
@@ -486,13 +498,75 @@ def alias_pattern(aliases):
     return re.compile('(?<![A-Za-z0-9])(?:' + '|'.join(re.escape(a) for a in aliases) + ')(?![A-Za-z0-9])', re.I)
 
 
+def suggest_doc_type(title, url, segments):
+    """A guess from the title, URL and opening text. A reviewer confirms the type in the source notes."""
+    name = f'{title} {url}'
+    opening = ' '.join(squash(s['text']) for s in segments[:3])[:3000]
+    near = f'{name} {opening[:400]}'
+    if re.search(r'device\s+profile', f'{name} {opening}', re.I) and re.search(r'\bDNP', f'{name} {opening}', re.I):
+        return 'device_profile'
+    if re.search(r'security\s+advisory|\bSSA-\d|\bICSA-\d', near, re.I):
+        return 'advisory'
+    if re.search(r'conformance\s+statement|\bPICS\b|\bPIXIT\b', near, re.I):
+        return 'conformance_statement'
+    if re.search(r'secur|hardening', near, re.I) and re.search(r'guide|white\s+paper|technique|hardening', near, re.I):
+        return 'security_guide'
+    if re.search(r'manual|user\s+guide|instruction|/docs?/', near, re.I):
+        return 'manual'
+    if re.search(r'data\s?sheet|brochure|flyer', near, re.I):
+        return 'datasheet'
+    return 'product_page' if segments and segments[0]['location'].startswith('html-block') else ''
+
+
+PROFILE_ITEM = re.compile(r'(?m)^[ \t]*(1\.12\.\d{1,2})[ \t]+(?=\S)')
+# A leading X or a checked-box character. Vendors mark options in different ways, so this is a heuristic.
+MARKED = re.compile(r'(?m)^[ \t]*(?:[Xx]|[\u2611\u2612\u2713\u2714])[ \t]+(\S.*?)[ \t]*$')
+
+
+def profile_items(segments):
+    """Section 1.12, Security Parameters, of a DNP3 Device Profile: one entry per numbered item, text kept whole."""
+    opening = ' '.join(s['text'] for s in segments[:3])
+    if not (re.search(r'device\s+profile', opening, re.I) and re.search(r'\bDNP', opening, re.I)):
+        return []
+    items = []
+    for segment in segments:
+        # The section heading repeats on each of its pages. The contents page has it too, followed by dot leaders.
+        head = re.search(r'1\.12[ \t]+SECURITY[ \t]+PARAMETERS(?![ \t]*\.{3})', segment['text'], re.I)
+        if not head:
+            continue
+        body = segment['text'][head.end():]
+        starts = list(PROFILE_ITEM.finditer(body))
+        carried = body[:starts[0].start()] if starts else body
+        if items and carried.strip():  # An item that runs on from the previous page.
+            items[-1]['raw'] += '\n' + carried
+        for n, m in enumerate(starts):
+            raw = body[m.end():starts[n + 1].start() if n + 1 < len(starts) else len(body)]
+            items.append({'item': m[1], 'location': segment['location'], 'raw': raw})
+    for item in items:
+        raw = item.pop('raw')
+        title = raw.split(':', 1)[0] if ':' in raw[:200] else raw.strip().split('\n', 1)[0]
+        item.update(title=' '.join(title.split()), text=' '.join(raw.split()),
+                    marked=[' '.join(x.split()) for x in MARKED.findall(raw)], marks='heuristic')
+    return items
+
+
 def candidates(source, segments, aliases=()):
     hits, alias = [], alias_pattern(aliases)
     texts = [norm(s['text']) for s in segments]
+    for item in profile_items(segments):
+        # The most direct statements a vendor makes about DNP3 security, so each item is a lead of its own.
+        about = 'tls' if re.search(r'\bTLS\b|cipher|certificate', item['title'] + ' ' + item['text'], re.I) else 'dnp3_secure_authentication'
+        hits.append({'id': digest((source['id'] + item['location'] + 'profile' + item['item']).encode())[:20],
+                     'source_id': source['id'], 'product_id': source['product_id'], 'feature': about,
+                     'lead_type': 'profile', 'location': item['location'], 'profile_item': item['item'],
+                     'title': item['title'], 'matched': item['marked'], 'context': clip(norm(item['text']), 900),
+                     'match_count': 1, 'status': 'unreviewed'})
     for i, segment in enumerate(segments):
         text = texts[i]
         for feature, pattern in LEADS.items():
             found = list(pattern.finditer(text))
+            if feature in STATEMENTS:
+                found = [m for m in found if not HYPOTHETICAL.search(text[max(0, m.start() - 80):m.start()])]
             if not found:
                 continue
             if feature in NEAR:
@@ -557,6 +631,20 @@ def link_score(url, text, alias):
     return len({m.lower() for m in RELEVANT.findall(blob)}) + (2 if alias and alias.search(blob) else 0)
 
 
+def describe(rec, segs, facts, out, alias):
+    """What the extracted text says about the document. A crawl and a rebuild record it the same way."""
+    rec.update(facts, text_sha256=text_digest(segs),
+               doc_type_suggested=suggest_doc_type(facts.get('title') or '', rec.get('final_url') or rec['url'], segs))
+    if alias:
+        rec['model_mentions'] = sum(bool(alias.search(norm(s['text']))) for s in segs)
+    items = profile_items(segs)
+    rec.pop('profile_items', None)
+    if items:
+        rec['profile_items'] = len(items)
+        dump(out / (rec['id'] + '.profile.json'), items)
+    dump(out / (rec['id'] + '.segments.json'), segs)
+
+
 def save_leads(out, hits):
     # Statements get their own file so nobody reads them as product capability leads.
     dump(out / 'candidates.json', [h for h in hits if h['lead_type'] != 'statement'])
@@ -586,7 +674,8 @@ def finish(out, cfg, config_sha256, sources, hits, warnings, **extra):
     # What a document says about its own number, revision and date is for a person to read off, not for a regex.
     dump(out / 'source_notes_template.json',
          [{'source_id': s['id'], 'product_id': s['product_id'], 'url': s['final_url'], 'title': s.get('title', ''),
-           'document_hints': s.get('document_hints', []), 'document_id': '', 'revision': '', 'document_date': '', 'note': ''}
+           'document_hints': s.get('document_hints', []), 'doc_type_suggested': s.get('doc_type_suggested', ''),
+           'doc_type': '', 'document_id': '', 'revision': '', 'document_date': '', 'note': ''}
           for s in sources if s['status'] == 'extracted'])
 
 
@@ -653,10 +742,8 @@ def crawl(config_path, out, cache, resume=False):
                             segs, links, facts = parse(body, meta['headers'])
                             if not any(s['text'].strip() for s in segs):
                                 raise ValueError('no extractable text; OCR/manual review required')
-                            rec.update(facts, status='extracted', text_sha256=text_digest(segs))
-                            if alias:
-                                rec['model_mentions'] = sum(bool(alias.search(norm(s['text']))) for s in segs)
-                            dump(out / (rec['id'] + '.segments.json'), segs)
+                            describe(rec, segs, facts, out, alias)
+                            rec['status'] = 'extracted'
                             hits.extend(candidates(rec, segs, aliases))
                     except Exception as e:
                         rec.update(status='failed', error=f'{type(e).__name__}: {e}')
@@ -712,11 +799,7 @@ def rebuild(run, cache, dest):
     for s in load(run / 'sources.json'):
         if s['status'] == 'extracted':
             segs, _, facts = parse((cache / s['sha256']).read_bytes(), s['headers'])
-            s.update(facts, text_sha256=text_digest(segs))
-            alias = alias_pattern(aliases.get(s['product_id']))
-            if alias:
-                s['model_mentions'] = sum(bool(alias.search(norm(g['text']))) for g in segs)
-            dump(dest / (s['id'] + '.segments.json'), segs)
+            describe(s, segs, facts, dest, alias_pattern(aliases.get(s['product_id'])))
             hits.extend(candidates(s, segs, aliases.get(s['product_id'], [])))
         sources.append(s)
     dump(dest / 'sources.json', sources)
@@ -811,23 +894,30 @@ def report(run, review_path, dest, require_evidence=False, source_notes=None):
     notes = {n['source_id']: n for n in (load(source_notes) if source_notes else [])}
     if set(notes) - set(byid):
         raise ValueError(f'source notes name sources that are not in this run: {sorted(set(notes) - set(byid))}')
+    wrong = sorted({n.get('doc_type') for n in notes.values() if n.get('doc_type')} - set(DOC_TYPES))
+    if wrong:
+        raise ValueError(f'source notes use a doc_type outside {", ".join(DOC_TYPES)}: {wrong}')
     dest.mkdir(parents=True, exist_ok=True)
     # The source manifest: URL, retrieval time and hash come from the crawl, the document's own number and date from a reviewer.
-    refs = {}
+    refs, cite = {}, {}
     for s in sources:
         if s['status'] == 'extracted':
             refs[s['id']] = s['ref'] = f'S{len(refs) + 1}'
-            s['document'] = {k: notes.get(s['id'], {}).get(k, '') for k in ('document_id', 'revision', 'document_date', 'note')}
+            s['document'] = {k: notes.get(s['id'], {}).get(k, '')
+                             for k in ('doc_type', 'document_id', 'revision', 'document_date', 'note')}
+            # What kind of document a quote comes from travels with every reference to it.
+            cite[s['id']] = f"{s['ref']} [{s['document']['doc_type'].replace('_', ' ') or 'type not confirmed'}]"
     dump(dest / 'findings.json', rows)
     dump(dest / 'sources.json', sources)
     dump(dest / 'evidence_index.json', [
         {'product_id': r['product_id'], 'feature': r['feature'], 'status': r['status'], 'interface': r.get('interface', ''),
          'interface_class': r.get('interface_class', ''), 'source_id': e['source_id'], 'source_ref': refs[e['source_id']],
+         'doc_type': byid[e['source_id']]['document']['doc_type'],
          'url': byid[e['source_id']]['final_url'], 'sha256': byid[e['source_id']]['sha256'],
          'location': e['location'], 'quote': e['quote'], 'retrieved_at': byid[e['source_id']].get('retrieved_at')}
         for r in rows for e in r.get('evidence') or []])
     # Lead counts say how much text mentioned a term. They are never device counts, and statements are kept apart.
-    leads = {p: {t: Counter() for t in ('capability', 'related', 'statement')} for p in products}
+    leads = {p: {t: Counter() for t in ('capability', 'related', 'statement', 'profile')} for p in products}
     for h in load_leads(run):
         leads[h['product_id']][h.get('lead_type') or lead_type(h['feature'])][h['feature']] += 1
     dump(dest / 'candidate_counts.json', {p: {t: {'total': sum(c.values()), 'by_group': dict(sorted(c.items()))}
@@ -902,10 +992,10 @@ def report(run, review_path, dest, require_evidence=False, source_notes=None):
                 'Authentication': prop(pid, where, members, 'authentication'),
                 'Conditions': ('; '.join(dict.fromkeys(flat(m['conditions']) for m in members if m.get('conditions')))
                                or ('none stated' if members else '-')),
-                'Evidence': [(refs[e['source_id']], e['location'], flat(e['quote'])) for m in members for e in m.get('evidence') or []],
+                'Evidence': [(cite[e['source_id']], e['location'], flat(e['quote'])) for m in members for e in m.get('evidence') or []],
                 'Review status': '; '.join(dict.fromkeys(f"{m.get('review_status') or 'draft'} ({flat(m['reviewer'])})"
                                                          for m in signed)) or 'not reviewed',
-                'Sources': '; '.join(f"{refs[sid]} {byid[sid]['final_url']} sha256:{byid[sid]['sha256']}" for sid in used)})
+                'Sources': '; '.join(f"{cite[sid]} {byid[sid]['final_url']} sha256:{byid[sid]['sha256']}" for sid in used)})
 
     def shown(quotes):
         if not quotes:
@@ -978,7 +1068,7 @@ def report(run, review_path, dest, require_evidence=False, source_notes=None):
                         (('Protocol', 'protocol'), ('Firmware', 'firmware'), ('Implementation', 'implementation'),
                          ('Conditions', 'conditions'), ('Location', 'location')) if r.get(key))
             text.extend(f'- Evidence, {e["location"]}: "{flat(e["quote"])}"' for e in r.get('evidence') or [])
-            text.extend(f"- Source: {refs[sid]} {byid[sid]['final_url']}" for sid in r['source_ids'])
+            text.extend(f"- Source: {cite[sid]} {byid[sid]['final_url']}" for sid in r['source_ids'])
             text.append(f"- Review status: {r.get('review_status') or 'draft'} ({flat(r['reviewer'])})")
     text.extend(['', '## Reviewed rows', '', '| Product | Capability | Interface | Review result | Scope |', '|---|---|---|---|---|'])
     for r in rows:
@@ -989,15 +1079,23 @@ def report(run, review_path, dest, require_evidence=False, source_notes=None):
     text.extend(['', '## Unresolved cells', '',
                  f'{sum(map(len, unresolved.values()))} of {expected} cells are unknown, conflicting or not reviewed on every interface.', ''])
     text.extend(f"- {model(pid)}: {', '.join(left)}" for pid, left in unresolved.items() if left)
+    profiles = [(s, load(run / (s['id'] + '.profile.json'))) for s in sources if s.get('profile_items')]
+    if profiles:
+        text.extend(['', '## Device profile statements', '',
+                     'Read by the tool from section 1.12, Security Parameters, of a DNP3 Device Profile. Marked options are detected by a heuristic and nothing in this table has been reviewed. A finding still needs a review row that quotes the item.', '',
+                     '| Product | Source | Item | Title | Options that appear marked | Location |', '|---|---|---|---|---|---|'])
+        text.extend(f"| {model(s['product_id'])} | {s['ref']} | {i['item']} | {md(i['title'])} | "
+                    f"{md('; '.join(i['marked']) or 'none detected')} | {i['location']} |" for s, items in profiles for i in items)
     text.extend(['', '## Sources examined', '',
-                 'Number, revision and document date are what a reviewer read off the document; "not established" means nobody has yet. Titles and PDF dates are what the file says about itself, and a PDF creation date is not necessarily a publication date.', '',
-                 '| Ref | Product | Document | Number and revision | Document date | Retrieved | SHA-256 | URL |', '|---|---|---|---|---|---|---|---|'])
+                 'Type, number, revision and document date are what a reviewer confirmed or read off the document; "not established" and "suggested" mean nobody has yet. Types are listed in the README from most to least direct about what one product and firmware can do. Titles and PDF dates are what the file says about itself, and a PDF creation date is not necessarily a publication date.', '',
+                 '| Ref | Product | Document | Type | Number and revision | Document date | Retrieved | SHA-256 | URL |', '|---|---|---|---|---|---|---|---|---|'])
     for s in sources:
         if s['status'] == 'extracted':
             made = re.match(r'D:(\d{4})(\d{2})(\d{2})', s.get('pdf_created', ''))
             facts = [s.get('title') or 'untitled'] + ([f"{s['pages']} PDF pages"] if s.get('pages') else []) + (['PDF created ' + '-'.join(made.groups())] if made else [])
             doc = s['document']
-            text.append(f"| {s['ref']} | {model(s['product_id'])} | {md(', '.join(facts))} | "
+            kind = doc['doc_type'] or ('suggested: ' + s['doc_type_suggested'] if s.get('doc_type_suggested') else 'not established')
+            text.append(f"| {s['ref']} | {model(s['product_id'])} | {md(', '.join(facts))} | {kind.replace('_', ' ')} | "
                         f"{md(', '.join(filter(None, [doc['document_id'], doc['revision'] and 'revision ' + doc['revision']])) or 'not established')} | "
                         f"{md(doc['document_date'] or 'not established')} | {s.get('retrieved_at', '')[:10]} | {s['sha256']} | {md(s['final_url'])} |")
     missing = [s for s in sources if s['status'] in ('failed', 'duplicate')]

@@ -65,11 +65,22 @@ Each candidate carries:
 - `matched`, the words that matched, and `match_count` for its page or block. `["SFTP"]` is not an SSH statement and `["VPN"]` is not IPsec, and the lead says which it was.
 - `context`, widened to whole sentences, and for HTML `context_before` and `context_after`, the two neighbouring blocks on each side. A heading or table label is never shown alone.
 - the nearest preceding `heading` (HTML heading or PDF bookmark) and, when the product has `aliases`, whether the model string appears in the same passage.
-- `lead_type`: `capability` for the seven review cells, `related` for neighbouring terms, `statement` for plaintext statements.
+- `lead_type`: `capability` for the seven review cells, `related` for neighbouring terms, `statement` for explicit denials and plaintext wording, `profile` for items of a DNP3 Device Profile.
 
 These help find and scope a passage. They are not verdicts and every candidate stays `unreviewed`. A lead is a place where a term occurs. Several leads in one document are still one document about one product, so lead counts are never device counts.
 
-`statement_leads.json` holds the `plaintext_statement` leads, apart from `candidates.json`. A statement about the product itself ("DNP3 messages are not encrypted") can support `explicitly_unsupported` after review. A general statement ("information is often transmitted in plain text") supports nothing about a product. It is a literature lead for the paper's motivation, to be cited as what that vendor wrote, and never a measured share of deployments.
+`statement_leads.json` holds two groups, apart from `candidates.json`:
+
+- `non_support_statement`: a capability named in a sentence that denies it, such as "TLS is not used", "does not support Secure Authentication" or "no support for IPsec". Conditional wording ("if the device does not support …") is skipped. These are searched for as deliberately as claims of support, because an explicit denial is the only route to `explicitly_unsupported`.
+- `plaintext_statement`: unencrypted, not encrypted, no encryption, plain or clear text.
+
+A statement about the product itself can support `explicitly_unsupported` after review. A general statement ("information is often transmitted in plain text") supports nothing about a product. It is a literature lead for the paper's motivation, to be cited as what that vendor wrote, and never a measured share of deployments.
+
+### DNP3 Device Profiles
+
+A DNP3 Device Profile is the vendor's own answer sheet for a product's DNP3 implementation. Its section 1.12, Security Parameters, states which Secure Authentication version is supported and whether TLS is used, item by item, including answers such as "Not relevant – TLS is not used". When a source is a device profile, the tool splits that section into its numbered items and writes them to `<source_id>.profile.json`: number, title, page, the item's whole text, and the option lines that appear marked. Each item is also a `profile` lead.
+
+Marks are read by a heuristic (a leading `X` or a checked-box character), because vendors mark options differently and some marks do not survive text extraction. An item with no detected mark still shows its full text. Nothing here is a finding until a review row quotes the item.
 
 ### Review rows
 
@@ -88,6 +99,21 @@ A row may carry `evidence`, a list of `{"source_id", "location", "quote"}` with 
 
 `sources.json` links every source to its URL, retrieval time and SHA-256. The document's own number, revision and date are read off the document by a person and entered in a copy of `source_notes_template.json`, keyed by `source_id`. `document_hints` in that template are snippets found near revision and date markers; they are aids, not answers. Leave a field empty when the document does not say. The report then shows "not established".
 
+The notes also carry `doc_type`. The tool fills `doc_type_suggested` from the title, URL and opening text; a person confirms it by setting `doc_type`. The types, roughly from most to least direct about what one product and firmware can do:
+
+| `doc_type` | What it is |
+|---|---|
+| `device_profile` | DNP3 Device Profile: itemised capabilities and current values for one product |
+| `conformance_statement` | Security or protocol conformance statement, PICS or PIXIT |
+| `security_guide` | Security or hardening guide, white paper or application technique |
+| `manual` | Instruction, operations or communications manual |
+| `datasheet` | Data sheet, brochure or flyer |
+| `product_page` | Marketing web page |
+| `advisory` | Vulnerability advisory: says what was wrong, and only indirectly what exists |
+| `other` | Anything else; say what in `note` |
+
+The order is guidance for weighing evidence, not a score. A manual for the exact firmware can outweigh a device profile for another one. The report shows the type beside every evidence reference, for example `S1 [manual]`, and `[type not confirmed]` until someone has set it.
+
 ### The report
 
 `REPORT.md` opens with the findings table, one row per product and interface: manufacturer, model, firmware, protocol/interface, encryption, authentication, conditions, evidence, review status. `findings_table.csv` holds the same rows with every quote and the source URL and hash.
@@ -97,7 +123,7 @@ A row may carry `evidence`, a list of `{"source_id", "location", "quote"}` with 
 - The capability matrix puts a mark in parentheses when a result exists only for a management or network interface.
 - "Counts by category" counts products, never leads or table rows, with the number of products as the denominator.
 
-The report also writes `findings.csv`, `findings.json`, `evidence_index.json`, `candidate_counts.json` (leads by type, never device counts) and `sources.json`, the source manifest with the notes merged in. The Markdown further lists each finding with its quotes, the unresolved cells, the documents examined, and the sources that yielded no text. Validation rejects records without reviewer, date and rationale, unbound hashes, evidence from another product, failed-source support claims, misquoted evidence, results without an interface class, conditional results without conditions, and duplicate rows for one product, capability and interface. The reviewer must establish semantic correctness; hash and quote checking cannot do that.
+The report also writes `findings.csv`, `findings.json`, `evidence_index.json`, `candidate_counts.json` (leads by type, never device counts) and `sources.json`, the source manifest with the notes merged in. The Markdown further lists each finding with its quotes, the unresolved cells, the items read from any device profile (labelled as not reviewed), the documents examined with their types, and the sources that yielded no text. Validation rejects records without reviewer, date and rationale, unbound hashes, evidence from another product, failed-source support claims, misquoted evidence, results without an interface class, conditional results without conditions, and duplicate rows for one product, capability and interface. The reviewer must establish semantic correctness; hash and quote checking cannot do that.
 
 The delivered `pilot/` contains the reviewed pilot, request/source manifests, short evidence excerpts and tests log. Review identity is explicitly `Codex AI review; author confirmation pending`. It is a working research artifact, **not a publication-ready population survey**. All outcomes, including the failed Siemens PDF request, are retained. `pilot/REPORT.md` is the entry point.
 
@@ -122,7 +148,7 @@ Always separate:
 
 `ipsec`, `tls`, `cip_security`, `dnp3_secure_authentication`, `authentication`, `encryption`, and `ssh` are overlapping search categories, not disjoint counts. In particular, do not add their totals as device counts. Decryption is generally the counterpart of documented encrypted communication; do not infer an independently supported interface from that word alone.
 
-Those seven are the review cells and the only source of denominators. A capability group holds only terms that name that capability. Neighbouring terms have their own lead-only groups that never become cells: `vpn`, `sftp`, `macsec` and `iec_62351`. A recommendation to use a VPN does not establish native IPsec support, and an SFTP mention is not an explicit SSH statement. `plaintext_statement` (unencrypted, plain or clear text, "not encrypted", "does not support encryption") is a third kind, kept in its own file as described under Leads. Whether MACsec or IEC 62351 should become review cells is a protocol decision to take before the inventory is frozen, because it changes every denominator.
+Those seven are the review cells and the only source of denominators. A capability group holds only terms that name that capability. Neighbouring terms have their own lead-only groups that never become cells: `vpn`, `sftp`, `macsec` and `iec_62351`. A recommendation to use a VPN does not establish native IPsec support, and an SFTP mention is not an explicit SSH statement. `non_support_statement` and `plaintext_statement` are a third kind, kept in their own file as described under Leads. Whether MACsec or IEC 62351 should become review cells is a protocol decision to take before the inventory is frozen, because it changes every denominator.
 
 `cip_security` means ODVA CIP Security. NERC CIP is excluded from that group. A bare "secure authentication" counts as a DNP3 Secure Authentication lead only when DNP3, IEEE 1815 or IEC 62351-5 is mentioned on the same PDF page, in the block's heading, or within three HTML blocks.
 
@@ -181,6 +207,6 @@ Before depositing data with a paper, review vendor licensing and repository poli
 
 ## Limits and next work
 
-This is version 1.2: serial bounded crawling, HTML/text-PDF extraction, RFC 9309 robots handling, content-addressed source retention, per-interface review validation with checked evidence quotes, and report generation. It has no headless browser, OCR, automatic search-engine integration, production scheduler, automatic model inventory or automatic semantic verdicts. Those are deliberate scope limits for a supporting paper study.
+This is version 1.3: serial bounded crawling, HTML/text-PDF extraction, RFC 9309 robots handling, content-addressed source retention, per-interface review validation with checked evidence quotes, and report generation. It has no headless browser, OCR, automatic search-engine integration, production scheduler, automatic model inventory or automatic semantic verdicts. Those are deliberate scope limits for a supporting paper study.
 
 The immediate next work is author verification of the pilot and a category-based inventory. A second reviewer should independently check a sample, resolve disagreements and retain the original judgments. Report counts and denominators only after that protocol is frozen. Keep mechanism engineering as the main project priority.

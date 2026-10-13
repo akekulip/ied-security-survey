@@ -18,14 +18,16 @@ class Reply(io.BytesIO):
 
 
 def tiny_pdf(pages, bookmark=None):
-    """Smallest text PDF pypdf will read: one font, one content stream per page, optional bookmark (title, page index)."""
+    """Smallest text PDF pypdf will read: one font, one content stream per page, optional bookmark (title, page index).
+    A page is one line of text or a list of lines."""
     n = len(pages)
     info, outlines = 4 + 2 * n, 5 + 2 * n
     objs = [f'<< /Type /Catalog /Pages 2 0 R{f" /Outlines {outlines} 0 R" if bookmark else ""} >>'.encode(),
             f'<< /Type /Pages /Kids [{" ".join(f"{4 + 2 * i} 0 R" for i in range(n))}] /Count {n} >>'.encode(),
             b'<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>']
     for i, text in enumerate(pages):
-        stream = f'BT /F1 12 Tf 72 720 Td ({text}) Tj ET'.encode() if text else b''
+        lines = [text] if isinstance(text, str) else text
+        stream = ('BT /F1 12 Tf 14 TL 72 720 Td ' + ' T* '.join(f'({line}) Tj' for line in lines) + ' ET').encode() if text else b''
         objs.append(f'<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents {5 + 2 * i} 0 R >>'.encode())
         objs.append(b'<< /Length %d >>\nstream\n%s\nendstream' % (len(stream), stream))
     objs.append(b'<< /Title (Test Relay Manual) /CreationDate (D:20260102030405Z) >>')
@@ -227,7 +229,13 @@ class SurveyTests(unittest.TestCase):
             'authenti-\ncation of users': ['authentication'],
             'supports 802.1X port control': ['authentication'],
             'DNP3 traffic is unencrypted': ['encryption','plaintext_statement'],
-            'does not support encryption of DNP3': ['encryption','plaintext_statement'],
+            'does not support encryption of DNP3': ['encryption','non_support_statement'],
+            'TLS is not used for DNP3': ['tls','non_support_statement'],
+            'The outstation does not support DNP3 Secure Authentication': ['dnp3_secure_authentication','authentication','non_support_statement'],
+            'Secure Authentication: Not Supported': ['authentication','non_support_statement'],
+            'There is no support for IPsec': ['ipsec','non_support_statement'],
+            'If the device does not support secure authentication then ignore the rest': ['authentication'],
+            'TLS is supported. Modbus is not supported': ['tls'],
             'data is sent in plain text': ['plaintext_statement'],
             'messages are sent in clear text': ['plaintext_statement'],
             'AES-256 cipher suites': ['encryption'],
@@ -511,10 +519,10 @@ class SurveyTests(unittest.TestCase):
                              'Review coverage: 13/14', 'Evidence quotes: 1 of 1 rows', 'Explicit / licensed',
                              '## Findings and evidence', '### R1: tls (conditional)', '- Interface: SCADA (control protocol)', '- Protocol: DNP3 over TLS',
                              '- Implementation: licensed option', '- Conditions: needs the TLS licence', '- Review status: draft (A. Reviewer)',
-                             '- Evidence, html-block:2: "TLS is supported for DNP3 sessions"', '- Source: S1 https://vendor.test/r',
-                             '| v | R1 | unknown | SCADA (control protocol) | unknown; see tls (conditional) | unknown; see tls (conditional) | needs the TLS licence | S1 html-block:2: "TLS is supported for DNP3 sessions" | draft (A. Reviewer) |',
+                             '- Evidence, html-block:2: "TLS is supported for DNP3 sessions"', '- Source: S1 [type not confirmed] https://vendor.test/r',
+                             '| v | R1 | unknown | SCADA (control protocol) | unknown; see tls (conditional) | unknown; see tls (conditional) | needs the TLS licence | S1 [type not confirmed] html-block:2: "TLS is supported for DNP3 sessions" | draft (A. Reviewer) |',
                              '| v | M1 | not established | No control protocol established from the examined sources | unknown | unknown | - | none | draft (A. Reviewer) |',
-                             f"| S1 | R1 | untitled | not established | not established | 2026-10-13 | {source['sha256']} | https://vendor.test/r |"]:
+                             f"| S1 | R1 | untitled | suggested: product page | not established | not established | 2026-10-13 | {source['sha256']} | https://vendor.test/r |"]:
                 self.assertIn(expected, text)
             table = (p/'report'/'findings_table.csv').read_text(encoding='utf-8').splitlines()
             self.assertEqual(table[0], 'Manufacturer,Model,Category,Firmware,Protocol / interface,Interface class,Encryption,Authentication,Conditions,Evidence,Review status,Sources')
@@ -524,8 +532,8 @@ class SurveyTests(unittest.TestCase):
             index = s.load(p/'report'/'evidence_index.json')
             self.assertEqual([(x['product_id'],x['feature'],x['location'],x['sha256']) for x in index], [('r1','tls','html-block:2',source['sha256'])])
             none = {'total':0,'by_group':{}}
-            self.assertEqual(s.load(p/'report'/'candidate_counts.json'), {'r1':{'capability':{'total':1,'by_group':{'tls':1}},'related':none,'statement':none},
-                                                                          'm1':{'capability':none,'related':none,'statement':none}})
+            self.assertEqual(s.load(p/'report'/'candidate_counts.json'), {'r1':{'capability':{'total':1,'by_group':{'tls':1}},'related':none,'statement':none,'profile':none},
+                                                                          'm1':{'capability':none,'related':none,'statement':none,'profile':none}})
             rows[1]['evidence'][0]['quote'] = 'TLS is supported for all DNP3 sessions'
             s.dump(p/'reviews.json', rows)
             with self.assertRaisesRegex(ValueError,'evidence quote not found'): s.report(p/'run', p/'reviews.json', p/'report2')
@@ -626,9 +634,10 @@ class SurveyTests(unittest.TestCase):
             s.replay(p/'run', p/'cache', p/'replay')
             s.report(p/'run', p/'run'/'review_template.json', p/'report')
             self.assertEqual(s.load(p/'report'/'candidate_counts.json')['p'], {'capability':{'total':1,'by_group':{'tls':1}},
-                'related':{'total':1,'by_group':{'vpn':1}}, 'statement':{'total':1,'by_group':{'plaintext_statement':1}}})
+                'related':{'total':1,'by_group':{'vpn':1}}, 'statement':{'total':1,'by_group':{'plaintext_statement':1}}, 'profile':{'total':0,'by_group':{}}})
             notes = s.load(p/'run'/'source_notes_template.json')
-            self.assertEqual([(n['url'], n['document_id'], n['revision'], n['document_date']) for n in notes], [('https://vendor.test/a','','','')])
+            self.assertEqual([(n['url'], n['doc_type'], n['doc_type_suggested'], n['document_id'], n['revision'], n['document_date']) for n in notes],
+                             [('https://vendor.test/a','','product_page','','','')])
             self.assertEqual(s.load(p/'run'/'review_template.json')[0]['interface_class'], '')
 
     def test_a_capability_is_recorded_once_per_interface(self):
@@ -686,10 +695,10 @@ class SurveyTests(unittest.TestCase):
             text = (p/'report'/'REPORT.md').read_text(encoding='utf-8')
             self.assertLess(text.index('## Findings by product and interface'), text.index('## Capability matrix'))
             for expected in [
-                '| v | A | v2 or later | DNP3 server (control protocol) | supported: encryption detail | unknown; see tls (supported) | none stated | S1 html-block:1: "TLS is supported for DNP3 sessions." (+1 more) | draft (A. Reviewer); confirmed (P. Author) |',
-                '| v | A | v2 or later | Web interface (management) | not reviewed | conditional: authentication detail | password must be set | S1 html-block:2: "The web interface requires a user login" | draft (A. Reviewer) |',
+                '| v | A | v2 or later | DNP3 server (control protocol) | supported: encryption detail | unknown; see tls (supported) | none stated | S1 [type not confirmed] html-block:1: "TLS is supported for DNP3 sessions." (+1 more) | draft (A. Reviewer); confirmed (P. Author) |',
+                '| v | A | v2 or later | Web interface (management) | not reviewed | conditional: authentication detail | password must be set | S1 [type not confirmed] html-block:2: "The web interface requires a user login" | draft (A. Reviewer) |',
                 '| v | B | not established | No control protocol established from the examined sources | unknown | not reviewed | - | none | draft (A. Reviewer) |',
-                '| v | B | v2 or later | Web interface (management) | unknown | supported: authentication detail | none stated | S2 html-block:1: "The web interface requires a user login" | draft (A. Reviewer) |',
+                '| v | B | v2 or later | Web interface (management) | unknown | supported: authentication detail | none stated | S2 [type not confirmed] html-block:1: "The web interface requires a user login" | draft (A. Reviewer) |',
                 '| v | M | not established | No control protocol established from the examined sources | not reviewed | not reviewed | - | none | not reviewed |',
                 '| A | relay | - | S | - | - | (C) | S | ? |', '| B | relay | - | ? | - | - | (S) | ? | - |', '| M | meter | - | - | - | - | - | - | - |',
                 '| relay | tls | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 2 |', '| relay | authentication | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 2 |',
@@ -705,16 +714,22 @@ class SurveyTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as td:
             p = Path(td); src = self.reviewed_run(p)
             notes = s.load(p/'run'/'source_notes_template.json')
-            notes[0].update(document_id='LWP0018-01', revision='', document_date='2016-01-11', note='date code 20160111')
+            notes[0].update(doc_type='manual', document_id='LWP0018-01', revision='', document_date='2016-01-11', note='date code 20160111')
             s.dump(p/'notes.json', notes[:1])
             s.report(p/'run', p/'reviews.json', p/'report', source_notes=p/'notes.json')
             text = (p/'report'/'REPORT.md').read_text(encoding='utf-8')
-            self.assertIn(f"| S1 | A | untitled | LWP0018-01 | 2016-01-11 | 2026-10-13 | {src['a']['sha256']} | https://vendor.test/a |", text)
-            self.assertIn(f"| S2 | B | untitled | not established | not established | 2026-10-13 | {src['b']['sha256']} | https://vendor.test/b |", text)
+            self.assertIn(f"| S1 | A | untitled | manual | LWP0018-01 | 2016-01-11 | 2026-10-13 | {src['a']['sha256']} | https://vendor.test/a |", text)
+            self.assertIn(f"| S2 | B | untitled | suggested: product page | not established | not established | 2026-10-13 | {src['b']['sha256']} | https://vendor.test/b |", text)
             exported = s.load(p/'report'/'sources.json')
             self.assertEqual((exported[0]['ref'], exported[0]['document']['document_id'], exported[1]['document']['document_id']), ('S1','LWP0018-01',''))
+            self.assertIn('S1 [manual] html-block:1: "TLS is supported for DNP3 sessions."', text)
+            self.assertIn('S2 [type not confirmed] html-block:1:', text)
+            self.assertIn('- Source: S1 [manual] https://vendor.test/a', text)
+            self.assertEqual({x['doc_type'] for x in s.load(p/'report'/'evidence_index.json') if x['source_ref'] == 'S1'}, {'manual'})
             s.dump(p/'notes.json', [dict(notes[0], source_id='nope')])
             with self.assertRaisesRegex(ValueError,'not in this run'): s.report(p/'run', p/'reviews.json', p/'report', source_notes=p/'notes.json')
+            s.dump(p/'notes.json', [dict(notes[0], doc_type='white paper')])
+            with self.assertRaisesRegex(ValueError,'doc_type outside'): s.report(p/'run', p/'reviews.json', p/'report', source_notes=p/'notes.json')
 
     def test_rebuild_rederives_leads_offline_and_keeps_source_identity(self):
         with tempfile.TemporaryDirectory() as td:
@@ -733,6 +748,79 @@ class SurveyTests(unittest.TestCase):
             s.report(p/'rebuilt', p/'reviews.json', p/'report', require_evidence=True)
             self.assertEqual(s.load(p/'run'/'candidates.json'), [])
             with self.assertRaises(FileExistsError): s.rebuild(p/'run', p/'cache', p/'rebuilt')
+
+    # --- 1.3.0 ---
+
+    PROFILE = [['DNP3 SPECIFICATION', 'DEVICE PROFILE', 'Vendor relay X1'],
+               ['1.12 SECURITY PARAMETERS ............ 3', '1.12.1 DNP3 device support for secure authentication: .... 3'],
+               ['Device Profile Page 3', '1.12 SECURITY PARAMETERS Capabilities Current Value', '1.12.1 DNP3 device support for secure',
+                'authentication:', 'If the device does not support secure authentication', 'then ignore the rest of this section.',
+                'Supported versions:', 'X  Fixed at Version 5', ' Configurable, selectable from __', '1.12.2 Maximum number of users:', 'X  Fixed at 1'],
+               ['Device Profile Page 4', '1.12 SECURITY PARAMETERS Capabilities Current Value', ' Configurable, range __ to __',
+                '1.12.12 Change cipher request timeout:', 'Implementations using TLS shall terminate the connection.',
+                'X  Not relevant - TLS is not used', ' Fixed at ____']]
+
+    def test_device_profile_section_is_split_into_items_with_marked_options(self):
+        segs = s.parse(tiny_pdf(self.PROFILE), {})[0]
+        items = s.profile_items(segs)
+        self.assertEqual([(i['item'], i['title'], i['location'], i['marked']) for i in items], [
+            ('1.12.1', 'DNP3 device support for secure authentication', 'pdf-page:3', ['Fixed at Version 5']),
+            ('1.12.2', 'Maximum number of users', 'pdf-page:3', ['Fixed at 1']),
+            ('1.12.12', 'Change cipher request timeout', 'pdf-page:4', ['Not relevant - TLS is not used'])])
+        self.assertIn('Configurable, selectable from __', items[0]['text'])
+        self.assertIn('Configurable, range __ to __', items[1]['text'])
+        self.assertEqual({i['marks'] for i in items}, {'heuristic'})
+        manual = tiny_pdf(['Relay manual', ['1.12 SECURITY PARAMETERS Capabilities', '1.12.1 DNP3 device support for secure authentication:', 'X  Fixed at Version 5']])
+        self.assertEqual(s.profile_items(s.parse(manual, {})[0]), [])
+        self.assertEqual(s.profile_items([{'location':'html-block:1','text':'DNP3 Device Profile'},{'location':'html-block:2','text':'no section here'}]), [])
+
+    def test_device_profile_items_become_leads_and_a_report_section(self):
+        with tempfile.TemporaryDirectory() as td:
+            p, calls = Path(td), []
+            pages = {'https://vendor.test/profile.pdf': tiny_pdf(self.PROFILE), 'https://vendor.test/page': b'<p>TLS</p>'}
+            cfg = self.config(p, [{'id':'x1','seeds':['https://vendor.test/profile.pdf']},{'id':'x2','seeds':['https://vendor.test/page']}])
+            with self.site(pages, calls): s.crawl(cfg, p/'run', p/'cache')
+            source, other = s.load(p/'run'/'sources.json')
+            self.assertEqual((source['profile_items'], source['doc_type_suggested'], other['doc_type_suggested']), (3, 'device_profile', 'product_page'))
+            self.assertNotIn('profile_items', other)
+            self.assertEqual(len(s.load(p/'run'/(source['id']+'.profile.json'))), 3)
+            self.assertFalse((p/'run'/(other['id']+'.profile.json')).exists())
+            leads = [h for h in s.load(p/'run'/'candidates.json') if h['lead_type'] == 'profile']
+            self.assertEqual([(h['profile_item'], h['feature'], h['matched'], h['location']) for h in leads], [
+                ('1.12.1', 'dnp3_secure_authentication', ['Fixed at Version 5'], 'pdf-page:3'),
+                ('1.12.2', 'dnp3_secure_authentication', ['Fixed at 1'], 'pdf-page:3'),
+                ('1.12.12', 'tls', ['Not relevant - TLS is not used'], 'pdf-page:4')])
+            self.assertEqual(len({h['id'] for h in leads}), 3)
+            statements = s.load(p/'run'/'statement_leads.json')
+            self.assertEqual([(h['feature'], h['location'], h['matched']) for h in statements], [('non_support_statement', 'pdf-page:4', ['TLS is not used'])])
+            self.assertEqual(s.load(p/'run'/'manifest.json')['lead_counts']['profile'], 3)
+            s.replay(p/'run', p/'cache', p/'replay')
+            s.report(p/'run', p/'run'/'review_template.json', p/'report')
+            text = (p/'report'/'REPORT.md').read_text(encoding='utf-8')
+            for expected in ['## Device profile statements', 'nothing in this table has been reviewed',
+                             '| X1 | S1 | 1.12.1 | DNP3 device support for secure authentication | Fixed at Version 5 | pdf-page:3 |',
+                             '| X1 | S1 | 1.12.12 | Change cipher request timeout | Not relevant - TLS is not used | pdf-page:4 |',
+                             '| suggested: device profile |', '| suggested: product page |']:
+                self.assertIn(expected, text)
+            self.assertEqual(s.load(p/'report'/'candidate_counts.json')['x1']['profile'], {'total':3,'by_group':{'dnp3_secure_authentication':2,'tls':1}})
+            s.rebuild(p/'run', p/'cache', p/'rebuilt')
+            self.assertEqual(len(s.load(p/'rebuilt'/(source['id']+'.profile.json'))), 3)
+
+    def test_document_type_is_suggested_from_title_url_and_opening_text(self):
+        html, pdf = 'html-block:1', 'pdf-page:1'
+        for title, url, where, opening, expected in [
+                ('DNP3 Specification', 'https://v.test/f.pdf', pdf, 'Unrestricted DNP3 SPECIFICATION DEVICE PROFILE Version 2016', 'device_profile'),
+                ('SSA-750499', 'https://v.test/ssa-750499.html', html, 'Siemens Security Advisory by Siemens ProductCERT', 'advisory'),
+                ('Security Conformance Statement', 'https://v.test/c.pdf', pdf, 'SIPROTEC 5', 'conformance_statement'),
+                ('SEL APPLICATION GUIDE', 'https://v.test/download/1/', pdf, 'WHITE PAPER Leveraging Security', 'security_guide'),
+                ('DNP3 Security - PKR39809_ADVC_Operations manual', 'https://v.test/m', html, 'Contents', 'manual'),
+                ('Secure Controller Systems', 'https://v.test/en-us/docs/technical/1756-um543/x.html', html, 'ControlLogix 5580', 'manual'),
+                ('B90 brochure', 'https://v.test/b.pdf', pdf, 'Bus protection', 'datasheet'),
+                ('Multilin B90 | GE Vernova', 'https://v.test/multilin-b90', html, 'Bus Protection System', 'product_page'),
+                ('', 'https://v.test/x.pdf', pdf, 'Quarterly results', '')]:
+            with self.subTest(title=title):
+                self.assertEqual(s.suggest_doc_type(title, url, [{'location':where,'text':opening}]), expected)
+        self.assertIn('device_profile', s.DOC_TYPES)
 
     def test_resume_continues_an_interrupted_run_without_refetching(self):
         with tempfile.TemporaryDirectory() as td:
