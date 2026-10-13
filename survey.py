@@ -25,15 +25,19 @@ from urllib.request import Request, HTTPRedirectHandler, build_opener
 
 from protego import Protego
 
-VERSION = '1.5.0'
+VERSION = '1.6.0'
 # Bumped only when extraction or lead rules change. Replay compares this, so a report-only release keeps runs replayable.
-EXTRACTION = '1.3.0'
+EXTRACTION = '1.4.0'
 UA_TOKEN = 'IEDSecuritySurvey'
 UA = f"{UA_TOKEN}/{VERSION.rsplit('.', 1)[0]} (public-document research; no device scanning)"
 # Review cells. Changing this tuple changes every denominator; lead groups below may grow freely.
-CAPABILITIES = ('dnp3_secure_authentication', 'tls', 'ipsec', 'cip_security', 'authentication', 'encryption', 'ssh')
+CAPABILITIES = ('dnp3_secure_authentication', 'tls', 'ipsec', 'cip_security', 'authentication', 'encryption', 'ssh', 'integrity')
+# The three properties asked about for every protocol and interface. The other cells are the mechanisms that may provide them.
+PROPERTIES = ('authentication', 'integrity', 'encryption')
 # A capability named in a sentence that denies it. Encryption wording is left to plaintext_statement where both apply.
 TERM = r'(?:m?TLS|SSL|DTLS|IP\s?sec|SSH|MACsec|secure\s+authentication|authentication|encryption|CIP\s+Security)'
+DEFAULT = r'(?:by\s+default|default\s+(?:setting|state|value|configuration)|factory[\s-]+defaults?|out\s+of\s+the\s+box)'
+NEEDS = r'requires?|required|optional(?:ly)?|licen[sc]e[sd]?|order(?:ing)?\s+(?:code|option)'
 PATTERNS = {
     'dnp3_secure_authentication': r'secure\s+auth\w*|\b(?-i:SA)\s*v\d\b|\bDNP\s*3?.{0,80}?\b(?-i:SA)\b|\bIEC\s*62351-5\b',
     'tls': r'\bm?TLS(?:\s?v?\d(?:\.\d)?)?\b|transport\s+layer\s+security|\bSSL\b',
@@ -43,6 +47,13 @@ PATTERNS = {
     'authentication': r'\bauthenticat\w*|\bRADIUS\b|\b802\.1X\b|\bLDAP\b|\bKerberos\b|\bTACACS\b',
     'encryption': r'\b(?:un|non-?)?encrypt\w*|\bDTLS\b|\bAES\b|\bcipher\w*',
     'ssh': r'\bSSH\b|secure\s+shell',
+    # "Integrity poll" is a DNP3 data request and "signal integrity" is electrical, so the bare word is not a lead.
+    # "Digitally signed" is left out as well: it is nearly always said of firmware, which is no protocol's integrity.
+    'integrity': r'\b(?:message|data|packet|frame|communications?|cryptographic)\s+integrity\b'
+                 r'|\bintegrity\s+(?:and|or)\s+(?:confidentiality|authenticity|authentication)\b'
+                 r'|\b(?:confidentiality|authenticity|authentication)\s*(?:,|and|or)\s*integrity\b'
+                 r'|\bintegrity\s+(?:check\w*|protect\w*|verif\w*)|\bHMAC\b|\b(?-i:[GC]MAC)\b'
+                 r'|\bmessage\s+authentication\s+codes?\b',
     # Lead-only groups below: shown to the reviewer, never review cells. A capability group above holds only terms
     # that name that capability, so a VPN recommendation is not filed as IPsec, nor SFTP as SSH.
     'vpn': r'\bVPN\b',
@@ -55,6 +66,12 @@ PATTERNS = {
                              rf"|(?:\b(?:does|do|did|will)\s+not|\b(?:does|do|did|wo)n['\u2019]t)\s+(?:support|provide|implement|offer|use|include)\b[^.]{{0,60}}?\b{TERM}\b"
                              rf'|\b{TERM}\b[^.\w]{{0,6}}(?:not\s+supported|unsupported|not\s+available)\b'
                              r'|\bno\s+(?:support\s+for\s+)?(?:m?TLS|SSL|DTLS|IP\s?sec|SSH|MACsec|secure\s+authentication|authentication|CIP\s+Security)\b',
+    # Where a document may say how a capability ships and what it needs. Places to read for the default
+    # configuration, support conditions and activation requirements of a finding; never findings themselves.
+    'default_statement': rf'\b{TERM}\b[^.]{{0,80}}?\b{DEFAULT}\b|\b{DEFAULT}\b[^.]{{0,80}}?\b{TERM}\b',
+    'requirement_statement': rf'\b{TERM}\b[^.]{{0,60}}?\b(?:{NEEDS}|option\s+(?:board|card|code)|add-?on'
+                             r'|firmware\s+(?:version|revision|release)?\s*[\w.]+\s+(?:or|and)\s+(?:later|higher|above|newer))\b'
+                             rf'|\b(?:{NEEDS})\b[^.]{{0,60}}?\b{TERM}\b',
     'macsec': r'\bMACsec\b|\b802\.1AE\b',
     'iec_62351': r'\bIEC(?:/TS)?\s*62351(?:-\d+)?\b',
 }
@@ -63,12 +80,30 @@ LEADS = {k: re.compile(v, re.I | re.S) for k, v in PATTERNS.items()}
 NEAR = {'dnp3_secure_authentication': re.compile(r'\bDNP|\b1815\b|62351-5', re.I)}
 # "If the device does not support ..." states a condition, not a fact about the product.
 HYPOTHETICAL = re.compile(r'\b(?:if|whether|unless|when|where|in\s+case)\b[^.]{0,60}$', re.I)
-STATEMENTS = ('plaintext_statement', 'non_support_statement')
-STATUSES = {'supported', 'conditional', 'explicitly_unsupported', 'not_documented', 'unknown', 'conflicting'}
-# not_documented means a complete document was searched and is silent. Only these kinds of document can carry that,
-# and silence is still not a vendor statement of non-support.
+DENIALS = ('plaintext_statement', 'non_support_statement')
+STATEMENTS = DENIALS + ('default_statement', 'requirement_statement')
+# The same four results for every device, whatever its lifecycle.
+STATUSES = ('supported', 'conditional', 'explicitly_unsupported', 'unknown')
+# Why a reviewed cell is unknown. The second is checked by the tool: a complete document was searched and is silent.
+# Only the kinds of document below can carry that, and silence is still not a vendor statement of non-support.
+UNKNOWN_REASONS = ('not_enough_evidence', 'complete_document_silent', 'sources_conflict')
 COMPLETE_TYPES = ('device_profile', 'conformance_statement', 'manual')
-LIFECYCLES = ('active', 'legacy', 'discontinued')
+# Statuses written before 1.6.0 are read as unknown with the reason they stood for.
+FORMER = {'not_documented': 'complete_document_silent', 'conflicting': 'sources_conflict'}
+# Decided by dated vendor evidence only. Legacy, where a config defines it, is end_of_support and nothing wider.
+LIFECYCLES = ('currently_supported', 'discontinued_supported', 'discontinued_support_not_stated', 'end_of_support', 'unknown')
+FORMER_LIFECYCLES = ('active', 'legacy', 'discontinued')
+LIFECYCLE_WORDS = {'discontinued_supported': 'discontinued, still supported',
+                   'discontinued_support_not_stated': 'discontinued, support not stated'}
+SUPPORT_BASES = ('built_in', 'firmware_upgrade', 'optional_module', 'licence', 'external_gateway', 'not_stated')
+DEFAULT_STATES = ('enabled', 'disabled', 'undocumented')
+ACTIVATION_NEEDS = ('configuration', 'certificates_or_keys', 'compatible_master', 'licence_key', 'other', 'none_stated')
+# What a vendor document can never show. Anything but unknown needs evidence from where the device is installed.
+DEPLOYMENT_STATES = ('unknown', 'enabled', 'disabled')
+EVIDENCE_ABOUT = ('capability', 'conditions', 'default', 'activation')
+IDENTITY_LEVELS = ('family', 'model', 'catalogue_number')
+# A reviewer who has not looked yet says so. It is not the same as "the documents do not say".
+NOT_ASSESSED = 'not_assessed'
 # Roughly from most to least direct about what one product and firmware can do. Guidance for the reviewer, not a score.
 DOC_TYPES = ('device_profile', 'conformance_statement', 'security_guide', 'manual', 'datasheet', 'product_page',
              'advisory', 'other')
@@ -77,11 +112,12 @@ INTERFACE_CLASSES = ('control_protocol', 'management', 'network')
 REVIEW_STATUSES = ('draft', 'confirmed')
 # Pointers only: which mechanism rows a reader should look at when no explicit property row exists.
 RELATES = {'encryption': ('tls', 'ipsec', 'cip_security', 'ssh'),
-           'authentication': ('dnp3_secure_authentication', 'tls', 'ipsec', 'cip_security', 'ssh')}
+           'authentication': ('dnp3_secure_authentication', 'tls', 'ipsec', 'cip_security', 'ssh'),
+           'integrity': ('dnp3_secure_authentication', 'tls', 'ipsec', 'cip_security', 'ssh')}
 REDIRECTS = (301, 302, 303, 307, 308)
 RETRY_STATUS = (429, 502, 503, 504)
 KEEP_HEADERS = ('content-type', 'content-length', 'content-disposition', 'content-language', 'last-modified', 'etag', 'date')
-KNOWN_KEYS = {'sampling', 'title', 'max_depth', 'max_pages_per_product', 'delay_seconds', 'timeout_seconds', 'max_bytes',
+KNOWN_KEYS = {'sampling', 'definitions', 'title', 'max_depth', 'max_pages_per_product', 'delay_seconds', 'timeout_seconds', 'max_bytes',
               'follow_pattern', 'robots_follow_redirects', 'retries', 'products',
               'seed', 'per_stratum', 'census', 'inventory', 'frame'}
 # Which link to follow first when the page budget is short: the documents that state capabilities most directly.
@@ -144,6 +180,10 @@ def loose(text):
     # For matching a quote to its source: a hyphen at a PDF line break may or may not belong to the word,
     # so "self-signed", "self- signed" and "selfsigned" are treated as the same words.
     return re.sub(r'(?<=[a-z])-\s?(?=[a-z])', '', squash(text))
+
+
+def life_words(status):
+    return LIFECYCLE_WORDS.get(status, (status or 'not recorded').replace('_', ' '))
 
 
 def lead_type(feature):
@@ -589,7 +629,7 @@ def candidates(source, segments, aliases=()):
         text = texts[i]
         for feature, pattern in LEADS.items():
             found = list(pattern.finditer(text))
-            if feature in STATEMENTS:
+            if feature in DENIALS:
                 found = [m for m in found if not HYPOTHETICAL.search(text[max(0, m.start() - 80):m.start()])]
             if not found:
                 continue
@@ -643,8 +683,13 @@ def validate_config(cfg):
             value = p.get(key, None if required else [])
             if not isinstance(value, list) or not all(isinstance(x, str) and x.strip() for x in value):
                 raise ValueError(f'{pid}: {key} must be a list of strings')
-        if p.get('lifecycle') and p['lifecycle'] not in LIFECYCLES:
+        life = p.get('lifecycle')
+        if life in FORMER_LIFECYCLES:
+            warnings.append(f'{pid}: lifecycle "{life}" is a label from before 1.6.0 and is reported as unknown')
+        elif life and life not in LIFECYCLES:
             raise ValueError(f'{pid}: lifecycle must be one of {", ".join(LIFECYCLES)}')
+        elif life and life != 'unknown' and not p.get('lifecycle_evidence'):
+            warnings.append(f'{pid}: lifecycle "{life}" has no lifecycle_evidence; the report will refuse it')
         try:
             re.compile(p.get('follow_pattern', ''))
         except re.error as e:
@@ -686,7 +731,7 @@ def load_leads(run):
 
 
 def finish(out, cfg, config_sha256, sources, hits, warnings, **extra):
-    """Manifest and the two templates a reviewer fills in. Only a finished run has a manifest."""
+    """Manifest and the three templates a reviewer fills in. Only a finished run has a manifest."""
     dump(out / 'manifest.json', {'tool_version': VERSION, 'extraction_version': EXTRACTION, 'finished_at': now(),
         'config_sha256': config_sha256, 'python': sys.version,
         'script_sha256': SCRIPT_SHA256,
@@ -698,9 +743,18 @@ def finish(out, cfg, config_sha256, sources, hits, warnings, **extra):
     dump(out / 'review_template.json',
          [{'product_id': p['id'], 'feature': feature, 'status': 'unknown',
            'source_ids': [], 'source_hashes': {}, 'location': '', 'protocol': '',
-           'interface': '', 'interface_class': '', 'firmware': 'not established', 'implementation': 'not established',
-           'conditions': '', 'evidence': [], 'rationale': '', 'reviewer': '', 'reviewed_at': '', 'review_status': ''}
+           'interface': '', 'interface_class': '', 'model_scope': 'not established', 'hardware_revision': 'not established',
+           'firmware': 'not established', 'implementation': 'not established', 'unknown_reason': '',
+           'support_basis': [], 'conditions': '', 'default_state': '', 'activation_needs': [], 'activation_requirements': '',
+           'deployment_status': 'unknown', 'deployment_evidence': [],
+           'evidence': [], 'rationale': '', 'reviewer': '', 'reviewed_at': '', 'review_status': ''}
           for p in cfg['products'] for feature in CAPABILITIES])
+    # Who the device is and where it stands with its vendor. Filled from the inventory; a reviewer corrects it with evidence.
+    dump(out / 'device_notes_template.json',
+         [{'product_id': p['id'], 'manufacturer': p.get('vendor', ''), 'model': p.get('model', ''), 'identity_level': '',
+           'lifecycle_status': p['lifecycle'] if p.get('lifecycle') in LIFECYCLES else 'unknown',
+           'vendor_label': p.get('vendor_label', ''), 'lifecycle_evidence': p.get('lifecycle_evidence', []),
+           'release_date': '', 'release_evidence': [], 'note': '', 'noted_by': '', 'noted_at': ''} for p in cfg['products']])
     # What a document says about its own number, revision and date is for a person to read off, not for a regex.
     dump(out / 'source_notes_template.json',
          [{'source_id': s['id'], 'product_id': s['product_id'], 'url': s['final_url'], 'title': s.get('title', ''),
@@ -738,10 +792,12 @@ def crawl(config_path, out, cache, resume=False, reuse=None, only=None):
     prior = {(s['product_id'], s['url']): s for s in sources}
     byid = {s['id']: s for s in sources}
     # Bytes an earlier run already fetched are not requested again; the record says where they came from.
+    runs = [reuse] if isinstance(reuse, (str, Path)) else list(reuse or [])
     known = {}
-    for s in load(Path(reuse) / 'sources.json') if reuse else []:
-        if s['status'] == 'login_required' or s['status'] in ('extracted', 'duplicate') and (cache / s['sha256']).exists():
-            known.setdefault(s['url'], s)
+    for earlier in runs:
+        for s in load(Path(earlier) / 'sources.json'):
+            if s['status'] == 'login_required' or s['status'] in ('extracted', 'duplicate') and (cache / s['sha256']).exists():
+                known.setdefault(s['url'], dict(s, held_by=str(earlier)))
     products = cfg['products']
     # Product provenance remains separate even when a family document is shared.
     for number, product in enumerate(products, 1):
@@ -777,13 +833,13 @@ def crawl(config_path, out, cache, resume=False, reuse=None, only=None):
                     byid[via]['links_skipped'] = byid[via].get('links_skipped', 0) + 1
                 elif known.get(url, {}).get('status') == 'login_required':
                     # The earlier run was told this document needs a sign-in. It is not asked for again.
-                    rec.update(status='login_required', error=known[url]['error'], reused_from=str(reuse))
+                    rec.update(status='login_required', error=known[url]['error'], reused_from=known[url]['held_by'])
                 else:
                     try:
                         if url in known:
                             meta = {k: known[url][k] for k in ('final_url', 'sha256', 'bytes', 'headers', 'robots_basis',
                                                                'redirect_chain', 'retrieved_at') if k in known[url]}
-                            meta['reused_from'] = str(reuse)
+                            meta['reused_from'] = known[url]['held_by']
                             body = (cache / meta['sha256']).read_bytes()
                         else:
                             meta, body = f.fetch(url, product['domains'])
@@ -851,7 +907,8 @@ def crawl(config_path, out, cache, resume=False, reuse=None, only=None):
     save_leads(out, hits)
     dump(out / 'requests.json', f.audit)
     finish(out, cfg, digest(config_bytes), sources, hits, warnings,
-           **({'only': only} if only else {}), **({'reused_from': str(reuse)} if reuse else {}))
+           **({'only': only} if only else {}),
+           **({'reused_from': str(runs[0]) if len(runs) == 1 else [str(x) for x in runs]} if runs else {}))
 
 
 def rebuild(run, cache, dest):
@@ -888,10 +945,49 @@ def cited(segments, location):
     return None if None in parts else ' '.join(parts)
 
 
+def settle(r):
+    """Reads a row written under earlier rules: six statuses become four, and the reason is kept."""
+    if r.get('status') in FORMER:
+        r.update(unknown_reason=FORMER[r['status']], status='unknown')
+    return r
+
+
+def silent(r):
+    return r['status'] == 'unknown' and r.get('unknown_reason') == 'complete_document_silent'
+
+
+def grounded(r):
+    """A row that rests on cited sources: any result, and an unknown that says the documents are silent or disagree."""
+    return r['status'] != 'unknown' or r.get('unknown_reason') in ('complete_document_silent', 'sources_conflict')
+
+
+def token(r):
+    """How a grounded row is counted. A capability reached only through an external gateway is not the device's own."""
+    if r['status'] == 'unknown':
+        return {'complete_document_silent': 'silent', 'sources_conflict': 'conflict'}.get(r.get('unknown_reason'), 'unknown')
+    return 'gateway' if r['status'] == 'conditional' and r.get('support_basis') == ['external_gateway'] else r['status']
+
+
+def named(r):
+    return {'silent': 'unknown: complete document silent', 'conflict': 'unknown: sources conflict',
+            'gateway': 'conditional: external gateway only'}.get(token(r), r['status'].replace('_', ' '))
+
+
+def facts(r):
+    """The facts a supported or conditional row states beyond the result. A row from an earlier review lacks them: not assessed."""
+    result = r['status'] in ('supported', 'conditional')
+    return {'basis': r.get('support_basis', [NOT_ASSESSED] if result else []),
+            'default': r.get('default_state', NOT_ASSESSED if result else ''),
+            'needs': r.get('activation_needs', [NOT_ASSESSED] if result else []),
+            'deployment': r.get('deployment_status') or 'unknown'}
+
+
 def validate_reviews(rows, sources, products, segments=None, require_evidence=False):
     byid = {s['id']: s for s in sources}
+    vendor_documents = {x for s in sources for x in (s['id'], s.get('url'), s.get('final_url')) if x}
     seen, classes = set(), {}
     for r in rows:
+        settle(r)
         key = r['product_id'], r['feature']
         scope = squash(r.get('interface') or '').lower()
         # One capability may be recorded once per interface: TLS for DNP3 and TLS for a web page are different findings.
@@ -902,14 +998,17 @@ def validate_reviews(rows, sources, products, segments=None, require_evidence=Fa
             raise ValueError(f'invalid status: {key}')
         if not all(r.get(k) for k in ('reviewer', 'reviewed_at', 'rationale')):
             raise ValueError(f'review identity/date/rationale required, including unknowns: {key}')
-        if r['status'] != 'unknown' and not r['source_ids']:
+        reason = r.get('unknown_reason') or ''
+        if reason and (r['status'] != 'unknown' or reason not in UNKNOWN_REASONS):
+            raise ValueError(f'unknown_reason belongs to an unknown row and is one of {", ".join(UNKNOWN_REASONS)}: {key}')
+        if grounded(r) and not r['source_ids']:
             raise ValueError(f'claim requires source evidence: {key}')
-        # Silence has no passage to point at, so a not_documented row states only where it applies and to which firmware.
-        needed = ('interface', 'firmware') if r['status'] == 'not_documented' else ('location','protocol','interface','firmware','implementation')
-        if r['status'] != 'unknown' and not all(r.get(k) for k in needed):
+        # Silence has no passage to point at, so such a row states only where it applies and to which firmware.
+        needed = ('interface', 'firmware') if silent(r) else ('location','protocol','interface','firmware','implementation')
+        if grounded(r) and not all(r.get(k) for k in needed):
             raise ValueError(f'claim scope is incomplete: {key}')
         kind = r.get('interface_class') or ''
-        if kind not in INTERFACE_CLASSES + (('',) if r['status'] == 'unknown' else ()):
+        if kind not in INTERFACE_CLASSES + (() if grounded(r) else ('',)):
             raise ValueError(f'claim needs interface_class, one of {", ".join(INTERFACE_CLASSES)}: {key}')
         if scope and kind and classes.setdefault((key[0], scope), kind) != kind:
             raise ValueError(f'one interface is filed under two interface classes: {key}')
@@ -923,9 +1022,50 @@ def validate_reviews(rows, sources, products, segments=None, require_evidence=Fa
                 raise ValueError(f'missing/failed/wrong-product source: {key}')
             if r['source_hashes'].get(sid) != s['sha256']:
                 raise ValueError(f'review/source hash mismatch: {key}')
+        # What the finding applies to, how the capability is obtained, how it ships and what switching it on takes.
+        result, f = r['status'] in ('supported', 'conditional'), facts(r)
+        for k in ('model_scope', 'hardware_revision'):
+            if grounded(r) and not r.get(k, NOT_ASSESSED):
+                raise ValueError(f'{k} is empty; write what the document names, "not established" or {NOT_ASSESSED}: {key}')
+        for name, value, allowed_values in (('support_basis', f['basis'], SUPPORT_BASES), ('activation_needs', f['needs'], ACTIVATION_NEEDS)):
+            if not isinstance(value, list) or set(value) - set(allowed_values) - {NOT_ASSESSED}:
+                raise ValueError(f'{name} is a list from {", ".join(allowed_values)}, or [{NOT_ASSESSED!r}]: {key}')
+            if result and not value:
+                raise ValueError(f'{name} is empty; a supported or conditional result states it, or says {NOT_ASSESSED}: {key}')
+            if value and not result:
+                raise ValueError(f'{name} belongs to a supported or conditional result only: {key}')
+            if len(value) > 1 and set(value) & {NOT_ASSESSED, 'not_stated', 'none_stated'}:
+                raise ValueError(f'{name} mixes a value with "nothing stated" or "{NOT_ASSESSED}": {key}')
+        if r['status'] == 'supported' and f['basis'] not in (['built_in'], [NOT_ASSESSED]):
+            raise ValueError(f'supported means built in; a firmware upgrade, module, licence or gateway makes it conditional: {key}')
+        if f['default'] not in (DEFAULT_STATES + (NOT_ASSESSED,) if result else ('',)):
+            raise ValueError(f'default_state is one of {", ".join(DEFAULT_STATES)} or {NOT_ASSESSED}, for a supported or conditional result only: {key}')
+        if set(f['needs']) - {'none_stated', NOT_ASSESSED} and not r.get('activation_requirements'):
+            raise ValueError(f'activation_needs are named but activation_requirements does not describe them: {key}')
+        if f['deployment'] not in DEPLOYMENT_STATES:
+            raise ValueError(f'deployment_status must be one of {", ".join(DEPLOYMENT_STATES)}: {key}')
+        proof = r.get('deployment_evidence') or []
+        if f['deployment'] != 'unknown':
+            if not proof or not all(isinstance(e, dict) and all(e.get(k) for k in ('kind', 'reference', 'date', 'scope')) for e in proof):
+                raise ValueError(f'deployment_status {f["deployment"]} needs deployment_evidence with kind, reference, date and scope; without it the status is unknown: {key}')
+            if any(e['reference'] in vendor_documents for e in proof):
+                raise ValueError(f'a vendor document shows what a device can do, not what an operator enabled; it is not deployment evidence: {key}')
+        waiting = NOT_ASSESSED in [r.get('model_scope', NOT_ASSESSED), r.get('hardware_revision', NOT_ASSESSED), f['default']] + f['basis'] + f['needs']
+        if result and waiting and r.get('review_status') == 'confirmed':
+            raise ValueError(f'a confirmed row may not leave a field {NOT_ASSESSED}: {key}')
         evidence = r.get('evidence') or []
-        if require_evidence and r['status'] not in ('unknown', 'not_documented') and not evidence:
-            raise ValueError(f'claim requires a verbatim evidence quote: {key}')
+        about = Counter(e.get('about') or 'capability' for e in evidence)
+        if set(about) - set(EVIDENCE_ABOUT):
+            raise ValueError(f'evidence "about" must be one of {", ".join(EVIDENCE_ABOUT)}: {key}')
+        if require_evidence:
+            if r['status'] != 'unknown' and not about['capability']:
+                raise ValueError(f'claim requires a verbatim evidence quote: {key}')
+            # Each further fact needs its own words from the document, not the quote that shows the capability exists.
+            for what, stated in (('default', f['default'] in ('enabled', 'disabled')),
+                                 ('conditions', bool(set(f['basis']) - {'built_in', 'not_stated', NOT_ASSESSED})),
+                                 ('activation', bool(set(f['needs']) - {'none_stated', NOT_ASSESSED}))):
+                if stated and not about[what]:
+                    raise ValueError(f'this row states its {what}; that needs an evidence quote marked about: {what}: {key}')
         # A quote proves the words are in the cited passage; whether they support the claim stays the reviewer's call.
         for e in evidence:
             wanted = loose(e.get('quote', ''))
@@ -942,21 +1082,77 @@ def validate_reviews(rows, sources, products, segments=None, require_evidence=Fa
 def untouched(row):
     """A template row nobody has filled in. It is not a finding: it is left out and counted as not reviewed."""
     blank = ('reviewer', 'reviewed_at', 'rationale', 'source_ids', 'source_hashes', 'evidence', 'location', 'protocol',
-             'interface', 'interface_class', 'conditions', 'review_status')
-    return row.get('status') == 'unknown' and not any(row.get(k) for k in blank)
+             'interface', 'interface_class', 'conditions', 'review_status', 'unknown_reason', 'support_basis', 'default_state',
+             'activation_needs', 'activation_requirements', 'deployment_evidence')
+    return (row.get('status') == 'unknown' and not any(row.get(k) for k in blank)
+            and (row.get('deployment_status') or 'unknown') == 'unknown')
 
 
-COLUMNS = ('Manufacturer', 'Model', 'Lifecycle', 'Firmware', 'Protocol / interface', 'Encryption', 'Authentication',
-           'Conditions', 'Evidence', 'Review status')
-MARK = {'supported': 'S', 'conditional': 'C', 'explicitly_unsupported': 'X', 'not_documented': 'N', 'unknown': '?',
-        'conflicting': '!'}
-RANK = ('supported', 'conditional', 'conflicting', 'explicitly_unsupported', 'not_documented')
+COLUMNS = ('Manufacturer', 'Model', 'Lifecycle', 'Evidence applies to', 'Protocol / interface', 'Authentication', 'Integrity',
+           'Encryption', 'Support conditions', 'Default', 'Activation', 'Deployment', 'Evidence', 'Review status')
+# The CSV keeps the three parts of "evidence applies to" in columns of their own.
+CSV_COLUMNS = (COLUMNS[:3] + ('Category', 'Model scope', 'Hardware revision', 'Firmware', COLUMNS[4], 'Interface class')
+               + COLUMNS[5:] + ('Sources',))
+MARK = {'supported': 'S', 'conditional': 'C', 'gateway': 'G', 'explicitly_unsupported': 'X', 'silent': '?s', 'conflict': '?c',
+        'unknown': '?'}
+RANK = ('supported', 'conditional', 'gateway', 'conflict', 'explicitly_unsupported', 'silent')
 
 
-def report(run, review_path, dest, require_evidence=False, source_notes=None):
+def device_records(cfg, sources, notes_path, segments):
+    """Who each device is and where it stands with its vendor. A lifecycle status without dated vendor evidence is refused."""
+    products = {p['id']: p for p in cfg['products']}
+    byid = {s['id']: s for s in sources}
+    notes = {n['product_id']: n for n in (load(notes_path) if notes_path else [])}
+    if set(notes) - set(products):
+        raise ValueError(f'device notes name products that are not in this run: {sorted(set(notes) - set(products))}')
+    devices = {}
+    for pid, p in products.items():
+        n = notes.get(pid, {})
+        former = p['lifecycle'] if p.get('lifecycle') in FORMER_LIFECYCLES else ''
+        d = {'identity_level': n.get('identity_level') or '',
+             'lifecycle_status': n.get('lifecycle_status') or ('' if former else p.get('lifecycle')) or 'unknown',
+             'vendor_label': n.get('vendor_label') or p.get('vendor_label') or (f'{former} (label used before 1.6.0)' if former else ''),
+             'lifecycle_evidence': n['lifecycle_evidence'] if 'lifecycle_evidence' in n else ([] if former else p.get('lifecycle_evidence') or []),
+             'release_date': n.get('release_date') or '', 'release_evidence': n.get('release_evidence') or [],
+             'note': n.get('note') or '', 'noted_by': n.get('noted_by') or ''}
+        status, proof = d['lifecycle_status'], d['lifecycle_evidence']
+        if status not in LIFECYCLES:
+            raise ValueError(f'lifecycle_status must be one of {", ".join(LIFECYCLES)}: {pid}')
+        if d['identity_level'] not in ('',) + IDENTITY_LEVELS:
+            raise ValueError(f'identity_level must be one of {", ".join(IDENTITY_LEVELS)}, or empty: {pid}')
+        # Protocol, missing security features and the age of a manual decide nothing here. Only the vendor's dated word does.
+        if status != 'unknown' and not proof:
+            raise ValueError(f'lifecycle status {status} needs dated vendor evidence; without it the status is unknown: {pid}')
+        for e in proof + d['release_evidence']:
+            s = byid.get(e.get('source_id'))
+            if e.get('source_id') and (not s or s['product_id'] != pid):
+                raise ValueError(f'lifecycle evidence cites a source that is not one of this product in this run: {pid}')
+            if s:
+                e.setdefault('url', s['final_url'])
+                e.setdefault('sha256', s['sha256'])
+            where = e.get('url')
+            if not where or not allowed(where, p['domains']):
+                raise ValueError(f'lifecycle evidence must be a vendor source: a source of this run or a URL on the product domains: {pid}')
+            e['dated'] = e.get('stated_date') or (e.get('retrieved_at') or (s or {}).get('retrieved_at') or '')[:10]
+            if not e['dated']:
+                raise ValueError(f'lifecycle evidence needs a date: the one the vendor states, or the retrieval date: {pid}')
+            if e.get('source_id') and e.get('location') and e.get('quote'):
+                text = cited(segments(e['source_id']), e['location'])
+                if text is None or loose(e['quote']) not in loose(text):
+                    raise ValueError(f"lifecycle quote not found at {e['location']} of source {e['source_id']}: {pid}")
+        if status in ('end_of_support', 'discontinued_supported') and not any(len(loose(e.get('quote') or '')) >= 20 for e in proof):
+            raise ValueError(f"{status} needs the vendor's own sentence as a quote: {pid}")
+        if d['release_date'] and not d['release_evidence']:
+            raise ValueError(f'release_date needs release_evidence from a vendor source: {pid}')
+        devices[pid] = d
+    return devices
+
+
+def report(run, review_path, dest, require_evidence=False, source_notes=None, device_notes=None):
     run, dest = Path(run), Path(dest)
     cfg, sources, rows = load(run / 'config.json'), load(run / 'sources.json'), load(review_path)
     products = {p['id']: p for p in cfg['products']}
+    devices = device_records(cfg, sources, device_notes, lambda sid: load(run / (sid + '.segments.json')))
     # Lets a review proceed in stages. A partly filled row is still an error, never silently dropped.
     blank = sum(map(untouched, rows))
     rows = [r for r in rows if not untouched(r)]
@@ -987,7 +1183,8 @@ def report(run, review_path, dest, require_evidence=False, source_notes=None):
          'interface_class': r.get('interface_class', ''), 'source_id': e['source_id'], 'source_ref': refs[e['source_id']],
          'doc_type': byid[e['source_id']]['document']['doc_type'],
          'url': byid[e['source_id']]['final_url'], 'sha256': byid[e['source_id']]['sha256'],
-         'location': e['location'], 'quote': e['quote'], 'retrieved_at': byid[e['source_id']].get('retrieved_at')}
+         'location': e['location'], 'quote': e['quote'], 'about': e.get('about') or 'capability',
+         'retrieved_at': byid[e['source_id']].get('retrieved_at')}
         for r in rows for e in r.get('evidence') or []])
     # Lead counts say how much text mentioned a term. They are never device counts, and statements are kept apart.
     leads = {p: {t: Counter() for t in ('capability', 'related', 'statement', 'profile')} for p in products}
@@ -997,35 +1194,39 @@ def report(run, review_path, dest, require_evidence=False, source_notes=None):
         leads[h['product_id']][kind][h['feature']] += 1
         if kind in ('capability', 'profile'):
             mentions[h['source_id'], h['feature']] += 1
-    # A legacy device is captured by what its complete manual does not say. The tool checks the silence itself:
-    # a not_documented row must cite complete documents in which the search found no lead for that capability.
+    # What a complete manual does not say is recorded as unknown with that reason. The tool checks the silence itself:
+    # such a row must cite complete documents in which the search found no lead for that capability.
     searched = {}
     for r in rows:
-        if r['status'] == 'not_documented':
+        if silent(r):
             key = r['product_id'], r['feature']
             for sid in r['source_ids']:
                 doc = byid[sid]['document']
                 if doc['doc_type'] not in COMPLETE_TYPES or doc['coverage'] != 'complete':
-                    raise ValueError(f'not_documented needs a complete {", ".join(COMPLETE_TYPES)} (doc_type and coverage in the '
+                    raise ValueError(f'complete_document_silent needs a complete {", ".join(COMPLETE_TYPES)} (doc_type and coverage in the '
                                      f'source notes); source {sid} is {doc["doc_type"] or "untyped"}, {doc["coverage"] or "coverage not stated"}: {key}')
                 if mentions[sid, r['feature']]:
                     raise ValueError(f'{mentions[sid, r["feature"]]} leads for {r["feature"]} exist in source {sid}; '
-                                     f'review them before recording not_documented: {key}')
+                                     f'review them before recording complete_document_silent: {key}')
             searched[id(r)] = '; '.join(
                 f"{cite[sid]} searched in full" + (f", {byid[sid]['pages']} PDF pages" if byid[sid].get('pages') else '')
                 + f": no lead for {r['feature']}" for sid in r['source_ids'])
     dump(dest / 'candidate_counts.json', {p: {t: {'total': sum(c.values()), 'by_group': dict(sorted(c.items()))}
                                               for t, c in kinds.items()} for p, kinds in leads.items()})
-    columns = ['product_id','vendor','model','category','feature','status','protocol','interface','interface_class',
-               'firmware','implementation','conditions','location','rationale','reviewer','reviewed_at','review_status',
-               'source_urls','source_hashes','evidence']
+    columns = ['product_id','vendor','model','category','lifecycle_status','feature','status','unknown_reason','protocol','interface',
+               'interface_class','model_scope','hardware_revision','firmware','implementation','support_basis','conditions',
+               'default_state','activation_needs','activation_requirements','deployment_status','deployment_evidence',
+               'location','rationale','reviewer','reviewed_at','review_status','source_urls','source_hashes','evidence']
     with (dest / 'findings.csv').open('w', newline='', encoding='utf-8') as fp:
         w = csv.DictWriter(fp, fieldnames=columns)
         w.writeheader()
         for r in rows:
             p = products[r['product_id']]
             item = {k: r.get(k, '') for k in columns}
-            item.update({k: p.get(k, '') for k in ('vendor','model','category')})
+            item.update({k: p.get(k, '') for k in ('vendor','model','category')}, lifecycle_status=devices[r['product_id']]['lifecycle_status'],
+                        support_basis=' | '.join(facts(r)['basis']), default_state=facts(r)['default'],
+                        activation_needs=' | '.join(facts(r)['needs']), deployment_status=facts(r)['deployment'],
+                        deployment_evidence=json.dumps(r.get('deployment_evidence') or [], ensure_ascii=False))
             item['source_urls'] = ' | '.join(byid[s]['final_url'] for s in r['source_ids'])
             item['source_hashes'] = json.dumps(r['source_hashes'], sort_keys=True)
             item['evidence'] = json.dumps(r.get('evidence') or [], ensure_ascii=False)
@@ -1043,14 +1244,27 @@ def report(run, review_path, dest, require_evidence=False, source_notes=None):
     def category(pid):
         return products[pid].get('category') or 'uncategorised'
 
-    recorded = sum(bool(p.get('lifecycle')) for p in products.values())
+    recorded = sum(d['lifecycle_status'] != 'unknown' for d in devices.values())
+    # Results are counted by lifecycle group only when the config the run was crawled with says what the groups mean.
+    defined = cfg.get('definitions') or {}
+    grouped = bool(defined.get('legacy'))
 
     def lifecycle(pid):
-        return products[pid].get('lifecycle') or 'not recorded'
+        return life_words(devices[pid]['lifecycle_status'])
 
     def stratum_of(pid):
-        # Legacy and current devices are counted apart once any product states which it is.
-        return f'{category(pid)}, {lifecycle(pid)}' if recorded else category(pid)
+        return f'{category(pid)}, {lifecycle(pid)}' if grouped else category(pid)
+
+    def words(values):
+        return ', '.join(v.replace('_', ' ') for v in values)
+
+    def joined(values, empty):
+        return '; '.join(dict.fromkeys(v.replace(NOT_ASSESSED, 'not assessed') for v in values if v)) or empty
+
+    def per_feature(pairs, empty):
+        # One value when every finding on the interface agrees, otherwise each capability with its own.
+        texts = list(dict.fromkeys(t for _, t in pairs))
+        return empty if not pairs else texts[0] if len(texts) == 1 else '; '.join(f'{f}: {t}' for f, t in pairs)
 
     def label(status):
         return status.replace('_', ' ')
@@ -1058,7 +1272,7 @@ def report(run, review_path, dest, require_evidence=False, source_notes=None):
     def scope(r):
         return squash(r.get('interface') or '').lower()
 
-    claims = [r for r in rows if r['status'] != 'unknown']
+    claims = [r for r in rows if grounded(r)]
     cell = {(r['product_id'], r['feature'], scope(r)): r for r in rows}
     reviewed = {(r['product_id'], r['feature']) for r in rows}
     expected = len(products) * len(CAPABILITIES)
@@ -1066,11 +1280,13 @@ def report(run, review_path, dest, require_evidence=False, source_notes=None):
     def prop(pid, where, members, feature):
         """What the review says about one property on one interface. Mechanism rows are pointed to, never read as a result."""
         r = cell.get((pid, feature, where)) or cell.get((pid, feature, ''))
-        if r and r['status'] == 'not_documented':
-            return 'not documented: the complete documentation searched does not mention it'
+        if r and silent(r):
+            return 'unknown: the complete documentation searched does not mention it'
+        if r and token(r) == 'conflict':
+            return 'unknown: sources conflict'
         if r and r['status'] != 'unknown':
-            return f"{label(r['status'])}: {flat(r['protocol'])}"
-        see = [f"{m['feature']} ({label(m['status'])})" for m in members if m['feature'] in RELATES[feature]]
+            return f"{named(r)}: {flat(r['protocol'])}"
+        see = [f"{m['feature']} ({named(m)})" for m in members if m['feature'] in RELATES[feature]]
         return ('unknown' if r else 'not assessed' if see else 'not reviewed') + ('; see ' + ', '.join(see) if see else '')
 
     # One row per product and interface. Repeated keyword matches cannot add rows; only reviewed findings can.
@@ -1087,21 +1303,36 @@ def report(run, review_path, dest, require_evidence=False, source_notes=None):
         for (kind, where), members in found:
             signed = members or [r for r in rows if r['product_id'] == pid and not scope(r)]
             used = list(dict.fromkeys(sid for m in members for sid in m['source_ids']))
-            table.append({
+            stated = [m for m in members if m['status'] in ('supported', 'conditional')]
+            row = {
                 'pid': pid, 'Manufacturer': p.get('vendor', ''), 'Model': p.get('model') or pid, 'Lifecycle': lifecycle(pid),
                 'Category': category(pid), 'Interface class': kind,
                 'Searched': '; '.join(searched[id(m)] for m in members if id(m) in searched),
-                'Firmware': '; '.join(dict.fromkeys(flat(m['firmware']) for m in members)) or 'not established',
+                'Model scope': joined((flat(m.get('model_scope', NOT_ASSESSED)) for m in members), 'not established'),
+                'Hardware revision': joined((flat(m.get('hardware_revision', NOT_ASSESSED)) for m in members), 'not established'),
+                'Firmware': joined((flat(m['firmware']) for m in members), 'not established'),
                 'Protocol / interface': (f"{flat(members[0]['interface'])} ({kind.replace('_', ' ')})" if members
                                          else 'No control protocol established from the examined sources'),
-                'Encryption': prop(pid, where, members, 'encryption'),
-                'Authentication': prop(pid, where, members, 'authentication'),
-                'Conditions': ('; '.join(dict.fromkeys(flat(m['conditions']) for m in members if m.get('conditions')))
-                               or ('none stated' if members else '-')),
+                'Support conditions': joined((words(facts(m)['basis']) + (f": {flat(m['conditions'])}" if m.get('conditions') else '')
+                                              for m in stated), 'none stated' if members else '-'),
+                'Default': per_feature([(m['feature'], facts(m)['default'].replace('_', ' ')) for m in stated], '-'),
+                'Activation': per_feature([(m['feature'], words(facts(m)['needs']) + (f": {flat(m['activation_requirements'])}"
+                                                                                        if m.get('activation_requirements') else ''))
+                                           for m in stated], '-'),
+                # Unknown unless someone cites evidence from an installation. No vendor document can change this cell.
+                'Deployment': joined((facts(m)['deployment'] + (' (' + '; '.join(f"{e['kind']}, {e['date']}" for e in m['deployment_evidence']) + ')'
+                                                                if facts(m)['deployment'] != 'unknown' else '') for m in members), 'unknown'),
                 'Evidence': [(cite[e['source_id']], e['location'], flat(e['quote'])) for m in members for e in m.get('evidence') or []],
                 'Review status': '; '.join(dict.fromkeys(f"{m.get('review_status') or 'draft'} ({flat(m['reviewer'])})"
                                                          for m in signed)) or 'not reviewed',
-                'Sources': '; '.join(f"{cite[sid]} {byid[sid]['final_url']} sha256:{byid[sid]['sha256']}" for sid in used)})
+                'Sources': '; '.join(f"{cite[sid]} {byid[sid]['final_url']} sha256:{byid[sid]['sha256']}" for sid in used)}
+            row.update({name.capitalize(): prop(pid, where, members, name) for name in PROPERTIES})
+            # Two findings on one interface may rest on documents for different models or firmware; then each says its own.
+            row['Evidence applies to'] = per_feature(
+                [(m['feature'], ', '.join(f"{name} {flat(m.get(key, NOT_ASSESSED)).replace(NOT_ASSESSED, 'not assessed')}" for name, key in
+                                          (('model', 'model_scope'), ('hardware', 'hardware_revision'), ('firmware', 'firmware'))))
+                 for m in members], 'not established')
+            table.append(row)
 
     def shown(row):
         quotes, parts = row['Evidence'], []
@@ -1111,15 +1342,14 @@ def report(run, review_path, dest, require_evidence=False, source_notes=None):
         return '; '.join(parts + [row['Searched']] * bool(row['Searched'])) or 'none'
 
     with (dest / 'findings_table.csv').open('w', newline='', encoding='utf-8') as fp:
-        w = csv.DictWriter(fp, extrasaction='ignore', fieldnames=list(COLUMNS[:3]) + ['Category'] + list(COLUMNS[3:5])
-                           + ['Interface class'] + list(COLUMNS[5:]) + ['Sources'])
+        w = csv.DictWriter(fp, extrasaction='ignore', fieldnames=list(CSV_COLUMNS))
         w.writeheader()
         for row in table:
             quotes = [f'{ref} {where}: "{text}"' for ref, where, text in row['Evidence']]
             w.writerow(dict(row, Evidence=' || '.join(quotes + [row['Searched']] * bool(row['Searched'])) or 'none'))
 
     def results(pid, feature, kinds):
-        return [r['status'] for r in claims if r['product_id'] == pid and r['feature'] == feature and r['interface_class'] in kinds]
+        return [token(r) for r in claims if r['product_id'] == pid and r['feature'] == feature and r['interface_class'] in kinds]
 
     def matrix(pid, feature):
         control, other = results(pid, feature, ('control_protocol',)), results(pid, feature, ('management', 'network'))
@@ -1151,59 +1381,131 @@ def report(run, review_path, dest, require_evidence=False, source_notes=None):
             f"Sampling: {cfg['sampling']}", '', line + '.', '',
             'This measures documented capabilities, not enabled settings, installed-base coverage or plaintext prevalence. Unknown is not unsupported. Family-level evidence is not proof for every model/firmware. Capability categories overlap, so counts below are review cells and must not be added up as devices.', '',
             'Reviewers on record: ' + ('; '.join(f'{md(name)} ({n} rows)' for name, n in Counter(r['reviewer'] for r in rows).items()) or 'none') + '.', '',
-            f'Lifecycle (active, legacy or discontinued) is recorded for {recorded} of {len(products)} products. "Not documented" means a complete manual, device profile or conformance statement was searched and does not mention the capability. It is not a vendor statement that the capability is absent.', '',
-            '## Summary by vendor, category and lifecycle', '',
-            'Devices, counted once each, by what the review established for a control protocol. "In the catalogue" is the number of classified entries in the vendor catalogue for that stratum, where the config was drawn from an inventory. A stratum with few devices in this run supports no generalisation.', '',
-            '| Vendor | Category | Lifecycle | In the catalogue | In this run | Encryption of a control protocol | Authentication of a control protocol |',
-            '|---|---|---|---|---|---|---|']
-    wording = (('supported', 'supported'), ('conditional', 'conditional'), ('explicitly_unsupported', 'explicitly unsupported'),
-               ('not_documented', 'not documented'), ('conflicting', 'conflicting'), ('other', 'other interface only'),
-               ('unknown', 'unknown'), (None, 'not reviewed'))
-    strata, listed = {}, {(x['vendor'], x['category'], x['lifecycle']): x['in_catalogue'] for x in cfg.get('frame') or []}
-    for pid, p in products.items():
-        strata.setdefault((p.get('vendor', ''), category(pid), lifecycle(pid)), []).append(pid)
-    for key in sorted(set(strata) | set(listed)):
-        cells = []
-        for feature in ('encryption', 'authentication'):
-            tally = Counter(bucket(pid, feature) for pid in strata.get(key, []))
-            cells.append(', '.join(f'{tally[k]} {name}' for k, name in wording if tally[k]) or '-')
-        text.append(f"| {md(key[0])} | {md(key[1])} | {key[2]} | {listed.get(key, '-')} | {len(strata.get(key, []))} | {cells[0]} | {cells[1]} |")
-    # A census has hundreds of devices and no review yet; a table row per unreviewed device would bury the reviewed ones.
+            'Every capability has one of four results: supported, conditional, explicitly unsupported or unknown. An unknown says why where the review recorded it. "Complete document silent" means a complete manual, device profile or conformance statement was searched and does not mention the capability; it is not a vendor statement that the capability is absent.', '']
+    legacy = sum(d['lifecycle_status'] == 'end_of_support' for d in devices.values())
+    if grouped:
+        text.extend(['## Definitions', '',
+                     f"Fixed on {defined.get('defined_at') or 'a date the config does not give'} in the config this run was crawled with, before any result was counted.", '',
+                     f"- Legacy: {flat(defined['legacy'])}"]
+                    + [f"- {life_words(k).capitalize()}: {flat(v)}" for k, v in (defined.get('lifecycle_statuses') or {}).items()]
+                    + ([f"- Release date: {flat(defined['release_date'])}"] if defined.get('release_date') else [])
+                    + ['', f'Legacy under this definition: {legacy} of {len(products)} devices in this run. Lifecycle status rests on dated vendor evidence for {recorded} devices and is unknown for {len(products) - recorded}.'])
+    else:
+        text.append('No definition of "legacy" or of the lifecycle groups is recorded in the config of this run, so no result is counted by lifecycle group.')
+    # A census has hundreds of devices and no review yet; a row per unreviewed device would bury the reviewed ones.
     bare = {pid for pid in products if not any(r['product_id'] == pid for r in rows)}
     bare = bare if len(bare) > 25 else set()
+
+    def dated(d):
+        proof = d['lifecycle_evidence']
+        if not proof:
+            return 'none'
+        e = proof[0]
+        said = f'"{clip(flat(e["quote"]), 140)}"' if e.get('quote') else e.get('basis') or 'vendor source'
+        return (f"{e['dated']}: {said} <{e.get('url') or byid[e['source_id']]['final_url']}>"
+                + (f' (+{len(proof) - 1} more)' if len(proof) > 1 else ''))
+
+    with (dest / 'devices.csv').open('w', newline='', encoding='utf-8') as fp:
+        w = csv.writer(fp)
+        w.writerow(['product_id', 'manufacturer', 'model', 'category', 'identity_level', 'lifecycle_status', 'vendor_label',
+                    'lifecycle_evidence_date', 'lifecycle_evidence_quote', 'lifecycle_evidence_url', 'lifecycle_evidence_sha256',
+                    'release_date', 'noted_by'])
+        for pid, d in devices.items():
+            e = (d['lifecycle_evidence'] or [{}])[0]
+            w.writerow([pid, products[pid].get('vendor', ''), products[pid].get('model') or pid, category(pid), d['identity_level'],
+                        d['lifecycle_status'], d['vendor_label'], e.get('dated', ''), e.get('quote') or e.get('basis', ''),
+                        e.get('url') or (byid[e['source_id']]['final_url'] if e.get('source_id') else ''), e.get('sha256', ''),
+                        d['release_date'], d['noted_by']])
+    text.extend(['', '## Devices', '',
+                 'Identity level says whether the entry is a product family, one model or one catalogue number. Lifecycle status rests only on what the vendor says in a dated source; the date is the one the vendor states or, failing that, the day the source was retrieved. Release date is recorded apart and decides nothing. Exact model, hardware revision and firmware are stated per finding below, as the cited document names them.', '']
+                + ([f'{len(bare)} devices without a review row are left out of this table. devices.csv lists all {len(products)} with their lifecycle evidence.', ''] if bare else [])
+                + ['| Manufacturer | Model | Category | Identity level | Lifecycle status | Dated vendor evidence | Release date |', '|---|---|---|---|---|---|---|'])
+    text.extend(f"| {md(products[pid].get('vendor', ''))} | {model(pid)} | {md(category(pid))} | {d['identity_level'].replace('_', ' ') or 'not established'} | "
+                f"{lifecycle(pid)}{' (vendor label: ' + md(d['vendor_label']) + ')' if d['vendor_label'] else ''} | {md(dated(d))} | "
+                f"{md(d['release_date'] or 'not established')} |" for pid, d in devices.items() if pid not in bare)
+    text.extend(['', '## Summary by vendor, category and lifecycle' if grouped else '## Summary by vendor and category', '',
+                 'Devices, counted once each, by what the review established for a control protocol. "In the catalogue" is the number of classified entries in the vendor catalogue for that stratum, where the config was drawn from an inventory. A stratum with few devices in this run supports no generalisation.', '',
+                 '| Vendor | Category | Lifecycle | In the catalogue | In this run | ' + ' | '.join(f'{name.capitalize()} of a control protocol' for name in PROPERTIES) + ' |',
+                 '|---|---|---|---|---|' + '---|' * len(PROPERTIES)])
+    wording = (('supported', 'supported'), ('conditional', 'conditional'), ('gateway', 'via external gateway only'),
+               ('explicitly_unsupported', 'explicitly unsupported'), ('silent', 'unknown: complete document silent'),
+               ('conflict', 'unknown: sources conflict'), ('other', 'unknown: other interface only'),
+               ('unknown', 'unknown'), (None, 'not reviewed'))
+    strata, listed = {}, Counter()
+    for x in cfg.get('frame') or []:
+        listed[x['vendor'], x['category'], life_words(x['lifecycle']) if grouped else '-'] += x['in_catalogue']
+    for pid, p in products.items():
+        strata.setdefault((p.get('vendor', ''), category(pid), lifecycle(pid) if grouped else '-'), []).append(pid)
+    for key in sorted(set(strata) | set(listed)):
+        cells = []
+        for feature in PROPERTIES:
+            tally = Counter(bucket(pid, feature) for pid in strata.get(key, []))
+            cells.append(', '.join(f'{tally[k]} {name}' for k, name in wording if tally[k]) or '-')
+        text.append(f"| {md(key[0])} | {md(key[1])} | {key[2]} | {listed.get(key, '-')} | {len(strata.get(key, []))} | " + ' | '.join(cells) + ' |')
     text.extend(['', '## Findings by product and interface', '',
-                 'One row per product and interface. Encryption and authentication are stated for that interface only; a result for a management interface says nothing about control traffic. Full quotes are under "Findings and evidence" and in findings_table.csv; source references are resolved under "Sources examined".', '']
+                 'One row per product and interface. Authentication, integrity and encryption are stated for that interface only; a result for a management interface says nothing about control traffic. "Evidence applies to" is the exact model, hardware revision and firmware the cited documents name. Default, activation and deployment are stated for supported and conditional findings. Full quotes are under "Findings and evidence" and in findings_table.csv; source references are resolved under "Sources examined".', '']
                 + ([f'{len(bare)} products have no review row yet. They are left out of this table and counted as not reviewed in the summary above.', ''] if bare else [])
                 + ['| ' + ' | '.join(COLUMNS) + ' |', '|' + '---|' * len(COLUMNS)])
     text.extend('| ' + ' | '.join(md(shown(row) if c == 'Evidence' else row[c]) for c in COLUMNS) + ' |'
                 for row in table if row['pid'] not in bare)
-    order = ['supported', 'conditional', 'explicitly_unsupported', 'not_documented', 'conflicting', 'other', 'unknown', None]
-    text.extend(['', '## Counts by category', '',
-                 'Products, not leads or table rows. Each product is counted once per capability, under its most favourable documented status for a control protocol. "Other interface only" means a result exists for a management or network interface but none for a control protocol. The last column is the denominator.', '',
-                 '| Category | Capability | Supported | Conditional | Explicitly unsupported | Not documented | Conflicting | Other interface only | Unknown | Not reviewed | Products |',
-                 '|---|---|---|---|---|---|---|---|---|---|---|'])
+    order, doubts = ['supported', 'conditional', 'gateway', 'explicitly_unsupported'], ['silent', 'conflict', 'other', 'unknown']
+    text.extend(['', '## Counts by category and lifecycle group' if grouped else '## Counts by category', '',
+                 'Products, not leads or table rows. Each product is counted once per capability, under its most favourable documented result for a control protocol. Unknown is one result; the four columns after it say why. "Other interface only" means a result exists for a management or network interface but none for a control protocol. A capability reached only through an external gateway is counted apart and is not the device\'s own. The last column is the denominator.'
+                 + (' The same results are counted for every lifecycle group.' if grouped else ''), '',
+                 '| Category | Capability | Supported | Conditional | Via external gateway only | Explicitly unsupported | Unknown | of which complete document silent | of which sources conflict | of which other interface only | of which not enough evidence | Not reviewed | Products |',
+                 '|---|---|---|---|---|---|---|---|---|---|---|---|---|'])
     for stratum in dict.fromkeys(map(stratum_of, products)):
         members = [pid for pid in products if stratum_of(pid) == stratum]
         for c in CAPABILITIES:
             tally = Counter(bucket(pid, c) for pid in members)
-            text.append(f'| {md(stratum)} | {c} | ' + ' | '.join(str(tally[k]) for k in order) + f' | {len(members)} |')
+            cells = [tally[k] for k in order] + [sum(tally[k] for k in doubts)] + [tally[k] for k in doubts] + [tally[None]]
+            text.append(f'| {md(stratum)} | {c} | ' + ' | '.join(map(str, cells)) + f' | {len(members)} |')
     text.extend(['', '## Capability matrix', '',
-                 'S supported, C conditional, X explicitly unsupported, N not documented in a complete document, ? unknown, ! conflicting, - not reviewed. A mark in parentheses is established only for a management or network interface, not for a control protocol.', '']
+                 'S supported, C conditional, G only through an external gateway, X explicitly unsupported, ? unknown (?s a complete document was searched and is silent, ?c sources conflict), - not reviewed. A mark in parentheses is established only for a management or network interface, not for a control protocol.', '']
                 + ([f'{len(bare)} products without a review row are left out; every cell of theirs is "not reviewed".', ''] if bare else [])
                 + ['| Product | Category | ' + ' | '.join(CAPABILITIES) + ' |', '|---|---|' + '---|' * len(CAPABILITIES)])
     text.extend(f'| {model(pid)} | {md(stratum_of(pid))} | ' + ' | '.join(matrix(pid, c) for c in CAPABILITIES) + ' |'
                 for pid in products if pid not in bare)
+    # How each supported or conditional capability ships and what switching it on takes, as far as the documents say.
+    stated = [r for r in rows if r['status'] in ('supported', 'conditional')]
+    text.extend(['', '## Default configuration, activation and deployment', '',
+                 'Findings with a supported or conditional result, one per capability and interface. "Undocumented" means the documents read do not say whether the capability is on by default; "not assessed" means the reviewer has not looked yet. Neither means disabled.', ''])
+    if stated:
+        text.extend(['| Capability | Findings | Default enabled | Default disabled | Default undocumented | Default not assessed | Activation needs stated | Activation: none stated | Activation not assessed |',
+                     '|---|---|---|---|---|---|---|---|---|'])
+        for c in CAPABILITIES:
+            mine = [facts(r) for r in stated if r['feature'] == c]
+            if mine:
+                d = Counter(f['default'] for f in mine)
+                a = Counter('waiting' if f['needs'] == [NOT_ASSESSED] else 'none' if f['needs'] == ['none_stated'] else 'stated' for f in mine)
+                text.append(f"| {c} | {len(mine)} | {d['enabled']} | {d['disabled']} | {d['undocumented']} | {d[NOT_ASSESSED]} | "
+                            f"{a['stated']} | {a['none']} | {a['waiting']} |")
+        text.append('')
+    fielded = [r for r in rows if facts(r)['deployment'] != 'unknown']
+    text.append((f'Deployment status is unknown for {len(stated) - sum(r in fielded for r in stated)} of {len(stated)} findings. ' if stated
+                 else 'No supported or conditional finding is recorded yet. ')
+                + 'Vendor documents show what a device can do, not what an operator has enabled, so enabled or disabled in practice is recorded only where evidence from an installation is cited.')
+    for r in fielded:
+        proof = '; '.join(flat(', '.join(e[k] for k in ('kind', 'reference', 'date', 'scope'))) for e in r['deployment_evidence'])
+        text.append(f"- {model(r['product_id'])}, {r['feature']} on {flat(r.get('interface') or 'no interface stated')}: {facts(r)['deployment']} ({proof})")
     if claims:
         # The scope and the quoted words sit next to each result, so a second reader can check them without the CSV.
         text.extend(['', '## Findings and evidence', '',
-                     'Every row with a result other than unknown. Quotes are verbatim from the cited location of the retained source.'])
+                     'Every row that rests on cited sources: each result, and each unknown recorded because a complete document is silent or sources conflict. Quotes are verbatim from the cited location of the retained source.'])
         for r in claims:
-            text.extend(['', f"### {model(r['product_id'])}: {r['feature']} ({label(r['status'])})", '',
+            text.extend(['', f"### {model(r['product_id'])}: {r['feature']} ({named(r)})", '',
                          f"- Interface: {flat(r['interface'])} ({r['interface_class'].replace('_', ' ')})"])
-            text.extend(f'- {name}: {flat(r[key])}' for name, key in
-                        (('Protocol', 'protocol'), ('Firmware', 'firmware'), ('Implementation', 'implementation'),
-                         ('Conditions', 'conditions'), ('Location', 'location')) if r.get(key))
-            text.extend(f'- Evidence, {e["location"]}: "{flat(e["quote"])}"' for e in r.get('evidence') or [])
+            text.extend(f'- {name}: {flat(r[key]).replace(NOT_ASSESSED, "not assessed")}' for name, key in
+                        (('Protocol', 'protocol'), ('Model scope', 'model_scope'), ('Hardware revision', 'hardware_revision'),
+                         ('Firmware', 'firmware'), ('Implementation', 'implementation'), ('Conditions', 'conditions'),
+                         ('Location', 'location')) if r.get(key))
+            if r in stated:
+                f = facts(r)
+                text.extend([f"- Support basis: {words(f['basis'])}", f"- Default configuration: {f['default'].replace('_', ' ')}",
+                             f"- Activation: {words(f['needs'])}" + (f": {flat(r['activation_requirements'])}" if r.get('activation_requirements') else ''),
+                             f"- Deployment: {f['deployment']}"])
+            text.extend(f"- Evidence{'' if (e.get('about') or 'capability') == 'capability' else ' on ' + e['about']}, "
+                        f'{e["location"]}: "{flat(e["quote"])}"' for e in r.get('evidence') or [])
             if id(r) in searched:
                 text.append(f'- Searched: {searched[id(r)]}')
             text.extend(f"- Source: {cite[sid]} {byid[sid]['final_url']}" for sid in r['source_ids'])
@@ -1211,11 +1513,11 @@ def report(run, review_path, dest, require_evidence=False, source_notes=None):
     text.extend(['', '## Reviewed rows', '', '| Product | Capability | Interface | Review result | Scope |', '|---|---|---|---|---|'])
     for r in rows:
         text.append('| ' + ' | '.join(md(x) for x in [model(r['product_id']), r['feature'], flat(r.get('interface') or '') or '-',
-                                                     r['status'], r['rationale']]) + ' |')
-    unresolved = {pid: [c for c in CAPABILITIES if not any(x in ('supported', 'conditional', 'explicitly_unsupported', 'not_documented')
+                                                     named(r), r['rationale']]) + ' |')
+    unresolved = {pid: [c for c in CAPABILITIES if not any(x in ('supported', 'conditional', 'gateway', 'explicitly_unsupported')
                                                            for x in results(pid, c, INTERFACE_CLASSES))] for pid in products}
     text.extend(['', '## Unresolved cells', '',
-                 f'{sum(map(len, unresolved.values()))} of {expected} cells are unknown, conflicting or not reviewed on every interface.', '']
+                 f'{sum(map(len, unresolved.values()))} of {expected} cells are unknown or not reviewed on every interface.', '']
                 + ([f'This includes all {len(bare) * len(CAPABILITIES)} cells of the {len(bare)} products without a review row, which are not listed one by one.', ''] if bare else []))
     text.extend(f"- {model(pid)}: {', '.join(left)}" for pid, left in unresolved.items() if left and pid not in bare)
     profiles = [(s, load(run / (s['id'] + '.profile.json'))) for s in sources if s.get('profile_items')]
@@ -1247,11 +1549,11 @@ def report(run, review_path, dest, require_evidence=False, source_notes=None):
     for s in sources:
         if s['status'] == 'extracted' and (not wide or s['id'] in used):
             made = re.match(r'D:(\d{4})(\d{2})(\d{2})', s.get('pdf_created', ''))
-            facts = [s.get('title') or 'untitled'] + ([f"{s['pages']} PDF pages"] if s.get('pages') else []) + (['PDF created ' + '-'.join(made.groups())] if made else [])
+            said = [s.get('title') or 'untitled'] + ([f"{s['pages']} PDF pages"] if s.get('pages') else []) + (['PDF created ' + '-'.join(made.groups())] if made else [])
             doc = s['document']
             kind = doc['doc_type'] or ('suggested: ' + s['doc_type_suggested'] if s.get('doc_type_suggested') else 'not established')
             kind += f", {doc['coverage']}" if doc['coverage'] else ''
-            text.append(f"| {s['ref']} | {model(s['product_id'])} | {md(', '.join(facts))} | {kind.replace('_', ' ')} | "
+            text.append(f"| {s['ref']} | {model(s['product_id'])} | {md(', '.join(said))} | {kind.replace('_', ' ')} | "
                         f"{md(', '.join(filter(None, [doc['document_id'], doc['revision'] and 'revision ' + doc['revision']])) or 'not established')} | "
                         f"{md(doc['document_date'] or 'not established')} | {s.get('retrieved_at', '')[:10]} | {s['sha256']} | {md(s['final_url'])} |")
     missing = [s for s in sources if s['status'] in ('failed', 'duplicate', 'login_required')]
@@ -1272,9 +1574,9 @@ def report(run, review_path, dest, require_evidence=False, source_notes=None):
         text.extend(f"| {model(s['product_id'])} | {md(s['url'])} | "
                     f"{md(s.get('error') or 'duplicate of ' + s['duplicate_of'])} |" for s in missing)
     text.extend(['', f'Review coverage: {len(reviewed)}/{expected} product–capability cells. Unreviewed cells carry no result.', '',
-                 f"Evidence quotes: {sum(bool(r.get('evidence')) for r in claims if id(r) not in searched)} of {len(claims) - len(searched)} rows with a result other than unknown or not documented carry a quote that was checked against the cited passage.", '',
-                 f'Not documented: {len(searched)} rows, each checked to cite only complete documents in which the search found no lead for that capability.', '',
-                 'See findings.csv for source URLs, hashes, interface, firmware and review provenance. No population percentages are computed.'])
+                 f"Evidence quotes: {sum(bool(r.get('evidence')) for r in rows if r['status'] != 'unknown')} of {sum(r['status'] != 'unknown' for r in rows)} rows with a result other than unknown carry a quote that was checked against the cited passage.", '',
+                 f'Unknown because a complete document is silent: {len(searched)} rows, each checked to cite only complete documents in which the search found no lead for that capability.', '',
+                 'See findings.csv for source URLs, hashes, interface, firmware and review provenance, and devices.csv for lifecycle evidence. No population percentages are computed.'])
     (dest / 'REPORT.md').write_text('\n'.join(text) + '\n', encoding='utf-8', newline='\n')
     print(f'Report written to {dest}: {len(reviewed)} of {expected} cells reviewed in {len(rows)} rows'
           + (f'; {blank} untouched template rows left out as not reviewed' if blank else ''))
@@ -1383,7 +1685,7 @@ CATEGORIES = ('protective_relay', 'controller_rtu', 'plc', 'meter')
 
 def sitemap_urls(f, queue, domains, limit=20, only=None):
     """Reads sitemap files, following index files, and returns a record per file, the page URLs and what was left."""
-    queue, files, found = list(queue), [], set()
+    queue, files, found = list(queue), [], {}  # found: page URL -> the sitemap file that listed it
     while queue and len(files) < limit:
         rec = {'url': queue.pop(0)}
         try:
@@ -1398,7 +1700,8 @@ def sitemap_urls(f, queue, domains, limit=20, only=None):
                 # A large site splits its sitemap by content type; only the listed kinds are worth a request.
                 queue += [u for u in locs if not only or re.search(only, u, re.I)]
             else:
-                found.update(locs)
+                for u in locs:
+                    found.setdefault(u, rec['url'])
             rec.update(final_url=meta['final_url'], sha256=meta['sha256'], retrieved_at=meta['retrieved_at'],
                        kind='index' if index else 'urlset', entries=len(locs))
         except Exception as e:
@@ -1418,7 +1721,8 @@ def sel_product_selector(f, spec):
             kind, teaser = (' '.join(unescape(re.sub(r'<[^>]+>', ' ', x if isinstance(x, str) else '')).split())
                             for x in (form.get('subtitle'), content.get('teaser')))
             # The subtitle is the vendor's own one-line statement of what the product is; rules classify on it.
-            items.append({'url': urljoin(spec['catalogue_api'], content['quicklink']), 'model': content.get('title') or '',
+            items.append({'url': urljoin(spec['catalogue_api'], content['quicklink']), 'listed_in': spec['catalogue_api'],
+                          'model': content.get('title') or '',
                           'kind': kind, 'summary': '. '.join(x for x in (kind, teaser) if x),
                           'documents': [urljoin(spec['catalogue_api'], f"/api/download/{d['id']}/")
                                         for d in form.get('selectDownloads') or [] if isinstance(d, dict) and d.get('id')]})
@@ -1439,7 +1743,20 @@ def first_rule(rules, fields):
     return next((r for r in rules or [] if fields.get(r.get('on', 'url')) and re.search(r['match'], fields[r.get('on', 'url')], re.I)), None)
 
 
-def classify(key, spec, items):
+MONTHS = 'January|February|March|April|May|June|July|August|September|October|November|December'
+DATED = re.compile(rf'\b(?:(?:{MONTHS})\s+(?:\d{{1,2}},?\s+)?(?:19|20)\d{{2}}|\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s+(?:19|20)\d{{2}}'
+                   r'|(?:19|20)\d{2}-\d{2}-\d{2})\b', re.I)
+
+
+def stated_date(text, start, end):
+    """A date the vendor gives in the same sentence as a lifecycle notice, as written. Empty when the sentence has none."""
+    a = max((m.end() for m in STOP.finditer(text, max(0, start - 300), start)), default=max(0, start - 300))
+    b = min((m.start() for m in STOP.finditer(text, end, min(len(text), end + 300))), default=min(len(text), end + 300))
+    found = DATED.search(text, a, b)
+    return found.group(0) if found else ''
+
+
+def classify(key, spec, items, files=()):
     """One entry per catalogue item in scope: included, excluded with a reason, or unclassified. Nothing is dropped."""
     entries, ids = [], set()
     for item in sorted(items, key=lambda x: x['url']):
@@ -1460,9 +1777,13 @@ def classify(key, spec, items):
                   'text': f"{model} {item.get('kind', '')}".strip()}
         decide(entry, spec, fields, 'catalogue listing')
         life = first_rule(spec.get('lifecycle'), fields)
-        entry.update(lifecycle=life['value'] if life else spec.get('default_lifecycle', 'active'),
-                     lifecycle_basis=f"catalogue listing matches {life['match']}" if life
-                     else 'listed in the current catalogue without a legacy marker')
+        basis = f"catalogue listing matches {life['match']}" if life else 'listed in the vendor catalogue without a notice of discontinuation'
+        # A catalogue listing is the vendor saying, on the day it was retrieved, that the product is on offer.
+        held = [f for f in files if f.get('sha256') and f.get('kind') != 'index']
+        listed = [f for f in held if f['url'] == item.get('listed_in')] or held
+        entry.update(lifecycle=life['value'] if life else 'currently_supported', vendor_label=life.get('vendor_label', '') if life else '',
+                     lifecycle_basis=basis,
+                     lifecycle_evidence=[{'basis': basis, 'url': f['url'], 'sha256': f['sha256'], 'retrieved_at': f['retrieved_at']} for f in listed])
         entries.append(entry)
     return entries
 
@@ -1485,12 +1806,16 @@ def write_inventory(dest, inv):
     inv['summary'] = [{'vendor': v, 'category': c, 'lifecycle': life, 'state': state, 'entries': n}
                       for (v, c, life, state), n in sorted(counts.items())]
     dump(dest / 'inventory.json', inv)
-    columns = ['id', 'vendor', 'model', 'category', 'lifecycle', 'included', 'reason', 'product_url', 'category_basis',
-               'lifecycle_basis', 'lifecycle_evidence', 'excluded_by', 'model_basis', 'page_status', 'summary']
+    columns = ['id', 'vendor', 'model', 'category', 'lifecycle', 'vendor_label', 'included', 'reason', 'product_url', 'category_basis',
+               'lifecycle_basis', 'lifecycle_evidence_date', 'lifecycle_evidence_quote', 'lifecycle_evidence_url', 'excluded_by',
+               'model_basis', 'page_status', 'summary']
     with (dest / 'inventory.csv').open('w', newline='', encoding='utf-8') as fp:
         w = csv.DictWriter(fp, fieldnames=columns, extrasaction='ignore')
         w.writeheader()
-        w.writerows(inv['entries'])
+        for e in inv['entries']:
+            proof = (e.get('lifecycle_evidence') or [{}])[0]
+            w.writerow(dict(e, lifecycle_evidence_date=proof.get('stated_date') or (proof.get('retrieved_at') or '')[:10],
+                            lifecycle_evidence_quote=proof.get('quote', ''), lifecycle_evidence_url=proof.get('url', '')))
     for vendor in dict.fromkeys(e['vendor'] for e in inv['entries']):
         mine = [e for e in inv['entries'] if e['vendor'] == vendor]
         kept = Counter((e['category'], e['lifecycle']) for e in mine if e['included'])
@@ -1532,9 +1857,9 @@ def inventory(vendors_path, dest, cache, source=None, delay=1.2):
                 left = []
             else:
                 files, found, left = sitemap_urls(f, v['sitemaps'], v['domains'], v.get('max_files', 20), v.get('sitemap_filter'))
-                items = [{'url': u} for u in sorted(found)]
+                items = [{'url': u, 'listed_in': found[u]} for u in sorted(found)]
             listing[key] = {'files': files, 'not_fetched': left, 'items': items}
-        entries += classify(key, v, listing[key]['items'])
+        entries += classify(key, v, listing[key]['items'], listing[key]['files'])
     dest.mkdir(parents=True)
     dump(dest / 'catalogue.json', listing)
     # Re-applied rules keep the log of the requests that produced the listing they were applied to.
@@ -1572,8 +1897,12 @@ def enrich(inventory_path, run, dest, vendors=None):
         life = next(((r, m) for r in spec.get('lifecycle_text', [])
                      for m in [re.search(r['match'], text[:r.get('within')], re.I)] if m), None)
         if life:
-            e.update(lifecycle=life[0]['value'], lifecycle_basis='product page wording',
-                     lifecycle_evidence=passage(text, life[1].start(), life[1].end(), 120, 160))
+            rule, m = life
+            # The vendor's own sentence, where it was read and when, and the date the sentence itself gives if it gives one.
+            e.update(lifecycle=rule['value'], lifecycle_basis='product page wording', vendor_label=rule.get('vendor_label', e.get('vendor_label', '')),
+                     lifecycle_evidence=[{'basis': 'product page wording', 'quote': passage(text, m.start(), m.end(), 120, 160),
+                                          'stated_date': stated_date(text, m.start(), m.end()), 'url': s['final_url'],
+                                          'sha256': s['sha256'], 'retrieved_at': s.get('retrieved_at')}])
     dest.mkdir(parents=True)
     inv.update(tool_version=VERSION, enriched_at=now(), enriched_from={'run': str(run), 'inventory': str(inventory_path)})
     write_inventory(dest, inv)
@@ -1613,6 +1942,7 @@ def sample(inventory_path, dest, per_stratum=None, seed=0, census=False):
         spec = inv['spec']['vendors'][e['vendor_key']]
         p = {'id': e['id'], 'vendor': e['vendor'], 'model': e['model'], 'category': e['category'], 'lifecycle': e['lifecycle'],
              'domains': e['domains'], 'seeds': [] if spec.get('page_needs_javascript') else [e['product_url']]}
+        p.update({k: e[k] for k in ('vendor_label', 'lifecycle_basis', 'lifecycle_evidence') if e.get(k)})
         # Where the product page cannot be read, the census takes the product's first public document in its place.
         p['seeds'] += e.get('documents', [])[:spec.get('census_documents', 0) if census else spec.get('document_seeds', 3)]
         if not census:
@@ -1620,6 +1950,8 @@ def sample(inventory_path, dest, per_stratum=None, seed=0, census=False):
         products.append(p)
     dump(dest, {'title': inv['spec'].get('title', 'IED security documentation survey'),
                 'sampling': how + f" Inventory of {inv['created_at'][:10]}; categories and lifecycle come from the vendors' own catalogues and pages.",
+                # What "legacy" and each lifecycle group mean, fixed in the config before the crawl and so before any count.
+                **({'definitions': inv['spec']['definitions']} if inv['spec'].get('definitions') else {}),
                 'seed': seed, 'per_stratum': per_stratum, 'census': census,
                 'inventory': {'path': str(inventory_path), 'sha256': digest(Path(inventory_path).read_bytes()), 'created_at': inv['created_at']},
                 'frame': [{'vendor': v, 'category': c, 'lifecycle': life, 'in_catalogue': len(members), 'selected': picked[v, c, life]}
@@ -1651,7 +1983,11 @@ def worksheet(run, dest):
         mine = [s for s in sources if s['product_id'] == p['id']]
         read = [s for s in mine if s['status'] == 'extracted']
         text += ['', f"## {p.get('model') or p['id']}", '',
-                 f"{p.get('vendor', '')}; {p.get('category', '')}; lifecycle {p.get('lifecycle') or 'not recorded'}; id `{p['id']}`", '']
+                 f"{p.get('vendor', '')}; {p.get('category', '')}; lifecycle {life_words(p.get('lifecycle'))}; id `{p['id']}`", '']
+        proof = p.get('lifecycle_evidence')
+        for e in proof if isinstance(proof, list) else []:
+            said = '"' + e['quote'] + '"' if e.get('quote') else e.get('basis') or 'vendor source'
+            text.append(f"- lifecycle evidence, {e.get('stated_date') or (e.get('retrieved_at') or '')[:10]}: {said} <{e.get('url', '')}>")
         text += [f"- {refs.get(s['id'], '--')} {s['status']}"
                  + (f", {s['doc_type_suggested'].replace('_', ' ')} (suggested)" if s.get('doc_type_suggested') else '')
                  + (f", {s['pages']} PDF pages" if s.get('pages') else '') + (f": {s['error']}" if s.get('error') else '')
@@ -1659,14 +1995,20 @@ def worksheet(run, dest):
         text.append('')
         for c in CAPABILITIES + STATEMENTS:
             hits = found.get((p['id'], c), [])
-            silent = [refs[s['id']] for s in read if not any(h['source_id'] == s['id'] for h in hits)]
+            quiet = [refs[s['id']] for s in read if not any(h['source_id'] == s['id'] for h in hits)]
             if c in CAPABILITIES:
                 hints[p['id'], c] = {'leads': len(hits), 'where': [f"{refs[h['source_id']]} {h['location']}" for h in hits[:8]],
-                                     'no_lead_in': silent}
+                                     'no_lead_in': quiet}
             if hits:
                 text.append(f'- **{c}**: {len(hits)} leads: {places(hits)}')
             elif c in CAPABILITIES:
-                text.append(f"- **{c}**: no lead" + (f" in {', '.join(silent)}" if silent else ''))
+                text.append(f"- **{c}**: no lead" + (f" in {', '.join(quiet)}" if quiet else ''))
+            for kind, word in (('default_statement', 'default'), ('requirement_statement', 'requirement')) if c in CAPABILITIES else ():
+                # Where to read for how the capability ships and what it needs: wording that names this capability.
+                near = [h for h in found.get((p['id'], kind), []) if LEADS[c].search(' '.join(h['matched']))]
+                hints[p['id'], c][f'{word}_wording'] = [f"{refs[h['source_id']]} {h['location']}" for h in near[:8]]
+                if near:
+                    text.append(f'  - {word} wording: {places(near)}')
     dest.mkdir(parents=True)
     (dest / 'worksheet.md').write_text('\n'.join(text) + '\n', encoding='utf-8', newline='\n')
     # The same template the crawl wrote, with the hints beside each cell. Hints are not review fields and are ignored.
@@ -1681,12 +2023,12 @@ def main():
             stream.reconfigure(errors='backslashreplace')  # Document text may not fit the console code page.
     p = argparse.ArgumentParser(description=__doc__)
     sub = p.add_subparsers(dest='cmd', required=True)
-    c = sub.add_parser('crawl'); c.add_argument('--config', required=True); c.add_argument('--out', required=True); c.add_argument('--cache', default='cache'); c.add_argument('--resume', action='store_true'); c.add_argument('--reuse'); c.add_argument('--only')
+    c = sub.add_parser('crawl'); c.add_argument('--config', required=True); c.add_argument('--out', required=True); c.add_argument('--cache', default='cache'); c.add_argument('--resume', action='store_true'); c.add_argument('--reuse', action='append'); c.add_argument('--only')
     i = sub.add_parser('inventory'); i.add_argument('--vendors', required=True); i.add_argument('--out', required=True); i.add_argument('--cache', default='cache'); i.add_argument('--from', dest='source')
     e = sub.add_parser('enrich'); e.add_argument('--inventory', required=True); e.add_argument('--run', required=True); e.add_argument('--out', required=True); e.add_argument('--vendors')
     s = sub.add_parser('sample'); s.add_argument('--inventory', required=True); s.add_argument('--out', required=True); s.add_argument('--per-stratum', type=int); s.add_argument('--seed', type=int, default=0); s.add_argument('--census', action='store_true')
     w = sub.add_parser('worksheet'); w.add_argument('--run', required=True); w.add_argument('--out', required=True)
-    r = sub.add_parser('report'); r.add_argument('--run', required=True); r.add_argument('--reviews', required=True); r.add_argument('--out', required=True); r.add_argument('--require-evidence', action='store_true'); r.add_argument('--source-notes')
+    r = sub.add_parser('report'); r.add_argument('--run', required=True); r.add_argument('--reviews', required=True); r.add_argument('--out', required=True); r.add_argument('--require-evidence', action='store_true'); r.add_argument('--source-notes'); r.add_argument('--device-notes')
     v = sub.add_parser('verify'); v.add_argument('--run', required=True); v.add_argument('--cache', default='cache')
     x = sub.add_parser('replay'); x.add_argument('--run', required=True); x.add_argument('--cache', default='cache'); x.add_argument('--out', required=True)
     b = sub.add_parser('rebuild'); b.add_argument('--run', required=True); b.add_argument('--cache', default='cache'); b.add_argument('--out', required=True)
@@ -1700,7 +2042,7 @@ def main():
         elif args.cmd == 'enrich': enrich(args.inventory, args.run, args.out, args.vendors)
         elif args.cmd == 'sample': sample(args.inventory, args.out, args.per_stratum, args.seed, args.census)
         elif args.cmd == 'worksheet': worksheet(args.run, args.out)
-        elif args.cmd == 'report': report(args.run, args.reviews, args.out, args.require_evidence, args.source_notes)
+        elif args.cmd == 'report': report(args.run, args.reviews, args.out, args.require_evidence, args.source_notes, args.device_notes)
         elif args.cmd == 'verify': verify(args.run, args.cache)
         elif args.cmd == 'replay': replay(args.run, args.cache, args.out)
         elif args.cmd == 'rebuild': rebuild(args.run, args.cache, args.out)

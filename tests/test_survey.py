@@ -262,8 +262,12 @@ class SurveyTests(unittest.TestCase):
         self.assertNotIn('dnp3_secure_authentication', self.leads(bare['text']))
 
     def test_lead_groups_do_not_change_review_cells(self):
-        self.assertEqual(s.CAPABILITIES, ('dnp3_secure_authentication','tls','ipsec','cip_security','authentication','encryption','ssh'))
+        self.assertEqual(s.CAPABILITIES, ('dnp3_secure_authentication','tls','ipsec','cip_security','authentication','encryption','ssh','integrity'))
         self.assertLess(set(s.CAPABILITIES), set(s.PATTERNS))
+        # The three properties asked about for every interface are review cells; the statement groups never are.
+        self.assertEqual(s.PROPERTIES, ('authentication','integrity','encryption'))
+        self.assertLess(set(s.PROPERTIES), set(s.CAPABILITIES))
+        self.assertFalse(set(s.STATEMENTS) & set(s.CAPABILITIES))
 
     def test_candidate_carries_count_heading_and_model_mention(self):
         segs = [{'location':'html-block:3','text':'The B90 supports TLS; TLS 1.2 is the default.','heading':'Security'},
@@ -509,32 +513,51 @@ class SurveyTests(unittest.TestCase):
             rows[1].update(status='conditional', source_ids=[source['id']], source_hashes={source['id']:source['sha256']}, location='html-block:2',
                            protocol='DNP3 over TLS', interface='SCADA', interface_class='control_protocol', firmware='unknown', implementation='licensed option',
                            conditions='needs the TLS licence', rationale='Explicit | licensed',
-                           evidence=[{'source_id':source['id'],'location':'html-block:2','quote':'TLS is supported for DNP3 sessions'}])
+                           support_basis=['licence'], default_state='undocumented', activation_needs=['licence_key'],
+                           activation_requirements='install the TLS licence',
+                           evidence=[{'source_id':source['id'],'location':'html-block:2','quote':'TLS is supported for DNP3 sessions'},
+                                     {'source_id':source['id'],'location':'html-block:2','quote':'when the option is licensed','about':'conditions'},
+                                     {'source_id':source['id'],'location':'html-block:2','quote':'when the option is licensed','about':'activation'}])
             s.dump(p/'reviews.json', rows[:-1])
             s.report(p/'run', p/'reviews.json', p/'report', require_evidence=True)
             text = (p/'report'/'REPORT.md').read_text(encoding='utf-8')
-            for expected in ['# Synthetic survey', 'Sources attempted: 2; extracted: 1; failed: 1.', 'A. Reviewer (13 rows)',
-                             '| R1 | relay | ? | C | ? | ? | ? | ? | ? |', '| M1 | meter | ? | ? | ? | ? | ? | ? | - |',
-                             '| relay | tls | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |', '| meter | ssh | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 |',
-                             '13 of 14 cells are unknown, conflicting or not reviewed on every interface.', '| R1 | https://vendor.test/gone | ValueError: HTTP 404 |',
-                             'Review coverage: 13/14', 'Evidence quotes: 1 of 1 rows', 'Explicit / licensed',
+            for expected in ['# Synthetic survey', 'Sources attempted: 2; extracted: 1; failed: 1.', 'A. Reviewer (15 rows)',
+                             '| R1 | relay | ? | C | ? | ? | ? | ? | ? | ? |', '| M1 | meter | ? | ? | ? | ? | ? | ? | ? | - |',
+                             '| relay | tls | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |', '| meter | ssh | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 1 |',
+                             '| meter | integrity | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 |',
+                             '15 of 16 cells are unknown or not reviewed on every interface.', '| R1 | https://vendor.test/gone | ValueError: HTTP 404 |',
+                             'Review coverage: 15/16', 'Evidence quotes: 1 of 1 rows', 'Explicit / licensed',
                              '## Findings and evidence', '### R1: tls (conditional)', '- Interface: SCADA (control protocol)', '- Protocol: DNP3 over TLS',
                              '- Implementation: licensed option', '- Conditions: needs the TLS licence', '- Review status: draft (A. Reviewer)',
-                             '- Evidence, html-block:2: "TLS is supported for DNP3 sessions"', '- Source: S1 [type not confirmed] https://vendor.test/r',
-                             '| v | R1 | not recorded | unknown | SCADA (control protocol) | unknown; see tls (conditional) | unknown; see tls (conditional) | needs the TLS licence | S1 [type not confirmed] html-block:2: "TLS is supported for DNP3 sessions" | draft (A. Reviewer) |',
-                             '| v | M1 | not recorded | not established | No control protocol established from the examined sources | unknown | unknown | - | none | draft (A. Reviewer) |',
+                             '- Support basis: licence', '- Default configuration: undocumented', '- Activation: licence key: install the TLS licence', '- Deployment: unknown',
+                             '- Evidence, html-block:2: "TLS is supported for DNP3 sessions"', '- Evidence on conditions, html-block:2: "when the option is licensed"',
+                             '- Source: S1 [type not confirmed] https://vendor.test/r',
+                             '| v | R1 | unknown | model not established, hardware not established, firmware unknown | SCADA (control protocol) | unknown; see tls (conditional) | '
+                             'unknown; see tls (conditional) | unknown; see tls (conditional) | licence: needs the TLS licence | undocumented | licence key: install the TLS licence | unknown | '
+                             'S1 [type not confirmed] html-block:2: "TLS is supported for DNP3 sessions" (+2 more) | draft (A. Reviewer) |',
+                             '| v | M1 | unknown | not established | No control protocol established from the examined sources | unknown | not reviewed | unknown | - | - | - | unknown | none | draft (A. Reviewer) |',
+                             '| tls | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |', 'Deployment status is unknown for 1 of 1 findings.',
+                             'No definition of "legacy" or of the lifecycle groups is recorded', '## Summary by vendor and category',
+                             '| v | R1 | relay | not established | unknown | none | not established |',
                              f"| S1 | R1 | untitled | suggested: product page | not established | not established | 2026-10-13 | {source['sha256']} | https://vendor.test/r |"]:
                 self.assertIn(expected, text)
             table = (p/'report'/'findings_table.csv').read_text(encoding='utf-8').splitlines()
-            self.assertEqual(table[0], 'Manufacturer,Model,Lifecycle,Category,Firmware,Protocol / interface,Interface class,Encryption,Authentication,Conditions,Evidence,Review status,Sources')
+            self.assertEqual(table[0], 'Manufacturer,Model,Lifecycle,Category,Model scope,Hardware revision,Firmware,Protocol / interface,Interface class,'
+                                       'Authentication,Integrity,Encryption,Support conditions,Default,Activation,Deployment,Evidence,Review status,Sources')
             self.assertEqual(len(table), 3)
             self.assertIn('sha256:' + source['sha256'], table[1])
             self.assertNotIn('%', text.replace('No population percentages', ''))
             index = s.load(p/'report'/'evidence_index.json')
-            self.assertEqual([(x['product_id'],x['feature'],x['location'],x['sha256']) for x in index], [('r1','tls','html-block:2',source['sha256'])])
+            self.assertEqual([(x['product_id'],x['feature'],x['location'],x['sha256'],x['about']) for x in index],
+                             [('r1','tls','html-block:2',source['sha256'],about) for about in ('capability','conditions','activation')])
             none = {'total':0,'by_group':{}}
-            self.assertEqual(s.load(p/'report'/'candidate_counts.json'), {'r1':{'capability':{'total':1,'by_group':{'tls':1}},'related':none,'statement':none,'profile':none},
+            self.assertEqual(s.load(p/'report'/'candidate_counts.json'), {'r1':{'capability':{'total':1,'by_group':{'tls':1}},'related':none,
+                                                                               'statement':{'total':1,'by_group':{'requirement_statement':1}},'profile':none},
                                                                           'm1':{'capability':none,'related':none,'statement':none,'profile':none}})
+            self.assertEqual((p/'report'/'devices.csv').read_text(encoding='utf-8').splitlines()[1], 'r1,v,R1,relay,,unknown,,,,,,,')
+            # The licence is a condition of its own; the quote showing the capability does not also show the condition.
+            s.dump(p/'reviews.json', [dict(rows[1], evidence=rows[1]['evidence'][:1])])
+            with self.assertRaisesRegex(ValueError,'about: conditions'): s.report(p/'run', p/'reviews.json', p/'report2', require_evidence=True)
             rows[1]['evidence'][0]['quote'] = 'TLS is supported for all DNP3 sessions'
             s.dump(p/'reviews.json', rows)
             with self.assertRaisesRegex(ValueError,'evidence quote not found'): s.report(p/'run', p/'reviews.json', p/'report2')
@@ -547,8 +570,9 @@ class SurveyTests(unittest.TestCase):
             template = p/'run'/'review_template.json'
             s.report(p/'run', template, p/'report', require_evidence=True)
             text = (p/'report'/'REPORT.md').read_text(encoding='utf-8')
-            for expected in ['Reviewers on record: none.', '| R1 | relay | - | - | - | - | - | - | - |', 'Review coverage: 0/7', '7 of 7 cells are unknown, conflicting or not reviewed on every interface.',
-                             '| v | R1 | not recorded | not established | No control protocol established from the examined sources | not reviewed | not reviewed | - | none | not reviewed |']:
+            for expected in ['Reviewers on record: none.', '| R1 | relay | - | - | - | - | - | - | - | - |', 'Review coverage: 0/8', '8 of 8 cells are unknown or not reviewed on every interface.',
+                             'No supported or conditional finding is recorded yet.',
+                             '| v | R1 | unknown | not established | No control protocol established from the examined sources | not reviewed | not reviewed | not reviewed | - | - | - | unknown | none | not reviewed |']:
                 self.assertIn(expected, text)
             self.assertEqual(s.load(p/'report'/'findings.json'), [])
             rows = s.load(template)
@@ -559,7 +583,7 @@ class SurveyTests(unittest.TestCase):
             rows[1]['rationale'] = ''
             s.dump(p/'reviews.json', rows)
             s.report(p/'run', p/'reviews.json', p/'report')
-            self.assertIn('| R1 | relay | ? | - | - | - | - | - | - |', (p/'report'/'REPORT.md').read_text(encoding='utf-8'))
+            self.assertIn('| R1 | relay | ? | - | - | - | - | - | - | - |', (p/'report'/'REPORT.md').read_text(encoding='utf-8'))
 
     def test_command_line_refusals_are_one_line_errors(self):
         with tempfile.TemporaryDirectory() as td:
@@ -629,13 +653,15 @@ class SurveyTests(unittest.TestCase):
             cfg = self.config(p, [{'id':'p','seeds':list(pages)}])
             with self.site(pages, calls): s.crawl(cfg, p/'run', p/'cache')
             self.assertEqual([h['feature'] for h in s.load(p/'run'/'candidates.json')], ['tls','vpn'])
-            self.assertEqual([h['feature'] for h in s.load(p/'run'/'statement_leads.json')], ['plaintext_statement'])
+            self.assertEqual([(h['feature'], h['matched']) for h in s.load(p/'run'/'statement_leads.json')],
+                             [('plaintext_statement', ['clear text']), ('requirement_statement', ['TLS is optional'])])
             manifest = s.load(p/'run'/'manifest.json')
-            self.assertEqual((manifest['candidate_count'], manifest['lead_counts']), (2, {'statement':1,'capability':1,'related':1}))
+            self.assertEqual((manifest['candidate_count'], manifest['lead_counts']), (2, {'statement':2,'capability':1,'related':1}))
             s.replay(p/'run', p/'cache', p/'replay')
             s.report(p/'run', p/'run'/'review_template.json', p/'report')
             self.assertEqual(s.load(p/'report'/'candidate_counts.json')['p'], {'capability':{'total':1,'by_group':{'tls':1}},
-                'related':{'total':1,'by_group':{'vpn':1}}, 'statement':{'total':1,'by_group':{'plaintext_statement':1}}, 'profile':{'total':0,'by_group':{}}})
+                'related':{'total':1,'by_group':{'vpn':1}}, 'statement':{'total':2,'by_group':{'plaintext_statement':1,'requirement_statement':1}},
+                'profile':{'total':0,'by_group':{}}})
             notes = s.load(p/'run'/'source_notes_template.json')
             self.assertEqual([(n['url'], n['doc_type'], n['doc_type_suggested'], n['document_id'], n['revision'], n['document_date']) for n in notes],
                              [('https://vendor.test/a','','product_page','','','')])
@@ -649,7 +675,10 @@ class SurveyTests(unittest.TestCase):
         dnp = {'interface':'DNP3 server', 'interface_class':'control_protocol'}
         web = {'interface':'Web interface', 'interface_class':'management'}
         check(dnp, web)
-        check(dict(dnp, status='conditional', conditions='needs option board', review_status='confirmed'))
+        board = dict(dnp, status='conditional', conditions='needs option board', review_status='confirmed')
+        with self.assertRaisesRegex(ValueError,'confirmed row may not leave a field not_assessed'): check(board)
+        check(dict(board, model_scope='X1-D', hardware_revision='not established', support_basis=['optional_module'],
+                   default_state='undocumented', activation_needs=['none_stated']))
         check({'status':'unknown','interface':'','interface_class':'','source_ids':[],'source_hashes':{}}, dnp)
         for bad in [(dnp, dict(dnp, interface=' dnp3  SERVER ')), ({'interface_class':''},), ({'interface_class':'scada'},),
                     (dnp, dict(dnp, feature='ssh', interface_class='management')), (dict(dnp, status='conditional'),),
@@ -678,6 +707,9 @@ class SurveyTests(unittest.TestCase):
                     'location':'html-block:1','protocol':f'{feature} detail','interface':interface,'interface_class':kind,'firmware':'v2 or later',
                     'implementation':'native','conditions':'','evidence':[{'source_id':src[pid]['id'],'location':more.pop('at','html-block:1'),'quote':quote}] if quote else [],
                     'rationale':'explicit','reviewer':'A. Reviewer','reviewed_at':'2026-10-13','review_status':'draft'}
+            if status in ('supported', 'conditional'):
+                base.update(model_scope='not established', hardware_revision='not established', support_basis=['built_in'],
+                            default_state='undocumented', activation_needs=['none_stated'])
             return dict(base, **more)
         login = 'The web interface requires a user login'
         rows = [row('a','tls','supported','DNP3 server','control_protocol','TLS is supported for DNP3 sessions.'),
@@ -696,17 +728,24 @@ class SurveyTests(unittest.TestCase):
             text = (p/'report'/'REPORT.md').read_text(encoding='utf-8')
             self.assertLess(text.index('## Findings by product and interface'), text.index('## Capability matrix'))
             for expected in [
-                '| v | A | not recorded | v2 or later | DNP3 server (control protocol) | supported: encryption detail | unknown; see tls (supported) | none stated | S1 [type not confirmed] html-block:1: "TLS is supported for DNP3 sessions." (+1 more) | draft (A. Reviewer); confirmed (P. Author) |',
-                '| v | A | not recorded | v2 or later | Web interface (management) | not reviewed | conditional: authentication detail | password must be set | S1 [type not confirmed] html-block:2: "The web interface requires a user login" | draft (A. Reviewer) |',
-                '| v | B | not recorded | not established | No control protocol established from the examined sources | unknown | not reviewed | - | none | draft (A. Reviewer) |',
-                '| v | B | not recorded | v2 or later | Web interface (management) | unknown | supported: authentication detail | none stated | S2 [type not confirmed] html-block:1: "The web interface requires a user login" | draft (A. Reviewer) |',
-                '| v | M | not recorded | not established | No control protocol established from the examined sources | not reviewed | not reviewed | - | none | not reviewed |',
-                '| A | relay | - | S | - | - | (C) | S | ? |', '| B | relay | - | ? | - | - | (S) | ? | - |', '| M | meter | - | - | - | - | - | - | - |',
-                '| relay | tls | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 2 |', '| relay | authentication | 0 | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 2 |',
-                '| relay | encryption | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 2 |', '| meter | tls | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 |',
-                'A. Reviewer (7 rows); P. Author (1 rows)', 'Review coverage: 7/21', '| A | authentication | Web interface | conditional | explicit |']:
+                '| v | A | unknown | model not established, hardware not established, firmware v2 or later | DNP3 server (control protocol) | unknown; see tls (supported) | '
+                'not assessed; see tls (supported) | supported: encryption detail | built in | undocumented | none stated | unknown | '
+                'S1 [type not confirmed] html-block:1: "TLS is supported for DNP3 sessions." (+1 more) | draft (A. Reviewer); confirmed (P. Author) |',
+                '| v | A | unknown | model not established, hardware not established, firmware v2 or later | Web interface (management) | conditional: authentication detail | '
+                'not reviewed | not reviewed | built in: password must be set | undocumented | none stated | unknown | '
+                'S1 [type not confirmed] html-block:2: "The web interface requires a user login" | draft (A. Reviewer) |',
+                '| v | B | unknown | not established | No control protocol established from the examined sources | not reviewed | not reviewed | unknown | - | - | - | unknown | none | draft (A. Reviewer) |',
+                '| v | B | unknown | model not established, hardware not established, firmware v2 or later | Web interface (management) | supported: authentication detail | '
+                'not reviewed | unknown | built in | undocumented | none stated | unknown | S2 [type not confirmed] html-block:1: "The web interface requires a user login" | draft (A. Reviewer) |',
+                '| v | M | unknown | not established | No control protocol established from the examined sources | not reviewed | not reviewed | not reviewed | - | - | - | unknown | none | not reviewed |',
+                '| A | relay | - | S | - | - | (C) | S | ? | - |', '| B | relay | - | ? | - | - | (S) | ? | - | - |', '| M | meter | - | - | - | - | - | - | - | - |',
+                '| relay | tls | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 2 |', '| relay | authentication | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 2 | 0 | 0 | 2 |',
+                '| relay | encryption | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 2 |', '| meter | tls | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 |',
+                '| v | relay | - | - | 2 | 2 unknown: other interface only | 2 not reviewed | 1 supported, 1 unknown |',
+                'Deployment status is unknown for 4 of 4 findings.',
+                'A. Reviewer (7 rows); P. Author (1 rows)', 'Review coverage: 7/24', '| A | authentication | Web interface | conditional | explicit |']:
                 self.assertIn(expected, text)
-            self.assertEqual(text.count('| v | A |'), 2)
+            self.assertEqual(text.count('| v | A | unknown |'), 2)
             self.assertEqual(len((p/'report'/'findings_table.csv').read_text(encoding='utf-8').splitlines()), 6)
             self.assertEqual({(x['interface'], x['interface_class'], x['source_ref']) for x in s.load(p/'report'/'evidence_index.json')},
                              {('DNP3 server','control_protocol','S1'), ('Web interface','management','S1'), ('Web interface','management','S2')})
@@ -825,13 +864,16 @@ class SurveyTests(unittest.TestCase):
 
     # --- 1.4.0 ---
 
-    def test_legacy_devices_are_captured_by_what_a_complete_manual_does_not_say(self):
+    def test_what_a_complete_manual_does_not_say_is_unknown_with_that_reason_whatever_the_lifecycle(self):
         with tempfile.TemporaryDirectory() as td:
             p = Path(td)
             pages = {'https://vendor.test/old': b'<p>The relay supports DNP3 and Modbus over serial links.</p><p>Passwords protect front panel access.</p>',
                      'https://vendor.test/new': b'<p>TLS is supported for DNP3 sessions.</p>'}
-            cfg = self.config(p, [{'id':'old','lifecycle':'legacy','seeds':['https://vendor.test/old']},
-                                  {'id':'new','lifecycle':'active','seeds':['https://vendor.test/new']}, {'id':'unk','seeds':[]}])
+            proof = {'url':'https://vendor.test/lifecycle','retrieved_at':'2026-10-01T00:00:00+00:00'}
+            cfg = self.config(p, [{'id':'old','lifecycle':'end_of_support','seeds':['https://vendor.test/old'],
+                                   'lifecycle_evidence':[dict(proof, quote='Support for the OLD relay ended on 1 March 2020.', stated_date='1 March 2020')]},
+                                  {'id':'new','lifecycle':'currently_supported','seeds':['https://vendor.test/new'],
+                                   'lifecycle_evidence':[dict(proof, basis='listed in the vendor catalogue')]}, {'id':'unk','seeds':[]}], definitions=self.DEFINITIONS)
             with self.site(pages, []): s.crawl(cfg, p/'run', p/'cache')
             src = {x['product_id']: x for x in s.load(p/'run'/'sources.json')}
             def row(pid, feature, status, **more):
@@ -839,7 +881,8 @@ class SurveyTests(unittest.TestCase):
                         'location':'','protocol':'','interface':'DNP3 serial and Ethernet','interface_class':'control_protocol','firmware':'all versions covered by manual rev C',
                         'implementation':'','conditions':'','evidence':[],'rationale':'searched in full','reviewer':'A. Reviewer','reviewed_at':'2026-10-13','review_status':'draft'}
                 return dict(base, **more)
-            silent = [row('old','encryption','not_documented'), row('old','tls','not_documented')]
+            # The second row is spelt as it was before 1.6.0 and is read the same way.
+            silent = [row('old','encryption','unknown', unknown_reason='complete_document_silent'), row('old','tls','not_documented')]
             claim = row('new','tls','supported', location='html-block:1', protocol='DNP3 over TLS', implementation='native',
                         evidence=[{'source_id':src['new']['id'],'location':'html-block:1','quote':'TLS is supported for DNP3 sessions.'}])
             note = lambda pid, kind, coverage: {'source_id':src[pid]['id'],'doc_type':kind,'coverage':coverage}
@@ -847,44 +890,74 @@ class SurveyTests(unittest.TestCase):
                 s.dump(p/'reviews.json', rows); s.dump(p/'notes.json', notes)
                 s.report(p/'run', p/'reviews.json', p/'report', require_evidence=True, source_notes=p/'notes.json')
             for notes in ([], [note('old','product_page','complete')], [note('old','manual','partial')], [note('old','manual','')]):
-                with self.subTest(notes=notes), self.assertRaisesRegex(ValueError,'not_documented needs a complete'): run(silent, notes)
-            with self.assertRaisesRegex(ValueError,'1 leads for tls exist'): run([row('new','tls','not_documented')], [note('new','manual','complete')])
+                with self.subTest(notes=notes), self.assertRaisesRegex(ValueError,'complete_document_silent needs a complete'): run(silent, notes)
+            with self.assertRaisesRegex(ValueError,'1 leads for tls exist'):
+                run([row('new','tls','unknown', unknown_reason='complete_document_silent')], [note('new','manual','complete')])
             with self.assertRaisesRegex(ValueError,'coverage must be'): run(silent, [note('old','manual','whole')])
             run(silent + [claim], [note('old','manual','complete')])
             text = (p/'report'/'REPORT.md').read_text(encoding='utf-8')
             for expected in [
-                'Lifecycle (active, legacy or discontinued) is recorded for 2 of 3 products.',
-                '| v | OLD | legacy | all versions covered by manual rev C | DNP3 serial and Ethernet (control protocol) | '
-                'not documented: the complete documentation searched does not mention it | not assessed; see tls (not documented) | none stated | '
+                '## Definitions', 'Fixed on 2026-10-13 in the config this run was crawled with, before any result was counted.',
+                '- Legacy: Legacy means the vendor states that support has ended.', '- End of support: The vendor states that support has ended.',
+                'Legacy under this definition: 1 of 3 devices in this run. Lifecycle status rests on dated vendor evidence for 2 devices and is unknown for 1.',
+                '| v | OLD | relay | not established | end of support | 1 March 2020: "Support for the OLD relay ended on 1 March 2020." <https://vendor.test/lifecycle> | not established |',
+                '| v | NEW | relay | not established | currently supported | 2026-10-01: listed in the vendor catalogue <https://vendor.test/lifecycle> | not established |',
+                '| v | UNK | relay | not established | unknown | none | not established |',
+                '| v | OLD | end of support | model not assessed, hardware not assessed, firmware all versions covered by manual rev C | DNP3 serial and Ethernet (control protocol) | '
+                'not assessed; see tls (unknown: complete document silent) | not assessed; see tls (unknown: complete document silent) | '
+                'unknown: the complete documentation searched does not mention it | none stated | - | - | unknown | '
                 'S1 [manual] searched in full: no lead for encryption; S1 [manual] searched in full: no lead for tls | draft (A. Reviewer) |',
-                '| v | NEW | active | all versions covered by manual rev C | DNP3 serial and Ethernet (control protocol) | not assessed; see tls (supported) |',
-                '| v | UNK | not recorded | not established | No control protocol established from the examined sources |',
-                '| OLD | relay, legacy | - | N | - | - | - | N | - |', '| NEW | relay, active | - | S | - | - | - | - | - |',
-                '| relay, legacy | tls | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 1 |', '| relay, active | tls | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |',
-                '| relay, not recorded | tls | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 |', '| relay, legacy | encryption | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 1 |',
-                '### OLD: tls (not documented)', '- Searched: S1 [manual] searched in full: no lead for tls', '| manual, complete |',
-                'Evidence quotes: 1 of 1 rows', 'Not documented: 2 rows', 'N not documented in a complete document',
-                '18 of 21 cells are unknown, conflicting or not reviewed on every interface.']:
+                '| v | NEW | currently supported | model not assessed, hardware not assessed, firmware all versions covered by manual rev C | DNP3 serial and Ethernet (control protocol) | not assessed; see tls (supported) |',
+                '| v | UNK | unknown | not established | No control protocol established from the examined sources |',
+                '| OLD | relay, end of support | - | ?s | - | - | - | ?s | - | - |', '| NEW | relay, currently supported | - | S | - | - | - | - | - | - |',
+                # The same four results are counted for the legacy device and the current one; silence is unknown, not unsupported.
+                '| relay, end of support | tls | 0 | 0 | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 1 |', '| relay, currently supported | tls | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |',
+                '| relay, unknown | tls | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 |', '| relay, end of support | encryption | 0 | 0 | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 1 |',
+                '| v | relay | end of support | - | 1 | 1 not reviewed | 1 not reviewed | 1 unknown: complete document silent |',
+                '## Counts by category and lifecycle group', 'The same results are counted for every lifecycle group.',
+                '### OLD: tls (unknown: complete document silent)', '- Searched: S1 [manual] searched in full: no lead for tls', '| manual, complete |',
+                '| OLD | tls | DNP3 serial and Ethernet | unknown: complete document silent | searched in full |',
+                'Evidence quotes: 1 of 1 rows', 'Unknown because a complete document is silent: 2 rows', '?s a complete document was searched and is silent',
+                '23 of 24 cells are unknown or not reviewed on every interface.']:
                 self.assertIn(expected, text)
             table = (p/'report'/'findings_table.csv').read_text(encoding='utf-8').splitlines()
-            self.assertIn('legacy', table[1].split(',')[2])
+            self.assertIn('end of support', table[1].split(',')[2])
             self.assertIn('searched in full: no lead for tls', table[1])
+            self.assertEqual({(r['status'], r['unknown_reason']) for r in s.load(p/'report'/'findings.json') if r['product_id'] == 'old'}, {('unknown', 'complete_document_silent')})
 
-    def test_not_documented_and_lifecycle_are_validated(self):
+    def test_four_results_and_a_lifecycle_that_needs_evidence(self):
+        self.assertEqual(s.STATUSES, ('supported', 'conditional', 'explicitly_unsupported', 'unknown'))
         source, row = self.fixture()
-        silent = dict(row, status='not_documented', location='', protocol='', implementation='', interface='DNP3', interface_class='control_protocol')
+        silent = dict(row, status='unknown', unknown_reason='complete_document_silent', location='', protocol='', implementation='', interface='DNP3', interface_class='control_protocol')
         s.validate_reviews([silent], [source], {'p'}, require_evidence=True)
-        for change in [{'interface_class':''}, {'firmware':''}, {'interface':''}, {'source_ids':[]}]:
+        s.validate_reviews([dict(silent, status='not_documented', unknown_reason='')], [source], {'p'}, require_evidence=True)
+        for change in [{'interface_class':''}, {'firmware':''}, {'interface':''}, {'source_ids':[]}, {'unknown_reason':'no manual found'}]:
             with self.subTest(change=change), self.assertRaises(ValueError): s.validate_reviews([dict(silent, **change)], [source], {'p'})
-        base = {'sampling':'x','products':[{'id':'p','vendor':'v','model':'m','category':'c','lifecycle':'legacy','domains':['vendor.test'],'seeds':[]}]}
+        # Sources that disagree leave the cell unknown; the row still has to say which sources and where.
+        split = dict(row, status='conflicting')
+        s.validate_reviews([split], [source], {'p'})
+        self.assertEqual((split['status'], split['unknown_reason'], s.token(split), s.named(split)), ('unknown', 'sources_conflict', 'conflict', 'unknown: sources conflict'))
+        with self.assertRaisesRegex(ValueError,'claim requires source evidence'): s.validate_reviews([dict(split, source_ids=[], source_hashes={})], [source], {'p'})
+        # Not enough evidence is the plain unknown: no source, no interface, and the reason need not be written out.
+        for reason in ('', 'not_enough_evidence'):
+            s.validate_reviews([dict(row, status='unknown', unknown_reason=reason, source_ids=[], source_hashes={}, interface='', interface_class='')], [source], {'p'})
+        base = {'sampling':'x','products':[{'id':'p','vendor':'v','model':'m','category':'c','lifecycle':'end_of_support','domains':['vendor.test'],'seeds':[]}]}
+        self.assertEqual(s.validate_config(base), ['p: lifecycle "end_of_support" has no lifecycle_evidence; the report will refuse it', 'p: no seeds, so every cell stays unknown'])
+        base['products'][0]['lifecycle_evidence'] = [{'url':'https://vendor.test/eol','retrieved_at':'2026-10-01','quote':'Support for model m has ended.'}]
         self.assertEqual(s.validate_config(base), ['p: no seeds, so every cell stays unknown'])
+        # A label from before 1.6.0 is read, said to be one, and reported as unknown. Anything else is refused.
+        base['products'][0]['lifecycle'] = 'legacy'
+        self.assertEqual(s.validate_config(base), ['p: lifecycle "legacy" is a label from before 1.6.0 and is reported as unknown', 'p: no seeds, so every cell stays unknown'])
         base['products'][0]['lifecycle'] = 'old'
         with self.assertRaisesRegex(ValueError,'lifecycle must be one of'): s.validate_config(base)
-        self.assertIn('not_documented', s.STATUSES)
+        self.assertEqual((s.life_words('discontinued_support_not_stated'), s.life_words('end_of_support'), s.life_words(None)),
+                         ('discontinued, support not stated', 'end of support', 'not recorded'))
 
     # --- 1.5.0 ---
 
-    VENDORS = {'title': 'Test inventory', 'robots_follow_redirects': ['vendor.test'], 'vendors': {'acme': {
+    DEFINITIONS = {'defined_at': '2026-10-13', 'legacy': 'Legacy means the vendor states that support has ended.',
+                   'lifecycle_statuses': {'end_of_support': 'The vendor states that support has ended.'}}
+    VENDORS = {'title': 'Test inventory', 'robots_follow_redirects': ['vendor.test'], 'definitions': DEFINITIONS, 'vendors': {'acme': {
         'vendor': 'Acme', 'domains': ['vendor.test'], 'sitemaps': ['https://vendor.test/sitemap.xml'],
         'scope': '^https://vendor\\.test/products/[^/]+/[^/]+$',
         'exclude': [{'on': 'url', 'match': '/accessories/', 'reason': 'accessory'},
@@ -893,8 +966,9 @@ class SurveyTests(unittest.TestCase):
         'rules': [{'on': 'url', 'match': '/relays/', 'category': 'protective_relay'},
                   {'on': 'slug', 'match': '^pm[0-9]', 'category': 'meter'},
                   {'on': 'text', 'match': 'feeder protection', 'category': 'protective_relay'}],
-        'lifecycle': [{'on': 'slug', 'match': 'legacy', 'value': 'legacy'}],
-        'lifecycle_text': [{'match': 'has been discontinued', 'value': 'discontinued'}],
+        'lifecycle': [{'on': 'slug', 'match': 'legacy', 'value': 'unknown', 'vendor_label': 'legacy'}],
+        'lifecycle_text': [{'match': 'support (has ended|ended)', 'value': 'end_of_support'},
+                           {'match': 'has been discontinued', 'value': 'discontinued_support_not_stated'}],
         'crawl': {'max_depth': 1, 'max_pages_per_product': 3, 'follow_pattern': 'manual'}}}}
     SITEMAP = (b'<urlset><url><loc>https://vendor.test/products/relays/r100</loc></url><url><loc>https://vendor.test/products/relays/r90-legacy</loc></url>'
                b'<url><loc>https://vendor.test/products/meters/pm800</loc></url><url><loc>https://vendor.test/products/accessories/cable</loc></url>'
@@ -914,12 +988,17 @@ class SurveyTests(unittest.TestCase):
             got = {e['product_url'].rsplit('/', 1)[-1]: e for e in inv['entries']}
             self.assertEqual(sorted(got), ['cable', 'pm800', 'r100', 'r90-legacy', 'setup-software', 'x7'])
             self.assertEqual([(k, got[k]['category'], got[k]['lifecycle'], got[k]['included']) for k in ('r100', 'r90-legacy', 'pm800')],
-                             [('r100','protective_relay','active',True), ('r90-legacy','protective_relay','legacy',True), ('pm800','meter','active',True)])
+                             [('r100','protective_relay','currently_supported',True), ('r90-legacy','protective_relay','unknown',True), ('pm800','meter','currently_supported',True)])
             self.assertEqual((got['cable']['included'], got['cable']['reason']), (False, 'accessory'))
             self.assertEqual((got['setup-software']['included'], got['setup-software']['reason'], got['setup-software']['category']), (False, 'software', 'protective_relay'))
             self.assertEqual((got['x7']['included'], got['x7']['category'], got['x7']['reason'], 'excluded_by' in got['x7']), (False, 'unclassified', 'no category rule matched', False))
             self.assertEqual((got['r100']['id'], got['r100']['model'], got['r100']['vendor'], got['r100']['domains']), ('acme_r100', 'R100', 'Acme', ['vendor.test']))
-            self.assertIn('legacy marker', got['r100']['lifecycle_basis'])
+            # Being listed is the vendor's dated word that the product is on offer. The vendor's own "legacy" label decides nothing.
+            listed = {'url': 'https://vendor.test/sitemap.xml', 'sha256': s.digest(self.SITEMAP), 'retrieved_at': '2026-10-13T00:00:00+00:00'}
+            self.assertEqual(got['r100']['lifecycle_evidence'], [dict(listed, basis='listed in the vendor catalogue without a notice of discontinuation')])
+            self.assertEqual((got['r100']['vendor_label'], got['r90-legacy']['vendor_label'], got['r90-legacy']['lifecycle_basis']), ('', 'legacy', 'catalogue listing matches legacy'))
+            self.assertEqual({i['listed_in'] for i in s.load(p/'inv'/'catalogue.json')['acme']['items']}, {'https://vendor.test/sitemap.xml'})
+            self.assertEqual(s.load(p/'inv'/'inventory.json')['spec']['definitions'], self.DEFINITIONS)
             self.assertEqual(calls, ['https://vendor.test/sitemap.xml'])
             self.assertEqual(len((p/'inv'/'inventory.csv').read_text(encoding='utf-8').splitlines()), 7)
             self.assertEqual(len(s.load(p/'inv'/'catalogue.json')['acme']['items']), 8)
@@ -930,7 +1009,8 @@ class SurveyTests(unittest.TestCase):
             with self.site({}, calls): s.inventory(p/'vendors2.json', p/'inv2', p/'cache', source=p/'inv')
             self.assertEqual(len(calls), 1)
             self.assertEqual([(e['category'], e['included']) for e in s.load(p/'inv2'/'inventory.json')['entries'] if e['id'] == 'acme_x7'], [('plc', True)])
-            for broken in ({'rules': [{'match': 'x', 'category': 'switch'}]}, {'lifecycle': [{'match': 'x', 'value': 'old'}]}, {'rules': [{'match': '(', 'category': 'plc'}]}):
+            for broken in ({'rules': [{'match': 'x', 'category': 'switch'}]}, {'lifecycle': [{'match': 'x', 'value': 'old'}]}, {'rules': [{'match': '(', 'category': 'plc'}]},
+                           {'lifecycle': [{'match': 'x', 'value': 'legacy'}]}, {'lifecycle_text': [{'match': 'x', 'value': 'discontinued'}]}):
                 bad = json.loads(json.dumps(self.VENDORS)); bad['vendors']['acme'].update(broken); s.dump(p/'bad.json', bad)
                 with self.subTest(broken=broken), self.assertRaises(Exception): s.inventory(p/'bad.json', p/'inv3', p/'cache', source=p/'inv')
                 self.assertFalse((p/'inv3').exists())
@@ -953,6 +1033,7 @@ class SurveyTests(unittest.TestCase):
             self.assertEqual(relay['documents'][:2], ['https://vendor.test/api/download/11/', 'https://vendor.test/api/download/12/'])
             self.assertEqual(relay['summary'], 'Feeder Protection Relay. Complete protection with a display panel.')
             self.assertEqual((tester['included'], tester['reason']), (False, 'test equipment'))
+            self.assertEqual((relay['lifecycle'], [e['url'] for e in relay['lifecycle_evidence']]), ('currently_supported', ['https://vendor.test/api/list/']))
             s.sample(p/'inv'/'inventory.json', p/'census.json', census=True)
             s.sample(p/'inv'/'inventory.json', p/'deep.json', per_stratum=5, seed=1)
             self.assertEqual([x['seeds'] for x in s.load(p/'census.json')['products']], [['https://vendor.test/api/download/11/']])
@@ -960,10 +1041,13 @@ class SurveyTests(unittest.TestCase):
 
     def frame_inventory(self, p):
         entries = []
-        for vendor, category, lifecycle, n in [('Acme','protective_relay','active',6), ('Acme','protective_relay','legacy',2), ('Acme','meter','active',1), ('Bolt','plc','active',5)]:
+        proof = [{'basis': 'catalogue listing', 'url': 'https://vendor.test/sitemap.xml', 'sha256': 'ab' * 32, 'retrieved_at': '2026-10-13T00:00:00+00:00'}]
+        for vendor, category, lifecycle, n in [('Acme','protective_relay','currently_supported',6), ('Acme','protective_relay','discontinued_support_not_stated',2),
+                                               ('Acme','meter','currently_supported',1), ('Bolt','plc','currently_supported',5)]:
             for i in range(n):
                 entries.append({'id': f'{vendor}_{category}_{lifecycle}_{i}'.lower(), 'vendor_key': 'acme', 'vendor': vendor, 'model': f'M{i}', 'category': category,
-                                'lifecycle': lifecycle, 'included': True, 'reason': '', 'product_url': f'https://vendor.test/{vendor}/{category}/{lifecycle}/{i}', 'domains': ['vendor.test']})
+                                'lifecycle': lifecycle, 'lifecycle_basis': 'catalogue listing', 'lifecycle_evidence': proof, 'included': True, 'reason': '',
+                                'product_url': f'https://vendor.test/{vendor}/{category}/{lifecycle}/{i}', 'domains': ['vendor.test']})
         entries.append(dict(entries[0], id='acme_excluded', included=False, reason='accessory', excluded_by='x'))
         entries.append(dict(entries[0], id='acme_unclassified', included=False, category='unclassified', reason='no category rule matched'))
         s.dump(p/'inventory.json', {'created_at': '2026-10-13T00:00:00+00:00', 'spec': self.VENDORS, 'entries': entries})
@@ -978,10 +1062,15 @@ class SurveyTests(unittest.TestCase):
             self.assertEqual((p/'a.json').read_bytes(), (p/'b.json').read_bytes())
             a, c = s.load(p/'a.json'), s.load(p/'c.json')
             self.assertEqual(Counter_((x['vendor'], x['category'], x['lifecycle']) for x in a['products']),
-                             {('Acme','protective_relay','active'): 2, ('Acme','protective_relay','legacy'): 2, ('Acme','meter','active'): 1, ('Bolt','plc','active'): 2})
+                             {('Acme','protective_relay','currently_supported'): 2, ('Acme','protective_relay','discontinued_support_not_stated'): 2,
+                              ('Acme','meter','currently_supported'): 1, ('Bolt','plc','currently_supported'): 2})
             self.assertNotEqual([x['id'] for x in a['products']], [x['id'] for x in c['products']])
             self.assertEqual({(f['vendor'], f['category'], f['lifecycle']): (f['in_catalogue'], f['selected']) for f in a['frame']},
-                             {('Acme','meter','active'): (1, 1), ('Acme','protective_relay','active'): (6, 2), ('Acme','protective_relay','legacy'): (2, 2), ('Bolt','plc','active'): (5, 2)})
+                             {('Acme','meter','currently_supported'): (1, 1), ('Acme','protective_relay','currently_supported'): (6, 2),
+                              ('Acme','protective_relay','discontinued_support_not_stated'): (2, 2), ('Bolt','plc','currently_supported'): (5, 2)})
+            # The definitions and each device's lifecycle evidence travel into the config, and so under the manifest's hash.
+            self.assertEqual(a['definitions'], self.DEFINITIONS)
+            self.assertEqual({(x['lifecycle_basis'], x['lifecycle_evidence'][0]['url']) for x in a['products']}, {('catalogue listing', 'https://vendor.test/sitemap.xml')})
             self.assertIn('seed 7', a['sampling']); self.assertIn('14 classified catalogue entries', a['sampling'])
             self.assertEqual((a['seed'], a['per_stratum'], a['robots_follow_redirects'], a['inventory']['sha256']), (7, 2, ['vendor.test'], s.digest(inv.read_bytes())))
             self.assertEqual({(x['max_depth'], x['follow_pattern']) for x in a['products']}, {(1, 'manual')})
@@ -1002,31 +1091,46 @@ class SurveyTests(unittest.TestCase):
             p, calls = Path(td), []
             pages = {'https://vendor.test/products/relays/r100': b'<title>R100 Feeder Relay | Acme</title><p>Numerical relay.</p>',
                      'https://vendor.test/products/relays/r90-legacy': b'<title>R90 | Acme</title><p>Overview. Manufacturing for the R90 has been discontinued. Use the R100.</p>',
-                     'https://vendor.test/products/misc/x7': b'<title>X7 | Acme</title><p>The X7 gives feeder protection for small substations.</p>'}
+                     'https://vendor.test/products/misc/x7': b'<title>X7 | Acme</title><p>The X7 gives feeder protection for small substations. Support ended on 30 June 2019. Use the R100.</p>'}
             self.catalogue(p, calls, pages)
             s.sample(p/'inv'/'inventory.json', p/'census.json', census=True)
             with self.site(pages, calls): s.crawl(p/'census.json', p/'run', p/'cache')
             s.enrich(p/'inv'/'inventory.json', p/'run', p/'inv2')
             got = {e['id']: e for e in s.load(p/'inv2'/'inventory.json')['entries']}
-            self.assertEqual((got['acme_r100']['model'], got['acme_r100']['model_basis'], got['acme_r100']['lifecycle']), ('R100 Feeder Relay', 'product page title', 'active'))
+            self.assertEqual((got['acme_r100']['model'], got['acme_r100']['model_basis'], got['acme_r100']['lifecycle']), ('R100 Feeder Relay', 'product page title', 'currently_supported'))
+            # A notice that manufacture has ended says nothing about support, so the device is discontinued and not legacy.
             old = got['acme_r90_legacy']
-            self.assertEqual((old['lifecycle'], old['lifecycle_basis']), ('discontinued', 'product page wording'))
-            self.assertIn('Manufacturing for the R90 has been discontinued.', old['lifecycle_evidence'])
-            self.assertEqual((got['acme_x7']['category'], got['acme_x7']['included']), ('protective_relay', True))
-            self.assertIn('product page text', got['acme_x7']['category_basis'])
+            self.assertEqual((old['lifecycle'], old['lifecycle_basis'], old['vendor_label']), ('discontinued_support_not_stated', 'product page wording', 'legacy'))
+            proof, = old['lifecycle_evidence']
+            self.assertIn('Manufacturing for the R90 has been discontinued.', proof['quote'])
+            self.assertEqual((proof['url'], proof['stated_date'], proof['retrieved_at'], len(proof['sha256'])),
+                             ('https://vendor.test/products/relays/r90-legacy', '', '2026-10-13T00:00:00+00:00', 64))
+            # End of support is the vendor's sentence, with the date the sentence gives.
+            gone = got['acme_x7']
+            self.assertEqual((gone['category'], gone['included'], gone['lifecycle']), ('protective_relay', True, 'end_of_support'))
+            self.assertIn('product page text', gone['category_basis'])
+            self.assertEqual((gone['lifecycle_evidence'][0]['stated_date'], 'Support ended on 30 June 2019.' in gone['lifecycle_evidence'][0]['quote']), ('30 June 2019', True))
             self.assertTrue(got['acme_pm800']['page_status'].startswith('failed: ValueError: HTTP 404'))
             self.assertNotIn('page_status', got['acme_cable'])
             self.assertIn('enriched_from', s.load(p/'inv2'/'inventory.json'))
+            sheet = (p/'inv2'/'inventory.csv').read_text(encoding='utf-8').splitlines()
+            self.assertIn('lifecycle_evidence_date,lifecycle_evidence_quote,lifecycle_evidence_url', sheet[0])
+            self.assertEqual([line.count('30 June 2019') for line in sheet if line.startswith('acme_x7,')], [2])
+            self.assertTrue(any(line.startswith('acme_r100,') and ',2026-10-13,' in line for line in sheet))
             with self.assertRaises(FileExistsError): s.enrich(p/'inv'/'inventory.json', p/'run', p/'inv2')
             # Wording rules are written after the pages are read. One limited to the page opening ignores a later notice.
-            narrow = json.loads(json.dumps(self.VENDORS)); narrow['vendors']['acme']['lifecycle_text'][0]['within'] = 30
+            narrow = json.loads(json.dumps(self.VENDORS)); narrow['vendors']['acme']['lifecycle_text'][1]['within'] = 30
             s.dump(p/'narrow.json', narrow)
             s.enrich(p/'inv'/'inventory.json', p/'run', p/'inv3', vendors=p/'narrow.json')
             again = s.load(p/'inv3'/'inventory.json')
-            self.assertEqual([(e['lifecycle'], 'lifecycle_evidence' in e) for e in again['entries'] if e['id'] == 'acme_r90_legacy'], [('legacy', False)])
+            self.assertEqual([(e['lifecycle'], e['lifecycle_basis']) for e in again['entries'] if e['id'] == 'acme_r90_legacy'], [('unknown', 'catalogue listing matches legacy')])
             self.assertEqual((again['vendors_sha256'], again['spec']), (s.digest((p/'narrow.json').read_bytes()), narrow))
             narrow['vendors']['acme']['lifecycle_text'][0]['value'] = 'old'; s.dump(p/'narrow.json', narrow)
             with self.assertRaisesRegex(ValueError,'lifecycle value'): s.enrich(p/'inv'/'inventory.json', p/'run', p/'inv4', vendors=p/'narrow.json')
+        for text, expected in [('The EPM has been discontinued as of April 8, 2011. See the 6000.', 'April 8, 2011'), ('Obsolete December 2016. Replace it.', 'December 2016'),
+                               ('Withdrawn on 2019-06-30.', '2019-06-30'), ('It has been discontinued. Updated 3 May 2024.', '')]:
+            m = s.re.search('discontinued|Obsolete|Withdrawn', text)
+            with self.subTest(text=text): self.assertEqual(s.stated_date(text, m.start(), m.end()), expected)
 
     def test_a_product_may_override_depth_and_follow_pattern_and_only_narrows_the_run(self):
         with tempfile.TemporaryDirectory() as td:
@@ -1114,59 +1218,75 @@ class SurveyTests(unittest.TestCase):
     def test_worksheet_lays_out_leads_and_proposes_no_result(self):
         with tempfile.TemporaryDirectory() as td:
             p, calls = Path(td), []
-            pages = {'https://vendor.test/a': b'<title>A relay</title><p>TLS 1.2 is supported. TLS is not used for Modbus.</p>'}
-            cfg = self.config(p, [{'id':'a','lifecycle':'legacy','seeds':['https://vendor.test/a','https://vendor.test/gone']},{'id':'b','seeds':[]}])
+            pages = {'https://vendor.test/a': b'<title>A relay</title><p>TLS 1.2 is supported. TLS is not used for Modbus.</p>'
+                                              b'<p>TLS is disabled by default and requires a certificate.</p>'}
+            ended = [{'url':'https://vendor.test/eol','retrieved_at':'2026-10-01T00:00:00+00:00','quote':'Support for the A relay ended on 1 March 2020.','stated_date':'1 March 2020'}]
+            cfg = self.config(p, [{'id':'a','lifecycle':'end_of_support','lifecycle_evidence':ended,'seeds':['https://vendor.test/a','https://vendor.test/gone']},{'id':'b','seeds':[]}])
             with self.site(pages, calls): s.crawl(cfg, p/'run', p/'cache')
             s.worksheet(p/'run', p/'sheet')
             text = (p/'sheet'/'worksheet.md').read_text(encoding='utf-8')
-            for expected in ['## A', 'v; relay; lifecycle legacy; id `a`', '- S1 extracted, product page (suggested) <https://vendor.test/a>', '- -- failed: ValueError: HTTP 404 <https://vendor.test/gone>',
-                             '- **tls**: 1 leads: S1 html-block:2 [TLS 1.2, TLS]', '- **ssh**: no lead in S1', '- **non_support_statement**: 1 leads: S1 html-block:2 [TLS is not used]',
-                             '## B', '- no source', '- **tls**: no lead', 'not a finding']:
+            for expected in ['## A', 'v; relay; lifecycle end of support; id `a`',
+                             '- lifecycle evidence, 1 March 2020: "Support for the A relay ended on 1 March 2020." <https://vendor.test/eol>',
+                             '- S1 extracted, product page (suggested) <https://vendor.test/a>', '- -- failed: ValueError: HTTP 404 <https://vendor.test/gone>',
+                             '- **tls**: 2 leads: S1 html-block:2 [TLS 1.2, TLS]; S1 html-block:3 [TLS]',
+                             '  - default wording: S1 html-block:3 [TLS is disabled by default]',
+                             '  - requirement wording: S1 html-block:3 [TLS is disabled by default and requires]',
+                             '- **ssh**: no lead in S1', '- **non_support_statement**: 1 leads: S1 html-block:2 [TLS is not used]',
+                             '## B', 'v; relay; lifecycle not recorded; id `b`', '- no source', '- **tls**: no lead', 'not a finding']:
                 self.assertIn(expected, text)
             rows = s.load(p/'sheet'/'review_template.json')
-            self.assertEqual(rows[1]['_hints'], {'leads': 1, 'where': ['S1 html-block:2'], 'no_lead_in': []})
-            self.assertEqual(rows[6]['_hints'], {'leads': 0, 'where': [], 'no_lead_in': ['S1']})
+            self.assertEqual(rows[1]['_hints'], {'leads': 2, 'where': ['S1 html-block:2', 'S1 html-block:3'], 'no_lead_in': [],
+                                                 'default_wording': ['S1 html-block:3'], 'requirement_wording': ['S1 html-block:3']})
+            self.assertEqual(rows[6]['_hints'], {'leads': 0, 'where': [], 'no_lead_in': ['S1'], 'default_wording': [], 'requirement_wording': []})
+            # The wording about TLS is not offered as wording about SSH.
+            self.assertNotIn('- **ssh**: no lead in S1\n  - default wording', text)
             self.assertTrue(all(map(s.untouched, rows)))
             s.report(p/'run', p/'sheet'/'review_template.json', p/'report')
-            self.assertIn('Review coverage: 0/14', (p/'report'/'REPORT.md').read_text(encoding='utf-8'))
+            self.assertIn('Review coverage: 0/16', (p/'report'/'REPORT.md').read_text(encoding='utf-8'))
             with self.assertRaises(FileExistsError): s.worksheet(p/'run', p/'sheet')
 
     def test_report_shows_the_sampling_frame_and_keeps_unreviewed_devices_out_of_the_table(self):
         with tempfile.TemporaryDirectory() as td:
             p = Path(td)
-            products = [{'id': f'r{i}', 'lifecycle': 'legacy' if i < 10 else 'active', 'seeds': []} for i in range(30)]
-            cfg = self.config(p, products, frame=[{'vendor':'v','category':'relay','lifecycle':'active','in_catalogue':80,'selected':20},
-                                                   {'vendor':'v','category':'relay','lifecycle':'legacy','in_catalogue':40,'selected':10},
-                                                   {'vendor':'v','category':'meter','lifecycle':'active','in_catalogue':9,'selected':0}])
+            listed = [{'url':'https://vendor.test/catalogue.xml','retrieved_at':'2026-10-13T00:00:00+00:00','basis':'listed in the vendor catalogue'}]
+            gone = [{'url':'https://vendor.test/r','retrieved_at':'2026-10-13T00:00:00+00:00','quote':'Manufacturing for this product has been discontinued.'}]
+            products = [dict({'id': f'r{i}', 'seeds': []}, **({'lifecycle':'discontinued_support_not_stated','lifecycle_evidence':gone} if i < 10
+                                                               else {'lifecycle':'currently_supported','lifecycle_evidence':listed})) for i in range(30)]
+            frame = [{'vendor':'v','category':'relay','lifecycle':'currently_supported','in_catalogue':80,'selected':20},
+                     {'vendor':'v','category':'relay','lifecycle':'discontinued_support_not_stated','in_catalogue':40,'selected':10},
+                     {'vendor':'v','category':'meter','lifecycle':'currently_supported','in_catalogue':9,'selected':0}]
+            cfg = self.config(p, products, frame=frame, definitions=self.DEFINITIONS)
             with self.site({}, []): s.crawl(cfg, p/'run', p/'cache')
             s.report(p/'run', p/'run'/'review_template.json', p/'report')
             text = (p/'report'/'REPORT.md').read_text(encoding='utf-8')
-            for expected in ['## Summary by vendor, category and lifecycle', '| v | relay | active | 80 | 20 | 20 not reviewed | 20 not reviewed |',
-                             '| v | relay | legacy | 40 | 10 | 10 not reviewed | 10 not reviewed |', '| v | meter | active | 9 | 0 | - | - |',
-                             '30 products have no review row yet.']:
+            for expected in ['## Summary by vendor, category and lifecycle', '| v | relay | currently supported | 80 | 20 | 20 not reviewed | 20 not reviewed | 20 not reviewed |',
+                             '| v | relay | discontinued, support not stated | 40 | 10 | 10 not reviewed | 10 not reviewed | 10 not reviewed |',
+                             '| v | meter | currently supported | 9 | 0 | - | - | - |', '30 products have no review row yet.',
+                             # Discontinued is not legacy: none of the thirty has a vendor statement that support ended.
+                             'Legacy under this definition: 0 of 30 devices in this run. Lifecycle status rests on dated vendor evidence for 30 devices and is unknown for 0.',
+                             '30 devices without a review row are left out of this table. devices.csv lists all 30 with their lifecycle evidence.']:
                 self.assertIn(expected, text)
             self.assertNotIn('No control protocol established', text)
             self.assertEqual(len((p/'report'/'findings_table.csv').read_text(encoding='utf-8').splitlines()), 31)
+            devices = (p/'report'/'devices.csv').read_text(encoding='utf-8').splitlines()
+            self.assertEqual((len(devices), devices[2]), (31, 'r1,v,R1,relay,,discontinued_support_not_stated,,2026-10-13,Manufacturing for this product has been discontinued.,https://vendor.test/r,,,'))
             # The matrix and the unresolved list count the unreviewed devices too, without a line for each.
             self.assertIn('30 products without a review row are left out', text)
-            self.assertIn('210 of 210 cells are unknown, conflicting or not reviewed on every interface.', text)
-            self.assertIn('This includes all 210 cells of the 30 products without a review row', text)
-            self.assertNotIn(' | - | - | - | - | - | - | - |', text)
+            self.assertIn('240 of 240 cells are unknown or not reviewed on every interface.', text)
+            self.assertIn('This includes all 240 cells of the 30 products without a review row', text)
+            self.assertNotIn(' | - | - | - | - | - | - | - | - |', text)
             self.assertNotIn(': dnp3_secure_authentication, tls, ipsec', text)
-
-    def test_report_says_what_kind_of_document_was_read_once_sources_are_too_many_to_list(self):
-        with tempfile.TemporaryDirectory() as td:
-            p = Path(td)
-            pages = {f'https://vendor.test/p{i}': f'<title>Relay {i}</title><p>Relay {i} has a web server.</p>'.encode() for i in range(61)}
-            cfg = self.config(p, [{'id': f'r{i}', 'seeds': [f'https://vendor.test/p{i}']} for i in range(61)])
-            with self.site(pages, []): s.crawl(cfg, p/'run', p/'cache')
-            s.report(p/'run', p/'run'/'review_template.json', p/'report')
-            text = (p/'report'/'REPORT.md').read_text(encoding='utf-8')
-            self.assertIn('## What was read', text)
-            self.assertRegex(text, r'\| v \| [a-z ()]+ \| 61 \| - \|')
-            self.assertIn('Of 61 extracted sources, the 0 cited by a review row are listed here. sources.json lists all of them.', text)
-            self.assertNotIn('| S1 |', text)
-            self.assertEqual(len(s.load(p/'report'/'sources.json')), 61)
+            # Without definitions in the config the run was crawled with, nothing is counted by lifecycle group.
+            cfg = self.config(p, products, frame=frame)
+            with self.site({}, []): s.crawl(cfg, p/'run2', p/'cache')
+            s.report(p/'run2', p/'run2'/'review_template.json', p/'report2')
+            text = (p/'report2'/'REPORT.md').read_text(encoding='utf-8')
+            for expected in ['No definition of "legacy" or of the lifecycle groups is recorded in the config of this run, so no result is counted by lifecycle group.',
+                             '## Summary by vendor and category', '| v | relay | - | 120 | 30 | 30 not reviewed | 30 not reviewed | 30 not reviewed |', '| v | meter | - | 9 | 0 | - | - | - |',
+                             '## Counts by category', '| relay | tls | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 30 | 30 |']:
+                self.assertIn(expected, text)
+            for absent in ['## Definitions', 'Legacy under this definition', '## Counts by category and lifecycle group', 'relay, currently supported']:
+                self.assertNotIn(absent, text)
 
     def test_report_counts_unread_sources_by_vendor_once_there_are_too_many_to_list(self):
         with tempfile.TemporaryDirectory() as td:
@@ -1180,6 +1300,194 @@ class SurveyTests(unittest.TestCase):
             self.assertIn('| v | ValueError: HTTP 404 | 21 |', text)
             self.assertIn('| v | behind a sign-in, not requested | 21 |', text)
             self.assertNotIn('https://vendor.test/missing3 ', text)
+
+    # --- 1.6.0 ---
+
+    def test_integrity_default_and_requirement_wording_are_leads(self):
+        table = {
+            'Message integrity is protected by an HMAC': ['integrity'],
+            'Secure Authentication provides authentication and integrity of DNP3 messages': ['dnp3_secure_authentication', 'authentication', 'integrity'],
+            'The master sends an integrity poll every hour': [],
+            'signal integrity of the IRIG-B input': [],
+            'TLS is disabled by default': ['tls', 'default_statement'],
+            'By default, authentication is off': ['authentication', 'default_statement'],
+            'When TLS is enabled, a certificate is required': ['tls', 'requirement_statement'],
+            'SSH requires firmware R120 or later': ['ssh', 'requirement_statement'],
+            'IPsec is an optional feature that needs a licence': ['ipsec', 'requirement_statement'],
+            'The default gateway address is 0.0.0.0': [],
+            'An optional module adds a second serial port': [],
+        }
+        for text, expected in table.items():
+            with self.subTest(text=text): self.assertEqual(self.leads(text), expected)
+        self.assertEqual({s.lead_type(g) for g in ('default_statement', 'requirement_statement')}, {'statement'})
+
+    def test_a_result_states_how_it_is_obtained_how_it_ships_and_what_activates_it(self):
+        source, row = self.fixture()
+        ok = dict(row, model_scope='X1-D', hardware_revision='rev B', support_basis=['built_in'], default_state='disabled',
+                  activation_needs=['configuration', 'certificates_or_keys'], activation_requirements='Enable TLS and load an X.509 certificate.',
+                  review_status='confirmed')
+        s.validate_reviews([ok], [source], {'p'})
+        # A row from an earlier review has none of these facts: each reads as not assessed, which is not "undocumented".
+        s.validate_reviews([row], [source], {'p'})
+        self.assertEqual(s.facts(row), {'basis': ['not_assessed'], 'default': 'not_assessed', 'needs': ['not_assessed'], 'deployment': 'unknown'})
+        for change, message in [
+                ({'support_basis': []}, 'support_basis is empty'), ({'support_basis': ['licence']}, 'supported means built in'),
+                ({'support_basis': ['built_in', 'not_stated']}, 'support_basis mixes a value'), ({'support_basis': ['cloud']}, 'support_basis is a list from'),
+                ({'default_state': 'off'}, 'default_state is one of'), ({'default_state': ''}, 'default_state is one of'),
+                ({'activation_needs': []}, 'activation_needs is empty'), ({'activation_requirements': ''}, 'activation_requirements does not describe them'),
+                ({'model_scope': ''}, 'model_scope is empty'), ({'hardware_revision': ''}, 'hardware_revision is empty'),
+                ({'default_state': 'not_assessed'}, 'confirmed row may not leave a field not_assessed'),
+                ({'unknown_reason': 'sources_conflict'}, 'unknown_reason belongs to an unknown row'), ({'deployment_status': 'on'}, 'deployment_status must be one of')]:
+            with self.subTest(change=change), self.assertRaisesRegex(ValueError, message + r".*\('p', 'tls'\)"):
+                s.validate_reviews([dict(ok, **change)], [source], {'p'})
+        licensed = dict(ok, status='conditional', conditions='needs the TLS licence', support_basis=['licence'])
+        s.validate_reviews([licensed], [source], {'p'})
+        # Explicit non-support has no basis, default or activation to state.
+        absent = dict(row, status='explicitly_unsupported')
+        s.validate_reviews([absent], [source], {'p'})
+        for change, message in [({'support_basis': ['built_in']}, 'belongs to a supported or conditional result only'), ({'default_state': 'disabled'}, 'default_state is one of'),
+                                ({'activation_needs': ['configuration']}, 'belongs to a supported or conditional result only')]:
+            with self.subTest(change=change), self.assertRaisesRegex(ValueError, message): s.validate_reviews([dict(absent, **change)], [source], {'p'})
+        # Each stated fact needs its own words from the document when quotes are required.
+        segments = lambda sid: [{'location':'pdf-page:2','text':'TLS is supported for DNP3 sessions. TLS is disabled by default. Enable TLS and load an X.509 certificate. TLS needs the security licence.'}]
+        quote = lambda words, about=None: dict({'source_id':'s','location':'pdf-page:2','quote':words}, **({'about':about} if about else {}))
+        capability, default = quote('TLS is supported for DNP3 sessions.'), quote('TLS is disabled by default.', 'default')
+        activation, condition = quote('Enable TLS and load an X.509 certificate.', 'activation'), quote('TLS needs the security licence.', 'conditions')
+        check = lambda r, evidence: s.validate_reviews([dict(r, evidence=evidence)], [source], {'p'}, segments, require_evidence=True)
+        check(ok, [capability, default, activation])
+        check(licensed, [capability, default, activation, condition])
+        for r, evidence, message in [(ok, [capability, activation], 'about: default'), (ok, [capability, default], 'about: activation'), (ok, [default, activation], 'verbatim evidence quote'),
+                                     (ok, [capability, default, dict(activation, about='setup')], 'evidence "about" must be one of'),
+                                     (licensed, [capability, default, activation], 'about: conditions'),
+                                     (ok, [capability, activation, dict(default, quote='TLS is enabled by default.')], 'evidence quote not found')]:
+            with self.subTest(message=message), self.assertRaisesRegex(ValueError, message): check(r, evidence)
+        # "Undocumented" and "none stated" are statements about the documents and need no quote.
+        check(dict(ok, default_state='undocumented', activation_needs=['none_stated'], activation_requirements=''), [capability])
+
+    def test_deployment_is_unknown_unless_evidence_from_an_installation_is_cited(self):
+        source, row = self.fixture(); source.update(url='https://vendor.test/manual.pdf', final_url='https://vendor.test/manual.pdf')
+        field = {'kind':'utility configuration audit', 'reference':'Audit report 2025-07, feeder relays', 'date':'2025-07-14', 'scope':'12 relays at one substation'}
+        s.validate_reviews([dict(row, deployment_status='disabled', deployment_evidence=[field])], [source], {'p'})
+        s.validate_reviews([dict(row, deployment_status='unknown')], [source], {'p'})
+        for change, message in [({'deployment_status':'enabled'}, 'needs deployment_evidence'),
+                                ({'deployment_status':'enabled', 'deployment_evidence':[dict(field, date='')]}, 'needs deployment_evidence'),
+                                # What the manual says can be enabled is not evidence that anyone enabled it.
+                                ({'deployment_status':'enabled', 'deployment_evidence':[dict(field, reference='https://vendor.test/manual.pdf')]}, 'not deployment evidence'),
+                                ({'deployment_status':'enabled', 'deployment_evidence':[dict(field, reference='s')]}, 'not deployment evidence')]:
+            with self.subTest(change=change), self.assertRaisesRegex(ValueError, message): s.validate_reviews([dict(row, **change)], [source], {'p'})
+        self.assertFalse(s.untouched({'status':'unknown', 'deployment_status':'enabled'}))
+        self.assertTrue(s.untouched({'status':'unknown', 'deployment_status':'unknown', 'support_basis':[], 'default_state':'', 'model_scope':'not established'}))
+
+    def test_report_keeps_gateway_only_capability_and_field_evidence_apart(self):
+        with tempfile.TemporaryDirectory() as td:
+            p = Path(td); self.reviewed_run(p)
+            rows = s.load(p/'reviews.json')
+            field = {'kind':'utility configuration audit', 'reference':'Audit report 2025-07', 'date':'2025-07-14', 'scope':'12 relays at one substation'}
+            rows[0].update(deployment_status='disabled', deployment_evidence=[field], default_state='disabled', model_scope='A-100', hardware_revision='rev C',
+                           activation_needs=['configuration', 'certificates_or_keys'], activation_requirements='enable TLS and load a certificate')
+            rows[1].update(status='conditional', conditions='needs an external encrypting gateway', support_basis=['external_gateway'], review_status='draft')
+            s.dump(p/'reviews.json', rows)
+            s.report(p/'run', p/'reviews.json', p/'report')
+            text = (p/'report'/'REPORT.md').read_text(encoding='utf-8')
+            for expected in ['| A | relay | - | S | - | - | (C) | G | ? | - |',
+                             '| relay | encryption | 0 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 2 |', '| relay | tls | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 2 |',
+                             '| v | relay | - | - | 2 | 2 unknown: other interface only | 2 not reviewed | 1 via external gateway only, 1 unknown |',
+                             'conditional: external gateway only: encryption detail',
+                             '| tls: model A-100, hardware rev C, firmware v2 or later; encryption: model not established, hardware not established, firmware v2 or later |',
+                             'built in; external gateway: needs an external encrypting gateway',
+                             'tls: disabled; encryption: undocumented', 'tls: configuration, certificates or keys: enable TLS and load a certificate; encryption: none stated',
+                             'disabled (utility configuration audit, 2025-07-14); unknown',
+                             'Deployment status is unknown for 3 of 4 findings.',
+                             '- A, tls on DNP3 server: disabled (utility configuration audit, Audit report 2025-07, 2025-07-14, 12 relays at one substation)',
+                             '| tls | 1 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |', '### A: encryption (conditional: external gateway only)', '- Support basis: external gateway']:
+                self.assertIn(expected, text)
+            found = {(r['feature'], r['interface']): r for r in s.load(p/'report'/'findings.json')}
+            self.assertEqual(s.token(found['encryption', 'DNP3 server']), 'gateway')
+            csv_row = next(line for line in (p/'report'/'findings.csv').read_text(encoding='utf-8').splitlines() if line.startswith('a,v,A,relay,unknown,tls,supported,'))
+            for part in [',A-100,rev C,v2 or later,', ',built_in,', ',disabled,configuration | certificates_or_keys,enable TLS and load a certificate,disabled,']:
+                self.assertIn(part, csv_row)
+
+    def test_device_notes_state_identity_and_lifecycle_only_with_dated_vendor_evidence(self):
+        with tempfile.TemporaryDirectory() as td:
+            p = Path(td)
+            pages = {'https://vendor.test/a': b'<p>Support for the A relay ended on 1 March 2020.</p>'}
+            cfg = self.config(p, [{'id':'a','seeds':list(pages)}, {'id':'b','seeds':[]}], definitions=self.DEFINITIONS)
+            with self.site(pages, []): s.crawl(cfg, p/'run', p/'cache')
+            source = s.load(p/'run'/'sources.json')[0]
+            notes = s.load(p/'run'/'device_notes_template.json')
+            self.assertEqual([(n['product_id'], n['manufacturer'], n['model'], n['identity_level'], n['lifecycle_status'], n['lifecycle_evidence'], n['release_date']) for n in notes],
+                             [('a','v','A','','unknown',[],''), ('b','v','B','','unknown',[],'')])
+            quote = {'source_id': source['id'], 'location': 'html-block:1', 'quote': 'Support for the A relay ended on 1 March 2020.', 'stated_date': '1 March 2020'}
+            def run(**change):
+                s.dump(p/'devices.json', [dict(notes[0], **change)])
+                s.report(p/'run', p/'run'/'review_template.json', p/'report', device_notes=p/'devices.json')
+                return (p/'report'/'REPORT.md').read_text(encoding='utf-8')
+            text = run(identity_level='model', lifecycle_status='end_of_support', lifecycle_evidence=[quote], release_date='2009', noted_by='A. Reviewer',
+                       release_evidence=[{'url':'https://vendor.test/history', 'retrieved_at':'2026-10-13T00:00:00+00:00'}])
+            for expected in ['Legacy under this definition: 1 of 2 devices in this run.',
+                             '| v | A | relay | model | end of support | 1 March 2020: "Support for the A relay ended on 1 March 2020." <https://vendor.test/a> | 2009 |',
+                             '| v | B | relay | not established | unknown | none | not established |']:
+                self.assertIn(expected, text)
+            self.assertEqual((p/'report'/'devices.csv').read_text(encoding='utf-8').splitlines()[1],
+                             f"a,v,A,relay,model,end_of_support,,1 March 2020,Support for the A relay ended on 1 March 2020.,https://vendor.test/a,{source['sha256']},2009,A. Reviewer")
+            # Still discontinued, with a vendor sentence that support continues: its own group, not legacy.
+            text = run(lifecycle_status='discontinued_supported', lifecycle_evidence=[quote])
+            self.assertIn('Legacy under this definition: 0 of 2 devices in this run.', text)
+            self.assertIn('| discontinued, still supported |', text)
+            for change, message in [
+                    ({'lifecycle_status':'end_of_support'}, 'needs dated vendor evidence'), ({'lifecycle_status':'legacy'}, 'lifecycle_status must be one of'),
+                    ({'lifecycle_status':'end_of_support', 'lifecycle_evidence':[{'url':'https://vendor.test/a', 'retrieved_at':'2026-10-13'}]}, "needs the vendor's own sentence"),
+                    ({'lifecycle_status':'currently_supported', 'lifecycle_evidence':[{'url':'https://vendor.test/a'}]}, 'lifecycle evidence needs a date'),
+                    ({'lifecycle_status':'currently_supported', 'lifecycle_evidence':[{'url':'https://forum.example/thread', 'retrieved_at':'2026-10-13'}]}, 'must be a vendor source'),
+                    ({'lifecycle_status':'end_of_support', 'lifecycle_evidence':[dict(quote, quote='Support for the A relay ended in 2019, we believe.')]}, 'lifecycle quote not found'),
+                    ({'lifecycle_status':'end_of_support', 'lifecycle_evidence':[dict(quote, source_id='nope')]}, 'not one of this product'),
+                    ({'identity_level':'range'}, 'identity_level must be one of'), ({'release_date':'2009'}, 'release_date needs release_evidence'),
+                    ({'product_id':'zzz'}, 'not in this run')]:
+                with self.subTest(change=change), self.assertRaisesRegex(ValueError, message): run(**change)
+            # A config may carry the status, as the inventory writes it. Without evidence the report refuses that as well.
+            cfg = self.config(p, [{'id':'a','lifecycle':'end_of_support','seeds':[]}])
+            with self.site({}, []): s.crawl(cfg, p/'run2', p/'cache')
+            self.assertIn('a: lifecycle "end_of_support" has no lifecycle_evidence; the report will refuse it', s.load(p/'run2'/'manifest.json')['config_warnings'])
+            with self.assertRaisesRegex(ValueError,'needs dated vendor evidence'): s.report(p/'run2', p/'run2'/'review_template.json', p/'report2')
+            # A label from before 1.6.0 is shown as the label it was and counted as unknown.
+            cfg = self.config(p, [{'id':'a','lifecycle':'legacy','seeds':[]}], definitions=self.DEFINITIONS)
+            with self.site({}, []): s.crawl(cfg, p/'run3', p/'cache')
+            s.report(p/'run3', p/'run3'/'review_template.json', p/'report3')
+            text = (p/'report3'/'REPORT.md').read_text(encoding='utf-8')
+            self.assertIn('| v | A | relay | not established | unknown (vendor label: legacy (label used before 1.6.0)) | none | not established |', text)
+            self.assertIn('Legacy under this definition: 0 of 1 devices in this run.', text)
+
+    def test_a_review_written_before_1_6_still_reports_with_the_new_facts_not_assessed(self):
+        with tempfile.TemporaryDirectory() as td:
+            p = Path(td); src = self.reviewed_run(p)
+            rows = s.load(p/'reviews.json')
+            for r in rows:
+                for key in ('model_scope', 'hardware_revision', 'support_basis', 'default_state', 'activation_needs'): r.pop(key, None)
+                r['review_status'] = 'draft'
+            rows[4].update(status='conflicting', interface='Engineering access', interface_class='management', protocol='SSH', location='html-block:1')
+            s.dump(p/'reviews.json', rows)
+            s.report(p/'run', p/'reviews.json', p/'report', require_evidence=True)
+            text = (p/'report'/'REPORT.md').read_text(encoding='utf-8')
+            for expected in ['| v | A | unknown | model not assessed, hardware not assessed, firmware v2 or later | DNP3 server (control protocol) |',
+                             '| supported: encryption detail | not assessed | not assessed | not assessed | unknown |',
+                             '| A | relay | - | S | - | - | (C) | S | (?c) | - |', '| A | ssh | Engineering access | unknown: sources conflict | explicit |',
+                             '### A: ssh (unknown: sources conflict)', '| tls | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 1 |']:
+                self.assertIn(expected, text)
+            self.assertEqual({r['status'] for r in s.load(p/'report'/'findings.json')} - set(s.STATUSES), set())
+
+    def test_reuse_takes_pages_from_several_earlier_runs(self):
+        with tempfile.TemporaryDirectory() as td:
+            p, calls = Path(td), []
+            pages = {'https://vendor.test/a': b'<p>TLS</p>', 'https://vendor.test/b': b'<p>SSH</p>', 'https://vendor.test/c': b'<p>IPsec</p>'}
+            for name in 'ab':
+                with self.site(pages, calls): s.crawl(self.config(p, [{'id':name,'seeds':[f'https://vendor.test/{name}']}]), p/name, p/'cache')
+            del calls[:]
+            both = self.config(p, [{'id':'x','seeds':list(pages)}])
+            with self.site(pages, calls): s.crawl(both, p/'x', p/'cache', reuse=[p/'a', p/'b'])
+            self.assertEqual(calls, ['https://vendor.test/c'])
+            self.assertEqual([r.get('reused_from') for r in s.load(p/'x'/'sources.json')], [str(p/'a'), str(p/'b'), None])
+            self.assertEqual(s.load(p/'x'/'manifest.json')['reused_from'], [str(p/'a'), str(p/'b')])
+            s.replay(p/'x', p/'cache', p/'replay')
 
     def test_resume_continues_an_interrupted_run_without_refetching(self):
         with tempfile.TemporaryDirectory() as td:

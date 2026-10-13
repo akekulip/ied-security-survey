@@ -1,7 +1,19 @@
 {
   "title": "IED security documentation survey: catalogue inventory",
-  "note": "Rules that turn each vendor's own catalogue listing into inventory entries. A rule reads one field: 'url', 'slug' (last path segment) or 'text' (model name and, where the vendor gives one, its one-line product type; during enrich, the product page's title and opening words). The first matching rule wins and an exclusion always beats a category. A lifecycle_text rule reads the product page and may carry 'within', the number of opening characters it looks at, so that a notice about one variant further down the page does not mark the whole product. Change a rule and re-apply it with: survey.py inventory --from <previous inventory>.",
+  "note": "Rules that turn each vendor's own catalogue listing into inventory entries. A rule reads one field: 'url', 'slug' (last path segment) or 'text' (model name and, where the vendor gives one, its one-line product type; during enrich, the product page's title and opening words). The first matching rule wins and an exclusion always beats a category. Lifecycle values are the states fixed under 'definitions'; a rule may add 'vendor_label' to keep the vendor's own word (legacy, obsolete, active mature) without letting it decide the state. A lifecycle_text rule reads the product page and may carry 'within', the number of opening characters it looks at, so that a notice about one variant further down the page does not mark the whole product. Change a rule and re-apply it with: survey.py inventory --from <previous inventory>.",
   "robots_follow_redirects": ["rockwellautomation.com"],
+  "definitions": {
+    "defined_at": "2026-10-13",
+    "legacy": "A device is counted as legacy only when the vendor states, in a dated source, that support for it has ended (end of support, end of service, end of life). A discontinued device without such a statement is reported in its own group and is not legacy. The protocol a device speaks, a security feature it lacks and the age of its manual never decide this.",
+    "lifecycle_statuses": {
+      "currently_supported": "Listed in the vendor's current catalogue on the inventory date without a notice of discontinuation, or stated by the vendor to be on sale and supported.",
+      "discontinued_supported": "The vendor states that manufacture or sale has ended and that support continues.",
+      "discontinued_support_not_stated": "The vendor states that manufacture or sale has ended; no statement about support was found.",
+      "end_of_support": "The vendor states that support has ended. This is the legacy group.",
+      "unknown": "None of the above is established. This includes products the vendor only labels legacy, products under a last-time-buy notice and families that are partly withdrawn."
+    },
+    "release_date": "Recorded separately when a vendor source states it. It never decides lifecycle status."
+  },
   "vendors": {
     "ge": {
       "vendor": "GE Vernova / Multilin",
@@ -29,11 +41,13 @@
         {"on": "text", "match": "controller|\\brtu\\b|gateway|substation automation", "category": "controller_rtu"}
       ],
       "lifecycle": [
-        {"on": "slug", "match": "discontinued", "value": "discontinued"},
-        {"on": "slug", "match": "legacy", "value": "legacy"}
+        {"on": "slug", "match": "discontinued", "value": "discontinued_support_not_stated"},
+        {"on": "slug", "match": "legacy", "value": "unknown", "vendor_label": "legacy"}
       ],
       "lifecycle_text": [
-        {"match": "\\(discontinued\\)|[-\u2013(] ?legacy\\b[^.]{0,260}?\\b(has|have|as) (been )?discontinued|manufacturing for (this|the) product (has|as) been discontinued", "within": 500, "value": "discontinued"}
+        {"match": "\\bend of support\\b|\\bend of service life\\b|\\bis no longer supported\\b|\\bsupport (has )?ended\\b", "within": 600, "value": "end_of_support"},
+        {"match": "\\(discontinued\\)|[-\u2013(] ?legacy\\b[^.]{0,260}?\\b(has|have|as) (been )?discontinued|manufacturing for (this product|the product|the [A-Za-z0-9/ -]{1,30} portfolio) (has|as) been discontinued", "within": 500, "value": "discontinued_support_not_stated"},
+        {"match": "under last[- ]time buy", "within": 600, "value": "unknown", "vendor_label": "legacy, under last-time buy"}
       ],
       "crawl": {"max_depth": 2, "max_pages_per_product": 9, "follow_pattern": "resources\\?prod=[^ ]*&type=(1L?|3|4|13)&|/sites/default/files/[^ ]*\\.pdf"}
     },
@@ -63,7 +77,8 @@
       ],
       "lifecycle": [],
       "lifecycle_text": [
-        {"match": "phased? out|phase-out|discontinued|no longer available|product cancellation", "value": "legacy"}
+        {"match": "\\bend of support\\b|\\bend of service life\\b|\\bis no longer supported\\b|\\bsupport (has )?ended\\b", "within": 800, "value": "end_of_support"},
+        {"match": "phased? out|phase-out|has been discontinued|product cancellation", "within": 800, "value": "discontinued_support_not_stated"}
       ],
       "crawl": {"max_depth": 1, "max_pages_per_product": 4, "follow_pattern": "/assets/api/[^ ]*\\.pdf|\\bmanuals?\\b|siemens\\.com/catalog-"}
     },
@@ -84,9 +99,10 @@
       ],
       "lifecycle": [],
       "lifecycle_text": [
-        {"match": "\\bsome\\b[^.]{0,80}\\b(are|is) discontinued", "within": 600, "value": "legacy"},
-        {"match": "\\b(are|is|will be|has been|have been) discontinued and no longer available", "within": 600, "value": "discontinued"},
-        {"match": "active mature", "value": "legacy"}
+        {"match": "\\bend of support\\b|\\bend of service life\\b|\\bis no longer supported\\b|\\bsupport (has )?ended\\b", "within": 600, "value": "end_of_support"},
+        {"match": "\\bsome\\b[^.]{0,80}\\b(are|is) discontinued", "within": 600, "value": "unknown", "vendor_label": "partly discontinued"},
+        {"match": "\\b(are|is|will be|has been|have been) discontinued and no longer available", "within": 600, "value": "discontinued_support_not_stated"},
+        {"match": "active mature", "value": "currently_supported", "vendor_label": "active mature"}
       ],
       "crawl": {"max_depth": 1, "max_pages_per_product": 6, "follow_pattern": "literature\\.rockwellautomation\\.com/[^ ]*-(um|rm|at|td|sg|pp)[0-9]{3}|/docs/"}
     },
@@ -107,10 +123,12 @@
         {"on": "slug", "match": "powerlogic-(ion|pm|em)[0-9]|pm[0-9]{3,4}-series|iem3000|powerlogic-hdpm|powerlogic-energy-meters|powerlogic-enercept", "category": "meter"}
       ],
       "lifecycle": [
-        {"on": "slug", "match": "legacy", "value": "legacy"}
+        {"on": "slug", "match": "legacy", "value": "unknown", "vendor_label": "legacy"}
       ],
       "lifecycle_text": [
-        {"match": "\\bDiscontinued (Ask the community )?Contact sales|\\bObsolete [A-Z][a-z]+ [0-9]{4}", "value": "discontinued"}
+        {"match": "\\bend of support\\b|\\bend of service life\\b|\\bis no longer supported\\b|\\bsupport (has )?ended\\b", "within": 1600, "value": "end_of_support"},
+        {"match": "\\bObsolete [A-Z][a-z]+ [0-9]{4}", "value": "discontinued_support_not_stated", "vendor_label": "obsolete"},
+        {"match": "\\bDiscontinued (Ask the community )?Contact sales", "value": "discontinued_support_not_stated"}
       ],
       "crawl": {"max_depth": 0, "max_pages_per_product": 3}
     },
