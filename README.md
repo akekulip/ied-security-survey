@@ -2,6 +2,18 @@
 
 A runnable, bounded crawler and evidence-review workflow for Dr. Lin's proposed five-manufacturer survey. It reads public vendor documents; it does not discover, contact or test operational IEDs.
 
+## Repository layout
+
+| Path | What it holds |
+|---|---|
+| `survey.py` | The command. It runs the `iedsurvey` package beside it; `python -m iedsurvey` does the same. |
+| `iedsurvey/` | The tool, one module per step: `fetch`, `extract`, `leads`, `crawl`, `runs`, `inventory`, `sampling`, `review`, `devices`, `worksheet`, then `findings`, `tables`, `glance`, `charts` and `report` for the report. `vocabulary` holds the terms every step shares and `cli` the commands. The package docstring lists them in the order the work flows. |
+| `tests/` | One file per part of the tool; the fixtures they share are in `support.py`. |
+| `configs/vendors.json` | The catalogue rules for the five vendors, and the definitions of the lifecycle states and of "legacy". |
+| `configs/pilot.json`, `pilot/` | The five-product pilot as delivered with 1.0.0, unchanged since. |
+| `study/` | The study's own files: inventories, crawl configs, reviews and reports. `study/README.md` says what each file is and how it was made. |
+| `runs/`, `cache/` | Run directories and fetched bytes. Not in git. The catalogue study keeps its own outside the synced folder. |
+
 ## Quick start
 
 Python 3.10+ is required. Commands below assume the extracted project directory.
@@ -36,7 +48,7 @@ For every device the crawler and the review together record the following. Each 
 | Activation requirements: configuration, certificates or keys, compatible master, licence key | `activation_needs` and `activation_requirements` on the row | a quote marked `about: activation` |
 | Deployment status: enabled or disabled in practice | `deployment_status` on the row, `unknown` by default | `deployment_evidence` from an installation; a vendor document is refused |
 
-The same questions and the same four results apply to every device, whatever its lifecycle: supported, conditional, explicitly unsupported, unknown. "Legacy" is defined in the config before a run is crawled, and nothing is counted by lifecycle group in a run whose config does not define it (see Lifecycle and what "legacy" means).
+The same questions and the same four results apply to every device, whatever its lifecycle: supported, conditional, explicitly unsupported, unknown. "Legacy" is defined in the config a run is crawled with, as the lifecycle states it covers, and nothing is counted by lifecycle group in a run whose config does not define it (see Lifecycle and what "legacy" means).
 
 ## Config options
 
@@ -44,7 +56,7 @@ The same questions and the same four results apply to every device, whatever its
 |---|---|---|
 | `sampling` | required | Statement of how the products were chosen. Copied into the manifest and the report. |
 | `title` | `IED security documentation survey` | Report heading. |
-| `definitions` | none | What "legacy" and each lifecycle state mean, with the date they were fixed. Written by `sample` from `configs/vendors.json`. Without it the report counts nothing by lifecycle group. |
+| `definitions` | none | What each lifecycle state means, what "legacy" means in words (`legacy`) and which states it covers (`legacy_statuses`), the date they were fixed (`defined_at`) and every change since (`revisions`). Written by `sample` from `configs/vendors.json`. Without it the report counts nothing by lifecycle group. |
 | `max_depth` | `0` | Link-following depth. Zero fetches the seeds only. |
 | `max_pages_per_product` | `3` | Page budget per product. Seeds are always attempted; the budget limits followed links. |
 | `follow_pattern` | `manual\|security\|datasheet\|\.pdf` | A link is followed when this matches its URL or its anchor text. |
@@ -58,7 +70,7 @@ Per product: `id`, `domains` and `seeds` are required; `vendor`, `model` and `ca
 
 Enabling `robots_follow_redirects` is a methods decision, not a technical one. Example: `literature.rockwellautomation.com/robots.txt` redirects to the vendor's home page, so that host has no robots rules of its own and every Rockwell manual PDF on it is unreachable under the default. With the option on, the document is fetched and its record says `robots_basis: redirected:<final URL>`, so the paper can disclose it. A host that answers its robots.txt request with an error such as 403 stays off limits whatever this option says.
 
-`crawl` takes two further options. `--only <pattern>` limits a run to the products whose `id` and vendor match, and the manifest records it. `--reuse <run>` takes any URL that an earlier run already fetched from the cache instead of requesting it again; the source record then says `reused_from`. The option may be given several times.
+`crawl` takes two further options. `--only <pattern>` limits a run to the products whose `id` and vendor match, and the manifest records it. `--reuse <run>` takes any URL that an earlier run already fetched from the cache instead of requesting it again; the source record then says `reused_from`. A document that arrived in the earlier run and could not be read, such as a scanned PDF, is taken from the cache too and fails the same way; a request that failed is made again. Where several products share an address, each takes its own earlier record, so its bytes and retrieval time stay the ones recorded for it. The option may be given several times.
 
 A document that sits behind a sign-in is not fetched. A link that points at a login address, or a request that is redirected to one, gets a source record with status `login_required`. A vendor page often lists many manuals whose download buttons all lead to the same sign-in address; the record's `link_count` says how many links did. The report counts these links apart from failures: they are documents that exist and were not used.
 
@@ -176,11 +188,40 @@ The order is guidance for weighing evidence, not a score. A manual for the exact
 
 `REPORT.md` opens with the definitions the run was crawled under, then:
 
-- **Devices:** manufacturer, model, category, identity level, lifecycle status with its dated vendor evidence, release date. `devices.csv` holds the same for every device.
+- **Devices:** manufacturer, model, category, identity level, lifecycle status with its dated vendor evidence, release date. `devices.csv` holds the same for every device, with a `legacy` column: yes, no, or unknown where the lifecycle state is.
 - **Summary** by vendor and category, and by lifecycle group where the config defines the groups, with the number of catalogue entries beside the number in the run.
 - **Findings by product and interface:** manufacturer, model, lifecycle, what the evidence applies to (model, hardware revision, firmware), protocol/interface, authentication, integrity, encryption, support conditions, default, activation, deployment, evidence, review status. `findings_table.csv` holds the same rows with every quote and the source URL and hash.
 - **Counts:** products per capability under each of the four results. Unknown is one result, followed by columns that say why: complete document silent, sources conflict, a result for another interface only, not enough evidence. "Via external gateway only" and "not reviewed" are counted apart.
 - **Default configuration, activation and deployment:** per capability, how many supported or conditional findings ship enabled, disabled or undocumented, how many state activation needs, and for how many deployment is unknown.
+
+**The question first.** Once any cell is reviewed, the report opens with what the survey is for: for legacy devices and for every other lifecycle state, what the reviewed documents establish about protecting control traffic. Each device is placed once, under the strongest of:
+
+| Placed under | Meaning |
+|---|---|
+| Encryption documented | `encryption` is supported or conditional for a control protocol. Only this group need not be plaintext. |
+| Authentication or integrity documented, encryption not | For example DNP3 Secure Authentication: messages are authenticated and still readable. |
+| A security mechanism is named, what it protects is not stated | A mechanism row is positive and no property row is. |
+| Only through an external gateway or encrypting device | The device itself does not provide it. |
+| Vendor states it is not protected | An explicit statement of non-support. |
+| A complete manual was read and documents none | Unknown with the reason "complete document silent". Not the same as a vendor statement. |
+| Documented for management access only | Login, web or engineering-tool protection; says nothing about the control protocol. |
+| Not settled by the public documents | Typically only a product page or brochure could be read. Not the same as unprotected. |
+
+One sentence per group gives the counts. Legacy is one group, with every lifecycle state it covers listed under it, and each other state is a group of its own. The chart `answer` draws those groups and the vendors, `answer-mechanisms` shows which mechanism (DNP3 Secure Authentication, TLS, IPsec, CIP Security, SSH) is documented for control traffic in each group, and the section "Control traffic, device by device" lists every reviewed device with whether it is legacy, its lifecycle state, placement, the three properties, the mechanism and the most direct document read. `charts/devices-control-traffic.json` holds the same per device. A lifecycle state that counts as legacy is shown also when it holds no device. The tables further down stay by lifecycle state, so the legacy group can always be taken apart again.
+
+All of this is what documents say a device can do. Whether it is switched on anywhere is deployment, which stays unknown.
+
+**At a glance.** The report also draws what the run holds, as SVG files in `charts/` beside `REPORT.md`:
+
+| Chart | What it shows | What it does not show |
+|---|---|---|
+| `catalogue-lifecycle`, `catalogue-category` | Every classified catalogue device by vendor, lifecycle state and category: the sampling frame. | Anything about security. |
+| `evidence-base` | The most direct kind of document that could be read for each device, by vendor and by lifecycle state. | Whether a capability exists. It shows how much the review can settle. |
+| `not-used` | Documents that exist but were not read: behind a sign-in, refused by the host, unreadable, or beyond the page budget. | Devices; it counts links and sources. |
+| `mentions`, `mentions-lifecycle` | Devices whose public documents contain at least one lead for each capability. | Findings. A mention may be a denial or concern another interface, and a group with only brochures shows few mentions whatever its devices can do. |
+| `results`, one per lifecycle state, and `results-legacy` where legacy covers several states | Reviewed results per capability for control traffic, in the four results, with unknown split by reason and "not reviewed" in grey. | Anything for a cell nobody has reviewed. It is drawn only once a row is reviewed. |
+
+The charts are written by the tool itself, without a plotting library. `charts/data.json` holds the series behind every chart, each chart has a sentence of the same numbers beside it, and the tables further down carry them in full, so no mark has to be taken on trust. Lifecycle views appear only for a run whose config defines the lifecycle states.
 
 Reading the table:
 
@@ -233,25 +274,29 @@ Those eight are the review cells and the only source of denominators. `integrity
 
 It is widely said that legacy devices have no security. The survey does not assume it. It asks the same questions of every device and records the answers in a form a reader can check, and it does not call a device legacy until a stated criterion is met.
 
-**The criterion is fixed before anything is counted.** `configs/vendors.json` carries a `definitions` block: what legacy means, what each lifecycle state means, and the date they were set. `sample` copies it into the crawl config, so it is covered by the config hash in the run's manifest before any review exists. The report prints it and counts results by lifecycle group only for a run whose config has it. The definitions delivered with this version:
+**Lifecycle state and legacy are two things.** Every device has one of five lifecycle states, each resting on what the vendor says in a dated source. Legacy is a definition on top of them. The `definitions` block of `configs/vendors.json` says in words what legacy means (`legacy`) and names the states it covers (`legacy_statuses`). Only the three states in which the vendor has withdrawn the product can be named: a device still on sale, or one whose state nobody could establish, is legacy under no definition. A block without `legacy_statuses`, as every config before 2.0 has, means end of support alone.
 
-| State | Meaning |
-|---|---|
-| `currently_supported` | Listed in the vendor's current catalogue on the inventory date without a notice of discontinuation, or stated by the vendor to be on sale and supported. |
-| `discontinued_supported` | The vendor states that manufacture or sale has ended and that support continues. |
-| `discontinued_support_not_stated` | The vendor states that manufacture or sale has ended; no statement about support was found. |
-| `end_of_support` | The vendor states that support has ended. **This is the legacy group.** |
-| `unknown` | None of the above is established. |
+| State | Meaning | Legacy as delivered |
+|---|---|---|
+| `currently_supported` | Listed in the vendor's current catalogue on the inventory date without a notice of discontinuation, or stated by the vendor to be on sale and supported. | no |
+| `discontinued_supported` | The vendor states that manufacture or sale has ended and that support continues. | yes |
+| `discontinued_support_not_stated` | The vendor states that manufacture or sale has ended; no statement about support was found. | yes |
+| `end_of_support` | The vendor states that support has ended. | yes |
+| `unknown` | None of the above is established. | no |
+
+`sample` copies the block into the crawl config, so it is covered by the config hash in the run's manifest. The report prints it, counts legacy as one group and still counts every state on its own. A run whose config has no definitions is not counted by lifecycle group at all.
+
+**The definition was revised once, and the report says so.** It was first fixed on 2026-10-13 as end of support alone. Public product pages say when manufacture ended and almost never when support ended, so that definition put no device in the legacy group: of the 484 catalogue devices, 309 are currently supported, 168 are discontinued with support not stated, 7 are unknown and none has a public end-of-support statement. After a first, AI-drafted review of the 99 sampled devices had been counted that way, the author widened legacy to every discontinued device. A definition changed after results were seen is not one fixed before any count. The change is therefore recorded in `definitions.revisions` with its date and what had been counted by then, the tool refuses a revision that leaves that out, and the report lists it under the definitions and no longer prints that they were fixed before any result was counted. The sample, the documents and the review rows are the same under both definitions; only the grouping differs.
 
 What does not decide the state: the protocol a device speaks, a security feature it lacks, the age of its manual, and the vendor's own word "legacy" on a web page. That word is kept in `vendor_label`, beside "obsolete", "active mature" and "under last-time buy", and the state stays whatever the vendor's statements about manufacture and support establish. Release dates are recorded separately and never decide the state.
 
 **Every state other than unknown rests on dated vendor evidence**: the catalogue file that listed the product, with its hash and retrieval date, or the vendor's sentence with the page it was read on, the retrieval date and the date the sentence itself gives ("as of April 8, 2011"). A state without it is refused at report time.
 
-**What to expect.** Public product pages say when manufacture ended and almost never say when support ended. On the inventory of 2026-10-13, of 484 devices, 309 are currently supported, 167 are discontinued with support not stated, 8 are unknown and none has a public end-of-support statement. The legacy group therefore stays empty until a reviewer finds such a statement, typically in a discontinuation notice, and enters it in the device notes with its quote. Reporting "discontinued, support not stated" as its own group is the honest alternative to calling 167 devices legacy on the strength of a sales notice.
+**What the legacy group now is.** Under the delivered definition it is 168 of the 484 catalogue devices, every one of them "discontinued, support not stated": the vendor says the device is no longer made or sold, and nothing public says whether it is still supported. A statement about legacy devices from this survey is a statement about discontinued devices, and the paper should use that word at least once. The 7 devices of unknown state are not counted as legacy; they include products a vendor files under a "legacy" heading without a notice that manufacture has ended. A reviewer who finds such a notice, or an end-of-support statement, enters it in the device notes with its quote.
 
 **Silence in a manual.** Where a complete manual does not mention a capability, record `unknown` with `unknown_reason: complete_document_silent` for the capability on that interface, with the firmware scope the manual states. No quote is possible for silence. Instead `report` checks the row mechanically: every cited source must be a complete manual, device profile or conformance statement (`doc_type` and `coverage: complete` in the source notes), and the keyword search must have found no lead for that capability in it. If leads exist, the report refuses the row until they are reviewed. Where the vendor says so in words, for example a device profile marked "TLS is not used", record `explicitly_unsupported` with the quote. The two are counted apart.
 
-What this supports in the paper: "for N of M devices whose vendor has ended support, the complete product manual documents no authentication or encryption for DNP3", next to the same count for currently supported devices. It does not support "these devices cannot be secured", since an external gateway or a later firmware may add protection, and it says nothing about how many such devices are deployed or how they are configured.
+What this supports in the paper: "for N of M devices the vendor has discontinued, the complete product manual documents no authentication or encryption for DNP3", next to the same count for currently supported devices. It does not support "these devices cannot be secured", since an external gateway or a later firmware may add protection, and it says nothing about how many such devices are deployed or how they are configured.
 
 ## From five products to the vendor catalogues
 
@@ -259,14 +304,17 @@ The pilot's five products were hand-picked with security keywords in mind, one p
 
 ```bash
 DATA=~/ied_survey_data     # cache and runs; keep them out of a synced folder such as OneDrive
-python survey.py inventory --vendors configs/vendors.json --out inventory/2026-10-13 --cache $DATA/cache
-python survey.py sample    --inventory inventory/2026-10-13/inventory.json --census --out configs/census.json
-python survey.py crawl     --config configs/census.json --out $DATA/runs/census --cache $DATA/cache
-python survey.py enrich    --inventory inventory/2026-10-13/inventory.json --run $DATA/runs/census --vendors configs/vendors.json --out inventory/2026-10-13-pages
-python survey.py sample    --inventory inventory/2026-10-13-pages/inventory.json --per-stratum 4 --seed 20261013 --out configs/sample.json
-python survey.py crawl     --config configs/sample.json --out $DATA/runs/sample --cache $DATA/cache --reuse $DATA/runs/census
-python survey.py worksheet --run $DATA/runs/sample --out reports/sample_worksheet
+S=study/catalogue_2026-10-13
+python survey.py inventory --vendors configs/vendors.json --out $S/inventory/listing --cache $DATA/cache
+python survey.py sample    --inventory $S/inventory/listing/inventory.json --census --out $S/census.json
+python survey.py crawl     --config $S/census.json --out $DATA/runs/census --cache $DATA/cache
+python survey.py enrich    --inventory $S/inventory/listing/inventory.json --run $DATA/runs/census --vendors configs/vendors.json --out $S/inventory/pages
+python survey.py sample    --inventory $S/inventory/pages/inventory.json --per-stratum 4 --seed 20261013 --out $S/sample.json
+python survey.py crawl     --config $S/sample.json --out $DATA/runs/sample --cache $DATA/cache --reuse $DATA/runs/census
+python survey.py worksheet --run $DATA/runs/sample --out $S/reports/worksheet
 ```
+
+`study/README.md` lists the files these steps produced for the delivered study, with the run each report was made from.
 
 ### 1. Inventory
 
@@ -278,7 +326,7 @@ python survey.py worksheet --run $DATA/runs/sample --out reports/sample_workshee
 | `scope` | Pattern for the sitemap URLs that are product pages of the kinds surveyed. |
 | `rules` | Ordered rules giving a category: `protective_relay`, `controller_rtu`, `plc` or `meter`. |
 | `exclude` | Ordered rules with a `reason`: accessories, software, test equipment, I/O modules, family index pages. An exclusion beats a category. |
-| `definitions` | What "legacy" and each lifecycle state mean. Copied into every config `sample` writes. |
+| `definitions` | What each lifecycle state means, what "legacy" means and which states it covers, and every revision. Copied into every config `sample` writes. |
 | `lifecycle` | Rules on the listing. `value` is a lifecycle state; `vendor_label` keeps the vendor's own word, for example `legacy` for a GE URL ending in `-legacy`, without letting it decide the state. Without a match the entry is `currently_supported`, with the listing as its dated evidence. |
 | `lifecycle_text` | Wording on the product page that establishes a state, for example a notice that manufacture has ended. Applied by `enrich`, which keeps the sentence, the page, the retrieval date and any date the sentence gives. A rule may set `within`, the number of opening characters of the page it reads. |
 | `crawl` | `max_depth`, `max_pages_per_product` and `follow_pattern` for that vendor's pages in the sampled crawl. |
@@ -292,7 +340,7 @@ Each rule reads one field, named by `on`: `url`, `slug` (the last path segment) 
 - excluded, with the reason;
 - unclassified, when no rule matched. These are listed, never dropped. Their product pages are read in the census so that the page's own opening words can classify them.
 
-Read `inventory.csv` before going on. The rules are judgment calls about what counts as a device, and the file is where a reader checks them. After changing a rule, `inventory --from <previous inventory directory>` applies the new rules to the saved listing without asking the vendors again.
+Read `inventory.csv` before going on. The rules are judgment calls about what counts as a device, and the file is where a reader checks them. After changing a rule, `inventory --from <previous inventory directory>` applies the new rules to the saved listing without asking the vendors again. The inventory keeps the day the catalogues were listed as `listed_at`, and that day, not the day the rules were last applied, is the inventory date a sample states.
 
 ### 2. Census, then what the product pages say
 
@@ -306,7 +354,7 @@ Lifecycle is what the vendor's catalogue and page say on the inventory date, in 
 
 `sample --per-stratum N --seed S` draws up to N devices from every stratum of vendor, category and lifecycle state, so that devices in every lifecycle state are asked the same questions. Strata with fewer entries are taken whole. The same inventory and seed give a byte-identical config, each stratum has its own generator so that adding a vendor does not move another vendor's draw, and the config records the definitions, the seed, the inventory's SHA-256 and the `frame`: per stratum, how many entries the catalogue has and how many were selected. The report prints that frame, so every count has its denominator beside it.
 
-This is a sample of catalogue entries. It supports statements such as "of the 4 sampled GE legacy relays, public documents establish DNP3 Secure Authentication for none". It does not support statements about installed devices, and with a handful of devices per stratum it does not support percentages.
+This is a sample of catalogue entries. It supports statements such as "of the 4 sampled discontinued GE relays, public documents establish DNP3 Secure Authentication for none". It does not support statements about installed devices, and with a handful of devices per stratum it does not support percentages.
 
 ### 4. Sampled crawl and worksheet
 
@@ -332,8 +380,8 @@ The `sitemap` command lists a single sitemap, filters it and writes a dated, has
 
 ```bash
 python survey.py sitemap --url https://www.gevernova.com/electrification/sitemap.xml \
-    --match protection-control-metering --out inventory/ge_catalog.json
-python survey.py sitemap --host selinc.com --match "selinc.com/products/" --out inventory/sel_catalog.json
+    --match protection-control-metering --out study/sitemaps/ge_catalog.json
+python survey.py sitemap --host selinc.com --match "selinc.com/products/" --out study/sitemaps/sel_catalog.json
 ```
 
 `--host` reads the sitemap locations from that host's robots.txt. Sitemap index files are followed up to `--max-files`; files left unfetched are listed in the output. `--match` is a regular expression on the full URL. Do not start it with a bare `/`: Git Bash on Windows rewrites such an argument into a file path.
@@ -373,10 +421,18 @@ python survey.py recheck --old pilot --new runs/pilot_again --out runs/pilot_aga
 
 For each source it reports whether the raw bytes and the extracted text are unchanged and where each excerpt of the old `evidence_index.json` now occurs. An excerpt that is still present is a reason to re-review that cell against the new source, not a substitute for doing so.
 
+One case needs no new review. A dynamic web page returns different bytes on every request, so a refetch of an unchanged page breaks the hash a review row is bound to while its extracted text, and therefore its `text_sha256`, is identical. `rebind` carries a review over in exactly that case and in no other:
+
+```bash
+python survey.py rebind --reviews reviews.json --old reports/my_pilot --run runs/pilot_again --out reviews_pilot_again.json
+```
+
+`--old` is any directory holding the `sources.json` the review was bound to: the earlier run, or a report made from it. A row is re-bound only where the earlier source has the bound hash and the same extracted-text hash as the new one; the row records both hashes and the basis under `rebound`, and the report says how many rows were carried this way. If the text of any cited source changed, nothing is written and the rows that need a new review are named. The original file is left as it is, and every evidence quote is still checked against the new run when the report is made.
+
 Before depositing data with a paper, review vendor licensing and repository policy. Hashes and short excerpts are provenance, not redistribution permission. The software is small and standalone so it does not change any P4 build, experiment, switch configuration or existing DNP3 repository.
 
 ## Limits and next work
 
-This is version 1.6: a rule-based catalogue inventory with dated lifecycle evidence, definitions fixed before counting, seeded stratified sampling, serial bounded crawling, HTML/text-PDF extraction, RFC 9309 robots handling, content-addressed source retention, per-interface review validation with checked evidence quotes for results, conditions, defaults and activation, and report generation. It has no headless browser, OCR, automatic search-engine integration, production scheduler or automatic semantic verdicts, it reads nothing behind a sign-in, and it has no source of deployment evidence. Those are deliberate scope limits for a supporting paper study.
+This is version 2.0: a package of small modules with a rule-based catalogue inventory, dated lifecycle evidence, definitions of the lifecycle states and of legacy that travel in the config with every revision recorded, seeded stratified sampling, serial bounded crawling, HTML/text-PDF extraction, RFC 9309 robots handling, content-addressed source retention, per-interface review validation with checked evidence quotes for results, conditions, defaults and activation, and report generation with charts of the frame, the documents read and the reviewed results. It has no headless browser, OCR, automatic search-engine integration, production scheduler or automatic semantic verdicts, it reads nothing behind a sign-in, and it has no source of deployment evidence. Those are deliberate scope limits for a supporting paper study.
 
 The immediate next work is author review of the sampled devices, starting from the worksheet, and of the inventory rules in `configs/vendors.json`. A second reviewer should independently check a sample, resolve disagreements and retain the original judgments. Report counts and denominators only after that protocol is frozen. Keep mechanism engineering as the main project priority.

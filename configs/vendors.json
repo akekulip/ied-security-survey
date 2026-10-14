@@ -4,15 +4,23 @@
   "robots_follow_redirects": ["rockwellautomation.com"],
   "definitions": {
     "defined_at": "2026-10-13",
-    "legacy": "A device is counted as legacy only when the vendor states, in a dated source, that support for it has ended (end of support, end of service, end of life). A discontinued device without such a statement is reported in its own group and is not legacy. The protocol a device speaks, a security feature it lacks and the age of its manual never decide this.",
+    "legacy": "A device is counted as legacy when the vendor states, in a dated source, that it has been discontinued: manufacture or sale has ended, whether support continues, has ended or is not mentioned. The three lifecycle states that make up the group are also counted one by one, so a device whose support has ended can still be told from one that is only no longer sold. The protocol a device speaks, a security feature it lacks, the age of its manual and the vendor's own use of the word legacy never decide this.",
+    "legacy_statuses": ["discontinued_supported", "discontinued_support_not_stated", "end_of_support"],
     "lifecycle_statuses": {
-      "currently_supported": "Listed in the vendor's current catalogue on the inventory date without a notice of discontinuation, or stated by the vendor to be on sale and supported.",
-      "discontinued_supported": "The vendor states that manufacture or sale has ended and that support continues.",
-      "discontinued_support_not_stated": "The vendor states that manufacture or sale has ended; no statement about support was found.",
-      "end_of_support": "The vendor states that support has ended. This is the legacy group.",
-      "unknown": "None of the above is established. This includes products the vendor only labels legacy, products under a last-time-buy notice and families that are partly withdrawn."
+      "currently_supported": "Listed in the vendor's current catalogue on the inventory date without a notice of discontinuation, or stated by the vendor to be on sale and supported. Not legacy.",
+      "discontinued_supported": "The vendor states that manufacture or sale has ended and that support continues. Legacy.",
+      "discontinued_support_not_stated": "The vendor states that manufacture or sale has ended; no statement about support was found. Legacy.",
+      "end_of_support": "The vendor states that support has ended. Legacy.",
+      "unknown": "None of the above is established. This includes products the vendor only labels legacy, products under a last-time-buy notice and families that are partly withdrawn. Not counted as legacy, because nothing dated says the device has been discontinued."
     },
-    "release_date": "Recorded separately when a vendor source states it. It never decides lifecycle status."
+    "release_date": "Recorded separately when a vendor source states it. It never decides lifecycle status.",
+    "revisions": [
+      {
+        "date": "2026-10-13",
+        "change": "Legacy widened from the end-of-support state alone to every device the vendor has discontinued.",
+        "known_then": "A first review of the 99 sampled devices, drafted by an AI assistant and not confirmed by the author, had been counted under the earlier definition. It placed no device in the legacy group, because no public vendor page states an end of support, and 31 devices in the group \"discontinued, support not stated\". The author then decided that discontinued devices count as legacy. The sample, the documents and the review rows are the same before and after; only the grouping changed."
+      }
+    ]
   },
   "vendors": {
     "ge": {
