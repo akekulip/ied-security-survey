@@ -104,15 +104,18 @@ def check_facts(r, key, vendor_documents):
         if not isinstance(value, list) or set(value) - set(allowed_values) - {NOT_ASSESSED}:
             raise ValueError(f'{name} is a list from {", ".join(allowed_values)}, or [{NOT_ASSESSED!r}]: {key}')
         if result and not value:
-            raise ValueError(f'{name} is empty; a supported or conditional result states it, or says {NOT_ASSESSED}: {key}')
+            raise ValueError(f'{name} is empty; a supported or conditional result states it, or says {NOT_ASSESSED}: '
+                             f'{key}')
         if value and not result:
             raise ValueError(f'{name} belongs to a supported or conditional result only: {key}')
         if len(value) > 1 and set(value) & {NOT_ASSESSED, 'not_stated', 'none_stated'}:
             raise ValueError(f'{name} mixes a value with "nothing stated" or "{NOT_ASSESSED}": {key}')
     if r['status'] == 'supported' and f['basis'] not in (['built_in'], [NOT_ASSESSED]):
-        raise ValueError(f'supported means built in; a firmware upgrade, module, licence or gateway makes it conditional: {key}')
+        raise ValueError(f'supported means built in; a firmware upgrade, module, licence or gateway makes it '
+                         f'conditional: {key}')
     if f['default'] not in (DEFAULT_STATES + (NOT_ASSESSED,) if result else ('',)):
-        raise ValueError(f'default_state is one of {", ".join(DEFAULT_STATES)} or {NOT_ASSESSED}, for a supported or conditional result only: {key}')
+        raise ValueError(f'default_state is one of {", ".join(DEFAULT_STATES)} or {NOT_ASSESSED}, for a supported or '
+                         f'conditional result only: {key}')
     if set(f['needs']) - {'none_stated', NOT_ASSESSED} and not r.get('activation_requirements'):
         raise ValueError(f'activation_needs are named but activation_requirements does not describe them: {key}')
     if f['deployment'] not in DEPLOYMENT_STATES:
@@ -120,9 +123,11 @@ def check_facts(r, key, vendor_documents):
     proof = r.get('deployment_evidence') or []
     if f['deployment'] != 'unknown':
         if not proof or not all(isinstance(e, dict) and all(e.get(k) for k in ('kind', 'reference', 'date', 'scope')) for e in proof):
-            raise ValueError(f'deployment_status {f["deployment"]} needs deployment_evidence with kind, reference, date and scope; without it the status is unknown: {key}')
+            raise ValueError(f'deployment_status {f["deployment"]} needs deployment_evidence with kind, reference, date '
+                             f'and scope; without it the status is unknown: {key}')
         if any(e['reference'] in vendor_documents for e in proof):
-            raise ValueError(f'a vendor document shows what a device can do, not what an operator enabled; it is not deployment evidence: {key}')
+            raise ValueError(f'a vendor document shows what a device can do, not what an operator enabled; it is not '
+                             f'deployment evidence: {key}')
     waiting = NOT_ASSESSED in [r.get('model_scope', NOT_ASSESSED), r.get('hardware_revision', NOT_ASSESSED), f['default']] + f['basis'] + f['needs']
     if result and waiting and r.get('review_status') == 'confirmed':
         raise ValueError(f'a confirmed row may not leave a field {NOT_ASSESSED}: {key}')
@@ -210,5 +215,6 @@ def rebind(review_path, old, run, dest):
         raise ValueError('the text of these sources changed or cannot be compared, so their rows need a new review: '
                          + '; '.join(f"{sid} ({', '.join(cells)})" for sid, cells in stuck.items()))
     dump(dest, rows)
-    print(f"{sum(bool(r.get('rebound')) for r in rows)} rows re-bound to {len(moved)} refetched sources with unchanged text; written to {dest}. "
+    print(f"{sum(bool(r.get('rebound')) for r in rows)} rows re-bound to {len(moved)} refetched sources with unchanged "
+          f"text; written to {dest}. "
           'Evidence quotes are checked against the new run when the report is made.')

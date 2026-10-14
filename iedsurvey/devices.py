@@ -31,7 +31,8 @@ def device_records(cfg, sources, notes_path, segments):
             raise ValueError(f'identity_level must be one of {", ".join(IDENTITY_LEVELS)}, or empty: {pid}')
         # Protocol, missing security features and the age of a manual decide nothing here. Only the vendor's dated word does.
         if status != 'unknown' and not proof:
-            raise ValueError(f'lifecycle status {status} needs dated vendor evidence; without it the status is unknown: {pid}')
+            raise ValueError(f'lifecycle status {status} needs dated vendor evidence; without it the status is unknown: '
+                             f'{pid}')
         for e in proof + d['release_evidence']:
             s = byid.get(e.get('source_id'))
             if e.get('source_id') and (not s or s['product_id'] != pid):
@@ -41,10 +42,12 @@ def device_records(cfg, sources, notes_path, segments):
                 e.setdefault('sha256', s['sha256'])
             where = e.get('url')
             if not where or not allowed(where, p['domains']):
-                raise ValueError(f'lifecycle evidence must be a vendor source: a source of this run or a URL on the product domains: {pid}')
+                raise ValueError(f'lifecycle evidence must be a vendor source: a source of this run or a URL on the '
+                                 f'product domains: {pid}')
             e['dated'] = e.get('stated_date') or (e.get('retrieved_at') or (s or {}).get('retrieved_at') or '')[:10]
             if not e['dated']:
-                raise ValueError(f'lifecycle evidence needs a date: the one the vendor states, or the retrieval date: {pid}')
+                raise ValueError(f'lifecycle evidence needs a date: the one the vendor states, or the retrieval date: '
+                                 f'{pid}')
             if e.get('source_id') and e.get('location') and e.get('quote'):
                 text = cited(segments(e['source_id']), e['location'])
                 if text is None or loose(e['quote']) not in loose(text):

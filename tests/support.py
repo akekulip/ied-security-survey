@@ -4,7 +4,11 @@ from pathlib import Path
 import unittest
 from unittest.mock import patch
 
-import survey as s
+from iedsurvey.crawl import crawl
+from iedsurvey.fetch import Fetcher
+from iedsurvey.inventory import inventory
+from iedsurvey.leads import candidates
+from iedsurvey.store import digest, dump, load
 
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -27,7 +31,8 @@ def tiny_pdf(pages, bookmark=None):
     for i, text in enumerate(pages):
         lines = [text] if isinstance(text, str) else text
         stream = ('BT /F1 12 Tf 14 TL 72 720 Td ' + ' T* '.join(f'({line}) Tj' for line in lines) + ' ET').encode() if text else b''
-        objs.append(f'<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents {5 + 2 * i} 0 R >>'.encode())
+        objs.append(f'<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> '
+                    f'/Contents {5 + 2 * i} 0 R >>'.encode())
         objs.append(b'<< /Length %d >>\nstream\n%s\nendstream' % (len(stream), stream))
     objs.append(b'<< /Title (Test Relay Manual) /CreationDate (D:20260102030405Z) >>')
     if bookmark:
@@ -53,13 +58,13 @@ class SurveyCase(unittest.TestCase):
         return source,row
 
     def leads(self, text, location='html-block:1'):
-        hits = s.candidates({'id':'x','product_id':'p'}, [{'location':location,'text':text}])
+        hits = candidates({'id':'x','product_id':'p'}, [{'location':location,'text':text}])
         self.assertTrue(all(h['status']=='unreviewed' for h in hits))
         return [h['feature'] for h in hits]
 
     def scripted(self, td, replies, config=None):
         """Fetcher whose raw() answers from a {url: (status, headers, body)} table and logs like the real one."""
-        f = s.Fetcher(config or {}, td)
+        f = Fetcher(config or {}, td)
         def raw(url):
             f.audit.append({'url':url})
             if isinstance(replies[url], Exception): raise replies[url]
@@ -72,13 +77,13 @@ class SurveyCase(unittest.TestCase):
             calls.append(url)
             if isinstance(pages.get(url), BaseException): raise pages[url]
             if url not in pages: raise ValueError('HTTP 404')
-            h = s.digest(pages[url]); (fetcher.cache/h).write_bytes(pages[url])
+            h = digest(pages[url]); (fetcher.cache/h).write_bytes(pages[url])
             return {'sha256':h,'headers':{'Content-Type':'text/html'},'final_url':url,'retrieved_at':'2026-10-13T00:00:00+00:00'}, pages[url]
-        return patch.object(s.Fetcher, 'fetch', fetch)
+        return patch.object(Fetcher, 'fetch', fetch)
 
     def config(self, p, products, **options):
         cfg = {'sampling':'synthetic', **options, 'products':[{'vendor':'v','model':x['id'].upper(),'category':'relay','domains':['vendor.test'], **x} for x in products]}
-        s.dump(p/'cfg.json', cfg)
+        dump(p/'cfg.json', cfg)
         return p/'cfg.json'
 
     def reviewed_run(self, p):
@@ -86,8 +91,8 @@ class SurveyCase(unittest.TestCase):
         pages = {'https://vendor.test/a': b'<p>TLS is supported for DNP3 sessions.</p><p>The web interface requires a user login with a password.</p>',
                  'https://vendor.test/b': b'<p>The web interface requires a user login with a password.</p>'}
         cfg = self.config(p, [{'id':'a','seeds':['https://vendor.test/a']},{'id':'b','seeds':['https://vendor.test/b']},{'id':'m','category':'meter','seeds':[]}])
-        with self.site(pages, []): s.crawl(cfg, p/'run', p/'cache')
-        src = {x['product_id']: x for x in s.load(p/'run'/'sources.json')}
+        with self.site(pages, []): crawl(cfg, p/'run', p/'cache')
+        src = {x['product_id']: x for x in load(p/'run'/'sources.json')}
         def row(pid, feature, status, interface='', kind='', quote='', **more):
             base = {'product_id':pid,'feature':feature,'status':status,'source_ids':[src[pid]['id']],'source_hashes':{src[pid]['id']:src[pid]['sha256']},
                     'location':'html-block:1','protocol':f'{feature} detail','interface':interface,'interface_class':kind,'firmware':'v2 or later',
@@ -104,7 +109,7 @@ class SurveyCase(unittest.TestCase):
                 row('a','authentication','unknown'), row('a','ssh','unknown'),
                 row('b','authentication','supported','Web interface','management',login),
                 row('b','encryption','unknown'), row('b','tls','unknown')]
-        s.dump(p/'reviews.json', rows)
+        dump(p/'reviews.json', rows)
         return src
 
     PROFILE = [['DNP3 SPECIFICATION', 'DEVICE PROFILE', 'Vendor relay X1'],
@@ -139,10 +144,10 @@ class SurveyCase(unittest.TestCase):
                b'<url><loc>https://vendor.test/about/us</loc></url><url><loc>https://vendor.test/products/relays</loc></url></urlset>')
 
     def catalogue(self, p, calls, pages=None):
-        s.dump(p/'vendors.json', self.VENDORS)
+        dump(p/'vendors.json', self.VENDORS)
         with self.site(dict({'https://vendor.test/sitemap.xml': self.SITEMAP}, **(pages or {})), calls):
-            s.inventory(p/'vendors.json', p/'inv', p/'cache')
-        return s.load(p/'inv'/'inventory.json')
+            inventory(p/'vendors.json', p/'inv', p/'cache')
+        return load(p/'inv'/'inventory.json')
 
     def frame_inventory(self, p):
         entries = []
@@ -155,5 +160,5 @@ class SurveyCase(unittest.TestCase):
                                 'product_url': f'https://vendor.test/{vendor}/{category}/{lifecycle}/{i}', 'domains': ['vendor.test']})
         entries.append(dict(entries[0], id='acme_excluded', included=False, reason='accessory', excluded_by='x'))
         entries.append(dict(entries[0], id='acme_unclassified', included=False, category='unclassified', reason='no category rule matched'))
-        s.dump(p/'inventory.json', {'created_at': '2026-10-13T00:00:00+00:00', 'spec': self.VENDORS, 'entries': entries})
+        dump(p/'inventory.json', {'created_at': '2026-10-13T00:00:00+00:00', 'spec': self.VENDORS, 'entries': entries})
         return p/'inventory.json'

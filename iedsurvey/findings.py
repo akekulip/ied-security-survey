@@ -1,4 +1,4 @@
-"""A run and its review, resolved once: what every table, count and chart of the report asks of them.
+"""A run and its review, resolved once: what every table and count of the report asks of them.
 
 Everything here is checked before a single output file is written, so a refused review leaves no half-made report.
 """
@@ -7,14 +7,13 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 from .vocabulary import (
-    CAPABILITIES, COMPLETE_TYPES, DOC_TYPES, INTERFACE_CLASSES, LIFECYCLES, NOT_ASSESSED, PROPERTIES, RELATES, lead_type, legacy_states,
+    CAPABILITIES, COMPLETE_TYPES, DOC_TYPES, INTERFACE_CLASSES, NOT_ASSESSED, PROPERTIES, RELATES, lead_type, legacy_states,
     life_words)
 from .store import load
 from .text import squash
 from .leads import load_leads
 from .review import facts, grounded, named, silent, token, untouched, validate_reviews
 from .devices import device_records
-from .charts import DOCUMENT_SERIES
 
 
 COLUMNS = ('Manufacturer', 'Model', 'Lifecycle', 'Evidence applies to', 'Protocol / interface', 'Authentication', 'Integrity',
@@ -27,10 +26,6 @@ MARK = {'supported': 'S', 'conditional': 'C', 'gateway': 'G', 'explicitly_unsupp
 # The most favourable documented result wins when a capability has several on one kind of interface.
 RANK = ('supported', 'conditional', 'gateway', 'conflict', 'explicitly_unsupported', 'silent')
 POSITIVE = ('supported', 'conditional')
-MECHANISMS = tuple(c for c in CAPABILITIES if c not in PROPERTIES)
-# Documents rank as the chart legend reads, from the most to the least direct about one product. A document whose type
-# nobody has established is still more than the product page, so it is not placed below one.
-DOCUMENT_RANK = [k for k, _, _ in DOCUMENT_SERIES]
 
 
 def md(x):
@@ -95,21 +90,10 @@ class Findings:
         self.legacy = legacy_states(self.defined)
         self.grouped = bool(self.legacy)
         self.totals = Counter(s['status'] for s in self.sources)
-        self.vendors = list(dict.fromkeys(p.get('vendor', '') for p in self.products.values()))
-        self.owned = {v: [pid for pid, p in self.products.items() if p.get('vendor', '') == v] for v in self.vendors}
-        self.states = list(dict.fromkeys(self.lifecycle(pid) for pid in self.products)) if self.grouped else []
-        self.held = {g: [pid for pid in self.products if self.lifecycle(pid) == g] for g in self.states}
         self.legacy_devices = [pid for pid, d in self.devices.items() if d['lifecycle_status'] in self.legacy]
-        self.blocks = self._blocks()
         # A census has hundreds of devices and no review yet; a row per unreviewed device would bury the reviewed ones.
         bare = {pid for pid in self.products if not any(r['product_id'] == pid for r in rows)}
         self.bare = bare if len(bare) > 25 else set()
-        # The most direct kind of document read for each device says how much the review can settle for it.
-        self.best = {}
-        for pid in self.products:
-            kinds = [s['document']['doc_type'] or s.get('doc_type_suggested') or 'other'
-                     for s in self.sources if s['product_id'] == pid and s['status'] == 'extracted']
-            self.best[pid] = min(kinds, key=DOCUMENT_RANK.index) if kinds else 'none'
         self.table = self._interface_rows()
 
     # --- built once ---
@@ -117,7 +101,8 @@ class Findings:
     def _resolve_documents(self, source_notes):
         notes = {n['source_id']: n for n in (load(source_notes) if source_notes else [])}
         if set(notes) - set(self.byid):
-            raise ValueError(f'source notes name sources that are not in this run: {sorted(set(notes) - set(self.byid))}')
+            raise ValueError(f'source notes name sources that are not in this run: '
+                             f'{sorted(set(notes) - set(self.byid))}')
         wrong = sorted({n.get('doc_type') for n in notes.values() if n.get('doc_type')} - set(DOC_TYPES))
         if wrong:
             raise ValueError(f'source notes use a doc_type outside {", ".join(DOC_TYPES)}: {wrong}')
@@ -153,32 +138,17 @@ class Findings:
                 for sid in r['source_ids']:
                     doc = self.byid[sid]['document']
                     if doc['doc_type'] not in COMPLETE_TYPES or doc['coverage'] != 'complete':
-                        raise ValueError(f'complete_document_silent needs a complete {", ".join(COMPLETE_TYPES)} (doc_type and coverage in the '
-                                         f'source notes); source {sid} is {doc["doc_type"] or "untyped"}, {doc["coverage"] or "coverage not stated"}: {key}')
+                        raise ValueError(f'complete_document_silent needs a complete {", ".join(COMPLETE_TYPES)} '
+                                         f'(doc_type and coverage in the '
+                                         f'source notes); source {sid} is {doc["doc_type"] or "untyped"}, '
+                                         f'{doc["coverage"] or "coverage not stated"}: {key}')
                     if self.mentions[sid, r['feature']]:
-                        raise ValueError(f'{self.mentions[sid, r["feature"]]} leads for {r["feature"]} exist in source {sid}; '
+                        raise ValueError(f'{self.mentions[sid, r["feature"]]} leads for {r["feature"]} exist in source '
+                                         f'{sid}; '
                                          f'review them before recording complete_document_silent: {key}')
                 self.searched[id(r)] = '; '.join(
                     f"{self.cite[sid]} searched in full" + (f", {self.byid[sid]['pages']} PDF pages" if self.byid[sid].get('pages') else '')
                     + f": no lead for {r['feature']}" for sid in r['source_ids'])
-
-    def _blocks(self):
-        """The groups the survey's question is asked of, in lifecycle order: legacy as one group, every other state on its own.
-
-        Each is (label, devices, the states within it). A legacy group of one state is that state, shown even when it is
-        empty; one that spans several states keeps each of them visible.
-        """
-        held = {k: [pid for pid, d in self.devices.items() if d['lifecycle_status'] == k] for k in LIFECYCLES}
-        blocks = []
-        for k in LIFECYCLES if self.grouped else ():
-            name = life_words(k).capitalize()
-            if k not in self.legacy:
-                blocks += [(name, held[k], [])] * bool(held[k])
-            elif len(self.legacy) == 1:
-                blocks.append((name + ' (legacy)', held[k], []))
-            elif k == self.legacy[0]:
-                blocks.append(('Legacy', self.legacy_devices, [(life_words(s).capitalize(), held[s]) for s in self.legacy]))
-        return blocks
 
     def _interface_rows(self):
         """One row per product and interface. Repeated keyword matches cannot add rows; only reviewed findings can."""
@@ -217,11 +187,13 @@ class Findings:
                     'Evidence': [(self.cite[e['source_id']], e['location'], flat(e['quote'])) for m in members for e in m.get('evidence') or []],
                     'Review status': '; '.join(dict.fromkeys(f"{m.get('review_status') or 'draft'} ({flat(m['reviewer'])})"
                                                              for m in signed)) or 'not reviewed',
-                    'Sources': '; '.join(f"{self.cite[sid]} {self.byid[sid]['final_url']} sha256:{self.byid[sid]['sha256']}" for sid in used)}
+                    'Sources': '; '.join(f"{self.cite[sid]} {self.byid[sid]['final_url']} "
+                                         f"sha256:{self.byid[sid]['sha256']}" for sid in used)}
                 row.update({name.capitalize(): self.prop(pid, where, members, name) for name in PROPERTIES})
                 # Two findings on one interface may rest on documents for different models or firmware; then each says its own.
                 row['Evidence applies to'] = per_feature(
-                    [(m['feature'], ', '.join(f"{name} {flat(m.get(key, NOT_ASSESSED)).replace(NOT_ASSESSED, 'not assessed')}" for name, key in
+                    [(m['feature'], ', '.join(f"{name} "
+                                              f"{flat(m.get(key, NOT_ASSESSED)).replace(NOT_ASSESSED, 'not assessed')}" for name, key in
                                               (('model', 'model_scope'), ('hardware', 'hardware_revision'), ('firmware', 'firmware'))))
                      for m in members], 'not established')
                 table.append(row)
@@ -277,17 +249,3 @@ class Findings:
         if self.results(pid, feature, ('management', 'network')):
             return 'other'
         return 'unknown' if (pid, feature) in self.reviewed else None
-
-    def posture(self, pid):
-        """One place per device: the strongest thing the reviewed documents establish about protecting its control traffic."""
-        got = {c: self.bucket(pid, c) for c in CAPABILITIES}
-        if got['encryption'] in POSITIVE:
-            return 'encrypted'
-        if got['authentication'] in POSITIVE or got['integrity'] in POSITIVE:
-            return 'authenticated'
-        if any(got[c] in POSITIVE for c in MECHANISMS):
-            return 'mechanism'
-        for key, found in (('gateway', 'gateway'), ('denied', 'explicitly_unsupported'), ('silent', 'silent'), ('other', 'other')):
-            if found in got.values():
-                return key
-        return None if set(got.values()) == {None} else 'unknown'

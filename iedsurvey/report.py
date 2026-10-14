@@ -1,4 +1,4 @@
-"""The report: REPORT.md from a run and its review, beside the data files and charts it points to."""
+"""The report: REPORT.md from a run and its review, beside the data files it points to."""
 
 import re
 from collections import Counter
@@ -10,7 +10,6 @@ from .text import clip
 from .review import facts, named
 from .findings import COLUMNS, POSITIVE, Findings, flat, md, words
 from .tables import write_tables
-from .glance import glance
 
 
 # How a device's result for one property reads in the summary by stratum.
@@ -34,26 +33,37 @@ def opening(found):
         line += f"; documents behind a sign-in, not requested: {sum(s.get('link_count', 1) for s in sources if s['status'] == 'login_required')}"
     return [f"# {cfg.get('title', 'IED security documentation survey')}", '',
             f"Sampling: {cfg['sampling']}", '', line + '.', '',
-            'This measures documented capabilities, not enabled settings, installed-base coverage or plaintext prevalence. Unknown is not unsupported. Family-level evidence is not proof for every model/firmware. Capability categories overlap, so counts below are review cells and must not be added up as devices.', '',
+            'This measures documented capabilities, not enabled settings, installed-base coverage or plaintext '
+            'prevalence. Unknown is not unsupported. Family-level evidence is not proof for every model/firmware. '
+            'Capability categories overlap, so counts below are review cells and must not be added up as devices.', '',
             'Reviewers on record: ' + ('; '.join(f'{md(name)} ({n} rows)' for name, n in Counter(r['reviewer'] for r in found.rows).items()) or 'none') + '.', '',
-            'Every capability has one of four results: supported, conditional, explicitly unsupported or unknown. An unknown says why where the review recorded it. "Complete document silent" means a complete manual, device profile or conformance statement was searched and does not mention the capability; it is not a vendor statement that the capability is absent.', '']
+            'Every capability has one of four results: supported, conditional, explicitly unsupported or unknown. An '
+            'unknown says why where the review recorded it. "Complete document silent" means a complete manual, device '
+            'profile or conformance statement was searched and does not mention the capability; it is not a vendor '
+            'statement that the capability is absent.', '']
 
 
 def definitions(found):
     defined, count = found.defined, len(found.products)
     if not found.grouped:
-        return ['No definition of "legacy" or of the lifecycle groups is recorded in the config of this run, so no result is counted by lifecycle group.']
+        return ['No definition of "legacy" or of the lifecycle groups is recorded in the config of this run, so no '
+                'result is counted by lifecycle group.']
     fixed, revisions = defined.get('defined_at') or 'a date the config does not give', defined.get('revisions') or []
     return (['## Definitions', '',
              # A definition changed after results were seen is not one fixed before any count, and the report does not say it is.
-             (f'First fixed on {fixed} and revised since. What follows is the definition in the config this run was crawled with; each revision is listed with what had been counted when it was made.'
-              if revisions else f'Fixed on {fixed} in the config this run was crawled with, before any result was counted.'), '',
+             (f'First fixed on {fixed} and revised since. What follows is the definition in the config this run was '
+              f'crawled with; each revision is listed with what had been counted when it was made.'
+              if revisions else f'Fixed on {fixed} in the config this run was crawled with, before any result was '
+                                f'counted.'), '',
              f"- Legacy: {flat(defined['legacy'])}"]
             + ([f"- Counted as legacy: {'; '.join(map(life_words, found.legacy))}."] if defined.get('legacy_statuses') else [])
             + [f"- {life_words(k).capitalize()}: {flat(v)}" for k, v in (defined.get('lifecycle_statuses') or {}).items()]
             + ([f"- Release date: {flat(defined['release_date'])}"] if defined.get('release_date') else [])
-            + [f"- Revised on {flat(r['date'])}: {flat(r['change'])} What had been counted by then: {flat(r['known_then'])}" for r in revisions]
-            + ['', f'Legacy under this definition: {len(found.legacy_devices)} of {count} devices in this run. Lifecycle status rests on dated vendor evidence for {found.recorded} devices and is unknown for {count - found.recorded}.'])
+            + [f"- Revised on {flat(r['date'])}: {flat(r['change'])} What had been counted by then: "
+               f"{flat(r['known_then'])}" for r in revisions]
+            + ['', f'Legacy under this definition: {len(found.legacy_devices)} of {count} devices in this run. '
+                   f'Lifecycle status rests on dated vendor evidence for {found.recorded} devices and is unknown for '
+                   f'{count - found.recorded}.'])
 
 
 def devices(found):
@@ -69,18 +79,27 @@ def devices(found):
                 + (f' (+{len(proof) - 1} more)' if len(proof) > 1 else ''))
 
     return (['', '## Devices', '',
-             'Identity level says whether the entry is a product family, one model or one catalogue number. Lifecycle status rests only on what the vendor says in a dated source; the date is the one the vendor states or, failing that, the day the source was retrieved. Release date is recorded apart and decides nothing. Exact model, hardware revision and firmware are stated per finding below, as the cited document names them.', '']
-            + ([f'{len(bare)} devices without a review row are left out of this table. devices.csv lists all {len(products)} with their lifecycle evidence.', ''] if bare else [])
-            + ['| Manufacturer | Model | Category | Identity level | Lifecycle status | Dated vendor evidence | Release date |', '|---|---|---|---|---|---|---|']
-            + [f"| {md(products[pid].get('vendor', ''))} | {found.model(pid)} | {md(found.category(pid))} | {d['identity_level'].replace('_', ' ') or 'not established'} | "
-               f"{found.lifecycle(pid)}{' (vendor label: ' + md(d['vendor_label']) + ')' if d['vendor_label'] else ''} | {md(dated(d))} | "
+             'Identity level says whether the entry is a product family, one model or one catalogue number. Lifecycle '
+             'status rests only on what the vendor says in a dated source; the date is the one the vendor states or, '
+             'failing that, the day the source was retrieved. Release date is recorded apart and decides nothing. Exact '
+             'model, hardware revision and firmware are stated per finding below, as the cited document names them.', '']
+            + ([f'{len(bare)} devices without a review row are left out of this table. devices.csv lists all '
+                f'{len(products)} with their lifecycle evidence.', ''] if bare else [])
+            + ['| Manufacturer | Model | Category | Identity level | Lifecycle status | Dated vendor evidence | Release '
+               'date |', '|---|---|---|---|---|---|---|']
+            + [f"| {md(products[pid].get('vendor', ''))} | {found.model(pid)} | {md(found.category(pid))} | "
+               f"{d['identity_level'].replace('_', ' ') or 'not established'} | "
+               f"{found.lifecycle(pid)}{' (vendor label: ' + md(d['vendor_label']) + ')' if d['vendor_label'] else ''} "
+               f"| {md(dated(d))} | "
                f"{md(d['release_date'] or 'not established')} |" for pid, d in found.devices.items() if pid not in bare])
 
 
 def summary(found):
     grouped = found.grouped
     text = ['', '## Summary by vendor, category and lifecycle' if grouped else '## Summary by vendor and category', '',
-            'Devices, counted once each, by what the review established for a control protocol. "In the catalogue" is the number of classified entries in the vendor catalogue for that stratum, where the config was drawn from an inventory. A stratum with few devices in this run supports no generalisation.', '',
+            'Devices, counted once each, by what the review established for a control protocol. "In the catalogue" is '
+            'the number of classified entries in the vendor catalogue for that stratum, where the config was drawn from '
+            'an inventory. A stratum with few devices in this run supports no generalisation.', '',
             '| Vendor | Category | Lifecycle | In the catalogue | In this run | ' + ' | '.join(f'{name.capitalize()} of a control protocol' for name in PROPERTIES) + ' |',
             '|---|---|---|---|---|' + '---|' * len(PROPERTIES)]
     strata, listed = {}, Counter()
@@ -108,8 +127,13 @@ def interfaces(found):
         return '; '.join(parts + [row['Searched']] * bool(row['Searched'])) or 'none'
 
     return (['', '## Findings by product and interface', '',
-             'One row per product and interface. Authentication, integrity and encryption are stated for that interface only; a result for a management interface says nothing about control traffic. "Evidence applies to" is the exact model, hardware revision and firmware the cited documents name. Default, activation and deployment are stated for supported and conditional findings. Full quotes are under "Findings and evidence" and in findings_table.csv; source references are resolved under "Sources examined".', '']
-            + ([f'{len(bare)} products have no review row yet. They are left out of this table and counted as not reviewed in the summary above.', ''] if bare else [])
+             'One row per product and interface. Authentication, integrity and encryption are stated for that interface '
+             'only; a result for a management interface says nothing about control traffic. "Evidence applies to" is '
+             'the exact model, hardware revision and firmware the cited documents name. Default, activation and '
+             'deployment are stated for supported and conditional findings. Full quotes are under "Findings and '
+             'evidence" and in findings_table.csv; source references are resolved under "Sources examined".', '']
+            + ([f'{len(bare)} products have no review row yet. They are left out of this table and counted as not '
+                f'reviewed in the summary above.', ''] if bare else [])
             + ['| ' + ' | '.join(COLUMNS) + ' |', '|' + '---|' * len(COLUMNS)]
             + ['| ' + ' | '.join(md(shown(row) if c == 'Evidence' else row[c]) for c in COLUMNS) + ' |'
                for row in found.table if row['pid'] not in bare])
@@ -118,9 +142,15 @@ def interfaces(found):
 def counts(found):
     products, grouped = found.products, found.grouped
     text = ['', '## Counts by category and lifecycle group' if grouped else '## Counts by category', '',
-            'Products, not leads or table rows. Each product is counted once per capability, under its most favourable documented result for a control protocol. Unknown is one result; the four columns after it say why. "Other interface only" means a result exists for a management or network interface but none for a control protocol. A capability reached only through an external gateway is counted apart and is not the device\'s own. The last column is the denominator.'
+            'Products, not leads or table rows. Each product is counted once per capability, under its most favourable '
+            'documented result for a control protocol. Unknown is one result; the four columns after it say why. "Other '
+            'interface only" means a result exists for a management or network interface but none for a control '
+            'protocol. A capability reached only through an external gateway is counted apart and is not the device\'s '
+            'own. The last column is the denominator.'
             + (' The same results are counted for every lifecycle group.' if grouped else ''), '',
-            '| Category | Capability | Supported | Conditional | Via external gateway only | Explicitly unsupported | Unknown | of which complete document silent | of which sources conflict | of which other interface only | of which not enough evidence | Not reviewed | Products |',
+            '| Category | Capability | Supported | Conditional | Via external gateway only | Explicitly unsupported | '
+            'Unknown | of which complete document silent | of which sources conflict | of which other interface only | '
+            'of which not enough evidence | Not reviewed | Products |',
             '|---|---|---|---|---|---|---|---|---|---|---|---|---|']
     for stratum in dict.fromkeys(map(found.stratum_of, products)):
         members = [pid for pid in products if found.stratum_of(pid) == stratum]
@@ -134,7 +164,9 @@ def counts(found):
 def matrix(found):
     bare = found.bare
     return (['', '## Capability matrix', '',
-             'S supported, C conditional, G only through an external gateway, X explicitly unsupported, ? unknown (?s a complete document was searched and is silent, ?c sources conflict), - not reviewed. A mark in parentheses is established only for a management or network interface, not for a control protocol.', '']
+             'S supported, C conditional, G only through an external gateway, X explicitly unsupported, ? unknown (?s a '
+             'complete document was searched and is silent, ?c sources conflict), - not reviewed. A mark in parentheses '
+             'is established only for a management or network interface, not for a control protocol.', '']
             + ([f'{len(bare)} products without a review row are left out; every cell of theirs is "not reviewed".', ''] if bare else [])
             + ['| Product | Category | ' + ' | '.join(CAPABILITIES) + ' |', '|---|---|' + '---|' * len(CAPABILITIES)]
             + [f'| {found.model(pid)} | {md(found.stratum_of(pid))} | ' + ' | '.join(found.matrix(pid, c) for c in CAPABILITIES) + ' |'
@@ -145,25 +177,32 @@ def defaults(found):
     """How each supported or conditional capability ships and what switching it on takes, as far as the documents say."""
     stated = found.stated
     text = ['', '## Default configuration, activation and deployment', '',
-            'Findings with a supported or conditional result, one per capability and interface. "Undocumented" means the documents read do not say whether the capability is on by default; "not assessed" means the reviewer has not looked yet. Neither means disabled.', '']
+            'Findings with a supported or conditional result, one per capability and interface. "Undocumented" means '
+            'the documents read do not say whether the capability is on by default; "not assessed" means the reviewer '
+            'has not looked yet. Neither means disabled.', '']
     if stated:
-        text.extend(['| Capability | Findings | Default enabled | Default disabled | Default undocumented | Default not assessed | Activation needs stated | Activation: none stated | Activation not assessed |',
+        text.extend(['| Capability | Findings | Default enabled | Default disabled | Default undocumented | Default not '
+                     'assessed | Activation needs stated | Activation: none stated | Activation not assessed |',
                      '|---|---|---|---|---|---|---|---|---|'])
         for c in CAPABILITIES:
             mine = [facts(r) for r in stated if r['feature'] == c]
             if mine:
                 d = Counter(f['default'] for f in mine)
                 a = Counter('waiting' if f['needs'] == [NOT_ASSESSED] else 'none' if f['needs'] == ['none_stated'] else 'stated' for f in mine)
-                text.append(f"| {c} | {len(mine)} | {d['enabled']} | {d['disabled']} | {d['undocumented']} | {d[NOT_ASSESSED]} | "
+                text.append(f"| {c} | {len(mine)} | {d['enabled']} | {d['disabled']} | {d['undocumented']} | "
+                            f"{d[NOT_ASSESSED]} | "
                             f"{a['stated']} | {a['none']} | {a['waiting']} |")
         text.append('')
     fielded = [r for r in found.rows if facts(r)['deployment'] != 'unknown']
-    text.append((f'Deployment status is unknown for {len(stated) - sum(r in fielded for r in stated)} of {len(stated)} findings. ' if stated
+    text.append((f'Deployment status is unknown for {len(stated) - sum(r in fielded for r in stated)} of {len(stated)} '
+                 f'findings. ' if stated
                  else 'No supported or conditional finding is recorded yet. ')
-                + 'Vendor documents show what a device can do, not what an operator has enabled, so enabled or disabled in practice is recorded only where evidence from an installation is cited.')
+                + 'Vendor documents show what a device can do, not what an operator has enabled, so enabled or disabled '
+                  'in practice is recorded only where evidence from an installation is cited.')
     for r in fielded:
         proof = '; '.join(flat(', '.join(e[k] for k in ('kind', 'reference', 'date', 'scope'))) for e in r['deployment_evidence'])
-        text.append(f"- {found.model(r['product_id'])}, {r['feature']} on {flat(r.get('interface') or 'no interface stated')}: {facts(r)['deployment']} ({proof})")
+        text.append(f"- {found.model(r['product_id'])}, {r['feature']} on "
+                    f"{flat(r.get('interface') or 'no interface stated')}: {facts(r)['deployment']} ({proof})")
     return text
 
 
@@ -172,7 +211,8 @@ def evidence(found):
     if not found.claims:
         return []
     text = ['', '## Findings and evidence', '',
-            'Every row that rests on cited sources: each result, and each unknown recorded because a complete document is silent or sources conflict. Quotes are verbatim from the cited location of the retained source.']
+            'Every row that rests on cited sources: each result, and each unknown recorded because a complete document '
+            'is silent or sources conflict. Quotes are verbatim from the cited location of the retained source.']
     for r in found.claims:
         text.extend(['', f"### {found.model(r['product_id'])}: {r['feature']} ({named(r)})", '',
                      f"- Interface: {flat(r['interface'])} ({r['interface_class'].replace('_', ' ')})"])
@@ -206,7 +246,8 @@ def unresolved(found):
             for pid in found.products}
     return (['', '## Unresolved cells', '',
              f'{sum(map(len, left.values()))} of {found.expected} cells are unknown or not reviewed on every interface.', '']
-            + ([f'This includes all {len(bare) * len(CAPABILITIES)} cells of the {len(bare)} products without a review row, which are not listed one by one.', ''] if bare else [])
+            + ([f'This includes all {len(bare) * len(CAPABILITIES)} cells of the {len(bare)} products without a review '
+                f'row, which are not listed one by one.', ''] if bare else [])
             + [f"- {found.model(pid)}: {', '.join(cells)}" for pid, cells in left.items() if cells and pid not in bare])
 
 
@@ -215,7 +256,9 @@ def profiles(found):
     if not read:
         return []
     return (['', '## Device profile statements', '',
-             'Read by the tool from section 1.12, Security Parameters, of a DNP3 Device Profile. Marked options are detected by a heuristic and nothing in this table has been reviewed. A finding still needs a review row that quotes the item.', '',
+             'Read by the tool from section 1.12, Security Parameters, of a DNP3 Device Profile. Marked options are '
+             'detected by a heuristic and nothing in this table has been reviewed. A finding still needs a review row '
+             'that quotes the item.', '',
              '| Product | Source | Item | Title | Options that appear marked | Location |', '|---|---|---|---|---|---|']
             + [f"| {found.model(s['product_id'])} | {s['ref']} | {i['item']} | {md(i['title'])} | "
                f"{md('; '.join(i['marked']) or 'none detected')} | {i['location']} |" for s, items in read for i in items])
@@ -229,7 +272,10 @@ def sources_read(found):
     if wide:
         # What kind of document the survey rests on, per vendor, says more at this scale than a row per source.
         text.extend(['', '## What was read', '',
-                     'Extracted sources by vendor and document type. A type marked "suggested" is the tool\'s guess from the title, URL and opening text until a reviewer confirms it in the source notes. A vendor whose sources are mostly product pages and brochures has little that can settle a capability either way.', '',
+                     'Extracted sources by vendor and document type. A type marked "suggested" is the tool\'s guess '
+                     'from the title, URL and opening text until a reviewer confirms it in the source notes. A vendor '
+                     'whose sources are mostly product pages and brochures has little that can settle a capability '
+                     'either way.', '',
                      '| Vendor | Document type | Sources | PDF pages |', '|---|---|---|---|'])
         kinds, pages = Counter(), Counter()
         for s in read:
@@ -239,9 +285,14 @@ def sources_read(found):
             pages[key] += s.get('pages') or 0
         text.extend(f'| {md(v)} | {kind} | {n} | {pages[v, kind] or "-"} |' for (v, kind), n in sorted(kinds.items()))
     text.extend(['', '## Sources examined', '',
-                 'Type, number, revision and document date are what a reviewer confirmed or read off the document; "not established" and "suggested" mean nobody has yet. Types are listed in the README from most to least direct about what one product and firmware can do. Titles and PDF dates are what the file says about itself, and a PDF creation date is not necessarily a publication date.', '']
-                + ([f'Of {len(read)} extracted sources, the {len(used & {s["id"] for s in read})} cited by a review row are listed here. sources.json lists all of them.', ''] if wide else [])
-                + ['| Ref | Product | Document | Type | Number and revision | Document date | Retrieved | SHA-256 | URL |', '|---|---|---|---|---|---|---|---|---|'])
+                 'Type, number, revision and document date are what a reviewer confirmed or read off the document; "not '
+                 'established" and "suggested" mean nobody has yet. Types are listed in the README from most to least '
+                 'direct about what one product and firmware can do. Titles and PDF dates are what the file says about '
+                 'itself, and a PDF creation date is not necessarily a publication date.', '']
+                + ([f'Of {len(read)} extracted sources, the {len(used & {s["id"] for s in read})} cited by a review row '
+                    f'are listed here. sources.json lists all of them.', ''] if wide else [])
+                + ['| Ref | Product | Document | Type | Number and revision | Document date | Retrieved | SHA-256 | URL '
+                   '|', '|---|---|---|---|---|---|---|---|---|'])
     for s in read:
         if not wide or s['id'] in used:
             made = re.match(r'D:(\d{4})(\d{2})(\d{2})', s.get('pdf_created', ''))
@@ -249,9 +300,12 @@ def sources_read(found):
             doc = s['document']
             kind = doc['doc_type'] or ('suggested: ' + s['doc_type_suggested'] if s.get('doc_type_suggested') else 'not established')
             kind += f", {doc['coverage']}" if doc['coverage'] else ''
-            text.append(f"| {s['ref']} | {found.model(s['product_id'])} | {md(', '.join(said))} | {kind.replace('_', ' ')} | "
-                        f"{md(', '.join(filter(None, [doc['document_id'], doc['revision'] and 'revision ' + doc['revision']])) or 'not established')} | "
-                        f"{md(doc['document_date'] or 'not established')} | {s.get('retrieved_at', '')[:10]} | {s['sha256']} | {md(s['final_url'])} |")
+            text.append(f"| {s['ref']} | {found.model(s['product_id'])} | {md(', '.join(said))} | "
+                        f"{kind.replace('_', ' ')} | "
+                        f"{md(', '.join(filter(None, [doc['document_id'], doc['revision'] and 'revision ' + doc['revision']])) or 'not established')} "
+                        f"| "
+                        f"{md(doc['document_date'] or 'not established')} | {s.get('retrieved_at', '')[:10]} | "
+                        f"{s['sha256']} | {md(s['final_url'])} |")
     return text
 
 
@@ -272,21 +326,29 @@ def sources_missing(found):
               else 'duplicate of another source' if s['status'] == 'duplicate'
               else re.sub(r'https?://\S+', '<url>', s.get('error', ''))[:80]] += s.get('link_count', 1)
     return (['', '## Sources without extracted text', '',
-             'Counted by vendor and outcome; every URL is in sources.json. "Sign-in" rows count links to documents that exist but are not public, so they were not requested.', '',
+             'Counted by vendor and outcome; every URL is in sources.json. "Sign-in" rows count links to documents that '
+             'exist but are not public, so they were not requested.', '',
              '| Vendor | Outcome | Sources |', '|---|---|---|']
             + [f'| {md(v)} | {md(outcome)} | {n} |' for (v, outcome), n in sorted(kinds.items())])
 
 
 def closing(found):
     rows = found.rows
-    return (['', f'Review coverage: {len(found.reviewed)}/{found.expected} product–capability cells. Unreviewed cells carry no result.', '',
-             f"Evidence quotes: {sum(bool(r.get('evidence')) for r in rows if r['status'] != 'unknown')} of {sum(r['status'] != 'unknown' for r in rows)} rows with a result other than unknown carry a quote that was checked against the cited passage.", '',
-             f'Unknown because a complete document is silent: {len(found.searched)} rows, each checked to cite only complete documents in which the search found no lead for that capability.', '',
-             'See findings.csv for source URLs, hashes, interface, firmware and review provenance, and devices.csv for lifecycle evidence. No population percentages are computed.']
-            + ([f"Re-bound rows: {sum(bool(r.get('rebound')) for r in rows)} rows were written against an earlier fetch of the same documents and re-bound because the extracted text is unchanged; each row records the hashes."] if any(r.get('rebound') for r in rows) else []))
+    return (['', f'Review coverage: {len(found.reviewed)}/{found.expected} product–capability cells. Unreviewed cells '
+                 f'carry no result.', '',
+             f"Evidence quotes: {sum(bool(r.get('evidence')) for r in rows if r['status'] != 'unknown')} of "
+             f"{sum(r['status'] != 'unknown' for r in rows)} rows with a result other than unknown carry a quote that "
+             f"was checked against the cited passage.", '',
+             f'Unknown because a complete document is silent: {len(found.searched)} rows, each checked to cite only '
+             f'complete documents in which the search found no lead for that capability.', '',
+             'See findings.csv for source URLs, hashes, interface, firmware and review provenance, and devices.csv for '
+             'lifecycle evidence. No population percentages are computed.']
+            + ([f"Re-bound rows: {sum(bool(r.get('rebound')) for r in rows)} rows were written against an earlier fetch "
+                f"of the same documents and re-bound because the extracted text is unchanged; each row records the "
+                f"hashes."] if any(r.get('rebound') for r in rows) else []))
 
 
-# REPORT.md, top to bottom. The glance comes between the definitions and the first of these.
+# REPORT.md, top to bottom, after the opening and the definitions.
 SECTIONS = (devices, summary, interfaces, counts, matrix, defaults, evidence, reviewed_rows, unresolved, profiles, sources_read,
             sources_missing, closing)
 
@@ -295,9 +357,10 @@ def report(run, review_path, dest, require_evidence=False, source_notes=None, de
     found, dest = Findings(run, review_path, require_evidence, source_notes, device_notes), Path(dest)
     dest.mkdir(parents=True, exist_ok=True)
     write_tables(found, dest)
-    text = opening(found) + definitions(found) + glance(found, dest / 'charts')
+    text = opening(found) + definitions(found)
     for section in SECTIONS:
         text += section(found)
     (dest / 'REPORT.md').write_text('\n'.join(text) + '\n', encoding='utf-8', newline='\n')
-    print(f'Report written to {dest}: {len(found.reviewed)} of {found.expected} cells reviewed in {len(found.rows)} rows'
+    print(f'Report written to {dest}: {len(found.reviewed)} of {found.expected} cells reviewed in {len(found.rows)} '
+          f'rows'
           + (f'; {found.blank} untouched template rows left out as not reviewed' if found.blank else ''))

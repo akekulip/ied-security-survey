@@ -1,26 +1,28 @@
 """Requests: the allowlist, robots.txt, redirects, limits, retries and the request log."""
 from pathlib import Path
 import tempfile
+import time
 import unittest
 from unittest.mock import patch
 
-import survey as s
+from iedsurvey.fetch import Fetcher, allowed, canonical
+from iedsurvey.store import digest, dump, load
 from support import SurveyCase, Reply
 
 
 class FetchTests(SurveyCase):
     def test_domain_boundary(self):
-        self.assertTrue(s.allowed('https://manual.vendor.test/a', ['vendor.test']))
+        self.assertTrue(allowed('https://manual.vendor.test/a', ['vendor.test']))
         for u in ['https://vendor.test.evil.test/a','https://evilvendor.test/a',
                   'http://vendor.test/a','https://user@vendor.test/a', 'https://vendor.test:99/a']:
-            self.assertFalse(s.allowed(u, ['vendor.test']))
+            self.assertFalse(allowed(u, ['vendor.test']))
 
     def test_hash_fragment_removed_query_retained(self):
-        self.assertEqual(s.canonical('https://Vendor.test/a?lang=en#top'), 'https://vendor.test/a?lang=en')
+        self.assertEqual(canonical('https://Vendor.test/a?lang=en#top'), 'https://vendor.test/a?lang=en')
 
     def test_fetch_redirect_rejected_before_destination_contact(self):
         with tempfile.TemporaryDirectory() as td:
-            f = s.Fetcher({'delay_seconds':0}, td)
+            f = Fetcher({'delay_seconds':0}, td)
             with patch.object(f, 'robot'), patch.object(f, 'raw', return_value=(302, {'Location':'https://evil.test/a'}, b'')) as raw:
                 with self.assertRaisesRegex(ValueError,'outside vendor'):
                     f.fetch('https://vendor.test/a',['vendor.test'])
@@ -28,16 +30,16 @@ class FetchTests(SurveyCase):
 
     def test_redirect_checks_robots_each_hop(self):
         with tempfile.TemporaryDirectory() as td:
-            f = s.Fetcher({},td)
+            f = Fetcher({},td)
             with patch.object(f,'robot') as robot, patch.object(f,'raw',side_effect=[(302,{'Location':'https://docs.vendor.test/a'},b''),(200,{'Content-Type':'text/html'},b'<p>x</p>')]):
                 meta,_=f.fetch('https://vendor.test/a',['vendor.test'])
                 self.assertEqual(robot.call_count,2)
-                self.assertEqual(meta['sha256'],s.digest(b'<p>x</p>'))
+                self.assertEqual(meta['sha256'],digest(b'<p>x</p>'))
 
     def test_robots_denial_and_errors_fail_closed(self):
         with tempfile.TemporaryDirectory() as td:
             for status,body in [(200,b'User-agent: *\nDisallow: /private'),(503,b'unavailable'),(403,b'forbidden'),(301,b'')]:
-                f=s.Fetcher({},td)
+                f=Fetcher({},td)
                 def raw(url):
                     f.audit.append({'url':url}); return status,{},body
                 with patch.object(f,'raw',side_effect=raw), self.assertRaises(ValueError):
@@ -45,7 +47,7 @@ class FetchTests(SurveyCase):
 
     def test_robots_404_allows_and_records(self):
         with tempfile.TemporaryDirectory() as td:
-            f=s.Fetcher({},td)
+            f=Fetcher({},td)
             def raw(url):
                 f.audit.append({'url':url}); return 404,{},b'not found'
             with patch.object(f,'raw',side_effect=raw): f.robot('https://vendor.test/a')
@@ -53,7 +55,7 @@ class FetchTests(SurveyCase):
 
     def test_redirect_loop_is_bounded(self):
         with tempfile.TemporaryDirectory() as td:
-            f=s.Fetcher({},td)
+            f=Fetcher({},td)
             with patch.object(f,'robot'), patch.object(f,'raw',return_value=(302,{'Location':'/a'},b'')) as raw:
                 with self.assertRaisesRegex(ValueError,'too many redirects'):
                     f.fetch('https://vendor.test/a',['vendor.test'])
@@ -65,7 +67,7 @@ class FetchTests(SurveyCase):
             code=200
             headers={'Content-Type':'text/html'}
         with tempfile.TemporaryDirectory() as td:
-            f=s.Fetcher({'max_bytes':4},td)
+            f=Fetcher({'max_bytes':4},td)
             with patch.object(f.opener,'open',return_value=Reply(b'too large')):
                 with self.assertRaisesRegex(ValueError,'byte limit'): f.raw('https://vendor.test/a')
 
@@ -74,13 +76,13 @@ class FetchTests(SurveyCase):
                           ' https://vendor.test:443/a ':'https://vendor.test/a',
                           'https://vendor.test/a?x=1&y=a b':'https://vendor.test/a?x=1&y=a%20b',
                           'https://vendor.test/a%20b/$/c':'https://vendor.test/a%20b/$/c'}.items():
-            self.assertEqual(s.canonical(raw), want)
+            self.assertEqual(canonical(raw), want)
 
     def test_utf8_lf_and_atomic_dump(self):
         with tempfile.TemporaryDirectory() as td:
             p = Path(td); text = 'R \u2265 10 \u03a9 \u2192 con\ufb01dentiality'
-            s.dump(p/'x.json', [{'text':text}])
-            self.assertEqual(s.load(p/'x.json'), [{'text':text}])
+            dump(p/'x.json', [{'text':text}])
+            self.assertEqual(load(p/'x.json'), [{'text':text}])
             self.assertIn(text.encode('utf-8'), (p/'x.json').read_bytes())
             self.assertNotIn(b'\r', (p/'x.json').read_bytes())
             self.assertEqual([x.name for x in p.iterdir()], ['x.json'])
@@ -137,7 +139,7 @@ class FetchTests(SurveyCase):
 
     def test_failed_attempts_stay_in_the_request_log(self):
         with tempfile.TemporaryDirectory() as td:
-            f = s.Fetcher({'delay_seconds':0,'max_bytes':4}, td)
+            f = Fetcher({'delay_seconds':0,'max_bytes':4}, td)
             with patch.object(f.opener,'open',side_effect=TimeoutError('timed out')), self.assertRaises(TimeoutError): f.raw('https://vendor.test/a')
             with patch.object(f.opener,'open',return_value=Reply(b'too large')), self.assertRaises(ValueError): f.raw('https://vendor.test/b')
             self.assertEqual([x['url'] for x in f.audit], ['https://vendor.test/a','https://vendor.test/b'])
@@ -147,7 +149,7 @@ class FetchTests(SurveyCase):
 
     def test_truncated_body_is_rejected(self):
         with tempfile.TemporaryDirectory() as td:
-            f = s.Fetcher({'delay_seconds':0}, td)
+            f = Fetcher({'delay_seconds':0}, td)
             with patch.object(f.opener,'open',return_value=Reply(b'short',headers={'Content-Length':'100'})):
                 with self.assertRaisesRegex(ValueError,'shorter than its Content-Length'): f.raw('https://vendor.test/a')
             with patch.object(f.opener,'open',return_value=Reply(b'whole',headers={'content-length':'5'})):
@@ -155,15 +157,15 @@ class FetchTests(SurveyCase):
 
     def test_retries_are_opt_in_bounded_and_logged(self):
         script = lambda: [TimeoutError('timed out'), Reply(b'busy',503,{'Retry-After':'7'}), Reply(b'ok')]
-        with tempfile.TemporaryDirectory() as td, patch.object(s.time,'sleep') as sleep:
-            f = s.Fetcher({'delay_seconds':0}, td)
+        with tempfile.TemporaryDirectory() as td, patch.object(time,'sleep') as sleep:
+            f = Fetcher({'delay_seconds':0}, td)
             with patch.object(f.opener,'open',side_effect=script()), self.assertRaises(TimeoutError): f.raw('https://vendor.test/a')
             self.assertEqual(len(f.audit), 1)
-            f = s.Fetcher({'delay_seconds':0,'retries':2}, td)
+            f = Fetcher({'delay_seconds':0,'retries':2}, td)
             with patch.object(f.opener,'open',side_effect=script()): self.assertEqual(f.raw('https://vendor.test/a')[::2], (200, b'ok'))
             self.assertEqual([(x.get('status'), x.get('retried', False)) for x in f.audit], [(None,True),(503,True),(200,False)])
             self.assertIn(7, [c.args[0] for c in sleep.call_args_list])
-            f = s.Fetcher({'delay_seconds':0,'retries':1}, td)
+            f = Fetcher({'delay_seconds':0,'retries':1}, td)
             with patch.object(f.opener,'open',side_effect=script()): self.assertEqual(f.raw('https://vendor.test/a')[0], 503)
             with patch.object(f.opener,'open',return_value=Reply(b'gone',404)): self.assertEqual(f.raw('https://vendor.test/a')[0], 404)
             self.assertEqual(len(f.audit), 3)

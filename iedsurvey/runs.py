@@ -102,8 +102,10 @@ def recheck(old, new, dest=None):
                                 'found_at': [], 'same_location': False} for q in mine]
         rows.append(row)
         found = [e for e in row.get('excerpts', []) if e['found_at']]
-        print(f"{row['product_id']}: {row['old_status']} -> {row['new_status']}; raw bytes {row.get('raw_bytes', 'n/a')}; "
-              f"extracted text {row.get('extracted_text', 'n/a')}; excerpts found {len(found)}/{len(row.get('excerpts', []))}"
+        print(f"{row['product_id']}: {row['old_status']} -> {row['new_status']}; raw bytes "
+              f"{row.get('raw_bytes', 'n/a')}; "
+              f"extracted text {row.get('extracted_text', 'n/a')}; excerpts found "
+              f"{len(found)}/{len(row.get('excerpts', []))}"
               + ''.join(f"; {e['old_location']} -> {e['found_at'][0]}" for e in found if not e['same_location']))
     if dest:
         if Path(dest).exists():

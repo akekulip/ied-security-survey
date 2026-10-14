@@ -3,7 +3,7 @@
 import re
 
 
-VERSION = '2.0.0'
+VERSION = '2.1.0'
 
 
 # Bumped only when extraction or lead rules change. Replay compares this, so a report-only release keeps runs replayable.
@@ -174,10 +174,12 @@ def legacy_states(definitions):
     definitions = definitions or {}
     chosen = definitions.get('legacy_statuses', list(LEGACY_DEFAULT) if definitions.get('legacy') else [])
     if not isinstance(chosen, list) or set(chosen) - set(LEGACY_STATES) or bool(chosen) != bool(definitions.get('legacy')):
-        raise ValueError(f'definitions: legacy_statuses lists one or more of {", ".join(LEGACY_STATES)}, and legacy says in words what they mean')
+        raise ValueError(f'definitions: legacy_statuses lists one or more of {", ".join(LEGACY_STATES)}, and legacy '
+                         f'says in words what they mean')
     for r in definitions.get('revisions') or []:
         if not isinstance(r, dict) or not all(isinstance(r.get(k), str) and r[k].strip() for k in ('date', 'change', 'known_then')):
-            raise ValueError('definitions: each revision gives date, change and known_then (what had been counted when it was made)')
+            raise ValueError('definitions: each revision gives date, change and known_then (what had been counted when '
+                             'it was made)')
     return tuple(k for k in LIFECYCLES if k in chosen)
 
 

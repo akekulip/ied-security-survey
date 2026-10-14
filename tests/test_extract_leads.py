@@ -4,25 +4,32 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
-import survey as s
+from iedsurvey.crawl import crawl
+from iedsurvey.extract import extract, hints, parse, suggest_doc_type
+from iedsurvey.leads import candidates, profile_items
+from iedsurvey.report import report
+from iedsurvey.runs import rebuild, replay
+from iedsurvey.store import load
+from iedsurvey.text import text_digest
+from iedsurvey.vocabulary import CAPABILITIES, DOC_TYPES, PATTERNS, PROPERTIES, STATEMENTS, lead_type
 from support import SurveyCase, tiny_pdf
 
 
 class ExtractLeadTests(SurveyCase):
     def test_html_no_script_or_nav(self):
-        segs, links = s.extract(b'<nav>TLS</nav><script>encryption</script><p>DNP3 Secure Authentication is optional.</p><a href="manual.pdf">manual</a>', {'Content-Type':'text/html'})
+        segs, links = extract(b'<nav>TLS</nav><script>encryption</script><p>DNP3 Secure Authentication is optional.</p><a href="manual.pdf">manual</a>', {'Content-Type':'text/html'})
         text = ' '.join(x['text'] for x in segs)
         self.assertNotIn('TLS', text)
         self.assertNotIn('encryption', text)
         self.assertEqual(links,['manual.pdf'])
 
     def test_negation_is_never_positive_classification(self):
-        hits = s.candidates({'id':'x','product_id':'p'}, [{'location':'pdf-page:2', 'text':'TLS is not supported. DNP3 Secure Authentication is not available.'}])
+        hits = candidates({'id':'x','product_id':'p'}, [{'location':'pdf-page:2', 'text':'TLS is not supported. DNP3 Secure Authentication is not available.'}])
         self.assertTrue(hits)
         self.assertTrue(all(h['status']=='unreviewed' for h in hits))
 
     def test_https_is_not_control_encryption(self):
-        hits = s.candidates({'id':'x','product_id':'p'}, [{'location':'html-block:1','text':'HTTPS administration uses TLS; DNP3 traffic uses a separate port.'}])
+        hits = candidates({'id':'x','product_id':'p'}, [{'location':'html-block:1','text':'HTTPS administration uses TLS; DNP3 traffic uses a separate port.'}])
         self.assertEqual([h['feature'] for h in hits], ['tls'])
         self.assertEqual(hits[0]['status'], 'unreviewed')
 
@@ -66,28 +73,28 @@ class ExtractLeadTests(SurveyCase):
     def test_dnp3_sa_lead_may_be_qualified_by_heading_or_neighbouring_block(self):
         bare = {'location':'html-block:2','text':'Secure Authentication is optional.'}
         for segs in ([dict(bare, heading='DNP3 settings')], [{'location':'html-block:1','text':'DNP3 outstation'}, bare]):
-            hits = s.candidates({'id':'x','product_id':'p'}, segs)
+            hits = candidates({'id':'x','product_id':'p'}, segs)
             self.assertIn(('html-block:2','dnp3_secure_authentication'), [(h['location'],h['feature']) for h in hits])
         self.assertNotIn('dnp3_secure_authentication', self.leads(bare['text']))
 
     def test_lead_groups_do_not_change_review_cells(self):
-        self.assertEqual(s.CAPABILITIES, ('dnp3_secure_authentication','tls','ipsec','cip_security','authentication','encryption','ssh','integrity'))
-        self.assertLess(set(s.CAPABILITIES), set(s.PATTERNS))
+        self.assertEqual(CAPABILITIES, ('dnp3_secure_authentication','tls','ipsec','cip_security','authentication','encryption','ssh','integrity'))
+        self.assertLess(set(CAPABILITIES), set(PATTERNS))
         # The three properties asked about for every interface are review cells; the statement groups never are.
-        self.assertEqual(s.PROPERTIES, ('authentication','integrity','encryption'))
-        self.assertLess(set(s.PROPERTIES), set(s.CAPABILITIES))
-        self.assertFalse(set(s.STATEMENTS) & set(s.CAPABILITIES))
+        self.assertEqual(PROPERTIES, ('authentication','integrity','encryption'))
+        self.assertLess(set(PROPERTIES), set(CAPABILITIES))
+        self.assertFalse(set(STATEMENTS) & set(CAPABILITIES))
 
     def test_candidate_carries_count_heading_and_model_mention(self):
         segs = [{'location':'html-block:3','text':'The B90 supports TLS; TLS 1.2 is the default.','heading':'Security'},
                 {'location':'html-block:4','text':'The AB900 uses SSH.'}]
-        tls, ssh = s.candidates({'id':'x','product_id':'p'}, segs, ['B90'])
+        tls, ssh = candidates({'id':'x','product_id':'p'}, segs, ['B90'])
         self.assertEqual((tls['match_count'], tls['heading'], tls['model_mentioned']), (2, 'Security', True))
         self.assertFalse(ssh['model_mentioned'])
-        self.assertNotIn('model_mentioned', s.candidates({'id':'x','product_id':'p'}, segs)[0])
+        self.assertNotIn('model_mentioned', candidates({'id':'x','product_id':'p'}, segs)[0])
 
     def test_html_tables_headings_and_anchor_text(self):
-        segs, links, facts = s.parse(b'<html><head><title>B90</title></head><body><h2>Chapter 5 <span>Security</span></h2>'
+        segs, links, facts = parse(b'<html><head><title>B90</title></head><body><h2>Chapter 5 <span>Security</span></h2>'
             b'<table><tr><td>Protocol</td><td>TLS</td><td>1.2</td></tr></table><p>See <a href="a b.pdf">the <b>instruction</b> manual</a>.</p>'
             b'<nav><a href="/cybersecurity">Security</a></nav><footer><a href="/psirt">PSIRT</a></footer>'
             b'<svg><title>Expand SSH</title></svg><select><option>Albania</option></select><noscript><p>Static contents</p></noscript>tail</body></html>',
@@ -97,36 +104,37 @@ class ExtractLeadTests(SurveyCase):
         self.assertNotIn('heading', segs[1])
         self.assertEqual(links, [('a b.pdf','the instruction manual')])
         self.assertEqual(facts, {'kind':'html','title':'B90','document_hints':[]})
-        self.assertEqual([h['feature'] for h in s.candidates({'id':'x','product_id':'p'}, segs)], ['tls'])
+        self.assertEqual([h['feature'] for h in candidates({'id':'x','product_id':'p'}, segs)], ['tls'])
 
     def test_pdf_pages_metadata_and_bookmarks(self):
         body = tiny_pdf(['Device overview', '', 'DNP3 Secure Authentication SAv5 is optional'], bookmark=('DNP3 settings', 2))
-        segs, links, facts = s.parse(body, {'Content-Type':'application/pdf'})
+        segs, links, facts = parse(body, {'Content-Type':'application/pdf'})
         self.assertEqual([x['location'] for x in segs], ['pdf-page:1','pdf-page:2','pdf-page:3'])
         self.assertEqual((facts['kind'], facts['pages'], facts['empty_pages'], facts['encrypted'], facts['page_errors']), ('pdf', 3, 1, False, []))
         self.assertEqual((facts['title'], facts['pdf_created']), ('Test Relay Manual', 'D:20260102030405Z'))
         self.assertEqual(segs[2]['heading'], 'DNP3 settings')
         self.assertNotIn('heading', segs[0])
-        hit = s.candidates({'id':'x','product_id':'p'}, segs)[0]
+        hit = candidates({'id':'x','product_id':'p'}, segs)[0]
         self.assertEqual((hit['feature'], hit['location'], hit['heading']), ('dnp3_secure_authentication','pdf-page:3','DNP3 settings'))
-        self.assertEqual(s.parse(b'\xef\xbb\xbf\n' + body, {})[2]['pages'], 3)
+        self.assertEqual(parse(b'\xef\xbb\xbf\n' + body, {})[2]['pages'], 3)
 
     def test_unreadable_pdf_page_does_not_hide_the_others(self):
         with patch('pypdf.PageObject.extract_text', side_effect=['TLS on page one', RuntimeError('bad font'), 'three']):
-            segs, _, facts = s.parse(tiny_pdf(['a','b','c']), {})
+            segs, _, facts = parse(tiny_pdf(['a','b','c']), {})
         self.assertEqual([x['text'] for x in segs], ['TLS on page one','','three'])
         self.assertEqual(facts['page_errors'], [{'location':'pdf-page:2','error':'RuntimeError: bad font'}])
 
     def test_text_hash_ignores_markup_only_changes(self):
-        a = s.parse(b'<script>var nonce="1"</script><div class="x1"><p>TLS is  supported.</p></div>', {'Content-Type':'text/html'})[0]
-        b = s.parse(b'<script>var nonce="2"</script><div class="x2"><p>TLS is supported.</p></div><!-- t=9 -->', {'Content-Type':'text/html'})[0]
-        c = s.parse(b'<p>TLS is not supported.</p>', {'Content-Type':'text/html'})[0]
-        self.assertEqual(s.text_digest(a), s.text_digest(b))
-        self.assertNotEqual(s.text_digest(a), s.text_digest(c))
+        a = parse(b'<script>var nonce="1"</script><div class="x1"><p>TLS is  supported.</p></div>', {'Content-Type':'text/html'})[0]
+        b = parse(b'<script>var nonce="2"</script><div class="x2"><p>TLS is supported.</p></div><!-- t=9 -->', {'Content-Type':'text/html'})[0]
+        c = parse(b'<p>TLS is not supported.</p>', {'Content-Type':'text/html'})[0]
+        self.assertEqual(text_digest(a), text_digest(b))
+        self.assertNotEqual(text_digest(a), text_digest(c))
 
     def test_lead_records_matched_terms_and_type(self):
-        hits = {h['feature']: h for h in s.candidates({'id':'x','product_id':'p'}, [{'location':'pdf-page:1',
-            'text':'The relay supports TLS 1.2 and tls 1.2; SSL is disabled. File transfer uses SFTP. Use a VPN. Data is sent in clear text.'}])}
+        hits = {h['feature']: h for h in candidates({'id':'x','product_id':'p'}, [{'location':'pdf-page:1',
+            'text':'The relay supports TLS 1.2 and tls 1.2; SSL is disabled. File transfer uses SFTP. Use a VPN. Data '
+                   'is sent in clear text.'}])}
         self.assertEqual(hits['tls']['matched'], ['TLS 1.2', 'SSL'])
         self.assertEqual((hits['tls']['match_count'], hits['tls']['lead_type']), (3, 'capability'))
         self.assertEqual((hits['sftp']['matched'], hits['sftp']['lead_type']), (['SFTP'], 'related'))
@@ -138,19 +146,19 @@ class ExtractLeadTests(SurveyCase):
     def test_lead_context_keeps_whole_sentences(self):
         filler = ' '.join(f'Sentence number {n} describes an unrelated setting of the device.' for n in range(40))
         text = filler + ' The outstation supports TLS for the DNP3 link. ' + filler
-        hit = s.candidates({'id':'x','product_id':'p'}, [{'location':'pdf-page:1','text':text}])[0]
+        hit = candidates({'id':'x','product_id':'p'}, [{'location':'pdf-page:1','text':text}])[0]
         self.assertIn('The outstation supports TLS for the DNP3 link.', hit['context'])
         self.assertTrue(hit['context'].startswith('Sentence number'))
         self.assertTrue(hit['context'].endswith('of the device.'))
         self.assertLess(len(hit['context']), 1200)
         self.assertNotIn('context_before', hit)
         unbroken = 'x' * 900 + ' TLS ' + 'y' * 900
-        self.assertRegex(s.candidates({'id':'x','product_id':'p'}, [{'location':'pdf-page:1','text':unbroken}])[0]['context'], r'^\[\.\.\.\] .*TLS.* \[\.\.\.\]$')
+        self.assertRegex(candidates({'id':'x','product_id':'p'}, [{'location':'pdf-page:1','text':unbroken}])[0]['context'], r'^\[\.\.\.\] .*TLS.* \[\.\.\.\]$')
 
     def test_html_lead_carries_its_neighbouring_blocks(self):
         segs = [{'location':f'html-block:{i+1}','text':t} for i, t in enumerate(
             ['Communications', 'Supported protocols', 'CIP Security', 'lets devices authenticate each other.', 'Requires firmware 33 or later.', 'Ordering'])]
-        hit = next(h for h in s.candidates({'id':'x','product_id':'p'}, segs) if h['feature'] == 'cip_security')
+        hit = next(h for h in candidates({'id':'x','product_id':'p'}, segs) if h['feature'] == 'cip_security')
         self.assertEqual((hit['location'], hit['context']), ('html-block:3', 'CIP Security'))
         self.assertEqual(hit['context_before'], ['Communications', 'Supported protocols'])
         self.assertEqual(hit['context_after'], ['lets devices authenticate each other.', 'Requires firmware 33 or later.'])
@@ -159,44 +167,44 @@ class ExtractLeadTests(SurveyCase):
         body = (b'<h2 class="title"><div style="display: inline;">CIP Security</div></h2><div class="p"><div style="display:inline">'
                 b'<span class="ph"><div style="display: inline;">CIP Security<span class="tm">&trade;</span></div></span> lets '
                 b'<div style="DISPLAY: inline-block">CIP</div>-connected devices authenticate each other.</div></div><div>Next block<p>unclosed<div>inner</div></div>tail')
-        segs = s.parse(body, {'Content-Type':'text/html'})[0]
+        segs = parse(body, {'Content-Type':'text/html'})[0]
         self.assertEqual([x['text'] for x in segs], ['CIP Security', 'CIP Security\u2122 lets CIP-connected devices authenticate each other.', 'Next block', 'unclosed', 'inner', 'tail'])
         self.assertEqual(segs[1]['heading'], 'CIP Security')
-        self.assertEqual([h['feature'] for h in s.candidates({'id':'x','product_id':'p'}, segs)], ['cip_security', 'cip_security', 'authentication'])
+        self.assertEqual([h['feature'] for h in candidates({'id':'x','product_id':'p'}, segs)], ['cip_security', 'cip_security', 'authentication'])
 
     def test_document_hints_are_short_snippets_around_revision_and_date_markers(self):
         pdf = [{'location':f'pdf-page:{n}','text':f'{n} Body text. SEL White Paper LWP0018-01 Date Code 20160111'} for n in (1, 2)]
-        self.assertEqual(s.hints(pdf), ['1 Body text. SEL White Paper LWP0018-01 Date Code 20160111'])
+        self.assertEqual(hints(pdf), ['1 Body text. SEL White Paper LWP0018-01 Date Code 20160111'])
         html = [{'location':'html-block:1','text':'Publication Date: |'}, {'location':'html-block:2','text':'2024-07-09'},
                 {'location':'html-block:3','text':'Current Version: | V1.2'}, {'location':'html-block:4','text':'\u00a9 Siemens 2025'},
                 {'location':'html-block:5','text':'protected under applicable copyright laws'}]
-        self.assertEqual(s.hints(html), ['Publication Date: | 2024-07-09', 'Current Version: | V1.2', '\u00a9 Siemens 2025'])
-        self.assertEqual(s.parse(b'<p>Revision B, 2020</p>', {'Content-Type':'text/html'})[2]['document_hints'], ['Revision B, 2020'])
+        self.assertEqual(hints(html), ['Publication Date: | 2024-07-09', 'Current Version: | V1.2', '\u00a9 Siemens 2025'])
+        self.assertEqual(parse(b'<p>Revision B, 2020</p>', {'Content-Type':'text/html'})[2]['document_hints'], ['Revision B, 2020'])
 
     def test_statement_leads_live_in_their_own_file(self):
         with tempfile.TemporaryDirectory() as td:
             p, calls = Path(td), []
             pages = {'https://vendor.test/a': b'<p>DNP3 data is sent in clear text.</p><p>TLS is optional. Use a VPN.</p>'}
             cfg = self.config(p, [{'id':'p','seeds':list(pages)}])
-            with self.site(pages, calls): s.crawl(cfg, p/'run', p/'cache')
-            self.assertEqual([h['feature'] for h in s.load(p/'run'/'candidates.json')], ['tls','vpn'])
-            self.assertEqual([(h['feature'], h['matched']) for h in s.load(p/'run'/'statement_leads.json')],
+            with self.site(pages, calls): crawl(cfg, p/'run', p/'cache')
+            self.assertEqual([h['feature'] for h in load(p/'run'/'candidates.json')], ['tls','vpn'])
+            self.assertEqual([(h['feature'], h['matched']) for h in load(p/'run'/'statement_leads.json')],
                              [('plaintext_statement', ['clear text']), ('requirement_statement', ['TLS is optional'])])
-            manifest = s.load(p/'run'/'manifest.json')
+            manifest = load(p/'run'/'manifest.json')
             self.assertEqual((manifest['candidate_count'], manifest['lead_counts']), (2, {'statement':2,'capability':1,'related':1}))
-            s.replay(p/'run', p/'cache', p/'replay')
-            s.report(p/'run', p/'run'/'review_template.json', p/'report')
-            self.assertEqual(s.load(p/'report'/'candidate_counts.json')['p'], {'capability':{'total':1,'by_group':{'tls':1}},
+            replay(p/'run', p/'cache', p/'replay')
+            report(p/'run', p/'run'/'review_template.json', p/'report')
+            self.assertEqual(load(p/'report'/'candidate_counts.json')['p'], {'capability':{'total':1,'by_group':{'tls':1}},
                 'related':{'total':1,'by_group':{'vpn':1}}, 'statement':{'total':2,'by_group':{'plaintext_statement':1,'requirement_statement':1}},
                 'profile':{'total':0,'by_group':{}}})
-            notes = s.load(p/'run'/'source_notes_template.json')
+            notes = load(p/'run'/'source_notes_template.json')
             self.assertEqual([(n['url'], n['doc_type'], n['doc_type_suggested'], n['document_id'], n['revision'], n['document_date']) for n in notes],
                              [('https://vendor.test/a','','product_page','','','')])
-            self.assertEqual(s.load(p/'run'/'review_template.json')[0]['interface_class'], '')
+            self.assertEqual(load(p/'run'/'review_template.json')[0]['interface_class'], '')
 
     def test_device_profile_section_is_split_into_items_with_marked_options(self):
-        segs = s.parse(tiny_pdf(self.PROFILE), {})[0]
-        items = s.profile_items(segs)
+        segs = parse(tiny_pdf(self.PROFILE), {})[0]
+        items = profile_items(segs)
         self.assertEqual([(i['item'], i['title'], i['location'], i['marked']) for i in items], [
             ('1.12.1', 'DNP3 device support for secure authentication', 'pdf-page:3', ['Fixed at Version 5']),
             ('1.12.2', 'Maximum number of users', 'pdf-page:3', ['Fixed at 1']),
@@ -205,40 +213,42 @@ class ExtractLeadTests(SurveyCase):
         self.assertIn('Configurable, range __ to __', items[1]['text'])
         self.assertEqual({i['marks'] for i in items}, {'heuristic'})
         manual = tiny_pdf(['Relay manual', ['1.12 SECURITY PARAMETERS Capabilities', '1.12.1 DNP3 device support for secure authentication:', 'X  Fixed at Version 5']])
-        self.assertEqual(s.profile_items(s.parse(manual, {})[0]), [])
-        self.assertEqual(s.profile_items([{'location':'html-block:1','text':'DNP3 Device Profile'},{'location':'html-block:2','text':'no section here'}]), [])
+        self.assertEqual(profile_items(parse(manual, {})[0]), [])
+        self.assertEqual(profile_items([{'location':'html-block:1','text':'DNP3 Device Profile'},{'location':'html-block:2','text':'no section here'}]), [])
 
     def test_device_profile_items_become_leads_and_a_report_section(self):
         with tempfile.TemporaryDirectory() as td:
             p, calls = Path(td), []
             pages = {'https://vendor.test/profile.pdf': tiny_pdf(self.PROFILE), 'https://vendor.test/page': b'<p>TLS</p>'}
             cfg = self.config(p, [{'id':'x1','seeds':['https://vendor.test/profile.pdf']},{'id':'x2','seeds':['https://vendor.test/page']}])
-            with self.site(pages, calls): s.crawl(cfg, p/'run', p/'cache')
-            source, other = s.load(p/'run'/'sources.json')
+            with self.site(pages, calls): crawl(cfg, p/'run', p/'cache')
+            source, other = load(p/'run'/'sources.json')
             self.assertEqual((source['profile_items'], source['doc_type_suggested'], other['doc_type_suggested']), (3, 'device_profile', 'product_page'))
             self.assertNotIn('profile_items', other)
-            self.assertEqual(len(s.load(p/'run'/(source['id']+'.profile.json'))), 3)
+            self.assertEqual(len(load(p/'run'/(source['id']+'.profile.json'))), 3)
             self.assertFalse((p/'run'/(other['id']+'.profile.json')).exists())
-            leads = [h for h in s.load(p/'run'/'candidates.json') if h['lead_type'] == 'profile']
+            leads = [h for h in load(p/'run'/'candidates.json') if h['lead_type'] == 'profile']
             self.assertEqual([(h['profile_item'], h['feature'], h['matched'], h['location']) for h in leads], [
                 ('1.12.1', 'dnp3_secure_authentication', ['Fixed at Version 5'], 'pdf-page:3'),
                 ('1.12.2', 'dnp3_secure_authentication', ['Fixed at 1'], 'pdf-page:3'),
                 ('1.12.12', 'tls', ['Not relevant - TLS is not used'], 'pdf-page:4')])
             self.assertEqual(len({h['id'] for h in leads}), 3)
-            statements = s.load(p/'run'/'statement_leads.json')
+            statements = load(p/'run'/'statement_leads.json')
             self.assertEqual([(h['feature'], h['location'], h['matched']) for h in statements], [('non_support_statement', 'pdf-page:4', ['TLS is not used'])])
-            self.assertEqual(s.load(p/'run'/'manifest.json')['lead_counts']['profile'], 3)
-            s.replay(p/'run', p/'cache', p/'replay')
-            s.report(p/'run', p/'run'/'review_template.json', p/'report')
+            self.assertEqual(load(p/'run'/'manifest.json')['lead_counts']['profile'], 3)
+            replay(p/'run', p/'cache', p/'replay')
+            report(p/'run', p/'run'/'review_template.json', p/'report')
             text = (p/'report'/'REPORT.md').read_text(encoding='utf-8')
             for expected in ['## Device profile statements', 'nothing in this table has been reviewed',
-                             '| X1 | S1 | 1.12.1 | DNP3 device support for secure authentication | Fixed at Version 5 | pdf-page:3 |',
-                             '| X1 | S1 | 1.12.12 | Change cipher request timeout | Not relevant - TLS is not used | pdf-page:4 |',
+                             '| X1 | S1 | 1.12.1 | DNP3 device support for secure authentication | Fixed at Version 5 | '
+                             'pdf-page:3 |',
+                             '| X1 | S1 | 1.12.12 | Change cipher request timeout | Not relevant - TLS is not used | '
+                             'pdf-page:4 |',
                              '| suggested: device profile |', '| suggested: product page |']:
                 self.assertIn(expected, text)
-            self.assertEqual(s.load(p/'report'/'candidate_counts.json')['x1']['profile'], {'total':3,'by_group':{'dnp3_secure_authentication':2,'tls':1}})
-            s.rebuild(p/'run', p/'cache', p/'rebuilt')
-            self.assertEqual(len(s.load(p/'rebuilt'/(source['id']+'.profile.json'))), 3)
+            self.assertEqual(load(p/'report'/'candidate_counts.json')['x1']['profile'], {'total':3,'by_group':{'dnp3_secure_authentication':2,'tls':1}})
+            rebuild(p/'run', p/'cache', p/'rebuilt')
+            self.assertEqual(len(load(p/'rebuilt'/(source['id']+'.profile.json'))), 3)
 
     def test_document_type_is_suggested_from_title_url_and_opening_text(self):
         html, pdf = 'html-block:1', 'pdf-page:1'
@@ -253,8 +263,8 @@ class ExtractLeadTests(SurveyCase):
                 ('Multilin B90 | GE Vernova', 'https://v.test/multilin-b90', html, 'Bus Protection System', 'product_page'),
                 ('', 'https://v.test/x.pdf', pdf, 'Quarterly results', '')]:
             with self.subTest(title=title):
-                self.assertEqual(s.suggest_doc_type(title, url, [{'location':where,'text':opening}]), expected)
-        self.assertIn('device_profile', s.DOC_TYPES)
+                self.assertEqual(suggest_doc_type(title, url, [{'location':where,'text':opening}]), expected)
+        self.assertIn('device_profile', DOC_TYPES)
 
     def test_integrity_default_and_requirement_wording_are_leads(self):
         table = {
@@ -272,7 +282,7 @@ class ExtractLeadTests(SurveyCase):
         }
         for text, expected in table.items():
             with self.subTest(text=text): self.assertEqual(self.leads(text), expected)
-        self.assertEqual({s.lead_type(g) for g in ('default_statement', 'requirement_statement')}, {'statement'})
+        self.assertEqual({lead_type(g) for g in ('default_statement', 'requirement_statement')}, {'statement'})
 
 
 if __name__ == '__main__':

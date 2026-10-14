@@ -19,21 +19,26 @@ def worksheet(run, dest):
         found.setdefault((h['product_id'], h['feature']), []).append(h)
 
     def places(hits):
-        shown = '; '.join(f"{refs[h['source_id']]} {h['location']} [{', '.join(h['matched'][:3]) or h.get('profile_item', '')}]" for h in hits[:8])
+        shown = '; '.join(f"{refs[h['source_id']]} {h['location']} "
+                          f"[{', '.join(h['matched'][:3]) or h.get('profile_item', '')}]" for h in hits[:8])
         return shown + (f' and {len(hits) - 8} more' if len(hits) > 8 else '')
 
     text = ['# Review worksheet', '',
-            'Where each term occurs, per product and capability. A lead is a place to read, not a finding, and "no lead" in a source is not a statement that the device lacks the capability. Source references are local to this worksheet.', '']
+            'Where each term occurs, per product and capability. A lead is a place to read, not a finding, and "no '
+            'lead" in a source is not a statement that the device lacks the capability. Source references are local to '
+            'this worksheet.', '']
     hints = {}
     for p in cfg['products']:
         mine = [s for s in sources if s['product_id'] == p['id']]
         read = [s for s in mine if s['status'] == 'extracted']
         text += ['', f"## {p.get('model') or p['id']}", '',
-                 f"{p.get('vendor', '')}; {p.get('category', '')}; lifecycle {life_words(p.get('lifecycle'))}; id `{p['id']}`", '']
+                 f"{p.get('vendor', '')}; {p.get('category', '')}; lifecycle {life_words(p.get('lifecycle'))}; id "
+                 f"`{p['id']}`", '']
         proof = p.get('lifecycle_evidence')
         for e in proof if isinstance(proof, list) else []:
             said = '"' + e['quote'] + '"' if e.get('quote') else e.get('basis') or 'vendor source'
-            text.append(f"- lifecycle evidence, {e.get('stated_date') or (e.get('retrieved_at') or '')[:10]}: {said} <{e.get('url', '')}>")
+            text.append(f"- lifecycle evidence, {e.get('stated_date') or (e.get('retrieved_at') or '')[:10]}: {said} "
+                        f"<{e.get('url', '')}>")
         text += [f"- {refs.get(s['id'], '--')} {s['status']}"
                  + (f", {s['doc_type_suggested'].replace('_', ' ')} (suggested)" if s.get('doc_type_suggested') else '')
                  + (f", {s['pages']} PDF pages" if s.get('pages') else '') + (f": {s['error']}" if s.get('error') else '')

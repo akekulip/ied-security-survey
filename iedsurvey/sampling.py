@@ -33,7 +33,8 @@ def sample(inventory_path, dest, per_stratum=None, seed=0, census=False):
             # Each stratum has its own generator, so adding a vendor or a category never changes another stratum's draw.
             rng = random.Random(f'{seed}:' + '|'.join(key))
             chosen += members if len(members) <= per_stratum else sorted(rng.sample(members, per_stratum), key=lambda e: e['id'])
-        how = (f"Stratified random sample: up to {per_stratum} devices per vendor, category and lifecycle stratum, seed {seed}, "
+        how = (f"Stratified random sample: up to {per_stratum} devices per vendor, category and lifecycle stratum, seed "
+               f"{seed}, "
                f"drawn from {len(kept)} classified catalogue entries; strata with fewer entries are taken whole. "
                "A sample of catalogue entries, not of installed devices.")
     picked = Counter((e['vendor'], e['category'], e['lifecycle']) for e in chosen if e['included'])
@@ -49,7 +50,8 @@ def sample(inventory_path, dest, per_stratum=None, seed=0, census=False):
             p.update(spec.get('crawl', {}))
         products.append(p)
     dump(dest, {'title': inv['spec'].get('title', 'IED security documentation survey'),
-                'sampling': how + f" Inventory of {listed[:10]}; categories and lifecycle come from the vendors' own catalogues and pages.",
+                'sampling': how + f" Inventory of {listed[:10]}; categories and lifecycle come from the vendors' own "
+                                  f"catalogues and pages.",
                 # What "legacy" and each lifecycle group mean, fixed in the config before the crawl and so before any count.
                 **({'definitions': inv['spec']['definitions']} if inv['spec'].get('definitions') else {}),
                 'seed': seed, 'per_stratum': per_stratum, 'census': census,

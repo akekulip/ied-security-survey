@@ -9,11 +9,12 @@ reviewed row that quotes its source. The modules, in the order the work flows:
     extract              bytes to located text
     leads                where the terms occur
     crawl, runs          one config into one run; verify, replay, rebuild, recheck
-    inventory, sampling  the vendor catalogues, and the sample drawn from them
+    catalogue            the vendors' catalogues as listed: sitemaps and product lists
+    inventory, sampling  every catalogue device placed by rule, and the sample drawn from them
     review, devices      what a reviewer may claim, and what it takes
     worksheet            what a reviewer reads
     findings             a run and its review, resolved once for everything the report shows
-    tables, glance, charts, report  the data files, the charts, and REPORT.md
+    tables, report       the data files and REPORT.md
     cli                  the commands
 """
 from .vocabulary import EXTRACTION, VERSION
