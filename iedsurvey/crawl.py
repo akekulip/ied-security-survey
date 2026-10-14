@@ -110,7 +110,8 @@ def finish(out, cfg, config_sha256, sources, hits, warnings, **extra):
          [{'product_id': p['id'], 'manufacturer': p.get('vendor', ''), 'model': p.get('model', ''), 'identity_level': '',
            'lifecycle_status': p['lifecycle'] if p.get('lifecycle') in LIFECYCLES else 'unknown',
            'vendor_label': p.get('vendor_label', ''), 'lifecycle_evidence': p.get('lifecycle_evidence', []),
-           'release_date': '', 'release_evidence': [], 'note': '', 'noted_by': '', 'noted_at': ''} for p in cfg['products']])
+           'release_date': '', 'release_evidence': [], 'dnp3': '', 'dnp3_note': '', 'note': '', 'noted_by': '', 'noted_at': ''}
+          for p in cfg['products']])
     # What a document says about its own number, revision and date is for a person to read off, not for a regex.
     dump(out / 'source_notes_template.json',
          [{'source_id': s['id'], 'product_id': s['product_id'], 'url': s['final_url'], 'title': s.get('title', ''),

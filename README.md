@@ -103,7 +103,7 @@ cp $DATA/runs/sample/device_notes_template.json $S/device_notes.json
 
 **`source_notes.json`**: per document, its `doc_type` (`device_profile`, `conformance_statement`, `security_guide`, `manual`, `datasheet`, `product_page`, `advisory`, `other`) and `coverage` (`complete` or `partial`), plus its own number, revision and date where it gives them. `complete_document_silent` is accepted only for a complete manual, device profile or conformance statement.
 
-**`device_notes.json`**: per device, `identity_level` (`family`, `model`, `catalogue_number`) and, to change a lifecycle status, dated evidence from the vendor.
+**`device_notes.json`**: per device, `identity_level` (`family`, `model`, `catalogue_number`) and, to change a lifecycle status, dated evidence from the vendor. A device counts as a DNP3 device when its own retrieved documents name DNP3. Set `dnp3` to `not_established` when they name it only for other products or software, or to `supported` when the search missed it; either needs a `dnp3_note` saying why.
 
 ## 5. Report
 
@@ -113,9 +113,10 @@ python survey.py report --run $DATA/runs/sample --reviews $S/reviews.json --sour
 
 The report refuses a row that breaks a rule and names the device and capability, for example a quote that is not at the cited location, or a hash that does not match the run. It writes:
 
-- `REPORT.md`;
+- `REPORT.md`, which opens with the DNP3 table: the devices whose documents name DNP3, the strongest DNP3 protection documented for each (TLS, Secure Authentication, a separate device, or none: plaintext), counted for current and legacy devices, and listed with vendor, model, type and a link to the source;
 - `findings_table.csv`, one line per device and interface;
 - `devices.csv`, with lifecycle evidence;
+- `dnp3.csv`, the DNP3 table one line per device;
 - `findings.csv`, `evidence_index.json` and `sources.json`.
 
 `--require-evidence` makes a verbatim quote mandatory for every result.

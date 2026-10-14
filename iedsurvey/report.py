@@ -8,7 +8,7 @@ from .vocabulary import CAPABILITIES, INTERFACE_CLASSES, NOT_ASSESSED, PROPERTIE
 from .store import load
 from .text import clip
 from .review import facts, named
-from .findings import COLUMNS, POSITIVE, Findings, flat, md, words
+from .findings import COLUMNS, DNP3_KINDS, POSITIVE, Findings, flat, md, words
 from .tables import write_tables
 
 
@@ -18,6 +18,7 @@ WORDING = (('supported', 'supported'), ('conditional', 'conditional'), ('gateway
            ('conflict', 'unknown: sources conflict'), ('other', 'unknown: other interface only'),
            ('unknown', 'unknown'), (None, 'not reviewed'))
 SETTLED, DOUBTS = ('supported', 'conditional', 'gateway', 'explicitly_unsupported'), ('silent', 'conflict', 'other', 'unknown')
+TYPES = {'protective_relay': 'protective relay', 'controller_rtu': 'controller / RTU', 'plc': 'PLC', 'meter': 'meter'}
 
 
 def opening(found):
@@ -64,6 +65,62 @@ def definitions(found):
             + ['', f'Legacy under this definition: {len(found.legacy_devices)} of {count} devices in this run. '
                    f'Lifecycle status rests on dated vendor evidence for {found.recorded} devices and is unknown for '
                    f'{count - found.recorded}.'])
+
+
+def dnp3(found):
+    """The survey's question: which devices document DNP3 security, of what kind, and which none, by lifecycle group."""
+    members, products = found.dnp3, found.products
+    if not members:
+        return ['', '## DNP3 security', '', 'No retrieved document of a device in this run names DNP3.']
+
+    def group(pid):
+        status = found.devices[pid]['lifecycle_status']
+        return ('All devices' if not found.grouped else 'Currently sold' if status == 'currently_supported'
+                else 'Legacy' if status in found.legacy else 'Lifecycle unknown' if status == 'unknown'
+                else 'Discontinued, not legacy')
+
+    order = ('Currently sold', 'Legacy', 'Discontinued, not legacy', 'Lifecycle unknown') if found.grouped else ('All devices',)
+    columns = [c for c in order if c in ('Currently sold', 'Legacy', 'All devices') or any(group(p) == c for p in members)]
+    kinds = {pid: found.dnp3_security(pid) for pid in members}
+    total, tally = Counter(map(group, members)), Counter((kinds[p][0], group(p)) for p in members)
+    share = lambda n, of: f'{n} of {of} ({100 * n / of:.0f}%)' if of else '-'
+    left_out = [pid for pid in products if found.dnp3_sources.get(pid) and pid not in members]
+    text = (['', '## DNP3 security', '',
+             'Devices whose own retrieved documents name DNP3, by the strongest DNP3 protection the review establishes '
+             'for them. "Plaintext" means that no DNP3 security is documented: DNP3 then travels readable unless '
+             'something outside the device, such as a VPN or an encrypting radio, protects it. DNP3 Secure '
+             'Authentication authenticates messages and does not encrypt them. These are documented capabilities of '
+             'sampled catalogue entries, not the settings of installed devices or shares of real traffic. A device '
+             'counts as plaintext when the documents retrieved for it name no DNP3 security; a document the crawl did '
+             'not retrieve may, so the plaintext count is an upper bound and the others are lower bounds.', '']
+            + ([f"Left out by the device notes, because DNP3 is named only in documents about other products: "
+                f"{', '.join(found.model(p) for p in left_out)}.", ''] if left_out else [])
+            + ['| DNP3 security documented | ' + ' | '.join(columns) + ' | Total |', '|---|' + '---|' * (len(columns) + 1)])
+    for key, label in DNP3_KINDS:
+        counts = [tally[key, c] for c in columns]
+        if sum(counts) or key in ('tls', 'authenticated', 'none'):
+            text.append(f'| {label} | ' + ' | '.join(share(n, total[c]) for n, c in zip(counts, columns))
+                        + f' | {share(sum(counts), len(members))} |')
+    text += ['| Devices whose documents name DNP3 | ' + ' | '.join(str(total[c]) for c in columns) + f' | {len(members)} |', '']
+    legacy = ['Legacy'] * found.grouped
+    text += ['| ' + ' | '.join(legacy + ['Lifecycle', 'Vendor', 'Model', 'Type', 'DNP3 security', 'Source']) + ' |',
+             '|---|---|---|---|---|---|' + '---|' * len(legacy)]
+    labels = dict(DNP3_KINDS)
+    ranked = sorted(members, key=lambda p: ([k for k, _ in DNP3_KINDS].index(kinds[p][0]), order.index(group(p)),
+                                            products[p].get('vendor', ''), str(products[p].get('model') or p)))
+    for pid in ranked:
+        kind, rows = kinds[pid]
+        where = found.dnp3_source(pid, rows)
+        links = '; '.join(f'[{ref}{" " + loc if loc else ""}]({url})' for ref, loc, url, _ in where[:3])
+        links += f' (+{len(where) - 3} more)' if len(where) > 3 else ''
+        category = products[pid].get('category') or ''
+        # A protection that needs a licence, a firmware version or a module says so.
+        needs = '; '.join(dict.fromkeys(flat(r['conditions']) for r in rows if r['status'] == 'conditional' and r.get('conditions')))
+        text.append('| ' + ''.join(f'{found.legacy_word(pid)} | ' for _ in legacy)
+                    + f"{found.lifecycle(pid)} | {md(products[pid].get('vendor', ''))} | {found.model(pid)} | "
+                      f"{md(TYPES.get(category, category.replace('_', ' ')))} | {labels[kind]}"
+                      f"{md(' (conditional: ' + needs + ')') if needs else ''} | {md(links)} |")
+    return text
 
 
 def devices(found):
@@ -342,14 +399,15 @@ def closing(found):
              f'Unknown because a complete document is silent: {len(found.searched)} rows, each checked to cite only '
              f'complete documents in which the search found no lead for that capability.', '',
              'See findings.csv for source URLs, hashes, interface, firmware and review provenance, and devices.csv for '
-             'lifecycle evidence. No population percentages are computed.']
+             'lifecycle evidence. The percentages in the DNP3 section are shares of the devices in this run, not of '
+             'installed devices or of traffic.']
             + ([f"Re-bound rows: {sum(bool(r.get('rebound')) for r in rows)} rows were written against an earlier fetch "
                 f"of the same documents and re-bound because the extracted text is unchanged; each row records the "
                 f"hashes."] if any(r.get('rebound') for r in rows) else []))
 
 
 # REPORT.md, top to bottom, after the opening and the definitions.
-SECTIONS = (devices, summary, interfaces, counts, matrix, defaults, evidence, reviewed_rows, unresolved, profiles, sources_read,
+SECTIONS = (dnp3, devices, summary, interfaces, counts, matrix, defaults, evidence, reviewed_rows, unresolved, profiles, sources_read,
             sources_missing, closing)
 
 

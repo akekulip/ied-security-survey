@@ -67,7 +67,8 @@ class ReportTests(SurveyCase):
                                        'conditions,Default,Activation,Deployment,Evidence,Review status,Sources')
             self.assertEqual(len(table), 3)
             self.assertIn('sha256:' + source['sha256'], table[1])
-            self.assertNotIn('%', text.replace('No population percentages', ''))
+            # Percentages appear only as shares of the run's DNP3 devices, in the DNP3 section.
+            self.assertNotIn('%', text[:text.index('## DNP3 security')] + text[text.index('## Devices'):])
             index = load(p/'report'/'evidence_index.json')
             self.assertEqual([(x['product_id'],x['feature'],x['location'],x['sha256'],x['about']) for x in index],
                              [('r1','tls','html-block:2',source['sha256'],about) for about in ('capability','conditions','activation')])
@@ -493,6 +494,69 @@ class ReportTests(SurveyCase):
             self.assertEqual([line.split(',')[5:7] for line in (p/'report'/'devices.csv').read_text(encoding='utf-8').splitlines()],
                              [['lifecycle_status', 'legacy'], ['discontinued_support_not_stated', 'yes'], ['currently_supported', 'no'], ['unknown', 'unknown']])
 
+
+    def test_dnp3_security_is_shown_by_lifecycle_group_with_vendor_model_type_and_source(self):
+        wide = dict(self.DEFINITIONS, legacy='Legacy means the vendor has discontinued the device.',
+                    legacy_statuses=['discontinued_supported', 'discontinued_support_not_stated', 'end_of_support'])
+        with tempfile.TemporaryDirectory() as td:
+            p = Path(td)
+            pages = {'https://vendor.test/tls': b'<p>DNP3 over TLS is supported on the master station link.</p>',
+                     'https://vendor.test/sa': b'<p>DNP3 Secure Authentication version 5 is supported by the outstation.</p>',
+                     'https://vendor.test/plain': b'<p>Protocols: DNP3 serial and DNP3 LAN/WAN, Modbus.</p>',
+                     'https://vendor.test/old': b'<p>The relay speaks DNP3 over serial links.</p>',
+                     'https://vendor.test/family': b'<p>Other members of this family offer DNP3 gateways.</p>',
+                     'https://vendor.test/modbus': b'<p>Modbus RTU only.</p>'}
+            listed = [{'url': 'https://vendor.test/catalogue', 'retrieved_at': '2026-10-13T00:00:00+00:00', 'basis': 'listed in the vendor catalogue'}]
+            gone = [{'url': 'https://vendor.test/old', 'retrieved_at': '2026-10-13T00:00:00+00:00', 'quote': 'Manufacturing of this relay has ended.'}]
+            current = {'lifecycle': 'currently_supported', 'lifecycle_evidence': listed}
+            cfg = self.config(p, [dict(current, id=k, seeds=[f'https://vendor.test/{k}']) for k in ('tls', 'sa', 'plain', 'family', 'modbus')]
+                              + [{'id': 'old', 'lifecycle': 'discontinued_support_not_stated', 'lifecycle_evidence': gone, 'seeds': ['https://vendor.test/old']}],
+                              definitions=wide)
+            with self.site(pages, []): crawl(cfg, p/'run', p/'cache')
+            src = {x['product_id']: x for x in load(p/'run'/'sources.json')}
+            def row(pid, feature, interface, protocol, quote):
+                s = src[pid]
+                return {'product_id': pid, 'feature': feature, 'status': 'supported', 'source_ids': [s['id']], 'source_hashes': {s['id']: s['sha256']},
+                        'location': 'html-block:1', 'protocol': protocol, 'interface': interface, 'interface_class': 'control_protocol',
+                        'firmware': 'not established', 'implementation': 'built in', 'evidence': [{'source_id': s['id'], 'location': 'html-block:1', 'quote': quote}],
+                        'rationale': 'stated', 'reviewer': 'A. Reviewer', 'reviewed_at': '2026-10-14'}
+            dump(p/'reviews.json', [row('tls', 'tls', 'DNP3 to SCADA master', 'DNP3 over TLS', 'DNP3 over TLS is supported on the master station link.'),
+                                    row('sa', 'dnp3_secure_authentication', 'DNP3 outstation', 'DNP3-SAv5',
+                                        'DNP3 Secure Authentication version 5 is supported by the outstation.')])
+            notes = load(p/'run'/'device_notes_template.json')
+            for n in notes:
+                if n['product_id'] == 'family':
+                    n.update(dnp3='not_established', dnp3_note='The page names DNP3 only for other products of the family.')
+            dump(p/'notes.json', notes)
+            # A correction needs a reason, and only the three values exist.
+            for bad in ({'dnp3': 'maybe', 'dnp3_note': 'x'}, {'dnp3': 'not_established', 'dnp3_note': ''}):
+                dump(p/'bad.json', [dict(notes[0], **bad)])
+                with self.subTest(bad=bad), self.assertRaisesRegex(ValueError, 'dnp3'):
+                    report(p/'run', p/'reviews.json', p/'bad_report', device_notes=p/'bad.json')
+            report(p/'run', p/'reviews.json', p/'report', require_evidence=True, device_notes=p/'notes.json')
+            text = (p/'report'/'REPORT.md').read_text(encoding='utf-8')
+            section = text[text.index('## DNP3 security'):text.index('## Devices')]
+            for expected in [
+                'Left out by the device notes, because DNP3 is named only in documents about other products: FAMILY.',
+                '| DNP3 security documented | Currently sold | Legacy | Total |',
+                '| Encrypted: DNP3 over TLS or IPsec | 1 of 3 (33%) | 0 of 1 (0%) | 1 of 4 (25%) |',
+                '| Authenticated, not encrypted (e.g. DNP3 Secure Authentication) | 1 of 3 (33%) | 0 of 1 (0%) | 1 of 4 (25%) |',
+                '| No DNP3 security documented (plaintext) | 1 of 3 (33%) | 1 of 1 (100%) | 2 of 4 (50%) |',
+                '| Devices whose documents name DNP3 | 3 | 1 | 4 |',
+                '| Legacy | Lifecycle | Vendor | Model | Type | DNP3 security | Source |',
+                '| no | currently supported | v | TLS | relay | Encrypted: DNP3 over TLS or IPsec | [S1 html-block:1](https://vendor.test/tls) |',
+                '| no | currently supported | v | SA | relay | Authenticated, not encrypted (e.g. DNP3 Secure Authentication) | [S2 html-block:1](https://vendor.test/sa) |',
+                '| no | currently supported | v | PLAIN | relay | No DNP3 security documented (plaintext) | [S3](https://vendor.test/plain) |',
+                '| yes | discontinued, support not stated | v | OLD | relay | No DNP3 security documented (plaintext) | [S6](https://vendor.test/old) |']:
+                self.assertIn(expected, section)
+            # Devices whose documents never name DNP3, and those a note leaves out, are not counted at all.
+            self.assertNotIn('| MODBUS |', section)
+            self.assertNotIn('| FAMILY |', section)
+            lines = (p/'report'/'dnp3.csv').read_text(encoding='utf-8').splitlines()
+            self.assertEqual(lines[0], 'product_id,vendor,model,type,lifecycle_status,legacy,dnp3_security,dnp3_security_label,evidence_quote,'
+                                       'source_refs,source_locations,source_urls')
+            self.assertEqual(sorted((x.split(',')[0], x.split(',')[5], x.split(',')[6]) for x in lines[1:]),
+                             [('old', 'yes', 'none'), ('plain', 'no', 'none'), ('sa', 'no', 'authenticated'), ('tls', 'no', 'tls')])
 
 if __name__ == '__main__':
     unittest.main()

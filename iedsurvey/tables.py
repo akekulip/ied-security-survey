@@ -5,7 +5,7 @@ import json
 
 from .store import dump
 from .review import facts
-from .findings import CSV_COLUMNS
+from .findings import CSV_COLUMNS, DNP3_KINDS
 
 
 FINDING_FIELDS = ['product_id','vendor','model','category','lifecycle_status','feature','status','unknown_reason','protocol','interface',
@@ -70,6 +70,24 @@ def devices_csv(found, path):
                         d['release_date'], d['noted_by']])
 
 
+DNP3_FIELDS = ['product_id', 'vendor', 'model', 'type', 'lifecycle_status', 'legacy', 'dnp3_security', 'dnp3_security_label',
+               'evidence_quote', 'source_refs', 'source_locations', 'source_urls']
+
+
+def dnp3_csv(found, path):
+    """One line per DNP3 device: who it is, the DNP3 protection documented for it, and where to check."""
+    labels = dict(DNP3_KINDS)
+    with path.open('w', newline='', encoding='utf-8') as fp:
+        w = csv.writer(fp)
+        w.writerow(DNP3_FIELDS)
+        for pid in found.dnp3:
+            p, (kind, rows) = found.products[pid], found.dnp3_security(pid)
+            where = found.dnp3_source(pid, rows)
+            w.writerow([pid, p.get('vendor', ''), p.get('model') or pid, p.get('category', ''), found.devices[pid]['lifecycle_status'],
+                        found.legacy_word(pid), kind, labels[kind], where[0][3] if where else '',
+                        ' | '.join(x[0] for x in where), ' | '.join(x[1] for x in where), ' | '.join(x[2] for x in where)])
+
+
 def write_tables(found, dest):
     dump(dest / 'findings.json', found.rows)
     dump(dest / 'sources.json', found.sources)
@@ -79,3 +97,4 @@ def write_tables(found, dest):
     findings_csv(found, dest / 'findings.csv')
     interfaces_csv(found, dest / 'findings_table.csv')
     devices_csv(found, dest / 'devices.csv')
+    dnp3_csv(found, dest / 'dnp3.csv')

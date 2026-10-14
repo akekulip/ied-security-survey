@@ -3,6 +3,7 @@
 Everything here is checked before a single output file is written, so a refused review leaves no half-made report.
 """
 
+import re
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -26,6 +27,15 @@ MARK = {'supported': 'S', 'conditional': 'C', 'gateway': 'G', 'explicitly_unsupp
 # The most favourable documented result wins when a capability has several on one kind of interface.
 RANK = ('supported', 'conditional', 'gateway', 'conflict', 'explicitly_unsupported', 'silent')
 POSITIVE = ('supported', 'conditional')
+# DNP3 named in a document. It marks a device as a DNP3 device; it is not a finding about the device's security.
+DNP3 = re.compile(r'\bDNP\s?3i?\b|\bDNP\b|IEEE\s*(?:Std\s*)?1815', re.I)
+# A DNP3 device's own protection, strongest first. Plaintext means that no DNP3 security is documented.
+DNP3_KINDS = (('tls', 'Encrypted: DNP3 over TLS or IPsec'),
+              ('authenticated', 'Authenticated, not encrypted (e.g. DNP3 Secure Authentication)'),
+              ('tunnel', 'Encryption documented for its control protocols, DNP3 not named'),
+              ('external', 'Only through a separate encrypting device'),
+              ('denied', 'Vendor states DNP3 is not protected'),
+              ('none', 'No DNP3 security documented (plaintext)'))
 
 
 def md(x):
@@ -74,6 +84,7 @@ class Findings:
         self._resolve_documents(source_notes)
         self._count_leads()
         self._check_silence()
+        self._find_dnp3()
 
         self.claims = [r for r in rows if grounded(r)]
         self.stated = [r for r in rows if r['status'] in POSITIVE]
@@ -91,6 +102,10 @@ class Findings:
         self.grouped = bool(self.legacy)
         self.totals = Counter(s['status'] for s in self.sources)
         self.legacy_devices = [pid for pid, d in self.devices.items() if d['lifecycle_status'] in self.legacy]
+        # A DNP3 device is one whose own documents name DNP3, unless a device note says the mention is about other
+        # products. A note may also add a device whose documents the search missed.
+        self.dnp3 = [pid for pid in self.products if self.devices[pid]['dnp3'] == 'supported'
+                     or (self.dnp3_sources.get(pid) and self.devices[pid]['dnp3'] != 'not_established')]
         # A census has hundreds of devices and no review yet; a row per unreviewed device would bury the reviewed ones.
         bare = {pid for pid in self.products if not any(r['product_id'] == pid for r in rows)}
         self.bare = bare if len(bare) > 25 else set()
@@ -149,6 +164,12 @@ class Findings:
                 self.searched[id(r)] = '; '.join(
                     f"{self.cite[sid]} searched in full" + (f", {self.byid[sid]['pages']} PDF pages" if self.byid[sid].get('pages') else '')
                     + f": no lead for {r['feature']}" for sid in r['source_ids'])
+
+    def _find_dnp3(self):
+        self.dnp3_sources = defaultdict(list)
+        for s in self.sources:
+            if s['status'] == 'extracted' and any(DNP3.search(g['text']) for g in load(self.run / (s['id'] + '.segments.json'))):
+                self.dnp3_sources[s['product_id']].append(s['id'])
 
     def _interface_rows(self):
         """One row per product and interface. Repeated keyword matches cannot add rows; only reviewed findings can."""
@@ -240,6 +261,38 @@ class Findings:
         if other:
             return '(' + '/'.join(dict.fromkeys(MARK[x] for x in other)) + ')'
         return '?' if (pid, feature) in self.reviewed else '-'
+
+    def dnp3_security(self, pid):
+        """The strongest DNP3 protection the review establishes for a device, and the rows it rests on."""
+        found = defaultdict(list)
+        for r in self.claims:
+            if r['product_id'] != pid or r['interface_class'] != 'control_protocol':
+                continue
+            named_dnp3, positive = bool(DNP3.search(f"{r.get('interface', '')} {r.get('protocol', '')}")), r['status'] in POSITIVE
+            if positive and r.get('support_basis') == ['external_gateway']:
+                found['external'].append(r)
+            elif positive and named_dnp3 and r['feature'] in ('tls', 'encryption', 'ipsec'):
+                found['tls'].append(r)
+            elif positive and named_dnp3 and r['feature'] in ('dnp3_secure_authentication', 'authentication', 'integrity'):
+                found['authenticated'].append(r)
+            elif positive and r['feature'] in ('tls', 'encryption', 'ipsec', 'ssh'):
+                found['tunnel'].append(r)
+            elif r['status'] == 'explicitly_unsupported' and named_dnp3:
+                found['denied'].append(r)
+        kind = next((k for k, _ in DNP3_KINDS if found[k]), 'none')
+        return kind, found[kind]
+
+    def dnp3_source(self, pid, rows):
+        """Where to check the DNP3 result: (reference, location, URL, quote) for the passage a result rests on, or else
+        for each document of the device that names DNP3."""
+        for r in rows:
+            for e in r.get('evidence') or []:
+                if (e.get('about') or 'capability') == 'capability':
+                    return [(self.byid[e['source_id']]['ref'], e['location'], self.byid[e['source_id']]['final_url'], flat(e['quote']))]
+        if rows:
+            sid = rows[0]['source_ids'][0]
+            return [(self.byid[sid]['ref'], rows[0].get('location') or '', self.byid[sid]['final_url'], '')]
+        return [(self.byid[sid]['ref'], '', self.byid[sid]['final_url'], '') for sid in self.dnp3_sources.get(pid, [])]
 
     def bucket(self, pid, feature):
         """How one device counts for one capability: its result for control traffic, or why there is none."""

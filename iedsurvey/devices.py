@@ -23,6 +23,7 @@ def device_records(cfg, sources, notes_path, segments):
              'vendor_label': n.get('vendor_label') or p.get('vendor_label') or (f'{former} (label used before 1.6.0)' if former else ''),
              'lifecycle_evidence': n['lifecycle_evidence'] if 'lifecycle_evidence' in n else ([] if former else p.get('lifecycle_evidence') or []),
              'release_date': n.get('release_date') or '', 'release_evidence': n.get('release_evidence') or [],
+             'dnp3': n.get('dnp3') or '', 'dnp3_note': n.get('dnp3_note') or '',
              'note': n.get('note') or '', 'noted_by': n.get('noted_by') or ''}
         status, proof = d['lifecycle_status'], d['lifecycle_evidence']
         if status not in LIFECYCLES:
@@ -30,6 +31,11 @@ def device_records(cfg, sources, notes_path, segments):
         if d['identity_level'] not in ('',) + IDENTITY_LEVELS:
             raise ValueError(f'identity_level must be one of {", ".join(IDENTITY_LEVELS)}, or empty: {pid}')
         # Protocol, missing security features and the age of a manual decide nothing here. Only the vendor's dated word does.
+        # Whether the device speaks DNP3 is read from its documents; a reviewer corrects that only with a reason.
+        if d['dnp3'] not in ('', 'supported', 'not_established'):
+            raise ValueError(f'dnp3 is "supported", "not_established" or empty: {pid}')
+        if d['dnp3'] and not d['dnp3_note']:
+            raise ValueError(f'dnp3 {d["dnp3"]} needs a dnp3_note saying why: {pid}')
         if status != 'unknown' and not proof:
             raise ValueError(f'lifecycle status {status} needs dated vendor evidence; without it the status is unknown: '
                              f'{pid}')
