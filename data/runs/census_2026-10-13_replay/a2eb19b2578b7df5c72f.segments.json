@@ -1,0 +1,162 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "SIPROTEC 7SL86 | Siemens"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Why SIPROTEC 7SL86?"
+  },
+  {
+    "location": "html-block:4",
+    "text": "SIPROTEC 7SL86 provides combined line differential and distance protection for overhead lines and cables. Secure your electrical infrastructure and support up to six line ends and 3-pole tripping for reliable power transmission and distribution.",
+    "heading": "Why SIPROTEC 7SL86?"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Power grids face challenges from faults, disturbances, transformer errors and current transformer saturation. Our SIPROTEC 7SL86 includes an adaptive differential protection algorithm for high sensitivity and stability, plus multiple distance protection functions for flexible backup.",
+    "heading": "Why SIPROTEC 7SL86?"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Configure functions to your needs with the modular design and DIGSI 5 engineering tool. The rapid 9 ms minimum tripping time provides fast fault clearance to reduce downtime.",
+    "heading": "Why SIPROTEC 7SL86?"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Key benefits"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Improve safety"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Safeguard systems and personnel, minimize risks, and maintain stable performance. Gain peace of mind with well-protected infrastructure.",
+    "heading": "Improve safety"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Operate easily"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Handle devices and software with ease using our intuitive, user-friendly design. Streamline your workflows and reduce training time for your team to manage processes efficiently.",
+    "heading": "Operate easily"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Increase availability"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Deliver high system availability in tough conditions with conformal coating. Implement NERC CIP and BDEW compliant cybersecurity to protect your assets.",
+    "heading": "Increase availability"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Featured capabilities"
+  },
+  {
+    "location": "html-block:15",
+    "text": "all",
+    "heading": "Featured capabilities"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Included inputs and outputs"
+  },
+  {
+    "location": "html-block:17",
+    "text": "The SIPROTEC 7SL86 includes 12 predefined standard variants with 4/4 or 8/8 current transformers / voltage transformers, 5 to 31 binary inputs and 8 to 46 binary outputs.",
+    "heading": "Included inputs and outputs"
+  },
+  {
+    "location": "html-block:18",
+    "text": "all",
+    "heading": "Included inputs and outputs"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Protection functions"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Ensure rapid fault clearance with a 9 ms tripping time and stable, sensitive adaptive differential protection, despite transformer errors or CT saturation. Select distance protection for flexible backup or main protection.",
+    "heading": "Protection functions"
+  },
+  {
+    "location": "html-block:21",
+    "text": "all",
+    "heading": "Protection functions"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Communication and data sharing"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Use up to four pluggable modules for IEC 61850 and Modbus TCP protocols. Use virtual network sharing and serial data over various media. Benefit from automatic switchover and PRP/HSR for reliable data transmission.",
+    "heading": "Communication and data sharing"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Explore resources (in English)"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Downloads"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Profile SIPROTEC 7SL86",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Profile SIPROTEC 5 - conformal coating",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Brochure SIPROTEC 5",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Catalog SIPROTEC 5",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Tender specification",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Configuration"
+  },
+  {
+    "location": "html-block:32",
+    "text": "SIPROTEC 5 configurator",
+    "heading": "Configuration"
+  },
+  {
+    "location": "html-block:33",
+    "text": "SiePortal - Online shop"
+  },
+  {
+    "location": "html-block:34",
+    "text": "SIPROTEC 7SL86 on SiePortal",
+    "heading": "SiePortal - Online shop"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Technical documentation, Firmware, Software application examples and FAQ",
+    "heading": "SiePortal - Online shop"
+  }
+]

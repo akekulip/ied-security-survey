@@ -1,0 +1,153 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "Reyrolle 7SR23: High impedance protection relay | Siemens"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Why Reyrolle 7SR23?"
+  },
+  {
+    "location": "html-block:4",
+    "text": "The Reyrolle 7SR23 DAD is a high-performance numerical high impedance circulating current relay featuring four current inputs. Designed for unit protection applications, it delivers fast and dependable detection of phase and earth faults, making it ideal for safeguarding critical infrastructure such as busbars.",
+    "heading": "Why Reyrolle 7SR23?"
+  },
+  {
+    "location": "html-block:5",
+    "text": "A High impedance protection is the preferred solution for applications where faults must be cleared rapidly while maintaining secure discrimination. It offers highly sensitive fault detection, enabling lower operating settings and superior stability during through-fault conditions compared to many alternative protection schemes.",
+    "heading": "Why Reyrolle 7SR23?"
+  },
+  {
+    "location": "html-block:6",
+    "text": "The inherent stability of a high impedance scheme is achieved by ensuring the relay operating voltage exceeds the maximum voltage that can develop across the relay circuit during through-fault events. An external series stabilising resistor (RSTAB) is used to establish the required operating voltage and maintain dependable system stability.",
+    "heading": "Why Reyrolle 7SR23?"
+  },
+  {
+    "location": "html-block:7",
+    "text": "To further enhance protection system resilience, external non-linear resistors (Metrosils) are connected in parallel with the relay circuit, limiting transient overvoltages and helping to safeguard the relay and associated equipment.",
+    "heading": "Why Reyrolle 7SR23?"
+  },
+  {
+    "location": "html-block:8",
+    "text": "In built CT Supervision (CT50) continuously monitors CT secondary wiring and connections, helping to identify wiring faults and abnormalities before they impact protection performance.",
+    "heading": "Why Reyrolle 7SR23?"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Typically used alongside three-phase differential protection schemes, CT supervision enhances system security by detecting faults in the CT secondary circuit that can create unwanted unbalance currents during normal operating conditions. By identifying these conditions early, it helps prevent spurious operation and unnecessary tripping of the protected zone, improving overall protection reliability and availability.",
+    "heading": "Why Reyrolle 7SR23?"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Key benefits"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Protect your system"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Enhances system availability by detecting CT secondary wiring faults, reducing the risk of spurious trips and unnecessary outages.",
+    "heading": "Protect your system"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Simplify installation and setup"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Design and install easily with standardized external components in an Epsilon case. Our integrated logic effectively configures relay input and output functionality to streamline setup and reduce complexity for your team.",
+    "heading": "Simplify installation and setup"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Maintain control remotely"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Access protection, instrumentation and metering data via device fascia or through a front USB port or remotely using the either the, RS232, RS485 or Ethernet rear ports with IEC61850 protocol.",
+    "heading": "Maintain control remotely"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Featured capabilities"
+  },
+  {
+    "location": "html-block:18",
+    "text": "all",
+    "heading": "Featured capabilities"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Phase and earth fault detection"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Use the 7SR23 DAD numeric high impedance circulating current relay with four current inputs. Accurately detect phase and earth faults to execute rapid response for system stability.",
+    "heading": "Phase and earth fault detection"
+  },
+  {
+    "location": "html-block:21",
+    "text": "all",
+    "heading": "Phase and earth fault detection"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Diverse applications"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Apply to busbars, connections, transformers, reactors and motors. Use in high impedance applications with stabilizing and non-linear resistors.",
+    "heading": "Diverse applications"
+  },
+  {
+    "location": "html-block:24",
+    "text": "all",
+    "heading": "Diverse applications"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Accurate Time stamping"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Maintain accurate event recording and system coordination with optional IRIG-B or Ethernet SNTP time synchronisation.",
+    "heading": "Accurate Time stamping"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Explore resources and related products"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Downloads"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Profile Reyrolle 7SR23",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Catalog Reyrolle 7SR23",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Tender specifications",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:32",
+    "text": "SiePortal"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Reyrolle 7SR23 on SiePortal",
+    "heading": "SiePortal"
+  }
+]

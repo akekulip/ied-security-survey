@@ -1,0 +1,232 @@
+[
+  {
+    "location": "pdf-page:1",
+    "text": "GE \nGrid Solutions \nMultilin Meter Enclosure \nInstruction Manual \nManual P/N: 1601-9215-A4 \nManual Order Code: GEK-119545C \n",
+    "heading": "Multilin Meter Enclosure"
+  },
+  {
+    "location": "pdf-page:2",
+    "text": "Copyright © 2025 GE Vernova Multilin Inc. All rights \nreserved. Multilin Meter Enclosure Instruction Manual. \nMultilin Meter Enclosure is a registered trademark of GE Vernova Multilin Inc. \nThe contents of this manual are the property of GE  Vernova Multilin Inc. This \ndocumentation is furnished on license and may not be reproduced in whole or in part \nwithout the permission of GE Vernova Multilin Inc. The content of this manual is for \ninformational use only and is subject to change without notice. \nPart numbers contained in this manual are subject to change without notice, and \nshould therefore be verified by GE Vernova Multilin Inc. before ordering. \nPart number: 1601-9215-A4 (January 2017) \nFor further assistance \nFor product support, contact the information and call center as \nfollows: GE Vernova Grid Solutions \n650 Markland Street \nMarkham, Ontario \nCanada L6C 0M1 \nWorldwide telephone: +1 905 927 7070 \nEurope/Middle East/Africa telephone: +34 94 485 88 54 \nNorth America toll-free: 1 800 547 8629 \nFax: +1 905 927 5098 \nWorldwide e-mail:multilin.tech@gevernova.com \nEurope e-mail: multilin.tech.euro@gevernova.com \nWebsite:https://www.gevernova.com/grid-\nsolutions/automation/protection-control-metering ",
+    "heading": "Multilin Meter Enclosure"
+  },
+  {
+    "location": "pdf-page:3",
+    "text": "General Safety Precautions \n• Failure to observe and follow the instructions provided in the equipment\nmanual(s) could cause irreversible damage to the equipment and could\nlead \nto property damage, personal injury and/or death.\n• Before attempting to use the equipment, it is important that all\ndanger and caution indicators are reviewed.\n• If the equipment is used in a manner not specified by the manufacturer or\nfunctions abnormally, proceed with caution. Otherwise, the protection\npr\novided by the equipment may be impaired and can result in Impair ed\nope\nration and injury.\n• Caution: Hazardous voltages can cause shock, burns or death.\n• Installation/service personnel must be familiar with general device test\npractices, electrical awareness and safety precautions must be followed.\n• Before performing visual inspections, tests, or periodic maintenance on this\ndevice or associated circuits, isolate or disconnect all hazardous live\ncircuits and sources of electric power.\n• Failure to shut equipment off prior to removing the power connections\ncould expose you to dangerous voltages causing injury or death.\n• All recommended equipment that should be grounded and must have a\nreliable and un-compromised grounding path for safety purposes,\nprotection against electromagnetic interference and proper device\noperation.\n• Equipment grounds should be bonded together and connected to the\nfacility’s main ground system for primary power.\n• Keep all ground leads as short as possible.\n• At all times, equipment ground terminal must be grounded during\ndevice operation and service.\n• In addition to the safety precautions mentioned all electrical connections\nmade must respect the applicable local jurisdiction electrical code.\n• Before working on CTs, they must be short-circuited.\n• To be certified for revenue metering, power providers and utility companies\nmust verify that the billing energy meter performs to the stated accuracy. To\nconfirm the meter’s performance and calibration, power providers use field\ntest standards to ensure that the unit’s energy measurements are correct.\n• This product must be padlocked after service or commissioning is completed.\n• Only qualified personnel are to operate the device. Such personnel must\nbe thoroughly familiar with all safety cautions and warnings in this\nmanual and with applicable country, regional, utility, and plant safety\nregulations.\n",
+    "heading": "Multilin Meter Enclosure"
+  },
+  {
+    "location": "pdf-page:4",
+    "text": "Safety words and definitions \nThe following symbols used in this document indicate the following conditions: \nNOTE \nIndicates a hazardous situation which, if not avoided, will result in death or serious \ninjury. \nIndicates a hazardous situation which, if not avoided, could result in death or serious \ninjury. \nIndicates a hazardous situation which, if not avoided, could result in minor or \nmoderate injury. \nIndicates practices not related to personal injury. \nIndicates general information and practices, including operational information and \npractices, that are not related to personal injury. \n",
+    "heading": "Multilin Meter Enclosure"
+  },
+  {
+    "location": "pdf-page:5",
+    "text": "Table of Contents \n1: INTRODUCTION PRODUCT HANDLING .................................................................................. 2 \nSAFETY PRECAUTIONS ............................................................................. 2 \nSTORAGE ................................................................................................... 2 \nCOMPLIANCE ............................................................................................. 2 \nSPECIFICATIONS ....................................................................................... 3 \n2: \nORDERING \nINFORMATIO\nN \nORDER CODES ............................................................................................ 5 \n3: INSTALLATION RECOMMENDED PROCEDURES FOR WIRE ENTRY HOLE CUTTING ............. 12 \nINSTALLATION FOR NEMA 1 ENCLOSURE ...................................................... 15 \nINSTALLATION STEPS FOR NEMA 1 ENCLOSURE ....................................... 18 \nDOOR LOCKING INSTRUCTIONS FOR NEMA 1 ENCLOSURE ............................. 19 \nINSTALLATION FOR NEMA 4X ENCLOSURE .................................................... 20 \nINSTALLATION STEPS FOR NEMA 4X ENCLOSURE ..................................... 23 \nDOOR LOCKING INSTRUCTIONS FOR NEMA 4X ENCLOSURE ........................... 24 \n4: ELECTRICAL WIRING WIRING INSTRUCTIONS.............................................................................. 26 \nWIRE DELTA, 3 CT HOOKUP ........................................................................... 31 \n5: OPERATION METER ENCLOSURE OPERATION ................................................................ 33 \nTROUBLESHOOTING ................................................................................. 33 \n6: MAINTENANCE REMOVING A METER FROM SERVICE .......................................................... 36 \nREINSTALLING THE METER .......................................................................... 38 \nA: APPENDIX CHANGE NOTES .......................................................................................... 39 \nWARRANTY STATEMENT ............................................................................. 40 \nMULTILIN METER ENCLOSURE – INSTRUCTION MANUAL I ",
+    "heading": "Table of Contents"
+  },
+  {
+    "location": "pdf-page:6",
+    "text": "II\n MULTILIN METER ENCLOSURE – INSTRUCTION MANUAL ",
+    "heading": "Table of Contents"
+  },
+  {
+    "location": "pdf-page:7",
+    "text": "GE Vernova \nMULTILIN METER ENCLOSURE – INSTRUCTION MANUAL 1 \nGrid Solutions \nMultilin Meter Enclosure \nChapter 1: Introduction \nThe Multilin Meter Enclosure expands existing switchgear capability without \nexpensive and time-consuming redesign. It is simple to mount and wire the \nenclosure next to your switchgear so it is ready to go, with no downtime at all. This \nis an ideal solution for a retrofit when there is no metering compartment available.  \nThe unit comes standard with a NEMA 1indoor or NEMA 4X outdoor enclosure, \nand is factory wired with the meter installed. Standard equipment includes \nvoltage fuses, a shorting block for current transformer connections, and a control \npower transformer if used with 277/480 Volt power systems.  \nThe Multilin Meter Enclosure can be ordered with the following meters: \n• EPM 2200 power meter\n• EPM 6000 multi-function meter\n• EPM 6010 building automation power meter with native BACnet/IP protocol\n• EPM 7000 advanced meter with data logging and\nextensive I/O It is offered in two voltage configurations:\n• 277 Volt enclosure (which comes equipped with a control power transformer)\n• 120-240 Volt enclosure\nSee Chapter 2 for ordering instructions. ",
+    "heading": "Multilin Meter Enclosure Chapter 1: Introduction"
+  },
+  {
+    "location": "pdf-page:8",
+    "text": "CHAPTER 1: INTRODUCTION \n2 MULTILIN METER ENCLOSURE – INSTRUCTION MANUAL \n \n \n \n \n \n1.1 Product Handling \n \nREAD AND UNDERSTAND THE INSTRUCTONS CONTAINED IN THIS DOCUMENT BEFORE \nATTEMPTING TO UNPACK, INSTALL, OPERATE, OR MAINTAIN THIS EQUIPMENT. \nEvery effort is made to insure that the equipment arrives undamaged and ready \nto be installed. Packing is designed to protect internal components as well as the \nenclosure. Do not remove protective packing until you are ready to install the \nequipment. \nWhen you receive the equipment, you should inspect the shipping container for \nany obvious signs of rough handling and/or external damage that occurred during \ntransportation. Record any external and internal damage for reporting to the \ntransportation carrier and GE Vernova Multilin. All claims should be as specific as \npossible and include general order numbers.\n \nYou will find a plastic bag of instruction booklets and/or CDs in the shipping \ncontainer. Store these documents in a safe place.  \n \n1.2 Safety Precautions \n \nAll safety codes, safety standards, and/or regulations must be strictly observed in the \ninstallation, operation, and maintenance of this device. \nHazardous voltages that can cause death or severe personal injury are \npresent inside enclosure. Follow proper installation, operation, and maintenance \nprocedures to avoid these voltages. \nCompletely read and understand the material presented in this document before \nattempting installation, operation, or application of the equipment. In addition, \nonly qualified persons should be permitted to perform any work associated with \nthe \nequipment. Any wiring instructions presented in this document must be followed \nprecisely. Failure to do so could cause permanent equipment damage.  \nAll possible contingencies that may arise during installation, operation, or \nmaintenance, and all details and variations of this equipment do not purport to be \ncovered by these instructions. If further information is desired by purchaser \nregarding a particular installation, operation, or maintenance of particular equipment, \ncontact a GE Vernova Multilin (GE Vernova Grid Solutions) representative. \n \n1.3 Storage \nAlthough it has been well packaged, this equipment should not be stored outdoors. If \nthe equipment is to be stored indoors for any period of time, it should be stored with \nits protective packaging in place. Refer to the EPM 2200, EPM 6000, EPM 6010, and \nEPM 7000 Instruction Manuals, on the enclosed CD, for the meter storage \nrequirements. \n \n1.4 Compliance \nUL508A (Industrial control panel), UL/cUL Listed File number e358101. \n",
+    "heading": "1.4 Compliance"
+  },
+  {
+    "location": "pdf-page:9",
+    "text": "CHAPTER 1: INTRODUCTION \nMULTILIN METER ENCLOSURE – INSTRUCTION MANUAL 3 \n \n \n \n \n \n1.5 Specifications \nENVIRONMENTAL \nStorage: .....................................-20°C to \n+50°C Operating Maximum:. ... ..-20°C to \n+50°C \nHumidity ................................... up to 95% RH, non-condensing \nEnclosure rating ....................... NEMA 1 (Indoor Use) \nor NEMA 4X (Outdoor \nUse) Pollution degree: ............... II \nMECHANICAL PARAMETERS \nDimensions ............................... NEMA 1 (Indoor Use) \n8.08\" x 11.06\" x 13.50\" (L x W x H)/ \n205.2 mm x 280.9 mm x 342.9 mm (L x W x \nH) Dimensions .......................... NEMA 4X (Outdoor Use) \n8.36\" x 11.85\" x 13.73\" (L x W x H)/ \n212.3 mm x 301.0 mm x 348.7 mm (L x W x \nH) Weight ................................. 25 lb/ 11.4 kg maximum ",
+    "heading": "1.5 Specifications"
+  },
+  {
+    "location": "pdf-page:10",
+    "text": "CHAPTER 1: INTRODUCTION \n4 MULTILIN METER ENCLOSURE – INSTRUCTION MANUAL \n \n \n ",
+    "heading": "1.5 Specifications"
+  },
+  {
+    "location": "pdf-page:11",
+    "text": "GE Vernova \nMULTILIN METER ENCLOSURE – INSTRUCTION MANUAL 5 \n \n \nGrid Solutions \nMultilin Meter Enclosure \nChapter 2: Ordering Information \n \n \n \n \n \n \n2.1 Order Codes \nThe order codes for the EPM 2200, EPM 6000, EPM 6010, and EPM 7000 are given \nbelow. \n \nRefer to the above EPM product manuals for full specifications. \n \nTable 2–1: Order Codes for EPM 2200 with Meter Enclosure \n PL2200 * – * – *  \nBase Unit PL2200 | | | EPM 2200 Meter \nEnclosure Option \n ENC12\n0 \n| | NEMA 1 Rated - Indoor, Single Meter Enclosure, 120V \nENC277 | | NEMA 1 Rated - Indoor, Single Meter Enclosure, 277V \nENN120 | | NEMA 4X Rated - Indoor/Outdoor, Single Meter Enclosure, \n120V \nENN277 | | NEMA 4X Rated - Indoor/Outdoor, Single Meter Enclosure, \n277V \nXXXXXX | | None \n A1 | Volts and Amps Meter \nSoftware Option* B1 | Volts, Amps, Power and Frequency Meter \n C1 | Volts, Amps, Power, Frequency and Energy Counters Meter \nBN | BACnet Volts, Amps, Power, Frequency and Energy \nCounters Meter \nCommunications S RS485 Serial/KYZ Pulse \nX None \nB BACnet MS/TP Serial and Modbus TCP/IP Internet \n \n* Software Options are only available with Communications Option S \n",
+    "heading": "2.1 Order Codes"
+  },
+  {
+    "location": "pdf-page:12",
+    "text": "CHAPTER 2: ORDERING INFORMATION \n6 MULTILIN METER ENCLOSURE – INSTRUCTION MANUAL \n \n \n Option \n   \n  \n  \n  \n  \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nNEMA 1 Rated Indoor, Single Meter Enclosure, 120V \nNEMA 1 Rated Indoor, Single Meter Enclosure, 277V \nNEMA 4X Rated Indoor/Outdoor, Single Meter Enclosure, 120V \nNEMA 4X Rated Indoor/Outdoor, Single Meter Enclosure, 277V \nNone \n Input \n1A \n5A \n \n \n \n \nCurrent Input 1A \nCurrent Input 5A \n Supply \n HI \n \nHI Power Option (90-265)VAC / (100-370)VDC \nLDC Low Power Option (18-60)VDC \n \n \n \nTable 2–2: Order Codes for EPM 6000 with Meter Enclosure \n \n PL6000 * –  * –  * – * – * – *  \nBase Unit PL6000 | | | | | | EPM 6000 Power Meter \nEnclosure Option  ENC120 | | | | | NEMA 1 Rated - Indoor, Single Meter Enclosure, 120V \n  ENC277 | | | | | NEMA 1 Rated - Indoor, Single Meter Enclosure, 277V \n  ENN120 | | | | | NEMA 4X Rated - Indoor/Outdoor, Single Meter Enclosure, \n120V \n  ENN277 | | | | | NEMA 4X Rated - Indoor/Outdoor, Single Meter Enclosure, \n277V \n  XXXXXX | | | | | None \nSystem Frequency   5 | | | | Frequency Option 50 Hz \n   6 | | | | Frequency Option 60 Hz \nCurrent Input    1A | | | Current Input 1A \n    5A | | | Current Input 5A \nTHD     0 | | No THD or Pulse Output Option \n     THD | | THD, Limits Alarms and 1 KYZ Pulse Output \nPower Supply      0 | No LDC Option \n      LDC | Low Voltage DC Power Supply \nCommunications \nOption \n      S Standard Serial Option \n       E Ethernet Option \n \nTable 2–3: Order Codes for EPM 6010 with Meter Enclosure \n PL6010 * –  *  –  *  – * – *  \nBase Unit PL6010 | | | | | EPM 6010 Meter \nSystem Frequency 5 | | | Frequency Option 50 Hz \n6 | | | Frequency Option 60 Hz \nSoftware (THD) THD | THD, Limits Alarms and 1 KYZ Pulse Output \n ",
+    "heading": "2.1 Order Codes"
+  },
+  {
+    "location": "pdf-page:13",
+    "text": "CHAPTER 2: ORDERING INFORMATION \nMULTILIN METER ENCLOSURE – INSTRUCTION MANUAL 7 \n \n \n \n \n \nTable 2–4: Order Codes for EPM 7000 with Meter Enclosure \n PL7000 * –  *  –  *  – * – * – * – *  \nBase Unit PL7000 | | | | | | | EPM 7000 Meter \nEnclosure Option  ENC120 | | | | | | NEMA 1 Rated Indoor, Single Meter Enclosure, 120V \n  ENC277 | | | | | | NEMA 1 Rated Indoor, Single Meter Enclosure, 277V \n  ENN120 | | | | | | NEMA 4X Rated Indoor/Outdoor, Single Meter Enclosure, \n120V \n  ENN277 | | | | | | NEMA 4X Rated Indoor/Outdoor, Single Meter Enclosure, \n277V \n  XXXXXX | | | | | | None \nSystem Frequency   5 | | | | | Frequency Option 50 Hz \n   6 | | | | | Frequency Option 60 Hz \nCurrent Input    1A | | | | Current Input 1 A \n    5A | | | | Current Input 5 A \n     A | | | Multimeter Function only \n     B | | | Data Logging 2 MB Memory \n     C | | | Power Quality Harmonics, 2 MB Memory \nSoftware \nD | | | Limits and Control, 2 MB \n E | | | 64 Samples/cycle Waveform Recording, 3 MB Memory \n F | | | 512 Samples/cycle Waveform Recording, 4 MB Memory \nPower Supply  HI | | Hi Power Option 90-265 VAC / 100-370 VDC \n  LDC | | LDC Low Power Option (18-60)VDC \n   X | None \n   C1 | Four Channel Bi-directional 0-1 mA Outputs \n   C20 | Four Channel Bi-directional 4-20 mA Outputs \n   E1 | 100 BaseT Ethernet \nI/O Slot 1   E2 | 100 BaseT Ethernet with IEC 61850 Protocol \n   F1 | Fiber Optic Serial Port-ST Terminated \n   F2 | Fiber Optic Serial Port-Versatile Link \n   PS1 | Four Pulse Outputs/Four Status Inputs \n   RS1 | Two Relay status Outputs/Two Status Inputs \n    X None \n    C1 Four Channel Bi-directional 0-1 mA Outputs \n    C20 Four Channel Bi-directional 4-20 mA Outputs \n    E1 100 BaseT Ethernet \nI/O Slot 2    E2 100 BaseT Ethernet with IEC 61850 Protocol \n    F1 Fiber Optic Serial Port-ST Terminated \n    F2 Fiber Optic Serial Port-Versatile Link \n    PS1 Four Pulse Outputs/Four Status Inputs \n    RS1 Two Relay status Outputs/Two Status Inputs ",
+    "heading": "2.1 Order Codes"
+  },
+  {
+    "location": "pdf-page:14",
+    "text": "CHAPTER 2: ORDERING INFORMATION \n8 MULTILIN METER ENCLOSURE – INSTRUCTION MANUAL \n \n \n ",
+    "heading": "2.1 Order Codes"
+  },
+  {
+    "location": "pdf-page:15",
+    "text": "GE Vernova \nMULTILIN METER ENCLOSURE – INSTRUCTION MANUAL 9 \n \n \nGrid Solutions \n \nMultilin Meter Enclosure \nChapter 3: Installation \n \n \n \n \n \n \nAll safety codes, safety standards, and/or regulations shall be strictly observed \ninstallation, operation, and maintenance of this device. This device shall be installed in \nan un-energized condition and as per the National Electric Code. \nChoose a mounting location that offers a flat, rigid mounting surface capable of \nsupporting the weight of the equipment. The unit weighs 25 lbs (11.4 kg) maximum. \nMount the equipment in a suitable environment. These enclosures are designed \nfor NEMA 1 or NEMA 4X environments, depending on the enclosure ordered, and \nare manufactured of painted steel. \nCheck to make certain that there are no pipes, wires, or other mounting hazards in \nthe immediate mounting area that could create a problem. Also make sure you \nhave enough clearance around the enclosure to run wiring to it safely. GE Vernova \nMultilin recommends at least 2 feet of clearance around the enclosure.  \nCarefully remove all packing material from the unit. Even though an equipment \ninspection was made when the equipment was received, make another careful \ninspection of the enclosure and the devices inside as packing material is \nremoved. Be especially alert for distorted metal, loose wires, or damaged \ncomponents. This is important because wiring can come loose in shipping and \ncould cause a short circuit or voltage to be on the wrong terminal. Please inspect \nto make sure all the wiring is in the proper place. Refer to figures Figure 3-1: 120V \nInternal Wiring Schematic and Figure 3-2: 277V Internal Wiring Schematic for \ninternal wiring schematics.\n \n \nExtreme care shall be taken when mounting the enclosure, and making wire entry \nholes, to prevent metal chips, filings, and other contaminants from entering the \nenclosure which may damage the equipment and create a hazardous condition. \n",
+    "heading": "Multilin Meter Enclosure Chapter 3: Installation"
+  },
+  {
+    "location": "pdf-page:16",
+    "text": "CHAPTER 3: INSTALLATION \n10 MULTILIN METER ENCLOSURE – INSTRUCTION MANUAL \n \n \n \n \n \n \n \n \nFigure 3-1: 120V Internal Wiring Schematic \n",
+    "heading": "Multilin Meter Enclosure Chapter 3: Installation"
+  },
+  {
+    "location": "pdf-page:17",
+    "text": "CHAPTER 3: INSTALLATION \nMULTILIN METER ENCLOSURE – INSTRUCTION MANUAL 11 \n \n \n \n \n \n \n \n \n \nFigure 3-2: 277V Internal Wiring Schematic \n",
+    "heading": "Multilin Meter Enclosure Chapter 3: Installation"
+  },
+  {
+    "location": "pdf-page:18",
+    "text": "CHAPTER 3: INSTALLATION \n12 MULTILIN METER ENCLOSURE – INSTRUCTION MANUAL \n \n \n \n \n \n3.1 Recommended Procedures for Wire Entry Hole \nCutting \nThe enclosure does not come with wire entry holes (punch entries). They must be cut \nin the location you want depending on the installation. See Figure 3-3: NEMA 1 \nEnclosure Location of Recommended Punch Entries and Figure 3-4: NEMA 4X \nEnclosure Location of Recommended Punch Entries for the locations that are \nrecommended. \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nFigure 3-3: NEMA 1 Enclosure Location of Recommended Punch Entries \n \n \nFigure 3-4: NEMA 4X Enclosure Location of Recommended Punch Entries \n",
+    "heading": "3.1 Recommended Procedures for Wire Entry Hole Cutting"
+  },
+  {
+    "location": "pdf-page:19",
+    "text": "CHAPTER 3: INSTALLATION \nMULTILIN METER ENCLOSURE – INSTRUCTION MANUAL 13 \n \n \n \n \n• There are numerous methods for making wire entry holes in the enclosure but it is \nimperative that no loose material generated during the process remains in the \nenclosure. During installation and cutting the wire holes, all equipment mounted \ninside or on the enclosure shall be protected from loose material. \n• No matter what procedure is used the installer shall verify that the hole cutting \nprocess will not damage any of the wiring or components installed inside or on \nthe enclosure. \nThe two recommended procedures for cutting the wire entry holes are as follows: \n• Use a \"C\" frame punch to cut the wire entry holes. This type of punch does not \nrequire a pilot hole. A typical \"C\" frame punch is shown below. \n \n \n \nFigure 3-5: \"C\" Frame Punch \n• Use a regular punch requiring pilot holes: \n1. Place a magnet inside the enclosure where the pilot hole is to be cut. \nFor the NEMA 1 enclosure completely cover the area with masking tape \n(or other very sticky tape); for the NEMA 4X enclosure, use sticky tape \nonly. \n2. Drill the pilot hole from the outside and do not let the drill pass more than \n¼\" into the enclosure. \n3. Remove the tape, magnet, and cuttings and punch the hole. \nAfter wiring and before energizing, vacuum the inside of the enclosure to make \nsure that it is free of foreign material. If a vacuum is not available use an alternate \nmethod to clean the inside of the enclosure.  \n \nDo not use compressed air (or pressurized gas) to clean the inside of the enclosure as \nthis may force cuttings into areas that cannot be seen, creating a hazardous condition. \nAll wire entry into the enclosure shall be accomplished with the use of recognized \nfittings or strain reliefs. Bare holes shall not be used. \nAll electrical connections made to this enclosure must meet the local electrical code. \n \nFor the NEMA 4X Enclosure you must use always use UL listed, Liquid Tight electrical \nconduit fittings so that the enclosure remains watertight. See Figure 3-6: NEMA 4X \nEnclosure with Liquid Tight Fitting (example). \nIf fitting is not Liquid Tight, it could cause a dangerous condition. \n",
+    "heading": "3.1 Recommended Procedures for Wire Entry Hole Cutting"
+  },
+  {
+    "location": "pdf-page:20",
+    "text": "CHAPTER 3: INSTALLATION \n14 MULTILIN METER ENCLOSURE – INSTRUCTION MANUAL \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nLiquid Tight Conduit \nFitting: be sure to \ninstall properly, to be \nliquid tight! \n \n \n \n \n \n \n \n \n \n \n \n \n \nFigure 3-6: NEMA 4X Enclosure with Liquid Tight Fitting (example) ",
+    "heading": "3.1 Recommended Procedures for Wire Entry Hole Cutting"
+  },
+  {
+    "location": "pdf-page:21",
+    "text": "CHAPTER 3: INSTALLATION \nMULTILIN METER ENCLOSURE – INSTRUCTION MANUAL 15 \n \n \n \n \n \n3.2 Installation for NEMA 1 Enclosure \nRefer to the following diagrams for enclosure and mounting \ndimensions. (For NEMA 4X, see 3.3 Installation for NEMA 4X \nEnclosure.) \n \n \n \nFigure 3-7: NEMA 1 Enclosure Front Dimensions ",
+    "heading": "3.2 Installation for NEMA 1 Enclosure"
+  },
+  {
+    "location": "pdf-page:22",
+    "text": "CHAPTER 3: INSTALLATION \n16 MULTILIN METER ENCLOSURE – INSTRUCTION MANUAL \n \n \n \n \n \n \n \n \n \nFigure 3-8: NEMA 1 Enclosure Side Dimensions \n",
+    "heading": "3.2 Installation for NEMA 1 Enclosure"
+  },
+  {
+    "location": "pdf-page:23",
+    "text": "CHAPTER 3: INSTALLATION \nMULTILIN METER ENCLOSURE – INSTRUCTION MANUAL 17 \n \n \n \n \n \n \n \n \n \n \nFigure 3-9: NEMA 1 Mounting Hole Dimensions \n",
+    "heading": "3.2 Installation for NEMA 1 Enclosure"
+  },
+  {
+    "location": "pdf-page:24",
+    "text": "CHAPTER 3: INSTALLATION \n18 MULTILIN METER ENCLOSURE – INSTRUCTION MANUAL \n \n \n \n3.2.1 Installation Steps for NEMA 1 Enclosure \n1. Install the 4 required mounting bolt anchors. \n \n \n \n \n \nUpper \nMounting \nBolts \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nFigure 3-10: NEMA 1 Mounting Bolt Installation, Upper Bolts \n2. Gently lift the enclosure and guide the top mounting holes over the \nanchors. Install the two bolts but do not tighten them.  \n3. While still supporting the enclosure, install the two lower mounting bolts in \nthe lower mounting flange, but do not completely tighten them. Use \nshims, if required, to prevent deformation of the enclosure when \ntightening the bolts, if the mounting surface is distorted. \n4. Tighten all four mounting bolts after any required shimming is \ncompleted. See the figure below. \n \n \n \n \n \n \n \n \n \n \nMounting Bolts \n(4) \n \n \n \n \n \n \n \n \nFigure 3-11: NEMA 1 Mounting Bolt Location \n",
+    "heading": "3.2.1 Installation Steps for NEMA 1 Enclosure"
+  },
+  {
+    "location": "pdf-page:25",
+    "text": "CHAPTER 3: INSTALLATION \nMULTILIN METER ENCLOSURE – INSTRUCTION MANUAL 19 \n \n \n \n3.2.2 Door Locking Instructions for NEMA 1 Enclosure \nThe enclosure has been fitted with means for securing the door so it cannot be \nopened or tampered with. The padlock bracket can be secured in place with a \npadlock (3/8 inch shackle diameter). See the figure below.  \n \n \n \nFigure 3-12: NEMA 1 Door with Lock ",
+    "heading": "3.2.2 Door Locking Instructions for NEMA 1 Enclosure"
+  },
+  {
+    "location": "pdf-page:26",
+    "text": "CHAPTER 3: INSTALLATION \n20 MULTILIN METER ENCLOSURE – INSTRUCTION MANUAL \n \n \n \n \n \n3.3 Installation for NEMA 4X Enclosure \nRefer to the following diagrams for enclosure and mounting \ndimensions. (For NEMA 1, see 3.2 Installation for NEMA 1 Enclosure.) \nThe NEMA 4X enclosure is rated for outdoor use. DO NOT install the enclosure in direct \nsunlight. It should be installed in a shaded location, and not exposed to direct sunlight. \n \n \nFigure 3-13: NEMA 4X Enclosure Front Dimensions \n",
+    "heading": "3.3 Installation for NEMA 4X Enclosure"
+  },
+  {
+    "location": "pdf-page:27",
+    "text": "CHAPTER 3: INSTALLATION \nMULTILIN METER ENCLOSURE – INSTRUCTION MANUAL 21 \n \n \n \n \n \n \n \n \n \nFigure 3-14: NEMA 4X Enclosure Side Dimensions \n",
+    "heading": "3.3 Installation for NEMA 4X Enclosure"
+  },
+  {
+    "location": "pdf-page:28",
+    "text": "CHAPTER 3: INSTALLATION \n22 MULTILIN METER ENCLOSURE – INSTRUCTION MANUAL \n \n \n \n \n \n \n \nFigure 3-15: NEMA 4X Enclosure Mounting Dimensions \n",
+    "heading": "3.3 Installation for NEMA 4X Enclosure"
+  },
+  {
+    "location": "pdf-page:29",
+    "text": "CHAPTER 3: INSTALLATION \nMULTILIN METER ENCLOSURE – INSTRUCTION MANUAL 23 \n \n \n \n \n3.3.1 Installation Steps for NEMA 4X Enclosure \n1. Install the 4 required mounting bolt anchors. \n \nUpper \nMountin\ng Bolts \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nFigure 3-16: NEMA 4X Mounting Bolts \n2. Gently lift the enclosure and guide the top mounting holes over the \nanchors. Install the two bolts but do not tighten them.  \n3. While still supporting the enclosure, install the two lower mounting bolts in \nthe lower mounting flange, but do not completely tighten them. Use \nshims, if required, to prevent deformation of the enclosure when \ntightening the bolts, if the mounting surface is distorted. \n4. Tighten all four mounting bolts after any required shimming is completed. \n",
+    "heading": "3.3.1 Installation Steps for NEMA 4X Enclosure"
+  },
+  {
+    "location": "pdf-page:30",
+    "text": "CHAPTER 3: INSTALLATION \n24 MULTILIN METER ENCLOSURE – INSTRUCTION MANUAL \n \n \n \n3.3.2 Door Locking Instructions for NEMA 4X Enclosure \nThe enclosure has been fitted with means for securing the door so it cannot be opened \nor tampered with. The padlock bracket can be secured in place with two padlocks (3/8 \ninch shackle diameter). See the figure below.  \n \n \nFigure 3-17: NEMA 4X Door with Lock ",
+    "heading": "3.3.2 Door Locking Instructions for NEMA 4X Enclosure"
+  },
+  {
+    "location": "pdf-page:31",
+    "text": "GE Vernova \nMULTILIN METER ENCLOSURE – INSTRUCTION MANUAL 25 \n \n \nGrid Solutions \n \nMultilin Meter Enclosure \nChapter 4: Electrical Wiring \n \n \n \n \n \nThe Multilin Meter Enclosure is factory wired and tested. Installation requires \nsolidly mounting the enclosed unit and connecting field wiring. This document has \ndiagrams of wiring options. Review and understand the appropriate diagrams for \nthe unit you have ordered. \n \nInternal fuse block and CT shorting block terminations can accommodate #10 to #14 \nAWG wire. Consult your local and/or National Electric Code for external wiring \nrequirements. \n \nAll connections to this product are to be with copper wire only! \n \n \nBoth enclosure models are pre-wired and programmed for a three-phase, four-\nwire Wye system requiring 3 current transformers. The enclosures may also be \nused on three- wire network systems (two CTs), single-phase three-wire systems \n(two CTs), or single-phase-Neutral two-wire systems (one CT \"120\" option only). \nEnclosure models with a \"277\" in the part number contain a single phase step down \ncontrol power transformer designed for a primary of 480 VAC and secondary voltage of \n120 VAC. \n \nThe current inputs are only to be connected to external current transformers provided \nby the installer. The CT's shall be Listed to ANSI/IEEE C57.13 and rated for the current of \nthe meter used. \nA DISCONNECTING MEANS AND UPSTREAM PROTECTION SHOULD BE INSTALLED FOR ALL \nCIRCUITS. A SHORT-CIRCUIT–TYPE TERMINAL BLOCK IS PROVIDED FOR THE CURRENT \nTRANSFORMER CIRCUIT. \nTable 4–1: Input Wiring Specifications \n \nLocation Wire Size Screw Size Maximum Torque \nShorting Block #6-22 AWG CU #10-32 20 lbf-in (2.3 N-m) \nFuse Block #10-18 AWG CU #10-32 20 lbf-in (2.3 N-m) \nNeutral Wire #12 max CU #8-32 6 lbf-in (0.68 N-m) \nEarth Ground #10-12 AWG CU #8-32 10 lbf-in (1.2 N-m) \n",
+    "heading": "Multilin Meter Enclosure Chapter 4: Electrical Wiring"
+  },
+  {
+    "location": "pdf-page:32",
+    "text": "CHAPTER 4: ELECTRICAL WIRING \n26 MULTILIN METER ENCLOSURE – INSTRUCTION MANUAL \n \n \n \n \n \n4.1 Wiring Instructions \n \nCONTROL WIRING MAY HAVE VOLTAGE PRESENT THAT CAN CAUSE SEVERE \nPERSONAL INJURY OR DEATH. DE-ENERGIZE ALL CONDUCTORS BEFORE \nBEGINNING TO PERFORM ANY WIRING ACTIVITY WITHIN THE MULTILIN METER \nENCLOSURE. \n \nFirst connect Earth Ground as shown in the appropriate figure below. \n \nFigure 4-1: NEMA 1 Enclosure Earth Ground Connection \n",
+    "heading": "4.1 Wiring Instructions"
+  },
+  {
+    "location": "pdf-page:33",
+    "text": "CHAPTER 4: ELECTRICAL WIRING \nMULTILIN METER ENCLOSURE – INSTRUCTION MANUAL 27 \n \n \n \n \n \n \n \nFigure 4-2: NEMA 1 Enclosure Wiring Photo \n",
+    "heading": "4.1 Wiring Instructions"
+  },
+  {
+    "location": "pdf-page:34",
+    "text": "CHAPTER 4: ELECTRICAL WIRING \n28 MULTILIN METER ENCLOSURE – INSTRUCTION MANUAL \n \n \n \n \n \n \n \n \nFigure 4-3: NEMA 4X Enclosure Earth Ground Connection \n \nFigure 4-4: NEMA 4X Enclosure Wiring Photo \n",
+    "heading": "4.1 Wiring Instructions"
+  },
+  {
+    "location": "pdf-page:35",
+    "text": "CHAPTER 4: ELECTRICAL WIRING \nMULTILIN METER ENCLOSURE – INSTRUCTION MANUAL 29 \n \n \n \n \nUnderstand the diagram(s) that pertain to your unit before you begin the field \nwiring. The following figures show the available wiring options. Understand your \nsystem and use the appropriate figures. \n \n \nFigure 4-5: Wye Wiring for 120V Model \n",
+    "heading": "4.1 Wiring Instructions"
+  },
+  {
+    "location": "pdf-page:36",
+    "text": "CHAPTER 4: ELECTRICAL WIRING \n30 MULTILIN METER ENCLOSURE – INSTRUCTION MANUAL \n \n \n \n \n \n \n \nFigure 4-6: Wye Wiring for 277V Model \n",
+    "heading": "4.1 Wiring Instructions"
+  },
+  {
+    "location": "pdf-page:37",
+    "text": "CHAPTER 4: ELECTRICAL WIRING \nMULTILIN METER ENCLOSURE – INSTRUCTION MANUAL 31 \n \n \n \n \n \n \n4.2 Wire Delta, 3 CT Hookup \nThe enclosure is shipped pre-wired for a 4 wire Wye installation with the meter's voltage \nreference (Vref) tied to the Neutral input (N(-)) via a jumper located on the connector of the \nmeter. If the enclosure is to be used on three wire Delta circuits where no neutral exists, \nthe jumper on the connector must be moved. This requires that the jumper's connection to \nN (- \n) must be removed and then moved to Vb to allow the meter's Vref to be common \nwith Vb. See the figure below. \n \nMeter as Shipped Meter Modified for Delta \n \n \nFigure 4-7: Wiring as Shipped, and Modified for Delta \n• An external wired Neutral connection to the Neutral Terminal is not necessary. \n• You must reprogram the meter for a Delta 2 CT hookup. Using the meter’s \nfaceplate (see the figure below). \nMenu Enter \n \n \n \n \n \n \n \n \n \n \n \n \n \nDOWN Arrow RIGHT Arrow \n \nFollow this procedure: \n1. Push the MENU button - rSt will be blinking on the top line of the display. \n2. Press the DOWN ARROW once. CFG (Configuration) moves to the top of the display. \n3. Press the ENTER button. You will see the Configuration menu, shown below. \n \n \n- A \n \n- B \n \n- C \n",
+    "heading": "4.2 Wire Delta, 3 CT Hookup"
+  },
+  {
+    "location": "pdf-page:38",
+    "text": "CHAPTER 4: ELECTRICAL WIRING \n32 MULTILIN METER ENCLOSURE – INSTRUCTION MANUAL \n \n \nMENU  ENTER \nMENU  ENTER \nMENU  ENTER \n \n \n4. Press the DOWN ARROW until you see Cnct, then press the ENTER button to go \nto the Connection setting screen, shown below. \n \n \n- A \n \n- B \n \n- C \n \n5. The current setting is shown in the second line. Press the DOWN ARROW to \nchoose 2 Ct del (Delta) - see the screen below. \n6. Press the MENU button twice. You will see the Store Settings screen (Stor ALL?). \n \n \n- A \n \n- B \n \n- C \n \n7. The screen’s default setting is YES. To save the settings you’ve made, press the \nENTER button. You will see the confirmation screen (Stor ALL done) and then the \nmeter resets. \n \n \n- A \n \n- B \n \n- C ",
+    "heading": "4.2 Wire Delta, 3 CT Hookup"
+  },
+  {
+    "location": "pdf-page:39",
+    "text": "GE Vernova \nGrid Solutions \nMULTILIN METER ENCLOSURE – INSTRUCTION MANUAL 33 \n \n \n \nMultilin Meter Enclosure \nChapter 5: Operation \n \n \n \n \n \n \n5.1 Meter Enclosure operation \nMeter enclosures with the 120 V option comes equipped with three 10mm x 38mm, \n600V, 100mA, fast-acting fuses and one 10mm x 38mm, 500V, 3A, time delay \nfuse for the protection of the meter’s sense voltage and control power circuits, \nrespectively. \nMeter enclosures with the 277 V option comes equipped with three 10mm x 38mm, \n600V, \n500mA, fast-acting fuses and one 10mm x 38mm, 500V, 3A, time delay \nfuse for the protection of the meter’s sense voltage and control power circuits, \nrespectively. \nA disconnecting means and upstream protection should be installed for all \ncircuits. A short-circuit type terminal block is provided for the current transformer \ncircuit. The terminal blocks for the current circuits are short-circuit type. Shorting \nscrews are included (see instructions in 6.1 Removing a Meter From Service). \nThe temperature rating for enclosure operation is from -20ºC to +50ºC. \nFor specific meter operating instructionsfor the meter in the enclosure, refer to \nthe respective EPM 2200, EPM 6000, EPM 6010, or EPM 7000 Instruction \nManual on the enclosed CD. \n \n5.2 Troubleshooting \nSymptom: Extremely inaccurate readings of voltage and/or \nharmonics. Perform these two tests: \n1. With fuses removed from the unit, test the fuses with an ohmmeter. All of the \nfuses must show a resistance of <2 Ohms. \n2. With the unit fully powered, measure the voltage on the input side and output \nside of the fuse. The voltages should differ by less than 1 Volt. ",
+    "heading": "5.2 Troubleshooting"
+  },
+  {
+    "location": "pdf-page:40",
+    "text": "CHAPTER 5: OPERATION \n34 MULTILIN METER ENCLOSURE – INSTRUCTION MANUAL \n \n \n ",
+    "heading": "5.2 Troubleshooting"
+  },
+  {
+    "location": "pdf-page:41",
+    "text": "GE Vernova \nGrid Solutions \nMULTILIN METER ENCLOSURE – INSTRUCTION MANUAL 35 \n \n \n \nMultilin Meter Enclosure \nChapter 6: \nMaintenance \n \n \n \n \n \nThe Multilin Meter Enclosure is designed to be relatively maintenance-free under \nnormal use. However, because of the variability of application conditions and the \nimportance placed on dependable operation and inspection, you should perform \nmaintenance checks on a regularly scheduled basis. Visually inspect for loose \nparts, wires, and/or hardware; inspect for discoloration of insulation and damaged \nor discolored components; be alert for accumulation of dirt and/or moisture on \nstructure; check operation of disconnecting means and continuity of fuses, where \napplicable.\n ",
+    "heading": "Multilin Meter Enclosure Chapter 6: Maintenance"
+  },
+  {
+    "location": "pdf-page:42",
+    "text": "CHAPTER 6: MAINTENANCE \n36 MULTILIN METER ENCLOSURE – INSTRUCTION MANUAL \n \n \n6.1 Removing a Meter From Service \nFollow these steps: \n1. De-energize all circuits feeding the case. \n2. If possible de-energize lines that the CTs are on. \n3. Install 4 shorting screws, where shown, on the CT connection block - \ninstructions follow. \n \nIf the meter must be removed from service, the secondary side of the current \ntransformers MUST be short circuited to prevent a dangerous high voltage condition \nfrom appearing across the secondary wires of the current transformer. Arcing and \ndamage to personnel and/or equipment can occur if the screws provided on the \nshorting block are not installed in the correct locations, prior to disconnecting any \nwires. \nThe four brass screws that are parked on each corner of the shorting block are used \nto short the three high (+) sides and one low (-) side of the CT outputs to the brass \nbar that is across the middle of the shorting block. The pre-installed jumper \nconnects all lows together. \nThe brass screws need to be screwed down until the end of the screw makes \ncontact with the terminal strip below, enabling the brass bar to become \nelectrically common with the terminal strip. \nThe figures below shows which terminals/holes the screws must be installed in to \nsafely short the secondary of the CTs.  \n \n \n \n \n \n \nShorting Block/Screw Location \n",
+    "heading": "Shorting Block/Screw Location"
+  },
+  {
+    "location": "pdf-page:43",
+    "text": "CHAPTER 6: MAINTENANCE \nMULTILIN METER ENCLOSURE – INSTRUCTION MANUAL 37 \n \n \n \n \n \n \n \n \n \n \n \n \n \nInstall the \nGround \nScrew First \n \n \n \n \n \n \n \n \n \n \n \n \n \nFigure 6-1: Shorting the CTs \n \nWhen you re-install the meter, make sure all CT connections are made BEFORE \nremoving the shorting screws, and then return the screws to their holder. See Section \n6.2. \n4. Remove the 4 fuses from the fuse holder. \n5. Un-screw and disconnect the 6 current leads (CTs) from the meter. \n6. Disconnect all connectors from the meter. \n7. Remove the 4 mounting nuts. \n8. Remove the meter. \n",
+    "heading": "Shorting Block/Screw Location"
+  },
+  {
+    "location": "pdf-page:44",
+    "text": "CHAPTER 6: MAINTENANCE \n38 MULTILIN METER ENCLOSURE – INSTRUCTION MANUAL \n \n \n6.2 Reinstalling the Meter \nFollow this procedure to reinstall the meter: \n1. Place meter in the cover cutout. \n2. Tighten the 4 mounting nuts. \n3. Insert all connectors into the appropriate sockets on the back of the meter. \n4. Connect the 6 current leads (CTs) to the meter making sure they are attached \nin the proper order. \n5. Install the 4 fuses in the fuse block, in their proper location. \n6. Remove the 4 shorting screws from the CT connection block and return them to \ntheir storage positions. See the figure below.  \n \n \n \n \n \n \n \n \nRemove the \nGround \nScrew Last \n \n \n \n \n \n \n \n \n \n \n \n \nFigure 6-2: Shorting Screws Returned to Their Storage Positions \n7. Verify that no foreign material remains inside the enclosure. Clean if necessary. \n8. Energize all circuits and verify operation. \n",
+    "heading": "6.2 Reinstalling the Meter"
+  },
+  {
+    "location": "pdf-page:45",
+    "text": "GE Vernova \nMULTILIN METER ENCLOSURE – INSTRUCTION MANUAL 39 \n \n \nGrid Solutions \n \nMultilin Meter Enclosure \nA: Appendix \n \n \n \n \n \n \nA.1 Change Notes \n \n \nTable A–1: Revision History \n \nManual P/N Revision Release Date \n1601-9215 A1 April 2013 \n1601-9215 A2 February 2015 \n1601-9215 A3 January 2016 \n1601-9215 A4 January 2017 \n \nTable A–2: Major Updates for 1601-9215-A4 \n \nSect (A3) Sect (A4) Description \nTitle Title Manual part number to 1601-9215-A4 \nCh1 Ch1 Added NEMA 4X enclosure to Introduction and Specifications \nCh2 Ch2 Added NEMA 4X enclosure to Order Codes \nCh3 Ch3 Added NEMA 4X throughout chapter, with specific instructions in \nsection 3.3 Installation for NEMA 4X Enclosure \nCh4 Ch4 Added NEMA 4X Earth Ground Connection figure \nAdded interior pictures of both NEMA 1 and NEMA 4X Enclosures \n \nTable A–3: Major Updates for 1601-9215-A3 \n \nSect (A2) Sect (A3) Description \nTitle Title Manual part number to 1601-9215-A3 \nRebranded to Grid Solutions \ncover cover Added warranty and UL logos, removed ISO text \nMoved address inside cover \n1.5 1.5 Updated Specifications \n2.1 2.1 Updated EPM 2200 order code \n3.1 3.1 Updated Figure 3-3 (Location of Recommended Punch Entries) \n6.1 6.1 Updated to include change to fuse block ",
+    "heading": "A.1 Change Notes"
+  },
+  {
+    "location": "pdf-page:46",
+    "text": "CHAPTER A: APPENDIX \n40 MULTILIN METER ENCLOSURE – INSTRUCTION MANUAL \n \n \n \n \nTable A–3: Major Updates for 1601-9215-A3 \n \nSect (A2) Sect (A3) Description \nn/a 7.2 Added Warranty Statement \nn/a n/a Images updated to include change to fuse block (where \napplicable) Minor corrections throughout \n \nTable A–4: Major Updates for 1601-9215-A2 \n \nSect (A1) Sect (A2) Description \nTitle Title Manual part number to 1601-9215-A2 \n1.5 1.5 changed NEMA 1 (water resistant) to NEMA 1 (Indoor Use) \n \nA.2 Warranty Statement \nFor products shipped as of 1 October 2013, GE Vernova warrants most of its GE \nVernova manufactured products for 10 years. For warranty details including any \nlimitations and disclaimers, see our Terms and Conditions at \nhttps://www.gevernova.com/grid-solutions/multilin/warranty \nFor products shipped before 1 October 2013, the standard 24-month warranty applies. ",
+    "heading": "A.2 Warranty Statement"
+  }
+]

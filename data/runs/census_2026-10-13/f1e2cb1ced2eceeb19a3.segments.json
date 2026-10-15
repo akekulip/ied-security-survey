@@ -1,0 +1,512 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "MIFII Digital Feeder Relay | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "MIF II - Legacy"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Contact Us",
+    "heading": "MIF II - Legacy"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Manufacturing for this product has been discontinued. As an alternative, please refer to P14N and 350 relays.",
+    "heading": "MIF II - Legacy"
+  },
+  {
+    "location": "html-block:7",
+    "text": "The MIF II, part of the M II Family of economical and highly functional digital relays, provides comprehensive distribution feeder protection and can also be used for backup protection for transformers, busbars, generators and large motors.",
+    "heading": "MIF II - Legacy"
+  },
+  {
+    "location": "html-block:8",
+    "text": "In addition to feeder protection, the MIF II also provides integrated breaker control (open/close) and recloser functions. To complement its protection and control features, the relay's user-friendly controls and plug and play setup software make this product very easy to configure and use.",
+    "heading": "MIF II - Legacy"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Features & Benefits"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Option \"N\" for single phase or ground applications",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:11",
+    "text": "IAC time - current curves",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:12",
+    "text": "EPTAR-C time - current curves",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Configurable logic, curves, I/Os and LEDs",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Flash memory for field upgrades",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Two settings groups",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Password protection for local operation",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Automatic display of last fault information",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:18",
+    "text": "AC/DC power supply",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Improved user interface",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Access via front panel keypad or communication links",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:21",
+    "text": "EnerVista compatible",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Isolated front RS232 serial port",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Primary circuit protection on distribution networks at any voltage level",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Backup/auxiliary protection for transformers, generators and motors",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Protection & Control"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Phase, ground TOC and IOC",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Thermal image protection",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Circuit breaker control (open and close)",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Four shot autorecloser",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Cold load pickup function",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Configurable breaker failure to open",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Configurable I/O",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:34",
+    "text": "6 outputs; trip, service required, auxiliary",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:36",
+    "text": "32-event record, analog/digital oscillography",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:37",
+    "text": "KI2 counter for breaker maintenance",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Per phase current metering",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Monitoring of the last 5 trips information from the display",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:40",
+    "text": "User Interface"
+  },
+  {
+    "location": "html-block:41",
+    "text": "2x16 character LCD display",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:42",
+    "text": "6 LED indicators, 4 configurable in function and color",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:43",
+    "text": "EnerVista software for setting and monitoring",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Front RS232 and rear RS485 ports using ModBus® RTU protocol up to 19,200 bps",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:46",
+    "text": "USB-to-Serial Cable"
+  },
+  {
+    "location": "html-block:47",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:50",
+    "text": "Drawings"
+  },
+  {
+    "location": "html-block:51",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:53",
+    "text": "White Papers"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Subscribe",
+    "heading": "White Papers"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:56",
+    "text": "USB-to-Serial Cable"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:58",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:60",
+    "text": "Drawings"
+  },
+  {
+    "location": "html-block:61",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:62",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:63",
+    "text": "White Papers"
+  },
+  {
+    "location": "html-block:64",
+    "text": "Subscribe",
+    "heading": "White Papers"
+  },
+  {
+    "location": "html-block:65",
+    "text": "MIF II - Legacy"
+  },
+  {
+    "location": "html-block:66",
+    "text": "Contact Us",
+    "heading": "MIF II - Legacy"
+  },
+  {
+    "location": "html-block:67",
+    "text": "Manufacturing for this product has been discontinued. As an alternative, please refer to P14N and 350 relays.",
+    "heading": "MIF II - Legacy"
+  },
+  {
+    "location": "html-block:68",
+    "text": "The MIF II, part of the M II Family of economical and highly functional digital relays, provides comprehensive distribution feeder protection and can also be used for backup protection for transformers, busbars, generators and large motors.",
+    "heading": "MIF II - Legacy"
+  },
+  {
+    "location": "html-block:69",
+    "text": "In addition to feeder protection, the MIF II also provides integrated breaker control (open/close) and recloser functions. To complement its protection and control features, the relay's user-friendly controls and plug and play setup software make this product very easy to configure and use.",
+    "heading": "MIF II - Legacy"
+  },
+  {
+    "location": "html-block:70",
+    "text": "Features & Benefits"
+  },
+  {
+    "location": "html-block:71",
+    "text": "Option \"N\" for single phase or ground applications",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:72",
+    "text": "IAC time - current curves",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:73",
+    "text": "EPTAR-C time - current curves",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:74",
+    "text": "Configurable logic, curves, I/Os and LEDs",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:75",
+    "text": "Flash memory for field upgrades",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:76",
+    "text": "Two settings groups",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:77",
+    "text": "Password protection for local operation",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:78",
+    "text": "Automatic display of last fault information",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:79",
+    "text": "AC/DC power supply",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:80",
+    "text": "Improved user interface",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:81",
+    "text": "Access via front panel keypad or communication links",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:82",
+    "text": "EnerVista compatible",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:83",
+    "text": "Isolated front RS232 serial port",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:84",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:85",
+    "text": "Primary circuit protection on distribution networks at any voltage level",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:86",
+    "text": "Backup/auxiliary protection for transformers, generators and motors",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:87",
+    "text": "Protection & Control"
+  },
+  {
+    "location": "html-block:88",
+    "text": "Phase, ground TOC and IOC",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:89",
+    "text": "Thermal image protection",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:90",
+    "text": "Circuit breaker control (open and close)",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:91",
+    "text": "Four shot autorecloser",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:92",
+    "text": "Cold load pickup function",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:93",
+    "text": "Configurable breaker failure to open",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:94",
+    "text": "Configurable I/O",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:95",
+    "text": "6 outputs; trip, service required, auxiliary",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:96",
+    "text": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:97",
+    "text": "32-event record, analog/digital oscillography",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:98",
+    "text": "KI2 counter for breaker maintenance",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:99",
+    "text": "Per phase current metering",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:100",
+    "text": "Monitoring of the last 5 trips information from the display",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:101",
+    "text": "User Interface"
+  },
+  {
+    "location": "html-block:102",
+    "text": "2x16 character LCD display",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:103",
+    "text": "6 LED indicators, 4 configurable in function and color",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:104",
+    "text": "EnerVista software for setting and monitoring",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:105",
+    "text": "Front RS232 and rear RS485 ports using ModBus® RTU protocol up to 19,200 bps",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:106",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:107",
+    "text": "Feeder Protection"
+  },
+  {
+    "location": "html-block:108",
+    "text": "GE Vernova’s distribution feeder protection systems provide advanced protection with...",
+    "heading": "Feeder Protection"
+  },
+  {
+    "location": "html-block:109",
+    "text": "View More",
+    "heading": "Feeder Protection"
+  }
+]

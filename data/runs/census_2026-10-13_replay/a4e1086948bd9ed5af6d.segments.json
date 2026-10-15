@@ -1,0 +1,1118 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "Multilin UR Family | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "Multilin UR Family"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Proven, State-of-the-Art Protection & Control Systems"
+  },
+  {
+    "location": "html-block:6",
+    "text": "How-to Videos",
+    "heading": "Proven, State-of-the-Art Protection & Control Systems"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Contact Sales",
+    "heading": "Proven, State-of-the-Art Protection & Control Systems"
+  },
+  {
+    "location": "html-block:8",
+    "text": "The Universal Relay family of protection and control products are built on a common modular platform. All UR products feature high performance protection, expandable I/O, integrated monitoring and metering, high-speed communications, and extensive programming and configuration capabilities. The UR is the basis of simplified power management for the protection of critical assets.",
+    "heading": "Proven, State-of-the-Art Protection & Control Systems"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Modular construction via common hardware, reduced spare parts, and plug & play modules for cost savings and simplification",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:11",
+    "text": "CyberSentry UR provides robust network security aligned to industry standards and services",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Application flexibility with multiple I/O options including high density I/O, programmable logic, modularity, and specific customization",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Advanced IEC 61850 Ed. 1 and Ed. 2 certified implementation, complete settings via SCL files and comprehensive process bus support (IEC 61850-9-2LE, IEC 61869 or IEC 61850-9-2 Hardfiber) ensures interoperability, device managing optimization and reduced cost of ownership",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Routable GOOSE (R-GOOSE) enables GOOSE messages going beyond the substation, which enables wide area protection and control applications",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:15",
+    "text": "An integrated large, full color display, provides real-time visualization and control of the protected bay, via a bay mimic as well as annunciator functionality and graphical visualization of phasors",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Three Ethernet ports enable purpose specific LAN support, reducing latency from heavy traffic on critical communications",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Phasor Measurement Unit (synchrophasor) according to IEEE C37.118 (2014) and IEC 61850-90-5, directly streamed from your protective device",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Generator, transformer, transmission lines (distance, line differential and phase comparison), distribution, capacitor bank, network stability, controllers, motor protection, monitoring, metering & control",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Utility substation and industrial plant automation",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Digital fault recording and sequence of event recording",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Predictive maintenance through data analysis and trending",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Advanced protection, control & automation",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:24",
+    "text": "New graphical front panel with advanced protection, expanded bay controller capabilities & automation",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:25",
+    "text": "UR delivers high-end solutions for complex protection, control & automation applications",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:26",
+    "text": "CPC schemes - multiple feeders",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:28",
+    "text": "EnerVista Software"
+  },
+  {
+    "location": "html-block:29",
+    "text": "How-to Videos"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Manuals (UR common)"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Product & Cyber Security Advisories"
+  },
+  {
+    "location": "html-block:36",
+    "text": "White Papers"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Application Notes"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Subscribe",
+    "heading": "Application Notes"
+  },
+  {
+    "location": "html-block:39",
+    "text": "How-to Videos",
+    "heading": "Application Notes"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:41",
+    "text": "EnerVista Software"
+  },
+  {
+    "location": "html-block:42",
+    "text": "How-to Videos"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Manuals (UR common)"
+  },
+  {
+    "location": "html-block:46",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:47",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Product & Cyber Security Advisories"
+  },
+  {
+    "location": "html-block:49",
+    "text": "White Papers"
+  },
+  {
+    "location": "html-block:50",
+    "text": "Application Notes"
+  },
+  {
+    "location": "html-block:51",
+    "text": "Subscribe",
+    "heading": "Application Notes"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Multilin UR Family"
+  },
+  {
+    "location": "html-block:53",
+    "text": "Proven, State-of-the-Art Protection & Control Systems"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Contact Sales",
+    "heading": "Proven, State-of-the-Art Protection & Control Systems"
+  },
+  {
+    "location": "html-block:55",
+    "text": "The Universal Relay family of protection and control products are built on a common modular platform. All UR products feature high performance protection, expandable I/O, integrated monitoring and metering, high-speed communications, and extensive programming and configuration capabilities. The UR is the basis of simplified power management for the protection of critical assets.",
+    "heading": "Proven, State-of-the-Art Protection & Control Systems"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Modular construction via common hardware, reduced spare parts, and plug & play modules for cost savings and simplification",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:58",
+    "text": "CyberSentry UR provides robust network security aligned to industry standards and services",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Application flexibility with multiple I/O options including high density I/O, programmable logic, modularity, and specific customization",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:60",
+    "text": "Advanced IEC 61850 Ed. 1 and Ed. 2 certified implementation, complete settings via SCL files and comprehensive process bus support (IEC 61850-9-2LE, IEC 61869 or IEC 61850-9-2 Hardfiber) ensures interoperability, device managing optimization and reduced cost of ownership",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:61",
+    "text": "Routable GOOSE (R-GOOSE) enables GOOSE messages going beyond the substation, which enables wide area protection and control applications",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:62",
+    "text": "An integrated large, full color display, provides real-time visualization and control of the protected bay, via a bay mimic as well as annunciator functionality and graphical visualization of phasors",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:63",
+    "text": "Three Ethernet ports enable purpose specific LAN support, reducing latency from heavy traffic on critical communications",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:64",
+    "text": "Phasor Measurement Unit (synchrophasor) according to IEEE C37.118 (2014) and IEC 61850-90-5, directly streamed from your protective device",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:65",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:66",
+    "text": "Generator, transformer, transmission lines (distance, line differential and phase comparison), distribution, capacitor bank, network stability, controllers, motor protection, monitoring, metering & control",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:67",
+    "text": "Utility substation and industrial plant automation",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:68",
+    "text": "Digital fault recording and sequence of event recording",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:69",
+    "text": "Predictive maintenance through data analysis and trending",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:70",
+    "text": "Advanced protection, control & automation",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:71",
+    "text": "New graphical front panel with advanced protection, expanded bay controller capabilities & automation",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:72",
+    "text": "UR delivers high-end solutions for complex protection, control & automation applications",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:73",
+    "text": "CPC schemes - multiple feeders",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:74",
+    "text": "What's New"
+  },
+  {
+    "location": "html-block:75",
+    "text": "New and Enhanced Communication Capabilities"
+  },
+  {
+    "location": "html-block:76",
+    "text": "New UR with process bus module supports IEC 61869 sample values, PTP master capabilities and SV switching (FW 7.9x)",
+    "heading": "New and Enhanced Communication Capabilities"
+  },
+  {
+    "location": "html-block:77",
+    "text": "New UR process bus modules supporting IEC 61850-9-2LE/IEC 61869 Merging Units and IEC 61850-9-2 Hardfiber (FW 7.8x) Module Training available here",
+    "heading": "New and Enhanced Communication Capabilities"
+  },
+  {
+    "location": "html-block:78",
+    "text": "Support switchable IEC 61850 Ed. 1 and Ed. 2 and redundant SNTP (FW 7.7x)",
+    "heading": "New and Enhanced Communication Capabilities"
+  },
+  {
+    "location": "html-block:79",
+    "text": "New UR front panel with integrated 7” color, graphical display - providing operators with enhanced situational awareness (FW 7.6x)",
+    "heading": "New and Enhanced Communication Capabilities"
+  },
+  {
+    "location": "html-block:80",
+    "text": "High density I/O module supporting up to 120 inputs or up to 72 contact outputs – eliminating the need for additional discrete devices (FW 7.6x)",
+    "heading": "New and Enhanced Communication Capabilities"
+  },
+  {
+    "location": "html-block:81",
+    "text": "Cyber Security - CyberSentry UR (FW v7.xx)"
+  },
+  {
+    "location": "html-block:82",
+    "text": "CyberSentryTM enables UR devices to deliver full cyber security features that help customers to comply with cyber security requirements (NERC CIP, IEEE 1686, IEC 62443, etc):",
+    "heading": "Cyber Security - CyberSentry UR (FW v7.xx)"
+  },
+  {
+    "location": "html-block:83",
+    "text": "Secured firmware upgrade: FW file includes hash code that enables authentication prior to being used for upgrading UR Relay (FW 7.9x)",
+    "heading": "Cyber Security - CyberSentry UR (FW v7.xx)"
+  },
+  {
+    "location": "html-block:84",
+    "text": "Fully Compatible with IEC 61850-9-2LE or IEC61869 process bus schemes:"
+  },
+  {
+    "location": "html-block:85",
+    "text": "Can connect to up to 8 merging units over -9-2LE or 61869",
+    "heading": "Fully Compatible with IEC 61850-9-2LE or IEC61869 process bus schemes:"
+  },
+  {
+    "location": "html-block:86",
+    "text": "Supports PRP, HSR, dual HSR and point-to-point process bus topology",
+    "heading": "Fully Compatible with IEC 61850-9-2LE or IEC61869 process bus schemes:"
+  },
+  {
+    "location": "html-block:87",
+    "text": "Provides support for GE Vernova’s IEC 61850 HardFiber Process Bus Solution",
+    "heading": "Fully Compatible with IEC 61850-9-2LE or IEC61869 process bus schemes:"
+  },
+  {
+    "location": "html-block:88",
+    "text": "Extended Oscillography Records (FW v7.xx)"
+  },
+  {
+    "location": "html-block:89",
+    "text": "Increased number of digital and analog channels (FW 7.90)",
+    "heading": "Extended Oscillography Records (FW v7.xx)"
+  },
+  {
+    "location": "html-block:90",
+    "text": "Supports IEEE C37.111-1999/2013, IEC 60255-24 Ed 2.0 COMTRADE 2013 standard (FW v7.40)",
+    "heading": "Extended Oscillography Records (FW v7.xx)"
+  },
+  {
+    "location": "html-block:91",
+    "text": "Configurable events allow for records of up to 45s at 64 samples per cycle",
+    "heading": "Extended Oscillography Records (FW v7.xx)"
+  },
+  {
+    "location": "html-block:92",
+    "text": "Protection and Control Functionality"
+  },
+  {
+    "location": "html-block:93",
+    "text": "6-distance zones and sub-cycle performance SW options (FW 8.0)",
+    "heading": "Protection and Control Functionality"
+  },
+  {
+    "location": "html-block:94",
+    "text": "New TGFD elements (FW 8.0)",
+    "heading": "Protection and Control Functionality"
+  },
+  {
+    "location": "html-block:95",
+    "text": "Inter-turn transformer and dedicated Harmonic/Inrush detection elements (FW 8.0)",
+    "heading": "Protection and Control Functionality"
+  },
+  {
+    "location": "html-block:96",
+    "text": "B30 supports up to sixteen feeders and six differential bus zones when equipped with -9-2LE process bus module, end-fault protection, partial P&C blocking due to SV status (FW7.9x)",
+    "heading": "Protection and Control Functionality"
+  },
+  {
+    "location": "html-block:97",
+    "text": "CT exclusion setting (FW 7.8)",
+    "heading": "Protection and Control Functionality"
+  },
+  {
+    "location": "html-block:98",
+    "text": "B30 supports up to sixteen feeders and six differential bus zones when equipped with -9-2LE process bus module, end-fault protection, partial P&C blocking due to SV status.",
+    "heading": "Protection and Control Functionality"
+  },
+  {
+    "location": "html-block:99",
+    "text": "Expanded Bay Controller Capabilities – providing a one box solution (FW 7.6x)",
+    "heading": "Protection and Control Functionality"
+  },
+  {
+    "location": "html-block:100",
+    "text": "Monitoring & Diagnostics"
+  },
+  {
+    "location": "html-block:101",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:102",
+    "text": "Synchrophasor measurement devices (PMU) that meet IEEE c37.118 (2014) across all protection applications",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:103",
+    "text": "Synchrophasor capabilities on generator, transformer, line distance, line differential and feeder applications",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:104",
+    "text": "Multiple configurable PMU elements (up to 6 on selected products)",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:105",
+    "text": "Extended Oscillography – captures extended events at 64 samples per cycle",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:106",
+    "text": "Event Recorder - 1024 time tagged events, with 0.5ms scan of digital inputs",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:107",
+    "text": "Data Logger - up to 16 channels with user selectable sampling rate",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:108",
+    "text": "Fault locator and user-programmable fault reports",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:109",
+    "text": "Breaker condition monitoring including breaker arcing current (I2t)",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:110",
+    "text": "Metering - current, voltage, power, power factor, frequency",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:111",
+    "text": "Broken Rotor Bar Detection and motor temperature via RTD inputs",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:112",
+    "text": "Monitoring & Diagnostics"
+  },
+  {
+    "location": "html-block:113",
+    "text": "The UR includes high accuracy metering and recording for all AC signals. Voltage, current, and power metering are built into the relay as a standard feature. Current and voltage parameters are available as total RMS magnitude, and as fundamental frequency magnitude and angle.",
+    "heading": "Monitoring & Diagnostics"
+  },
+  {
+    "location": "html-block:114",
+    "text": "Digital fault recorder summary with the latest information on the events, faults, transients and disturbances.",
+    "heading": "Monitoring & Diagnostics"
+  },
+  {
+    "location": "html-block:115",
+    "text": "Control screen for the preconfigured bay with breaker & disconnect control in multiple pages using dedicated pushbuttons in the front panel.",
+    "heading": "Monitoring & Diagnostics"
+  },
+  {
+    "location": "html-block:116",
+    "text": "Advanced Automation"
+  },
+  {
+    "location": "html-block:117",
+    "text": "The UR incorporates advanced automation features including powerful FlexLogic™ programmable logic, communication, and SCADA capabilities that far surpass what is found in the average protection relay. Each UR can be seamlessly integrated with other UR relays for complete system protection and control.",
+    "heading": "Advanced Automation"
+  },
+  {
+    "location": "html-block:118",
+    "text": "FlexLogic allows for the creation of customized logic schemes to fit most protection and control applications.",
+    "heading": "Advanced Automation"
+  },
+  {
+    "location": "html-block:119",
+    "text": "Communications"
+  },
+  {
+    "location": "html-block:120",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:121",
+    "text": "Complete IEC 61850 Process Bus solution providing resource optimization and minimizing total P&C life cycle costs",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:122",
+    "text": "Three independent 100Mbps Ethernet ports enable purpose specific LAN support that reduces latency effect of heavy traffic protocols on mission critical communication services",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:123",
+    "text": "Embedded IEEE 1588 time synch protocol support eliminates dedicated IRIG-B wiring requirements for IEDs",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:124",
+    "text": "Direct I/O secures high-speed exchange of binary data between URs",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:125",
+    "text": "Increase network availability by reducing failover time to zero through IEC62439-3 “PRP” support",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:126",
+    "text": "Advanced Communications"
+  },
+  {
+    "location": "html-block:127",
+    "text": "The UR provides advanced communications technologies for remote data and engineering access, making it easy and flexible to use and integrate into new and existing infrastructures. Direct support for fiber optic Ethernet provides high-bandwidth communications allowing for low-latency controls and high-speed file transfers of relay fault and event record information. The available three independent and redundant Ethernet options provide the means to create fault tolerant communication architectures in an easy, cost-effective manner. The UR supports the most popular industry standard protocols enabling easy, direct integration into DCS and SCADA systems.",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:128",
+    "text": "IEC 61850-9-2LE 2LE or IEC 61869 point-to-point or networked or IEC61850-9-2 Hardfiber process bus support",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:129",
+    "text": "DNP 3.0 (serial & TCP/IP)",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:130",
+    "text": "Ethernet Global Data (EGD)",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:131",
+    "text": "IEC 60870-5-103 and IEC 60870-5-104",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:132",
+    "text": "Modbus RTU, Modbus TCP/IP",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:133",
+    "text": "HTTP, TFTP, SFTP and MMS file transfer",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:134",
+    "text": "Redundant SNTP and IEEE 1588 for time synchronization",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:135",
+    "text": "PRP as per IEC 62439-3",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:136",
+    "text": "IRC module that combines C37.92 multimode and direct connection singlemode",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:137",
+    "text": "Supports Routable GOOSE (R-GOOSE)",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:138",
+    "text": "Interoperability with Embedded IEC 61850"
+  },
+  {
+    "location": "html-block:139",
+    "text": "Process Bus System represents a true breakthrough in the installation and ownership of protection and control systems, by reducing the overall labor required for substation design, construction, and testing. This innovative solution addresses the three key issues driving the labor required for protection and control design, construction and testing:",
+    "heading": "Interoperability with Embedded IEC 61850"
+  },
+  {
+    "location": "html-block:140",
+    "text": "Every substation is unique making design and drafting a one-off solution for every station",
+    "heading": "Interoperability with Embedded IEC 61850"
+  },
+  {
+    "location": "html-block:141",
+    "text": "Miles of copper wires needs to be pulled, spliced and terminated",
+    "heading": "Interoperability with Embedded IEC 61850"
+  },
+  {
+    "location": "html-block:142",
+    "text": "Time consuming testing and troubleshooting of thousands of connections must be performed by skilled personnel",
+    "heading": "Interoperability with Embedded IEC 61850"
+  },
+  {
+    "location": "html-block:143",
+    "text": "The HardFiber System was designed to address these challenges and reduce the overall labor associated with the tasks of designing, documenting, installing and testing protection and control systems. By specifically targeting copper wiring and all of the labor it requires.UR delivers process bus through the HardFiber System or 61850-9-2LE/61869 process bus module. They allow for greater utilization and optimization of resources with the ultimate goal of reducing the Total Life Cost (TLC) for protection & control.",
+    "heading": "Interoperability with Embedded IEC 61850"
+  },
+  {
+    "location": "html-block:144",
+    "text": "Learn More",
+    "heading": "Interoperability with Embedded IEC 61850"
+  },
+  {
+    "location": "html-block:145",
+    "text": "The UR connects to GE Vernova MU320 or third-party merging units using standard IEC 61869 or IEC 61850-9-2LE communication protocols.",
+    "heading": "Interoperability with Embedded IEC 61850"
+  },
+  {
+    "location": "html-block:146",
+    "text": "Software & Security"
+  },
+  {
+    "location": "html-block:147",
+    "text": "Cyber Secutrity - CyberSentry™ UR (FW v7.4xx)"
+  },
+  {
+    "location": "html-block:148",
+    "text": "CyberSentry enables UR devices to deliver full cyber security features that help customers to comply with NERC CIP and NITIR 7628 cyber security requirements through supporting the following core features:",
+    "heading": "Cyber Secutrity - CyberSentry™ UR (FW v7.4xx)"
+  },
+  {
+    "location": "html-block:149",
+    "text": "Secure FW upgrade",
+    "heading": "Cyber Secutrity - CyberSentry™ UR (FW v7.4xx)"
+  },
+  {
+    "location": "html-block:150",
+    "text": "UR FW files v7.9 and up now include a hash code that allows for authentication prior to being used for upgrading UR devices",
+    "heading": "Cyber Secutrity - CyberSentry™ UR (FW v7.4xx)"
+  },
+  {
+    "location": "html-block:151",
+    "text": "Password Complexity",
+    "heading": "Cyber Secutrity - CyberSentry™ UR (FW v7.4xx)"
+  },
+  {
+    "location": "html-block:152",
+    "text": "Supporting up to 20 alpha- numeric or special characters, UR passwords exceed NERC CIP requirements for password complexity. Individual passwords per role are available.",
+    "heading": "Cyber Secutrity - CyberSentry™ UR (FW v7.4xx)"
+  },
+  {
+    "location": "html-block:153",
+    "text": "AAA Server Support (Radius)",
+    "heading": "Cyber Secutrity - CyberSentry™ UR (FW v7.4xx)"
+  },
+  {
+    "location": "html-block:154",
+    "text": "Enables integration with centrally managed authentication and accounting of all user activities and uses modern industry best practices and standards that meet and exceed NERC CIP requirements for authentication and password management.",
+    "heading": "Cyber Secutrity - CyberSentry™ UR (FW v7.4xx)"
+  },
+  {
+    "location": "html-block:155",
+    "text": "Role Based Access Control (RBAC)",
+    "heading": "Cyber Secutrity - CyberSentry™ UR (FW v7.4xx)"
+  },
+  {
+    "location": "html-block:156",
+    "text": "Efficiently administrate users and roles within UR devices. The new and advanced access functions allow users to configure up to five roles for up to eight configurable users with independent passwords. The standard “Remote Authentication Dial In User Service” (Radius) is used for authentication.",
+    "heading": "Cyber Secutrity - CyberSentry™ UR (FW v7.4xx)"
+  },
+  {
+    "location": "html-block:157",
+    "text": "Event Recorder (Syslog for SEM)"
+  },
+  {
+    "location": "html-block:158",
+    "text": "Capture all cyber security related events within a SOE element (login, logout, invalid password attempts, remote/local access, user in session, settings change, FW update, etc), and then serve and classify data by security level using standard Syslog data format. This enables UR devices integration with established SEM (Security Event Management) systems.",
+    "heading": "Event Recorder (Syslog for SEM)"
+  },
+  {
+    "location": "html-block:159",
+    "text": "EnerVista™ Software"
+  },
+  {
+    "location": "html-block:160",
+    "text": "The EnerVista™ suite is an industry-leading set of software programs that simplifies every aspect of using the UR. The EnerVista™ suite provides all the tools to monitor the status of the protected asset, maintain the relay, and integrate information measured by the UR into DCS or SCADA monitoring systems. Convenient COMTRADE and Sequence of Events viewers are an integral part of the UR setup software included with every UR relay, to carry out postmortem event analysis and ensure proper protection system operation.",
+    "heading": "EnerVista™ Software"
+  },
+  {
+    "location": "html-block:161",
+    "text": "Learn More",
+    "heading": "EnerVista™ Software"
+  },
+  {
+    "location": "html-block:162",
+    "text": "Product Listing"
+  },
+  {
+    "location": "html-block:163",
+    "text": "Bus"
+  },
+  {
+    "location": "html-block:164",
+    "text": "B90 - Multiple Sections Low Impedance Busbar Protection"
+  },
+  {
+    "location": "html-block:165",
+    "text": "Intended for large substations having complex-split busbar schemes, the B90 is an advanced low-impedance differential protection system.",
+    "heading": "B90 - Multiple Sections Low Impedance Busbar Protection"
+  },
+  {
+    "location": "html-block:166",
+    "text": "Learn More",
+    "heading": "B90 - Multiple Sections Low Impedance Busbar Protection"
+  },
+  {
+    "location": "html-block:167",
+    "text": "B30 - Multiple Sections Low Impedance Busbar Protection"
+  },
+  {
+    "location": "html-block:168",
+    "text": "The B30 is a cost effective-advanced protection system that fits busbars with up to 06 circuits and two protection zones. The B30 provides advanced elements that make the B30 and extremely fast and secure protection system.",
+    "heading": "B30 - Multiple Sections Low Impedance Busbar Protection"
+  },
+  {
+    "location": "html-block:169",
+    "text": "Learn More",
+    "heading": "B30 - Multiple Sections Low Impedance Busbar Protection"
+  },
+  {
+    "location": "html-block:170",
+    "text": "B95Plus – Legacy"
+  },
+  {
+    "location": "html-block:171",
+    "text": "Manufacturing for this product has been discontinued. As an alternative, please refer to the B30,and P74x relays.",
+    "heading": "B95Plus – Legacy"
+  },
+  {
+    "location": "html-block:172",
+    "text": "Generation"
+  },
+  {
+    "location": "html-block:173",
+    "text": "G60 - Medium to Large Generators"
+  },
+  {
+    "location": "html-block:174",
+    "text": "Provides comprehensive primary and backup protection for medium and large generators. Including/covering 100% stator and rotor (field) ground fault detection.",
+    "heading": "G60 - Medium to Large Generators"
+  },
+  {
+    "location": "html-block:175",
+    "text": "Learn More",
+    "heading": "G60 - Medium to Large Generators"
+  },
+  {
+    "location": "html-block:176",
+    "text": "G30 - Combined Generator & Transformer Protection"
+  },
+  {
+    "location": "html-block:177",
+    "text": "G30 relays are under last-time buy. Orders may be placed until 19th August 2025, and will be fulfilled based upon availability.",
+    "heading": "G30 - Combined Generator & Transformer Protection"
+  },
+  {
+    "location": "html-block:178",
+    "text": "Learn More",
+    "heading": "G30 - Combined Generator & Transformer Protection"
+  },
+  {
+    "location": "html-block:179",
+    "text": "Transformer"
+  },
+  {
+    "location": "html-block:180",
+    "text": "T60 - Medium to Large Transformers"
+  },
+  {
+    "location": "html-block:181",
+    "text": "A fully featured transformer protection system suitable for power transformers of any size that require current differential function.",
+    "heading": "T60 - Medium to Large Transformers"
+  },
+  {
+    "location": "html-block:182",
+    "text": "Learn More",
+    "heading": "T60 - Medium to Large Transformers"
+  },
+  {
+    "location": "html-block:183",
+    "text": "T35 - Basic Transformer Protection, Multiple CTs"
+  },
+  {
+    "location": "html-block:184",
+    "text": "Basic transformer protection system capable of protecting combined main power transformers and up to five feeders downstream.",
+    "heading": "T35 - Basic Transformer Protection, Multiple CTs"
+  },
+  {
+    "location": "html-block:185",
+    "text": "Learn More",
+    "heading": "T35 - Basic Transformer Protection, Multiple CTs"
+  },
+  {
+    "location": "html-block:186",
+    "text": "Transmission Line & Capacitor Bank"
+  },
+  {
+    "location": "html-block:187",
+    "text": "D60 - Fully Featured Distance Protection"
+  },
+  {
+    "location": "html-block:188",
+    "text": "The ideal solution for providing reliable and secure primary and backup protection of transmission lines.",
+    "heading": "D60 - Fully Featured Distance Protection"
+  },
+  {
+    "location": "html-block:189",
+    "text": "Learn More",
+    "heading": "D60 - Fully Featured Distance Protection"
+  },
+  {
+    "location": "html-block:190",
+    "text": "D30 - Backup Distance Protection"
+  },
+  {
+    "location": "html-block:191",
+    "text": "The cost-effective choice for the primary protection of sub-transmission systems or backup protection of transmission systems.",
+    "heading": "D30 - Backup Distance Protection"
+  },
+  {
+    "location": "html-block:192",
+    "text": "Learn More",
+    "heading": "D30 - Backup Distance Protection"
+  },
+  {
+    "location": "html-block:193",
+    "text": "L90 – Complete Line Protection System"
+  },
+  {
+    "location": "html-block:194",
+    "text": "Line protection system with segregated line current differential and complete distance protection.",
+    "heading": "L90 – Complete Line Protection System"
+  },
+  {
+    "location": "html-block:195",
+    "text": "Learn More",
+    "heading": "L90 – Complete Line Protection System"
+  },
+  {
+    "location": "html-block:196",
+    "text": "L60 - Line Phase Comparison Protection"
+  },
+  {
+    "location": "html-block:197",
+    "text": "Extremely fast line phase comparison system, suitable for two or three-terminal transmission lines.",
+    "heading": "L60 - Line Phase Comparison Protection"
+  },
+  {
+    "location": "html-block:198",
+    "text": "Learn More",
+    "heading": "L60 - Line Phase Comparison Protection"
+  },
+  {
+    "location": "html-block:199",
+    "text": "L30 - Sub-Transmission Line Current Differential Protection"
+  },
+  {
+    "location": "html-block:200",
+    "text": "A cost-effective phase segregated line current differential system, intended to provide primary protection for MV cables and two-three terminal sub-transmission lines or backup protection to transmission lines.",
+    "heading": "L30 - Sub-Transmission Line Current Differential Protection"
+  },
+  {
+    "location": "html-block:201",
+    "text": "Learn More",
+    "heading": "L30 - Sub-Transmission Line Current Differential Protection"
+  },
+  {
+    "location": "html-block:202",
+    "text": "C70 - Capacitor Bank Protection"
+  },
+  {
+    "location": "html-block:203",
+    "text": "An integrated protection, control, and monitoring device for shunt capacitor banks.",
+    "heading": "C70 - Capacitor Bank Protection"
+  },
+  {
+    "location": "html-block:204",
+    "text": "Learn More",
+    "heading": "C70 - Capacitor Bank Protection"
+  },
+  {
+    "location": "html-block:205",
+    "text": "C90Plus - Legacy"
+  },
+  {
+    "location": "html-block:206",
+    "text": "Manufacturing for C90Plus Bay Controller has been discontinued. As an alternative, please refer to the C60 with Firmware 7.7 or newer and User Interface Option E: 7” Graphical Front Panel Display.",
+    "heading": "C90Plus - Legacy"
+  },
+  {
+    "location": "html-block:207",
+    "text": "D90Plus – Legacy"
+  },
+  {
+    "location": "html-block:208",
+    "text": "Manufacturing for this product has been discontinued. As an alternative, please refer to the D60 with Firmware 7.7 or newer and User Interface Option E: 7” Graphical Front Panel Display.",
+    "heading": "D90Plus – Legacy"
+  },
+  {
+    "location": "html-block:209",
+    "text": "Substation and Breaker Controller"
+  },
+  {
+    "location": "html-block:210",
+    "text": "C60 - Breaker Controller"
+  },
+  {
+    "location": "html-block:211",
+    "text": "The C60 is a substation hardened controller that provides a complete integrated package for the protection, control, and monitoring of circuit breakers, supporting dual-breaker busbar configurations, such as breaker-and-half or ring bus schemes.",
+    "heading": "C60 - Breaker Controller"
+  },
+  {
+    "location": "html-block:212",
+    "text": "Learn More",
+    "heading": "C60 - Breaker Controller"
+  },
+  {
+    "location": "html-block:213",
+    "text": "C30 - I/O Logic Controller"
+  },
+  {
+    "location": "html-block:214",
+    "text": "The C30 is designed to perform substation control logic that can also expand the I/O capability of protection devices and replace existing Sequence of Events (SOE) recorders.",
+    "heading": "C30 - I/O Logic Controller"
+  },
+  {
+    "location": "html-block:215",
+    "text": "Learn More",
+    "heading": "C30 - I/O Logic Controller"
+  },
+  {
+    "location": "html-block:216",
+    "text": "C90Plus – Legacy",
+    "heading": "C30 - I/O Logic Controller"
+  },
+  {
+    "location": "html-block:217",
+    "text": "Manufacturing for C90Plus Fast Load Shed has been discontinued.",
+    "heading": "C30 - I/O Logic Controller"
+  },
+  {
+    "location": "html-block:218",
+    "text": "Distribution Feeder"
+  },
+  {
+    "location": "html-block:219",
+    "text": "F60 - Feeder Protection with Hi-Z Fault Detection"
+  },
+  {
+    "location": "html-block:220",
+    "text": "Comprehensive feeder protection, control, advanced communications, monitoring and metering in an integrated, economical, compact package and more.",
+    "heading": "F60 - Feeder Protection with Hi-Z Fault Detection"
+  },
+  {
+    "location": "html-block:221",
+    "text": "Learn More",
+    "heading": "F60 - Feeder Protection with Hi-Z Fault Detection"
+  },
+  {
+    "location": "html-block:222",
+    "text": "F35 - Multiple Feeder Protection"
+  },
+  {
+    "location": "html-block:223",
+    "text": "A cost-effective device for feeders primary protection",
+    "heading": "F35 - Multiple Feeder Protection"
+  },
+  {
+    "location": "html-block:224",
+    "text": "Learn More",
+    "heading": "F35 - Multiple Feeder Protection"
+  },
+  {
+    "location": "html-block:225",
+    "text": "Industrial & Network"
+  },
+  {
+    "location": "html-block:226",
+    "text": "M60 - Motor Protection"
+  },
+  {
+    "location": "html-block:227",
+    "text": "Comprehensive protection and control solutions for medium to large-sized three-phase motors.",
+    "heading": "M60 - Motor Protection"
+  },
+  {
+    "location": "html-block:228",
+    "text": "Learn More",
+    "heading": "M60 - Motor Protection"
+  },
+  {
+    "location": "html-block:229",
+    "text": "N60 - Network Stability and Synchrophasor Measurement"
+  },
+  {
+    "location": "html-block:230",
+    "text": "This network stability and synchrophasor measurement system is intended to be used on load shedding, remedial action, special protection and wide area monitoring and control schemes.",
+    "heading": "N60 - Network Stability and Synchrophasor Measurement"
+  },
+  {
+    "location": "html-block:231",
+    "text": "Learn More",
+    "heading": "N60 - Network Stability and Synchrophasor Measurement"
+  },
+  {
+    "location": "html-block:232",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:233",
+    "text": "GridBeats™ APS"
+  },
+  {
+    "location": "html-block:234",
+    "text": "View More",
+    "heading": "GridBeats™ APS"
+  },
+  {
+    "location": "html-block:235",
+    "text": "P54 MiCOM 5th Generation"
+  },
+  {
+    "location": "html-block:236",
+    "text": "The P54, part of the MiCOM P40 Agile 5th Generation family, is a line differential and...",
+    "heading": "P54 MiCOM 5th Generation"
+  },
+  {
+    "location": "html-block:237",
+    "text": "View More",
+    "heading": "P54 MiCOM 5th Generation"
+  },
+  {
+    "location": "html-block:238",
+    "text": "Multilin 8 Series"
+  },
+  {
+    "location": "html-block:239",
+    "text": "The Multilin™ 8 Series platform of advanced protection and control relays delivers high...",
+    "heading": "Multilin 8 Series"
+  },
+  {
+    "location": "html-block:240",
+    "text": "View More",
+    "heading": "Multilin 8 Series"
+  }
+]

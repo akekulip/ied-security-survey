@@ -1,0 +1,772 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "Multilin B90 | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "Multilin B90"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Low Impedance Bus Protection System"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Interactive Selector Guide",
+    "heading": "Low Impedance Bus Protection System"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Contact Sales Buy Now",
+    "heading": "Low Impedance Bus Protection System"
+  },
+  {
+    "location": "html-block:8",
+    "text": "The Multilin B90 bus protection relay, a member of the UR Family, features integrated protection and breaker failure for re-configurable MV, HV, EHV multi-section busbars with up to 24 feeders. Use one or more B90 relays together to build a flexible protection system that can be engineered to meet specific application requirements. The B90 performs fast and secure low-impedance bus protection with a sub-cycle tripping time of 0.75 cycles and 06 differential zones per phase.",
+    "heading": "Low Impedance Bus Protection System"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:10",
+    "text": "High-speed protection algorithm for enhanced stability with trip times of 0.75 power cycle with CT saturation detector that operates with only 2 msec of saturation-free current",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Superior CT saturation detector that operates with only 2 msec of saturation-free current",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Suitable for different bus configurations, scalable architecture to protect up to 24 feeders",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Advanced IEC61850 Ed. 1 and Ed. 2 certified implementation and complete setting in a single SCL file ensures interoperability, device management optimization and reduced cost of ownership",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Routable GOOSE (R-GOOSE) enables GOOSE messages going beyond the substation",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Advance Cyber security features “CyberSentryTM” that helps meet modern industry requirements",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Integrated isolator position monitoring, alarming and dynamic bus replica",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Application flexibility with multiple I/O options including high density I/O, programmable logic, modularity, and specific customization",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:18",
+    "text": "An integrated large, full color display, provides real-time visualization and control of the protected bay, via a bay mimic as well as annunciator functionality and graphical visualization of phasors",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Single bus, breaker-and-half busbar configurations, double Bus and triple Bus with and without bus couplers",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Re-configurable multi-section busbar with up to 24 feeders",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Typical Applications"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Bus Principles & Protection"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Legacy Bus Protection"
+  },
+  {
+    "location": "html-block:26",
+    "text": "How-to Videos"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Industry Expert Talks"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Drawings"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Product & Cyber Security Advisories"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Application Notes"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Subscribe",
+    "heading": "Application Notes"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Interactive Selector Guide",
+    "heading": "Application Notes"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Typical Applications"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Bus Principles & Protection"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Legacy Bus Protection"
+  },
+  {
+    "location": "html-block:43",
+    "text": "How-to Videos"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Industry Expert Talks"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:46",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:47",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:50",
+    "text": "Drawings"
+  },
+  {
+    "location": "html-block:51",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Product & Cyber Security Advisories"
+  },
+  {
+    "location": "html-block:53",
+    "text": "Application Notes"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Subscribe",
+    "heading": "Application Notes"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Multilin B90"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Low Impedance Bus Protection System"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Contact Sales Buy Now",
+    "heading": "Low Impedance Bus Protection System"
+  },
+  {
+    "location": "html-block:58",
+    "text": "The Multilin B90 bus protection relay, a member of the UR Family, features integrated protection and breaker failure for re-configurable MV, HV, EHV multi-section busbars with up to 24 feeders. Use one or more B90 relays together to build a flexible protection system that can be engineered to meet specific application requirements. The B90 performs fast and secure low-impedance bus protection with a sub-cycle tripping time of 0.75 cycles and 06 differential zones per phase.",
+    "heading": "Low Impedance Bus Protection System"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:60",
+    "text": "High-speed protection algorithm for enhanced stability with trip times of 0.75 power cycle with CT saturation detector that operates with only 2 msec of saturation-free current",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:61",
+    "text": "Superior CT saturation detector that operates with only 2 msec of saturation-free current",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:62",
+    "text": "Suitable for different bus configurations, scalable architecture to protect up to 24 feeders",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:63",
+    "text": "Advanced IEC61850 Ed. 1 and Ed. 2 certified implementation and complete setting in a single SCL file ensures interoperability, device management optimization and reduced cost of ownership",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:64",
+    "text": "Routable GOOSE (R-GOOSE) enables GOOSE messages going beyond the substation",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:65",
+    "text": "Advance Cyber security features “CyberSentryTM” that helps meet modern industry requirements",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:66",
+    "text": "Integrated isolator position monitoring, alarming and dynamic bus replica",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:67",
+    "text": "Application flexibility with multiple I/O options including high density I/O, programmable logic, modularity, and specific customization",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:68",
+    "text": "An integrated large, full color display, provides real-time visualization and control of the protected bay, via a bay mimic as well as annunciator functionality and graphical visualization of phasors",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:69",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:70",
+    "text": "Single bus, breaker-and-half busbar configurations, double Bus and triple Bus with and without bus couplers",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:71",
+    "text": "Re-configurable multi-section busbar with up to 24 feeders",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:72",
+    "text": "What's New"
+  },
+  {
+    "location": "html-block:73",
+    "text": "New and Enhanced Communication Capabilities",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:74",
+    "text": "Support switchable IEC 61850 Ed. 1 and Ed. 2 and redundant SNTP (FW 7.7x)",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:75",
+    "text": "New UR front panel with integrated 7” color, graphical display - providing operators with enhanced situational awareness (FW 7.6x)",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:76",
+    "text": "High density I/O module supporting up to 120 inputs or up to 72 contact outputs – eliminating the need for additional discrete devices (FW 7.6x)",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:77",
+    "text": "Cyber Security - CyberSentry UR (FW v7.xx)",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:78",
+    "text": "CyberSentryTM enables UR devices to deliver full cyber security features that help customers to comply with cyber security requirements (NERC CIP, IEEE 1686, IEC 62443, etc):",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:79",
+    "text": "Secured firmware upgrade: FW file includes hash code that enables authentication prior to being used for upgrading UR Relay (FW 7.9x)",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:80",
+    "text": "Extended Oscillography Records (FW v7.xx)",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:81",
+    "text": "Increased number of digital and analog channels (FW 7.90)",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:82",
+    "text": "Supports IEEE C37.111-1999/2013, IEC 60255-24 Ed 2.0 COMTRADE 2013 standard (FW v7.40)",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:83",
+    "text": "Configurable events allow for records of up to 45s at 64 samples per cycle",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:84",
+    "text": "Protection and Control Functionality",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:85",
+    "text": "Increased number of bus differential zones - Six zones (FW 7.30)",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:86",
+    "text": "Protection & Control"
+  },
+  {
+    "location": "html-block:87",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:88",
+    "text": "Multi-zone bus differential protection with restrained and unrestrained function",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:89",
+    "text": "Fast and reliable CT saturation detection",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:90",
+    "text": "Breaker failure protection",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:91",
+    "text": "End fault (dead zone) protection",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:92",
+    "text": "Check-zone functionality",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:93",
+    "text": "CT ratio mismatch compensation",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:94",
+    "text": "Dynamic bus replica",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:95",
+    "text": "Backup time and instantaneous overcurrent elements",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:96",
+    "text": "Undervoltage function for supervision purposess",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:97",
+    "text": "Supports Routable GOOSE (R-GOOSE)",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:98",
+    "text": "Protection & Control"
+  },
+  {
+    "location": "html-block:99",
+    "text": "The B90 bus differential relay provides fast and secure low-impedance bus protection for reconfigurable LV, HV, and EHV busbars. Use one B90 to protect up to 8 feeders and use three or more B90s together in a centralized phase-segregated architecture to protect up to 24 feeders. Many busbar applications such as single, double, triple, breaker-and-a-half, with or without transfer bus, can be protected using the B90. The B90 relay is ideally suited in applications where high-impedance schemes were typically used. Part of the Universal Relay family, the B90 comes with a variety of versatile features, truly integrating protection, monitoring, metering, communication and control in one easy-to-use device. The Universal Relay family offers a high degree of modularity in its design and functionality, providing superior performance in protection and control, while meeting the toughest requirements of the marketplace.",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:100",
+    "text": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:101",
+    "text": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:102",
+    "text": "Device Number | Function",
+    "heading": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:103",
+    "text": "27 | Undervoltage",
+    "heading": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:104",
+    "text": "50 | Instantaneous Overcurrent",
+    "heading": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:105",
+    "text": "51 | Time Overcurrent",
+    "heading": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:106",
+    "text": "50/74 | CT Trouble",
+    "heading": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:107",
+    "text": "87B | Bus Differential",
+    "heading": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:108",
+    "text": "Device Number | Function",
+    "heading": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:109",
+    "text": "50/87 | Unrestrained Bus Differential",
+    "heading": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:110",
+    "text": "51 | Time Overcurrent",
+    "heading": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:111",
+    "text": "50BF | Breaker Fail",
+    "heading": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:112",
+    "text": "50EF | End Fault Protection",
+    "heading": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:113",
+    "text": "Monitoring & Diagnostic"
+  },
+  {
+    "location": "html-block:114",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:115",
+    "text": "Isolator monitoring (up to 48) and alarming",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:116",
+    "text": "CT trouble monitoring",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:117",
+    "text": "VT supervision",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:118",
+    "text": "Metering - current, voltage, frequency",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:119",
+    "text": "Oscillography - 64 samples/cycle, up to 64 records",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:120",
+    "text": "Event Recorder - 1024 time tagged events, with 0.5 ms scan of digital inputs",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:121",
+    "text": "User configurable fault report",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:122",
+    "text": "Monitoring & Diagnostic"
+  },
+  {
+    "location": "html-block:123",
+    "text": "The B90 is the single point for protection, control, metering, and monitoring in one integrated device that can easily be connected directly into DCS or SCADA monitoring and control systems like Viewpoint Monitoring as shown.",
+    "heading": "Monitoring & Diagnostic"
+  },
+  {
+    "location": "html-block:124",
+    "text": "Advanced Automation"
+  },
+  {
+    "location": "html-block:125",
+    "text": "The B90 incorporates advanced automation features including powerful FlexLogic programmable logic, communication, and SCADA capabilities that far surpass what is found in the average bus protection relay. The B90 integrates seamlessly with other UR relays for complete system protection.",
+    "heading": "Advanced Automation"
+  },
+  {
+    "location": "html-block:126",
+    "text": "FlexLogic allows for the customization of the B90 outputs for most bus protection schemes and applications.",
+    "heading": "Advanced Automation"
+  },
+  {
+    "location": "html-block:127",
+    "text": "Communications"
+  },
+  {
+    "location": "html-block:128",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:129",
+    "text": "Three independent 100Mbps Ethernet ports enable purpose specific LAN support that eliminates latency effect of heavy traffic protocols on mission critical communication services",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:130",
+    "text": "Embedded IEEE 1588 time synch protocol support eliminates dedicated IRIG-B wiring requirements for IEDs",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:131",
+    "text": "Direct I/O secures high-speed exchange of binary data between URs",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:132",
+    "text": "Increase network availability by reducing failover time to zero through IEC62439-3 \"PRP\" support",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:133",
+    "text": "Advanced Communications"
+  },
+  {
+    "location": "html-block:134",
+    "text": "The B90 bus protection relay provides for secure remote data and engineering access, making it easy and flexible to use and integrate into new and existing infrastructures. Fiber optic Ethernet provides high-bandwidth communications allowing for low-latency controls and high-speed file transfers of relay fault and event record information. The available three independent and redundant Ethernet options provide the means to create fault tolerant communication architectures in an easy, cost-effective manner.",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:135",
+    "text": "The B90 relay supports the most popular industry standard protocols enabling easy, direct integration into DCS and SCADA systems.",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:136",
+    "text": "IEC 61850 Ed. 1/Ed. 2",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:137",
+    "text": "DNP 3.0 (serial & TCP/IP)",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:138",
+    "text": "IEC 60870-5-103 and IEC 60870-5-104",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:139",
+    "text": "Modbus RTU, Modbus TCP/IP",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:140",
+    "text": "HTTP, TFTP, SFTP and MMS file transfer",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:141",
+    "text": "Redundant SNTP and IEEE 1588 for time synchronization",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:142",
+    "text": "PRP as per IEC 62439-3",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:143",
+    "text": "Software & Security"
+  },
+  {
+    "location": "html-block:144",
+    "text": "Cyber Security - CyberSentry™ UR (FW v7.4xx)"
+  },
+  {
+    "location": "html-block:145",
+    "text": "CyberSentry enables UR devices to deliver full cyber security features that help customers to comply with NERC CIP and NITIR 7628 cyber security requirements through supporting the following core features:",
+    "heading": "Cyber Security - CyberSentry™ UR (FW v7.4xx)"
+  },
+  {
+    "location": "html-block:146",
+    "text": "Secure FW upgrade"
+  },
+  {
+    "location": "html-block:147",
+    "text": "UR FW files v7.9 and up now include a hash code that allows for authentication prior to being used for upgrading UR devices.",
+    "heading": "Secure FW upgrade"
+  },
+  {
+    "location": "html-block:148",
+    "text": "Password Complexity"
+  },
+  {
+    "location": "html-block:149",
+    "text": "Supporting up to 20 alpha- numeric or special characters, UR passwords exceed NERC CIP requirements for password complexity. Individual passwords per role are available.",
+    "heading": "Password Complexity"
+  },
+  {
+    "location": "html-block:150",
+    "text": "AAA Server Support (Radius)"
+  },
+  {
+    "location": "html-block:151",
+    "text": "Enables integration with centrally managed authentication and accounting of all user activities and uses modern industry best practices and standards that meet and exceed NERC CIP requirements for authentication and password management.",
+    "heading": "AAA Server Support (Radius)"
+  },
+  {
+    "location": "html-block:152",
+    "text": "Role Based Access Control (RBAC)"
+  },
+  {
+    "location": "html-block:153",
+    "text": "Efficiently administrate users and roles within UR devices. The new and advanced access functions allow users to configure up to five roles for up to eight configurable users with independent passwords. The standard “Remote Authentication Dial In User Service” (Radius) is used for authentication.",
+    "heading": "Role Based Access Control (RBAC)"
+  },
+  {
+    "location": "html-block:154",
+    "text": "Event Recorder (Syslog for SEM)"
+  },
+  {
+    "location": "html-block:155",
+    "text": "Capture all cyber security related events within a SOE element (login, logout, invalid password attempts, remote/local access, user in session, settings change, FW update, etc), and then serve and classify data by security level using standard Syslog data format. This enables UR devices integration with established SEM (Security Event Management) systems.",
+    "heading": "Event Recorder (Syslog for SEM)"
+  },
+  {
+    "location": "html-block:156",
+    "text": "EnerVista™ Software"
+  },
+  {
+    "location": "html-block:157",
+    "text": "The EnerVista™ suite is an industry-leading set of software programs that simplifies every aspect of using the B90 relay. The EnerVista™ suite provides all the tools to monitor the status of the protected asset, maintain the relay, and integrate information measured by the B90 into DCS or SCADA monitoring systems. Convenient COMTRADE and Sequence of Events viewers are an integral part of the UR setup software included with every UR relay, to carry out postmortem event analysis and ensure proper protection system operation.",
+    "heading": "EnerVista™ Software"
+  },
+  {
+    "location": "html-block:158",
+    "text": "Learn More",
+    "heading": "EnerVista™ Software"
+  },
+  {
+    "location": "html-block:159",
+    "text": "Record the operation of the internal B90 elements and external connected devices with 1ms time-stamped accuracy.",
+    "heading": "EnerVista™ Software"
+  },
+  {
+    "location": "html-block:160",
+    "text": "Create B90 setting file templates to ensure critical settings are not altered.",
+    "heading": "EnerVista™ Software"
+  },
+  {
+    "location": "html-block:161",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:162",
+    "text": "MiCOM Agile P746"
+  },
+  {
+    "location": "html-block:163",
+    "text": "The MiCOM Agile P746 provides complete protection for MV and HV busbar configurations...",
+    "heading": "MiCOM Agile P746"
+  },
+  {
+    "location": "html-block:164",
+    "text": "View More",
+    "heading": "MiCOM Agile P746"
+  },
+  {
+    "location": "html-block:165",
+    "text": "MiCOM Agile P747"
+  },
+  {
+    "location": "html-block:166",
+    "text": "The MiCOM Agile P747 provides complete protection for voltage levels up to extra high...",
+    "heading": "MiCOM Agile P747"
+  },
+  {
+    "location": "html-block:167",
+    "text": "View More",
+    "heading": "MiCOM Agile P747"
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "Line differential protection – SIPROTEC 7SD82 | Siemens"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Why SIPROTEC 7SD82?"
+  },
+  {
+    "location": "html-block:4",
+    "text": "SIPROTEC 7SD82 provides line differential protection for medium and high-voltage systems. It offers cost-optimized, compact protection for your electrical lines to deliver safety and reliability across all voltage levels for overhead lines and cables.",
+    "heading": "Why SIPROTEC 7SD82?"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Electrical systems face faults like transformer errors, current-transformer saturation and capacitive charging currents. SIPROTEC 7SD82 includes an adaptive differential protection algorithm to enable system stability. Maintain operational continuity, avoid costly downtime and detect ground faults in diverse power systems.",
+    "heading": "Why SIPROTEC 7SD82?"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Optimize space with the compact, low-cost design of the SIPROTEC 7SD82. Conformal coating on electronic boards helps the SIPROTEC 7SD82 perform in harsh conditions.",
+    "heading": "Why SIPROTEC 7SD82?"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Key benefits"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Reduce costs"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Lower operating costs over the lifecycle of your plant with compact and efficient differential protection for your systems. Future-proof your operations with a system that will require less maintenance long-term.",
+    "heading": "Reduce costs"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Improve safety"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Prioritize safety with powerful protection functions that increase the quality of your engineering processes. Make fast, effective and proactive decisions with clear data.",
+    "heading": "Improve safety"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Access data easily"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Secure data and maintain transparency across the plant lifecycle to save time and resources. Access device data simply and securely via a web browser.",
+    "heading": "Access data easily"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Featured capabilities"
+  },
+  {
+    "location": "html-block:15",
+    "text": "all",
+    "heading": "Featured capabilities"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Differential protection for MV and HV"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Implement differential protection for medium and high-voltage applications. Achieve interoperability between SIPROTEC 5 and 4 devices for comprehensive line protection. Respond rapidly with a 19 ms minimum tripping time.",
+    "heading": "Differential protection for MV and HV"
+  },
+  {
+    "location": "html-block:18",
+    "text": "all",
+    "heading": "Differential protection for MV and HV"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Advanced configuration functions"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Configure functions with DIGSI 5 for tailored solutions to detect any ground faults in compensated or isolated power systems. Monitor current and voltage signals up to the 50th harmonic accurately.",
+    "heading": "Advanced configuration functions"
+  },
+  {
+    "location": "html-block:21",
+    "text": "all",
+    "heading": "Advanced configuration functions"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Communication protocols and cybersecurity"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Use integrated Ethernet RJ45 for DIGSI 5 and IEC 61850 communication. Transmit data with PRP and HSR redundancy protocols. Role-based access control supports stronger cybersecurity.",
+    "heading": "Communication protocols and cybersecurity"
+  }
+]

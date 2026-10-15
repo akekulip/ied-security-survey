@@ -1,0 +1,114 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "SIMATIC S7-1500 Software Controller | Siemens"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Why SIMATIC S7-1500S?"
+  },
+  {
+    "location": "html-block:4",
+    "text": "The SIMATIC S7-1500S Software Controller brings SIMATIC S7-1500 controller functionality to industrial PCs for use with high-level languages like C++. This ensures high system availability and avoids downtimes because the controller runs even if the operating system fails or restarts. It uniquely combines the high reliability of a SIMATIC controller with the flexibility of a PC-based solution.",
+    "heading": "Why SIMATIC S7-1500S?"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Key benefits"
+  },
+  {
+    "location": "html-block:6",
+    "text": "High performance"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Combine the high reliability and system availability of SIMATIC controllers with the advantages of PC-based solutions. Enjoy standardization, scalability, high uptime, simple PC application integration and high productivity.",
+    "heading": "High performance"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Reliability"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Benefit from the security of a PLC controller and from the flexibility and independence of an industrial PC. The SIMATIC software controller continues to run during restart or even when the operating system fails.",
+    "heading": "Reliability"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Multiple applications"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Enable a variety of applications, such as eMobility charging infrastructure or wind power generation. SIMATIC S7-1500 software controllers are versatile and reliable.",
+    "heading": "Multiple applications"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Featured capabilities"
+  },
+  {
+    "location": "html-block:13",
+    "text": "all",
+    "heading": "Featured capabilities"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Integrated safety functions"
+  },
+  {
+    "location": "html-block:15",
+    "text": "SIMATIC S7-1500S is the only software controller with integrated safety functions to protect the controller against manipulations and your intellectual property against unauthorized access – in one, user-friendly system.",
+    "heading": "Integrated safety functions"
+  },
+  {
+    "location": "html-block:16",
+    "text": "all",
+    "heading": "Integrated safety functions"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Engineering with TIA Portal"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Accelerate time-to-market, boost productivity and engineering efficiency, and gain greater flexibility with TIA Portal – your complete gateway to digitalized automation.",
+    "heading": "Engineering with TIA Portal"
+  },
+  {
+    "location": "html-block:19",
+    "text": "all",
+    "heading": "Engineering with TIA Portal"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Useful supplementary features"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Access a wide range of additional features like motion control, system diagnostics with a mouse click and much more. The SIMATIC S7-1500 software controller is also available in standard and fail-safe versions.",
+    "heading": "Useful supplementary features"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Cybersecurity for Industry"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Security information"
+  },
+  {
+    "location": "html-block:24",
+    "text": "In order to protect plants, systems, machines and networks against cyber threats, it is necessary to implement – and continuously maintain – a holistic, state-of-the-art industrial security concept. Siemens’ products and solutions only form one element of such a concept. For more information about industrial security, please visit.",
+    "heading": "Security information"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Learn more",
+    "heading": "Security information"
+  }
+]

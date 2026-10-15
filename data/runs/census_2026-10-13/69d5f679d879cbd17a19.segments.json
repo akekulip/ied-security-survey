@@ -1,0 +1,941 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "Multilin Capacitor Bank Controller"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "Capacitor Bank Controller - Legacy"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Contact Us",
+    "heading": "Capacitor Bank Controller - Legacy"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Manufacturing for this product has been discontinued. Please contact us if you have any inquiries.",
+    "heading": "Capacitor Bank Controller - Legacy"
+  },
+  {
+    "location": "html-block:7",
+    "text": "The Multilin DGCC Capacitor Bank Controller enables a utility to optimize operational planning and asset tracking through 3-Phase power quality monitoring, and to reduce system downtime. The Multilin Capacitor Bank Controller is a 3-Phase Capacitor Bank Controller that is compatible with most Capacitor Bank Switches, including Cooper, Joslyn, and Trinetics.",
+    "heading": "Capacitor Bank Controller - Legacy"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Increases distribution grid efficiency, improving Power Factor & VARs",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Through deployment of the Volt/VAR system, the Capacitor Bank Controller:",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Enables up to a 6% reduction in energy demand",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Improves load management and power quality",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Enhances and optimizes capacitor bank utilization",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Common platform with other Multilin Distribution Automation (DA) controllers",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Performs real-time control from remote or local locations",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Lowers operational costs",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Integrates with industry leading Capacitor Bank Switch manufacturers",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Rugged construction for use in harsh environments (-40°C to +60°C)",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Reduces time associated with setup and commissioning",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Local Open/Close control",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Advanced logic engine using FlexLogic™",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Controller for pole-top or pad mounted Capacitor Banks for Distribution feeders",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Integrated into centralized or decentralized Volt/VAR systems",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Ideal for medium and small size Distribution Capacitor Banks",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Field RTU"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Voltage Regulator Controller"
+  },
+  {
+    "location": "html-block:29",
+    "text": "URC"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Substation Gateways & RTUs"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Distribution Feeder"
+  },
+  {
+    "location": "html-block:32",
+    "text": "EMS / DMS / OMS"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Distribution Automation Solutions"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Field RTU"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Voltage Regulator Controller"
+  },
+  {
+    "location": "html-block:43",
+    "text": "URC"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Substation Gateways & RTUs"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Distribution Feeder"
+  },
+  {
+    "location": "html-block:46",
+    "text": "EMS / DMS / OMS"
+  },
+  {
+    "location": "html-block:47",
+    "text": "Distribution Automation Solutions"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:50",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:51",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:53",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Capacitor Bank Controller - Legacy"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Contact Us",
+    "heading": "Capacitor Bank Controller - Legacy"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Manufacturing for this product has been discontinued. Please contact us if you have any inquiries.",
+    "heading": "Capacitor Bank Controller - Legacy"
+  },
+  {
+    "location": "html-block:57",
+    "text": "The Multilin DGCC Capacitor Bank Controller enables a utility to optimize operational planning and asset tracking through 3-Phase power quality monitoring, and to reduce system downtime. The Multilin Capacitor Bank Controller is a 3-Phase Capacitor Bank Controller that is compatible with most Capacitor Bank Switches, including Cooper, Joslyn, and Trinetics.",
+    "heading": "Capacitor Bank Controller - Legacy"
+  },
+  {
+    "location": "html-block:58",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Increases distribution grid efficiency, improving Power Factor & VARs",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:60",
+    "text": "Through deployment of the Volt/VAR system, the Capacitor Bank Controller:",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:61",
+    "text": "Enables up to a 6% reduction in energy demand",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:62",
+    "text": "Improves load management and power quality",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:63",
+    "text": "Enhances and optimizes capacitor bank utilization",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:64",
+    "text": "Common platform with other Multilin Distribution Automation (DA) controllers",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:65",
+    "text": "Performs real-time control from remote or local locations",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:66",
+    "text": "Lowers operational costs",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:67",
+    "text": "Integrates with industry leading Capacitor Bank Switch manufacturers",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:68",
+    "text": "Rugged construction for use in harsh environments (-40°C to +60°C)",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:69",
+    "text": "Reduces time associated with setup and commissioning",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:70",
+    "text": "Local Open/Close control",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:71",
+    "text": "Advanced logic engine using FlexLogic™",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:72",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:73",
+    "text": "Controller for pole-top or pad mounted Capacitor Banks for Distribution feeders",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:74",
+    "text": "Integrated into centralized or decentralized Volt/VAR systems",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:75",
+    "text": "Ideal for medium and small size Distribution Capacitor Banks",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:76",
+    "text": "VOLT/VAR Control"
+  },
+  {
+    "location": "html-block:77",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:78",
+    "text": "Auto/Manual or Local/Remote control",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:79",
+    "text": "Automatic control based on Time, Temperature, Voltage and VAR",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:80",
+    "text": "Control override based on Temperature and voltage",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:81",
+    "text": "Over/Under Voltage settings",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:82",
+    "text": "Perpetual calendar with time zones and day light savings Options for multiple seasons",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:83",
+    "text": "Close operations counters",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:84",
+    "text": "Volt/VAR control"
+  },
+  {
+    "location": "html-block:85",
+    "text": "Voltage regulator controllers and Capacitor bank controllers can operate as part of an integrated Volt/VAR Control (IVVC) scheme or as a Centralized Volt/VAR control (CVVC) system. The IVVC or CVVC system works to achieve two key objectives:",
+    "heading": "Volt/VAR control"
+  },
+  {
+    "location": "html-block:86",
+    "text": "Optimize Voltage - through ‘Conservation of Voltage’ that leads to reduced demand, that may result in decreased generation up to 6%.",
+    "heading": "Volt/VAR control"
+  },
+  {
+    "location": "html-block:87",
+    "text": "Increased efficiency- through improved power factor and reduced VAR which helps to reduce power line losses.",
+    "heading": "Volt/VAR control"
+  },
+  {
+    "location": "html-block:88",
+    "text": "Capacitor Bank Control"
+  },
+  {
+    "location": "html-block:89",
+    "text": "Robust Design",
+    "heading": "Capacitor Bank Control"
+  },
+  {
+    "location": "html-block:90",
+    "text": "As a complete package, the Multilin Capacitor Bank Controller is offered in a NEMA-4 certified cabinet that is suitable for operation of harsh environments with an operating range of -40°C to + 60°C (-40°F to +140°F).",
+    "heading": "Capacitor Bank Control"
+  },
+  {
+    "location": "html-block:91",
+    "text": "Mode of Operation",
+    "heading": "Capacitor Bank Control"
+  },
+  {
+    "location": "html-block:92",
+    "text": "To provide optimal application flexibility, the Multilin Capacitor Bank Controller offers two modes or methods of operation in which the device can be implemented to control the Capacitor Bank:a) Manual Mode (Local Control or Remote Control). b) Automatic Mode",
+    "heading": "Capacitor Bank Control"
+  },
+  {
+    "location": "html-block:93",
+    "text": "Manual Mode – Local Control",
+    "heading": "Capacitor Bank Control"
+  },
+  {
+    "location": "html-block:94",
+    "text": "In this mode, it is possible to Open or Close the Capacitor Bank, locally, from the large pushbuttons located on the front panel of the Multilin Capacitor Bank Controller. For increased operational reliability and operator safety, inhibit functions configured in the unit will continue to operate as defined.",
+    "heading": "Capacitor Bank Control"
+  },
+  {
+    "location": "html-block:95",
+    "text": "Manual Mode – Remote Control",
+    "heading": "Capacitor Bank Control"
+  },
+  {
+    "location": "html-block:96",
+    "text": "In this mode, the commands for Open or Close of the Capacitor Bank are received via communication channels from the SCADA or an integrated Volt/VAR system. This communication channel can be provided via optional radio or cellular communications.",
+    "heading": "Capacitor Bank Control"
+  },
+  {
+    "location": "html-block:97",
+    "text": "Automatic Mode",
+    "heading": "Capacitor Bank Control"
+  },
+  {
+    "location": "html-block:98",
+    "text": "In automatic mode, the Multilin Capacitor Bank Controller issues commands to Open or Close the Capacitor Bank. In this mode, the Capacitor Bank is controlled",
+    "heading": "Capacitor Bank Control"
+  },
+  {
+    "location": "html-block:99",
+    "text": "Key Capacitor Bank Control Features:",
+    "heading": "Capacitor Bank Control"
+  },
+  {
+    "location": "html-block:100",
+    "text": "Four Season Configuration",
+    "heading": "Capacitor Bank Control"
+  },
+  {
+    "location": "html-block:101",
+    "text": "Time Schedule Control",
+    "heading": "Capacitor Bank Control"
+  },
+  {
+    "location": "html-block:102",
+    "text": "Temperature control",
+    "heading": "Capacitor Bank Control"
+  },
+  {
+    "location": "html-block:103",
+    "text": "Voltage control",
+    "heading": "Capacitor Bank Control"
+  },
+  {
+    "location": "html-block:104",
+    "text": "VAR Control (Min Delta KVAR)",
+    "heading": "Capacitor Bank Control"
+  },
+  {
+    "location": "html-block:105",
+    "text": "Inhibit Controls",
+    "heading": "Capacitor Bank Control"
+  },
+  {
+    "location": "html-block:106",
+    "text": "Protection & Automation"
+  },
+  {
+    "location": "html-block:107",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:108",
+    "text": "Star Neutral Overcurrent (Blown Fuse Indication)",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:109",
+    "text": "Customized automation schemes using FlexLogic™",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:110",
+    "text": "Expandable inputs and outputs for advanced applications",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:111",
+    "text": "Protection"
+  },
+  {
+    "location": "html-block:112",
+    "text": "Reverse Power Detection",
+    "heading": "Protection"
+  },
+  {
+    "location": "html-block:113",
+    "text": "The Multilin Capacitor Bank Controller includes a Reverse Power Detection function, which defines the minimum pickup required to detect reverse power conditions.",
+    "heading": "Protection"
+  },
+  {
+    "location": "html-block:114",
+    "text": "Neutral Overcurrent Protection (Blown Fuse Condition)",
+    "heading": "Protection"
+  },
+  {
+    "location": "html-block:115",
+    "text": "In situations where the capacitor bank has been tripped due to a neutral current unbalance situation, the Multilin Capacitor Bank Controller will execute a reclose action to validate the state of the fault, ensuring the fault was not transient in nature. This automatic reclose action ensures maximizes system reliability.",
+    "heading": "Protection"
+  },
+  {
+    "location": "html-block:116",
+    "text": "Automation"
+  },
+  {
+    "location": "html-block:117",
+    "text": "The Multilin Capacitor Bank Controller offers powerful I/O and programmable FlexLogic™ options for advanced automation control, reducing the need for additional programmable controllers or discrete control relays. The Multilin Capacitor Bank Controller has three identical set point groups. The activation of the group can be done either from the HMI or via a Digital Input.",
+    "heading": "Automation"
+  },
+  {
+    "location": "html-block:118",
+    "text": "Set point group control",
+    "heading": "Automation"
+  },
+  {
+    "location": "html-block:119",
+    "text": "The Multilin Capacitor Bank Controller has three identical set point groups. The activation of the group can be done either from the HMI or via a Digital Input.",
+    "heading": "Automation"
+  },
+  {
+    "location": "html-block:120",
+    "text": "Virtual Inputs and Outputs",
+    "heading": "Automation"
+  },
+  {
+    "location": "html-block:121",
+    "text": "The Multilin Capacitor Bank Controller provides 32 virtual inputs and 32 virtual outputs that provide users the ability to send commands to the device. The Multilin Capacitor Bank Controller can accept commands from SCADA, through the front HMI, or front USB port to issue commands such as Open or Close.",
+    "heading": "Automation"
+  },
+  {
+    "location": "html-block:122",
+    "text": "Command Setting",
+    "heading": "Automation"
+  },
+  {
+    "location": "html-block:123",
+    "text": "The Multilin Capacitor Bank Controller has the ability to force commands from the menu structure accessible through the Multilin EnerVista setup software that runs on a PC.",
+    "heading": "Automation"
+  },
+  {
+    "location": "html-block:124",
+    "text": "FlexLogic™",
+    "heading": "Automation"
+  },
+  {
+    "location": "html-block:125",
+    "text": "Advanced FlexLogic in the Multilin Capacitor Bank Controller provides the ability to create customized control schemes. This minimizes the need for auxiliary components and wiring, thus reducing complexity and costs.",
+    "heading": "Automation"
+  },
+  {
+    "location": "html-block:126",
+    "text": "Metering & Monitoring"
+  },
+  {
+    "location": "html-block:127",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:128",
+    "text": "Metering - current, voltage, power, frequency, PF, Harmonics",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:129",
+    "text": "Event Recorder - Up to 256 time tagged events",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:130",
+    "text": "Temperature via RTD inputs",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:131",
+    "text": "Enhanced system diagnostics & reporting",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:132",
+    "text": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:133",
+    "text": "The Multilin Capacitor Bank Controller provides high accuracy metering and recording of AC signals, measuring the following key parameters:",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:134",
+    "text": "Phase-Ground Voltage (kV)",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:135",
+    "text": "Phase-to-Phase Voltage (kV)",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:136",
+    "text": "Line Voltage (kV)",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:137",
+    "text": "A, B, and C Phase Currents (A)",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:138",
+    "text": "Line Current (A)",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:139",
+    "text": "Ground Current (A)",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:140",
+    "text": "3-Phase Active Power (kW)",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:141",
+    "text": "3-Phase Reactive Power (kVAR)",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:142",
+    "text": "3-Phase Apparent Power",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:143",
+    "text": "Delta Reactive Power (KVAR)",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:144",
+    "text": "Power Factor (Lag or Lead)",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:145",
+    "text": "2nd to 8th harmonic up to 20% – for current",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:146",
+    "text": "2nd to 8th harmonic up to 20% – for voltage",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:147",
+    "text": "THD in 20% – for current",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:148",
+    "text": "THD in 20% – for voltage",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:149",
+    "text": "Temperature [ ºC ]",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:150",
+    "text": "These data points can be easily integrated into a customer’s database for seamless viewing through a SCADA or DMS system.",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:151",
+    "text": "The Multilin Capacitor Bank Controller has the ability to monitor the following setpoints / conditions and issue an alarm if measured values fall outside of specified limits:",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:152",
+    "text": "Minimum voltage limit",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:153",
+    "text": "Bank switch failed",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:154",
+    "text": "Switching alarm (Reverse Power)",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:155",
+    "text": "Total close counter reached",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:156",
+    "text": "Max Daily operation counter reached",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:157",
+    "text": "Minimum VAR Delta (variation)",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:158",
+    "text": "Minimum Volt. Delta (variation)",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:159",
+    "text": "Neutral overcurrent",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:160",
+    "text": "Event recorder",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:161",
+    "text": "To significantly reduce time and enable more effective disturbance, post fault analysis and troubleshooting, the Multilin Capacitor Bank Controller provides an integrated event recorder and detailed diagnostic features.",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:162",
+    "text": "Data Management and Diagnostics",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:163",
+    "text": "The Multilin Capacitor Bank Controller provides advanced disturbance diagnostic features that significantly reduce the time and costs associated with troubleshooting power system events and reconstruction. Recording functions include enhanced diagnostics with a 10 channel RMS recorder Data Logger.",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:164",
+    "text": "Statistics & Counters",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:165",
+    "text": "The Multilin Capacitor Bank Controller provides counters which records key operational parameters to aid in enabling preventative maintenance programs. The Multilin Capacitor Bank Controller includes many counters & statistical values.",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:166",
+    "text": "Advanced Device Health Diagnostics",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:167",
+    "text": "Comprehensive device health diagnostic tests are performed by the Multilin Capacitor Bank Controller during startup and continuously at runtime to test its own major functions and critical hardware. These diagnostic tests monitor for conditions that could impact the Multilin Capacitor Bank Controller’s performance, evaluates the potential impact and criticality of this condition and presents the device status to operators, via SCADA and/or through the front panel display.",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:168",
+    "text": "Communications"
+  },
+  {
+    "location": "html-block:169",
+    "text": "Communications"
+  },
+  {
+    "location": "html-block:170",
+    "text": "The Multilin Capacitor Bank Controller utilizes industry standard, communications technologies making it one of easiest and most flexible controllers to use and integrate into new and existing SCADA or DMS infrastructures. Supported communication protocols include:",
+    "heading": "Communications"
+  },
+  {
+    "location": "html-block:171",
+    "text": "DNP 3.0",
+    "heading": "Communications"
+  },
+  {
+    "location": "html-block:172",
+    "text": "Modbus RTU (RS485)",
+    "heading": "Communications"
+  },
+  {
+    "location": "html-block:173",
+    "text": "Multiple communication ports and protocols allow for remote control and easy access to device and system information. All communication ports are capable of simultaneous communications. The Multilin Capacitor Bank Controller can also communicate to Volt/VAR or SCADA systems via wireless communications media. The supported wireless media includes:",
+    "heading": "Communications"
+  },
+  {
+    "location": "html-block:174",
+    "text": "Wireless Radio (MDS or customer specific)",
+    "heading": "Communications"
+  },
+  {
+    "location": "html-block:175",
+    "text": "GSM/GPRS",
+    "heading": "Communications"
+  },
+  {
+    "location": "html-block:176",
+    "text": "Pre-wired for future radio",
+    "heading": "Communications"
+  },
+  {
+    "location": "html-block:177",
+    "text": "Front Panel"
+  },
+  {
+    "location": "html-block:178",
+    "text": "Front Panel Quick Keys"
+  },
+  {
+    "location": "html-block:179",
+    "text": "Front Penel quick keys provides direct access to key individual setting parameters",
+    "heading": "Front Panel Quick Keys"
+  },
+  {
+    "location": "html-block:180",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:181",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:182",
+    "text": "4-Level device security to maintain authorized access only",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:183",
+    "text": "Simplified device configuration software tool and industry leading suite of software tools to manage and maintain Multilin devices.",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:184",
+    "text": "Security"
+  },
+  {
+    "location": "html-block:185",
+    "text": "The Multilin Capacitor Bank Controller and associated software tools provide a suite of security features that ensure only approved personnel can make changes to the configuration of the system or execute commands. These functions enable a utility to meet NERC/CIP requirements.",
+    "heading": "Security"
+  },
+  {
+    "location": "html-block:186",
+    "text": "Password Security",
+    "heading": "Security"
+  },
+  {
+    "location": "html-block:187",
+    "text": "The Multilin Capacitor Bank Controller offers multiple levels of password security to limit access control based on settings or command levels. There are four levels of password security provided:",
+    "heading": "Security"
+  },
+  {
+    "location": "html-block:188",
+    "text": "Local Settings Access",
+    "heading": "Security"
+  },
+  {
+    "location": "html-block:189",
+    "text": "Local Control Access",
+    "heading": "Security"
+  },
+  {
+    "location": "html-block:190",
+    "text": "Remote Settings Access",
+    "heading": "Security"
+  },
+  {
+    "location": "html-block:191",
+    "text": "Remote Control Access",
+    "heading": "Security"
+  },
+  {
+    "location": "html-block:192",
+    "text": "Local Access refers to users making changes using the front USB serial port and the HMI. Remote Access refers to users making changes using the rear RS485 port.",
+    "heading": "Security"
+  },
+  {
+    "location": "html-block:193",
+    "text": "EnerVista™ Software"
+  },
+  {
+    "location": "html-block:194",
+    "text": "The EnerVista™ Suite is an industry-leading set of software programs that simplifies every aspect of using the Multilin Capacitor Bank Controller The EnerVista™ suite provides all the tools to monitor the status of the protected asset, maintain the controller, and integrate information measured by the DGCC into SCADA or the DMS monitoring systems. The ability to easily view sequence of events is an integral part of the setup software, as postmortem event analysis is critical to proper system operation.",
+    "heading": "EnerVista™ Software"
+  },
+  {
+    "location": "html-block:195",
+    "text": "Learn More",
+    "heading": "EnerVista™ Software"
+  },
+  {
+    "location": "html-block:196",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:197",
+    "text": "Controllers"
+  },
+  {
+    "location": "html-block:198",
+    "text": "GE Vernova offers an industry-leading suite of controllers that support a variety of...",
+    "heading": "Controllers"
+  },
+  {
+    "location": "html-block:199",
+    "text": "View More",
+    "heading": "Controllers"
+  }
+]

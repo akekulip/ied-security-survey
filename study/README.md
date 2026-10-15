@@ -1,10 +1,10 @@
 # Study files
 
-What the survey has produced, and how each file was made. The tool is in the same private repository, https://github.com/akekulip/ied-security-survey; the catalogue study's report was made with version 2.2.0. Commands below are run from the top of the repository. The catalogue study's runs and fetched documents are on the repository's `data` branch (see the top-level README).
+What the survey has produced, and how each file was made. The tool is in the same private repository, https://github.com/akekulip/ied-security-survey; the catalogue study's report was made with version 2.2.0. Commands below are run from the top of the repository. The catalogue study's runs and fetched documents are in `data/` at the top of the repository.
 
 **Nothing here is a confirmed finding yet.** Every review row was drafted by an AI assistant and says so in its `reviewer` field ("Claude AI draft review; author confirmation pending"). The reports repeat that under "Reviewers on record". A second AI reading has checked the draft against the retained documents. That does not replace the author's confirmation.
 
-Fetched bytes and run directories are kept outside this folder. The five-product study uses `runs/` and `cache/` at the top of the repository. The catalogue study uses `C:\Users\Philip\ied_survey_data`, written `$DATA` below, because its cache is about 1.5 GB.
+Fetched bytes and run directories are kept outside this folder. The five-product study uses `runs/` and `cache/` at the top of the repository. The catalogue study's are in `data/`, written `$DATA` below; its cache is about 1.2 GB.
 
 ## Where to look first
 
@@ -81,7 +81,7 @@ The first study: one hand-picked product per vendor, from `configs/pilot.json`.
 
 ## Making the reports again
 
-From the top of the repository, with `DATA=C:/Users/Philip/ied_survey_data` and `S=study/catalogue_2026-10-13`:
+From the top of the repository, with `DATA=data` and `S=study/catalogue_2026-10-13`:
 
 ```bash
 python survey.py verify --run $DATA/runs/sample_2026-10-13_v2_0 --cache $DATA/cache

@@ -1,0 +1,212 @@
+[
+  {
+    "id": "3098f176245ccc4c4955",
+    "product_id": "siemens_7sj82",
+    "url": "https://www.siemens.com/en-us/products/siprotec/7sj82/",
+    "depth": 0,
+    "started_at": "2026-10-13T18:54:11.850481+00:00",
+    "final_url": "https://www.siemens.com/en-us/products/siprotec/7sj82/",
+    "sha256": "3831067725690ed145e97edc27984a551b486f83dd1dbcd5f8184699cf429d66",
+    "bytes": 165460,
+    "headers": {
+      "Content-Type": "text/html; charset=utf-8",
+      "Content-Length": "165460",
+      "Date": "Mon, 12 Oct 2026 21:12:31 GMT",
+      "Last-Modified": "Mon, 12 Oct 2026 17:21:12 GMT",
+      "ETag": "\"a8fa83bff722f36c0ba8b5a1cf13057d\""
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://www.siemens.com/en-us/products/siprotec/7sj82/",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T18:54:13.288261+00:00",
+    "kind": "html",
+    "title": "Overcurrent and feeder protection – SIPROTEC 7SJ82 | Siemens",
+    "document_hints": [],
+    "text_sha256": "86e946d74e669e8478c9d2d38c6ac0af532f3c019d0bf0636ff94e01e641afcb",
+    "doc_type_suggested": "product_page",
+    "status": "extracted",
+    "links_found": 11
+  },
+  {
+    "id": "9c4adaf6d92e22cac14e",
+    "product_id": "rockwell_powermonitor_5000",
+    "url": "https://www.rockwellautomation.com/en-us/products/hardware/energy-monitoring/1426-powermonitor-5000.html",
+    "depth": 0,
+    "started_at": "2026-10-13T18:54:13.296266+00:00",
+    "final_url": "https://www.rockwellautomation.com/en-us/products/hardware/energy-monitoring/1426-powermonitor-5000.html",
+    "sha256": "458c03fcfb9335ca3cba2cea361ca693272f032e94f5127bf7b502b248944667",
+    "bytes": 178548,
+    "headers": {
+      "Content-Type": "text/html;charset=utf-8",
+      "Last-Modified": "Fri, 18 Sep 2026 01:27:37 GMT",
+      "ETag": "W/\"2abec-65bb7ce426a57-gzip\"",
+      "Date": "Tue, 13 Oct 2026 18:54:14 GMT"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://www.rockwellautomation.com/en-us/products/hardware/energy-monitoring/1426-powermonitor-5000.html",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T18:54:14.920777+00:00",
+    "kind": "html",
+    "title": "1426 PowerMonitor 5000 | Rockwell Automation | US",
+    "document_hints": [
+      "PowerMonitor 5000 Unit Firmware Revision Update Installation | 1426-IN004_-EN-P"
+    ],
+    "text_sha256": "34d4a74d968a685ef3dafc758ef510e3c1e472d40ae76ab6a754dd60ae05dc17",
+    "doc_type_suggested": "product_page",
+    "status": "extracted",
+    "links_found": 25
+  },
+  {
+    "id": "27824ecea2d973349d58",
+    "product_id": "rockwell_micrologix_1400_controllers",
+    "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/micrologix-1400-controllers.html",
+    "depth": 0,
+    "started_at": "2026-10-13T18:54:14.939781+00:00",
+    "final_url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/micrologix-1400-controllers.html",
+    "sha256": "a67ce971636f358eac6423e384d138ba1749aa6a44a892877e9410559e1edba5",
+    "bytes": 167601,
+    "headers": {
+      "Content-Type": "text/html;charset=utf-8",
+      "Last-Modified": "Thu, 17 Sep 2026 23:34:37 GMT",
+      "ETag": "W/\"2812a-65bb63a2254fa-gzip\"",
+      "Date": "Tue, 13 Oct 2026 18:54:15 GMT"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/micrologix-1400-controllers.html",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T18:54:15.801128+00:00",
+    "kind": "html",
+    "title": "MicroLogix 1400 Controllers | Rockwell Automation | US",
+    "document_hints": [],
+    "text_sha256": "d0017b46e7091782f470c70e05139af16444b02ea2778d56dafff4f3fdca842a",
+    "doc_type_suggested": "product_page",
+    "status": "extracted",
+    "links_found": 23
+  },
+  {
+    "id": "07fd87b03f6fc8d22de6",
+    "product_id": "schneider_micom_p14x",
+    "url": "https://www.se.com/us/en/product-range/60765-micom-p14x/",
+    "depth": 0,
+    "started_at": "2026-10-13T18:54:15.817257+00:00",
+    "final_url": "https://www.se.com/us/en/product-range/60765-micom-p14x/",
+    "sha256": "8016a28764f18015e0a65f355a9a41571f2111348d9bb47f53b953cfec002a58",
+    "bytes": 1352115,
+    "headers": {
+      "Content-Type": "text/html",
+      "Date": "Tue, 13 Oct 2026 18:54:17 GMT"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://www.se.com/us/en/product-range/60765-micom-p14x/",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T18:54:17.299627+00:00",
+    "kind": "html",
+    "title": "MiCOM P14x | Schneider Electric USA",
+    "document_hints": [],
+    "text_sha256": "1e6c2fa674f3d01c4cb3dd1b51840377abfa5fe63084cf009010f80702115a5f",
+    "doc_type_suggested": "product_page",
+    "status": "extracted",
+    "links_found": 49
+  },
+  {
+    "id": "475bb2a1b6fe856b41b4",
+    "product_id": "schneider_scadapack_57x",
+    "url": "https://www.se.com/us/en/product-range/66030-scadapack-57x/",
+    "depth": 0,
+    "started_at": "2026-10-13T18:54:17.325623+00:00",
+    "final_url": "https://www.se.com/us/en/product-range/66030-scadapack-57x/",
+    "sha256": "6bfb184a7ffc6f8f8246257b52dfa7c037184888e5c268eb4231a956495da349",
+    "bytes": 1460131,
+    "headers": {
+      "Content-Type": "text/html",
+      "Date": "Tue, 13 Oct 2026 18:54:18 GMT"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://www.se.com/us/en/product-range/66030-scadapack-57x/",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T18:54:18.614004+00:00",
+    "kind": "html",
+    "title": "SCADAPack 57x | Schneider Electric USA",
+    "document_hints": [],
+    "text_sha256": "6fc508958efc7066c8ce3f45fb8ef606ff3c7bd4e0a6471c6cdd3e54810b3f84",
+    "doc_type_suggested": "product_page",
+    "status": "extracted",
+    "links_found": 49
+  },
+  {
+    "id": "2a9ab23b554dee2fb180",
+    "product_id": "sel_751",
+    "url": "https://selinc.com/api/download/10737/",
+    "depth": 0,
+    "started_at": "2026-10-13T18:54:18.641004+00:00",
+    "status": "login_required",
+    "error": "ValueError: login required: redirected to https://selinc.com/login/?returnUrl=https://selinc.com%2Fapi%2Fdownload%2F10737%2F"
+  },
+  {
+    "id": "0d0956d84baae2ae5167",
+    "product_id": "sel_751a",
+    "url": "https://selinc.com/api/download/3656/",
+    "depth": 0,
+    "started_at": "2026-10-13T18:54:20.476301+00:00",
+    "status": "login_required",
+    "error": "ValueError: login required: redirected to https://selinc.com/login/?returnUrl=https://selinc.com%2Fapi%2Fdownload%2F3656%2F"
+  },
+  {
+    "id": "33a586afe4d5cbbcb977",
+    "product_id": "sel_real_time_automation_controller_rtac",
+    "url": "https://selinc.com/api/download/111397/",
+    "depth": 0,
+    "started_at": "2026-10-13T18:54:21.574879+00:00",
+    "final_url": "https://selinc.com/api/download/111397/",
+    "sha256": "8e7993deb90fd53bd75eeb1344eb5f1dcc7782fcfce61ad6f6697d538064f8cc",
+    "bytes": 1211394,
+    "headers": {
+      "Date": "Tue, 13 Oct 2026 18:54:23 GMT",
+      "Content-Type": "application/pdf",
+      "Content-Length": "1211394",
+      "Content-Disposition": "inline; filename=RTAC_Family_PF00328.pdf"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://selinc.com/api/download/111397/",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T18:54:25.709139+00:00",
+    "kind": "pdf",
+    "pages": 12,
+    "empty_pages": 0,
+    "page_errors": [],
+    "encrypted": false,
+    "pdf_created": "D:20260123102833-08'00'",
+    "pdf_modified": "D:20260123102853-08'00'",
+    "document_hints": [
+      "© 2026 by Schweitzer Engineering Laboratories, Inc. PF00328 ·"
+    ],
+    "text_sha256": "23b777f03251c725548bd22dea447dfcf5a861d41504ccae144f4cbd4efe1d26",
+    "doc_type_suggested": "",
+    "status": "extracted",
+    "links_found": 0
+  }
+]

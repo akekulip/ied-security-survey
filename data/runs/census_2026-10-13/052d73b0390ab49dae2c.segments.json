@@ -1,0 +1,334 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "PQM Power Quality Meter"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "PQM - Legacy"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Legacy Power Quality Meter"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Contact Us",
+    "heading": "Legacy Power Quality Meter"
+  },
+  {
+    "location": "html-block:7",
+    "text": "GE Vernova’s Electrification has discontinued manufacturing of PQM meters. As an alternative, please refer to PQMII.",
+    "heading": "Legacy Power Quality Meter"
+  },
+  {
+    "location": "html-block:8",
+    "text": "The PQM is an ideal choice when continuous monitoring of a three phase system is required. It provides metering for current, voltage, real and reactive power, energy use, cost of power, power factor and frequency. Programmable setpoints and 4 assignable output relays allow control functions to be added for specific applications. This includes basic alarm on over/under current or voltage, unbalance, demand based load shedding, and capacitor power factor correction control. More complex control is possible using the 4 switch inputs which also can be used for status such as breaker open/closed, flow information etc.",
+    "heading": "Legacy Power Quality Meter"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Metering of distribution feeders, transformers, generators, capacitor banks and motors",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Medium and low voltage systems",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Commercial, industrial, utility",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Flexible control for demand load shedding, power factor, etc.",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Protection and Control"
+  },
+  {
+    "location": "html-block:15",
+    "text": "A V W var VA varh Wh PF Hz unbalance",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:16",
+    "text": "A W var VA demand",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Load shedding",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Power factor control",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Pulse input totalizing",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Harmonic analysis through 63rd with THD and TIF",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Event recorder",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Waveform capture",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Data logger",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Drawings"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Application Notes"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Subscribe",
+    "heading": "Application Notes"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Drawings"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Application Notes"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Subscribe",
+    "heading": "Application Notes"
+  },
+  {
+    "location": "html-block:43",
+    "text": "PQM - Legacy"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Legacy Power Quality Meter"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Contact Us",
+    "heading": "Legacy Power Quality Meter"
+  },
+  {
+    "location": "html-block:46",
+    "text": "GE Vernova’s Electrification has discontinued manufacturing of PQM meters. As an alternative, please refer to PQMII.",
+    "heading": "Legacy Power Quality Meter"
+  },
+  {
+    "location": "html-block:47",
+    "text": "The PQM is an ideal choice when continuous monitoring of a three phase system is required. It provides metering for current, voltage, real and reactive power, energy use, cost of power, power factor and frequency. Programmable setpoints and 4 assignable output relays allow control functions to be added for specific applications. This includes basic alarm on over/under current or voltage, unbalance, demand based load shedding, and capacitor power factor correction control. More complex control is possible using the 4 switch inputs which also can be used for status such as breaker open/closed, flow information etc.",
+    "heading": "Legacy Power Quality Meter"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Metering of distribution feeders, transformers, generators, capacitor banks and motors",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:50",
+    "text": "Medium and low voltage systems",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:51",
+    "text": "Commercial, industrial, utility",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Flexible control for demand load shedding, power factor, etc.",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:53",
+    "text": "Protection and Control"
+  },
+  {
+    "location": "html-block:54",
+    "text": "A V W var VA varh Wh PF Hz unbalance",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:55",
+    "text": "A W var VA demand",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Load shedding",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Power factor control",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:58",
+    "text": "Pulse input totalizing",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:60",
+    "text": "Harmonic analysis through 63rd with THD and TIF",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:61",
+    "text": "Event recorder",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:62",
+    "text": "Waveform capture",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:63",
+    "text": "Data logger",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:64",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:65",
+    "text": "PQM II"
+  },
+  {
+    "location": "html-block:66",
+    "text": "The PQM II is an ideal choice when continuous monitoring of a three phase system is...",
+    "heading": "PQM II"
+  },
+  {
+    "location": "html-block:67",
+    "text": "View More",
+    "heading": "PQM II"
+  },
+  {
+    "location": "html-block:68",
+    "text": "EPM"
+  },
+  {
+    "location": "html-block:69",
+    "text": "GE Vernova provides a wide range of high accuracy power quality, power meters and...",
+    "heading": "EPM"
+  },
+  {
+    "location": "html-block:70",
+    "text": "View More",
+    "heading": "EPM"
+  },
+  {
+    "location": "html-block:71",
+    "text": "EPM 7000P"
+  },
+  {
+    "location": "html-block:72",
+    "text": "The Multilin™ EPM 7000P is a versatile power quality meter offering that can be used...",
+    "heading": "EPM 7000P"
+  },
+  {
+    "location": "html-block:73",
+    "text": "View More",
+    "heading": "EPM 7000P"
+  }
+]

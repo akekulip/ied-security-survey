@@ -4,16 +4,17 @@ Collects what five IED vendors (SEL, Schneider Electric, Rockwell Automation, GE
 
 The current study's own files (inventory, sample, review, reports, paper appendix) are described in `study/README.md`.
 
-This repository is private. It holds:
+This repository is private and holds everything on its `main` branch:
 
-- **Branch `main`:** the tool (`iedsurvey/`, `survey.py`), tests, configs, the study's results (`study/`), and the five-product pilot's runs and fetched documents (`runs/`, `cache/`).
-- **Branch `data`:** the catalogue study's run folders, inventory listings and fetched vendor documents, about 1.4 GB, kept apart so that cloning `main` stays small. Fetch it into its own folder outside any synced folder:
+| Folder | What it holds |
+|---|---|
+| `iedsurvey/`, `survey.py`, `tests/`, `configs/` | The tool, its tests and its configs |
+| `study/` | The study's results: inventory, sample, AI-draft review, reports with the DNP3 table, paper appendix (see `study/README.md`) |
+| `data/` | The catalogue study's run folders, vendor listings and fetched vendor documents, about 1.4 GB (see `data/README.md`) |
+| `runs/`, `cache/` | The five-product pilot's run and fetched documents |
+| `pilot/` | The pilot as delivered with 1.0.0 |
 
-  ```bash
-  git clone --branch data --single-branch https://github.com/akekulip/ied-security-survey.git ied_survey_data
-  ```
-
-  The commands in `study/README.md` call that folder `$DATA`. The fetched documents are vendors' public files, kept here for verification only; do not redistribute them.
+The fetched documents are vendors' public files, kept for verification only; do not redistribute them.
 
 ## 1. Set up
 

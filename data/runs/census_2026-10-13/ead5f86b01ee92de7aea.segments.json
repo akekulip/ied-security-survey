@@ -1,0 +1,781 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "Multilin C70 | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "Multilin C70"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Capacitor Bank Protection & Control System"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Contact Sales Buy Now",
+    "heading": "Capacitor Bank Protection & Control System"
+  },
+  {
+    "location": "html-block:7",
+    "text": "The C70 is an integrated protection, control, and monitoring device for shunt capacitor banks based on the well established and proven Multilin™ UR relay platform of GE Vernova. The C70 provides both the bank and system protection schemes for shunt capacitor bank protection. The current and voltage-based protection functions provide sensitive protection for grounded, ungrounded single, and parallel capacitor banks and banks with taps.",
+    "heading": "Capacitor Bank Protection & Control System"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Protect capacitor banks for a variety of configurations with sensitive current and voltage balance protection functions",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Advanced IEC 61850 Ed. 1 and Ed. 2 certified implementation, complete settings via SCL files and flexible process bus support (IEC 61850-9-2LE, IEC 61869 or IEC 61850-9-2 Hardfiber) ensures interoperability, device managing optimization and reduced cost of ownership",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Routable GOOSE (R-GOOSE) enables GOOSE messages going beyond the substation, which enables wide area protection and control applications",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Advanced Cyber security features “CyberSentryTM” that helps meet modern industry requirements",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Custom programmable logic for advanced shunt capacitor bank controls",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Reduced relay-to-relay wiring and associated installation costs through high-speed inter-relay communications",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Supports latest edition of waveform capture (COMTRADE 2013) simplifying fault records management",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Application flexibility with multiple I/O options including high density I/O, programmable logic, modularity, and specific customization",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:17",
+    "text": "An integrated large, full color display, provides real-time visualization and control of the protected bay, via a bay mimic as well as annunciator functionality and graphical visualization of phasors",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Protection, control, monitoring and automation of shunt capacitor banks with different voltages",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Sensitive protection for grounded, ungrounded single and parallel capacitor banks and banks with taps, for a variety of capacitor bank configurations",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Shunt capacitor bank-based AVR and capacitor control supervision",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Suitable for protecting multiple capacitor banks",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:24",
+    "text": "UR Family"
+  },
+  {
+    "location": "html-block:25",
+    "text": "HardFiber System"
+  },
+  {
+    "location": "html-block:26",
+    "text": "UR Switch Module"
+  },
+  {
+    "location": "html-block:27",
+    "text": "EnerVista Software"
+  },
+  {
+    "location": "html-block:28",
+    "text": "How-to Videos"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Drawings"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Product & Cyber Security Advisories"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Application Notes"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Subscribe",
+    "heading": "Application Notes"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:40",
+    "text": "UR Family"
+  },
+  {
+    "location": "html-block:41",
+    "text": "HardFiber System"
+  },
+  {
+    "location": "html-block:42",
+    "text": "UR Switch Module"
+  },
+  {
+    "location": "html-block:43",
+    "text": "EnerVista Software"
+  },
+  {
+    "location": "html-block:44",
+    "text": "How-to Videos"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:46",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:47",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:50",
+    "text": "Drawings"
+  },
+  {
+    "location": "html-block:51",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Product & Cyber Security Advisories"
+  },
+  {
+    "location": "html-block:53",
+    "text": "Application Notes"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Subscribe",
+    "heading": "Application Notes"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Multilin C70"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Capacitor Bank Protection & Control System"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Contact Sales Buy Now",
+    "heading": "Capacitor Bank Protection & Control System"
+  },
+  {
+    "location": "html-block:58",
+    "text": "The C70 is an integrated protection, control, and monitoring device for shunt capacitor banks based on the well established and proven Multilin™ UR relay platform of GE Vernova. The C70 provides both the bank and system protection schemes for shunt capacitor bank protection. The current and voltage-based protection functions provide sensitive protection for grounded, ungrounded single, and parallel capacitor banks and banks with taps.",
+    "heading": "Capacitor Bank Protection & Control System"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:60",
+    "text": "Protect capacitor banks for a variety of configurations with sensitive current and voltage balance protection functions",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:61",
+    "text": "Advanced IEC 61850 Ed. 1 and Ed. 2 certified implementation, complete settings via SCL files and flexible process bus support (IEC 61850-9-2LE, IEC 61869 or IEC 61850-9-2 Hardfiber) ensures interoperability, device managing optimization and reduced cost of ownership",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:62",
+    "text": "Routable GOOSE (R-GOOSE) enables GOOSE messages going beyond the substation, which enables wide area protection and control applications",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:63",
+    "text": "Advanced Cyber security features “CyberSentryTM” that helps meet modern industry requirements",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:64",
+    "text": "Custom programmable logic for advanced shunt capacitor bank controls",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:65",
+    "text": "Reduced relay-to-relay wiring and associated installation costs through high-speed inter-relay communications",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:66",
+    "text": "Supports latest edition of waveform capture (COMTRADE 2013) simplifying fault records management",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:67",
+    "text": "Application flexibility with multiple I/O options including high density I/O, programmable logic, modularity, and specific customization",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:68",
+    "text": "An integrated large, full color display, provides real-time visualization and control of the protected bay, via a bay mimic as well as annunciator functionality and graphical visualization of phasors",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:69",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:70",
+    "text": "Protection, control, monitoring and automation of shunt capacitor banks with different voltages",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:71",
+    "text": "Sensitive protection for grounded, ungrounded single and parallel capacitor banks and banks with taps, for a variety of capacitor bank configurations",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:72",
+    "text": "Shunt capacitor bank-based AVR and capacitor control supervision",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:73",
+    "text": "Suitable for protecting multiple capacitor banks",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:74",
+    "text": "What's New"
+  },
+  {
+    "location": "html-block:75",
+    "text": "New and Enhanced Communication Capabilities"
+  },
+  {
+    "location": "html-block:76",
+    "text": "New process bus module supports IEC 61869 sample values, PTP master capabilities and SV switching (FW 7.9x)",
+    "heading": "New and Enhanced Communication Capabilities"
+  },
+  {
+    "location": "html-block:77",
+    "text": "New UR process bus modules supporting IEC61850-9-2LE Merging Units (FW 7.8x) Module Training available here",
+    "heading": "New and Enhanced Communication Capabilities"
+  },
+  {
+    "location": "html-block:78",
+    "text": "Support switchable IEC 61850 Ed. 1 and Ed. 2 and redundant SNTP (FW 7.7x)",
+    "heading": "New and Enhanced Communication Capabilities"
+  },
+  {
+    "location": "html-block:79",
+    "text": "Cyber Security - CyberSentry UR (FW v7.xx)"
+  },
+  {
+    "location": "html-block:80",
+    "text": "CyberSentryTM enables UR devices to deliver full cyber security features that help customers to comply with cyber security requirements (NERC CIP, IEEE 1686, IEC 62443, etc):",
+    "heading": "Cyber Security - CyberSentry UR (FW v7.xx)"
+  },
+  {
+    "location": "html-block:81",
+    "text": "Secured firmware upgrade: FW file includes hash code that enables authentication prior to being used for upgrading UR Relay (FW 7.9x)",
+    "heading": "Cyber Security - CyberSentry UR (FW v7.xx)"
+  },
+  {
+    "location": "html-block:82",
+    "text": "Fully Compatible with IEC 61850-9-2LE or IEC61869 process bus schemes:"
+  },
+  {
+    "location": "html-block:83",
+    "text": "Can connect to up to 8 merging units over -9-2LE or 61869",
+    "heading": "Fully Compatible with IEC 61850-9-2LE or IEC61869 process bus schemes:"
+  },
+  {
+    "location": "html-block:84",
+    "text": "Supports PRP, HSR, dual HSR and point-to-point process bus topology",
+    "heading": "Fully Compatible with IEC 61850-9-2LE or IEC61869 process bus schemes:"
+  },
+  {
+    "location": "html-block:85",
+    "text": "Provides support for GE Vernova’s IEC 61850 HardFiber Process Bus Solution",
+    "heading": "Fully Compatible with IEC 61850-9-2LE or IEC61869 process bus schemes:"
+  },
+  {
+    "location": "html-block:86",
+    "text": "Extended Oscillography Records (FW v7.xx)"
+  },
+  {
+    "location": "html-block:87",
+    "text": "Increased number of digital and analog channels (FW 7.90)",
+    "heading": "Extended Oscillography Records (FW v7.xx)"
+  },
+  {
+    "location": "html-block:88",
+    "text": "Supports IEEE C37.111-1999/2013, IEC 60255-24 Ed 2.0 COMTRADE 2013 standard (FW v7.40)",
+    "heading": "Extended Oscillography Records (FW v7.xx)"
+  },
+  {
+    "location": "html-block:89",
+    "text": "Configurable events allow for records of up to 45s at 64 samples per cycle",
+    "heading": "Extended Oscillography Records (FW v7.xx)"
+  },
+  {
+    "location": "html-block:90",
+    "text": "New and Enhanced Protection and Control Functionality"
+  },
+  {
+    "location": "html-block:91",
+    "text": "Expanded Bay Controller Capabilities – providing a one box solution (FW 7.6x)",
+    "heading": "New and Enhanced Protection and Control Functionality"
+  },
+  {
+    "location": "html-block:92",
+    "text": "New thermal overload element (FW version 5.90)",
+    "heading": "New and Enhanced Protection and Control Functionality"
+  },
+  {
+    "location": "html-block:93",
+    "text": "Neutral directional overcurrent with dual polarity criteria \"67N\" (FW v 7.20)",
+    "heading": "New and Enhanced Protection and Control Functionality"
+  },
+  {
+    "location": "html-block:94",
+    "text": "Protection & Control"
+  },
+  {
+    "location": "html-block:95",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:96",
+    "text": "Voltage differential protection",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:97",
+    "text": "Compensated bank neutral voltage unbalance",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:98",
+    "text": "Phase and neutral current unbalance protection, phase, ground and neutral overcurrent, thermal overload, phase and negative sequence directional overcurrent, neutral directional overcurrent with dual polarity criteria and broken conductor",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:99",
+    "text": "Bank phase overvoltage",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:100",
+    "text": "Negative sequence overvoltage",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:101",
+    "text": "User-programmable logic for custom schemes",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:102",
+    "text": "Automatic voltage regulator (AVR) for switching capacitor banks based on voltage, power factor and reactive power",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:103",
+    "text": "Time and date function, allowing capacitor bank switching based on time of day, week and seasons",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:104",
+    "text": "Capacitor control supervision block for processing commands from SCADA, and remote communication",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:105",
+    "text": "Protection & Control"
+  },
+  {
+    "location": "html-block:106",
+    "text": "The C70 provides sensitive protection functions designed specifically to protect shunt capacitor banks effectively. The C70 provides current-based protection functions, which include phase, ground, and neutral instantaneous and time overcurrent elements for standard overcurrent protection of the bank. Two elements per configured CT bank are available. The C70 also provides breaker failure protection and standard voltage-based protection functions. Apart from the standard current and voltage-based functions, the C70 comes with protection functions specifically designed to provide sensitive protection for capacitor banks in a single box.",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:107",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:108",
+    "text": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:109",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:110",
+    "text": "Metering - current, voltage, power, energy, frequency",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:111",
+    "text": "Oscillography – analog and digital parameters at 64 samples/cycle",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:112",
+    "text": "Event Recorder - 1024 time tagged events with 0.5ms scan of digital inputs",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:113",
+    "text": "Data Logger - 16 channels with sampling rate up to 1 sample / cycle",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:114",
+    "text": "Advanced relay health diagnostics",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:115",
+    "text": "Setting for security audit trails for tracking changes to C70 configurations",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:116",
+    "text": "Monitoring & Diagnostic"
+  },
+  {
+    "location": "html-block:117",
+    "text": "The C70 includes high accuracy metering and recording for all AC signals. Voltage, current, and power metering are built into the relay as a standard feature. Current and voltage parameters are available as total RMS magnitude, and as fundamental frequency magnitude and angle.",
+    "heading": "Monitoring & Diagnostic"
+  },
+  {
+    "location": "html-block:118",
+    "text": "Analyze capacitor bank faults using both analog and digital power system quantities that are measured and recorded up to a rate of 64 samples per cycle.",
+    "heading": "Monitoring & Diagnostic"
+  },
+  {
+    "location": "html-block:119",
+    "text": "Advanced Automation"
+  },
+  {
+    "location": "html-block:120",
+    "text": "The C70 incorporates advanced automation features including powerful FlexLogic™ programmable logic, communication, and SCADA capabilities that far surpass what is found in the average capacitor bank relay. The C70 integrates seamlessly with other UR relays for complete system protection.",
+    "heading": "Advanced Automation"
+  },
+  {
+    "location": "html-block:121",
+    "text": "FlexLogic™ allows for the customization of C70 outputs for capacitor bank protection schemes and applications.",
+    "heading": "Advanced Automation"
+  },
+  {
+    "location": "html-block:122",
+    "text": "Communications"
+  },
+  {
+    "location": "html-block:123",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:124",
+    "text": "Complete IEC 61850 Process Bus solution providing resource optimization and minimizing total P & C life cycle costs",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:125",
+    "text": "Three independent 100Mbps Ethernet ports enable purpose specific LAN support that eliminates latency effect of heavy traffic protocols on mission critical communication services",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:126",
+    "text": "Embedded IEEE 1588 time sync protocol support eliminates dedicated IRIG-B wiring requirements for IEDs",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:127",
+    "text": "Direct I/O secures high-speed exchange of binary data between URs",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:128",
+    "text": "Increase network availability by reducing failover time to zero through IEC62439-3 \"PRP\" support",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:129",
+    "text": "Advanced Communications"
+  },
+  {
+    "location": "html-block:130",
+    "text": "The C70 provides advanced communications technologies for remote data and engineering access, making it easy and flexible to use and integrate into new and existing infrastructures. Direct support for fiber optic Ethernet provides high-bandwidth communications allowing for low-latency controls and high-speed file transfers of relay fault and event record information. The available three independent and redundant Ethernet options provide the means to create fault tolerant communication architectures in an easy, cost-effective manner.",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:131",
+    "text": "The C70 supports the most popular industry standard protocols enabling easy, direct integration into DCS and SCADA systems.",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:132",
+    "text": "IEC 61850-9-2LE networked or IEC61850-9-2 Hardfiber process bus support",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:133",
+    "text": "DNP 3.0 (serial & TCP/IP)",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:134",
+    "text": "IEC 60870-5-103 and IEC 60870-5-104",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:135",
+    "text": "Modbus RTU, Modbus TCP/IP",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:136",
+    "text": "HTTP, TFTP, SFTP and MMS file transfer",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:137",
+    "text": "Redundant SNTP and IEEE 1588 for time synchronization",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:138",
+    "text": "PRP as per IEC 62439-3",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:139",
+    "text": "Supports Routable GOOSE (R-GOOSE)",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:140",
+    "text": "Interoperability with Enbedded IEC 61850"
+  },
+  {
+    "location": "html-block:141",
+    "text": "Use the C70 with integrated IEC 61850 to lower costs associated with generator protection, control and automation. GE Vernova’s leadership in",
+    "heading": "Interoperability with Enbedded IEC 61850"
+  },
+  {
+    "location": "html-block:142",
+    "text": "IEC 61850 comes from thousands of installed devices and follows on years of development experience with UCA 2.0.",
+    "heading": "Interoperability with Enbedded IEC 61850"
+  },
+  {
+    "location": "html-block:143",
+    "text": "The C70’s IEC 61850 Process Bus module is designed to interface with the Multilin HardFiber System, allowing bi-directional IEC 61850 fiber optic communications. The HardFiber System is designed to integrate seamlessly with existing Universal Relay applications, including protection functions, FlexLogic, metering and communications.",
+    "heading": "Interoperability with Enbedded IEC 61850"
+  },
+  {
+    "location": "html-block:144",
+    "text": "Learn More",
+    "heading": "Interoperability with Enbedded IEC 61850"
+  },
+  {
+    "location": "html-block:145",
+    "text": "Software & Security"
+  },
+  {
+    "location": "html-block:146",
+    "text": "Cyber Security - CyberSentry™ UR (FW v7.4xx)"
+  },
+  {
+    "location": "html-block:147",
+    "text": "CyberSentry enables UR devices to deliver full cyber security features that help customers to comply with NERC CIP and NITIR 7628 cyber security requirements through supporting the following core features:",
+    "heading": "Cyber Security - CyberSentry™ UR (FW v7.4xx)"
+  },
+  {
+    "location": "html-block:148",
+    "text": "Secure FW upgrade"
+  },
+  {
+    "location": "html-block:149",
+    "text": "UR FW files v7.9 and up now include a hash code that allows for authentication prior to being used for upgrading UR devices.",
+    "heading": "Secure FW upgrade"
+  },
+  {
+    "location": "html-block:150",
+    "text": "Password Complexity"
+  },
+  {
+    "location": "html-block:151",
+    "text": "Supporting up to 20 alpha- numeric or special characters, UR passwords exceed NERC CIP requirements for password complexity. Individual passwords per role are available.",
+    "heading": "Password Complexity"
+  },
+  {
+    "location": "html-block:152",
+    "text": "AAA Server Support (Radius)"
+  },
+  {
+    "location": "html-block:153",
+    "text": "Enables integration with centrally managed authentication and accounting of all user activities and uses modern industry best practices and standards that meet and exceed NERC CIP requirements for authentication and password management.",
+    "heading": "AAA Server Support (Radius)"
+  },
+  {
+    "location": "html-block:154",
+    "text": "Role Based Access Control (RBAC)"
+  },
+  {
+    "location": "html-block:155",
+    "text": "Efficiently administrate users and roles within UR devices. The new and advanced access functions allow users to configure up to five roles for up to eight configurable users with independent passwords. The standard “Remote Authentication Dial In User Service” (Radius) is used for authentication.",
+    "heading": "Role Based Access Control (RBAC)"
+  },
+  {
+    "location": "html-block:156",
+    "text": "Event Recorder (Syslog for SEM)"
+  },
+  {
+    "location": "html-block:157",
+    "text": "Capture all cyber security related events within a SOE element (login, logout, invalid password attempts, remote/local access, user in session, settings change, FW update, etc), and then serve and classify data by security level using standard Syslog data format. This enables UR devices integration with established SEM (Security Event Management) systems.",
+    "heading": "Event Recorder (Syslog for SEM)"
+  },
+  {
+    "location": "html-block:158",
+    "text": "EnerVista™ Software"
+  },
+  {
+    "location": "html-block:159",
+    "text": "The EnerVista™ suite is an industry-leading set of software programs that simplifies every aspect of using the C70 relay. The EnerVista™ suite provides all the tools to monitor the status of the protected asset, maintain the relay, and integrate information measured by the C70 into DCS or SCADA monitoring systems. Convenient COMTRADE and Sequence of Events viewers are an integral part of the UR setup software included with every UR relay, to carry out postmortem event analysis and ensure proper protection system operation.",
+    "heading": "EnerVista™ Software"
+  },
+  {
+    "location": "html-block:160",
+    "text": "Learn More",
+    "heading": "EnerVista™ Software"
+  },
+  {
+    "location": "html-block:161",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:162",
+    "text": "Multilin L30"
+  },
+  {
+    "location": "html-block:163",
+    "text": "The L30 is a cost-effective line current differential protection relay intended for...",
+    "heading": "Multilin L30"
+  },
+  {
+    "location": "html-block:164",
+    "text": "View More",
+    "heading": "Multilin L30"
+  },
+  {
+    "location": "html-block:165",
+    "text": "Multilin L60"
+  },
+  {
+    "location": "html-block:166",
+    "text": "The L60 provides fast and secure sub-cycle phase comparison protection, for both...",
+    "heading": "Multilin L60"
+  },
+  {
+    "location": "html-block:167",
+    "text": "View More",
+    "heading": "Multilin L60"
+  },
+  {
+    "location": "html-block:168",
+    "text": "Multilin D30"
+  },
+  {
+    "location": "html-block:169",
+    "text": "The D30 is a cost-effective distance protection system suitable for primary protection of...",
+    "heading": "Multilin D30"
+  },
+  {
+    "location": "html-block:170",
+    "text": "View More",
+    "heading": "Multilin D30"
+  }
+]

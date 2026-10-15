@@ -1,0 +1,147 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "Distance protection – SIPROTEC 7SA86 | Siemens"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Why SIPROTEC 7SA86?"
+  },
+  {
+    "location": "html-block:4",
+    "text": "SIPROTEC 7SA86 distance protection is a modular device for protecting electrical lines. It offers an advanced solution for protection, control, automation, monitoring and power quality basic functions, powered by DIGSI 5. Address short circuits and ground faults in electrical systems with the SIPROTEC 7SA86. It detects and selectively trips 3-pole short circuits across all voltage levels and network configurations, including ground faults, to provide reliable backup protection for various differential protection devices with a minimum tripping time of 9 ms. Expect reliability with powerful protection functions, advanced cybersecurity features, and high availability even in extreme conditions through conformal coating. Configure all functions with DIGSI 5, adapting the flexible I/O structure to your needs.",
+    "heading": "Why SIPROTEC 7SA86?"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Key benefits"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Improve reliability"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Powerful protection functions deliver robust safety. Conformal coating on electronic boards provides high availability and consistent performance in harsh conditions. Protect your critical infrastructure.",
+    "heading": "Improve reliability"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Simplify use for operators"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Handle devices and software easily with an intuitive design. Configure all functions as needed using the DIGSI 5 engineering tool to simplify management and reduce complexity for your team.",
+    "heading": "Simplify use for operators"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Maintain compliance"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Integrate your system securely with NERC CIP and BDEW Whitepaper compliant cybersecurity. Enjoy full IEC 61850 compatibility for trustworthy operations.",
+    "heading": "Maintain compliance"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Featured capabilities"
+  },
+  {
+    "location": "html-block:13",
+    "text": "all",
+    "heading": "Featured capabilities"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Flexible I/O with modular design"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Adjust the I/O structure in the SIPROTEC 5 modular system. Choose from 12 standard variants: 4/4 or 8/8 current/voltage transformers, 5-31 binary inputs and 8-46 binary outputs.",
+    "heading": "Flexible I/O with modular design"
+  },
+  {
+    "location": "html-block:16",
+    "text": "all",
+    "heading": "Flexible I/O with modular design"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Precise short circuit detection"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Trip 3-pole short circuits in star, parallel and ring networks; identify ground faults in isolated or arc-suppression systems. Provide backup protection for differential on lines, transformers and generators.",
+    "heading": "Precise short circuit detection"
+  },
+  {
+    "location": "html-block:19",
+    "text": "all",
+    "heading": "Precise short circuit detection"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Advanced communication and security"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Use up to four pluggable communication modules for diverse, redundant protocols (IEC 61850, Modbus TCP) and reliable PRP/HSR data transmission. Implement robust cybersecurity with role-based access control and signed firmware.",
+    "heading": "Advanced communication and security"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Explore resources (in English)"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Downloads"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Profile SIPROTEC 7SA86",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Profile SIPROTEC 5 - conformal coating",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Catalog SIPROTEC 5",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Tender specification",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Configuration"
+  },
+  {
+    "location": "html-block:29",
+    "text": "SIPROTEC 5 configurator",
+    "heading": "Configuration"
+  },
+  {
+    "location": "html-block:30",
+    "text": "SiePortal - Online shop"
+  },
+  {
+    "location": "html-block:31",
+    "text": "SIPROTEC 7SA86 on SiePortal",
+    "heading": "SiePortal - Online shop"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Technical documentation, Firmware, Software application examples and FAQ",
+    "heading": "SiePortal - Online shop"
+  }
+]

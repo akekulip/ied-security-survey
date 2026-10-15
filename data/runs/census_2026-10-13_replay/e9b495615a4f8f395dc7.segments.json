@@ -1,0 +1,161 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "SIMATIC S7-1500V Virtual PLC - Software PLC | Siemens"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Why Virtual PLC?"
+  },
+  {
+    "location": "html-block:4",
+    "text": "The virtual PLC is your ticket to Software-defined automation. With these, you can continue to rely on familiar processes and tools while benefiting from IT mechanisms. As a hardware-independent controller, the virtual PLC is provided and deployed entirely via Industrial Edge. Just download the SIMATIC S7‑1500V as an Industrial Edge app, central manage it and deploy it to your application environment using Industrial Edge Runtime.",
+    "heading": "Why Virtual PLC?"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Key benefits"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Get more flexibility"
+  },
+  {
+    "location": "html-block:7",
+    "text": "The virtual PLC is hardware-independent. You can also adjust the number of instances used according to demand, so you only pay for the controllers you need.",
+    "heading": "Get more flexibility"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Integrate seamlessly"
+  },
+  {
+    "location": "html-block:9",
+    "text": "The virtual controller is completely compatible with TIA Portal, allowing you to build on projects that are already in the tool. Also, you can use OT solutions that you have previously employed in an IT environment.",
+    "heading": "Integrate seamlessly"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Increase efficiency"
+  },
+  {
+    "location": "html-block:11",
+    "text": "The virtual PLC is integrated into Industrial Edge, allowing you to centrally operate applications and automate process steps in a datacentric way. Thanks to IT mechanisms, you can even optimize entire workflows and costs.",
+    "heading": "Increase efficiency"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Featured capabilities"
+  },
+  {
+    "location": "html-block:13",
+    "text": "all",
+    "heading": "Featured capabilities"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Integrate with Industrial Edge"
+  },
+  {
+    "location": "html-block:15",
+    "text": "The virtual PLC is provided entirely via Industrial Edge. First, download SIMATIC S7-1500V as an Edge app from the Marketplace. Then, access it in Industrial Edge Management and deploy it in the application.",
+    "heading": "Integrate with Industrial Edge"
+  },
+  {
+    "location": "html-block:16",
+    "text": "all",
+    "heading": "Integrate with Industrial Edge"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Merging IT and OT"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Quicky and easily adjust the software used or number of controllers to your current requirements. The advantage of digitalization of PLCs is being able to react to changing requirements seamlessly.",
+    "heading": "Merging IT and OT"
+  },
+  {
+    "location": "html-block:19",
+    "text": "all",
+    "heading": "Merging IT and OT"
+  },
+  {
+    "location": "html-block:20",
+    "text": "React remotely"
+  },
+  {
+    "location": "html-block:21",
+    "text": "You get a notification of a controller issue, but you are at home. With a classical PLC, you have to go on site. With the virtual PLC, you can easily get your plant running again from anywhere.",
+    "heading": "React remotely"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Discover how other use SIMATIC S7-1500V"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Audi virtualizes shop floor with Siemens PLC",
+    "heading": "Discover how other use SIMATIC S7-1500V"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Audi wanted to virtualize shop floor automation, reduce the number of devices and convert applications to software to make production fast, robust and flexible. This required not only a new, IT-based infrastructure but also virtual PLCs. Siemens provided the key to success with SIMATIC S7-1500V.",
+    "heading": "Discover how other use SIMATIC S7-1500V"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Learn more",
+    "heading": "Discover how other use SIMATIC S7-1500V"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Explore related products"
+  },
+  {
+    "location": "html-block:27",
+    "text": "all",
+    "heading": "Explore related products"
+  },
+  {
+    "location": "html-block:28",
+    "text": "SIMATIC S7-1500 — take control of innovations"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Using the SIMATIC S7-1500 controller gives you top performance and built-in viability into the future.",
+    "heading": "SIMATIC S7-1500 — take control of innovations"
+  },
+  {
+    "location": "html-block:30",
+    "text": "all",
+    "heading": "SIMATIC S7-1500 — take control of innovations"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Industrial Edge"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Industrial Edge provides an IoT, edge computing architecture, to optimize industrial automation, maintenance, IT-OT connectivity, and plant data analytics.",
+    "heading": "Industrial Edge"
+  },
+  {
+    "location": "html-block:33",
+    "text": "all",
+    "heading": "Industrial Edge"
+  },
+  {
+    "location": "html-block:34",
+    "text": "TIA Portal"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Discover what you need to engineer innovative machines in the TIA Portal. Get unrestricted access to the complete range of digitalized automation services, from digital planning to integrated engineering and transparent operation.",
+    "heading": "TIA Portal"
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "2d534d7258ab62781172",
+    "source_id": "c7b4f5ed9b4090060fbb",
+    "product_id": "rockwell_micrologix_1400_controllers",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:39",
+    "matched": [
+      "Unencrypted"
+    ],
+    "context": "You \ncan configure this password to restrict viewing of selected ladder files.\nBy default, no passwords are configured in the controller. You can create, change, or delete a \npassword in the Controller Properties dialog box. Unencrypted passwords consist of up to 10 \nnumeric characters (0...9). Encrypted passwords contain at least one non-numeric character.\n \nOnce you create a Password and download it into the controller, anytime you attempt to open that \noffline file or go online with that controller, you are prompted to provide either the Password or the \nMaster Password before the software proceeds.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Program Password Protection"
+  },
+  {
+    "id": "dfc3168985578e4b0eb0",
+    "source_id": "5f6f1b22b4fd07d375a5",
+    "product_id": "rockwell_micro830_controllers",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:91",
+    "matched": [
+      "not encrypted"
+    ],
+    "context": "Select OK to close the window.\n4. Download the project to the controller to update the user information in the controller.\nUpdate Key Change Method and Authority Certification Key\nAn Authority Certification Key is a Symmetric (encrypted) or Public (not encrypted) key that is \nstored in the controller for authentication with the DNP3 master when a Key change request is \nprocessed.\nIMPORTANT This feature is only available in Secure Authentication Version 5.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "DNP3 Slave Application Layer Configuration Parameters"
+  },
+  {
+    "id": "9afe17ba0851029ef97d",
+    "source_id": "5f6f1b22b4fd07d375a5",
+    "product_id": "rockwell_micro830_controllers",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:92",
+    "matched": [
+      "not encrypted"
+    ],
+    "context": "To define a Public Key, you must generate an RSA-2048 or RSA-3072 Public Key, depending on \nthe Update Key Change Method that you have selected, and enter it into the field. Select OK to \naccept the changes. Public Keys are not encrypted.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "DNP3 Slave Application Layer Configuration Parameters"
+  },
+  {
+    "id": "7192e1dc1f01664a10be",
+    "source_id": "5f6f1b22b4fd07d375a5",
+    "product_id": "rockwell_micro830_controllers",
+    "feature": "non_support_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:225",
+    "matched": [
+      "does not support IPSec"
+    ],
+    "context": "Operation Mode To maintain the secure operation of your Micro800 controllers, operations that can disrupt \ncontroller operation are restricted based on the controller operating mode.\nIMPORTANT When using IPv6 mode, consider your own network security \nprotection since IPv6 in firmware revision 23.011 does not \nsupport IPSec. For more information, see System Security Design \nGuidelines Reference Manual, publication SECURE-RM001\n.\nIMPORTANT When a computer running FactoryTalk Design Workbench software or \nConnected Components Workbench software is connected to a \nMicro800 controller, its username and computer name are sent to the \nMicro800 controller. This informs others attempting to connect to the \nsame controller about who is connected.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Operation Mode"
+  },
+  {
+    "id": "08448b6416b6961425f8",
+    "source_id": "01f2ad0b688a9d11281c",
+    "product_id": "rockwell_differential_protection_relay",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:100",
+    "matched": [
+      "plain text"
+    ],
+    "context": "[...] mary scaling\nSet\nDisplay\nAlarms\nOn\nOff\nAlarm pop-up display is enabled\nNo alarm display\nSet\nFormat Of Events On The Local Display\nCode: CHENN CH = event channel, NN=event code\nEvent description Event channel and code in plain text\nyyyy-mm-dd Date (for available date formats, see System Clock and \nSynchronization on page 110)\nhh:mm:ss.nnn Time",
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Event Buffer Overflow"
+  },
+  {
+    "id": "9c82fc6874e0ff90fd25",
+    "source_id": "184d5358bd87af683528",
+    "product_id": "rockwell_protection_relay",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:172",
+    "matched": [
+      "plain text"
+    ],
+    "context": "[...] scaling\nSet\nDisplay Alarms On\nOff\nAlarm popup display is \nenabled \nNo alarm display\nSet\nFORMAT OF EVENTS ON THE LOCAL DISPLAY\nCode: CHENN CH = event channel, NN = event code\nEvent description Event chan nel and code in plain text\nyyyy-mm-dd Date (for available date formats. See System Clock and \nSynchronization on page 193)\nhh:mm:ss:ms Time",
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Event Buffer Overflow"
+  }
+]

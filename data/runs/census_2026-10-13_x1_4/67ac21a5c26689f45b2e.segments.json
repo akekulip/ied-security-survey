@@ -1,0 +1,899 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "Multilin G30 | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "Multilin G30 – Legacy"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Generator Protection Systems"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Contact Sales",
+    "heading": "Generator Protection Systems"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Manufacturing has been discontinued for G30 relays. As an alternative, please refer to G60 or P343 or P345.",
+    "heading": "Generator Protection Systems"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Built on the industry-leading UR platform, the G30 provides advanced protection for small to medium-sized steam, hydraulic and combustion-turbine generators. The G30 is also well suited for applications where both the generator and transformer are in the same zone of protection, providing the required protection in one device. The G30 provides advanced communication with an integrated managed Ethernet switch, while supporting standard communication protocols including IEC 61850.",
+    "heading": "Generator Protection Systems"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Complete protection for small to medium-sized generators and transformers",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Advanced IEC 61850 Ed. 1 and Ed. 2 certified implementation, complete settings via SCL files and flexible process bus support (IEC 61850-9-2LE, IEC 61869 or IEC 61850-9-2 Hardfiber) ensures interoperability, device managing optimization and reduced cost of ownership",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Routable GOOSE (R-GOOSE) enables GOOSE messages going beyond the substation, which enables wide area protection and control applications",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Combined generator and transformer protection",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Advanced Cyber security features “CyberSentryTM” that helps meet modern industry requirements",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Application flexibility with multiple I/O options including high density I/O, programmable logic, modularity, and specific customization",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:16",
+    "text": "High-speed peer-to-peer communications allowing reduction of relay-to-relay wiring and associated installation costs",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:17",
+    "text": "An integrated large, full color display, provides real-time visualization and control of the protected bay, via a bay mimic as well as annunciator functionality and graphical visualization of phasors",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Small to medium-sized generators typically driven be steam, gas or hydraulic turbines",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Distributed generation (DG) interconnect protection",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Combined generator and transformer in the zone of protection",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Pumped storage generators",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Interactive Selector Guide"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Spotlight Application"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Typical Applications"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Generator Principles & Protection"
+  },
+  {
+    "location": "html-block:28",
+    "text": "GSA Schedule"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Legacy Generator Protection"
+  },
+  {
+    "location": "html-block:30",
+    "text": "How-to Videos"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Product & Cyber Security Advisories"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Interactive Selector Guide"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Spotlight Application"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Typical Applications"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Generator Principles & Protection"
+  },
+  {
+    "location": "html-block:42",
+    "text": "GSA Schedule"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Legacy Generator Protection"
+  },
+  {
+    "location": "html-block:44",
+    "text": "How-to Videos"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:46",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:47",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:50",
+    "text": "Product & Cyber Security Advisories"
+  },
+  {
+    "location": "html-block:51",
+    "text": "Multilin G30 – Legacy"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Generator Protection Systems"
+  },
+  {
+    "location": "html-block:53",
+    "text": "Contact Sales",
+    "heading": "Generator Protection Systems"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Manufacturing has been discontinued for G30 relays. As an alternative, please refer to G60 or P343 or P345.",
+    "heading": "Generator Protection Systems"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Built on the industry-leading UR platform, the G30 provides advanced protection for small to medium-sized steam, hydraulic and combustion-turbine generators. The G30 is also well suited for applications where both the generator and transformer are in the same zone of protection, providing the required protection in one device. The G30 provides advanced communication with an integrated managed Ethernet switch, while supporting standard communication protocols including IEC 61850.",
+    "heading": "Generator Protection Systems"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Complete protection for small to medium-sized generators and transformers",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:58",
+    "text": "Advanced IEC 61850 Ed. 1 and Ed. 2 certified implementation, complete settings via SCL files and flexible process bus support (IEC 61850-9-2LE, IEC 61869 or IEC 61850-9-2 Hardfiber) ensures interoperability, device managing optimization and reduced cost of ownership",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Routable GOOSE (R-GOOSE) enables GOOSE messages going beyond the substation, which enables wide area protection and control applications",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:60",
+    "text": "Combined generator and transformer protection",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:61",
+    "text": "Advanced Cyber security features “CyberSentryTM” that helps meet modern industry requirements",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:62",
+    "text": "Application flexibility with multiple I/O options including high density I/O, programmable logic, modularity, and specific customization",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:63",
+    "text": "High-speed peer-to-peer communications allowing reduction of relay-to-relay wiring and associated installation costs",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:64",
+    "text": "An integrated large, full color display, provides real-time visualization and control of the protected bay, via a bay mimic as well as annunciator functionality and graphical visualization of phasors",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:65",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:66",
+    "text": "Small to medium-sized generators typically driven be steam, gas or hydraulic turbines",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:67",
+    "text": "Distributed generation (DG) interconnect protection",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:68",
+    "text": "Combined generator and transformer in the zone of protection",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:69",
+    "text": "Pumped storage generators",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:70",
+    "text": "What's New"
+  },
+  {
+    "location": "html-block:71",
+    "text": "New and Enhanced Communication Capabilities"
+  },
+  {
+    "location": "html-block:72",
+    "text": "New process bus module supports IEC 61869 sample values, PTP master capabilities and SV switching (FW 7.9x)",
+    "heading": "New and Enhanced Communication Capabilities"
+  },
+  {
+    "location": "html-block:73",
+    "text": "New UR process bus modules supporting IEC61850-9-2LE Merging Units (FW 7.8x) Module Training available here",
+    "heading": "New and Enhanced Communication Capabilities"
+  },
+  {
+    "location": "html-block:74",
+    "text": "Support switchable IEC 61850 Ed. 1 and Ed. 2 and redundant SNTP (FW 7.7x)",
+    "heading": "New and Enhanced Communication Capabilities"
+  },
+  {
+    "location": "html-block:75",
+    "text": "New UR front panel with integrated 7” color, graphical display - providing operators with enhanced situational awareness (FW 7.6x)",
+    "heading": "New and Enhanced Communication Capabilities"
+  },
+  {
+    "location": "html-block:76",
+    "text": "High density I/O module supporting up to 120 inputs or up to 72 contact outputs – eliminating the need for additional discrete devices (FW 7.6x)",
+    "heading": "New and Enhanced Communication Capabilities"
+  },
+  {
+    "location": "html-block:77",
+    "text": "Cyber Security - CyberSentry UR (FW v7.xx)"
+  },
+  {
+    "location": "html-block:78",
+    "text": "CyberSentryTM enables UR devices to deliver full cyber security features that help customers to comply with cyber security requirements (NERC CIP, IEEE 1686, IEC 62443, etc):",
+    "heading": "Cyber Security - CyberSentry UR (FW v7.xx)"
+  },
+  {
+    "location": "html-block:79",
+    "text": "Secured firmware upgrade: FW file includes hash code that enables authentication prior to being used for upgrading UR Relay (FW 7.9x)",
+    "heading": "Cyber Security - CyberSentry UR (FW v7.xx)"
+  },
+  {
+    "location": "html-block:80",
+    "text": "Fully Compatible with IEC 61850-9-2LE or IEC61869 process bus schemes:"
+  },
+  {
+    "location": "html-block:81",
+    "text": "Can connect to up to 8 merging units over -9-2LE or 61869",
+    "heading": "Fully Compatible with IEC 61850-9-2LE or IEC61869 process bus schemes:"
+  },
+  {
+    "location": "html-block:82",
+    "text": "Supports PRP, HSR, dual HSR and point-to-point process bus topology",
+    "heading": "Fully Compatible with IEC 61850-9-2LE or IEC61869 process bus schemes:"
+  },
+  {
+    "location": "html-block:83",
+    "text": "Provides support for GE Vernova’s IEC 61850 HardFiber Process Bus Solution",
+    "heading": "Fully Compatible with IEC 61850-9-2LE or IEC61869 process bus schemes:"
+  },
+  {
+    "location": "html-block:84",
+    "text": "Extended Oscillography Records (FW v7.xx)"
+  },
+  {
+    "location": "html-block:85",
+    "text": "Increased number of digital and analog channels (FW 7.90)",
+    "heading": "Extended Oscillography Records (FW v7.xx)"
+  },
+  {
+    "location": "html-block:86",
+    "text": "Supports IEEE C37.111-1999/2013, IEC 60255-24 Ed 2.0 COMTRADE 2013 standard (FW v7.40)",
+    "heading": "Extended Oscillography Records (FW v7.xx)"
+  },
+  {
+    "location": "html-block:87",
+    "text": "Configurable events allow for records of up to 45s at 64 samples per cycle",
+    "heading": "Extended Oscillography Records (FW v7.xx)"
+  },
+  {
+    "location": "html-block:88",
+    "text": "New and Enhanced Protection and Control Functionality"
+  },
+  {
+    "location": "html-block:89",
+    "text": "New Inrush detection element (FW 8.0)",
+    "heading": "New and Enhanced Protection and Control Functionality"
+  },
+  {
+    "location": "html-block:90",
+    "text": "Expanded Bay Controller Capabilities – providing a one box solution (FW 7.6x)",
+    "heading": "New and Enhanced Protection and Control Functionality"
+  },
+  {
+    "location": "html-block:91",
+    "text": "Protection & Control"
+  },
+  {
+    "location": "html-block:92",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:93",
+    "text": "Overall unit differential including transformer",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:94",
+    "text": "Restricted ground fault, thermal overload protection, directional, time, instantaneous, phase, neutral, negative sequence and ground overcurrent protection",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:95",
+    "text": "Split-phase protection",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:96",
+    "text": "Loss of excitation, overexcitation plus dedicated harmonic/inrush detection",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:97",
+    "text": "Third harmonic neutral undervoltage",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:98",
+    "text": "Generator unbalance",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:99",
+    "text": "Reverse and low forward power",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:100",
+    "text": "Accidental energization",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:101",
+    "text": "Synchronism check",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:102",
+    "text": "Phase sequence reversal for pumped storage",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:103",
+    "text": "Protection & Control"
+  },
+  {
+    "location": "html-block:104",
+    "text": "The G30 generator protection system provides comprehensive protection for small to medium-sized steam, hydraulic and combustion-turbine generators as well as applications that have both the generator and transformer in the same zone of protection. The G30 is ideal for protecting single and multi-pole generators with single or split-phase winding configurations of generators. The G30 includes advanced automation and communication capabilities, extensive I/O options, and powerful fault recording features that can simplify fault and disturbance troubleshooting and minimize generator downtime. As part of the UR family, the G30 provides superior protection and control.",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:105",
+    "text": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:106",
+    "text": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:107",
+    "text": "Device Number | Function",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:108",
+    "text": "24 | Volts Per Hertz",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:109",
+    "text": "25 | Synchrocheck",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:110",
+    "text": "27P | Phase Undervoltage",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:111",
+    "text": "27TN | Third Harmonic Neutral Undervoltage",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:112",
+    "text": "27X | Auxiliary Undervoltage",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:113",
+    "text": "32 | Sensitive Directional Power",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:114",
+    "text": "40 | Loss of Field Relay",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:115",
+    "text": "46 | Generator Unbalance",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:116",
+    "text": "49 | Thermal Overload",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:117",
+    "text": "50G | Ground Instantaneous Overcurrent",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:118",
+    "text": "Device Number | Function",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:119",
+    "text": "50N | Neutral Instantaneous Overcurrent",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:120",
+    "text": "50P | Phase Instantaneous Overcurrent",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:121",
+    "text": "50SP | Split Phase Instantaneous Overcurrent",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:122",
+    "text": "50/27 | Accidental Energization",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:123",
+    "text": "51G | Ground Time Overcurrent",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:124",
+    "text": "51N | Neutral Time Overcurrent",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:125",
+    "text": "51PV | Phase Time Overcurrent with Voltage Restraint",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:126",
+    "text": "59N | Phase Overvoltage",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:127",
+    "text": "59X | Auxiliary Overvoltage",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:128",
+    "text": "Device Number | Function",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:129",
+    "text": "59_2 | Negative Sequence Overvoltage",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:130",
+    "text": "67_2 | Negative Sequence Directional Overcurrent",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:131",
+    "text": "67N | Neutral Directional Overcurrent",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:132",
+    "text": "67P | Phase Directional Overcurrent",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:133",
+    "text": "81O | Overfrequency",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:134",
+    "text": "81R | Rate of Change of Frequency",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:135",
+    "text": "81U | Underfrequency",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:136",
+    "text": "81RGF | Restricted ground fault",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:137",
+    "text": "87GT | Generator/Transformer Differential",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:138",
+    "text": "Harmonic/Inrush detection",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:139",
+    "text": "Monitoring & Diagnostics"
+  },
+  {
+    "location": "html-block:140",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:141",
+    "text": "Metering - current, voltage, power, energy, frequency",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:142",
+    "text": "Oscillography – analog and digital parameters at 64 samples/cycle",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:143",
+    "text": "Event Recorder - 1024 time tagged events with 0.5ms scan of digital inputs",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:144",
+    "text": "Data Logger - 16 channels with sampling rate up to 1 sample / cycle",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:145",
+    "text": "Setting for security audit trails for tracking changes to G30 configurations",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:146",
+    "text": "Monitoring & Diagnostics"
+  },
+  {
+    "location": "html-block:147",
+    "text": "The G30 is the single point for protection, control, metering, and monitoring in one integrated device that can easily be connected directly into HMI or SCADA monitoring and control systems like Viewpoint Monitoring as shown.",
+    "heading": "Monitoring & Diagnostics"
+  },
+  {
+    "location": "html-block:148",
+    "text": "Advanced Automation"
+  },
+  {
+    "location": "html-block:149",
+    "text": "The G30 incorporates advanced automation features including powerful FlexLogic™ programmable logic, communication, and SCADA capabilities that far surpass what is found in the average generator relay. The G30 integrates seamlessly with other UR relays for complete system protection, including unit and auxiliary transformers, and balance of plant protection.",
+    "heading": "Advanced Automation"
+  },
+  {
+    "location": "html-block:150",
+    "text": "FlexLogic allows for the customization of the G30 to operate and control the breakers and other auxiliary devices needed to fit most generator protection schemes and applications.",
+    "heading": "Advanced Automation"
+  },
+  {
+    "location": "html-block:151",
+    "text": "Communications"
+  },
+  {
+    "location": "html-block:152",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:153",
+    "text": "Complete IEC 61850 Process Bus solution providing resource optimization and minimizing total P & C life cycle costs",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:154",
+    "text": "Three independent 100Mbps Ethernet ports enable purpose specific LAN support that eliminates latency effect of heavy traffic protocols on mission critical communication services",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:155",
+    "text": "Embedded IEEE 1588 time-synch protocol support eliminates dedicated IRIG-B wiring requirements for IEDs",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:156",
+    "text": "Direct I/O secures high-speed exchange of binary data between URs",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:157",
+    "text": "Increase network availability by reducing failover time to zero through IEC62439-3 PRP, HSR or dual HSR support",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:158",
+    "text": "Advanced Communications"
+  },
+  {
+    "location": "html-block:159",
+    "text": "The G30 provides advanced communications technologies for remote data and engineering access, making it the easiest and most flexible generator protection relay to use and integrate into new and existing infrastructures. Direct support for fiber optic Ethernet provides high-bandwidth communications allowing for low-latency controls and high-speed file transfers of relay fault and event record information. The available three independent and redundant Ethernet options provide the means to create fault tolerant communication architectures in an easy, cost-effective manner.",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:160",
+    "text": "The G30 supports the most popular industry standard protocols enabling easy, direct integration into DCS and SCADA systems.",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:161",
+    "text": "IEC 61850-9-2LE or IEC 61869 point-to-point or networked or IEC61850-9-2 Hardfiber process bus support",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:162",
+    "text": "DNP 3.0 (serial & TCP/IP)",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:163",
+    "text": "Ethernet Global Data (EGD)",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:164",
+    "text": "IEC 60870-5-103 and IEC 60870-5-104",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:165",
+    "text": "Modbus RTU, Modbus TCP/IP",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:166",
+    "text": "HTTP, TFTP, SFTP and MMS file transfer",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:167",
+    "text": "Redundant SNTP and IEEE 1588 for time synchronization",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:168",
+    "text": "PRP as per IEC 62439-3",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:169",
+    "text": "Supports Routable GOOSE (R-GOOSE)",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:170",
+    "text": "Interoperability with Enbedded IEC 61850"
+  },
+  {
+    "location": "html-block:171",
+    "text": "Use the G30 with integrated IEC 61850 to lower costs associated with generator protection, control and automation. GE Vernova’s leadership in",
+    "heading": "Interoperability with Enbedded IEC 61850"
+  },
+  {
+    "location": "html-block:172",
+    "text": "IEC 61850 comes from thousands of installed devices and follows on years of development experience with UCA 2.0.",
+    "heading": "Interoperability with Enbedded IEC 61850"
+  },
+  {
+    "location": "html-block:173",
+    "text": "The G30’s IEC 61850 Process Bus module is designed to interface with the Multilin HardFiber System, allowing bi-directional IEC 61850 fiber optic communications. The HardFiber System is designed to integrate seamlessly with existing Universal Relay applications, including protection functions, FlexLogic, metering and communications. Learn more",
+    "heading": "Interoperability with Enbedded IEC 61850"
+  },
+  {
+    "location": "html-block:174",
+    "text": "The G30 can also connect to GE Vernova MU320 or third-party merging units using standard IEC 61869 or IEC 61850-9-2LE communication protocols.",
+    "heading": "Interoperability with Enbedded IEC 61850"
+  },
+  {
+    "location": "html-block:175",
+    "text": "Software & Security"
+  },
+  {
+    "location": "html-block:176",
+    "text": "Cyber Security - CyberSentry™ UR (FW v7.4xx)"
+  },
+  {
+    "location": "html-block:177",
+    "text": "CyberSentry enables UR devices to deliver full cyber security features that help customers to comply with NERC CIP and NITIR 7628 cyber security requirements through supporting the following core features:",
+    "heading": "Cyber Security - CyberSentry™ UR (FW v7.4xx)"
+  },
+  {
+    "location": "html-block:178",
+    "text": "Secure FW upgrade"
+  },
+  {
+    "location": "html-block:179",
+    "text": "UR FW files v7.9 and up now include a hash code that allows for authentication prior to being used for upgrading UR devices.",
+    "heading": "Secure FW upgrade"
+  },
+  {
+    "location": "html-block:180",
+    "text": "Password Complexity"
+  },
+  {
+    "location": "html-block:181",
+    "text": "Supporting up to 20 alpha- numeric or special characters, UR passwords exceed NERC CIP requirements for password complexity. Individual passwords per role are available.",
+    "heading": "Password Complexity"
+  },
+  {
+    "location": "html-block:182",
+    "text": "AAA Server Support (Radius)"
+  },
+  {
+    "location": "html-block:183",
+    "text": "Enables integration with centrally managed authentication and accounting of all user activities and uses modern industry best practices and standards that meet and exceed NERC CIP requirements for authentication and password management.",
+    "heading": "AAA Server Support (Radius)"
+  },
+  {
+    "location": "html-block:184",
+    "text": "Role Based Access Control (RBAC)"
+  },
+  {
+    "location": "html-block:185",
+    "text": "Efficiently administrate users and roles within UR devices. The new and advanced access functions allow users to configure up to five roles for up to eight configurable users with independent passwords. The standard “Remote Authentication Dial In User Service” (Radius) is used for authentication.",
+    "heading": "Role Based Access Control (RBAC)"
+  },
+  {
+    "location": "html-block:186",
+    "text": "Event Recorder (Syslog for SEM)"
+  },
+  {
+    "location": "html-block:187",
+    "text": "Capture all cyber security related events within a SOE element (login, logout, invalid password attempts, remote/local access, user in session, settings change, FW update, etc), and then serve and classify data by security level using standard Syslog data format. This enables UR devices integration with established SEM (Security Event Management) systems.",
+    "heading": "Event Recorder (Syslog for SEM)"
+  },
+  {
+    "location": "html-block:188",
+    "text": "EnerVista™ Software"
+  },
+  {
+    "location": "html-block:189",
+    "text": "The EnerVista™ suite is an industry-leading set of software programs that simplifies every aspect of using the G30 relay. The EnerVista™ suite provides all the tools to monitor the status of the protected asset, maintain the relay, and integrate information measured by the G30 into DCS or SCADA monitoring systems. Convenient COMTRADE and Sequence of Events viewers are an integral part of the UR setup software included with every UR relay, to carry out postmortem event analysis and ensure proper protection system operation. Learn More",
+    "heading": "EnerVista™ Software"
+  },
+  {
+    "location": "html-block:190",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:191",
+    "text": "Generator Protection"
+  },
+  {
+    "location": "html-block:192",
+    "text": "GE Vernova's generator protection devices provide innovative solutions for the...",
+    "heading": "Generator Protection"
+  },
+  {
+    "location": "html-block:193",
+    "text": "View More",
+    "heading": "Generator Protection"
+  }
+]

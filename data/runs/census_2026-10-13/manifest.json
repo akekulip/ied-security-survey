@@ -1,0 +1,26 @@
+{
+  "tool_version": "1.5.0",
+  "extraction_version": "1.3.0",
+  "finished_at": "2026-10-13T19:13:42.446390+00:00",
+  "config_sha256": "df977d7ef1e95133c438b097a697b1f5b785b78f1b9963e8a248125d1197e267",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "script_sha256": "1480b98cc189eea2f98d6a1be7ddda7e664f5ec39e35f93aafea185c9c1842bd",
+  "complete": true,
+  "source_count": 587,
+  "candidate_count": 340,
+  "lead_counts": {
+    "capability": 288,
+    "related": 52
+  },
+  "source_status": {
+    "extracted": 522,
+    "login_required": 58,
+    "failed": 7
+  },
+  "config_warnings": [
+    "sel_3530: no seeds, so every cell stays unknown",
+    "sel_547: no seeds, so every cell stays unknown",
+    "sel_9l: no seeds, so every cell stays unknown"
+  ],
+  "sampling": "Census of the vendor catalogues: one product page for each of 485 catalogue entries (473 classified, 12 awaiting classification from their own page). Inventory of 2026-10-13; categories and lifecycle come from the vendors' own catalogues and pages."
+}

@@ -1,0 +1,211 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "IJC Current Balance Relay"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "IJC Current Balance Relay - Legacy"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Contact Us",
+    "heading": "IJC Current Balance Relay - Legacy"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Manufacturing for this product has been discontinued. For more information, contact us.",
+    "heading": "IJC Current Balance Relay - Legacy"
+  },
+  {
+    "location": "html-block:7",
+    "text": "The Type IJC51E relays are used for the protection of lines and of three- phase machines, especially motors and synchronous converters against damage that is caused by phase- unbalancing and single-phase operation.",
+    "heading": "IJC Current Balance Relay - Legacy"
+  },
+  {
+    "location": "html-block:8",
+    "text": "This protection cannot usually be obtained satisfactorily by voltage relays because in three-phase machine, grounded-neutral, or four- wire circuits the opening of one phase conductor may not appreciably disturb the voltage phase relations or magnitude, especially under light load conditions. The machine, or other connected apparatus, will itself tend to maintain the three-phase voltage intact.",
+    "heading": "IJC Current Balance Relay - Legacy"
+  },
+  {
+    "location": "html-block:9",
+    "text": "The relay compares the current in each phase with that in each of the other phases. An increase of current in the circuit, irrespective of the magnitude of the current, will not cause the relay to operate, so long as the currents in the phases are not unbalanced by 25 percent or more.",
+    "heading": "IJC Current Balance Relay - Legacy"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Features and Benefits"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Drawout case",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Lines and AC rotating machines",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Regulating transformer exciting windings",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Phase balance protection",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Protection and Control"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Phase current unbalance",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Timed operation",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:29",
+    "text": "IJC Current Balance Relay - Legacy"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Contact Us",
+    "heading": "IJC Current Balance Relay - Legacy"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Manufacturing for this product has been discontinued. For more information, contact us.",
+    "heading": "IJC Current Balance Relay - Legacy"
+  },
+  {
+    "location": "html-block:32",
+    "text": "The Type IJC51E relays are used for the protection of lines and of three- phase machines, especially motors and synchronous converters against damage that is caused by phase- unbalancing and single-phase operation.",
+    "heading": "IJC Current Balance Relay - Legacy"
+  },
+  {
+    "location": "html-block:33",
+    "text": "This protection cannot usually be obtained satisfactorily by voltage relays because in three-phase machine, grounded-neutral, or four- wire circuits the opening of one phase conductor may not appreciably disturb the voltage phase relations or magnitude, especially under light load conditions. The machine, or other connected apparatus, will itself tend to maintain the three-phase voltage intact.",
+    "heading": "IJC Current Balance Relay - Legacy"
+  },
+  {
+    "location": "html-block:34",
+    "text": "The relay compares the current in each phase with that in each of the other phases. An increase of current in the circuit, irrespective of the magnitude of the current, will not cause the relay to operate, so long as the currents in the phases are not unbalanced by 25 percent or more.",
+    "heading": "IJC Current Balance Relay - Legacy"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Features and Benefits"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Drawout case",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Lines and AC rotating machines",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Regulating transformer exciting windings",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Phase balance protection",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Protection and Control"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Phase current unbalance",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Timed operation",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Single Function Protection Products"
+  },
+  {
+    "location": "html-block:46",
+    "text": "View More",
+    "heading": "Single Function Protection Products"
+  }
+]

@@ -1,0 +1,344 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "MiCOM Agile P841 Line Terminal Protection | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "MiCOM Agile P841 - Legacy"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Line Terminal Protection Systems"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Contact Us",
+    "heading": "Line Terminal Protection Systems"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Manufacturing for the P841 has been discontinued. As an alternative, please refer to P84 MiCOM 5th Generation relay.",
+    "heading": "Line Terminal Protection Systems"
+  },
+  {
+    "location": "html-block:8",
+    "text": "The MiCOM Agile P841 is a multifunctional line terminal IED for control and back-up protection in transmission and sub-transmission feeder bays. The P841 provides management of single or dual breaker autoreclose logic schemes with synchrocheck.",
+    "heading": "Line Terminal Protection Systems"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Key features:"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Extremely versatile, e.g. managing leader-follower reclosing schemes in the event of dual breaker application",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Transmission-class circuit breaker failure protection",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Operator control and plant status indication facilities - 10 fully programmable function keys and tri-color LEDs",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Models:"
+  },
+  {
+    "location": "html-block:14",
+    "text": "P841A Line Terminal Management IED",
+    "heading": "Models:"
+  },
+  {
+    "location": "html-block:15",
+    "text": "P841B Used for line terminals supplied by two circuit breakers, such as mesh/ring bus, double-bus, and breaker and a half feeding",
+    "heading": "Models:"
+  },
+  {
+    "location": "html-block:16",
+    "text": "What's New"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Enhanced Ethernet board module with switchable Ethernet redundancy delivered in a single model.",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:18",
+    "text": "The new board module is supported on P841 SW 76, 79 and 86.",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:19",
+    "text": "It supports PRP, HSR and RSTP in one model, allowing a single P40 model to be used in any application requiring redundant Ethernet communications. The new module is designed to handle high density traffic in the IEC 61850-8-1 network, with time latency halved. Larger architecture digital substations can also be supported, with up to 50 nodes now possible in HSR rings.",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Key Features & Benefits:",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Universal IRIG-B – Modulated and demodulated supported in the same model",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:22",
+    "text": "HSR Ring – Extended to 50 node support for larger substation architectures",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Fast performance, particularly in onerous applications such as where process bus GOOSE is used for tripping purposes",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Interactive Selector Guide - Line Differential"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Interactive Selector Guide - Line Distance"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Spotlight Application"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Typical Applications"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Transmission Principles & Protection"
+  },
+  {
+    "location": "html-block:30",
+    "text": "GSA Schedule"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Legacy Transmission Protection"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Software / Firmware"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Interactive Selector Guide - Line Differential"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Interactive Selector Guide - Line Distance"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Spotlight Application"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Typical Applications"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Transmission Principles & Protection"
+  },
+  {
+    "location": "html-block:45",
+    "text": "GSA Schedule"
+  },
+  {
+    "location": "html-block:46",
+    "text": "Legacy Transmission Protection"
+  },
+  {
+    "location": "html-block:47",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:50",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:51",
+    "text": "Software / Firmware"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:53",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:54",
+    "text": "MiCOM Agile P841 - Legacy"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Line Terminal Protection Systems"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Contact Us",
+    "heading": "Line Terminal Protection Systems"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Manufacturing for the P841 has been discontinued. As an alternative, please refer to P84 MiCOM 5th Generation relay.",
+    "heading": "Line Terminal Protection Systems"
+  },
+  {
+    "location": "html-block:58",
+    "text": "The MiCOM Agile P841 is a multifunctional line terminal IED for control and back-up protection in transmission and sub-transmission feeder bays. The P841 provides management of single or dual breaker autoreclose logic schemes with synchrocheck.",
+    "heading": "Line Terminal Protection Systems"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Key features:"
+  },
+  {
+    "location": "html-block:60",
+    "text": "Extremely versatile, e.g. managing leader-follower reclosing schemes in the event of dual breaker application",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:61",
+    "text": "Transmission-class circuit breaker failure protection",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:62",
+    "text": "Operator control and plant status indication facilities - 10 fully programmable function keys and tri-color LEDs",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:63",
+    "text": "Models:"
+  },
+  {
+    "location": "html-block:64",
+    "text": "P841A Line Terminal Management IED",
+    "heading": "Models:"
+  },
+  {
+    "location": "html-block:65",
+    "text": "P841B Used for line terminals supplied by two circuit breakers, such as mesh/ring bus, double-bus, and breaker and a half feeding",
+    "heading": "Models:"
+  },
+  {
+    "location": "html-block:66",
+    "text": "What's New"
+  },
+  {
+    "location": "html-block:67",
+    "text": "Enhanced Ethernet board module with switchable Ethernet redundancy delivered in a single model.",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:68",
+    "text": "The new board module is supported on P841 SW 76, 79 and 86.",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:69",
+    "text": "It supports PRP, HSR and RSTP in one model, allowing a single P40 model to be used in any application requiring redundant Ethernet communications. The new module is designed to handle high density traffic in the IEC 61850-8-1 network, with time latency halved. Larger architecture digital substations can also be supported, with up to 50 nodes now possible in HSR rings.",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:70",
+    "text": "Key Features & Benefits:",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:71",
+    "text": "Universal IRIG-B – Modulated and demodulated supported in the same model",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:72",
+    "text": "HSR Ring – Extended to 50 node support for larger substation architectures",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:73",
+    "text": "Fast performance, particularly in onerous applications such as where process bus GOOSE is used for tripping purposes",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:74",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:75",
+    "text": "Feeder Protection"
+  },
+  {
+    "location": "html-block:76",
+    "text": "GE Vernova’s distribution feeder protection systems provide advanced protection with...",
+    "heading": "Feeder Protection"
+  },
+  {
+    "location": "html-block:77",
+    "text": "View More",
+    "heading": "Feeder Protection"
+  }
+]

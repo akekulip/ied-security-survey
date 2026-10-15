@@ -1,0 +1,498 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "Multilin R650 Recloser Controller | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "Multilin R650 - Legacy"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Advanced recloser controller for distribution networks"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Contact Us",
+    "heading": "Advanced recloser controller for distribution networks"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Manufacturing for R650 has been discontinued. As an alternative, please refer to 850 or Multilin Agile P14D-E.",
+    "heading": "Advanced recloser controller for distribution networks"
+  },
+  {
+    "location": "html-block:8",
+    "text": "The Multilin™ R650 recloser controller delivers critical protection, monitoring and control for distribution automation applications. The Multilin R650 provides automatic network configuration enabling operators to reduce outage duration and recover sections of a medium voltage (MV) network for increased reliability in secondary distribution systems.",
+    "heading": "Advanced recloser controller for distribution networks"
+  },
+  {
+    "location": "html-block:9",
+    "text": "With a focus on connectivity and security, the R650 supports the latest in communications technologies and protocols, and provides standard security tools to help ensure that device integration into new or existing SCADA, OMS or DMS is as simple and secure as possible. As a member of GE Vernova’s Multilin 650 family of field proven protection and control devices, the R650 Provides simplified management as operators can use the same platform both inside and outside the substation.",
+    "heading": "Advanced recloser controller for distribution networks"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Distribution Automation Overview"
+  },
+  {
+    "location": "html-block:12",
+    "text": "F650 Bay Controller"
+  },
+  {
+    "location": "html-block:13",
+    "text": "F60 Feeder Relay"
+  },
+  {
+    "location": "html-block:14",
+    "text": "F35 Feeder Relay"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Support"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Subscribe",
+    "heading": "Support"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Distribution Automation Overview"
+  },
+  {
+    "location": "html-block:23",
+    "text": "F650 Bay Controller"
+  },
+  {
+    "location": "html-block:24",
+    "text": "F60 Feeder Relay"
+  },
+  {
+    "location": "html-block:25",
+    "text": "F35 Feeder Relay"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Support"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Subscribe",
+    "heading": "Support"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Multilin R650 - Legacy"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Advanced recloser controller for distribution networks"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Contact Us",
+    "heading": "Advanced recloser controller for distribution networks"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Manufacturing for R650 has been discontinued. As an alternative, please refer to 850 or Multilin Agile P14D-E.",
+    "heading": "Advanced recloser controller for distribution networks"
+  },
+  {
+    "location": "html-block:36",
+    "text": "The Multilin™ R650 recloser controller delivers critical protection, monitoring and control for distribution automation applications. The Multilin R650 provides automatic network configuration enabling operators to reduce outage duration and recover sections of a medium voltage (MV) network for increased reliability in secondary distribution systems.",
+    "heading": "Advanced recloser controller for distribution networks"
+  },
+  {
+    "location": "html-block:37",
+    "text": "With a focus on connectivity and security, the R650 supports the latest in communications technologies and protocols, and provides standard security tools to help ensure that device integration into new or existing SCADA, OMS or DMS is as simple and secure as possible. As a member of GE Vernova’s Multilin 650 family of field proven protection and control devices, the R650 Provides simplified management as operators can use the same platform both inside and outside the substation.",
+    "heading": "Advanced recloser controller for distribution networks"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Overview"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Recloser Overview"
+  },
+  {
+    "location": "html-block:40",
+    "text": "The role of a recloser in a distribution network has developed in line with the increasing need for operators to minimize outage duration and the numbers of customers affected by faults, which in turn helps maximize performance according to reliability indices like CAIDI/SAIDI. As a result, it has two main functions. Its primary function is to clear the fault when it occurs as quickly as possible. Secondly, if the fault is permanent, the recloser takes on a sectionalising role driven by logic or commands. These control systems are dependent on the data delivered by the recloser on three levels: general monitoring from a historic perspective, fault data at the time of fault and pre/post fault data.",
+    "heading": "Recloser Overview"
+  },
+  {
+    "location": "html-block:41",
+    "text": "R650 Primary Function"
+  },
+  {
+    "location": "html-block:42",
+    "text": "The recloser must have an accurate and efficient tripping mechanism to clear as many faults as possible and fulfill its primary function. The R650 contains a unique driving electronics module that has been specifically matched to the G&W Viper-ST recloser device. This design provides reliable 4 shot auto reclosing. Supported modes of operation include:",
+    "heading": "R650 Primary Function"
+  },
+  {
+    "location": "html-block:43",
+    "text": "3 phase trip, three phase lockout",
+    "heading": "R650 Primary Function"
+  },
+  {
+    "location": "html-block:44",
+    "text": "1 phase trip, three phase lockout",
+    "heading": "R650 Primary Function"
+  },
+  {
+    "location": "html-block:45",
+    "text": "1 phase trip, 1 phase lockout",
+    "heading": "R650 Primary Function"
+  },
+  {
+    "location": "html-block:46",
+    "text": "R650 Secondary Function"
+  },
+  {
+    "location": "html-block:47",
+    "text": "When lockout occurs the recloser becomes a pivotal fault make and fault break switch. The optimization of the network is now in the hands of the operator, either manually or automatically through automation and/or FDIR/ FLISR schemes. Whichever scheme is employed, reliable communications and rapid response is required.",
+    "heading": "R650 Secondary Function"
+  },
+  {
+    "location": "html-block:48",
+    "text": "The R650 supports redundant Ethernet and fiber port physical interface options and a wide range of industry standard protocols for communication, namely Modbus TCP/IP, DNP 3.0, IEC 60870-5-101, IEC 60870-5-103, IEC 60870-5-104, IEC 61850 ED2, IEC 62439 / PRP/HSR.",
+    "heading": "R650 Secondary Function"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Protection & Control"
+  },
+  {
+    "location": "html-block:50",
+    "text": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:51",
+    "text": "The Multilin R650 offers a complete range of standard and advanced protection elements with multiple stages and wide setting ranges. The recloser controller provides comprehensive directional and non-directional overcurrent protection, along with optional single phase tripping and reclosing to limit system impact and improve reliability. A synchronism check function ensures that the voltages are within safe limits before allowing manual closing and auto reclose operations. Additionally, voltage and frequency protection elements may be used to disconnect generation connected to the feeder. The R650 includes six voltage inputs to monitor voltages on both sides of the recloser thereby delivering a safer level of performance.",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Driving Electronics Module",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:53",
+    "text": "At the heart of the R650 design is the driving electronics module that accurately matches the requirements of the recloser device with the controller outputs. This module ensures minimum delay between the R650 output signals and the breaker operation. Through intelligent design, this reliable performance is achieved utilizing minimal power, providing operators with true multiple shot capability.",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:54",
+    "text": "The driving electronics module design has been extensively tested and validated to ensure optimum performance and facilitate high-speed, multi-shot capability. Test results indicate that the module enables the trip capacitors to maintain sufficient charge voltage to perform 4 cycles of close and trip fast.",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Functional Block Diagram",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:56",
+    "text": "ANSI Device Numbers and Functions",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Device Number | Function",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:58",
+    "text": "25 | Synchronism Check",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:59",
+    "text": "27 | Source/Load Undervoltage",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:60",
+    "text": "32 | Sensitive Directional Power",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:61",
+    "text": "32FP | Forward Power",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:62",
+    "text": "32N | Wattmetric Zero-Sequence Directional",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:63",
+    "text": "46 | Negative Sequence Time Overcurrent",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:64",
+    "text": "47 | Negative Sequence Voltage",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:65",
+    "text": "49P | Thermal Model",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:66",
+    "text": "50BF | Breaker Failure",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:67",
+    "text": "50PH/PL | Phase Instantaneous Overcurrent (High/Low)",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:68",
+    "text": "50N | Neutral Instantaneous Overcurrent",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:69",
+    "text": "Device Number | Function",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:70",
+    "text": "50G | Ground Instantaneous Overcurrent",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:71",
+    "text": "50SG | Ground Instantaneous Overcurrent for sensitive ground systems (measured from 5th current transformer input)",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:72",
+    "text": "50IG | Isolated Ground Instantaneous Overcurrent (measured from 5th current transformer input)",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:73",
+    "text": "51N | Neutral Time Overcurrent",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:74",
+    "text": "51G | Ground Time Overcurrent",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:75",
+    "text": "51SG | Sensitive Ground Time Overcurrent",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:76",
+    "text": "51PH/V | Voltage Restraint Phase Time Overcurrent (high)",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:77",
+    "text": "51PL/V | Voltage Restraint Phase Time Overcurrent (low)",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:78",
+    "text": "59 | Source/Load Overvoltage",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:79",
+    "text": "Device Number | Function",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:80",
+    "text": "59N | Source/Load Neutral Overvoltage",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:81",
+    "text": "67P | Phase Directional Overcurrent",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:82",
+    "text": "67N | Neutral Directional Overcurrent",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:83",
+    "text": "67SG | Sensitive Ground Directional Overcurrent",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:84",
+    "text": "79 | Autoreclose (Four shot recloser)",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:85",
+    "text": "81 U/O | Under/Over Frequency",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:86",
+    "text": "- | Broken Conductor",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:87",
+    "text": "VTFF | VT Fuse Failure Detection",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:88",
+    "text": "60CTS Failure | Current Transformer Failure",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:89",
+    "text": "2nd Harmonic Inhibit | Second Harmonic Inhibit",
+    "heading": "Advanced Protection and Control"
+  },
+  {
+    "location": "html-block:90",
+    "text": "Automation"
+  },
+  {
+    "location": "html-block:91",
+    "text": "Automation"
+  },
+  {
+    "location": "html-block:92",
+    "text": "From simple automation to advanced analytics, the R650 provides the flexibility and scalability required to meet unique application requirements.",
+    "heading": "Automation"
+  },
+  {
+    "location": "html-block:93",
+    "text": "Simple loop recloser automation schemes",
+    "heading": "Automation"
+  },
+  {
+    "location": "html-block:94",
+    "text": "Simple Loop Automation",
+    "heading": "Automation"
+  },
+  {
+    "location": "html-block:95",
+    "text": "This is a logic-based automation scheme for self-healing networks. This type of scheme is generally used for providing faster fault isolation and restoration.",
+    "heading": "Automation"
+  },
+  {
+    "location": "html-block:96",
+    "text": "Individual recloser controllers make decisions for restoration based on the restoration logic that is programmed into the controllers. This results in quick isolation of the faulty section and automatic restoration thereby minimizing impact on other neighboring customers.",
+    "heading": "Automation"
+  },
+  {
+    "location": "html-block:97",
+    "text": "Advanced loop recloser automation schemes",
+    "heading": "Automation"
+  },
+  {
+    "location": "html-block:98",
+    "text": "The recloser controllers can provide data to remote SCADA, Outage Management Systems (OMS) and Distribution Management Systems (DMS). These systems manage the network automation process by utilizing the recloser controller data for running FDIR/FLISR and taking restoration decisions dynamically.",
+    "heading": "Automation"
+  },
+  {
+    "location": "html-block:99",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:100",
+    "text": "EnerVista Software"
+  },
+  {
+    "location": "html-block:101",
+    "text": "The EnerVista™ Suite is an industry-leading set of software programs that simplifies every aspect of using the R650. The EnerVista suite provides all the tools to monitor the status of the recloser, maintain the controller, and integrate information measured by the R650 into DCS or SCADA monitoring systems.",
+    "heading": "EnerVista Software"
+  },
+  {
+    "location": "html-block:102",
+    "text": "Examples of Graphical Logic Capability and Asset Monitoring Dashboard",
+    "heading": "EnerVista Software"
+  },
+  {
+    "location": "html-block:103",
+    "text": "Learn more about EnerVista Software",
+    "heading": "EnerVista Software"
+  },
+  {
+    "location": "html-block:104",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:105",
+    "text": "Controllers"
+  },
+  {
+    "location": "html-block:106",
+    "text": "GE Vernova offers an industry-leading suite of controllers that support a variety of...",
+    "heading": "Controllers"
+  },
+  {
+    "location": "html-block:107",
+    "text": "View More",
+    "heading": "Controllers"
+  }
+]

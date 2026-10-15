@@ -1,0 +1,78 @@
+[
+  {
+    "at": "2026-10-13T18:54:11.850481+00:00",
+    "url": "https://www.siemens.com/robots.txt",
+    "status": 200,
+    "bytes": 130,
+    "sha256": "6431c135b6bc319415db219c33e76ddcfb612b4330f21a982a15ee85edeb91aa"
+  },
+  {
+    "at": "2026-10-13T18:54:13.048288+00:00",
+    "url": "https://www.siemens.com/en-us/products/siprotec/7sj82/",
+    "status": 200,
+    "bytes": 165460
+  },
+  {
+    "at": "2026-10-13T18:54:13.296266+00:00",
+    "url": "https://www.rockwellautomation.com/robots.txt",
+    "status": 200,
+    "bytes": 5064,
+    "sha256": "3f3b8289063afb02205c5669e96142fc13c385b232b0b62345418f2642cd47d7"
+  },
+  {
+    "at": "2026-10-13T18:54:14.493536+00:00",
+    "url": "https://www.rockwellautomation.com/en-us/products/hardware/energy-monitoring/1426-powermonitor-5000.html",
+    "status": 200,
+    "bytes": 178548
+  },
+  {
+    "at": "2026-10-13T18:54:15.686778+00:00",
+    "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/micrologix-1400-controllers.html",
+    "status": 200,
+    "bytes": 167601
+  },
+  {
+    "at": "2026-10-13T18:54:15.817257+00:00",
+    "url": "https://www.se.com/robots.txt",
+    "status": 200,
+    "bytes": 46157,
+    "sha256": "3e2dd49000b1c451deca6457c489da60371648e8a567b89ea4a9793bab996f7c"
+  },
+  {
+    "at": "2026-10-13T18:54:17.015739+00:00",
+    "url": "https://www.se.com/us/en/product-range/60765-micom-p14x/",
+    "status": 200,
+    "bytes": 1352115
+  },
+  {
+    "at": "2026-10-13T18:54:18.213893+00:00",
+    "url": "https://www.se.com/us/en/product-range/66030-scadapack-57x/",
+    "status": 200,
+    "bytes": 1460131
+  },
+  {
+    "at": "2026-10-13T18:54:18.641004+00:00",
+    "url": "https://selinc.com/robots.txt",
+    "status": 200,
+    "bytes": 686,
+    "sha256": "5e08edd75de604c0966b1d4c076064640b4ca1dfc6f31c8eb9eeb65d3ba64211"
+  },
+  {
+    "at": "2026-10-13T18:54:19.849070+00:00",
+    "url": "https://selinc.com/api/download/10737/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T18:54:21.051908+00:00",
+    "url": "https://selinc.com/api/download/3656/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T18:54:22.259370+00:00",
+    "url": "https://selinc.com/api/download/111397/",
+    "status": 200,
+    "bytes": 1211394
+  }
+]

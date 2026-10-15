@@ -1,0 +1,147 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "Overcurrent protection – SIPROTEC 7SJ86 | Siemens"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Why SIPROTEC 7SJ86?"
+  },
+  {
+    "location": "html-block:4",
+    "text": "The SIPROTEC 7SJ86 overcurrent protection device provides backup and emergency protection for line protection systems. It delivers solutions for protection, control, automation, monitoring and power quality.",
+    "heading": "Why SIPROTEC 7SJ86?"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Prevent extensive damage and maintain continuous operation with reliable backup protection. The SIPROTEC 7SJ86 offers overcurrent protection for all voltage levels with 3-pole tripping. Optimize tripping times using directional comparison and protection data communication, detecting various ground faults. Gain flexibility and comprehensive system management with the modular structure and DIGSI 5 engineering tool.",
+    "heading": "Why SIPROTEC 7SJ86?"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Key benefits"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Provide reliable line protection"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Offer backup and emergency protection for line devices. Detect and trip 3-pole short circuits across diverse networks and voltage levels. Identify ground faults in isolated or arc-suppression-coil systems for stable operations.",
+    "heading": "Provide reliable line protection"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Enhance operational safety and availability"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Enhance safety with powerful protection functions and a user-friendly design for easy device and software handling. Maintain high availability in extreme conditions with conformal coating on electronic boards for robust operation.",
+    "heading": "Enhance operational safety and availability"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Strengthen system security and compliance"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Implement robust cybersecurity measures per NERC CIP and BDEW Whitepaper requirements. Protect your critical infrastructure for a compliant environment.",
+    "heading": "Strengthen system security and compliance"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Featured capabilities"
+  },
+  {
+    "location": "html-block:14",
+    "text": "all",
+    "heading": "Featured capabilities"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Modular overcurrent protection with flexible I/O"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Provide robust 3-pole overcurrent protection. Select 3 variants with 4 current and 4 voltage transformers. Flexibly adjust 11-23 inputs and 9-25 outputs within the SIPROTEC 5 modular system for adaptation.",
+    "heading": "Modular overcurrent protection with flexible I/O"
+  },
+  {
+    "location": "html-block:17",
+    "text": "all",
+    "heading": "Modular overcurrent protection with flexible I/O"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Advanced ground fault and system protection"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Detect ground faults via transient ground fault, harmonic detection, admittance measurement and pulse detection. Fault locator plus provides accurate location. Arc protection delivers safety.",
+    "heading": "Advanced ground fault and system protection"
+  },
+  {
+    "location": "html-block:20",
+    "text": "all",
+    "heading": "Advanced ground fault and system protection"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Integrated communication and cybersecurity"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Integrate Ethernet RJ45 for DIGSI 5 and IEC 61850 communication. Add up to 4 pluggable modules for redundant protocols like Modbus TCP and PROFINET IO.",
+    "heading": "Integrated communication and cybersecurity"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Explore resources (in English)"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Downloads"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Profile SIPROTEC 7SJ86",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Profile SIPROTEC 5 - conformal coating",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Catalog SIPROTEC 5",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Tender specifications",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Configuration"
+  },
+  {
+    "location": "html-block:30",
+    "text": "SIPROTEC 5 configurator",
+    "heading": "Configuration"
+  },
+  {
+    "location": "html-block:31",
+    "text": "SiePortal - Online shop"
+  },
+  {
+    "location": "html-block:32",
+    "text": "SIPROTEC 7SJ86 on SiePortal",
+    "heading": "SiePortal - Online shop"
+  }
+]

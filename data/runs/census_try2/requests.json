@@ -1,0 +1,15 @@
+[
+  {
+    "at": "2026-10-13T18:55:03.502744+00:00",
+    "url": "https://www.gevernova.com/robots.txt",
+    "status": 200,
+    "bytes": 5207,
+    "sha256": "38174ab81da1da9ba9bec5746eb246576af3f2d13361da1fa7a8a9e90ef0dfa8"
+  },
+  {
+    "at": "2026-10-13T18:55:04.705198+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-d20mx-substation-controller-legacy",
+    "status": 200,
+    "bytes": 410511
+  }
+]

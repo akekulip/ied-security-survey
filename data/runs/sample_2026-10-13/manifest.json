@@ -1,0 +1,28 @@
+{
+  "tool_version": "1.5.0",
+  "extraction_version": "1.3.0",
+  "finished_at": "2026-10-13T19:34:21.334457+00:00",
+  "config_sha256": "24ca8afc72bcc5f23e987b0a5e82248d2a7ba354094f0f6c59a4088cffdecb0b",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "script_sha256": "6f92ab8f68d15bd45b46910db937363e8639dba41e09766f3d599396002fa9bf",
+  "complete": true,
+  "source_count": 374,
+  "candidate_count": 419,
+  "lead_counts": {
+    "capability": 373,
+    "related": 46,
+    "statement": 6
+  },
+  "source_status": {
+    "extracted": 310,
+    "login_required": 19,
+    "duplicate": 10,
+    "skipped": 30,
+    "failed": 5
+  },
+  "config_warnings": [
+    "sel_3530: no seeds, so every cell stays unknown"
+  ],
+  "sampling": "Stratified random sample: up to 4 devices per vendor, category and lifecycle stratum, seed 20261013, drawn from 484 classified catalogue entries; strata with fewer entries are taken whole. A sample of catalogue entries, not of installed devices. Inventory of 2026-10-13; categories and lifecycle come from the vendors' own catalogues and pages.",
+  "reused_from": "C:/Users/Philip/ied_survey_data/runs/census_2026-10-13"
+}

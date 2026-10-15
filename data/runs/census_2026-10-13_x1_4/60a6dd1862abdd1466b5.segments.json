@@ -1,0 +1,424 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "Multilin D20MX - Advanced Substation Automation Controller"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "Multilin D20MX Substation Controller Legacy"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Simple to Advanced Substation Automation Control"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Contact Us",
+    "heading": "Simple to Advanced Substation Automation Control"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Manufacturing for the D20MX portfolio has been discontinued. Please contact GE Vernova for availability. As an alternative, please refer to the G100 or G500.",
+    "heading": "Simple to Advanced Substation Automation Control"
+  },
+  {
+    "location": "html-block:8",
+    "text": "The Multilin™ D20MX Substation Controller is designed to execute communications and energy management applications for the monitoring and control of electrical substations. It is capable of amalgamating data from multiple slave devices and D20 I/O modules connected via communication channels into a single database using various protocols.",
+    "heading": "Simple to Advanced Substation Automation Control"
+  },
+  {
+    "location": "html-block:9",
+    "text": "The D20MX represents the next innovation in GE Vernova’s cyber secure RTU technology for NERC-CIP environments. The D20MX is built upon the field-proven Multilin D20 technologies and continues the tradition of reliable automation and control through high quality and long term product availability.",
+    "heading": "Simple to Advanced Substation Automation Control"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Supports multiple partitions which eases the upgrade of D200 multi-processor configurations",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Reduces legacy D20/D200 RTU upgrade expenditures by over 50% through backwards compatibility with existing D20/D200 installed accessories, such as chassis, modems and D20 I/O peripheral modules",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Minimizes operation and maintenance costs of existing D20/D200-based SCADA infrastructure by leveraging existing designs, processes and infrastructure",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Enables simpler and more efficient compliance with NERC-CIP requirements through the application of native cyber security features built into the D20MX Substation Controller",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Substation Automation Systems"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Multifunction Servers, Gateways & RTUs"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Substation Controllers"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Technical Support"
+  },
+  {
+    "location": "html-block:20",
+    "text": "GSA Schedule"
+  },
+  {
+    "location": "html-block:21",
+    "text": "D.20 RIO Distributed I/O Controller"
+  },
+  {
+    "location": "html-block:22",
+    "text": "D400 Substation Gateway"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Substation Automation"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Instruction Manuals"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Support"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Product & Cyber Security Advisories"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Subscribe",
+    "heading": "Product & Cyber Security Advisories"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Substation Automation Systems"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Multifunction Servers, Gateways & RTUs"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Substation Controllers"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Technical Support"
+  },
+  {
+    "location": "html-block:37",
+    "text": "GSA Schedule"
+  },
+  {
+    "location": "html-block:38",
+    "text": "D.20 RIO Distributed I/O Controller"
+  },
+  {
+    "location": "html-block:39",
+    "text": "D400 Substation Gateway"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Substation Automation"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Instruction Manuals"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:46",
+    "text": "Support"
+  },
+  {
+    "location": "html-block:47",
+    "text": "Product & Cyber Security Advisories"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Subscribe",
+    "heading": "Product & Cyber Security Advisories"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Multilin D20MX Substation Controller Legacy"
+  },
+  {
+    "location": "html-block:50",
+    "text": "Simple to Advanced Substation Automation Control"
+  },
+  {
+    "location": "html-block:51",
+    "text": "Contact Us",
+    "heading": "Simple to Advanced Substation Automation Control"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Manufacturing for the D20MX portfolio has been discontinued. Please contact GE Vernova for availability. As an alternative, please refer to the G100 or G500.",
+    "heading": "Simple to Advanced Substation Automation Control"
+  },
+  {
+    "location": "html-block:53",
+    "text": "The Multilin™ D20MX Substation Controller is designed to execute communications and energy management applications for the monitoring and control of electrical substations. It is capable of amalgamating data from multiple slave devices and D20 I/O modules connected via communication channels into a single database using various protocols.",
+    "heading": "Simple to Advanced Substation Automation Control"
+  },
+  {
+    "location": "html-block:54",
+    "text": "The D20MX represents the next innovation in GE Vernova’s cyber secure RTU technology for NERC-CIP environments. The D20MX is built upon the field-proven Multilin D20 technologies and continues the tradition of reliable automation and control through high quality and long term product availability.",
+    "heading": "Simple to Advanced Substation Automation Control"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Supports multiple partitions which eases the upgrade of D200 multi-processor configurations",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Reduces legacy D20/D200 RTU upgrade expenditures by over 50% through backwards compatibility with existing D20/D200 installed accessories, such as chassis, modems and D20 I/O peripheral modules",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:58",
+    "text": "Minimizes operation and maintenance costs of existing D20/D200-based SCADA infrastructure by leveraging existing designs, processes and infrastructure",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Enables simpler and more efficient compliance with NERC-CIP requirements through the application of native cyber security features built into the D20MX Substation Controller",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:60",
+    "text": "Overview"
+  },
+  {
+    "location": "html-block:61",
+    "text": "Advanced Controller"
+  },
+  {
+    "location": "html-block:62",
+    "text": "The Multilin D20MX Substation Controller collects, filters, and sorts data from a wide range of intelligent devices (RTUs, relays, meters) in the substation. The D20MX preserves original data time stamps for accurate sequence of event (SOE) logs, allowing data from large diverse geographic regions and time zones to be analyzed in extreme detail. Data can be presented simultaneously to multiple SCADA hosts. The D20MX comes with a built-in suite of protocols and security applications to facilitate integration with various substation devices and SCADA hosts.",
+    "heading": "Advanced Controller"
+  },
+  {
+    "location": "html-block:63",
+    "text": "D20MX is the sixth generation of D20 CPUs designed to provide a smooth migration path for D20 users to extend the life of aging D20 systems. It introduces a new and modern network security feature suite that enables effective compliance with NERC-CIP requirements, using open and trusted standards and protocols that allow integration with modern cyber security systems and tools.",
+    "heading": "Advanced Controller"
+  },
+  {
+    "location": "html-block:64",
+    "text": "Advanced Substation Controller Connectivity"
+  },
+  {
+    "location": "html-block:65",
+    "text": "Legacy Upgrades"
+  },
+  {
+    "location": "html-block:66",
+    "text": "D20MX Upgrade Process"
+  },
+  {
+    "location": "html-block:67",
+    "text": "The Multilin D20MX provides a cost-effective alternative to upgrades of legacy D20/D200 RTUs. This means that the investments made in GE Vernova’s automation systems keep paying dividends beyond their originally projected end of life. Simply replace the Multilin D20/D200 processor module with a Multilin D20MX and migrate the device configuration to extend the life of the existing D20/D200 Controller. Add cyber security features for integration into NERC-CIP environments. As technology changes with market demands, GE Vernova continues to invest in a partnership with their customers through advanced modular design principals",
+    "heading": "D20MX Upgrade Process"
+  },
+  {
+    "location": "html-block:68",
+    "text": "Security"
+  },
+  {
+    "location": "html-block:69",
+    "text": "Integration into NERC-CIP Environments"
+  },
+  {
+    "location": "html-block:70",
+    "text": "The Multilin D20MX supports a comprehensive set of security functions to allow a seamless integration with existing IT department policies. Built-in cyber security features, such as Remote Authentication Dial-In User Service (RADIUS), Role Based Access Control (RBAC), and user activity logging, provide a complete security toolkit required to enable simpler and more efficient compliance with NERC-CIP requirements, using open and trusted standards and protocols, that allow integration with modern cyber security systems and tools.",
+    "heading": "Integration into NERC-CIP Environments"
+  },
+  {
+    "location": "html-block:71",
+    "text": "Centralized Authentication and Authorization"
+  },
+  {
+    "location": "html-block:72",
+    "text": "Hardware Overview"
+  },
+  {
+    "location": "html-block:73",
+    "text": "Hardware Overview"
+  },
+  {
+    "location": "html-block:74",
+    "text": "Backwards Compatibility with Earlier Vintages of Multilin D20 RTUs"
+  },
+  {
+    "location": "html-block:75",
+    "text": "The Multilin D20MX is an embedded single board computer powered by a 667 MHz PowerQUICC II Pro processor pin-for-pin compatible unit with existing D20 Processors and accessories, such as chassis, D20 remote I/O peripherals, modems.",
+    "heading": "Backwards Compatibility with Earlier Vintages of Multilin D20 RTUs"
+  },
+  {
+    "location": "html-block:76",
+    "text": "Fully Equipped Out-of-the-Box"
+  },
+  {
+    "location": "html-block:77",
+    "text": "Previous generations of D20/D200 RTUs required add-on system components and software to support Ethernet communications and optional memory expansion. The new D20MX is equipped by default with integrated memory, 10/100/1000BASE-TX or 100BASE-FX IEEE 802.3 compliant communications and a core load firmware with a comprehensive set of key substation automation applications.",
+    "heading": "Fully Equipped Out-of-the-Box"
+  },
+  {
+    "location": "html-block:78",
+    "text": "I/O Options"
+  },
+  {
+    "location": "html-block:79",
+    "text": "D20 I/O options"
+  },
+  {
+    "location": "html-block:80",
+    "text": "A complete family of substation hardened I/O modules makes the D20MX controller scalable to both large and small substations. A distributed architecture with both ring and star topologies allows for easy expandability and remote placement of I/O modules. The following I/O modules are available in a variety of models with I/O ranges up to 300VDC.",
+    "heading": "D20 I/O options"
+  },
+  {
+    "location": "html-block:81",
+    "text": "D20S - 64 channel status input module | Buy Now",
+    "heading": "D20 I/O options"
+  },
+  {
+    "location": "html-block:82",
+    "text": "D20A - 32 channel DC Analog input module | Buy Now",
+    "heading": "D20 I/O options"
+  },
+  {
+    "location": "html-block:83",
+    "text": "D20K - 32 channel control output module | Buy Now",
+    "heading": "D20 I/O options"
+  },
+  {
+    "location": "html-block:84",
+    "text": "D20KI - 8 external interposer relay pairs module | Buy Now",
+    "heading": "D20 I/O options"
+  },
+  {
+    "location": "html-block:85",
+    "text": "D20C - 16 status input, 8 control output, optional 16 DC analog inputs or 8 analog inputs and 8 analog outputs | Buy Now",
+    "heading": "D20 I/O options"
+  },
+  {
+    "location": "html-block:86",
+    "text": "I/O with DNP Communication"
+  },
+  {
+    "location": "html-block:87",
+    "text": "The DNP I/O modules are data collection and control devices that combine the DNP 3.0 communications protocol with our existing industry proven and robust line of I/O modules. The DNP I/O modules implement the industry standard DNP 3.0 (Level 2) slave protocol over a single RS485 interface to provide expandable I/O functionality for the D400, D25 and iBox product lines, as well as third-party products.",
+    "heading": "I/O with DNP Communication"
+  },
+  {
+    "location": "html-block:88",
+    "text": "The following DNP I/O modules are available:",
+    "heading": "I/O with DNP Communication"
+  },
+  {
+    "location": "html-block:89",
+    "text": "DNPIO-DI (D20S) | Buy Now",
+    "heading": "I/O with DNP Communication"
+  },
+  {
+    "location": "html-block:90",
+    "text": "DNPIO-DCAI (D20A) | Buy Now",
+    "heading": "I/O with DNP Communication"
+  },
+  {
+    "location": "html-block:91",
+    "text": "DNPIO-CO (D20K) | Buy Now",
+    "heading": "I/O with DNP Communication"
+  },
+  {
+    "location": "html-block:92",
+    "text": "DNPIO-C (D20C) | Buy Now",
+    "heading": "I/O with DNP Communication"
+  },
+  {
+    "location": "html-block:93",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:94",
+    "text": "Gateways and RTUs"
+  },
+  {
+    "location": "html-block:95",
+    "text": "GE Vernova offers an industry-leading suite of multifunction servers, gateways, RTUs, and...",
+    "heading": "Gateways and RTUs"
+  },
+  {
+    "location": "html-block:96",
+    "text": "View More",
+    "heading": "Gateways and RTUs"
+  }
+]

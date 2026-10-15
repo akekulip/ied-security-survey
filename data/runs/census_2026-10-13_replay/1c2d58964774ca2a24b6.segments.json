@@ -1,0 +1,812 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "MiCOM Agile P44T | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "MiCOM Agile P44T"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Catenary Distance Protection"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Contact Us Buy Now",
+    "heading": "Catenary Distance Protection"
+  },
+  {
+    "location": "html-block:7",
+    "text": "The MiCOM Agile P44T is a multifunctional protection device, supplementing distance main protection with a host of backup protection, thermal protection, recording, control, measurement and monitoring features. It provides fast, highly selective railway catenary distance protection combined with the delta directional decision proven technique. The trip time is typically 0.7 to 1 cycle. Five zones of protection with quadrilateral characteristics allow versatile deployment as the main protection for all AC catenary/feeder systems. With independently settable right and left hand side resistive reaches for each zone the P44T suits routes hosting regenerative braking trains.",
+    "heading": "Catenary Distance Protection"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Key Benefits:"
+  },
+  {
+    "location": "html-block:9",
+    "text": "True subcycle distance tripping",
+    "heading": "Key Benefits:"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Integral digital teleprotection between line ends",
+    "heading": "Key Benefits:"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Advanced load blinding which prevents false tripping due to encroachment of heavy loads",
+    "heading": "Key Benefits:"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Auto reclose to supplement the main distance function",
+    "heading": "Key Benefits:"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Wrong phase coupling, panto flash over and train startup protection",
+    "heading": "Key Benefits:"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Delta I protection elements reliably detect high impedance faults by detecting a sudden current step change. The Delta I protection is supervised by 3rd and 5th harmonic elements and an impedance characteristic to provide reliable and discriminating fault detection",
+    "heading": "Key Benefits:"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Protection of classic or auto transformer-fed catenaries in systems with nominal frequencies of 50 or 60 Hz (settable)",
+    "heading": "Key Benefits:"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Powerful PSL logic is fast and deterministic",
+    "heading": "Key Benefits:"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Communication options right from serial up to IEC 61850 Edition 1 or Edition 2 and DNP3 Ethernet",
+    "heading": "Key Benefits:"
+  },
+  {
+    "location": "html-block:18",
+    "text": "It supports PRP, HSR and RSTP in one model, allowing a single P40 model to be used in any application requiring redundant Ethernet communications.",
+    "heading": "Key Benefits:"
+  },
+  {
+    "location": "html-block:19",
+    "text": "HSR Ring up to 50 node support for larger substation architectures",
+    "heading": "Key Benefits:"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Fast performance, particularly in onerous applications such as where process bus GOOSE is used for tripping purposes",
+    "heading": "Key Benefits:"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Harsh environment coating as standard to all MiCOM relay to protect against corrosive gases such as H22 or SO2",
+    "heading": "Key Benefits:"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Applications:"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Protection of classic or auto transformer-fed catenaries in systems with nominal frequencies of 50 or 60 Hz (settable)",
+    "heading": "Applications:"
+  },
+  {
+    "location": "html-block:24",
+    "text": "What's new"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Enhanced Ethernet board module with switchable Ethernet redundancy delivered in a single model.",
+    "heading": "What's new"
+  },
+  {
+    "location": "html-block:26",
+    "text": "The new board module is supported on P44T SW 02 with IEC 61850 Ed.2 supported on SW 91 (coming soon).",
+    "heading": "What's new"
+  },
+  {
+    "location": "html-block:27",
+    "text": "It supports PRP, HSR and RSTP in one model, allowing a single P40 model to be used in any application requiring redundant Ethernet communications. The new module is designed to handle high density traffic in the IEC 61850-8-1 network, with time latency halved. Larger architecture digital substations can also be supported, with up to 50 nodes now possible in HSR rings.",
+    "heading": "What's new"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Key Features & Benefits:",
+    "heading": "What's new"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Universal IRIG-B – Modulated and demodulated supported in the same model",
+    "heading": "What's new"
+  },
+  {
+    "location": "html-block:30",
+    "text": "HSR Ring – Extended to 50 node support for larger substation architectures",
+    "heading": "What's new"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Fast performance, particularly in onerous applications such as where process bus GOOSE is used for tripping purposes",
+    "heading": "What's new"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Interactive Selector Guide - Line Differential"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Interactive Selector Guide - Line Distance"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Spotlight Application"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Typical Applications"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Transmission Principles & Protection"
+  },
+  {
+    "location": "html-block:38",
+    "text": "GSA Schedule"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Legacy Transmission Protection"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:46",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:47",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Interactive Selector Guide - Line Differential"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Interactive Selector Guide - Line Distance"
+  },
+  {
+    "location": "html-block:50",
+    "text": "Spotlight Application"
+  },
+  {
+    "location": "html-block:51",
+    "text": "Typical Applications"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Transmission Principles & Protection"
+  },
+  {
+    "location": "html-block:53",
+    "text": "GSA Schedule"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Legacy Transmission Protection"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:58",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:60",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:61",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:62",
+    "text": "MiCOM Agile P44T"
+  },
+  {
+    "location": "html-block:63",
+    "text": "Catenary Distance Protection"
+  },
+  {
+    "location": "html-block:64",
+    "text": "Contact Us Buy Now",
+    "heading": "Catenary Distance Protection"
+  },
+  {
+    "location": "html-block:65",
+    "text": "The MiCOM Agile P44T is a multifunctional protection device, supplementing distance main protection with a host of backup protection, thermal protection, recording, control, measurement and monitoring features. It provides fast, highly selective railway catenary distance protection combined with the delta directional decision proven technique. The trip time is typically 0.7 to 1 cycle. Five zones of protection with quadrilateral characteristics allow versatile deployment as the main protection for all AC catenary/feeder systems. With independently settable right and left hand side resistive reaches for each zone the P44T suits routes hosting regenerative braking trains.",
+    "heading": "Catenary Distance Protection"
+  },
+  {
+    "location": "html-block:66",
+    "text": "Key Benefits:"
+  },
+  {
+    "location": "html-block:67",
+    "text": "True subcycle distance tripping",
+    "heading": "Key Benefits:"
+  },
+  {
+    "location": "html-block:68",
+    "text": "Integral digital teleprotection between line ends",
+    "heading": "Key Benefits:"
+  },
+  {
+    "location": "html-block:69",
+    "text": "Advanced load blinding which prevents false tripping due to encroachment of heavy loads",
+    "heading": "Key Benefits:"
+  },
+  {
+    "location": "html-block:70",
+    "text": "Auto reclose to supplement the main distance function",
+    "heading": "Key Benefits:"
+  },
+  {
+    "location": "html-block:71",
+    "text": "Wrong phase coupling, panto flash over and train startup protection",
+    "heading": "Key Benefits:"
+  },
+  {
+    "location": "html-block:72",
+    "text": "Delta I protection elements reliably detect high impedance faults by detecting a sudden current step change. The Delta I protection is supervised by 3rd and 5th harmonic elements and an impedance characteristic to provide reliable and discriminating fault detection",
+    "heading": "Key Benefits:"
+  },
+  {
+    "location": "html-block:73",
+    "text": "Protection of classic or auto transformer-fed catenaries in systems with nominal frequencies of 50 or 60 Hz (settable)",
+    "heading": "Key Benefits:"
+  },
+  {
+    "location": "html-block:74",
+    "text": "Powerful PSL logic is fast and deterministic",
+    "heading": "Key Benefits:"
+  },
+  {
+    "location": "html-block:75",
+    "text": "Communication options right from serial up to IEC 61850 Edition 1 or Edition 2 and DNP3 Ethernet",
+    "heading": "Key Benefits:"
+  },
+  {
+    "location": "html-block:76",
+    "text": "It supports PRP, HSR and RSTP in one model, allowing a single P40 model to be used in any application requiring redundant Ethernet communications.",
+    "heading": "Key Benefits:"
+  },
+  {
+    "location": "html-block:77",
+    "text": "HSR Ring up to 50 node support for larger substation architectures",
+    "heading": "Key Benefits:"
+  },
+  {
+    "location": "html-block:78",
+    "text": "Fast performance, particularly in onerous applications such as where process bus GOOSE is used for tripping purposes",
+    "heading": "Key Benefits:"
+  },
+  {
+    "location": "html-block:79",
+    "text": "Harsh environment coating as standard to all MiCOM relay to protect against corrosive gases such as H22 or SO2",
+    "heading": "Key Benefits:"
+  },
+  {
+    "location": "html-block:80",
+    "text": "Applications:"
+  },
+  {
+    "location": "html-block:81",
+    "text": "Protection of classic or auto transformer-fed catenaries in systems with nominal frequencies of 50 or 60 Hz (settable)",
+    "heading": "Applications:"
+  },
+  {
+    "location": "html-block:82",
+    "text": "What's new"
+  },
+  {
+    "location": "html-block:83",
+    "text": "Enhanced Ethernet board module with switchable Ethernet redundancy delivered in a single model.",
+    "heading": "What's new"
+  },
+  {
+    "location": "html-block:84",
+    "text": "The new board module is supported on P44T SW 02 with IEC 61850 Ed.2 supported on SW 91 (coming soon).",
+    "heading": "What's new"
+  },
+  {
+    "location": "html-block:85",
+    "text": "It supports PRP, HSR and RSTP in one model, allowing a single P40 model to be used in any application requiring redundant Ethernet communications. The new module is designed to handle high density traffic in the IEC 61850-8-1 network, with time latency halved. Larger architecture digital substations can also be supported, with up to 50 nodes now possible in HSR rings.",
+    "heading": "What's new"
+  },
+  {
+    "location": "html-block:86",
+    "text": "Key Features & Benefits:",
+    "heading": "What's new"
+  },
+  {
+    "location": "html-block:87",
+    "text": "Universal IRIG-B – Modulated and demodulated supported in the same model",
+    "heading": "What's new"
+  },
+  {
+    "location": "html-block:88",
+    "text": "HSR Ring – Extended to 50 node support for larger substation architectures",
+    "heading": "What's new"
+  },
+  {
+    "location": "html-block:89",
+    "text": "Fast performance, particularly in onerous applications such as where process bus GOOSE is used for tripping purposes",
+    "heading": "What's new"
+  },
+  {
+    "location": "html-block:90",
+    "text": "What's New"
+  },
+  {
+    "location": "html-block:91",
+    "text": "What's New"
+  },
+  {
+    "location": "html-block:92",
+    "text": "Enhanced Ethernet board module with switchable Ethernet redundancy delivered in a single model.",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:93",
+    "text": "It supports PRP, HSR and RSTP in one model, allowing a single P40 model to be used in any application requiring redundant Ethernet communications. The new module is designed to handle high density traffic in the IEC 61850-8-1 network, with time latency halved. Larger architecture digital substations can also be supported, with up to 50 nodes now possible in HSR rings.",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:94",
+    "text": "Key Features & Benefits:",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:95",
+    "text": "Universal IRIG-B – Modulated and demodulated supported in the same model",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:96",
+    "text": "HSR Ring – Extended to 50 node support for larger substation architectures",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:97",
+    "text": "Fast performance, particularly in onerous applications such as where process bus GOOSE is used for tripping purposes",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:98",
+    "text": "Overview"
+  },
+  {
+    "location": "html-block:99",
+    "text": "Overview"
+  },
+  {
+    "location": "html-block:100",
+    "text": "Many high speed, regional and urban rail networks worldwide are electrified. The exposed nature of overhead catenaries makes them fault-prone and protection devices are vital for selective tripping and isolation of any faulted section.",
+    "heading": "Overview"
+  },
+  {
+    "location": "html-block:101",
+    "text": "The MiCOM P44T Agile detects and trips faults in less than one power system cycle. This minimises the risk of downed conductors, making successful supply restoration more likely and ultimately minimising delays to trains.",
+    "heading": "Overview"
+  },
+  {
+    "location": "html-block:102",
+    "text": "Comprehensive backup protections and advanced communications make MiCOM P44T suitable for railway protection for classic or auto transformer-fed catenaries at 50 Hz and 60Hz.",
+    "heading": "Overview"
+  },
+  {
+    "location": "html-block:103",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:104",
+    "text": "User programmable operate/reset curves for thermal, overcurrent and earth fault protection",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:105",
+    "text": "Loss of field and out of step, anti backspin and loss of load, 3 phase volt check, phase reversal, VTS and CTS",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:106",
+    "text": "Comprehensive start sequence and re-acceleration scheme",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:107",
+    "text": "RTD and CLIO (current-loop I/O) available as hardware options",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:108",
+    "text": "2 independent setting groups",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:109",
+    "text": "Option of up to 10 RTD inputs, with a selection of different RTD types",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:110",
+    "text": "Key benefits:",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:111",
+    "text": "Sub-cycle fault clearance from 0.7 to 1 cycle",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:112",
+    "text": "Load blinder prevents spurious trips cascading through the network",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:113",
+    "text": "Integral digital teleprotection between line ends",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:114",
+    "text": "Multi-shot autoreclosure with check synchronism",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:115",
+    "text": "InterMiCOM option for end-to-end protection communications",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:116",
+    "text": "Delta I protection elements reliably detect high impedance faults",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:117",
+    "text": "Wrong phase coupling, panto flash over and train startup protection",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:118",
+    "text": "Functional Block Diagram",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:119",
+    "text": "ANSI ® Device Numbers and Functions",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:120",
+    "text": "Device Number | Function",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:121",
+    "text": "21 | Distance",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:122",
+    "text": "25 | Check Synchronizing",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:123",
+    "text": "27 | Undervoltage",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:124",
+    "text": "49 | Thermal Overload",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:125",
+    "text": "50/27 | Switch-on to Fault",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:126",
+    "text": "50 | Phase Definite Time Overcurrent",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:127",
+    "text": "51 | Phase Inverse-Time Overcurrent",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:128",
+    "text": "52 | Breaker and Isolator Control",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:129",
+    "text": "Device Number | Function",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:130",
+    "text": "59 | Overvoltage",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:131",
+    "text": "67 | Directional Phase Overcurrent",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:132",
+    "text": "68 | Power Swing Blocking",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:133",
+    "text": "79 | Autoreclose",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:134",
+    "text": "85 | InterMiCOM Teleprotection",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:135",
+    "text": "86 | Latching/Lockout Contacts",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:136",
+    "text": "21BL | Load Encroachment/Blinder",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:137",
+    "text": "Device Number | Function",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:138",
+    "text": "21FL | Fault Locator",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:139",
+    "text": "50BF | CB Failure",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:140",
+    "text": "PSL | Programmable Logic",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:141",
+    "text": "VTS | VT Supervision",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:142",
+    "text": "DEF | Defrost Protection",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:143",
+    "text": "PFO | Panto Flashover",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:144",
+    "text": "WFC | Wrong Phase Coupler",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:145",
+    "text": "Dlz | Delta I for high impedance faults",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:146",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:147",
+    "text": "MiCOM S1 Agile"
+  },
+  {
+    "location": "html-block:148",
+    "text": "Key benefits:",
+    "heading": "MiCOM S1 Agile"
+  },
+  {
+    "location": "html-block:149",
+    "text": "Powerful, free of charge, PC toolsuite",
+    "heading": "MiCOM S1 Agile"
+  },
+  {
+    "location": "html-block:150",
+    "text": "Optimum management of the installed base, structured as per the substation topology",
+    "heading": "MiCOM S1 Agile"
+  },
+  {
+    "location": "html-block:151",
+    "text": "Intuitive and versatile interface with file management facilities",
+    "heading": "MiCOM S1 Agile"
+  },
+  {
+    "location": "html-block:152",
+    "text": "Logical structure based on substation, voltage level and bay",
+    "heading": "MiCOM S1 Agile"
+  },
+  {
+    "location": "html-block:153",
+    "text": "Version control and cross-checking facilities for IED settings",
+    "heading": "MiCOM S1 Agile"
+  },
+  {
+    "location": "html-block:154",
+    "text": "Real-time measurement visualization – MiCOM S1 Agile extends to all MiCOM Agile IEDs - including P847 PMU and busbar schemes",
+    "heading": "MiCOM S1 Agile"
+  },
+  {
+    "location": "html-block:155",
+    "text": "Engineering Tool Suite",
+    "heading": "MiCOM S1 Agile"
+  },
+  {
+    "location": "html-block:156",
+    "text": "S1 Agile is the truly universal PC tool for MiCOM Agile relay, assemble all tools in a palette for simple entry, with intuitive navigation via fewer mouse-clicks. No-longer are separate tools required for redundant Ethernet configuration, phasor measurement unit commissioning, busbar scheme operational dashboards, programmable curve profiles or automatic disturbance record extraction – applications are embedded. MiCOM S1 Agile supports all existing MiCOM, K-Series and Modulex, including a utility for automatic conversion of setting files from previous generations of numerical relays like K-series and MiCOM P20 to the latest P40 Agile models.",
+    "heading": "MiCOM S1 Agile"
+  },
+  {
+    "location": "html-block:157",
+    "text": "To move to the future, with no loss of functionality, no loss of device support, and full compatibility with your installed base and system architecture – request a copy of S1 Agile with the contact form link below.",
+    "heading": "MiCOM S1 Agile"
+  },
+  {
+    "location": "html-block:158",
+    "text": "Key features in the MiCOM S1 family:",
+    "heading": "MiCOM S1 Agile"
+  },
+  {
+    "location": "html-block:159",
+    "text": "GE Vernova\\’s integrated engineering tool that provides users with access to automation IED configuration and record data",
+    "heading": "MiCOM S1 Agile"
+  },
+  {
+    "location": "html-block:160",
+    "text": "Integrated configuration and monitoring features",
+    "heading": "MiCOM S1 Agile"
+  },
+  {
+    "location": "html-block:161",
+    "text": "Send and extract setting files",
+    "heading": "MiCOM S1 Agile"
+  },
+  {
+    "location": "html-block:162",
+    "text": "Event and disturbance record extraction and analysis",
+    "heading": "MiCOM S1 Agile"
+  },
+  {
+    "location": "html-block:163",
+    "text": "MiCOM S1 Agile software request",
+    "heading": "MiCOM S1 Agile"
+  },
+  {
+    "location": "html-block:164",
+    "text": "To receive the MiCOM S1 Agile, please use our Contact form. This will also ensure that you are kept up-to-date with the latest enhancements, including updates and bug fixes.",
+    "heading": "MiCOM S1 Agile"
+  },
+  {
+    "location": "html-block:165",
+    "text": "Retrofit/Refurbish"
+  },
+  {
+    "location": "html-block:166",
+    "text": "Refurbishment Solutions"
+  },
+  {
+    "location": "html-block:167",
+    "text": "GE Vernova’s latest MiCOM P240 models offer a perfect functional match for our MCHN,MCHG, MOPN and Motpro relays from the heritage installed-base brands of GEC Measurements, GEC Alsthom, GE VERNOVA and Areva:",
+    "heading": "Refurbishment Solutions"
+  },
+  {
+    "location": "html-block:168",
+    "text": "Refurbishment Solutions – “If It’s Blue Think to Renew”",
+    "heading": "Refurbishment Solutions"
+  },
+  {
+    "location": "html-block:169",
+    "text": "GE Vernova\\’s latest MiCOM P440 Catenary Distance Protection offers a perfect functional replacement to our “LFZP 141” Catenary Distance relays, from the heritage installed-base brands GEC Measurements, GEC Alsthom and GE VERNOVA. With substantially improved speed, optimized and advanced algorithms, the new MiCOM P44T retains form, fit and function compatibility but delivers the latest platform and software ready for today\\’s environment, and for future-proofed application for the decades ahead.",
+    "heading": "Refurbishment Solutions"
+  },
+  {
+    "location": "html-block:170",
+    "text": "LFZP 141 Replacement:",
+    "heading": "Refurbishment Solutions"
+  },
+  {
+    "location": "html-block:171",
+    "text": "Form, fit and functional compatibility – the P44T case 80TE fits in the same panel or rack space",
+    "heading": "Refurbishment Solutions"
+  },
+  {
+    "location": "html-block:172",
+    "text": "Contact us for advice and support",
+    "heading": "Refurbishment Solutions"
+  }
+]

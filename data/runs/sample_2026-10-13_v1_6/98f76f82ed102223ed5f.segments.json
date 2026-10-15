@@ -1,0 +1,101 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "SIMATIC S7-1500 R/H CPUs - High Availability | Siemens"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Why SIMATIC S7-1500 R/H CPUs?"
+  },
+  {
+    "location": "html-block:4",
+    "text": "SIMATIC S7-1500 R/H is a redundant, high-availability CPU system designed to maximize plant availability. By synchronizing a backup CPU with the primary one, it ensures no data is lost during an outage, preventing costly production standstills. Its unique value lies in its system-integrated synchronization and project consistency, requiring no special knowledge for engineering in the TIA Portal. The IO periphery is connected to the primary and backup CPU either as switched S1 or S2 device via a PROFINET ring with MRP for R-CPUs and R1, switched S1 or S2 device via any PROFINET structure for H-CPUs. Maximum distance between CPUs can be ~ 100 m for R-CPUs and up to 40 km for H-CPUs.",
+    "heading": "Why SIMATIC S7-1500 R/H CPUs?"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Key benefits"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Reduce downtime"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Thanks to high availability on each level (controller, network and interface modules) single points of failure are eliminated.",
+    "heading": "Reduce downtime"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Easy to maintain"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Hot swapping allows to replace automation components during operation and with Configuration-in-RUN (CiR) the extension is also possible.",
+    "heading": "Easy to maintain"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Learn more about CiR >",
+    "heading": "Easy to maintain"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Easy to integrate"
+  },
+  {
+    "location": "html-block:12",
+    "text": "No additional software or license is needed. Same engineering software, TIA Portal, but no programming for synchronization and management of redundancy.",
+    "heading": "Easy to integrate"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Featured capabilities"
+  },
+  {
+    "location": "html-block:14",
+    "text": "all",
+    "heading": "Featured capabilities"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Scalable switchover time"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Redundant and high-availability CPU pairs are connected either with PROFINET or with synchronization modules and fiber-optic cable to allow a fail-over time of 300 ms or 50 ms.",
+    "heading": "Scalable switchover time"
+  },
+  {
+    "location": "html-block:17",
+    "text": "all",
+    "heading": "Scalable switchover time"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Hot standby"
+  },
+  {
+    "location": "html-block:19",
+    "text": "The backup CPU is automatically fed the same program by the system and synchronously monitors the primary CPU in operation. Up-to-date data is available in the primary and backup CPUs at all times so that the backup can take over.",
+    "heading": "Hot standby"
+  },
+  {
+    "location": "html-block:20",
+    "text": "all",
+    "heading": "Hot standby"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Engineering in TIA Portal"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Engineering and visualization take place in TIA Portal, including simulation of the CPU using PLCSIM Advanced. Program a redundant CPU, with or without safety-related functions, the same way as other SIMATIC controllers.",
+    "heading": "Engineering in TIA Portal"
+  }
+]

@@ -1,0 +1,424 @@
+[
+  {
+    "id": "215d61ab62387febd789",
+    "source_id": "6110d2deb3de1eb77796",
+    "product_id": "ge_epm_2200_digital_power_meter",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:699",
+    "matched": [
+      "requires SSL"
+    ],
+    "context": "Most email servers use \nPort 25 for SMTP (Simple Mail Transfer Protocol).\nc. Select the number or retries for the email from the pull-down menu.\nd. Select the retry timeout (in milliseconds) from the pull-down menu.\ne. If the Email Server requires SSL security, click the checkbox next to the option.\nf. Click OK to save your changes or continue to the FTP instructions.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "18.2.3 Additional Meter Tasks"
+  },
+  {
+    "id": "b2192a1035d8cd11e61b",
+    "source_id": "b7c607ca6ca27c8f40da",
+    "product_id": "ge_epm_6010",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:699",
+    "matched": [
+      "requires SSL"
+    ],
+    "context": "Most email servers use \nPort 25 for SMTP (Simple Mail Transfer Protocol).\nc. Select the number or retries for the email from the pull-down menu.\nd. Select the retry timeout (in milliseconds) from the pull-down menu.\ne. If the Email Server requires SSL security, click the checkbox next to the option.\nf. Click OK to save your changes or continue to the FTP instructions.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "18.2.3 Additional Meter Tasks"
+  },
+  {
+    "id": "96c122c827f239b509c3",
+    "source_id": "ad041707d6b174c27bc7",
+    "product_id": "ge_epm_7100_legacy",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:699",
+    "matched": [
+      "requires SSL"
+    ],
+    "context": "Most email servers use \nPort 25 for SMTP (Simple Mail Transfer Protocol).\nc. Select the number or retries for the email from the pull-down menu.\nd. Select the retry timeout (in milliseconds) from the pull-down menu.\ne. If the Email Server requires SSL security, click the checkbox next to the option.\nf. Click OK to save your changes or continue to the FTP instructions.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "18.2.3 Additional Meter Tasks"
+  },
+  {
+    "id": "a96945b9ce32e6e3fd4b",
+    "source_id": "479c605271e946241e66",
+    "product_id": "ge_epm_9900_advanced_power_quality_meter_legacy",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:699",
+    "matched": [
+      "requires SSL"
+    ],
+    "context": "Most email servers use \nPort 25 for SMTP (Simple Mail Transfer Protocol).\nc. Select the number or retries for the email from the pull-down menu.\nd. Select the retry timeout (in milliseconds) from the pull-down menu.\ne. If the Email Server requires SSL security, click the checkbox next to the option.\nf. Click OK to save your changes or continue to the FTP instructions.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "18.2.3 Additional Meter Tasks"
+  },
+  {
+    "id": "69f2494242e3f5a97050",
+    "source_id": "f289bb2261ba80f69d60",
+    "product_id": "ge_p64_micom_5th_generation",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:415",
+    "matched": [
+      "authentication using RADIUS is required"
+    ],
+    "context": "The new password must comply with the strength defined by the Password Policy\nsetting, detailed in the Password Policy \nsection of this chapter.\nWhen the authentication method is configured as ‘Server + Device’, and authentication using RADIUS is required,\nusers must be set up on the RADIUS server (see the RADIUS users section). These users are separate from the\npre-defined Device users. RADIUS server information must be configured in the IED to connect to the RADIUS\nserver(s) for Server authentication (see the RADIUS server settings section). It is recommended that the RADIUS\nshared secret be changed from the default (see the RADIUS client-server validation section).",
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "17.5.1. Initial Setup: Default Usernames and Default Passwords"
+  },
+  {
+    "id": "858b0b806acba2cecdfa",
+    "source_id": "f289bb2261ba80f69d60",
+    "product_id": "ge_p64_micom_5th_generation",
+    "feature": "non_support_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:419",
+    "matched": [
+      "no authentication",
+      "does not provide user authentication"
+    ],
+    "context": "17.7 USER AUTHENTICATION\n17.7.1 AUTHENTICATION METHODS\nThe IED supports Bypass (no authentication), Device authentication and Server authentication.\nAuthentication\nMethod Description User Interface\nBypass Auth. IED does not provide security, any user (Local) can access the IED without\nlogging in. IED does not validate user and password. In this case, there is no\nneed to enter user name and password to login. Bypass can not be enabled\non Rear Port 1, Rear Port 2 and Ethernet Ports.",
+    "match_count": 3,
+    "status": "unreviewed",
+    "heading": "17.7.2. Bypass"
+  },
+  {
+    "id": "47bd296c555fcc4c299c",
+    "source_id": "f289bb2261ba80f69d60",
+    "product_id": "ge_p64_micom_5th_generation",
+    "feature": "default_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:419",
+    "matched": [
+      "authentication: ● Server + Device (This is the default setting"
+    ],
+    "context": "Front Panel UI\nFront Port (USB port)\nRear Port 1\nRear Port 2\nNetwork Port 1\nNetwork Port 2\nIf Bypass Auth. is enabled, the IED ignores the Auth. Method setting.\nThe Auth. Method setting offers the following options for user authentication:\n● Server + Device (This is the default setting for IEDs with NIC (Ethernet Board) fitted)\n● Device Only (This is the default setting for IEDs without NIC (Ethernet Board) fitted)\nOnly users with a SECADM role may change the Auth. Method setting. If the SECADM user changes it, the role\nremains logged in. Only when the user logs-out is their access-level revoked.\n17.7.2 BYPASS\nIn Bypass Auth. mode, the IED does not provide user authentication - any user can login.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "17.7.2. Bypass"
+  },
+  {
+    "id": "f9259304c67b052332dc",
+    "source_id": "f289bb2261ba80f69d60",
+    "product_id": "ge_p64_micom_5th_generation",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:436",
+    "matched": [
+      "not encrypted"
+    ],
+    "context": "Note:\nWhen setting the SNMP browser for RBAC compatible relays, the Context Name should be ‘px4x’.\nSNMP V2C Security Configuration\nSNMPv2c implements authentication between the master and agent using a parameter called the Community\nName. This is ef\nfectively the password but it is not encrypted during transmission (this makes it inappropriate for\nsome scenarios in which case version 3 should be used instead). To configure the SNMP 2c security:\n1. If SNMPv2c has been enabled, use the Community Name setting to set the password that will be used by\nthe IED and SNMP manager for authentication. This may be between one and 8 characters.\nChapter 17 - Cyber-Security P64\n416 P64-TM-EN-1",
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "17.8. SNMP Configuration"
+  },
+  {
+    "id": "e71c74a64bd76380b59f",
+    "source_id": "f289bb2261ba80f69d60",
+    "product_id": "ge_p64_micom_5th_generation",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:436",
+    "matched": [
+      "optional, however you must enable authentication"
+    ],
+    "context": "SNMP V3 Security Configuration\nSNMPv3 provides a higher level of security via authentication and privacy protocols. The IED adopts a secure\nSNMPv3 implementation with a user-based security model (USM).\nAuthentication is used to check the identity of users, privacy allows for encryption of SNMP messages. Both are\noptional, however you must enable authentication in order to enable privacy. To configure these security options:\n1. If SNMPv3 has been enabled, set the Security Level  setting. There are three levels; without authentication\nand without privacy (noAuthNoPriv), with authentication but without privacy (authNoPriv), and with\nauthentication and with privacy (authPriv).\n2. If Authentication is enabled, use the Auth Protocol setting to select the authentication type.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "17.8. SNMP Configuration"
+  },
+  {
+    "id": "6e6c4f672d27b5758557",
+    "source_id": "88b220978386a85bc4ca",
+    "product_id": "rockwell_compactlogix_5380_controllers",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:28",
+    "matched": [
+      "CIP Security with firmware revision 34.011 or later",
+      "required to interface with CIP Security"
+    ],
+    "context": "Secure Controller Systems\nThe CompactLogix  5380 and  Compact GuardLogix   5380 controllers support IEC-62443-4-2 \nSL 1 requirements. For security features and system requirements, see Develop Secure \nApplications  on page 182.\nThe CompactLogix  5380 and  Compact GuardLogix   5380 controllers also support  CIP \nSecurity   with firmware revision 34.011 or later.\nCIP Security  is a standard, open-source communication mechanism that helps to provide \na secure data transport across an EtherNet/IP  network. CIP Security  lets CIP-connected \ndevices authenticate each other before transmitting and receiving data.",
+    "match_count": 2,
+    "status": "unreviewed",
+    "heading": "Secure Controller Systems"
+  },
+  {
+    "id": "24e7c8d665a5ca08c462",
+    "source_id": "88b220978386a85bc4ca",
+    "product_id": "rockwell_compactlogix_5380_controllers",
+    "feature": "default_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:186",
+    "matched": [
+      "CIP Security ports on the controller are enabled by default"
+    ],
+    "context": "For more information, see \nDisable the Ethernet Port on the Port \nConfiguration Tab  on page 198 and Disable the Ethernet Port with an \nMSG Instruction  on page 199.\nDisable the \ncontroller CIP \nSecurity  ports\nMay be required \nbased on system \ndesign, threat \nmodel, and risk \nassessment.\nCIP Security  ports on the controller are enabled by default. Disable \nthe CIP SecurityCIP Security  ports if required by the system design, \nthreat model, or risk assessment.\nFor more information, see Disable CIP Security Ports via FactoryTalk \nLinx  on page 201 and Disable CIP Security Ports via a CIP Generic MSG \nInstruction  on page 202.\nDisable the \ncontroller USB ports\nMay be required \nbased on system \ndesign, threat \nmodel, and risk \nassessment.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Requirements for Use Control"
+  },
+  {
+    "id": "5b9e7d0aa01b8f9d69e6",
+    "source_id": "88b220978386a85bc4ca",
+    "product_id": "rockwell_compactlogix_5380_controllers",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:186",
+    "matched": [
+      "CIP Security ports May be required"
+    ],
+    "context": "Disable the Ethernet port if \nrequired by the system design, threat model, or risk assessment.\nFor more information, see \nDisable the Ethernet Port on the Port \nConfiguration Tab  on page 198 and Disable the Ethernet Port with an \nMSG Instruction  on page 199.\nDisable the \ncontroller CIP \nSecurity  ports\nMay be required \nbased on system \ndesign, threat \nmodel, and risk \nassessment.\nCIP Security  ports on the controller are enabled by default. Disable \nthe CIP SecurityCIP Security  ports if required by the system design, \nthreat model, or risk assessment.\nFor more information, see Disable CIP Security Ports via FactoryTalk \nLinx  on page 201 and Disable CIP Security Ports via a CIP Generic MSG \nInstruction  on page 202.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Requirements for Use Control"
+  },
+  {
+    "id": "bb4f35c4465b9e5c4786",
+    "source_id": "88b220978386a85bc4ca",
+    "product_id": "rockwell_compactlogix_5380_controllers",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:188",
+    "matched": [
+      "not encrypted"
+    ],
+    "context": "SD Card encryption May be required \nbased on system \ndesign, threat \nIf your system allows SD card use, the load process to the SD card \nencrypts and digitally signs the project by using the controller key. The \nSD card itself is not encrypted. When you save (load) firmware to the SD \n188 5069-UM001N-EN-P - January 2026 Rockwell Automation, Inc.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Requirements for Data Confidentiality"
+  },
+  {
+    "id": "f591b109ba8512ba4719",
+    "source_id": "88b220978386a85bc4ca",
+    "product_id": "rockwell_compactlogix_5380_controllers",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:188",
+    "matched": [
+      "encryption May be required"
+    ],
+    "context": "FactoryTalk  Policy \nManager  software\nYes Use the FactoryTalk  Policy Manager  software to define a secure data \ntransport over an EtherNet/IP  network to the controller.\nFor more information, see Configure System Security Features User \nManual, \nSECURE-UM001 .\nSD Card encryption May be required \nbased on system \ndesign, threat \nIf your system allows SD card use, the load process to the SD card \nencrypts and digitally signs the project by using the controller key. The \nSD card itself is not encrypted. When you save (load) firmware to the SD \n188 5069-UM001N-EN-P - January 2026 Rockwell Automation, Inc.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Requirements for Data Confidentiality"
+  },
+  {
+    "id": "61a015ed2113a991fbdf",
+    "source_id": "88b220978386a85bc4ca",
+    "product_id": "rockwell_compactlogix_5380_controllers",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:189",
+    "matched": [
+      "Required to Meet IEC-62443-4-2 SL 1 Details CIP Security"
+    ],
+    "context": "For more information, see License-based Source and Execution \nProtection  on page 192.\nRequirements for Restricted Data Flow\nTable  40. Requirements for Restricted Data Flow\nSecurity \nComponent\nRequired \nto Meet \nIEC-62443-4-2 \nSL 1\nDetails\nCIP Security Yes Use FactoryTalk  Policy Manager  software to define zones and conduits.\nFor more information, see CIP Security with Rockwell Automation \nProducts Application Technique, \nSECURE-AT001.\nRockwell Automation, Inc. 5069-UM001N-EN-P - January 2026 189",
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Requirements for Restricted Data Flow"
+  },
+  {
+    "id": "ec63b2d319b7f10a7987",
+    "source_id": "57a3eb1c0b391b7f0de3",
+    "product_id": "rockwell_controllogix_5590",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:1",
+    "matched": [
+      "required for SIL 3/PLe) • IEC 62443-4-2 c ompliant with CIP Security"
+    ],
+    "context": "[...] zing the need\nfor extra network modules\n•\n Ide\nal for complex motion, redundant systems and large-scale applications\nIntegrated Safety and Security\n• SIL 2/PLd sa fety built into every controller variant (Safety partner required for\nSIL 3/PLe)\n•\n IEC 62443-4-2 c\nompliant with CIP Security and secure boot\n•\n Unified sa\nfety and process control in a single platform\nSimplified, Modernized and Built for What Is Next\n• De sign efficiently using Studio 5000 Logix Designer  version 38 or FactoryTalk \nDesign Studio *\n•\n A\nccelerate deployment and achieve reliability with design and validation tools\nlike FactoryTalk Logix Echo.\n•\n En\nhanced [...]",
+    "match_count": 1,
+    "status": "unreviewed"
+  },
+  {
+    "id": "dfc3168985578e4b0eb0",
+    "source_id": "5f6f1b22b4fd07d375a5",
+    "product_id": "rockwell_micro830_controllers",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:91",
+    "matched": [
+      "not encrypted"
+    ],
+    "context": "Select OK to close the window.\n4. Download the project to the controller to update the user information in the controller.\nUpdate Key Change Method and Authority Certification Key\nAn Authority Certification Key is a Symmetric (encrypted) or Public (not encrypted) key that is \nstored in the controller for authentication with the DNP3 master when a Key change request is \nprocessed.\nIMPORTANT This feature is only available in Secure Authentication Version 5.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "DNP3 Slave Application Layer Configuration Parameters"
+  },
+  {
+    "id": "9afe17ba0851029ef97d",
+    "source_id": "5f6f1b22b4fd07d375a5",
+    "product_id": "rockwell_micro830_controllers",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:92",
+    "matched": [
+      "not encrypted"
+    ],
+    "context": "To define a Public Key, you must generate an RSA-2048 or RSA-3072 Public Key, depending on \nthe Update Key Change Method that you have selected, and enter it into the field. Select OK to \naccept the changes. Public Keys are not encrypted.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "DNP3 Slave Application Layer Configuration Parameters"
+  },
+  {
+    "id": "97095691079389c8bbb4",
+    "source_id": "5f6f1b22b4fd07d375a5",
+    "product_id": "rockwell_micro830_controllers",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:100",
+    "matched": [
+      "authentication key that is required",
+      "authentication messages to the controller that require",
+      "authentication messages when no return response is required"
+    ],
+    "context": "GET_FILE_INFO (FC Byte = 0x1C) \n28 - Get File Information\nThis function code is for the master to retrieve information about a file in the controller. \nAUTHENTICATE_FILE (FC Byte = 0x1D) \n29 - Authenticate File\nThis function code is used to obtain an authentication key that is required to open or delete a \nfile.\nABORT_FILE (FC Byte = 0x1E) \n30 - Abort File\nThis function code is used to immediately request termination of the current read/write \noperation and close the file, without saving. \nACTIVATE_CONFIG (FC Byte = 0x1F) \n31 - Activate Config\nThis function code is used to begin using the configuration or executable code that is \nspecified by the objects included in the request.",
+    "match_count": 3,
+    "status": "unreviewed",
+    "heading": "Function Codes"
+  },
+  {
+    "id": "7192e1dc1f01664a10be",
+    "source_id": "5f6f1b22b4fd07d375a5",
+    "product_id": "rockwell_micro830_controllers",
+    "feature": "non_support_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:225",
+    "matched": [
+      "does not support IPSec"
+    ],
+    "context": "Operation Mode To maintain the secure operation of your Micro800 controllers, operations that can disrupt \ncontroller operation are restricted based on the controller operating mode.\nIMPORTANT When using IPv6 mode, consider your own network security \nprotection since IPv6 in firmware revision 23.011 does not \nsupport IPSec. For more information, see System Security Design \nGuidelines Reference Manual, publication SECURE-RM001\n.\nIMPORTANT When a computer running FactoryTalk Design Workbench software or \nConnected Components Workbench software is connected to a \nMicro800 controller, its username and computer name are sent to the \nMicro800 controller. This informs others attempting to connect to the \nsame controller about who is connected.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Operation Mode"
+  },
+  {
+    "id": "08448b6416b6961425f8",
+    "source_id": "01f2ad0b688a9d11281c",
+    "product_id": "rockwell_differential_protection_relay",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:100",
+    "matched": [
+      "plain text"
+    ],
+    "context": "[...] mary scaling\nSet\nDisplay\nAlarms\nOn\nOff\nAlarm pop-up display is enabled\nNo alarm display\nSet\nFormat Of Events On The Local Display\nCode: CHENN CH = event channel, NN=event code\nEvent description Event channel and code in plain text\nyyyy-mm-dd Date (for available date formats, see System Clock and \nSynchronization on page 110)\nhh:mm:ss.nnn Time",
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Event Buffer Overflow"
+  },
+  {
+    "id": "9c82fc6874e0ff90fd25",
+    "source_id": "184d5358bd87af683528",
+    "product_id": "rockwell_protection_relay",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:172",
+    "matched": [
+      "plain text"
+    ],
+    "context": "[...] scaling\nSet\nDisplay Alarms On\nOff\nAlarm popup display is \nenabled \nNo alarm display\nSet\nFORMAT OF EVENTS ON THE LOCAL DISPLAY\nCode: CHENN CH = event channel, NN = event code\nEvent description Event chan nel and code in plain text\nyyyy-mm-dd Date (for available date formats. See System Clock and \nSynchronization on page 193)\nhh:mm:ss:ms Time",
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Event Buffer Overflow"
+  },
+  {
+    "id": "6dc8d78dabe6203d3afb",
+    "source_id": "a2d8a35dec0a09ed328f",
+    "product_id": "sel_3560",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:2",
+    "matched": [
+      "Optional encryption"
+    ],
+    "context": "Secure\nDesigned for secure operation and access\n• SEL allowlist antivirus exe-GUARD technology to protect \nagainst malware and other cybersecurity threats \n• Individual and role-based accounts for configuration \nsoftware and HMI operation \n• Centralized authentication through the Lightweight \nDirectory Access Protocol (LDAP)\n• Alerts via Syslog, text/email, and Sequence of Events \n(SOE) logging\n• Optional encryption for Ethernet-tunneled serial SCADA \nprotocols and engineering access via Secure Shell \n(SSH) and Secure Sockets Layer (SSL)/Transport Layer \nSecurity (TLS) tunneling\nDeterministic\nBuilt for time-sensitive control applications  \n• Two deterministic processing tasks with configurable \ncycle times\n• Configurable task cycle times as fast as 1 ms\n• Dia [...]",
+    "match_count": 1,
+    "status": "unreviewed"
+  },
+  {
+    "id": "ece825cadb5cd327f502",
+    "source_id": "b85088d2298892e8ea42",
+    "product_id": "sel_421",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:13",
+    "matched": [
+      "requires authentication"
+    ],
+    "context": "Schweitzer Engineering Laboratories, Inc. SEL-421-4, -5 Data Sheet\n13\nMMS Authentication\nWhen enabled via a setting in the Configured IED Description (CID) file, the relay requires authentication from any \nclient requesting to initiate an MMS session. \nArchitect Software\nUse ACSELERATOR Architect SEL-5032 Software to \nmanage the IEC 61850 configuration for devices on the \nnetwork. This Windows-based software provides easyto-use displays for identifying and binding IEC 61850 \nnetwork data among logical nodes that use IEC 61850-\ncompliant CID files.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Open Communications Protocols"
+  },
+  {
+    "id": "5e0eabb49e5c76406f9e",
+    "source_id": "babb719edee9b941683a",
+    "product_id": "siemens_a8000",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:87",
+    "matched": [
+      "Plaintext"
+    ],
+    "context": "[...] using auto-simulation\n• Simulating fault records\n• GOOSE publish\n• Network overview analysis - which server is connected to\nwhich client?\n• Test the NTP time server in the network\n• Simple operation - without training\n• Plaintext display for IEC 60870-5-101, -104 and -103 as well,\nusing stored data models by importing long texts as .csv files\n• Long-term recording\nWindows Operating Systems\n• Microsoft Windows 10\n• Microsoft Windows 2016 Server R2\n• Microsoft Windows 2019 Server\nSICAM PTS runs on a PC under MS Windows and is used to\nrecord and simulate process interfaces. A COM port (V.24/V.28)\nor an Ethernet interface is used as an interface.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Catalog station automation, 11, en_US"
+  },
+  {
+    "id": "e031fb1e9a9c982a5845",
+    "source_id": "babb719edee9b941683a",
+    "product_id": "siemens_a8000",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:88",
+    "matched": [
+      "Plaintext"
+    ],
+    "context": "• Freely definable process-technology address down to bit level,\nincluding saving and loading the definition\n• Plaintext address import of CSV files (display of the data\npoints with their actual name)\n• Possibility of online and offline filtering of IEC 60870-5-2\ntelegrams, type identifications, transmission causes, link\naddresses, object addresses (function type, information\nnumber)\n• Individual adaptation of the display format (for example type\nidentification, tim [...]",
+    "match_count": 2,
+    "status": "unreviewed",
+    "heading": "Catalog station automation, 11, en_US"
+  },
+  {
+    "id": "748cd48cd5eea3e6bfa4",
+    "source_id": "fd56836e89b1880166b1",
+    "product_id": "siemens_a8000_cp_8050",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:87",
+    "matched": [
+      "Plaintext"
+    ],
+    "context": "[...] using auto-simulation\n• Simulating fault records\n• GOOSE publish\n• Network overview analysis - which server is connected to\nwhich client?\n• Test the NTP time server in the network\n• Simple operation - without training\n• Plaintext display for IEC 60870-5-101, -104 and -103 as well,\nusing stored data models by importing long texts as .csv files\n• Long-term recording\nWindows Operating Systems\n• Microsoft Windows 10\n• Microsoft Windows 2016 Server R2\n• Microsoft Windows 2019 Server\nSICAM PTS runs on a PC under MS Windows and is used to\nrecord and simulate process interfaces. A COM port (V.24/V.28)\nor an Ethernet interface is used as an interface.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Catalog station automation, 11, en_US"
+  },
+  {
+    "id": "b88953f10dfbe8ed69be",
+    "source_id": "fd56836e89b1880166b1",
+    "product_id": "siemens_a8000_cp_8050",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:88",
+    "matched": [
+      "Plaintext"
+    ],
+    "context": "• Freely definable process-technology address down to bit level,\nincluding saving and loading the definition\n• Plaintext address import of CSV files (display of the data\npoints with their actual name)\n• Possibility of online and offline filtering of IEC 60870-5-2\ntelegrams, type identifications, transmission causes, link\naddresses, object addresses (function type, information\nnumber)\n• Individual adaptation of the display format (for example type\nidentification, tim [...]",
+    "match_count": 2,
+    "status": "unreviewed",
+    "heading": "Catalog station automation, 11, en_US"
+  }
+]

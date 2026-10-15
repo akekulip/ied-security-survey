@@ -1,0 +1,824 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "EPM 6010 Building Automation Power Meter | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "EPM 6010"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Building Automation Power Meter"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Buy Now Contact Us",
+    "heading": "Building Automation Power Meter"
+  },
+  {
+    "location": "html-block:7",
+    "text": "BACnet/IP Communications and Energy Measurement"
+  },
+  {
+    "location": "html-block:8",
+    "text": "The Multilin EPM 6010 is an industry leading revenue grade power meter with native BACnet/IP communications. This meter is designed to integrate seamlessly into existing and new building management systems using the popular BACnet protocol. The meter allows users to gather data on voltage, current, power and energy usage throughout a facility.",
+    "heading": "BACnet/IP Communications and Energy Measurement"
+  },
+  {
+    "location": "html-block:9",
+    "text": "The EPM 6010T is a transducer configuration that comes without a display and has a DIN rail mount. GE Vernova’s Electrification has discontinued sales of EPM 6010T model based upon availability.",
+    "heading": "BACnet/IP Communications and Energy Measurement"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Rapid integration into BACnet management systems",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:12",
+    "text": "High accuracy, class revenue multifunction meter",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Compact, easy to install, fits ANSI and DIN cutouts",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:14",
+    "text": "User programmable for different system voltages and current measurements",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Standard Modbus TCP communications",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Easy to read, large 3 line .56\" bright LED display for better visibility and longer life",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Communications",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:19",
+    "text": "BACnet/IP 100BaseT Ethernet protocol",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:20",
+    "text": "40 predefined BACnet objects",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Embedded web server for remote configuration and viewing of BACnet/IP interface",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Standard Modbus TCP communications",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Measuring and Metering",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:24",
+    "text": "400+ samples per cycle and 24 bit A/D conversion",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Meets ANSI C12.20 (0.2%) and IEC 687 (0.2%) accuracy classes",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Total harmonic distortion (%THD)",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Graphical load percentage bar for visualization",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:28",
+    "text": "True RMS multifunction measurements",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:30",
+    "text": "EPM 2200"
+  },
+  {
+    "location": "html-block:31",
+    "text": "EPM 6000"
+  },
+  {
+    "location": "html-block:32",
+    "text": "EPM 6100"
+  },
+  {
+    "location": "html-block:33",
+    "text": "EPM 7000"
+  },
+  {
+    "location": "html-block:34",
+    "text": "EPM 7100"
+  },
+  {
+    "location": "html-block:35",
+    "text": "EPM 9900"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Multilin Meter Enclosure"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Instruction Manuals"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Support"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Subscribe",
+    "heading": "Support"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:45",
+    "text": "EPM 2200"
+  },
+  {
+    "location": "html-block:46",
+    "text": "EPM 6000"
+  },
+  {
+    "location": "html-block:47",
+    "text": "EPM 6100"
+  },
+  {
+    "location": "html-block:48",
+    "text": "EPM 7000"
+  },
+  {
+    "location": "html-block:49",
+    "text": "EPM 7100"
+  },
+  {
+    "location": "html-block:50",
+    "text": "EPM 9900"
+  },
+  {
+    "location": "html-block:51",
+    "text": "Multilin Meter Enclosure"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:53",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Instruction Manuals"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Support"
+  },
+  {
+    "location": "html-block:58",
+    "text": "Subscribe",
+    "heading": "Support"
+  },
+  {
+    "location": "html-block:59",
+    "text": "EPM 6010"
+  },
+  {
+    "location": "html-block:60",
+    "text": "Building Automation Power Meter"
+  },
+  {
+    "location": "html-block:61",
+    "text": "Buy Now Contact Us",
+    "heading": "Building Automation Power Meter"
+  },
+  {
+    "location": "html-block:62",
+    "text": "BACnet/IP Communications and Energy Measurement"
+  },
+  {
+    "location": "html-block:63",
+    "text": "The Multilin EPM 6010 is an industry leading revenue grade power meter with native BACnet/IP communications. This meter is designed to integrate seamlessly into existing and new building management systems using the popular BACnet protocol. The meter allows users to gather data on voltage, current, power and energy usage throughout a facility.",
+    "heading": "BACnet/IP Communications and Energy Measurement"
+  },
+  {
+    "location": "html-block:64",
+    "text": "The EPM 6010T is a transducer configuration that comes without a display and has a DIN rail mount. GE Vernova’s Electrification has discontinued sales of EPM 6010T model based upon availability.",
+    "heading": "BACnet/IP Communications and Energy Measurement"
+  },
+  {
+    "location": "html-block:65",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:66",
+    "text": "Rapid integration into BACnet management systems",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:67",
+    "text": "High accuracy, class revenue multifunction meter",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:68",
+    "text": "Compact, easy to install, fits ANSI and DIN cutouts",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:69",
+    "text": "User programmable for different system voltages and current measurements",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:70",
+    "text": "Standard Modbus TCP communications",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:71",
+    "text": "Easy to read, large 3 line .56\" bright LED display for better visibility and longer life",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:72",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:73",
+    "text": "Communications",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:74",
+    "text": "BACnet/IP 100BaseT Ethernet protocol",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:75",
+    "text": "40 predefined BACnet objects",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:76",
+    "text": "Embedded web server for remote configuration and viewing of BACnet/IP interface",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:77",
+    "text": "Standard Modbus TCP communications",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:78",
+    "text": "Measuring and Metering",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:79",
+    "text": "400+ samples per cycle and 24 bit A/D conversion",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:80",
+    "text": "Meets ANSI C12.20 (0.2%) and IEC 687 (0.2%) accuracy classes",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:81",
+    "text": "Total harmonic distortion (%THD)",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:82",
+    "text": "Graphical load percentage bar for visualization",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:83",
+    "text": "True RMS multifunction measurements",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:84",
+    "text": "BACnet/IP"
+  },
+  {
+    "location": "html-block:85",
+    "text": "BACnet/IP COMMUNICATIONS"
+  },
+  {
+    "location": "html-block:86",
+    "text": "The Multilin EPM 6010 with BACnet/IP supports building energy management strategies, LEED certification and other Green Building initiatives. By allowing users to track energy use and power quality, the meters gives users the information they need to accurately identify cost -saving measures and respond to power quality problems when they arise.",
+    "heading": "BACnet/IP COMMUNICATIONS"
+  },
+  {
+    "location": "html-block:87",
+    "text": "Communications Ports"
+  },
+  {
+    "location": "html-block:88",
+    "text": "The Multilin EPM 6010 provides two independent communication ports with advanced features:",
+    "heading": "Communications Ports"
+  },
+  {
+    "location": "html-block:89",
+    "text": "IrDA port – A unique optical IrDA port allows the unit to be setup and programmed using a remote laptop without needing a communication cable. Simply point at the meter with an IrDA-equipped PC computer to configure it.",
+    "heading": "Communications Ports"
+  },
+  {
+    "location": "html-block:90",
+    "text": "Ethernet Port – This port provides connectivity via a 10/100BaseT RJ45 connection. Modbus TCP and BACnet protocols are supported",
+    "heading": "Communications Ports"
+  },
+  {
+    "location": "html-block:91",
+    "text": "BACnet/IP Web Interface"
+  },
+  {
+    "location": "html-block:92",
+    "text": "The Multilin EPM 6010 comes standard with a web interface. Use the BACnet/IP interface to remotely set up the BACnet/ IP configuration and track energy use with any standard web browser.",
+    "heading": "BACnet/IP Web Interface"
+  },
+  {
+    "location": "html-block:93",
+    "text": "Simultaneous Communications Paths"
+  },
+  {
+    "location": "html-block:94",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:95",
+    "text": "SOFTWARE OPTIONS"
+  },
+  {
+    "location": "html-block:96",
+    "text": "EnerVista Software"
+  },
+  {
+    "location": "html-block:97",
+    "text": "EnerVista Launchpad is a powerful software package that provides users a platform to access all of the setup and support tools needed for configuring and maintaining GE Vernova Multilin Products. Launchpad allows configuration of devices in real-time by communicating using RS232, RS485, Ethernet or modem connections. Using Launchpad as the single interface to the setup and analysis software makes it simple to enter setpoints, read metered values, monitor status and evaluate power quality.",
+    "heading": "EnerVista Software"
+  },
+  {
+    "location": "html-block:98",
+    "text": "Viewpoint Monitoring"
+  },
+  {
+    "location": "html-block:99",
+    "text": "Viewpoint Monitoring is a simple-to-use, full-featured monitoring and data recording software package for small systems. Viewpoint Monitoring provides a complete HMI package that instantly puts critical real-time device data on your PC through pre-configured graphical screens with the following functionality.",
+    "heading": "Viewpoint Monitoring"
+  },
+  {
+    "location": "html-block:100",
+    "text": "Plug-&-Play Device Monitoring",
+    "heading": "Viewpoint Monitoring"
+  },
+  {
+    "location": "html-block:101",
+    "text": "System Single-Line Monitoring & Control",
+    "heading": "Viewpoint Monitoring"
+  },
+  {
+    "location": "html-block:102",
+    "text": "Annunciator Alarm Screens",
+    "heading": "Viewpoint Monitoring"
+  },
+  {
+    "location": "html-block:103",
+    "text": "Trending Reports",
+    "heading": "Viewpoint Monitoring"
+  },
+  {
+    "location": "html-block:104",
+    "text": "Automatic Event Retrieval",
+    "heading": "Viewpoint Monitoring"
+  },
+  {
+    "location": "html-block:105",
+    "text": "Automatic Waveform Retrieval",
+    "heading": "Viewpoint Monitoring"
+  },
+  {
+    "location": "html-block:106",
+    "text": "EnerVista Integrator"
+  },
+  {
+    "location": "html-block:107",
+    "text": "EnerVista Integrator is a toolkit that allows seamless integration of GE Vernova Multilin devices into new or existing automation systems by sending GE Vernova device data to HMI, DCS, and SCADA systems. Included in EnerVista Integrator is:",
+    "heading": "EnerVista Integrator"
+  },
+  {
+    "location": "html-block:108",
+    "text": "OPC/DDE Server",
+    "heading": "EnerVista Integrator"
+  },
+  {
+    "location": "html-block:109",
+    "text": "GE Vernova Multilin Drivers",
+    "heading": "EnerVista Integrator"
+  },
+  {
+    "location": "html-block:110",
+    "text": "Automatic Event Retrieval",
+    "heading": "EnerVista Integrator"
+  },
+  {
+    "location": "html-block:111",
+    "text": "Automatic Waveform Retrieval",
+    "heading": "EnerVista Integrator"
+  },
+  {
+    "location": "html-block:112",
+    "text": "EnerVista Viewpoint Monitoring Data Recording and Real-Time Status"
+  },
+  {
+    "location": "html-block:113",
+    "text": "Web Interface"
+  },
+  {
+    "location": "html-block:114",
+    "text": "BACnet Web Interface"
+  },
+  {
+    "location": "html-block:115",
+    "text": "The Multilin EPM 6010 comes standard with a web interface. Use the BACnet/IP interface to remotely set up the BACnet/ IP configuration and track energy use with any standard web browser.",
+    "heading": "BACnet Web Interface"
+  },
+  {
+    "location": "html-block:116",
+    "text": "Installation"
+  },
+  {
+    "location": "html-block:117",
+    "text": "INSTALLATION"
+  },
+  {
+    "location": "html-block:118",
+    "text": "Universal Voltage and Current"
+  },
+  {
+    "location": "html-block:119",
+    "text": "This meter allows voltage input measurements up to 416 Volts Line to Neutral and 721 volts Line to Line. This helps ensure proper meter safety when wiring directly to high voltage systems. The unit will perform to specification on 69 Volt, 120 Volt, 230 Volt, 277 Volt and 347 Volt power systems.",
+    "heading": "Universal Voltage and Current"
+  },
+  {
+    "location": "html-block:120",
+    "text": "Unique Current Input Connections"
+  },
+  {
+    "location": "html-block:121",
+    "text": "EPM 6010 meter uses two current input wiring methods.",
+    "heading": "Unique Current Input Connections"
+  },
+  {
+    "location": "html-block:122",
+    "text": "Method One - CT pass through. Directly pass the CT through the meter without any physical termination on the meter.",
+    "heading": "Unique Current Input Connections"
+  },
+  {
+    "location": "html-block:123",
+    "text": "This insures that the meter cannot be a point of failure on the CT circuit. This is preferable to utility users when sharing relay class CTs.",
+    "heading": "Unique Current Input Connections"
+  },
+  {
+    "location": "html-block:124",
+    "text": "No Burden is added to the secondary CT circuit.",
+    "heading": "Unique Current Input Connections"
+  },
+  {
+    "location": "html-block:125",
+    "text": "Method Two - Current \"Gills.\" The meter additionally provides ultra-rugged termination pass through bars allowing the CT leads to be terminated on the meter. This also eliminates any possible point of failure at the meter. This method is also a preferred technique for ensuring relay class CT integrity does not get compromised. No terminal blocks are required and this stud based design ensures that CTs will not open under a fault condition.",
+    "heading": "Unique Current Input Connections"
+  },
+  {
+    "location": "html-block:126",
+    "text": "Through a standard Ethernet port, the EPM 6010 can easily integrate into systems using BACnet/IP or Modbus TCP.",
+    "heading": "Unique Current Input Connections"
+  },
+  {
+    "location": "html-block:127",
+    "text": "Solid Construction with Mounting Versatility"
+  },
+  {
+    "location": "html-block:128",
+    "text": "The EPM 6010 has a rugged design for harsh environment. This is especially important in power generation, utility substation, and critical user applications. The structural and electrical design of this meter was developed based on the recommendations and approvals of many of our utility customers.",
+    "heading": "Solid Construction with Mounting Versatility"
+  },
+  {
+    "location": "html-block:129",
+    "text": "EPM 6010 can easily be mounted in a panel for generator monitoring, substation automation and more. The unique dual design combines ANSI and DIN mounting structure and allows easy installation for both new metering applications and retrofit of existing analog meters.",
+    "heading": "Solid Construction with Mounting Versatility"
+  },
+  {
+    "location": "html-block:130",
+    "text": "The unit mounts directly in an ANSI C39.1 (4\" Round form) or an IEC 92 mm DIN square form.",
+    "heading": "Solid Construction with Mounting Versatility"
+  },
+  {
+    "location": "html-block:131",
+    "text": "Meter Interface"
+  },
+  {
+    "location": "html-block:132",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:133",
+    "text": "SPECIFICATIONS"
+  },
+  {
+    "location": "html-block:134",
+    "text": "Transducer"
+  },
+  {
+    "location": "html-block:135",
+    "text": "EPM 6010T TRANSDUCER OPTION"
+  },
+  {
+    "location": "html-block:136",
+    "text": "GE Vernova’s Electrification has discontinued sales of EPM 6010T. As an alternative, please refer to the EPM6010.",
+    "heading": "EPM 6010T TRANSDUCER OPTION"
+  },
+  {
+    "location": "html-block:137",
+    "text": "The transducer configuration comes without a display and has a DIN rail mount. It’s ideal for use in switchgear retrofit applications where access to the meter face and display is not necessary, and where budgets are a large consideration.",
+    "heading": "EPM 6010T TRANSDUCER OPTION"
+  },
+  {
+    "location": "html-block:138",
+    "text": "Features"
+  },
+  {
+    "location": "html-block:139",
+    "text": "EPM 6010 Power Meter without display, DIN mount",
+    "heading": "Features"
+  },
+  {
+    "location": "html-block:140",
+    "text": "Mounts directly in ANSI C39.1 (4” round form) or and IEC 92mm DIN square form",
+    "heading": "Features"
+  },
+  {
+    "location": "html-block:141",
+    "text": "Uses minimal panel space with 4.25” panel depth",
+    "heading": "Features"
+  },
+  {
+    "location": "html-block:142",
+    "text": "BACnet/IP Protocol Communications",
+    "heading": "Features"
+  },
+  {
+    "location": "html-block:143",
+    "text": "40 BACnet Objects",
+    "heading": "Features"
+  },
+  {
+    "location": "html-block:144",
+    "text": "Embedded HTTP Server",
+    "heading": "Features"
+  },
+  {
+    "location": "html-block:145",
+    "text": "0.2% Watt-Hour Accuracy",
+    "heading": "Features"
+  },
+  {
+    "location": "html-block:146",
+    "text": "Mounting"
+  },
+  {
+    "location": "html-block:147",
+    "text": "Enclosure"
+  },
+  {
+    "location": "html-block:148",
+    "text": "MULTILIN METER ENCLOSURE"
+  },
+  {
+    "location": "html-block:149",
+    "text": "Expanding existing switchgear or installing new metering capability can be challenging due to space limitations, downtime and installation and equipment costs. GE Vernova's Multilin Meter Enclosure is a pre-wired configured, economical solution for both retrofit expansions and small scale meter installations that allows the expansion of existing switchgear capability without expensive and time-consuming design.",
+    "heading": "MULTILIN METER ENCLOSURE"
+  },
+  {
+    "location": "html-block:150",
+    "text": "When ordered as a meter option the enclosure provides a factory pre-wired, installation-ready metering solution that further drives energy cost savings, by enabling the measurement of key energy usage information along multiple metering points for new or existing systems.",
+    "heading": "MULTILIN METER ENCLOSURE"
+  },
+  {
+    "location": "html-block:151",
+    "text": "Ordering the enclosure is simple when selected as an option during meter configuration, ensuring correct pre-wired meter-compatible delivery.",
+    "heading": "MULTILIN METER ENCLOSURE"
+  },
+  {
+    "location": "html-block:152",
+    "text": "Pre-Wired, Configured and Economical Solution for Retrofit and Small Metering Systems"
+  },
+  {
+    "location": "html-block:153",
+    "text": "Easy and Rapid Installation"
+  },
+  {
+    "location": "html-block:154",
+    "text": "Factory pre-wired, installation-ready GE Vernova metering solution eliminates wiring and associated errors for rapid installation",
+    "heading": "Easy and Rapid Installation"
+  },
+  {
+    "location": "html-block:155",
+    "text": "Extend metering capability with new systems and existing switchgear without system installation downtime",
+    "heading": "Easy and Rapid Installation"
+  },
+  {
+    "location": "html-block:156",
+    "text": "Cost-Effective Retrofit Solution"
+  },
+  {
+    "location": "html-block:157",
+    "text": "Save up to 200% versus the addition of a new switchgear cabinet",
+    "heading": "Cost-Effective Retrofit Solution"
+  },
+  {
+    "location": "html-block:158",
+    "text": "Compact footprint makes effective use of existing allocated space",
+    "heading": "Cost-Effective Retrofit Solution"
+  },
+  {
+    "location": "html-block:159",
+    "text": "Allows new installations or the expansion of existing switchgear capability without expensive, time-consuming designs, eliminating system downtime",
+    "heading": "Cost-Effective Retrofit Solution"
+  },
+  {
+    "location": "html-block:160",
+    "text": "Reliable and Compatible"
+  },
+  {
+    "location": "html-block:161",
+    "text": "Backed by a two-year warranty",
+    "heading": "Reliable and Compatible"
+  },
+  {
+    "location": "html-block:162",
+    "text": "Simple meter option ordering ensures compatibility with GE Vernova EPM 2000/6010/6000/7000 meters",
+    "heading": "Reliable and Compatible"
+  },
+  {
+    "location": "html-block:163",
+    "text": "Comprehensive factory testing of both meter and enclosure together",
+    "heading": "Reliable and Compatible"
+  },
+  {
+    "location": "html-block:164",
+    "text": "NEMA1 tested and UL/CUL certified",
+    "heading": "Reliable and Compatible"
+  },
+  {
+    "location": "html-block:165",
+    "text": "Applications (New and Retrofit installations)"
+  },
+  {
+    "location": "html-block:166",
+    "text": "Industrial Multi-Tenant Monitoring",
+    "heading": "Applications (New and Retrofit installations)"
+  },
+  {
+    "location": "html-block:167",
+    "text": "Commercial/Residential Buildings",
+    "heading": "Applications (New and Retrofit installations)"
+  },
+  {
+    "location": "html-block:168",
+    "text": "Healthcare Institutions",
+    "heading": "Applications (New and Retrofit installations)"
+  },
+  {
+    "location": "html-block:169",
+    "text": "Government Buildings",
+    "heading": "Applications (New and Retrofit installations)"
+  },
+  {
+    "location": "html-block:170",
+    "text": "Manufacturing",
+    "heading": "Applications (New and Retrofit installations)"
+  },
+  {
+    "location": "html-block:171",
+    "text": "Educational Campuses",
+    "heading": "Applications (New and Retrofit installations)"
+  },
+  {
+    "location": "html-block:172",
+    "text": "Assembly"
+  },
+  {
+    "location": "html-block:173",
+    "text": "Diagram"
+  },
+  {
+    "location": "html-block:174",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:175",
+    "text": "EPM 2200 Digital Power Meter"
+  },
+  {
+    "location": "html-block:176",
+    "text": "Economical Power and Energy Measurement The Multilin™ EPM 2200 meter is an economical,...",
+    "heading": "EPM 2200 Digital Power Meter"
+  },
+  {
+    "location": "html-block:177",
+    "text": "View More",
+    "heading": "EPM 2200 Digital Power Meter"
+  },
+  {
+    "location": "html-block:178",
+    "text": "EPM 6000 Power Meter"
+  },
+  {
+    "location": "html-block:179",
+    "text": "The Multilin™ EPM 6000 is one of the industry’s highest performance revenue grade...",
+    "heading": "EPM 6000 Power Meter"
+  },
+  {
+    "location": "html-block:180",
+    "text": "View More",
+    "heading": "EPM 6000 Power Meter"
+  }
+]

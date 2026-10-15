@@ -1,0 +1,656 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "G650 Generator Protection and Control | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "G650 - Legacy"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Generator Protection and Control System"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Contact Us",
+    "heading": "Generator Protection and Control System"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Manufacturing for this product has been discontinued, please refer to the 889 relay.",
+    "heading": "Generator Protection and Control System"
+  },
+  {
+    "location": "html-block:8",
+    "text": "The G650 is a Distributed Generation Protection and Control Relay designed for complete protection of small to medium sized generators as well as operate as a control system for distributed generation interconnections. The G650 provides a cost effective and scalable solution that allows for tailoring your protection, communications, and I/O requirements to meet the needs of your specific application.",
+    "heading": "Generator Protection and Control System"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Features and Benefits"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Ideal for Distributed Generator Applications",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:11",
+    "text": "All required protection features for small to medium sized generators",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Configurable logic for creating customized generator control schemes",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Cost Effective and Scalable Solution",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Basic and Enhanced Protection Options",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Alphanumeric and Graphical User Interfaces",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Multiple Communication options available",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Industry Leading Fault Recording Capability",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Large capacity Sequence of Event Recording",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:19",
+    "text": "High Sample Waveform Fault recording (64 samples/cycle)",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Long term Data Logger recording",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Most features available in the Distributed Generation Protection market segment",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Programmable Control Logic",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Ethernet Communications",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:24",
+    "text": "High End Fault Recording",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Protection of small to medium sized Induction or Synchronous Generators",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Standalone or component in automated substation control system",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Distributed generation and interconnection protection, management, and control where programmable logic is a requirement to interact with prime mover control systems",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Protection & Control"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Basic Options",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Phase, Neutral, Ground and Negative Sequence TOC and IOC",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Neutral and Ground Directional Overcurrent",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Voltage Restraint Overcurrent",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Phase Under and Overvoltage, Neutral and Ground Overvoltage",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Directional Power",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Under and Overfrequency, and Frequency Rate of Change",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Generator Thermal Model",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Generator Current unbalance",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Loss of Excitation",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Inadvertent Generator Energization",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Enhanced Options",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Sensitive Ground Overcurrent",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Volts/Hz",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Power Factor limiting",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Vector surge loss of mains detection",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:46",
+    "text": "Breaker Failure",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:47",
+    "text": "VT Fuse failure",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Restricted Ground Fault",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:50",
+    "text": "Current, Voltage, Power, Power Factor, Frequency, Demand Metering",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:51",
+    "text": "Breaker Condition Monitoring",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Event Recorder - 479 Events",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:53",
+    "text": "High resolution Oscillography and Data Logger",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Configurable graphical HMI interface",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Alarm Panel",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:56",
+    "text": "User Interface"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Backlit alphanumerical display or optional graphical panel",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:58",
+    "text": "RS232 & RS485 ports - up to 115,200 bps",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Ethernet ports - redundant 10/100BaseTX copper and redundant 100BaseFX Fiber",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:60",
+    "text": "Multiple protocols - ModBus(TM) RTU and TCP/IP, DNP 3.0, HTTP, TFTP and IEC 61870-5-104",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:61",
+    "text": "EnerVista software - an industry leading suite of software tools that simplifies every aspect of working with GE Vernova Multilin devices",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:62",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:63",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:64",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:65",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:66",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:67",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:68",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:69",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:70",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:71",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:72",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:73",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:74",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:75",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:76",
+    "text": "G650 - Legacy"
+  },
+  {
+    "location": "html-block:77",
+    "text": "Generator Protection and Control System"
+  },
+  {
+    "location": "html-block:78",
+    "text": "Contact Us",
+    "heading": "Generator Protection and Control System"
+  },
+  {
+    "location": "html-block:79",
+    "text": "Manufacturing for this product has been discontinued, please refer to the 889 relay.",
+    "heading": "Generator Protection and Control System"
+  },
+  {
+    "location": "html-block:80",
+    "text": "The G650 is a Distributed Generation Protection and Control Relay designed for complete protection of small to medium sized generators as well as operate as a control system for distributed generation interconnections. The G650 provides a cost effective and scalable solution that allows for tailoring your protection, communications, and I/O requirements to meet the needs of your specific application.",
+    "heading": "Generator Protection and Control System"
+  },
+  {
+    "location": "html-block:81",
+    "text": "Features and Benefits"
+  },
+  {
+    "location": "html-block:82",
+    "text": "Ideal for Distributed Generator Applications",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:83",
+    "text": "All required protection features for small to medium sized generators",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:84",
+    "text": "Configurable logic for creating customized generator control schemes",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:85",
+    "text": "Cost Effective and Scalable Solution",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:86",
+    "text": "Basic and Enhanced Protection Options",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:87",
+    "text": "Alphanumeric and Graphical User Interfaces",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:88",
+    "text": "Multiple Communication options available",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:89",
+    "text": "Industry Leading Fault Recording Capability",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:90",
+    "text": "Large capacity Sequence of Event Recording",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:91",
+    "text": "High Sample Waveform Fault recording (64 samples/cycle)",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:92",
+    "text": "Long term Data Logger recording",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:93",
+    "text": "Most features available in the Distributed Generation Protection market segment",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:94",
+    "text": "Programmable Control Logic",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:95",
+    "text": "Ethernet Communications",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:96",
+    "text": "High End Fault Recording",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:97",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:98",
+    "text": "Protection of small to medium sized Induction or Synchronous Generators",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:99",
+    "text": "Standalone or component in automated substation control system",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:100",
+    "text": "Distributed generation and interconnection protection, management, and control where programmable logic is a requirement to interact with prime mover control systems",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:101",
+    "text": "Protection & Control"
+  },
+  {
+    "location": "html-block:102",
+    "text": "Basic Options",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:103",
+    "text": "Phase, Neutral, Ground and Negative Sequence TOC and IOC",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:104",
+    "text": "Neutral and Ground Directional Overcurrent",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:105",
+    "text": "Voltage Restraint Overcurrent",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:106",
+    "text": "Phase Under and Overvoltage, Neutral and Ground Overvoltage",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:107",
+    "text": "Directional Power",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:108",
+    "text": "Under and Overfrequency, and Frequency Rate of Change",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:109",
+    "text": "Generator Thermal Model",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:110",
+    "text": "Generator Current unbalance",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:111",
+    "text": "Loss of Excitation",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:112",
+    "text": "Inadvertent Generator Energization",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:113",
+    "text": "Enhanced Options",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:114",
+    "text": "Sensitive Ground Overcurrent",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:115",
+    "text": "Volts/Hz",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:116",
+    "text": "Power Factor limiting",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:117",
+    "text": "Vector surge loss of mains detection",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:118",
+    "text": "Breaker Failure",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:119",
+    "text": "VT Fuse failure",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:120",
+    "text": "Restricted Ground Fault",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:121",
+    "text": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:122",
+    "text": "Current, Voltage, Power, Power Factor, Frequency, Demand Metering",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:123",
+    "text": "Breaker Condition Monitoring",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:124",
+    "text": "Event Recorder - 479 Events",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:125",
+    "text": "High resolution Oscillography and Data Logger",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:126",
+    "text": "Configurable graphical HMI interface",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:127",
+    "text": "Alarm Panel",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:128",
+    "text": "User Interface"
+  },
+  {
+    "location": "html-block:129",
+    "text": "Backlit alphanumerical display or optional graphical panel",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:130",
+    "text": "RS232 & RS485 ports - up to 115,200 bps",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:131",
+    "text": "Ethernet ports - redundant 10/100BaseTX copper and redundant 100BaseFX Fiber",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:132",
+    "text": "Multiple protocols - ModBus(TM) RTU and TCP/IP, DNP 3.0, HTTP, TFTP and IEC 61870-5-104",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:133",
+    "text": "EnerVista software - an industry leading suite of software tools that simplifies every aspect of working with GE Vernova Multilin devices",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:134",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:135",
+    "text": "Generator Protection"
+  },
+  {
+    "location": "html-block:136",
+    "text": "GE Vernova's generator protection devices provide innovative solutions for the...",
+    "heading": "Generator Protection"
+  },
+  {
+    "location": "html-block:137",
+    "text": "View More",
+    "heading": "Generator Protection"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "b7695c462c2a639df34b",
+    "source_id": "33a586afe4d5cbbcb977",
+    "product_id": "sel_real_time_automation_controller_rtac",
+    "feature": "authentication",
+    "lead_type": "capability",
+    "location": "pdf-page:6",
+    "matched": [
+      "authenticated"
+    ],
+    "context": "Substation A\nRelay\nRelay\nHMI\nSEL Protocol\nDNP3\nLG 8979\nModbus\nSubstation B\nRelay\nRelay\nSubstation C\nIED\nIED\nIntegrated Video Port for HMI \nThe RTAC HMI, with advanced HTML5 \ntechnology, provides an easy way to visualize \ndata and create custom diagrams to monitor \nand control your system. The HMI allows \nauthenticated access for multiple users and \nlocations and is viewable from a web browser. \nThe video output port on the RTAC can \nattach to a monitor, allowing you to quickly \nand locally view HMI and SOE data without \nthe need for an additional computer. RelayRelay Relay\nHMI",
+    "match_count": 1,
+    "status": "unreviewed"
+  },
+  {
+    "id": "7113c600d3b960d165b8",
+    "source_id": "33a586afe4d5cbbcb977",
+    "product_id": "sel_real_time_automation_controller_rtac",
+    "feature": "authentication",
+    "lead_type": "capability",
+    "location": "pdf-page:9",
+    "matched": [
+      "authenticated"
+    ],
+    "context": "RTAC HMI \nIntegrated Visualization and Control \nThe RTAC HMI allows you to visualize your substation electrical power system and \nincludes the benefits of traditional SCADA and HMI packages. The web-based user \ninterface allows one or more authenticated users to interface with customized HMI \nscreens in a client-free environment. You get local or remote HMI access with the \nbuilt-in web server, and fast information retrieval and display with the advanced \nHTML5 technology. Communication is performed via Hypertext Transfer Protocol \nSecure (HTTPS) web sessions. The RTAC HMI uses ac SELerator  Diagram Builder \nSEL -5035 Software, allowing you to quickly and easily design an integrated \nsubstation visualization and control system.",
+    "match_count": 1,
+    "status": "unreviewed"
+  }
+]

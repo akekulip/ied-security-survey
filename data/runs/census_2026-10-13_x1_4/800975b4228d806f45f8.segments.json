@@ -1,0 +1,370 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "MIF Digital Feeder Relay | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "MIF - Legacy"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Contact Us",
+    "heading": "MIF - Legacy"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Manufacturing for this product has been discontinued. As an alternative, please refer to the 350 relay.",
+    "heading": "MIF - Legacy"
+  },
+  {
+    "location": "html-block:7",
+    "text": "The MIF, a member of the M Family of protection relays, is a microprocessor based relay that provides primary circuit protection on distribution networks at any voltage level and backup/auxiliary protection for transformers, generators and motors. Protection features include three phase time delayed overcur-rent, phase instantaneous overcurrent (two levels Hiset and Loset), ground time delayed overcurrent, ground instantaneous overcurrent (two levels Hiset and Loset) and thermal image protection. Each protection element can be selectively enabled either via the front panel or via communication. Flexible settings, selectable curves plus the choice of a user configurable overcurrent curve enable accurate coordination with other devices.",
+    "heading": "MIF - Legacy"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Feeder protection, any voltage level",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Protection & control"
+  },
+  {
+    "location": "html-block:11",
+    "text": "3 phase and ground time delayed overcurrent (51/51G)",
+    "heading": "Protection & control"
+  },
+  {
+    "location": "html-block:12",
+    "text": "4 preconfigured overcurrent curves n 1 user configurable overcurrent curve (FlexCurve)",
+    "heading": "Protection & control"
+  },
+  {
+    "location": "html-block:13",
+    "text": "3 phase and ground instantaneous overcurrent (Hiset and Loset) (50-1/50G-1, 50-2/50G-2)",
+    "heading": "Protection & control"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Thermal image protection (49)",
+    "heading": "Protection & control"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Cold load pickup function",
+    "heading": "Protection & control"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Configurable breaker failure protection (50BF)",
+    "heading": "Protection & control"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Configurable inputs and outputs",
+    "heading": "Protection & control"
+  },
+  {
+    "location": "html-block:18",
+    "text": "6 outputs: trip, service required, auxiliary",
+    "heading": "Protection & control"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Event recorder (24 events)",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Oscillography recorder",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:22",
+    "text": "KI2 counter for breaker maintenance",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Per phase current metering",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:24",
+    "text": "User Interface"
+  },
+  {
+    "location": "html-block:25",
+    "text": "6 configurable LED indicators",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:26",
+    "text": "RS232 and RS485 communications",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:27",
+    "text": "MODBUS® RTU protocol",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Baud rates up to 19,200 bps",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:30",
+    "text": "MultiNet"
+  },
+  {
+    "location": "html-block:31",
+    "text": "USB-to-Serial Cable"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:38",
+    "text": "White Papers"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Application Notes"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Subscribe",
+    "heading": "Application Notes"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:42",
+    "text": "MultiNet"
+  },
+  {
+    "location": "html-block:43",
+    "text": "USB-to-Serial Cable"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:46",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:47",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:50",
+    "text": "White Papers"
+  },
+  {
+    "location": "html-block:51",
+    "text": "Application Notes"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Subscribe",
+    "heading": "Application Notes"
+  },
+  {
+    "location": "html-block:53",
+    "text": "MIF - Legacy"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Contact Us",
+    "heading": "MIF - Legacy"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Manufacturing for this product has been discontinued. As an alternative, please refer to the 350 relay.",
+    "heading": "MIF - Legacy"
+  },
+  {
+    "location": "html-block:56",
+    "text": "The MIF, a member of the M Family of protection relays, is a microprocessor based relay that provides primary circuit protection on distribution networks at any voltage level and backup/auxiliary protection for transformers, generators and motors. Protection features include three phase time delayed overcur-rent, phase instantaneous overcurrent (two levels Hiset and Loset), ground time delayed overcurrent, ground instantaneous overcurrent (two levels Hiset and Loset) and thermal image protection. Each protection element can be selectively enabled either via the front panel or via communication. Flexible settings, selectable curves plus the choice of a user configurable overcurrent curve enable accurate coordination with other devices.",
+    "heading": "MIF - Legacy"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:58",
+    "text": "Feeder protection, any voltage level",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Protection & control"
+  },
+  {
+    "location": "html-block:60",
+    "text": "3 phase and ground time delayed overcurrent (51/51G)",
+    "heading": "Protection & control"
+  },
+  {
+    "location": "html-block:61",
+    "text": "4 preconfigured overcurrent curves n 1 user configurable overcurrent curve (FlexCurve)",
+    "heading": "Protection & control"
+  },
+  {
+    "location": "html-block:62",
+    "text": "3 phase and ground instantaneous overcurrent (Hiset and Loset) (50-1/50G-1, 50-2/50G-2)",
+    "heading": "Protection & control"
+  },
+  {
+    "location": "html-block:63",
+    "text": "Thermal image protection (49)",
+    "heading": "Protection & control"
+  },
+  {
+    "location": "html-block:64",
+    "text": "Cold load pickup function",
+    "heading": "Protection & control"
+  },
+  {
+    "location": "html-block:65",
+    "text": "Configurable breaker failure protection (50BF)",
+    "heading": "Protection & control"
+  },
+  {
+    "location": "html-block:66",
+    "text": "Configurable inputs and outputs",
+    "heading": "Protection & control"
+  },
+  {
+    "location": "html-block:67",
+    "text": "6 outputs: trip, service required, auxiliary",
+    "heading": "Protection & control"
+  },
+  {
+    "location": "html-block:68",
+    "text": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:69",
+    "text": "Event recorder (24 events)",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:70",
+    "text": "Oscillography recorder",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:71",
+    "text": "KI2 counter for breaker maintenance",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:72",
+    "text": "Per phase current metering",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:73",
+    "text": "User Interface"
+  },
+  {
+    "location": "html-block:74",
+    "text": "6 configurable LED indicators",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:75",
+    "text": "RS232 and RS485 communications",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:76",
+    "text": "MODBUS® RTU protocol",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:77",
+    "text": "Baud rates up to 19,200 bps",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:78",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:79",
+    "text": "Feeder Protection"
+  },
+  {
+    "location": "html-block:80",
+    "text": "GE Vernova’s distribution feeder protection systems provide advanced protection with...",
+    "heading": "Feeder Protection"
+  },
+  {
+    "location": "html-block:81",
+    "text": "View More",
+    "heading": "Feeder Protection"
+  }
+]

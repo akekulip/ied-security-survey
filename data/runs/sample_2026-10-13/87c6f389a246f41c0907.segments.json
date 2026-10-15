@@ -1,0 +1,119 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "Power meter device - SICAM MMU | Siemens"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Key benefits"
+  },
+  {
+    "location": "html-block:4",
+    "text": "Manage power systems reliably"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Support power system management and cost-efficient planning using measurements from distribution systems. Gain insights to optimize operations and make informed decisions for your electrical network.",
+    "heading": "Manage power systems reliably"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Reduce cabling and transmit data in real time"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Reduce cabling requirements through Ethernet connectivity to simplify installation and maintenance. Transmit real-time data via mobile communications, such as GPRS or UMTS, with a reduced data rate for efficient updates.",
+    "heading": "Reduce cabling and transmit data in real time"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Operate easily with integrated web server"
+  },
+  {
+    "location": "html-block:9",
+    "text": "The integrated Web Server provides user-friendly operation and eliminates the need for extra software for parameterization. Avoid converters and additional cables, streamlining setup and ongoing management.",
+    "heading": "Operate easily with integrated web server"
+  },
+  {
+    "location": "html-block:10",
+    "text": "FEATURED CAPABILITIES",
+    "heading": "Operate easily with integrated web server"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Features & functions"
+  },
+  {
+    "location": "html-block:12",
+    "text": "all",
+    "heading": "Features & functions"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Measure electrical parameters"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Measure and calculate electrical parameters: current, voltage, power, harmonics, and frequency. Transmit these values for processing and visualization to control centers via IEC 60870-5-104 or automation systems over MODBUS TCP.",
+    "heading": "Measure electrical parameters"
+  },
+  {
+    "location": "html-block:15",
+    "text": "all",
+    "heading": "Measure electrical parameters"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Integrate online measurements"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Integrate online measurements into network control and automation systems using protocols like IEC 60870-5-104 or MODBUS TCP. Monitor transformers and distributed power generation for voltage and load control.",
+    "heading": "Integrate online measurements"
+  },
+  {
+    "location": "html-block:18",
+    "text": "all",
+    "heading": "Integrate online measurements"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Monitor power quality and detect limits"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Perform basic power quality profile monitoring for voltage, frequency, harmonics and unbalance. Receive alarms and notifications of limit violations via protocol or binary outputs so you're aware of critical events.",
+    "heading": "Monitor power quality and detect limits"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Explore resources"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Downloads"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Catalog Power Quality and Measurement",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Tender specifications",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:25",
+    "text": "SiePortal - Online shop"
+  },
+  {
+    "location": "html-block:26",
+    "text": "SICAM MMU on SiePortal",
+    "heading": "SiePortal - Online shop"
+  }
+]

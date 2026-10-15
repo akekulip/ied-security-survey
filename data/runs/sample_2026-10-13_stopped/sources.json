@@ -1,0 +1,2045 @@
+[
+  {
+    "id": "87f5cea51a98790a3c18",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/controllers/multilin-c30",
+    "depth": 0,
+    "started_at": "2026-10-13T19:18:52.072553+00:00",
+    "final_url": "https://www.gevernova.com/electrification/automation/protection-control-metering/controllers/multilin-c30",
+    "sha256": "4caa58566242c37aa107d16bd0752f99a61df71ee974770850fbf2f2d6da54cf",
+    "bytes": 421253,
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Content-Language": "en",
+      "Date": "Tue, 13 Oct 2026 18:56:01 GMT"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/controllers/multilin-c30",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T18:56:01.337722+00:00",
+    "reused_from": "C:/Users/Philip/ied_survey_data/runs/census_2026-10-13",
+    "kind": "html",
+    "title": "Multilin C30 | GE Vernova | Electrification",
+    "document_hints": [],
+    "text_sha256": "6ae3d894e015d21c26e03be9fdcefddb14bf85bf20142402f51131264365336e",
+    "doc_type_suggested": "product_page",
+    "status": "extracted",
+    "links_found": 42,
+    "links_matched": 8,
+    "links_skipped": 3
+  },
+  {
+    "id": "dc2f6b80f57d2fb430df",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/resources?prod=c30&type=3&node_id=4549",
+    "depth": 1,
+    "started_at": "2026-10-13T19:18:52.133201+00:00",
+    "via": "87f5cea51a98790a3c18",
+    "final_url": "https://www.gevernova.com/electrification/resources?prod=c30&type=3&node_id=4549",
+    "sha256": "26db609f9015f68a28e6ee8c8c0a1ffca5e1cd3f1e8a501733593d76ef08cb4e",
+    "bytes": 424015,
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Content-Language": "en",
+      "Date": "Tue, 13 Oct 2026 19:18:54 GMT"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://www.gevernova.com/electrification/resources?prod=c30&type=3&node_id=4549",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T19:18:54.327606+00:00",
+    "kind": "html",
+    "title": "Resources | GE Vernova | Electrification",
+    "document_hints": [],
+    "text_sha256": "ce9c8ae16221c40ab074909c582e304d295096e2cd63d78f491da798bce11868",
+    "doc_type_suggested": "product_page",
+    "status": "extracted",
+    "links_found": 53,
+    "links_matched": 8
+  },
+  {
+    "id": "dd518703b1f8d213f88a",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/passport/login?destination=/electrification/resources?prod=c30&type=3&node_id=4549",
+    "depth": 2,
+    "via": "dc2f6b80f57d2fb430df",
+    "started_at": "2026-10-13T19:18:54.368610+00:00",
+    "status": "login_required",
+    "link_text": "Download",
+    "error": "link leads to a sign-in page; not requested"
+  },
+  {
+    "id": "690eba0d1650fb7cad2f",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/resources?prod=c30&type=21&node_id=4549",
+    "depth": 1,
+    "started_at": "2026-10-13T19:18:54.371607+00:00",
+    "via": "87f5cea51a98790a3c18",
+    "status": "login_required",
+    "error": "ValueError: login required: redirected to https://www.gevernova.com/electrification/passport/login?destination=/electrification/resources%3Fprod%3Dc30%26type%3D21%26node_id%3D4549"
+  },
+  {
+    "id": "a976ab14e7700672db4e",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/resources?prod=c30&type=1&node_id=4549",
+    "depth": 1,
+    "started_at": "2026-10-13T19:18:54.947364+00:00",
+    "via": "87f5cea51a98790a3c18",
+    "final_url": "https://www.gevernova.com/electrification/resources?prod=c30&type=1&node_id=4549",
+    "sha256": "a3df4dd27c67c96f68f2334fb1e84a19f18adbb6825c11535bc10f9afac0d9e7",
+    "bytes": 383706,
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Content-Language": "en",
+      "Date": "Tue, 13 Oct 2026 19:18:56 GMT"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://www.gevernova.com/electrification/resources?prod=c30&type=1&node_id=4549",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T19:18:56.781167+00:00",
+    "kind": "html",
+    "title": "Resources | GE Vernova | Electrification",
+    "document_hints": [],
+    "text_sha256": "79d4ac56179bbe10a2ada8a6336ac5a0bd7477c3f537e0a16468b2c8fc6210d0",
+    "doc_type_suggested": "product_page",
+    "status": "extracted",
+    "links_found": 21,
+    "links_matched": 7,
+    "links_skipped": 2
+  },
+  {
+    "id": "10acd95fff8564f810f0",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/resources?prod=c30&type=4&node_id=4549",
+    "depth": 1,
+    "started_at": "2026-10-13T19:18:56.817401+00:00",
+    "via": "87f5cea51a98790a3c18",
+    "final_url": "https://www.gevernova.com/electrification/resources?prod=c30&type=4&node_id=4549",
+    "sha256": "8d1e2df71d7b304babb917761f18384134de600e5dc48e5ee7449c5751512979",
+    "bytes": 382371,
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Content-Language": "en",
+      "Date": "Tue, 13 Oct 2026 19:18:57 GMT"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://www.gevernova.com/electrification/resources?prod=c30&type=4&node_id=4549",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T19:18:57.911267+00:00",
+    "kind": "html",
+    "title": "Resources | GE Vernova | Electrification",
+    "document_hints": [],
+    "text_sha256": "ecd39201b348451196a29e024ea068c78da9b6068c95ca0ae5a6bddd66e8a194",
+    "doc_type_suggested": "product_page",
+    "status": "extracted",
+    "links_found": 20,
+    "links_matched": 5,
+    "links_skipped": 1
+  },
+  {
+    "id": "2db6259bb371f65c057c",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/resources?prod=c30&type=7&node_id=4549",
+    "depth": 1,
+    "started_at": "2026-10-13T19:18:57.951644+00:00",
+    "via": "87f5cea51a98790a3c18",
+    "final_url": "https://www.gevernova.com/electrification/resources?prod=c30&type=7&node_id=4549",
+    "sha256": "f7eb99649c89794cf48c9808da2616482d205f7d523427df9423202581af982d",
+    "bytes": 431768,
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Content-Language": "en",
+      "Date": "Tue, 13 Oct 2026 19:18:59 GMT"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://www.gevernova.com/electrification/resources?prod=c30&type=7&node_id=4549",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T19:18:59.189291+00:00",
+    "kind": "html",
+    "title": "Resources | GE Vernova | Electrification",
+    "document_hints": [],
+    "text_sha256": "db1a16269ae488f378ebb9c9a84d01ad2f90a5f9c854be06cf35113bf9ca191a",
+    "doc_type_suggested": "product_page",
+    "status": "extracted",
+    "links_found": 81,
+    "links_matched": 35,
+    "links_skipped": 31
+  },
+  {
+    "id": "c305f81ace9a9aa2b829",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/passport/login?destination=/electrification/resources?prod=c30&type=7&node_id=4549",
+    "depth": 2,
+    "via": "2db6259bb371f65c057c",
+    "started_at": "2026-10-13T19:18:59.260602+00:00",
+    "status": "login_required",
+    "link_text": "Download",
+    "error": "link leads to a sign-in page; not requested"
+  },
+  {
+    "id": "3e7d88eb6940334e1f05",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/resources?prod=c30&type=6&node_id=4549",
+    "depth": 1,
+    "started_at": "2026-10-13T19:18:59.269941+00:00",
+    "via": "87f5cea51a98790a3c18",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "9154f32957e6fdaa5e24",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/resources?prod=c30&type=9&node_id=4549",
+    "depth": 1,
+    "started_at": "2026-10-13T19:18:59.276938+00:00",
+    "via": "87f5cea51a98790a3c18",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "1333d22b1bdd06a83d28",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/resources?prod=c30&type=2&node_id=4549",
+    "depth": 1,
+    "started_at": "2026-10-13T19:18:59.280935+00:00",
+    "via": "87f5cea51a98790a3c18",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "d088715b09533c9b5aaf",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-11/Multilin-C30-Brochure-EN-12655K-Hybrid-202504-R003.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:18:59.287939+00:00",
+    "via": "a976ab14e7700672db4e",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "c8e5a6f504553085a535",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/grid-solutions/sites/default/files/2025-11/Multilin-UR-and-URPlus-Brochure-EN-12657H-Hybrid-202504-R002.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:18:59.292948+00:00",
+    "via": "a976ab14e7700672db4e",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "5e6a505893547f4ef9d5",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/specs/c30/c30_7_60%20specs.doc",
+    "depth": 2,
+    "started_at": "2026-10-13T19:18:59.298946+00:00",
+    "via": "10acd95fff8564f810f0",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "f913fd2161f3f7acec34",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2026-08/GER-5001-Selected-7.x-8.x-Firmware-Versions-for-UR-Relays-C.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:18:59.304948+00:00",
+    "via": "2db6259bb371f65c057c",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "bcfe3aa5c5cb0bfb54ea",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ur/GER-5026A.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:18:59.313183+00:00",
+    "via": "2db6259bb371f65c057c",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "e216985c71805772850b",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ur/GER-5027A.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:18:59.321187+00:00",
+    "via": "2db6259bb371f65c057c",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "9ed107d9f7532874b71a",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ur/GER-5010B.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:18:59.328189+00:00",
+    "via": "2db6259bb371f65c057c",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "81ca4d6e4182898cf5c1",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/grid-solutions/sites/default/files/2026-02/GER-4938-Selected-Firmware-7.x-Versions-for-UR-Relays-C.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:18:59.334700+00:00",
+    "via": "2db6259bb371f65c057c",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "f48e8b22e29e0c4eb96c",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/grid-solutions/sites/default/files/2025-12/GER-4795-Selected-5.x-6.x-Firmware-Versions-for-UR-Relays-A.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:18:59.337704+00:00",
+    "via": "2db6259bb371f65c057c",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "d85b5fa6d5140910e1f7",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4964-Selected-8.0x-Firmware-Versions-for-UR-Relays-A.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:18:59.342948+00:00",
+    "via": "2db6259bb371f65c057c",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "1f239e8a6b3299edc3f0",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ur/GER-4976D.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:18:59.348947+00:00",
+    "via": "2db6259bb371f65c057c",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "22c137abb77a3b2da942",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ur/GER-4940H.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:18:59.355457+00:00",
+    "via": "2db6259bb371f65c057c",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "e37f78744fb6949dbf2d",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ur/ger-4769j.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:18:59.361837+00:00",
+    "via": "2db6259bb371f65c057c",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "a1d0f422d9be3069d146",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ur/ger-4955c.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:18:59.369307+00:00",
+    "via": "2db6259bb371f65c057c",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "1107ca76aee427d40c75",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ur/ger-4785e.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:18:59.375307+00:00",
+    "via": "2db6259bb371f65c057c",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "54117ce2a57a55f67b0f",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ur/ger-4909d.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:18:59.382547+00:00",
+    "via": "2db6259bb371f65c057c",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "887d357cefccd5305cfc",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/support/ur/ger-4929a.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:18:59.387448+00:00",
+    "via": "2db6259bb371f65c057c",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "2f09cb2ad6d7c8056158",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/support/ur/ger-4648e.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:18:59.394458+00:00",
+    "via": "2db6259bb371f65c057c",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "6395b86aa39bdc5ae391",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ur/GER-4879F-GEV.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:18:59.400458+00:00",
+    "via": "2db6259bb371f65c057c",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "a0781bb98fbfb68dfbbb",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ur/GER-4882G-GEV.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:18:59.408063+00:00",
+    "via": "2db6259bb371f65c057c",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "412298263519f75b9818",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ur/GER-4903D-GEV.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:18:59.414816+00:00",
+    "via": "2db6259bb371f65c057c",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "454769dcf77e5bba19b4",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ur/ger-4905b.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:18:59.421818+00:00",
+    "via": "2db6259bb371f65c057c",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "d12e991b62035afb794c",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ur/ger-4904b.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:18:59.428338+00:00",
+    "via": "2db6259bb371f65c057c",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "cadc7000680146229f44",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/support/ur/ger-4734m.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:18:59.435578+00:00",
+    "via": "2db6259bb371f65c057c",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "4a43b0c4e239654d486b",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/support/ur/ger-4799g.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:18:59.441579+00:00",
+    "via": "2db6259bb371f65c057c",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "6552c146ca71761adb2a",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ur/GER-4854E-GEV.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:18:59.449584+00:00",
+    "via": "2db6259bb371f65c057c",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "db1cce25758d9ca7034d",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ur/ger-4834c.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:18:59.457580+00:00",
+    "via": "2db6259bb371f65c057c",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "7c5cb4108e984b50646f",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/support/ur/ger-4480f.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:18:59.467579+00:00",
+    "via": "2db6259bb371f65c057c",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "f3f774e48ce0226b0235",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/support/ur/ger-4654a.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:18:59.475581+00:00",
+    "via": "2db6259bb371f65c057c",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "99eeb879f3341df508ce",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/support/ur/ger-4709f.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:18:59.482990+00:00",
+    "via": "2db6259bb371f65c057c",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "e299cebda6938d95feae",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ur/ger-4646a.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:18:59.491550+00:00",
+    "via": "2db6259bb371f65c057c",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "e7df26596d9b71e57ab7",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/support/ur/ger-4467.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:18:59.498546+00:00",
+    "via": "2db6259bb371f65c057c",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "4fb3fe919eedba0bfe62",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/support/ur/ger-4459.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:18:59.506577+00:00",
+    "via": "2db6259bb371f65c057c",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "dc55b3d7250720500d1b",
+    "product_id": "ge_multilin_c30",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/support/ur/ger-4419c.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:18:59.515090+00:00",
+    "via": "2db6259bb371f65c057c",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "59f6fca07fac09a965f1",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/controllers/multilin-c60c95",
+    "depth": 0,
+    "started_at": "2026-10-13T19:18:59.522289+00:00",
+    "final_url": "https://www.gevernova.com/electrification/automation/protection-control-metering/controllers/multilin-c60c95",
+    "sha256": "5309146db1a81b72afcf2da4033331add22a169dec39a015e74360f3aa1d5bcf",
+    "bytes": 424884,
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Content-Language": "en",
+      "Date": "Tue, 13 Oct 2026 18:56:01 GMT"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/controllers/multilin-c60c95",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T18:56:01.721934+00:00",
+    "reused_from": "C:/Users/Philip/ied_survey_data/runs/census_2026-10-13",
+    "kind": "html",
+    "title": "Multilin C60/C95 | GE Vernova | Electrification",
+    "document_hints": [],
+    "text_sha256": "8a883832c264cb0fe0187841a5811014f0024fd6c63137782a281440444d771e",
+    "doc_type_suggested": "product_page",
+    "status": "extracted",
+    "links_found": 45,
+    "links_matched": 8,
+    "links_skipped": 3
+  },
+  {
+    "id": "fafe04b602375d7310f9",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/resources?prod=c60&type=3&node_id=4547",
+    "depth": 1,
+    "started_at": "2026-10-13T19:18:59.601612+00:00",
+    "via": "59f6fca07fac09a965f1",
+    "final_url": "https://www.gevernova.com/electrification/resources?prod=c60&type=3&node_id=4547",
+    "sha256": "2464b3ef2f2a59d4d41d46524ce55f5c9cc512d916a0d039bcb8e4c9eacecdea",
+    "bytes": 437691,
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Content-Language": "en",
+      "Date": "Tue, 13 Oct 2026 19:19:00 GMT"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://www.gevernova.com/electrification/resources?prod=c60&type=3&node_id=4547",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T19:19:00.905085+00:00",
+    "kind": "html",
+    "title": "Resources | GE Vernova | Electrification",
+    "document_hints": [],
+    "text_sha256": "f89e80cbb1e6a2fd5028a0c5258572c0a485a04ebccf6a2178b8b598f67429fc",
+    "doc_type_suggested": "product_page",
+    "status": "extracted",
+    "links_found": 64,
+    "links_matched": 8
+  },
+  {
+    "id": "8d0e86f10ebf2ce9c136",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/passport/login?destination=/electrification/resources?prod=c60&type=3&node_id=4547",
+    "depth": 2,
+    "via": "fafe04b602375d7310f9",
+    "started_at": "2026-10-13T19:19:00.944589+00:00",
+    "status": "login_required",
+    "link_text": "Download",
+    "error": "link leads to a sign-in page; not requested"
+  },
+  {
+    "id": "06f78011420c8915875a",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/resources?prod=c60&type=21&node_id=4547",
+    "depth": 1,
+    "started_at": "2026-10-13T19:19:00.949287+00:00",
+    "via": "59f6fca07fac09a965f1",
+    "status": "login_required",
+    "error": "ValueError: login required: redirected to https://www.gevernova.com/electrification/passport/login?destination=/electrification/resources%3Fprod%3Dc60%26type%3D21%26node_id%3D4547"
+  },
+  {
+    "id": "52d6a97904250d99c0da",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/resources?prod=c60&type=1&node_id=4547",
+    "depth": 1,
+    "started_at": "2026-10-13T19:19:01.449318+00:00",
+    "via": "59f6fca07fac09a965f1",
+    "final_url": "https://www.gevernova.com/electrification/resources?prod=c60&type=1&node_id=4547",
+    "sha256": "1cbe37c86848d8b617d928aafe75378ea02b6b279524bb810e628e3eb080cf03",
+    "bytes": 383678,
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Content-Language": "en",
+      "Date": "Tue, 13 Oct 2026 19:19:02 GMT"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://www.gevernova.com/electrification/resources?prod=c60&type=1&node_id=4547",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T19:19:02.938538+00:00",
+    "kind": "html",
+    "title": "Resources | GE Vernova | Electrification",
+    "document_hints": [],
+    "text_sha256": "ea1541ec9ac38958fad1e68f78e6ec5b36698f1da45c10bde0386cb1ae45b284",
+    "doc_type_suggested": "product_page",
+    "status": "extracted",
+    "links_found": 21,
+    "links_matched": 7,
+    "links_skipped": 2
+  },
+  {
+    "id": "56443df9c7d62c2469d0",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/resources?prod=c60&type=4&node_id=4547",
+    "depth": 1,
+    "started_at": "2026-10-13T19:19:02.973753+00:00",
+    "via": "59f6fca07fac09a965f1",
+    "final_url": "https://www.gevernova.com/electrification/resources?prod=c60&type=4&node_id=4547",
+    "sha256": "0054b3b2c49e75b8d02b4787923b480a3d8d0e1a362f0ed5b44a95eef0b46d24",
+    "bytes": 383464,
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Content-Language": "en",
+      "Date": "Tue, 13 Oct 2026 19:19:03 GMT"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://www.gevernova.com/electrification/resources?prod=c60&type=4&node_id=4547",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T19:19:04.006771+00:00",
+    "kind": "html",
+    "title": "Resources | GE Vernova | Electrification",
+    "document_hints": [],
+    "text_sha256": "6d57d82eb38094618b315fd5ee623a504bb8505cd0732cde06caca553288388e",
+    "doc_type_suggested": "product_page",
+    "status": "extracted",
+    "links_found": 21,
+    "links_matched": 6,
+    "links_skipped": 2
+  },
+  {
+    "id": "37e0a56dd5a0b4d27420",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/resources?prod=c60&type=7&node_id=4547",
+    "depth": 1,
+    "started_at": "2026-10-13T19:19:04.044797+00:00",
+    "via": "59f6fca07fac09a965f1",
+    "final_url": "https://www.gevernova.com/electrification/resources?prod=c60&type=7&node_id=4547",
+    "sha256": "9dc240f4b35aba5a75b1d856990fe8a08c69c20147e2c4714f591cdeb2f24c34",
+    "bytes": 431740,
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Content-Language": "en",
+      "Date": "Tue, 13 Oct 2026 19:19:05 GMT"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://www.gevernova.com/electrification/resources?prod=c60&type=7&node_id=4547",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T19:19:05.619164+00:00",
+    "kind": "html",
+    "title": "Resources | GE Vernova | Electrification",
+    "document_hints": [],
+    "text_sha256": "b84a61ab837af1fa24921023c0dcb790583be14fe7465f362b30ded35d57336a",
+    "doc_type_suggested": "product_page",
+    "status": "extracted",
+    "links_found": 81,
+    "links_matched": 35,
+    "links_skipped": 31
+  },
+  {
+    "id": "a10e627097582fd2df30",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/passport/login?destination=/electrification/resources?prod=c60&type=7&node_id=4547",
+    "depth": 2,
+    "via": "37e0a56dd5a0b4d27420",
+    "started_at": "2026-10-13T19:19:05.657636+00:00",
+    "status": "login_required",
+    "link_text": "Download",
+    "error": "link leads to a sign-in page; not requested"
+  },
+  {
+    "id": "eb2800c487b98cb1a5f1",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/resources?prod=c60&type=6&node_id=4547",
+    "depth": 1,
+    "started_at": "2026-10-13T19:19:05.664634+00:00",
+    "via": "59f6fca07fac09a965f1",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "c11a02f16dd96c738639",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/resources?prod=c60&type=9&node_id=4547",
+    "depth": 1,
+    "started_at": "2026-10-13T19:19:05.669636+00:00",
+    "via": "59f6fca07fac09a965f1",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "0e995ae9c3da75158d03",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/resources?prod=c60&type=2&node_id=4547",
+    "depth": 1,
+    "started_at": "2026-10-13T19:19:05.672635+00:00",
+    "via": "59f6fca07fac09a965f1",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "bf2849419b4d187a2d33",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-11/Multilin-C60-Brochure-EN-12654K-Hybrid-202504-R003.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:05.677635+00:00",
+    "via": "52d6a97904250d99c0da",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "0290909b8671e6e59ca2",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/grid-solutions/sites/default/files/2025-11/Multilin-UR-and-URPlus-Brochure-EN-12657H-Hybrid-202504-R002.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:05.681634+00:00",
+    "via": "52d6a97904250d99c0da",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "0d5d103d939aae80c607",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/grid-solutions/sites/default/files/resources/products/specs/c60/c60_7_60%20specs.doc",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:05.685638+00:00",
+    "via": "56443df9c7d62c2469d0",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "d676f4a78d9e567116e0",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/specs/c60/c60_specs_cn.doc",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:05.688636+00:00",
+    "via": "56443df9c7d62c2469d0",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "5da1a940641d0810441b",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2026-08/GER-5001-Selected-7.x-8.x-Firmware-Versions-for-UR-Relays-C.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:05.694638+00:00",
+    "via": "37e0a56dd5a0b4d27420",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "ca8257af2d7b79a5c1e6",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ur/GER-5026A.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:05.697143+00:00",
+    "via": "37e0a56dd5a0b4d27420",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "b78e28a9598a5885a933",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ur/GER-5027A.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:05.701154+00:00",
+    "via": "37e0a56dd5a0b4d27420",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "62189904a931d5ba5c2a",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ur/GER-5010B.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:05.705154+00:00",
+    "via": "37e0a56dd5a0b4d27420",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "b4155a6c074c16f7d6a2",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/grid-solutions/sites/default/files/2026-02/GER-4938-Selected-Firmware-7.x-Versions-for-UR-Relays-C.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:05.710156+00:00",
+    "via": "37e0a56dd5a0b4d27420",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "a0c7b0522d41a3f547a1",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/grid-solutions/sites/default/files/2025-12/GER-4795-Selected-5.x-6.x-Firmware-Versions-for-UR-Relays-A.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:05.717153+00:00",
+    "via": "37e0a56dd5a0b4d27420",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "33cbb99e1d94d8f43c82",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4964-Selected-8.0x-Firmware-Versions-for-UR-Relays-A.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:05.721159+00:00",
+    "via": "37e0a56dd5a0b4d27420",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "6812bb42fb0922a05829",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ur/GER-4976D.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:05.725158+00:00",
+    "via": "37e0a56dd5a0b4d27420",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "7dd4b04a58796c3cb995",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ur/GER-4940H.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:05.731159+00:00",
+    "via": "37e0a56dd5a0b4d27420",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "f3f194cb0cc8b3a985ad",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ur/ger-4955c.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:05.735209+00:00",
+    "via": "37e0a56dd5a0b4d27420",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "78751f7cc4f3734ce2a3",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ur/ger-4769j.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:05.740209+00:00",
+    "via": "37e0a56dd5a0b4d27420",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "97d40e73ce2111a0fda2",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ur/ger-4785e.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:05.745209+00:00",
+    "via": "37e0a56dd5a0b4d27420",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "edc0347d1f79dbb8e1ee",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ur/ger-4909d.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:05.750208+00:00",
+    "via": "37e0a56dd5a0b4d27420",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "39a5e8445a9eb46b8173",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/support/ur/ger-4929a.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:05.755208+00:00",
+    "via": "37e0a56dd5a0b4d27420",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "0a549e1595d3caf678f4",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/support/ur/ger-4648e.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:05.760215+00:00",
+    "via": "37e0a56dd5a0b4d27420",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "db066a08ed2265aad1b2",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ur/GER-4882G-GEV.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:05.765213+00:00",
+    "via": "37e0a56dd5a0b4d27420",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "dd0ab534e121fe40f3e9",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ur/GER-4903D-GEV.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:05.770216+00:00",
+    "via": "37e0a56dd5a0b4d27420",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "c18d55352456565d12e4",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ur/GER-4879F-GEV.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:05.774735+00:00",
+    "via": "37e0a56dd5a0b4d27420",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "5dc7f83f84253cd83e38",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ur/ger-4904b.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:05.782092+00:00",
+    "via": "37e0a56dd5a0b4d27420",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "d652bf1238dc7822331f",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ur/ger-4905b.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:05.788904+00:00",
+    "via": "37e0a56dd5a0b4d27420",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "78ebd3bcc69c817fbfd8",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/support/ur/ger-4734m.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:05.794773+00:00",
+    "via": "37e0a56dd5a0b4d27420",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "ba34d08761ac0b83e4c2",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ur/GER-4854E-GEV.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:05.800555+00:00",
+    "via": "37e0a56dd5a0b4d27420",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "bf1edf07d613f32463bc",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/support/ur/ger-4799g.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:05.808554+00:00",
+    "via": "37e0a56dd5a0b4d27420",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "79463af29828c133cb6e",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ur/ger-4834c.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:05.816049+00:00",
+    "via": "37e0a56dd5a0b4d27420",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "54e3615a5295a417e46d",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/support/ur/ger-4480f.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:05.821203+00:00",
+    "via": "37e0a56dd5a0b4d27420",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "48c6f05e9f60c985d438",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/support/ur/ger-4654a.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:05.826204+00:00",
+    "via": "37e0a56dd5a0b4d27420",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "44198d52fb72672eb537",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/support/ur/ger-4709f.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:05.832204+00:00",
+    "via": "37e0a56dd5a0b4d27420",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "0ef3bb4477a5af34b937",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ur/ger-4646a.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:05.839496+00:00",
+    "via": "37e0a56dd5a0b4d27420",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "75716b0216ea23e99765",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/support/ur/ger-4467.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:05.846365+00:00",
+    "via": "37e0a56dd5a0b4d27420",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "557242af090466f762f2",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/support/ur/ger-4459.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:05.852375+00:00",
+    "via": "37e0a56dd5a0b4d27420",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "4519c13f71b70ef05669",
+    "product_id": "ge_multilin_c60c95",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/support/ur/ger-4419c.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:05.858369+00:00",
+    "via": "37e0a56dd5a0b4d27420",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "159ace1bc9e7b7c6b96e",
+    "product_id": "ge_multilin_d20e",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/gateways-rtus/multilin-d20e",
+    "depth": 0,
+    "started_at": "2026-10-13T19:19:05.864874+00:00",
+    "final_url": "https://www.gevernova.com/electrification/automation/protection-control-metering/gateways-rtus/multilin-d20e",
+    "sha256": "46bcf405f1d55055ab752aee522ebc30b39d645e1713079b9d046e838446601c",
+    "bytes": 392850,
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Content-Language": "en",
+      "Date": "Tue, 13 Oct 2026 18:57:01 GMT"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/gateways-rtus/multilin-d20e",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T18:57:01.281136+00:00",
+    "reused_from": "C:/Users/Philip/ied_survey_data/runs/census_2026-10-13",
+    "kind": "html",
+    "title": "Multilin D20E | GE Vernova | Electrification",
+    "document_hints": [],
+    "text_sha256": "ee9464f6e0dd521b0a2a5c131832eb05f63703854700c8e784de1d60ff857d2c",
+    "doc_type_suggested": "product_page",
+    "status": "extracted",
+    "links_found": 31,
+    "links_matched": 5,
+    "links_skipped": 1
+  },
+  {
+    "id": "d11c8bb7ee80b902a2e9",
+    "product_id": "ge_multilin_d20e",
+    "url": "https://www.gevernova.com/electrification/resources?prod=d20e&type=3&node_id=4553",
+    "depth": 1,
+    "started_at": "2026-10-13T19:19:05.936500+00:00",
+    "via": "159ace1bc9e7b7c6b96e",
+    "final_url": "https://www.gevernova.com/electrification/resources?prod=d20e&type=3&node_id=4553",
+    "sha256": "9f704424de50d1cb7def3c2b0d70f1b1f7f4a597bad90545cb61877079253e8b",
+    "bytes": 381384,
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Content-Language": "en",
+      "Date": "Tue, 13 Oct 2026 19:19:06 GMT"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://www.gevernova.com/electrification/resources?prod=d20e&type=3&node_id=4553",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T19:19:06.736654+00:00",
+    "kind": "html",
+    "title": "Resources | GE Vernova | Electrification",
+    "document_hints": [],
+    "text_sha256": "4754a2327920f8b3006052253b4570d9e37627efe24c80c75ade92de27fe64e9",
+    "doc_type_suggested": "product_page",
+    "status": "extracted",
+    "links_found": 17,
+    "links_matched": 5
+  },
+  {
+    "id": "ff6cdc7cb021b4932544",
+    "product_id": "ge_multilin_d20e",
+    "url": "https://www.gevernova.com/electrification/passport/login?destination=/electrification/resources?prod=d20e&type=3&node_id=4553",
+    "depth": 2,
+    "via": "d11c8bb7ee80b902a2e9",
+    "started_at": "2026-10-13T19:19:06.770660+00:00",
+    "status": "login_required",
+    "link_text": "Download",
+    "error": "link leads to a sign-in page; not requested"
+  },
+  {
+    "id": "c83fe35589298f6723ff",
+    "product_id": "ge_multilin_d20e",
+    "url": "https://www.gevernova.com/electrification/resources?prod=d20e&type=21&node_id=4553",
+    "depth": 1,
+    "started_at": "2026-10-13T19:19:06.773687+00:00",
+    "via": "159ace1bc9e7b7c6b96e",
+    "final_url": "https://www.gevernova.com/electrification/document-not-available",
+    "sha256": "5cc1d0ed7f93cb5c0aca5b6477a9cf35b65a6759b4b89fb9b138578a86dfdf6e",
+    "bytes": 374224,
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Content-Language": "en",
+      "Date": "Tue, 13 Oct 2026 19:19:08 GMT"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://www.gevernova.com/electrification/resources?prod=d20e&type=21&node_id=4553",
+        "status": 302
+      },
+      {
+        "url": "https://www.gevernova.com/electrification/document-not-available",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T19:19:08.906224+00:00",
+    "kind": "html",
+    "title": "Document Not Found | GE Vernova | Electrification",
+    "document_hints": [],
+    "text_sha256": "450d666db6ba39ac6ef3c37809a93bdff79bf0a795b61befa42726318c595491",
+    "doc_type_suggested": "product_page",
+    "status": "extracted",
+    "links_found": 4,
+    "links_matched": 0
+  },
+  {
+    "id": "41c7599061edee920b1a",
+    "product_id": "ge_multilin_d20e",
+    "url": "https://www.gevernova.com/electrification/resources?prod=d20e&type=1&node_id=4553",
+    "depth": 1,
+    "started_at": "2026-10-13T19:19:08.940166+00:00",
+    "via": "159ace1bc9e7b7c6b96e",
+    "final_url": "https://www.gevernova.com/electrification/resources?prod=d20e&type=1&node_id=4553",
+    "sha256": "d7a6cdadd6d4aac5e14eab8993dcdd6b573eba8b2441a2d9a54242563257e717",
+    "bytes": 381375,
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Content-Language": "en",
+      "Date": "Tue, 13 Oct 2026 19:19:10 GMT"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://www.gevernova.com/electrification/resources?prod=d20e&type=1&node_id=4553",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T19:19:10.255665+00:00",
+    "kind": "html",
+    "title": "Resources | GE Vernova | Electrification",
+    "document_hints": [],
+    "text_sha256": "e90a531e811594f9ec30f12c85d553260e294a4cb5aa46aba79fb5b8b64b5690",
+    "doc_type_suggested": "product_page",
+    "status": "extracted",
+    "links_found": 17,
+    "links_matched": 3,
+    "links_skipped": 1
+  },
+  {
+    "id": "bcac4baec7c68ece8215",
+    "product_id": "ge_multilin_d20e",
+    "url": "https://www.gevernova.com/electrification/resources?prod=d20e&type=7&node_id=4553",
+    "depth": 1,
+    "started_at": "2026-10-13T19:19:10.290565+00:00",
+    "via": "159ace1bc9e7b7c6b96e",
+    "final_url": "https://www.gevernova.com/electrification/resources?prod=d20e&type=7&node_id=4553",
+    "sha256": "e7371350351298e4ad1cc64b5f680413fd00bff2ecb2fb43391c471731a4e751",
+    "bytes": 385853,
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Content-Language": "en",
+      "Date": "Tue, 13 Oct 2026 19:19:11 GMT"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://www.gevernova.com/electrification/resources?prod=d20e&type=7&node_id=4553",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T19:19:11.737404+00:00",
+    "kind": "html",
+    "title": "Resources | GE Vernova | Electrification",
+    "document_hints": [],
+    "text_sha256": "8ee94aa4e702e062cbdaa374d755970c871253257fa5d3977c851707f6da6357",
+    "doc_type_suggested": "product_page",
+    "status": "extracted",
+    "links_found": 22,
+    "links_matched": 6,
+    "links_skipped": 4
+  },
+  {
+    "id": "b3a5ec385e414d9accb6",
+    "product_id": "ge_multilin_d20e",
+    "url": "https://www.gevernova.com/electrification/passport/login?destination=/electrification/resources?prod=d20e&type=7&node_id=4553",
+    "depth": 2,
+    "via": "bcac4baec7c68ece8215",
+    "started_at": "2026-10-13T19:19:11.769747+00:00",
+    "status": "login_required",
+    "link_text": "Download",
+    "error": "link leads to a sign-in page; not requested"
+  },
+  {
+    "id": "662234cb4620b10e25b1",
+    "product_id": "ge_multilin_d20e",
+    "url": "https://www.gevernova.com/electrification/resources?prod=d20e&type=9&node_id=4553",
+    "depth": 1,
+    "started_at": "2026-10-13T19:19:11.774263+00:00",
+    "via": "159ace1bc9e7b7c6b96e",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "efa1bec19dff2d1c38a5",
+    "product_id": "ge_multilin_d20e",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-05/994-0145-D20E-Ethernet-IO-Module-Instruction-Manual-V100-R5.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:11.778264+00:00",
+    "via": "bcac4baec7c68ece8215",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "36ce6780e08f318fe075",
+    "product_id": "ge_multilin_d20e",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-11/Multilin-D20E-Brochure-EN-32042-Hybrid-202504-R002.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:11.781560+00:00",
+    "via": "41c7599061edee920b1a",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "332a59a6039711c011f5",
+    "product_id": "ge_multilin_d20e",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4978-Firmware-Option-A-for-D20E-B.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:11.785110+00:00",
+    "via": "bcac4baec7c68ece8215",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "9f02133f36647916c3a3",
+    "product_id": "ge_multilin_d20e",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-5001-Firmware-Options-B-C-for-D20E-A.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:11.788275+00:00",
+    "via": "bcac4baec7c68ece8215",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "5b989f99e4950d0b8184",
+    "product_id": "ge_multilin_d20e",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-05/MIS-0112%20D20E%20Ethernet%20IO%20Modules%20Release%20Notes%20v6.3.1%20R1.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:11.792271+00:00",
+    "via": "bcac4baec7c68ece8215",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "1800b63f7e014bb4fa79",
+    "product_id": "ge_multilintm_g500",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/gateways-rtus/multilintm-g500",
+    "depth": 0,
+    "started_at": "2026-10-13T19:19:11.797385+00:00",
+    "final_url": "https://www.gevernova.com/electrification/automation/protection-control-metering/gateways-rtus/multilintm-g500",
+    "sha256": "963c69a7399e68273b7d8b39b9a0d2a854d5d3babd87af97af3de6ea80cc758f",
+    "bytes": 391720,
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Content-Language": "en",
+      "Date": "Tue, 13 Oct 2026 18:57:03 GMT"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/gateways-rtus/multilintm-g500",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T18:57:03.343297+00:00",
+    "reused_from": "C:/Users/Philip/ied_survey_data/runs/census_2026-10-13",
+    "kind": "html",
+    "title": "G500 Advanced Substation Gateway | GE Vernova | Electrification",
+    "document_hints": [],
+    "text_sha256": "a7e02c0633ef2ebc622cf1389339cf06254a9a24a0a4b633ea0dadcfee16317f",
+    "doc_type_suggested": "product_page",
+    "status": "extracted",
+    "links_found": 29,
+    "links_matched": 6,
+    "links_skipped": 1
+  },
+  {
+    "id": "e07fd44d2542768e9027",
+    "product_id": "ge_multilintm_g500",
+    "url": "https://www.gevernova.com/electrification/resources?prod=G500&type=3&node_id=4551",
+    "depth": 1,
+    "started_at": "2026-10-13T19:19:11.848590+00:00",
+    "via": "1800b63f7e014bb4fa79",
+    "final_url": "https://www.gevernova.com/electrification/resources?prod=G500&type=3&node_id=4551",
+    "sha256": "99439872df41125fc23e1792889fe33e6b5ef79332a28385d26fc3e06ff36f02",
+    "bytes": 389281,
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Content-Language": "en",
+      "Date": "Tue, 13 Oct 2026 19:19:12 GMT"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://www.gevernova.com/electrification/resources?prod=G500&type=3&node_id=4551",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T19:19:12.683793+00:00",
+    "kind": "html",
+    "title": "Resources | GE Vernova | Electrification",
+    "document_hints": [],
+    "text_sha256": "ffc284a3fc639ef97bdcec1e2e481bc311b32828aa425b02395a4f4f972ded95",
+    "doc_type_suggested": "product_page",
+    "status": "extracted",
+    "links_found": 22,
+    "links_matched": 6
+  },
+  {
+    "id": "49a223ec7e95b1461ac7",
+    "product_id": "ge_multilintm_g500",
+    "url": "https://www.gevernova.com/electrification/passport/login?destination=/electrification/resources?prod=G500&type=3&node_id=4551",
+    "depth": 2,
+    "via": "e07fd44d2542768e9027",
+    "started_at": "2026-10-13T19:19:12.726354+00:00",
+    "status": "login_required",
+    "link_text": "Download",
+    "error": "link leads to a sign-in page; not requested"
+  },
+  {
+    "id": "9a0e9684cec5c1a99ade",
+    "product_id": "ge_multilintm_g500",
+    "url": "https://www.gevernova.com/electrification/resources?prod=G500&type=21&node_id=4551",
+    "depth": 1,
+    "started_at": "2026-10-13T19:19:12.731351+00:00",
+    "via": "1800b63f7e014bb4fa79",
+    "status": "login_required",
+    "error": "ValueError: login required: redirected to https://www.gevernova.com/electrification/passport/login?destination=/electrification/resources%3Fprod%3DG500%26type%3D21%26node_id%3D4551"
+  },
+  {
+    "id": "0e2e583540c2584679a7",
+    "product_id": "ge_multilintm_g500",
+    "url": "https://www.gevernova.com/electrification/resources?prod=G500&type=1&node_id=4551",
+    "depth": 1,
+    "started_at": "2026-10-13T19:19:13.627374+00:00",
+    "via": "1800b63f7e014bb4fa79",
+    "final_url": "https://www.gevernova.com/electrification/resources?prod=G500&type=1&node_id=4551",
+    "sha256": "1098e73cb180761be7ed3d6824c915860e150b6123a20e28f55b31e9e7db9944",
+    "bytes": 382576,
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Content-Language": "en",
+      "Date": "Tue, 13 Oct 2026 19:19:15 GMT"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://www.gevernova.com/electrification/resources?prod=G500&type=1&node_id=4551",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T19:19:15.079839+00:00",
+    "kind": "html",
+    "title": "Resources | GE Vernova | Electrification",
+    "document_hints": [],
+    "text_sha256": "f68d0e9449ad12a85352893e75f245b4d983b663fe26c8cc986bf58cc399f2ff",
+    "doc_type_suggested": "product_page",
+    "status": "extracted",
+    "links_found": 17,
+    "links_matched": 5,
+    "links_skipped": 2
+  },
+  {
+    "id": "9b2f3577f5fcec326760",
+    "product_id": "ge_multilintm_g500",
+    "url": "https://www.gevernova.com/electrification/resources?prod=G500&type=4&node_id=4551",
+    "depth": 1,
+    "started_at": "2026-10-13T19:19:15.113860+00:00",
+    "via": "1800b63f7e014bb4fa79",
+    "final_url": "https://www.gevernova.com/electrification/document-not-available",
+    "sha256": "5cc1d0ed7f93cb5c0aca5b6477a9cf35b65a6759b4b89fb9b138578a86dfdf6e",
+    "bytes": 374224,
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Content-Language": "en",
+      "Date": "Tue, 13 Oct 2026 19:19:16 GMT"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://www.gevernova.com/electrification/resources?prod=G500&type=4&node_id=4551",
+        "status": 302
+      },
+      {
+        "url": "https://www.gevernova.com/electrification/document-not-available",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T19:19:16.959676+00:00",
+    "kind": "html",
+    "title": "Document Not Found | GE Vernova | Electrification",
+    "document_hints": [],
+    "text_sha256": "450d666db6ba39ac6ef3c37809a93bdff79bf0a795b61befa42726318c595491",
+    "doc_type_suggested": "product_page",
+    "status": "extracted",
+    "links_found": 4,
+    "links_matched": 0
+  },
+  {
+    "id": "b594d1b84f13b7219ec0",
+    "product_id": "ge_multilintm_g500",
+    "url": "https://www.gevernova.com/electrification/resources?prod=G500&type=7&node_id=4551",
+    "depth": 1,
+    "started_at": "2026-10-13T19:19:16.993675+00:00",
+    "via": "1800b63f7e014bb4fa79",
+    "final_url": "https://www.gevernova.com/electrification/resources?prod=G500&type=7&node_id=4551",
+    "sha256": "67180bf61466a1b73f9b38f7285d0291670b974535906bb63310a8d5ab78946c",
+    "bytes": 425055,
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Content-Language": "en",
+      "Date": "Tue, 13 Oct 2026 19:19:18 GMT"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://www.gevernova.com/electrification/resources?prod=G500&type=7&node_id=4551",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T19:19:18.955944+00:00",
+    "kind": "html",
+    "title": "Resources | GE Vernova | Electrification",
+    "document_hints": [],
+    "text_sha256": "93f1dfcaf97136c2321cd9ce4843b2cd8b6998f2cc700c23b1e96119fe9a1695",
+    "doc_type_suggested": "product_page",
+    "status": "extracted",
+    "links_found": 62,
+    "links_matched": 17,
+    "links_skipped": 15
+  },
+  {
+    "id": "d3b7e7bb40ec3c679a17",
+    "product_id": "ge_multilintm_g500",
+    "url": "https://www.gevernova.com/electrification/passport/login?destination=/electrification/resources?prod=G500&type=7&node_id=4551",
+    "depth": 2,
+    "via": "b594d1b84f13b7219ec0",
+    "started_at": "2026-10-13T19:19:18.994076+00:00",
+    "status": "login_required",
+    "link_text": "Download",
+    "error": "link leads to a sign-in page; not requested"
+  },
+  {
+    "id": "510516b2426159f09ab7",
+    "product_id": "ge_multilintm_g500",
+    "url": "https://www.gevernova.com/electrification/resources?prod=G500&type=9&node_id=4551",
+    "depth": 1,
+    "started_at": "2026-10-13T19:19:19.000077+00:00",
+    "via": "1800b63f7e014bb4fa79",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "3e01e5b21499f69265ed",
+    "product_id": "ge_multilintm_g500",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/manuals/g500/SWM0124-IEC-61850-Server-User-Guide-V540-R0.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:19.006594+00:00",
+    "via": "b594d1b84f13b7219ec0",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "c3f2792587c5f2690248",
+    "product_id": "ge_multilintm_g500",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/g500/SWM0124-IEC-61850-Server-User-Guide-V500-R3.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:19.013594+00:00",
+    "via": "b594d1b84f13b7219ec0",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "4f1f862ba251a5886050",
+    "product_id": "ge_multilintm_g500",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-06/SWM0124%20IEC%2061850%20Server%20User%20Guide%20V500%20R2.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:19.019593+00:00",
+    "via": "b594d1b84f13b7219ec0",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "2dade849439ba4307c2c",
+    "product_id": "ge_multilintm_g500",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-11/Multilin-G500-Brochure-RU-32056-Hybrid-202509-R002.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:19.024613+00:00",
+    "via": "0e2e583540c2584679a7",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "cce94c40b43d34f05c9d",
+    "product_id": "ge_multilintm_g500",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-09/Multilin-G500-Advanced-Substation-Gateway-Brochure-EN-35437-Hybrid-202504-R002.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:19.028596+00:00",
+    "via": "0e2e583540c2584679a7",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "990d66e93b8131d15c3c",
+    "product_id": "ge_multilintm_g500",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ds-agile/MIS-0114_DS_Agile_Studio_6.0_Release_Notes_V600_R0.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:19.032595+00:00",
+    "via": "b594d1b84f13b7219ec0",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "f3770e8ff1bb0dc38804",
+    "product_id": "ge_multilintm_g500",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2026-08/GER-4947-Selected-Variants-of-LogicLinx-L32Bit-Editor-Licenses-B.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:19.036601+00:00",
+    "via": "b594d1b84f13b7219ec0",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "133a9d0cf50a1c290e2f",
+    "product_id": "ge_multilintm_g500",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2026-08/GER-5022-Firmware-5.2-for-G500.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:19.042600+00:00",
+    "via": "b594d1b84f13b7219ec0",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "3202f9b9af063bd141a5",
+    "product_id": "ge_multilintm_g500",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/g500/MIS-0109_MCP_Firmware_Release_Notes_V540_R0.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:19.045601+00:00",
+    "via": "b594d1b84f13b7219ec0",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "43e66712c32b3104ed4c",
+    "product_id": "ge_multilintm_g500",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/g500/MIS-0114_DS_Agile_Studio_5.4_Release_Notes_V540_d0.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:19.050111+00:00",
+    "via": "b594d1b84f13b7219ec0",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "2b266c1467068bb5d0c5",
+    "product_id": "ge_multilintm_g500",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-5001-Firmware-3.x-for-G500-A.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:19.054111+00:00",
+    "via": "b594d1b84f13b7219ec0",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "20df66d1a16399527e6d",
+    "product_id": "ge_multilintm_g500",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-5001-Firmware-4.0-4.1-for-G500-A.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:19.058114+00:00",
+    "via": "b594d1b84f13b7219ec0",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "e70159a759543238d0a5",
+    "product_id": "ge_multilintm_g500",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-5001-Firmware-5.0-5.1-for-G500-A.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:19.061112+00:00",
+    "via": "b594d1b84f13b7219ec0",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "2dea3d9bb5a164a18753",
+    "product_id": "ge_multilintm_g500",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4947-Firmware-1.0-for-G500-A.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:19.065113+00:00",
+    "via": "b594d1b84f13b7219ec0",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "df8270488fd447d06f41",
+    "product_id": "ge_multilintm_g500",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/ds-agile/MIS-0114_DS_Agile_Studio_5.3_Release_Notes_V530_R0.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:19.069112+00:00",
+    "via": "b594d1b84f13b7219ec0",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "dd1d2a7a49c4b8aa904f",
+    "product_id": "ge_multilintm_g500",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-06/MIS-0109%20MCP%20Firmware%20Release%20Notes%20V520%20R1.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:19.074111+00:00",
+    "via": "b594d1b84f13b7219ec0",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "d2917eb774ccd490e72a",
+    "product_id": "ge_multilintm_g500",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-06/MIS-0114%20DS%20Agile%20Studio%205.2%20Release%20Notes%20V520%20R2.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:19.078115+00:00",
+    "via": "b594d1b84f13b7219ec0",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "69d5f679d879cbd17a19",
+    "product_id": "ge_capacitor_bank_controller_legacy",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/capacitor-bank-controller-legacy",
+    "depth": 0,
+    "started_at": "2026-10-13T19:19:19.082116+00:00",
+    "final_url": "https://www.gevernova.com/electrification/automation/protection-control-metering/capacitor-bank-controller-legacy",
+    "sha256": "d0b1acac551e24ef4ac88bce4bb80cf8b7193c96c7799322cd39136ec000efce",
+    "bytes": 420238,
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Content-Language": "en",
+      "Date": "Tue, 13 Oct 2026 18:55:42 GMT"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/capacitor-bank-controller-legacy",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T18:55:42.516419+00:00",
+    "reused_from": "C:/Users/Philip/ied_survey_data/runs/census_2026-10-13",
+    "kind": "html",
+    "title": "Multilin Capacitor Bank Controller",
+    "document_hints": [],
+    "text_sha256": "96e9ebad8aed0a630172904aa31feed5adc50fccef7eea508aee43a1edc981f9",
+    "doc_type_suggested": "product_page",
+    "status": "extracted",
+    "links_found": 36,
+    "links_matched": 5,
+    "links_skipped": 1
+  },
+  {
+    "id": "9bf6b1e42f90c5de5a3c",
+    "product_id": "ge_capacitor_bank_controller_legacy",
+    "url": "https://www.gevernova.com/electrification/resources?prod=dgcc&type=3&node_id=4874",
+    "depth": 1,
+    "started_at": "2026-10-13T19:19:19.130389+00:00",
+    "via": "69d5f679d879cbd17a19",
+    "final_url": "https://www.gevernova.com/electrification/document-not-available",
+    "sha256": "5cc1d0ed7f93cb5c0aca5b6477a9cf35b65a6759b4b89fb9b138578a86dfdf6e",
+    "bytes": 374224,
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Content-Language": "en",
+      "Date": "Tue, 13 Oct 2026 19:19:20 GMT"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://www.gevernova.com/electrification/resources?prod=dgcc&type=3&node_id=4874",
+        "status": 302
+      },
+      {
+        "url": "https://www.gevernova.com/electrification/document-not-available",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T19:19:20.703418+00:00",
+    "kind": "html",
+    "title": "Document Not Found | GE Vernova | Electrification",
+    "document_hints": [],
+    "text_sha256": "450d666db6ba39ac6ef3c37809a93bdff79bf0a795b61befa42726318c595491",
+    "doc_type_suggested": "product_page",
+    "status": "extracted",
+    "links_found": 4,
+    "links_matched": 0
+  },
+  {
+    "id": "62fea5559892c6f73f7e",
+    "product_id": "ge_capacitor_bank_controller_legacy",
+    "url": "https://www.gevernova.com/electrification/resources?prod=dgcc&type=1&node_id=4874",
+    "depth": 1,
+    "started_at": "2026-10-13T19:19:20.738272+00:00",
+    "via": "69d5f679d879cbd17a19",
+    "final_url": "https://www.gevernova.com/electrification/document-not-available",
+    "sha256": "5cc1d0ed7f93cb5c0aca5b6477a9cf35b65a6759b4b89fb9b138578a86dfdf6e",
+    "bytes": 374224,
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Content-Language": "en",
+      "Date": "Tue, 13 Oct 2026 19:19:22 GMT"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://www.gevernova.com/electrification/resources?prod=dgcc&type=1&node_id=4874",
+        "status": 302
+      },
+      {
+        "url": "https://www.gevernova.com/electrification/document-not-available",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T19:19:23.006795+00:00",
+    "status": "duplicate",
+    "duplicate_of": "9bf6b1e42f90c5de5a3c"
+  },
+  {
+    "id": "4e4c84a20cb4105421d5",
+    "product_id": "ge_capacitor_bank_controller_legacy",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4820-DGC-Family-%28DGCC-DGCR-DGCS-DGCV%29-A.pdf",
+    "depth": 1,
+    "started_at": "2026-10-13T19:19:23.010799+00:00",
+    "via": "69d5f679d879cbd17a19",
+    "final_url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4820-DGC-Family-%28DGCC-DGCR-DGCS-DGCV%29-A.pdf",
+    "sha256": "b0c4bc9bbcc985f71749d79db5cc9ff264f59595babb9f6b80f7960d970bf5d7",
+    "bytes": 108274,
+    "headers": {
+      "Content-Type": "application/pdf",
+      "Content-Length": "108274",
+      "Last-Modified": "Thu, 11 Dec 2025 08:34:43 GMT",
+      "ETag": "\"1a6f2-645a904432dc8\"",
+      "Date": "Tue, 13 Oct 2026 19:19:24 GMT"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4820-DGC-Family-%28DGCC-DGCR-DGCS-DGCV%29-A.pdf",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T19:19:24.241466+00:00",
+    "kind": "pdf",
+    "pages": 1,
+    "empty_pages": 0,
+    "page_errors": [],
+    "encrypted": false,
+    "pdf_created": "D:20251109101941-05'00'",
+    "pdf_modified": "D:20251109101941-05'00'",
+    "document_hints": [
+      "rom Publication Number: GER-4820 Issued: 28th February 2018 Revision Dates: • 17th October 2025 (Rebranding Revisions) Copyright",
+      "Dates: • 17th October 2025 (Rebranding Revisions) Copyright © 2025 GE Vernova Background GE Vernova Grid Solutions is com"
+    ],
+    "text_sha256": "82360f98fb08bb77d8e52ed132d5b6b835d139b95681334746229630cbe4dfe3",
+    "doc_type_suggested": "",
+    "status": "extracted",
+    "links_found": 0,
+    "links_matched": 0
+  },
+  {
+    "id": "1bc4fe17fe8465d66a99",
+    "product_id": "ge_capacitor_bank_controller_legacy",
+    "url": "https://www.gevernova.com/electrification/resources?prod=dgcc&type=7&node_id=4874",
+    "depth": 1,
+    "started_at": "2026-10-13T19:19:24.273481+00:00",
+    "via": "69d5f679d879cbd17a19",
+    "final_url": "https://www.gevernova.com/electrification/resources?prod=dgcc&type=7&node_id=4874",
+    "sha256": "78dbdb66f35765c5642a089521fadd4aa638fe282d97c84640e7bee5782ab25b",
+    "bytes": 381706,
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Content-Language": "en",
+      "Date": "Tue, 13 Oct 2026 19:19:25 GMT"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://www.gevernova.com/electrification/resources?prod=dgcc&type=7&node_id=4874",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T19:19:25.878135+00:00",
+    "kind": "html",
+    "title": "Resources | GE Vernova | Electrification",
+    "document_hints": [],
+    "text_sha256": "f9cc8adf0c1650d67ae196eaeb70db8d4f83a05df3cff63f561307791ea442a4",
+    "doc_type_suggested": "product_page",
+    "status": "extracted",
+    "links_found": 19,
+    "links_matched": 3,
+    "links_skipped": 1
+  },
+  {
+    "id": "27104bfe186399b14f86",
+    "product_id": "ge_capacitor_bank_controller_legacy",
+    "url": "https://www.gevernova.com/electrification/passport/login?destination=/electrification/resources?prod=dgcc&type=7&node_id=4874",
+    "depth": 2,
+    "via": "1bc4fe17fe8465d66a99",
+    "started_at": "2026-10-13T19:19:25.908141+00:00",
+    "status": "login_required",
+    "link_text": "Download",
+    "error": "link leads to a sign-in page; not requested"
+  },
+  {
+    "id": "116b4407d1b9201b3023",
+    "product_id": "ge_capacitor_bank_controller_legacy",
+    "url": "https://www.gevernova.com/electrification/resources?prod=dgcc&type=9&node_id=4874",
+    "depth": 1,
+    "started_at": "2026-10-13T19:19:25.913143+00:00",
+    "via": "69d5f679d879cbd17a19",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "3423f11180310442d081",
+    "product_id": "ge_capacitor_bank_controller_legacy",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/dgc/ger-4669.pdf",
+    "depth": 2,
+    "started_at": "2026-10-13T19:19:25.916140+00:00",
+    "via": "1bc4fe17fe8465d66a99",
+    "status": "skipped",
+    "error": "page budget reached before this link"
+  },
+  {
+    "id": "605d0097011e66fc5a81",
+    "product_id": "ge_d20200me_substation_controler_legacy",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/d20200me-substation-controler-legacy",
+    "depth": 0,
+    "started_at": "2026-10-13T19:19:25.920648+00:00",
+    "final_url": "https://www.gevernova.com/electrification/automation/protection-control-metering/d20200me-substation-controler-legacy",
+    "sha256": "49251a6c1dafc0d2e536fbab9ca6b08b85a8dec2ed2091cbc2c71c478f7438ad",
+    "bytes": 391895,
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Content-Language": "en",
+      "Date": "Tue, 13 Oct 2026 18:56:04 GMT"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/d20200me-substation-controler-legacy",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T18:56:04.516085+00:00",
+    "reused_from": "C:/Users/Philip/ied_survey_data/runs/census_2026-10-13",
+    "kind": "html",
+    "title": "D20/200ME Substation Controller (legacy)",
+    "document_hints": [],
+    "text_sha256": "9609a0c365191208dda97868712612821ffe1c98ac917780d6fa8446836a49ec",
+    "doc_type_suggested": "product_page",
+    "status": "extracted",
+    "links_found": 35,
+    "links_matched": 7
+  },
+  {
+    "id": "a66cce18c64bf38d072e",
+    "product_id": "ge_d20200me_substation_controler_legacy",
+    "url": "https://www.gevernova.com/electrification/resources?prod=d20&type=3&node_id=4992",
+    "depth": 1,
+    "started_at": "2026-10-13T19:19:25.968546+00:00",
+    "via": "605d0097011e66fc5a81",
+    "final_url": "https://www.gevernova.com/electrification/document-not-available",
+    "sha256": "5cc1d0ed7f93cb5c0aca5b6477a9cf35b65a6759b4b89fb9b138578a86dfdf6e",
+    "bytes": 374224,
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Content-Language": "en",
+      "Date": "Tue, 13 Oct 2026 19:19:27 GMT"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://www.gevernova.com/electrification/resources?prod=d20&type=3&node_id=4992",
+        "status": 302
+      },
+      {
+        "url": "https://www.gevernova.com/electrification/document-not-available",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T19:19:27.755819+00:00",
+    "kind": "html",
+    "title": "Document Not Found | GE Vernova | Electrification",
+    "document_hints": [],
+    "text_sha256": "450d666db6ba39ac6ef3c37809a93bdff79bf0a795b61befa42726318c595491",
+    "doc_type_suggested": "product_page",
+    "status": "extracted",
+    "links_found": 4,
+    "links_matched": 0
+  }
+]

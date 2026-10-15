@@ -1,0 +1,25 @@
+{
+  "tool_version": "1.5.0",
+  "extraction_version": "1.3.0",
+  "finished_at": "2026-10-13T18:54:25.992967+00:00",
+  "config_sha256": "9d11a9010316daf2904917b724239588e9df3a378e9777f6714c8a61f6036e1c",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "script_sha256": "afc16edd220b936beadd4813473a027a4c48cba80ebb22ec008ebe11c4108fb6",
+  "complete": true,
+  "source_count": 8,
+  "candidate_count": 2,
+  "lead_counts": {
+    "capability": 2
+  },
+  "source_status": {
+    "extracted": 6,
+    "login_required": 2
+  },
+  "config_warnings": [
+    "sel_3530: no seeds, so every cell stays unknown",
+    "sel_547: no seeds, so every cell stays unknown",
+    "sel_9l: no seeds, so every cell stays unknown"
+  ],
+  "sampling": "Census of the vendor catalogues: one product page for each of 485 catalogue entries (473 classified, 12 awaiting classification from their own page). Inventory of 2026-10-13; categories and lifecycle come from the vendors' own catalogues and pages.",
+  "only": "^(sel_751|sel_real_time|ge_d400|ge_750|siemens_7sj82|rockwell_micrologix_1400|rockwell_powermonitor_5000|schneider_micom_p14x|schneider_scadapack_57x)"
+}

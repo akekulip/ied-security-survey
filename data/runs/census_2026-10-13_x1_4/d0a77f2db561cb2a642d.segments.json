@@ -1,0 +1,542 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "EPM 9800 Power Quality Meter | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "EPM 9800 - Legacy"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Power Quality Meter"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Contact Us",
+    "heading": "Power Quality Meter"
+  },
+  {
+    "location": "html-block:7",
+    "text": "GE Vernova’s Electrification has discontinued sales of EPM 9800. Please contact us to discuss alternatives.",
+    "heading": "Power Quality Meter"
+  },
+  {
+    "location": "html-block:8",
+    "text": "With the socket type mount design EPM 9800 meter is perfect for industrial and utility substation automation applications where both power quality monitoring and revenue accuracy are required. EPM 9800 provides most accurate analysis of electric power and energy. Using advanced DSP technology meter measures instant and stored revenue power data.",
+    "heading": "Power Quality Meter"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Meter includes all the attributes required for highest level of PQ analysis and communication. From today's utility giants to large industrial users to local electrical municipal, an effective energy management and power-monitoring program is critical for success. The EPM 9800 is an advanced monitoring product, providing the total picture of power usage and power quality for any metered point within a power distribution network allowing users to make power related decisions quickly and effectively. With its web server capability, EPM 9800 can be monitored anytime and from anywhere via the Internet. EPM 9800 is simple to use and easy to set up.",
+    "heading": "Power Quality Meter"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Features & Benefits"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Socket type mounting design with advanced power quality recording with EN50160 Flicker compliance monitoring",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Revenue class .06% Watt/Hr metering with 20 years time of use calendar",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Comprehensive logging & recording capability",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Auto-calibration and temperature change compensation",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Advanced DNP 3.0 implementation",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:16",
+    "text": "High speed waveform recording with programmable 16 to 512 samples per cycle resolution",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Extensive harmonics capability provides a real-time harmonic analysis to the 128th order for every channel. Records THD to the 255th order peak",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Real time phasor analyzer monitors phase angles between the voltage and the currents",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Multiple communication option with 10/100BaseT Ethernet and web capability that for data viewing over the web",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Up to 256 expandable digital and analog I/O modules for analysis and control",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Advanced power quality monitoring",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Revenue class energy and power billing with 0.06% accuracy",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Control of external devices using I/Os",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Alarm and event notification over the web, email, pager or telephone",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:27",
+    "text": "True RMS real-time power and energy parameters reporting",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:28",
+    "text": "4 quadrant, high accuracy revenue metering",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Automatic dial-out for remote data downloads. Dial-In during outage notification",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Comprehensive events and alarms recording using GPS synchronized time stamps",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Historical logs for energy, power events and alarms",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Flicker and waveform recording",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Real-time PQ monitoring and analysis",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:34",
+    "text": "User Interface"
+  },
+  {
+    "location": "html-block:35",
+    "text": "RS 485 communication ports",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Optical port",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Internal Ethernet TCP/IP",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Built-in dial-in and dial-out telephone modems",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Industry leading DNP 3.0 level 2 plus, Modbus RTU and Modbus ASCII",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Multiple analog, digital and relay inputs/outputs",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Programmable LCD display screen",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:43",
+    "text": "EPM Metering Device Family"
+  },
+  {
+    "location": "html-block:44",
+    "text": "EPM 2200"
+  },
+  {
+    "location": "html-block:45",
+    "text": "EPM 9450"
+  },
+  {
+    "location": "html-block:46",
+    "text": "EPM 9650"
+  },
+  {
+    "location": "html-block:47",
+    "text": "PQM"
+  },
+  {
+    "location": "html-block:48",
+    "text": "PQM II"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:50",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:51",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:53",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:57",
+    "text": "EPM Metering Device Family"
+  },
+  {
+    "location": "html-block:58",
+    "text": "EPM 2200"
+  },
+  {
+    "location": "html-block:59",
+    "text": "EPM 9450"
+  },
+  {
+    "location": "html-block:60",
+    "text": "EPM 9650"
+  },
+  {
+    "location": "html-block:61",
+    "text": "PQM"
+  },
+  {
+    "location": "html-block:62",
+    "text": "PQM II"
+  },
+  {
+    "location": "html-block:63",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:64",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:65",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:66",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:67",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:68",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:69",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:70",
+    "text": "EPM 9800 - Legacy"
+  },
+  {
+    "location": "html-block:71",
+    "text": "Power Quality Meter"
+  },
+  {
+    "location": "html-block:72",
+    "text": "Contact Us",
+    "heading": "Power Quality Meter"
+  },
+  {
+    "location": "html-block:73",
+    "text": "GE Vernova’s Electrification has discontinued sales of EPM 9800. Please contact us to discuss alternatives.",
+    "heading": "Power Quality Meter"
+  },
+  {
+    "location": "html-block:74",
+    "text": "With the socket type mount design EPM 9800 meter is perfect for industrial and utility substation automation applications where both power quality monitoring and revenue accuracy are required. EPM 9800 provides most accurate analysis of electric power and energy. Using advanced DSP technology meter measures instant and stored revenue power data.",
+    "heading": "Power Quality Meter"
+  },
+  {
+    "location": "html-block:75",
+    "text": "Meter includes all the attributes required for highest level of PQ analysis and communication. From today's utility giants to large industrial users to local electrical municipal, an effective energy management and power-monitoring program is critical for success. The EPM 9800 is an advanced monitoring product, providing the total picture of power usage and power quality for any metered point within a power distribution network allowing users to make power related decisions quickly and effectively. With its web server capability, EPM 9800 can be monitored anytime and from anywhere via the Internet. EPM 9800 is simple to use and easy to set up.",
+    "heading": "Power Quality Meter"
+  },
+  {
+    "location": "html-block:76",
+    "text": "Features & Benefits"
+  },
+  {
+    "location": "html-block:77",
+    "text": "Socket type mounting design with advanced power quality recording with EN50160 Flicker compliance monitoring",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:78",
+    "text": "Revenue class .06% Watt/Hr metering with 20 years time of use calendar",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:79",
+    "text": "Comprehensive logging & recording capability",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:80",
+    "text": "Auto-calibration and temperature change compensation",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:81",
+    "text": "Advanced DNP 3.0 implementation",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:82",
+    "text": "High speed waveform recording with programmable 16 to 512 samples per cycle resolution",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:83",
+    "text": "Extensive harmonics capability provides a real-time harmonic analysis to the 128th order for every channel. Records THD to the 255th order peak",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:84",
+    "text": "Real time phasor analyzer monitors phase angles between the voltage and the currents",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:85",
+    "text": "Multiple communication option with 10/100BaseT Ethernet and web capability that for data viewing over the web",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:86",
+    "text": "Up to 256 expandable digital and analog I/O modules for analysis and control",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:87",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:88",
+    "text": "Advanced power quality monitoring",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:89",
+    "text": "Revenue class energy and power billing with 0.06% accuracy",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:90",
+    "text": "Control of external devices using I/Os",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:91",
+    "text": "Alarm and event notification over the web, email, pager or telephone",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:92",
+    "text": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:93",
+    "text": "True RMS real-time power and energy parameters reporting",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:94",
+    "text": "4 quadrant, high accuracy revenue metering",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:95",
+    "text": "Automatic dial-out for remote data downloads. Dial-In during outage notification",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:96",
+    "text": "Comprehensive events and alarms recording using GPS synchronized time stamps",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:97",
+    "text": "Historical logs for energy, power events and alarms",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:98",
+    "text": "Flicker and waveform recording",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:99",
+    "text": "Real-time PQ monitoring and analysis",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:100",
+    "text": "User Interface"
+  },
+  {
+    "location": "html-block:101",
+    "text": "RS 485 communication ports",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:102",
+    "text": "Optical port",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:103",
+    "text": "Internal Ethernet TCP/IP",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:104",
+    "text": "Built-in dial-in and dial-out telephone modems",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:105",
+    "text": "Industry leading DNP 3.0 level 2 plus, Modbus RTU and Modbus ASCII",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:106",
+    "text": "Multiple analog, digital and relay inputs/outputs",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:107",
+    "text": "Programmable LCD display screen",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:108",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:109",
+    "text": "PQM II"
+  },
+  {
+    "location": "html-block:110",
+    "text": "The PQM II is an ideal choice when continuous monitoring of a three phase system is...",
+    "heading": "PQM II"
+  },
+  {
+    "location": "html-block:111",
+    "text": "View More",
+    "heading": "PQM II"
+  },
+  {
+    "location": "html-block:112",
+    "text": "EPM"
+  },
+  {
+    "location": "html-block:113",
+    "text": "GE Vernova provides a wide range of high accuracy power quality, power meters and...",
+    "heading": "EPM"
+  },
+  {
+    "location": "html-block:114",
+    "text": "View More",
+    "heading": "EPM"
+  },
+  {
+    "location": "html-block:115",
+    "text": "EPM 7000P"
+  },
+  {
+    "location": "html-block:116",
+    "text": "The Multilin™ EPM 7000P is a versatile power quality meter offering that can be used...",
+    "heading": "EPM 7000P"
+  },
+  {
+    "location": "html-block:117",
+    "text": "View More",
+    "heading": "EPM 7000P"
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "RMIO: Remote Module I/O | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "RMIO: Remote Module I/O"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Remote monitoring of RTDs for metering and protection"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Buy Now",
+    "heading": "Remote monitoring of RTDs for metering and protection"
+  },
+  {
+    "location": "html-block:7",
+    "text": "The Remote I/O Module provides RTD temperature metering capabilities for the Multilin 339 motor protection relay.",
+    "heading": "Remote monitoring of RTDs for metering and protection"
+  },
+  {
+    "location": "html-block:8",
+    "text": "The remote RTD Module provides additional protection for motor applications by monitoring the temperature of key components in the motor. All RTD’s settings are completely configurable via the 339 motor relay and via EnerVista Software.",
+    "heading": "Remote monitoring of RTDs for metering and protection"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Additional RTD temperature metering for the SR 339 motor protection relay",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Designed for close mounting to motor, reducing RTD wiring",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Provides overtemperature protection",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Monitors up to 12 RTD’s",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Individually field programmable RTD’s",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:15",
+    "text": "AC/DC universal power supply",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Connect to the Multilin’s SR 339 motor protection relay for remote RTD protection.",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:18",
+    "text": "The Remote I/O Module monitors up to 12 RTD’s with all metered values accessible via the 339 motor protection relay.",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:20",
+    "text": "The RMIO Remote I/O Module has been designed to be mounted close to the motor to reduce the length of the RTD cables, the costs associated with the cables, and the installation labor. The Remote I/O module can then be connected to a 339 motor Relay via one RS485 cable that can then monitor the RTD’s from a remote location and use this temperature information for protection and metering purposes.",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:21",
+    "text": "CANBUS Protocol",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:22",
+    "text": "12 three-wire shield RTD inputs",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:23",
+    "text": "User configurable RTD programming",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:24",
+    "text": "AC/DC universal power supply",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Diagram"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:27",
+    "text": "339 Motor Protection"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Subscribe",
+    "heading": "Brochures"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:32",
+    "text": "339 Motor Protection"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Subscribe",
+    "heading": "Brochures"
+  },
+  {
+    "location": "html-block:36",
+    "text": "RMIO: Remote Module I/O"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Remote monitoring of RTDs for metering and protection"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Buy Now",
+    "heading": "Remote monitoring of RTDs for metering and protection"
+  },
+  {
+    "location": "html-block:39",
+    "text": "The Remote I/O Module provides RTD temperature metering capabilities for the Multilin 339 motor protection relay.",
+    "heading": "Remote monitoring of RTDs for metering and protection"
+  },
+  {
+    "location": "html-block:40",
+    "text": "The remote RTD Module provides additional protection for motor applications by monitoring the temperature of key components in the motor. All RTD’s settings are completely configurable via the 339 motor relay and via EnerVista Software.",
+    "heading": "Remote monitoring of RTDs for metering and protection"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Additional RTD temperature metering for the SR 339 motor protection relay",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Designed for close mounting to motor, reducing RTD wiring",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Provides overtemperature protection",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Monitors up to 12 RTD’s",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:46",
+    "text": "Individually field programmable RTD’s",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:47",
+    "text": "AC/DC universal power supply",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Connect to the Multilin’s SR 339 motor protection relay for remote RTD protection.",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:50",
+    "text": "The Remote I/O Module monitors up to 12 RTD’s with all metered values accessible via the 339 motor protection relay.",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:51",
+    "text": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:52",
+    "text": "The RMIO Remote I/O Module has been designed to be mounted close to the motor to reduce the length of the RTD cables, the costs associated with the cables, and the installation labor. The Remote I/O module can then be connected to a 339 motor Relay via one RS485 cable that can then monitor the RTD’s from a remote location and use this temperature information for protection and metering purposes.",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:53",
+    "text": "CANBUS Protocol",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:54",
+    "text": "12 three-wire shield RTD inputs",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:55",
+    "text": "User configurable RTD programming",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:56",
+    "text": "AC/DC universal power supply",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Diagram"
+  },
+  {
+    "location": "html-block:58",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:59",
+    "text": "RRTD Remote RTD Module"
+  },
+  {
+    "location": "html-block:60",
+    "text": "The Remote RTD Module provides additional RTD temperature metering capabilities for other...",
+    "heading": "RRTD Remote RTD Module"
+  },
+  {
+    "location": "html-block:61",
+    "text": "View More",
+    "heading": "RRTD Remote RTD Module"
+  }
+]

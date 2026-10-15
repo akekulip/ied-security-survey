@@ -1,0 +1,32 @@
+[
+  {
+    "id": "60a6dd1862abdd1466b5",
+    "product_id": "ge_multilin_d20mx_substation_controller_legacy",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-d20mx-substation-controller-legacy",
+    "depth": 0,
+    "started_at": "2026-10-13T18:55:03.502744+00:00",
+    "final_url": "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-d20mx-substation-controller-legacy",
+    "sha256": "606ea8b8fa2eaeabed88c4174279160200b616ca85254f473e1555dc2da29317",
+    "bytes": 410511,
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Content-Language": "en",
+      "Date": "Tue, 13 Oct 2026 18:55:05 GMT"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-d20mx-substation-controller-legacy",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T18:55:06.005947+00:00",
+    "kind": "html",
+    "title": "Multilin D20MX - Advanced Substation Automation Controller",
+    "document_hints": [],
+    "text_sha256": "5b53e38b4b34fd0eb77f8387546d00a6cbd7cf97aac8e99d9a0b5192e42e4681",
+    "doc_type_suggested": "product_page",
+    "status": "extracted",
+    "links_found": 52
+  }
+]

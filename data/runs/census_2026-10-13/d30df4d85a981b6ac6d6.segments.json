@@ -1,0 +1,121 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "SIMATIC Distributed Controllers - ET 200 CPUs | Siemens"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Why Distributed Controller?"
+  },
+  {
+    "location": "html-block:4",
+    "text": "Distributed Controllers are used for machines with a distributed architecture and for series machines with limited space available. By relocating intelligence to individual stations, you can fix faults without the plant grinding to a standstill, increasing availability. They combine the advantages of a SIMATIC S7-1500 with the design of a SIMATIC ET 200 IO system.",
+    "heading": "Why Distributed Controller?"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Distributed Controllers can be mounted directly on the machine in small control boxes or, in the case of the ET 200pro, without them. In networked plants, connection to a production line's central control cabinet is realized via PROFINET. Moving data from the central control cabinet to Distributed Controllers on the individual stations improves overall availability.",
+    "heading": "Why Distributed Controller?"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Our Distributed Controllers include:",
+    "heading": "Why Distributed Controller?"
+  },
+  {
+    "location": "html-block:7",
+    "text": "SIMATIC ET 200SP Open Controller",
+    "heading": "Why Distributed Controller?"
+  },
+  {
+    "location": "html-block:8",
+    "text": "SIMATIC ET 200SP CPUs",
+    "heading": "Why Distributed Controller?"
+  },
+  {
+    "location": "html-block:9",
+    "text": "SIMATIC ET 200pro CPUs",
+    "heading": "Why Distributed Controller?"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Key benefits"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Improve performance"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Process commands fast. Experience high-performance network connection via PROFINET IO IRT and transfer internal data with up to 100 Mbps. Easily record analog values and output as of 50 µs and digital values and output as of 1 µs.",
+    "heading": "Improve performance"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Maintain connectivity"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Ensure reliable and rapid data exchange with Open Ethernet communication (TCP/IP, UDP, ISO-on-TCP), and communicate effectively via PROFINET, PROFIBUS, IO-Link, Modbus RTU, Modbus TCP, PtP, ASCII, 3964R and USS.",
+    "heading": "Maintain connectivity"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Scale your operations"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Independent of the environment, each Distributed Controller can be extended by a bunch of directly connectable modules, standard and failsafe, digital and analog inputs/outputs, motos starters, communication and technology.",
+    "heading": "Scale your operations"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Featured capabilities"
+  },
+  {
+    "location": "html-block:18",
+    "text": "all",
+    "heading": "Featured capabilities"
+  },
+  {
+    "location": "html-block:19",
+    "text": "SIMATIC ET 200SP Open Controller"
+  },
+  {
+    "location": "html-block:20",
+    "text": "The SIMATIC ET 200SP Open Controller is the first controller of its kind to combine the functions of a PC-based SIMATIC S7-1500 software controller with PC applications, central I/Os and optional visualization in a compact device.",
+    "heading": "SIMATIC ET 200SP Open Controller"
+  },
+  {
+    "location": "html-block:21",
+    "text": "all",
+    "heading": "SIMATIC ET 200SP Open Controller"
+  },
+  {
+    "location": "html-block:22",
+    "text": "SIMATIC ET 200SP CPUs"
+  },
+  {
+    "location": "html-block:23",
+    "text": "The compact distributed controllers ET 200SP CPUs are the perfect solution for standard and fail-safe applications, especially for machines with distributed intelligence or series machines with limited space.",
+    "heading": "SIMATIC ET 200SP CPUs"
+  },
+  {
+    "location": "html-block:24",
+    "text": "all",
+    "heading": "SIMATIC ET 200SP CPUs"
+  },
+  {
+    "location": "html-block:25",
+    "text": "SIMATIC ET 200pro CPUs"
+  },
+  {
+    "location": "html-block:26",
+    "text": "For use cases outside a cabinet (IP 65/67) the SIMATIC ET 200pro system is perfectly suited. Available as standard and failsafe controllers this system can be mounted directly at the machine level e.g. a conveyer belt rack.",
+    "heading": "SIMATIC ET 200pro CPUs"
+  }
+]

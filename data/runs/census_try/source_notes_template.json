@@ -1,0 +1,90 @@
+[
+  {
+    "source_id": "3098f176245ccc4c4955",
+    "product_id": "siemens_7sj82",
+    "url": "https://www.siemens.com/en-us/products/siprotec/7sj82/",
+    "title": "Overcurrent and feeder protection – SIPROTEC 7SJ82 | Siemens",
+    "document_hints": [],
+    "doc_type_suggested": "product_page",
+    "doc_type": "",
+    "coverage": "",
+    "document_id": "",
+    "revision": "",
+    "document_date": "",
+    "note": ""
+  },
+  {
+    "source_id": "9c4adaf6d92e22cac14e",
+    "product_id": "rockwell_powermonitor_5000",
+    "url": "https://www.rockwellautomation.com/en-us/products/hardware/energy-monitoring/1426-powermonitor-5000.html",
+    "title": "1426 PowerMonitor 5000 | Rockwell Automation | US",
+    "document_hints": [
+      "PowerMonitor 5000 Unit Firmware Revision Update Installation | 1426-IN004_-EN-P"
+    ],
+    "doc_type_suggested": "product_page",
+    "doc_type": "",
+    "coverage": "",
+    "document_id": "",
+    "revision": "",
+    "document_date": "",
+    "note": ""
+  },
+  {
+    "source_id": "27824ecea2d973349d58",
+    "product_id": "rockwell_micrologix_1400_controllers",
+    "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/micrologix-1400-controllers.html",
+    "title": "MicroLogix 1400 Controllers | Rockwell Automation | US",
+    "document_hints": [],
+    "doc_type_suggested": "product_page",
+    "doc_type": "",
+    "coverage": "",
+    "document_id": "",
+    "revision": "",
+    "document_date": "",
+    "note": ""
+  },
+  {
+    "source_id": "07fd87b03f6fc8d22de6",
+    "product_id": "schneider_micom_p14x",
+    "url": "https://www.se.com/us/en/product-range/60765-micom-p14x/",
+    "title": "MiCOM P14x | Schneider Electric USA",
+    "document_hints": [],
+    "doc_type_suggested": "product_page",
+    "doc_type": "",
+    "coverage": "",
+    "document_id": "",
+    "revision": "",
+    "document_date": "",
+    "note": ""
+  },
+  {
+    "source_id": "475bb2a1b6fe856b41b4",
+    "product_id": "schneider_scadapack_57x",
+    "url": "https://www.se.com/us/en/product-range/66030-scadapack-57x/",
+    "title": "SCADAPack 57x | Schneider Electric USA",
+    "document_hints": [],
+    "doc_type_suggested": "product_page",
+    "doc_type": "",
+    "coverage": "",
+    "document_id": "",
+    "revision": "",
+    "document_date": "",
+    "note": ""
+  },
+  {
+    "source_id": "33a586afe4d5cbbcb977",
+    "product_id": "sel_real_time_automation_controller_rtac",
+    "url": "https://selinc.com/api/download/111397/",
+    "title": "",
+    "document_hints": [
+      "© 2026 by Schweitzer Engineering Laboratories, Inc. PF00328 ·"
+    ],
+    "doc_type_suggested": "",
+    "doc_type": "",
+    "coverage": "",
+    "document_id": "",
+    "revision": "",
+    "document_date": "",
+    "note": ""
+  }
+]

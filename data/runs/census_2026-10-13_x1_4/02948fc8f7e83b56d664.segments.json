@@ -1,0 +1,221 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "SIMATIC Advanced Controller | Siemens"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "SIMATIC Advanced Controller"
+  },
+  {
+    "location": "html-block:4",
+    "text": "Whether you need compact controller solutions with integrated functions, a powerful controller for the toughest demands, or controllers for distributed architecture, PC-based automation systems or even as virtualized Industrial Edge app: our portfolio has the right PLC for your requirements.",
+    "heading": "SIMATIC Advanced Controller"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Explore productsContact us",
+    "heading": "SIMATIC Advanced Controller"
+  },
+  {
+    "location": "html-block:6",
+    "text": "SIMATIC Advanced Controller System"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Using SIMATIC S7 controller gives you top performance and built-in viability into the future. You can turn the most sophisticated machine designs into reality thanks to the modular structure of the controller, which provides reliable assistance as you work your way through digital transformation.",
+    "heading": "SIMATIC Advanced Controller System"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Ten years ago, we achieved a better way of meeting your needs. We want to celebrate this anniversary! Take a look back with us at the highlights and challenges of the last years. Find out how your requirements keep inspiring us to come up with new innovations and take a look into the future with us.",
+    "heading": "SIMATIC Advanced Controller System"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Why SIMATIC Advanced Controller?",
+    "heading": "SIMATIC Advanced Controller System"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Smart solution for every automation requirement"
+  },
+  {
+    "location": "html-block:11",
+    "text": "With SIMATIC Advanced Controller, you can turn the most sophisticated machine designs into reality thanks to the modular structure of the controller, which provides reliable assistance as you work your way through the digital transformation.",
+    "heading": "Smart solution for every automation requirement"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Scalable and adaptable"
+  },
+  {
+    "location": "html-block:13",
+    "text": "The modular SIMATIC S7-1500 controller offers scalable functionality, letting you adapt assemblies and functions to your machine design. Its modules are IP20-approved and designed for control cabinet installation.",
+    "heading": "Scalable and adaptable"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Precise and fast"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Achieve top performance and productivity with SIMATIC S7-1500 – featuring a fast backplane bus, PROFINET with deterministic µs -precision, shortest reaction times, and CPU command processing in as little as ⅓ ns.",
+    "heading": "Precise and fast"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Reliable and customizable"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Reliability is key to your productivity and cost-effectiveness. With reliable components you avoid downtime. In addition you benefit from customized solutions for harsh environments, extreme temperatures and special conditions.",
+    "heading": "Reliable and customizable"
+  },
+  {
+    "location": "html-block:18",
+    "text": "all",
+    "heading": "Reliable and customizable"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Modular Controller"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Modular SIMATIC S7-1500 offers scalable functionality with multiple CPU performance classes, I/O, technology and communication modules for centralized or distributed setups. IP20-rated for control cabinet installation.",
+    "heading": "Modular Controller"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Learn more >",
+    "heading": "Modular Controller"
+  },
+  {
+    "location": "html-block:22",
+    "text": "all",
+    "heading": "Modular Controller"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Distributed Controller"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Distributed Controllers combine SIMATIC S7-1500 performance with ET 200 design. Distributed intelligence improves availability, supports compact machine installations, and connects to central control cabinets via PROFINET.",
+    "heading": "Distributed Controller"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Learn more >",
+    "heading": "Distributed Controller"
+  },
+  {
+    "location": "html-block:26",
+    "text": "all",
+    "heading": "Distributed Controller"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Software Controller"
+  },
+  {
+    "location": "html-block:28",
+    "text": "SIMATIC S7-1500 Software Controllers combine PLC reliability with PC flexibility. Available in standard and fail-safe versions, they are OS-independent, support C++ integration, scale as needed, and ensure high availability.",
+    "heading": "Software Controller"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Learn more >",
+    "heading": "Software Controller"
+  },
+  {
+    "location": "html-block:30",
+    "text": "all",
+    "heading": "Software Controller"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Technology Controller"
+  },
+  {
+    "location": "html-block:32",
+    "text": "SIMATIC S7-1500 T-CPUs automate Advanced Motion Control applications with dynamic and precise synchronized multi-axis systems and kinematics. Available in modular, distributed, drive-integrated or PC-based designs.",
+    "heading": "Technology Controller"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Learn more >",
+    "heading": "Technology Controller"
+  },
+  {
+    "location": "html-block:34",
+    "text": "all",
+    "heading": "Technology Controller"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Redundant Controller"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Redundant SIMATIC S7-1500 R/H CPUs maximize availability with synchronized backup controllers. Integrated redundancy prevents data loss and downtime while simplifying engineering and maintenance, even in distributed plants.",
+    "heading": "Redundant Controller"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Learn more >",
+    "heading": "Redundant Controller"
+  },
+  {
+    "location": "html-block:38",
+    "text": "all",
+    "heading": "Redundant Controller"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Legacy Controller"
+  },
+  {
+    "location": "html-block:40",
+    "text": "SIMATIC S7-300 and S7-400 controllers are proven PLCs for factory and process automation. Used worldwide in millions of applications, they provide continuity, reliability, and long-term investment protection.",
+    "heading": "Legacy Controller"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Learn more >",
+    "heading": "Legacy Controller"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Virtual PLC",
+    "heading": "Legacy Controller"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Bring SIMATIC S7-1500 power to Industrial Edge"
+  },
+  {
+    "location": "html-block:44",
+    "text": "SIMATIC S7-1500V is a fully virtual PLC based on the familiar functionality and operation of the SIMATIC S7-1500, while being completely hardware-independent. Available as an Edge app, it integrates directly into IT environments and supports digitalization initiatives. The virtual controller enables more flexible, modular production plant designs and helps create highly adaptable manufacturing processes.",
+    "heading": "Bring SIMATIC S7-1500 power to Industrial Edge"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Learn more",
+    "heading": "Bring SIMATIC S7-1500 power to Industrial Edge"
+  },
+  {
+    "location": "html-block:46",
+    "text": "Discover the possibilities"
+  },
+  {
+    "location": "html-block:47",
+    "text": "Explore products",
+    "heading": "Discover the possibilities"
+  }
+]

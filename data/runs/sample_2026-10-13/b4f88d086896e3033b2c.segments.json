@@ -1,0 +1,157 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "Bay controller – SIPROTEC 6MD85 | Siemens"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Why SIPROTEC 6MD85?"
+  },
+  {
+    "location": "html-block:4",
+    "text": "The SIPROTEC 6MD85 bay controller is a modular bay controller for medium voltage up to high voltage switchgear with integrated operation and extensive protection functions.",
+    "heading": "Why SIPROTEC 6MD85?"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Part of the SIPROTEC 5 family, it supports numerous protection functions as well as synchro check and PMU from the SIPROTEC library and allows application-specific IO integration. Select from pre-defined standard variants or configure the device exactly tailored to your requirements.",
+    "heading": "Why SIPROTEC 6MD85?"
+  },
+  {
+    "location": "html-block:6",
+    "text": "DIGSI 5 application templates provide ready-to-use configurations for standard applications, switchgear interlocking and extended control.",
+    "heading": "Why SIPROTEC 6MD85?"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Key benefits"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Ensure safe and reliable automation"
+  },
+  {
+    "location": "html-block:9",
+    "text": "The SIPROTEC 6MD85 provides integrated bay control with versatile protection functions, enabling dependable operation and automation of medium- to high-voltage systems.",
+    "heading": "Ensure safe and reliable automation"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Simplify device handling and configuration"
+  },
+  {
+    "location": "html-block:11",
+    "text": "DIGSI 5 allows all functions to be configured and combined as required, and the modular design makes it easy to adapt IOs to your application. User-friendly operation and software design streamline commissioning and everyday use.",
+    "heading": "Simplify device handling and configuration"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Maintain cybersecurity and high availability"
+  },
+  {
+    "location": "html-block:13",
+    "text": "6MD85 meets cybersecurity standards with role-based access control, signed firmware, authenticated network access and secure event logging. Conformal coating ensures reliable operation even under extreme environmental conditions.",
+    "heading": "Maintain cybersecurity and high availability"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Featured capabilities"
+  },
+  {
+    "location": "html-block:15",
+    "text": "all",
+    "heading": "Featured capabilities"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Flexible inputs and outputs"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Offers five predefined standard variants with 4 current transformers, 4 voltage transformers, 11 to 75 binary inputs, and 9 to 41 binary outputs. Adapt to your needs when required by adding IO-modules from the SIPROTEC 5 library.",
+    "heading": "Flexible inputs and outputs"
+  },
+  {
+    "location": "html-block:18",
+    "text": "all",
+    "heading": "Flexible inputs and outputs"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Integrated communication protocols"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Supports up to 4 pluggable communication modules for different and redundant protocols including IEC 61850-8-1 and IEC 61850-9-2 Client. Enables secure serial protection data communication across long distances and physical media.",
+    "heading": "Integrated communication protocols"
+  },
+  {
+    "location": "html-block:21",
+    "text": "all",
+    "heading": "Integrated communication protocols"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Advanced automation and monitoring"
+  },
+  {
+    "location": "html-block:23",
+    "text": "This device offers a graphical logic editor, integrated Ethernet for DIGSI 5 & IEC 61850, a PMU with IEEE C37.118, fault recording, arc suppression coil control, auto voltage control, and auxiliary test functions.",
+    "heading": "Advanced automation and monitoring"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Explore resources (in English)"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Downloads"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Profile SIPROTEC 6MD85",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Profile SIPROTEC 5 - conformal coating",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Brochure SIPROTEC 5",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Tender specifications",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Configuration"
+  },
+  {
+    "location": "html-block:31",
+    "text": "SIPROTEC 5 configurator",
+    "heading": "Configuration"
+  },
+  {
+    "location": "html-block:32",
+    "text": "SiePortal - Online Shop"
+  },
+  {
+    "location": "html-block:33",
+    "text": "SIPROTEC 6MD85 on SiePortal",
+    "heading": "SiePortal - Online Shop"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Technical documentation, Firmware, Software application examples and FAQ",
+    "heading": "SiePortal - Online Shop"
+  }
+]

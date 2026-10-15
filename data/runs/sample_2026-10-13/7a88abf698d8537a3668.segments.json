@@ -1,0 +1,188 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "SIMATIC S7-1500 PLC – High-Performance Controller | Siemens"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Why SIMATIC S7-1500?"
+  },
+  {
+    "location": "html-block:4",
+    "text": "With the SIMATIC S7-1500 controller, you can turn the most sophisticated machine designs into reality thanks to the modular structure of the controller, which provides reliable assistance as you work your way through the digital transformation.",
+    "heading": "Why SIMATIC S7-1500?"
+  },
+  {
+    "location": "html-block:5",
+    "text": "The functionality of SIMATIC S7-1500 is fully scalable. Various CPU versions are available, each in several performance classes. A wide variety of signal modules for input and output as well as technology modules for special technological functions, such as counting and communication modules, are available for central or distributed configurations and interfaces to the machine or plant. The SIMATIC S7-1500 system is approved for IP20 degree of protection and is intended for installation in a control cabinet.",
+    "heading": "Why SIMATIC S7-1500?"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Key benefits"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Maximize performance"
+  },
+  {
+    "location": "html-block:8",
+    "text": "SIMATIC is engineered for high-performance automation, fast processing, integrated motion control, and streamlined engineering. This ensures enhanced productivity and optimized machine performance across various applications.",
+    "heading": "Maximize performance"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Expand flexibly"
+  },
+  {
+    "location": "html-block:10",
+    "text": "The modularity of SIMATIC S7-1500 is a core aspect, allowing users to build highly customized and scalable automation solutions such as CPUs, power supplies, signal modules, technology modules and communication modules.",
+    "heading": "Expand flexibly"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Future-proof your solutions"
+  },
+  {
+    "location": "html-block:12",
+    "text": "SIMATIC S7-1500 with its execution performance is a powerful automation platform with standardized OPC UA communication. With Siemens’ EcoTech profile of our products we support customers to achieve their sustainability goals.",
+    "heading": "Future-proof your solutions"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Featured capabilities"
+  },
+  {
+    "location": "html-block:14",
+    "text": "all",
+    "heading": "Featured capabilities"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Motion Control integrated"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Every SIMATIC S7-1500 CPU supports motion control functions. Technology CPUs provide additional functions such as extended gear synchronization, cyclic cams, graphically supported and handling system for kinematics and portals.",
+    "heading": "Motion Control integrated"
+  },
+  {
+    "location": "html-block:17",
+    "text": "all",
+    "heading": "Motion Control integrated"
+  },
+  {
+    "location": "html-block:18",
+    "text": "The heart of the controller system"
+  },
+  {
+    "location": "html-block:19",
+    "text": "The central processing units are the heart of the SIMATIC S7-1500 PLC. They execute the user program and network the controller with other automation components to deliver the ultimate plus in productivity and efficiency.",
+    "heading": "The heart of the controller system"
+  },
+  {
+    "location": "html-block:20",
+    "text": "all",
+    "heading": "The heart of the controller system"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Flexible and performant communication"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Interfaces for communication via PROFINET are integrated into the CPUs. Additional communication modules increase communication and security capabilities. They allow complex automation structures or connectivity to SCADA systems.",
+    "heading": "Flexible and performant communication"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Frequently asked questions"
+  },
+  {
+    "location": "html-block:24",
+    "text": "What is SIMATIC S7-1500 used for?"
+  },
+  {
+    "location": "html-block:25",
+    "text": "SIMATIC S7-1500 is a high-performance programmable logic controller (PLC) used to automate complex industrial processes and machines with fast processing and precise control.",
+    "heading": "What is SIMATIC S7-1500 used for?"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Is SIMATIC S7-1500 integrated in TIA Portal?"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Yes. SIMATIC S7-1500 integrates fully with TIA Portal for consistent configuration, programming, diagnostics, and maintenance.",
+    "heading": "Is SIMATIC S7-1500 integrated in TIA Portal?"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Which communication protocols are supported by SIMATIC S7-1500?"
+  },
+  {
+    "location": "html-block:29",
+    "text": "SIMATIC S7-1500 supports modern industrial communication including PROFINET, Industrial Ethernet, and OPC UA for seamless connectivity.",
+    "heading": "Which communication protocols are supported by SIMATIC S7-1500?"
+  },
+  {
+    "location": "html-block:30",
+    "text": "How can i use the web functionality of SIMATIC S7-1500 efficiently?"
+  },
+  {
+    "location": "html-block:31",
+    "text": "You can configure an intuitive web visualization quickly in STEP 7 professional (TIA Portal) and deploy the pages without coding or additional hardware.",
+    "heading": "How can i use the web functionality of SIMATIC S7-1500 efficiently?"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Learn more",
+    "heading": "How can i use the web functionality of SIMATIC S7-1500 efficiently?"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Explore resources"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Product overview & details"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Download | Product overview",
+    "heading": "Product overview & details"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Catalog ST 70 | Products for TIA – SIMATIC",
+    "heading": "Product overview & details"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Manuals | SIMATIC S7-1500 and SIMATIC ET 200MP I/O system",
+    "heading": "Product overview & details"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Tender specifications | SIMATIC S7-1500",
+    "heading": "Product overview & details"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Images, Graphics, CAx data"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Image database | Product photos and dimension drawings SIMATIC S7-1500",
+    "heading": "Images, Graphics, CAx data"
+  },
+  {
+    "location": "html-block:41",
+    "text": "CAx Download Manager | CAx data",
+    "heading": "Images, Graphics, CAx data"
+  }
+]

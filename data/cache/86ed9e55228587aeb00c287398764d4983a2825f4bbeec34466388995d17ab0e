@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <script>
+(function () {
+  var useUnifiedScroll = false;
+  var source = 'build';
+  window.disw = window.disw || {};
+  window.disw.pageScroll = window.disw.pageScroll || {};
+  window.disw.pageScroll.config = Object.freeze({ useUnifiedScroll: useUnifiedScroll, source: source });
+  document.documentElement.setAttribute('data-unified-scroll', String(useUnifiedScroll));
+}());
+</script>
+        
+        
+        <link rel="preconnect" href="https://static.sw.cdn.siemens.com" /><link rel="dns-prefetch" href="https://static.sw.cdn.siemens.com" /><link rel="preconnect" href="https://images.sw.cdn.siemens.com/" /><link rel="dns-prefetch" href="https://images.sw.cdn.siemens.com/" /><link rel="icon" type="image/svg+xml" href="/img/favicon.svg" /><link rel="alternate icon" href="/img/favicon.ico" /><link rel="stylesheet" href="/shared-assets/1f5459c4589ce8f899743c2f1031e839981f40d9/styles.css" /><link rel="canonical" href="https://www.siemens.com/en-us/products/simatic/advanced-controller/" /><link rel="alternate" href="https://www.siemens.com/bg-bg/products/simatic/advanced-controller/" hreflang="bg-BG" /><link rel="alternate" href="https://www.siemens.com/cs-cz/products/simatic/advanced-controller/" hreflang="cs-CZ" /><link rel="alternate" href="https://www.siemens.com/da-dk/products/simatic/advanced-controller/" hreflang="da-DK" /><link rel="alternate" href="https://www.siemens.com/de-ch/products/simatic/advanced-controller/" hreflang="de-CH" /><link rel="alternate" href="https://www.siemens.com/de-de/products/simatic/advanced-controller/" hreflang="de-DE" /><link rel="alternate" href="https://www.siemens.com/el-gr/products/simatic/advanced-controller/" hreflang="el-GR" /><link rel="alternate" href="https://www.siemens.com/en-gb/products/simatic/advanced-controller/" hreflang="en-GB" /><link rel="alternate" href="https://www.siemens.com/en-us/products/simatic/advanced-controller/" hreflang="en-US" /><link rel="alternate" href="https://www.siemens.com/es-es/products/simatic/advanced-controller/" hreflang="es-ES" /><link rel="alternate" href="https://www.siemens.com/es-mx/products/simatic/advanced-controller/" hreflang="es-MX" /><link rel="alternate" href="https://www.siemens.com/et-ee/products/simatic/advanced-controller/" hreflang="et-EE" /><link rel="alternate" href="https://www.siemens.com/fi-fi/products/simatic/advanced-controller/" hreflang="fi-FI" /><link rel="alternate" href="https://www.siemens.com/fr-ca/products/simatic/advanced-controller/" hreflang="fr-CA" /><link rel="alternate" href="https://www.siemens.com/fr-fr/products/simatic/advanced-controller/" hreflang="fr-FR" /><link rel="alternate" href="https://www.siemens.com/hr-hr/products/simatic/advanced-controller/" hreflang="hr-HR" /><link rel="alternate" href="https://www.siemens.com/hu-hu/products/simatic/advanced-controller/" hreflang="hu-HU" /><link rel="alternate" href="https://www.siemens.com/it-it/products/simatic/advanced-controller/" hreflang="it-IT" /><link rel="alternate" href="https://www.siemens.com/ja-jp/products/simatic/advanced-controller/" hreflang="ja-JP" /><link rel="alternate" href="https://www.siemens.com/ko-kr/products/simatic/advanced-controller/" hreflang="ko-KR" /><link rel="alternate" href="https://www.siemens.com/lt-lt/products/simatic/advanced-controller/" hreflang="lt-LT" /><link rel="alternate" href="https://www.siemens.com/lv-lv/products/simatic/advanced-controller/" hreflang="lv-LV" /><link rel="alternate" href="https://www.siemens.com/nl-nl/products/simatic/advanced-controller/" hreflang="nl-NL" /><link rel="alternate" href="https://www.siemens.com/no-no/products/simatic/advanced-controller/" hreflang="no-NO" /><link rel="alternate" href="https://www.siemens.com/pl-pl/products/simatic/advanced-controller/" hreflang="pl-PL" /><link rel="alternate" href="https://www.siemens.com/pt-br/products/simatic/advanced-controller/" hreflang="pt-BR" /><link rel="alternate" href="https://www.siemens.com/pt-pt/products/simatic/advanced-controller/" hreflang="pt-PT" /><link rel="alternate" href="https://www.siemens.com/ro-ro/products/simatic/advanced-controller/" hreflang="ro-RO" /><link rel="alternate" href="https://www.siemens.com/ru-ru/products/simatic/advanced-controller/" hreflang="ru-RU" /><link rel="alternate" href="https://www.siemens.com/sk-sk/products/simatic/advanced-controller/" hreflang="sk-SK" /><link rel="alternate" href="https://www.siemens.com/sl-si/products/simatic/advanced-controller/" hreflang="sl-SI" /><link rel="alternate" href="https://www.siemens.com/sr-rs/products/simatic/advanced-controller/" hreflang="sr-RS" /><link rel="alternate" href="https://www.siemens.com/sv-se/products/simatic/advanced-controller/" hreflang="sv-SE" /><link rel="alternate" href="https://www.siemens.com/th-th/products/simatic/advanced-controller/" hreflang="th-TH" /><link rel="alternate" href="https://www.siemens.com/tr-tr/products/simatic/advanced-controller/" hreflang="tr-TR" /><link rel="alternate" href="https://www.siemens.com/uk-ua/products/simatic/advanced-controller/" hreflang="uk-UA" /><link rel="alternate" href="https://www.siemens.com/vi-vn/products/simatic/advanced-controller/" hreflang="vi-VN" /><link rel="alternate" href="https://www.siemens.com/zh-cn/products/simatic/advanced-controller/" hreflang="zh-CN" /><link rel="alternate" href="https://www.siemens.com/zh-tw/products/simatic/advanced-controller/" hreflang="zh-TW" /><link rel="alternate" href="https://www.siemens.com/en-us/products/simatic/advanced-controller/" hreflang="x-default" /><meta charSet="utf-8" /><meta http-equiv="x-ua-compatible" content="ie=edge" /><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /><meta name="description" content="SIMATIC Advanced Controller from Siemens enable machine builders to quickly and optimally implement innovative automation concepts for any industry. "><meta property="og:type" content="website"><meta property="og:url" content="https://www.siemens.com/en-us/products/simatic/advanced-controller/"><meta property="og:locale" content="en-US"><meta property="og:title" content="SIMATIC Advanced Controller | Siemens"><meta property="og:description" content="SIMATIC Advanced Controller from Siemens enable machine builders to quickly and optimally implement innovative automation concepts for any industry."><meta property="og:site_name" content="Siemens"><meta property="og:image" content="https://assets.new.siemens.com/dam-asset/441a2fd5-7627-4a2a-accb-08e0d34be0e2/S7-1500-Familienbild-deepblue-sRGB.JPG?auto=format%2Ccompress&w=1200&h=630&fit=crop&crop=faces%2Cedges&q=60"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="Siemens"><meta name="twitter:title" content="SIMATIC Advanced Controller | Siemens"><meta name="twitter:description" content="SIMATIC Advanced Controller from Siemens enable machine builders to quickly and optimally implement innovative automation concepts for any industry."><meta name="twitter:image" content="https://assets.new.siemens.com/dam-asset/441a2fd5-7627-4a2a-accb-08e0d34be0e2/S7-1500-Familienbild-deepblue-sRGB.JPG?auto=format%2Ccompress&w=1200&h=600&fit=crop&crop=faces%2Cedges&q=60"><meta name="twitter:creator" content="@siemens.com"><title>SIMATIC Advanced Controller | Siemens</title><meta name="division" content="DI FA">
+
+        <!-- link rel="preload" href="/css/disw.css" as="style" type="text/css"/ -->
+        <link rel="preload" href="https://static.sw.cdn.siemens.com/digitalexperiences/search/1.x/searchHeaderVital.css" as="style" type="text/css"/>
+        <link rel="modulepreload" href="https://static.sw.cdn.siemens.com/xd/universal-components/1.x/web/index.js">
+        <link rel="preload" href="https://static.sw.cdn.siemens.com/xd/xd-utils/1.x/xd-utils.min.js" as="script" type="text/javascript" />
+
+        <link rel='stylesheet' type="text/css" href='https://static.sw.cdn.siemens.com/digitalexperiences/search/1.x/searchHeaderVital.css'/>
+        <link rel="stylesheet" href="/css/styles.css"/>
+        <!-- Search Header Styles -->
+        <!-- Load the universal components module -->  
+        <script src="https://static.sw.cdn.siemens.com/xd/xd-utils/1.x/xd-utils.min.js"></script>
+        <script>  
+            window.disw.init({
+                features: {
+                    apiUrl: 'https://api.sw.siemens.com/ecbe/feature-flags',
+                    env: 'prod'
+                },
+                account: { authEnv: 'prod' },
+                locales: "bg-BG,cs-CZ,da-DK,de-CH,de-DE,el-GR,en-GB,en-US,es-ES,es-MX,et-EE,fi-FI,fr-CA,fr-FR,hr-HR,hu-HU,it-IT,ja-JP,ko-KR,lt-LT,lv-LV,nl-NL,no-NO,pl-PL,pt-BR,pt-PT,ro-RO,ru-RU,sk-SK,sl-SI,sr-Latn-RS,sv-SE,th-TH,tr-TR,uk-UA,vi-VN,zh-CN,zh-TW".split(","),
+                mtm: {
+                    containerId: 'UFefytkf', 
+                    pageId: '4MFHJ5yUbuKzUpEtcsWTob',
+                    
+                },
+                country: { env: 'prod' }, 
+                cart: { 
+                    env: 'prod',
+                    checkout: { enabled: 'true' }, 
+                },
+                chat: { env: 'prod', pageId: '4MFHJ5yUbuKzUpEtcsWTob'},
+                localizations: {env: 'prod' },
+                context: {
+                  pageId: '4MFHJ5yUbuKzUpEtcsWTob',
+                  site:'one',
+                  slug:'',
+                }
+            });
+        </script>
+        <script>
+(function () {
+  var useUnifiedScroll = false;
+  var source = 'build';
+  window.disw = window.disw || {};
+  window.disw.pageScroll = window.disw.pageScroll || {};
+  window.disw.pageScroll.config = Object.freeze({ useUnifiedScroll: useUnifiedScroll, source: source });
+  document.documentElement.setAttribute('data-unified-scroll', String(useUnifiedScroll));
+}());
+</script>
+
+        <script src="https://static.sw.cdn.siemens.com/xd/universal-components/1.x/web/index.js"></script>
+        
+
+        
+        
+        <script type="module">window.universalComponents.init(["header-xd-v1","footer-xd-v1","disw-video","disw-live-chat"]);</script>
+
+        
+
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "SIMATIC Advanced Controller",
+        "url": "https://www.siemens.com/en-us/products/simatic/advanced-controller/",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "item": {
+                            "name": "",
+                            "@id": "https://www.siemens.com/en-us/"
+                        }
+                    },
+                
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "item": {
+                            "name": "Products",
+                            "@id": "https://www.siemens.com/en-us/products/"
+                        }
+                    },
+                
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "item": {
+                            "name": "SIMATIC Automation",
+                            "@id": "https://www.siemens.com/en-us/products/simatic/"
+                        }
+                    },
+                
+                    {
+                        "@type": "ListItem",
+                        "position": 4,
+                        "item": {
+                            "name": "SIMATIC Advanced Controller",
+                            "@id": "https://www.siemens.com/en-us/products/simatic/advanced-controller/"
+                        }
+                    }
+                
+            ]
+        },
+        "producer": {
+            "@type": "Organization",
+            "name": "Siemens"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Siemens"
+        },
+        
+        "maintainer": {
+            "@type": "Organization",
+            "name": "Siemens",
+            "department": [
+                
+                {"@type": "Organization", "name": "DI FA"}
+                
+            ]
+        }
+    }
+</script>
+    </head>
+    <body id="body" class="flex-body ">
+        
+        <a id="skipToMain" href="#main-content" class="screen-reader-text" >Skip to main content</a><div id='visionSprite'><script>const ajax = new XMLHttpRequest();ajax.open("GET", "https://static.sw.cdn.siemens.com/icons/icons-vision.svg?v=2", true);ajax.send();ajax.onload = function(e) {const div = document.createElement("div");div.innerHTML = ajax.responseText;document.body.insertBefore(div, document.body.childNodes[0]);}</script></div>
+
+        
+        
+        
+        
+        
+        
+        
+        <!-- Global Header and navigation -->
+        
+        
+    <div class='headerContainer'>
+      
+    <header-xd-v1
+      locales="true" 
+      account="true" 
+      cart="true" 
+      hidenav="false" 
+      search="true" 
+      utilmenu="true"
+    ></header-xd-v1>
+  
+    </div>
+  
+        
+        <div id="react-root"></div>
+
+        
+        
+            
+            <div class="flex-content p-y" id="disw_content">
+              
+	              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<main id="main-content">
+
+    <div id="xd_banner_render_location" class="container"></div>
+
+    
+        
+        <div id="heroComponentWrap">
+            
+			
+<style type="text/css">.hero{z-index:2;position:relative}.hero img{width:100%}.hero .hero-container{position:relative;z-index:2}.hero .hero-content{padding:1rem 0}.hero hr{opacity:1}.hero.hero-product-overview .disw-add-cart-btn{min-height:3.5rem}.hero.hero-product-overview .disw-cart-product-info{flex-wrap:wrap}.hero-dark{background:var(--color-blue-dark)}.hero .disw-breadcrumb{position:absolute;top:.5rem;z-index:3}.video{height:100%;object-fit:cover;width:100%}.heroLogo{height:100px;width:auto!important}@media(max-width:767px){.hero{height:auto!important}}.hero-product-overview{padding:1rem 0}.hero-product-overview .disw-stepper-label,.hero-product-overview .helperText{color:#fff!important}.hero-img-container{position:relative;width:100%;padding-top:56.25%}.hero-img{display:block;border:0;object-fit:cover;bottom:0;left:0;position:absolute;top:0;width:100%;height:100%}.hero-content-img{display:none}@media(min-width:48rem){.hero{display:flex;flex-direction:column;justify-content:center;min-height:400px;padding:9rem 0}.hero .hero-content{padding:0;width:50%}.hero .hero-content-img{display:block;position:absolute;inset:auto 0 0 auto;max-height:600px;width:auto;z-index:2;max-width:50%}.hero .hero-img-container,.hero .hero-video-container{height:100%;width:100%;position:absolute;padding-top:0}.hero-sm{min-height:400px;padding:3.75rem 0}.hero-sm .hero-content{padding-top:1rem}.hero-sm .hero-content-img{max-height:400px}.hero-lg{min-height:600px}.hero-overlay:after{background:linear-gradient(to right,#000028 0,#000028bf 40%,#00002833 65%,#fff0);content:"";display:block;position:absolute;inset:0;z-index:1}.hero-light-overlay:after{background:linear-gradient(to right,#fff 0 40%,#fff0 65%,#00002800);content:"";display:block;position:absolute;inset:0;z-index:1}}@media(min-width:1344px){.hero.hero--has-bg-image .hero-img-container,.hero.hero--has-bg-image.hero-overlay:after,.hero.hero--has-bg-image.hero-light-overlay:after{width:calc(100% - max(0px,(100% - 1280px) / 2));margin-left:max(0px,(100% - 1280px) / 2)}.hero.hero--has-bg-image.hero-overlay:after,.hero.hero--has-bg-image.hero-light-overlay:after{left:-1px}}.hero-foreground-image-contained{--hero-foreground-image-contained-gutter-x: 2rem}@media(min-width:62rem){.hero-foreground-image-contained.hero-lg{--hero-foreground-image-contained-gutter-x: 3rem}}@media(min-width:48rem){.hero-foreground-image-contained{padding:3.75rem 0}}.hero-foreground-image-contained-content{position:relative;z-index:2}@media(min-width:48rem){.hero-foreground-image-contained-content{display:flex;justify-content:space-between;align-items:center;margin-right:calc(-.5 * var(--hero-foreground-image-contained-gutter-x));margin-left:calc(-.5 * var(--hero-foreground-image-contained-gutter-x))}}.hero-foreground-image-contained-heading{padding:var(--spacer) 0}@media(min-width:48rem){.hero-foreground-image-contained-heading{flex:0 0 auto;width:50%;padding-left:calc(.5 * var(--hero-foreground-image-contained-gutter-x));padding-right:calc(.5 * var(--hero-foreground-image-contained-gutter-x));padding-bottom:0}}.hero-foreground-image-contained-image{display:none}@media(min-width:48rem){.hero-foreground-image-contained-image{display:flex;justify-content:center;flex:0 0 auto;width:50%;padding-left:calc(.5 * var(--hero-foreground-image-contained-gutter-x));padding-right:calc(.5 * var(--hero-foreground-image-contained-gutter-x))}}.hero-foreground-image-contained-image img{width:auto;height:auto;max-width:100%}.hero-sm .hero-foreground-image-contained-image img{max-height:16.5rem}.hero-lg .hero-foreground-image-contained-image img{max-height:28.5rem}@keyframes fadeInUp-sm{0%{opacity:0;transform:translate3d(0,50px,0)}to{opacity:1;transform:none}}
+</style>
+<section class="heroComponent"><div class="hero hero--has-bg-image theme-dark hero-dark hero-overlay hero-lg"><nav aria-label="Breadcrumb"><div class="container"><div class="disw-breadcrumb d-none d-lg-block theme-dark"><ol itemScope="" itemType="https://schema.org/BreadcrumbList"><li class="home" itemProp="itemListElement" itemScope="" itemType="https://schema.org/ListItem"><a class="disw-text-inverse" itemProp="item" href="https://www.siemens.com/en-us/" aria-label="Back to homepage"><svg class="disw-icon"><use xlink:href="#icon-home"></use></svg><span itemProp="name" class="disw-visually-hidden">Home</span></a><meta itemProp="position" content="0"/></li><li class="breadcrumb-list" itemProp="itemListElement" itemScope="" itemType="https://schema.org/ListItem"><a class="disw-text-inverse" itemProp="item" href="/en-us/products/" aria-label="Products"><span itemProp="name">Products</span></a><meta itemProp="position" content="2"/></li><li class="breadcrumb-list" itemProp="itemListElement" itemScope="" itemType="https://schema.org/ListItem"><a class="disw-text-inverse" itemProp="item" href="/en-us/products/simatic/" aria-label="SIMATIC Automation"><span itemProp="name">SIMATIC Automation</span></a><meta itemProp="position" content="3"/></li><li class="current breadcrumb-list" itemProp="itemListElement" itemScope="" itemType="https://schema.org/ListItem" aria-current="page"><span itemProp="name">SIMATIC Advanced Controller</span><meta itemProp="position" content="4"/></li></ol></div></div></nav><div class="hero-img-container"><picture><source media="(max-width: 767px)" sizes="100vw" srcSet="https://assets.new.siemens.com/dam-asset/441a2fd5-7627-4a2a-accb-08e0d34be0e2/S7-1500-Familienbild-deepblue-sRGB.JPG?auto=format%2Ccompress&amp;w=320&amp;h=360&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60 320w, https://assets.new.siemens.com/dam-asset/441a2fd5-7627-4a2a-accb-08e0d34be0e2/S7-1500-Familienbild-deepblue-sRGB.JPG?auto=format%2Ccompress&amp;w=640&amp;h=360&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60 640w, https://assets.new.siemens.com/dam-asset/441a2fd5-7627-4a2a-accb-08e0d34be0e2/S7-1500-Familienbild-deepblue-sRGB.JPG?auto=format%2Ccompress&amp;w=1024&amp;h=360&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60 1024w"/><img src="https://assets.new.siemens.com/dam-asset/441a2fd5-7627-4a2a-accb-08e0d34be0e2/S7-1500-Familienbild-deepblue-sRGB.JPG?auto=format%2Ccompress&amp;w=2560&amp;h=1440&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60" srcSet="https://assets.new.siemens.com/dam-asset/441a2fd5-7627-4a2a-accb-08e0d34be0e2/S7-1500-Familienbild-deepblue-sRGB.JPG?auto=format%2Ccompress&amp;w=320&amp;h=1440&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60 320w, https://assets.new.siemens.com/dam-asset/441a2fd5-7627-4a2a-accb-08e0d34be0e2/S7-1500-Familienbild-deepblue-sRGB.JPG?auto=format%2Ccompress&amp;w=640&amp;h=1440&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60 640w, https://assets.new.siemens.com/dam-asset/441a2fd5-7627-4a2a-accb-08e0d34be0e2/S7-1500-Familienbild-deepblue-sRGB.JPG?auto=format%2Ccompress&amp;w=1024&amp;h=1440&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60 1024w, https://assets.new.siemens.com/dam-asset/441a2fd5-7627-4a2a-accb-08e0d34be0e2/S7-1500-Familienbild-deepblue-sRGB.JPG?auto=format%2Ccompress&amp;w=1280&amp;h=1440&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60 1280w, https://assets.new.siemens.com/dam-asset/441a2fd5-7627-4a2a-accb-08e0d34be0e2/S7-1500-Familienbild-deepblue-sRGB.JPG?auto=format%2Ccompress&amp;w=1700&amp;h=1440&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60 1700w, https://assets.new.siemens.com/dam-asset/441a2fd5-7627-4a2a-accb-08e0d34be0e2/S7-1500-Familienbild-deepblue-sRGB.JPG?auto=format%2Ccompress&amp;w=2560&amp;h=1440&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60 2560w" sizes="100vw" class="hero-img"/></picture></div><div class="container hero-container" data-ste-element="teaser" data-ste-teaser-type="hero" data-ste-teaser-title="SIMATIC Advanced Controller"><div class="hero-content"><div class="text-start container p-0 page-heading"><div><div class="text-start row"><div class="col"><h1 class="header-focus"><span>SIMATIC Advanced Controller</span></h1></div></div></div><div class="text-start row"><div id="children" class="col pgDesc"><p>Whether you need compact controller solutions with integrated functions, a powerful controller for the toughest demands, or controllers for distributed architecture, PC-based automation systems or even as virtualized Industrial Edge app: our portfolio has the right PLC for your requirements.</p></div></div><div class="text-start row"><div class="col pgCta"><div class="buttonGroup buttonGroupOfTwo "><a class="btn de-button btn-primary" href="https://sieportal.siemens.com/en-ww/products-services/5000008?tree=CatalogTree" target="_self" data-ste-element="conversion_main"><span class="">Explore products</span></a><a class="btn de-button btn-outline" href="/en-us/contact/" target="_self" data-ste-element="conversion_sec"><span class="">Contact us</span></a></div></div></div></div></div></div></div></section>
+        </div>
+
+    
+
+
+
+
+
+
+
+    <div class='theme-group theme-light'><div id='jQd6BiEKakaILDQIVIRDp' class='sitesArticleContainer themed-component-wrapper' data-ste-section='article-container_1' data-ste-section-id='jQd6BiEKakaILDQIVIRDp'>
+<style type="text/css">.section-heading-centered .buttonGroupOfTwo a,.section-heading-centered .buttonGroupOfTwo button{margin-left:.5rem!important;margin-right:.5rem!important}.section-heading-centered .buttonGroupOfTwo a:last-child,.section-heading-centered .buttonGroupOfTwo button:last-child{margin-right:.5rem!important}@media(max-width:576px){#video-section .video{padding-left:0!important;padding-right:0!important}}.two-layout-bg-white{background-color:#fff;color:#000}.two-layout-bg-dark{background-color:#000028;color:#fff}.two-layout-bg-grey{background-color:#ebebee;color:#000}.two-layout-bg-light-sand{background-color:var(--color-sand-light);color:#000}.columnArticleClass.bg-blue-dark table th{background-color:var(--color-blue-dark);border-bottom:1px solid var(--color-white)!important;color:var(--color-white)!important}.columnArticleClass.bg-blue-dark table td{background-color:var(--color-secondary-deep-blue-deep-blue-80);color:var(--color-white)}.columnArticleClass .two-column-article .two-column-article-content{display:flex;flex-direction:row}.columnArticleClass .two-column-article .two-column-article-content>:first-child{padding-right:32px}.columnArticleClass .two-column-article .two-column-article-content>:last-child{padding-left:32px}.columnArticleClass .two-column-article .two-layout-top-alignment>:first-child{margin:0 auto auto 0!important}.columnArticleClass .two-column-article .two-layout-top-alignment>:last-child{margin:0 auto auto 0!important}.columnArticleClass .two-column-article .two-layout-center-alignment>:first-child{margin:auto}.columnArticleClass .two-column-article .two-layout-center-alignment>:last-child{margin:auto}.columnArticleClass .two-column-article .layout-1-to-1>:first-child{flex-basis:50%}.columnArticleClass .two-column-article .layout-1-to-1>:last-child{flex-basis:50%}.columnArticleClass .two-column-article .layout-3-to-7>:first-child{flex-basis:30%}.columnArticleClass .two-column-article .layout-3-to-7>:last-child{flex-basis:70%}.columnArticleClass .two-column-article .layout-7-to-3>:first-child{flex-basis:70%}.columnArticleClass .two-column-article .layout-7-to-3>:last-child{flex-basis:30%}.columnArticleClass .two-column-article .main-column-centering>:first-child{text-align:center;margin:auto!important}.columnArticleClass .two-column-article .right-column-centering>:last-child{text-align:center;margin:auto!important}@media screen and (max-width:767px){.columnArticleClass .two-column-article .two-column-article-content{display:contents;flex-direction:column}.columnArticleClass .two-column-article .two-column-article-content>:first-child{padding-right:0;display:contents}.columnArticleClass .two-column-article .two-column-article-content>:last-child{padding-left:0}}@media(max-width:640px){.columnArticleClass:has(table){overflow-x:auto;-webkit-overflow-scrolling:touch}}.columnArticleClass table{border-collapse:collapse;font-size:16px;line-height:24px;letter-spacing:0px;color:#000027;text-align:left;opacity:1;max-width:640px}@media(max-width:640px){.columnArticleClass table{display:inline-table;width:auto;max-width:640px}.columnArticleClass table:has(th:nth-child(3)),.columnArticleClass table:has(tr:first-child td:nth-child(3)){min-width:640px}}@media(min-width:641px){.columnArticleClass--table-full-width table{width:100%;max-width:none}}.columnArticleClass table p{margin:0}.columnArticleClass table th{background:var(--color-grey-lighter) 0% 0% no-repeat padding-box;opacity:1;border-bottom:1px solid var(--color-black)!important;color:var(--color-blue-dark)!important;font-weight:900!important;font-size:18px!important;line-height:27px!important;text-align:left;letter-spacing:.19px!important;vertical-align:top;padding:1rem}@media(max-width:640px){.columnArticleClass table th{padding-left:0;padding-right:0}}.columnArticleClass table td{vertical-align:top;padding:1rem}@media(max-width:640px){.columnArticleClass table td{padding-left:0;padding-right:0}}.columnArticleClass table tr:first-of-type{border-top:none!important}.columnArticleClass table tr{border-top:1px solid var(--color-grey);border-bottom:1px solid var(--color-grey)}
+</style>
+<div class="columnArticleClass two-layout-bg-white" id="twoColumnArticleTheme"><div class="text-start container multitextblock two-column-article"><div class="m-t-xl two-column-article-content layout-1-to-1 two-layout-top-alignment"><div class="p-lg-r-lg"><div><h2>SIMATIC Advanced Controller System</h2><p>Using SIMATIC S7 controller gives you top performance and built-in viability into the future. You can turn the most sophisticated machine designs into reality thanks to the modular structure of the controller, which provides reliable assistance as you work your way through digital transformation. </p><p>Ten years ago, we achieved a better way of meeting your needs. We want to celebrate this anniversary! Take a look back with us at the highlights and challenges of the last years. Find out how your requirements keep inspiring us to come up with new innovations and take a look into the future with us.</p></div></div><div><div><div><div class="mb-4"><div class="p-0 col-sm-12 m-auto ratio ratio-16x9"><disw-video videoid="8b20f8c6-aa5a-4c87-ac95-190c5206598e" locale="en-US" autoplay="false"></disw-video></div></div></div></div></div></div></div></div></div><div id='4KaEeSzcKImSAKjXOPRChv' class='sitesThreeColTiles themed-component-wrapper' data-ste-section='three-col-tiles_2' data-ste-section-id='4KaEeSzcKImSAKjXOPRChv'>
+<style type="text/css">.three-column-tile h4{vertical-align:top}.three-column-tile .tileHeightAdjust img{height:45px}.three-column-tile .tiles-center-button{text-align:center;margin-top:2.5rem}.three-column-tile .tileImage{width:100%;aspect-ratio:296/167;height:auto!important;object-fit:cover;display:block;padding-bottom:1rem}.three-column-tile .tile-alphaNumeric{padding-bottom:1rem;display:block;line-height:4.5rem;font-size:3.75rem}.three-column-tile .tile-svg-icon{padding-bottom:1rem}.three-column-tile .tile-flex-wrapper{display:flex;flex-direction:column;height:100%}.three-column-tile .tileHeading{hyphens:auto;word-break:break-word;margin-bottom:1rem}.three-column-tile .tileDescription p{margin:0}.three-column-tile .tileDescription{margin-bottom:1rem}.three-column-tile .tile-link-wrapper{margin-top:auto}.three-column-tile .row{row-gap:2rem}@media only screen and (max-width:768px){.three-column-tile .tileHeightAdjust{height:auto!important}}.section-heading-centered .buttonGroupOfTwo a,.section-heading-centered .buttonGroupOfTwo button{margin-left:.5rem!important;margin-right:.5rem!important}.section-heading-centered .buttonGroupOfTwo a:last-child,.section-heading-centered .buttonGroupOfTwo button:last-child{margin-right:.5rem!important}
+</style>
+<div><div class="section-heading mb-4 container text-start" data-ste-element="Sites: Section Heading"><div class="group-focus"><div class="row text-start"><div class="col col-md-8"><strong class="text-kicker">Why SIMATIC Advanced Controller?</strong><h2><span>Smart solution for every automation requirement</span></h2></div></div></div><div class="row text-start"><div class="col col-md-8"><p>With SIMATIC Advanced Controller, you can turn the most sophisticated machine designs into reality thanks to the modular structure of the controller, which provides reliable assistance as you work your way through the digital transformation.</p></div></div></div><div class="container three-column-tile"><div class="row"><div data-ste-element="teaser" data-ste-teaser-type="tile" data-ste-teaser-title="Scalable and adaptable" class="col-12 col-sm-12 col-md-6 col-lg-4 tileHeightAdjust"><div class="tile-flex-wrapper"><img src="https://assets.new.siemens.com/dam-asset/cdcb58a3-16a3-4de5-b5d7-9b9aea59cf20/siemens-hf-rfid-rf200-scalable-icon.jpg?auto=format%2Ccompress&amp;w=640&amp;h=360&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60" srcSet="https://assets.new.siemens.com/dam-asset/cdcb58a3-16a3-4de5-b5d7-9b9aea59cf20/siemens-hf-rfid-rf200-scalable-icon.jpg?auto=format%2Ccompress&amp;w=320&amp;h=360&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60 320w, https://assets.new.siemens.com/dam-asset/cdcb58a3-16a3-4de5-b5d7-9b9aea59cf20/siemens-hf-rfid-rf200-scalable-icon.jpg?auto=format%2Ccompress&amp;w=640&amp;h=360&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60 640w" sizes="100vw" alt="Dashed frame with an outward-pointing arrow extending toward the upper right, symbolizing scalability." class="tileImage" loading="lazy"/><h3 class="strong tileHeading">Scalable and adaptable</h3><div class="tileDescription"><p>The modular SIMATIC S7-1500 controller offers scalable functionality, letting you adapt assemblies and functions to your machine design. Its modules are IP20-approved and designed for control cabinet installation.</p></div></div></div><div data-ste-element="teaser" data-ste-teaser-type="tile" data-ste-teaser-title="Precise and fast" class="col-12 col-sm-12 col-md-6 col-lg-4 tileHeightAdjust"><div class="tile-flex-wrapper"><img src="https://assets.new.siemens.com/dam-asset/52b76fc3-8a65-4285-845d-22313cfa9240/icon-performance-light-petrol-16x9.png?auto=format%2Ccompress&amp;w=640&amp;h=360&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60" srcSet="https://assets.new.siemens.com/dam-asset/52b76fc3-8a65-4285-845d-22313cfa9240/icon-performance-light-petrol-16x9.png?auto=format%2Ccompress&amp;w=320&amp;h=360&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60 320w, https://assets.new.siemens.com/dam-asset/52b76fc3-8a65-4285-845d-22313cfa9240/icon-performance-light-petrol-16x9.png?auto=format%2Ccompress&amp;w=640&amp;h=360&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60 640w" sizes="100vw" alt="Semicircular gauge with a needle pointing toward the upper right, representing performance." class="tileImage" loading="lazy"/><h3 class="strong tileHeading">Precise and fast</h3><div class="tileDescription"><p>Achieve top performance and productivity with SIMATIC S7-1500 – featuring a fast backplane bus, PROFINET with deterministic µs -precision, shortest reaction times, and CPU command processing in as little as ⅓ ns. </p></div></div></div><div data-ste-element="teaser" data-ste-teaser-type="tile" data-ste-teaser-title="Reliable and customizable" class="col-12 col-sm-12 col-md-6 col-lg-4 tileHeightAdjust"><div class="tile-flex-wrapper"><img src="https://assets.new.siemens.com/dam-asset/b9fc1760-3e33-43d5-8705-2e5993bd5f35/Icon-reliability-200x150.jpg?auto=format%2Ccompress&amp;w=640&amp;h=360&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60" srcSet="https://assets.new.siemens.com/dam-asset/b9fc1760-3e33-43d5-8705-2e5993bd5f35/Icon-reliability-200x150.jpg?auto=format%2Ccompress&amp;w=320&amp;h=360&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60 320w, https://assets.new.siemens.com/dam-asset/b9fc1760-3e33-43d5-8705-2e5993bd5f35/Icon-reliability-200x150.jpg?auto=format%2Ccompress&amp;w=640&amp;h=360&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60 640w" sizes="100vw" alt="Shield with a check mark inside a circular background, representing reliability." class="tileImage" loading="lazy"/><h3 class="strong tileHeading">Reliable and customizable</h3><div class="tileDescription"><p>Reliability is key to your productivity and cost-effectiveness. With reliable components you avoid downtime. In addition you benefit from customized solutions for harsh environments, extreme temperatures and special conditions. </p></div></div></div></div></div></div></div><div id='3Gh0VFIYBBG9L8SUHFrbry' class='sitesCardsContainer themed-component-wrapper' data-ste-section='cards-container_3' data-ste-section-id='3Gh0VFIYBBG9L8SUHFrbry'><is-land on:visible><div id="comp-3Gh0VFIYBBG9L8SUHFrbry" class="CardsContainer" data-component-type="CardsContainer"><section id="3Gh0VFIYBBG9L8SUHFrbry" class="cards-defaultBackground" role="region"><div class="container"><div class="row cards-container-row"><div class="siemens-cards col-md-4"><a href="/en-us/products/simatic/s7-1500/" target="_self"><div data-ste-element="teaser" data-ste-teaser-type="card" data-ste-teaser-title="Modular Controller" id="G_Modular%20Controller%20-0" class="card blogWrap rounded-0 card-hover" role="article" aria-labelledby="G_Modular%20Controller%20-0-title" aria-describedby="G_Modular%20Controller%20-0-desc"><div class="imageWrapper"><picture><source type="image/webp"/><picture><img src="https://assets.new.siemens.com/dam-asset/3254c2c4-2c37-43b5-80ad-685a6155a5e7/Advanced-Controller-Familienbild-Modular-deepblue-sRGB.JPG?auto=format%2Ccompress&amp;w=640&amp;h=360&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60" srcSet="https://assets.new.siemens.com/dam-asset/3254c2c4-2c37-43b5-80ad-685a6155a5e7/Advanced-Controller-Familienbild-Modular-deepblue-sRGB.JPG?auto=format%2Ccompress&amp;w=320&amp;h=360&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60 320w, https://assets.new.siemens.com/dam-asset/3254c2c4-2c37-43b5-80ad-685a6155a5e7/Advanced-Controller-Familienbild-Modular-deepblue-sRGB.JPG?auto=format%2Ccompress&amp;w=640&amp;h=360&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60 640w" sizes="100vw" alt="Familienbild Advanced Controller Modular" class="cardImgTop lazy" loading="lazy"/></picture></picture></div><div class="card-body d-flex flex-column p-3"><strong class="text-kicker pb-2 mb-0 text-color"></strong><div class="category d-none">all</div><h3 id="G_Modular%20Controller%20-0-title" class="pb-4 mb-0">Modular Controller </h3><div id="G_Modular%20Controller%20-0-desc" class="text-black card-text pb-3 mb-0"><div><p>Modular SIMATIC S7-1500 offers scalable functionality with multiple CPU performance classes, I/O, technology and communication modules for centralized or distributed setups. IP20-rated for control cabinet installation.</p></div></div><div data-area="card-info-section" class="d-flex flex-column justify-content-end h-100"><p class="subscript mb-0 mt-3"> <!-- -->Learn more &gt;</p></div></div></div></a></div><div class="siemens-cards col-md-4"><a href="/en-us/products/simatic/distributed-controllers/" target="_self"><div data-ste-element="teaser" data-ste-teaser-type="card" data-ste-teaser-title="Distributed Controller" id="G_Distributed%20Controller-1" class="card blogWrap rounded-0 card-hover" role="article" aria-labelledby="G_Distributed%20Controller-1-title" aria-describedby="G_Distributed%20Controller-1-desc"><div class="imageWrapper"><picture><source type="image/webp"/><picture><img src="https://assets.new.siemens.com/dam-asset/55d20fc8-0340-450b-aa3d-46a5d28b55f7/Advanced-Controller-Familienbild-Distributed-deepblue-sRGB.JPG?auto=format%2Ccompress&amp;w=640&amp;h=360&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60" srcSet="https://assets.new.siemens.com/dam-asset/55d20fc8-0340-450b-aa3d-46a5d28b55f7/Advanced-Controller-Familienbild-Distributed-deepblue-sRGB.JPG?auto=format%2Ccompress&amp;w=320&amp;h=360&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60 320w, https://assets.new.siemens.com/dam-asset/55d20fc8-0340-450b-aa3d-46a5d28b55f7/Advanced-Controller-Familienbild-Distributed-deepblue-sRGB.JPG?auto=format%2Ccompress&amp;w=640&amp;h=360&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60 640w" sizes="100vw" alt="Familienbild SIMATIC S7-1500 Distributed" class="cardImgTop lazy" loading="lazy"/></picture></picture></div><div class="card-body d-flex flex-column p-3"><strong class="text-kicker pb-2 mb-0 text-color"></strong><div class="category d-none">all</div><h3 id="G_Distributed%20Controller-1-title" class="pb-4 mb-0">Distributed Controller</h3><div id="G_Distributed%20Controller-1-desc" class="text-black card-text pb-3 mb-0"><div><p>Distributed Controllers combine SIMATIC S7-1500 performance with ET 200 design. Distributed intelligence improves availability, supports compact machine installations, and connects to central control cabinets via PROFINET.</p></div></div><div data-area="card-info-section" class="d-flex flex-column justify-content-end h-100"><p class="subscript mb-0 mt-3"> <!-- -->Learn more &gt;</p></div></div></div></a></div><div class="siemens-cards col-md-4"><a href="/en-us/products/simatic/s7-1500s-controller/" target="_self"><div data-ste-element="teaser" data-ste-teaser-type="card" data-ste-teaser-title="Software Controller" id="G_Software%20Controller-2" class="card blogWrap rounded-0 card-hover" role="article" aria-labelledby="G_Software%20Controller-2-title" aria-describedby="G_Software%20Controller-2-desc"><div class="imageWrapper"><picture><source type="image/webp"/><picture><img src="https://assets.new.siemens.com/dam-asset/4671c3d6-a82d-4dd9-8b77-336361cc13e3/Siemens-Software-Controller-Visual.jpg?auto=format%2Ccompress&amp;w=640&amp;h=360&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60" srcSet="https://assets.new.siemens.com/dam-asset/4671c3d6-a82d-4dd9-8b77-336361cc13e3/Siemens-Software-Controller-Visual.jpg?auto=format%2Ccompress&amp;w=320&amp;h=360&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60 320w, https://assets.new.siemens.com/dam-asset/4671c3d6-a82d-4dd9-8b77-336361cc13e3/Siemens-Software-Controller-Visual.jpg?auto=format%2Ccompress&amp;w=640&amp;h=360&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60 640w" sizes="100vw" alt="SIMATIC S7-1500 Software Controller interface displayed on a touchscreen panel against a dark blue background." class="cardImgTop lazy" loading="lazy"/></picture></picture></div><div class="card-body d-flex flex-column p-3"><strong class="text-kicker pb-2 mb-0 text-color"></strong><div class="category d-none">all</div><h3 id="G_Software%20Controller-2-title" class="pb-4 mb-0">Software Controller</h3><div id="G_Software%20Controller-2-desc" class="text-black card-text pb-3 mb-0"><div><p>SIMATIC S7-1500 Software Controllers combine PLC reliability with PC flexibility. Available in standard and fail-safe versions, they are OS-independent, support C++ integration, scale as needed, and ensure high availability.</p></div></div><div data-area="card-info-section" class="d-flex flex-column justify-content-end h-100"><p class="subscript mb-0 mt-3"> <!-- -->Learn more &gt;</p></div></div></div></a></div><div class="siemens-cards col-md-4"><a href="/en-us/products/simatic/motion-control/" target="_self"><div data-ste-element="teaser" data-ste-teaser-type="card" data-ste-teaser-title="Technology Controller" id="G_Technology%20Controller-3" class="card blogWrap rounded-0 card-hover" role="article" aria-labelledby="G_Technology%20Controller-3-title" aria-describedby="G_Technology%20Controller-3-desc"><div class="imageWrapper"><picture><source type="image/webp"/><picture><img src="https://assets.new.siemens.com/dam-asset/17726e96-7c9d-465b-8fe5-addd0fc4f623/T-CPU-Familienbild-deepblue-sRGB.JPG?auto=format%2Ccompress&amp;w=640&amp;h=360&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60" srcSet="https://assets.new.siemens.com/dam-asset/17726e96-7c9d-465b-8fe5-addd0fc4f623/T-CPU-Familienbild-deepblue-sRGB.JPG?auto=format%2Ccompress&amp;w=320&amp;h=360&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60 320w, https://assets.new.siemens.com/dam-asset/17726e96-7c9d-465b-8fe5-addd0fc4f623/T-CPU-Familienbild-deepblue-sRGB.JPG?auto=format%2Ccompress&amp;w=640&amp;h=360&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60 640w" sizes="100vw" alt="Familienbild SIMATIC S7-1500 T-CPU" class="cardImgTop lazy" loading="lazy"/></picture></picture></div><div class="card-body d-flex flex-column p-3"><strong class="text-kicker pb-2 mb-0 text-color"></strong><div class="category d-none">all</div><h3 id="G_Technology%20Controller-3-title" class="pb-4 mb-0">Technology Controller</h3><div id="G_Technology%20Controller-3-desc" class="text-black card-text pb-3 mb-0"><div><p>SIMATIC S7-1500 T-CPUs automate Advanced Motion Control applications with dynamic and precise synchronized multi-axis systems and kinematics. Available in modular, distributed, drive-integrated or PC-based designs.</p></div></div><div data-area="card-info-section" class="d-flex flex-column justify-content-end h-100"><p class="subscript mb-0 mt-3"> <!-- -->Learn more &gt;</p></div></div></div></a></div><div class="siemens-cards col-md-4"><a href="/en-us/products/simatic/s7-1500-rh-cpus/" target="_self"><div data-ste-element="teaser" data-ste-teaser-type="card" data-ste-teaser-title="Redundant Controller" id="G_Redundant%20Controller-4" class="card blogWrap rounded-0 card-hover" role="article" aria-labelledby="G_Redundant%20Controller-4-title" aria-describedby="G_Redundant%20Controller-4-desc"><div class="imageWrapper"><picture><source type="image/webp"/><picture><img src="https://assets.new.siemens.com/dam-asset/4497db90-5bdb-4fa4-940c-19a687f4f6fd/S7-1500RH-p-st70-xx-09241v-16x9-deepBlue.jpg?auto=format%2Ccompress&amp;w=640&amp;h=360&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60" srcSet="https://assets.new.siemens.com/dam-asset/4497db90-5bdb-4fa4-940c-19a687f4f6fd/S7-1500RH-p-st70-xx-09241v-16x9-deepBlue.jpg?auto=format%2Ccompress&amp;w=320&amp;h=360&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60 320w, https://assets.new.siemens.com/dam-asset/4497db90-5bdb-4fa4-940c-19a687f4f6fd/S7-1500RH-p-st70-xx-09241v-16x9-deepBlue.jpg?auto=format%2Ccompress&amp;w=640&amp;h=360&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60 640w" sizes="100vw" alt="Redundant SIMATIC S7-1500 R/H controllers for redundancy and high availability, placed on a deep blue background" class="cardImgTop lazy" loading="lazy"/></picture></picture></div><div class="card-body d-flex flex-column p-3"><strong class="text-kicker pb-2 mb-0 text-color"></strong><div class="category d-none">all</div><h3 id="G_Redundant%20Controller-4-title" class="pb-4 mb-0">Redundant Controller</h3><div id="G_Redundant%20Controller-4-desc" class="text-black card-text pb-3 mb-0"><div><p>Redundant SIMATIC S7-1500 R/H CPUs maximize availability with synchronized backup controllers. Integrated redundancy prevents data loss and downtime while simplifying engineering and maintenance, even in distributed plants.</p></div></div><div data-area="card-info-section" class="d-flex flex-column justify-content-end h-100"><p class="subscript mb-0 mt-3"> <!-- -->Learn more &gt;</p></div></div></div></a></div><div class="siemens-cards col-md-4"><a href="/en-us/products/simatic/s7-400/" target="_self"><div data-ste-element="teaser" data-ste-teaser-type="card" data-ste-teaser-title="Legacy Controller" id="G_Legacy%20Controller-5" class="card blogWrap rounded-0 card-hover" role="article" aria-labelledby="G_Legacy%20Controller-5-title" aria-describedby="G_Legacy%20Controller-5-desc"><div class="imageWrapper"><picture><source type="image/webp"/><picture><img src="https://assets.new.siemens.com/dam-asset/8872f7cf-a42f-427e-b471-2b0b4aab76f5/p-st70-xx-03637v.tif?auto=format%2Ccompress&amp;w=640&amp;h=360&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60" srcSet="https://assets.new.siemens.com/dam-asset/8872f7cf-a42f-427e-b471-2b0b4aab76f5/p-st70-xx-03637v.tif?auto=format%2Ccompress&amp;w=320&amp;h=360&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60 320w, https://assets.new.siemens.com/dam-asset/8872f7cf-a42f-427e-b471-2b0b4aab76f5/p-st70-xx-03637v.tif?auto=format%2Ccompress&amp;w=640&amp;h=360&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60 640w" sizes="100vw" alt="Siemens SIMATIC S7-300 PLC controllers arranged in two rows against a dark blue background." class="cardImgTop lazy" loading="lazy"/></picture></picture></div><div class="card-body d-flex flex-column p-3"><strong class="text-kicker pb-2 mb-0 text-color"></strong><div class="category d-none">all</div><h3 id="G_Legacy%20Controller-5-title" class="pb-4 mb-0">Legacy Controller</h3><div id="G_Legacy%20Controller-5-desc" class="text-black card-text pb-3 mb-0"><div><p>SIMATIC S7-300 and S7-400 controllers are proven PLCs for factory and process automation. Used worldwide in millions of applications, they provide continuity, reliability, and long-term investment protection.</p></div></div><div data-area="card-info-section" class="d-flex flex-column justify-content-end h-100"><p class="subscript mb-0 mt-3"> <!-- -->Learn more &gt;</p></div></div></div></a></div></div></div></section><template data-island><script type="module" src="/shared-assets/1f5459c4589ce8f899743c2f1031e839981f40d9/lib/helpers/esm/index.module.js"></script><disw-hydrate component="CardsContainer" props-url="/props/3Gh0VFIYBBG9L8SUHFrbry-en-US.json" page-id="4MFHJ5yUbuKzUpEtcsWTob" container="comp-3Gh0VFIYBBG9L8SUHFrbry"></disw-hydrate></template></div></is-land></div><div id='EJO6XMVv862RDFPfr1IMu' class='sitesPromo themed-component-wrapper' data-ste-section='promo_4' data-ste-section-id='EJO6XMVv862RDFPfr1IMu'>
+<style type="text/css" data-component-name="Promo">.section-heading-centered .buttonGroupOfTwo a,.section-heading-centered .buttonGroupOfTwo button{margin-left:.5rem!important;margin-right:.5rem!important}.section-heading-centered .buttonGroupOfTwo a:last-child,.section-heading-centered .buttonGroupOfTwo button:last-child{margin-right:.5rem!important}@media(max-width:576px){#video-section .video{padding-left:0!important;padding-right:0!important}}.de-promo-container{--promo-item-padding: var(--spacer-xxl) 0}.de-promo-container__item{padding:var(--promo-item-padding)}.de-promo-container--embedded{--promo-item-padding: var(--spacer-lg) 0}.de-promo-container--embedded .de-promo-container__items:first-child .de-promo-item:first-child{--promo-item-padding: 0 0 var(--spacer-lg) 0}.de-promo-container--embedded .de-promo-container__items .de-promo-item:last-child{--promo-item-padding: var(--spacer-lg) 0 0 0}.de-promo-container__footer-button{display:flex;justify-content:center;margin-top:var(--spacer-lg);margin-bottom:var(--spacer-xxl)}.de-promo-container--embedded .de-promo-container__footer-button{margin-top:var(--spacer-xl);margin-bottom:var(--spacer-xl)}
+</style>
+<is-land on:visible><div id="comp-EJO6XMVv862RDFPfr1IMu" class="Promo" data-component-type="Promo"><div class="de-promo-container bg-white theme-light"><div class="de-promo-container__items"><div class="de-promo-item de-promo-container__item bg-grey-lighter theme-grey"><div class="container"><div class="row align-items-center"><div class="col-md-6 order-md-1" data-ste-element="teaser" data-ste-teaser-type="promo" data-ste-teaser-title="Bring SIMATIC S7-1500 power to Industrial Edge"><strong class="text-kicker">Virtual PLC</strong><h3 class="mb-0">Bring SIMATIC S7-1500 power to Industrial Edge</h3><div class="mt-3"><p>SIMATIC S7-1500V is a fully virtual PLC based on the familiar functionality and operation of the SIMATIC S7-1500, while being completely hardware-independent. Available as an Edge app, it integrates directly into IT environments and supports digitalization initiatives. The virtual controller enables more flexible, modular production plant designs and helps create highly adaptable manufacturing processes.</p></div><div class="mt-3"><a class="btn de-button btn-secondary" href="/en-us/products/simatic/s7-1500v/" target="_self" data-ste-element="conversion_sec"><span class="">Learn more</span></a></div></div><div class="col-md-6 pt-4 pt-md-0 order-md-2"><img src="https://assets.new.siemens.com/dam-asset/d0a0670e-18a3-4001-8b2f-25c20fdc8085/Visuals-Virtual-PLC.png?auto=format%2Ccompress&amp;w=640&amp;h=480&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60" srcSet="https://assets.new.siemens.com/dam-asset/d0a0670e-18a3-4001-8b2f-25c20fdc8085/Visuals-Virtual-PLC.png?auto=format%2Ccompress&amp;w=320&amp;h=480&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60 320w, https://assets.new.siemens.com/dam-asset/d0a0670e-18a3-4001-8b2f-25c20fdc8085/Visuals-Virtual-PLC.png?auto=format%2Ccompress&amp;w=640&amp;h=480&amp;fit=crop&amp;crop=faces%2Cedges&amp;q=60 640w" sizes="100vw" alt="Virtual PLC Visual" class="img-responsive w-100" style="aspect-ratio:4/3" loading="lazy"/></div></div></div></div></div></div><template data-island><script type="module" src="/shared-assets/1f5459c4589ce8f899743c2f1031e839981f40d9/lib/helpers/esm/index.module.js"></script><disw-hydrate component="Promo" props-url="/props/EJO6XMVv862RDFPfr1IMu-en-US.json" page-id="4MFHJ5yUbuKzUpEtcsWTob" container="comp-EJO6XMVv862RDFPfr1IMu"></disw-hydrate></template></div></is-land></div></div><div class='theme-group theme-dark'><div id='4ilRA7N2FOkUa5uOinCIte' class='sitesArticleContainer themed-component-wrapper' data-ste-section='article-container_5' data-ste-section-id='4ilRA7N2FOkUa5uOinCIte'>
+<style type="text/css">.section-heading-centered .buttonGroupOfTwo a,.section-heading-centered .buttonGroupOfTwo button{margin-left:.5rem!important;margin-right:.5rem!important}.section-heading-centered .buttonGroupOfTwo a:last-child,.section-heading-centered .buttonGroupOfTwo button:last-child{margin-right:.5rem!important}@media(max-width:576px){#video-section .video{padding-left:0!important;padding-right:0!important}}.two-layout-bg-white{background-color:#fff;color:#000}.two-layout-bg-dark{background-color:#000028;color:#fff}.two-layout-bg-grey{background-color:#ebebee;color:#000}.two-layout-bg-light-sand{background-color:var(--color-sand-light);color:#000}.columnArticleClass.bg-blue-dark table th{background-color:var(--color-blue-dark);border-bottom:1px solid var(--color-white)!important;color:var(--color-white)!important}.columnArticleClass.bg-blue-dark table td{background-color:var(--color-secondary-deep-blue-deep-blue-80);color:var(--color-white)}.columnArticleClass .two-column-article .two-column-article-content{display:flex;flex-direction:row}.columnArticleClass .two-column-article .two-column-article-content>:first-child{padding-right:32px}.columnArticleClass .two-column-article .two-column-article-content>:last-child{padding-left:32px}.columnArticleClass .two-column-article .two-layout-top-alignment>:first-child{margin:0 auto auto 0!important}.columnArticleClass .two-column-article .two-layout-top-alignment>:last-child{margin:0 auto auto 0!important}.columnArticleClass .two-column-article .two-layout-center-alignment>:first-child{margin:auto}.columnArticleClass .two-column-article .two-layout-center-alignment>:last-child{margin:auto}.columnArticleClass .two-column-article .layout-1-to-1>:first-child{flex-basis:50%}.columnArticleClass .two-column-article .layout-1-to-1>:last-child{flex-basis:50%}.columnArticleClass .two-column-article .layout-3-to-7>:first-child{flex-basis:30%}.columnArticleClass .two-column-article .layout-3-to-7>:last-child{flex-basis:70%}.columnArticleClass .two-column-article .layout-7-to-3>:first-child{flex-basis:70%}.columnArticleClass .two-column-article .layout-7-to-3>:last-child{flex-basis:30%}.columnArticleClass .two-column-article .main-column-centering>:first-child{text-align:center;margin:auto!important}.columnArticleClass .two-column-article .right-column-centering>:last-child{text-align:center;margin:auto!important}@media screen and (max-width:767px){.columnArticleClass .two-column-article .two-column-article-content{display:contents;flex-direction:column}.columnArticleClass .two-column-article .two-column-article-content>:first-child{padding-right:0;display:contents}.columnArticleClass .two-column-article .two-column-article-content>:last-child{padding-left:0}}@media(max-width:640px){.columnArticleClass:has(table){overflow-x:auto;-webkit-overflow-scrolling:touch}}.columnArticleClass table{border-collapse:collapse;font-size:16px;line-height:24px;letter-spacing:0px;color:#000027;text-align:left;opacity:1;max-width:640px}@media(max-width:640px){.columnArticleClass table{display:inline-table;width:auto;max-width:640px}.columnArticleClass table:has(th:nth-child(3)),.columnArticleClass table:has(tr:first-child td:nth-child(3)){min-width:640px}}@media(min-width:641px){.columnArticleClass--table-full-width table{width:100%;max-width:none}}.columnArticleClass table p{margin:0}.columnArticleClass table th{background:var(--color-grey-lighter) 0% 0% no-repeat padding-box;opacity:1;border-bottom:1px solid var(--color-black)!important;color:var(--color-blue-dark)!important;font-weight:900!important;font-size:18px!important;line-height:27px!important;text-align:left;letter-spacing:.19px!important;vertical-align:top;padding:1rem}@media(max-width:640px){.columnArticleClass table th{padding-left:0;padding-right:0}}.columnArticleClass table td{vertical-align:top;padding:1rem}@media(max-width:640px){.columnArticleClass table td{padding-left:0;padding-right:0}}.columnArticleClass table tr:first-of-type{border-top:none!important}.columnArticleClass table tr{border-top:1px solid var(--color-grey);border-bottom:1px solid var(--color-grey)}
+</style>
+<div class="columnArticleClass two-layout-bg-dark theme-dark bg-blue-dark" id="oneColumnArticleTheme"><div id="sectionHeadingForOneColumnArticle"><div class="section-heading mb-4 container text-center section-heading-centered" data-ste-element="Sites: Section Heading"><div><div class="row text-center justify-content-center"><div class="col col-md-8"><h2 class="header-focus"><span>Discover the possibilities</span></h2></div></div></div><div class="row text-center justify-content-center"><div class="col col-md-8"><div class="buttonGroup "><a class="btn de-button btn-primary" href="https://sieportal.siemens.com/en-ww/products-services/5000008?tree=CatalogTree" target="_self" data-ste-element="conversion_main"><span class="">Explore products</span></a></div></div></div></div></div><div class="text-start container multitextblock "><div class="row justify-content-left"><div class="col col-md-8"></div></div></div></div></div></div>
+
+
+</main>
+
+              
+              
+              
+            </div>
+            <div id="disw_cart"></div>
+        
+        
+        
+        
+            <div class="localFooter">
+                
+<style type="text/css" data-component-name="LocalFooter">.local-footer{min-height:1px;background-color:var(--color-blue-dark)}.local-footer__link-container{display:flex;justify-content:flex-end;padding:var(--spacer) 0px;border-bottom:1px solid var(--color-deep-blue-60);column-gap:32px;row-gap:8px;flex-wrap:wrap}@media(max-width:61.9rem){.local-footer__link-container{justify-content:flex-start}}.local-footer__link{color:var(--color-white);text-decoration:none}.local-footer__link:hover,.local-footer__link:focus,.local-footer__link:active{text-decoration:none}.local-footer__link:visited{color:var(--color-white);text-decoration:none}.local-footer__link:hover,.local-footer__link:focus{color:var(--color-green-light)}.local-footer__link:active{color:var(--color-white);background-color:var(--color-green-bold-20);outline:none}.local-footer__link.icp:not(:lang(zh-CN)){display:none}
+</style>
+<is-land on:visible><div id="comp-1if6B4GHeyQ8d0apAkScZ5" class="LocalFooter" data-component-type="LocalFooter"><nav class="local-footer"><div class="container"><div class="local-footer__link-container"><a href="http://beian.miit.gov.cn/" target="_self" class="local-footer__link icp" data-ste-element="teaser">京ICP备06054295号</a><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502040638" target="_self" class="local-footer__link icp" data-ste-element="teaser">京公网安备 11010502040638号</a></div></div></nav><template data-island><script type="module" src="/shared-assets/1f5459c4589ce8f899743c2f1031e839981f40d9/lib/helpers/esm/index.module.js"></script><disw-hydrate component="LocalFooter" props-url="/props/1if6B4GHeyQ8d0apAkScZ5-en-US.json" page-id="4MFHJ5yUbuKzUpEtcsWTob" container="comp-1if6B4GHeyQ8d0apAkScZ5"></disw-hydrate></template></div></is-land>
+		    </div>
+        
+
+        
+        
+        <footer-xd-v1 slug="global-footer-one" allownavslugoverride="true"></footer-xd-v1>
+
+        
+        <disw-live-chat team='["DI FA"]'/>
+
+        
+        <script src="https://static.sw.cdn.siemens.com/digitalexperiences/utility/1.x/vendor.min.js" defer></script><script type="module" src="/shared-assets/1f5459c4589ce8f899743c2f1031e839981f40d9/js/is-land.js"></script><script src="https://static.sw.cdn.siemens.com/digitalexperiences/search/1.x/searchbox.load.js" defer></script><script>
+    function breadCrumbContext() {
+        const breadCrumbContextInputData = {
+            'page': '4MFHJ5yUbuKzUpEtcsWTob',
+            'site': 'one',
+            'locale': 'en-US'
+        }
+
+        if (typeof disw !== 'undefined' && disw.context && disw.context.addContextToLinks) {
+            disw.context.addContextToLinks(breadCrumbContextInputData, 'bc');
+        }
+    }
+
+    let rafScheduled = false;
+
+    function domObserverCallback(mutations) {
+        if (rafScheduled) return;
+
+        const hasNewNodes = mutations.some(function(mutation) {
+            return mutation.type === 'childList' && mutation.addedNodes.length > 0;
+        });
+
+        if (hasNewNodes) {
+            rafScheduled = true;
+            requestAnimationFrame(function() {
+                breadCrumbContext();
+                rafScheduled = false;
+            });
+        }
+    }
+
+    const observer = new MutationObserver(domObserverCallback);
+
+    observer.observe(document, {
+        childList: true,
+        subtree: true
+    });
+
+    breadCrumbContext();
+
+    if (document.readyState === 'complete') {
+        observer.disconnect();
+    } else {
+        window.addEventListener('load', function() {
+            requestAnimationFrame(function() {
+                observer.disconnect();
+            });
+        });
+    }
+</script><script type="module" src="/shared-assets/1f5459c4589ce8f899743c2f1031e839981f40d9/siteScripts/analyticsEventBinder.js"></script>
+        
+       </body>
+
+</html>

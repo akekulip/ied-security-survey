@@ -1,0 +1,596 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "W650 Wind Generator Protection System | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "W650 Wind Generator Protection System - Legacy"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Contact Sales",
+    "heading": "W650 Wind Generator Protection System - Legacy"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Manufacturing for this product has been discontinued. As an alternative, please refer to the 889 relay.",
+    "heading": "W650 Wind Generator Protection System - Legacy"
+  },
+  {
+    "location": "html-block:7",
+    "text": "The modular W650 unit has been designed as a comprehensive generator controller specially adapted to wind turbine generators. Based on the state of the art W650 family, it utilizes modern 32 bit processor platform to provide a complete solution not only for the needs of present systems but also ready for the future. The W650 simplifies the design of systems in wind turbine",
+    "heading": "W650 Wind Generator Protection System - Legacy"
+  },
+  {
+    "location": "html-block:8",
+    "text": "generation due to the complete set of protection, measurement, control and recording functions. Maintenance is eased thanks to the modular design whereas cost is scalable depending on the",
+    "heading": "W650 Wind Generator Protection System - Legacy"
+  },
+  {
+    "location": "html-block:9",
+    "text": "options to allow a cost effective solution from medium to large size generators.",
+    "heading": "W650 Wind Generator Protection System - Legacy"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Features and Benefits"
+  },
+  {
+    "location": "html-block:11",
+    "text": "All in one box: protection, control, metering and monitoring",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:12",
+    "text": "- Flash memory for field upgrades - Can Bus interface - Ethernet communications",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Wind turbine protection, control and monitoring",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Distributed generation grid device",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Protection and Control"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Phase, neutral, ground and sensitive ground instantaneous and time overcurrent (50/51)",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Bi-directional protection capability (67)",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Negative sequence overcurrent (46)",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:20",
+    "text": "High speed over voltage (59)",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:21",
+    "text": "High speed under voltage (27)",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Neutral overvoltage (59N)",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Auxiliary over and Undervoltage units (27X/59X)",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Voltage unbalance (60V)",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Overfrequency (81O)",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Underfrequency (81U)",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Flexible power units for real or reactive: Overload, underpower,reverse power (32)",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Interface to external PLC using Can Bus",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Breaker failure (50BF)",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Fuse failure",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Configurable PLC logic according to IEC 61131-3",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Fully configurable graphic display HMI interface",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Alarms panel",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Current, voltage, power, power factor, frequency measurement",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Energy metering",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Demand metering",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Trip circuit monitoring",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Oscillography",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Data logger",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Sequence of events",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Self diagnostic",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:43",
+    "text": "User Interface"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Large graphic (16x40) or regular (4x20) character display",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Easy to use control via Shuttle key",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:46",
+    "text": "Front RS232",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:47",
+    "text": "Rear wire 10/100 BaseTX Ethernet for LAN connection",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Rear wire CAN bus port (OPEN CAN protocol)",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Optional fibre optic 100 Base FX Ethernet, single or redundant",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:50",
+    "text": "Optional rear RS485 port",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:51",
+    "text": "1 ready LED and 15 programmable LED indicators",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Communication Protocols"
+  },
+  {
+    "location": "html-block:53",
+    "text": "Modbus serial RTU (serial ports)",
+    "heading": "Communication Protocols"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Modbus TCP/IP (Ethernet port)",
+    "heading": "Communication Protocols"
+  },
+  {
+    "location": "html-block:55",
+    "text": "OPEN CAN (Can port only)",
+    "heading": "Communication Protocols"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:58",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Drawings"
+  },
+  {
+    "location": "html-block:60",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:61",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:62",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:63",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:64",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:65",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:66",
+    "text": "Drawings"
+  },
+  {
+    "location": "html-block:67",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:68",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:69",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:70",
+    "text": "W650 Wind Generator Protection System - Legacy"
+  },
+  {
+    "location": "html-block:71",
+    "text": "Contact Sales",
+    "heading": "W650 Wind Generator Protection System - Legacy"
+  },
+  {
+    "location": "html-block:72",
+    "text": "Manufacturing for this product has been discontinued. As an alternative, please refer to the 889 relay.",
+    "heading": "W650 Wind Generator Protection System - Legacy"
+  },
+  {
+    "location": "html-block:73",
+    "text": "The modular W650 unit has been designed as a comprehensive generator controller specially adapted to wind turbine generators. Based on the state of the art W650 family, it utilizes modern 32 bit processor platform to provide a complete solution not only for the needs of present systems but also ready for the future. The W650 simplifies the design of systems in wind turbine",
+    "heading": "W650 Wind Generator Protection System - Legacy"
+  },
+  {
+    "location": "html-block:74",
+    "text": "generation due to the complete set of protection, measurement, control and recording functions. Maintenance is eased thanks to the modular design whereas cost is scalable depending on the",
+    "heading": "W650 Wind Generator Protection System - Legacy"
+  },
+  {
+    "location": "html-block:75",
+    "text": "options to allow a cost effective solution from medium to large size generators.",
+    "heading": "W650 Wind Generator Protection System - Legacy"
+  },
+  {
+    "location": "html-block:76",
+    "text": "Features and Benefits"
+  },
+  {
+    "location": "html-block:77",
+    "text": "All in one box: protection, control, metering and monitoring",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:78",
+    "text": "- Flash memory for field upgrades - Can Bus interface - Ethernet communications",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:79",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:80",
+    "text": "Wind turbine protection, control and monitoring",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:81",
+    "text": "Distributed generation grid device",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:82",
+    "text": "Protection and Control"
+  },
+  {
+    "location": "html-block:83",
+    "text": "Phase, neutral, ground and sensitive ground instantaneous and time overcurrent (50/51)",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:84",
+    "text": "Bi-directional protection capability (67)",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:85",
+    "text": "Negative sequence overcurrent (46)",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:86",
+    "text": "High speed over voltage (59)",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:87",
+    "text": "High speed under voltage (27)",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:88",
+    "text": "Neutral overvoltage (59N)",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:89",
+    "text": "Auxiliary over and Undervoltage units (27X/59X)",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:90",
+    "text": "Voltage unbalance (60V)",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:91",
+    "text": "Overfrequency (81O)",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:92",
+    "text": "Underfrequency (81U)",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:93",
+    "text": "Flexible power units for real or reactive: Overload, underpower,reverse power (32)",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:94",
+    "text": "Interface to external PLC using Can Bus",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:95",
+    "text": "Breaker failure (50BF)",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:96",
+    "text": "Fuse failure",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:97",
+    "text": "Configurable PLC logic according to IEC 61131-3",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:98",
+    "text": "Fully configurable graphic display HMI interface",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:99",
+    "text": "Alarms panel",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:100",
+    "text": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:101",
+    "text": "Current, voltage, power, power factor, frequency measurement",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:102",
+    "text": "Energy metering",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:103",
+    "text": "Demand metering",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:104",
+    "text": "Trip circuit monitoring",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:105",
+    "text": "Oscillography",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:106",
+    "text": "Data logger",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:107",
+    "text": "Sequence of events",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:108",
+    "text": "Self diagnostic",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:109",
+    "text": "User Interface"
+  },
+  {
+    "location": "html-block:110",
+    "text": "Large graphic (16x40) or regular (4x20) character display",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:111",
+    "text": "Easy to use control via Shuttle key",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:112",
+    "text": "Front RS232",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:113",
+    "text": "Rear wire 10/100 BaseTX Ethernet for LAN connection",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:114",
+    "text": "Rear wire CAN bus port (OPEN CAN protocol)",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:115",
+    "text": "Optional fibre optic 100 Base FX Ethernet, single or redundant",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:116",
+    "text": "Optional rear RS485 port",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:117",
+    "text": "1 ready LED and 15 programmable LED indicators",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:118",
+    "text": "Communication Protocols"
+  },
+  {
+    "location": "html-block:119",
+    "text": "Modbus serial RTU (serial ports)",
+    "heading": "Communication Protocols"
+  },
+  {
+    "location": "html-block:120",
+    "text": "Modbus TCP/IP (Ethernet port)",
+    "heading": "Communication Protocols"
+  },
+  {
+    "location": "html-block:121",
+    "text": "OPEN CAN (Can port only)",
+    "heading": "Communication Protocols"
+  },
+  {
+    "location": "html-block:122",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:123",
+    "text": "Generator Protection"
+  },
+  {
+    "location": "html-block:124",
+    "text": "GE Vernova's generator protection devices provide innovative solutions for the...",
+    "heading": "Generator Protection"
+  },
+  {
+    "location": "html-block:125",
+    "text": "View More",
+    "heading": "Generator Protection"
+  }
+]

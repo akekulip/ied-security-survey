@@ -1,0 +1,171 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "SIPROTEC 7SL87 | Siemens"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Why SIPROTEC 7SL87?"
+  },
+  {
+    "location": "html-block:4",
+    "text": "SIPROTEC 7SL87 is a line protection device designed for both overhead lines and cables. It combines phase-selective line differential and distance protection and can handle single-ended and multi-ended infeed of all lengths with up to 6 line ends and 1-pole tripping. Designed for flexibility and future-proof performance, it delivers high investment security and low operating costs.",
+    "heading": "Why SIPROTEC 7SL87?"
+  },
+  {
+    "location": "html-block:5",
+    "text": "With a modular structure and the powerful DIGSI 5 engineering tool, SIPROTEC 7SL87 provides flexible system solutions that support line protection for multiple configurations and network setups.",
+    "heading": "Why SIPROTEC 7SL87?"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Key benefits"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Enhance line safety"
+  },
+  {
+    "location": "html-block:8",
+    "text": "SIPROTEC 7SL87 offers differential and distance protection with adaptive algorithms for fast, sensitive, and stable fault detection, even with current-transformer saturation and capacitive charging currents.",
+    "heading": "Enhance line safety"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Simplify integration and operation"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Flexible I/O structure and interoperability with SIPROTEC 5 and 4 devices enable easy configuration and integration, while a user-friendly design supports simple device and software handling.",
+    "heading": "Simplify integration and operation"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Maintain high reliability and security"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Conformal coating protects electronics in extreme conditions, while robust communication and compliance with NERC CIP and BDEW cybersecurity standards safeguard critical infrastructure.",
+    "heading": "Maintain high reliability and security"
+  },
+  {
+    "location": "html-block:13",
+    "text": "FEATURED CAPABILITIES"
+  },
+  {
+    "location": "html-block:14",
+    "text": "all",
+    "heading": "FEATURED CAPABILITIES"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Differential and distance protection"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Main protection function is differential protection with adaptive algorithm for maximum sensitivity and stability, even with the most different transformer errors, current-transformer saturation and capacitive charging currents.",
+    "heading": "Differential and distance protection"
+  },
+  {
+    "location": "html-block:17",
+    "text": "all",
+    "heading": "Differential and distance protection"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Flexible and modular I/O"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Offers 12 standard variants with 4/4 or 8/8 current/voltage transformers, 5–31 binary inputs, and 8–46 binary outputs. Features a flexibly adjustable I/O structure within the SIPROTEC 5 modular system.",
+    "heading": "Flexible and modular I/O"
+  },
+  {
+    "location": "html-block:20",
+    "text": "all",
+    "heading": "Flexible and modular I/O"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Advanced communication and monitoring"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Supports serial protection data communication via optical fibers, two-wire connections and communication networks, including automatic switchover between ring and chain topologies.",
+    "heading": "Advanced communication and monitoring"
+  },
+  {
+    "location": "html-block:23",
+    "text": "all",
+    "heading": "Advanced communication and monitoring"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Accessible data and diagnostics via Web"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Displays all information and diagnostic data via Web browser, including vector diagrams, single-line views and device display pages for simple, quick and secure access.",
+    "heading": "Accessible data and diagnostics via Web"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Explore resources"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Downloads"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Profile SIPROTEC 7SL87",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Profile SIPROTEC 5 - conformal coating",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Brochure SIPROTEC 5",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Catalog SIPROTEC 5",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Tender specification",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Configuration"
+  },
+  {
+    "location": "html-block:34",
+    "text": "SIPROTEC 5 configurator",
+    "heading": "Configuration"
+  },
+  {
+    "location": "html-block:35",
+    "text": "SiePortal - Online shop"
+  },
+  {
+    "location": "html-block:36",
+    "text": "SIPROTEC 7SL87 on SiePortal",
+    "heading": "SiePortal - Online shop"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Technical documentation, Firmware, Software application examples and FAQ",
+    "heading": "SiePortal - Online shop"
+  }
+]

@@ -1,0 +1,466 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "MIB High Impedance Busbar Differential Relay | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "MIB High Impedance Busbar Differential Relay"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Contact Us",
+    "heading": "MIB High Impedance Busbar Differential Relay"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Manufacturing for this product has been discontinued. As an alternative, please refer to the P145 and P14NB with HID relays.",
+    "heading": "MIB High Impedance Busbar Differential Relay"
+  },
+  {
+    "location": "html-block:7",
+    "text": "The MIB, a member of the M II family of economical and highly functional digital protection relays, is a microprocessor based relay that provides three phase high impedance differential protection for Substation Bus-bars of any voltage level.",
+    "heading": "MIB High Impedance Busbar Differential Relay"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Use the MIB also to protect electrical machines like transformers, generators or motors against restricted earth faults.",
+    "heading": "MIB High Impedance Busbar Differential Relay"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Basic protection functions features include a high impedance differential protection unit with a tripping time of 1 1/2 cycles. Stability against external faults is guaranteed thanks to the use of a stabilizing resistor. The unit includes a set of MOVs (Metal Oxide Varistors) provided to clamp the secondary peak voltage below 2kV during fault conditions.",
+    "heading": "MIB High Impedance Busbar Differential Relay"
+  },
+  {
+    "location": "html-block:10",
+    "text": "The relay includes open CT detection which provides an alarm when it detects sustained current unbalance conditions, issuing a warning signal and blocking the operation of the unit.",
+    "heading": "MIB High Impedance Busbar Differential Relay"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Features & Benefits"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Configurable logic, curves, I/Os and LEDs",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Flash memory for field upgrades",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Two settings groups",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Drawout case",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Password protection for local operation",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Automatic display of last fault information",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:18",
+    "text": "DC power supply",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Access via front panel keypad or communication links",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:20",
+    "text": "EnerVista software for setting & monitoring",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Isolated front RS232 serial port",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:22",
+    "text": "RS485 rear port",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Differential protection for single and split busbar arrangements.",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Zero sequence differential (restricted ground fault) protection for reactors, generators, large motors, and other power apparatus",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Protection & Control"
+  },
+  {
+    "location": "html-block:27",
+    "text": "High impedance differential protection",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Open CT detection",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Lockout logic",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Configurable I/O",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:31",
+    "text": "6 outputs, four configurable, plus trip and alarm",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:33",
+    "text": "24-event record",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Analog/digital oscillography",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Per phase differential current metering",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Monitoring of the last 5 trips information from the display",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:37",
+    "text": "User Interface"
+  },
+  {
+    "location": "html-block:38",
+    "text": "2x16 character LCD display",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:39",
+    "text": "6 LED indicators, 4 configurable in function and color",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:40",
+    "text": "EnerVista software for setting and monitoring",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Front RS232 and rear RS485 ports using ModBus® RTU protocol up to 19,200 bps",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:43",
+    "text": "USB-to-Serial Cable"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:46",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:47",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:50",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:51",
+    "text": "USB-to-Serial Cable"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:53",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:58",
+    "text": "MIB High Impedance Busbar Differential Relay"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Contact Us",
+    "heading": "MIB High Impedance Busbar Differential Relay"
+  },
+  {
+    "location": "html-block:60",
+    "text": "Manufacturing for this product has been discontinued. As an alternative, please refer to the P145 and P14NB with HID relays.",
+    "heading": "MIB High Impedance Busbar Differential Relay"
+  },
+  {
+    "location": "html-block:61",
+    "text": "The MIB, a member of the M II family of economical and highly functional digital protection relays, is a microprocessor based relay that provides three phase high impedance differential protection for Substation Bus-bars of any voltage level.",
+    "heading": "MIB High Impedance Busbar Differential Relay"
+  },
+  {
+    "location": "html-block:62",
+    "text": "Use the MIB also to protect electrical machines like transformers, generators or motors against restricted earth faults.",
+    "heading": "MIB High Impedance Busbar Differential Relay"
+  },
+  {
+    "location": "html-block:63",
+    "text": "Basic protection functions features include a high impedance differential protection unit with a tripping time of 1 1/2 cycles. Stability against external faults is guaranteed thanks to the use of a stabilizing resistor. The unit includes a set of MOVs (Metal Oxide Varistors) provided to clamp the secondary peak voltage below 2kV during fault conditions.",
+    "heading": "MIB High Impedance Busbar Differential Relay"
+  },
+  {
+    "location": "html-block:64",
+    "text": "The relay includes open CT detection which provides an alarm when it detects sustained current unbalance conditions, issuing a warning signal and blocking the operation of the unit.",
+    "heading": "MIB High Impedance Busbar Differential Relay"
+  },
+  {
+    "location": "html-block:65",
+    "text": "Features & Benefits"
+  },
+  {
+    "location": "html-block:66",
+    "text": "Configurable logic, curves, I/Os and LEDs",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:67",
+    "text": "Flash memory for field upgrades",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:68",
+    "text": "Two settings groups",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:69",
+    "text": "Drawout case",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:70",
+    "text": "Password protection for local operation",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:71",
+    "text": "Automatic display of last fault information",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:72",
+    "text": "DC power supply",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:73",
+    "text": "Access via front panel keypad or communication links",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:74",
+    "text": "EnerVista software for setting & monitoring",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:75",
+    "text": "Isolated front RS232 serial port",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:76",
+    "text": "RS485 rear port",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:77",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:78",
+    "text": "Differential protection for single and split busbar arrangements.",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:79",
+    "text": "Zero sequence differential (restricted ground fault) protection for reactors, generators, large motors, and other power apparatus",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:80",
+    "text": "Protection & Control"
+  },
+  {
+    "location": "html-block:81",
+    "text": "High impedance differential protection",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:82",
+    "text": "Open CT detection",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:83",
+    "text": "Lockout logic",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:84",
+    "text": "Configurable I/O",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:85",
+    "text": "6 outputs, four configurable, plus trip and alarm",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:86",
+    "text": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:87",
+    "text": "24-event record",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:88",
+    "text": "Analog/digital oscillography",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:89",
+    "text": "Per phase differential current metering",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:90",
+    "text": "Monitoring of the last 5 trips information from the display",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:91",
+    "text": "User Interface"
+  },
+  {
+    "location": "html-block:92",
+    "text": "2x16 character LCD display",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:93",
+    "text": "6 LED indicators, 4 configurable in function and color",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:94",
+    "text": "EnerVista software for setting and monitoring",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:95",
+    "text": "Front RS232 and rear RS485 ports using ModBus® RTU protocol up to 19,200 bps",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:96",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:97",
+    "text": "Bus Protection"
+  },
+  {
+    "location": "html-block:98",
+    "text": "GE Vernova provides enhanced reliability through advanced protection for a wide range of...",
+    "heading": "Bus Protection"
+  },
+  {
+    "location": "html-block:99",
+    "text": "View More",
+    "heading": "Bus Protection"
+  }
+]

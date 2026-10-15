@@ -1,0 +1,1776 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/aadvance-trusted-sis-workstation/2-01-00/aadvance-trusted-sis-workstation-software-ditamap.html</loc>
+                <lastmod>2025-12-01T15:06:42Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/common/9/dcl-ditamap.html</loc>
+                <lastmod>2026-07-22T03:10:34Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/common/9/ps5000discretetagext-ditamap.html</loc>
+                <lastmod>2026-07-15T05:00:44Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/common/9/pscipobjectextensions-ditamap.html</loc>
+                <lastmod>2026-07-15T05:05:24Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/common/9/psmodule-ditamap.html</loc>
+                <lastmod>2026-07-15T05:10:43Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/common/9/psmoduleextensions-ditamap.html</loc>
+                <lastmod>2026-07-15T05:16:41Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/common/9/psmultiportcipobjextensions-ditamap.html</loc>
+                <lastmod>2026-07-15T05:22:41Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/common/9/pv5000pages-ditamap.html</loc>
+                <lastmod>2026-07-15T05:35:06Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/common/9/pv5069discrete-ditamap.html</loc>
+                <lastmod>2026-07-15T05:42:36Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/common/9/pvcommonio2-ditamap.html</loc>
+                <lastmod>2026-07-29T08:54:17Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/common/9/pvdiagnosticspanel-ditamap.html</loc>
+                <lastmod>2026-07-15T06:05:11Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/common/9/pvdnsafetyio2-ditamap.html</loc>
+                <lastmod>2026-07-15T06:13:08Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/common/9/pvedscommon-ditamap.html</loc>
+                <lastmod>2026-07-15T06:29:08Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/common/9/pvmoddefdlg2-ditamap.html</loc>
+                <lastmod>2026-07-29T08:46:02Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/common/9/pvmultiportpages2-ditamap.html</loc>
+                <lastmod>2026-07-15T07:05:59Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/common/9/pvsheetcomponents2-ditamap.html</loc>
+                <lastmod>2026-07-15T07:14:28Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/common/9/pvstring2-ditamap.html</loc>
+                <lastmod>2026-07-15T07:22:47Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/common/9/snngen-ditamap.html</loc>
+                <lastmod>2026-07-15T07:28:29Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/generic-ethernet-device/40/generic-ethernet-device-ditamap.html</loc>
+                <lastmod>2024-04-18T04:33:36Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/amci/124x/1/124x-ditamap.html</loc>
+                <lastmod>2025-08-08T20:00:31Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/amci/3401/1/3401-ditamap.html</loc>
+                <lastmod>2025-08-08T20:00:39Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/burkert/flowave-8098/1/flowave-8098-ditamap.html</loc>
+                <lastmod>2025-08-09T17:01:52Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/endress-hauser/ca80/2/ca80-ditamap.html</loc>
+                <lastmod>2026-09-01T15:57:36Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/endress-hauser/cm44/2/cm44-ditamap.html</loc>
+                <lastmod>2026-09-01T15:57:33Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/endress-hauser/csf/2/csf-ditamap.html</loc>
+                <lastmod>2026-09-01T15:57:40Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/endress-hauser/promag_100/1/promag_100-ditamap.html</loc>
+                <lastmod>2025-08-08T20:11:54Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/endress-hauser/promag_300/1/promag_300-ditamap.html</loc>
+                <lastmod>2025-08-08T20:12:05Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/endress-hauser/promag_400/1/promag_400-ditamap.html</loc>
+                <lastmod>2025-08-08T20:12:14Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/endress-hauser/promag_400_v02/1/promag_400_v02-ditamap.html</loc>
+                <lastmod>2025-08-08T20:12:23Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/endress-hauser/promass_100/1/promass_100-ditamap.html</loc>
+                <lastmod>2025-08-08T20:12:32Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/endress-hauser/promass_300/1/promass_300-ditamap.html</loc>
+                <lastmod>2025-08-08T20:12:42Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/endress-hauser/rsg45/1/rsg45-ditamap.html</loc>
+                <lastmod>2025-08-08T20:12:51Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/hardy/5034-ws/1/hi5034-ws-ditamap.html</loc>
+                <lastmod>2025-08-09T17:02:22Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/hardy/5069-xws/1/hi5069-xws-ditamap.html</loc>
+                <lastmod>2025-06-30T16:01:07Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/helm/5034-plm-hm/1/5034-plm-hm-ditamap.html</loc>
+                <lastmod>2026-06-29T17:28:51Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/helm/5034-wm-hm/1/5034-wm-hm-ditamap.html</loc>
+                <lastmod>2026-02-25T21:15:12Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/hoffman-enclosures/acu/1/acu-ditamap.html</loc>
+                <lastmod>2025-08-08T20:59:42Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/krohne/ifc400/1/ifc400-ditamap.html</loc>
+                <lastmod>2026-10-01T19:52:33Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/mettler-toledo/act350/1/act350-ditamap.html</loc>
+                <lastmod>2025-08-08T20:59:54Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/mettler-toledo/ind360/1/ind360-ditamap.html</loc>
+                <lastmod>2025-08-08T21:00:03Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/mettler-toledo/ind500x/1/ind500x-ditamap.html</loc>
+                <lastmod>2026-02-23T15:30:09Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/mettler-toledo/ind570/1/ind570-ditamap.html</loc>
+                <lastmod>2025-08-08T21:00:12Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/mettler-toledo/ind780/1/ind780-ditamap.html</loc>
+                <lastmod>2025-08-08T21:00:20Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/mettler-toledo/slp85xd/1/slp85xd-ditamap.html</loc>
+                <lastmod>2025-08-08T21:00:28Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/prosoft/ilx56-pnx/2/ilx56-pnx-ditamap.html</loc>
+                <lastmod>2025-08-08T21:04:24Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/rotork/enet_actuator/1/rt_enet_actuator-ditamap.html</loc>
+                <lastmod>2025-12-17T16:48:27Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/softing/5069-sdn/1/5069_sdn-ditamap.html</loc>
+                <lastmod>2025-08-09T16:58:06Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/spectrum-controls/1734sc-iexch/1/1734sc-iexch-ditamap.html</loc>
+                <lastmod>2025-08-09T16:58:35Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/spectrum-controls/1734sc-if4u/1/1734sc-if4u-ditamap.html</loc>
+                <lastmod>2025-08-09T16:58:44Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/spectrum-controls/1734sc-oe2cih/1/1734sc-oe2cih-ditamap.html</loc>
+                <lastmod>2025-08-09T16:58:52Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/spectrum-controls/1756-rms-sc/1/1756-rms-sc-ditamap.html</loc>
+                <lastmod>2025-08-09T16:59:01Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/spectrum-controls/1756sc-ctr8/1/1756sc-ctr8-ditamap.html</loc>
+                <lastmod>2025-08-09T16:59:09Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/spectrum-controls/1756sc-ic32/1/1756sc-ic32-ditamap.html</loc>
+                <lastmod>2025-08-09T16:59:18Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/spectrum-controls/1756sc-if8u/1/1756sc-if8u-ditamap.html</loc>
+                <lastmod>2025-08-09T16:59:27Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/spectrum-controls/5069-iv16f-sc/1/5069-iv16f-sc-ditamap.html</loc>
+                <lastmod>2025-08-09T16:59:37Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/spectrum-controls/5069-ov16f-sc/1/5069-ov16f-sc-ditamap.html</loc>
+                <lastmod>2025-08-09T16:59:44Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/partner/tci/pqconnect/1/pqconnect-ditamap.html</loc>
+                <lastmod>2025-08-09T17:00:14Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-1718_19-analog/40/pshart_1718_19_tagext-ditamap.html</loc>
+                <lastmod>2025-04-16T00:29:27Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-1718_19-analog/40/pv1718_19analog-ditamap.html</loc>
+                <lastmod>2025-04-16T00:30:16Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-1718_19-analog/40/pv1718_19hart-ditamap.html</loc>
+                <lastmod>2025-04-16T00:33:45Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-1718_19-discrete/40/psra1718_19discretetagext-ditamap.html</loc>
+                <lastmod>2025-04-16T00:26:16Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-1718_19-discrete/40/pv1718_19discrete-ditamap.html</loc>
+                <lastmod>2025-04-16T00:25:45Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-1718_19-specialty/40/psra1718_19_specialtytagext-ditamap.html</loc>
+                <lastmod>2025-04-16T00:29:48Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-1718_19-specialty/40/pv1718_19specialty-ditamap.html</loc>
+                <lastmod>2025-04-16T00:28:32Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-1732-analog/40/1732e-analog-ditamap.html</loc>
+                <lastmod>2025-12-02T02:10:04Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-1732-discrete/40/1732e-discrete-ditamap.html</loc>
+                <lastmod>2025-12-02T02:10:43Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-1732eqc-discrete/40/1732eqc-discrete-ditamap.html</loc>
+                <lastmod>2025-12-02T02:11:45Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-1732eqcd-discrete/40/1732eqcd-discrete-ditamap.html</loc>
+                <lastmod>2025-12-02T02:12:06Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-1732es-discrete/40/1732-ethernet-safety-discrete-ditamap.html</loc>
+                <lastmod>2025-09-16T04:56:54Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-1734-safety-analog/40/1734-safety-analog-ditamap.html</loc>
+                <lastmod>2025-09-16T04:40:40Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-1734-safety-discrete/40/1734-safety-discrete-ditamap.html</loc>
+                <lastmod>2025-09-16T04:49:22Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-1738-16ptarmorpoint/40/ps16ptarmorpointtagext-ditamap.html</loc>
+                <lastmod>2025-04-16T00:17:22Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-1738-16ptarmorpoint/40/pv16ptarmorpoint-ditamap.html</loc>
+                <lastmod>2023-06-20T08:32:13Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-1738-specialty/40/pv1738specialty-ditamap.html</loc>
+                <lastmod>2025-04-16T00:08:15Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-1756-analog1/40/ps1756analog1tagext-ditamap.html</loc>
+                <lastmod>2023-05-16T02:50:36Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-1756-analog1/40/pv1756analog1-ditamap.html</loc>
+                <lastmod>2023-05-22T00:32:06Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-1756-apex-analog/40/ps1756apexanalogtagext-ditamap.html</loc>
+                <lastmod>2023-03-06T12:18:41Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-1756-apex-analog/40/pv1756apexanalog-ditamap.html</loc>
+                <lastmod>2023-03-06T13:02:16Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-1756-apex2/40/ps1756apex2tagext-ditamap.html</loc>
+                <lastmod>2023-03-06T12:13:59Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-1756-apex2/40/pv1756apex2-ditamap.html</loc>
+                <lastmod>2023-03-23T05:42:37Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-1756-discrete/40/ps1756discretetagext-ditamap.html</loc>
+                <lastmod>2023-05-16T02:59:11Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-1756-discrete/40/pv1756discrete-ditamap.html</loc>
+                <lastmod>2023-05-16T02:59:08Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-1756-enet-comms/40/pvpageenetbridgegeneral-ditamap.html</loc>
+                <lastmod>2025-08-01T06:26:49Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-1756-hart/40/ps1756harttagext-ditamap.html</loc>
+                <lastmod>2023-05-15T00:07:53Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-1756-hart/40/pv1756hart-ditamap.html</loc>
+                <lastmod>2023-05-15T00:07:48Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-1783-enet-comms/40/pv1783enetswitch-ditamap.html</loc>
+                <lastmod>2025-09-02T01:37:45Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-1783-enet-comms/40/stratix-4100-etap-ditamap.html</loc>
+                <lastmod>2025-09-11T00:03:19Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-432es-gl-eip/3/432es-ditamap.html</loc>
+                <lastmod>2026-01-20T00:23:16Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5015-universal/40/5015-u8ihft-ditamap.html</loc>
+                <lastmod>2025-07-18T05:01:53Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5032-discrete/40/5032-discrete-ditamap.html</loc>
+                <lastmod>2025-12-02T02:12:44Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5032-iolinkmaster/40/5032-io-link-master-ditamap.html</loc>
+                <lastmod>2026-07-14T23:26:08Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5034-adapters/41/5034-aentr-ditamap.html</loc>
+                <lastmod>2026-03-13T17:54:50Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5034-analog-hart/40/5034analoghart-ditamap.html</loc>
+                <lastmod>2025-12-15T21:14:29Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5034-analog/40/5034analog-ditamap.html</loc>
+                <lastmod>2025-12-16T15:27:19Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5034-discrete/41/pv5034discrete-ditamap.html</loc>
+                <lastmod>2026-09-09T20:00:50Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5034-discrete/41/pv5034discreteub8-ditamap.html</loc>
+                <lastmod>2026-03-13T17:58:20Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5034-iolink-master/40/ps5034iolinkmasterenu-ditamap.html</loc>
+                <lastmod>2026-04-23T20:13:31Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5034-safety-discrete/40/5034-digital-safety-ditamap.html</loc>
+                <lastmod>2026-02-10T16:23:48Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5034-specialty/41/pv5034encoder-ditamap.html</loc>
+                <lastmod>2026-03-13T17:57:17Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5034-specialty/41/pv5034stepd-ditamap.html</loc>
+                <lastmod>2026-09-09T20:04:08Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5069-adapters/40/pv5069adapters-ditamap.html</loc>
+                <lastmod>2023-05-16T03:00:47Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5069-analog/40/ps5000analogtagext-ditamap.html</loc>
+                <lastmod>2023-05-16T03:01:31Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5069-analog/40/pv5069analog-ditamap.html</loc>
+                <lastmod>2023-05-22T00:24:34Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5069-discrete-r2/40/pv5069discreter2-ditamap.html</loc>
+                <lastmod>2023-05-25T15:08:06Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5069-discrete/40/pv5069discrete2-ditamap.html</loc>
+                <lastmod>2026-03-30T02:14:32Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5069-hart-analog/40/pv5069hartanalog-ditamap.html</loc>
+                <lastmod>2025-09-16T05:34:34Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5069-safety-discrete/40/5069-safety-discrete-ditamap.html</loc>
+                <lastmod>2024-11-06T02:31:50Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5069-specialty/40/5069-serial-ditamap.html</loc>
+                <lastmod>2025-09-16T04:29:46Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5069-specialty/40/pv5069specialty-ditamap.html</loc>
+                <lastmod>2026-08-04T02:15:16Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5094-adapters/40/ps5000adaptertagext-ditamap.html</loc>
+                <lastmod>2023-05-16T03:03:41Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5094-adapters/40/pv5094ethernetadapters-ditamap.html</loc>
+                <lastmod>2023-05-16T03:03:35Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5094-analog/40/ps5094analogtagext-ditamap.html</loc>
+                <lastmod>2023-05-16T03:05:31Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5094-analog/40/pv5094analog-ditamap.html</loc>
+                <lastmod>2023-05-16T03:05:29Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5094-discrete/40/ps5094discretetagext-ditamap.html</loc>
+                <lastmod>2023-03-07T00:13:27Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5094-discrete/40/pv5094discrete-ditamap.html</loc>
+                <lastmod>2023-03-27T05:01:07Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5094-hart-analog/40/majorrevisionext-ditamap.html</loc>
+                <lastmod>2023-03-06T23:55:43Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5094-hart-analog/40/ps5094hartanalogtagext-ditamap.html</loc>
+                <lastmod>2023-04-03T07:03:59Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5094-hart-analog/40/pv5094hartanalog-ditamap.html</loc>
+                <lastmod>2023-03-24T00:15:09Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5094-safety-discrete/40/majorrevisionext-ditamap.html</loc>
+                <lastmod>2026-03-27T21:17:00Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5094-safety-discrete/40/ps5094sdiscretetagext-ditamap.html</loc>
+                <lastmod>2026-03-27T21:17:07Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5094-safety-discrete/40/pv5094sdiscrete-ditamap.html</loc>
+                <lastmod>2026-03-27T21:17:23Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5094-safety-discrete/40/pvdiagnosticspanel-ditamap.html</loc>
+                <lastmod>2026-03-27T21:17:15Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5094-specialty/40/5094-serial-ditamap.html</loc>
+                <lastmod>2025-09-16T02:49:30Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5094-specialty/40/pv5094specialty-ditamap.html</loc>
+                <lastmod>2025-04-16T00:30:56Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5094s-analog/41/majorrevisionexthart-ditamap.html</loc>
+                <lastmod>2026-03-27T20:17:18Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5094s-analog/41/ps5094hartsanalogtagext-ditamap.html</loc>
+                <lastmod>2026-03-27T20:17:27Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5094s-analog/41/pv5094hartsanalog-ditamap.html</loc>
+                <lastmod>2026-03-27T20:17:46Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-5094s-analog/41/pv5094sanalogdiagnostics-ditamap.html</loc>
+                <lastmod>2026-03-27T20:17:46Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-58uhf/2/pv58uhf-ditamap.html</loc>
+                <lastmod>2025-12-15T00:13:28Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-843e/2/pv843e-ditamap.html</loc>
+                <lastmod>2025-05-15T00:49:21Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-843es/2/pv843es-ditamap.html</loc>
+                <lastmod>2026-01-12T00:58:31Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-adapter/40/pvpointioadpt-ditamap.html</loc>
+                <lastmod>2025-03-05T05:47:29Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-compactguardlogix-5069-l3s/3/ra-compactguardlogix-5069-l3s-ditamap.html</loc>
+                <lastmod>2026-04-28T18:53:23Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-compactlogix-5069-l3/3/ra-compactlogix-5069-l3-ditamap.html</loc>
+                <lastmod>2026-04-28T18:53:34Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-controllogix-1756-l8/3/ra-controllogix-1756-l8-ditamap.html</loc>
+                <lastmod>2026-04-28T18:52:44Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-controllogix-1756-l9s/3/ra-controllogix-1756-l9s-ditamap.html</loc>
+                <lastmod>2026-04-28T18:53:53Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-dio-analog/40/psdioanalogtagext-ditamap.html</loc>
+                <lastmod>2025-03-05T06:01:02Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-dio-analog/40/pvdioanalog-ditamap.html</loc>
+                <lastmod>2025-03-05T06:01:36Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-dio-ascii/40/1734-ascii-ditamap.html</loc>
+                <lastmod>2025-04-16T00:32:10Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-dio-diagin/40/psdiodiagintagext-ditamap.html</loc>
+                <lastmod>2025-03-05T05:54:36Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-dio-diagin/40/pvdiodiagin-ditamap.html</loc>
+                <lastmod>2025-03-05T05:54:52Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-dio-discrete/40/psdiodiscretetagext-ditamap.html</loc>
+                <lastmod>2025-03-05T05:48:48Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-dio-discrete/40/pvdiodiscrete-ditamap.html</loc>
+                <lastmod>2025-03-05T05:53:21Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-dio-hdanalog/40/psdioanalogtagext-ditamap.html</loc>
+                <lastmod>2025-03-14T02:59:11Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-dio-hdanalog/40/pvdiohdanalog-ditamap.html</loc>
+                <lastmod>2025-03-05T06:03:20Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-dio-specialty/40/psdiospecialtytagext-ditamap.html</loc>
+                <lastmod>2025-03-05T06:04:30Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-dio-specialty/40/pvdiospecialty-ditamap.html</loc>
+                <lastmod>2025-03-05T06:05:10Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-generic-1734-device/40/1734-generic-ditamap.html</loc>
+                <lastmod>2025-09-11T08:55:33Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-generic-1756-device/40/1756-generic-ditamap.html</loc>
+                <lastmod>2025-02-25T02:03:53Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-generic-hart/40/ra-generic-hart-ditamap.html</loc>
+                <lastmod>2026-07-22T06:16:29Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-guardlogix-1756-l8s/3/ra-guardlogix-1756-l8s-ditamap.html</loc>
+                <lastmod>2026-04-28T18:54:13Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-power-monitor/40/pspm5000tagext-ditamap.html</loc>
+                <lastmod>2026-06-08T04:36:56Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-power-monitor/40/pvpm5000-ditamap.html</loc>
+                <lastmod>2026-06-03T08:57:39Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-selfconfigdiscrete/40/psdioselfconfigdiscretetagext-ditamap.html</loc>
+                <lastmod>2025-03-05T05:56:09Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra-selfconfigdiscrete/40/pvdioselfconfigdiscrete-ditamap.html</loc>
+                <lastmod>2025-03-05T05:56:26Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra140me/1/ra-140me-e100-ditamap.html</loc>
+                <lastmod>2025-11-12T06:53:23Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra1834spt/1/1834-sup-pwr-ditamap.html</loc>
+                <lastmod>2026-02-04T05:06:21Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra440renetr/3/guardmastermoddefdlg-ditamap.html</loc>
+                <lastmod>2026-08-05T08:56:28Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/add-on-profiles/ra442gmab/2/pv442gmab-ditamap.html</loc>
+                <lastmod>2025-07-11T04:53:44Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/asset-intelligence/current/ai-instruction-manual-ditamap.html</loc>
+                <lastmod>2024-06-13T13:06:55Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/asset-intelligence/current/ai-release-notes-ditamap.html</loc>
+                <lastmod>2024-09-13T10:56:17Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/asset-intelligence/current/release-notes-ditamap.html</loc>
+                <lastmod>2024-06-12T16:35:45Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/asset-intelligence/current/user-guide-ditamap.html</loc>
+                <lastmod>2024-06-13T12:29:11Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/batch-performance-analytics-pc/1-00-00/release-notes-ditamap.html</loc>
+                <lastmod>2025-02-07T11:37:59Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/common-content/integration-of-fdtm-with-is-project-ditamap.html</loc>
+                <lastmod>2023-11-21T09:59:34Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/common-installer/3-60-00/common-installer-help-ditamap.html</loc>
+                <lastmod>2025-09-22T04:54:39Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/controlflash-plus/6-02/controlflash-plus-help-ditamap.html</loc>
+                <lastmod>2025-12-17T02:26:32Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/diagnostics-counter-monitor/1-08/ftdcm-ditamap.html</loc>
+                <lastmod>2025-09-17T05:44:15Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/ethernet-ip-address-commissioning-tool/3-01/eipc-help-ditamap.html</loc>
+                <lastmod>2025-09-24T02:05:10Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-action-manager/1-02/ftam-help-ditamap.html</loc>
+                <lastmod>2025-10-29T06:33:32Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-activation-manager/5-03-00/help-ditamap.html</loc>
+                <lastmod>2026-07-20T15:34:49Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-activation-manager/5-03-00/release-notes-ditamap.html</loc>
+                <lastmod>2026-07-20T15:32:05Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-analytics-dataview/4-02-00/dv-installer-guide-windows-01-ditamap.html</loc>
+                <lastmod>2024-04-15T10:18:05Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-analytics-dataview/4-02-00/infoplatform-guide-02-ditamap.html</loc>
+                <lastmod>2024-04-22T11:48:26Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-analytics-dataview/test/ai-user-manual-test-ditamap.html</loc>
+                <lastmod>2024-03-06T11:55:12Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-analytics-guardianai/current/online-help-ditamap.html</loc>
+                <lastmod>2026-03-16T08:16:43Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-analytics-guardianai/current/releasenotes-ditamap.html</loc>
+                <lastmod>2025-11-04T07:16:11Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-analytics-security-provider/4-00-00/admin-guide-02-ditamap.html</loc>
+                <lastmod>2023-05-23T21:06:38Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-analytics-security-provider/4-00-00/adv-install-(win)02-ditamap.html</loc>
+                <lastmod>2023-05-23T21:06:58Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-analytics-security-provider/4-00-00/adv-install-guide-(linux)-01-ditamap.html</loc>
+                <lastmod>2023-05-23T21:40:08Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-assetcentre/16-00-00/assetcentrewebhelp-ditamap.html</loc>
+                <lastmod>2025-11-28T05:16:38Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-assetcentre/16-00-00/configureserversettingsutility-ditamap.html</loc>
+                <lastmod>2025-11-28T05:13:24Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-assetcentre/16-00-00/ftac-inventoryviewer-ditamap.html</loc>
+                <lastmod>2025-11-28T05:11:36Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-assetcentre/16-00-00/ftacarchiveextractor-ditamap.html</loc>
+                <lastmod>2025-11-28T04:51:23Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-assetcentre/16-00-00/ftaceventlogattachmentextractor-ditamap.html</loc>
+                <lastmod>2025-11-28T05:09:37Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-assetcentre/16-00-00/ftacimportexportutility-ditamap.html</loc>
+                <lastmod>2025-11-28T05:10:45Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-assetcentre/16-00-00/ftaclifecycleinfotransfer-ditamap.html</loc>
+                <lastmod>2025-11-28T05:12:42Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-assetcentre/16-00-00/ftacmainen-ditamap.html</loc>
+                <lastmod>2026-04-01T01:37:59Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-batch/18-00/batch-material-manager-online-help-ditamap.html</loc>
+                <lastmod>2026-06-01T14:09:49Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-batch/18-00/batch-network-editor-online-help-ditamap.html</loc>
+                <lastmod>2026-06-01T14:09:45Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-batch/18-00/factorytalk-batch-online-help-ditamap.html</loc>
+                <lastmod>2026-06-01T14:13:33Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-batch/18-00/factorytalk-eprocedure-online-help-ditamap.html</loc>
+                <lastmod>2026-06-01T14:12:27Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-data-explorer/4-05-00/tutorial-guide-ditamap.html</loc>
+                <lastmod>2023-09-11T10:51:37Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-data-explorer/4-05-00/user-guide-ditamap.html</loc>
+                <lastmod>2023-09-11T10:51:44Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-data-mosaix-pc/8-02-001/release-notes/ftdmrn8-ditamap.html</loc>
+                <lastmod>2025-12-15T06:03:46Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-datamosaix-saas/current/gettingstartedguide-ditamap.html</loc>
+                <lastmod>2025-10-09T03:46:33Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-datamosaix-saas/current/online-help-ditamap.html</loc>
+                <lastmod>2026-10-06T05:50:58Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-datamosaix-saas/current/releasenotes-ditamap.html</loc>
+                <lastmod>2026-10-06T05:56:48Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-datamosaix/current/gettingstartedguide-ditamap.html</loc>
+                <lastmod>2025-03-12T11:40:47Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-datamosaix/current/online-help-ditamap.html</loc>
+                <lastmod>2025-03-21T07:03:18Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-datamosaix/current/releasenotes-ditamap.html</loc>
+                <lastmod>2025-03-21T07:03:18Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-design-studio/current/contents-ditamap.html</loc>
+                <lastmod>2026-08-11T19:18:50Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-design-studio/current/release-notes-ditamap.html</loc>
+                <lastmod>2026-08-11T19:16:35Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-design-studio/current/technical-content/ftds-pm001/web_ftds-pm001-ditamap.html</loc>
+                <lastmod>2026-08-11T20:15:48Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-design-studio/current/technical-content/ftds-qs001/web_ftds-qs001-ditamap.html</loc>
+                <lastmod>2026-08-11T19:27:02Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-design-workbench/1-01-00/ftdw-help-ditamap.html</loc>
+                <lastmod>2026-04-15T08:59:17Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-edge-gateway/1-04-00/ft-edge-gateway-help-ditamap.html</loc>
+                <lastmod>2023-06-21T15:41:46Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-edge-gateway/1-04-00/ft-edge-gateway-qsg-ditamap.html</loc>
+                <lastmod>2023-06-16T08:39:25Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-edge-gateway/1-04-00/ft-edge-gateway-release-notes-ditamap.html</loc>
+                <lastmod>2023-06-21T20:07:55Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-edge-gateway/distributed-1-00/ft-edge-gateway-help-ditamap.html</loc>
+                <lastmod>2023-06-21T20:23:17Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-edge-gateway/distributed-1-00/ft-edge-gateway-release-notes-ditamap.html</loc>
+                <lastmod>2023-06-21T20:23:54Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-edge-manager/v1-00/edge-os-install-quide-ditamap.html</loc>
+                <lastmod>2023-06-21T20:39:03Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-edge-manager/v1-00/ft-edge-manager-qsg-ditamap.html</loc>
+                <lastmod>2023-06-21T20:42:15Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-edge-manager/v1-00/ft-edge-manager-rn-ditamap.html</loc>
+                <lastmod>2023-06-21T20:39:25Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-edge-manager/v1-00/ft-edge-manager-user-manual-ditamap.html</loc>
+                <lastmod>2023-06-21T20:39:34Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-energy-manager/current/ftem-release-notes-ditamap.html</loc>
+                <lastmod>2026-07-29T12:17:11Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-energy-manager/current/user-guide-ditamap.html</loc>
+                <lastmod>2026-07-29T12:17:34Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-historian-machine-edition/7-102/fthme-help-series-c-chrome-ditamap.html</loc>
+                <lastmod>2026-01-28T00:43:00Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-historian-machine-edition/7-102/fthme-help-series-c-ie-ditamap.html</loc>
+                <lastmod>2026-01-28T00:32:12Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-historian-site-edition/12-01-00/fthistorianconfig-ditamap.html</loc>
+                <lastmod>2026-04-16T01:10:44Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-historian-site-edition/12-01-00/historian-webapi-ditamap.html</loc>
+                <lastmod>2026-04-16T01:50:44Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-historian-site-edition/12-01-00/historian-webtrend-ditamap.html</loc>
+                <lastmod>2026-04-16T01:55:31Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-historian-site-edition/12-01-00/webtrend-migration-tool-ditamap.html</loc>
+                <lastmod>2026-04-16T01:58:36Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-hub/current/factorytalk_hub-ditamap.html</loc>
+                <lastmod>2026-08-17T13:57:01Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-linx-data-bridge/6-60/factorytalk-linx-data-bridge-help-ditamap.html</loc>
+                <lastmod>2025-09-04T05:50:20Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-linx-gateway/6-60/factorytalk-linx-gateway-help-ditamap.html</loc>
+                <lastmod>2025-09-04T08:07:28Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-linx-redundancy-module-configuration-t/10-01/rmct-help-ditamap.html</loc>
+                <lastmod>2025-09-17T05:43:46Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-optix/current/contents-ditamap.html</loc>
+                <lastmod>2026-09-29T19:28:42Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-optix/current/installation-guide-ditamap.html</loc>
+                <lastmod>2026-09-29T19:59:19Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-optix/current/release-notes-ditamap.html</loc>
+                <lastmod>2026-09-29T19:41:07Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-optix/current/technical-content/optix-at001/web_optix-at001-ditamap.html</loc>
+                <lastmod>2026-02-20T15:44:48Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-policy-manager/6-60/help-ditamap.html</loc>
+                <lastmod>2025-10-02T07:39:42Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-policy-manager/6-60/release-notes-ditamap.html</loc>
+                <lastmod>2025-10-02T07:40:46Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-remote-access/current/factorytalk-remote-access-help-ditamap.html</loc>
+                <lastmod>2026-05-22T20:18:02Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-services-platform/6-60/factorytalk-services-platform-help-ditamap.html</loc>
+                <lastmod>2026-04-21T05:27:36Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-services-platform/6-60/ftsp/ft-diagnostics-setup-help-ditamap.html</loc>
+                <lastmod>2026-06-05T08:09:38Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-twin-studio/current/factorytalk-twin-studio-ditamap.html</loc>
+                <lastmod>2025-05-27T19:44:34Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-updater/4-30-01/9509-gr001_-en-p-ditamap.html</loc>
+                <lastmod>2025-11-26T00:39:32Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-updater/4-30-01/help-ditamap.html</loc>
+                <lastmod>2025-11-26T00:33:25Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-vault/current/factorytalk_vault-ditamap.html</loc>
+                <lastmod>2025-10-13T13:52:30Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-view/16-00-00/fuw-help-ditamap.html</loc>
+                <lastmod>2025-09-28T00:39:58Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-view/16-00-00/main-help-ditamap.html</loc>
+                <lastmod>2025-09-28T00:40:30Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-view/16-00-00/me-help-ditamap.html</loc>
+                <lastmod>2025-10-11T05:10:17Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-view/16-00-00/se-help-ditamap.html</loc>
+                <lastmod>2025-10-11T03:16:38Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-view/16-00-00/tools-help-ditamap.html</loc>
+                <lastmod>2025-09-28T00:38:28Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-viewpoint/16-00-00/ftvpad-help-ditamap.html</loc>
+                <lastmod>2025-09-18T23:39:36Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-viewpoint/16-00-00/ftvpme-help-ditamap.html</loc>
+                <lastmod>2025-09-18T23:25:28Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/factorytalk-viewpoint/16-00-00/ftvpse-help-ditamap.html</loc>
+                <lastmod>2025-09-18T23:52:55Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/ftdstudio/1-03/release-notes/factorytalk-design-studio-release-notes-ditamap.html</loc>
+                <lastmod>2023-07-25T16:23:30Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/rslinx-classic/4-60/rslinx-classic-help-ditamap.html</loc>
+                <lastmod>2025-09-08T05:02:28Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/sequencemanager/1756-rm101-ditamap.html</loc>
+                <lastmod>2024-04-12T14:20:19Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/sequencemanager/publications/1756_rm101/sequencemgr_controls_ref_manual-ditamap.html</loc>
+                <lastmod>2024-09-04T13:40:38Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/studio-5000-application-code-manager/5-01/application-code-manager-help-ditamap.html</loc>
+                <lastmod>2025-12-18T01:36:03Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/studio-5000-application-code-manager/5-01/library-designer-help-ditamap.html</loc>
+                <lastmod>2025-12-18T01:53:41Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/studio-5000-application-code-manager/5-01/library-object-manager-help-ditamap.html</loc>
+                <lastmod>2025-12-18T01:54:06Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/studio-5000-logix-designer/38-03/contents-ditamap.html</loc>
+                <lastmod>2026-09-14T18:09:54Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/studio-5000-logix-designer/38-03/logixdesignermainenu-ditamap.html</loc>
+                <lastmod>2026-09-14T17:52:15Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/studio-5000-logix-designer/38-03/mrscmn-ditamap.html</loc>
+                <lastmod>2026-09-14T17:52:03Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/studio-5000-logix-designer/38-03/releasenotesmainenu-ditamap.html</loc>
+                <lastmod>2026-09-14T17:52:45Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/studio-5000-logix-designer/38-03/selectmoduletypedialog-ditamap.html</loc>
+                <lastmod>2026-09-14T17:51:49Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/studio-5000-logix-designer/38-03/studio5000mainenu-ditamap.html</loc>
+                <lastmod>2026-09-14T17:52:28Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/studio-5000-smart-object-configurator/2-03/s5ksoc-help-ditamap.html</loc>
+                <lastmod>2025-06-27T15:35:22Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/studio-5000-view-designer/11-01/studio-5000-view-designer-help-ditamap.html</loc>
+                <lastmod>2026-09-14T19:46:48Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/technical/_common/_online/syslog-rm001-ditamap.html</loc>
+                <lastmod>2025-09-29T16:50:26Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/technical/eic/_online/1834-td001/1834-td001-ditamap.html</loc>
+                <lastmod>2026-05-11T18:26:59Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/technical/eic/_online/1834-um001/1834-um001-ditamap.html</loc>
+                <lastmod>2026-05-11T18:26:56Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/technical/i-o/current/5034-pointmax/_online/5034-in001-ditamap.html</loc>
+                <lastmod>2026-08-12T16:29:49Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/technical/i-o/current/5034-pointmax/_online/5034-td001-ditamap.html</loc>
+                <lastmod>2026-08-12T17:34:37Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/technical/i-o/current/5034-pointmax/_online/5034-um001-ditamap.html</loc>
+                <lastmod>2026-08-12T17:45:27Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/technical/i-o/current/5034-pointmax/_online/5034-um002-ditamap.html</loc>
+                <lastmod>2026-08-12T16:26:43Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/technical/i-o/current/5034-pointmax/_online/5034-um003-ditamap.html</loc>
+                <lastmod>2026-08-12T17:12:32Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/technical/i-o/current/5034-pointmax/_online/5034-um004-ditamap.html</loc>
+                <lastmod>2026-08-12T16:20:35Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/technical/i-o/current/5034-pointmax/_online/5034-um005-ditamap.html</loc>
+                <lastmod>2026-08-12T16:19:02Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/technical/i-o/current/5034-pointmax/_online/5034-um006-ditamap.html</loc>
+                <lastmod>2026-08-12T16:47:56Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/technical/i-o/current/5034-pointmax/_online/5034-um007-ditamap.html</loc>
+                <lastmod>2026-08-12T16:30:49Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/technical/i-o/current/5034-pointmax/_online/5034-um008-ditamap.html</loc>
+                <lastmod>2026-08-12T16:39:44Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/technical/i-o/current/5034-pointmax/_online/pointmax-i-o-modules-details-ditamap.html</loc>
+                <lastmod>2026-08-12T17:52:56Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/technical/logix5000/_online/1756-rm012/guardlogix-5580-and-compact-guardlogix-5580-safety.html</loc>
+                <lastmod>2025-12-08T20:09:52Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/technical/logix5000/_online/1756-rm015/logix-sis-safety-reference-manual-ditamap.html</loc>
+                <lastmod>2025-12-09T12:52:30Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/technical/logix5000/_online/1756-um543/controllogix-5580-and-guardlogix-5580-controllers-.html</loc>
+                <lastmod>2025-12-08T20:09:56Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/technical/logix5000/_online/1756-um900/controllogix-5590-controller-user-manual-ditamap.html</loc>
+                <lastmod>2025-12-10T19:46:38Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/technical/logix5000/_online/1756-um901/controllogix-5590-high-availability-ditamap.html</loc>
+                <lastmod>2026-07-09T14:48:33Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/technical/logix5000/_online/control-logix-5590-specs-ditamap.html</loc>
+                <lastmod>2025-11-03T15:03:41Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/technical/powerflex/_online/750-in100/powerflex-750-series-products-with-totalforce-cont.html</loc>
+                <lastmod>2026-03-12T15:23:10Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/technical/powerflex/_online/750-tg100/powerflex-750-series-products-with-totalforce-cont.html</loc>
+                <lastmod>2025-10-02T14:30:33Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/technical/powerflex/_online/750-tg102/powerflex-750-series-products-with-totalforce-cont.html</loc>
+                <lastmod>2026-03-12T15:31:56Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/technical/powerflex/_online/750-tg103/powerflex-750-series-products-with-totalforce-cont.html</loc>
+                <lastmod>2026-03-12T15:32:31Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/technical/powerflex/_online/750-tg104/powerflex-750-series-products-with-totalforce-cont.html</loc>
+                <lastmod>2026-09-14T14:30:19Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/technical/powerflex/powerflex-755t/_online/750-pm101-ditamap.html</loc>
+                <lastmod>2025-05-28T18:40:47Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/technical/powerflex/powerflex-755t/_online/powerflex-755t-drives-information-ditamap.html</loc>
+                <lastmod>2025-07-10T19:42:16Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/technical/zzztest/dmx-11064/-ookmap-ditamap.html</loc>
+                <lastmod>2026-01-08T14:27:15Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/technical/zzztest/dmx-11173/guardlogix-safety-concept-ditamap.html</loc>
+                <lastmod>2026-03-19T20:53:39Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/test-folder-rag/test-ditamap-ditamap.html</loc>
+                <lastmod>2024-03-05T20:30:11Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/unifytwin/9-01-00/release-notes1/ftdmrn8-ditamap.html</loc>
+                <lastmod>2026-08-24T12:07:14Z</lastmod>
+                
+            </url>
+        
+            <url>
+                <loc>https://www.rockwellautomation.com/en-us/docs/zzztestdonottranslate/vicky/help-ditamap.html</loc>
+                <lastmod>2024-10-07T16:57:28Z</lastmod>
+                
+            </url>
+        
+    </urlset>
+

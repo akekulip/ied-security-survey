@@ -1,0 +1,32 @@
+{
+  "tool_version": "1.6.0",
+  "extraction_version": "1.4.0",
+  "finished_at": "2026-10-13T22:58:24.435301+00:00",
+  "config_sha256": "df977d7ef1e95133c438b097a697b1f5b785b78f1b9963e8a248125d1197e267",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "script_sha256": "a32592efea79c41bbb65da7b2a2b1cc0a3ea079e6ea3a68775f52636d7177164",
+  "complete": true,
+  "source_count": 587,
+  "candidate_count": 362,
+  "lead_counts": {
+    "capability": 310,
+    "related": 52,
+    "statement": 8
+  },
+  "source_status": {
+    "extracted": 522,
+    "login_required": 58,
+    "failed": 7
+  },
+  "config_warnings": [
+    "sel_3530: no seeds, so every cell stays unknown",
+    "sel_547: no seeds, so every cell stays unknown",
+    "sel_9l: no seeds, so every cell stays unknown"
+  ],
+  "sampling": "Census of the vendor catalogues: one product page for each of 485 catalogue entries (473 classified, 12 awaiting classification from their own page). Inventory of 2026-10-13; categories and lifecycle come from the vendors' own catalogues and pages.",
+  "rebuilt_from": {
+    "run": "C:\\Users\\Philip\\ied_survey_data\\runs\\census_2026-10-13",
+    "tool_version": "1.5.0",
+    "finished_at": "2026-10-13T19:13:42.446390+00:00"
+  }
+}

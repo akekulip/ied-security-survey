@@ -1,0 +1,276 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "SICAM A8000 CP-8010/12 | Siemens"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Siemens at Enlit Europe, Nov. 10-12, Hall A.a50, Vienna"
+  },
+  {
+    "location": "html-block:4",
+    "text": "Discover how AI-powered grids can unlock up to 30% more capacity while reducing outages by up to 30%.",
+    "heading": "Siemens at Enlit Europe, Nov. 10-12, Hall A.a50, Vienna"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Learn more",
+    "heading": "Siemens at Enlit Europe, Nov. 10-12, Hall A.a50, Vienna"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Why SICAM A8000 CP-8010/12?"
+  },
+  {
+    "location": "html-block:7",
+    "text": "The new compact RTU series SICAM A8000 CP-8010/12 is based on the SICAM 8 platform. Used in low-voltage and medium-voltage switchgear, it is optimized for controlling and monitoring power distribution, i.e. as distribution grid automation. The Snap‑On RGB Display CM‑8880 enables local access to diagnostic and status information as well as simple on‑site operations.",
+    "heading": "Why SICAM A8000 CP-8010/12?"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Your benefits with SICAM A8000 CP-8010/12:",
+    "heading": "Why SICAM A8000 CP-8010/12?"
+  },
+  {
+    "location": "html-block:9",
+    "text": "• Optional Display: Enables fast local diagnostics and simple on-site operation directly at the device.",
+    "heading": "Why SICAM A8000 CP-8010/12?"
+  },
+  {
+    "location": "html-block:10",
+    "text": "• Digitalized RMU: Enabling advanced monitoring and control",
+    "heading": "Why SICAM A8000 CP-8010/12?"
+  },
+  {
+    "location": "html-block:11",
+    "text": "• Mobile network communication: via LTE with GPRS-fallback(available in the CP-8012)",
+    "heading": "Why SICAM A8000 CP-8010/12?"
+  },
+  {
+    "location": "html-block:12",
+    "text": "• Wireless Communication",
+    "heading": "Why SICAM A8000 CP-8010/12?"
+  },
+  {
+    "location": "html-block:13",
+    "text": "• IoT connectivity: Provision of data via a secure internet connection to cloud-based services and applications",
+    "heading": "Why SICAM A8000 CP-8010/12?"
+  },
+  {
+    "location": "html-block:14",
+    "text": "• IEC 62443 & IEC 62351 compliant: Ensures robust cybersecurity for secure and compliant grid automation",
+    "heading": "Why SICAM A8000 CP-8010/12?"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Key benefits"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Less complexity, lower costs"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Combining hardware, software, controller, and engineering on one platform reduces training effort, interfaces, and maintenance costs through consistent engineering with SICAM Device Manager.",
+    "heading": "Less complexity, lower costs"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Compact, flexible and future‑proof RTU"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Integrated power supply and I/Os, optional Snap‑On display (CM‑8880), modular I/O expandability and broad communication options enable use in a wide range of power‑automation applications.",
+    "heading": "Compact, flexible and future‑proof RTU"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Highest cybersecurity and operational reliability"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Certified according to IEC 62443, designed for substation environments and compliant with modern security standards to ensure long‑term investment protection and secure operation.",
+    "heading": "Highest cybersecurity and operational reliability"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Featured capabilities"
+  },
+  {
+    "location": "html-block:23",
+    "text": "all",
+    "heading": "Featured capabilities"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Control & Monitoring of Renewables"
+  },
+  {
+    "location": "html-block:25",
+    "text": "SICAM CP8010/12 reliably controls and monitors solar parks, wind farms, and EV charging stations—combining a compact RTU with secure communications and seamless SCADA integration for automated renewable operations.",
+    "heading": "Control & Monitoring of Renewables"
+  },
+  {
+    "location": "html-block:26",
+    "text": "all",
+    "heading": "Control & Monitoring of Renewables"
+  },
+  {
+    "location": "html-block:27",
+    "text": "IoT Gateway"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Rugged RTU/Gateway optimized for MV solutions, supporting diverse networks and protocols with Cloud & SCADA connectivity, LTE and 802.15.4, plus containerized customer apps via the SICAM SIAPP framework.",
+    "heading": "IoT Gateway"
+  },
+  {
+    "location": "html-block:29",
+    "text": "all",
+    "heading": "IoT Gateway"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Traction Power Automation"
+  },
+  {
+    "location": "html-block:31",
+    "text": "SICAM CP801x ensures reliable control and monitoring of train power supply systems, combining a rugged RTU with secure communication and seamless integration into higherlevel control systems, making it a perfect fit.",
+    "heading": "Traction Power Automation"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Industries"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Power Utilities",
+    "heading": "Industries"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Solar",
+    "heading": "Industries"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Wind",
+    "heading": "Industries"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Mobility",
+    "heading": "Industries"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Select...",
+    "heading": "Industries"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Power UtilitiesSolarWindMobility",
+    "heading": "Industries"
+  },
+  {
+    "location": "html-block:39",
+    "text": "SICAM CP-8010/12 in Power Utilities"
+  },
+  {
+    "location": "html-block:40",
+    "text": "SICAM CP-8010/12 supports power utilities in distribution grid automation by enabling reliable control, monitoring, and data exchange in MV grids. Its rugged RTU design, secure communications, and standardized protocols allow seamless integration into utility SCADA and control systems.",
+    "heading": "SICAM CP-8010/12 in Power Utilities"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Explore Resources (in English)"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Downloads"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Profile SICAM CP-8010/12",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:44",
+    "text": "SICAM A8000 Configurator",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:45",
+    "text": "SiePortal - Online shop"
+  },
+  {
+    "location": "html-block:46",
+    "text": "SICAM A8000 CP-8010 on SiePortal",
+    "heading": "SiePortal - Online shop"
+  },
+  {
+    "location": "html-block:47",
+    "text": "SICAM A8000 CP-8012 on SiePortal",
+    "heading": "SiePortal - Online shop"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Related content"
+  },
+  {
+    "location": "html-block:49",
+    "text": "all",
+    "heading": "Related content"
+  },
+  {
+    "location": "html-block:50",
+    "text": "Discover the runtimes of SICAM A8000"
+  },
+  {
+    "location": "html-block:51",
+    "text": "SICAM A8000 CP-8030/31",
+    "heading": "Discover the runtimes of SICAM A8000"
+  },
+  {
+    "location": "html-block:52",
+    "text": "SICAM CP‑8031 is an affordable, scalable embedded RTU on the SICAM 8 platform, designed for flexible and secure power automation. Its modular I/O and communication interfaces support a wide range of applications.",
+    "heading": "Discover the runtimes of SICAM A8000"
+  },
+  {
+    "location": "html-block:53",
+    "text": "all",
+    "heading": "Discover the runtimes of SICAM A8000"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Discover the runtimes of SICAM A8000"
+  },
+  {
+    "location": "html-block:55",
+    "text": "SICAM A8000 CP-8050",
+    "heading": "Discover the runtimes of SICAM A8000"
+  },
+  {
+    "location": "html-block:56",
+    "text": "High‑performance embedded RTU on the SICAM 8 platform, designed for secure, scalable power automation. It supports demanding applications with advanced control, communication, and centralized engineering via SICAM Device Manager",
+    "heading": "Discover the runtimes of SICAM A8000"
+  },
+  {
+    "location": "html-block:57",
+    "text": "all",
+    "heading": "Discover the runtimes of SICAM A8000"
+  },
+  {
+    "location": "html-block:58",
+    "text": "All-in-one power supply solution"
+  },
+  {
+    "location": "html-block:59",
+    "text": "SICAM is a universal hardware and software platform that simplifies power automation across industrial, grid and renewable applications. It helps you meet climate goals, ensure cybersecurity and optimize staffing.",
+    "heading": "All-in-one power supply solution"
+  }
+]

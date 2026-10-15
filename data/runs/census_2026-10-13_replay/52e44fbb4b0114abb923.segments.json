@@ -1,0 +1,128 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "Power quality recorder - SICAM P855 | Siemens"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Why SICAM P855?"
+  },
+  {
+    "location": "html-block:4",
+    "text": "The SICAM P855 is a power quality (PQ) recorder for comprehensive electrical parameter monitoring and reporting. It collects, displays and transmits key electrical variables such as AC current, AC voltage, power types and harmonics across diverse power systems.",
+    "heading": "Why SICAM P855?"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Poor power supply quality not only negatively impacts operations and safety but also increases costs. The SICAM P855 addresses this by comprehensively acquiring and documenting supply quality parameters. Identify weak points and initiate measures to ensure stable, reliable power.",
+    "heading": "Why SICAM P855?"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Key benefits"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Identify supply quality problems early"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Acquire comprehensive network parameters to identify supply quality problems proactively. Initiate swift measures to prevent serious consequences and reduce operational costs.",
+    "heading": "Identify supply quality problems early"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Streamline operation and reporting"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Generate automatic PQ reports per EN 50160. Reduce manual effort and gain clear, standardized documentation for PQ analysis.",
+    "heading": "Streamline operation and reporting"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Ensure interoperability and data exchange"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Achieve interoperability with standard interfaces. Exchange data using PQDIF and COMTRADE formats. Gain manufacturer-independent, comparable measured values for flexible system integration.",
+    "heading": "Ensure interoperability and data exchange"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Featured capabilities"
+  },
+  {
+    "location": "html-block:14",
+    "text": "all",
+    "heading": "Featured capabilities"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Acquire and process electrical variables"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Collect, display and transmit electrical variables: AC current, voltage, power types and harmonics. Process measurands and events per IEC 61000-4-30, including flicker, for precise, compliant data acquisition.",
+    "heading": "Acquire and process electrical variables"
+  },
+  {
+    "location": "html-block:17",
+    "text": "all",
+    "heading": "Acquire and process electrical variables"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Use standard communication protocols"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Connect via standard interfaces: Ethernet with MODBUS TCP and IEC 61850 Edition 2 or serial with Modbus RTU and IEC 60870-5-103. Achieve robust communication and data exchange across your network.",
+    "heading": "Use standard communication protocols"
+  },
+  {
+    "location": "html-block:20",
+    "text": "all",
+    "heading": "Use standard communication protocols"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Operate with integrated web server"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Interact with the device via its integrated web server for parameterization, diagnosis and evaluation. Access comprehensive event and fault recorder functionality. Manage and analyze your PQ data directly.",
+    "heading": "Operate with integrated web server"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Explore resources"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Downloads"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Catalog Power Quality and Measurement",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Tender specifications",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:27",
+    "text": "SiePortal - Online shop"
+  },
+  {
+    "location": "html-block:28",
+    "text": "SICAM P855 on SiePortal",
+    "heading": "SiePortal - Online shop"
+  }
+]
