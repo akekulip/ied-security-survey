@@ -1,0 +1,1814 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "SSA-750499"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Siemens Security Advisory by Siemens ProductCERT"
+  },
+  {
+    "location": "html-block:3",
+    "text": "SSA-750499: Weak Encryption Vulnerability in SIPROTEC 5 Devices"
+  },
+  {
+    "location": "html-block:4",
+    "text": "Publication Date: |"
+  },
+  {
+    "location": "html-block:5",
+    "text": "2024-07-09"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Last Update: |"
+  },
+  {
+    "location": "html-block:7",
+    "text": "2025-11-11"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Current Version: | V1.2"
+  },
+  {
+    "location": "html-block:9",
+    "text": "CVSS v3.1 Base Score: | 5.9"
+  },
+  {
+    "location": "html-block:10",
+    "text": "CVSS v4.0 Base Score: | 8.2"
+  },
+  {
+    "location": "html-block:11",
+    "text": "SUMMARY"
+  },
+  {
+    "location": "html-block:12",
+    "text": "The SIPROTEC 5 devices are supporting weak encryption. This could allow an unauthorized attacker in a man-in-the-middle position to read any data passed over the connection between legitimate clients and the affected device."
+  },
+  {
+    "location": "html-block:13",
+    "text": "Siemens has released new versions for several affected products and recommends to update to the latest versions. Siemens recommends specific countermeasures for products where fixes are not, or not yet available."
+  },
+  {
+    "location": "html-block:14",
+    "text": "KNOWN AFFECTED PRODUCTS Un-/Collapse All"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Affected Product and Versions | Remediation"
+  },
+  {
+    "location": "html-block:16",
+    "text": "SIPROTEC 5 - CP100 Devices |"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Show more details"
+  },
+  {
+    "location": "html-block:18",
+    "text": "SIPROTEC 5 7SA82 (CP100)"
+  },
+  {
+    "location": "html-block:19",
+    "text": "All versions < V8.90"
+  },
+  {
+    "location": "html-block:20",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Update to V8.90 or later V8.xx version"
+  },
+  {
+    "location": "html-block:22",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109757433/"
+  },
+  {
+    "location": "html-block:23",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:24",
+    "text": "SIPROTEC 5 7SD82 (CP100)"
+  },
+  {
+    "location": "html-block:25",
+    "text": "All versions < V8.90"
+  },
+  {
+    "location": "html-block:26",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Update to V8.90 or later V8.xx version"
+  },
+  {
+    "location": "html-block:28",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109757433/"
+  },
+  {
+    "location": "html-block:29",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:30",
+    "text": "SIPROTEC 5 7SJ81 (CP100)"
+  },
+  {
+    "location": "html-block:31",
+    "text": "All versions < V8.89"
+  },
+  {
+    "location": "html-block:32",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Update to V8.89 or later V8.xx version"
+  },
+  {
+    "location": "html-block:34",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109751934/"
+  },
+  {
+    "location": "html-block:35",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:36",
+    "text": "SIPROTEC 5 7SJ82 (CP100)"
+  },
+  {
+    "location": "html-block:37",
+    "text": "All versions < V8.89"
+  },
+  {
+    "location": "html-block:38",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Update to V8.89 or later V8.xx version"
+  },
+  {
+    "location": "html-block:40",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109751934/"
+  },
+  {
+    "location": "html-block:41",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:42",
+    "text": "SIPROTEC 5 7SK82 (CP100)"
+  },
+  {
+    "location": "html-block:43",
+    "text": "All versions < V8.89"
+  },
+  {
+    "location": "html-block:44",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Update to V8.89 or later V8.xx version"
+  },
+  {
+    "location": "html-block:46",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109757434/"
+  },
+  {
+    "location": "html-block:47",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:48",
+    "text": "SIPROTEC 5 7SL82 (CP100)"
+  },
+  {
+    "location": "html-block:49",
+    "text": "All versions < V8.90"
+  },
+  {
+    "location": "html-block:50",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:51",
+    "text": "Update to V8.90 or later V8.xx version"
+  },
+  {
+    "location": "html-block:52",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109757433/"
+  },
+  {
+    "location": "html-block:53",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:54",
+    "text": "SIPROTEC 5 7UT82 (CP100)"
+  },
+  {
+    "location": "html-block:55",
+    "text": "All versions < V8.90"
+  },
+  {
+    "location": "html-block:56",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Update to V8.90 or later V8.xx version"
+  },
+  {
+    "location": "html-block:58",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109757438/"
+  },
+  {
+    "location": "html-block:59",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:60",
+    "text": "SIPROTEC 5 - CP150 Devices |"
+  },
+  {
+    "location": "html-block:61",
+    "text": "Show more details"
+  },
+  {
+    "location": "html-block:62",
+    "text": "SIPROTEC 5 7SA82 (CP150)"
+  },
+  {
+    "location": "html-block:63",
+    "text": "All versions < V9.65"
+  },
+  {
+    "location": "html-block:64",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:65",
+    "text": "Update to V9.65 or later version"
+  },
+  {
+    "location": "html-block:66",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109757433/"
+  },
+  {
+    "location": "html-block:67",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:68",
+    "text": "SIPROTEC 5 7SD82 (CP150)"
+  },
+  {
+    "location": "html-block:69",
+    "text": "All versions < V9.65"
+  },
+  {
+    "location": "html-block:70",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:71",
+    "text": "Update to V9.65 or later version"
+  },
+  {
+    "location": "html-block:72",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109757433/"
+  },
+  {
+    "location": "html-block:73",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:74",
+    "text": "SIPROTEC 5 7SJ81 (CP150)"
+  },
+  {
+    "location": "html-block:75",
+    "text": "All versions < V9.65"
+  },
+  {
+    "location": "html-block:76",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:77",
+    "text": "Update to V9.65 or later version"
+  },
+  {
+    "location": "html-block:78",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109751934/"
+  },
+  {
+    "location": "html-block:79",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:80",
+    "text": "SIPROTEC 5 7SJ82 (CP150)"
+  },
+  {
+    "location": "html-block:81",
+    "text": "All versions < V9.65"
+  },
+  {
+    "location": "html-block:82",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:83",
+    "text": "Update to V9.65 or later version"
+  },
+  {
+    "location": "html-block:84",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109751934/"
+  },
+  {
+    "location": "html-block:85",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:86",
+    "text": "SIPROTEC 5 7SK82 (CP150)"
+  },
+  {
+    "location": "html-block:87",
+    "text": "All versions < V9.65"
+  },
+  {
+    "location": "html-block:88",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:89",
+    "text": "Update to V9.65 or later version"
+  },
+  {
+    "location": "html-block:90",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109757434/"
+  },
+  {
+    "location": "html-block:91",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:92",
+    "text": "SIPROTEC 5 7SL82 (CP150)"
+  },
+  {
+    "location": "html-block:93",
+    "text": "All versions < V9.65"
+  },
+  {
+    "location": "html-block:94",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:95",
+    "text": "Update to V9.65 or later version"
+  },
+  {
+    "location": "html-block:96",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109757433/"
+  },
+  {
+    "location": "html-block:97",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:98",
+    "text": "SIPROTEC 5 7SX82 (CP150)"
+  },
+  {
+    "location": "html-block:99",
+    "text": "All versions < V9.65"
+  },
+  {
+    "location": "html-block:100",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:101",
+    "text": "Update to V9.65 or later version"
+  },
+  {
+    "location": "html-block:102",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109768011/"
+  },
+  {
+    "location": "html-block:103",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:104",
+    "text": "SIPROTEC 5 7UT82 (CP150)"
+  },
+  {
+    "location": "html-block:105",
+    "text": "All versions < V9.65"
+  },
+  {
+    "location": "html-block:106",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:107",
+    "text": "Update to V9.65 or later version"
+  },
+  {
+    "location": "html-block:108",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109757438/"
+  },
+  {
+    "location": "html-block:109",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:110",
+    "text": "SIPROTEC 5 - CP200 Devices |"
+  },
+  {
+    "location": "html-block:111",
+    "text": "Show more details"
+  },
+  {
+    "location": "html-block:112",
+    "text": "SIPROTEC 5 6MD85 (CP200)"
+  },
+  {
+    "location": "html-block:113",
+    "text": "All versions"
+  },
+  {
+    "location": "html-block:114",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:115",
+    "text": "Currently no fix is planned"
+  },
+  {
+    "location": "html-block:116",
+    "text": "See recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:117",
+    "text": "SIPROTEC 5 6MD86 (CP200)"
+  },
+  {
+    "location": "html-block:118",
+    "text": "All versions"
+  },
+  {
+    "location": "html-block:119",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:120",
+    "text": "Currently no fix is planned"
+  },
+  {
+    "location": "html-block:121",
+    "text": "See recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:122",
+    "text": "SIPROTEC 5 7KE85 (CP200)"
+  },
+  {
+    "location": "html-block:123",
+    "text": "All versions"
+  },
+  {
+    "location": "html-block:124",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:125",
+    "text": "Currently no fix is planned"
+  },
+  {
+    "location": "html-block:126",
+    "text": "See recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:127",
+    "text": "SIPROTEC 5 7SA84 (CP200)"
+  },
+  {
+    "location": "html-block:128",
+    "text": "All versions"
+  },
+  {
+    "location": "html-block:129",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:130",
+    "text": "Currently no fix is planned"
+  },
+  {
+    "location": "html-block:131",
+    "text": "See recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:132",
+    "text": "SIPROTEC 5 7SA86 (CP200)"
+  },
+  {
+    "location": "html-block:133",
+    "text": "All versions"
+  },
+  {
+    "location": "html-block:134",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:135",
+    "text": "Currently no fix is planned"
+  },
+  {
+    "location": "html-block:136",
+    "text": "See recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:137",
+    "text": "SIPROTEC 5 7SA87 (CP200)"
+  },
+  {
+    "location": "html-block:138",
+    "text": "All versions"
+  },
+  {
+    "location": "html-block:139",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:140",
+    "text": "Currently no fix is planned"
+  },
+  {
+    "location": "html-block:141",
+    "text": "See recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:142",
+    "text": "SIPROTEC 5 7SD84 (CP200)"
+  },
+  {
+    "location": "html-block:143",
+    "text": "All versions"
+  },
+  {
+    "location": "html-block:144",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:145",
+    "text": "Currently no fix is planned"
+  },
+  {
+    "location": "html-block:146",
+    "text": "See recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:147",
+    "text": "SIPROTEC 5 7SD86 (CP200)"
+  },
+  {
+    "location": "html-block:148",
+    "text": "All versions"
+  },
+  {
+    "location": "html-block:149",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:150",
+    "text": "Currently no fix is planned"
+  },
+  {
+    "location": "html-block:151",
+    "text": "See recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:152",
+    "text": "SIPROTEC 5 7SD87 (CP200)"
+  },
+  {
+    "location": "html-block:153",
+    "text": "All versions"
+  },
+  {
+    "location": "html-block:154",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:155",
+    "text": "Currently no fix is planned"
+  },
+  {
+    "location": "html-block:156",
+    "text": "See recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:157",
+    "text": "SIPROTEC 5 7SJ85 (CP200)"
+  },
+  {
+    "location": "html-block:158",
+    "text": "All versions"
+  },
+  {
+    "location": "html-block:159",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:160",
+    "text": "Currently no fix is planned"
+  },
+  {
+    "location": "html-block:161",
+    "text": "See recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:162",
+    "text": "SIPROTEC 5 7SJ86 (CP200)"
+  },
+  {
+    "location": "html-block:163",
+    "text": "All versions"
+  },
+  {
+    "location": "html-block:164",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:165",
+    "text": "Currently no fix is planned"
+  },
+  {
+    "location": "html-block:166",
+    "text": "See recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:167",
+    "text": "SIPROTEC 5 7SK85 (CP200)"
+  },
+  {
+    "location": "html-block:168",
+    "text": "All versions"
+  },
+  {
+    "location": "html-block:169",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:170",
+    "text": "Currently no fix is planned"
+  },
+  {
+    "location": "html-block:171",
+    "text": "See recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:172",
+    "text": "SIPROTEC 5 7SL86 (CP200)"
+  },
+  {
+    "location": "html-block:173",
+    "text": "All versions"
+  },
+  {
+    "location": "html-block:174",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:175",
+    "text": "Currently no fix is planned"
+  },
+  {
+    "location": "html-block:176",
+    "text": "See recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:177",
+    "text": "SIPROTEC 5 7SL87 (CP200)"
+  },
+  {
+    "location": "html-block:178",
+    "text": "All versions"
+  },
+  {
+    "location": "html-block:179",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:180",
+    "text": "Currently no fix is planned"
+  },
+  {
+    "location": "html-block:181",
+    "text": "See recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:182",
+    "text": "SIPROTEC 5 7SS85 (CP200)"
+  },
+  {
+    "location": "html-block:183",
+    "text": "All versions"
+  },
+  {
+    "location": "html-block:184",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:185",
+    "text": "Currently no fix is planned"
+  },
+  {
+    "location": "html-block:186",
+    "text": "See recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:187",
+    "text": "SIPROTEC 5 7ST85 (CP200)"
+  },
+  {
+    "location": "html-block:188",
+    "text": "All versions"
+  },
+  {
+    "location": "html-block:189",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:190",
+    "text": "Currently no fix is planned"
+  },
+  {
+    "location": "html-block:191",
+    "text": "See recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:192",
+    "text": "SIPROTEC 5 7UT85 (CP200)"
+  },
+  {
+    "location": "html-block:193",
+    "text": "All versions"
+  },
+  {
+    "location": "html-block:194",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:195",
+    "text": "Currently no fix is planned"
+  },
+  {
+    "location": "html-block:196",
+    "text": "See recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:197",
+    "text": "SIPROTEC 5 7UT86 (CP200)"
+  },
+  {
+    "location": "html-block:198",
+    "text": "All versions"
+  },
+  {
+    "location": "html-block:199",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:200",
+    "text": "Currently no fix is planned"
+  },
+  {
+    "location": "html-block:201",
+    "text": "See recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:202",
+    "text": "SIPROTEC 5 7UT87 (CP200)"
+  },
+  {
+    "location": "html-block:203",
+    "text": "All versions"
+  },
+  {
+    "location": "html-block:204",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:205",
+    "text": "Currently no fix is planned"
+  },
+  {
+    "location": "html-block:206",
+    "text": "See recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:207",
+    "text": "SIPROTEC 5 7VK87 (CP200)"
+  },
+  {
+    "location": "html-block:208",
+    "text": "All versions"
+  },
+  {
+    "location": "html-block:209",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:210",
+    "text": "Currently no fix is planned"
+  },
+  {
+    "location": "html-block:211",
+    "text": "See recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:212",
+    "text": "SIPROTEC 5 - CP300 Devices |"
+  },
+  {
+    "location": "html-block:213",
+    "text": "Show more details"
+  },
+  {
+    "location": "html-block:214",
+    "text": "SIPROTEC 5 6MD84 (CP300)"
+  },
+  {
+    "location": "html-block:215",
+    "text": "All versions < V9.64"
+  },
+  {
+    "location": "html-block:216",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:217",
+    "text": "Update to V9.64 or later version"
+  },
+  {
+    "location": "html-block:218",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109814150/"
+  },
+  {
+    "location": "html-block:219",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:220",
+    "text": "SIPROTEC 5 6MD85 (CP300)"
+  },
+  {
+    "location": "html-block:221",
+    "text": "All versions < V9.64"
+  },
+  {
+    "location": "html-block:222",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:223",
+    "text": "Update to V9.64 or later version"
+  },
+  {
+    "location": "html-block:224",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109757428/"
+  },
+  {
+    "location": "html-block:225",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:226",
+    "text": "SIPROTEC 5 6MD86 (CP300)"
+  },
+  {
+    "location": "html-block:227",
+    "text": "All versions < V9.64"
+  },
+  {
+    "location": "html-block:228",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:229",
+    "text": "Update to V9.64 or later version"
+  },
+  {
+    "location": "html-block:230",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109757428/"
+  },
+  {
+    "location": "html-block:231",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:232",
+    "text": "SIPROTEC 5 6MD89 (CP300)"
+  },
+  {
+    "location": "html-block:233",
+    "text": "All versions < V9.64"
+  },
+  {
+    "location": "html-block:234",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:235",
+    "text": "Update to V9.64 or later version"
+  },
+  {
+    "location": "html-block:236",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109742950/"
+  },
+  {
+    "location": "html-block:237",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:238",
+    "text": "SIPROTEC 5 6MU85 (CP300)"
+  },
+  {
+    "location": "html-block:239",
+    "text": "All versions < V9.64"
+  },
+  {
+    "location": "html-block:240",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:241",
+    "text": "Update to V9.64 or later version"
+  },
+  {
+    "location": "html-block:242",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109765263/"
+  },
+  {
+    "location": "html-block:243",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:244",
+    "text": "SIPROTEC 5 7KE85 (CP300)"
+  },
+  {
+    "location": "html-block:245",
+    "text": "All versions < V9.64"
+  },
+  {
+    "location": "html-block:246",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:247",
+    "text": "Update to V9.64 or later version"
+  },
+  {
+    "location": "html-block:248",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109757430/"
+  },
+  {
+    "location": "html-block:249",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:250",
+    "text": "SIPROTEC 5 7SA86 (CP300)"
+  },
+  {
+    "location": "html-block:251",
+    "text": "All versions < V9.65"
+  },
+  {
+    "location": "html-block:252",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:253",
+    "text": "Update to V9.65 or later version"
+  },
+  {
+    "location": "html-block:254",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109757433/"
+  },
+  {
+    "location": "html-block:255",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:256",
+    "text": "SIPROTEC 5 7SA87 (CP300)"
+  },
+  {
+    "location": "html-block:257",
+    "text": "All versions < V9.65"
+  },
+  {
+    "location": "html-block:258",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:259",
+    "text": "Update to V9.65 or later version"
+  },
+  {
+    "location": "html-block:260",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109757433/"
+  },
+  {
+    "location": "html-block:261",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:262",
+    "text": "SIPROTEC 5 7SD86 (CP300)"
+  },
+  {
+    "location": "html-block:263",
+    "text": "All versions < V9.65"
+  },
+  {
+    "location": "html-block:264",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:265",
+    "text": "Update to V9.65 or later version"
+  },
+  {
+    "location": "html-block:266",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109757433/"
+  },
+  {
+    "location": "html-block:267",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:268",
+    "text": "SIPROTEC 5 7SD87 (CP300)"
+  },
+  {
+    "location": "html-block:269",
+    "text": "All versions < V9.65"
+  },
+  {
+    "location": "html-block:270",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:271",
+    "text": "Update to V9.65 or later version"
+  },
+  {
+    "location": "html-block:272",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109757433/"
+  },
+  {
+    "location": "html-block:273",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:274",
+    "text": "SIPROTEC 5 7SJ85 (CP300)"
+  },
+  {
+    "location": "html-block:275",
+    "text": "All versions < V9.65"
+  },
+  {
+    "location": "html-block:276",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:277",
+    "text": "Update to V9.65 or later version"
+  },
+  {
+    "location": "html-block:278",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109751934/"
+  },
+  {
+    "location": "html-block:279",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:280",
+    "text": "SIPROTEC 5 7SJ86 (CP300)"
+  },
+  {
+    "location": "html-block:281",
+    "text": "All versions < V9.65"
+  },
+  {
+    "location": "html-block:282",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:283",
+    "text": "Update to V9.65 or later version"
+  },
+  {
+    "location": "html-block:284",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109757433/"
+  },
+  {
+    "location": "html-block:285",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:286",
+    "text": "SIPROTEC 5 7SK85 (CP300)"
+  },
+  {
+    "location": "html-block:287",
+    "text": "All versions < V9.65"
+  },
+  {
+    "location": "html-block:288",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:289",
+    "text": "Update to V9.65 or later version"
+  },
+  {
+    "location": "html-block:290",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109757434/"
+  },
+  {
+    "location": "html-block:291",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:292",
+    "text": "SIPROTEC 5 7SL86 (CP300)"
+  },
+  {
+    "location": "html-block:293",
+    "text": "All versions < V9.65"
+  },
+  {
+    "location": "html-block:294",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:295",
+    "text": "Update to V9.65 or later version"
+  },
+  {
+    "location": "html-block:296",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109757433/"
+  },
+  {
+    "location": "html-block:297",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:298",
+    "text": "SIPROTEC 5 7SL87 (CP300)"
+  },
+  {
+    "location": "html-block:299",
+    "text": "All versions < V9.65"
+  },
+  {
+    "location": "html-block:300",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:301",
+    "text": "Update to V9.65 or later version"
+  },
+  {
+    "location": "html-block:302",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109757433/"
+  },
+  {
+    "location": "html-block:303",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:304",
+    "text": "SIPROTEC 5 7SS85 (CP300)"
+  },
+  {
+    "location": "html-block:305",
+    "text": "All versions < V9.64"
+  },
+  {
+    "location": "html-block:306",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:307",
+    "text": "Update to V9.64 or later version"
+  },
+  {
+    "location": "html-block:308",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109757429/"
+  },
+  {
+    "location": "html-block:309",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:310",
+    "text": "SIPROTEC 5 7ST85 (CP300)"
+  },
+  {
+    "location": "html-block:311",
+    "text": "All versions < V9.64"
+  },
+  {
+    "location": "html-block:312",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:313",
+    "text": "Update to V9.64 or later version"
+  },
+  {
+    "location": "html-block:314",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109740299/"
+  },
+  {
+    "location": "html-block:315",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:316",
+    "text": "SIPROTEC 5 7ST86 (CP300)"
+  },
+  {
+    "location": "html-block:317",
+    "text": "All versions < V9.64"
+  },
+  {
+    "location": "html-block:318",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:319",
+    "text": "Update to V9.64 or later version"
+  },
+  {
+    "location": "html-block:320",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109768428/"
+  },
+  {
+    "location": "html-block:321",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:322",
+    "text": "SIPROTEC 5 7SX85 (CP300)"
+  },
+  {
+    "location": "html-block:323",
+    "text": "All versions < V9.65"
+  },
+  {
+    "location": "html-block:324",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:325",
+    "text": "Update to V9.65 or later version"
+  },
+  {
+    "location": "html-block:326",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109768011/"
+  },
+  {
+    "location": "html-block:327",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:328",
+    "text": "SIPROTEC 5 7UM85 (CP300)"
+  },
+  {
+    "location": "html-block:329",
+    "text": "All versions < V9.64"
+  },
+  {
+    "location": "html-block:330",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:331",
+    "text": "Update to V9.64 or later version"
+  },
+  {
+    "location": "html-block:332",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109757431/"
+  },
+  {
+    "location": "html-block:333",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:334",
+    "text": "SIPROTEC 5 7UT85 (CP300)"
+  },
+  {
+    "location": "html-block:335",
+    "text": "All versions < V9.65"
+  },
+  {
+    "location": "html-block:336",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:337",
+    "text": "Update to V9.65 or later version"
+  },
+  {
+    "location": "html-block:338",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109757438/"
+  },
+  {
+    "location": "html-block:339",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:340",
+    "text": "SIPROTEC 5 7UT86 (CP300)"
+  },
+  {
+    "location": "html-block:341",
+    "text": "All versions < V9.65"
+  },
+  {
+    "location": "html-block:342",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:343",
+    "text": "Update to V9.65 or later version"
+  },
+  {
+    "location": "html-block:344",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109757438/"
+  },
+  {
+    "location": "html-block:345",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:346",
+    "text": "SIPROTEC 5 7UT87 (CP300)"
+  },
+  {
+    "location": "html-block:347",
+    "text": "All versions < V9.65"
+  },
+  {
+    "location": "html-block:348",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:349",
+    "text": "Update to V9.65 or later version"
+  },
+  {
+    "location": "html-block:350",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109757438/"
+  },
+  {
+    "location": "html-block:351",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:352",
+    "text": "SIPROTEC 5 7VE85 (CP300)"
+  },
+  {
+    "location": "html-block:353",
+    "text": "All versions < V9.64"
+  },
+  {
+    "location": "html-block:354",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:355",
+    "text": "Update to V9.64 or later version"
+  },
+  {
+    "location": "html-block:356",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109749865/"
+  },
+  {
+    "location": "html-block:357",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:358",
+    "text": "SIPROTEC 5 7VK87 (CP300)"
+  },
+  {
+    "location": "html-block:359",
+    "text": "All versions < V9.65"
+  },
+  {
+    "location": "html-block:360",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:361",
+    "text": "Update to V9.65 or later version"
+  },
+  {
+    "location": "html-block:362",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109757433/"
+  },
+  {
+    "location": "html-block:363",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:364",
+    "text": "SIPROTEC 5 7VU85 (CP300)"
+  },
+  {
+    "location": "html-block:365",
+    "text": "All versions < V9.64"
+  },
+  {
+    "location": "html-block:366",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:367",
+    "text": "Update to V9.64 or later version"
+  },
+  {
+    "location": "html-block:368",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109800399/"
+  },
+  {
+    "location": "html-block:369",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:370",
+    "text": "SIPROTEC 5 Communication Modules |"
+  },
+  {
+    "location": "html-block:371",
+    "text": "Show more details"
+  },
+  {
+    "location": "html-block:372",
+    "text": "SIPROTEC 5 Communication Module ETH-BA-2EL (Rev.1) |"
+  },
+  {
+    "location": "html-block:373",
+    "text": "Show more details"
+  },
+  {
+    "location": "html-block:374",
+    "text": "SIPROTEC 5 Communication Module ETH-BA-2EL (Rev.1)"
+  },
+  {
+    "location": "html-block:375",
+    "text": "All versions < V9.62 installed on CP150 and CP300 devices"
+  },
+  {
+    "location": "html-block:376",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:377",
+    "text": "Update to V9.62 or later version"
+  },
+  {
+    "location": "html-block:378",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109740816/"
+  },
+  {
+    "location": "html-block:379",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:380",
+    "text": "SIPROTEC 5 Communication Module ETH-BA-2EL (Rev.1)"
+  },
+  {
+    "location": "html-block:381",
+    "text": "All versions installed on CP200 devices"
+  },
+  {
+    "location": "html-block:382",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:383",
+    "text": "Currently no fix is planned"
+  },
+  {
+    "location": "html-block:384",
+    "text": "See recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:385",
+    "text": "SIPROTEC 5 Communication Module ETH-BA-2EL (Rev.1)"
+  },
+  {
+    "location": "html-block:386",
+    "text": "All versions < V8.89 installed on CP100 devices"
+  },
+  {
+    "location": "html-block:387",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:388",
+    "text": "Update to V8.89 or later version"
+  },
+  {
+    "location": "html-block:389",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109740816/"
+  },
+  {
+    "location": "html-block:390",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:391",
+    "text": "SIPROTEC 5 Communication Module ETH-BB-2FO (Rev. 1) |"
+  },
+  {
+    "location": "html-block:392",
+    "text": "Show more details"
+  },
+  {
+    "location": "html-block:393",
+    "text": "SIPROTEC 5 Communication Module ETH-BB-2FO (Rev. 1)"
+  },
+  {
+    "location": "html-block:394",
+    "text": "All versions installed on CP200 devices"
+  },
+  {
+    "location": "html-block:395",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:396",
+    "text": "Currently no fix is planned"
+  },
+  {
+    "location": "html-block:397",
+    "text": "See recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:398",
+    "text": "SIPROTEC 5 Communication Module ETH-BB-2FO (Rev. 1)"
+  },
+  {
+    "location": "html-block:399",
+    "text": "All versions < V9.62 installed on CP150 and CP300 devices"
+  },
+  {
+    "location": "html-block:400",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:401",
+    "text": "Update to V9.62 or later version"
+  },
+  {
+    "location": "html-block:402",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109740816/"
+  },
+  {
+    "location": "html-block:403",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:404",
+    "text": "SIPROTEC 5 Communication Module ETH-BB-2FO (Rev. 1)"
+  },
+  {
+    "location": "html-block:405",
+    "text": "All versions < V8.89 installed on CP100 devices"
+  },
+  {
+    "location": "html-block:406",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:407",
+    "text": "Update to V8.89 or later version"
+  },
+  {
+    "location": "html-block:408",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109740816/"
+  },
+  {
+    "location": "html-block:409",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:410",
+    "text": "SIPROTEC 5 Communication Module ETH-BD-2FO"
+  },
+  {
+    "location": "html-block:411",
+    "text": "All versions < V9.62"
+  },
+  {
+    "location": "html-block:412",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:413",
+    "text": "Update to V9.62 or later version"
+  },
+  {
+    "location": "html-block:414",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109740816/"
+  },
+  {
+    "location": "html-block:415",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:416",
+    "text": "SIPROTEC 5 Compact 7SX800 (CP050)"
+  },
+  {
+    "location": "html-block:417",
+    "text": "All versions < V9.64"
+  },
+  {
+    "location": "html-block:418",
+    "text": "affected by CVE-2024-38867"
+  },
+  {
+    "location": "html-block:419",
+    "text": "Update to V9.64 or later version"
+  },
+  {
+    "location": "html-block:420",
+    "text": "https://support.industry.siemens.com/cs/ww/en/view/109796884/"
+  },
+  {
+    "location": "html-block:421",
+    "text": "See further recommendations from section Workarounds and Mitigations"
+  },
+  {
+    "location": "html-block:422",
+    "text": "WORKAROUNDS AND MITIGATIONS"
+  },
+  {
+    "location": "html-block:423",
+    "text": "Siemens has identified the following specific workarounds and mitigations that customers can apply to reduce the risk:"
+  },
+  {
+    "location": "html-block:424",
+    "text": "Restrict access to port 443/tcp for web, 4443/tcp for DIGSI 5 and configurable port for syslog over TLS to trusted IP addresses only"
+  },
+  {
+    "location": "html-block:425",
+    "text": "Product-specific remediations or mitigations can be found in the section Known Affected Products."
+  },
+  {
+    "location": "html-block:426",
+    "text": "Please follow the General Security Recommendations."
+  },
+  {
+    "location": "html-block:427",
+    "text": "GENERAL SECURITY RECOMMENDATIONS"
+  },
+  {
+    "location": "html-block:428",
+    "text": "Operators of critical power systems (e.g. TSOs or DSOs) worldwide are usually required by regulations to build resilience into the power grids by applying multi-level redundant secondary protection schemes. It is therefore recommended that the operators check whether appropriate resilient protection measures are in place. The risk of cyber incidents impacting the grid's reliability can thus be minimized by virtue of the grid design. Siemens strongly recommends applying the provided security updates using the corresponding tooling and documented procedures made available with the product. If supported by the product, an automated means to apply the security updates across multiple product instances may be used. Siemens strongly recommends prior validation of any security update before being applied, and supervision by trained staff of the update process in the target environment. As a general security measure Siemens strongly recommends to protect network access with appropriate mechanisms (e.g. firewalls, segmentation, VPN). It is advised to configure the environment according to our operational guidelines in order to run the devices in a protected IT environment."
+  },
+  {
+    "location": "html-block:429",
+    "text": "Recommended security guidelines can be found at: https://www.siemens.com/gridsecurity"
+  },
+  {
+    "location": "html-block:430",
+    "text": "PRODUCT DESCRIPTION"
+  },
+  {
+    "location": "html-block:431",
+    "text": "SIPROTEC 5 and SIPROTEC 5 Compact devices provide a range of integrated protection, control, measurement, and automation functions for electrical substations and other fields of application."
+  },
+  {
+    "location": "html-block:432",
+    "text": "VULNERABILITY DESCRIPTION Un-/Collapse All"
+  },
+  {
+    "location": "html-block:433",
+    "text": "This chapter describes all vulnerabilities (CVE-IDs) addressed in this security advisory. Wherever applicable, it also documents the product-specific impact of the individual vulnerabilities."
+  },
+  {
+    "location": "html-block:434",
+    "text": "Vulnerability CVE-2024-38867"
+  },
+  {
+    "location": "html-block:435",
+    "text": "The affected devices are supporting weak ciphers on several ports (443/tcp for web, 4443/tcp for DIGSI 5 and configurable port for syslog over TLS). This could allow an unauthorized attacker in a man-in-the-middle position to decrypt any data passed over to and from those ports."
+  },
+  {
+    "location": "html-block:436",
+    "text": "CVSS v3.1 Base Score | 5.9"
+  },
+  {
+    "location": "html-block:437",
+    "text": "CVSS v3.1 Vector | CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+  },
+  {
+    "location": "html-block:438",
+    "text": "CVSS v4.0 Base Score | 8.2"
+  },
+  {
+    "location": "html-block:439",
+    "text": "CVSS v4.0 Vector | CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+  },
+  {
+    "location": "html-block:440",
+    "text": "CWE | CWE-326: Inadequate Encryption Strength"
+  },
+  {
+    "location": "html-block:441",
+    "text": "ACKNOWLEDGMENTS"
+  },
+  {
+    "location": "html-block:442",
+    "text": "Siemens thanks the following party for its efforts:"
+  },
+  {
+    "location": "html-block:443",
+    "text": "Hydro-Québec for coordinated disclosure of CVE-2024-38867"
+  },
+  {
+    "location": "html-block:444",
+    "text": "ADDITIONAL INFORMATION"
+  },
+  {
+    "location": "html-block:445",
+    "text": "For further inquiries on security vulnerabilities in Siemens products and solutions, please contact the Siemens ProductCERT: https://www.siemens.com/cert/advisories"
+  },
+  {
+    "location": "html-block:446",
+    "text": "HISTORY DATA"
+  },
+  {
+    "location": "html-block:447",
+    "text": "V1.0 (2024-07-09): | Publication Date"
+  },
+  {
+    "location": "html-block:448",
+    "text": "V1.1 (2024-08-13): | Updating the CVE description"
+  },
+  {
+    "location": "html-block:449",
+    "text": "V1.2 (2025-11-11): | Added fix for SIPROTEC 5 7SA82 (CP100), SIPROTEC 5 7SD82 (CP100), SIPROTEC 5 7SL82 (CP100) and SIPROTEC 5 7UT82 (CP100)"
+  },
+  {
+    "location": "html-block:450",
+    "text": "TERMS OF USE"
+  },
+  {
+    "location": "html-block:451",
+    "text": "The use of Siemens Security Advisories is subject to the terms and conditions listed on: https://www.siemens.com/productcert/terms-of-use."
+  },
+  {
+    "location": "html-block:452",
+    "text": "SSA-750499"
+  },
+  {
+    "location": "html-block:453",
+    "text": "© Siemens 2025"
+  }
+]

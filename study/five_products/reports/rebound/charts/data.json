@@ -1,0 +1,289 @@
+{
+  "evidence-base": {
+    "SEL": {
+      "security_guide": 1
+    },
+    "Schneider Electric": {
+      "manual": 1
+    },
+    "Rockwell Automation / Allen-Bradley": {
+      "manual": 1
+    },
+    "GE Vernova / Multilin": {
+      "product_page": 1
+    },
+    "Siemens": {
+      "advisory": 1
+    }
+  },
+  "not-used": {
+    "Rockwell Automation / Allen-Bradley": {
+      "refused": 1
+    },
+    "Siemens": {
+      "unreadable": 1
+    }
+  },
+  "mentions": {
+    "authentication": {
+      "SEL": [
+        1,
+        1
+      ],
+      "Schneider Electric": [
+        1,
+        1
+      ],
+      "Rockwell Automation / Allen-Bradley": [
+        1,
+        1
+      ],
+      "GE Vernova / Multilin": [
+        1,
+        1
+      ],
+      "Siemens": [
+        0,
+        1
+      ]
+    },
+    "integrity": {
+      "SEL": [
+        1,
+        1
+      ],
+      "Schneider Electric": [
+        1,
+        1
+      ],
+      "Rockwell Automation / Allen-Bradley": [
+        1,
+        1
+      ],
+      "GE Vernova / Multilin": [
+        0,
+        1
+      ],
+      "Siemens": [
+        0,
+        1
+      ]
+    },
+    "encryption": {
+      "SEL": [
+        1,
+        1
+      ],
+      "Schneider Electric": [
+        0,
+        1
+      ],
+      "Rockwell Automation / Allen-Bradley": [
+        0,
+        1
+      ],
+      "GE Vernova / Multilin": [
+        0,
+        1
+      ],
+      "Siemens": [
+        1,
+        1
+      ]
+    },
+    "dnp3_secure_authentication": {
+      "SEL": [
+        0,
+        1
+      ],
+      "Schneider Electric": [
+        1,
+        1
+      ],
+      "Rockwell Automation / Allen-Bradley": [
+        0,
+        1
+      ],
+      "GE Vernova / Multilin": [
+        0,
+        1
+      ],
+      "Siemens": [
+        0,
+        1
+      ]
+    },
+    "tls": {
+      "SEL": [
+        1,
+        1
+      ],
+      "Schneider Electric": [
+        0,
+        1
+      ],
+      "Rockwell Automation / Allen-Bradley": [
+        0,
+        1
+      ],
+      "GE Vernova / Multilin": [
+        0,
+        1
+      ],
+      "Siemens": [
+        1,
+        1
+      ]
+    },
+    "ipsec": {
+      "SEL": [
+        0,
+        1
+      ],
+      "Schneider Electric": [
+        0,
+        1
+      ],
+      "Rockwell Automation / Allen-Bradley": [
+        0,
+        1
+      ],
+      "GE Vernova / Multilin": [
+        0,
+        1
+      ],
+      "Siemens": [
+        0,
+        1
+      ]
+    },
+    "cip_security": {
+      "SEL": [
+        0,
+        1
+      ],
+      "Schneider Electric": [
+        0,
+        1
+      ],
+      "Rockwell Automation / Allen-Bradley": [
+        1,
+        1
+      ],
+      "GE Vernova / Multilin": [
+        0,
+        1
+      ],
+      "Siemens": [
+        0,
+        1
+      ]
+    },
+    "ssh": {
+      "SEL": [
+        1,
+        1
+      ],
+      "Schneider Electric": [
+        0,
+        1
+      ],
+      "Rockwell Automation / Allen-Bradley": [
+        0,
+        1
+      ],
+      "GE Vernova / Multilin": [
+        0,
+        1
+      ],
+      "Siemens": [
+        0,
+        1
+      ]
+    }
+  },
+  "answer": {
+    "SEL": {
+      "encrypted": 1
+    },
+    "Schneider Electric": {
+      "authenticated": 1
+    },
+    "Rockwell Automation / Allen-Bradley": {
+      "unknown": 1
+    },
+    "GE Vernova / Multilin": {
+      "other": 1
+    },
+    "Siemens": {
+      "other": 1
+    }
+  },
+  "answer-mechanisms": {
+    "dnp3_secure_authentication": {
+      "All devices": [
+        1,
+        5
+      ]
+    },
+    "tls": {
+      "All devices": [
+        1,
+        5
+      ]
+    },
+    "ipsec": {
+      "All devices": [
+        0,
+        5
+      ]
+    },
+    "cip_security": {
+      "All devices": [
+        0,
+        5
+      ]
+    },
+    "ssh": {
+      "All devices": [
+        0,
+        5
+      ]
+    }
+  },
+  "results": {
+    "Authentication": {
+      "supported": 1,
+      "conditional": 1,
+      "unknown": 2,
+      "other": 1
+    },
+    "Integrity": {
+      "None": 5
+    },
+    "Encryption": {
+      "supported": 1,
+      "unknown": 3,
+      "other": 1
+    },
+    "DNP3 Secure Authentication": {
+      "unknown": 4,
+      "conditional": 1
+    },
+    "TLS": {
+      "supported": 1,
+      "unknown": 3,
+      "other": 1
+    },
+    "IPsec": {
+      "unknown": 5
+    },
+    "CIP Security": {
+      "unknown": 5
+    },
+    "SSH": {
+      "other": 1,
+      "unknown": 4
+    }
+  }
+}

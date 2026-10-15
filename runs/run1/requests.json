@@ -1,0 +1,86 @@
+[
+  {
+    "at": "2026-10-13T19:51:11.171621+00:00",
+    "url": "https://selinc.com/robots.txt",
+    "status": 200,
+    "bytes": 686,
+    "sha256": "5e08edd75de604c0966b1d4c076064640b4ca1dfc6f31c8eb9eeb65d3ba64211"
+  },
+  {
+    "at": "2026-10-13T19:51:12.160924+00:00",
+    "url": "https://selinc.com/api/download/112760/",
+    "status": 200,
+    "bytes": 857336
+  },
+  {
+    "at": "2026-10-13T19:51:13.674856+00:00",
+    "url": "https://productinfo.se.com/robots.txt",
+    "status": 200,
+    "bytes": 1418,
+    "sha256": "ee648699d84ca4d6410d328705a7cad43eb50365c857d9e5abeb44416d17450a"
+  },
+  {
+    "at": "2026-10-13T19:51:14.677631+00:00",
+    "url": "https://productinfo.se.com/advc-operationsmanual/pkr39809_advc_operations-manual/English/BM_ADVC3%20Operations%20Manual_0000999204.xml/$/TPC_ADVC3_OM_DNP3SecurityCPT_0001009251",
+    "status": 200,
+    "bytes": 929910
+  },
+  {
+    "at": "2026-10-13T19:51:15.561095+00:00",
+    "url": "https://www.rockwellautomation.com/robots.txt",
+    "status": 200,
+    "bytes": 5064,
+    "sha256": "3f3b8289063afb02205c5669e96142fc13c385b232b0b62345418f2642cd47d7"
+  },
+  {
+    "at": "2026-10-13T19:51:16.559340+00:00",
+    "url": "https://www.rockwellautomation.com/en-us/docs/technical/logix5000/_online/1756-um543/controllogix-5580-and-guardlogix-5580-controllers-/controllogix-and-guardlogix-systems/secure-controller-systems.html",
+    "status": 200,
+    "bytes": 112115
+  },
+  {
+    "at": "2026-10-13T19:51:16.696761+00:00",
+    "url": "https://literature.rockwellautomation.com/robots.txt",
+    "status": 301,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:51:16.812540+00:00",
+    "url": "https://www.gevernova.com/robots.txt",
+    "status": 200,
+    "bytes": 5207,
+    "sha256": "38174ab81da1da9ba9bec5746eb246576af3f2d13361da1fa7a8a9e90ef0dfa8"
+  },
+  {
+    "at": "2026-10-13T19:51:17.806168+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/bus-protection/multilin-b90",
+    "status": 200,
+    "bytes": 419666
+  },
+  {
+    "at": "2026-10-13T19:51:19.028954+00:00",
+    "url": "https://cache.industry.siemens.com/robots.txt",
+    "status": 200,
+    "bytes": 80,
+    "sha256": "6aab259f4636c0e6e47c2e633650adf367091ec58beac80ead90d2e398635318"
+  },
+  {
+    "at": "2026-10-13T19:51:20.024886+00:00",
+    "url": "https://cache.industry.siemens.com/dl/files/768/109821768/att_1145217/v1/SIP5_DIGSI5_Security_Conformance_Statement_EN.pdf",
+    "status": 404,
+    "bytes": 10
+  },
+  {
+    "at": "2026-10-13T19:51:20.639235+00:00",
+    "url": "https://cert-portal.siemens.com/robots.txt",
+    "status": 200,
+    "bytes": 50,
+    "sha256": "c3b5b74c4078833a4cbbfebf12baacb6e072030b69f3c81e49850d516ec08862"
+  },
+  {
+    "at": "2026-10-13T19:51:21.630152+00:00",
+    "url": "https://cert-portal.siemens.com/productcert/html/ssa-750499.html",
+    "status": 200,
+    "bytes": 163064
+  }
+]

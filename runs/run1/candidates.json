@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "5d0269a053d8d3030217",
+    "source_id": "b8d90efe1e476caca1e9",
+    "product_id": "sel_rtac",
+    "feature": "tls",
+    "lead_type": "capability",
+    "location": "pdf-page:4",
+    "matched": [
+      "Transport Layer Security",
+      "TLS"
+    ],
+    "context": "4 \nTable 2 Default Open Ports for Ethernet and the USB-B Interfaces \nPort Number Description \n5432 ACSELERATOR RTAC project download and retrieval \n443 HTTPS (Transport Layer Security-encrypted [TLS-encrypted]  \nRTAC web server session) \n80 HTTP (connections migrated to Port 443) \n123 NTP time synchronization (assuming a default ACSELERATOR RTAC  \nproject is loaded on the SEL RTAC) \nThe default ports can be disabled through the web interface for all Ethernet interfaces, except the \nlocal USB-B interface on the SEL-3530, SEL-3530-4, SEL-3505, and SEL-3505-3 RTAC \nhardware options.",
+    "match_count": 2,
+    "status": "unreviewed"
+  },
+  {
+    "id": "15567ca6d66e9dd137a4",
+    "source_id": "b8d90efe1e476caca1e9",
+    "product_id": "sel_rtac",
+    "feature": "encryption",
+    "lead_type": "capability",
+    "location": "pdf-page:4",
+    "matched": [
+      "encrypted"
+    ],
+    "context": "4 \nTable 2 Default Open Ports for Ethernet and the USB-B Interfaces \nPort Number Description \n5432 ACSELERATOR RTAC project download and retrieval \n443 HTTPS (Transport Layer Security-encrypted [TLS-encrypted]  \nRTAC web server session) \n80 HTTP (connections migrated to Port 443) \n123 NTP time synchronization (assuming a default ACSELERATOR RTAC  \nproject is loaded on the SEL RTAC) \nThe default ports can be disabled through the web interface for all Ethernet interfaces, except the \nlocal USB-B interface on the SEL-3530, SEL-3530-4, SEL-3505, and SEL-3505-3 RTAC \nhardware options.",
+    "match_count": 2,
+    "status": "unreviewed"
+  },
+  {
+    "id": "5875f5693f2ca58e588a",
+    "source_id": "b8d90efe1e476caca1e9",
+    "product_id": "sel_rtac",
+    "feature": "tls",
+    "lead_type": "capability",
+    "location": "pdf-page:7",
+    "matched": [
+      "TLS"
+    ],
+    "context": "Secure Shell (SSH) is a widely used cryptographic network protocol that provides terminal \naccess to remote devices. The SSH tunnel method is used in this example because it is widely \nused and is supported by many free terminal applications. A TLS tunnel is another option for \nsecuring engineering access and is described in Section 6 (Securing SCADA - Encrypting Server \nCommunications); however, the SSH tunnel method is equally applicable to that section as well. \nAs mentioned previously, the SEL server requires very little configuration for securing \nengineering access. Figure 7 shows a project configuration with three IEDs communicating to an \nRTAC via SEL protocol.",
+    "match_count": 1,
+    "status": "unreviewed"
+  },
+  {
+    "id": "d1d2ae25135859ec10cd",
+    "source_id": "b8d90efe1e476caca1e9",
+    "product_id": "sel_rtac",
+    "feature": "encryption",
+    "lead_type": "capability",
+    "location": "pdf-page:7",
+    "matched": [
+      "encrypting"
+    ],
+    "context": "In the topology shown in Figure 1, the SEL RTAC is the AP to a \nsecured wide-area network (WAN). It provides data concentration for all the connected IEDs and \nalso allows engineering access to devices that support that feature. Secure engineering access into \nthe SEL RTAC requires encrypting the user session so that valuable information is not readable \nvia plain text.  \nThere are two general methods for engineering access: 1) through the SEL server or 2) using APs \nand AP routers (APRs). Either method accomplishes the goal. The advantage of using the SEL \nserver is that it does not require manually configuring individual APRs for each IED.",
+    "match_count": 2,
+    "status": "unreviewed"
+  },
+  {
+    "id": "768dbfc380b7994bbad7",
+    "source_id": "b8d90efe1e476caca1e9",
+    "product_id": "sel_rtac",
+    "feature": "ssh",
+    "lead_type": "capability",
+    "location": "pdf-page:7",
+    "matched": [
+      "Secure Shell",
+      "SSH"
+    ],
+    "context": "The \ndisadvantage is that this method is only applicable to IEDs communicating with SEL protocol.  \nThis section describes configuring the SEL server for secure access. This discussion is equally \napplicable to the second method described above (for more information about APs and APRs see \n[1]). Secure Shell (SSH) is a widely used cryptographic network protocol that provides terminal \naccess to remote devices. The SSH tunnel method is used in this example because it is widely \nused and is supported by many free terminal applications. A TLS tunnel is another option for \nsecuring engineering access and is described in Section 6 (Securing SCADA - Encrypting Server \nCommunications); however, the SSH tunnel method is equally applicable to that section as well.",
+    "match_count": 5,
+    "status": "unreviewed"
+  },
+  {
+    "id": "3200869b26d171ec6113",
+    "source_id": "b8d90efe1e476caca1e9",
+    "product_id": "sel_rtac",
+    "feature": "authentication",
+    "lead_type": "capability",
+    "location": "pdf-page:8",
+    "matched": [
+      "authentication",
+      "LDAP",
+      "authenticate"
+    ],
+    "context": "8 \n \nFigure 7 An ACSELERATOR RTAC Project Configured for Secure Engineering Access to Three IEDs \nCommunicating Via SEL Protocol \nThe SEL server also supports the capability to enforce authentication before granting access to \nthe command line interface. Note that when SSH is the serial tunnel mode, then Perform \nAuthentication is automatically configured to True. When this setting is enabled, a username is \nrequired with a password challenge. Local accounts and centrally managed accounts (i.e., those \nconfigured through Lightweight Directory Access Protocol [LDAP]) can be used to authenticate \nto the SEL server.",
+    "match_count": 5,
+    "status": "unreviewed"
+  },
+  {
+    "id": "2bf8a079fc5b8e3c4af6",
+    "source_id": "b8d90efe1e476caca1e9",
+    "product_id": "sel_rtac",
+    "feature": "ssh",
+    "lead_type": "capability",
+    "location": "pdf-page:8",
+    "matched": [
+      "SSH"
+    ],
+    "context": "8 \n \nFigure 7 An ACSELERATOR RTAC Project Configured for Secure Engineering Access to Three IEDs \nCommunicating Via SEL Protocol \nThe SEL server also supports the capability to enforce authentication before granting access to \nthe command line interface. Note that when SSH is the serial tunnel mode, then Perform \nAuthentication is automatically configured to True. When this setting is enabled, a username is \nrequired with a password challenge. Local accounts and centrally managed accounts (i.e., those \nconfigured through Lightweight Directory Access Protocol [LDAP]) can be used to authenticate \nto the SEL server.  \nFigure 8 shows how to use the SEL server for accessing connected IEDs.",
+    "match_count": 2,
+    "status": "unreviewed"
+  },
+  {
+    "id": "3fa0c8dcc51718285f58",
+    "source_id": "b8d90efe1e476caca1e9",
+    "product_id": "sel_rtac",
+    "feature": "tls",
+    "lead_type": "capability",
+    "location": "pdf-page:9",
+    "matched": [
+      "TLS",
+      "SSL",
+      "TLS 1.0"
+    ],
+    "context": "Then, an \nencrypted communications session is negotiated by the two end points. This is the widely \naccepted method used in HTTPS to provide secure information exchange in the World Wide \nWeb.  \nThe SEL RTAC web server is only accessible through HTTPS (HTTP tunneled through a TLS \nconnection). TLS and its predecessor, Secure Socket Layer (SSL), leverage PKI to authenticate \nand encrypt communications sessions. The SEL RTAC only supports TLS 1.0 and above due to \nsecurity vulnerabilities discovered in SSL 3.0 and earlier. By default, all SEL RTACs have a selfsigned X.509 certificate enabled. This allows any web browser to connect to the web interface \nsecurely.",
+    "match_count": 6,
+    "status": "unreviewed"
+  },
+  {
+    "id": "5ecb41fa8f4eeb73bdc3",
+    "source_id": "b8d90efe1e476caca1e9",
+    "product_id": "sel_rtac",
+    "feature": "authentication",
+    "lead_type": "capability",
+    "location": "pdf-page:9",
+    "matched": [
+      "authentication",
+      "authenticate"
+    ],
+    "context": "9 \nAnother means to provide authentication is by adding SSH authorized keys. Through the web \ninterface at Security > SSH Keys, a user can add preauthorized public keys for authentication. \nThese public keys can be generated using either RSA or DSA cryptographic algorithms. DSA in \nthis context is as described in the Digital Signature Standard (DSS) [5]. In this method, an SSH \nclient presents its public key during the connection initiation and the user enters a valid username \nthat is authorized to connect to the SEL RTAC.",
+    "match_count": 6,
+    "status": "unreviewed"
+  },
+  {
+    "id": "93f88a82719b4d3c8a7f",
+    "source_id": "b8d90efe1e476caca1e9",
+    "product_id": "sel_rtac",
+    "feature": "encryption",
+    "lead_type": "capability",
+    "location": "pdf-page:9",
+    "matched": [
+      "ENCRYPTING",
+      "encrypted",
+      "encrypt"
+    ],
+    "context": "As mentioned, \nthis is available in both SEL servers and clients, so the method can be used to restrict all \nengineering access by disabling the SEL server or for an individual IED by disabling the pin \nassociated with that device.  \nSECTION 6: SECURING SCADA - ENCRYPTING SERVER COMMUNICATIONS \nOperators maintain situational awareness with SCADA. Information about the electric power \nsystem is often transmitted in plain text and can be intercepted by any individual at a vulnerable \nspot in the network. Encrypting this communication provides another layer to protect the \nconfidentiality and integrity of information critical to operating the bulk electric system.",
+    "match_count": 5,
+    "status": "unreviewed"
+  },
+  {
+    "id": "05e528e2c38bbda2ecfa",
+    "source_id": "b8d90efe1e476caca1e9",
+    "product_id": "sel_rtac",
+    "feature": "ssh",
+    "lead_type": "capability",
+    "location": "pdf-page:9",
+    "matched": [
+      "SSH"
+    ],
+    "context": "9 \nAnother means to provide authentication is by adding SSH authorized keys. Through the web \ninterface at Security > SSH Keys, a user can add preauthorized public keys for authentication. \nThese public keys can be generated using either RSA or DSA cryptographic algorithms. DSA in \nthis context is as described in the Digital Signature Standard (DSS) [5]. In this method, an SSH \nclient presents its public key during the connection initiation and the user enters a valid username \nthat is authorized to connect to the SEL RTAC.",
+    "match_count": 6,
+    "status": "unreviewed"
+  },
+  {
+    "id": "aa4d5e5e4756d2550872",
+    "source_id": "b8d90efe1e476caca1e9",
+    "product_id": "sel_rtac",
+    "feature": "tls",
+    "lead_type": "capability",
+    "location": "pdf-page:10",
+    "matched": [
+      "SSL",
+      "TLS"
+    ],
+    "context": "After the X.509 certificate is activated, it is a simple step to encrypt the server communications. \nFor one-way authentication where only the client (i.e., SCADA) is authenticating the certificates, \nall that is required is to select SSL/TLS as the Serial Tunneling Mode in ACSELERATOR RTAC \n(as shown in Figure 9). This allows the client to verify that the server is a trusted source of \ninformation and encrypt the communications. \n \nFigure 9 Configuring a DNP3 Server to Support TLS One-Way Authentication in ACSELERATOR RTAC \nAlternatively, a user can enable two-way authentication. In this mode, the server also \nauthenticates the client’s (SCADA) certificate to ensure that the incoming connection originates \nfrom a trusted source.",
+    "match_count": 6,
+    "status": "unreviewed"
+  },
+  {
+    "id": "667b0c5487eb1d853c43",
+    "source_id": "b8d90efe1e476caca1e9",
+    "product_id": "sel_rtac",
+    "feature": "authentication",
+    "lead_type": "capability",
+    "location": "pdf-page:10",
+    "matched": [
+      "authentication",
+      "authenticating",
+      "authenticates"
+    ],
+    "context": "Once the certificate has \nbeen signed, the user can import the signed X.509 certificate into the RTAC and activate it. For \ndetailed instructions for this procedure, refer to the ACSELERATOR RTAC Instruction Manual.  \nAfter the X.509 certificate is activated, it is a simple step to encrypt the server communications. \nFor one-way authentication where only the client (i.e., SCADA) is authenticating the certificates, \nall that is required is to select SSL/TLS as the Serial Tunneling Mode in ACSELERATOR RTAC \n(as shown in Figure 9). This allows the client to verify that the server is a trusted source of \ninformation and encrypt the communications. \n \nFigure 9 Configuring a DNP3 Server to Support TLS One-Way Authentication in ACSELERATOR RTAC \nAlternatively, a user can enable two-way authentication.",
+    "match_count": 6,
+    "status": "unreviewed"
+  },
+  {
+    "id": "42af5fc03d1b2ba2dbb3",
+    "source_id": "b8d90efe1e476caca1e9",
+    "product_id": "sel_rtac",
+    "feature": "encryption",
+    "lead_type": "capability",
+    "location": "pdf-page:10",
+    "matched": [
+      "encrypt"
+    ],
+    "context": "Once the certificate has \nbeen signed, the user can import the signed X.509 certificate into the RTAC and activate it. For \ndetailed instructions for this procedure, refer to the ACSELERATOR RTAC Instruction Manual.  \nAfter the X.509 certificate is activated, it is a simple step to encrypt the server communications. \nFor one-way authentication where only the client (i.e., SCADA) is authenticating the certificates, \nall that is required is to select SSL/TLS as the Serial Tunneling Mode in ACSELERATOR RTAC \n(as shown in Figure 9). This allows the client to verify that the server is a trusted source of \ninformation and encrypt the communications.",
+    "match_count": 2,
+    "status": "unreviewed"
+  },
+  {
+    "id": "21e2857686b616f204a5",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "dnp3_secure_authentication",
+    "lead_type": "capability",
+    "location": "html-block:1971",
+    "matched": [
+      "secure authentication"
+    ],
+    "context": "The PowerLogic ADVC Controller implements version 5 of the secure authentication feature as specified in the IEEE standard document 1815-2012.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "Expand Table",
+      "DNP3 Security"
+    ],
+    "context_after": [
+      "DNP3 Secure Authentication functionality for the PowerLogic ADVC Controller can only be enabled and configured through WSOS.",
+      "DNP3 and DNP3 Security must firstly be made available through Feature Selection in WSOS."
+    ],
+    "heading": "DNP3 Security"
+  },
+  {
+    "id": "668215a7f01e8b69ac8d",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "authentication",
+    "lead_type": "capability",
+    "location": "html-block:1971",
+    "matched": [
+      "authentication"
+    ],
+    "context": "The PowerLogic ADVC Controller implements version 5 of the secure authentication feature as specified in the IEEE standard document 1815-2012.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "Expand Table",
+      "DNP3 Security"
+    ],
+    "context_after": [
+      "DNP3 Secure Authentication functionality for the PowerLogic ADVC Controller can only be enabled and configured through WSOS.",
+      "DNP3 and DNP3 Security must firstly be made available through Feature Selection in WSOS."
+    ],
+    "heading": "DNP3 Security"
+  },
+  {
+    "id": "48b629496ad316cd8bee",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "dnp3_secure_authentication",
+    "lead_type": "capability",
+    "location": "html-block:1972",
+    "matched": [
+      "Secure Authentication"
+    ],
+    "context": "DNP3 Secure Authentication functionality for the PowerLogic ADVC Controller can only be enabled and configured through WSOS.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "DNP3 Security",
+      "The PowerLogic ADVC Controller implements version 5 of the secure authentication feature as specified in the IEEE standard document 1815-2012."
+    ],
+    "context_after": [
+      "DNP3 and DNP3 Security must firstly be made available through Feature Selection in WSOS.",
+      "Display > Configuration > Feature Selection > Communications"
+    ],
+    "heading": "DNP3 Security"
+  },
+  {
+    "id": "73c6b8e6e2c364cfa120",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "authentication",
+    "lead_type": "capability",
+    "location": "html-block:1972",
+    "matched": [
+      "Authentication"
+    ],
+    "context": "DNP3 Secure Authentication functionality for the PowerLogic ADVC Controller can only be enabled and configured through WSOS.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "DNP3 Security",
+      "The PowerLogic ADVC Controller implements version 5 of the secure authentication feature as specified in the IEEE standard document 1815-2012."
+    ],
+    "context_after": [
+      "DNP3 and DNP3 Security must firstly be made available through Feature Selection in WSOS.",
+      "Display > Configuration > Feature Selection > Communications"
+    ],
+    "heading": "DNP3 Security"
+  },
+  {
+    "id": "90d0bbf841d70e7d79c8",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "dnp3_secure_authentication",
+    "lead_type": "capability",
+    "location": "html-block:1975",
+    "matched": [
+      "Secure Authentication"
+    ],
+    "context": "Secure Authentication",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "DNP3 and DNP3 Security must firstly be made available through Feature Selection in WSOS.",
+      "Display > Configuration > Feature Selection > Communications"
+    ],
+    "context_after": [
+      "Once DNP3 Security has been made available, Secure Authentication can be configured through WSOS by going to:",
+      "Display> Switchgear Communications > Protocols > DNP3 > DNP3 Secure Authentication."
+    ]
+  },
+  {
+    "id": "3e4f4a1c5649bee977a0",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "authentication",
+    "lead_type": "capability",
+    "location": "html-block:1975",
+    "matched": [
+      "Authentication"
+    ],
+    "context": "Secure Authentication",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "DNP3 and DNP3 Security must firstly be made available through Feature Selection in WSOS.",
+      "Display > Configuration > Feature Selection > Communications"
+    ],
+    "context_after": [
+      "Once DNP3 Security has been made available, Secure Authentication can be configured through WSOS by going to:",
+      "Display> Switchgear Communications > Protocols > DNP3 > DNP3 Secure Authentication."
+    ]
+  },
+  {
+    "id": "9744602356be71a78771",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "dnp3_secure_authentication",
+    "lead_type": "capability",
+    "location": "html-block:1976",
+    "matched": [
+      "Secure Authentication"
+    ],
+    "context": "Once DNP3 Security has been made available, Secure Authentication can be configured through WSOS by going to:",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "Display > Configuration > Feature Selection > Communications",
+      "Secure Authentication"
+    ],
+    "context_after": [
+      "Display> Switchgear Communications > Protocols > DNP3 > DNP3 Secure Authentication.",
+      "Figure 66"
+    ],
+    "heading": "Secure Authentication"
+  },
+  {
+    "id": "62d4ed2636b06e0c4f10",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "authentication",
+    "lead_type": "capability",
+    "location": "html-block:1976",
+    "matched": [
+      "Authentication"
+    ],
+    "context": "Once DNP3 Security has been made available, Secure Authentication can be configured through WSOS by going to:",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "Display > Configuration > Feature Selection > Communications",
+      "Secure Authentication"
+    ],
+    "context_after": [
+      "Display> Switchgear Communications > Protocols > DNP3 > DNP3 Secure Authentication.",
+      "Figure 66"
+    ],
+    "heading": "Secure Authentication"
+  },
+  {
+    "id": "ac4157ef910889c1ac67",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "dnp3_secure_authentication",
+    "lead_type": "capability",
+    "location": "html-block:1977",
+    "matched": [
+      "Secure Authentication"
+    ],
+    "context": "Display> Switchgear Communications > Protocols > DNP3 > DNP3 Secure Authentication.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "Secure Authentication",
+      "Once DNP3 Security has been made available, Secure Authentication can be configured through WSOS by going to:"
+    ],
+    "context_after": [
+      "Figure 66",
+      "DNP3 Secure Authentication Configuration settings"
+    ],
+    "heading": "Secure Authentication"
+  },
+  {
+    "id": "d5f314c08c76e87badcc",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "authentication",
+    "lead_type": "capability",
+    "location": "html-block:1977",
+    "matched": [
+      "Authentication"
+    ],
+    "context": "Display> Switchgear Communications > Protocols > DNP3 > DNP3 Secure Authentication.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "Secure Authentication",
+      "Once DNP3 Security has been made available, Secure Authentication can be configured through WSOS by going to:"
+    ],
+    "context_after": [
+      "Figure 66",
+      "DNP3 Secure Authentication Configuration settings"
+    ],
+    "heading": "Secure Authentication"
+  },
+  {
+    "id": "4a7a83a5716d5455c009",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "dnp3_secure_authentication",
+    "lead_type": "capability",
+    "location": "html-block:1979",
+    "matched": [
+      "Secure Authentication"
+    ],
+    "context": "DNP3 Secure Authentication Configuration settings",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "Display> Switchgear Communications > Protocols > DNP3 > DNP3 Secure Authentication.",
+      "Figure 66"
+    ],
+    "context_after": [
+      "This page allows the configuration of operational parameters for DNP3 Secure Authentication, along with Update Keys (secret keys shared between the master station and outstation) for up to 10 users.",
+      "When a user issues a critical DNP3 request that is one which requires authentication, and it is successfully authenticated, the PowerLogic ADVC Controller will write two events to the Event Log. One event shows the type of request and the other shows the ID of the requesting user."
+    ],
+    "heading": "Secure Authentication"
+  },
+  {
+    "id": "85a5eb8ff6be36f16634",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "authentication",
+    "lead_type": "capability",
+    "location": "html-block:1979",
+    "matched": [
+      "Authentication"
+    ],
+    "context": "DNP3 Secure Authentication Configuration settings",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "Display> Switchgear Communications > Protocols > DNP3 > DNP3 Secure Authentication.",
+      "Figure 66"
+    ],
+    "context_after": [
+      "This page allows the configuration of operational parameters for DNP3 Secure Authentication, along with Update Keys (secret keys shared between the master station and outstation) for up to 10 users.",
+      "When a user issues a critical DNP3 request that is one which requires authentication, and it is successfully authenticated, the PowerLogic ADVC Controller will write two events to the Event Log. One event shows the type of request and the other shows the ID of the requesting user."
+    ],
+    "heading": "Secure Authentication"
+  },
+  {
+    "id": "6ec7dba04817db1317f1",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "dnp3_secure_authentication",
+    "lead_type": "capability",
+    "location": "html-block:1980",
+    "matched": [
+      "Secure Authentication"
+    ],
+    "context": "This page allows the configuration of operational parameters for DNP3 Secure Authentication, along with Update Keys (secret keys shared between the master station and outstation) for up to 10 users.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "Figure 66",
+      "DNP3 Secure Authentication Configuration settings"
+    ],
+    "context_after": [
+      "When a user issues a critical DNP3 request that is one which requires authentication, and it is successfully authenticated, the PowerLogic ADVC Controller will write two events to the Event Log. One event shows the type of request and the other shows the ID of the requesting user.",
+      "The configurable settings for DNP3 Secure Authentication are described in the table below."
+    ],
+    "heading": "Secure Authentication"
+  },
+  {
+    "id": "bc745442e048d3008e84",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "authentication",
+    "lead_type": "capability",
+    "location": "html-block:1980",
+    "matched": [
+      "Authentication"
+    ],
+    "context": "This page allows the configuration of operational parameters for DNP3 Secure Authentication, along with Update Keys (secret keys shared between the master station and outstation) for up to 10 users.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "Figure 66",
+      "DNP3 Secure Authentication Configuration settings"
+    ],
+    "context_after": [
+      "When a user issues a critical DNP3 request that is one which requires authentication, and it is successfully authenticated, the PowerLogic ADVC Controller will write two events to the Event Log. One event shows the type of request and the other shows the ID of the requesting user.",
+      "The configurable settings for DNP3 Secure Authentication are described in the table below."
+    ],
+    "heading": "Secure Authentication"
+  },
+  {
+    "id": "f5ad68200e51922096dd",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "authentication",
+    "lead_type": "capability",
+    "location": "html-block:1981",
+    "matched": [
+      "authentication",
+      "authenticated"
+    ],
+    "context": "When a user issues a critical DNP3 request that is one which requires authentication, and it is successfully authenticated, the PowerLogic ADVC Controller will write two events to the Event Log. One event shows the type of request and the other shows the ID of the requesting user.",
+    "match_count": 2,
+    "status": "unreviewed",
+    "context_before": [
+      "DNP3 Secure Authentication Configuration settings",
+      "This page allows the configuration of operational parameters for DNP3 Secure Authentication, along with Update Keys (secret keys shared between the master station and outstation) for up to 10 users."
+    ],
+    "context_after": [
+      "The configurable settings for DNP3 Secure Authentication are described in the table below.",
+      "Table 19 DNP3 Secure Authentication Configuration settings"
+    ],
+    "heading": "Secure Authentication"
+  },
+  {
+    "id": "04f7f5a04d7cebccc20c",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "dnp3_secure_authentication",
+    "lead_type": "capability",
+    "location": "html-block:1982",
+    "matched": [
+      "Secure Authentication"
+    ],
+    "context": "The configurable settings for DNP3 Secure Authentication are described in the table below.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "This page allows the configuration of operational parameters for DNP3 Secure Authentication, along with Update Keys (secret keys shared between the master station and outstation) for up to 10 users.",
+      "When a user issues a critical DNP3 request that is one which requires authentication, and it is successfully authenticated, the PowerLogic ADVC Controller will write two events to the Event Log. One event shows the type of request and the other shows the ID of the requesting user."
+    ],
+    "context_after": [
+      "Table 19 DNP3 Secure Authentication Configuration settings",
+      "Setting"
+    ],
+    "heading": "Secure Authentication"
+  },
+  {
+    "id": "4a7d8a725ea1e2522f27",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "authentication",
+    "lead_type": "capability",
+    "location": "html-block:1982",
+    "matched": [
+      "Authentication"
+    ],
+    "context": "The configurable settings for DNP3 Secure Authentication are described in the table below.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "This page allows the configuration of operational parameters for DNP3 Secure Authentication, along with Update Keys (secret keys shared between the master station and outstation) for up to 10 users.",
+      "When a user issues a critical DNP3 request that is one which requires authentication, and it is successfully authenticated, the PowerLogic ADVC Controller will write two events to the Event Log. One event shows the type of request and the other shows the ID of the requesting user."
+    ],
+    "context_after": [
+      "Table 19 DNP3 Secure Authentication Configuration settings",
+      "Setting"
+    ],
+    "heading": "Secure Authentication"
+  },
+  {
+    "id": "9f93991bbaf0fe35e46b",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "dnp3_secure_authentication",
+    "lead_type": "capability",
+    "location": "html-block:1983",
+    "matched": [
+      "Secure Authentication"
+    ],
+    "context": "Table 19 DNP3 Secure Authentication Configuration settings",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "When a user issues a critical DNP3 request that is one which requires authentication, and it is successfully authenticated, the PowerLogic ADVC Controller will write two events to the Event Log. One event shows the type of request and the other shows the ID of the requesting user.",
+      "The configurable settings for DNP3 Secure Authentication are described in the table below."
+    ],
+    "context_after": [
+      "Setting",
+      "Description"
+    ]
+  },
+  {
+    "id": "7e3d2ed96923d06c7a46",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "authentication",
+    "lead_type": "capability",
+    "location": "html-block:1983",
+    "matched": [
+      "Authentication"
+    ],
+    "context": "Table 19 DNP3 Secure Authentication Configuration settings",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "When a user issues a critical DNP3 request that is one which requires authentication, and it is successfully authenticated, the PowerLogic ADVC Controller will write two events to the Event Log. One event shows the type of request and the other shows the ID of the requesting user.",
+      "The configurable settings for DNP3 Secure Authentication are described in the table below."
+    ],
+    "context_after": [
+      "Setting",
+      "Description"
+    ]
+  },
+  {
+    "id": "c65c7c19f0fb5a0ccc8d",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "dnp3_secure_authentication",
+    "lead_type": "capability",
+    "location": "html-block:1986",
+    "matched": [
+      "Secure Authentication"
+    ],
+    "context": "Secure Authentication On/Off",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "Setting",
+      "Description"
+    ],
+    "context_after": [
+      "This turns the Secure Authentication feature On and Off.",
+      "While Off, the controller will not respond to any source authentication message from the master station, nor will it require authentication for accessing ASDU’s."
+    ],
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "id": "8ef32005351f567c67dc",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "authentication",
+    "lead_type": "capability",
+    "location": "html-block:1986",
+    "matched": [
+      "Authentication"
+    ],
+    "context": "Secure Authentication On/Off",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "Setting",
+      "Description"
+    ],
+    "context_after": [
+      "This turns the Secure Authentication feature On and Off.",
+      "While Off, the controller will not respond to any source authentication message from the master station, nor will it require authentication for accessing ASDU’s."
+    ],
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "id": "3beb1b8fa05e5b70c1c7",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "dnp3_secure_authentication",
+    "lead_type": "capability",
+    "location": "html-block:1987",
+    "matched": [
+      "Secure Authentication"
+    ],
+    "context": "This turns the Secure Authentication feature On and Off.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "Description",
+      "Secure Authentication On/Off"
+    ],
+    "context_after": [
+      "While Off, the controller will not respond to any source authentication message from the master station, nor will it require authentication for accessing ASDU’s.",
+      "Aggressive Mode On/Off"
+    ],
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "id": "f025b56df95a18c1f593",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "authentication",
+    "lead_type": "capability",
+    "location": "html-block:1987",
+    "matched": [
+      "Authentication"
+    ],
+    "context": "This turns the Secure Authentication feature On and Off.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "Description",
+      "Secure Authentication On/Off"
+    ],
+    "context_after": [
+      "While Off, the controller will not respond to any source authentication message from the master station, nor will it require authentication for accessing ASDU’s.",
+      "Aggressive Mode On/Off"
+    ],
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "id": "93e3f179034b284ada0d",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "authentication",
+    "lead_type": "capability",
+    "location": "html-block:1988",
+    "matched": [
+      "authentication"
+    ],
+    "context": "While Off, the controller will not respond to any source authentication message from the master station, nor will it require authentication for accessing ASDU’s.",
+    "match_count": 2,
+    "status": "unreviewed",
+    "context_before": [
+      "Secure Authentication On/Off",
+      "This turns the Secure Authentication feature On and Off."
+    ],
+    "context_after": [
+      "Aggressive Mode On/Off",
+      "This allows (or helps prevent) Aggressive mode operation in DNP3 Secure Authentication."
+    ],
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "id": "ae661f5fe61e80397d8b",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "dnp3_secure_authentication",
+    "lead_type": "capability",
+    "location": "html-block:1990",
+    "matched": [
+      "Secure Authentication"
+    ],
+    "context": "This allows (or helps prevent) Aggressive mode operation in DNP3 Secure Authentication.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "While Off, the controller will not respond to any source authentication message from the master station, nor will it require authentication for accessing ASDU’s.",
+      "Aggressive Mode On/Off"
+    ],
+    "context_after": [
+      "For more information on aggressive mode please consult the standard.",
+      "Message Authentication Code (MAC) Algorithm"
+    ],
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "id": "47ff9d92cfe1901ca965",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "authentication",
+    "lead_type": "capability",
+    "location": "html-block:1990",
+    "matched": [
+      "Authentication"
+    ],
+    "context": "This allows (or helps prevent) Aggressive mode operation in DNP3 Secure Authentication.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "While Off, the controller will not respond to any source authentication message from the master station, nor will it require authentication for accessing ASDU’s.",
+      "Aggressive Mode On/Off"
+    ],
+    "context_after": [
+      "For more information on aggressive mode please consult the standard.",
+      "Message Authentication Code (MAC) Algorithm"
+    ],
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "id": "f2d468c6d6544bfac9bb",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "authentication",
+    "lead_type": "capability",
+    "location": "html-block:1992",
+    "matched": [
+      "Authentication"
+    ],
+    "context": "Message Authentication Code (MAC) Algorithm",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "This allows (or helps prevent) Aggressive mode operation in DNP3 Secure Authentication.",
+      "For more information on aggressive mode please consult the standard."
+    ],
+    "context_after": [
+      "This determines which algorithm the controller uses to encode the MAC in DNP3 Secure Authentication messages.",
+      "The options are:"
+    ],
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "id": "1f173c88a7cfc34177e4",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "dnp3_secure_authentication",
+    "lead_type": "capability",
+    "location": "html-block:1993",
+    "matched": [
+      "Secure Authentication"
+    ],
+    "context": "This determines which algorithm the controller uses to encode the MAC in DNP3 Secure Authentication messages.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "For more information on aggressive mode please consult the standard.",
+      "Message Authentication Code (MAC) Algorithm"
+    ],
+    "context_after": [
+      "The options are:",
+      "HMAC-SHA-256 (truncated to 16 octets)"
+    ],
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "id": "0943fc716b47bb4cd474",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "authentication",
+    "lead_type": "capability",
+    "location": "html-block:1993",
+    "matched": [
+      "Authentication"
+    ],
+    "context": "This determines which algorithm the controller uses to encode the MAC in DNP3 Secure Authentication messages.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "For more information on aggressive mode please consult the standard.",
+      "Message Authentication Code (MAC) Algorithm"
+    ],
+    "context_after": [
+      "The options are:",
+      "HMAC-SHA-256 (truncated to 16 octets)"
+    ],
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "id": "e2a60dd567dccc27361d",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "dnp3_secure_authentication",
+    "lead_type": "capability",
+    "location": "html-block:2007",
+    "matched": [
+      "Secure Authentication"
+    ],
+    "context": "DNP3 Secure Authentication is performed on a per-user basis.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "The maximum number of session key status requests that the controller will respond to during a given session.",
+      "Update Keys"
+    ],
+    "context_after": [
+      "Each user has an associated Update Key.",
+      "The Update Key is a 32 character ASCII string of hexadecimal digits i.e. 0-9 and A-F."
+    ],
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "id": "84286b1d233f908a91c5",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "authentication",
+    "lead_type": "capability",
+    "location": "html-block:2007",
+    "matched": [
+      "Authentication"
+    ],
+    "context": "DNP3 Secure Authentication is performed on a per-user basis.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "The maximum number of session key status requests that the controller will respond to during a given session.",
+      "Update Keys"
+    ],
+    "context_after": [
+      "Each user has an associated Update Key.",
+      "The Update Key is a 32 character ASCII string of hexadecimal digits i.e. 0-9 and A-F."
+    ],
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "id": "9ad0b932039ada2f8894",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "dnp3_secure_authentication",
+    "lead_type": "capability",
+    "location": "html-block:2014",
+    "matched": [
+      "Secure Authentication"
+    ],
+    "context": "Secure Authentication is required for accessing critical ASDU’s only.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "NOTE: Update Keys must be kept check with a customer’s organization. This security requirement extends to the WSOS switchgear configuration files, where the keys are stored.",
+      "Critical ASDU’s"
+    ],
+    "context_after": [
+      "As per the DNP3 Standard (IEEE 1815-2012), some ASDU’s are always critical (Write, Select, Operate etc.).",
+      "Others are optionally critical, and can be configured on the DNP3 Secure Authentication page in WSOS."
+    ],
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "id": "b32d3b294932d553c233",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "authentication",
+    "lead_type": "capability",
+    "location": "html-block:2014",
+    "matched": [
+      "Authentication"
+    ],
+    "context": "Secure Authentication is required for accessing critical ASDU’s only.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "NOTE: Update Keys must be kept check with a customer’s organization. This security requirement extends to the WSOS switchgear configuration files, where the keys are stored.",
+      "Critical ASDU’s"
+    ],
+    "context_after": [
+      "As per the DNP3 Standard (IEEE 1815-2012), some ASDU’s are always critical (Write, Select, Operate etc.).",
+      "Others are optionally critical, and can be configured on the DNP3 Secure Authentication page in WSOS."
+    ],
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "id": "aa559a02fb06c13db345",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "dnp3_secure_authentication",
+    "lead_type": "capability",
+    "location": "html-block:2016",
+    "matched": [
+      "Secure Authentication"
+    ],
+    "context": "Others are optionally critical, and can be configured on the DNP3 Secure Authentication page in WSOS.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "Secure Authentication is required for accessing critical ASDU’s only.",
+      "As per the DNP3 Standard (IEEE 1815-2012), some ASDU’s are always critical (Write, Select, Operate etc.)."
+    ],
+    "context_after": [
+      "DNP3 Security Statistics",
+      "As per the DNP3 Standard (IEEE 1815-2012), the PowerLogic ADVC Controller maintains a number of statistics associated with DNP3 Secure Authentication. These statistics are displayed by WSOS on the DNP3 Security Statistics page."
+    ],
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "id": "f95c155382e7b6b46fc4",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "authentication",
+    "lead_type": "capability",
+    "location": "html-block:2016",
+    "matched": [
+      "Authentication"
+    ],
+    "context": "Others are optionally critical, and can be configured on the DNP3 Secure Authentication page in WSOS.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "Secure Authentication is required for accessing critical ASDU’s only.",
+      "As per the DNP3 Standard (IEEE 1815-2012), some ASDU’s are always critical (Write, Select, Operate etc.)."
+    ],
+    "context_after": [
+      "DNP3 Security Statistics",
+      "As per the DNP3 Standard (IEEE 1815-2012), the PowerLogic ADVC Controller maintains a number of statistics associated with DNP3 Secure Authentication. These statistics are displayed by WSOS on the DNP3 Security Statistics page."
+    ],
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "id": "6076b9daf4aee6e1af25",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "dnp3_secure_authentication",
+    "lead_type": "capability",
+    "location": "html-block:2018",
+    "matched": [
+      "Secure Authentication"
+    ],
+    "context": "As per the DNP3 Standard (IEEE 1815-2012), the PowerLogic ADVC Controller maintains a number of statistics associated with DNP3 Secure Authentication. These statistics are displayed by WSOS on the DNP3 Security Statistics page.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "Others are optionally critical, and can be configured on the DNP3 Secure Authentication page in WSOS.",
+      "DNP3 Security Statistics"
+    ],
+    "context_after": [
+      "Display> Switchgear Communications > Protocols >DNP3 > DNP3 Security Statistics",
+      "Figure 67"
+    ],
+    "heading": "DNP3 Security Statistics"
+  },
+  {
+    "id": "c4f710c6a77748bf565b",
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "feature": "authentication",
+    "lead_type": "capability",
+    "location": "html-block:2018",
+    "matched": [
+      "Authentication"
+    ],
+    "context": "As per the DNP3 Standard (IEEE 1815-2012), the PowerLogic ADVC Controller maintains a number of statistics associated with DNP3 Secure Authentication. These statistics are displayed by WSOS on the DNP3 Security Statistics page.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "Others are optionally critical, and can be configured on the DNP3 Secure Authentication page in WSOS.",
+      "DNP3 Security Statistics"
+    ],
+    "context_after": [
+      "Display> Switchgear Communications > Protocols >DNP3 > DNP3 Security Statistics",
+      "Figure 67"
+    ],
+    "heading": "DNP3 Security Statistics"
+  },
+  {
+    "id": "e35286f5c7940c5b8b66",
+    "source_id": "cab8a6e6a9edf8c162ac",
+    "product_id": "rockwell_5580",
+    "feature": "cip_security",
+    "lead_type": "capability",
+    "location": "html-block:6",
+    "matched": [
+      "CIP Security"
+    ],
+    "context": "CIP Security",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "Secure Controller Systems",
+      "ControlLogix 5580 controllers, firmware revision 32.011 or later, and GuardLogix 5580, firmware revision 37.011 or later, support IEC-62443-4-2 SL 1 requirements. For security features and system requirements, see Develop Secure Applications."
+    ],
+    "context_after": [
+      "CIP Security is a standard, open-source communication mechanism that helps to provide a secure data transport across an EtherNet/IP network. CIP Security lets CIP-connected devices authenticate each other before transmitting and receiving data.",
+      "CIP Security uses the following security properties to help devices protect themselves from malicious communication:"
+    ]
+  },
+  {
+    "id": "ca1522aa18fd01500da0",
+    "source_id": "cab8a6e6a9edf8c162ac",
+    "product_id": "rockwell_5580",
+    "feature": "cip_security",
+    "lead_type": "capability",
+    "location": "html-block:7",
+    "matched": [
+      "CIP Security"
+    ],
+    "context": "CIP Security is a standard, open-source communication mechanism that helps to provide a secure data transport across an EtherNet/IP network. CIP Security lets CIP-connected devices authenticate each other before transmitting and receiving data.",
+    "match_count": 2,
+    "status": "unreviewed",
+    "context_before": [
+      "ControlLogix 5580 controllers, firmware revision 32.011 or later, and GuardLogix 5580, firmware revision 37.011 or later, support IEC-62443-4-2 SL 1 requirements. For security features and system requirements, see Develop Secure Applications.",
+      "CIP Security"
+    ],
+    "context_after": [
+      "CIP Security uses the following security properties to help devices protect themselves from malicious communication:",
+      "Device Identity and Authentication"
+    ],
+    "heading": "CIP Security"
+  },
+  {
+    "id": "03c4fc010b3c6a84cdb3",
+    "source_id": "cab8a6e6a9edf8c162ac",
+    "product_id": "rockwell_5580",
+    "feature": "authentication",
+    "lead_type": "capability",
+    "location": "html-block:7",
+    "matched": [
+      "authenticate"
+    ],
+    "context": "CIP Security is a standard, open-source communication mechanism that helps to provide a secure data transport across an EtherNet/IP network. CIP Security lets CIP-connected devices authenticate each other before transmitting and receiving data.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "ControlLogix 5580 controllers, firmware revision 32.011 or later, and GuardLogix 5580, firmware revision 37.011 or later, support IEC-62443-4-2 SL 1 requirements. For security features and system requirements, see Develop Secure Applications.",
+      "CIP Security"
+    ],
+    "context_after": [
+      "CIP Security uses the following security properties to help devices protect themselves from malicious communication:",
+      "Device Identity and Authentication"
+    ],
+    "heading": "CIP Security"
+  },
+  {
+    "id": "fb66a425dd50db5b63d0",
+    "source_id": "cab8a6e6a9edf8c162ac",
+    "product_id": "rockwell_5580",
+    "feature": "cip_security",
+    "lead_type": "capability",
+    "location": "html-block:8",
+    "matched": [
+      "CIP Security"
+    ],
+    "context": "CIP Security uses the following security properties to help devices protect themselves from malicious communication:",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "CIP Security",
+      "CIP Security is a standard, open-source communication mechanism that helps to provide a secure data transport across an EtherNet/IP network. CIP Security lets CIP-connected devices authenticate each other before transmitting and receiving data."
+    ],
+    "context_after": [
+      "Device Identity and Authentication",
+      "Data Integrity and Authentication"
+    ],
+    "heading": "CIP Security"
+  },
+  {
+    "id": "25efbf4ffdc5ba5f8ce2",
+    "source_id": "cab8a6e6a9edf8c162ac",
+    "product_id": "rockwell_5580",
+    "feature": "authentication",
+    "lead_type": "capability",
+    "location": "html-block:9",
+    "matched": [
+      "Authentication"
+    ],
+    "context": "Device Identity and Authentication",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "CIP Security is a standard, open-source communication mechanism that helps to provide a secure data transport across an EtherNet/IP network. CIP Security lets CIP-connected devices authenticate each other before transmitting and receiving data.",
+      "CIP Security uses the following security properties to help devices protect themselves from malicious communication:"
+    ],
+    "context_after": [
+      "Data Integrity and Authentication",
+      "Data Confidentiality"
+    ],
+    "heading": "CIP Security"
+  },
+  {
+    "id": "e15ee0da7685cd985c81",
+    "source_id": "cab8a6e6a9edf8c162ac",
+    "product_id": "rockwell_5580",
+    "feature": "authentication",
+    "lead_type": "capability",
+    "location": "html-block:10",
+    "matched": [
+      "Authentication"
+    ],
+    "context": "Data Integrity and Authentication",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "CIP Security uses the following security properties to help devices protect themselves from malicious communication:",
+      "Device Identity and Authentication"
+    ],
+    "context_after": [
+      "Data Confidentiality",
+      "Rockwell Automation uses the following products to implement a CIP Security solution:"
+    ],
+    "heading": "CIP Security"
+  },
+  {
+    "id": "b5a36f0b66fd2c570a0c",
+    "source_id": "cab8a6e6a9edf8c162ac",
+    "product_id": "rockwell_5580",
+    "feature": "cip_security",
+    "lead_type": "capability",
+    "location": "html-block:12",
+    "matched": [
+      "CIP Security"
+    ],
+    "context": "Rockwell Automation uses the following products to implement a CIP Security solution:",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "Data Integrity and Authentication",
+      "Data Confidentiality"
+    ],
+    "context_after": [
+      "FactoryTalk Policy Manager software (includes FactoryTalk System Services)",
+      "FactoryTalk Linx software (lets workstation software communicate securely using CIP Security)"
+    ],
+    "heading": "CIP Security"
+  },
+  {
+    "id": "8f88f10b20c9907e0b29",
+    "source_id": "cab8a6e6a9edf8c162ac",
+    "product_id": "rockwell_5580",
+    "feature": "cip_security",
+    "lead_type": "capability",
+    "location": "html-block:14",
+    "matched": [
+      "CIP Security"
+    ],
+    "context": "FactoryTalk Linx software (lets workstation software communicate securely using CIP Security)",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "Rockwell Automation uses the following products to implement a CIP Security solution:",
+      "FactoryTalk Policy Manager software (includes FactoryTalk System Services)"
+    ],
+    "context_after": [
+      "Studio 5000 Logix Designer application (This application required to interface with CIP Security-enabled Logix controllers. The minimum application version varies by controller product family.)",
+      "See the requirements for your products to verify the correct product versions for your solution."
+    ],
+    "heading": "CIP Security"
+  },
+  {
+    "id": "9ec12dcc8f4cedbd45da",
+    "source_id": "cab8a6e6a9edf8c162ac",
+    "product_id": "rockwell_5580",
+    "feature": "cip_security",
+    "lead_type": "capability",
+    "location": "html-block:15",
+    "matched": [
+      "CIP Security"
+    ],
+    "context": "Studio 5000 Logix Designer application (This application required to interface with CIP Security-enabled Logix controllers. The minimum application version varies by controller product family.)",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "FactoryTalk Policy Manager software (includes FactoryTalk System Services)",
+      "FactoryTalk Linx software (lets workstation software communicate securely using CIP Security)"
+    ],
+    "context_after": [
+      "See the requirements for your products to verify the correct product versions for your solution.",
+      "For more information on CIP Security, for example, a list of CIP Security-capable products and publications that describe how to use the products, including limitations and considerations, see the following:"
+    ],
+    "heading": "CIP Security"
+  },
+  {
+    "id": "187ffd10d31990a7f990",
+    "source_id": "cab8a6e6a9edf8c162ac",
+    "product_id": "rockwell_5580",
+    "feature": "cip_security",
+    "lead_type": "capability",
+    "location": "html-block:17",
+    "matched": [
+      "CIP Security"
+    ],
+    "context": "For more information on CIP Security, for example, a list of CIP Security-capable products and publications that describe how to use the products, including limitations and considerations, see the following:",
+    "match_count": 2,
+    "status": "unreviewed",
+    "context_before": [
+      "Studio 5000 Logix Designer application (This application required to interface with CIP Security-enabled Logix controllers. The minimum application version varies by controller product family.)",
+      "See the requirements for your products to verify the correct product versions for your solution."
+    ],
+    "context_after": [
+      "Rockwell Automation Industrial Cybersecurity Solutions",
+      "CIP Security with Rockwell Automation Products Application Technique, publication SECURE-AT001 (describes the CIP Security-capable products, minimum software versions and product firmware revisions, and publications that describe how to use the products)"
+    ],
+    "heading": "CIP Security"
+  },
+  {
+    "id": "f9339522602d20f3b16a",
+    "source_id": "cab8a6e6a9edf8c162ac",
+    "product_id": "rockwell_5580",
+    "feature": "cip_security",
+    "lead_type": "capability",
+    "location": "html-block:19",
+    "matched": [
+      "CIP Security"
+    ],
+    "context": "CIP Security with Rockwell Automation Products Application Technique, publication SECURE-AT001 (describes the CIP Security-capable products, minimum software versions and product firmware revisions, and publications that describe how to use the products)",
+    "match_count": 2,
+    "status": "unreviewed",
+    "context_before": [
+      "For more information on CIP Security, for example, a list of CIP Security-capable products and publications that describe how to use the products, including limitations and considerations, see the following:",
+      "Rockwell Automation Industrial Cybersecurity Solutions"
+    ],
+    "context_after": [
+      "Standard and Safety Controller Systems",
+      "Provide Feedback"
+    ],
+    "heading": "CIP Security"
+  },
+  {
+    "id": "80f229b854f7db23584c",
+    "source_id": "7d34db2ffda82aa29001",
+    "product_id": "ge_b90",
+    "feature": "authentication",
+    "lead_type": "capability",
+    "location": "html-block:79",
+    "matched": [
+      "authentication"
+    ],
+    "context": "Secured firmware upgrade: FW file includes hash code that enables authentication prior to being used for upgrading UR Relay (FW 7.9x)",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "Cyber Security - CyberSentry UR (FW v7.xx)",
+      "CyberSentryTM enables UR devices to deliver full cyber security features that help customers to comply with cyber security requirements (NERC CIP, IEEE 1686, IEC 62443, etc):"
+    ],
+    "context_after": [
+      "Extended Oscillography Records (FW v7.xx)",
+      "Increased number of digital and analog channels (FW 7.90)"
+    ],
+    "heading": "What's New"
+  },
+  {
+    "id": "a8028a8fb1cafb762136",
+    "source_id": "7d34db2ffda82aa29001",
+    "product_id": "ge_b90",
+    "feature": "sftp",
+    "lead_type": "related",
+    "location": "html-block:140",
+    "matched": [
+      "SFTP"
+    ],
+    "context": "HTTP, TFTP, SFTP and MMS file transfer",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "IEC 60870-5-103 and IEC 60870-5-104",
+      "Modbus RTU, Modbus TCP/IP"
+    ],
+    "context_after": [
+      "Redundant SNTP and IEEE 1588 for time synchronization",
+      "PRP as per IEC 62439-3"
+    ],
+    "heading": "Advanced Communications"
+  },
+  {
+    "id": "b7c2605b5579c1dea3df",
+    "source_id": "7d34db2ffda82aa29001",
+    "product_id": "ge_b90",
+    "feature": "authentication",
+    "lead_type": "capability",
+    "location": "html-block:147",
+    "matched": [
+      "authentication"
+    ],
+    "context": "UR FW files v7.9 and up now include a hash code that allows for authentication prior to being used for upgrading UR devices.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "CyberSentry enables UR devices to deliver full cyber security features that help customers to comply with NERC CIP and NITIR 7628 cyber security requirements through supporting the following core features:",
+      "Secure FW upgrade"
+    ],
+    "context_after": [
+      "Password Complexity",
+      "Supporting up to 20 alpha- numeric or special characters, UR passwords exceed NERC CIP requirements for password complexity. Individual passwords per role are available."
+    ],
+    "heading": "Secure FW upgrade"
+  },
+  {
+    "id": "b619b3cdbb5c07acb2ea",
+    "source_id": "7d34db2ffda82aa29001",
+    "product_id": "ge_b90",
+    "feature": "authentication",
+    "lead_type": "capability",
+    "location": "html-block:150",
+    "matched": [
+      "Radius"
+    ],
+    "context": "AAA Server Support (Radius)",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "Password Complexity",
+      "Supporting up to 20 alpha- numeric or special characters, UR passwords exceed NERC CIP requirements for password complexity. Individual passwords per role are available."
+    ],
+    "context_after": [
+      "Enables integration with centrally managed authentication and accounting of all user activities and uses modern industry best practices and standards that meet and exceed NERC CIP requirements for authentication and password management.",
+      "Role Based Access Control (RBAC)"
+    ]
+  },
+  {
+    "id": "804c0ccaf6a55eaf1a42",
+    "source_id": "7d34db2ffda82aa29001",
+    "product_id": "ge_b90",
+    "feature": "authentication",
+    "lead_type": "capability",
+    "location": "html-block:151",
+    "matched": [
+      "authentication"
+    ],
+    "context": "Enables integration with centrally managed authentication and accounting of all user activities and uses modern industry best practices and standards that meet and exceed NERC CIP requirements for authentication and password management.",
+    "match_count": 2,
+    "status": "unreviewed",
+    "context_before": [
+      "Supporting up to 20 alpha- numeric or special characters, UR passwords exceed NERC CIP requirements for password complexity. Individual passwords per role are available.",
+      "AAA Server Support (Radius)"
+    ],
+    "context_after": [
+      "Role Based Access Control (RBAC)",
+      "Efficiently administrate users and roles within UR devices. The new and advanced access functions allow users to configure up to five roles for up to eight configurable users with independent passwords. The standard “Remote Authentication Dial In User Service” (Radius) is used for authentication."
+    ],
+    "heading": "AAA Server Support (Radius)"
+  },
+  {
+    "id": "a91b770124b4b7fb1636",
+    "source_id": "7d34db2ffda82aa29001",
+    "product_id": "ge_b90",
+    "feature": "authentication",
+    "lead_type": "capability",
+    "location": "html-block:153",
+    "matched": [
+      "Authentication",
+      "Radius"
+    ],
+    "context": "Efficiently administrate users and roles within UR devices. The new and advanced access functions allow users to configure up to five roles for up to eight configurable users with independent passwords. The standard “Remote Authentication Dial In User Service” (Radius) is used for authentication.",
+    "match_count": 3,
+    "status": "unreviewed",
+    "context_before": [
+      "Enables integration with centrally managed authentication and accounting of all user activities and uses modern industry best practices and standards that meet and exceed NERC CIP requirements for authentication and password management.",
+      "Role Based Access Control (RBAC)"
+    ],
+    "context_after": [
+      "Event Recorder (Syslog for SEM)",
+      "Capture all cyber security related events within a SOE element (login, logout, invalid password attempts, remote/local access, user in session, settings change, FW update, etc), and then serve and classify data by security level using standard Syslog data format. This enables UR devices integration [...]"
+    ],
+    "heading": "Role Based Access Control (RBAC)"
+  },
+  {
+    "id": "c09f47cd92456586766d",
+    "source_id": "7e433d70887ae9b0be5d",
+    "product_id": "siemens_sip5",
+    "feature": "encryption",
+    "lead_type": "capability",
+    "location": "html-block:3",
+    "matched": [
+      "Encryption"
+    ],
+    "context": "SSA-750499: Weak Encryption Vulnerability in SIPROTEC 5 Devices",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "SSA-750499",
+      "Siemens Security Advisory by Siemens ProductCERT"
+    ],
+    "context_after": [
+      "Publication Date: |",
+      "2024-07-09"
+    ]
+  },
+  {
+    "id": "2418eecf491ec297def8",
+    "source_id": "7e433d70887ae9b0be5d",
+    "product_id": "siemens_sip5",
+    "feature": "encryption",
+    "lead_type": "capability",
+    "location": "html-block:12",
+    "matched": [
+      "encryption"
+    ],
+    "context": "The SIPROTEC 5 devices are supporting weak encryption. This could allow an unauthorized attacker in a man-in-the-middle position to read any data passed over the connection between legitimate clients and the affected device.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "CVSS v4.0 Base Score: | 8.2",
+      "SUMMARY"
+    ],
+    "context_after": [
+      "Siemens has released new versions for several affected products and recommends to update to the latest versions. Siemens recommends specific countermeasures for products where fixes are not, or not yet available.",
+      "KNOWN AFFECTED PRODUCTS Un-/Collapse All"
+    ]
+  },
+  {
+    "id": "9932b22233fbef938d7c",
+    "source_id": "7e433d70887ae9b0be5d",
+    "product_id": "siemens_sip5",
+    "feature": "tls",
+    "lead_type": "capability",
+    "location": "html-block:424",
+    "matched": [
+      "TLS"
+    ],
+    "context": "Restrict access to port 443/tcp for web, 4443/tcp for DIGSI 5 and configurable port for syslog over TLS to trusted IP addresses only",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "WORKAROUNDS AND MITIGATIONS",
+      "Siemens has identified the following specific workarounds and mitigations that customers can apply to reduce the risk:"
+    ],
+    "context_after": [
+      "Product-specific remediations or mitigations can be found in the section Known Affected Products.",
+      "Please follow the General Security Recommendations."
+    ]
+  },
+  {
+    "id": "87566f8be89c69905d8e",
+    "source_id": "7e433d70887ae9b0be5d",
+    "product_id": "siemens_sip5",
+    "feature": "vpn",
+    "lead_type": "related",
+    "location": "html-block:428",
+    "matched": [
+      "VPN"
+    ],
+    "context": "Siemens strongly recommends prior validation of any security update before being applied, and supervision by trained staff of the update process in the target environment. As a general security measure Siemens strongly recommends to protect network access with appropriate mechanisms (e.g. firewalls, segmentation, VPN). It is advised to configure the environment according to our operational guidelines in order to run the devices in a protected IT environment.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "Please follow the General Security Recommendations.",
+      "GENERAL SECURITY RECOMMENDATIONS"
+    ],
+    "context_after": [
+      "Recommended security guidelines can be found at: https://www.siemens.com/gridsecurity",
+      "PRODUCT DESCRIPTION"
+    ]
+  },
+  {
+    "id": "76b1027e740f85de2d46",
+    "source_id": "7e433d70887ae9b0be5d",
+    "product_id": "siemens_sip5",
+    "feature": "tls",
+    "lead_type": "capability",
+    "location": "html-block:435",
+    "matched": [
+      "TLS"
+    ],
+    "context": "The affected devices are supporting weak ciphers on several ports (443/tcp for web, 4443/tcp for DIGSI 5 and configurable port for syslog over TLS). This could allow an unauthorized attacker in a man-in-the-middle position to decrypt any data passed over to and from those ports.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "This chapter describes all vulnerabilities (CVE-IDs) addressed in this security advisory. Wherever applicable, it also documents the product-specific impact of the individual vulnerabilities.",
+      "Vulnerability CVE-2024-38867"
+    ],
+    "context_after": [
+      "CVSS v3.1 Base Score | 5.9",
+      "CVSS v3.1 Vector | CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+    ]
+  },
+  {
+    "id": "ba5a7bdc928f83cca2ef",
+    "source_id": "7e433d70887ae9b0be5d",
+    "product_id": "siemens_sip5",
+    "feature": "encryption",
+    "lead_type": "capability",
+    "location": "html-block:435",
+    "matched": [
+      "ciphers"
+    ],
+    "context": "The affected devices are supporting weak ciphers on several ports (443/tcp for web, 4443/tcp for DIGSI 5 and configurable port for syslog over TLS). This could allow an unauthorized attacker in a man-in-the-middle position to decrypt any data passed over to and from those ports.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "This chapter describes all vulnerabilities (CVE-IDs) addressed in this security advisory. Wherever applicable, it also documents the product-specific impact of the individual vulnerabilities.",
+      "Vulnerability CVE-2024-38867"
+    ],
+    "context_after": [
+      "CVSS v3.1 Base Score | 5.9",
+      "CVSS v3.1 Vector | CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+    ]
+  },
+  {
+    "id": "d61da69ef3663b12d975",
+    "source_id": "7e433d70887ae9b0be5d",
+    "product_id": "siemens_sip5",
+    "feature": "encryption",
+    "lead_type": "capability",
+    "location": "html-block:440",
+    "matched": [
+      "Encryption"
+    ],
+    "context": "CWE | CWE-326: Inadequate Encryption Strength",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "CVSS v4.0 Base Score | 8.2",
+      "CVSS v4.0 Vector | CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+    ],
+    "context_after": [
+      "ACKNOWLEDGMENTS",
+      "Siemens thanks the following party for its efforts:"
+    ]
+  }
+]

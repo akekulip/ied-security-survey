@@ -1,0 +1,162 @@
+[
+  {
+    "source_id": "f289bb2261ba80f69d60",
+    "product_id": "ge_p64_micom_5th_generation",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/manuals/p64-tm-en-1-gev.pdf",
+    "title": "Technical Manual",
+    "doc_type": "manual",
+    "coverage": "complete",
+    "note": "AI draft: taken as the complete document from its title and length (672 PDF pages); type and coverage to be confirmed by the author.",
+    "noted_by": "Claude AI draft review; author confirmation pending"
+  },
+  {
+    "source_id": "a83d71b51a77f12af6dd",
+    "product_id": "ge_epm_2200_digital_power_meter",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/manuals/epm/epm2200-a7-GEV.pdf",
+    "title": "EPM 2200 Electronic Meter",
+    "doc_type": "manual",
+    "coverage": "complete",
+    "note": "AI draft: taken as the complete document from its title and length (123 PDF pages); type and coverage to be confirmed by the author.",
+    "noted_by": "Claude AI draft review; author confirmation pending"
+  },
+  {
+    "source_id": "581d3158072529f503b2",
+    "product_id": "ge_epm_9900_advanced_power_quality_meter_legacy",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/manuals/epm/epm9000-dnp-a1-GEV.pdf",
+    "title": "Multilin™ EPM 9000 Series DNP Guide",
+    "doc_type": "manual",
+    "coverage": "complete",
+    "note": "AI draft: taken as the complete document from its title and length (272 PDF pages); type and coverage to be confirmed by the author.",
+    "noted_by": "Claude AI draft review; author confirmation pending"
+  },
+  {
+    "source_id": "b0c01e904a4118b9eee3",
+    "product_id": "ge_istat_m2x2",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/manuals/M2x2-EN-M-F-new-GEV.pdf",
+    "title": "iSTAT M2x2 Standard Measurement Centre Manual",
+    "doc_type": "manual",
+    "coverage": "complete",
+    "note": "AI draft: taken as the complete document from its title and length (72 PDF pages); type and coverage to be confirmed by the author.",
+    "noted_by": "Claude AI draft review; author confirmation pending"
+  },
+  {
+    "source_id": "dec1ec07c9222aa64112",
+    "product_id": "ge_micom_agile_p24x_legacy",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2026-02/P24x-TM-EN-J82-GEV.pdf",
+    "title": "",
+    "doc_type": "manual",
+    "coverage": "complete",
+    "note": "AI draft: taken as the complete document from its title and length (556 PDF pages); type and coverage to be confirmed by the author.",
+    "noted_by": "Claude AI draft review; author confirmation pending"
+  },
+  {
+    "source_id": "d8b2762c5443ce4a29c8",
+    "product_id": "rockwell_powermonitor_1000",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/1408-um002_-en-p.pdf",
+    "title": "PowerMonitor 1000 Unit User Manual, publication 1408-UM002E-EN-P",
+    "doc_type": "manual",
+    "coverage": "complete",
+    "note": "AI draft: taken as the complete document from its title and length (216 PDF pages); type and coverage to be confirmed by the author.",
+    "noted_by": "Claude AI draft review; author confirmation pending"
+  },
+  {
+    "source_id": "7db366fa1541633f770f",
+    "product_id": "rockwell_powermonitor_500",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/1420-um001_-en-p.pdf",
+    "title": "PowerMonitor 500 Unit User Manual, Publication 1420-UM001G-EN-P",
+    "doc_type": "manual",
+    "coverage": "complete",
+    "note": "AI draft: taken as the complete document from its title and length (108 PDF pages); type and coverage to be confirmed by the author.",
+    "noted_by": "Claude AI draft review; author confirmation pending"
+  },
+  {
+    "source_id": "c95eefb227946847860a",
+    "product_id": "rockwell_powermonitor_5000",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/1426-um001_-en-p.pdf",
+    "title": "PowerMonitor 5000 Unit User Manual",
+    "doc_type": "manual",
+    "coverage": "complete",
+    "note": "AI draft: taken as the complete document from its title and length (406 PDF pages); type and coverage to be confirmed by the author.",
+    "noted_by": "Claude AI draft review; author confirmation pending"
+  },
+  {
+    "source_id": "80c36fb53901ac95421b",
+    "product_id": "rockwell_compactlogix_5370_controllers",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/1769-um021_-en-p.pdf",
+    "title": "CompactLogix 5370 Controllers User Manual",
+    "doc_type": "manual",
+    "coverage": "complete",
+    "note": "AI draft: taken as the complete document from its title and length (272 PDF pages); type and coverage to be confirmed by the author.",
+    "noted_by": "Claude AI draft review; author confirmation pending"
+  },
+  {
+    "source_id": "77a481d0583c7878dde3",
+    "product_id": "rockwell_slc_500_controllers",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/1747-um011_-en-p.pdf",
+    "title": "SLC 500 Modular Hardware Style User Manual",
+    "doc_type": "manual",
+    "coverage": "complete",
+    "note": "AI draft: taken as the complete document from its title and length (296 PDF pages); type and coverage to be confirmed by the author.",
+    "noted_by": "Claude AI draft review; author confirmation pending"
+  },
+  {
+    "source_id": "64085ceff74ea09c0512",
+    "product_id": "rockwell_slc_500_controllers",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/1747-um009_-en-p.pdf",
+    "title": "1747-6.21, SLC 500 Fixed Hardware Style Installation and Operation Manual",
+    "doc_type": "manual",
+    "coverage": "complete",
+    "note": "AI draft: taken as the complete document from its title and length (223 PDF pages); type and coverage to be confirmed by the author.",
+    "noted_by": "Claude AI draft review; author confirmation pending"
+  },
+  {
+    "source_id": "ae829e9ee1b0b84ad4aa",
+    "product_id": "rockwell_slc_500_controllers",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/rm/1747-rm001_-en-p.pdf",
+    "title": "SLC 500 Instruction Set Reference Manual",
+    "doc_type": "manual",
+    "coverage": "complete",
+    "note": "AI draft: taken as the complete document from its title and length (694 PDF pages); type and coverage to be confirmed by the author.",
+    "noted_by": "Claude AI draft review; author confirmation pending"
+  },
+  {
+    "source_id": "184d5358bd87af683528",
+    "product_id": "rockwell_protection_relay",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/857-um001_-en-p.pdf",
+    "title": "Protection System for Feeder and Motor Protection, Bulletin 857 Series A",
+    "doc_type": "manual",
+    "coverage": "complete",
+    "note": "AI draft: taken as the complete document from its title and length (504 PDF pages); type and coverage to be confirmed by the author.",
+    "noted_by": "Claude AI draft review; author confirmation pending"
+  },
+  {
+    "source_id": "44971cedaf4a8c110ce5",
+    "product_id": "rockwell_protection_relay",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/857-um004_-en-p.pdf",
+    "title": "Bulletin 857/865 Protection Systems IEC 61850 Interface Configuration Instructions",
+    "doc_type": "manual",
+    "coverage": "complete",
+    "note": "AI draft: taken as the complete document from its title and length (104 PDF pages); type and coverage to be confirmed by the author.",
+    "noted_by": "Claude AI draft review; author confirmation pending"
+  },
+  {
+    "source_id": "6fb48d9db5d7e6f50bb5",
+    "product_id": "rockwell_protection_relay",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/857-um005_-en-p.pdf",
+    "title": "EtherNet/IP Configuration Details for 857/865 Protection System User Manual",
+    "doc_type": "manual",
+    "coverage": "complete",
+    "note": "AI draft: taken as the complete document from its title and length (70 PDF pages); type and coverage to be confirmed by the author.",
+    "noted_by": "Claude AI draft review; author confirmation pending"
+  },
+  {
+    "source_id": "01f2ad0b688a9d11281c",
+    "product_id": "rockwell_differential_protection_relay",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/865-um001_-en-p.pdf",
+    "title": "Differential Protection Relay, Bulletin 865, Series A",
+    "doc_type": "manual",
+    "coverage": "complete",
+    "note": "AI draft: taken as the complete document from its title and length (296 PDF pages); type and coverage to be confirmed by the author.",
+    "noted_by": "Claude AI draft review; author confirmation pending"
+  }
+]

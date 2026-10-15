@@ -1,0 +1,8337 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "DNP3 Security - PKR39809_ADVC_Operations manual"
+  },
+  {
+    "location": "html-block:2",
+    "text": "PowerLogic ADVC Controller – Operations Manual"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Safety Information"
+  },
+  {
+    "location": "html-block:4",
+    "text": "Safety Precautions"
+  },
+  {
+    "location": "html-block:5",
+    "text": "About the Document"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Scope of this Operations Manual"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Document Scope"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Types of Compatible Switchgear"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Types of PowerLogic ADVC Controller"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Firmware identification system"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Firmware versions"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Potential Risks and Compensating Controls"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Terminology"
+  },
+  {
+    "location": "html-block:14",
+    "text": "General Cybersecurity Information and Non-Inclusive Terminology"
+  },
+  {
+    "location": "html-block:15",
+    "text": "General Information"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Cubicle Options"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Ultra"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Compact"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Controller Modules"
+  },
+  {
+    "location": "html-block:21",
+    "text": "CAPE"
+  },
+  {
+    "location": "html-block:22",
+    "text": "PSM"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Options"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Symbols"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Ultra versus Compact Options"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Battery Tray and Batteries"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Equipment Tray"
+  },
+  {
+    "location": "html-block:28",
+    "text": "O.I. Options"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Technical Specifications"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Firmware Versions"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Ratings and Specifications"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Duty Cycle"
+  },
+  {
+    "location": "html-block:33",
+    "text": "CTs"
+  },
+  {
+    "location": "html-block:34",
+    "text": "General Specifications"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Power System Measurements"
+  },
+  {
+    "location": "html-block:36",
+    "text": "SF6 Gas Pressure Measurements"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Operator Interfaces"
+  },
+  {
+    "location": "html-block:38",
+    "text": "flex VUE O.I."
+  },
+  {
+    "location": "html-block:39",
+    "text": "Display"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Display Groups"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Navigation"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Status Lamps"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Lamp Data"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Lamp Reset"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Default Configuration"
+  },
+  {
+    "location": "html-block:46",
+    "text": "Quick Action Keys (QAK)"
+  },
+  {
+    "location": "html-block:47",
+    "text": "QAK Unlock Key"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Default Configuration"
+  },
+  {
+    "location": "html-block:49",
+    "text": "set VUE O.I."
+  },
+  {
+    "location": "html-block:50",
+    "text": "Display"
+  },
+  {
+    "location": "html-block:51",
+    "text": "Display Groups"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Navigation"
+  },
+  {
+    "location": "html-block:53",
+    "text": "Quick Keys"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Using the Quick Keys"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Configuring the Quick Keys"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Custom Menu"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Operator Functions"
+  },
+  {
+    "location": "html-block:58",
+    "text": "Local and Remote Control Modes"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Definition of a Local or Remote Operator"
+  },
+  {
+    "location": "html-block:60",
+    "text": "Local Mode"
+  },
+  {
+    "location": "html-block:61",
+    "text": "Remote Mode (RM)"
+  },
+  {
+    "location": "html-block:62",
+    "text": "Setting Changes"
+  },
+  {
+    "location": "html-block:63",
+    "text": "Operator Settings"
+  },
+  {
+    "location": "html-block:64",
+    "text": "Changing Operator Settings on flex VUE"
+  },
+  {
+    "location": "html-block:65",
+    "text": "Changing Operator Settings on set VUE"
+  },
+  {
+    "location": "html-block:66",
+    "text": "Password Protected Settings"
+  },
+  {
+    "location": "html-block:67",
+    "text": "Entering the password on flex VUE"
+  },
+  {
+    "location": "html-block:68",
+    "text": "Entering the password on set VUE"
+  },
+  {
+    "location": "html-block:69",
+    "text": "Protection Settings"
+  },
+  {
+    "location": "html-block:70",
+    "text": "Changing Protection Settings on flex VUE"
+  },
+  {
+    "location": "html-block:71",
+    "text": "Exiting the Protection Menu"
+  },
+  {
+    "location": "html-block:72",
+    "text": "Re-Entering the Protection Menu"
+  },
+  {
+    "location": "html-block:73",
+    "text": "Changing Protection Settings on set VUE"
+  },
+  {
+    "location": "html-block:74",
+    "text": "Delayed Operations"
+  },
+  {
+    "location": "html-block:75",
+    "text": "Delayed Trip/Close Operation"
+  },
+  {
+    "location": "html-block:76",
+    "text": "Using Delayed Operation"
+  },
+  {
+    "location": "html-block:77",
+    "text": "Cancelling a Delayed TRIP or Close Operation"
+  },
+  {
+    "location": "html-block:78",
+    "text": "Bypassing the Delayed Operation"
+  },
+  {
+    "location": "html-block:79",
+    "text": "Hit and Run"
+  },
+  {
+    "location": "html-block:80",
+    "text": "Making Hit and Run Available"
+  },
+  {
+    "location": "html-block:81",
+    "text": "Activating Hit and Run"
+  },
+  {
+    "location": "html-block:82",
+    "text": "Aborting Hit and Run"
+  },
+  {
+    "location": "html-block:83",
+    "text": "Hit and Run Events"
+  },
+  {
+    "location": "html-block:84",
+    "text": "Work Tag/Hot Line Tag"
+  },
+  {
+    "location": "html-block:85",
+    "text": "Applying and Removing the Work Tag"
+  },
+  {
+    "location": "html-block:86",
+    "text": "Applying the Work Tag on flex VUE"
+  },
+  {
+    "location": "html-block:87",
+    "text": "Applying the Work Tag on set VUE"
+  },
+  {
+    "location": "html-block:88",
+    "text": "Applying the Work Tag on WSOS"
+  },
+  {
+    "location": "html-block:89",
+    "text": "Trip/Close Isolate"
+  },
+  {
+    "location": "html-block:90",
+    "text": "Enable/Disable TRIP Switch"
+  },
+  {
+    "location": "html-block:91",
+    "text": "Enable/Disable CLOSE Switch"
+  },
+  {
+    "location": "html-block:92",
+    "text": "System Measurements"
+  },
+  {
+    "location": "html-block:93",
+    "text": "Event Log"
+  },
+  {
+    "location": "html-block:94",
+    "text": "Event Log on the flex VUE"
+  },
+  {
+    "location": "html-block:95",
+    "text": "Event Sources"
+  },
+  {
+    "location": "html-block:96",
+    "text": "Example"
+  },
+  {
+    "location": "html-block:97",
+    "text": "Event Log Filtering"
+  },
+  {
+    "location": "html-block:98",
+    "text": "Event Log on set VUE"
+  },
+  {
+    "location": "html-block:99",
+    "text": "Event Sources"
+  },
+  {
+    "location": "html-block:100",
+    "text": "Setting Change Events"
+  },
+  {
+    "location": "html-block:101",
+    "text": "Event Log Filtering"
+  },
+  {
+    "location": "html-block:102",
+    "text": "PC Software"
+  },
+  {
+    "location": "html-block:103",
+    "text": "Introduction to WSOS"
+  },
+  {
+    "location": "html-block:104",
+    "text": "Password Control"
+  },
+  {
+    "location": "html-block:105",
+    "text": "WSOS5 versus O.I."
+  },
+  {
+    "location": "html-block:106",
+    "text": "Functions available through the operator interface and not WSOS"
+  },
+  {
+    "location": "html-block:107",
+    "text": "Functions available through WSOS and not the O.I."
+  },
+  {
+    "location": "html-block:108",
+    "text": "WSOS Only Features"
+  },
+  {
+    "location": "html-block:109",
+    "text": "System Properties"
+  },
+  {
+    "location": "html-block:110",
+    "text": "New Switchgear Device Wizard"
+  },
+  {
+    "location": "html-block:111",
+    "text": "To Open the New Switchgear Wizard"
+  },
+  {
+    "location": "html-block:112",
+    "text": "WSOS Communications Configuration"
+  },
+  {
+    "location": "html-block:113",
+    "text": "Updating Controller Firmware"
+  },
+  {
+    "location": "html-block:114",
+    "text": "WSOS Update Procedure"
+  },
+  {
+    "location": "html-block:115",
+    "text": "Show Details"
+  },
+  {
+    "location": "html-block:116",
+    "text": "Compare settings after download"
+  },
+  {
+    "location": "html-block:117",
+    "text": "Force Download"
+  },
+  {
+    "location": "html-block:118",
+    "text": "Reading and Writing Switchgear Settings"
+  },
+  {
+    "location": "html-block:119",
+    "text": "WSOS Software Tools"
+  },
+  {
+    "location": "html-block:120",
+    "text": "Protocol Configuration Tool"
+  },
+  {
+    "location": "html-block:121",
+    "text": "Overview"
+  },
+  {
+    "location": "html-block:122",
+    "text": "Launching the Protocol Configuration Tool"
+  },
+  {
+    "location": "html-block:123",
+    "text": "Technical Manual"
+  },
+  {
+    "location": "html-block:124",
+    "text": "IOEX Configuration Tool"
+  },
+  {
+    "location": "html-block:125",
+    "text": "Overview"
+  },
+  {
+    "location": "html-block:126",
+    "text": "IOEX Available"
+  },
+  {
+    "location": "html-block:127",
+    "text": "Launching the IOEX Configuration Tool"
+  },
+  {
+    "location": "html-block:128",
+    "text": "Technical Manual"
+  },
+  {
+    "location": "html-block:129",
+    "text": "O.I. ( flex VUE ) Configuration Tool"
+  },
+  {
+    "location": "html-block:130",
+    "text": "Overview"
+  },
+  {
+    "location": "html-block:131",
+    "text": "Launching the OCP Configuration Tool"
+  },
+  {
+    "location": "html-block:132",
+    "text": "Custom Logic Tool (CLT)"
+  },
+  {
+    "location": "html-block:133",
+    "text": "Overview"
+  },
+  {
+    "location": "html-block:134",
+    "text": "Launching the CLT"
+  },
+  {
+    "location": "html-block:135",
+    "text": "User Guide"
+  },
+  {
+    "location": "html-block:136",
+    "text": "Controller Customization"
+  },
+  {
+    "location": "html-block:137",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:138",
+    "text": "Feature Selection"
+  },
+  {
+    "location": "html-block:139",
+    "text": "Feature Selection in WSOS"
+  },
+  {
+    "location": "html-block:140",
+    "text": "Categories"
+  },
+  {
+    "location": "html-block:141",
+    "text": "Plant Details"
+  },
+  {
+    "location": "html-block:142",
+    "text": "Time Zone"
+  },
+  {
+    "location": "html-block:143",
+    "text": "Time Zone and Daylight Saving Configuration"
+  },
+  {
+    "location": "html-block:144",
+    "text": "Time Zone and Daylight Saving Events"
+  },
+  {
+    "location": "html-block:145",
+    "text": "set VUE Quick Keys"
+  },
+  {
+    "location": "html-block:146",
+    "text": "O.I. Customization"
+  },
+  {
+    "location": "html-block:147",
+    "text": "flex VUE Customisation"
+  },
+  {
+    "location": "html-block:148",
+    "text": "Global OCP Settings"
+  },
+  {
+    "location": "html-block:149",
+    "text": "Status Lamps"
+  },
+  {
+    "location": "html-block:150",
+    "text": "QAKs"
+  },
+  {
+    "location": "html-block:151",
+    "text": "Unlock Key"
+  },
+  {
+    "location": "html-block:152",
+    "text": "Trip and Close buttons"
+  },
+  {
+    "location": "html-block:153",
+    "text": "set VUE Custom Menu"
+  },
+  {
+    "location": "html-block:154",
+    "text": "Standard Menu"
+  },
+  {
+    "location": "html-block:155",
+    "text": "Custom Menu"
+  },
+  {
+    "location": "html-block:156",
+    "text": "Custom Menu Configuration"
+  },
+  {
+    "location": "html-block:157",
+    "text": "Operation"
+  },
+  {
+    "location": "html-block:158",
+    "text": "Custom/Standard Menu Navigation"
+  },
+  {
+    "location": "html-block:159",
+    "text": "Custom Menu with Rotation Mode Disabled"
+  },
+  {
+    "location": "html-block:160",
+    "text": "Custom Menu with Rotation Mode Enabled"
+  },
+  {
+    "location": "html-block:161",
+    "text": "First Screen Selection"
+  },
+  {
+    "location": "html-block:162",
+    "text": "Configuration"
+  },
+  {
+    "location": "html-block:163",
+    "text": "Local Settings"
+  },
+  {
+    "location": "html-block:164",
+    "text": "Language Support"
+  },
+  {
+    "location": "html-block:165",
+    "text": "Display Settings Units"
+  },
+  {
+    "location": "html-block:166",
+    "text": "Date Format"
+  },
+  {
+    "location": "html-block:167",
+    "text": "GMT Offset"
+  },
+  {
+    "location": "html-block:168",
+    "text": "System Frequency"
+  },
+  {
+    "location": "html-block:169",
+    "text": "Cubicle Serial Number"
+  },
+  {
+    "location": "html-block:170",
+    "text": "Plant Name"
+  },
+  {
+    "location": "html-block:171",
+    "text": "Communications"
+  },
+  {
+    "location": "html-block:172",
+    "text": "Communications Ports"
+  },
+  {
+    "location": "html-block:173",
+    "text": "PowerLogic ADVC Communications Ports"
+  },
+  {
+    "location": "html-block:174",
+    "text": "RS232 IOEX/WSOS"
+  },
+  {
+    "location": "html-block:175",
+    "text": "RS232 Modem"
+  },
+  {
+    "location": "html-block:176",
+    "text": "LAN 1 and LAN2 (Ethernet)"
+  },
+  {
+    "location": "html-block:177",
+    "text": "USB WSOS"
+  },
+  {
+    "location": "html-block:178",
+    "text": "USB-1, USB-2, and USB-3"
+  },
+  {
+    "location": "html-block:179",
+    "text": "Communications Port Configuration"
+  },
+  {
+    "location": "html-block:180",
+    "text": "PowerLogic ADVC Controller"
+  },
+  {
+    "location": "html-block:181",
+    "text": "IOEX/WSOS"
+  },
+  {
+    "location": "html-block:182",
+    "text": "Modem"
+  },
+  {
+    "location": "html-block:183",
+    "text": "LAN-1 and LAN-2"
+  },
+  {
+    "location": "html-block:184",
+    "text": "USB/WSOS"
+  },
+  {
+    "location": "html-block:185",
+    "text": "USB-1, USB-2, and USB-3"
+  },
+  {
+    "location": "html-block:186",
+    "text": "Supported Protocols"
+  },
+  {
+    "location": "html-block:187",
+    "text": "DNP3"
+  },
+  {
+    "location": "html-block:188",
+    "text": "Step 1 – Check that DNP3 is Available"
+  },
+  {
+    "location": "html-block:189",
+    "text": "Step 2 - Select a Communications Port"
+  },
+  {
+    "location": "html-block:190",
+    "text": "Step 3 - Port Configuration"
+  },
+  {
+    "location": "html-block:191",
+    "text": "Step 4 - Assign the Selected Port to DNP3"
+  },
+  {
+    "location": "html-block:192",
+    "text": "Step 5 - Configure the DNP3 Settings"
+  },
+  {
+    "location": "html-block:193",
+    "text": "DNP3 Security"
+  },
+  {
+    "location": "html-block:194",
+    "text": "Dynamic UDP Mode for DNP3"
+  },
+  {
+    "location": "html-block:195",
+    "text": "Configurable Unsolicited NULL Message"
+  },
+  {
+    "location": "html-block:196",
+    "text": "Binary Double Bits Support"
+  },
+  {
+    "location": "html-block:197",
+    "text": "Individual Time Stamps for DNP3"
+  },
+  {
+    "location": "html-block:198",
+    "text": "Unsolicited Retry Delay when Offline Setting for DNP3"
+  },
+  {
+    "location": "html-block:199",
+    "text": "Dual End and Listen Mode for DNP3"
+  },
+  {
+    "location": "html-block:200",
+    "text": "Concurrent and Single Session Support for DNP3"
+  },
+  {
+    "location": "html-block:201",
+    "text": "Keep Alive Messaging for DNP3"
+  },
+  {
+    "location": "html-block:202",
+    "text": "Self Address for DNP3"
+  },
+  {
+    "location": "html-block:203",
+    "text": "IEC 60870-5-101"
+  },
+  {
+    "location": "html-block:204",
+    "text": "Step 1 - Check that IEC 60870-5-101 is Available"
+  },
+  {
+    "location": "html-block:205",
+    "text": "Step 2 - Select a Communications Port"
+  },
+  {
+    "location": "html-block:206",
+    "text": "Step 3 - Port Configuration"
+  },
+  {
+    "location": "html-block:207",
+    "text": "Step 4 - Assign the Selected Port to IEC60870-5-101"
+  },
+  {
+    "location": "html-block:208",
+    "text": "Step 5 - Configure the IEC 60870-5-101 Settings"
+  },
+  {
+    "location": "html-block:209",
+    "text": "IEC 60870-5-104"
+  },
+  {
+    "location": "html-block:210",
+    "text": "Step 1 - Check that IEC 60870-5-101/4 is Available"
+  },
+  {
+    "location": "html-block:211",
+    "text": "Step 2 - Select a Communications Port"
+  },
+  {
+    "location": "html-block:212",
+    "text": "Step 3 - Port Configuration"
+  },
+  {
+    "location": "html-block:213",
+    "text": "Step 4 - Assign the Selected Port to IEC 60870-5-104"
+  },
+  {
+    "location": "html-block:214",
+    "text": "Step 5 - Configure the IEC 60870-5-104 Settings"
+  },
+  {
+    "location": "html-block:215",
+    "text": "Modbus"
+  },
+  {
+    "location": "html-block:216",
+    "text": "GOOSE Support"
+  },
+  {
+    "location": "html-block:217",
+    "text": "IEC-61850"
+  },
+  {
+    "location": "html-block:218",
+    "text": "Communications Features"
+  },
+  {
+    "location": "html-block:219",
+    "text": "Protocol Monitor"
+  },
+  {
+    "location": "html-block:220",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:221",
+    "text": "Protocol Monitor Configuration"
+  },
+  {
+    "location": "html-block:222",
+    "text": "Protocol Monitor Operation"
+  },
+  {
+    "location": "html-block:223",
+    "text": "SCADA Output Control Mode"
+  },
+  {
+    "location": "html-block:224",
+    "text": "Overview"
+  },
+  {
+    "location": "html-block:225",
+    "text": "Normal Local/Remote Operation"
+  },
+  {
+    "location": "html-block:226",
+    "text": "Modified Local/Remote Operation"
+  },
+  {
+    "location": "html-block:227",
+    "text": "Hayes Compatible Modem Support"
+  },
+  {
+    "location": "html-block:228",
+    "text": "Hayes Modem Driver Configuration"
+  },
+  {
+    "location": "html-block:229",
+    "text": "Hayes Modem Driver Operation"
+  },
+  {
+    "location": "html-block:230",
+    "text": "Statistics"
+  },
+  {
+    "location": "html-block:231",
+    "text": "Attempt Count"
+  },
+  {
+    "location": "html-block:232",
+    "text": "SOS Multi-drop Driver"
+  },
+  {
+    "location": "html-block:233",
+    "text": "RS232 Radio"
+  },
+  {
+    "location": "html-block:234",
+    "text": "Network Time Protocol (NTP)"
+  },
+  {
+    "location": "html-block:235",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:236",
+    "text": "NTP Configuration"
+  },
+  {
+    "location": "html-block:237",
+    "text": "Power System Measurements"
+  },
+  {
+    "location": "html-block:238",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:239",
+    "text": "Measured Values"
+  },
+  {
+    "location": "html-block:240",
+    "text": "Derived Values"
+  },
+  {
+    "location": "html-block:241",
+    "text": "WSOS Measurements"
+  },
+  {
+    "location": "html-block:242",
+    "text": "flex VUE Measurements"
+  },
+  {
+    "location": "html-block:243",
+    "text": "Operator Menu"
+  },
+  {
+    "location": "html-block:244",
+    "text": "Engineer Menu"
+  },
+  {
+    "location": "html-block:245",
+    "text": "Current"
+  },
+  {
+    "location": "html-block:246",
+    "text": "Voltage"
+  },
+  {
+    "location": "html-block:247",
+    "text": "Frequency"
+  },
+  {
+    "location": "html-block:248",
+    "text": "Power"
+  },
+  {
+    "location": "html-block:249",
+    "text": "Energy"
+  },
+  {
+    "location": "html-block:250",
+    "text": "set VUE Measurements"
+  },
+  {
+    "location": "html-block:251",
+    "text": "System Measurements"
+  },
+  {
+    "location": "html-block:252",
+    "text": "Current"
+  },
+  {
+    "location": "html-block:253",
+    "text": "Voltage"
+  },
+  {
+    "location": "html-block:254",
+    "text": "Sequence Voltage"
+  },
+  {
+    "location": "html-block:255",
+    "text": "Frequency"
+  },
+  {
+    "location": "html-block:256",
+    "text": "Power"
+  },
+  {
+    "location": "html-block:257",
+    "text": "Current Measurement"
+  },
+  {
+    "location": "html-block:258",
+    "text": "Example"
+  },
+  {
+    "location": "html-block:259",
+    "text": "Voltage Measurement"
+  },
+  {
+    "location": "html-block:260",
+    "text": "Terminal Designation or Phase Configuration"
+  },
+  {
+    "location": "html-block:261",
+    "text": "Phase Rotation"
+  },
+  {
+    "location": "html-block:262",
+    "text": "Power Measurement"
+  },
+  {
+    "location": "html-block:263",
+    "text": "Power Flow Direction"
+  },
+  {
+    "location": "html-block:264",
+    "text": "Example"
+  },
+  {
+    "location": "html-block:265",
+    "text": "Live/Dead Indication"
+  },
+  {
+    "location": "html-block:266",
+    "text": "Power (Energy) Meter"
+  },
+  {
+    "location": "html-block:267",
+    "text": "Per Phase Power Measurements"
+  },
+  {
+    "location": "html-block:268",
+    "text": "Automatic Circuit Recloser (ACR)"
+  },
+  {
+    "location": "html-block:269",
+    "text": "Basic Protection Operation and Auto Recloser"
+  },
+  {
+    "location": "html-block:270",
+    "text": "Introduction to Automatic Recloser"
+  },
+  {
+    "location": "html-block:271",
+    "text": "Automatic Reclose Sequence"
+  },
+  {
+    "location": "html-block:272",
+    "text": "Protection Pickup"
+  },
+  {
+    "location": "html-block:273",
+    "text": "Fault Reset"
+  },
+  {
+    "location": "html-block:274",
+    "text": "Protection Trip"
+  },
+  {
+    "location": "html-block:275",
+    "text": "Automatic Reclose"
+  },
+  {
+    "location": "html-block:276",
+    "text": "Sequence Reset"
+  },
+  {
+    "location": "html-block:277",
+    "text": "Basic Protection"
+  },
+  {
+    "location": "html-block:278",
+    "text": "Basic Current Protection Elements"
+  },
+  {
+    "location": "html-block:279",
+    "text": "Global Protection Settings"
+  },
+  {
+    "location": "html-block:280",
+    "text": "Fault Reset Operation"
+  },
+  {
+    "location": "html-block:281",
+    "text": "Active Trip"
+  },
+  {
+    "location": "html-block:282",
+    "text": "Trip Settings"
+  },
+  {
+    "location": "html-block:283",
+    "text": "Timed Trip Block Feature"
+  },
+  {
+    "location": "html-block:284",
+    "text": "Protection Groups"
+  },
+  {
+    "location": "html-block:285",
+    "text": "Basic Protection Enhancements"
+  },
+  {
+    "location": "html-block:286",
+    "text": "Extended Standard Protection"
+  },
+  {
+    "location": "html-block:287",
+    "text": "Extended Maximum Time per Curve"
+  },
+  {
+    "location": "html-block:288",
+    "text": "Per Element Protection"
+  },
+  {
+    "location": "html-block:289",
+    "text": "Making the feature available"
+  },
+  {
+    "location": "html-block:290",
+    "text": "Configuration"
+  },
+  {
+    "location": "html-block:291",
+    "text": "Alarm Mode"
+  },
+  {
+    "location": "html-block:292",
+    "text": "Supply Interrupt"
+  },
+  {
+    "location": "html-block:293",
+    "text": "Supply Interrupt Flags"
+  },
+  {
+    "location": "html-block:294",
+    "text": "Per Element Protection + Extended Standard Protection"
+  },
+  {
+    "location": "html-block:295",
+    "text": "PTT"
+  },
+  {
+    "location": "html-block:296",
+    "text": "PTT Default Settings"
+  },
+  {
+    "location": "html-block:297",
+    "text": "Per Element Reclose Time"
+  },
+  {
+    "location": "html-block:298",
+    "text": "Reset Curves"
+  },
+  {
+    "location": "html-block:299",
+    "text": "Close on Fault Trip"
+  },
+  {
+    "location": "html-block:300",
+    "text": "Protection Discrimination/Timing"
+  },
+  {
+    "location": "html-block:301",
+    "text": "Current Operated Protection Elements"
+  },
+  {
+    "location": "html-block:302",
+    "text": "Phase Overcurrent"
+  },
+  {
+    "location": "html-block:303",
+    "text": "Earth Fault (EF)"
+  },
+  {
+    "location": "html-block:304",
+    "text": "Sensitive Earth Fault (SEF)"
+  },
+  {
+    "location": "html-block:305",
+    "text": "Transient Earth (Ground) Fault Protection"
+  },
+  {
+    "location": "html-block:306",
+    "text": "Negative Phase Sequence (NPS) 4"
+  },
+  {
+    "location": "html-block:307",
+    "text": "Broken Conductor"
+  },
+  {
+    "location": "html-block:308",
+    "text": "Broken Conductor Protection"
+  },
+  {
+    "location": "html-block:309",
+    "text": "Fault Reset"
+  },
+  {
+    "location": "html-block:310",
+    "text": "Broken Conductor Alarm"
+  },
+  {
+    "location": "html-block:311",
+    "text": "ACR Protection Features"
+  },
+  {
+    "location": "html-block:312",
+    "text": "Single Shot"
+  },
+  {
+    "location": "html-block:313",
+    "text": "Single Shot Protection Settings"
+  },
+  {
+    "location": "html-block:314",
+    "text": "Single Shot Activation/Deactivation"
+  },
+  {
+    "location": "html-block:315",
+    "text": "Single Shot Reset Time"
+  },
+  {
+    "location": "html-block:316",
+    "text": "Single Shot Summary"
+  },
+  {
+    "location": "html-block:317",
+    "text": "Work Tag"
+  },
+  {
+    "location": "html-block:318",
+    "text": "Work Tag Configuration"
+  },
+  {
+    "location": "html-block:319",
+    "text": "Work Tag Protection Settings"
+  },
+  {
+    "location": "html-block:320",
+    "text": "Work Tag and Controller Mode"
+  },
+  {
+    "location": "html-block:321",
+    "text": "Work Tag and Single Shot Mode"
+  },
+  {
+    "location": "html-block:322",
+    "text": "Work Tag Summary"
+  },
+  {
+    "location": "html-block:323",
+    "text": "Automatic Protection Group Selection (APGS)"
+  },
+  {
+    "location": "html-block:324",
+    "text": "The Selection Rules"
+  },
+  {
+    "location": "html-block:325",
+    "text": "APGS Applications"
+  },
+  {
+    "location": "html-block:326",
+    "text": "APGS Configuration"
+  },
+  {
+    "location": "html-block:327",
+    "text": "Disabling APGS"
+  },
+  {
+    "location": "html-block:328",
+    "text": "SEF Alarm"
+  },
+  {
+    "location": "html-block:329",
+    "text": "NPS Alarm"
+  },
+  {
+    "location": "html-block:330",
+    "text": "NPS Alarm Configuration"
+  },
+  {
+    "location": "html-block:331",
+    "text": "NPS Alarm Operation"
+  },
+  {
+    "location": "html-block:332",
+    "text": "Protection Off"
+  },
+  {
+    "location": "html-block:333",
+    "text": "Protection Off Configuration"
+  },
+  {
+    "location": "html-block:334",
+    "text": "Protection Off Operation"
+  },
+  {
+    "location": "html-block:335",
+    "text": "Dead Lockout"
+  },
+  {
+    "location": "html-block:336",
+    "text": "Dead Lockout Configuration"
+  },
+  {
+    "location": "html-block:337",
+    "text": "Dead Lockout Operation"
+  },
+  {
+    "location": "html-block:338",
+    "text": "Dead Lockout on PMSet U Series"
+  },
+  {
+    "location": "html-block:339",
+    "text": "Sequence Control"
+  },
+  {
+    "location": "html-block:340",
+    "text": "The Problem"
+  },
+  {
+    "location": "html-block:341",
+    "text": "The Solution"
+  },
+  {
+    "location": "html-block:342",
+    "text": "Sequence Control Configuration"
+  },
+  {
+    "location": "html-block:343",
+    "text": "Live Load Blocking"
+  },
+  {
+    "location": "html-block:344",
+    "text": "Critical Settings"
+  },
+  {
+    "location": "html-block:345",
+    "text": "Live Load Blocking Configuration"
+  },
+  {
+    "location": "html-block:346",
+    "text": "Live Load Blocking Operation"
+  },
+  {
+    "location": "html-block:347",
+    "text": "High Current Lockout"
+  },
+  {
+    "location": "html-block:348",
+    "text": "Inrush Restraint"
+  },
+  {
+    "location": "html-block:349",
+    "text": "Inrush Restraint Configuration"
+  },
+  {
+    "location": "html-block:350",
+    "text": "Inrush Restraint Operation"
+  },
+  {
+    "location": "html-block:351",
+    "text": "Example"
+  },
+  {
+    "location": "html-block:352",
+    "text": "Inrush Restraint Summary"
+  },
+  {
+    "location": "html-block:353",
+    "text": "Second Order Harmonic Inrush Restraint (SOHIR)"
+  },
+  {
+    "location": "html-block:354",
+    "text": "Cold Load Pickup"
+  },
+  {
+    "location": "html-block:355",
+    "text": "CLP Configuration"
+  },
+  {
+    "location": "html-block:356",
+    "text": "CLP Operation"
+  },
+  {
+    "location": "html-block:357",
+    "text": "CLP Example"
+  },
+  {
+    "location": "html-block:358",
+    "text": "CLP Status"
+  },
+  {
+    "location": "html-block:359",
+    "text": "Cold Load Status on Power Up"
+  },
+  {
+    "location": "html-block:360",
+    "text": "Example"
+  },
+  {
+    "location": "html-block:361",
+    "text": "CLP Summary"
+  },
+  {
+    "location": "html-block:362",
+    "text": "Conditional Auto Reclose"
+  },
+  {
+    "location": "html-block:363",
+    "text": "History"
+  },
+  {
+    "location": "html-block:364",
+    "text": "Conditional Auto Reclose Configuration"
+  },
+  {
+    "location": "html-block:365",
+    "text": "IOEX Configuration"
+  },
+  {
+    "location": "html-block:366",
+    "text": "IOEX Outputs"
+  },
+  {
+    "location": "html-block:367",
+    "text": "IOEX Inputs"
+  },
+  {
+    "location": "html-block:368",
+    "text": "Conditional Auto Reclose Operation"
+  },
+  {
+    "location": "html-block:369",
+    "text": "Conditional Auto Reclose Bypass"
+  },
+  {
+    "location": "html-block:370",
+    "text": "Ground Fault Neutralizer"
+  },
+  {
+    "location": "html-block:371",
+    "text": "GFN Configuration"
+  },
+  {
+    "location": "html-block:372",
+    "text": "GFN On/Off"
+  },
+  {
+    "location": "html-block:373",
+    "text": "Auto Reclose Block Time"
+  },
+  {
+    "location": "html-block:374",
+    "text": "V0 Pickup Threshold"
+  },
+  {
+    "location": "html-block:375",
+    "text": "V0 Reset Threshold"
+  },
+  {
+    "location": "html-block:376",
+    "text": "Uplifted Phase Pickup Threshold"
+  },
+  {
+    "location": "html-block:377",
+    "text": "Uplifted Phase Reset Threshold"
+  },
+  {
+    "location": "html-block:378",
+    "text": "Faulted Phase Pickup Threshold"
+  },
+  {
+    "location": "html-block:379",
+    "text": "GFN Operation"
+  },
+  {
+    "location": "html-block:380",
+    "text": "Directional Protection and Blocking"
+  },
+  {
+    "location": "html-block:381",
+    "text": "Directional Blocking"
+  },
+  {
+    "location": "html-block:382",
+    "text": "Phase Overcurrent Directional Blocking"
+  },
+  {
+    "location": "html-block:383",
+    "text": "Phase Characteristic Fault Angle"
+  },
+  {
+    "location": "html-block:384",
+    "text": "Phase Sector Width"
+  },
+  {
+    "location": "html-block:385",
+    "text": "Phase Low Voltage Block"
+  },
+  {
+    "location": "html-block:386",
+    "text": "Phase Low Voltage Reset"
+  },
+  {
+    "location": "html-block:387",
+    "text": "Phase Voltage Memory"
+  },
+  {
+    "location": "html-block:388",
+    "text": "EF Directional Blocking"
+  },
+  {
+    "location": "html-block:389",
+    "text": "Earth VZPS Polarization"
+  },
+  {
+    "location": "html-block:390",
+    "text": "Earth Wattmetric Polarizing"
+  },
+  {
+    "location": "html-block:391",
+    "text": "Earth Ir Cos (Ø) Polarising"
+  },
+  {
+    "location": "html-block:392",
+    "text": "SEF Directional Block"
+  },
+  {
+    "location": "html-block:393",
+    "text": "SEF VZPS Polarising"
+  },
+  {
+    "location": "html-block:394",
+    "text": "SEF Wattmetric Polarizing"
+  },
+  {
+    "location": "html-block:395",
+    "text": "SEF Ir Cos (Ø) Polarising"
+  },
+  {
+    "location": "html-block:396",
+    "text": "Negative Phase Sequence Directional Blocking"
+  },
+  {
+    "location": "html-block:397",
+    "text": "NPS Characteristic Fault Angle"
+  },
+  {
+    "location": "html-block:398",
+    "text": "NPS Sector Width"
+  },
+  {
+    "location": "html-block:399",
+    "text": "NPS Low Voltage Block"
+  },
+  {
+    "location": "html-block:400",
+    "text": "NPS Low Voltage Reset"
+  },
+  {
+    "location": "html-block:401",
+    "text": "Directional Protection"
+  },
+  {
+    "location": "html-block:402",
+    "text": "Overview"
+  },
+  {
+    "location": "html-block:403",
+    "text": "Directional Protection Configuration"
+  },
+  {
+    "location": "html-block:404",
+    "text": "Sequence Reset Time"
+  },
+  {
+    "location": "html-block:405",
+    "text": "Trips to Lockout"
+  },
+  {
+    "location": "html-block:406",
+    "text": "Auto Reclose"
+  },
+  {
+    "location": "html-block:407",
+    "text": "Auto Restore"
+  },
+  {
+    "location": "html-block:408",
+    "text": "Operation"
+  },
+  {
+    "location": "html-block:409",
+    "text": "Determining Direction"
+  },
+  {
+    "location": "html-block:410",
+    "text": "Low Polarising Voltage Action"
+  },
+  {
+    "location": "html-block:411",
+    "text": "Sector Width"
+  },
+  {
+    "location": "html-block:412",
+    "text": "Vzps (ZPS Voltage) Balance"
+  },
+  {
+    "location": "html-block:413",
+    "text": "High Vzps Alarm"
+  },
+  {
+    "location": "html-block:414",
+    "text": "Phase Overcurrent Directional Protection"
+  },
+  {
+    "location": "html-block:415",
+    "text": "Phase Characteristic Fault Angle"
+  },
+  {
+    "location": "html-block:416",
+    "text": "Phase Sector Width"
+  },
+  {
+    "location": "html-block:417",
+    "text": "Phase Low Polarising Voltage Action"
+  },
+  {
+    "location": "html-block:418",
+    "text": "Phase Low Voltage Reset"
+  },
+  {
+    "location": "html-block:419",
+    "text": "Phase Voltage Memory"
+  },
+  {
+    "location": "html-block:420",
+    "text": "EF Directional Protection"
+  },
+  {
+    "location": "html-block:421",
+    "text": "Earth VZPS Polarizing"
+  },
+  {
+    "location": "html-block:422",
+    "text": "Earth Wattmetric Polarising"
+  },
+  {
+    "location": "html-block:423",
+    "text": "Earth Ir Cos (Ø) Polarising"
+  },
+  {
+    "location": "html-block:424",
+    "text": "SEF Directional Protection"
+  },
+  {
+    "location": "html-block:425",
+    "text": "SEF VZPS Polarising"
+  },
+  {
+    "location": "html-block:426",
+    "text": "SEFs Wattmetric Polarising"
+  },
+  {
+    "location": "html-block:427",
+    "text": "SEF Ir Cos (Ø) Polarising"
+  },
+  {
+    "location": "html-block:428",
+    "text": "NPS Directional Protection"
+  },
+  {
+    "location": "html-block:429",
+    "text": "NPS Characteristic Fault Angle"
+  },
+  {
+    "location": "html-block:430",
+    "text": "NPS Sector Width"
+  },
+  {
+    "location": "html-block:431",
+    "text": "NPS Low Polarising Voltage Action"
+  },
+  {
+    "location": "html-block:432",
+    "text": "NPS Low Voltage Reset"
+  },
+  {
+    "location": "html-block:433",
+    "text": "Voltage Operated Protection Elements"
+  },
+  {
+    "location": "html-block:434",
+    "text": "UOV Protection"
+  },
+  {
+    "location": "html-block:435",
+    "text": "UOV Protection Configuration"
+  },
+  {
+    "location": "html-block:436",
+    "text": "Dead-bands"
+  },
+  {
+    "location": "html-block:437",
+    "text": "UOV Protection Curves"
+  },
+  {
+    "location": "html-block:438",
+    "text": "Phase Logic"
+  },
+  {
+    "location": "html-block:439",
+    "text": "Normal Voltage Band"
+  },
+  {
+    "location": "html-block:440",
+    "text": "Under Voltage Protection Operation"
+  },
+  {
+    "location": "html-block:441",
+    "text": "Over Voltage Protection Operation"
+  },
+  {
+    "location": "html-block:442",
+    "text": "Average Phase Logic Events"
+  },
+  {
+    "location": "html-block:443",
+    "text": "Pickup Thresholds and Reset"
+  },
+  {
+    "location": "html-block:444",
+    "text": "Normal Voltage Close"
+  },
+  {
+    "location": "html-block:445",
+    "text": "Recovery Time Out"
+  },
+  {
+    "location": "html-block:446",
+    "text": "Excess UOV Protection Sequences"
+  },
+  {
+    "location": "html-block:447",
+    "text": "Changing Settings"
+  },
+  {
+    "location": "html-block:448",
+    "text": "Single Sided CVT Switchgear"
+  },
+  {
+    "location": "html-block:449",
+    "text": "Over Voltage Protection Sequence Example"
+  },
+  {
+    "location": "html-block:450",
+    "text": "Sequence of Events"
+  },
+  {
+    "location": "html-block:451",
+    "text": "UOV Protection Summary"
+  },
+  {
+    "location": "html-block:452",
+    "text": "Neutral Voltage Displacement"
+  },
+  {
+    "location": "html-block:453",
+    "text": "NVD Configuration"
+  },
+  {
+    "location": "html-block:454",
+    "text": "NVD Functions"
+  },
+  {
+    "location": "html-block:455",
+    "text": "NVD Operation"
+  },
+  {
+    "location": "html-block:456",
+    "text": "NVD Protection"
+  },
+  {
+    "location": "html-block:457",
+    "text": "NVD Alarm"
+  },
+  {
+    "location": "html-block:458",
+    "text": "Loss of Phase Protection"
+  },
+  {
+    "location": "html-block:459",
+    "text": "LOP Protection Settings"
+  },
+  {
+    "location": "html-block:460",
+    "text": "LOP Protection Configuration"
+  },
+  {
+    "location": "html-block:461",
+    "text": "LOP Protection Operation"
+  },
+  {
+    "location": "html-block:462",
+    "text": "LOP Protection Timing"
+  },
+  {
+    "location": "html-block:463",
+    "text": "LOP versus Supply Timeout Example"
+  },
+  {
+    "location": "html-block:464",
+    "text": "LOP Protection Summary"
+  },
+  {
+    "location": "html-block:465",
+    "text": "UOV Close Block"
+  },
+  {
+    "location": "html-block:466",
+    "text": "UOV Close Blocking Configuration"
+  },
+  {
+    "location": "html-block:467",
+    "text": "UOV Close Blocking Operation"
+  },
+  {
+    "location": "html-block:468",
+    "text": "Frequency Protection"
+  },
+  {
+    "location": "html-block:469",
+    "text": "UOF Protection"
+  },
+  {
+    "location": "html-block:470",
+    "text": "UOF Protection Applications"
+  },
+  {
+    "location": "html-block:471",
+    "text": "UOF Protection Configuration"
+  },
+  {
+    "location": "html-block:472",
+    "text": "Frequency Measurement"
+  },
+  {
+    "location": "html-block:473",
+    "text": "Under Frequency Protection Operation"
+  },
+  {
+    "location": "html-block:474",
+    "text": "Over Frequency Protection Operation"
+  },
+  {
+    "location": "html-block:475",
+    "text": "Normal Frequency Close"
+  },
+  {
+    "location": "html-block:476",
+    "text": "Under Frequency Protection Sequence Example"
+  },
+  {
+    "location": "html-block:477",
+    "text": "UOF Protection Summary"
+  },
+  {
+    "location": "html-block:478",
+    "text": "Rate of Change of Frequency"
+  },
+  {
+    "location": "html-block:479",
+    "text": "ROCOF Protection Configuration"
+  },
+  {
+    "location": "html-block:480",
+    "text": "ROCOF Protection Operation"
+  },
+  {
+    "location": "html-block:481",
+    "text": "Timing"
+  },
+  {
+    "location": "html-block:482",
+    "text": "Reset Timing"
+  },
+  {
+    "location": "html-block:483",
+    "text": "Lockout"
+  },
+  {
+    "location": "html-block:484",
+    "text": "Blocking"
+  },
+  {
+    "location": "html-block:485",
+    "text": "Direction"
+  },
+  {
+    "location": "html-block:486",
+    "text": "Minimum Voltage"
+  },
+  {
+    "location": "html-block:487",
+    "text": "UOF Close Blocking"
+  },
+  {
+    "location": "html-block:488",
+    "text": "UOF Close Blocking Configuration"
+  },
+  {
+    "location": "html-block:489",
+    "text": "UOF Close Block Operation"
+  },
+  {
+    "location": "html-block:490",
+    "text": "Automatic Sectionalising"
+  },
+  {
+    "location": "html-block:491",
+    "text": "Fault Detection and Automatic Sectionalising"
+  },
+  {
+    "location": "html-block:492",
+    "text": "Introduction to Automatic Sectionalising"
+  },
+  {
+    "location": "html-block:493",
+    "text": "AS Operation"
+  },
+  {
+    "location": "html-block:494",
+    "text": "Fault Detection Enhancements"
+  },
+  {
+    "location": "html-block:495",
+    "text": "Sequence Reset Clears Fault Flags"
+  },
+  {
+    "location": "html-block:496",
+    "text": "Extended Standard Detection"
+  },
+  {
+    "location": "html-block:497",
+    "text": "Extended Maximum Time per Curve"
+  },
+  {
+    "location": "html-block:498",
+    "text": "Per Element Detection"
+  },
+  {
+    "location": "html-block:499",
+    "text": "Close on Fault Trip"
+  },
+  {
+    "location": "html-block:500",
+    "text": "Fault Detection Timing Options"
+  },
+  {
+    "location": "html-block:501",
+    "text": "Definite Time"
+  },
+  {
+    "location": "html-block:502",
+    "text": "Instantaneous Only"
+  },
+  {
+    "location": "html-block:503",
+    "text": "Inverse Current/Time"
+  },
+  {
+    "location": "html-block:504",
+    "text": "Curve Modifiers"
+  },
+  {
+    "location": "html-block:505",
+    "text": "Current Operated Detection Elements"
+  },
+  {
+    "location": "html-block:506",
+    "text": "AS Detection Features"
+  },
+  {
+    "location": "html-block:507",
+    "text": "Single Shot"
+  },
+  {
+    "location": "html-block:508",
+    "text": "Work Tag"
+  },
+  {
+    "location": "html-block:509",
+    "text": "ADGS"
+  },
+  {
+    "location": "html-block:510",
+    "text": "SEF Alarm"
+  },
+  {
+    "location": "html-block:511",
+    "text": "NPS Alarm"
+  },
+  {
+    "location": "html-block:512",
+    "text": "Detection Off"
+  },
+  {
+    "location": "html-block:513",
+    "text": "Live Load Blocking"
+  },
+  {
+    "location": "html-block:514",
+    "text": "Inrush Restraint"
+  },
+  {
+    "location": "html-block:515",
+    "text": "SOHIR"
+  },
+  {
+    "location": "html-block:516",
+    "text": "CLP"
+  },
+  {
+    "location": "html-block:517",
+    "text": "Directional Detection and Block"
+  },
+  {
+    "location": "html-block:518",
+    "text": "Directional Blocking"
+  },
+  {
+    "location": "html-block:519",
+    "text": "Phase Overcurrent Directional Blocking"
+  },
+  {
+    "location": "html-block:520",
+    "text": "EF Directional Blocking"
+  },
+  {
+    "location": "html-block:521",
+    "text": "Earth VZPS Polarising"
+  },
+  {
+    "location": "html-block:522",
+    "text": "Earth Wattmetric Polarizing"
+  },
+  {
+    "location": "html-block:523",
+    "text": "Earth Ir Cos (Ø) Polarising"
+  },
+  {
+    "location": "html-block:524",
+    "text": "SEF Directional Block"
+  },
+  {
+    "location": "html-block:525",
+    "text": "SEF VZPS Polarising"
+  },
+  {
+    "location": "html-block:526",
+    "text": "SEF Wattmetric Polarizing"
+  },
+  {
+    "location": "html-block:527",
+    "text": "SEF Ir Cos (Ø) Polarising"
+  },
+  {
+    "location": "html-block:528",
+    "text": "NPS Directional Blocking"
+  },
+  {
+    "location": "html-block:529",
+    "text": "Directional Detection"
+  },
+  {
+    "location": "html-block:530",
+    "text": "Overview"
+  },
+  {
+    "location": "html-block:531",
+    "text": "Directional Fault Detection"
+  },
+  {
+    "location": "html-block:532",
+    "text": "Directional Detection Configuration"
+  },
+  {
+    "location": "html-block:533",
+    "text": "Sequence Reset Time"
+  },
+  {
+    "location": "html-block:534",
+    "text": "Auto Sectionalise"
+  },
+  {
+    "location": "html-block:535",
+    "text": "Operation"
+  },
+  {
+    "location": "html-block:536",
+    "text": "Determining Direction"
+  },
+  {
+    "location": "html-block:537",
+    "text": "Low Polarising Voltage Action"
+  },
+  {
+    "location": "html-block:538",
+    "text": "Sector Width"
+  },
+  {
+    "location": "html-block:539",
+    "text": "Vzps Balancing"
+  },
+  {
+    "location": "html-block:540",
+    "text": "High Vzps Alarm"
+  },
+  {
+    "location": "html-block:541",
+    "text": "Phase Overcurrent Directional Detection"
+  },
+  {
+    "location": "html-block:542",
+    "text": "EF Directional Detection"
+  },
+  {
+    "location": "html-block:543",
+    "text": "Earth VZPS Polarizing"
+  },
+  {
+    "location": "html-block:544",
+    "text": "Earth Wattmetric Polarising"
+  },
+  {
+    "location": "html-block:545",
+    "text": "Earth Ir Cos (Ø) Polarising"
+  },
+  {
+    "location": "html-block:546",
+    "text": "SEF Directional Detection"
+  },
+  {
+    "location": "html-block:547",
+    "text": "SEF VZPS Polarising"
+  },
+  {
+    "location": "html-block:548",
+    "text": "SEF Wattmetric Polarizing"
+  },
+  {
+    "location": "html-block:549",
+    "text": "SEF Ir Cos (Ø) Polarising"
+  },
+  {
+    "location": "html-block:550",
+    "text": "NPS Directional Detection"
+  },
+  {
+    "location": "html-block:551",
+    "text": "Voltage Operated Detection Elements"
+  },
+  {
+    "location": "html-block:552",
+    "text": "UOV"
+  },
+  {
+    "location": "html-block:553",
+    "text": "UOV Detection Configuration"
+  },
+  {
+    "location": "html-block:554",
+    "text": "UOV Detection Curves"
+  },
+  {
+    "location": "html-block:555",
+    "text": "Phase Logic"
+  },
+  {
+    "location": "html-block:556",
+    "text": "Normal Voltage Band"
+  },
+  {
+    "location": "html-block:557",
+    "text": "Under Voltage Detection Operation"
+  },
+  {
+    "location": "html-block:558",
+    "text": "Over Voltage Detection Operation"
+  },
+  {
+    "location": "html-block:559",
+    "text": "Average Phase Logic Events"
+  },
+  {
+    "location": "html-block:560",
+    "text": "Pickup Thresholds and Reset"
+  },
+  {
+    "location": "html-block:561",
+    "text": "UOV Detection Summary"
+  },
+  {
+    "location": "html-block:562",
+    "text": "Distance to Fault Location"
+  },
+  {
+    "location": "html-block:563",
+    "text": "Fault Locator"
+  },
+  {
+    "location": "html-block:564",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:565",
+    "text": "Fault Locator Feature Selection"
+  },
+  {
+    "location": "html-block:566",
+    "text": "Fault Locator Settings Pages"
+  },
+  {
+    "location": "html-block:567",
+    "text": "Fault Information Display"
+  },
+  {
+    "location": "html-block:568",
+    "text": "Principles of Operation"
+  },
+  {
+    "location": "html-block:569",
+    "text": "Fault Locator Settings and Status"
+  },
+  {
+    "location": "html-block:570",
+    "text": "Synchronization"
+  },
+  {
+    "location": "html-block:571",
+    "text": "Sync Check"
+  },
+  {
+    "location": "html-block:572",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:573",
+    "text": "Sync Check Feature Selection"
+  },
+  {
+    "location": "html-block:574",
+    "text": "Sync Check Settings Displays"
+  },
+  {
+    "location": "html-block:575",
+    "text": "Principles of Operation"
+  },
+  {
+    "location": "html-block:576",
+    "text": "Voltage Amplitude Synchronization"
+  },
+  {
+    "location": "html-block:577",
+    "text": "Voltage Frequency Synchronization"
+  },
+  {
+    "location": "html-block:578",
+    "text": "Phase Angle Synchronization"
+  },
+  {
+    "location": "html-block:579",
+    "text": "Phase Compensation"
+  },
+  {
+    "location": "html-block:580",
+    "text": "Close Retry"
+  },
+  {
+    "location": "html-block:581",
+    "text": "Operation Diagram"
+  },
+  {
+    "location": "html-block:582",
+    "text": "Sync Check Configuration"
+  },
+  {
+    "location": "html-block:583",
+    "text": "Sync Check Settings"
+  },
+  {
+    "location": "html-block:584",
+    "text": "Status Indication"
+  },
+  {
+    "location": "html-block:585",
+    "text": "Synchronization Status Indicators"
+  },
+  {
+    "location": "html-block:586",
+    "text": "Standards and Guidelines"
+  },
+  {
+    "location": "html-block:587",
+    "text": "Automation"
+  },
+  {
+    "location": "html-block:588",
+    "text": "Loop Automation"
+  },
+  {
+    "location": "html-block:589",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:590",
+    "text": "Device Types"
+  },
+  {
+    "location": "html-block:591",
+    "text": "LA Feature Selection"
+  },
+  {
+    "location": "html-block:592",
+    "text": "LA Display"
+  },
+  {
+    "location": "html-block:593",
+    "text": "Intelligent LA Communications"
+  },
+  {
+    "location": "html-block:594",
+    "text": "LA Basics"
+  },
+  {
+    "location": "html-block:595",
+    "text": "Classic LA Operation"
+  },
+  {
+    "location": "html-block:596",
+    "text": "ACO using Classic LA"
+  },
+  {
+    "location": "html-block:597",
+    "text": "Intelligent LA Operation"
+  },
+  {
+    "location": "html-block:598",
+    "text": "Intelligent Isolation and Re-Configuration Examples"
+  },
+  {
+    "location": "html-block:599",
+    "text": "LA LBS Support"
+  },
+  {
+    "location": "html-block:600",
+    "text": "Understanding Isolation and Reconfiguration with Dead Time"
+  },
+  {
+    "location": "html-block:601",
+    "text": "Under Frequency Pause/Abort of Tie Restoration"
+  },
+  {
+    "location": "html-block:602",
+    "text": "LA Software Modifications"
+  },
+  {
+    "location": "html-block:603",
+    "text": "LA Configuration"
+  },
+  {
+    "location": "html-block:604",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:605",
+    "text": "LA Timing"
+  },
+  {
+    "location": "html-block:606",
+    "text": "Classic LA Parameters"
+  },
+  {
+    "location": "html-block:607",
+    "text": "Intelligent LA Parameters"
+  },
+  {
+    "location": "html-block:608",
+    "text": "Overview"
+  },
+  {
+    "location": "html-block:609",
+    "text": "Description of Parameters"
+  },
+  {
+    "location": "html-block:610",
+    "text": "Intelligent LA Communications Parameters"
+  },
+  {
+    "location": "html-block:611",
+    "text": "Auto Changeover (ACO)"
+  },
+  {
+    "location": "html-block:612",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:613",
+    "text": "ACO Feature Selection"
+  },
+  {
+    "location": "html-block:614",
+    "text": "ACO Settings Displays"
+  },
+  {
+    "location": "html-block:615",
+    "text": "Principles of Operation"
+  },
+  {
+    "location": "html-block:616",
+    "text": "Automatic-Changeover Sequence"
+  },
+  {
+    "location": "html-block:617",
+    "text": "Self-Healing Options"
+  },
+  {
+    "location": "html-block:618",
+    "text": "Overview"
+  },
+  {
+    "location": "html-block:619",
+    "text": "Operator Actions"
+  },
+  {
+    "location": "html-block:620",
+    "text": "Network Conditions"
+  },
+  {
+    "location": "html-block:621",
+    "text": "Technical Conditions"
+  },
+  {
+    "location": "html-block:622",
+    "text": "ACO Communications"
+  },
+  {
+    "location": "html-block:623",
+    "text": "ACO using LBS"
+  },
+  {
+    "location": "html-block:624",
+    "text": "ACO Controls and Status"
+  },
+  {
+    "location": "html-block:625",
+    "text": "ACO Timers"
+  },
+  {
+    "location": "html-block:626",
+    "text": "Communications Settings"
+  },
+  {
+    "location": "html-block:627",
+    "text": "Communications"
+  },
+  {
+    "location": "html-block:628",
+    "text": "Interaction with other Functionality"
+  },
+  {
+    "location": "html-block:629",
+    "text": "ACO – Important Points"
+  },
+  {
+    "location": "html-block:630",
+    "text": "History"
+  },
+  {
+    "location": "html-block:631",
+    "text": "Event Log"
+  },
+  {
+    "location": "html-block:632",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:633",
+    "text": "Reading the Event Log on the O.I."
+  },
+  {
+    "location": "html-block:634",
+    "text": "Typical Event Log Trip Sequence Display"
+  },
+  {
+    "location": "html-block:635",
+    "text": "The Event Log in WSOS"
+  },
+  {
+    "location": "html-block:636",
+    "text": "Uploading History Files"
+  },
+  {
+    "location": "html-block:637",
+    "text": "Delete Records from Hard Disk"
+  },
+  {
+    "location": "html-block:638",
+    "text": "Automatic History Upload"
+  },
+  {
+    "location": "html-block:639",
+    "text": "Saving Uploaded Event Log Files"
+  },
+  {
+    "location": "html-block:640",
+    "text": "Other Context Menu Options"
+  },
+  {
+    "location": "html-block:641",
+    "text": "Maximum Demand Records"
+  },
+  {
+    "location": "html-block:642",
+    "text": "History Configuration"
+  },
+  {
+    "location": "html-block:643",
+    "text": "Harmonic History"
+  },
+  {
+    "location": "html-block:644",
+    "text": "Sag and Swell History"
+  },
+  {
+    "location": "html-block:645",
+    "text": "Power Quality"
+  },
+  {
+    "location": "html-block:646",
+    "text": "Power Quality Tool Kit"
+  },
+  {
+    "location": "html-block:647",
+    "text": "Supply Outages"
+  },
+  {
+    "location": "html-block:648",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:649",
+    "text": "Determination of Supply Outages"
+  },
+  {
+    "location": "html-block:650",
+    "text": "Supply Outage Configuration"
+  },
+  {
+    "location": "html-block:651",
+    "text": "Supply Outage Operation"
+  },
+  {
+    "location": "html-block:652",
+    "text": "Measuring the Outage Duration"
+  },
+  {
+    "location": "html-block:653",
+    "text": "Measuring Supply Reliability"
+  },
+  {
+    "location": "html-block:654",
+    "text": "SAIDI – System Average Interruption Duration Index"
+  },
+  {
+    "location": "html-block:655",
+    "text": "SAIFI – System Average Interruption Frequency Index"
+  },
+  {
+    "location": "html-block:656",
+    "text": "Supply Outage Measurement – Summary"
+  },
+  {
+    "location": "html-block:657",
+    "text": "Waveform Capture"
+  },
+  {
+    "location": "html-block:658",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:659",
+    "text": "Waveform Capture Configuration"
+  },
+  {
+    "location": "html-block:660",
+    "text": "Waveform Capture Operation"
+  },
+  {
+    "location": "html-block:661",
+    "text": "Waveform Capture Summary"
+  },
+  {
+    "location": "html-block:662",
+    "text": "Harmonic Analysis"
+  },
+  {
+    "location": "html-block:663",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:664",
+    "text": "Harmonic Analysis Configuration"
+  },
+  {
+    "location": "html-block:665",
+    "text": "Harmonic Analysis Data"
+  },
+  {
+    "location": "html-block:666",
+    "text": "Harmonic Analysis Events"
+  },
+  {
+    "location": "html-block:667",
+    "text": "Harmonic Analysis History"
+  },
+  {
+    "location": "html-block:668",
+    "text": "Harmonic Analysis Summary"
+  },
+  {
+    "location": "html-block:669",
+    "text": "Sag and Swell"
+  },
+  {
+    "location": "html-block:670",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:671",
+    "text": "Sag and Swell Monitoring Configuration"
+  },
+  {
+    "location": "html-block:672",
+    "text": "Sag and Swell Monitoring Operation"
+  },
+  {
+    "location": "html-block:673",
+    "text": "Excursion Conclusion and Event Duration"
+  },
+  {
+    "location": "html-block:674",
+    "text": "Pickup Threshold"
+  },
+  {
+    "location": "html-block:675",
+    "text": "Pickup Reset"
+  },
+  {
+    "location": "html-block:676",
+    "text": "Events"
+  },
+  {
+    "location": "html-block:677",
+    "text": "Historical Data"
+  },
+  {
+    "location": "html-block:678",
+    "text": "Sag and Swell Monitoring Summary"
+  },
+  {
+    "location": "html-block:679",
+    "text": "Diagnostics and Fault Finding"
+  },
+  {
+    "location": "html-block:680",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:681",
+    "text": "Battery Testing"
+  },
+  {
+    "location": "html-block:682",
+    "text": "Battery Test Configuration"
+  },
+  {
+    "location": "html-block:683",
+    "text": "Battery Test Operation"
+  },
+  {
+    "location": "html-block:684",
+    "text": "Wait State"
+  },
+  {
+    "location": "html-block:685",
+    "text": "Battery Test Status"
+  },
+  {
+    "location": "html-block:686",
+    "text": "Request Denied"
+  },
+  {
+    "location": "html-block:687",
+    "text": "Test Aborted"
+  },
+  {
+    "location": "html-block:688",
+    "text": "Waveform Generation"
+  },
+  {
+    "location": "html-block:689",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:690",
+    "text": "Waveform Generation Configuration"
+  },
+  {
+    "location": "html-block:691",
+    "text": "Current"
+  },
+  {
+    "location": "html-block:692",
+    "text": "Voltage"
+  },
+  {
+    "location": "html-block:693",
+    "text": "Frequency"
+  },
+  {
+    "location": "html-block:694",
+    "text": "Waveform Generation Status"
+  },
+  {
+    "location": "html-block:695",
+    "text": "Waveform Generator Active"
+  },
+  {
+    "location": "html-block:696",
+    "text": "Fault Simulation using Waveform Generation"
+  },
+  {
+    "location": "html-block:697",
+    "text": "Waveform Generation with Waveform Capture"
+  },
+  {
+    "location": "html-block:698",
+    "text": "Ancillary Equipment and Accessories"
+  },
+  {
+    "location": "html-block:699",
+    "text": "Input/Output Expander Card"
+  },
+  {
+    "location": "html-block:700",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:701",
+    "text": "Compatibility"
+  },
+  {
+    "location": "html-block:702",
+    "text": "Parts supplied with the IOEX"
+  },
+  {
+    "location": "html-block:703",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:704",
+    "text": "Installation"
+  },
+  {
+    "location": "html-block:705",
+    "text": "Removing and installing the mounting tray"
+  },
+  {
+    "location": "html-block:706",
+    "text": "Attaching the IOEX"
+  },
+  {
+    "location": "html-block:707",
+    "text": "Connect the IOEX to the Controller"
+  },
+  {
+    "location": "html-block:708",
+    "text": "Electrical Connections"
+  },
+  {
+    "location": "html-block:709",
+    "text": "Inputs"
+  },
+  {
+    "location": "html-block:710",
+    "text": "Using the built-in isolated supply"
+  },
+  {
+    "location": "html-block:711",
+    "text": "Using an External Source"
+  },
+  {
+    "location": "html-block:712",
+    "text": "Voltage - Free Outputs"
+  },
+  {
+    "location": "html-block:713",
+    "text": "Shielded Cable"
+  },
+  {
+    "location": "html-block:714",
+    "text": "IOEX Cable Installation"
+  },
+  {
+    "location": "html-block:715",
+    "text": "EMC Gland Specification"
+  },
+  {
+    "location": "html-block:716",
+    "text": "EMC Gland Installation"
+  },
+  {
+    "location": "html-block:717",
+    "text": "Method"
+  },
+  {
+    "location": "html-block:718",
+    "text": "Cable Termination"
+  },
+  {
+    "location": "html-block:719",
+    "text": "Fast Trip Input Module"
+  },
+  {
+    "location": "html-block:720",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:721",
+    "text": "Compatibility"
+  },
+  {
+    "location": "html-block:722",
+    "text": "Parts Supplied with the FTIM"
+  },
+  {
+    "location": "html-block:723",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:724",
+    "text": "FTIM installation"
+  },
+  {
+    "location": "html-block:725",
+    "text": "Removing and installing the mounting tray"
+  },
+  {
+    "location": "html-block:726",
+    "text": "Attaching the FTIM"
+  },
+  {
+    "location": "html-block:727",
+    "text": "Connect the FTIM to the controller"
+  },
+  {
+    "location": "html-block:728",
+    "text": "Electrical Connections"
+  },
+  {
+    "location": "html-block:729",
+    "text": "Using the built-in isolated supply"
+  },
+  {
+    "location": "html-block:730",
+    "text": "Using an external source"
+  },
+  {
+    "location": "html-block:731",
+    "text": "Shielded Cable"
+  },
+  {
+    "location": "html-block:732",
+    "text": "Cable Gland Specification"
+  },
+  {
+    "location": "html-block:733",
+    "text": "FTIM Cable Installation"
+  },
+  {
+    "location": "html-block:734",
+    "text": "General Purpose Outlet"
+  },
+  {
+    "location": "html-block:735",
+    "text": "Compatibility"
+  },
+  {
+    "location": "html-block:736",
+    "text": "GPO Cable Installation"
+  },
+  {
+    "location": "html-block:737",
+    "text": "Test and Training Set"
+  },
+  {
+    "location": "html-block:738",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:739",
+    "text": "Construction"
+  },
+  {
+    "location": "html-block:740",
+    "text": "Modes of Operation"
+  },
+  {
+    "location": "html-block:741",
+    "text": "Secondary Current Injection Port"
+  },
+  {
+    "location": "html-block:742",
+    "text": "Multiple Switchgear Support"
+  },
+  {
+    "location": "html-block:743",
+    "text": "Secondary Voltage Injection Interface Set"
+  },
+  {
+    "location": "html-block:744",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:745",
+    "text": "Loss of Phase Testing"
+  },
+  {
+    "location": "html-block:746",
+    "text": "SVIIS Voltage Injection Only"
+  },
+  {
+    "location": "html-block:747",
+    "text": "SVIIS + TTS in Parallel Mode"
+  },
+  {
+    "location": "html-block:748",
+    "text": "SVIIS + TTS in Stand Alone Mode"
+  },
+  {
+    "location": "html-block:749",
+    "text": "Earthing the SVIIS"
+  },
+  {
+    "location": "html-block:750",
+    "text": "Appendices"
+  },
+  {
+    "location": "html-block:751",
+    "text": "Appendix A - Switchgear Models"
+  },
+  {
+    "location": "html-block:752",
+    "text": "PMSet U Series Circuit Breaker"
+  },
+  {
+    "location": "html-block:753",
+    "text": "RL Series Load Break Switch"
+  },
+  {
+    "location": "html-block:754",
+    "text": "PMSet UR Series Circuit Breaker"
+  },
+  {
+    "location": "html-block:755",
+    "text": "Appendix B ­ Dimensions"
+  },
+  {
+    "location": "html-block:756",
+    "text": "Appendix C ­ PowerLogic ADVC Schematics"
+  },
+  {
+    "location": "html-block:757",
+    "text": "PowerLogic ADVC Controller s General Arrangement"
+  },
+  {
+    "location": "html-block:758",
+    "text": "Control Cable"
+  },
+  {
+    "location": "html-block:759",
+    "text": "Appendix D ­ IEC255 Inverse Time Tables"
+  },
+  {
+    "location": "html-block:760",
+    "text": "Appendix E ­ IEEE Inverse Time Protection Tables"
+  },
+  {
+    "location": "html-block:761",
+    "text": "Appendix F ­ Non Standard Inverse Time Tables"
+  },
+  {
+    "location": "html-block:762",
+    "text": "Appendix G ­ Reset Curve Timing Tables"
+  },
+  {
+    "location": "html-block:763",
+    "text": "Appendix H ­ Communications Settings"
+  },
+  {
+    "location": "html-block:764",
+    "text": "PowerLogic ADVC"
+  },
+  {
+    "location": "html-block:765",
+    "text": "Appendix I List of Events"
+  },
+  {
+    "location": "html-block:766",
+    "text": "Event List"
+  },
+  {
+    "location": "html-block:767",
+    "text": "Appendix ­ J flexVUE Menu"
+  },
+  {
+    "location": "html-block:768",
+    "text": "Appendix J.1 ­ flexVUE Menu Structure"
+  },
+  {
+    "location": "html-block:769",
+    "text": "Appendix J.2 ­ flex VUE Operator Menu Screens"
+  },
+  {
+    "location": "html-block:770",
+    "text": "Appendix J.3 ­ flex VUE Engineer Menu Screens"
+  },
+  {
+    "location": "html-block:771",
+    "text": "Appendix K ­ set VUE Menu"
+  },
+  {
+    "location": "html-block:772",
+    "text": "Appendix K.1 ­ set VUE ACR Menu Structure"
+  },
+  {
+    "location": "html-block:773",
+    "text": "Appendix K.2 ­ set VUE ACR System Status Pages"
+  },
+  {
+    "location": "html-block:774",
+    "text": "ACR Trip Flags Page"
+  },
+  {
+    "location": "html-block:775",
+    "text": "ACR Supply Interrupt Flags"
+  },
+  {
+    "location": "html-block:776",
+    "text": "Operator Settings 1"
+  },
+  {
+    "location": "html-block:777",
+    "text": "Operator Settings 2"
+  },
+  {
+    "location": "html-block:778",
+    "text": "Operator Settings 3"
+  },
+  {
+    "location": "html-block:779",
+    "text": "Operator Settings 3 (with Per Element Protection Available)"
+  },
+  {
+    "location": "html-block:780",
+    "text": "Operator Settings 4"
+  },
+  {
+    "location": "html-block:781",
+    "text": "System Settings 1"
+  },
+  {
+    "location": "html-block:782",
+    "text": "System Settings 2"
+  },
+  {
+    "location": "html-block:783",
+    "text": "Switchgear Status"
+  },
+  {
+    "location": "html-block:784",
+    "text": "Fault Information"
+  },
+  {
+    "location": "html-block:785",
+    "text": "Live/Dead Indication"
+  },
+  {
+    "location": "html-block:786",
+    "text": "Phase Voltage and Power Flow"
+  },
+  {
+    "location": "html-block:787",
+    "text": "Terminal Designation/Rotation"
+  },
+  {
+    "location": "html-block:788",
+    "text": "Radio"
+  },
+  {
+    "location": "html-block:789",
+    "text": "Switchgear Type and Ratings"
+  },
+  {
+    "location": "html-block:790",
+    "text": "Switchgear Wear/General Details"
+  },
+  {
+    "location": "html-block:791",
+    "text": "User Defined Control"
+  },
+  {
+    "location": "html-block:792",
+    "text": "Additional System Status pages"
+  },
+  {
+    "location": "html-block:793",
+    "text": "Plant Details"
+  },
+  {
+    "location": "html-block:794",
+    "text": "Options"
+  },
+  {
+    "location": "html-block:795",
+    "text": "Options – Protection 1"
+  },
+  {
+    "location": "html-block:796",
+    "text": "Options – Protection 2"
+  },
+  {
+    "location": "html-block:797",
+    "text": "Options – Protection 3"
+  },
+  {
+    "location": "html-block:798",
+    "text": "Options – Protection 4"
+  },
+  {
+    "location": "html-block:799",
+    "text": "Options – Automation"
+  },
+  {
+    "location": "html-block:800",
+    "text": "Options – Controller 1"
+  },
+  {
+    "location": "html-block:801",
+    "text": "Options – Controller 2"
+  },
+  {
+    "location": "html-block:802",
+    "text": "Options – Communications 1"
+  },
+  {
+    "location": "html-block:803",
+    "text": "Options – Communications 2"
+  },
+  {
+    "location": "html-block:804",
+    "text": "Options – Power Quality"
+  },
+  {
+    "location": "html-block:805",
+    "text": "Quick Key Selection"
+  },
+  {
+    "location": "html-block:806",
+    "text": "Hit and Run"
+  },
+  {
+    "location": "html-block:807",
+    "text": "Waveform Capture"
+  },
+  {
+    "location": "html-block:808",
+    "text": "Waveform Trigger"
+  },
+  {
+    "location": "html-block:809",
+    "text": "Battery Test"
+  },
+  {
+    "location": "html-block:810",
+    "text": "Appendix K.3 ­ set VUE ACR and AS Measurement Menu Screens"
+  },
+  {
+    "location": "html-block:811",
+    "text": "System Measurements (AS)"
+  },
+  {
+    "location": "html-block:812",
+    "text": "Current"
+  },
+  {
+    "location": "html-block:813",
+    "text": "Voltage"
+  },
+  {
+    "location": "html-block:814",
+    "text": "Sequence Voltage"
+  },
+  {
+    "location": "html-block:815",
+    "text": "Frequency"
+  },
+  {
+    "location": "html-block:816",
+    "text": "Power"
+  },
+  {
+    "location": "html-block:817",
+    "text": "Synchronization"
+  },
+  {
+    "location": "html-block:818",
+    "text": "Supply Outages"
+  },
+  {
+    "location": "html-block:819",
+    "text": "Sag/Swell Monitoring"
+  },
+  {
+    "location": "html-block:820",
+    "text": "Sag Monitoring"
+  },
+  {
+    "location": "html-block:821",
+    "text": "Swell Monitoring"
+  },
+  {
+    "location": "html-block:822",
+    "text": "Daily Maximum Demand"
+  },
+  {
+    "location": "html-block:823",
+    "text": "Daily Maximum Demand History"
+  },
+  {
+    "location": "html-block:824",
+    "text": "Weekly Maximum Demand"
+  },
+  {
+    "location": "html-block:825",
+    "text": "Weekly Maximum Demand History"
+  },
+  {
+    "location": "html-block:826",
+    "text": "Monthly Maximum Demand"
+  },
+  {
+    "location": "html-block:827",
+    "text": "Monthly Maximum Demand History"
+  },
+  {
+    "location": "html-block:828",
+    "text": "Maximum Demand Indicator"
+  },
+  {
+    "location": "html-block:829",
+    "text": "Maximum Demand Indicator Details"
+  },
+  {
+    "location": "html-block:830",
+    "text": "Appendix K.4 ­ set VUE ACR Protection Menu Pages"
+  },
+  {
+    "location": "html-block:831",
+    "text": "Appendix K.5 ­ set VUE ACR and AS Communications Menu Screens"
+  },
+  {
+    "location": "html-block:832",
+    "text": "Appendix K.6 ­ set VUE ACR and AS Automation Menu Screens"
+  },
+  {
+    "location": "html-block:833",
+    "text": "Appendix K.7 ­ set VUE AS Menu Structure"
+  },
+  {
+    "location": "html-block:834",
+    "text": "Appendix K.8 ­ set VUE AS System Status Pages"
+  },
+  {
+    "location": "html-block:835",
+    "text": "Fault Flags Page (AS)"
+  },
+  {
+    "location": "html-block:836",
+    "text": "Supply Interrupt Flags (AS)"
+  },
+  {
+    "location": "html-block:837",
+    "text": "Operator Settings 1 (AS)"
+  },
+  {
+    "location": "html-block:838",
+    "text": "Operator Settings 2 (AS)"
+  },
+  {
+    "location": "html-block:839",
+    "text": "Operator Settings 3 (AS) (Per Element Detection not available)"
+  },
+  {
+    "location": "html-block:840",
+    "text": "Operator Settings 3 (AS) (Per Element Detection available)"
+  },
+  {
+    "location": "html-block:841",
+    "text": "Operator Settings 4 (AS) (Per Element Detection available)"
+  },
+  {
+    "location": "html-block:842",
+    "text": "System Settings 1 (AS)"
+  },
+  {
+    "location": "html-block:843",
+    "text": "System Settings 2 (AS)"
+  },
+  {
+    "location": "html-block:844",
+    "text": "Switchgear Status (AS)"
+  },
+  {
+    "location": "html-block:845",
+    "text": "Fault Information (AS)"
+  },
+  {
+    "location": "html-block:846",
+    "text": "Live/Dead Indication (AS)"
+  },
+  {
+    "location": "html-block:847",
+    "text": "Phase Voltage and Power Flow (AS)"
+  },
+  {
+    "location": "html-block:848",
+    "text": "Terminal Designation/Rotation (AS)"
+  },
+  {
+    "location": "html-block:849",
+    "text": "Radio (AS)"
+  },
+  {
+    "location": "html-block:850",
+    "text": "Switchgear Type and Ratings (AS)"
+  },
+  {
+    "location": "html-block:851",
+    "text": "Switchgear Wear/General Details (AS)"
+  },
+  {
+    "location": "html-block:852",
+    "text": "Additional System Status pages"
+  },
+  {
+    "location": "html-block:853",
+    "text": "Plant Details (AS)"
+  },
+  {
+    "location": "html-block:854",
+    "text": "Options"
+  },
+  {
+    "location": "html-block:855",
+    "text": "Options – Detection 1 (AS)"
+  },
+  {
+    "location": "html-block:856",
+    "text": "Options – Detection 2 (AS)"
+  },
+  {
+    "location": "html-block:857",
+    "text": "Options – Detection 3 (AS)"
+  },
+  {
+    "location": "html-block:858",
+    "text": "Options – Automation (AS)"
+  },
+  {
+    "location": "html-block:859",
+    "text": "Options – Controller 1 (AS)"
+  },
+  {
+    "location": "html-block:860",
+    "text": "Options – Controller 2 (AS)"
+  },
+  {
+    "location": "html-block:861",
+    "text": "Options – Communications 1 (AS)"
+  },
+  {
+    "location": "html-block:862",
+    "text": "Options – Communications 2 (AS)"
+  },
+  {
+    "location": "html-block:863",
+    "text": "Options – Power Quality (AS)"
+  },
+  {
+    "location": "html-block:864",
+    "text": "Quick Key Selection (AS)"
+  },
+  {
+    "location": "html-block:865",
+    "text": "IOEX Status (AS)"
+  },
+  {
+    "location": "html-block:866",
+    "text": "Hit and Run (AS)"
+  },
+  {
+    "location": "html-block:867",
+    "text": "Waveform Capture (AS)"
+  },
+  {
+    "location": "html-block:868",
+    "text": "Waveform Trigger (AS)"
+  },
+  {
+    "location": "html-block:869",
+    "text": "Battery Test (AS)"
+  },
+  {
+    "location": "html-block:870",
+    "text": "User Defined Control (AS)"
+  },
+  {
+    "location": "html-block:871",
+    "text": "Appendix K.9 ­ set VUE AS Detection Menu Pages"
+  },
+  {
+    "location": "html-block:872",
+    "text": "Appendix L ­ Automation"
+  },
+  {
+    "location": "html-block:873",
+    "text": "Appendix L.1 ­ Loop Automation Operating Rules"
+  },
+  {
+    "location": "html-block:874",
+    "text": "Appendix L.2 ­ Loop Automation Status Messages"
+  },
+  {
+    "location": "html-block:875",
+    "text": "Appendix L.3 ­ Loop Automation Settings Record"
+  },
+  {
+    "location": "html-block:876",
+    "text": "Appendix L.4 ­ Loop Automation Settings Record Example"
+  },
+  {
+    "location": "html-block:877",
+    "text": "Appendix L.5 - Auto-Changeover Status Codes"
+  },
+  {
+    "location": "html-block:878",
+    "text": "Appendix M ­ Operator Interface Feature Selection Fields (ACR)"
+  },
+  {
+    "location": "html-block:879",
+    "text": "Appendix N ­ Operator Interface Feature Selection Fields (ACR)"
+  },
+  {
+    "location": "html-block:880",
+    "text": "Appendix O ­ Location of Settings on the Operator Interface"
+  },
+  {
+    "location": "html-block:881",
+    "text": "Appendix P ­ Scada Points"
+  },
+  {
+    "location": "html-block:882",
+    "text": "Appendix P.1 ­ Analogue Points to Monitor and Set Pick-up Thresholds for Overcurrent Protection"
+  },
+  {
+    "location": "html-block:883",
+    "text": "Appendix P.2 — New SCADA Point for WSOS5 Online/Offline Status"
+  },
+  {
+    "location": "html-block:884",
+    "text": "Appendix P.3 — New SCADA Point for Switchgear Series and Serial Numbers"
+  },
+  {
+    "location": "html-block:885",
+    "text": "Appendix P.4 — New SCADA Point for Accumulated Average Data"
+  },
+  {
+    "location": "html-block:886",
+    "text": "Glossary"
+  },
+  {
+    "location": "html-block:887",
+    "text": "ACK"
+  },
+  {
+    "location": "html-block:888",
+    "text": "ACO"
+  },
+  {
+    "location": "html-block:889",
+    "text": "ACR"
+  },
+  {
+    "location": "html-block:890",
+    "text": "ADGS"
+  },
+  {
+    "location": "html-block:891",
+    "text": "ADVC"
+  },
+  {
+    "location": "html-block:892",
+    "text": "APGS"
+  },
+  {
+    "location": "html-block:893",
+    "text": "AS"
+  },
+  {
+    "location": "html-block:894",
+    "text": "ASCII"
+  },
+  {
+    "location": "html-block:895",
+    "text": "ATDT"
+  },
+  {
+    "location": "html-block:896",
+    "text": "ATH"
+  },
+  {
+    "location": "html-block:897",
+    "text": "CA"
+  },
+  {
+    "location": "html-block:898",
+    "text": "CAPE"
+  },
+  {
+    "location": "html-block:899",
+    "text": "CLT"
+  },
+  {
+    "location": "html-block:900",
+    "text": "CRC"
+  },
+  {
+    "location": "html-block:901",
+    "text": "CT"
+  },
+  {
+    "location": "html-block:902",
+    "text": "CTRL"
+  },
+  {
+    "location": "html-block:903",
+    "text": "CTS"
+  },
+  {
+    "location": "html-block:904",
+    "text": "CVT"
+  },
+  {
+    "location": "html-block:905",
+    "text": "DCD"
+  },
+  {
+    "location": "html-block:906",
+    "text": "DG"
+  },
+  {
+    "location": "html-block:907",
+    "text": "DHCP"
+  },
+  {
+    "location": "html-block:908",
+    "text": "DNP"
+  },
+  {
+    "location": "html-block:909",
+    "text": "DT"
+  },
+  {
+    "location": "html-block:910",
+    "text": "DTR"
+  },
+  {
+    "location": "html-block:911",
+    "text": "EDACS"
+  },
+  {
+    "location": "html-block:912",
+    "text": "EF"
+  },
+  {
+    "location": "html-block:913",
+    "text": "FDIR"
+  },
+  {
+    "location": "html-block:914",
+    "text": "FET"
+  },
+  {
+    "location": "html-block:915",
+    "text": "FSK"
+  },
+  {
+    "location": "html-block:916",
+    "text": "GF"
+  },
+  {
+    "location": "html-block:917",
+    "text": "GFN"
+  },
+  {
+    "location": "html-block:918",
+    "text": "GMT"
+  },
+  {
+    "location": "html-block:919",
+    "text": "GND"
+  },
+  {
+    "location": "html-block:920",
+    "text": "GPO"
+  },
+  {
+    "location": "html-block:921",
+    "text": "Hex"
+  },
+  {
+    "location": "html-block:922",
+    "text": "Hz"
+  },
+  {
+    "location": "html-block:923",
+    "text": "IDMT"
+  },
+  {
+    "location": "html-block:924",
+    "text": "IEC"
+  },
+  {
+    "location": "html-block:925",
+    "text": "IEEE"
+  },
+  {
+    "location": "html-block:926",
+    "text": "ILA"
+  },
+  {
+    "location": "html-block:927",
+    "text": "INST"
+  },
+  {
+    "location": "html-block:928",
+    "text": "IOEX"
+  },
+  {
+    "location": "html-block:929",
+    "text": "IP"
+  },
+  {
+    "location": "html-block:930",
+    "text": "kPaG"
+  },
+  {
+    "location": "html-block:931",
+    "text": "LA"
+  },
+  {
+    "location": "html-block:932",
+    "text": "LAN"
+  },
+  {
+    "location": "html-block:933",
+    "text": "LBS"
+  },
+  {
+    "location": "html-block:934",
+    "text": "LCD"
+  },
+  {
+    "location": "html-block:935",
+    "text": "LED"
+  },
+  {
+    "location": "html-block:936",
+    "text": "LOP"
+  },
+  {
+    "location": "html-block:937",
+    "text": "LVIT"
+  },
+  {
+    "location": "html-block:938",
+    "text": "MAC"
+  },
+  {
+    "location": "html-block:939",
+    "text": "ms"
+  },
+  {
+    "location": "html-block:940",
+    "text": "NPS"
+  },
+  {
+    "location": "html-block:941",
+    "text": "NTP"
+  },
+  {
+    "location": "html-block:942",
+    "text": "NWRK"
+  },
+  {
+    "location": "html-block:943",
+    "text": "O.I."
+  },
+  {
+    "location": "html-block:944",
+    "text": "OC"
+  },
+  {
+    "location": "html-block:945",
+    "text": "OCP"
+  },
+  {
+    "location": "html-block:946",
+    "text": "OF"
+  },
+  {
+    "location": "html-block:947",
+    "text": "OV"
+  },
+  {
+    "location": "html-block:948",
+    "text": "PPS"
+  },
+  {
+    "location": "html-block:949",
+    "text": "PRTN"
+  },
+  {
+    "location": "html-block:950",
+    "text": "PSIG"
+  },
+  {
+    "location": "html-block:951",
+    "text": "PSM"
+  },
+  {
+    "location": "html-block:952",
+    "text": "PSSM"
+  },
+  {
+    "location": "html-block:953",
+    "text": "PSTN"
+  },
+  {
+    "location": "html-block:954",
+    "text": "PSU"
+  },
+  {
+    "location": "html-block:955",
+    "text": "PTCL"
+  },
+  {
+    "location": "html-block:956",
+    "text": "PTT"
+  },
+  {
+    "location": "html-block:957",
+    "text": "PTT"
+  },
+  {
+    "location": "html-block:958",
+    "text": "PU"
+  },
+  {
+    "location": "html-block:959",
+    "text": "QAK"
+  },
+  {
+    "location": "html-block:960",
+    "text": "RDI"
+  },
+  {
+    "location": "html-block:961",
+    "text": "RTS"
+  },
+  {
+    "location": "html-block:962",
+    "text": "RTU"
+  },
+  {
+    "location": "html-block:963",
+    "text": "SCADA"
+  },
+  {
+    "location": "html-block:964",
+    "text": "SEF"
+  },
+  {
+    "location": "html-block:965",
+    "text": "SGF"
+  },
+  {
+    "location": "html-block:966",
+    "text": "SI"
+  },
+  {
+    "location": "html-block:967",
+    "text": "SOHIR"
+  },
+  {
+    "location": "html-block:968",
+    "text": "SOS"
+  },
+  {
+    "location": "html-block:969",
+    "text": "SVIIS"
+  },
+  {
+    "location": "html-block:970",
+    "text": "SWGR"
+  },
+  {
+    "location": "html-block:971",
+    "text": "TCP/IP"
+  },
+  {
+    "location": "html-block:972",
+    "text": "TTS"
+  },
+  {
+    "location": "html-block:973",
+    "text": "UF"
+  },
+  {
+    "location": "html-block:974",
+    "text": "UOF"
+  },
+  {
+    "location": "html-block:975",
+    "text": "UOV"
+  },
+  {
+    "location": "html-block:976",
+    "text": "USB"
+  },
+  {
+    "location": "html-block:977",
+    "text": "UTC"
+  },
+  {
+    "location": "html-block:978",
+    "text": "UV"
+  },
+  {
+    "location": "html-block:979",
+    "text": "VIB"
+  },
+  {
+    "location": "html-block:980",
+    "text": "VT"
+  },
+  {
+    "location": "html-block:981",
+    "text": "WAN"
+  },
+  {
+    "location": "html-block:982",
+    "text": "WSOS"
+  },
+  {
+    "location": "html-block:983",
+    "text": "ZPS"
+  },
+  {
+    "location": "html-block:984",
+    "text": "Safety Information"
+  },
+  {
+    "location": "html-block:985",
+    "text": "Safety Precautions"
+  },
+  {
+    "location": "html-block:986",
+    "text": "About the Document"
+  },
+  {
+    "location": "html-block:987",
+    "text": "Scope of this Operations Manual"
+  },
+  {
+    "location": "html-block:988",
+    "text": "Document Scope"
+  },
+  {
+    "location": "html-block:989",
+    "text": "Types of Compatible Switchgear"
+  },
+  {
+    "location": "html-block:990",
+    "text": "Types of PowerLogic ADVC Controller"
+  },
+  {
+    "location": "html-block:991",
+    "text": "Firmware identification system"
+  },
+  {
+    "location": "html-block:992",
+    "text": "Firmware versions"
+  },
+  {
+    "location": "html-block:993",
+    "text": "Potential Risks and Compensating Controls"
+  },
+  {
+    "location": "html-block:994",
+    "text": "Terminology"
+  },
+  {
+    "location": "html-block:995",
+    "text": "General Cybersecurity Information and Non-Inclusive Terminology"
+  },
+  {
+    "location": "html-block:996",
+    "text": "General Information"
+  },
+  {
+    "location": "html-block:997",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:998",
+    "text": "Cubicle Options"
+  },
+  {
+    "location": "html-block:999",
+    "text": "Ultra"
+  },
+  {
+    "location": "html-block:1000",
+    "text": "Compact"
+  },
+  {
+    "location": "html-block:1001",
+    "text": "Controller Modules"
+  },
+  {
+    "location": "html-block:1002",
+    "text": "CAPE"
+  },
+  {
+    "location": "html-block:1003",
+    "text": "PSM"
+  },
+  {
+    "location": "html-block:1004",
+    "text": "Options"
+  },
+  {
+    "location": "html-block:1005",
+    "text": "Symbols"
+  },
+  {
+    "location": "html-block:1006",
+    "text": "Ultra versus Compact Options"
+  },
+  {
+    "location": "html-block:1007",
+    "text": "Battery Tray and Batteries"
+  },
+  {
+    "location": "html-block:1008",
+    "text": "Equipment Tray"
+  },
+  {
+    "location": "html-block:1009",
+    "text": "O.I. Options"
+  },
+  {
+    "location": "html-block:1010",
+    "text": "Technical Specifications"
+  },
+  {
+    "location": "html-block:1011",
+    "text": "Firmware Versions"
+  },
+  {
+    "location": "html-block:1012",
+    "text": "Ratings and Specifications"
+  },
+  {
+    "location": "html-block:1013",
+    "text": "Duty Cycle"
+  },
+  {
+    "location": "html-block:1014",
+    "text": "CTs"
+  },
+  {
+    "location": "html-block:1015",
+    "text": "General Specifications"
+  },
+  {
+    "location": "html-block:1016",
+    "text": "Power System Measurements"
+  },
+  {
+    "location": "html-block:1017",
+    "text": "SF6 Gas Pressure Measurements"
+  },
+  {
+    "location": "html-block:1018",
+    "text": "Operator Interfaces"
+  },
+  {
+    "location": "html-block:1019",
+    "text": "flex VUE O.I."
+  },
+  {
+    "location": "html-block:1020",
+    "text": "Display"
+  },
+  {
+    "location": "html-block:1021",
+    "text": "Display Groups"
+  },
+  {
+    "location": "html-block:1022",
+    "text": "Navigation"
+  },
+  {
+    "location": "html-block:1023",
+    "text": "Status Lamps"
+  },
+  {
+    "location": "html-block:1024",
+    "text": "Lamp Data"
+  },
+  {
+    "location": "html-block:1025",
+    "text": "Lamp Reset"
+  },
+  {
+    "location": "html-block:1026",
+    "text": "Default Configuration"
+  },
+  {
+    "location": "html-block:1027",
+    "text": "Quick Action Keys (QAK)"
+  },
+  {
+    "location": "html-block:1028",
+    "text": "QAK Unlock Key"
+  },
+  {
+    "location": "html-block:1029",
+    "text": "Default Configuration"
+  },
+  {
+    "location": "html-block:1030",
+    "text": "set VUE O.I."
+  },
+  {
+    "location": "html-block:1031",
+    "text": "Display"
+  },
+  {
+    "location": "html-block:1032",
+    "text": "Display Groups"
+  },
+  {
+    "location": "html-block:1033",
+    "text": "Navigation"
+  },
+  {
+    "location": "html-block:1034",
+    "text": "Quick Keys"
+  },
+  {
+    "location": "html-block:1035",
+    "text": "Using the Quick Keys"
+  },
+  {
+    "location": "html-block:1036",
+    "text": "Configuring the Quick Keys"
+  },
+  {
+    "location": "html-block:1037",
+    "text": "Custom Menu"
+  },
+  {
+    "location": "html-block:1038",
+    "text": "Operator Functions"
+  },
+  {
+    "location": "html-block:1039",
+    "text": "Local and Remote Control Modes"
+  },
+  {
+    "location": "html-block:1040",
+    "text": "Definition of a Local or Remote Operator"
+  },
+  {
+    "location": "html-block:1041",
+    "text": "Local Mode"
+  },
+  {
+    "location": "html-block:1042",
+    "text": "Remote Mode (RM)"
+  },
+  {
+    "location": "html-block:1043",
+    "text": "Setting Changes"
+  },
+  {
+    "location": "html-block:1044",
+    "text": "Operator Settings"
+  },
+  {
+    "location": "html-block:1045",
+    "text": "Changing Operator Settings on flex VUE"
+  },
+  {
+    "location": "html-block:1046",
+    "text": "Changing Operator Settings on set VUE"
+  },
+  {
+    "location": "html-block:1047",
+    "text": "Password Protected Settings"
+  },
+  {
+    "location": "html-block:1048",
+    "text": "Entering the password on flex VUE"
+  },
+  {
+    "location": "html-block:1049",
+    "text": "Entering the password on set VUE"
+  },
+  {
+    "location": "html-block:1050",
+    "text": "Protection Settings"
+  },
+  {
+    "location": "html-block:1051",
+    "text": "Changing Protection Settings on flex VUE"
+  },
+  {
+    "location": "html-block:1052",
+    "text": "Exiting the Protection Menu"
+  },
+  {
+    "location": "html-block:1053",
+    "text": "Re-Entering the Protection Menu"
+  },
+  {
+    "location": "html-block:1054",
+    "text": "Changing Protection Settings on set VUE"
+  },
+  {
+    "location": "html-block:1055",
+    "text": "Delayed Operations"
+  },
+  {
+    "location": "html-block:1056",
+    "text": "Delayed Trip/Close Operation"
+  },
+  {
+    "location": "html-block:1057",
+    "text": "Using Delayed Operation"
+  },
+  {
+    "location": "html-block:1058",
+    "text": "Cancelling a Delayed TRIP or Close Operation"
+  },
+  {
+    "location": "html-block:1059",
+    "text": "Bypassing the Delayed Operation"
+  },
+  {
+    "location": "html-block:1060",
+    "text": "Hit and Run"
+  },
+  {
+    "location": "html-block:1061",
+    "text": "Making Hit and Run Available"
+  },
+  {
+    "location": "html-block:1062",
+    "text": "Activating Hit and Run"
+  },
+  {
+    "location": "html-block:1063",
+    "text": "Aborting Hit and Run"
+  },
+  {
+    "location": "html-block:1064",
+    "text": "Hit and Run Events"
+  },
+  {
+    "location": "html-block:1065",
+    "text": "Work Tag/Hot Line Tag"
+  },
+  {
+    "location": "html-block:1066",
+    "text": "Applying and Removing the Work Tag"
+  },
+  {
+    "location": "html-block:1067",
+    "text": "Applying the Work Tag on flex VUE"
+  },
+  {
+    "location": "html-block:1068",
+    "text": "Applying the Work Tag on set VUE"
+  },
+  {
+    "location": "html-block:1069",
+    "text": "Applying the Work Tag on WSOS"
+  },
+  {
+    "location": "html-block:1070",
+    "text": "Trip/Close Isolate"
+  },
+  {
+    "location": "html-block:1071",
+    "text": "Enable/Disable TRIP Switch"
+  },
+  {
+    "location": "html-block:1072",
+    "text": "Enable/Disable CLOSE Switch"
+  },
+  {
+    "location": "html-block:1073",
+    "text": "System Measurements"
+  },
+  {
+    "location": "html-block:1074",
+    "text": "Event Log"
+  },
+  {
+    "location": "html-block:1075",
+    "text": "Event Log on the flex VUE"
+  },
+  {
+    "location": "html-block:1076",
+    "text": "Event Sources"
+  },
+  {
+    "location": "html-block:1077",
+    "text": "Example"
+  },
+  {
+    "location": "html-block:1078",
+    "text": "Event Log Filtering"
+  },
+  {
+    "location": "html-block:1079",
+    "text": "Event Log on set VUE"
+  },
+  {
+    "location": "html-block:1080",
+    "text": "Event Sources"
+  },
+  {
+    "location": "html-block:1081",
+    "text": "Setting Change Events"
+  },
+  {
+    "location": "html-block:1082",
+    "text": "Event Log Filtering"
+  },
+  {
+    "location": "html-block:1083",
+    "text": "PC Software"
+  },
+  {
+    "location": "html-block:1084",
+    "text": "Introduction to WSOS"
+  },
+  {
+    "location": "html-block:1085",
+    "text": "Password Control"
+  },
+  {
+    "location": "html-block:1086",
+    "text": "WSOS5 versus O.I."
+  },
+  {
+    "location": "html-block:1087",
+    "text": "Functions available through the operator interface and not WSOS"
+  },
+  {
+    "location": "html-block:1088",
+    "text": "Functions available through WSOS and not the O.I."
+  },
+  {
+    "location": "html-block:1089",
+    "text": "WSOS Only Features"
+  },
+  {
+    "location": "html-block:1090",
+    "text": "System Properties"
+  },
+  {
+    "location": "html-block:1091",
+    "text": "New Switchgear Device Wizard"
+  },
+  {
+    "location": "html-block:1092",
+    "text": "To Open the New Switchgear Wizard"
+  },
+  {
+    "location": "html-block:1093",
+    "text": "WSOS Communications Configuration"
+  },
+  {
+    "location": "html-block:1094",
+    "text": "Updating Controller Firmware"
+  },
+  {
+    "location": "html-block:1095",
+    "text": "WSOS Update Procedure"
+  },
+  {
+    "location": "html-block:1096",
+    "text": "Show Details"
+  },
+  {
+    "location": "html-block:1097",
+    "text": "Compare settings after download"
+  },
+  {
+    "location": "html-block:1098",
+    "text": "Force Download"
+  },
+  {
+    "location": "html-block:1099",
+    "text": "Reading and Writing Switchgear Settings"
+  },
+  {
+    "location": "html-block:1100",
+    "text": "WSOS Software Tools"
+  },
+  {
+    "location": "html-block:1101",
+    "text": "Protocol Configuration Tool"
+  },
+  {
+    "location": "html-block:1102",
+    "text": "Overview"
+  },
+  {
+    "location": "html-block:1103",
+    "text": "Launching the Protocol Configuration Tool"
+  },
+  {
+    "location": "html-block:1104",
+    "text": "Technical Manual"
+  },
+  {
+    "location": "html-block:1105",
+    "text": "IOEX Configuration Tool"
+  },
+  {
+    "location": "html-block:1106",
+    "text": "Overview"
+  },
+  {
+    "location": "html-block:1107",
+    "text": "IOEX Available"
+  },
+  {
+    "location": "html-block:1108",
+    "text": "Launching the IOEX Configuration Tool"
+  },
+  {
+    "location": "html-block:1109",
+    "text": "Technical Manual"
+  },
+  {
+    "location": "html-block:1110",
+    "text": "O.I. ( flex VUE ) Configuration Tool"
+  },
+  {
+    "location": "html-block:1111",
+    "text": "Overview"
+  },
+  {
+    "location": "html-block:1112",
+    "text": "Launching the OCP Configuration Tool"
+  },
+  {
+    "location": "html-block:1113",
+    "text": "Custom Logic Tool (CLT)"
+  },
+  {
+    "location": "html-block:1114",
+    "text": "Overview"
+  },
+  {
+    "location": "html-block:1115",
+    "text": "Launching the CLT"
+  },
+  {
+    "location": "html-block:1116",
+    "text": "User Guide"
+  },
+  {
+    "location": "html-block:1117",
+    "text": "Controller Customization"
+  },
+  {
+    "location": "html-block:1118",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:1119",
+    "text": "Feature Selection"
+  },
+  {
+    "location": "html-block:1120",
+    "text": "Feature Selection in WSOS"
+  },
+  {
+    "location": "html-block:1121",
+    "text": "Categories"
+  },
+  {
+    "location": "html-block:1122",
+    "text": "Plant Details"
+  },
+  {
+    "location": "html-block:1123",
+    "text": "Time Zone"
+  },
+  {
+    "location": "html-block:1124",
+    "text": "Time Zone and Daylight Saving Configuration"
+  },
+  {
+    "location": "html-block:1125",
+    "text": "Time Zone and Daylight Saving Events"
+  },
+  {
+    "location": "html-block:1126",
+    "text": "set VUE Quick Keys"
+  },
+  {
+    "location": "html-block:1127",
+    "text": "O.I. Customization"
+  },
+  {
+    "location": "html-block:1128",
+    "text": "flex VUE Customisation"
+  },
+  {
+    "location": "html-block:1129",
+    "text": "Global OCP Settings"
+  },
+  {
+    "location": "html-block:1130",
+    "text": "Status Lamps"
+  },
+  {
+    "location": "html-block:1131",
+    "text": "QAKs"
+  },
+  {
+    "location": "html-block:1132",
+    "text": "Unlock Key"
+  },
+  {
+    "location": "html-block:1133",
+    "text": "Trip and Close buttons"
+  },
+  {
+    "location": "html-block:1134",
+    "text": "set VUE Custom Menu"
+  },
+  {
+    "location": "html-block:1135",
+    "text": "Standard Menu"
+  },
+  {
+    "location": "html-block:1136",
+    "text": "Custom Menu"
+  },
+  {
+    "location": "html-block:1137",
+    "text": "Custom Menu Configuration"
+  },
+  {
+    "location": "html-block:1138",
+    "text": "Operation"
+  },
+  {
+    "location": "html-block:1139",
+    "text": "Custom/Standard Menu Navigation"
+  },
+  {
+    "location": "html-block:1140",
+    "text": "Custom Menu with Rotation Mode Disabled"
+  },
+  {
+    "location": "html-block:1141",
+    "text": "Custom Menu with Rotation Mode Enabled"
+  },
+  {
+    "location": "html-block:1142",
+    "text": "First Screen Selection"
+  },
+  {
+    "location": "html-block:1143",
+    "text": "Configuration"
+  },
+  {
+    "location": "html-block:1144",
+    "text": "Local Settings"
+  },
+  {
+    "location": "html-block:1145",
+    "text": "Language Support"
+  },
+  {
+    "location": "html-block:1146",
+    "text": "Display Settings Units"
+  },
+  {
+    "location": "html-block:1147",
+    "text": "Date Format"
+  },
+  {
+    "location": "html-block:1148",
+    "text": "GMT Offset"
+  },
+  {
+    "location": "html-block:1149",
+    "text": "System Frequency"
+  },
+  {
+    "location": "html-block:1150",
+    "text": "Cubicle Serial Number"
+  },
+  {
+    "location": "html-block:1151",
+    "text": "Plant Name"
+  },
+  {
+    "location": "html-block:1152",
+    "text": "Communications"
+  },
+  {
+    "location": "html-block:1153",
+    "text": "Communications Ports"
+  },
+  {
+    "location": "html-block:1154",
+    "text": "PowerLogic ADVC Communications Ports"
+  },
+  {
+    "location": "html-block:1155",
+    "text": "RS232 IOEX/WSOS"
+  },
+  {
+    "location": "html-block:1156",
+    "text": "RS232 Modem"
+  },
+  {
+    "location": "html-block:1157",
+    "text": "LAN 1 and LAN2 (Ethernet)"
+  },
+  {
+    "location": "html-block:1158",
+    "text": "USB WSOS"
+  },
+  {
+    "location": "html-block:1159",
+    "text": "USB-1, USB-2, and USB-3"
+  },
+  {
+    "location": "html-block:1160",
+    "text": "Communications Port Configuration"
+  },
+  {
+    "location": "html-block:1161",
+    "text": "PowerLogic ADVC Controller"
+  },
+  {
+    "location": "html-block:1162",
+    "text": "IOEX/WSOS"
+  },
+  {
+    "location": "html-block:1163",
+    "text": "Modem"
+  },
+  {
+    "location": "html-block:1164",
+    "text": "LAN-1 and LAN-2"
+  },
+  {
+    "location": "html-block:1165",
+    "text": "USB/WSOS"
+  },
+  {
+    "location": "html-block:1166",
+    "text": "USB-1, USB-2, and USB-3"
+  },
+  {
+    "location": "html-block:1167",
+    "text": "Supported Protocols"
+  },
+  {
+    "location": "html-block:1168",
+    "text": "DNP3"
+  },
+  {
+    "location": "html-block:1169",
+    "text": "Step 1 – Check that DNP3 is Available"
+  },
+  {
+    "location": "html-block:1170",
+    "text": "Step 2 - Select a Communications Port"
+  },
+  {
+    "location": "html-block:1171",
+    "text": "Step 3 - Port Configuration"
+  },
+  {
+    "location": "html-block:1172",
+    "text": "Step 4 - Assign the Selected Port to DNP3"
+  },
+  {
+    "location": "html-block:1173",
+    "text": "Step 5 - Configure the DNP3 Settings"
+  },
+  {
+    "location": "html-block:1174",
+    "text": "DNP3 Security"
+  },
+  {
+    "location": "html-block:1175",
+    "text": "Dynamic UDP Mode for DNP3"
+  },
+  {
+    "location": "html-block:1176",
+    "text": "Configurable Unsolicited NULL Message"
+  },
+  {
+    "location": "html-block:1177",
+    "text": "Binary Double Bits Support"
+  },
+  {
+    "location": "html-block:1178",
+    "text": "Individual Time Stamps for DNP3"
+  },
+  {
+    "location": "html-block:1179",
+    "text": "Unsolicited Retry Delay when Offline Setting for DNP3"
+  },
+  {
+    "location": "html-block:1180",
+    "text": "Dual End and Listen Mode for DNP3"
+  },
+  {
+    "location": "html-block:1181",
+    "text": "Concurrent and Single Session Support for DNP3"
+  },
+  {
+    "location": "html-block:1182",
+    "text": "Keep Alive Messaging for DNP3"
+  },
+  {
+    "location": "html-block:1183",
+    "text": "Self Address for DNP3"
+  },
+  {
+    "location": "html-block:1184",
+    "text": "IEC 60870-5-101"
+  },
+  {
+    "location": "html-block:1185",
+    "text": "Step 1 - Check that IEC 60870-5-101 is Available"
+  },
+  {
+    "location": "html-block:1186",
+    "text": "Step 2 - Select a Communications Port"
+  },
+  {
+    "location": "html-block:1187",
+    "text": "Step 3 - Port Configuration"
+  },
+  {
+    "location": "html-block:1188",
+    "text": "Step 4 - Assign the Selected Port to IEC60870-5-101"
+  },
+  {
+    "location": "html-block:1189",
+    "text": "Step 5 - Configure the IEC 60870-5-101 Settings"
+  },
+  {
+    "location": "html-block:1190",
+    "text": "IEC 60870-5-104"
+  },
+  {
+    "location": "html-block:1191",
+    "text": "Step 1 - Check that IEC 60870-5-101/4 is Available"
+  },
+  {
+    "location": "html-block:1192",
+    "text": "Step 2 - Select a Communications Port"
+  },
+  {
+    "location": "html-block:1193",
+    "text": "Step 3 - Port Configuration"
+  },
+  {
+    "location": "html-block:1194",
+    "text": "Step 4 - Assign the Selected Port to IEC 60870-5-104"
+  },
+  {
+    "location": "html-block:1195",
+    "text": "Step 5 - Configure the IEC 60870-5-104 Settings"
+  },
+  {
+    "location": "html-block:1196",
+    "text": "Modbus"
+  },
+  {
+    "location": "html-block:1197",
+    "text": "GOOSE Support"
+  },
+  {
+    "location": "html-block:1198",
+    "text": "IEC-61850"
+  },
+  {
+    "location": "html-block:1199",
+    "text": "Communications Features"
+  },
+  {
+    "location": "html-block:1200",
+    "text": "Protocol Monitor"
+  },
+  {
+    "location": "html-block:1201",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:1202",
+    "text": "Protocol Monitor Configuration"
+  },
+  {
+    "location": "html-block:1203",
+    "text": "Protocol Monitor Operation"
+  },
+  {
+    "location": "html-block:1204",
+    "text": "SCADA Output Control Mode"
+  },
+  {
+    "location": "html-block:1205",
+    "text": "Overview"
+  },
+  {
+    "location": "html-block:1206",
+    "text": "Normal Local/Remote Operation"
+  },
+  {
+    "location": "html-block:1207",
+    "text": "Modified Local/Remote Operation"
+  },
+  {
+    "location": "html-block:1208",
+    "text": "Hayes Compatible Modem Support"
+  },
+  {
+    "location": "html-block:1209",
+    "text": "Hayes Modem Driver Configuration"
+  },
+  {
+    "location": "html-block:1210",
+    "text": "Hayes Modem Driver Operation"
+  },
+  {
+    "location": "html-block:1211",
+    "text": "Statistics"
+  },
+  {
+    "location": "html-block:1212",
+    "text": "Attempt Count"
+  },
+  {
+    "location": "html-block:1213",
+    "text": "SOS Multi-drop Driver"
+  },
+  {
+    "location": "html-block:1214",
+    "text": "RS232 Radio"
+  },
+  {
+    "location": "html-block:1215",
+    "text": "Network Time Protocol (NTP)"
+  },
+  {
+    "location": "html-block:1216",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:1217",
+    "text": "NTP Configuration"
+  },
+  {
+    "location": "html-block:1218",
+    "text": "Power System Measurements"
+  },
+  {
+    "location": "html-block:1219",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:1220",
+    "text": "Measured Values"
+  },
+  {
+    "location": "html-block:1221",
+    "text": "Derived Values"
+  },
+  {
+    "location": "html-block:1222",
+    "text": "WSOS Measurements"
+  },
+  {
+    "location": "html-block:1223",
+    "text": "flex VUE Measurements"
+  },
+  {
+    "location": "html-block:1224",
+    "text": "Operator Menu"
+  },
+  {
+    "location": "html-block:1225",
+    "text": "Engineer Menu"
+  },
+  {
+    "location": "html-block:1226",
+    "text": "Current"
+  },
+  {
+    "location": "html-block:1227",
+    "text": "Voltage"
+  },
+  {
+    "location": "html-block:1228",
+    "text": "Frequency"
+  },
+  {
+    "location": "html-block:1229",
+    "text": "Power"
+  },
+  {
+    "location": "html-block:1230",
+    "text": "Energy"
+  },
+  {
+    "location": "html-block:1231",
+    "text": "set VUE Measurements"
+  },
+  {
+    "location": "html-block:1232",
+    "text": "System Measurements"
+  },
+  {
+    "location": "html-block:1233",
+    "text": "Current"
+  },
+  {
+    "location": "html-block:1234",
+    "text": "Voltage"
+  },
+  {
+    "location": "html-block:1235",
+    "text": "Sequence Voltage"
+  },
+  {
+    "location": "html-block:1236",
+    "text": "Frequency"
+  },
+  {
+    "location": "html-block:1237",
+    "text": "Power"
+  },
+  {
+    "location": "html-block:1238",
+    "text": "Current Measurement"
+  },
+  {
+    "location": "html-block:1239",
+    "text": "Example"
+  },
+  {
+    "location": "html-block:1240",
+    "text": "Voltage Measurement"
+  },
+  {
+    "location": "html-block:1241",
+    "text": "Terminal Designation or Phase Configuration"
+  },
+  {
+    "location": "html-block:1242",
+    "text": "Phase Rotation"
+  },
+  {
+    "location": "html-block:1243",
+    "text": "Power Measurement"
+  },
+  {
+    "location": "html-block:1244",
+    "text": "Power Flow Direction"
+  },
+  {
+    "location": "html-block:1245",
+    "text": "Example"
+  },
+  {
+    "location": "html-block:1246",
+    "text": "Live/Dead Indication"
+  },
+  {
+    "location": "html-block:1247",
+    "text": "Power (Energy) Meter"
+  },
+  {
+    "location": "html-block:1248",
+    "text": "Per Phase Power Measurements"
+  },
+  {
+    "location": "html-block:1249",
+    "text": "Automatic Circuit Recloser (ACR)"
+  },
+  {
+    "location": "html-block:1250",
+    "text": "Basic Protection Operation and Auto Recloser"
+  },
+  {
+    "location": "html-block:1251",
+    "text": "Introduction to Automatic Recloser"
+  },
+  {
+    "location": "html-block:1252",
+    "text": "Automatic Reclose Sequence"
+  },
+  {
+    "location": "html-block:1253",
+    "text": "Protection Pickup"
+  },
+  {
+    "location": "html-block:1254",
+    "text": "Fault Reset"
+  },
+  {
+    "location": "html-block:1255",
+    "text": "Protection Trip"
+  },
+  {
+    "location": "html-block:1256",
+    "text": "Automatic Reclose"
+  },
+  {
+    "location": "html-block:1257",
+    "text": "Sequence Reset"
+  },
+  {
+    "location": "html-block:1258",
+    "text": "Basic Protection"
+  },
+  {
+    "location": "html-block:1259",
+    "text": "Basic Current Protection Elements"
+  },
+  {
+    "location": "html-block:1260",
+    "text": "Global Protection Settings"
+  },
+  {
+    "location": "html-block:1261",
+    "text": "Fault Reset Operation"
+  },
+  {
+    "location": "html-block:1262",
+    "text": "Active Trip"
+  },
+  {
+    "location": "html-block:1263",
+    "text": "Trip Settings"
+  },
+  {
+    "location": "html-block:1264",
+    "text": "Timed Trip Block Feature"
+  },
+  {
+    "location": "html-block:1265",
+    "text": "Protection Groups"
+  },
+  {
+    "location": "html-block:1266",
+    "text": "Basic Protection Enhancements"
+  },
+  {
+    "location": "html-block:1267",
+    "text": "Extended Standard Protection"
+  },
+  {
+    "location": "html-block:1268",
+    "text": "Extended Maximum Time per Curve"
+  },
+  {
+    "location": "html-block:1269",
+    "text": "Per Element Protection"
+  },
+  {
+    "location": "html-block:1270",
+    "text": "Making the feature available"
+  },
+  {
+    "location": "html-block:1271",
+    "text": "Configuration"
+  },
+  {
+    "location": "html-block:1272",
+    "text": "Alarm Mode"
+  },
+  {
+    "location": "html-block:1273",
+    "text": "Supply Interrupt"
+  },
+  {
+    "location": "html-block:1274",
+    "text": "Supply Interrupt Flags"
+  },
+  {
+    "location": "html-block:1275",
+    "text": "Per Element Protection + Extended Standard Protection"
+  },
+  {
+    "location": "html-block:1276",
+    "text": "PTT"
+  },
+  {
+    "location": "html-block:1277",
+    "text": "PTT Default Settings"
+  },
+  {
+    "location": "html-block:1278",
+    "text": "Per Element Reclose Time"
+  },
+  {
+    "location": "html-block:1279",
+    "text": "Reset Curves"
+  },
+  {
+    "location": "html-block:1280",
+    "text": "Close on Fault Trip"
+  },
+  {
+    "location": "html-block:1281",
+    "text": "Protection Discrimination/Timing"
+  },
+  {
+    "location": "html-block:1282",
+    "text": "Current Operated Protection Elements"
+  },
+  {
+    "location": "html-block:1283",
+    "text": "Phase Overcurrent"
+  },
+  {
+    "location": "html-block:1284",
+    "text": "Earth Fault (EF)"
+  },
+  {
+    "location": "html-block:1285",
+    "text": "Sensitive Earth Fault (SEF)"
+  },
+  {
+    "location": "html-block:1286",
+    "text": "Transient Earth (Ground) Fault Protection"
+  },
+  {
+    "location": "html-block:1287",
+    "text": "Negative Phase Sequence (NPS) 4"
+  },
+  {
+    "location": "html-block:1288",
+    "text": "Broken Conductor"
+  },
+  {
+    "location": "html-block:1289",
+    "text": "Broken Conductor Protection"
+  },
+  {
+    "location": "html-block:1290",
+    "text": "Fault Reset"
+  },
+  {
+    "location": "html-block:1291",
+    "text": "Broken Conductor Alarm"
+  },
+  {
+    "location": "html-block:1292",
+    "text": "ACR Protection Features"
+  },
+  {
+    "location": "html-block:1293",
+    "text": "Single Shot"
+  },
+  {
+    "location": "html-block:1294",
+    "text": "Single Shot Protection Settings"
+  },
+  {
+    "location": "html-block:1295",
+    "text": "Single Shot Activation/Deactivation"
+  },
+  {
+    "location": "html-block:1296",
+    "text": "Single Shot Reset Time"
+  },
+  {
+    "location": "html-block:1297",
+    "text": "Single Shot Summary"
+  },
+  {
+    "location": "html-block:1298",
+    "text": "Work Tag"
+  },
+  {
+    "location": "html-block:1299",
+    "text": "Work Tag Configuration"
+  },
+  {
+    "location": "html-block:1300",
+    "text": "Work Tag Protection Settings"
+  },
+  {
+    "location": "html-block:1301",
+    "text": "Work Tag and Controller Mode"
+  },
+  {
+    "location": "html-block:1302",
+    "text": "Work Tag and Single Shot Mode"
+  },
+  {
+    "location": "html-block:1303",
+    "text": "Work Tag Summary"
+  },
+  {
+    "location": "html-block:1304",
+    "text": "Automatic Protection Group Selection (APGS)"
+  },
+  {
+    "location": "html-block:1305",
+    "text": "The Selection Rules"
+  },
+  {
+    "location": "html-block:1306",
+    "text": "APGS Applications"
+  },
+  {
+    "location": "html-block:1307",
+    "text": "APGS Configuration"
+  },
+  {
+    "location": "html-block:1308",
+    "text": "Disabling APGS"
+  },
+  {
+    "location": "html-block:1309",
+    "text": "SEF Alarm"
+  },
+  {
+    "location": "html-block:1310",
+    "text": "NPS Alarm"
+  },
+  {
+    "location": "html-block:1311",
+    "text": "NPS Alarm Configuration"
+  },
+  {
+    "location": "html-block:1312",
+    "text": "NPS Alarm Operation"
+  },
+  {
+    "location": "html-block:1313",
+    "text": "Protection Off"
+  },
+  {
+    "location": "html-block:1314",
+    "text": "Protection Off Configuration"
+  },
+  {
+    "location": "html-block:1315",
+    "text": "Protection Off Operation"
+  },
+  {
+    "location": "html-block:1316",
+    "text": "Dead Lockout"
+  },
+  {
+    "location": "html-block:1317",
+    "text": "Dead Lockout Configuration"
+  },
+  {
+    "location": "html-block:1318",
+    "text": "Dead Lockout Operation"
+  },
+  {
+    "location": "html-block:1319",
+    "text": "Dead Lockout on PMSet U Series"
+  },
+  {
+    "location": "html-block:1320",
+    "text": "Sequence Control"
+  },
+  {
+    "location": "html-block:1321",
+    "text": "The Problem"
+  },
+  {
+    "location": "html-block:1322",
+    "text": "The Solution"
+  },
+  {
+    "location": "html-block:1323",
+    "text": "Sequence Control Configuration"
+  },
+  {
+    "location": "html-block:1324",
+    "text": "Live Load Blocking"
+  },
+  {
+    "location": "html-block:1325",
+    "text": "Critical Settings"
+  },
+  {
+    "location": "html-block:1326",
+    "text": "Live Load Blocking Configuration"
+  },
+  {
+    "location": "html-block:1327",
+    "text": "Live Load Blocking Operation"
+  },
+  {
+    "location": "html-block:1328",
+    "text": "High Current Lockout"
+  },
+  {
+    "location": "html-block:1329",
+    "text": "Inrush Restraint"
+  },
+  {
+    "location": "html-block:1330",
+    "text": "Inrush Restraint Configuration"
+  },
+  {
+    "location": "html-block:1331",
+    "text": "Inrush Restraint Operation"
+  },
+  {
+    "location": "html-block:1332",
+    "text": "Example"
+  },
+  {
+    "location": "html-block:1333",
+    "text": "Inrush Restraint Summary"
+  },
+  {
+    "location": "html-block:1334",
+    "text": "Second Order Harmonic Inrush Restraint (SOHIR)"
+  },
+  {
+    "location": "html-block:1335",
+    "text": "Cold Load Pickup"
+  },
+  {
+    "location": "html-block:1336",
+    "text": "CLP Configuration"
+  },
+  {
+    "location": "html-block:1337",
+    "text": "CLP Operation"
+  },
+  {
+    "location": "html-block:1338",
+    "text": "CLP Example"
+  },
+  {
+    "location": "html-block:1339",
+    "text": "CLP Status"
+  },
+  {
+    "location": "html-block:1340",
+    "text": "Cold Load Status on Power Up"
+  },
+  {
+    "location": "html-block:1341",
+    "text": "Example"
+  },
+  {
+    "location": "html-block:1342",
+    "text": "CLP Summary"
+  },
+  {
+    "location": "html-block:1343",
+    "text": "Conditional Auto Reclose"
+  },
+  {
+    "location": "html-block:1344",
+    "text": "History"
+  },
+  {
+    "location": "html-block:1345",
+    "text": "Conditional Auto Reclose Configuration"
+  },
+  {
+    "location": "html-block:1346",
+    "text": "IOEX Configuration"
+  },
+  {
+    "location": "html-block:1347",
+    "text": "IOEX Outputs"
+  },
+  {
+    "location": "html-block:1348",
+    "text": "IOEX Inputs"
+  },
+  {
+    "location": "html-block:1349",
+    "text": "Conditional Auto Reclose Operation"
+  },
+  {
+    "location": "html-block:1350",
+    "text": "Conditional Auto Reclose Bypass"
+  },
+  {
+    "location": "html-block:1351",
+    "text": "Ground Fault Neutralizer"
+  },
+  {
+    "location": "html-block:1352",
+    "text": "GFN Configuration"
+  },
+  {
+    "location": "html-block:1353",
+    "text": "GFN On/Off"
+  },
+  {
+    "location": "html-block:1354",
+    "text": "Auto Reclose Block Time"
+  },
+  {
+    "location": "html-block:1355",
+    "text": "V0 Pickup Threshold"
+  },
+  {
+    "location": "html-block:1356",
+    "text": "V0 Reset Threshold"
+  },
+  {
+    "location": "html-block:1357",
+    "text": "Uplifted Phase Pickup Threshold"
+  },
+  {
+    "location": "html-block:1358",
+    "text": "Uplifted Phase Reset Threshold"
+  },
+  {
+    "location": "html-block:1359",
+    "text": "Faulted Phase Pickup Threshold"
+  },
+  {
+    "location": "html-block:1360",
+    "text": "GFN Operation"
+  },
+  {
+    "location": "html-block:1361",
+    "text": "Directional Protection and Blocking"
+  },
+  {
+    "location": "html-block:1362",
+    "text": "Directional Blocking"
+  },
+  {
+    "location": "html-block:1363",
+    "text": "Phase Overcurrent Directional Blocking"
+  },
+  {
+    "location": "html-block:1364",
+    "text": "Phase Characteristic Fault Angle"
+  },
+  {
+    "location": "html-block:1365",
+    "text": "Phase Sector Width"
+  },
+  {
+    "location": "html-block:1366",
+    "text": "Phase Low Voltage Block"
+  },
+  {
+    "location": "html-block:1367",
+    "text": "Phase Low Voltage Reset"
+  },
+  {
+    "location": "html-block:1368",
+    "text": "Phase Voltage Memory"
+  },
+  {
+    "location": "html-block:1369",
+    "text": "EF Directional Blocking"
+  },
+  {
+    "location": "html-block:1370",
+    "text": "Earth VZPS Polarization"
+  },
+  {
+    "location": "html-block:1371",
+    "text": "Earth Wattmetric Polarizing"
+  },
+  {
+    "location": "html-block:1372",
+    "text": "Earth Ir Cos (Ø) Polarising"
+  },
+  {
+    "location": "html-block:1373",
+    "text": "SEF Directional Block"
+  },
+  {
+    "location": "html-block:1374",
+    "text": "SEF VZPS Polarising"
+  },
+  {
+    "location": "html-block:1375",
+    "text": "SEF Wattmetric Polarizing"
+  },
+  {
+    "location": "html-block:1376",
+    "text": "SEF Ir Cos (Ø) Polarising"
+  },
+  {
+    "location": "html-block:1377",
+    "text": "Negative Phase Sequence Directional Blocking"
+  },
+  {
+    "location": "html-block:1378",
+    "text": "NPS Characteristic Fault Angle"
+  },
+  {
+    "location": "html-block:1379",
+    "text": "NPS Sector Width"
+  },
+  {
+    "location": "html-block:1380",
+    "text": "NPS Low Voltage Block"
+  },
+  {
+    "location": "html-block:1381",
+    "text": "NPS Low Voltage Reset"
+  },
+  {
+    "location": "html-block:1382",
+    "text": "Directional Protection"
+  },
+  {
+    "location": "html-block:1383",
+    "text": "Overview"
+  },
+  {
+    "location": "html-block:1384",
+    "text": "Directional Protection Configuration"
+  },
+  {
+    "location": "html-block:1385",
+    "text": "Sequence Reset Time"
+  },
+  {
+    "location": "html-block:1386",
+    "text": "Trips to Lockout"
+  },
+  {
+    "location": "html-block:1387",
+    "text": "Auto Reclose"
+  },
+  {
+    "location": "html-block:1388",
+    "text": "Auto Restore"
+  },
+  {
+    "location": "html-block:1389",
+    "text": "Operation"
+  },
+  {
+    "location": "html-block:1390",
+    "text": "Determining Direction"
+  },
+  {
+    "location": "html-block:1391",
+    "text": "Low Polarising Voltage Action"
+  },
+  {
+    "location": "html-block:1392",
+    "text": "Sector Width"
+  },
+  {
+    "location": "html-block:1393",
+    "text": "Vzps (ZPS Voltage) Balance"
+  },
+  {
+    "location": "html-block:1394",
+    "text": "High Vzps Alarm"
+  },
+  {
+    "location": "html-block:1395",
+    "text": "Phase Overcurrent Directional Protection"
+  },
+  {
+    "location": "html-block:1396",
+    "text": "Phase Characteristic Fault Angle"
+  },
+  {
+    "location": "html-block:1397",
+    "text": "Phase Sector Width"
+  },
+  {
+    "location": "html-block:1398",
+    "text": "Phase Low Polarising Voltage Action"
+  },
+  {
+    "location": "html-block:1399",
+    "text": "Phase Low Voltage Reset"
+  },
+  {
+    "location": "html-block:1400",
+    "text": "Phase Voltage Memory"
+  },
+  {
+    "location": "html-block:1401",
+    "text": "EF Directional Protection"
+  },
+  {
+    "location": "html-block:1402",
+    "text": "Earth VZPS Polarizing"
+  },
+  {
+    "location": "html-block:1403",
+    "text": "Earth Wattmetric Polarising"
+  },
+  {
+    "location": "html-block:1404",
+    "text": "Earth Ir Cos (Ø) Polarising"
+  },
+  {
+    "location": "html-block:1405",
+    "text": "SEF Directional Protection"
+  },
+  {
+    "location": "html-block:1406",
+    "text": "SEF VZPS Polarising"
+  },
+  {
+    "location": "html-block:1407",
+    "text": "SEFs Wattmetric Polarising"
+  },
+  {
+    "location": "html-block:1408",
+    "text": "SEF Ir Cos (Ø) Polarising"
+  },
+  {
+    "location": "html-block:1409",
+    "text": "NPS Directional Protection"
+  },
+  {
+    "location": "html-block:1410",
+    "text": "NPS Characteristic Fault Angle"
+  },
+  {
+    "location": "html-block:1411",
+    "text": "NPS Sector Width"
+  },
+  {
+    "location": "html-block:1412",
+    "text": "NPS Low Polarising Voltage Action"
+  },
+  {
+    "location": "html-block:1413",
+    "text": "NPS Low Voltage Reset"
+  },
+  {
+    "location": "html-block:1414",
+    "text": "Voltage Operated Protection Elements"
+  },
+  {
+    "location": "html-block:1415",
+    "text": "UOV Protection"
+  },
+  {
+    "location": "html-block:1416",
+    "text": "UOV Protection Configuration"
+  },
+  {
+    "location": "html-block:1417",
+    "text": "Dead-bands"
+  },
+  {
+    "location": "html-block:1418",
+    "text": "UOV Protection Curves"
+  },
+  {
+    "location": "html-block:1419",
+    "text": "Phase Logic"
+  },
+  {
+    "location": "html-block:1420",
+    "text": "Normal Voltage Band"
+  },
+  {
+    "location": "html-block:1421",
+    "text": "Under Voltage Protection Operation"
+  },
+  {
+    "location": "html-block:1422",
+    "text": "Over Voltage Protection Operation"
+  },
+  {
+    "location": "html-block:1423",
+    "text": "Average Phase Logic Events"
+  },
+  {
+    "location": "html-block:1424",
+    "text": "Pickup Thresholds and Reset"
+  },
+  {
+    "location": "html-block:1425",
+    "text": "Normal Voltage Close"
+  },
+  {
+    "location": "html-block:1426",
+    "text": "Recovery Time Out"
+  },
+  {
+    "location": "html-block:1427",
+    "text": "Excess UOV Protection Sequences"
+  },
+  {
+    "location": "html-block:1428",
+    "text": "Changing Settings"
+  },
+  {
+    "location": "html-block:1429",
+    "text": "Single Sided CVT Switchgear"
+  },
+  {
+    "location": "html-block:1430",
+    "text": "Over Voltage Protection Sequence Example"
+  },
+  {
+    "location": "html-block:1431",
+    "text": "Sequence of Events"
+  },
+  {
+    "location": "html-block:1432",
+    "text": "UOV Protection Summary"
+  },
+  {
+    "location": "html-block:1433",
+    "text": "Neutral Voltage Displacement"
+  },
+  {
+    "location": "html-block:1434",
+    "text": "NVD Configuration"
+  },
+  {
+    "location": "html-block:1435",
+    "text": "NVD Functions"
+  },
+  {
+    "location": "html-block:1436",
+    "text": "NVD Operation"
+  },
+  {
+    "location": "html-block:1437",
+    "text": "NVD Protection"
+  },
+  {
+    "location": "html-block:1438",
+    "text": "NVD Alarm"
+  },
+  {
+    "location": "html-block:1439",
+    "text": "Loss of Phase Protection"
+  },
+  {
+    "location": "html-block:1440",
+    "text": "LOP Protection Settings"
+  },
+  {
+    "location": "html-block:1441",
+    "text": "LOP Protection Configuration"
+  },
+  {
+    "location": "html-block:1442",
+    "text": "LOP Protection Operation"
+  },
+  {
+    "location": "html-block:1443",
+    "text": "LOP Protection Timing"
+  },
+  {
+    "location": "html-block:1444",
+    "text": "LOP versus Supply Timeout Example"
+  },
+  {
+    "location": "html-block:1445",
+    "text": "LOP Protection Summary"
+  },
+  {
+    "location": "html-block:1446",
+    "text": "UOV Close Block"
+  },
+  {
+    "location": "html-block:1447",
+    "text": "UOV Close Blocking Configuration"
+  },
+  {
+    "location": "html-block:1448",
+    "text": "UOV Close Blocking Operation"
+  },
+  {
+    "location": "html-block:1449",
+    "text": "Frequency Protection"
+  },
+  {
+    "location": "html-block:1450",
+    "text": "UOF Protection"
+  },
+  {
+    "location": "html-block:1451",
+    "text": "UOF Protection Applications"
+  },
+  {
+    "location": "html-block:1452",
+    "text": "UOF Protection Configuration"
+  },
+  {
+    "location": "html-block:1453",
+    "text": "Frequency Measurement"
+  },
+  {
+    "location": "html-block:1454",
+    "text": "Under Frequency Protection Operation"
+  },
+  {
+    "location": "html-block:1455",
+    "text": "Over Frequency Protection Operation"
+  },
+  {
+    "location": "html-block:1456",
+    "text": "Normal Frequency Close"
+  },
+  {
+    "location": "html-block:1457",
+    "text": "Under Frequency Protection Sequence Example"
+  },
+  {
+    "location": "html-block:1458",
+    "text": "UOF Protection Summary"
+  },
+  {
+    "location": "html-block:1459",
+    "text": "Rate of Change of Frequency"
+  },
+  {
+    "location": "html-block:1460",
+    "text": "ROCOF Protection Configuration"
+  },
+  {
+    "location": "html-block:1461",
+    "text": "ROCOF Protection Operation"
+  },
+  {
+    "location": "html-block:1462",
+    "text": "Timing"
+  },
+  {
+    "location": "html-block:1463",
+    "text": "Reset Timing"
+  },
+  {
+    "location": "html-block:1464",
+    "text": "Lockout"
+  },
+  {
+    "location": "html-block:1465",
+    "text": "Blocking"
+  },
+  {
+    "location": "html-block:1466",
+    "text": "Direction"
+  },
+  {
+    "location": "html-block:1467",
+    "text": "Minimum Voltage"
+  },
+  {
+    "location": "html-block:1468",
+    "text": "UOF Close Blocking"
+  },
+  {
+    "location": "html-block:1469",
+    "text": "UOF Close Blocking Configuration"
+  },
+  {
+    "location": "html-block:1470",
+    "text": "UOF Close Block Operation"
+  },
+  {
+    "location": "html-block:1471",
+    "text": "Automatic Sectionalising"
+  },
+  {
+    "location": "html-block:1472",
+    "text": "Fault Detection and Automatic Sectionalising"
+  },
+  {
+    "location": "html-block:1473",
+    "text": "Introduction to Automatic Sectionalising"
+  },
+  {
+    "location": "html-block:1474",
+    "text": "AS Operation"
+  },
+  {
+    "location": "html-block:1475",
+    "text": "Fault Detection Enhancements"
+  },
+  {
+    "location": "html-block:1476",
+    "text": "Sequence Reset Clears Fault Flags"
+  },
+  {
+    "location": "html-block:1477",
+    "text": "Extended Standard Detection"
+  },
+  {
+    "location": "html-block:1478",
+    "text": "Extended Maximum Time per Curve"
+  },
+  {
+    "location": "html-block:1479",
+    "text": "Per Element Detection"
+  },
+  {
+    "location": "html-block:1480",
+    "text": "Close on Fault Trip"
+  },
+  {
+    "location": "html-block:1481",
+    "text": "Fault Detection Timing Options"
+  },
+  {
+    "location": "html-block:1482",
+    "text": "Definite Time"
+  },
+  {
+    "location": "html-block:1483",
+    "text": "Instantaneous Only"
+  },
+  {
+    "location": "html-block:1484",
+    "text": "Inverse Current/Time"
+  },
+  {
+    "location": "html-block:1485",
+    "text": "Curve Modifiers"
+  },
+  {
+    "location": "html-block:1486",
+    "text": "Current Operated Detection Elements"
+  },
+  {
+    "location": "html-block:1487",
+    "text": "AS Detection Features"
+  },
+  {
+    "location": "html-block:1488",
+    "text": "Single Shot"
+  },
+  {
+    "location": "html-block:1489",
+    "text": "Work Tag"
+  },
+  {
+    "location": "html-block:1490",
+    "text": "ADGS"
+  },
+  {
+    "location": "html-block:1491",
+    "text": "SEF Alarm"
+  },
+  {
+    "location": "html-block:1492",
+    "text": "NPS Alarm"
+  },
+  {
+    "location": "html-block:1493",
+    "text": "Detection Off"
+  },
+  {
+    "location": "html-block:1494",
+    "text": "Live Load Blocking"
+  },
+  {
+    "location": "html-block:1495",
+    "text": "Inrush Restraint"
+  },
+  {
+    "location": "html-block:1496",
+    "text": "SOHIR"
+  },
+  {
+    "location": "html-block:1497",
+    "text": "CLP"
+  },
+  {
+    "location": "html-block:1498",
+    "text": "Directional Detection and Block"
+  },
+  {
+    "location": "html-block:1499",
+    "text": "Directional Blocking"
+  },
+  {
+    "location": "html-block:1500",
+    "text": "Phase Overcurrent Directional Blocking"
+  },
+  {
+    "location": "html-block:1501",
+    "text": "EF Directional Blocking"
+  },
+  {
+    "location": "html-block:1502",
+    "text": "Earth VZPS Polarising"
+  },
+  {
+    "location": "html-block:1503",
+    "text": "Earth Wattmetric Polarizing"
+  },
+  {
+    "location": "html-block:1504",
+    "text": "Earth Ir Cos (Ø) Polarising"
+  },
+  {
+    "location": "html-block:1505",
+    "text": "SEF Directional Block"
+  },
+  {
+    "location": "html-block:1506",
+    "text": "SEF VZPS Polarising"
+  },
+  {
+    "location": "html-block:1507",
+    "text": "SEF Wattmetric Polarizing"
+  },
+  {
+    "location": "html-block:1508",
+    "text": "SEF Ir Cos (Ø) Polarising"
+  },
+  {
+    "location": "html-block:1509",
+    "text": "NPS Directional Blocking"
+  },
+  {
+    "location": "html-block:1510",
+    "text": "Directional Detection"
+  },
+  {
+    "location": "html-block:1511",
+    "text": "Overview"
+  },
+  {
+    "location": "html-block:1512",
+    "text": "Directional Fault Detection"
+  },
+  {
+    "location": "html-block:1513",
+    "text": "Directional Detection Configuration"
+  },
+  {
+    "location": "html-block:1514",
+    "text": "Sequence Reset Time"
+  },
+  {
+    "location": "html-block:1515",
+    "text": "Auto Sectionalise"
+  },
+  {
+    "location": "html-block:1516",
+    "text": "Operation"
+  },
+  {
+    "location": "html-block:1517",
+    "text": "Determining Direction"
+  },
+  {
+    "location": "html-block:1518",
+    "text": "Low Polarising Voltage Action"
+  },
+  {
+    "location": "html-block:1519",
+    "text": "Sector Width"
+  },
+  {
+    "location": "html-block:1520",
+    "text": "Vzps Balancing"
+  },
+  {
+    "location": "html-block:1521",
+    "text": "High Vzps Alarm"
+  },
+  {
+    "location": "html-block:1522",
+    "text": "Phase Overcurrent Directional Detection"
+  },
+  {
+    "location": "html-block:1523",
+    "text": "EF Directional Detection"
+  },
+  {
+    "location": "html-block:1524",
+    "text": "Earth VZPS Polarizing"
+  },
+  {
+    "location": "html-block:1525",
+    "text": "Earth Wattmetric Polarising"
+  },
+  {
+    "location": "html-block:1526",
+    "text": "Earth Ir Cos (Ø) Polarising"
+  },
+  {
+    "location": "html-block:1527",
+    "text": "SEF Directional Detection"
+  },
+  {
+    "location": "html-block:1528",
+    "text": "SEF VZPS Polarising"
+  },
+  {
+    "location": "html-block:1529",
+    "text": "SEF Wattmetric Polarizing"
+  },
+  {
+    "location": "html-block:1530",
+    "text": "SEF Ir Cos (Ø) Polarising"
+  },
+  {
+    "location": "html-block:1531",
+    "text": "NPS Directional Detection"
+  },
+  {
+    "location": "html-block:1532",
+    "text": "Voltage Operated Detection Elements"
+  },
+  {
+    "location": "html-block:1533",
+    "text": "UOV"
+  },
+  {
+    "location": "html-block:1534",
+    "text": "UOV Detection Configuration"
+  },
+  {
+    "location": "html-block:1535",
+    "text": "UOV Detection Curves"
+  },
+  {
+    "location": "html-block:1536",
+    "text": "Phase Logic"
+  },
+  {
+    "location": "html-block:1537",
+    "text": "Normal Voltage Band"
+  },
+  {
+    "location": "html-block:1538",
+    "text": "Under Voltage Detection Operation"
+  },
+  {
+    "location": "html-block:1539",
+    "text": "Over Voltage Detection Operation"
+  },
+  {
+    "location": "html-block:1540",
+    "text": "Average Phase Logic Events"
+  },
+  {
+    "location": "html-block:1541",
+    "text": "Pickup Thresholds and Reset"
+  },
+  {
+    "location": "html-block:1542",
+    "text": "UOV Detection Summary"
+  },
+  {
+    "location": "html-block:1543",
+    "text": "Distance to Fault Location"
+  },
+  {
+    "location": "html-block:1544",
+    "text": "Fault Locator"
+  },
+  {
+    "location": "html-block:1545",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:1546",
+    "text": "Fault Locator Feature Selection"
+  },
+  {
+    "location": "html-block:1547",
+    "text": "Fault Locator Settings Pages"
+  },
+  {
+    "location": "html-block:1548",
+    "text": "Fault Information Display"
+  },
+  {
+    "location": "html-block:1549",
+    "text": "Principles of Operation"
+  },
+  {
+    "location": "html-block:1550",
+    "text": "Fault Locator Settings and Status"
+  },
+  {
+    "location": "html-block:1551",
+    "text": "Synchronization"
+  },
+  {
+    "location": "html-block:1552",
+    "text": "Sync Check"
+  },
+  {
+    "location": "html-block:1553",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:1554",
+    "text": "Sync Check Feature Selection"
+  },
+  {
+    "location": "html-block:1555",
+    "text": "Sync Check Settings Displays"
+  },
+  {
+    "location": "html-block:1556",
+    "text": "Principles of Operation"
+  },
+  {
+    "location": "html-block:1557",
+    "text": "Voltage Amplitude Synchronization"
+  },
+  {
+    "location": "html-block:1558",
+    "text": "Voltage Frequency Synchronization"
+  },
+  {
+    "location": "html-block:1559",
+    "text": "Phase Angle Synchronization"
+  },
+  {
+    "location": "html-block:1560",
+    "text": "Phase Compensation"
+  },
+  {
+    "location": "html-block:1561",
+    "text": "Close Retry"
+  },
+  {
+    "location": "html-block:1562",
+    "text": "Operation Diagram"
+  },
+  {
+    "location": "html-block:1563",
+    "text": "Sync Check Configuration"
+  },
+  {
+    "location": "html-block:1564",
+    "text": "Sync Check Settings"
+  },
+  {
+    "location": "html-block:1565",
+    "text": "Status Indication"
+  },
+  {
+    "location": "html-block:1566",
+    "text": "Synchronization Status Indicators"
+  },
+  {
+    "location": "html-block:1567",
+    "text": "Standards and Guidelines"
+  },
+  {
+    "location": "html-block:1568",
+    "text": "Automation"
+  },
+  {
+    "location": "html-block:1569",
+    "text": "Loop Automation"
+  },
+  {
+    "location": "html-block:1570",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:1571",
+    "text": "Device Types"
+  },
+  {
+    "location": "html-block:1572",
+    "text": "LA Feature Selection"
+  },
+  {
+    "location": "html-block:1573",
+    "text": "LA Display"
+  },
+  {
+    "location": "html-block:1574",
+    "text": "Intelligent LA Communications"
+  },
+  {
+    "location": "html-block:1575",
+    "text": "LA Basics"
+  },
+  {
+    "location": "html-block:1576",
+    "text": "Classic LA Operation"
+  },
+  {
+    "location": "html-block:1577",
+    "text": "ACO using Classic LA"
+  },
+  {
+    "location": "html-block:1578",
+    "text": "Intelligent LA Operation"
+  },
+  {
+    "location": "html-block:1579",
+    "text": "Intelligent Isolation and Re-Configuration Examples"
+  },
+  {
+    "location": "html-block:1580",
+    "text": "LA LBS Support"
+  },
+  {
+    "location": "html-block:1581",
+    "text": "Understanding Isolation and Reconfiguration with Dead Time"
+  },
+  {
+    "location": "html-block:1582",
+    "text": "Under Frequency Pause/Abort of Tie Restoration"
+  },
+  {
+    "location": "html-block:1583",
+    "text": "LA Software Modifications"
+  },
+  {
+    "location": "html-block:1584",
+    "text": "LA Configuration"
+  },
+  {
+    "location": "html-block:1585",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:1586",
+    "text": "LA Timing"
+  },
+  {
+    "location": "html-block:1587",
+    "text": "Classic LA Parameters"
+  },
+  {
+    "location": "html-block:1588",
+    "text": "Intelligent LA Parameters"
+  },
+  {
+    "location": "html-block:1589",
+    "text": "Overview"
+  },
+  {
+    "location": "html-block:1590",
+    "text": "Description of Parameters"
+  },
+  {
+    "location": "html-block:1591",
+    "text": "Intelligent LA Communications Parameters"
+  },
+  {
+    "location": "html-block:1592",
+    "text": "Auto Changeover (ACO)"
+  },
+  {
+    "location": "html-block:1593",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:1594",
+    "text": "ACO Feature Selection"
+  },
+  {
+    "location": "html-block:1595",
+    "text": "ACO Settings Displays"
+  },
+  {
+    "location": "html-block:1596",
+    "text": "Principles of Operation"
+  },
+  {
+    "location": "html-block:1597",
+    "text": "Automatic-Changeover Sequence"
+  },
+  {
+    "location": "html-block:1598",
+    "text": "Self-Healing Options"
+  },
+  {
+    "location": "html-block:1599",
+    "text": "Overview"
+  },
+  {
+    "location": "html-block:1600",
+    "text": "Operator Actions"
+  },
+  {
+    "location": "html-block:1601",
+    "text": "Network Conditions"
+  },
+  {
+    "location": "html-block:1602",
+    "text": "Technical Conditions"
+  },
+  {
+    "location": "html-block:1603",
+    "text": "ACO Communications"
+  },
+  {
+    "location": "html-block:1604",
+    "text": "ACO using LBS"
+  },
+  {
+    "location": "html-block:1605",
+    "text": "ACO Controls and Status"
+  },
+  {
+    "location": "html-block:1606",
+    "text": "ACO Timers"
+  },
+  {
+    "location": "html-block:1607",
+    "text": "Communications Settings"
+  },
+  {
+    "location": "html-block:1608",
+    "text": "Communications"
+  },
+  {
+    "location": "html-block:1609",
+    "text": "Interaction with other Functionality"
+  },
+  {
+    "location": "html-block:1610",
+    "text": "ACO – Important Points"
+  },
+  {
+    "location": "html-block:1611",
+    "text": "History"
+  },
+  {
+    "location": "html-block:1612",
+    "text": "Event Log"
+  },
+  {
+    "location": "html-block:1613",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:1614",
+    "text": "Reading the Event Log on the O.I."
+  },
+  {
+    "location": "html-block:1615",
+    "text": "Typical Event Log Trip Sequence Display"
+  },
+  {
+    "location": "html-block:1616",
+    "text": "The Event Log in WSOS"
+  },
+  {
+    "location": "html-block:1617",
+    "text": "Uploading History Files"
+  },
+  {
+    "location": "html-block:1618",
+    "text": "Delete Records from Hard Disk"
+  },
+  {
+    "location": "html-block:1619",
+    "text": "Automatic History Upload"
+  },
+  {
+    "location": "html-block:1620",
+    "text": "Saving Uploaded Event Log Files"
+  },
+  {
+    "location": "html-block:1621",
+    "text": "Other Context Menu Options"
+  },
+  {
+    "location": "html-block:1622",
+    "text": "Maximum Demand Records"
+  },
+  {
+    "location": "html-block:1623",
+    "text": "History Configuration"
+  },
+  {
+    "location": "html-block:1624",
+    "text": "Harmonic History"
+  },
+  {
+    "location": "html-block:1625",
+    "text": "Sag and Swell History"
+  },
+  {
+    "location": "html-block:1626",
+    "text": "Power Quality"
+  },
+  {
+    "location": "html-block:1627",
+    "text": "Power Quality Tool Kit"
+  },
+  {
+    "location": "html-block:1628",
+    "text": "Supply Outages"
+  },
+  {
+    "location": "html-block:1629",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:1630",
+    "text": "Determination of Supply Outages"
+  },
+  {
+    "location": "html-block:1631",
+    "text": "Supply Outage Configuration"
+  },
+  {
+    "location": "html-block:1632",
+    "text": "Supply Outage Operation"
+  },
+  {
+    "location": "html-block:1633",
+    "text": "Measuring the Outage Duration"
+  },
+  {
+    "location": "html-block:1634",
+    "text": "Measuring Supply Reliability"
+  },
+  {
+    "location": "html-block:1635",
+    "text": "SAIDI – System Average Interruption Duration Index"
+  },
+  {
+    "location": "html-block:1636",
+    "text": "SAIFI – System Average Interruption Frequency Index"
+  },
+  {
+    "location": "html-block:1637",
+    "text": "Supply Outage Measurement – Summary"
+  },
+  {
+    "location": "html-block:1638",
+    "text": "Waveform Capture"
+  },
+  {
+    "location": "html-block:1639",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:1640",
+    "text": "Waveform Capture Configuration"
+  },
+  {
+    "location": "html-block:1641",
+    "text": "Waveform Capture Operation"
+  },
+  {
+    "location": "html-block:1642",
+    "text": "Waveform Capture Summary"
+  },
+  {
+    "location": "html-block:1643",
+    "text": "Harmonic Analysis"
+  },
+  {
+    "location": "html-block:1644",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:1645",
+    "text": "Harmonic Analysis Configuration"
+  },
+  {
+    "location": "html-block:1646",
+    "text": "Harmonic Analysis Data"
+  },
+  {
+    "location": "html-block:1647",
+    "text": "Harmonic Analysis Events"
+  },
+  {
+    "location": "html-block:1648",
+    "text": "Harmonic Analysis History"
+  },
+  {
+    "location": "html-block:1649",
+    "text": "Harmonic Analysis Summary"
+  },
+  {
+    "location": "html-block:1650",
+    "text": "Sag and Swell"
+  },
+  {
+    "location": "html-block:1651",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:1652",
+    "text": "Sag and Swell Monitoring Configuration"
+  },
+  {
+    "location": "html-block:1653",
+    "text": "Sag and Swell Monitoring Operation"
+  },
+  {
+    "location": "html-block:1654",
+    "text": "Excursion Conclusion and Event Duration"
+  },
+  {
+    "location": "html-block:1655",
+    "text": "Pickup Threshold"
+  },
+  {
+    "location": "html-block:1656",
+    "text": "Pickup Reset"
+  },
+  {
+    "location": "html-block:1657",
+    "text": "Events"
+  },
+  {
+    "location": "html-block:1658",
+    "text": "Historical Data"
+  },
+  {
+    "location": "html-block:1659",
+    "text": "Sag and Swell Monitoring Summary"
+  },
+  {
+    "location": "html-block:1660",
+    "text": "Diagnostics and Fault Finding"
+  },
+  {
+    "location": "html-block:1661",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:1662",
+    "text": "Battery Testing"
+  },
+  {
+    "location": "html-block:1663",
+    "text": "Battery Test Configuration"
+  },
+  {
+    "location": "html-block:1664",
+    "text": "Battery Test Operation"
+  },
+  {
+    "location": "html-block:1665",
+    "text": "Wait State"
+  },
+  {
+    "location": "html-block:1666",
+    "text": "Battery Test Status"
+  },
+  {
+    "location": "html-block:1667",
+    "text": "Request Denied"
+  },
+  {
+    "location": "html-block:1668",
+    "text": "Test Aborted"
+  },
+  {
+    "location": "html-block:1669",
+    "text": "Waveform Generation"
+  },
+  {
+    "location": "html-block:1670",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:1671",
+    "text": "Waveform Generation Configuration"
+  },
+  {
+    "location": "html-block:1672",
+    "text": "Current"
+  },
+  {
+    "location": "html-block:1673",
+    "text": "Voltage"
+  },
+  {
+    "location": "html-block:1674",
+    "text": "Frequency"
+  },
+  {
+    "location": "html-block:1675",
+    "text": "Waveform Generation Status"
+  },
+  {
+    "location": "html-block:1676",
+    "text": "Waveform Generator Active"
+  },
+  {
+    "location": "html-block:1677",
+    "text": "Fault Simulation using Waveform Generation"
+  },
+  {
+    "location": "html-block:1678",
+    "text": "Waveform Generation with Waveform Capture"
+  },
+  {
+    "location": "html-block:1679",
+    "text": "Ancillary Equipment and Accessories"
+  },
+  {
+    "location": "html-block:1680",
+    "text": "Input/Output Expander Card"
+  },
+  {
+    "location": "html-block:1681",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:1682",
+    "text": "Compatibility"
+  },
+  {
+    "location": "html-block:1683",
+    "text": "Parts supplied with the IOEX"
+  },
+  {
+    "location": "html-block:1684",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:1685",
+    "text": "Installation"
+  },
+  {
+    "location": "html-block:1686",
+    "text": "Removing and installing the mounting tray"
+  },
+  {
+    "location": "html-block:1687",
+    "text": "Attaching the IOEX"
+  },
+  {
+    "location": "html-block:1688",
+    "text": "Connect the IOEX to the Controller"
+  },
+  {
+    "location": "html-block:1689",
+    "text": "Electrical Connections"
+  },
+  {
+    "location": "html-block:1690",
+    "text": "Inputs"
+  },
+  {
+    "location": "html-block:1691",
+    "text": "Using the built-in isolated supply"
+  },
+  {
+    "location": "html-block:1692",
+    "text": "Using an External Source"
+  },
+  {
+    "location": "html-block:1693",
+    "text": "Voltage - Free Outputs"
+  },
+  {
+    "location": "html-block:1694",
+    "text": "Shielded Cable"
+  },
+  {
+    "location": "html-block:1695",
+    "text": "IOEX Cable Installation"
+  },
+  {
+    "location": "html-block:1696",
+    "text": "EMC Gland Specification"
+  },
+  {
+    "location": "html-block:1697",
+    "text": "EMC Gland Installation"
+  },
+  {
+    "location": "html-block:1698",
+    "text": "Method"
+  },
+  {
+    "location": "html-block:1699",
+    "text": "Cable Termination"
+  },
+  {
+    "location": "html-block:1700",
+    "text": "Fast Trip Input Module"
+  },
+  {
+    "location": "html-block:1701",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:1702",
+    "text": "Compatibility"
+  },
+  {
+    "location": "html-block:1703",
+    "text": "Parts Supplied with the FTIM"
+  },
+  {
+    "location": "html-block:1704",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:1705",
+    "text": "FTIM installation"
+  },
+  {
+    "location": "html-block:1706",
+    "text": "Removing and installing the mounting tray"
+  },
+  {
+    "location": "html-block:1707",
+    "text": "Attaching the FTIM"
+  },
+  {
+    "location": "html-block:1708",
+    "text": "Connect the FTIM to the controller"
+  },
+  {
+    "location": "html-block:1709",
+    "text": "Electrical Connections"
+  },
+  {
+    "location": "html-block:1710",
+    "text": "Using the built-in isolated supply"
+  },
+  {
+    "location": "html-block:1711",
+    "text": "Using an external source"
+  },
+  {
+    "location": "html-block:1712",
+    "text": "Shielded Cable"
+  },
+  {
+    "location": "html-block:1713",
+    "text": "Cable Gland Specification"
+  },
+  {
+    "location": "html-block:1714",
+    "text": "FTIM Cable Installation"
+  },
+  {
+    "location": "html-block:1715",
+    "text": "General Purpose Outlet"
+  },
+  {
+    "location": "html-block:1716",
+    "text": "Compatibility"
+  },
+  {
+    "location": "html-block:1717",
+    "text": "GPO Cable Installation"
+  },
+  {
+    "location": "html-block:1718",
+    "text": "Test and Training Set"
+  },
+  {
+    "location": "html-block:1719",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:1720",
+    "text": "Construction"
+  },
+  {
+    "location": "html-block:1721",
+    "text": "Modes of Operation"
+  },
+  {
+    "location": "html-block:1722",
+    "text": "Secondary Current Injection Port"
+  },
+  {
+    "location": "html-block:1723",
+    "text": "Multiple Switchgear Support"
+  },
+  {
+    "location": "html-block:1724",
+    "text": "Secondary Voltage Injection Interface Set"
+  },
+  {
+    "location": "html-block:1725",
+    "text": "Introduction"
+  },
+  {
+    "location": "html-block:1726",
+    "text": "Loss of Phase Testing"
+  },
+  {
+    "location": "html-block:1727",
+    "text": "SVIIS Voltage Injection Only"
+  },
+  {
+    "location": "html-block:1728",
+    "text": "SVIIS + TTS in Parallel Mode"
+  },
+  {
+    "location": "html-block:1729",
+    "text": "SVIIS + TTS in Stand Alone Mode"
+  },
+  {
+    "location": "html-block:1730",
+    "text": "Earthing the SVIIS"
+  },
+  {
+    "location": "html-block:1731",
+    "text": "Appendices"
+  },
+  {
+    "location": "html-block:1732",
+    "text": "Appendix A - Switchgear Models"
+  },
+  {
+    "location": "html-block:1733",
+    "text": "PMSet U Series Circuit Breaker"
+  },
+  {
+    "location": "html-block:1734",
+    "text": "RL Series Load Break Switch"
+  },
+  {
+    "location": "html-block:1735",
+    "text": "PMSet UR Series Circuit Breaker"
+  },
+  {
+    "location": "html-block:1736",
+    "text": "Appendix B ­ Dimensions"
+  },
+  {
+    "location": "html-block:1737",
+    "text": "Appendix C ­ PowerLogic ADVC Schematics"
+  },
+  {
+    "location": "html-block:1738",
+    "text": "PowerLogic ADVC Controller s General Arrangement"
+  },
+  {
+    "location": "html-block:1739",
+    "text": "Control Cable"
+  },
+  {
+    "location": "html-block:1740",
+    "text": "Appendix D ­ IEC255 Inverse Time Tables"
+  },
+  {
+    "location": "html-block:1741",
+    "text": "Appendix E ­ IEEE Inverse Time Protection Tables"
+  },
+  {
+    "location": "html-block:1742",
+    "text": "Appendix F ­ Non Standard Inverse Time Tables"
+  },
+  {
+    "location": "html-block:1743",
+    "text": "Appendix G ­ Reset Curve Timing Tables"
+  },
+  {
+    "location": "html-block:1744",
+    "text": "Appendix H ­ Communications Settings"
+  },
+  {
+    "location": "html-block:1745",
+    "text": "PowerLogic ADVC"
+  },
+  {
+    "location": "html-block:1746",
+    "text": "Appendix I List of Events"
+  },
+  {
+    "location": "html-block:1747",
+    "text": "Event List"
+  },
+  {
+    "location": "html-block:1748",
+    "text": "Appendix ­ J flexVUE Menu"
+  },
+  {
+    "location": "html-block:1749",
+    "text": "Appendix J.1 ­ flexVUE Menu Structure"
+  },
+  {
+    "location": "html-block:1750",
+    "text": "Appendix J.2 ­ flex VUE Operator Menu Screens"
+  },
+  {
+    "location": "html-block:1751",
+    "text": "Appendix J.3 ­ flex VUE Engineer Menu Screens"
+  },
+  {
+    "location": "html-block:1752",
+    "text": "Appendix K ­ set VUE Menu"
+  },
+  {
+    "location": "html-block:1753",
+    "text": "Appendix K.1 ­ set VUE ACR Menu Structure"
+  },
+  {
+    "location": "html-block:1754",
+    "text": "Appendix K.2 ­ set VUE ACR System Status Pages"
+  },
+  {
+    "location": "html-block:1755",
+    "text": "ACR Trip Flags Page"
+  },
+  {
+    "location": "html-block:1756",
+    "text": "ACR Supply Interrupt Flags"
+  },
+  {
+    "location": "html-block:1757",
+    "text": "Operator Settings 1"
+  },
+  {
+    "location": "html-block:1758",
+    "text": "Operator Settings 2"
+  },
+  {
+    "location": "html-block:1759",
+    "text": "Operator Settings 3"
+  },
+  {
+    "location": "html-block:1760",
+    "text": "Operator Settings 3 (with Per Element Protection Available)"
+  },
+  {
+    "location": "html-block:1761",
+    "text": "Operator Settings 4"
+  },
+  {
+    "location": "html-block:1762",
+    "text": "System Settings 1"
+  },
+  {
+    "location": "html-block:1763",
+    "text": "System Settings 2"
+  },
+  {
+    "location": "html-block:1764",
+    "text": "Switchgear Status"
+  },
+  {
+    "location": "html-block:1765",
+    "text": "Fault Information"
+  },
+  {
+    "location": "html-block:1766",
+    "text": "Live/Dead Indication"
+  },
+  {
+    "location": "html-block:1767",
+    "text": "Phase Voltage and Power Flow"
+  },
+  {
+    "location": "html-block:1768",
+    "text": "Terminal Designation/Rotation"
+  },
+  {
+    "location": "html-block:1769",
+    "text": "Radio"
+  },
+  {
+    "location": "html-block:1770",
+    "text": "Switchgear Type and Ratings"
+  },
+  {
+    "location": "html-block:1771",
+    "text": "Switchgear Wear/General Details"
+  },
+  {
+    "location": "html-block:1772",
+    "text": "User Defined Control"
+  },
+  {
+    "location": "html-block:1773",
+    "text": "Additional System Status pages"
+  },
+  {
+    "location": "html-block:1774",
+    "text": "Plant Details"
+  },
+  {
+    "location": "html-block:1775",
+    "text": "Options"
+  },
+  {
+    "location": "html-block:1776",
+    "text": "Options – Protection 1"
+  },
+  {
+    "location": "html-block:1777",
+    "text": "Options – Protection 2"
+  },
+  {
+    "location": "html-block:1778",
+    "text": "Options – Protection 3"
+  },
+  {
+    "location": "html-block:1779",
+    "text": "Options – Protection 4"
+  },
+  {
+    "location": "html-block:1780",
+    "text": "Options – Automation"
+  },
+  {
+    "location": "html-block:1781",
+    "text": "Options – Controller 1"
+  },
+  {
+    "location": "html-block:1782",
+    "text": "Options – Controller 2"
+  },
+  {
+    "location": "html-block:1783",
+    "text": "Options – Communications 1"
+  },
+  {
+    "location": "html-block:1784",
+    "text": "Options – Communications 2"
+  },
+  {
+    "location": "html-block:1785",
+    "text": "Options – Power Quality"
+  },
+  {
+    "location": "html-block:1786",
+    "text": "Quick Key Selection"
+  },
+  {
+    "location": "html-block:1787",
+    "text": "Hit and Run"
+  },
+  {
+    "location": "html-block:1788",
+    "text": "Waveform Capture"
+  },
+  {
+    "location": "html-block:1789",
+    "text": "Waveform Trigger"
+  },
+  {
+    "location": "html-block:1790",
+    "text": "Battery Test"
+  },
+  {
+    "location": "html-block:1791",
+    "text": "Appendix K.3 ­ set VUE ACR and AS Measurement Menu Screens"
+  },
+  {
+    "location": "html-block:1792",
+    "text": "System Measurements (AS)"
+  },
+  {
+    "location": "html-block:1793",
+    "text": "Current"
+  },
+  {
+    "location": "html-block:1794",
+    "text": "Voltage"
+  },
+  {
+    "location": "html-block:1795",
+    "text": "Sequence Voltage"
+  },
+  {
+    "location": "html-block:1796",
+    "text": "Frequency"
+  },
+  {
+    "location": "html-block:1797",
+    "text": "Power"
+  },
+  {
+    "location": "html-block:1798",
+    "text": "Synchronization"
+  },
+  {
+    "location": "html-block:1799",
+    "text": "Supply Outages"
+  },
+  {
+    "location": "html-block:1800",
+    "text": "Sag/Swell Monitoring"
+  },
+  {
+    "location": "html-block:1801",
+    "text": "Sag Monitoring"
+  },
+  {
+    "location": "html-block:1802",
+    "text": "Swell Monitoring"
+  },
+  {
+    "location": "html-block:1803",
+    "text": "Daily Maximum Demand"
+  },
+  {
+    "location": "html-block:1804",
+    "text": "Daily Maximum Demand History"
+  },
+  {
+    "location": "html-block:1805",
+    "text": "Weekly Maximum Demand"
+  },
+  {
+    "location": "html-block:1806",
+    "text": "Weekly Maximum Demand History"
+  },
+  {
+    "location": "html-block:1807",
+    "text": "Monthly Maximum Demand"
+  },
+  {
+    "location": "html-block:1808",
+    "text": "Monthly Maximum Demand History"
+  },
+  {
+    "location": "html-block:1809",
+    "text": "Maximum Demand Indicator"
+  },
+  {
+    "location": "html-block:1810",
+    "text": "Maximum Demand Indicator Details"
+  },
+  {
+    "location": "html-block:1811",
+    "text": "Appendix K.4 ­ set VUE ACR Protection Menu Pages"
+  },
+  {
+    "location": "html-block:1812",
+    "text": "Appendix K.5 ­ set VUE ACR and AS Communications Menu Screens"
+  },
+  {
+    "location": "html-block:1813",
+    "text": "Appendix K.6 ­ set VUE ACR and AS Automation Menu Screens"
+  },
+  {
+    "location": "html-block:1814",
+    "text": "Appendix K.7 ­ set VUE AS Menu Structure"
+  },
+  {
+    "location": "html-block:1815",
+    "text": "Appendix K.8 ­ set VUE AS System Status Pages"
+  },
+  {
+    "location": "html-block:1816",
+    "text": "Fault Flags Page (AS)"
+  },
+  {
+    "location": "html-block:1817",
+    "text": "Supply Interrupt Flags (AS)"
+  },
+  {
+    "location": "html-block:1818",
+    "text": "Operator Settings 1 (AS)"
+  },
+  {
+    "location": "html-block:1819",
+    "text": "Operator Settings 2 (AS)"
+  },
+  {
+    "location": "html-block:1820",
+    "text": "Operator Settings 3 (AS) (Per Element Detection not available)"
+  },
+  {
+    "location": "html-block:1821",
+    "text": "Operator Settings 3 (AS) (Per Element Detection available)"
+  },
+  {
+    "location": "html-block:1822",
+    "text": "Operator Settings 4 (AS) (Per Element Detection available)"
+  },
+  {
+    "location": "html-block:1823",
+    "text": "System Settings 1 (AS)"
+  },
+  {
+    "location": "html-block:1824",
+    "text": "System Settings 2 (AS)"
+  },
+  {
+    "location": "html-block:1825",
+    "text": "Switchgear Status (AS)"
+  },
+  {
+    "location": "html-block:1826",
+    "text": "Fault Information (AS)"
+  },
+  {
+    "location": "html-block:1827",
+    "text": "Live/Dead Indication (AS)"
+  },
+  {
+    "location": "html-block:1828",
+    "text": "Phase Voltage and Power Flow (AS)"
+  },
+  {
+    "location": "html-block:1829",
+    "text": "Terminal Designation/Rotation (AS)"
+  },
+  {
+    "location": "html-block:1830",
+    "text": "Radio (AS)"
+  },
+  {
+    "location": "html-block:1831",
+    "text": "Switchgear Type and Ratings (AS)"
+  },
+  {
+    "location": "html-block:1832",
+    "text": "Switchgear Wear/General Details (AS)"
+  },
+  {
+    "location": "html-block:1833",
+    "text": "Additional System Status pages"
+  },
+  {
+    "location": "html-block:1834",
+    "text": "Plant Details (AS)"
+  },
+  {
+    "location": "html-block:1835",
+    "text": "Options"
+  },
+  {
+    "location": "html-block:1836",
+    "text": "Options – Detection 1 (AS)"
+  },
+  {
+    "location": "html-block:1837",
+    "text": "Options – Detection 2 (AS)"
+  },
+  {
+    "location": "html-block:1838",
+    "text": "Options – Detection 3 (AS)"
+  },
+  {
+    "location": "html-block:1839",
+    "text": "Options – Automation (AS)"
+  },
+  {
+    "location": "html-block:1840",
+    "text": "Options – Controller 1 (AS)"
+  },
+  {
+    "location": "html-block:1841",
+    "text": "Options – Controller 2 (AS)"
+  },
+  {
+    "location": "html-block:1842",
+    "text": "Options – Communications 1 (AS)"
+  },
+  {
+    "location": "html-block:1843",
+    "text": "Options – Communications 2 (AS)"
+  },
+  {
+    "location": "html-block:1844",
+    "text": "Options – Power Quality (AS)"
+  },
+  {
+    "location": "html-block:1845",
+    "text": "Quick Key Selection (AS)"
+  },
+  {
+    "location": "html-block:1846",
+    "text": "IOEX Status (AS)"
+  },
+  {
+    "location": "html-block:1847",
+    "text": "Hit and Run (AS)"
+  },
+  {
+    "location": "html-block:1848",
+    "text": "Waveform Capture (AS)"
+  },
+  {
+    "location": "html-block:1849",
+    "text": "Waveform Trigger (AS)"
+  },
+  {
+    "location": "html-block:1850",
+    "text": "Battery Test (AS)"
+  },
+  {
+    "location": "html-block:1851",
+    "text": "User Defined Control (AS)"
+  },
+  {
+    "location": "html-block:1852",
+    "text": "Appendix K.9 ­ set VUE AS Detection Menu Pages"
+  },
+  {
+    "location": "html-block:1853",
+    "text": "Appendix L ­ Automation"
+  },
+  {
+    "location": "html-block:1854",
+    "text": "Appendix L.1 ­ Loop Automation Operating Rules"
+  },
+  {
+    "location": "html-block:1855",
+    "text": "Appendix L.2 ­ Loop Automation Status Messages"
+  },
+  {
+    "location": "html-block:1856",
+    "text": "Appendix L.3 ­ Loop Automation Settings Record"
+  },
+  {
+    "location": "html-block:1857",
+    "text": "Appendix L.4 ­ Loop Automation Settings Record Example"
+  },
+  {
+    "location": "html-block:1858",
+    "text": "Appendix L.5 - Auto-Changeover Status Codes"
+  },
+  {
+    "location": "html-block:1859",
+    "text": "Appendix M ­ Operator Interface Feature Selection Fields (ACR)"
+  },
+  {
+    "location": "html-block:1860",
+    "text": "Appendix N ­ Operator Interface Feature Selection Fields (ACR)"
+  },
+  {
+    "location": "html-block:1861",
+    "text": "Appendix O ­ Location of Settings on the Operator Interface"
+  },
+  {
+    "location": "html-block:1862",
+    "text": "Appendix P ­ Scada Points"
+  },
+  {
+    "location": "html-block:1863",
+    "text": "Appendix P.1 ­ Analogue Points to Monitor and Set Pick-up Thresholds for Overcurrent Protection"
+  },
+  {
+    "location": "html-block:1864",
+    "text": "Appendix P.2 — New SCADA Point for WSOS5 Online/Offline Status"
+  },
+  {
+    "location": "html-block:1865",
+    "text": "Appendix P.3 — New SCADA Point for Switchgear Series and Serial Numbers"
+  },
+  {
+    "location": "html-block:1866",
+    "text": "Appendix P.4 — New SCADA Point for Accumulated Average Data"
+  },
+  {
+    "location": "html-block:1867",
+    "text": "Glossary"
+  },
+  {
+    "location": "html-block:1868",
+    "text": "ACK"
+  },
+  {
+    "location": "html-block:1869",
+    "text": "ACO"
+  },
+  {
+    "location": "html-block:1870",
+    "text": "ACR"
+  },
+  {
+    "location": "html-block:1871",
+    "text": "ADGS"
+  },
+  {
+    "location": "html-block:1872",
+    "text": "ADVC"
+  },
+  {
+    "location": "html-block:1873",
+    "text": "APGS"
+  },
+  {
+    "location": "html-block:1874",
+    "text": "AS"
+  },
+  {
+    "location": "html-block:1875",
+    "text": "ASCII"
+  },
+  {
+    "location": "html-block:1876",
+    "text": "ATDT"
+  },
+  {
+    "location": "html-block:1877",
+    "text": "ATH"
+  },
+  {
+    "location": "html-block:1878",
+    "text": "CA"
+  },
+  {
+    "location": "html-block:1879",
+    "text": "CAPE"
+  },
+  {
+    "location": "html-block:1880",
+    "text": "CLT"
+  },
+  {
+    "location": "html-block:1881",
+    "text": "CRC"
+  },
+  {
+    "location": "html-block:1882",
+    "text": "CT"
+  },
+  {
+    "location": "html-block:1883",
+    "text": "CTRL"
+  },
+  {
+    "location": "html-block:1884",
+    "text": "CTS"
+  },
+  {
+    "location": "html-block:1885",
+    "text": "CVT"
+  },
+  {
+    "location": "html-block:1886",
+    "text": "DCD"
+  },
+  {
+    "location": "html-block:1887",
+    "text": "DG"
+  },
+  {
+    "location": "html-block:1888",
+    "text": "DHCP"
+  },
+  {
+    "location": "html-block:1889",
+    "text": "DNP"
+  },
+  {
+    "location": "html-block:1890",
+    "text": "DT"
+  },
+  {
+    "location": "html-block:1891",
+    "text": "DTR"
+  },
+  {
+    "location": "html-block:1892",
+    "text": "EDACS"
+  },
+  {
+    "location": "html-block:1893",
+    "text": "EF"
+  },
+  {
+    "location": "html-block:1894",
+    "text": "FDIR"
+  },
+  {
+    "location": "html-block:1895",
+    "text": "FET"
+  },
+  {
+    "location": "html-block:1896",
+    "text": "FSK"
+  },
+  {
+    "location": "html-block:1897",
+    "text": "GF"
+  },
+  {
+    "location": "html-block:1898",
+    "text": "GFN"
+  },
+  {
+    "location": "html-block:1899",
+    "text": "GMT"
+  },
+  {
+    "location": "html-block:1900",
+    "text": "GND"
+  },
+  {
+    "location": "html-block:1901",
+    "text": "GPO"
+  },
+  {
+    "location": "html-block:1902",
+    "text": "Hex"
+  },
+  {
+    "location": "html-block:1903",
+    "text": "Hz"
+  },
+  {
+    "location": "html-block:1904",
+    "text": "IDMT"
+  },
+  {
+    "location": "html-block:1905",
+    "text": "IEC"
+  },
+  {
+    "location": "html-block:1906",
+    "text": "IEEE"
+  },
+  {
+    "location": "html-block:1907",
+    "text": "ILA"
+  },
+  {
+    "location": "html-block:1908",
+    "text": "INST"
+  },
+  {
+    "location": "html-block:1909",
+    "text": "IOEX"
+  },
+  {
+    "location": "html-block:1910",
+    "text": "IP"
+  },
+  {
+    "location": "html-block:1911",
+    "text": "kPaG"
+  },
+  {
+    "location": "html-block:1912",
+    "text": "LA"
+  },
+  {
+    "location": "html-block:1913",
+    "text": "LAN"
+  },
+  {
+    "location": "html-block:1914",
+    "text": "LBS"
+  },
+  {
+    "location": "html-block:1915",
+    "text": "LCD"
+  },
+  {
+    "location": "html-block:1916",
+    "text": "LED"
+  },
+  {
+    "location": "html-block:1917",
+    "text": "LOP"
+  },
+  {
+    "location": "html-block:1918",
+    "text": "LVIT"
+  },
+  {
+    "location": "html-block:1919",
+    "text": "MAC"
+  },
+  {
+    "location": "html-block:1920",
+    "text": "ms"
+  },
+  {
+    "location": "html-block:1921",
+    "text": "NPS"
+  },
+  {
+    "location": "html-block:1922",
+    "text": "NTP"
+  },
+  {
+    "location": "html-block:1923",
+    "text": "NWRK"
+  },
+  {
+    "location": "html-block:1924",
+    "text": "O.I."
+  },
+  {
+    "location": "html-block:1925",
+    "text": "OC"
+  },
+  {
+    "location": "html-block:1926",
+    "text": "OCP"
+  },
+  {
+    "location": "html-block:1927",
+    "text": "OF"
+  },
+  {
+    "location": "html-block:1928",
+    "text": "OV"
+  },
+  {
+    "location": "html-block:1929",
+    "text": "PPS"
+  },
+  {
+    "location": "html-block:1930",
+    "text": "PRTN"
+  },
+  {
+    "location": "html-block:1931",
+    "text": "PSIG"
+  },
+  {
+    "location": "html-block:1932",
+    "text": "PSM"
+  },
+  {
+    "location": "html-block:1933",
+    "text": "PSSM"
+  },
+  {
+    "location": "html-block:1934",
+    "text": "PSTN"
+  },
+  {
+    "location": "html-block:1935",
+    "text": "PSU"
+  },
+  {
+    "location": "html-block:1936",
+    "text": "PTCL"
+  },
+  {
+    "location": "html-block:1937",
+    "text": "PTT"
+  },
+  {
+    "location": "html-block:1938",
+    "text": "PTT"
+  },
+  {
+    "location": "html-block:1939",
+    "text": "PU"
+  },
+  {
+    "location": "html-block:1940",
+    "text": "QAK"
+  },
+  {
+    "location": "html-block:1941",
+    "text": "RDI"
+  },
+  {
+    "location": "html-block:1942",
+    "text": "RTS"
+  },
+  {
+    "location": "html-block:1943",
+    "text": "RTU"
+  },
+  {
+    "location": "html-block:1944",
+    "text": "SCADA"
+  },
+  {
+    "location": "html-block:1945",
+    "text": "SEF"
+  },
+  {
+    "location": "html-block:1946",
+    "text": "SGF"
+  },
+  {
+    "location": "html-block:1947",
+    "text": "SI"
+  },
+  {
+    "location": "html-block:1948",
+    "text": "SOHIR"
+  },
+  {
+    "location": "html-block:1949",
+    "text": "SOS"
+  },
+  {
+    "location": "html-block:1950",
+    "text": "SVIIS"
+  },
+  {
+    "location": "html-block:1951",
+    "text": "SWGR"
+  },
+  {
+    "location": "html-block:1952",
+    "text": "TCP/IP"
+  },
+  {
+    "location": "html-block:1953",
+    "text": "TTS"
+  },
+  {
+    "location": "html-block:1954",
+    "text": "UF"
+  },
+  {
+    "location": "html-block:1955",
+    "text": "UOF"
+  },
+  {
+    "location": "html-block:1956",
+    "text": "UOV"
+  },
+  {
+    "location": "html-block:1957",
+    "text": "USB"
+  },
+  {
+    "location": "html-block:1958",
+    "text": "UTC"
+  },
+  {
+    "location": "html-block:1959",
+    "text": "UV"
+  },
+  {
+    "location": "html-block:1960",
+    "text": "VIB"
+  },
+  {
+    "location": "html-block:1961",
+    "text": "VT"
+  },
+  {
+    "location": "html-block:1962",
+    "text": "WAN"
+  },
+  {
+    "location": "html-block:1963",
+    "text": "WSOS"
+  },
+  {
+    "location": "html-block:1964",
+    "text": "ZPS"
+  },
+  {
+    "location": "html-block:1965",
+    "text": "For the best experience of this site, please enable Javascript for the productinfo.se.com domain."
+  },
+  {
+    "location": "html-block:1966",
+    "text": "PKR39809-02"
+  },
+  {
+    "location": "html-block:1967",
+    "text": "Close"
+  },
+  {
+    "location": "html-block:1968",
+    "text": "Click to expand the table"
+  },
+  {
+    "location": "html-block:1969",
+    "text": "Expand Table"
+  },
+  {
+    "location": "html-block:1970",
+    "text": "DNP3 Security"
+  },
+  {
+    "location": "html-block:1971",
+    "text": "The PowerLogic ADVC Controller implements version 5 of the secure authentication feature as specified in the IEEE standard document 1815-2012.",
+    "heading": "DNP3 Security"
+  },
+  {
+    "location": "html-block:1972",
+    "text": "DNP3 Secure Authentication functionality for the PowerLogic ADVC Controller can only be enabled and configured through WSOS.",
+    "heading": "DNP3 Security"
+  },
+  {
+    "location": "html-block:1973",
+    "text": "DNP3 and DNP3 Security must firstly be made available through Feature Selection in WSOS.",
+    "heading": "DNP3 Security"
+  },
+  {
+    "location": "html-block:1974",
+    "text": "Display > Configuration > Feature Selection > Communications",
+    "heading": "DNP3 Security"
+  },
+  {
+    "location": "html-block:1975",
+    "text": "Secure Authentication"
+  },
+  {
+    "location": "html-block:1976",
+    "text": "Once DNP3 Security has been made available, Secure Authentication can be configured through WSOS by going to:",
+    "heading": "Secure Authentication"
+  },
+  {
+    "location": "html-block:1977",
+    "text": "Display> Switchgear Communications > Protocols > DNP3 > DNP3 Secure Authentication.",
+    "heading": "Secure Authentication"
+  },
+  {
+    "location": "html-block:1978",
+    "text": "Figure 66",
+    "heading": "Secure Authentication"
+  },
+  {
+    "location": "html-block:1979",
+    "text": "DNP3 Secure Authentication Configuration settings",
+    "heading": "Secure Authentication"
+  },
+  {
+    "location": "html-block:1980",
+    "text": "This page allows the configuration of operational parameters for DNP3 Secure Authentication, along with Update Keys (secret keys shared between the master station and outstation) for up to 10 users.",
+    "heading": "Secure Authentication"
+  },
+  {
+    "location": "html-block:1981",
+    "text": "When a user issues a critical DNP3 request that is one which requires authentication, and it is successfully authenticated, the PowerLogic ADVC Controller will write two events to the Event Log. One event shows the type of request and the other shows the ID of the requesting user.",
+    "heading": "Secure Authentication"
+  },
+  {
+    "location": "html-block:1982",
+    "text": "The configurable settings for DNP3 Secure Authentication are described in the table below.",
+    "heading": "Secure Authentication"
+  },
+  {
+    "location": "html-block:1983",
+    "text": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "location": "html-block:1984",
+    "text": "Setting",
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "location": "html-block:1985",
+    "text": "Description",
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "location": "html-block:1986",
+    "text": "Secure Authentication On/Off",
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "location": "html-block:1987",
+    "text": "This turns the Secure Authentication feature On and Off.",
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "location": "html-block:1988",
+    "text": "While Off, the controller will not respond to any source authentication message from the master station, nor will it require authentication for accessing ASDU’s.",
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "location": "html-block:1989",
+    "text": "Aggressive Mode On/Off",
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "location": "html-block:1990",
+    "text": "This allows (or helps prevent) Aggressive mode operation in DNP3 Secure Authentication.",
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "location": "html-block:1991",
+    "text": "For more information on aggressive mode please consult the standard.",
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "location": "html-block:1992",
+    "text": "Message Authentication Code (MAC) Algorithm",
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "location": "html-block:1993",
+    "text": "This determines which algorithm the controller uses to encode the MAC in DNP3 Secure Authentication messages.",
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "location": "html-block:1994",
+    "text": "The options are:",
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "location": "html-block:1995",
+    "text": "HMAC-SHA-256 (truncated to 16 octets)",
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "location": "html-block:1996",
+    "text": "HMAC-SHA-1 (truncated to 10 octets)",
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "location": "html-block:1997",
+    "text": "Reply Timeout",
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "location": "html-block:1998",
+    "text": "The interval after which the controller will implement the Reply Timeout DNP3 Security Statistic (See section on Security Statistics).",
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "location": "html-block:1999",
+    "text": "Key Change Interval",
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "location": "html-block:2000",
+    "text": "The interval after which the controller expects a session key to have been changed by the master. If the key has not been changed by this time, the controller will invalidate the current session.",
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "location": "html-block:2001",
+    "text": "Key Change Count",
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "location": "html-block:2002",
+    "text": "The number of transmitted messages after which the controller expects a session key to have been changed by the master.",
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "location": "html-block:2003",
+    "text": "If the key has not been changed after this many messages, thFe controller will invalidate the current session.",
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "location": "html-block:2004",
+    "text": "Max Session Key Status Count",
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "location": "html-block:2005",
+    "text": "The maximum number of session key status requests that the controller will respond to during a given session.",
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "location": "html-block:2006",
+    "text": "Update Keys",
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "location": "html-block:2007",
+    "text": "DNP3 Secure Authentication is performed on a per-user basis.",
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "location": "html-block:2008",
+    "text": "Each user has an associated Update Key.",
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "location": "html-block:2009",
+    "text": "The Update Key is a 32 character ASCII string of hexadecimal digits i.e. 0-9 and A-F.",
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "location": "html-block:2010",
+    "text": "WSOS allows configuration of up to 10 users.",
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "location": "html-block:2011",
+    "text": "Update Keys must be common between the master and outstation.",
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "location": "html-block:2012",
+    "text": "NOTE: Update Keys must be kept check with a customer’s organization. This security requirement extends to the WSOS switchgear configuration files, where the keys are stored.",
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "location": "html-block:2013",
+    "text": "Critical ASDU’s",
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "location": "html-block:2014",
+    "text": "Secure Authentication is required for accessing critical ASDU’s only.",
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "location": "html-block:2015",
+    "text": "As per the DNP3 Standard (IEEE 1815-2012), some ASDU’s are always critical (Write, Select, Operate etc.).",
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "location": "html-block:2016",
+    "text": "Others are optionally critical, and can be configured on the DNP3 Secure Authentication page in WSOS.",
+    "heading": "Table 19 DNP3 Secure Authentication Configuration settings"
+  },
+  {
+    "location": "html-block:2017",
+    "text": "DNP3 Security Statistics"
+  },
+  {
+    "location": "html-block:2018",
+    "text": "As per the DNP3 Standard (IEEE 1815-2012), the PowerLogic ADVC Controller maintains a number of statistics associated with DNP3 Secure Authentication. These statistics are displayed by WSOS on the DNP3 Security Statistics page.",
+    "heading": "DNP3 Security Statistics"
+  },
+  {
+    "location": "html-block:2019",
+    "text": "Display> Switchgear Communications > Protocols >DNP3 > DNP3 Security Statistics",
+    "heading": "DNP3 Security Statistics"
+  },
+  {
+    "location": "html-block:2020",
+    "text": "Figure 67",
+    "heading": "DNP3 Security Statistics"
+  },
+  {
+    "location": "html-block:2021",
+    "text": "DNP Security Statistics values and settings",
+    "heading": "DNP3 Security Statistics"
+  },
+  {
+    "location": "html-block:2022",
+    "text": "NOTE: Statistics can also be read using DNP3 Read requests, for objects in group 121. The map for statistics points is fixed, as per table 7-6 of IEEE 1815-2012.",
+    "heading": "DNP3 Security Statistics"
+  },
+  {
+    "location": "html-block:2023",
+    "text": "Each statistic recorded has an associated event threshold, configurable on the DNP3 Security Statistics page.",
+    "heading": "DNP3 Security Statistics"
+  },
+  {
+    "location": "html-block:2024",
+    "text": "Each time a threshold is reached, the PowerLogic ADVC Controller will generate a DNP3 event. Note that for events to be generated, the corresponding statistic point must be assigned a non-zero DNP3 class.",
+    "heading": "DNP3 Security Statistics"
+  },
+  {
+    "location": "html-block:2025",
+    "text": "When a DNP3 map is written to the PowerLogic ADVC Controller, the class of all security statistics points is automatically reset to zero.",
+    "heading": "DNP3 Security Statistics"
+  },
+  {
+    "location": "html-block:2026",
+    "text": "To assign a non-zero class to any point, a DNP3 Assign Class request must be issued for that point.",
+    "heading": "DNP3 Security Statistics"
+  },
+  {
+    "location": "html-block:2027",
+    "text": "Classes assigned in this way will persist until the next time a DNP3 map is written to the PowerLogic ADVC Controller.",
+    "heading": "DNP3 Security Statistics"
+  },
+  {
+    "location": "html-block:2028",
+    "text": "Some statistics have associated, configurable maximum values. The meaning of and behavior corresponding to these maximum values is defined in the DNP3 Standard IEEE 1815-2012.",
+    "heading": "DNP3 Security Statistics"
+  },
+  {
+    "location": "html-block:2029",
+    "text": "Feedback",
+    "heading": "DNP3 Security Statistics"
+  },
+  {
+    "location": "html-block:2030",
+    "text": "×",
+    "heading": "DNP3 Security Statistics"
+  },
+  {
+    "location": "html-block:2031",
+    "text": "Was this helpful?",
+    "heading": "DNP3 Security Statistics"
+  },
+  {
+    "location": "html-block:2032",
+    "text": "Yes No",
+    "heading": "DNP3 Security Statistics"
+  },
+  {
+    "location": "html-block:2033",
+    "text": "Thank you for the feedback!",
+    "heading": "DNP3 Security Statistics"
+  },
+  {
+    "location": "html-block:2034",
+    "text": "Click Here for Added Support",
+    "heading": "DNP3 Security Statistics"
+  },
+  {
+    "location": "html-block:2035",
+    "text": "Tell us why!",
+    "heading": "DNP3 Security Statistics"
+  },
+  {
+    "location": "html-block:2036",
+    "text": "Send",
+    "heading": "DNP3 Security Statistics"
+  },
+  {
+    "location": "html-block:2037",
+    "text": "Show QR code for this page",
+    "heading": "DNP3 Security Statistics"
+  },
+  {
+    "location": "html-block:2038",
+    "text": "Contact Information",
+    "heading": "DNP3 Security Statistics"
+  },
+  {
+    "location": "html-block:2039",
+    "text": "Legal Information",
+    "heading": "DNP3 Security Statistics"
+  },
+  {
+    "location": "html-block:2040",
+    "text": "Privacy Policy",
+    "heading": "DNP3 Security Statistics"
+  },
+  {
+    "location": "html-block:2041",
+    "text": "Change your cookie settings",
+    "heading": "DNP3 Security Statistics"
+  },
+  {
+    "location": "html-block:2042",
+    "text": "×",
+    "heading": "DNP3 Security Statistics"
+  },
+  {
+    "location": "html-block:2043",
+    "text": "Contact Information"
+  },
+  {
+    "location": "html-block:2044",
+    "text": "Schneider Electric",
+    "heading": "Contact Information"
+  },
+  {
+    "location": "html-block:2045",
+    "text": "35 rue Joseph Monier",
+    "heading": "Contact Information"
+  },
+  {
+    "location": "html-block:2046",
+    "text": "Rueil Malmaison 92500",
+    "heading": "Contact Information"
+  },
+  {
+    "location": "html-block:2047",
+    "text": "France",
+    "heading": "Contact Information"
+  },
+  {
+    "location": "html-block:2048",
+    "text": "+ 33 (0) 1 41 29 70 00",
+    "heading": "Contact Information"
+  },
+  {
+    "location": "html-block:2049",
+    "text": "www.se.com",
+    "heading": "Contact Information"
+  },
+  {
+    "location": "html-block:2050",
+    "text": "Close",
+    "heading": "Contact Information"
+  },
+  {
+    "location": "html-block:2051",
+    "text": "×",
+    "heading": "Contact Information"
+  },
+  {
+    "location": "html-block:2052",
+    "text": "Legal Information"
+  },
+  {
+    "location": "html-block:2053",
+    "text": "The information provided in this document contains general descriptions, technical characteristics and/or recommendations related to products/solutions.",
+    "heading": "Legal Information"
+  },
+  {
+    "location": "html-block:2054",
+    "text": "This document is not intended as a substitute for a detailed study or operational and site-specific development or schematic plan. It is not to be used for determining suitability or reliability of the products/solutions for specific user applications. It is the duty of any such user to perform or have any professional expert of its choice (integrator, specifier or the like) perform the appropriate and comprehensive risk analysis, evaluation and testing of the products/solutions with respect to the relevant specific application or use thereof.",
+    "heading": "Legal Information"
+  },
+  {
+    "location": "html-block:2055",
+    "text": "The Schneider Electric brand and any trademarks of Schneider Electric and its subsidiaries referred to in this document are the property of Schneider Electric or its subsidiaries. All other brands may be trademarks of their respective owner.",
+    "heading": "Legal Information"
+  },
+  {
+    "location": "html-block:2056",
+    "text": "This document and its content are protected under applicable copyright laws and provided for informative use only. No part of this document may be reproduced or transmitted in any form or by any means (electronic, mechanical, photocopying, recording, or otherwise), for any purpose, without the prior written permission of Schneider Electric.",
+    "heading": "Legal Information"
+  },
+  {
+    "location": "html-block:2057",
+    "text": "Schneider Electric does not grant any right or license for commercial use of the document or its content, except for a non-exclusive and personal license to consult it on an \"as is\" basis.",
+    "heading": "Legal Information"
+  },
+  {
+    "location": "html-block:2058",
+    "text": "Electrical equipment should be installed, operated, serviced, and maintained only by qualified personnel. No responsibility is assumed by Schneider Electric for any consequences arising out of the use of this material.",
+    "heading": "Legal Information"
+  },
+  {
+    "location": "html-block:2059",
+    "text": "Schneider Electric reserves the right to make changes or updates with respect to or in the content of this document or the format thereof, at any time without notice.",
+    "heading": "Legal Information"
+  },
+  {
+    "location": "html-block:2060",
+    "text": "To the extent permitted by applicable law, no responsibility or liability is assumed by Schneider Electric and its subsidiaries for any errors or omissions in the informational content of this document, as well as any non-intended use or misuse of the content thereof.",
+    "heading": "Legal Information"
+  },
+  {
+    "location": "html-block:2061",
+    "text": "© 2025 Schneider Electric",
+    "heading": "Legal Information"
+  },
+  {
+    "location": "html-block:2062",
+    "text": "Close",
+    "heading": "Legal Information"
+  }
+]

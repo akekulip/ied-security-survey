@@ -1,0 +1,122 @@
+{
+  "sel_rtac": {
+    "capability": {
+      "total": 16,
+      "by_group": {
+        "authentication": 3,
+        "encryption": 4,
+        "integrity": 2,
+        "ssh": 3,
+        "tls": 4
+      }
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 4,
+      "by_group": {
+        "plaintext_statement": 2,
+        "requirement_statement": 2
+      }
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "schneider_advc": {
+    "capability": {
+      "total": 40,
+      "by_group": {
+        "authentication": 20,
+        "dnp3_secure_authentication": 17,
+        "integrity": 3
+      }
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 4,
+      "by_group": {
+        "requirement_statement": 4
+      }
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "rockwell_5580": {
+    "capability": {
+      "total": 12,
+      "by_group": {
+        "authentication": 3,
+        "cip_security": 8,
+        "integrity": 1
+      }
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 1,
+      "by_group": {
+        "requirement_statement": 1
+      }
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "ge_b90": {
+    "capability": {
+      "total": 5,
+      "by_group": {
+        "authentication": 5
+      }
+    },
+    "related": {
+      "total": 1,
+      "by_group": {
+        "sftp": 1
+      }
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "siemens_sip5": {
+    "capability": {
+      "total": 6,
+      "by_group": {
+        "encryption": 4,
+        "tls": 2
+      }
+    },
+    "related": {
+      "total": 1,
+      "by_group": {
+        "vpn": 1
+      }
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  }
+}

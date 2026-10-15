@@ -1,0 +1,6 @@
+product_id,manufacturer,model,category,identity_level,lifecycle_status,legacy,vendor_label,lifecycle_evidence_date,lifecycle_evidence_quote,lifecycle_evidence_url,lifecycle_evidence_sha256,release_date,noted_by
+sel_rtac,SEL,RTAC family (guide scope),automation_controller,,unknown,,,,,,,,
+schneider_advc,Schneider Electric,PowerLogic ADVC Controller,recloser_controller,,unknown,,,,,,,,
+rockwell_5580,Rockwell Automation / Allen-Bradley,ControlLogix 5580,plc,,unknown,,,,,,,,
+ge_b90,GE Vernova / Multilin,Multilin B90,protective_relay,,unknown,,,,,,,,
+siemens_sip5,Siemens,SIPROTEC 5 family,protective_relay,,unknown,,,,,,,,

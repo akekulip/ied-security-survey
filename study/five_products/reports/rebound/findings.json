@@ -1,0 +1,1286 @@
+[
+  {
+    "product_id": "sel_rtac",
+    "feature": "dnp3_secure_authentication",
+    "status": "unknown",
+    "source_ids": [
+      "b8d90efe1e476caca1e9"
+    ],
+    "source_hashes": {
+      "b8d90efe1e476caca1e9": "379cfbfd5432e521e9dcf3028633cf34d07570aeed3e1a26f89c33dbbb1a2f20"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "interface_class": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "conditions": "",
+    "evidence": [],
+    "rationale": "The white paper mentions DNP3 as a server protocol and as the example carried over TLS. It does not mention DNP3 Secure Authentication. Not a non-support finding.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft"
+  },
+  {
+    "product_id": "sel_rtac",
+    "feature": "tls",
+    "status": "supported",
+    "source_ids": [
+      "b8d90efe1e476caca1e9"
+    ],
+    "source_hashes": {
+      "b8d90efe1e476caca1e9": "379cfbfd5432e521e9dcf3028633cf34d07570aeed3e1a26f89c33dbbb1a2f20"
+    },
+    "location": "pdf-page:9 to pdf-page:10, Figures 9 and 10",
+    "protocol": "TLS tunnel around the DNP3 server (SSL/TLS serial tunnelling mode), TLS 1.0 and above",
+    "interface": "DNP3 server to SCADA master",
+    "interface_class": "control_protocol",
+    "firmware": "Not stated; white paper LWP0018-01, date code 20160111",
+    "implementation": "Built into the RTAC platform",
+    "conditions": "Activated X.509 certificate and SSL/TLS selected as the serial tunnelling mode",
+    "evidence": [
+      {
+        "source_id": "b8d90efe1e476caca1e9",
+        "location": "pdf-page:10",
+        "quote": "Configuring a DNP3 Server to Support TLS One-Way Authentication in ACSELERATOR RTAC"
+      },
+      {
+        "source_id": "b8d90efe1e476caca1e9",
+        "location": "pdf-page:9",
+        "quote": "Any serial protocol, with the exception of MIRRORED BITS® communications, can be tunneled through a TLS connection"
+      },
+      {
+        "source_id": "b8d90efe1e476caca1e9",
+        "location": "pdf-page:9",
+        "quote": "The SEL RTAC only supports TLS 1.0 and above due to security vulnerabilities discovered in SSL 3.0 and earlier."
+      }
+    ],
+    "rationale": "The white paper documents TLS for SCADA server communications on the RTAC platform, with a DNP3 server as the worked example. No firmware, module or licence condition is stated; the certificate and the tunnelling-mode setting are configuration. The evidence is family-level and dated 2016, so confirm it against the current instruction manual for a specific RTAC model and firmware before generalizing. It is a capability of the RTAC as data concentrator, not of the relays behind it.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft"
+  },
+  {
+    "product_id": "sel_rtac",
+    "feature": "encryption",
+    "status": "supported",
+    "source_ids": [
+      "b8d90efe1e476caca1e9"
+    ],
+    "source_hashes": {
+      "b8d90efe1e476caca1e9": "379cfbfd5432e521e9dcf3028633cf34d07570aeed3e1a26f89c33dbbb1a2f20"
+    },
+    "location": "pdf-page:9 to pdf-page:10",
+    "protocol": "TLS encryption of the DNP3 server session",
+    "interface": "DNP3 server to SCADA master",
+    "interface_class": "control_protocol",
+    "firmware": "Not stated; white paper LWP0018-01, date code 20160111",
+    "implementation": "Built in; a TLS tunnel around the serial protocol, not an encrypted mode of DNP3 itself",
+    "conditions": "Activated X.509 certificate and SSL/TLS selected as the serial tunnelling mode",
+    "evidence": [
+      {
+        "source_id": "b8d90efe1e476caca1e9",
+        "location": "pdf-page:10",
+        "quote": "After the X.509 certificate is activated, it is a simple step to encrypt the server communications."
+      },
+      {
+        "source_id": "b8d90efe1e476caca1e9",
+        "location": "pdf-page:9",
+        "quote": "The PKI infrastructure also allows users to encrypt SCADA communication."
+      }
+    ],
+    "rationale": "Encryption of SCADA traffic is documented as a TLS tunnel around the serial protocol. The same section says power-system information is often transmitted in plain text, so this is an optional capability and says nothing about how often it is used. The evidence is family-level and dated 2016, so confirm it against the current instruction manual for a specific RTAC model and firmware before generalizing. It is a capability of the RTAC as data concentrator, not of the relays behind it.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft"
+  },
+  {
+    "product_id": "sel_rtac",
+    "feature": "authentication",
+    "status": "supported",
+    "source_ids": [
+      "b8d90efe1e476caca1e9"
+    ],
+    "source_hashes": {
+      "b8d90efe1e476caca1e9": "379cfbfd5432e521e9dcf3028633cf34d07570aeed3e1a26f89c33dbbb1a2f20"
+    },
+    "location": "pdf-page:10, Figures 9 and 10",
+    "protocol": "X.509 certificate authentication of the TLS session, one-way or two-way",
+    "interface": "DNP3 server to SCADA master",
+    "interface_class": "control_protocol",
+    "firmware": "Not stated; white paper LWP0018-01, date code 20160111",
+    "implementation": "Built in; certificate based",
+    "conditions": "Client CA chain installed on the RTAC for two-way authentication",
+    "evidence": [
+      {
+        "source_id": "b8d90efe1e476caca1e9",
+        "location": "pdf-page:10",
+        "quote": "For one-way authentication where only the client (i.e., SCADA) is authenticating the certificates, all that is required is to select SSL/TLS as the Serial Tunneling Mode"
+      },
+      {
+        "source_id": "b8d90efe1e476caca1e9",
+        "location": "pdf-page:10",
+        "quote": "In this mode, the server also authenticates the client’s (SCADA) certificate to ensure that the incoming connection originates from a trusted source."
+      }
+    ],
+    "rationale": "This authenticates the endpoints of the TLS session that carries DNP3. It is not DNP3 Secure Authentication, which authenticates individual critical messages and which the paper does not mention. The evidence is family-level and dated 2016, so confirm it against the current instruction manual for a specific RTAC model and firmware before generalizing. It is a capability of the RTAC as data concentrator, not of the relays behind it.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft"
+  },
+  {
+    "product_id": "sel_rtac",
+    "feature": "ssh",
+    "status": "supported",
+    "source_ids": [
+      "b8d90efe1e476caca1e9"
+    ],
+    "source_hashes": {
+      "b8d90efe1e476caca1e9": "379cfbfd5432e521e9dcf3028633cf34d07570aeed3e1a26f89c33dbbb1a2f20"
+    },
+    "location": "pdf-page:7 to pdf-page:9, Figures 7 and 8",
+    "protocol": "SSH tunnel for SEL-protocol terminal access, with SSH authorized keys",
+    "interface": "Engineering access through the SEL server",
+    "interface_class": "management",
+    "firmware": "Not stated for SSH and password login; multifactor authentication and file transfer through the SEL server need R136 or later; white paper date code 20160111",
+    "implementation": "Built in",
+    "conditions": "SEL server configured with SSH as the serial tunnel mode",
+    "evidence": [
+      {
+        "source_id": "b8d90efe1e476caca1e9",
+        "location": "pdf-page:7",
+        "quote": "The SSH tunnel method is used in this example because it is widely used and is supported by many free terminal applications."
+      },
+      {
+        "source_id": "b8d90efe1e476caca1e9",
+        "location": "pdf-page:8",
+        "quote": "Note that when SSH is the serial tunnel mode, then Perform Authentication is automatically configured to True."
+      },
+      {
+        "source_id": "b8d90efe1e476caca1e9",
+        "location": "pdf-page:9",
+        "quote": "Through the web interface at Security > SSH Keys, a user can add preauthorized public keys for authentication."
+      }
+    ],
+    "rationale": "SSH is documented for engineering access to the RTAC and to the IEDs behind it. The paper adds that serial protocols can also be tunnelled through SSH but gives no DNP3 example, so this row is scoped to engineering access.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft"
+  },
+  {
+    "product_id": "sel_rtac",
+    "feature": "encryption",
+    "status": "supported",
+    "source_ids": [
+      "b8d90efe1e476caca1e9"
+    ],
+    "source_hashes": {
+      "b8d90efe1e476caca1e9": "379cfbfd5432e521e9dcf3028633cf34d07570aeed3e1a26f89c33dbbb1a2f20"
+    },
+    "location": "pdf-page:7",
+    "protocol": "SSH-encrypted engineering session; a TLS tunnel is the stated alternative",
+    "interface": "Engineering access through the SEL server",
+    "interface_class": "management",
+    "firmware": "Not stated for SSH and password login; multifactor authentication and file transfer through the SEL server need R136 or later; white paper date code 20160111",
+    "implementation": "Built in",
+    "conditions": "SEL server configured with SSH as the serial tunnel mode",
+    "evidence": [
+      {
+        "source_id": "b8d90efe1e476caca1e9",
+        "location": "pdf-page:7",
+        "quote": "Secure engineering access into the SEL RTAC requires encrypting the user session so that valuable information is not readable via plain text."
+      },
+      {
+        "source_id": "b8d90efe1e476caca1e9",
+        "location": "pdf-page:7",
+        "quote": "Secure Shell (SSH) is a widely used cryptographic network protocol that provides terminal access to remote devices."
+      },
+      {
+        "source_id": "b8d90efe1e476caca1e9",
+        "location": "pdf-page:7",
+        "quote": "A TLS tunnel is another option for securing engineering access and is described in Section 6"
+      }
+    ],
+    "rationale": "Encryption of the engineering session, not of SCADA traffic. Recorded separately so it is not read as DNP3 encryption.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft"
+  },
+  {
+    "product_id": "sel_rtac",
+    "feature": "authentication",
+    "status": "supported",
+    "source_ids": [
+      "b8d90efe1e476caca1e9"
+    ],
+    "source_hashes": {
+      "b8d90efe1e476caca1e9": "379cfbfd5432e521e9dcf3028633cf34d07570aeed3e1a26f89c33dbbb1a2f20"
+    },
+    "location": "pdf-page:8 to pdf-page:9",
+    "protocol": "Username and password, LDAP accounts or SSH authorized keys; multifactor authentication from firmware R136",
+    "interface": "Engineering access through the SEL server",
+    "interface_class": "management",
+    "firmware": "Not stated for SSH and password login; multifactor authentication and file transfer through the SEL server need R136 or later; white paper date code 20160111",
+    "implementation": "Built in; local or centrally managed (LDAP) accounts",
+    "conditions": "Perform Authentication enabled, which SSH tunnel mode sets automatically",
+    "evidence": [
+      {
+        "source_id": "b8d90efe1e476caca1e9",
+        "location": "pdf-page:8",
+        "quote": "The SEL server also supports the capability to enforce authentication before granting access to the command line interface."
+      },
+      {
+        "source_id": "b8d90efe1e476caca1e9",
+        "location": "pdf-page:8",
+        "quote": "Local accounts and centrally managed accounts (i.e., those configured through Lightweight Directory Access Protocol [LDAP]) can be used to authenticate to the SEL server."
+      },
+      {
+        "source_id": "b8d90efe1e476caca1e9",
+        "location": "pdf-page:9",
+        "quote": "In SEL RTAC firmware Version R136 and above, multifactor authentication is available in the SEL server."
+      }
+    ],
+    "rationale": "User authentication for engineering access. It says who may open a terminal session, not whether control messages are authenticated.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft"
+  },
+  {
+    "product_id": "sel_rtac",
+    "feature": "tls",
+    "status": "supported",
+    "source_ids": [
+      "b8d90efe1e476caca1e9"
+    ],
+    "source_hashes": {
+      "b8d90efe1e476caca1e9": "379cfbfd5432e521e9dcf3028633cf34d07570aeed3e1a26f89c33dbbb1a2f20"
+    },
+    "location": "pdf-page:4, Table 2; pdf-page:9",
+    "protocol": "HTTPS only, TLS 1.0 and above",
+    "interface": "Web interface",
+    "interface_class": "management",
+    "firmware": "Not stated; white paper LWP0018-01, date code 20160111",
+    "implementation": "Built in; self-signed X.509 certificate enabled by default",
+    "conditions": "",
+    "evidence": [
+      {
+        "source_id": "b8d90efe1e476caca1e9",
+        "location": "pdf-page:9",
+        "quote": "The SEL RTAC web server is only accessible through HTTPS (HTTP tunneled through a TLS connection)."
+      },
+      {
+        "source_id": "b8d90efe1e476caca1e9",
+        "location": "pdf-page:4",
+        "quote": "443 HTTPS (Transport Layer Security-encrypted [TLS-encrypted] RTAC web server session)"
+      }
+    ],
+    "rationale": "Encrypted web administration. This passage does not establish encrypted DNP3; that is the separate DNP3 server row.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft"
+  },
+  {
+    "product_id": "sel_rtac",
+    "feature": "encryption",
+    "status": "supported",
+    "source_ids": [
+      "b8d90efe1e476caca1e9"
+    ],
+    "source_hashes": {
+      "b8d90efe1e476caca1e9": "379cfbfd5432e521e9dcf3028633cf34d07570aeed3e1a26f89c33dbbb1a2f20"
+    },
+    "location": "pdf-page:4, Table 2; pdf-page:9",
+    "protocol": "HTTPS (TLS) for the web server session",
+    "interface": "Web interface",
+    "interface_class": "management",
+    "firmware": "Not stated; white paper LWP0018-01, date code 20160111",
+    "implementation": "Built in; self-signed X.509 certificate enabled by default",
+    "conditions": "",
+    "evidence": [
+      {
+        "source_id": "b8d90efe1e476caca1e9",
+        "location": "pdf-page:9",
+        "quote": "The SEL RTAC web server is only accessible through HTTPS (HTTP tunneled through a TLS connection)."
+      },
+      {
+        "source_id": "b8d90efe1e476caca1e9",
+        "location": "pdf-page:9",
+        "quote": "By default, all SEL RTACs have a self- signed X.509 certificate enabled."
+      }
+    ],
+    "rationale": "Encryption of the web interface only.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft"
+  },
+  {
+    "product_id": "sel_rtac",
+    "feature": "ipsec",
+    "status": "unknown",
+    "source_ids": [
+      "b8d90efe1e476caca1e9"
+    ],
+    "source_hashes": {
+      "b8d90efe1e476caca1e9": "379cfbfd5432e521e9dcf3028633cf34d07570aeed3e1a26f89c33dbbb1a2f20"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "interface_class": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "conditions": "",
+    "evidence": [],
+    "rationale": "The white paper does not mention IPsec or VPN. Not a non-support finding.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft"
+  },
+  {
+    "product_id": "sel_rtac",
+    "feature": "cip_security",
+    "status": "unknown",
+    "source_ids": [
+      "b8d90efe1e476caca1e9"
+    ],
+    "source_hashes": {
+      "b8d90efe1e476caca1e9": "379cfbfd5432e521e9dcf3028633cf34d07570aeed3e1a26f89c33dbbb1a2f20"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "interface_class": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "conditions": "",
+    "evidence": [],
+    "rationale": "The white paper does not mention ODVA CIP Security. Not a non-support finding.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft"
+  },
+  {
+    "product_id": "schneider_advc",
+    "feature": "dnp3_secure_authentication",
+    "status": "conditional",
+    "source_ids": [
+      "dbdf6052530d465705e3"
+    ],
+    "source_hashes": {
+      "dbdf6052530d465705e3": "ce5165317858ec70d08f71a170fb3ea90935147c5262a9ffbb924329b052561f"
+    },
+    "location": "html-block:1971 to html-block:2016, section \"DNP3 Security\"",
+    "protocol": "DNP3 Secure Authentication version 5 (IEEE 1815-2012)",
+    "interface": "DNP3 master station to outstation",
+    "interface_class": "control_protocol",
+    "firmware": "Not stated; operations manual PKR39809-02",
+    "implementation": "Native controller feature",
+    "conditions": "DNP3 Security made available through Feature Selection in WSOS, then Secure Authentication switched on and configured in WSOS; applies to critical ASDUs only",
+    "evidence": [
+      {
+        "source_id": "dbdf6052530d465705e3",
+        "location": "html-block:1971",
+        "quote": "The PowerLogic ADVC Controller implements version 5 of the secure authentication feature as specified in the IEEE standard document 1815-2012."
+      },
+      {
+        "source_id": "dbdf6052530d465705e3",
+        "location": "html-block:1973",
+        "quote": "DNP3 and DNP3 Security must firstly be made available through Feature Selection in WSOS."
+      },
+      {
+        "source_id": "dbdf6052530d465705e3",
+        "location": "html-block:1972",
+        "quote": "DNP3 Secure Authentication functionality for the PowerLogic ADVC Controller can only be enabled and configured through WSOS."
+      }
+    ],
+    "rationale": "The manual states Secure Authentication version 5 for the controller. Conditional because the feature has to be made available through Feature Selection and then switched on; while off, the controller requires no authentication. This establishes message authentication, not encryption of DNP3 payloads.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft",
+    "rebound": [
+      {
+        "source_id": "dbdf6052530d465705e3",
+        "from_sha256": "3181cd6a16e1f31ed92ae7ab8cd3ed5c3cb9bc004912c5bc3ecb79835b946082",
+        "to_sha256": "ce5165317858ec70d08f71a170fb3ea90935147c5262a9ffbb924329b052561f",
+        "text_sha256": "18c9bd8ca5612999a66eaa15853a3e5aa201841a19b65aef5f2ce02fb781c3dd",
+        "basis": "extracted text unchanged",
+        "rebound_at": "2026-10-13T23:19:07.017967+00:00"
+      }
+    ]
+  },
+  {
+    "product_id": "schneider_advc",
+    "feature": "tls",
+    "status": "unknown",
+    "source_ids": [
+      "dbdf6052530d465705e3"
+    ],
+    "source_hashes": {
+      "dbdf6052530d465705e3": "ce5165317858ec70d08f71a170fb3ea90935147c5262a9ffbb924329b052561f"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "interface_class": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "conditions": "",
+    "evidence": [],
+    "rationale": "Only the \"DNP3 Security\" section of the operations manual was examined. It does not mention TLS. Not a non-support finding.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft",
+    "rebound": [
+      {
+        "source_id": "dbdf6052530d465705e3",
+        "from_sha256": "3181cd6a16e1f31ed92ae7ab8cd3ed5c3cb9bc004912c5bc3ecb79835b946082",
+        "to_sha256": "ce5165317858ec70d08f71a170fb3ea90935147c5262a9ffbb924329b052561f",
+        "text_sha256": "18c9bd8ca5612999a66eaa15853a3e5aa201841a19b65aef5f2ce02fb781c3dd",
+        "basis": "extracted text unchanged",
+        "rebound_at": "2026-10-13T23:19:07.017967+00:00"
+      }
+    ]
+  },
+  {
+    "product_id": "schneider_advc",
+    "feature": "ipsec",
+    "status": "unknown",
+    "source_ids": [
+      "dbdf6052530d465705e3"
+    ],
+    "source_hashes": {
+      "dbdf6052530d465705e3": "ce5165317858ec70d08f71a170fb3ea90935147c5262a9ffbb924329b052561f"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "interface_class": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "conditions": "",
+    "evidence": [],
+    "rationale": "Only the \"DNP3 Security\" section of the operations manual was examined. It does not mention IPsec or VPN. Not a non-support finding.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft",
+    "rebound": [
+      {
+        "source_id": "dbdf6052530d465705e3",
+        "from_sha256": "3181cd6a16e1f31ed92ae7ab8cd3ed5c3cb9bc004912c5bc3ecb79835b946082",
+        "to_sha256": "ce5165317858ec70d08f71a170fb3ea90935147c5262a9ffbb924329b052561f",
+        "text_sha256": "18c9bd8ca5612999a66eaa15853a3e5aa201841a19b65aef5f2ce02fb781c3dd",
+        "basis": "extracted text unchanged",
+        "rebound_at": "2026-10-13T23:19:07.017967+00:00"
+      }
+    ]
+  },
+  {
+    "product_id": "schneider_advc",
+    "feature": "cip_security",
+    "status": "unknown",
+    "source_ids": [
+      "dbdf6052530d465705e3"
+    ],
+    "source_hashes": {
+      "dbdf6052530d465705e3": "ce5165317858ec70d08f71a170fb3ea90935147c5262a9ffbb924329b052561f"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "interface_class": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "conditions": "",
+    "evidence": [],
+    "rationale": "Only the \"DNP3 Security\" section of the operations manual was examined. It does not mention ODVA CIP Security. Not a non-support finding.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft",
+    "rebound": [
+      {
+        "source_id": "dbdf6052530d465705e3",
+        "from_sha256": "3181cd6a16e1f31ed92ae7ab8cd3ed5c3cb9bc004912c5bc3ecb79835b946082",
+        "to_sha256": "ce5165317858ec70d08f71a170fb3ea90935147c5262a9ffbb924329b052561f",
+        "text_sha256": "18c9bd8ca5612999a66eaa15853a3e5aa201841a19b65aef5f2ce02fb781c3dd",
+        "basis": "extracted text unchanged",
+        "rebound_at": "2026-10-13T23:19:07.017967+00:00"
+      }
+    ]
+  },
+  {
+    "product_id": "schneider_advc",
+    "feature": "authentication",
+    "status": "conditional",
+    "source_ids": [
+      "dbdf6052530d465705e3"
+    ],
+    "source_hashes": {
+      "dbdf6052530d465705e3": "ce5165317858ec70d08f71a170fb3ea90935147c5262a9ffbb924329b052561f"
+    },
+    "location": "html-block:1980 to html-block:2016, Table 19",
+    "protocol": "DNP3 Secure Authentication version 5: per-user update keys, HMAC-SHA-256 or HMAC-SHA-1 message authentication codes",
+    "interface": "DNP3 master station to outstation",
+    "interface_class": "control_protocol",
+    "firmware": "Not stated; operations manual PKR39809-02",
+    "implementation": "Native controller feature",
+    "conditions": "DNP3 Security made available through Feature Selection in WSOS, then Secure Authentication switched on and configured in WSOS; applies to critical ASDUs only",
+    "evidence": [
+      {
+        "source_id": "dbdf6052530d465705e3",
+        "location": "html-block:1993",
+        "quote": "This determines which algorithm the controller uses to encode the MAC in DNP3 Secure Authentication messages."
+      },
+      {
+        "source_id": "dbdf6052530d465705e3",
+        "location": "html-block:2007",
+        "quote": "DNP3 Secure Authentication is performed on a per-user basis."
+      },
+      {
+        "source_id": "dbdf6052530d465705e3",
+        "location": "html-block:2014",
+        "quote": "Secure Authentication is required for accessing critical ASDU’s only."
+      }
+    ],
+    "rationale": "Same capability as the DNP3 Secure Authentication row, recorded here because the two categories overlap; it is one capability, not two. Login authentication of users or engineering tools is not covered by the examined section.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft",
+    "rebound": [
+      {
+        "source_id": "dbdf6052530d465705e3",
+        "from_sha256": "3181cd6a16e1f31ed92ae7ab8cd3ed5c3cb9bc004912c5bc3ecb79835b946082",
+        "to_sha256": "ce5165317858ec70d08f71a170fb3ea90935147c5262a9ffbb924329b052561f",
+        "text_sha256": "18c9bd8ca5612999a66eaa15853a3e5aa201841a19b65aef5f2ce02fb781c3dd",
+        "basis": "extracted text unchanged",
+        "rebound_at": "2026-10-13T23:19:07.017967+00:00"
+      }
+    ]
+  },
+  {
+    "product_id": "schneider_advc",
+    "feature": "encryption",
+    "status": "unknown",
+    "source_ids": [
+      "dbdf6052530d465705e3"
+    ],
+    "source_hashes": {
+      "dbdf6052530d465705e3": "ce5165317858ec70d08f71a170fb3ea90935147c5262a9ffbb924329b052561f"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "interface_class": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "conditions": "",
+    "evidence": [],
+    "rationale": "Only the \"DNP3 Security\" section of the operations manual was examined. It describes message authentication codes and does not mention encryption of DNP3 traffic. Not a non-support finding.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft",
+    "rebound": [
+      {
+        "source_id": "dbdf6052530d465705e3",
+        "from_sha256": "3181cd6a16e1f31ed92ae7ab8cd3ed5c3cb9bc004912c5bc3ecb79835b946082",
+        "to_sha256": "ce5165317858ec70d08f71a170fb3ea90935147c5262a9ffbb924329b052561f",
+        "text_sha256": "18c9bd8ca5612999a66eaa15853a3e5aa201841a19b65aef5f2ce02fb781c3dd",
+        "basis": "extracted text unchanged",
+        "rebound_at": "2026-10-13T23:19:07.017967+00:00"
+      }
+    ]
+  },
+  {
+    "product_id": "schneider_advc",
+    "feature": "ssh",
+    "status": "unknown",
+    "source_ids": [
+      "dbdf6052530d465705e3"
+    ],
+    "source_hashes": {
+      "dbdf6052530d465705e3": "ce5165317858ec70d08f71a170fb3ea90935147c5262a9ffbb924329b052561f"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "interface_class": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "conditions": "",
+    "evidence": [],
+    "rationale": "Only the \"DNP3 Security\" section of the operations manual was examined. It does not mention SSH. Not a non-support finding.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft",
+    "rebound": [
+      {
+        "source_id": "dbdf6052530d465705e3",
+        "from_sha256": "3181cd6a16e1f31ed92ae7ab8cd3ed5c3cb9bc004912c5bc3ecb79835b946082",
+        "to_sha256": "ce5165317858ec70d08f71a170fb3ea90935147c5262a9ffbb924329b052561f",
+        "text_sha256": "18c9bd8ca5612999a66eaa15853a3e5aa201841a19b65aef5f2ce02fb781c3dd",
+        "basis": "extracted text unchanged",
+        "rebound_at": "2026-10-13T23:19:07.017967+00:00"
+      }
+    ]
+  },
+  {
+    "product_id": "rockwell_5580",
+    "feature": "dnp3_secure_authentication",
+    "status": "unknown",
+    "source_ids": [
+      "cab8a6e6a9edf8c162ac"
+    ],
+    "source_hashes": {
+      "cab8a6e6a9edf8c162ac": "87af23478dc71f1ff7594a9a3f648edf92129d1088e2df9146c8423018cbf2db"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "interface_class": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "conditions": "",
+    "evidence": [],
+    "rationale": "The examined manual page does not mention DNP3. Not a non-support finding.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft",
+    "rebound": [
+      {
+        "source_id": "cab8a6e6a9edf8c162ac",
+        "from_sha256": "0d9a90d67f10d971b2954ec79f2ed1117fdd8876ab8e6def4f8061392704f6f8",
+        "to_sha256": "87af23478dc71f1ff7594a9a3f648edf92129d1088e2df9146c8423018cbf2db",
+        "text_sha256": "cfd54d022f704563adcc2e9fa231eace6848c62eb52860f87a3467b346d8b08f",
+        "basis": "extracted text unchanged",
+        "rebound_at": "2026-10-13T23:19:07.017967+00:00"
+      }
+    ]
+  },
+  {
+    "product_id": "rockwell_5580",
+    "feature": "tls",
+    "status": "unknown",
+    "source_ids": [
+      "cab8a6e6a9edf8c162ac"
+    ],
+    "source_hashes": {
+      "cab8a6e6a9edf8c162ac": "87af23478dc71f1ff7594a9a3f648edf92129d1088e2df9146c8423018cbf2db"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "interface_class": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "conditions": "",
+    "evidence": [],
+    "rationale": "The examined manual page does not name TLS or DTLS. Not a non-support finding.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft",
+    "rebound": [
+      {
+        "source_id": "cab8a6e6a9edf8c162ac",
+        "from_sha256": "0d9a90d67f10d971b2954ec79f2ed1117fdd8876ab8e6def4f8061392704f6f8",
+        "to_sha256": "87af23478dc71f1ff7594a9a3f648edf92129d1088e2df9146c8423018cbf2db",
+        "text_sha256": "cfd54d022f704563adcc2e9fa231eace6848c62eb52860f87a3467b346d8b08f",
+        "basis": "extracted text unchanged",
+        "rebound_at": "2026-10-13T23:19:07.017967+00:00"
+      }
+    ]
+  },
+  {
+    "product_id": "rockwell_5580",
+    "feature": "ipsec",
+    "status": "unknown",
+    "source_ids": [
+      "cab8a6e6a9edf8c162ac"
+    ],
+    "source_hashes": {
+      "cab8a6e6a9edf8c162ac": "87af23478dc71f1ff7594a9a3f648edf92129d1088e2df9146c8423018cbf2db"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "interface_class": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "conditions": "",
+    "evidence": [],
+    "rationale": "The examined manual page does not mention IPsec or VPN. Not a non-support finding.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft",
+    "rebound": [
+      {
+        "source_id": "cab8a6e6a9edf8c162ac",
+        "from_sha256": "0d9a90d67f10d971b2954ec79f2ed1117fdd8876ab8e6def4f8061392704f6f8",
+        "to_sha256": "87af23478dc71f1ff7594a9a3f648edf92129d1088e2df9146c8423018cbf2db",
+        "text_sha256": "cfd54d022f704563adcc2e9fa231eace6848c62eb52860f87a3467b346d8b08f",
+        "basis": "extracted text unchanged",
+        "rebound_at": "2026-10-13T23:19:07.017967+00:00"
+      }
+    ]
+  },
+  {
+    "product_id": "rockwell_5580",
+    "feature": "cip_security",
+    "status": "unknown",
+    "source_ids": [
+      "cab8a6e6a9edf8c162ac"
+    ],
+    "source_hashes": {
+      "cab8a6e6a9edf8c162ac": "87af23478dc71f1ff7594a9a3f648edf92129d1088e2df9146c8423018cbf2db"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "interface_class": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "conditions": "",
+    "evidence": [],
+    "rationale": "The 5580 user manual page describes CIP Security in general terms and refers to \"CIP Security-enabled Logix controllers\" (html-block:15), but it does not state that the ControlLogix 5580 is CIP Security-capable or from which firmware revision. It defers the list of capable products and minimum firmware revisions to publication SECURE-AT001 (html-block:19), whose download failed in this run because the robots.txt of that host was unresolved. Left unknown rather than inferred. Not a non-support finding.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft",
+    "rebound": [
+      {
+        "source_id": "cab8a6e6a9edf8c162ac",
+        "from_sha256": "0d9a90d67f10d971b2954ec79f2ed1117fdd8876ab8e6def4f8061392704f6f8",
+        "to_sha256": "87af23478dc71f1ff7594a9a3f648edf92129d1088e2df9146c8423018cbf2db",
+        "text_sha256": "cfd54d022f704563adcc2e9fa231eace6848c62eb52860f87a3467b346d8b08f",
+        "basis": "extracted text unchanged",
+        "rebound_at": "2026-10-13T23:19:07.017967+00:00"
+      }
+    ]
+  },
+  {
+    "product_id": "rockwell_5580",
+    "feature": "authentication",
+    "status": "unknown",
+    "source_ids": [
+      "cab8a6e6a9edf8c162ac"
+    ],
+    "source_hashes": {
+      "cab8a6e6a9edf8c162ac": "87af23478dc71f1ff7594a9a3f648edf92129d1088e2df9146c8423018cbf2db"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "interface_class": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "conditions": "",
+    "evidence": [],
+    "rationale": "The page says CIP Security lets devices authenticate each other (html-block:7) as a description of the standard. Whether and from which firmware that applies to the 5580 depends on the publication that could not be fetched. Not a non-support finding.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft",
+    "rebound": [
+      {
+        "source_id": "cab8a6e6a9edf8c162ac",
+        "from_sha256": "0d9a90d67f10d971b2954ec79f2ed1117fdd8876ab8e6def4f8061392704f6f8",
+        "to_sha256": "87af23478dc71f1ff7594a9a3f648edf92129d1088e2df9146c8423018cbf2db",
+        "text_sha256": "cfd54d022f704563adcc2e9fa231eace6848c62eb52860f87a3467b346d8b08f",
+        "basis": "extracted text unchanged",
+        "rebound_at": "2026-10-13T23:19:07.017967+00:00"
+      }
+    ]
+  },
+  {
+    "product_id": "rockwell_5580",
+    "feature": "encryption",
+    "status": "unknown",
+    "source_ids": [
+      "cab8a6e6a9edf8c162ac"
+    ],
+    "source_hashes": {
+      "cab8a6e6a9edf8c162ac": "87af23478dc71f1ff7594a9a3f648edf92129d1088e2df9146c8423018cbf2db"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "interface_class": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "conditions": "",
+    "evidence": [],
+    "rationale": "The page lists data confidentiality as a CIP Security property (html-block:11) as a description of the standard, not as a stated capability of the 5580. Not a non-support finding.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft",
+    "rebound": [
+      {
+        "source_id": "cab8a6e6a9edf8c162ac",
+        "from_sha256": "0d9a90d67f10d971b2954ec79f2ed1117fdd8876ab8e6def4f8061392704f6f8",
+        "to_sha256": "87af23478dc71f1ff7594a9a3f648edf92129d1088e2df9146c8423018cbf2db",
+        "text_sha256": "cfd54d022f704563adcc2e9fa231eace6848c62eb52860f87a3467b346d8b08f",
+        "basis": "extracted text unchanged",
+        "rebound_at": "2026-10-13T23:19:07.017967+00:00"
+      }
+    ]
+  },
+  {
+    "product_id": "rockwell_5580",
+    "feature": "ssh",
+    "status": "unknown",
+    "source_ids": [
+      "cab8a6e6a9edf8c162ac"
+    ],
+    "source_hashes": {
+      "cab8a6e6a9edf8c162ac": "87af23478dc71f1ff7594a9a3f648edf92129d1088e2df9146c8423018cbf2db"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "interface_class": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "conditions": "",
+    "evidence": [],
+    "rationale": "The examined manual page does not mention SSH. Not a non-support finding.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft",
+    "rebound": [
+      {
+        "source_id": "cab8a6e6a9edf8c162ac",
+        "from_sha256": "0d9a90d67f10d971b2954ec79f2ed1117fdd8876ab8e6def4f8061392704f6f8",
+        "to_sha256": "87af23478dc71f1ff7594a9a3f648edf92129d1088e2df9146c8423018cbf2db",
+        "text_sha256": "cfd54d022f704563adcc2e9fa231eace6848c62eb52860f87a3467b346d8b08f",
+        "basis": "extracted text unchanged",
+        "rebound_at": "2026-10-13T23:19:07.017967+00:00"
+      }
+    ]
+  },
+  {
+    "product_id": "ge_b90",
+    "feature": "dnp3_secure_authentication",
+    "status": "unknown",
+    "source_ids": [
+      "7d34db2ffda82aa29001"
+    ],
+    "source_hashes": {
+      "7d34db2ffda82aa29001": "bf08ebae53ad44e5180f54f474b183366be8ab9154c980609cad72cc16c7806f"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "interface_class": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "conditions": "",
+    "evidence": [],
+    "rationale": "The product page lists \"DNP 3.0 (serial & TCP/IP)\" as a supported protocol (html-block:137) and does not mention Secure Authentication. Not a non-support finding.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft"
+  },
+  {
+    "product_id": "ge_b90",
+    "feature": "tls",
+    "status": "unknown",
+    "source_ids": [
+      "7d34db2ffda82aa29001"
+    ],
+    "source_hashes": {
+      "7d34db2ffda82aa29001": "bf08ebae53ad44e5180f54f474b183366be8ab9154c980609cad72cc16c7806f"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "interface_class": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "conditions": "",
+    "evidence": [],
+    "rationale": "The product page does not mention TLS. Not a non-support finding.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft"
+  },
+  {
+    "product_id": "ge_b90",
+    "feature": "ipsec",
+    "status": "unknown",
+    "source_ids": [
+      "7d34db2ffda82aa29001"
+    ],
+    "source_hashes": {
+      "7d34db2ffda82aa29001": "bf08ebae53ad44e5180f54f474b183366be8ab9154c980609cad72cc16c7806f"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "interface_class": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "conditions": "",
+    "evidence": [],
+    "rationale": "The product page does not mention IPsec or VPN. Not a non-support finding.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft"
+  },
+  {
+    "product_id": "ge_b90",
+    "feature": "cip_security",
+    "status": "unknown",
+    "source_ids": [
+      "7d34db2ffda82aa29001"
+    ],
+    "source_hashes": {
+      "7d34db2ffda82aa29001": "bf08ebae53ad44e5180f54f474b183366be8ab9154c980609cad72cc16c7806f"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "interface_class": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "conditions": "",
+    "evidence": [],
+    "rationale": "The product page does not mention ODVA CIP Security. Its references to NERC CIP are a regulatory standard, not this protocol. Not a non-support finding.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft"
+  },
+  {
+    "product_id": "ge_b90",
+    "feature": "authentication",
+    "status": "conditional",
+    "source_ids": [
+      "7d34db2ffda82aa29001"
+    ],
+    "source_hashes": {
+      "7d34db2ffda82aa29001": "bf08ebae53ad44e5180f54f474b183366be8ab9154c980609cad72cc16c7806f"
+    },
+    "location": "html-block:144 to html-block:153, CyberSentry section",
+    "protocol": "RADIUS (AAA) user authentication with role-based access control",
+    "interface": "User access to the relay",
+    "interface_class": "management",
+    "firmware": "CyberSentry UR, FW v7.4xx as given in the section heading",
+    "implementation": "CyberSentry feature set of the UR family; the page does not say whether it is a separately ordered option",
+    "conditions": "CyberSentry, on the firmware line named in the section heading",
+    "evidence": [
+      {
+        "source_id": "7d34db2ffda82aa29001",
+        "location": "html-block:153",
+        "quote": "The standard “Remote Authentication Dial In User Service” (Radius) is used for authentication."
+      },
+      {
+        "source_id": "7d34db2ffda82aa29001",
+        "location": "html-block:151",
+        "quote": "Enables integration with centrally managed authentication and accounting of all user activities"
+      },
+      {
+        "source_id": "7d34db2ffda82aa29001",
+        "location": "html-block:144",
+        "quote": "Cyber Security - CyberSentry™ UR (FW v7.4xx)"
+      }
+    ],
+    "rationale": "The product page documents RADIUS-based user authentication and roles under CyberSentry, tied to a firmware line. This concerns who may log in to the relay. The firmware-file hash check on the same page verifies firmware, not users or messages, and is not used here. It is a product page with no document revision or date.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft"
+  },
+  {
+    "product_id": "ge_b90",
+    "feature": "authentication",
+    "status": "unknown",
+    "source_ids": [
+      "7d34db2ffda82aa29001"
+    ],
+    "source_hashes": {
+      "7d34db2ffda82aa29001": "bf08ebae53ad44e5180f54f474b183366be8ab9154c980609cad72cc16c7806f"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "interface_class": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "conditions": "",
+    "evidence": [],
+    "rationale": "For control protocols: the page lists DNP 3.0 as a supported protocol and says nothing about authenticating its messages. The RADIUS finding is recorded separately for user access. Not a non-support finding.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft"
+  },
+  {
+    "product_id": "ge_b90",
+    "feature": "encryption",
+    "status": "unknown",
+    "source_ids": [
+      "7d34db2ffda82aa29001"
+    ],
+    "source_hashes": {
+      "7d34db2ffda82aa29001": "bf08ebae53ad44e5180f54f474b183366be8ab9154c980609cad72cc16c7806f"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "interface_class": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "conditions": "",
+    "evidence": [],
+    "rationale": "The product page makes no explicit statement about encrypted communication. Not a non-support finding.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft"
+  },
+  {
+    "product_id": "ge_b90",
+    "feature": "ssh",
+    "status": "unknown",
+    "source_ids": [
+      "7d34db2ffda82aa29001"
+    ],
+    "source_hashes": {
+      "7d34db2ffda82aa29001": "bf08ebae53ad44e5180f54f474b183366be8ab9154c980609cad72cc16c7806f"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "interface_class": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "conditions": "",
+    "evidence": [],
+    "rationale": "The page lists \"HTTP, TFTP, SFTP and MMS file transfer\" (html-block:140). SSH is not named, and the page does not say whether SFTP means SSH File Transfer or under which option it is available. Left unknown pending the UR instruction manual. Not a non-support finding.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft"
+  },
+  {
+    "product_id": "siemens_sip5",
+    "feature": "dnp3_secure_authentication",
+    "status": "unknown",
+    "source_ids": [
+      "7e433d70887ae9b0be5d"
+    ],
+    "source_hashes": {
+      "7e433d70887ae9b0be5d": "16b5f949dc1b8046d54701991f82f9430d504c6ee7110e9bf6fc3a8eb79e5098"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "interface_class": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "conditions": "",
+    "evidence": [],
+    "rationale": "The advisory does not address this capability, and the intended source, the security conformance statement, returned HTTP 404. Not a non-support finding.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft"
+  },
+  {
+    "product_id": "siemens_sip5",
+    "feature": "tls",
+    "status": "conditional",
+    "source_ids": [
+      "7e433d70887ae9b0be5d"
+    ],
+    "source_hashes": {
+      "7e433d70887ae9b0be5d": "16b5f949dc1b8046d54701991f82f9430d504c6ee7110e9bf6fc3a8eb79e5098"
+    },
+    "location": "html-block:424 and html-block:435",
+    "protocol": "TLS on HTTPS (443/tcp), DIGSI 5 (4443/tcp) and syslog over TLS",
+    "interface": "Web, DIGSI 5 and syslog interfaces",
+    "interface_class": "management",
+    "firmware": "Per device type: fixed from V8.89, V8.90, V9.62, V9.64 or V9.65; for some types no fix is planned",
+    "implementation": "Built into the SIPROTEC 5 and SIPROTEC 5 Compact device types listed in the advisory",
+    "conditions": "Affected versions accept weak ciphers; a fixed version is needed where one exists",
+    "evidence": [
+      {
+        "source_id": "7e433d70887ae9b0be5d",
+        "location": "html-block:435",
+        "quote": "The affected devices are supporting weak ciphers on several ports (443/tcp for web, 4443/tcp for DIGSI 5 and configurable port for syslog over TLS)."
+      },
+      {
+        "source_id": "7e433d70887ae9b0be5d",
+        "location": "html-block:424",
+        "quote": "Restrict access to port 443/tcp for web, 4443/tcp for DIGSI 5 and configurable port for syslog over TLS to trusted IP addresses only"
+      }
+    ],
+    "rationale": "Indirect evidence: a vendor security advisory (SSA-750499 V1.2), not a manual. It shows that the listed devices run TLS-protected management services and that affected versions accept weak ciphers. The presence of encryption is not evidence of adequate security. The intended source, the security conformance statement, returned HTTP 404.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft"
+  },
+  {
+    "product_id": "siemens_sip5",
+    "feature": "tls",
+    "status": "unknown",
+    "source_ids": [
+      "7e433d70887ae9b0be5d"
+    ],
+    "source_hashes": {
+      "7e433d70887ae9b0be5d": "16b5f949dc1b8046d54701991f82f9430d504c6ee7110e9bf6fc3a8eb79e5098"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "interface_class": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "conditions": "",
+    "evidence": [],
+    "rationale": "For control protocols: the advisory names only the web, DIGSI 5 and syslog ports and says nothing about DNP3 or IEC 61850 traffic. The finding for those management interfaces is recorded separately. Not a non-support finding.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft"
+  },
+  {
+    "product_id": "siemens_sip5",
+    "feature": "ipsec",
+    "status": "unknown",
+    "source_ids": [
+      "7e433d70887ae9b0be5d"
+    ],
+    "source_hashes": {
+      "7e433d70887ae9b0be5d": "16b5f949dc1b8046d54701991f82f9430d504c6ee7110e9bf6fc3a8eb79e5098"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "interface_class": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "conditions": "",
+    "evidence": [],
+    "rationale": "The advisory recommends protecting network access with external mechanisms such as firewalls, segmentation and VPN (html-block:428). That is site guidance, not a device capability, and a VPN recommendation does not establish native IPsec support. Not a non-support finding.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft"
+  },
+  {
+    "product_id": "siemens_sip5",
+    "feature": "cip_security",
+    "status": "unknown",
+    "source_ids": [
+      "7e433d70887ae9b0be5d"
+    ],
+    "source_hashes": {
+      "7e433d70887ae9b0be5d": "16b5f949dc1b8046d54701991f82f9430d504c6ee7110e9bf6fc3a8eb79e5098"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "interface_class": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "conditions": "",
+    "evidence": [],
+    "rationale": "The advisory does not address this capability, and the intended source, the security conformance statement, returned HTTP 404. Not a non-support finding.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft"
+  },
+  {
+    "product_id": "siemens_sip5",
+    "feature": "authentication",
+    "status": "unknown",
+    "source_ids": [
+      "7e433d70887ae9b0be5d"
+    ],
+    "source_hashes": {
+      "7e433d70887ae9b0be5d": "16b5f949dc1b8046d54701991f82f9430d504c6ee7110e9bf6fc3a8eb79e5098"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "interface_class": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "conditions": "",
+    "evidence": [],
+    "rationale": "The advisory does not address this capability, and the intended source, the security conformance statement, returned HTTP 404. Not a non-support finding.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft"
+  },
+  {
+    "product_id": "siemens_sip5",
+    "feature": "encryption",
+    "status": "conditional",
+    "source_ids": [
+      "7e433d70887ae9b0be5d"
+    ],
+    "source_hashes": {
+      "7e433d70887ae9b0be5d": "16b5f949dc1b8046d54701991f82f9430d504c6ee7110e9bf6fc3a8eb79e5098"
+    },
+    "location": "html-block:12 and html-block:435",
+    "protocol": "Encrypted management connections (web, DIGSI 5, syslog over TLS)",
+    "interface": "Web, DIGSI 5 and syslog interfaces",
+    "interface_class": "management",
+    "firmware": "Per device type: fixed from V8.89, V8.90, V9.62, V9.64 or V9.65; for some types no fix is planned",
+    "implementation": "Built into the SIPROTEC 5 and SIPROTEC 5 Compact device types listed in the advisory",
+    "conditions": "Affected versions accept weak ciphers; a fixed version is needed where one exists",
+    "evidence": [
+      {
+        "source_id": "7e433d70887ae9b0be5d",
+        "location": "html-block:12",
+        "quote": "The SIPROTEC 5 devices are supporting weak encryption. This could allow an unauthorized attacker in a man-in-the-middle position to read any data passed over the connection between legitimate clients and the affected device."
+      },
+      {
+        "source_id": "7e433d70887ae9b0be5d",
+        "location": "html-block:435",
+        "quote": "The affected devices are supporting weak ciphers on several ports (443/tcp for web, 4443/tcp for DIGSI 5 and configurable port for syslog over TLS)."
+      }
+    ],
+    "rationale": "Same evidence as the TLS row: encryption exists on management interfaces and is weak in affected versions.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft"
+  },
+  {
+    "product_id": "siemens_sip5",
+    "feature": "encryption",
+    "status": "unknown",
+    "source_ids": [
+      "7e433d70887ae9b0be5d"
+    ],
+    "source_hashes": {
+      "7e433d70887ae9b0be5d": "16b5f949dc1b8046d54701991f82f9430d504c6ee7110e9bf6fc3a8eb79e5098"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "interface_class": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "conditions": "",
+    "evidence": [],
+    "rationale": "For control protocols: the advisory names only the web, DIGSI 5 and syslog ports and says nothing about DNP3 or IEC 61850 traffic. The finding for those management interfaces is recorded separately. Not a non-support finding.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft"
+  },
+  {
+    "product_id": "siemens_sip5",
+    "feature": "ssh",
+    "status": "unknown",
+    "source_ids": [
+      "7e433d70887ae9b0be5d"
+    ],
+    "source_hashes": {
+      "7e433d70887ae9b0be5d": "16b5f949dc1b8046d54701991f82f9430d504c6ee7110e9bf6fc3a8eb79e5098"
+    },
+    "location": "",
+    "protocol": "",
+    "interface": "",
+    "interface_class": "",
+    "firmware": "not established",
+    "implementation": "not established",
+    "conditions": "",
+    "evidence": [],
+    "rationale": "The advisory does not address this capability, and the intended source, the security conformance statement, returned HTTP 404. Not a non-support finding.",
+    "reviewer": "Claude AI draft review; author confirmation pending",
+    "reviewed_at": "2026-10-13T17:10:14.699102+00:00",
+    "review_status": "draft"
+  }
+]

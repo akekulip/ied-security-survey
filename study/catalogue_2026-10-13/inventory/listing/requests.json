@@ -1,0 +1,85 @@
+[
+  {
+    "at": "2026-10-13T18:52:06.887061+00:00",
+    "url": "https://www.gevernova.com/robots.txt",
+    "status": 200,
+    "bytes": 5207,
+    "sha256": "38174ab81da1da9ba9bec5746eb246576af3f2d13361da1fa7a8a9e90ef0dfa8"
+  },
+  {
+    "at": "2026-10-13T18:52:08.081989+00:00",
+    "url": "https://www.gevernova.com/electrification/sitemap.xml",
+    "status": 200,
+    "bytes": 280393
+  },
+  {
+    "at": "2026-10-13T18:52:08.373130+00:00",
+    "url": "https://www.siemens.com/robots.txt",
+    "status": 200,
+    "bytes": 130,
+    "sha256": "6431c135b6bc319415db219c33e76ddcfb612b4330f21a982a15ee85edeb91aa"
+  },
+  {
+    "at": "2026-10-13T18:52:09.564974+00:00",
+    "url": "https://www.siemens.com/en-us/sitemap-en-us.xml",
+    "status": 200,
+    "bytes": 30793875
+  },
+  {
+    "at": "2026-10-13T18:52:10.625208+00:00",
+    "url": "https://www.rockwellautomation.com/robots.txt",
+    "status": 200,
+    "bytes": 5064,
+    "sha256": "3f3b8289063afb02205c5669e96142fc13c385b232b0b62345418f2642cd47d7"
+  },
+  {
+    "at": "2026-10-13T18:52:11.816020+00:00",
+    "url": "https://www.rockwellautomation.com/en-us/sitemapindex.xml",
+    "status": 200,
+    "bytes": 40435
+  },
+  {
+    "at": "2026-10-13T18:52:13.026749+00:00",
+    "url": "https://www.rockwellautomation.com/en-us/sitemap.content.xml",
+    "status": 200,
+    "bytes": 1522103
+  },
+  {
+    "at": "2026-10-13T18:52:14.230547+00:00",
+    "url": "https://www.rockwellautomation.com/en-us/sitemap.docs-1.xml",
+    "status": 200,
+    "bytes": 76865
+  },
+  {
+    "at": "2026-10-13T18:52:14.391860+00:00",
+    "url": "https://www.se.com/robots.txt",
+    "status": 200,
+    "bytes": 46157,
+    "sha256": "3e2dd49000b1c451deca6457c489da60371648e8a567b89ea4a9793bab996f7c"
+  },
+  {
+    "at": "2026-10-13T18:52:15.606482+00:00",
+    "url": "https://www.se.com/us/en/product-range/google-range-sitemapindex-US-en.xml",
+    "status": 200,
+    "bytes": 232
+  },
+  {
+    "at": "2026-10-13T18:52:16.800668+00:00",
+    "url": "https://www.se.com/us/en/product-range/google-range-sitemap-US-en.xml",
+    "status": 200,
+    "bytes": 4899599
+  },
+  {
+    "at": "2026-10-13T18:52:17.342598+00:00",
+    "url": "https://selinc.com/robots.txt",
+    "status": 200,
+    "bytes": 686,
+    "sha256": "5e08edd75de604c0966b1d4c076064640b4ca1dfc6f31c8eb9eeb65d3ba64211"
+  },
+  {
+    "at": "2026-10-13T18:52:18.538883+00:00",
+    "url": "https://selinc.com/api/cms/contenttype/productselector/",
+    "status": 200,
+    "bytes": 270511
+  }
+]

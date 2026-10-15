@@ -1,0 +1,196 @@
+[
+  {
+    "id": "b8d90efe1e476caca1e9",
+    "product_id": "sel_rtac",
+    "url": "https://selinc.com/api/download/112760/",
+    "depth": 0,
+    "started_at": "2026-10-13T19:51:11.171621+00:00",
+    "final_url": "https://selinc.com/api/download/112760/",
+    "sha256": "379cfbfd5432e521e9dcf3028633cf34d07570aeed3e1a26f89c33dbbb1a2f20",
+    "bytes": 857336,
+    "headers": {
+      "Date": "Tue, 13 Oct 2026 19:51:12 GMT",
+      "Content-Type": "application/pdf",
+      "Content-Length": "857336",
+      "Content-Disposition": "inline; filename=0018_LeveragingSecurity_DK_20160111.pdf"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://selinc.com/api/download/112760/",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T19:51:13.423495+00:00",
+    "kind": "pdf",
+    "pages": 14,
+    "empty_pages": 0,
+    "page_errors": [],
+    "encrypted": false,
+    "title": "SEL APPLICATION GUIDE",
+    "pdf_created": "D:20160111133319-08'00'",
+    "pdf_modified": "D:20160111133518-08'00'",
+    "document_hints": [
+      "Section 7 Figure 1 RTAC Security Diagram and Topic Sections Date Code 20160111 SEL White Paper LWP0018-01",
+      "stemTags.Whitelist_Alert.t; ELSE SEL White Paper LWP0018-01 Date Code 20160111",
+      " as an automation engineer in SEL research and development. © 2016 by Schweitzer Engineering Laboratories, Inc. All right"
+    ],
+    "text_sha256": "9b6ca2099c14d5fffd8af5e59cbf57cb2eda7451feea5fd94ea7c043b72e439c",
+    "doc_type_suggested": "security_guide",
+    "status": "extracted",
+    "links_found": 0
+  },
+  {
+    "id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "url": "https://productinfo.se.com/advc-operationsmanual/pkr39809_advc_operations-manual/English/BM_ADVC3%20Operations%20Manual_0000999204.xml/$/TPC_ADVC3_OM_DNP3SecurityCPT_0001009251",
+    "depth": 0,
+    "started_at": "2026-10-13T19:51:13.674856+00:00",
+    "final_url": "https://productinfo.se.com/advc-operationsmanual/pkr39809_advc_operations-manual/English/BM_ADVC3%20Operations%20Manual_0000999204.xml/$/TPC_ADVC3_OM_DNP3SecurityCPT_0001009251",
+    "sha256": "ce5165317858ec70d08f71a170fb3ea90935147c5262a9ffbb924329b052561f",
+    "bytes": 929910,
+    "headers": {
+      "Content-Type": "text/html;charset=UTF-8",
+      "Content-Language": "en",
+      "Content-Length": "929910",
+      "Date": "Tue, 13 Oct 2026 19:51:15 GMT"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://productinfo.se.com/advc-operationsmanual/pkr39809_advc_operations-manual/English/BM_ADVC3%20Operations%20Manual_0000999204.xml/$/TPC_ADVC3_OM_DNP3SecurityCPT_0001009251",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T19:51:15.446655+00:00",
+    "kind": "html",
+    "title": "DNP3 Security - PKR39809_ADVC_Operations manual",
+    "document_hints": [
+      "© 2025 Schneider Electric"
+    ],
+    "text_sha256": "18c9bd8ca5612999a66eaa15853a3e5aa201841a19b65aef5f2ce02fb781c3dd",
+    "doc_type_suggested": "manual",
+    "status": "extracted",
+    "links_found": 1975
+  },
+  {
+    "id": "cab8a6e6a9edf8c162ac",
+    "product_id": "rockwell_5580",
+    "url": "https://www.rockwellautomation.com/en-us/docs/technical/logix5000/_online/1756-um543/controllogix-5580-and-guardlogix-5580-controllers-/controllogix-and-guardlogix-systems/secure-controller-systems.html",
+    "depth": 0,
+    "started_at": "2026-10-13T19:51:15.561095+00:00",
+    "final_url": "https://www.rockwellautomation.com/en-us/docs/technical/logix5000/_online/1756-um543/controllogix-5580-and-guardlogix-5580-controllers-/controllogix-and-guardlogix-systems/secure-controller-systems.html",
+    "sha256": "87af23478dc71f1ff7594a9a3f648edf92129d1088e2df9146c8423018cbf2db",
+    "bytes": 112115,
+    "headers": {
+      "Content-Type": "text/html;charset=utf-8",
+      "Last-Modified": "Thu, 17 Sep 2026 22:44:17 GMT",
+      "ETag": "W/\"1a86c-65bb586209266-gzip\"",
+      "Date": "Tue, 13 Oct 2026 19:51:16 GMT"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://www.rockwellautomation.com/en-us/docs/technical/logix5000/_online/1756-um543/controllogix-5580-and-guardlogix-5580-controllers-/controllogix-and-guardlogix-systems/secure-controller-systems.html",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T19:51:16.686121+00:00",
+    "kind": "html",
+    "title": "Secure Controller Systems",
+    "document_hints": [
+      "ControlLogix 5580 controllers, firmware revision 32.011 or later, and GuardLogix 5580, firmware revision 37.",
+      "are revision 32.011 or later, and GuardLogix 5580, firmware revision 37.011 or later, support IEC-62443-4-2 SL 1 requirements. F"
+    ],
+    "text_sha256": "cfd54d022f704563adcc2e9fa231eace6848c62eb52860f87a3467b346d8b08f",
+    "doc_type_suggested": "manual",
+    "status": "extracted",
+    "links_found": 7
+  },
+  {
+    "id": "62f7fc505f28c040beea",
+    "product_id": "rockwell_5580",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/at/secure-at001_-en-p.pdf",
+    "depth": 0,
+    "started_at": "2026-10-13T19:51:16.696761+00:00",
+    "status": "failed",
+    "error": "ValueError: robots unresolved: HTTP 301"
+  },
+  {
+    "id": "7d34db2ffda82aa29001",
+    "product_id": "ge_b90",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/bus-protection/multilin-b90",
+    "depth": 0,
+    "started_at": "2026-10-13T19:51:16.812540+00:00",
+    "final_url": "https://www.gevernova.com/electrification/automation/protection-control-metering/bus-protection/multilin-b90",
+    "sha256": "bf08ebae53ad44e5180f54f474b183366be8ab9154c980609cad72cc16c7806f",
+    "bytes": 419666,
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Content-Language": "en",
+      "Date": "Tue, 13 Oct 2026 19:51:18 GMT"
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/bus-protection/multilin-b90",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T19:51:18.980425+00:00",
+    "kind": "html",
+    "title": "Multilin B90 | GE Vernova | Electrification",
+    "document_hints": [],
+    "text_sha256": "c34fb43bf4711bfcc22d331cdb4e37cc2b72fd9427a9e085910bd350e1a809c0",
+    "doc_type_suggested": "product_page",
+    "status": "extracted",
+    "links_found": 42
+  },
+  {
+    "id": "9e5a76bd108c7216353f",
+    "product_id": "siemens_sip5",
+    "url": "https://cache.industry.siemens.com/dl/files/768/109821768/att_1145217/v1/SIP5_DIGSI5_Security_Conformance_Statement_EN.pdf",
+    "depth": 0,
+    "started_at": "2026-10-13T19:51:19.028954+00:00",
+    "status": "failed",
+    "error": "ValueError: HTTP 404"
+  },
+  {
+    "id": "7e433d70887ae9b0be5d",
+    "product_id": "siemens_sip5",
+    "url": "https://cert-portal.siemens.com/productcert/html/ssa-750499.html",
+    "depth": 0,
+    "started_at": "2026-10-13T19:51:20.639235+00:00",
+    "final_url": "https://cert-portal.siemens.com/productcert/html/ssa-750499.html",
+    "sha256": "16b5f949dc1b8046d54701991f82f9430d504c6ee7110e9bf6fc3a8eb79e5098",
+    "bytes": 163064,
+    "headers": {
+      "Content-Type": "text/html; charset=utf-8",
+      "Content-Length": "163064",
+      "Date": "Tue, 13 Oct 2026 14:33:37 GMT",
+      "Last-Modified": "Tue, 13 Oct 2026 10:21:29 GMT",
+      "ETag": "\"184c2aac4a7b74f1d5739827ac7de7aa\""
+    },
+    "robots_basis": "200",
+    "redirect_chain": [
+      {
+        "url": "https://cert-portal.siemens.com/productcert/html/ssa-750499.html",
+        "status": 200
+      }
+    ],
+    "retrieved_at": "2026-10-13T19:51:21.722226+00:00",
+    "kind": "html",
+    "title": "SSA-750499",
+    "document_hints": [
+      "Publication Date: | 2024-07-09",
+      "Last Update: | 2025-11-11",
+      "Current Version: | V1.2",
+      "V1.0 (2024-07-09): | Publication Date V1.1 (2024-08-13): | Updating the CVE description",
+      "© Siemens 2025"
+    ],
+    "text_sha256": "1fe239f83a556969bdaf7f02d82ef25cb3b312f5601074af31dda3e294d11348",
+    "doc_type_suggested": "advisory",
+    "status": "extracted",
+    "links_found": 192
+  }
+]

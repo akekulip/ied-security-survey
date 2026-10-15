@@ -1,0 +1,140 @@
+#
+# robots.txt
+#
+# This file is to prevent the crawling and indexing of certain parts
+# of your site by web crawlers and spiders run by sites like Yahoo!
+# and Google. By telling these "robots" where not to go on your site,
+# you save bandwidth and server resources.
+#
+# This file will be ignored unless it is at the root of your host:
+# Used:    http://example.com/robots.txt
+# Ignored: http://example.com/site/robots.txt
+#
+# For more information about the robots.txt standard, see:
+# http://www.robotstxt.org/robotstxt.html
+
+User-agent: *
+# CSS, JS, Images
+Allow: /core/*.css$
+Allow: /core/*.css?
+Allow: /core/*.js$
+Allow: /core/*.js?
+Allow: /core/*.gif
+Allow: /core/*.jpg
+Allow: /core/*.jpeg
+Allow: /core/*.png
+Allow: /core/*.svg
+Allow: /profiles/*.css$
+Allow: /profiles/*.css?
+Allow: /profiles/*.js$
+Allow: /profiles/*.js?
+Allow: /profiles/*.gif
+Allow: /profiles/*.jpg
+Allow: /profiles/*.jpeg
+Allow: /profiles/*.png
+Allow: /profiles/*.svg
+# Directories
+Disallow: /core/
+Disallow: /profiles/
+# Files
+Disallow: /README.md
+Disallow: /composer/Metapackage/README.txt
+Disallow: /composer/Plugin/ProjectMessage/README.md
+Disallow: /composer/Plugin/Scaffold/README.md
+Disallow: /composer/Plugin/VendorHardening/README.txt
+Disallow: /composer/Template/README.txt
+Disallow: /modules/README.txt
+Disallow: /sites/README.txt
+Disallow: /themes/README.txt
+Disallow: /web.config
+# Paths (clean URLs)
+Disallow: /admin/
+Disallow: /comment/reply/
+Disallow: /filter/tips
+Disallow: /node/add/
+Disallow: /search/
+Disallow: /user/register
+Disallow: /user/password
+Disallow: /user/login
+Disallow: /user/logout
+Disallow: /media/oembed
+Disallow: /*/media/oembed
+# Paths (no clean URLs)
+Disallow: /index.php/admin/
+Disallow: /index.php/comment/reply/
+Disallow: /index.php/filter/tips
+Disallow: /index.php/node/add/
+Disallow: /index.php/search/
+Disallow: /index.php/user/password
+Disallow: /index.php/user/register
+Disallow: /index.php/user/login
+Disallow: /index.php/user/logout
+Disallow: /index.php/media/oembed
+Disallow: /index.php/*/media/oembed
+
+# software
+# Disallowing the all PDF files from indexing 
+Disallow: /software/sites/default/files/*.pdf 
+
+# Disallowing Become form page from indexing under software
+Disallow: /software/industrial-partners/become-partner
+
+# Disallowing Product Demos from indexing under S3 bucket
+Disallow: /software/product-demos/chemical-demo/*
+Disallow: /software/product-demos/hiem-demo/*
+Disallow: /software/product-demos/mes-demo/#/chapter/operator/intro
+Disallow: /software/product-demos/mes-demo/#/chapter/supervisor/intro
+Disallow: /software/ge-vernova-three-dynamic-cards/*
+Disallow: /software/ge-vernova-dynamic-asset-tags/*
+Disallow: /software/ge-vernova-dynamic-cards/*
+Disallow: /software/ge-vernova-dynamic-asset-cards/*
+Disallow: /software/product-demos/automotive-demo/*
+Disallow: /software/index.php/api/*
+Disallow: /software/api/*
+
+# Software Documentation MFG URLs Disallowed for indexing 
+Disallow: /software/documentation/*
+Disallow: /software/document/*
+
+# Software Documentation MFG URLs allowed for indexing 
+Allow: /software/documentation/historian/index.html
+Allow: /software/documentation/igs/index.html
+Allow: /software/documentation/opshub/index.html
+Allow: /software/documentation/licensing/index.html
+Allow: /software/documentation/proficy-plant-applications/index.html
+Allow: /software/documentation/confighub/index.html
+Allow: /software/documentation/ifix/index.html
+Allow: /software/documentation/webspace/index.html
+Allow: /software/documentation/csense/index.html
+Allow: /software/documentation/uaa/index.html
+Allow: /software/documentation/cloud-historian/index.html
+Allow: /software/documentation/batch/index.html
+Allow: /software/documentation/workflow/index.html
+Allow: /software/documentation/azure/g_overview_of_microsoft_azure_support_for_proficy_products.html
+Allow: /software/documentation/mqtt/index.html
+Allow: /software/documentation/licensing/quickstart/g_licensing_quick_start_system_order_email.html
+Allow: /software/documentation/licensing/quickstart/g_licensing_quick_start_overview.html
+Allow: /software/documentation/proficy-mdc/index.html
+Allow: /software/documentation/mtconnect/index.html
+Allow: /software/documentation/cloud-historian/azure/index.html
+Allow: /software/documentation/cimplicity/index.html
+Allow: /software/documentation/opshub/windows/index.html
+
+
+# Software Product Demo URLs Under Software
+Allow: /software/product-demos/hiem-demo/home.html
+Allow: /software/product-demos/automotive-demo/home.html
+Allow: /software/product-demos/chemical-demo/home.html
+Allow: /software/product-demos/mes-demo/#/
+
+# Sitemap location for Software
+Sitemap: https://www.gevernova.com/software/sitemap.xml
+Sitemap: https://www.gevernova.com/sitemap.xml
+
+# Sitemap location for the remaining business 
+
+Sitemap: https://www.gevernova.com/wind-power/sitemap.xml 
+Sitemap: https://www.gevernova.com/electrification/sitemap.xml 
+Sitemap: https://www.gevernova.com/consulting/sitemap.xml 
+Sitemap: https://www.gevernova.com/steam-power/sitemap.xml 
+Sitemap: https://www.gevernova.com/gas-power/sitemap.xml

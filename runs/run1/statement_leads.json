@@ -1,0 +1,30 @@
+[
+  {
+    "id": "f2d6cafae2f3befd6ff4",
+    "source_id": "b8d90efe1e476caca1e9",
+    "product_id": "sel_rtac",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:7",
+    "matched": [
+      "plain text"
+    ],
+    "context": "It provides data concentration for all the connected IEDs and \nalso allows engineering access to devices that support that feature. Secure engineering access into \nthe SEL RTAC requires encrypting the user session so that valuable information is not readable \nvia plain text.  \nThere are two general methods for engineering access: 1) through the SEL server or 2) using APs \nand AP routers (APRs). Either method accomplishes the goal. The advantage of using the SEL \nserver is that it does not require manually configuring individual APRs for each IED. The \ndisadvantage is that this method is only applicable to IEDs communicating with SEL protocol.",
+    "match_count": 1,
+    "status": "unreviewed"
+  },
+  {
+    "id": "fc4ea1e1d31270027f89",
+    "source_id": "b8d90efe1e476caca1e9",
+    "product_id": "sel_rtac",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:9",
+    "matched": [
+      "plain text"
+    ],
+    "context": "As mentioned, \nthis is available in both SEL servers and clients, so the method can be used to restrict all \nengineering access by disabling the SEL server or for an individual IED by disabling the pin \nassociated with that device.  \nSECTION 6: SECURING SCADA - ENCRYPTING SERVER COMMUNICATIONS \nOperators maintain situational awareness with SCADA. Information about the electric power \nsystem is often transmitted in plain text and can be intercepted by any individual at a vulnerable \nspot in the network. Encrypting this communication provides another layer to protect the \nconfidentiality and integrity of information critical to operating the bulk electric system.  \nThe SEL RTAC supports Public Key Infrastructure (PKI). PKI is a formal, hierarchical system \nwhere a digital certificate is signed by a more trusted certificate.",
+    "match_count": 1,
+    "status": "unreviewed"
+  }
+]

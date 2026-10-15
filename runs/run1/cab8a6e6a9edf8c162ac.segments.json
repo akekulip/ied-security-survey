@@ -1,0 +1,112 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "Secure Controller Systems"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Search"
+  },
+  {
+    "location": "html-block:3",
+    "text": "ControlLogix 5580 and GuardLogix 5580 Controllers"
+  },
+  {
+    "location": "html-block:4",
+    "text": "Secure Controller Systems"
+  },
+  {
+    "location": "html-block:5",
+    "text": "ControlLogix® 5580 controllers, firmware revision 32.011 or later, and GuardLogix® 5580, firmware revision 37.011 or later, support IEC-62443-4-2 SL 1 requirements. For security features and system requirements, see Develop Secure Applications.",
+    "heading": "Secure Controller Systems"
+  },
+  {
+    "location": "html-block:6",
+    "text": "CIP Security"
+  },
+  {
+    "location": "html-block:7",
+    "text": "CIP Security™ is a standard, open-source communication mechanism that helps to provide a secure data transport across an EtherNet/IP™ network. CIP Security™ lets CIP™-connected devices authenticate each other before transmitting and receiving data.",
+    "heading": "CIP Security"
+  },
+  {
+    "location": "html-block:8",
+    "text": "CIP Security™ uses the following security properties to help devices protect themselves from malicious communication:",
+    "heading": "CIP Security"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Device Identity and Authentication",
+    "heading": "CIP Security"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Data Integrity and Authentication",
+    "heading": "CIP Security"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Data Confidentiality",
+    "heading": "CIP Security"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Rockwell Automation uses the following products to implement a CIP Security™ solution:",
+    "heading": "CIP Security"
+  },
+  {
+    "location": "html-block:13",
+    "text": "FactoryTalk® Policy Manager software (includes FactoryTalk® System Services)",
+    "heading": "CIP Security"
+  },
+  {
+    "location": "html-block:14",
+    "text": "FactoryTalk® Linx software (lets workstation software communicate securely using CIP Security™)",
+    "heading": "CIP Security"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Studio 5000 Logix Designer® application (This application required to interface with CIP Security™-enabled Logix controllers. The minimum application version varies by controller product family.)",
+    "heading": "CIP Security"
+  },
+  {
+    "location": "html-block:16",
+    "text": "See the requirements for your products to verify the correct product versions for your solution.",
+    "heading": "CIP Security"
+  },
+  {
+    "location": "html-block:17",
+    "text": "For more information on CIP Security™, for example, a list of CIP Security™-capable products and publications that describe how to use the products, including limitations and considerations, see the following:",
+    "heading": "CIP Security"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Rockwell Automation Industrial Cybersecurity Solutions",
+    "heading": "CIP Security"
+  },
+  {
+    "location": "html-block:19",
+    "text": "CIP Security with Rockwell Automation Products Application Technique, publication SECURE-AT001 (describes the CIP Security™-capable products, minimum software versions and product firmware revisions, and publications that describe how to use the products)",
+    "heading": "CIP Security"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Standard and Safety Controller Systems",
+    "heading": "CIP Security"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Provide Feedback",
+    "heading": "CIP Security"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Have questions or feedback about this documentation? Please submit your feedback here.",
+    "heading": "CIP Security"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Normal",
+    "heading": "CIP Security"
+  }
+]

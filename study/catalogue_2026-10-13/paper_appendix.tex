@@ -1,0 +1,151 @@
+% Generated from the survey data; do not edit by hand. Needs \usepackage{booktabs,tabularx,url}.
+% Run: sample\_2026-10-13\_v2\_0; review: AI draft, author confirmation pending (see study/catalogue_2026-10-13/review).
+
+\section{Documentation survey of IED security capabilities}\label{app:crawler}
+
+\paragraph{Collection.} A crawler listed every protective relay, controller or RTU, PLC and power meter in the public online catalogues of SEL, Schneider Electric, Rockwell Automation, GE Vernova and Siemens as of 13 October 2026 (484 devices) and recorded each device\textquotesingle s lifecycle state from the vendor\textquotesingle s own wording on its product page. A stratified random sample of up to four devices per vendor, device category and lifecycle state (fixed seed; 99 devices) was then crawled: product pages and the public data sheets, manuals and device profiles they link to, within a fixed page budget per device. The crawler reads only documents that are public, honours robots.txt, and stores the SHA-256 hash and retrieval time of every document, so each quotation below can be checked against the exact bytes read.
+
+\paragraph{Review.} For each device and capability (authentication, integrity, encryption, DNP3 Secure Authentication, TLS, IPsec, CIP Security, SSH), a reviewer recorded one of four results---supported, conditional, explicitly unsupported or unknown---for each interface, keeping control protocols (e.g., DNP3, IEC~61850, IEC~60870-5-104, Modbus, EtherNet/IP) apart from management access (web, engineering tools, user login). Every supported or conditional result cites a verbatim passage, checked mechanically against the retained text. An unknown is never read as absence of the capability. The results were drafted with an AI assistant and checked a second time against every retained passage; the authors\textquotesingle{} confirmation is pending.
+% UPDATE the sentence above once the authors have confirmed the devices in Table~\ref{tab:crawler-devices}.
+
+\paragraph{Limits.} The counts describe what the retrieved public documents say about catalogue entries. They are not market shares, they say nothing about installed devices or enabled settings, and they are lower bounds: the crawler reads a few documents per device, and a vendor may document more elsewhere. For example, the sampled crawl retrieved two flyers for the SEL Real-Time Automation Controller (RTAC), while an SEL application guide retrieved in our pilot documents DNP3 over TLS for it. Two of the six devices with documented encryption, the SICAM A8000 series and its CP-8050 unit, are separate catalogue entries that rest on the same catalogue page.
+
+\begin{table}[t]
+\centering
+\small
+\caption{Sampled devices by the strongest protection of control traffic that the retrieved documents establish. Each device is counted once. Lifecycle states are the vendors\textquotesingle{} own statements; they are separate from security capability.}
+\label{tab:crawler-counts}
+\begin{tabularx}{\linewidth}{@{}Xrrrr@{}}
+\toprule
+ & Currently sold & Vendor-discontinued & Lifecycle unknown & Total \\
+\midrule
+\multicolumn{5}{@{}l}{\emph{Documented protection of control traffic}} \\
+Encryption documented (TLS, SSH/TLS tunnelling, or CIP Security with confidentiality) & 6 & 0 & 0 & 6 \\
+Authentication documented, encryption not & 2 & 0 & 0 & 2 \\
+Security mechanism named, protected properties not stated & 1 & 0 & 0 & 1 \\
+Protection only through a separate device (gateway or encryptor) & 2 & 0 & 0 & 2 \\
+\multicolumn{5}{@{}l}{\emph{Unknown for control traffic}} \\
+Complete manual read; it documents no protection & 6 & 3 & 3 & 12 \\
+Protection documented for management access only & 5 & 2 & 0 & 7 \\
+Retrieved documents do not settle it & 39 & 26 & 4 & 69 \\
+\midrule
+Total & 61 & 31 & 7 & 99 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{table*}[t]
+\centering
+\small
+\caption{The 11 sampled devices for which a retrieved document names protection of control traffic. Source keys refer to the list that follows.}
+\label{tab:crawler-devices}
+\begin{tabularx}{\linewidth}{@{}llXXl@{}}
+\toprule
+Vendor & Device & Control protocol or interface & Documented & Source \\
+\midrule
+GE Vernova & G500 Advanced Substation Gateway & Master station link (DNP3/TCP, Modbus/TCP, IEC 104) & Encryption (TLS tunnel for the SCADA protocols) & E1 \\
+GE Vernova & Multilin G100 Advanced Substation Gateway & Master station link (DNP3/TCP, Modbus/TCP, IEC 104) & Encryption (TLS tunnel for the SCADA protocols) & E2 \\
+Rockwell Automation & CompactLogix 5380 Controllers & EtherNet/IP (CIP) communication & Encryption (CIP Security on EtherNet/IP); conditional: Controller firmware revision 34.011 or later, Studio 5000 Logix Designer version 34 or later. & E3 \\
+SEL & SEL-3560 & Ethernet-tunneled serial SCADA protocols & Encryption (SSH or SSL/TLS tunnelling of serial SCADA protocols over Ethernet) & E4 \\
+Siemens & SICAM A8000 Series & Telecontrol and station protocols to master or slave (IEC 60870-5-104, IEC 61850, DNP3i) & Encryption (TLS encryption) & E5 \\
+Siemens & SICAM A8000 CP-8050 & Telecontrol and station protocols to master or slave (IEC 60870-5-104, IEC 61850, DNP3i) & Encryption (TLS encryption) & E6 \\
+Rockwell Automation & Micro870 Controllers & DNP3 outstation (slave) communication & Authentication, no encryption (DNP3 Secure Authentication version 5) & E7 \\
+SEL & SEL-421 & IEC 61850 MMS server & Authentication, no encryption (MMS authentication) & E8 \\
+Rockwell Automation & ControlLogix 5590 Controllers & EtherNet/IP (CIP) communication & Mechanism named (CIP Security on EtherNet/IP) & E9 \\
+SEL & SEL-3505/3505-3 & Remote serial links to field devices & Via separate device (Serial SCADA protocols through separate encrypting devices); conditional: Needs separate SEL serial or wireless encrypting devices. & E10 \\
+SEL & SEL-735 & Meter data to SCADA through a separate RTAC & Via separate device (Encrypted communication provided by an RTAC acting as gateway); conditional: Needs a separate SEL Real-Time Automation Controller as gateway. & E11 \\
+\bottomrule
+\end{tabularx}
+\end{table*}
+
+\paragraph{Evidence.} Verbatim passages behind Table~\ref{tab:crawler-devices}, with the document, page, retrieval date and the first 16 hexadecimal digits of the SHA-256 of the retrieved file.
+\begin{description}
+\item[E1] ``Secure tunneling from master station via TLS for DNP3/TCP, Modbus/TCP and IEC 104'' Multilin G500 Brochure, p.~1. Retrieved 2026-10-13, SHA-256 \texttt{625c825ac70f4914}. \url{https://www.gevernova.com/electrification/sites/default/files/2025-09/Multilin-G500-Advanced-Substation-Gateway-Brochure-EN-35437-Hybrid-202504-R002.pdf}
+\item[E2] ``Secure tunneling from master station via TLS for DNP3/TCP, Modbus/TCP and IEC 104'' Multilin G100 Brochure, p.~1. Retrieved 2026-10-13, SHA-256 \texttt{82bff561bfbf9dfb}. \url{https://www.gevernova.com/electrification/sites/default/files/2025-09/Multilin-G100-Brochure-EN-33196-Hybrid-202504-R002.pdf}
+\item[E3] ``through validation of device authentication, data integrity and data confidentiality'' CompactLogix 5380 Controllers, web page, block 43. Retrieved 2026-10-13, SHA-256 \texttt{aaee878babd4875d}. \url{https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/compactlogix-5380-controllers.html}
+\item[E4] ``Optional encryption for Ethernet-tunneled serial SCADA protocols and engineering access via Secure Shell (SSH) and Secure Sockets Layer (SSL)/Transport Layer Security (TLS) tunneling'' SEL publication 124708, p.~2. Retrieved 2026-10-13, SHA-256 \texttt{dbccc3cb21530a77}. \url{https://selinc.com/api/download/124708/}
+\item[E5] ``DNP3i master/slave (Transport Layer Security (TLS))'' Substation and Automation Catalog Edition 9, p.~12. Retrieved 2026-10-13, SHA-256 \texttt{eacde7831087ddb6}. \url{https://assets.new.siemens.com/siemens/assets/api/uuid:df58aadc-aa55-4293-a4a7-ceecdfc5b530/Substation-Automation-Catalog.pdf}
+\item[E6] ``DNP3i master/slave (Transport Layer Security (TLS))'' Substation and Automation Catalog Edition 9, p.~12. Retrieved 2026-10-13, SHA-256 \texttt{eacde7831087ddb6}. \url{https://assets.new.siemens.com/siemens/assets/api/uuid:df58aadc-aa55-4293-a4a7-ceecdfc5b530/Substation-Automation-Catalog.pdf}
+\item[E7] ``Provide enhanced protocol authentication in DNP3 with Secure Authentication version 5 (SAv5)'' Micro870 Controllers, web page, block 61. Retrieved 2026-10-13, SHA-256 \texttt{9496a20d291df382}. \url{https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/micro870-controllers.html}
+\item[E8] ``the relay requires authentication from any client requesting to initiate an MMS session'' SEL-421-4, -5 Data Sheet, p.~13. Retrieved 2026-10-13, SHA-256 \texttt{6ba9a29a50116016}. \url{https://selinc.com/api/download/99010/}
+\item[E9] ``Integrated CIP Security, secure boot and device-level protection'' ControlLogix Controllers Brochure, p.~5. Retrieved 2026-10-13, SHA-256 \texttt{41b300314e61e97c}. \url{https://literature.rockwellautomation.com/idc/groups/literature/documents/pp/1756-pp001_-en-p.pdf}
+\item[E10] ``you can protect remote serial communication to recloser controls'' SEL-3505/SEL-3505-3 Data Sheet, p.~6. Retrieved 2026-10-13, SHA-256 \texttt{ce6200504e73b92f}. \url{https://selinc.com/api/download/100620/}
+\item[E11] ``provides secure, encrypted communications and works as a remote intelligence gateway'' SEL publication 128658, p.~13. Retrieved 2026-10-13, SHA-256 \texttt{9529adc95bc0b5bb}. \url{https://selinc.com/api/download/128658/}
+\end{description}
+
+% BEGIN DNP3 (generated from the report's dnp3.csv; do not edit by hand). Needs \usepackage{booktabs,tabularx,hyperref}.
+\paragraph{DNP3.} Table~\ref{tab:crawler-dnp3} restricts the sample to the 32 devices whose own retrieved documents name DNP3, and Table~\ref{tab:crawler-dnp3-devices} lists them. ``Plaintext'' means that no DNP3 security is documented: DNP3 then travels readable unless something outside the device protects it. DNP3 Secure Authentication authenticates messages and does not encrypt them. The plaintext count is an upper bound, because a document the crawl did not retrieve may name DNP3 security; the SEL RTAC is one such case. The percentages are shares of the sampled devices, not of installed devices or of traffic.
+
+\begin{table}[t]
+\centering
+\small
+\caption{Sampled devices whose documents name DNP3, by the strongest DNP3 protection documented and by lifecycle state.}
+\label{tab:crawler-dnp3}
+\begin{tabularx}{\linewidth}{@{}Xrrrr@{}}
+\toprule
+ & Currently sold & Legacy (vendor-discontinued) & Lifecycle unknown & Total \\
+\midrule
+Encrypted: DNP3 over TLS & 4 of 24 (17\%) & 0 of 7 (0\%) & 0 of 1 (0\%) & 4 of 32 (12\%) \\
+Authenticated, not encrypted (DNP3 Secure Authentication) & 1 of 24 (4\%) & 0 of 7 (0\%) & 0 of 1 (0\%) & 1 of 32 (3\%) \\
+Encryption for its SCADA protocols, DNP3 not named & 1 of 24 (4\%) & 0 of 7 (0\%) & 0 of 1 (0\%) & 1 of 32 (3\%) \\
+Only through a separate encrypting device & 2 of 24 (8\%) & 0 of 7 (0\%) & 0 of 1 (0\%) & 2 of 32 (6\%) \\
+No DNP3 security documented (plaintext) & 16 of 24 (67\%) & 7 of 7 (100\%) & 1 of 1 (100\%) & 24 of 32 (75\%) \\
+\midrule
+Devices & 24 & 7 & 1 & 32 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{The 32 sampled devices whose documents name DNP3. Source links go to the passage a result rests on or, for plaintext devices, to the documents that name DNP3.}
+\label{tab:crawler-dnp3-devices}
+\begin{tabularx}{\linewidth}{@{}lllXXl@{}}
+\toprule
+Vendor & Type & Lifecycle & Device & DNP3 security & Source \\
+\midrule
+GE Vernova & Controller/RTU & current & G500 Advanced Substation Gateway & Encrypted: DNP3 over TLS & \href{https://www.gevernova.com/electrification/sites/default/files/2025-09/Multilin-G500-Advanced-Substation-Gateway-Brochure-EN-35437-Hybrid-202504-R002.pdf}{S20} \\
+GE Vernova & Controller/RTU & current & Multilin G100 Advanced Substation Gateway & Encrypted: DNP3 over TLS & \href{https://www.gevernova.com/electrification/sites/default/files/2025-09/Multilin-G100-Brochure-EN-33196-Hybrid-202504-R002.pdf}{S14} \\
+Siemens & Controller/RTU & current & SICAM A8000 Series & Encrypted: DNP3 over TLS & \href{https://assets.new.siemens.com/siemens/assets/api/uuid:df58aadc-aa55-4293-a4a7-ceecdfc5b530/Substation-Automation-Catalog.pdf}{S273} \\
+Siemens & Controller/RTU & current & SICAM A8000 CP-8050 & Encrypted: DNP3 over TLS & \href{https://assets.new.siemens.com/siemens/assets/api/uuid:df58aadc-aa55-4293-a4a7-ceecdfc5b530/Substation-Automation-Catalog.pdf}{S277} \\
+Rockwell Automation & PLC & current & Micro870 Controllers & Authenticated, not encrypted (DNP3 Secure Authentication) & \href{https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/micro870-controllers.html}{S192} \\
+SEL & Controller/RTU & current & SEL-3560 & Encryption for its SCADA protocols, DNP3 not named & \href{https://selinc.com/api/download/124708/}{S225} \\
+SEL & Controller/RTU & current & SEL-3505/3505-3 & Only through a separate encrypting device & \href{https://selinc.com/api/download/100620/}{S223} \\
+SEL & Meter & current & SEL-735 & Only through a separate encrypting device & \href{https://selinc.com/api/download/128658/}{S230} \\
+GE Vernova & Relay & current & Multilin 339 & No DNP3 security documented (plaintext) & \href{https://www.gevernova.com/electrification/automation/protection-control-metering/motor-protection/multilin-339}{S108}, \href{https://www.gevernova.com/electrification/sites/default/files/2025-11/Multilin-339-Brochure-EN-12779O-Hybrid-202504-R003.pdf}{S112} \\
+GE Vernova & Relay & current & Multilin 850: Advanced Feeder Protection \& Bay Controller & No DNP3 security documented (plaintext) & \href{https://www.gevernova.com/electrification/sites/default/files/2025-11/Multilin-850-Brochure-PO-32050-Hybrid-202509-R001.pdf}{S118}, \href{https://www.gevernova.com/electrification/sites/default/files/2025-11/Multilin-850P-Brochure-EN-12739L-Hybrid-202504-R001.pdf}{S119} \\
+GE Vernova & Controller/RTU & current & Multilin C60/C95 & No DNP3 security documented (plaintext) & \href{https://www.gevernova.com/electrification/automation/protection-control-metering/controllers/multilin-c60c95}{S1}, \href{https://www.gevernova.com/electrification/sites/default/files/2025-11/Multilin-C60-Brochure-EN-12654K-Hybrid-202504-R003.pdf}{S5} \\
+GE Vernova & Controller/RTU & current & Multilin D20E & No DNP3 security documented (plaintext) & \href{https://www.gevernova.com/electrification/sites/default/files/2025-11/Multilin-D20E-Brochure-EN-32042-Hybrid-202504-R002.pdf}{S10} \\
+GE Vernova & Relay & current & P64 MiCOM 5th Generation & No DNP3 security documented (plaintext) & \href{https://www.gevernova.com/electrification/sites/default/files/resources/products/manuals/p64-tm-en-1-gev.pdf}{S127}, \href{https://www.gevernova.com/electrification/sites/default/files/2025-09/MiCOM-Agile-P64-Brochure-EN-35502-Hybrid-202504-R002.pdf}{S128} \\
+GE Vernova & Meter & current & iSTAT M2x2 Communicating Measurement Centre & No DNP3 security documented (plaintext) & \href{https://www.gevernova.com/electrification/sites/default/files/2025-11/iSTAT-M232-Communicating-Measurement-Centre-Brochure-EN-33180-Hybrid-202505-R002.pdf}{S77} \\
+SEL & Controller/RTU & current & SEL Real-Time Automation Controller (RTAC) & No DNP3 security documented (plaintext) & \href{https://selinc.com/api/download/111397/}{S227}, \href{https://selinc.com/api/download/129976/}{S228} \\
+SEL & Controller/RTU & current & SEL-2431 & No DNP3 security documented (plaintext) & \href{https://selinc.com/api/download/2835/}{S221}, \href{https://selinc.com/api/download/2910/}{S222} \\
+SEL & Relay & current & SEL-2664S & No DNP3 security documented (plaintext) & \href{https://selinc.com/api/download/105257/}{S231}, \href{https://selinc.com/api/download/104471/}{S232} \\
+SEL & Relay & current & SEL-351A & No DNP3 security documented (plaintext) & \href{https://selinc.com/api/download/5523/}{S233}, \href{https://selinc.com/api/download/5532/}{S234} \\
+SEL & Relay & current & SEL-387 & No DNP3 security documented (plaintext) & \href{https://selinc.com/api/download/292/}{S235}, \href{https://selinc.com/api/download/236/}{S236} \\
+SEL & Relay & current & SEL-421 & No DNP3 security documented (plaintext) & \href{https://selinc.com/api/download/99010/}{S237}, \href{https://selinc.com/api/download/222/}{S238} \\
+Siemens & Controller/RTU & current & Bay controller -- SIPROTEC 6MD86 & No DNP3 security documented (plaintext) & \href{https://assets.new.siemens.com/siemens/assets/api/uuid:163e4814-2ae6-40c0-b198-35ed52e610e1/SIPROTEC-6MD86-Profile.pdf}{S270} \\
+Siemens & Meter & current & Digital Transducer - SICAM T & No DNP3 security documented (plaintext) & \href{https://assets.new.siemens.com/siemens/assets/api/uuid:09a829eb-0676-4680-8f95-1adaba01a911/SICAM-PQ-Catalog.pdf}{S293} \\
+Siemens & Relay & current & Overcurrent and feeder protection -- SIPROTEC 7SJ85 & No DNP3 security documented (plaintext) & \href{https://assets.new.siemens.com/siemens/assets/api/uuid:279cb01d-fd3b-4df4-8e04-f1fe98b81d6b/SIPROTEC-5-Catalog-EN.pdf}{S299} \\
+Siemens & Meter & current & Power quality recorder - SICAM Q200 & No DNP3 security documented (plaintext) & \href{https://assets.new.siemens.com/siemens/assets/api/uuid:09a829eb-0676-4680-8f95-1adaba01a911/SICAM-PQ-Catalog.pdf}{S286}, \href{https://assets.new.siemens.com/siemens/assets/api/uuid:16e30661-1286-49b8-b194-94516bb56fa6/SICAM-Q200-Profile-EN.pdf}{S287} \\
+GE Vernova & Meter & legacy & EPM 5300 Power Metering System & No DNP3 security documented (plaintext) & \href{https://www.gevernova.com/electrification/automation/protection-control-metering/epm-5300-legacy}{S80} \\
+GE Vernova & Meter & legacy & EPM 9900 Advanced Power Quality Meter & No DNP3 security documented (plaintext) & \href{https://www.gevernova.com/electrification/automation/protection-control-metering/epm-9900-advanced-power-quality-meter-legacy}{S91}, \href{https://www.gevernova.com/electrification/resources?prod=epm9900&type=3&node_id=4903}{S92} \\
+GE Vernova & Controller/RTU & legacy & Multilin D20MX - Advanced Substation Automation Controller & No DNP3 security documented (plaintext) & \href{https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-d20mx-substation-controller-legacy}{S24}, \href{https://www.gevernova.com/electrification/sites/default/files/2025-12/Multilin-D20-Analog-Input-Module-Brochure-EN-12792-Hybrid-202505-R002.pdf}{S29} \\
+GE Vernova & Controller/RTU & legacy & Multilin D400 Advanced Substation Gateway & No DNP3 security documented (plaintext) & \href{https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-d400-legacy}{S33}, \href{https://www.gevernova.com/electrification/sites/default/files/2025-09/Multilin-D400-Brochure-EN-12806D-Hybrid-202505-001.pdf}{S39} \\
+Rockwell Automation & Relay & legacy & Bulletin 857 Motor-feeder Protection Relays & No DNP3 security documented (plaintext) & \href{https://literature.rockwellautomation.com/idc/groups/literature/documents/um/857-um001_-en-p.pdf}{S219} \\
+Rockwell Automation & Relay & legacy & Bulletin 865 Motor-feeder Protection Relays & No DNP3 security documented (plaintext) & \href{https://literature.rockwellautomation.com/idc/groups/literature/documents/um/865-um001_-en-p.pdf}{S214} \\
+Schneider Electric & Controller/RTU & legacy & PowerLogic ION7550 RTU & No DNP3 security documented (plaintext) & \href{https://www.se.com/us/en/product-range/1872-powerlogic-ion7550-rtu/}{S243} \\
+GE Vernova & Relay & unknown & MiCOM Agile P24x - Legacy & No DNP3 security documented (plaintext) & \href{https://www.gevernova.com/electrification/sites/default/files/2026-02/P24x-TM-EN-J82-GEV.pdf}{S154} \\
+\bottomrule
+\end{tabularx}
+\end{table*}
+% END DNP3
+
+\paragraph{Configuration.} Where the retrieved documents say how the protection is obtained or switched on:
+\begin{description}
+\item[C1] Rockwell Micro870 (DNP3 outstation), user manual for the Micro830, Micro850 and Micro870 controllers, publication 2080-UM002S-EN-E, p.~89: ``Enable Secure Authentication The valid selections are Enabled (Checked) and Disabled (Unchecked). Default value is Disabled (Unchecked).'' Retrieved 2026-10-13, SHA-256 \texttt{0f6f1715c95afefc}. \url{https://literature.rockwellautomation.com/idc/groups/literature/documents/um/2080-um002_-en-e.pdf}
+\item[C2] CompactLogix 5380 Controllers (EtherNet/IP (CIP) communication), CompactLogix 5380 and Compact GuardLogix 5380 Controllers, p.~28: ``controllers also support CIP Security with firmware revision 34.011 or later''
+\item[C3] SEL-421 (IEC 61850 MMS server), SEL-421-4, -5 Data Sheet, p.~13: ``When enabled via a setting in the Configured IED Description (CID) file''
+\end{description}
+

@@ -4,6 +4,17 @@ Collects what five IED vendors (SEL, Schneider Electric, Rockwell Automation, GE
 
 The current study's own files (inventory, sample, review, reports, paper appendix) are described in `study/README.md`.
 
+This repository is private. It holds:
+
+- **Branch `main`:** the tool (`iedsurvey/`, `survey.py`), tests, configs, the study's results (`study/`), and the five-product pilot's runs and fetched documents (`runs/`, `cache/`).
+- **Branch `data`:** the catalogue study's run folders, inventory listings and fetched vendor documents, about 1.4 GB, kept apart so that cloning `main` stays small. Fetch it into its own folder outside any synced folder:
+
+  ```bash
+  git clone --branch data --single-branch https://github.com/akekulip/ied-security-survey.git ied_survey_data
+  ```
+
+  The commands in `study/README.md` call that folder `$DATA`. The fetched documents are vendors' public files, kept here for verification only; do not redistribute them.
+
 ## 1. Set up
 
 Python 3.10 or later.

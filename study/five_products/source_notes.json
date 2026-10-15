@@ -1,0 +1,92 @@
+[
+  {
+    "source_id": "b8d90efe1e476caca1e9",
+    "product_id": "sel_rtac",
+    "url": "https://selinc.com/api/download/112760/",
+    "title": "SEL APPLICATION GUIDE",
+    "document_hints": [
+      "Section 7 Figure 1 RTAC Security Diagram and Topic Sections Date Code 20160111 SEL White Paper LWP0018-01",
+      "stemTags.Whitelist_Alert.t; ELSE SEL White Paper LWP0018-01 Date Code 20160111",
+      " as an automation engineer in SEL research and development. © 2016 by Schweitzer Engineering Laboratories, Inc. All right"
+    ],
+    "doc_type_suggested": "security_guide",
+    "doc_type": "security_guide",
+    "coverage": "complete",
+    "document_id": "LWP0018-01",
+    "revision": "",
+    "document_date": "2016-01-11",
+    "note": "SEL white paper. Number and date code 20160111 are printed on every page; copyright 2016.",
+    "noted_by": "Claude AI draft review; author confirmation pending"
+  },
+  {
+    "source_id": "dbdf6052530d465705e3",
+    "product_id": "schneider_advc",
+    "url": "https://productinfo.se.com/advc-operationsmanual/pkr39809_advc_operations-manual/English/BM_ADVC3%20Operations%20Manual_0000999204.xml/$/TPC_ADVC3_OM_DNP3SecurityCPT_0001009251",
+    "title": "DNP3 Security - PKR39809_ADVC_Operations manual",
+    "document_hints": [
+      "© 2025 Schneider Electric"
+    ],
+    "doc_type_suggested": "manual",
+    "doc_type": "manual",
+    "coverage": "partial",
+    "document_id": "PKR39809",
+    "revision": "02",
+    "document_date": "",
+    "note": "Operations manual number PKR39809-02 is shown on the page. This section gives no publication date; the footer says copyright 2025. Only the \"DNP3 Security\" section of the manual was fetched.",
+    "noted_by": "Claude AI draft review; author confirmation pending"
+  },
+  {
+    "source_id": "cab8a6e6a9edf8c162ac",
+    "product_id": "rockwell_5580",
+    "url": "https://www.rockwellautomation.com/en-us/docs/technical/logix5000/_online/1756-um543/controllogix-5580-and-guardlogix-5580-controllers-/controllogix-and-guardlogix-systems/secure-controller-systems.html",
+    "title": "Secure Controller Systems",
+    "document_hints": [
+      "ControlLogix 5580 controllers, firmware revision 32.011 or later, and GuardLogix 5580, firmware revision 37.",
+      "are revision 32.011 or later, and GuardLogix 5580, firmware revision 37.011 or later, support IEC-62443-4-2 SL 1 requirements. F"
+    ],
+    "doc_type_suggested": "manual",
+    "doc_type": "manual",
+    "coverage": "partial",
+    "document_id": "1756-UM543",
+    "revision": "",
+    "document_date": "",
+    "note": "Publication number taken from the URL. The page shows no revision or date. Only one page of the online manual was fetched.",
+    "noted_by": "Claude AI draft review; author confirmation pending"
+  },
+  {
+    "source_id": "7d34db2ffda82aa29001",
+    "product_id": "ge_b90",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/bus-protection/multilin-b90",
+    "title": "Multilin B90 | GE Vernova | Electrification",
+    "document_hints": [],
+    "doc_type_suggested": "product_page",
+    "doc_type": "product_page",
+    "coverage": "complete",
+    "document_id": "",
+    "revision": "",
+    "document_date": "",
+    "note": "Product web page with no document number, revision or date.",
+    "noted_by": "Claude AI draft review; author confirmation pending"
+  },
+  {
+    "source_id": "7e433d70887ae9b0be5d",
+    "product_id": "siemens_sip5",
+    "url": "https://cert-portal.siemens.com/productcert/html/ssa-750499.html",
+    "title": "SSA-750499",
+    "document_hints": [
+      "Publication Date: | 2024-07-09",
+      "Last Update: | 2025-11-11",
+      "Current Version: | V1.2",
+      "V1.0 (2024-07-09): | Publication Date V1.1 (2024-08-13): | Updating the CVE description",
+      "© Siemens 2025"
+    ],
+    "doc_type_suggested": "advisory",
+    "doc_type": "advisory",
+    "coverage": "complete",
+    "document_id": "SSA-750499",
+    "revision": "V1.2",
+    "document_date": "2025-11-11",
+    "note": "Security advisory. Published 2024-07-09; last update 2025-11-11.",
+    "noted_by": "Claude AI draft review; author confirmation pending"
+  }
+]
