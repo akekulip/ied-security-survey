@@ -1,0 +1,4 @@
+User-Agent: *
+#Disallow dl-media
+Disallow: /dl/dl-media/
+Disallow: /dl/media/

@@ -11,6 +11,5 @@ about 1.4 GB.
 
 Check a run against its documents from the top of the repository: `python survey.py verify --run data/runs/sample_targeted_2026-10-15 --cache data/cache`.
 
-The documents first fetched by the bounded pass of 2026-10-15 are in the local `cache/` but are not committed: whether the
-repository should carry more vendor documents is a separate decision. Their addresses and SHA-256 hashes are in the run's
-`sources.json`, so anyone can fetch the same files and `verify` checks them.
+The documents first fetched by the bounded pass of 2026-10-15 are in `cache/` with the rest (committed on 2026-10-15 at
+the author's direction), and their addresses and SHA-256 hashes are in the run's `sources.json`.

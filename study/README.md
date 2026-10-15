@@ -19,7 +19,7 @@ Fetched bytes and run directories are kept outside this folder. The five-product
 
 ## Correction of 2026-10-15
 
-An external audit (`IED_Survey_Tested_Fixes_2026-10-15.zip`, kept untracked at the top of the repository) found a real error. The Multilin D400 brochure we had retained (source `e9650803a7d08f102554`, pdf-page 1) says "Secure tunneling from master station to the D400 via TLS for DNP3/TCP, Modbus/TCP and IEC 104". The draft review of 2026-10-13/14 counted the D400 as having no DNP3 security, because the tool kept the context of only the first keyword match on a page. Two statements are withdrawn:
+An external audit (`IED_Survey_Tested_Fixes_2026-10-15.zip`, at the top of the repository) found a real error. The Multilin D400 brochure we had retained (source `e9650803a7d08f102554`, pdf-page 1) says "Secure tunneling from master station to the D400 via TLS for DNP3/TCP, Modbus/TCP and IEC 104". The draft review of 2026-10-13/14 counted the D400 as having no DNP3 security, because the tool kept the context of only the first keyword match on a page. Two statements are withdrawn:
 
 - that none of the 31 vendor-discontinued sampled devices documents protection of its control traffic;
 - that devices whose documents name no DNP3 security use plaintext. Such an entry is unknown: the retrieved documents establish neither lack of support nor plaintext operation.
@@ -123,7 +123,7 @@ python survey.py paper --run $DATA/runs/sample_targeted_2026-10-15 --reviews $S/
     --out $S/paper_2026-10-15
 ```
 
-The crawl of the bounded pass needs the documents it first fetched, which are in the local cache but not in the repository (see `data/README.md`). Without them it would request those addresses again.
+The crawl of the bounded pass takes the documents it first fetched from `data/cache`, where they are kept with the rest; without them it would request those addresses again.
 
 For publication, review `review/reviews_ai_draft_2026-10-15.json`:
 

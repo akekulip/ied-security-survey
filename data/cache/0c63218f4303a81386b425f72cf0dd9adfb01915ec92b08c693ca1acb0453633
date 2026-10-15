@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+	<!-- DDP SSR v4.29.0 -->
+	<!-- CS_WC v1.11.0 -->
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="preconnect" href="https://uiaas.myschneider.se.com" />
+        <link rel="preconnect" href="https://uiaas.myschneider.se.com" crossorigin />
+        <link rel="preconnect" href="https://d2osz8slymlqdp.cloudfront.net" crossorigin />
+        <link rel="preconnect" href="https://www.se.com" crossorigin />
+		<!--QDS3 code start-->
+			<link type="text/css" rel="stylesheet" crossorigin="anonymous" href="https://d2osz8slymlqdp.cloudfront.net/@se/fonts/@1.2.3/css/styles-website.css" />
+		<!--QDS3 code end-->
+
+		<!-- QDS Open Start -->
+		<!-- <link rel="stylesheet" type="text/css" media="(max-width:700px)"
+			href="https://www.se.com/ww/shop-static/packages/@quartzds/se-tokens/@1.0.0-beta.64/dist/websites/platform/mobile.css" />
+		<link rel="stylesheet" type="text/css" media="(min-width:700px)"
+			href="https://www.se.com/ww/shop-static/packages/@quartzds/se-tokens/@1.0.0-beta.64/dist/websites/platform/desktop.css" />
+		<link rel="stylesheet"
+			href="https://www.se.com/ww/shop-static/packages/@quartzds/se-tokens/@1.0.0-beta.64/dist/websites/theme/light.css" />
+		<link rel="stylesheet"
+			href="https://www.se.com/ww/shop-static/packages/@quartzds/se-tokens/@1.0.0-beta.64/dist/websites/theme/dark.css" />
+		<link type="text/css" rel="stylesheet"
+			href="https://www.se.com/ww/shop-static/packages/@quartzds/core/@1.0.0-beta.90/styles/core.css" />
+		<link type="text/css" rel="stylesheet"
+			href="https://www.se.com/ww/shop-static/packages/@quartzds/se-fonts/@1.0.0-beta.3/dist/index.css" />
+		
+		<script type="module" nonce="r4nd0m">
+			import * as core from 'https://www.se.com/ww/shop-static/packages/@quartzds/core/@1.0.0-beta.90/components/index.js';
+			import { defineCustomElements as websiteCustomElements } from 'https://www.se.com/ww/shop-static/packages/@quartzds/websites/@1.0.0-beta.54/loader/index.js';
+
+			core.defineCustomElements(core);
+			websiteCustomElements();
+
+			core.registerIconLibrary('core', {
+				resolver: (name) =>
+					`https://www.se.com/ww/shop-static/packages/@quartzds/se-icons-core/@1.0.0-beta.18/dist/${name}.svg`
+			});
+			core.registerIconLibrary('default', {
+				resolver: (name) =>
+					`https://www.se.com/ww/shop-static/packages/@quartzds/se-icons-general/@1.0.0-beta.22/dist/20px/stroke/${name}.svg`
+			});
+		</script> -->
+		<!-- QDS Open Ends -->
+		 
+		<!-- QDS For Header SSR Starts-->
+		<!-- Preload QDS script to start loading earlier -->
+		<link rel="preload" href="https://www.se.com/web-components/client/qds.js" as="script" type="module" />
+		<script src="https://www.se.com/web-components/client/qds.js" type="module" defer></script>
+		<!-- Prefetch mobile CSS as it's used by most initial page loads -->
+		<link  rel="stylesheet" href="https://uiaas.myschneider.se.com/@quartzds/se-tokens/@1.0.0-beta.75/dist/websites/platform/desktop.css" media="screen and (min-width: 768px)" />
+		<link rel="stylesheet" href="https://uiaas.myschneider.se.com/@quartzds/se-tokens/@1.0.0-beta.75/dist/websites/platform/mobile.css" media="screen and (max-width: 767px)" />
+		<link rel="stylesheet" href="https://uiaas.myschneider.se.com/@quartzds/se-tokens/@1.0.0-beta.75/dist/websites/theme/light.css" />
+		<link rel="stylesheet" href="https://uiaas.myschneider.se.com/@quartzds/se-tokens/@1.0.0-beta.75/dist/websites/theme/dark.css" />
+		<link rel="stylesheet" href="https://uiaas.myschneider.se.com/@quartzds/core/@1.0.0-beta.110/styles/core.css" />
+		<link rel="stylesheet" href="https://uiaas.myschneider.se.com/@quartzds/se-fonts/@1.0.0-beta.5/dist/index.css" />
+		<!-- QDS For Header SSR Ends-->
+
+		<!-- Country selector WC -->
+		<!-- <script 
+			type='text/javascript' 
+			src="https://www-pre.se.com/ww/en/download/wc-resources/country-selector/1.6.0/country-selector-web-component-1.6.0.js" 
+			defer>
+		</script>  -->
+		<script 
+			type='text/javascript' 
+			src="https://www.se.com/ww/en/download/wc-resources/country-selector/1.7.0/country-selector-web-component-1.7.0.js" 
+			defer>
+		</script>
+
+		<!--jav3z4--><script src="https://www.se.com/web-components/client/se-caas.umd.js" type="module" data-stencil-namespace="se-caas"></script> <meta name="Env Details" content="sdlEnv - prod_live,  wcEnv - prod,  cspEnv - prod"/> <!--[-1--><link rel="icon" href="https://www.se.com/favicon.ico" type="x-icon"/> <meta content="text/html; charset=UTF-8" http-equiv="content-type"/> <meta http-equiv="X-UA-Compatible" content="IE=edge"/> <meta name="description" content="Country Selector | Schneider Electric Global"/> <meta property="og:type" content="website"/> <meta property="og:url" content="https://www.se.com/ww/en/download/document/70022-0120-01/"/> <meta property="og:title" content="Country Selector | Schneider Electric Global"/> <meta property="og:description" content="Country Selector | Schneider Electric Global"/> <meta property="og:locale" content="en"/> <meta name="robots" content="noindex, follow"/> <meta name="gtmid" content="GTM-MM5LXGL" id="gtmId"/><!--]--> <!--[0--><script nonce="r4nd0m" data-nonce="r4nd0m">
+			var gtmIdVal = document.getElementById("gtmId").content;
+						
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != 'dataLayer' ? '&l=' + l : '';
+				j.async = true;
+				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+				var n = d.querySelector('[nonce]');
+				n && j.setAttribute('nonce', n.nonce || n.getAttribute('nonce'));
+				f.parentNode.insertBefore(j, f);
+			})(window, document, 'script', 'dataLayer', gtmIdVal);
+		</script><!----><!--]--><!----><title>Country Selector | Schneider Electric Global</title>
+		<link href="https://www.se.com/ww/en/download/document/_app/immutable/assets/0.D7Et5nno.css" rel="stylesheet">
+		<link href="https://www.se.com/ww/en/download/document/_app/immutable/assets/3.CG5ebBh0.css" rel="stylesheet">
+
+	
+<script nonce="694d13e862ffb85f1a5df1538e64317c">(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"","rua.cook":"false","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false","rua.isuxp":"false","rua.texp":"norulematch","rua.ceh":"false","rua.ueh":"false","rua.ieh.st":"0"}]);</script>
+<script nonce="694d13e862ffb85f1a5df1538e64317c">!function(){function o(n,i){if(n&&i)for(var r in i)i.hasOwnProperty(r)&&(void 0===n[r]?n[r]=i[r]:n[r].constructor===Object&&i[r].constructor===Object?o(n[r],i[r]):n[r]=i[r])}try{var n=decodeURIComponent("%7B%0A%20%20%20%20%22RT%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22cookie%22%3A%20%22%22%0A%20%20%20%20%7D%0A%7D");if(n.length>0&&window.JSON&&"function"==typeof window.JSON.parse){var i=JSON.parse(n);void 0!==window.BOOMR_config?o(window.BOOMR_config,i):window.BOOMR_config=i}}catch(r){window.console&&"function"==typeof window.console.error&&console.error("mPulse: Could not parse configuration",r)}}();</script>
+                                <script nonce="694d13e862ffb85f1a5df1538e64317c">!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="XR4TT-L9EBU-2KFPC-LU3QU-W6RKY",function(){function e(){if(!i){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,o.parentNode.appendChild(e),i=!0}}function t(e){i=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(o.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",o.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"XR4TT-L9EBU-2KFPC-LU3QU-W6RKY";var o=document.currentScript||document.getElementsByTagName("script")[0],i=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!i)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),o.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="qoaerbaxgtbok2wrh2ha-f-8f9015c50-clientnsv4-s.akamaihd.net",o="false"=="true"?2:1,i={"ak.v":"41","ak.cp":"965358","ak.ai":parseInt("433695",10),"ak.ol":"0","ak.cr":8,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"6c7fe46","ak.r":51194,"ak.a2":n,"ak.m":"dsca","ak.n":"essl","ak.cport":45959,"ak.gh":"23.206.120.15","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1792097934","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==ngI8ReynISqgSyrRRvi3XSxD2fZhhlKYXJluXYG1YH97cjFAh/aXGeUGw14k7vBChn01T2iX3GBa9qNEjWVNm2gsOUXGi45ULWAJqm0jJq75ZbPthvZR59dRljmYT64rTOXWmGPu5EJDvMLbThcxhLQtCcOyjz1gDUKtmzQDZfAWDyvOyxojdIXY89pKX+tKoADUnL+ScssGIiH6ckqVtOnwSkgtpvhDd/K//0Mu5cgHiaQYfnvmq4GcsQkiI26TwHlfFqbl9DGnEkKr1oF0A2fBwiaoLAIGAfDmA9joXTNI0/FA0nzyJfl2+HcVu8Poa4YYCWmTot2KO8A2HFKAnB71a7994rDhs32ujguqj2OInSbB4W4BRIcaoKHomj1Q2Yb+Hm6AgHtL5ODl/rMVBeYN8yyULr3fawE1F7Eeucc=","ak.pv":"609","ak.dpoabenc":"","ak.tf":o};if(""!==t)i["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+
+	<body data-sveltekit-preload-data="hover" class="qds-platform-desktop qds-platform-mobile qds-theme-light se-font-website">
+		<div class="se-app">
+			<!--[--><!--[0--><!--[--><div class="layout-container svelte-12qhfyh"><!--[--><!--[--><!--[-1--><!--]--> <!--[0--><noscript><iframe title="" src="https://www.googletagmanager.com/ns.html?id=GTM-MM5LXGL" class="iframe-tag svelte-jav3z4"></iframe></noscript><!--]--> <div style="position: sticky; top:0; z-index: 56;" class="mainHeader svelte-jav3z4"><!--[0--><se-caas model="caas-component" api-key="87a13b564d504489a60e78515594f31e" target="{&quot;locale&quot;:&quot;en-WW&quot;}" entry-data="{&quot;caasId&quot;:&quot;new-header&quot;}" app-context="{&quot;currentDir&quot;:&quot;ltr&quot;}"></se-caas><!--]--></div> <main class="breadcrumb-container svelte-jav3z4"><a id="dummy-dc" href="#"></a> <main class="svelte-jav3z4"><!--[0--><div class="qds-breadcrumb svelte-jav3z4"><!--[--><!--[0--><qds-breadcrumb-item class="qds-breadcrumb-item svelte-jav3z4" id="home" text="Home" href="/ww/en/"></qds-breadcrumb-item><!--]--><!--[0--><qds-breadcrumb-item class="qds-breadcrumb-item svelte-jav3z4" id="maincontent" text="Help Center" href="https://www.se.com/ww/en/work/support/"></qds-breadcrumb-item><!--]--><!--[0--><qds-breadcrumb-item class="qds-breadcrumb-item svelte-jav3z4" id="documentsAndDownloads" text="Documents &amp; Downloads" href="https://www.se.com/ww/en/download/"></qds-breadcrumb-item><!--]--><!--[-1--><!--]--><!--[-1--><!--]--><!--]--></div><!--]--></main></main> <!--[0--><div class="cs-container svelte-jav3z4"><!--[0--><country-selector cs_endpoint="https://www.se.com/ww/en/download/download-api/getCountryLabels/" cs_title="Select your location to access the information you are looking for" not_scoped_message="" country_code="ww" language_code="en" app_source="DDC_SE" enable_close="false" consumer_name="" toggle_click="false" locales="ko_kr,en_eg,hu_hu,en_au,hr_hr,en_ie,ru_kz,en_ae,en_ng,sr_rs,sl_si,cs_cz,en_ph,en_in,en_my,en_us,en_id,id_id,tr_tr,en_vn,vi_vn,en_th,th_th,en_sa,es_pe,en_za,pt_br,fr_dz,fr_africa,zh_tw,en_nz,es_cr,es_co,es_mx,el_gr,en_il,de_at,fr_be,nl_be,lv_lv,et_ee,en_ca,fr_ca,lt_lt"></country-selector><!--]--></div><!--]--> <!--[-1--><!--]--> <!--[-1--><!--]--> <!--[-1--><se-caas model="caas-component" api-key="87a13b564d504489a60e78515594f31e" target="{&quot;locale&quot;:&quot;en-WW&quot;}" entry-data="{&quot;caasId&quot;:&quot;accessibility-toggle&quot;}" class="qds-theme-dark se2-accessibility svelte-jav3z4" app-context="{&quot;currentDir&quot;:&quot;ltr&quot;}"></se-caas><!--]--> <!--[-1--><se-caas model="caas-component" api-key="87a13b564d504489a60e78515594f31e" target="{&quot;locale&quot;:&quot;en-WW&quot;}" entry-data="{&quot;caasId&quot;:&quot;support-module&quot;}" class="qds-theme-dark se2-accessibility svelte-jav3z4" app-context="{&quot;currentDir&quot;:&quot;ltr&quot;}"></se-caas><!--]--> <div class="ddc-ddp-footer svelte-jav3z4"><!--[-1--><se-caas model="caas-component" api-key="87a13b564d504489a60e78515594f31e" target="{&quot;locale&quot;:&quot;en-WW&quot;}" entry-data="{&quot;caasId&quot;:&quot;new-footer&quot;}" class="qds-theme-dark se2-accessibility svelte-jav3z4" app-context="{&quot;currentDir&quot;:&quot;ltr&quot;}"></se-caas><!--]--></div><!--]--><!--]--></div><!--]--><!--]--> <!--[-1--><!--]--><!--]-->
+			
+			<script nonce="r4nd0m">
+				{
+					__sveltekit_2vmyie = {
+						base: new URL("https://www.se.com/ww/en/download/document/_app/immutable", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("https://www.se.com/ww/en/download/document/_app/immutable/entry/start.DspU-jvK.js"),
+						import("https://www.se.com/ww/en/download/document/_app/immutable/entry/app.4zFYjguz.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 3],
+							data: [null,{type:"data",data:{appSource:"se",ddc:"https://www.se.com/{country}/{language}/download/download-api::ww::en::DDC_SE::docReference=70022-0120-01::accessToken=::apigeeauthtoken=::copyAnonymousDocuments=true",myfavorites:false,is_builder_io_footer_enabled:true,builder_io_model_sqe_value:"caas-component",builder_io_model_ppr_value:"caas-component",builder_io_api_key_sqe_value:"fad19f47b42c43378facada257f3b8e5",builder_io_api_key_ppr_value:"00c0780d36be4fdf97f8da61dff6b6ac",builder_io_api_key_prod_value:"87a13b564d504489a60e78515594f31e",builder_io_entry_data_sqe_value:{caasId:"new-footer"},builder_io_entry_data_ppr_value:{caasId:"new-footer"},builder_io_class_name:"qds-theme-dark se2-accessibility",builder_io_script_url_sqe_value:"https://qa-uce.dmn1xd701xrld.amplifyapp.com/web-components/client/se-caas.umd.js",builder_io_script_url_ppr_value:"https://www-pre.se.com/web-components/client/se-caas.umd.js",builder_io_script_url_prod_value:"https://www.se.com/web-components/client/se-caas.umd.js",is_builder_io_header_enabled:true,builder_io_header_model_ppr_value:"caas-component",builder_io_header_model_prod_value:"caas-component",builder_io_header_api_key_ppr_value:"00c0780d36be4fdf97f8da61dff6b6ac",builder_io_header_api_key_prod_value:"87a13b564d504489a60e78515594f31e",builder_io_header_entry_data_ppr_value:{caasId:"new-header"},builder_io_header_entry_data_prod_value:{caasId:"new-header"},is_builder_io_support_module_enabled:true,builder_io_support_module_model_prod_value:"caas-component",builder_io_support_module_model_ppr_value:"caas-component",builder_io_support_module_api_key_prod_value:"87a13b564d504489a60e78515594f31e",builder_io_support_module_api_key_ppr_value:"00c0780d36be4fdf97f8da61dff6b6ac",builder_io_support_module_entry_data_prod_value:{caasId:"support-module"},builder_io_support_module_entry_data_ppr_value:{caasId:"support-module"},builder_io_support_module_class_name:"qds-theme-dark se2-accessibility",is_builder_io_medallia_survey_enabled:true,builder_io_medallia_survey_api_key_prod_value:"87a13b564d504489a60e78515594f31e",builder_io_medallia_survey_api_key_ppr_value:"00c0780d36be4fdf97f8da61dff6b6ac",builder_io_medallia_survey_entry_data_prod_value:"embed-code-survey",builder_io_medallia_survey_entry_data_ppr_value:"embed-code-survey",builder_io_medallia_survey_script_url_prod_value:"https://cdn.builder.io/api/v3/content/caas-component",builder_io_medallia_survey_script_url_ppr_value:"https://cdn.builder.io/api/v3/content/caas-component",is_builder_io_accessibility_toggle_enabled:true,builder_io_accessibility_toggle_model_prod_value:"caas-component",builder_io_accessibility_toggle_model_ppr_value:"caas-component",builder_io_accessibility_toggle_api_key_prod_value:"87a13b564d504489a60e78515594f31e",builder_io_accessibility_toggle_api_key_ppr_value:"00c0780d36be4fdf97f8da61dff6b6ac",builder_io_accessibility_toggle_entry_data_prod_value:{caasId:"accessibility-toggle"},builder_io_accessibility_toggle_entry_data_ppr_value:{caasId:"accessibility-toggle"},builder_io_accessibility_toggle_class_name:"qds-theme-dark se2-accessibility",localization_end_point:"https://www.se.com/{country}/{language}/download/download-api",promo_banner_localizationEndPoint:"https://www.se.com/ww/en/download/api",country_code:"ww",language_code:"en",app_source:"SE",enable_learn_more:"false",toggle_click:"true",documentDetailsData:void 0,ddpLabels:void 0,prombannerLables:void 0,isDocHasOtherTranslations:void 0,sdl_header:"",sdl_footer:"",sdl_survey:"",sdl_accessibility_toggle:"",sdl_support_module:"",link:"https://www.se.com/favicon.ico",text:" Schneider Electric",supportModule:false,brandName:"Schneider Electric",environment:"Production",builder_io_env:"prod",platform:"SE Main site",ga:true,gtmId:"GTM-MM5LXGL",oneTrustEnabled:true,oneTrustLoadedByGtm:true,prodOneTrustID:"21799d79-d173-421f-846e-c7cef429e7c9",preProdOneTrustID:"21799d79-d173-421f-846e-c7cef429e7c9-test",myschneiderurl:"https://www.se.com/myschneider/",myschneiderregurl:"https://www.se.com/myschneider/onboarding?app=mySchneiderWebISP&countryCode=ww&lang=en&alink=/myschneider/documentsDownloadCenter/detail?id=70022-0120-01",isDisableTheme:false,myDocumentsCheckStatusURI:"https://www.se.com/ww/en/download/download-api/my-documents/checkStatus?docReference=70022-0120-01&appSource=DDC_SE",isGA4Enabled:false,isDocHasCorporateScope:false,docReference:"70022-0120-01",csLocales:"ko_kr,en_eg,hu_hu,en_au,hr_hr,en_ie,ru_kz,en_ae,en_ng,sr_rs,sl_si,cs_cz,en_ph,en_in,en_my,en_us,en_id,id_id,tr_tr,en_vn,vi_vn,en_th,th_th,en_sa,es_pe,en_za,pt_br,fr_dz,fr_africa,zh_tw,en_nz,es_cr,es_co,es_mx,el_gr,en_il,de_at,fr_be,nl_be,lv_lv,et_ee,en_ca,fr_ca,lt_lt",metaURL:"https://www.se.com/ww/en/download/document/70022-0120-01/",envConfiguration:{wcEnv:"prod",cspEnv:"prod",sdlEnv:"prod_live",ga4Enable:false},breadcrumbURLsObj:{breadcrumbSupportURL:"https://www.se.com/ww/en/work/support/",breadcrumbHomeURL:"https://www.se.com/ww/en/download/",breadcrumbDocCategoryURL:void 0},breadcrumbJsonLd:"\u003Cscript type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.se.com/ww/en/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Help Center\",\"item\":\"https://www.se.com/ww/en/work/support/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Documents & Downloads\",\"item\":\"https://www.se.com/ww/en/download/\"}]}\u003C/script>",digitalDocumentJsonLd:""},uses:{search_params:["appSource","sdlEnv","wcEnv","builderIOEnv","disableTheme"],params:["OneDownload","country","language","download","document","docReference"],url:1}}],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		
+		</div>
+	</body>
+
+	<style>
+		.se-app {
+			display: contents;
+		}
+	</style>
+
+</html>
