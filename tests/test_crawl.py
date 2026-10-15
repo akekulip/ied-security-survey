@@ -192,6 +192,42 @@ class CrawlTests(SurveyCase):
                              [('extracted', str(p/'first'), None), ('failed', str(p/'first'), was['scan']['error']), ('failed', None, 'ValueError: HTTP 404')])
             self.assertEqual((was['scan']['error'], now['scan']['sha256']), ('ValueError: no extractable text; OCR/manual review required', was['scan']['sha256']))
 
+    def test_approved_urls_are_the_only_new_requests_and_never_displace_earlier_pages(self):
+        with tempfile.TemporaryDirectory() as td:
+            p, calls = Path(td), []
+            pages = {'https://vendor.test/a': b'<p>TLS</p><a href="/manual.pdf">Manual</a><a href="/guide.pdf">Guide</a>',
+                     'https://vendor.test/manual.pdf': b'<p>SSH</p>', 'https://vendor.test/guide.pdf': b'<p>IPsec</p>',
+                     'https://vendor.test/profile': b'<p>DNP3 Secure Authentication</p>', 'https://vendor.test/b': b'<p>meter</p>'}
+            cfg = self.config(p, [{'id':'a','seeds':['https://vendor.test/a','https://vendor.test/gone'],'max_depth':1,'max_pages_per_product':3},
+                                  {'id':'b','seeds':['https://vendor.test/b']}])
+            with self.site({u: v for u, v in pages.items() if u != 'https://vendor.test/profile'}, calls): crawl(cfg, p/'first', p/'cache')
+            first = {(x['product_id'], x['url'].rsplit('/', 1)[1]): x['status'] for x in load(p/'first'/'sources.json')}
+            self.assertEqual((first['a', 'gone'], first['a', 'manual.pdf'], first['a', 'guide.pdf']), ('failed', 'extracted', 'skipped'))
+            approved = [{'product_id':'a','url':'https://vendor.test/profile','reason':'DNP3 device profile','query':'site:vendor.test DNP3'},
+                        {'product_id':'b','url':'https://vendor.test/manual.pdf','reason':'family manual that names b'}]
+            dump(p/'approved.json', approved)
+            del calls[:]
+            with self.site(pages, calls): crawl(cfg, p/'second', p/'cache', reuse=p/'first', approved_urls=p/'approved.json')
+            # Only the approved address that no earlier run holds is requested. The failed seed is not asked for again,
+            # and the page budget still skips the link it skipped before.
+            self.assertEqual(calls, ['https://vendor.test/profile'])
+            now = {(x['product_id'], x['url'].rsplit('/', 1)[1]): x for x in load(p/'second'/'sources.json')}
+            self.assertEqual([(k, now[k]['status'], now[k].get('approved_addition', False), 'reused_from' in now[k]) for k in now],
+                             [(('a','a'), 'extracted', False, True), (('a','gone'), 'not_approved', False, False),
+                              (('a','manual.pdf'), 'extracted', False, True), (('a','guide.pdf'), 'skipped', False, False),
+                              (('a','profile'), 'extracted', True, False), (('b','b'), 'extracted', False, True),
+                              (('b','manual.pdf'), 'extracted', True, True)])
+            made = load(p/'second'/'manifest.json')['approved_urls']
+            self.assertEqual((made['count'], made['sha256']), (2, digest((p/'approved.json').read_bytes())))
+            replay(p/'second', p/'cache', p/'replay')
+            for bad, message in (([{'product_id':'zz','url':'https://vendor.test/x','reason':'r'}], 'does not cover'),
+                                 ([{'product_id':'a','url':'https://elsewhere.test/x','reason':'r'}], 'not an allowlisted'),
+                                 ([{'product_id':'a','url':'https://vendor.test/x'}], 'without a reason')):
+                dump(p/'bad.json', bad)
+                with self.assertRaisesRegex(ValueError, message):
+                    crawl(cfg, p/'refused', p/'cache', reuse=p/'first', approved_urls=p/'bad.json')
+                self.assertFalse((p/'refused').exists())
+
     def test_sign_in_walls_are_counted_and_never_requested(self):
         with tempfile.TemporaryDirectory() as td:
             p, calls = Path(td), []

@@ -223,6 +223,15 @@ class Findings:
                     'Sources': '; '.join(f"{self.cite[sid]} {self.byid[sid]['final_url']} "
                                          f"sha256:{self.byid[sid]['sha256']}" for sid in used)}
                 row.update({name.capitalize(): self.prop(pid, where, members, name) for name in PROPERTIES})
+                # What the DNP3 table needs from this row: whether its findings name DNP3, and whether the protection is the
+                # device's own or a separate device's.
+                row['names_dnp3'] = any(DNP3.search(f"{m.get('interface', '')} {m.get('protocol', '')}") for m in members)
+                row['documented'] = bool(stated)
+                bases = [set(facts(m)['basis']) for m in stated]
+                row['Scope'] = kind.replace('_', ' ') + (
+                    '' if not bases else ', separate device' if all(b == {'external_gateway'} for b in bases)
+                    else ', built in' if any('built_in' in b for b in bases)
+                    else ', support basis not assessed' if all(b <= {NOT_ASSESSED} for b in bases) else ', conditions apply')
                 # Two findings on one interface may rest on documents for different models or firmware; then each says its own.
                 row['Evidence applies to'] = per_feature(
                     [(m['feature'], ', '.join(f"{name} "
@@ -294,8 +303,49 @@ class Findings:
                 found['tunnel'].append(r)
             elif r['status'] == 'explicitly_unsupported' and named_dnp3:
                 found['denied'].append(r)
+        # A document saying that DNP3 itself is not encrypted settles the scope that encryption of another or an unnamed
+        # control protocol leaves open.
+        if any(r['feature'] in ('tls', 'encryption', 'ipsec') for r in found['denied']):
+            found['tunnel'], found['external_scope_unknown'] = [], []
         kind = next((k for k, _ in DNP3_KINDS if found[k]), 'none')
         return kind, found[kind]
+
+    def lifecycle_group(self, pid):
+        """The column a DNP3 entry is counted in. Groups exist only where the run's config defines legacy."""
+        status = self.devices[pid]['lifecycle_status']
+        return ('All devices' if not self.grouped else 'Currently listed' if status == 'currently_supported'
+                else 'Legacy' if status in self.legacy else 'Lifecycle unknown' if status == 'unknown'
+                else 'Discontinued, not legacy')
+
+    def dnp3_counts(self):
+        """Unweighted DNP3 counts: the columns in use, entries per column, and entries per (kind, column)."""
+        order = (('Currently listed', 'Legacy', 'Discontinued, not legacy', 'Lifecycle unknown') if self.grouped
+                 else ('All devices',))
+        groups = {pid: self.lifecycle_group(pid) for pid in self.dnp3}
+        columns = [c for c in order if c in ('Currently listed', 'Legacy', 'All devices') or c in groups.values()]
+        kinds = {pid: self.dnp3_security(pid)[0] for pid in self.dnp3}
+        return columns, Counter(groups.values()), Counter((kinds[p], groups[p]) for p in self.dnp3)
+
+    def dnp3_lines(self, pid):
+        """The DNP3 table's lines for one catalogue entry, read from the interface table: one per interface whose reviewed
+        findings name DNP3, or one line saying none does. Protection on other interfaces is listed apart, never merged in."""
+        mine = [t for t in self.table if t['pid'] == pid]
+        dnp3 = [t for t in mine if t['Interface class'] == 'control_protocol' and t['names_dnp3']]
+        elsewhere = '; '.join(f"{t['Protocol / interface']}: {t['Scope']}" for t in mine
+                              if t not in dnp3 and t['documented']) or 'none'
+        common = {'Identity level': self.devices[pid]['identity_level'] or 'not established',
+                  'Legacy': self.legacy_word(pid), 'DNP3 summary': dict(DNP3_KINDS)[self.dnp3_security(pid)[0]],
+                  'Security documented for other interfaces': elsewhere}
+        if dnp3:
+            return [dict(t, **common) for t in dnp3]
+        names = self.dnp3_sources.get(pid, [])
+        return [dict(mine[0], **common, **{
+            'Protocol / interface': 'DNP3 named in the retrieved documents; no reviewed finding for a DNP3 interface',
+            'Authentication': 'not established', 'Integrity': 'not established', 'Encryption': 'not established',
+            'Scope': '-', 'Support conditions': '-', 'Default': '-', 'Activation': '-', 'Evidence': [], 'Searched': '',
+            'Evidence applies to': 'not established',
+            'Sources': '; '.join(f"{self.cite[sid]} {self.byid[sid]['final_url']} sha256:{self.byid[sid]['sha256']}"
+                                 for sid in names)})]
 
     def dnp3_source(self, pid, rows):
         """Where to check the DNP3 result: (reference, location, URL, quote) for the passage a result rests on, or else

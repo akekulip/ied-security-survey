@@ -88,6 +88,23 @@ def dnp3_csv(found, path):
                         ' | '.join(x[0] for x in where), ' | '.join(x[1] for x in where), ' | '.join(x[2] for x in where)])
 
 
+DNP3_TABLE_FIELDS = ['product_id', 'Manufacturer', 'Model', 'Category', 'Identity level', 'Lifecycle', 'Legacy',
+                     'Protocol / interface', 'Authentication', 'Integrity', 'Encryption', 'Scope', 'Support conditions',
+                     'Default', 'Activation', 'Evidence applies to', 'Evidence', 'Sources', 'Review status', 'DNP3 summary',
+                     'Security documented for other interfaces']
+
+
+def dnp3_table_csv(found, path):
+    """The DNP3 table: one line per DNP3 catalogue entry and DNP3 interface, taken from the interface table."""
+    with path.open('w', newline='', encoding='utf-8') as fp:
+        w = csv.DictWriter(fp, extrasaction='ignore', fieldnames=DNP3_TABLE_FIELDS)
+        w.writeheader()
+        for pid in found.dnp3:
+            for line in found.dnp3_lines(pid):
+                quotes = [f'{ref} {where}: "{text}"' for ref, where, text in line['Evidence']]
+                w.writerow(dict(line, product_id=pid, Evidence=' || '.join(quotes) or 'none'))
+
+
 def write_tables(found, dest):
     dump(dest / 'findings.json', found.rows)
     dump(dest / 'sources.json', found.sources)
@@ -98,3 +115,4 @@ def write_tables(found, dest):
     interfaces_csv(found, dest / 'findings_table.csv')
     devices_csv(found, dest / 'devices.csv')
     dnp3_csv(found, dest / 'dnp3.csv')
+    dnp3_table_csv(found, dest / 'dnp3_table.csv')

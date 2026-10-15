@@ -7,6 +7,7 @@ from .crawl import crawl
 from .runs import rebuild, recheck, replay, verify
 from .review import rebind
 from .report import report
+from .paper import paper
 from .catalogue import sitemap
 from .inventory import enrich, inventory
 from .sampling import sample
@@ -26,7 +27,10 @@ COMMANDS = {
         ('--resume', {'action': 'store_true', 'help': 'continue an interrupted run in --out'}),
         ('--reuse', {'action': 'append', 'help': 'earlier run whose fetched files are used instead of new requests; may '
                                                  'be repeated'}),
-        ('--only', {'help': 'only the products whose id or vendor matches this pattern'})]),
+        ('--only', {'help': 'only the products whose id or vendor matches this pattern'}),
+        ('--approved-urls', {'help': 'JSON list of {product_id, url, reason}: the only addresses this run may request; '
+                                     'everything else comes from --reuse or is recorded as not_approved. Each listed '
+                                     'address is also attempted for its product, outside the page budget'})]),
     'inventory': (inventory, 'list every catalogue device of the vendors in a rules file', [
         ('--vendors', REQUIRED | {'help': 'rules file, e.g. configs/vendors.json'}),
         ('--out', REQUIRED | {'help': 'new inventory folder'}),
@@ -55,6 +59,14 @@ COMMANDS = {
         ('--source-notes', {'help': 'source notes file'}),
         ('--device-notes', {'help': 'device notes file'}),
         ('--require-confirmed', {'action': 'store_true', 'help': 'refuse publication output while any cell is draft or unreviewed'})]),
+    'paper': (paper, "write the paper's DNP3 evidence: summary, table, LaTeX appendix and paragraph, with a receipt", [
+        ('--run', RUN),
+        ('--reviews', REQUIRED | {'help': 'review file'}),
+        ('--out', REQUIRED | {'help': 'new folder'}),
+        ('--source-notes', {'help': 'source notes file'}),
+        ('--device-notes', {'help': 'device notes file'}),
+        ('--require-confirmed', {'action': 'store_true', 'help': 'refuse unless every cell is confirmed by a person; '
+                                                                  'without it every output is marked as a draft'})]),
     'verify': (verify, 'check that the cached files of a run still match their recorded hashes', [
         ('--run', RUN),
         ('--cache', CACHE)]),

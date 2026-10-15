@@ -67,6 +67,22 @@ def validate_config(cfg):
     return warnings
 
 
+def approved_additions(entries, cfg):
+    """The approved list of new requests, as {product id: [address, ...]}. Each entry names its product and why it was
+    chosen; an address outside the product's allowlisted domains or for a product the run does not cover is refused."""
+    products, approved = {p['id']: p for p in cfg['products']}, {}
+    for e in entries:
+        pid, url = e.get('product_id'), e.get('url', '')
+        if pid not in products:
+            raise ValueError(f'approved URL for a product this run does not cover: {pid!r}')
+        if not str(e.get('reason', '')).strip():
+            raise ValueError(f'approved URL without a reason: {url}')
+        if not allowed(url, products[pid]['domains']):
+            raise ValueError(f'{pid}: approved URL is not an allowlisted public HTTPS URL: {url}')
+        approved.setdefault(pid, []).append(canonical(url))
+    return approved
+
+
 def link_score(url, text, alias):
     blob = url + ' ' + text
     return sum(w for pattern, w in LINK_WEIGHTS if pattern.search(blob)) + (2 if alias and alias.search(blob) else 0)
@@ -123,8 +139,10 @@ def finish(out, cfg, config_sha256, sources, hits, warnings, **extra):
 class Crawler:
     """One run in progress: what it has recorded, what earlier runs already hold, and where it checkpoints."""
 
-    def __init__(self, cfg, out, cache, sources, hits, audit, earlier):
+    def __init__(self, cfg, out, cache, sources, hits, audit, earlier, approved=None):
         self.cfg, self.out, self.cache, self.sources, self.hits = cfg, out, cache, sources, hits
+        # With an approved list, only its addresses may be requested; everything else comes from an earlier run or waits.
+        self.approved = approved
         self.fetcher = Fetcher(cfg, cache)
         self.fetcher.audit = audit
         self.prior = {(s['product_id'], s['url']): s for s in sources}
@@ -156,6 +174,9 @@ class Crawler:
         if held and held['status'] == 'login_required':
             # The earlier run was told this document needs a sign-in. It is not asked for again.
             rec.update(status='login_required', error=held['error'], reused_from=held['held_by'])
+            return []
+        if not held and self.approved is not None and rec['url'] not in self.approved.get(product['id'], ()):
+            rec.update(status='not_approved', error='not held by an earlier run and not in the approved list; not requested')
             return []
         try:
             if held:
@@ -259,9 +280,22 @@ class Crawler:
                         order += 1
             if fresh:
                 yield rec
+        # Approved additional documents come after the product's own pages and outside its page budget, so they never
+        # displace a page an earlier run followed. Their links are not followed.
+        for url in (self.approved or {}).get(product['id'], []):
+            if url in seen or (product['id'], url) in self.prior:
+                continue
+            seen.add(url)
+            rec = {'id': digest((product['id'] + url).encode())[:20], 'product_id': product['id'], 'url': url,
+                   'depth': 0, 'started_at': now(), 'approved_addition': True}
+            self.obtain(rec, product, alias, shas)
+            self.record(rec)
+            if rec['status'] == 'extracted':
+                shas.setdefault(rec['sha256'], rec['id'])
+            yield rec
 
 
-def crawl(config_path, out, cache, resume=False, reuse=None, only=None):
+def crawl(config_path, out, cache, resume=False, reuse=None, only=None, approved_urls=None):
     config_bytes = Path(config_path).read_bytes()
     cfg = json.loads(config_bytes)
     if only:
@@ -270,6 +304,12 @@ def crawl(config_path, out, cache, resume=False, reuse=None, only=None):
         if not cfg['products']:
             raise ValueError('--only matches no product')
     warnings = validate_config(cfg)
+    approved, approval = None, {}
+    if approved_urls:
+        approved_bytes = Path(approved_urls).read_bytes()
+        approved = approved_additions(json.loads(approved_bytes), cfg)
+        approval = {'approved_urls': {'path': str(approved_urls), 'sha256': digest(approved_bytes),
+                                      'count': sum(map(len, approved.values()))}}
     for w in warnings:
         print('config warning:', w, file=sys.stderr)
     import pypdf  # noqa: F401  Fail before the first request, not once per PDF.
@@ -286,7 +326,7 @@ def crawl(config_path, out, cache, resume=False, reuse=None, only=None):
         out.mkdir(parents=True, exist_ok=False)
         dump(out / 'config.json', cfg)
     runs = [reuse] if isinstance(reuse, (str, Path)) else list(reuse or [])
-    crawler, products = Crawler(cfg, out, cache, sources, hits, audit, runs), cfg['products']
+    crawler, products = Crawler(cfg, out, cache, sources, hits, audit, runs, approved), cfg['products']
     # Product provenance remains separate even when a family document is shared.
     for number, product in enumerate(products, 1):
         for rec in crawler.visit(product):
@@ -295,6 +335,6 @@ def crawl(config_path, out, cache, resume=False, reuse=None, only=None):
             print(f'[{number}/{len(products)}]', product['id'], rec['status'], rec['url'], flush=True)
     # Written once more so a run without any seeds still has all its files.
     crawler.checkpoint()
-    finish(out, cfg, digest(config_bytes), sources, hits, warnings,
+    finish(out, cfg, digest(config_bytes), sources, hits, warnings, **approval,
            **({'only': only} if only else {}),
            **({'reused_from': str(runs[0]) if len(runs) == 1 else [str(x) for x in runs]} if runs else {}))

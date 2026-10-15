@@ -3,7 +3,7 @@
 import re
 
 
-VERSION = '2.2.1'
+VERSION = '2.3.0'
 
 
 # Bumped only when extraction or lead rules change. Replay compares this, so a report-only release keeps runs replayable.
@@ -116,7 +116,8 @@ LEGACY_DEFAULT = ('end_of_support',)
 FORMER_LIFECYCLES = ('active', 'legacy', 'discontinued')
 
 
-LIFECYCLE_WORDS = {'discontinued_supported': 'discontinued, still supported',
+# "Currently listed" is what the state rests on: listed in the vendor's catalogue without a notice of discontinuation.
+LIFECYCLE_WORDS = {'currently_supported': 'currently listed', 'discontinued_supported': 'discontinued, still supported',
                    'discontinued_support_not_stated': 'discontinued, support not stated'}
 
 

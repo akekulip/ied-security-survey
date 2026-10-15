@@ -24,12 +24,14 @@ TYPES = {'protective_relay': 'protective relay', 'controller_rtu': 'controller /
 def opening(found):
     cfg, sources, totals = found.cfg, found.sources, found.totals
     line = (f"Products/families in seed inventory: {len(found.products)}. "
-            f"Sources attempted: {len(sources) - totals['skipped'] - totals['login_required']}; "
+            f"Sources attempted: {len(sources) - totals['skipped'] - totals['login_required'] - totals['not_approved']}; "
             f"extracted: {totals['extracted']}; failed: {totals['failed']}")
     if totals['duplicate']:
         line += f"; duplicate of another source: {totals['duplicate']}"
     if totals['skipped']:
         line += f"; matched links not followed (page budget): {totals['skipped']}"
+    if totals['not_approved']:
+        line += f"; not held by an earlier run and not approved for a new request: {totals['not_approved']}"
     if totals['login_required']:
         line += f"; documents behind a sign-in, not requested: {sum(s.get('link_count', 1) for s in sources if s['status'] == 'login_required')}"
     return [f"# {cfg.get('title', 'IED security documentation survey')}", '',
@@ -73,16 +75,9 @@ def dnp3(found):
     if not members:
         return ['', '## DNP3 security', '', 'No retrieved document of a device in this run names DNP3.']
 
-    def group(pid):
-        status = found.devices[pid]['lifecycle_status']
-        return ('All devices' if not found.grouped else 'Currently sold' if status == 'currently_supported'
-                else 'Legacy' if status in found.legacy else 'Lifecycle unknown' if status == 'unknown'
-                else 'Discontinued, not legacy')
-
-    order = ('Currently sold', 'Legacy', 'Discontinued, not legacy', 'Lifecycle unknown') if found.grouped else ('All devices',)
-    columns = [c for c in order if c in ('Currently sold', 'Legacy', 'All devices') or any(group(p) == c for p in members)]
+    group = found.lifecycle_group
+    columns, total, tally = found.dnp3_counts()
     kinds = {pid: found.dnp3_security(pid) for pid in members}
-    total, tally = Counter(map(group, members)), Counter((kinds[p][0], group(p)) for p in members)
     share = lambda n, of: f'{n} of {of} ({100 * n / of:.0f}%)' if of else '-'
     left_out = [pid for pid in products if found.dnp3_sources.get(pid) and pid not in members]
     text = (['', '## DNP3 security', '',
@@ -107,7 +102,7 @@ def dnp3(found):
     text += ['| ' + ' | '.join(legacy + ['Lifecycle', 'Vendor', 'Model', 'Type', 'DNP3 security', 'Source']) + ' |',
              '|---|---|---|---|---|---|' + '---|' * len(legacy)]
     labels = dict(DNP3_KINDS)
-    ranked = sorted(members, key=lambda p: ([k for k, _ in DNP3_KINDS].index(kinds[p][0]), order.index(group(p)),
+    ranked = sorted(members, key=lambda p: ([k for k, _ in DNP3_KINDS].index(kinds[p][0]), columns.index(group(p)),
                                             products[p].get('vendor', ''), str(products[p].get('model') or p)))
     for pid in ranked:
         kind, rows = kinds[pid]
@@ -369,7 +364,7 @@ def sources_read(found):
 
 def sources_missing(found):
     products = found.products
-    missing = [s for s in found.sources if s['status'] in ('failed', 'duplicate', 'login_required')]
+    missing = [s for s in found.sources if s['status'] in ('failed', 'duplicate', 'login_required', 'not_approved')]
     if not missing:
         return []
     if len(missing) <= 40:
@@ -381,6 +376,7 @@ def sources_missing(found):
     for s in missing:
         kinds[products[s['product_id']].get('vendor', ''),
               'behind a sign-in, not requested' if s['status'] == 'login_required'
+              else 'not approved for a new request, not requested' if s['status'] == 'not_approved'
               else 'duplicate of another source' if s['status'] == 'duplicate'
               else re.sub(r'https?://\S+', '<url>', s.get('error', ''))[:80]] += s.get('link_count', 1)
     return (['', '## Sources without extracted text', '',
@@ -412,29 +408,44 @@ SECTIONS = (dnp3, devices, summary, interfaces, counts, matrix, defaults, eviden
             sources_missing, closing)
 
 
+REPORT_FILES = ('REPORT.md', 'findings.json', 'sources.json', 'evidence_index.json', 'candidate_counts.json', 'findings.csv',
+                'findings_table.csv', 'devices.csv', 'dnp3.csv', 'dnp3_table.csv')
+
+
+def confirmed(found):
+    """The publication gate: every cell reviewed and every row confirmed by a person."""
+    pending = [r for r in found.rows if r.get('review_status') != 'confirmed']
+    if pending or found.blank or len(found.reviewed) != found.expected:
+        raise ValueError(f'publication report requires confirmed review of every cell: '
+                         f'{len(pending)} draft rows; {found.expected - len(found.reviewed)} unreviewed cells')
+
+
 def report(run, review_path, dest, require_evidence=False, source_notes=None, device_notes=None, require_confirmed=False):
     require_evidence = require_evidence or require_confirmed
     found, dest = Findings(run, review_path, require_evidence, source_notes, device_notes), Path(dest)
     if require_confirmed:
-        pending = [r for r in found.rows if r.get('review_status') != 'confirmed']
-        if pending or found.blank or len(found.reviewed) != found.expected:
-            raise ValueError(f'publication report requires confirmed review of every cell: '
-                             f'{len(pending)} draft rows; {found.expected - len(found.reviewed)} unreviewed cells')
+        confirmed(found)
     dest.mkdir(parents=True, exist_ok=True)
     write_tables(found, dest)
     text = opening(found) + definitions(found)
     for section in SECTIONS:
         text += section(found)
     (dest / 'REPORT.md').write_text('\n'.join(text) + '\n', encoding='utf-8', newline='\n')
-    report_manifest(found, review_path, source_notes, device_notes, dest, require_evidence, require_confirmed)
+    report_manifest(found, review_path, source_notes, device_notes, dest, REPORT_FILES, require_evidence, require_confirmed)
     print(f'Report written to {dest}: {len(found.reviewed)} of {found.expected} cells reviewed in {len(found.rows)} '
           f'rows'
           + (f'; {found.blank} untouched template rows left out as not reviewed' if found.blank else ''))
 
 
-def report_manifest(found, review_path, source_notes, device_notes, dest, require_evidence, require_confirmed):
-    """Bind a generated report to its inputs without claiming unperformed raw-byte or deployment verification."""
+def report_manifest(found, review_path, source_notes, device_notes, dest, outputs, require_evidence, require_confirmed,
+                    receipt='report_manifest.json', schema='iedsurvey.report.v1'):
+    """Bind generated outputs to their inputs without claiming unperformed raw-byte or deployment verification. Every
+    output named must have been written: a receipt that silently leaves one out would vouch for less than it seems to."""
     from importlib.metadata import PackageNotFoundError, version
+
+    missing = [n for n in outputs if not (dest / n).exists()]
+    if missing:
+        raise ValueError(f'expected output not written: {", ".join(missing)}')
 
     def record(path):
         path = Path(path)
@@ -454,13 +465,11 @@ def report_manifest(found, review_path, source_notes, device_notes, dest, requir
             dependencies[name] = version(name)
         except PackageNotFoundError:
             dependencies[name] = 'not installed'
-    names = ('REPORT.md', 'findings.json', 'sources.json', 'evidence_index.json', 'candidate_counts.json',
-             'findings.csv', 'findings_table.csv', 'devices.csv', 'dnp3.csv')
-    dump(dest / 'report_manifest.json', {
-        'schema_version': 'iedsurvey.report.v1', 'created_at': now(), 'tool_version': VERSION,
+    dump(dest / receipt, {
+        'schema_version': schema, 'created_at': now(), 'tool_version': VERSION,
         'script_sha256': SCRIPT_SHA256, 'dependencies': dependencies, 'inputs': inputs,
         'acceptance': {'require_evidence': require_evidence, 'require_confirmed': require_confirmed,
                        'draft_rows': sum(r.get('review_status') != 'confirmed' for r in found.rows),
                        'unreviewed_cells': found.expected - len(found.reviewed),
                        'raw_document_bytes_verified_by_report': False},
-        'outputs': {name: digest((dest / name).read_bytes()) for name in names}})
+        'outputs': {n: digest((dest / n).read_bytes()) for n in outputs}})

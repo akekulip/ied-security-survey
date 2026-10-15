@@ -210,7 +210,7 @@ class ReportTests(SurveyCase):
                 'evidence for 2 devices and is unknown for 1.',
                 '| v | OLD | relay | not established | end of support | 1 March 2020: "Support for the OLD relay ended '
                 'on 1 March 2020." <https://vendor.test/lifecycle> | not established |',
-                '| v | NEW | relay | not established | currently supported | 2026-10-01: listed in the vendor catalogue '
+                '| v | NEW | relay | not established | currently listed | 2026-10-01: listed in the vendor catalogue '
                 '<https://vendor.test/lifecycle> | not established |',
                 '| v | UNK | relay | not established | unknown | none | not established |',
                 '| v | OLD | end of support | model not assessed, hardware not assessed, firmware all versions covered '
@@ -220,13 +220,13 @@ class ReportTests(SurveyCase):
                 'unknown: the complete documentation searched does not mention it | none stated | - | - | unknown | '
                 'S1 [manual] searched in full: no lead for encryption; S1 [manual] searched in full: no lead for tls | '
                 'draft (A. Reviewer) |',
-                '| v | NEW | currently supported | model not assessed, hardware not assessed, firmware all versions '
+                '| v | NEW | currently listed | model not assessed, hardware not assessed, firmware all versions '
                 'covered by manual rev C | DNP3 serial and Ethernet (control protocol) | not assessed; see tls '
                 '(supported) |',
                 '| v | UNK | unknown | not established | No control protocol established from the examined sources |',
-                '| OLD | relay, end of support | - | ?s | - | - | - | ?s | - | - |', '| NEW | relay, currently supported | - | S | - | - | - | - | - | - |',
+                '| OLD | relay, end of support | - | ?s | - | - | - | ?s | - | - |', '| NEW | relay, currently listed | - | S | - | - | - | - | - | - |',
                 # The same four results are counted for the legacy device and the current one; silence is unknown, not unsupported.
-                '| relay, end of support | tls | 0 | 0 | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 1 |', '| relay, currently supported | tls | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |',
+                '| relay, end of support | tls | 0 | 0 | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 1 |', '| relay, currently listed | tls | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |',
                 '| relay, unknown | tls | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 |', '| relay, end of support | encryption | 0 | 0 | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 1 |',
                 '| v | relay | end of support | - | 1 | 1 not reviewed | 1 not reviewed | 1 unknown: complete document '
                 'silent |',
@@ -286,10 +286,10 @@ class ReportTests(SurveyCase):
             with self.site({}, []): crawl(cfg, p/'run', p/'cache')
             report(p/'run', p/'run'/'review_template.json', p/'report')
             text = (p/'report'/'REPORT.md').read_text(encoding='utf-8')
-            for expected in ['## Summary by vendor, category and lifecycle', '| v | relay | currently supported | 80 | 20 | 20 not reviewed | 20 not reviewed | 20 not reviewed |',
+            for expected in ['## Summary by vendor, category and lifecycle', '| v | relay | currently listed | 80 | 20 | 20 not reviewed | 20 not reviewed | 20 not reviewed |',
                              '| v | relay | discontinued, support not stated | 40 | 10 | 10 not reviewed | 10 not '
                              'reviewed | 10 not reviewed |',
-                             '| v | meter | currently supported | 9 | 0 | - | - | - |', '30 products have no review row yet.',
+                             '| v | meter | currently listed | 9 | 0 | - | - | - |', '30 products have no review row yet.',
                              # Discontinued is not legacy: none of the thirty has a vendor statement that support ended.
                              'Legacy under this definition: 0 of 30 devices in this run. Lifecycle status rests on '
                              'dated vendor evidence for 30 devices and is unknown for 0.',
@@ -316,7 +316,7 @@ class ReportTests(SurveyCase):
                              '## Summary by vendor and category', '| v | relay | - | 120 | 30 | 30 not reviewed | 30 not reviewed | 30 not reviewed |', '| v | meter | - | 9 | 0 | - | - | - |',
                              '## Counts by category', '| relay | tls | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 30 | 30 |']:
                 self.assertIn(expected, text)
-            for absent in ['## Definitions', 'Legacy under this definition', '## Counts by category and lifecycle group', 'relay, currently supported']:
+            for absent in ['## Definitions', 'Legacy under this definition', '## Counts by category and lifecycle group', 'relay, currently listed']:
                 self.assertNotIn(absent, text)
 
     def test_report_counts_unread_sources_by_vendor_once_there_are_too_many_to_list(self):
@@ -538,15 +538,15 @@ class ReportTests(SurveyCase):
             section = text[text.index('## DNP3 security'):text.index('## Devices')]
             for expected in [
                 'Left out by the device notes, because DNP3 is named only in documents about other products: FAMILY.',
-                '| DNP3 security documented | Currently sold | Legacy | Total |',
+                '| DNP3 security documented | Currently listed | Legacy | Total |',
                 '| DNP3 over TLS or IPsec documented | 1 of 3 (33%) | 0 of 1 (0%) | 1 of 4 (25%) |',
                 '| DNP3 authentication documented; encryption not established | 1 of 3 (33%) | 0 of 1 (0%) | 1 of 4 (25%) |',
                 '| DNP3 security not established from retrieved documents | 1 of 3 (33%) | 1 of 1 (100%) | 2 of 4 (50%) |',
                 '| Devices whose documents name DNP3 | 3 | 1 | 4 |',
                 '| Legacy | Lifecycle | Vendor | Model | Type | DNP3 security | Source |',
-                '| no | currently supported | v | TLS | relay | DNP3 over TLS or IPsec documented | [S1 html-block:1](https://vendor.test/tls) |',
-                '| no | currently supported | v | SA | relay | DNP3 authentication documented; encryption not established | [S2 html-block:1](https://vendor.test/sa) |',
-                '| no | currently supported | v | PLAIN | relay | DNP3 security not established from retrieved documents | [S3](https://vendor.test/plain) |',
+                '| no | currently listed | v | TLS | relay | DNP3 over TLS or IPsec documented | [S1 html-block:1](https://vendor.test/tls) |',
+                '| no | currently listed | v | SA | relay | DNP3 authentication documented; encryption not established | [S2 html-block:1](https://vendor.test/sa) |',
+                '| no | currently listed | v | PLAIN | relay | DNP3 security not established from retrieved documents | [S3](https://vendor.test/plain) |',
                 '| yes | discontinued, support not stated | v | OLD | relay | DNP3 security not established from retrieved documents | [S6](https://vendor.test/old) |']:
                 self.assertIn(expected, section)
             # Devices whose documents never name DNP3, and those a note leaves out, are not counted at all.

@@ -82,6 +82,7 @@ Checks before going on:
 - **After step 3:** check the `lifecycle_evidence` sentences in `$S/inventory/pages/inventory.csv`.
 - **An interrupted crawl:** run the same command again with `--resume` added. It continues without refetching.
 - **One vendor only:** add `--only <pattern>` to `crawl`, for example `--only sel_`.
+- **Named documents for entries a crawl left unresolved:** list them in a JSON file, one `{"product_id", "url", "reason"}` per document (a `query` saying how it was found is kept too), and crawl again with `--reuse <earlier run> --approved-urls <file>`. Only the listed addresses are requested over the network. Everything else comes from the earlier runs, or is recorded as `not_approved` and not requested. The listed documents are read after each product's own pages, outside its page budget, and their links are not followed. The run's manifest keeps the file's hash.
 
 No command overwrites an existing output; give a new `--out` instead. The one exception is `report`, which replaces the report in its output folder.
 
@@ -128,8 +129,10 @@ The report refuses a row that breaks a rule and names the device and capability,
 - `REPORT.md`, which opens with the DNP3 table: the devices whose documents name DNP3, the applicable DNP3 security documentation for each entry (TLS, Secure Authentication, external protection, or unresolved), counted for current and legacy devices, and listed with vendor, model, type and a link to the source;
 - `findings_table.csv`, one line per device and interface;
 - `devices.csv`, with lifecycle evidence;
-- `dnp3.csv`, the DNP3 table one line per device;
-- `findings.csv`, `evidence_index.json` and `sources.json`.
+- `dnp3.csv`, the DNP3 summary one line per device;
+- `dnp3_table.csv`, one line per DNP3 entry and DNP3 interface, taken from the interface table: authentication, integrity and encryption each with its own result, the scope (built in, separate device, management), conditions, default, activation, quotes, hashes and review status, and any protection documented for other interfaces kept apart;
+- `findings.csv`, `evidence_index.json` and `sources.json`;
+- `report_manifest.json`, the hashes of the inputs and of every output listed above.
 
 `--require-evidence` makes a verbatim quote mandatory for every result. It does not turn an AI draft into author verification.
 
@@ -137,11 +140,28 @@ Add `--require-confirmed` for publication output. It refuses draft or unreviewed
 
 The DNP3 summary does not classify silence as plaintext. Protocol capabilities, vendor defaults and deployed settings are separate questions. Other-protocol encryption and external encryption without explicit DNP3 scope remain qualified as such.
 
-## 6. Other commands
+## 6. Paper evidence
+
+```bash
+python survey.py paper --run $DATA/runs/sample --reviews $S/reviews.json --source-notes $S/source_notes.json --device-notes $S/device_notes.json --out $S/paper
+```
+
+One command writes everything the paper takes from the survey, into a new folder:
+
+- `summary.md`: the DNP3 counts, the DNP3 table, the entries left unresolved with what could not be obtained for each, and the defaults and activation the documents state;
+- `dnp3_table.csv`: the same table as in the report;
+- `paper_appendix.tex`: method, counts, the per-entry table, every quote with its document, page, date and hash;
+- `paragraph.tex`: the main-text paragraph, its numbers counted from the inputs;
+- `paper_manifest.json`: the hashes of the inputs and of each of the four files.
+
+Every number is counted from the run and the review when the command runs, so the same inputs give the same files. Quotes are always checked. Without `--require-confirmed`, every file is marked "AI draft; author review pending". With it, the command refuses to write anything until every cell is reviewed and every row is `confirmed` by a person.
+
+## 7. Other commands
 
 | Command | When |
 |---|---|
 | `rebuild --run <run> --cache <cache> --out <new run>` | after the extraction rules change: re-extracts a finished run offline |
+| `replay --run <run> --cache <cache> --out <new folder>` | checks a run offline: fresh extraction, saved segments (text and location) and the recorded text digests must agree, and so must the lead files |
 | `recheck --old <old run or report> --new <new run>` | after crawling again: which documents changed, and where old quotes are now |
 | `rebind --reviews <file> --old <old run or report> --run <new run> --out <file>` | carries a review over to a refetch whose extracted text is unchanged |
 | `sitemap --host <host> --match <pattern> --out <file>` | lists one vendor's sitemap by hand |
@@ -168,4 +188,4 @@ The DNP3 summary does not classify silence as plaintext. Protocol capabilities, 
 
 Version 2.2.1 keeps all distinct keyword contexts on a page, because a first mention about management access must not hide a later control-protocol statement. Extraction revision 1.4.1 therefore needs a new offline `rebuild` before replay; keep existing runs and their reviews unchanged. Compare rebuilt text hashes and validate every review again.
 
-The retained D400 brochure, PDF page 1, explicitly documents TLS tunnelling for DNP3/TCP, Modbus/TCP and IEC 104. The historical AI review missed it. The claim that no sampled vendor-discontinued product documents control-traffic protection must be withdrawn. The audit supplies a separate draft correction and regenerated tables. It does not mark any row author-confirmed.
+The retained D400 brochure, PDF page 1, explicitly documents TLS tunnelling for DNP3/TCP, Modbus/TCP and IEC 104. The historical AI review missed it. The claim that no sampled vendor-discontinued product documents control-traffic protection is withdrawn. The correction, the full-cache rebuild, the bounded pass for unresolved entries and the current results are described in `study/README.md`. No row is author-confirmed.

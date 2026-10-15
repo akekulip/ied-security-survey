@@ -37,6 +37,14 @@ class DocumentedScopeTests(unittest.TestCase):
         key, _, _ = self.result([self.row('encryption', status='conditional', basis=['external_gateway'])])
         self.assertEqual(key, 'external')
 
+    def test_dnp3_stated_unencrypted_settles_encryption_documented_for_another_protocol(self):
+        modbus = self.row('encryption', 'Modbus TCP encrypted', 'conditional', 'Modbus TCP server', ['optional_module'])
+        key, _, rows = self.result([modbus, self.row('encryption', 'DNP not encrypted', 'explicitly_unsupported')])
+        self.assertEqual((key, [r['protocol'] for r in rows]), ('denied', ['DNP not encrypted']))
+        # A refused Secure Authentication says nothing about encryption, so the open scope stays open.
+        key, _, _ = self.result([modbus, self.row('dnp3_secure_authentication', status='explicitly_unsupported')])
+        self.assertEqual(key, 'tunnel')
+
     def test_rejection_of_sa_does_not_deny_all_security(self):
         _, label, _ = self.result([self.row('dnp3_secure_authentication', status='explicitly_unsupported')])
         self.assertNotIn('DNP3 is not protected', label)
