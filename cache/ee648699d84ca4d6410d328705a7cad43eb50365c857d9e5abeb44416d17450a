@@ -1,0 +1,51 @@
+
+
+# Discouraged portals:
+
+User-Agent: *
+Allow:    /portals/ui/ifl12h-dev/
+Allow:    /ifl12h-dev/
+Allow:    /portals/ui/im10h_15h_20h-dev/
+Allow:    /im10h_15h_20h-dev/
+Allow:    /portals/ui/ifl12c-dev/
+Allow:    /ifl12c-dev/
+Allow:    /portals/ui/fwupvigil-dev/
+Allow:    /fwupvigil-dev/
+Allow:    /portals/ui/ifl12mcn-dev/
+Allow:    /ifl12mcn-dev/
+Allow:    /portals/ui/im400n_thrn-dev/
+Allow:    /im400n_thrn-dev/
+Allow:    /portals/ui/im400series-dev/
+Allow:    /im400series-dev/
+Allow:    /portals/ui/easyups3s_pro_iec_dev/
+Allow:    /easyups3s_pro_iec_dev/
+Disallow: /portals/ui/thomas_doc_dev/
+Disallow: /thomas_doc_dev/
+Disallow: /portals/ui/me1.2-dev/
+Disallow: /me1.2-dev/
+Allow:    /portals/ui/galaxyvl_iec_dev/
+Allow:    /galaxyvl_iec_dev/
+Allow:    /portals/ui/galaxyvl_iec/
+Allow:    /galaxyvl_iec/
+Allow:    /portals/ui/im10_im20-dev/
+Allow:    /im10_im20-dev/
+Allow:    /portals/ui/easyups3s_pro_iec/
+Allow:    /easyups3s_pro_iec/
+Allow:    /portals/ui/galaxyvxl_iec/
+Allow:    /galaxyvxl_iec/
+Disallow: /portals/ui/section_test-dev/
+Disallow: /section_test-dev/
+Allow:    /portals/ui/galaxypx_iec/
+Allow:    /galaxypx_iec/
+Allow:    /portals/ui/galaxyvxl_ul/
+Allow:    /galaxyvxl_ul/
+Allow:    /portals/ui/easyups3m_pro_iec/
+Allow:    /easyups3m_pro_iec/
+
+# Application assets:
+
+Disallow: /admin/
+Disallow: /portals/rpc/
+Disallow: /portals/ui/_theme/
+Disallow: /portals/resources/
+Disallow: /*/_theme/
