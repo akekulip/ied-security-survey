@@ -390,5 +390,79 @@
       "Paper evidence written to C:\\Users\\Philip\\AppData\\Local\\Temp\\claude\\c--Users-Philip-OneDrive---University-of-Rhode-Island-Documents-ied-security-survey\\b0364b6a-4a52-4ad9-9a01-4097a17b1738\\scratchpad\\paper_again (AI draft; author review pending): 32 DNP3 entries, 19 without an established finding"
     ],
     "output_sha256": {}
+  },
+  {
+    "label": "codefix-verify-targeted",
+    "command": "python survey.py verify --run data/runs/sample_targeted_2026-10-15 --cache data/cache",
+    "started_at": "2026-10-15T22:05:00.053234+00:00",
+    "seconds": 1.7,
+    "exit_code": 0,
+    "tool_version": "2.3.1",
+    "extraction_version": "1.4.1",
+    "python": "3.12.10",
+    "output_tail": [
+      "All recorded source bytes verified"
+    ],
+    "output_sha256": {}
+  },
+  {
+    "label": "codefix-paper",
+    "command": "python survey.py paper --run data/runs/sample_targeted_2026-10-15 --reviews study/catalogue_2026-10-13/review/reviews_ai_draft_2026-10-15.json --source-notes study/catalogue_2026-10-13/review/source_notes_ai_draft.json --device-notes study/catalogue_2026-10-13/review/device_notes_ai_draft.json --out study/catalogue_2026-10-13/paper_2026-10-15_v2_3_1",
+    "started_at": "2026-10-15T22:05:06.971943+00:00",
+    "seconds": 4.8,
+    "exit_code": 0,
+    "tool_version": "2.3.1",
+    "extraction_version": "1.4.1",
+    "python": "3.12.10",
+    "output_tail": [
+      "Paper evidence written to study\\catalogue_2026-10-13\\paper_2026-10-15_v2_3_1 (AI draft; author review pending): 32 DNP3 entries, 19 without an established finding"
+    ],
+    "output_sha256": {}
+  },
+  {
+    "label": "codefix-paper-again",
+    "command": "python survey.py paper --run data/runs/sample_targeted_2026-10-15 --reviews study/catalogue_2026-10-13/review/reviews_ai_draft_2026-10-15.json --source-notes study/catalogue_2026-10-13/review/source_notes_ai_draft.json --device-notes study/catalogue_2026-10-13/review/device_notes_ai_draft.json --out C:/Users/Philip/AppData/Local/Temp/claude/c--Users-Philip-OneDrive---University-of-Rhode-Island-Documents-ied-security-survey/b0364b6a-4a52-4ad9-9a01-4097a17b1738/scratchpad/paper_codefix_again",
+    "started_at": "2026-10-15T22:05:11.973835+00:00",
+    "seconds": 4.5,
+    "exit_code": 0,
+    "tool_version": "2.3.1",
+    "extraction_version": "1.4.1",
+    "python": "3.12.10",
+    "output_tail": [
+      "Paper evidence written to C:\\Users\\Philip\\AppData\\Local\\Temp\\claude\\c--Users-Philip-OneDrive---University-of-Rhode-Island-Documents-ied-security-survey\\b0364b6a-4a52-4ad9-9a01-4097a17b1738\\scratchpad\\paper_codefix_again (AI draft; author review pending): 32 DNP3 entries, 19 without an established finding"
+    ],
+    "output_sha256": {}
+  },
+  {
+    "label": "codefix-paper-gate-expected-to-refuse",
+    "command": "python survey.py paper --run data/runs/sample_targeted_2026-10-15 --reviews study/catalogue_2026-10-13/review/reviews_ai_draft_2026-10-15.json --source-notes study/catalogue_2026-10-13/review/source_notes_ai_draft.json --device-notes study/catalogue_2026-10-13/review/device_notes_ai_draft.json --require-confirmed --out C:/Users/Philip/AppData/Local/Temp/claude/c--Users-Philip-OneDrive---University-of-Rhode-Island-Documents-ied-security-survey/b0364b6a-4a52-4ad9-9a01-4097a17b1738/scratchpad/paper_codefix_final",
+    "started_at": "2026-10-15T22:05:16.757835+00:00",
+    "seconds": 4.3,
+    "exit_code": 1,
+    "tool_version": "2.3.1",
+    "extraction_version": "1.4.1",
+    "python": "3.12.10",
+    "output_tail": [
+      "error: publication report requires confirmed review of every cell: 821 draft rows; 0 unreviewed cells"
+    ],
+    "output_sha256": {}
+  },
+  {
+    "label": "codefix-replay-targeted",
+    "command": "python survey.py replay --run data/runs/sample_targeted_2026-10-15 --cache data/cache --out data/runs/codefix_replay_0f13499",
+    "started_at": "2026-10-15T22:05:01.959447+00:00",
+    "seconds": 538.5,
+    "exit_code": 0,
+    "tool_version": "2.3.1",
+    "extraction_version": "1.4.1",
+    "python": "3.12.10",
+    "output_tail": [
+      "All recorded source bytes verified",
+      "Offline extraction, saved segments, text digests and candidates match recorded run exactly"
+    ],
+    "output_sha256": {
+      "data/runs/codefix_replay_0f13499/candidates.json": "d55282d3507a825790121ae8c4f9bd63b861d978ef8729e2b6a61197766267e4",
+      "data/runs/codefix_replay_0f13499/statement_leads.json": "20a26ce2fb2c37ed07d8cebc682277f32bb333e01f70b4fd8638383b2172946b"
+    }
   }
 ]

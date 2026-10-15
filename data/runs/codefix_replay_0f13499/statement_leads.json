@@ -1,0 +1,1268 @@
+[
+  {
+    "id": "4598a0eaf27407f89c42",
+    "source_id": "15270d6b8cd1730c20a4",
+    "product_id": "ge_multilin_c60c95",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:21",
+    "matched": [
+      "plain text"
+    ],
+    "context": "In cases where user-attributable access is required especially to facilitate auditable processes for compliance reasons, use \nRADIUS authentication.\nWhen the \"Server\" Authentication Type option is selected, the UR uses the RADIUS server and not its local authentication \ndatabase to authenticate the user.\nNo password or security information is displayed in plain text by the EnerVista software or UR device, nor is such \ninformation ever transmitted without cryptographic protection.\nCyberSentry server authentication\nThe UR has been designed to direct automatically the authentication requests based on user names. In this respect, local \naccount names on the UR are considered as reserved and not used on a RADIUS server.",
+    "contexts": [
+      "In cases where user-attributable access is required especially to facilitate auditable processes for compliance reasons, use \nRADIUS authentication.\nWhen the \"Server\" Authentication Type option is selected, the UR uses the RADIUS server and not its local authentication \ndatabase to authenticate the user.\nNo password or security information is displayed in plain text by the EnerVista software or UR device, nor is such \ninformation ever transmitted without cryptographic protection.\nCyberSentry server authentication\nThe UR has been designed to direct automatically the authentication requests based on user names. In this respect, local \naccount names on the UR are considered as reserved and not used on a RADIUS server."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "2.3 Order codes"
+  },
+  {
+    "id": "3d6de5e009ee99d9ad1f",
+    "source_id": "15270d6b8cd1730c20a4",
+    "product_id": "ge_multilin_c60c95",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:125",
+    "matched": [
+      "authentication is required"
+    ],
+    "context": "Use \nDevice authentication to log in using the five pre-configured roles (Administrator, Supervisor, Engineer, Operator, Observer, \nor Administrator and Supervisor when Device authentication is disabled). When using a serial connection, only Device \nauthentication is supported. When Server authentication is required, characteristics for communication with a RADIUS \nserver must be configured on the UR. This is possible only through the EnerVista software. The RADIUS server itself also \nmust be configured. At the end of this instruction manual, the appendix called RADIUS Server Configuration gives an \nexample of how to set up a simple RADIUS server. Once both the RADIUS server and the parameters for connecting the UR \nto the server have been configured, you can choose Server authentication on the login screen of EnerVista.",
+    "contexts": [
+      "Use \nDevice authentication to log in using the five pre-configured roles (Administrator, Supervisor, Engineer, Operator, Observer, \nor Administrator and Supervisor when Device authentication is disabled). When using a serial connection, only Device \nauthentication is supported. When Server authentication is required, characteristics for communication with a RADIUS \nserver must be configured on the UR. This is possible only through the EnerVista software. The RADIUS server itself also \nmust be configured. At the end of this instruction manual, the appendix called RADIUS Server Configuration gives an \nexample of how to set up a simple RADIUS server. Once both the RADIUS server and the parameters for connecting the UR \nto the server have been configured, you can choose Server authentication on the login screen of EnerVista."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "3.9 Set up CyberSentry and change default password"
+  },
+  {
+    "id": "2b3467264639f4d2e4b3",
+    "source_id": "15270d6b8cd1730c20a4",
+    "product_id": "ge_multilin_c60c95",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:235",
+    "matched": [
+      "plain text",
+      "unencrypted",
+      "not encrypted"
+    ],
+    "context": "In this case, access is not user-attributable. In cases where user-attributable access is \nrequired, especially for auditable processes for compliance reasons, use server authentication (RADIUS) only.\nNo password or security information is displayed in plain text by the EnerVista software or the UR device, nor are they ever \ntransmitted without cryptographic protection.\nWhen CyberSentry is enabled, Modbus communications over Ethernet is encrypted for all roles but for the Observer. The \nbuilt-in Observer role has read-only access to data over Modbus over Ethernet without authentication. Encrypted Modbus \ncommunication over Ethernet is not always tolerated by SCADA systems.",
+    "contexts": [
+      "In this case, access is not user-attributable. In cases where user-attributable access is \nrequired, especially for auditable processes for compliance reasons, use server authentication (RADIUS) only.\nNo password or security information is displayed in plain text by the EnerVista software or the UR device, nor are they ever \ntransmitted without cryptographic protection.\nWhen CyberSentry is enabled, Modbus communications over Ethernet is encrypted for all roles but for the Observer. The \nbuilt-in Observer role has read-only access to data over Modbus over Ethernet without authentication. Encrypted Modbus \ncommunication over Ethernet is not always tolerated by SCADA systems.",
+      "The \nbuilt-in Observer role has read-only access to data over Modbus over Ethernet without authentication. Encrypted Modbus \ncommunication over Ethernet is not always tolerated by SCADA systems. The UR has a bypass access feature for such \nsituations, which allows unencrypted Modbus over Ethernet. The Bypass Access setting is available on the SETTINGS  \nPRODUCT SETUP  SECURITY  SUPERVISORY screen. Note that other protocols (DNP, 101, 103, 104, EGD) are not encrypted, \nand they are good communications options for SCADA systems when CyberSentry is enabled.\nWhen using the rear RS485 port and CyberSentry, registers can be read with a maximum buffer of 64 bytes.",
+      "The UR has a bypass access feature for such \nsituations, which allows unencrypted Modbus over Ethernet. The Bypass Access setting is available on the SETTINGS  \nPRODUCT SETUP  SECURITY  SUPERVISORY screen. Note that other protocols (DNP, 101, 103, 104, EGD) are not encrypted, \nand they are good communications options for SCADA systems when CyberSentry is enabled.\nWhen using the rear RS485 port and CyberSentry, registers can be read with a maximum buffer of 64 bytes. Settings may \nnot be written, so use another port or configure the SERIAL INACTIVITY TIMEOUT setting to a high value, such as eight \nminutes, to give the relay enough time to finish the task."
+    ],
+    "match_count": 3,
+    "status": "unreviewed",
+    "heading": "CyberSentry settings through EnerVista"
+  },
+  {
+    "id": "dc33ae5738f40b803234",
+    "source_id": "15270d6b8cd1730c20a4",
+    "product_id": "ge_multilin_c60c95",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:239",
+    "matched": [
+      "clear text"
+    ],
+    "context": "CLIENT PASSCODE— The client passcode is a string can be configured in UR device under “Administrator” role. It can be \nconfigured from front panel as well as EnerVista UR Setup. The client passcode will follow password complexity rules.  \n• The default passcode is SSHpassphrase1#.\n• The passcode is not stored in clear text but will be securely stored with salted hash mechanism.\n• Administrator can modify the SSH passcode from the UR software or the front panel, the existing SSH passcode will be \nrequired to enter first.\n• When the device is set the the factory default as outlin ed later in SERVICE COMMAND,  the relay settings, user \npassword as well as SSH passcode will all be set to default.\n• This SSH passcode should be retained in case of power cycle as well as firmware upgrade.\n• The SSH passcode will be same for all clients.",
+    "contexts": [
+      "CLIENT PASSCODE— The client passcode is a string can be configured in UR device under “Administrator” role. It can be \nconfigured from front panel as well as EnerVista UR Setup. The client passcode will follow password complexity rules.  \n• The default passcode is SSHpassphrase1#.\n• The passcode is not stored in clear text but will be securely stored with salted hash mechanism.\n• Administrator can modify the SSH passcode from the UR software or the front panel, the existing SSH passcode will be \nrequired to enter first.\n• When the device is set the the factory default as outlin ed later in SERVICE COMMAND,  the relay settings, user \npassword as well as SSH passcode will all be set to default.\n• This SSH passcode should be retained in case of power cycle as well as firmware upgrade.\n• The SSH passcode will be same for all clients."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Session settings"
+  },
+  {
+    "id": "73c59fc7102482c3b08f",
+    "source_id": "15270d6b8cd1730c20a4",
+    "product_id": "ge_multilin_c60c95",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:239",
+    "matched": [
+      "authentication is used, no password is required",
+      "authentication is used, a password is required",
+      "required for the client to connect to the device over SSH",
+      "SSH passcode will be required",
+      "authentication mode the Observer role requires"
+    ],
+    "context": "This role allows concurrent Observer access but it has no \ndownload access to any files on the device. Observer is the default role if no authentication has been done to the \ndevice. This role displays as \"None\" on the front panel. When local authentication is used, no password is required for \nthis role. When RADIUS server authentication is used, a password is required.\nCLIENT AUTHENTICATION — SSH Client authentication is available from firmware version 8.50. If CLIENT AUTHENTICATIO is \nenabled, then the passcode will be required for the client to connect to the device over SSH. \nIf Client authentication is disabled, then any client can connect to device without passcode.",
+    "contexts": [
+      "This role allows concurrent Observer access but it has no \ndownload access to any files on the device. Observer is the default role if no authentication has been done to the \ndevice. This role displays as \"None\" on the front panel. When local authentication is used, no password is required for \nthis role. When RADIUS server authentication is used, a password is required.\nCLIENT AUTHENTICATION — SSH Client authentication is available from firmware version 8.50. If CLIENT AUTHENTICATIO is \nenabled, then the passcode will be required for the client to connect to the device over SSH. \nIf Client authentication is disabled, then any client can connect to device without passcode.",
+      "Observer is the default role if no authentication has been done to the \ndevice. This role displays as \"None\" on the front panel. When local authentication is used, no password is required for \nthis role. When RADIUS server authentication is used, a password is required.\nCLIENT AUTHENTICATION — SSH Client authentication is available from firmware version 8.50. If CLIENT AUTHENTICATIO is \nenabled, then the passcode will be required for the client to connect to the device over SSH. \nIf Client authentication is disabled, then any client can connect to device without passcode. In that case, 3rd party clients \ncan connect to the device as before.",
+      "When RADIUS server authentication is used, a password is required.\nCLIENT AUTHENTICATION — SSH Client authentication is available from firmware version 8.50. If CLIENT AUTHENTICATIO is \nenabled, then the passcode will be required for the client to connect to the device over SSH. \nIf Client authentication is disabled, then any client can connect to device without passcode. In that case, 3rd party clients \ncan connect to the device as before.\nCLIENT PASSCODE— The client passcode is a string can be configured in UR device under “Administrator” role. It can be \nconfigured from front panel as well as EnerVista UR Setup.",
+      "The client passcode will follow password complexity rules.  \n• The default passcode is SSHpassphrase1#.\n• The passcode is not stored in clear text but will be securely stored with salted hash mechanism.\n• Administrator can modify the SSH passcode from the UR software or the front panel, the existing SSH passcode will be \nrequired to enter first.\n• When the device is set the the factory default as outlin ed later in SERVICE COMMAND,  the relay settings, user \npassword as well as SSH passcode will all be set to default.\n• This SSH passcode should be retained in case of power cycle as well as firmware upgrade.\n• The SSH passcode will be same for all clients. \nChange device password\nSETTINGS  PRODUCT SETUP  SECURITY  CHANGE DEVICE PASSWORD\nThe menu displays on the front panel upon successful login of the Administrator role.",
+      "The Local Access Denied message on the front panel can mean that you need to log in to the UR in order to \ncomplete the action.\n CHANGE DEVICE\n PASSWORD  NEW PASSWORD: Range: 20 alphanumeric characters\n CONFIRM PASSWORD: Range: 20 alphanumeric characters\nIn Device authentication mode, the Observer role does not have a password associated with it. In Server \nauthentication mode the Observer role requires a password.\nIf you are locked out of the software, reset the device to factory defaults as outlined later for COMMANDS  RELAY \nMAINTENANCE  SERVICE COMMAND. When using CyberSentry, the default password is “ChangeMe1#”.\nOnce the passwords are set, the Administrator with Supervisor approval can change the role-associated password.\n SESSION\n SETTINGS  SESSION LOCKOUT:\n3\nRange: 0 to 99\n SESSION LOCKOUT\nPERIOD: 3 min\nRange: 0 to 9999 minutes"
+    ],
+    "match_count": 5,
+    "status": "unreviewed",
+    "heading": "Session settings"
+  },
+  {
+    "id": "13efcb79959e6baea8bd",
+    "source_id": "15270d6b8cd1730c20a4",
+    "product_id": "ge_multilin_c60c95",
+    "feature": "non_support_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:241",
+    "matched": [
+      "no authentication",
+      "No SSH"
+    ],
+    "context": "To re-enable Device authentication, the Supervisor unlocks the \ndevice for settings changes, then the Administrator re-enables device authentication.\nBYPASS ACCESS — The bypass security feature provides an easier access, with no authentication and encryption for those \nspecial situations when this is considered safe. Only the Supervisor, or the Administrator when the Supervisor role is \ndisabled, can enable this feature.\nThe bypass options are as follows:\n• Local — Bypasses authentication for push buttons, keypad, and RS232\n• Remote — Bypasses authentication for RS485 and Ethernet\n• Local and Remote — Bypasses authentication for push buttons, keypad, RS232, RS485, and Ethernet\n• Pushbuttons — Bypasses authentication for front panel push buttons, including in the software.",
+    "contexts": [
+      "To re-enable Device authentication, the Supervisor unlocks the \ndevice for settings changes, then the Administrator re-enables device authentication.\nBYPASS ACCESS — The bypass security feature provides an easier access, with no authentication and encryption for those \nspecial situations when this is considered safe. Only the Supervisor, or the Administrator when the Supervisor role is \ndisabled, can enable this feature.\nThe bypass options are as follows:\n• Local — Bypasses authentication for push buttons, keypad, and RS232\n• Remote — Bypasses authentication for RS485 and Ethernet\n• Local and Remote — Bypasses authentication for push buttons, keypad, RS232, RS485, and Ethernet\n• Pushbuttons — Bypasses authentication for front panel push buttons, including in the software.",
+      "[...] tication — Role Based Access Control (RBAC)\nand passwords in clear\nAuthentication — RBAC and passwords encrypted\nSSH tunneling\nBypass access mode No passwords for allowed RBAC levels No passwords for allowed RBAC levels\nNo SSH tunneling"
+    ],
+    "match_count": 2,
+    "status": "unreviewed",
+    "heading": "Supervisory"
+  },
+  {
+    "id": "9d05066180d3f7f1e2a6",
+    "source_id": "15270d6b8cd1730c20a4",
+    "product_id": "ge_multilin_c60c95",
+    "feature": "default_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:241",
+    "matched": [
+      "AUTHENTICATION — This setting is enabled by default"
+    ],
+    "context": "CHAPTER 5: SETTINGS PRODUCT SETUP\nC60 BREAKER PROTECTION SYSTEM - INSTRUCTION MANUAL 5-21\n5\nThe Supervisory menu settings are available for Supervisor role only, or if the Supervisor role is disabled then for the \nAdministrator role only.\nDEVICE AUTHENTICATION — This setting is enabled by default, meaning \"Yes\" is selected. When enabled, Device \nauthentication with roles is enabled. When this setting is disabled, the UR only authenticates to the AAA server (RADIUS). \nHowever, the Administrator and Supervisor (when enabled) remain active even after device authentication is disabled and \ntheir only permission is to re-enable Device authentication.",
+    "contexts": [
+      "CHAPTER 5: SETTINGS PRODUCT SETUP\nC60 BREAKER PROTECTION SYSTEM - INSTRUCTION MANUAL 5-21\n5\nThe Supervisory menu settings are available for Supervisor role only, or if the Supervisor role is disabled then for the \nAdministrator role only.\nDEVICE AUTHENTICATION — This setting is enabled by default, meaning \"Yes\" is selected. When enabled, Device \nauthentication with roles is enabled. When this setting is disabled, the UR only authenticates to the AAA server (RADIUS). \nHowever, the Administrator and Supervisor (when enabled) remain active even after device authentication is disabled and \ntheir only permission is to re-enable Device authentication."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Supervisory"
+  },
+  {
+    "id": "58b7c9b3411d3738d9be",
+    "source_id": "15270d6b8cd1730c20a4",
+    "product_id": "ge_multilin_c60c95",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:241",
+    "matched": [
+      "authentication is required"
+    ],
+    "context": "On the graphical front \npanel, the authentication for side pushbuttons to control breakers and disconnects also is bypassed.\nWith \nBYPASS ACCESS set to other than \"Disabled,\" the software displays a message that LOCK SETTINGS is ignored.\nRESET KEY ACCESS — Indicates whether user authentication is required for executing the RESET button on the front panel or \nthe front panel in the software. When Disabled, user authentication is required at the Administrator or Engineer level. When \nEnabled, any user can execute the RESET command without authentication. A Supervisor, or the Administrator if the \nSupervisor role is disabled, can enable this feature.\nFACTORY SERVICE MODE — This setting allows access by GE support staff to be turned on and off.",
+    "contexts": [
+      "On the graphical front \npanel, the authentication for side pushbuttons to control breakers and disconnects also is bypassed.\nWith \nBYPASS ACCESS set to other than \"Disabled,\" the software displays a message that LOCK SETTINGS is ignored.\nRESET KEY ACCESS — Indicates whether user authentication is required for executing the RESET button on the front panel or \nthe front panel in the software. When Disabled, user authentication is required at the Administrator or Engineer level. When \nEnabled, any user can execute the RESET command without authentication. A Supervisor, or the Administrator if the \nSupervisor role is disabled, can enable this feature.\nFACTORY SERVICE MODE — This setting allows access by GE support staff to be turned on and off.",
+      "With \nBYPASS ACCESS set to other than \"Disabled,\" the software displays a message that LOCK SETTINGS is ignored.\nRESET KEY ACCESS — Indicates whether user authentication is required for executing the RESET button on the front panel or \nthe front panel in the software. When Disabled, user authentication is required at the Administrator or Engineer level. When \nEnabled, any user can execute the RESET command without authentication. A Supervisor, or the Administrator if the \nSupervisor role is disabled, can enable this feature.\nFACTORY SERVICE MODE — This setting allows access by GE support staff to be turned on and off. When Enabled, the device \ncan go into factory service mode."
+    ],
+    "match_count": 2,
+    "status": "unreviewed",
+    "heading": "Supervisory"
+  },
+  {
+    "id": "19f5d643c4aa29d3cbf8",
+    "source_id": "15270d6b8cd1730c20a4",
+    "product_id": "ge_multilin_c60c95",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:242",
+    "matched": [
+      "authentication is required"
+    ],
+    "context": "To Disable this setting a Supervisor authentication is \nnecessary. If disabled, the Supervisor role is not allowed to log in. In this case, the Administrator can change the settings \nunder the Supervisory menu.\nIf enabled, Supervisor authentication is required to change the settings in the Supervisory menu. If the Supervisor disables \ntheir role after authentication, the Supervisor session remains valid until they switch to another role using MMI or until they \nend the current Supervisor session if using communications.\nThis role is disabled by default.\nSERIAL INACTIVITY TIMEOUT — The role logged via a serial port is auto logged off after the Serial Inactivity timer times out.",
+    "contexts": [
+      "To Disable this setting a Supervisor authentication is \nnecessary. If disabled, the Supervisor role is not allowed to log in. In this case, the Administrator can change the settings \nunder the Supervisory menu.\nIf enabled, Supervisor authentication is required to change the settings in the Supervisory menu. If the Supervisor disables \ntheir role after authentication, the Supervisor session remains valid until they switch to another role using MMI or until they \nend the current Supervisor session if using communications.\nThis role is disabled by default.\nSERIAL INACTIVITY TIMEOUT — The role logged via a serial port is auto logged off after the Serial Inactivity timer times out."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "CyberSentry setup"
+  },
+  {
+    "id": "9f8797a8ac618704a8d2",
+    "source_id": "15270d6b8cd1730c20a4",
+    "product_id": "ge_multilin_c60c95",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:243",
+    "matched": [
+      "authentication is required"
+    ],
+    "context": "Next, Device or Server authentication can be chosen on the login screen, but the choice is available only in EnerVista. \nUse Device authentication to log in using the five pre-configured roles (Administrator, Supervisor, Engineer, Operator, \nObserver). When using a serial connection, only Device authentication is supported. When Server authentication is \nrequired, characteristics for communication with a RADIUS server must be configured. This is possible only in the \nEnerVista software. The RADIUS server itself also must be configured. The appendix called RADIUS Server at the end of \nthis instruction manual gives an example of how to set up a simple RADIUS server. Once both the RADIUS server and \nthe parameters for connecting the UR to the server have been configured, you can choose Server authentication on \nthe login screen of EnerVista.",
+    "contexts": [
+      "Next, Device or Server authentication can be chosen on the login screen, but the choice is available only in EnerVista. \nUse Device authentication to log in using the five pre-configured roles (Administrator, Supervisor, Engineer, Operator, \nObserver). When using a serial connection, only Device authentication is supported. When Server authentication is \nrequired, characteristics for communication with a RADIUS server must be configured. This is possible only in the \nEnerVista software. The RADIUS server itself also must be configured. The appendix called RADIUS Server at the end of \nthis instruction manual gives an example of how to set up a simple RADIUS server. Once both the RADIUS server and \nthe parameters for connecting the UR to the server have been configured, you can choose Server authentication on \nthe login screen of EnerVista."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Security events"
+  },
+  {
+    "id": "2b9f102755ef8a9be680",
+    "source_id": "15270d6b8cd1730c20a4",
+    "product_id": "ge_multilin_c60c95",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:294",
+    "matched": [
+      "no encryption"
+    ],
+    "context": "R-TxGOOSE1 SECURITY\nRange: None, Signature, SignatureAndEncryption\nDefault: None\nThis setting applies to IEC 61850 Edition 2.\nThis setting specifies level of security (authentication/encryption) used for TxGOOSE1. None specifies no security \nmechanisms are to be used. Signature specifies only signature (no encryption) is to be used. SignatureAndEncryption \nspecifies that both signature and encryption are to be used.\nRxGOOSE\nNavigate to Settings > Product Setup > Communications > IEC 61850 > GOOSE > RxGOOSE > RxGOOSE Messages.\nGOOSE is an efficient method for simultaneous high-speed delivery of generic substation event information by a \npublishing device to more than one subscribing device.",
+    "contexts": [
+      "R-TxGOOSE1 SECURITY\nRange: None, Signature, SignatureAndEncryption\nDefault: None\nThis setting applies to IEC 61850 Edition 2.\nThis setting specifies level of security (authentication/encryption) used for TxGOOSE1. None specifies no security \nmechanisms are to be used. Signature specifies only signature (no encryption) is to be used. SignatureAndEncryption \nspecifies that both signature and encryption are to be used.\nRxGOOSE\nNavigate to Settings > Product Setup > Communications > IEC 61850 > GOOSE > RxGOOSE > RxGOOSE Messages.\nGOOSE is an efficient method for simultaneous high-speed delivery of generic substation event information by a \npublishing device to more than one subscribing device."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "GOOSE"
+  },
+  {
+    "id": "0bf5f57315011f3c9e58",
+    "source_id": "15270d6b8cd1730c20a4",
+    "product_id": "ge_multilin_c60c95",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:298",
+    "matched": [
+      "no encryption"
+    ],
+    "context": "R-RxGOOSE1 SECURITY\nRange: None, Signature, SignatureAndEncryption\nDefault: None\nThis setting applies to IEC 61850 Edition 2.\nThis setting specifies the level of security (authentication/encryption) used for RxGOOSE1. None indicates no security \nmechanisms are in use. Signature indicates only signature (no encryption) is in use. SignatureAndEncryption indicates \nthat both signature and encryption are in use. Normally this setting is set to match the GOOSE publisher's security \nmethod.\nRxGOOSE1 Member 1\nRange: End of List, BOOLEAN, INT8U, INT16U, INT32U, FLOAT32, INT32, Dbpos (DPS), Quality, TimeStamp, ENUM, STRUCT\nDefault: End of List\nThis setting specifies the type that the first member of incoming GOOSE messages must be for the message to be \naccepted as a valid RxGOOSE1 message.",
+    "contexts": [
+      "R-RxGOOSE1 SECURITY\nRange: None, Signature, SignatureAndEncryption\nDefault: None\nThis setting applies to IEC 61850 Edition 2.\nThis setting specifies the level of security (authentication/encryption) used for RxGOOSE1. None indicates no security \nmechanisms are in use. Signature indicates only signature (no encryption) is in use. SignatureAndEncryption indicates \nthat both signature and encryption are in use. Normally this setting is set to match the GOOSE publisher's security \nmethod.\nRxGOOSE1 Member 1\nRange: End of List, BOOLEAN, INT8U, INT16U, INT32U, FLOAT32, INT32, Dbpos (DPS), Quality, TimeStamp, ENUM, STRUCT\nDefault: End of List\nThis setting specifies the type that the first member of incoming GOOSE messages must be for the message to be \naccepted as a valid RxGOOSE1 message."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "GOOSE"
+  },
+  {
+    "id": "51362089d2f29aed65bc",
+    "source_id": "15270d6b8cd1730c20a4",
+    "product_id": "ge_multilin_c60c95",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:731",
+    "matched": [
+      "authentication, and the shortname is a short, optional"
+    ],
+    "context": "In the clients.conf file in the <Path_to_Radius>\\etc\\raddb folder, add the following text to define the UR as a RADIUS \nclient, where in this example the client IP address is 10.14.61.132, the shared secret specified here is also configured \non the UR device for successful authentication, and the shortname is a short, optional alias that can be used in place \nof the IP address.\nclient 10.14.61.132 {\nsecret = Testing!123\nshortname = ur1-test\n}\nAlternatively, you may specify one secret for a network of clients, where in the example below the clients are all within \nthe 10.14.61.0/24 subnet and the shared secret specified here is also configured on all the UR devices in the subnet for \nsuccessful authentication.\nclient 10.14.61.0/24 {\nsecret = Testing!123\nshortname = net1-test\n}\n5.",
+    "contexts": [
+      "In the clients.conf file in the <Path_to_Radius>\\etc\\raddb folder, add the following text to define the UR as a RADIUS \nclient, where in this example the client IP address is 10.14.61.132, the shared secret specified here is also configured \non the UR device for successful authentication, and the shortname is a short, optional alias that can be used in place \nof the IP address.\nclient 10.14.61.132 {\nsecret = Testing!123\nshortname = ur1-test\n}\nAlternatively, you may specify one secret for a network of clients, where in the example below the clients are all within \nthe 10.14.61.0/24 subnet and the shared secret specified here is also configured on all the UR devices in the subnet for \nsuccessful authentication.\nclient 10.14.61.0/24 {\nsecret = Testing!123\nshortname = net1-test\n}\n5."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "B.1 RADIUS server configuration"
+  },
+  {
+    "id": "927dd00326ee85f6fbeb",
+    "source_id": "15270d6b8cd1730c20a4",
+    "product_id": "ge_multilin_c60c95",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:735",
+    "matched": [
+      "requires RADIUS authentication"
+    ],
+    "context": "The default \npath to the output file is C:\\Users\\Public\\Public Documents\\GE Power Management\\URPC\\Data\nExample: SetupCLI URPC getsettings -d C30 -f \"C30 Markham.urs\"\nExample of a batch file to retrieve a settings file:\nSetupCLI URPC start\nSetupCLI URPC getsettings -d demoDevice -f C:\\example.urs \nSetupCLI URPC exit\nExample of a batch file to retrieve a settings file from a relay that requires RADIUS authentication:\nSetupCLI URPC start\nSetupCLI URPC login -d demoDevice -a %1 -w %2 -A radius\nSetupCLI URPC getsettings -d demoDevice -f \"example file.urs\"\nSetupCLI URPC logout -d demoDevice\nSetupCLI URPC exit\nAlthough a user name and password could have been entered in this batch file, it would have created a security risk. \nBatch files allow you to pass in runtime parameters and refer to them in your script as %1, %2, and so on.",
+    "contexts": [
+      "The default \npath to the output file is C:\\Users\\Public\\Public Documents\\GE Power Management\\URPC\\Data\nExample: SetupCLI URPC getsettings -d C30 -f \"C30 Markham.urs\"\nExample of a batch file to retrieve a settings file:\nSetupCLI URPC start\nSetupCLI URPC getsettings -d demoDevice -f C:\\example.urs \nSetupCLI URPC exit\nExample of a batch file to retrieve a settings file from a relay that requires RADIUS authentication:\nSetupCLI URPC start\nSetupCLI URPC login -d demoDevice -a %1 -w %2 -A radius\nSetupCLI URPC getsettings -d demoDevice -f \"example file.urs\"\nSetupCLI URPC logout -d demoDevice\nSetupCLI URPC exit\nAlthough a user name and password could have been entered in this batch file, it would have created a security risk. \nBatch files allow you to pass in runtime parameters and refer to them in your script as %1, %2, and so on."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "C.1 Command line interface"
+  },
+  {
+    "id": "d35577896c2d63b6d79b",
+    "source_id": "15270d6b8cd1730c20a4",
+    "product_id": "ge_multilin_c60c95",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:737",
+    "matched": [
+      "authentication is required"
+    ],
+    "context": "Example of a batch file using a device IP address to retrieve a settings file when RADIUS authentication is required:\nSetupCLI URPC start\nSetupCLI URPC adddevice -I 192.168.140.113 -S 113 -P 502 \nSetupCLI URPC login -d DEV@SETUP_CLI -a %1 -w %2 -A radius\nSetupCLI URPC getsettings -d DEV@SETUP_CLI -f \"example file.urs\"\nSetupCLI URPC logout -d DEV@SETUP_CLI\nSetupCLI URPC exit\nDEV@SETUP_CLI has to be used as the device name in the commands followed by the 'adddevice' command.",
+    "contexts": [
+      "Example of a batch file using a device IP address to retrieve a settings file when RADIUS authentication is required:\nSetupCLI URPC start\nSetupCLI URPC adddevice -I 192.168.140.113 -S 113 -P 502 \nSetupCLI URPC login -d DEV@SETUP_CLI -a %1 -w %2 -A radius\nSetupCLI URPC getsettings -d DEV@SETUP_CLI -f \"example file.urs\"\nSetupCLI URPC logout -d DEV@SETUP_CLI\nSetupCLI URPC exit\nDEV@SETUP_CLI has to be used as the device name in the commands followed by the 'adddevice' command."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "C.1 Command line interface"
+  },
+  {
+    "id": "215d61ab62387febd789",
+    "source_id": "6110d2deb3de1eb77796",
+    "product_id": "ge_epm_2200_digital_power_meter",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:699",
+    "matched": [
+      "requires SSL"
+    ],
+    "context": "Most email servers use \nPort 25 for SMTP (Simple Mail Transfer Protocol).\nc. Select the number or retries for the email from the pull-down menu.\nd. Select the retry timeout (in milliseconds) from the pull-down menu.\ne. If the Email Server requires SSL security, click the checkbox next to the option.\nf. Click OK to save your changes or continue to the FTP instructions.",
+    "contexts": [
+      "Most email servers use \nPort 25 for SMTP (Simple Mail Transfer Protocol).\nc. Select the number or retries for the email from the pull-down menu.\nd. Select the retry timeout (in milliseconds) from the pull-down menu.\ne. If the Email Server requires SSL security, click the checkbox next to the option.\nf. Click OK to save your changes or continue to the FTP instructions."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "18.2.3 Additional Meter Tasks"
+  },
+  {
+    "id": "b2192a1035d8cd11e61b",
+    "source_id": "b7c607ca6ca27c8f40da",
+    "product_id": "ge_epm_6010",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:699",
+    "matched": [
+      "requires SSL"
+    ],
+    "context": "Most email servers use \nPort 25 for SMTP (Simple Mail Transfer Protocol).\nc. Select the number or retries for the email from the pull-down menu.\nd. Select the retry timeout (in milliseconds) from the pull-down menu.\ne. If the Email Server requires SSL security, click the checkbox next to the option.\nf. Click OK to save your changes or continue to the FTP instructions.",
+    "contexts": [
+      "Most email servers use \nPort 25 for SMTP (Simple Mail Transfer Protocol).\nc. Select the number or retries for the email from the pull-down menu.\nd. Select the retry timeout (in milliseconds) from the pull-down menu.\ne. If the Email Server requires SSL security, click the checkbox next to the option.\nf. Click OK to save your changes or continue to the FTP instructions."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "18.2.3 Additional Meter Tasks"
+  },
+  {
+    "id": "96c122c827f239b509c3",
+    "source_id": "ad041707d6b174c27bc7",
+    "product_id": "ge_epm_7100_legacy",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:699",
+    "matched": [
+      "requires SSL"
+    ],
+    "context": "Most email servers use \nPort 25 for SMTP (Simple Mail Transfer Protocol).\nc. Select the number or retries for the email from the pull-down menu.\nd. Select the retry timeout (in milliseconds) from the pull-down menu.\ne. If the Email Server requires SSL security, click the checkbox next to the option.\nf. Click OK to save your changes or continue to the FTP instructions.",
+    "contexts": [
+      "Most email servers use \nPort 25 for SMTP (Simple Mail Transfer Protocol).\nc. Select the number or retries for the email from the pull-down menu.\nd. Select the retry timeout (in milliseconds) from the pull-down menu.\ne. If the Email Server requires SSL security, click the checkbox next to the option.\nf. Click OK to save your changes or continue to the FTP instructions."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "18.2.3 Additional Meter Tasks"
+  },
+  {
+    "id": "a96945b9ce32e6e3fd4b",
+    "source_id": "479c605271e946241e66",
+    "product_id": "ge_epm_9900_advanced_power_quality_meter_legacy",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:699",
+    "matched": [
+      "requires SSL"
+    ],
+    "context": "Most email servers use \nPort 25 for SMTP (Simple Mail Transfer Protocol).\nc. Select the number or retries for the email from the pull-down menu.\nd. Select the retry timeout (in milliseconds) from the pull-down menu.\ne. If the Email Server requires SSL security, click the checkbox next to the option.\nf. Click OK to save your changes or continue to the FTP instructions.",
+    "contexts": [
+      "Most email servers use \nPort 25 for SMTP (Simple Mail Transfer Protocol).\nc. Select the number or retries for the email from the pull-down menu.\nd. Select the retry timeout (in milliseconds) from the pull-down menu.\ne. If the Email Server requires SSL security, click the checkbox next to the option.\nf. Click OK to save your changes or continue to the FTP instructions."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "18.2.3 Additional Meter Tasks"
+  },
+  {
+    "id": "a2590f9d0a419aeee496",
+    "source_id": "49e974672b2c15411934",
+    "product_id": "ge_multilin_850",
+    "feature": "non_support_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:226",
+    "matched": [
+      "Authentication is not supported"
+    ],
+    "context": "The recommended range is \n1...20s\n7200 seconds but if no application message is \ndetected within the As3 value, the device will \nclose the connection.\nAs3 1,2 Lost connection detection time 120 seconds (Configurable)\nAs4 - Authentication is not supported yet\nAs5 1,2 What association parameters are necessary for \nsuccessful association\nTransport selector \nSession selector\nPresentation selector \nAP Title \nAE Qualifier \nY\nY\nY\nN\nN\nAs6 1,2 If association parameters are necessary for \nassociation, describe the correct values e.g.\nTransport selector \nSession selector \nPresentation selector \nAP Title \nAE Qualifier \n0001\n0001\n00000001\nN/A\nN/A\nAs7 1,2 What is the maximum and minimum MMS PDU size Max MMS PDU size \nMin MMS PDU size\n120000\n32000.",
+    "contexts": [
+      "The recommended range is \n1...20s\n7200 seconds but if no application message is \ndetected within the As3 value, the device will \nclose the connection.\nAs3 1,2 Lost connection detection time 120 seconds (Configurable)\nAs4 - Authentication is not supported yet\nAs5 1,2 What association parameters are necessary for \nsuccessful association\nTransport selector \nSession selector\nPresentation selector \nAP Title \nAE Qualifier \nY\nY\nY\nN\nN\nAs6 1,2 If association parameters are necessary for \nassociation, describe the correct values e.g.\nTransport selector \nSession selector \nPresentation selector \nAP Title \nAE Qualifier \n0001\n0001\n00000001\nN/A\nN/A\nAs7 1,2 What is the maximum and minimum MMS PDU size Max MMS PDU size \nMin MMS PDU size\n120000\n32000."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "PIXIT for Association model"
+  },
+  {
+    "id": "69f2494242e3f5a97050",
+    "source_id": "f289bb2261ba80f69d60",
+    "product_id": "ge_p64_micom_5th_generation",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:415",
+    "matched": [
+      "authentication using RADIUS is required"
+    ],
+    "context": "The new password must comply with the strength defined by the Password Policy\nsetting, detailed in the Password Policy \nsection of this chapter.\nWhen the authentication method is configured as ‘Server + Device’, and authentication using RADIUS is required,\nusers must be set up on the RADIUS server (see the RADIUS users section). These users are separate from the\npre-defined Device users. RADIUS server information must be configured in the IED to connect to the RADIUS\nserver(s) for Server authentication (see the RADIUS server settings section). It is recommended that the RADIUS\nshared secret be changed from the default (see the RADIUS client-server validation section).",
+    "contexts": [
+      "The new password must comply with the strength defined by the Password Policy\nsetting, detailed in the Password Policy \nsection of this chapter.\nWhen the authentication method is configured as ‘Server + Device’, and authentication using RADIUS is required,\nusers must be set up on the RADIUS server (see the RADIUS users section). These users are separate from the\npre-defined Device users. RADIUS server information must be configured in the IED to connect to the RADIUS\nserver(s) for Server authentication (see the RADIUS server settings section). It is recommended that the RADIUS\nshared secret be changed from the default (see the RADIUS client-server validation section)."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "17.5.1. Initial Setup: Default Usernames and Default Passwords"
+  },
+  {
+    "id": "858b0b806acba2cecdfa",
+    "source_id": "f289bb2261ba80f69d60",
+    "product_id": "ge_p64_micom_5th_generation",
+    "feature": "non_support_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:419",
+    "matched": [
+      "no authentication",
+      "does not provide user authentication"
+    ],
+    "context": "17.7 USER AUTHENTICATION\n17.7.1 AUTHENTICATION METHODS\nThe IED supports Bypass (no authentication), Device authentication and Server authentication.\nAuthentication\nMethod Description User Interface\nBypass Auth. IED does not provide security, any user (Local) can access the IED without\nlogging in. IED does not validate user and password. In this case, there is no\nneed to enter user name and password to login. Bypass can not be enabled\non Rear Port 1, Rear Port 2 and Ethernet Ports.",
+    "contexts": [
+      "17.7 USER AUTHENTICATION\n17.7.1 AUTHENTICATION METHODS\nThe IED supports Bypass (no authentication), Device authentication and Server authentication.\nAuthentication\nMethod Description User Interface\nBypass Auth. IED does not provide security, any user (Local) can access the IED without\nlogging in. IED does not validate user and password. In this case, there is no\nneed to enter user name and password to login. Bypass can not be enabled\non Rear Port 1, Rear Port 2 and Ethernet Ports.",
+      "Method setting. If the SECADM user changes it, the role\nremains logged in. Only when the user logs-out is their access-level revoked.\n17.7.2 BYPASS\nIn Bypass Auth. mode, the IED does not provide user authentication - any user can login. IED does not validate\nuser and password. The bypass security feature provides an easier access, with no authentication and encryption\nfor situations when this is considered safe. Only users with SECADM role can enable Bypass mode.\nThere are three modes for authentication bypass:\n1. Disabled - no interfaces in Bypass Auth. mode (normal authentication is active)\n2.",
+      "Only when the user logs-out is their access-level revoked.\n17.7.2 BYPASS\nIn Bypass Auth. mode, the IED does not provide user authentication - any user can login. IED does not validate\nuser and password. The bypass security feature provides an easier access, with no authentication and encryption\nfor situations when this is considered safe. Only users with SECADM role can enable Bypass mode.\nThere are three modes for authentication bypass:\n1. Disabled - no interfaces in Bypass Auth. mode (normal authentication is active)\n2. Local - Bypass authentication when using Front Port and Front Panel\n3. Front Panel - will bypass authentication Front Panel User Interface\nBypass authentication for\nBypass mode: Front Port Front Panel UI\nDisabled\nLocal X X\nFront Panel X\nP64 Chapter 17 - Cyber-Security\nP64-TM-EN-1 399"
+    ],
+    "match_count": 3,
+    "status": "unreviewed",
+    "heading": "17.7.2. Bypass"
+  },
+  {
+    "id": "47bd296c555fcc4c299c",
+    "source_id": "f289bb2261ba80f69d60",
+    "product_id": "ge_p64_micom_5th_generation",
+    "feature": "default_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:419",
+    "matched": [
+      "authentication: ● Server + Device (This is the default setting"
+    ],
+    "context": "Front Panel UI\nFront Port (USB port)\nRear Port 1\nRear Port 2\nNetwork Port 1\nNetwork Port 2\nIf Bypass Auth. is enabled, the IED ignores the Auth. Method setting.\nThe Auth. Method setting offers the following options for user authentication:\n● Server + Device (This is the default setting for IEDs with NIC (Ethernet Board) fitted)\n● Device Only (This is the default setting for IEDs without NIC (Ethernet Board) fitted)\nOnly users with a SECADM role may change the Auth. Method setting. If the SECADM user changes it, the role\nremains logged in. Only when the user logs-out is their access-level revoked.\n17.7.2 BYPASS\nIn Bypass Auth. mode, the IED does not provide user authentication - any user can login.",
+    "contexts": [
+      "Front Panel UI\nFront Port (USB port)\nRear Port 1\nRear Port 2\nNetwork Port 1\nNetwork Port 2\nIf Bypass Auth. is enabled, the IED ignores the Auth. Method setting.\nThe Auth. Method setting offers the following options for user authentication:\n● Server + Device (This is the default setting for IEDs with NIC (Ethernet Board) fitted)\n● Device Only (This is the default setting for IEDs without NIC (Ethernet Board) fitted)\nOnly users with a SECADM role may change the Auth. Method setting. If the SECADM user changes it, the role\nremains logged in. Only when the user logs-out is their access-level revoked.\n17.7.2 BYPASS\nIn Bypass Auth. mode, the IED does not provide user authentication - any user can login."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "17.7.2. Bypass"
+  },
+  {
+    "id": "f9259304c67b052332dc",
+    "source_id": "f289bb2261ba80f69d60",
+    "product_id": "ge_p64_micom_5th_generation",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:436",
+    "matched": [
+      "not encrypted"
+    ],
+    "context": "Note:\nWhen setting the SNMP browser for RBAC compatible relays, the Context Name should be ‘px4x’.\nSNMP V2C Security Configuration\nSNMPv2c implements authentication between the master and agent using a parameter called the Community\nName. This is ef\nfectively the password but it is not encrypted during transmission (this makes it inappropriate for\nsome scenarios in which case version 3 should be used instead). To configure the SNMP 2c security:\n1. If SNMPv2c has been enabled, use the Community Name setting to set the password that will be used by\nthe IED and SNMP manager for authentication. This may be between one and 8 characters.\nChapter 17 - Cyber-Security P64\n416 P64-TM-EN-1",
+    "contexts": [
+      "Note:\nWhen setting the SNMP browser for RBAC compatible relays, the Context Name should be ‘px4x’.\nSNMP V2C Security Configuration\nSNMPv2c implements authentication between the master and agent using a parameter called the Community\nName. This is ef\nfectively the password but it is not encrypted during transmission (this makes it inappropriate for\nsome scenarios in which case version 3 should be used instead). To configure the SNMP 2c security:\n1. If SNMPv2c has been enabled, use the Community Name setting to set the password that will be used by\nthe IED and SNMP manager for authentication. This may be between one and 8 characters.\nChapter 17 - Cyber-Security P64\n416 P64-TM-EN-1"
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "17.8. SNMP Configuration"
+  },
+  {
+    "id": "e71c74a64bd76380b59f",
+    "source_id": "f289bb2261ba80f69d60",
+    "product_id": "ge_p64_micom_5th_generation",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:436",
+    "matched": [
+      "optional, however you must enable authentication"
+    ],
+    "context": "SNMP V3 Security Configuration\nSNMPv3 provides a higher level of security via authentication and privacy protocols. The IED adopts a secure\nSNMPv3 implementation with a user-based security model (USM).\nAuthentication is used to check the identity of users, privacy allows for encryption of SNMP messages. Both are\noptional, however you must enable authentication in order to enable privacy. To configure these security options:\n1. If SNMPv3 has been enabled, set the Security Level  setting. There are three levels; without authentication\nand without privacy (noAuthNoPriv), with authentication but without privacy (authNoPriv), and with\nauthentication and with privacy (authPriv).\n2. If Authentication is enabled, use the Auth Protocol setting to select the authentication type.",
+    "contexts": [
+      "SNMP V3 Security Configuration\nSNMPv3 provides a higher level of security via authentication and privacy protocols. The IED adopts a secure\nSNMPv3 implementation with a user-based security model (USM).\nAuthentication is used to check the identity of users, privacy allows for encryption of SNMP messages. Both are\noptional, however you must enable authentication in order to enable privacy. To configure these security options:\n1. If SNMPv3 has been enabled, set the Security Level  setting. There are three levels; without authentication\nand without privacy (noAuthNoPriv), with authentication but without privacy (authNoPriv), and with\nauthentication and with privacy (authPriv).\n2. If Authentication is enabled, use the Auth Protocol setting to select the authentication type."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "17.8. SNMP Configuration"
+  },
+  {
+    "id": "6e6c4f672d27b5758557",
+    "source_id": "88b220978386a85bc4ca",
+    "product_id": "rockwell_compactlogix_5380_controllers",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:28",
+    "matched": [
+      "CIP Security with firmware revision 34.011 or later",
+      "required to interface with CIP Security"
+    ],
+    "context": "Secure Controller Systems\nThe CompactLogix  5380 and  Compact GuardLogix   5380 controllers support IEC-62443-4-2 \nSL 1 requirements. For security features and system requirements, see Develop Secure \nApplications  on page 182.\nThe CompactLogix  5380 and  Compact GuardLogix   5380 controllers also support  CIP \nSecurity   with firmware revision 34.011 or later.\nCIP Security  is a standard, open-source communication mechanism that helps to provide \na secure data transport across an EtherNet/IP  network. CIP Security  lets CIP-connected \ndevices authenticate each other before transmitting and receiving data.",
+    "contexts": [
+      "Secure Controller Systems\nThe CompactLogix  5380 and  Compact GuardLogix   5380 controllers support IEC-62443-4-2 \nSL 1 requirements. For security features and system requirements, see Develop Secure \nApplications  on page 182.\nThe CompactLogix  5380 and  Compact GuardLogix   5380 controllers also support  CIP \nSecurity   with firmware revision 34.011 or later.\nCIP Security  is a standard, open-source communication mechanism that helps to provide \na secure data transport across an EtherNet/IP  network. CIP Security  lets CIP-connected \ndevices authenticate each other before transmitting and receiving data.",
+      "[...] ger  software (includes FactoryTalk  System Services)\n• FactoryTalk  Linx  software/uni00A0(lets workstation software communicate securely using CIP \nSecurity)\n• Studio 5000 Logix Designer  application (This application required to interface with \nCIP Security-enabled Logix controllers. The minimum application version varies by \ncontroller product family.)\nSee the requirements for your products to verify the correct product versions for your solution."
+    ],
+    "match_count": 2,
+    "status": "unreviewed",
+    "heading": "Secure Controller Systems"
+  },
+  {
+    "id": "24e7c8d665a5ca08c462",
+    "source_id": "88b220978386a85bc4ca",
+    "product_id": "rockwell_compactlogix_5380_controllers",
+    "feature": "default_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:186",
+    "matched": [
+      "CIP Security ports on the controller are enabled by default"
+    ],
+    "context": "For more information, see \nDisable the Ethernet Port on the Port \nConfiguration Tab  on page 198 and Disable the Ethernet Port with an \nMSG Instruction  on page 199.\nDisable the \ncontroller CIP \nSecurity  ports\nMay be required \nbased on system \ndesign, threat \nmodel, and risk \nassessment.\nCIP Security  ports on the controller are enabled by default. Disable \nthe CIP SecurityCIP Security  ports if required by the system design, \nthreat model, or risk assessment.\nFor more information, see Disable CIP Security Ports via FactoryTalk \nLinx  on page 201 and Disable CIP Security Ports via a CIP Generic MSG \nInstruction  on page 202.\nDisable the \ncontroller USB ports\nMay be required \nbased on system \ndesign, threat \nmodel, and risk \nassessment.",
+    "contexts": [
+      "For more information, see \nDisable the Ethernet Port on the Port \nConfiguration Tab  on page 198 and Disable the Ethernet Port with an \nMSG Instruction  on page 199.\nDisable the \ncontroller CIP \nSecurity  ports\nMay be required \nbased on system \ndesign, threat \nmodel, and risk \nassessment.\nCIP Security  ports on the controller are enabled by default. Disable \nthe CIP SecurityCIP Security  ports if required by the system design, \nthreat model, or risk assessment.\nFor more information, see Disable CIP Security Ports via FactoryTalk \nLinx  on page 201 and Disable CIP Security Ports via a CIP Generic MSG \nInstruction  on page 202.\nDisable the \ncontroller USB ports\nMay be required \nbased on system \ndesign, threat \nmodel, and risk \nassessment."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Requirements for Use Control"
+  },
+  {
+    "id": "5b9e7d0aa01b8f9d69e6",
+    "source_id": "88b220978386a85bc4ca",
+    "product_id": "rockwell_compactlogix_5380_controllers",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:186",
+    "matched": [
+      "CIP Security ports May be required"
+    ],
+    "context": "Disable the Ethernet port if \nrequired by the system design, threat model, or risk assessment.\nFor more information, see \nDisable the Ethernet Port on the Port \nConfiguration Tab  on page 198 and Disable the Ethernet Port with an \nMSG Instruction  on page 199.\nDisable the \ncontroller CIP \nSecurity  ports\nMay be required \nbased on system \ndesign, threat \nmodel, and risk \nassessment.\nCIP Security  ports on the controller are enabled by default. Disable \nthe CIP SecurityCIP Security  ports if required by the system design, \nthreat model, or risk assessment.\nFor more information, see Disable CIP Security Ports via FactoryTalk \nLinx  on page 201 and Disable CIP Security Ports via a CIP Generic MSG \nInstruction  on page 202.",
+    "contexts": [
+      "Disable the Ethernet port if \nrequired by the system design, threat model, or risk assessment.\nFor more information, see \nDisable the Ethernet Port on the Port \nConfiguration Tab  on page 198 and Disable the Ethernet Port with an \nMSG Instruction  on page 199.\nDisable the \ncontroller CIP \nSecurity  ports\nMay be required \nbased on system \ndesign, threat \nmodel, and risk \nassessment.\nCIP Security  ports on the controller are enabled by default. Disable \nthe CIP SecurityCIP Security  ports if required by the system design, \nthreat model, or risk assessment.\nFor more information, see Disable CIP Security Ports via FactoryTalk \nLinx  on page 201 and Disable CIP Security Ports via a CIP Generic MSG \nInstruction  on page 202."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Requirements for Use Control"
+  },
+  {
+    "id": "bb4f35c4465b9e5c4786",
+    "source_id": "88b220978386a85bc4ca",
+    "product_id": "rockwell_compactlogix_5380_controllers",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:188",
+    "matched": [
+      "not encrypted"
+    ],
+    "context": "SD Card encryption May be required \nbased on system \ndesign, threat \nIf your system allows SD card use, the load process to the SD card \nencrypts and digitally signs the project by using the controller key. The \nSD card itself is not encrypted. When you save (load) firmware to the SD \n188 5069-UM001N-EN-P - January 2026 Rockwell Automation, Inc.",
+    "contexts": [
+      "SD Card encryption May be required \nbased on system \ndesign, threat \nIf your system allows SD card use, the load process to the SD card \nencrypts and digitally signs the project by using the controller key. The \nSD card itself is not encrypted. When you save (load) firmware to the SD \n188 5069-UM001N-EN-P - January 2026 Rockwell Automation, Inc."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Requirements for Data Confidentiality"
+  },
+  {
+    "id": "f591b109ba8512ba4719",
+    "source_id": "88b220978386a85bc4ca",
+    "product_id": "rockwell_compactlogix_5380_controllers",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:188",
+    "matched": [
+      "encryption May be required"
+    ],
+    "context": "FactoryTalk  Policy \nManager  software\nYes Use the FactoryTalk  Policy Manager  software to define a secure data \ntransport over an EtherNet/IP  network to the controller.\nFor more information, see Configure System Security Features User \nManual, \nSECURE-UM001 .\nSD Card encryption May be required \nbased on system \ndesign, threat \nIf your system allows SD card use, the load process to the SD card \nencrypts and digitally signs the project by using the controller key. The \nSD card itself is not encrypted. When you save (load) firmware to the SD \n188 5069-UM001N-EN-P - January 2026 Rockwell Automation, Inc.",
+    "contexts": [
+      "FactoryTalk  Policy \nManager  software\nYes Use the FactoryTalk  Policy Manager  software to define a secure data \ntransport over an EtherNet/IP  network to the controller.\nFor more information, see Configure System Security Features User \nManual, \nSECURE-UM001 .\nSD Card encryption May be required \nbased on system \ndesign, threat \nIf your system allows SD card use, the load process to the SD card \nencrypts and digitally signs the project by using the controller key. The \nSD card itself is not encrypted. When you save (load) firmware to the SD \n188 5069-UM001N-EN-P - January 2026 Rockwell Automation, Inc."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Requirements for Data Confidentiality"
+  },
+  {
+    "id": "61a015ed2113a991fbdf",
+    "source_id": "88b220978386a85bc4ca",
+    "product_id": "rockwell_compactlogix_5380_controllers",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:189",
+    "matched": [
+      "Required to Meet IEC-62443-4-2 SL 1 Details CIP Security"
+    ],
+    "context": "For more information, see License-based Source and Execution \nProtection  on page 192.\nRequirements for Restricted Data Flow\nTable  40. Requirements for Restricted Data Flow\nSecurity \nComponent\nRequired \nto Meet \nIEC-62443-4-2 \nSL 1\nDetails\nCIP Security Yes Use FactoryTalk  Policy Manager  software to define zones and conduits.\nFor more information, see CIP Security with Rockwell Automation \nProducts Application Technique, \nSECURE-AT001.\nRockwell Automation, Inc. 5069-UM001N-EN-P - January 2026 189",
+    "contexts": [
+      "For more information, see License-based Source and Execution \nProtection  on page 192.\nRequirements for Restricted Data Flow\nTable  40. Requirements for Restricted Data Flow\nSecurity \nComponent\nRequired \nto Meet \nIEC-62443-4-2 \nSL 1\nDetails\nCIP Security Yes Use FactoryTalk  Policy Manager  software to define zones and conduits.\nFor more information, see CIP Security with Rockwell Automation \nProducts Application Technique, \nSECURE-AT001.\nRockwell Automation, Inc. 5069-UM001N-EN-P - January 2026 189"
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Requirements for Restricted Data Flow"
+  },
+  {
+    "id": "ec63b2d319b7f10a7987",
+    "source_id": "57a3eb1c0b391b7f0de3",
+    "product_id": "rockwell_controllogix_5590",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:1",
+    "matched": [
+      "required for SIL 3/PLe) • IEC 62443-4-2 c ompliant with CIP Security"
+    ],
+    "context": "[...] zing the need\nfor extra network modules\n•\n Ide\nal for complex motion, redundant systems and large-scale applications\nIntegrated Safety and Security\n• SIL 2/PLd sa fety built into every controller variant (Safety partner required for\nSIL 3/PLe)\n•\n IEC 62443-4-2 c\nompliant with CIP Security and secure boot\n•\n Unified sa\nfety and process control in a single platform\nSimplified, Modernized and Built for What Is Next\n• De sign efficiently using Studio 5000 Logix Designer  version 38 or FactoryTalk \nDesign Studio *\n•\n A\nccelerate deployment and achieve reliability with design and validation tools\nlike FactoryTalk Logix Echo.\n•\n En\nhanced [...]",
+    "contexts": [
+      "[...] zing the need\nfor extra network modules\n•\n Ide\nal for complex motion, redundant systems and large-scale applications\nIntegrated Safety and Security\n• SIL 2/PLd sa fety built into every controller variant (Safety partner required for\nSIL 3/PLe)\n•\n IEC 62443-4-2 c\nompliant with CIP Security and secure boot\n•\n Unified sa\nfety and process control in a single platform\nSimplified, Modernized and Built for What Is Next\n• De sign efficiently using Studio 5000 Logix Designer  version 38 or FactoryTalk \nDesign Studio *\n•\n A\nccelerate deployment and achieve reliability with design and validation tools\nlike FactoryTalk Logix Echo.\n•\n En\nhanced [...]"
+    ],
+    "match_count": 1,
+    "status": "unreviewed"
+  },
+  {
+    "id": "948a95720344ebcaa779",
+    "source_id": "8a23b7773d862a799dcd",
+    "product_id": "rockwell_micro870_controllers",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:91",
+    "matched": [
+      "not encrypted"
+    ],
+    "context": "Select OK to close the window.\n4. Download the project to the controller to update the user information in the controller.\nUpdate Key Change Method and Authority Certification Key\nAn Authority Certification Key is a Symmetric (encrypted) or Public (not encrypted) key that is \nstored in the controller for authentication with the DNP3 master when a Key change request is \nprocessed.\nIMPORTANT This feature is only available in Secure Authentication Version 5.",
+    "contexts": [
+      "Select OK to close the window.\n4. Download the project to the controller to update the user information in the controller.\nUpdate Key Change Method and Authority Certification Key\nAn Authority Certification Key is a Symmetric (encrypted) or Public (not encrypted) key that is \nstored in the controller for authentication with the DNP3 master when a Key change request is \nprocessed.\nIMPORTANT This feature is only available in Secure Authentication Version 5."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "DNP3 Slave Application Layer Configuration Parameters"
+  },
+  {
+    "id": "ca1896d59bf1a87c1011",
+    "source_id": "8a23b7773d862a799dcd",
+    "product_id": "rockwell_micro870_controllers",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:92",
+    "matched": [
+      "not encrypted"
+    ],
+    "context": "To define a Public Key, you must generate an RSA-2048 or RSA-3072 Public Key, depending on \nthe Update Key Change Method that you have selected, and enter it into the field. Select OK to \naccept the changes. Public Keys are not encrypted.",
+    "contexts": [
+      "To define a Public Key, you must generate an RSA-2048 or RSA-3072 Public Key, depending on \nthe Update Key Change Method that you have selected, and enter it into the field. Select OK to \naccept the changes. Public Keys are not encrypted."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "DNP3 Slave Application Layer Configuration Parameters"
+  },
+  {
+    "id": "5896170494799bb257eb",
+    "source_id": "8a23b7773d862a799dcd",
+    "product_id": "rockwell_micro870_controllers",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:100",
+    "matched": [
+      "authentication key that is required",
+      "authentication messages to the controller that require",
+      "authentication messages when no return response is required"
+    ],
+    "context": "GET_FILE_INFO (FC Byte = 0x1C) \n28 - Get File Information\nThis function code is for the master to retrieve information about a file in the controller. \nAUTHENTICATE_FILE (FC Byte = 0x1D) \n29 - Authenticate File\nThis function code is used to obtain an authentication key that is required to open or delete a \nfile.\nABORT_FILE (FC Byte = 0x1E) \n30 - Abort File\nThis function code is used to immediately request termination of the current read/write \noperation and close the file, without saving. \nACTIVATE_CONFIG (FC Byte = 0x1F) \n31 - Activate Config\nThis function code is used to begin using the configuration or executable code that is \nspecified by the objects included in the request.",
+    "contexts": [
+      "GET_FILE_INFO (FC Byte = 0x1C) \n28 - Get File Information\nThis function code is for the master to retrieve information about a file in the controller. \nAUTHENTICATE_FILE (FC Byte = 0x1D) \n29 - Authenticate File\nThis function code is used to obtain an authentication key that is required to open or delete a \nfile.\nABORT_FILE (FC Byte = 0x1E) \n30 - Abort File\nThis function code is used to immediately request termination of the current read/write \noperation and close the file, without saving. \nACTIVATE_CONFIG (FC Byte = 0x1F) \n31 - Activate Config\nThis function code is used to begin using the configuration or executable code that is \nspecified by the objects included in the request.",
+      "ACTIVATE_CONFIG (FC Byte = 0x1F) \n31 - Activate Config\nThis function code is used to begin using the configuration or executable code that is \nspecified by the objects included in the request. \nAUTHENTICATE_REQ (FC Byte = 0x20) \n32 - Authentication Request\nThe master uses this function code when sending authentication messages to the controller \nthat require a response\nAUTHENTICATE_ERR (FC Byte = 0x21) \n33 - Authentication Request No Resp\nThis function code is used by the master to send authentication messages when no return \nresponse is required.\nRESPONSE (FC Byte = 0x22) \n129 - Response\nAll responses except for Unsolicited Response messages use this function code.",
+      "AUTHENTICATE_REQ (FC Byte = 0x20) \n32 - Authentication Request\nThe master uses this function code when sending authentication messages to the controller \nthat require a response\nAUTHENTICATE_ERR (FC Byte = 0x21) \n33 - Authentication Request No Resp\nThis function code is used by the master to send authentication messages when no return \nresponse is required.\nRESPONSE (FC Byte = 0x22) \n129 - Response\nAll responses except for Unsolicited Response messages use this function code."
+    ],
+    "match_count": 3,
+    "status": "unreviewed",
+    "heading": "Function Codes"
+  },
+  {
+    "id": "b4bab90798c29ad1bf70",
+    "source_id": "8a23b7773d862a799dcd",
+    "product_id": "rockwell_micro870_controllers",
+    "feature": "non_support_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:225",
+    "matched": [
+      "does not support IPSec"
+    ],
+    "context": "Operation Mode To maintain the secure operation of your Micro800 controllers, operations that can disrupt \ncontroller operation are restricted based on the controller operating mode.\nIMPORTANT When using IPv6 mode, consider your own network security \nprotection since IPv6 in firmware revision 23.011 does not \nsupport IPSec. For more information, see System Security Design \nGuidelines Reference Manual, publication SECURE-RM001\n.\nIMPORTANT When a computer running FactoryTalk Design Workbench software or \nConnected Components Workbench software is connected to a \nMicro800 controller, its username and computer name are sent to the \nMicro800 controller. This informs others attempting to connect to the \nsame controller about who is connected.",
+    "contexts": [
+      "Operation Mode To maintain the secure operation of your Micro800 controllers, operations that can disrupt \ncontroller operation are restricted based on the controller operating mode.\nIMPORTANT When using IPv6 mode, consider your own network security \nprotection since IPv6 in firmware revision 23.011 does not \nsupport IPSec. For more information, see System Security Design \nGuidelines Reference Manual, publication SECURE-RM001\n.\nIMPORTANT When a computer running FactoryTalk Design Workbench software or \nConnected Components Workbench software is connected to a \nMicro800 controller, its username and computer name are sent to the \nMicro800 controller. This informs others attempting to connect to the \nsame controller about who is connected."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Operation Mode"
+  },
+  {
+    "id": "dfc3168985578e4b0eb0",
+    "source_id": "5f6f1b22b4fd07d375a5",
+    "product_id": "rockwell_micro830_controllers",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:91",
+    "matched": [
+      "not encrypted"
+    ],
+    "context": "Select OK to close the window.\n4. Download the project to the controller to update the user information in the controller.\nUpdate Key Change Method and Authority Certification Key\nAn Authority Certification Key is a Symmetric (encrypted) or Public (not encrypted) key that is \nstored in the controller for authentication with the DNP3 master when a Key change request is \nprocessed.\nIMPORTANT This feature is only available in Secure Authentication Version 5.",
+    "contexts": [
+      "Select OK to close the window.\n4. Download the project to the controller to update the user information in the controller.\nUpdate Key Change Method and Authority Certification Key\nAn Authority Certification Key is a Symmetric (encrypted) or Public (not encrypted) key that is \nstored in the controller for authentication with the DNP3 master when a Key change request is \nprocessed.\nIMPORTANT This feature is only available in Secure Authentication Version 5."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "DNP3 Slave Application Layer Configuration Parameters"
+  },
+  {
+    "id": "9afe17ba0851029ef97d",
+    "source_id": "5f6f1b22b4fd07d375a5",
+    "product_id": "rockwell_micro830_controllers",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:92",
+    "matched": [
+      "not encrypted"
+    ],
+    "context": "To define a Public Key, you must generate an RSA-2048 or RSA-3072 Public Key, depending on \nthe Update Key Change Method that you have selected, and enter it into the field. Select OK to \naccept the changes. Public Keys are not encrypted.",
+    "contexts": [
+      "To define a Public Key, you must generate an RSA-2048 or RSA-3072 Public Key, depending on \nthe Update Key Change Method that you have selected, and enter it into the field. Select OK to \naccept the changes. Public Keys are not encrypted."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "DNP3 Slave Application Layer Configuration Parameters"
+  },
+  {
+    "id": "97095691079389c8bbb4",
+    "source_id": "5f6f1b22b4fd07d375a5",
+    "product_id": "rockwell_micro830_controllers",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:100",
+    "matched": [
+      "authentication key that is required",
+      "authentication messages to the controller that require",
+      "authentication messages when no return response is required"
+    ],
+    "context": "GET_FILE_INFO (FC Byte = 0x1C) \n28 - Get File Information\nThis function code is for the master to retrieve information about a file in the controller. \nAUTHENTICATE_FILE (FC Byte = 0x1D) \n29 - Authenticate File\nThis function code is used to obtain an authentication key that is required to open or delete a \nfile.\nABORT_FILE (FC Byte = 0x1E) \n30 - Abort File\nThis function code is used to immediately request termination of the current read/write \noperation and close the file, without saving. \nACTIVATE_CONFIG (FC Byte = 0x1F) \n31 - Activate Config\nThis function code is used to begin using the configuration or executable code that is \nspecified by the objects included in the request.",
+    "contexts": [
+      "GET_FILE_INFO (FC Byte = 0x1C) \n28 - Get File Information\nThis function code is for the master to retrieve information about a file in the controller. \nAUTHENTICATE_FILE (FC Byte = 0x1D) \n29 - Authenticate File\nThis function code is used to obtain an authentication key that is required to open or delete a \nfile.\nABORT_FILE (FC Byte = 0x1E) \n30 - Abort File\nThis function code is used to immediately request termination of the current read/write \noperation and close the file, without saving. \nACTIVATE_CONFIG (FC Byte = 0x1F) \n31 - Activate Config\nThis function code is used to begin using the configuration or executable code that is \nspecified by the objects included in the request.",
+      "ACTIVATE_CONFIG (FC Byte = 0x1F) \n31 - Activate Config\nThis function code is used to begin using the configuration or executable code that is \nspecified by the objects included in the request. \nAUTHENTICATE_REQ (FC Byte = 0x20) \n32 - Authentication Request\nThe master uses this function code when sending authentication messages to the controller \nthat require a response\nAUTHENTICATE_ERR (FC Byte = 0x21) \n33 - Authentication Request No Resp\nThis function code is used by the master to send authentication messages when no return \nresponse is required.\nRESPONSE (FC Byte = 0x22) \n129 - Response\nAll responses except for Unsolicited Response messages use this function code.",
+      "AUTHENTICATE_REQ (FC Byte = 0x20) \n32 - Authentication Request\nThe master uses this function code when sending authentication messages to the controller \nthat require a response\nAUTHENTICATE_ERR (FC Byte = 0x21) \n33 - Authentication Request No Resp\nThis function code is used by the master to send authentication messages when no return \nresponse is required.\nRESPONSE (FC Byte = 0x22) \n129 - Response\nAll responses except for Unsolicited Response messages use this function code."
+    ],
+    "match_count": 3,
+    "status": "unreviewed",
+    "heading": "Function Codes"
+  },
+  {
+    "id": "7192e1dc1f01664a10be",
+    "source_id": "5f6f1b22b4fd07d375a5",
+    "product_id": "rockwell_micro830_controllers",
+    "feature": "non_support_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:225",
+    "matched": [
+      "does not support IPSec"
+    ],
+    "context": "Operation Mode To maintain the secure operation of your Micro800 controllers, operations that can disrupt \ncontroller operation are restricted based on the controller operating mode.\nIMPORTANT When using IPv6 mode, consider your own network security \nprotection since IPv6 in firmware revision 23.011 does not \nsupport IPSec. For more information, see System Security Design \nGuidelines Reference Manual, publication SECURE-RM001\n.\nIMPORTANT When a computer running FactoryTalk Design Workbench software or \nConnected Components Workbench software is connected to a \nMicro800 controller, its username and computer name are sent to the \nMicro800 controller. This informs others attempting to connect to the \nsame controller about who is connected.",
+    "contexts": [
+      "Operation Mode To maintain the secure operation of your Micro800 controllers, operations that can disrupt \ncontroller operation are restricted based on the controller operating mode.\nIMPORTANT When using IPv6 mode, consider your own network security \nprotection since IPv6 in firmware revision 23.011 does not \nsupport IPSec. For more information, see System Security Design \nGuidelines Reference Manual, publication SECURE-RM001\n.\nIMPORTANT When a computer running FactoryTalk Design Workbench software or \nConnected Components Workbench software is connected to a \nMicro800 controller, its username and computer name are sent to the \nMicro800 controller. This informs others attempting to connect to the \nsame controller about who is connected."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Operation Mode"
+  },
+  {
+    "id": "08448b6416b6961425f8",
+    "source_id": "01f2ad0b688a9d11281c",
+    "product_id": "rockwell_differential_protection_relay",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:100",
+    "matched": [
+      "plain text"
+    ],
+    "context": "[...] mary scaling\nSet\nDisplay\nAlarms\nOn\nOff\nAlarm pop-up display is enabled\nNo alarm display\nSet\nFormat Of Events On The Local Display\nCode: CHENN CH = event channel, NN=event code\nEvent description Event channel and code in plain text\nyyyy-mm-dd Date (for available date formats, see System Clock and \nSynchronization on page 110)\nhh:mm:ss.nnn Time",
+    "contexts": [
+      "[...] mary scaling\nSet\nDisplay\nAlarms\nOn\nOff\nAlarm pop-up display is enabled\nNo alarm display\nSet\nFormat Of Events On The Local Display\nCode: CHENN CH = event channel, NN=event code\nEvent description Event channel and code in plain text\nyyyy-mm-dd Date (for available date formats, see System Clock and \nSynchronization on page 110)\nhh:mm:ss.nnn Time"
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Event Buffer Overflow"
+  },
+  {
+    "id": "9c82fc6874e0ff90fd25",
+    "source_id": "184d5358bd87af683528",
+    "product_id": "rockwell_protection_relay",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:172",
+    "matched": [
+      "plain text"
+    ],
+    "context": "[...] scaling\nSet\nDisplay Alarms On\nOff\nAlarm popup display is \nenabled \nNo alarm display\nSet\nFORMAT OF EVENTS ON THE LOCAL DISPLAY\nCode: CHENN CH = event channel, NN = event code\nEvent description Event chan nel and code in plain text\nyyyy-mm-dd Date (for available date formats. See System Clock and \nSynchronization on page 193)\nhh:mm:ss:ms Time",
+    "contexts": [
+      "[...] scaling\nSet\nDisplay Alarms On\nOff\nAlarm popup display is \nenabled \nNo alarm display\nSet\nFORMAT OF EVENTS ON THE LOCAL DISPLAY\nCode: CHENN CH = event channel, NN = event code\nEvent description Event chan nel and code in plain text\nyyyy-mm-dd Date (for available date formats. See System Clock and \nSynchronization on page 193)\nhh:mm:ss:ms Time"
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Event Buffer Overflow"
+  },
+  {
+    "id": "6dc8d78dabe6203d3afb",
+    "source_id": "a2d8a35dec0a09ed328f",
+    "product_id": "sel_3560",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:2",
+    "matched": [
+      "Optional encryption"
+    ],
+    "context": "Secure\nDesigned for secure operation and access\n• SEL allowlist antivirus exe-GUARD technology to protect \nagainst malware and other cybersecurity threats \n• Individual and role-based accounts for configuration \nsoftware and HMI operation \n• Centralized authentication through the Lightweight \nDirectory Access Protocol (LDAP)\n• Alerts via Syslog, text/email, and Sequence of Events \n(SOE) logging\n• Optional encryption for Ethernet-tunneled serial SCADA \nprotocols and engineering access via Secure Shell \n(SSH) and Secure Sockets Layer (SSL)/Transport Layer \nSecurity (TLS) tunneling\nDeterministic\nBuilt for time-sensitive control applications  \n• Two deterministic processing tasks with configurable \ncycle times\n• Configurable task cycle times as fast as 1 ms\n• Dia [...]",
+    "contexts": [
+      "Secure\nDesigned for secure operation and access\n• SEL allowlist antivirus exe-GUARD technology to protect \nagainst malware and other cybersecurity threats \n• Individual and role-based accounts for configuration \nsoftware and HMI operation \n• Centralized authentication through the Lightweight \nDirectory Access Protocol (LDAP)\n• Alerts via Syslog, text/email, and Sequence of Events \n(SOE) logging\n• Optional encryption for Ethernet-tunneled serial SCADA \nprotocols and engineering access via Secure Shell \n(SSH) and Secure Sockets Layer (SSL)/Transport Layer \nSecurity (TLS) tunneling\nDeterministic\nBuilt for time-sensitive control applications  \n• Two deterministic processing tasks with configurable \ncycle times\n• Configurable task cycle times as fast as 1 ms\n• Dia [...]"
+    ],
+    "match_count": 1,
+    "status": "unreviewed"
+  },
+  {
+    "id": "a93493a65be30ef03f2d",
+    "source_id": "104b88135f05b285dd94",
+    "product_id": "sel_real_time_automation_controller_rtac",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:7",
+    "matched": [
+      "plain text"
+    ],
+    "context": "It provides data concentration for all the connected IEDs and \nalso allows engineering access to devices that support that feature. Secure engineering access into \nthe SEL RTAC requires encrypting the user session so that valuable information is not readable \nvia plain text.  \nThere are two general methods for engineering access: 1) through the SEL server or 2) using APs \nand AP routers (APRs). Either method accomplishes the goal. The advantage of using the SEL \nserver is that it does not require manually configuring individual APRs for each IED. The \ndisadvantage is that this method is only applicable to IEDs communicating with SEL protocol.",
+    "contexts": [
+      "It provides data concentration for all the connected IEDs and \nalso allows engineering access to devices that support that feature. Secure engineering access into \nthe SEL RTAC requires encrypting the user session so that valuable information is not readable \nvia plain text.  \nThere are two general methods for engineering access: 1) through the SEL server or 2) using APs \nand AP routers (APRs). Either method accomplishes the goal. The advantage of using the SEL \nserver is that it does not require manually configuring individual APRs for each IED. The \ndisadvantage is that this method is only applicable to IEDs communicating with SEL protocol."
+    ],
+    "match_count": 1,
+    "status": "unreviewed"
+  },
+  {
+    "id": "85f76575394489d78969",
+    "source_id": "104b88135f05b285dd94",
+    "product_id": "sel_real_time_automation_controller_rtac",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:9",
+    "matched": [
+      "plain text"
+    ],
+    "context": "As mentioned, \nthis is available in both SEL servers and clients, so the method can be used to restrict all \nengineering access by disabling the SEL server or for an individual IED by disabling the pin \nassociated with that device.  \nSECTION 6: SECURING SCADA - ENCRYPTING SERVER COMMUNICATIONS \nOperators maintain situational awareness with SCADA. Information about the electric power \nsystem is often transmitted in plain text and can be intercepted by any individual at a vulnerable \nspot in the network. Encrypting this communication provides another layer to protect the \nconfidentiality and integrity of information critical to operating the bulk electric system.  \nThe SEL RTAC supports Public Key Infrastructure (PKI). PKI is a formal, hierarchical system \nwhere a digital certificate is signed by a more trusted certificate.",
+    "contexts": [
+      "As mentioned, \nthis is available in both SEL servers and clients, so the method can be used to restrict all \nengineering access by disabling the SEL server or for an individual IED by disabling the pin \nassociated with that device.  \nSECTION 6: SECURING SCADA - ENCRYPTING SERVER COMMUNICATIONS \nOperators maintain situational awareness with SCADA. Information about the electric power \nsystem is often transmitted in plain text and can be intercepted by any individual at a vulnerable \nspot in the network. Encrypting this communication provides another layer to protect the \nconfidentiality and integrity of information critical to operating the bulk electric system.  \nThe SEL RTAC supports Public Key Infrastructure (PKI). PKI is a formal, hierarchical system \nwhere a digital certificate is signed by a more trusted certificate."
+    ],
+    "match_count": 1,
+    "status": "unreviewed"
+  },
+  {
+    "id": "9abe3bf80df04c862195",
+    "source_id": "104b88135f05b285dd94",
+    "product_id": "sel_real_time_automation_controller_rtac",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:9",
+    "matched": [
+      "SSH clients also require"
+    ],
+    "context": "DSA in \nthis context is as described in the Digital Signature Standard (DSS) [5]. In this method, an SSH \nclient presents its public key during the connection initiation and the user enters a valid username \nthat is authorized to connect to the SEL RTAC. Some SSH clients also require a passphrase \nassociated with the key to complete the authentication. In this manner, only devices that present a \npreauthorized key are able to connect, and this removes the need for a user to remember a \npassword.  \nIn SEL RTAC firmware Version R136 and above, multifactor authentication is available in the \nSEL server. A POU pin available in the SEL servers and clients allows users to disable remote \naccess.",
+    "contexts": [
+      "DSA in \nthis context is as described in the Digital Signature Standard (DSS) [5]. In this method, an SSH \nclient presents its public key during the connection initiation and the user enters a valid username \nthat is authorized to connect to the SEL RTAC. Some SSH clients also require a passphrase \nassociated with the key to complete the authentication. In this manner, only devices that present a \npreauthorized key are able to connect, and this removes the need for a user to remember a \npassword.  \nIn SEL RTAC firmware Version R136 and above, multifactor authentication is available in the \nSEL server. A POU pin available in the SEL servers and clients allows users to disable remote \naccess."
+    ],
+    "match_count": 1,
+    "status": "unreviewed"
+  },
+  {
+    "id": "b3ce58811ca4646d694d",
+    "source_id": "104b88135f05b285dd94",
+    "product_id": "sel_real_time_automation_controller_rtac",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:10",
+    "matched": [
+      "required is to select SSL"
+    ],
+    "context": "For \ndetailed instructions for this procedure, refer to the ACSELERATOR RTAC Instruction Manual.  \nAfter the X.509 certificate is activated, it is a simple step to encrypt the server communications. \nFor one-way authentication where only the client (i.e., SCADA) is authenticating the certificates, \nall that is required is to select SSL/TLS as the Serial Tunneling Mode in ACSELERATOR RTAC \n(as shown in Figure 9). This allows the client to verify that the server is a trusted source of \ninformation and encrypt the communications. \n \nFigure 9 Configuring a DNP3 Server to Support TLS One-Way Authentication in ACSELERATOR RTAC \nAlternatively, a user can enable two-way authentication. In this mode, the server also \nauthenticates the client’s (SCADA) certificate to ensure that the incoming connection originates \nfrom a trusted source.",
+    "contexts": [
+      "For \ndetailed instructions for this procedure, refer to the ACSELERATOR RTAC Instruction Manual.  \nAfter the X.509 certificate is activated, it is a simple step to encrypt the server communications. \nFor one-way authentication where only the client (i.e., SCADA) is authenticating the certificates, \nall that is required is to select SSL/TLS as the Serial Tunneling Mode in ACSELERATOR RTAC \n(as shown in Figure 9). This allows the client to verify that the server is a trusted source of \ninformation and encrypt the communications. \n \nFigure 9 Configuring a DNP3 Server to Support TLS One-Way Authentication in ACSELERATOR RTAC \nAlternatively, a user can enable two-way authentication. In this mode, the server also \nauthenticates the client’s (SCADA) certificate to ensure that the incoming connection originates \nfrom a trusted source."
+    ],
+    "match_count": 1,
+    "status": "unreviewed"
+  },
+  {
+    "id": "ece825cadb5cd327f502",
+    "source_id": "b85088d2298892e8ea42",
+    "product_id": "sel_421",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:13",
+    "matched": [
+      "requires authentication"
+    ],
+    "context": "Schweitzer Engineering Laboratories, Inc. SEL-421-4, -5 Data Sheet\n13\nMMS Authentication\nWhen enabled via a setting in the Configured IED Description (CID) file, the relay requires authentication from any \nclient requesting to initiate an MMS session. \nArchitect Software\nUse ACSELERATOR Architect SEL-5032 Software to \nmanage the IEC 61850 configuration for devices on the \nnetwork. This Windows-based software provides easyto-use displays for identifying and binding IEC 61850 \nnetwork data among logical nodes that use IEC 61850-\ncompliant CID files.",
+    "contexts": [
+      "Schweitzer Engineering Laboratories, Inc. SEL-421-4, -5 Data Sheet\n13\nMMS Authentication\nWhen enabled via a setting in the Configured IED Description (CID) file, the relay requires authentication from any \nclient requesting to initiate an MMS session. \nArchitect Software\nUse ACSELERATOR Architect SEL-5032 Software to \nmanage the IEC 61850 configuration for devices on the \nnetwork. This Windows-based software provides easyto-use displays for identifying and binding IEC 61850 \nnetwork data among logical nodes that use IEC 61850-\ncompliant CID files."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Open Communications Protocols"
+  },
+  {
+    "id": "ce230c84968ea7bb70ec",
+    "source_id": "10ccc720bdcaf68e6062",
+    "product_id": "sel_421",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:14",
+    "matched": [
+      "requires authentication"
+    ],
+    "context": "MMS File Services\nThis service of IEC 61850 MMS provides support for file \ntransfers completely within an MMS session. All relay \nfiles that can be transferred via FTP can also be transferred \nvia MMS file services.\nMMS Authentication\nWhen enabled via a setting in the Configured IED Description (CID) file, the relay requires authentication from any \nclient requesting to initiate an MMS session. \nArchitect Software\nUse ACSELERATOR Architect SEL-5032 Software to \nmanage the IEC 61850 configuration for devices on the \nnetwork. This Windows-based software provides easyto-use displays for identifying and binding IEC 61850 \nnetwork data among logical nodes that use IEC 61850-\ncompliant CID files.",
+    "contexts": [
+      "MMS File Services\nThis service of IEC 61850 MMS provides support for file \ntransfers completely within an MMS session. All relay \nfiles that can be transferred via FTP can also be transferred \nvia MMS file services.\nMMS Authentication\nWhen enabled via a setting in the Configured IED Description (CID) file, the relay requires authentication from any \nclient requesting to initiate an MMS session. \nArchitect Software\nUse ACSELERATOR Architect SEL-5032 Software to \nmanage the IEC 61850 configuration for devices on the \nnetwork. This Windows-based software provides easyto-use displays for identifying and binding IEC 61850 \nnetwork data among logical nodes that use IEC 61850-\ncompliant CID files."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Open Communications Protocols"
+  },
+  {
+    "id": "da67401381f3470bf404",
+    "source_id": "8f3ec1fd7e08da6afab6",
+    "product_id": "siemens_6md86",
+    "feature": "default_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:370",
+    "matched": [
+      "authentication and encryption by default"
+    ],
+    "context": "These versions of SNMP do not support login with\npassword and user names; instead, communities are used. The disadvantage is that every user in the network\nwith a suitable program can read data and even change values.\nSNMPv3 supplies encryption and improved authentication. The access to any MIB requires authentication and\nencryption by default. If you have a running SNMP config from the versions lower than V9.90, make sure that\nthe access control model is hardened. For security, for SIPROTEC 5 devices, you cannot change any settings or\nvalues of the device via SNMP, except for settings affecting SNMP.\nBy default, 2 users are created in a group which is named initial, with read and write access.",
+    "contexts": [
+      "These versions of SNMP do not support login with\npassword and user names; instead, communities are used. The disadvantage is that every user in the network\nwith a suitable program can read data and even change values.\nSNMPv3 supplies encryption and improved authentication. The access to any MIB requires authentication and\nencryption by default. If you have a running SNMP config from the versions lower than V9.90, make sure that\nthe access control model is hardened. For security, for SIPROTEC 5 devices, you cannot change any settings or\nvalues of the device via SNMP, except for settings affecting SNMP.\nBy default, 2 users are created in a group which is named initial, with read and write access."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "11.12.4 SNMPv3 Features"
+  },
+  {
+    "id": "789f646d5c5694e41b8a",
+    "source_id": "8f3ec1fd7e08da6afab6",
+    "product_id": "siemens_6md86",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:370",
+    "matched": [
+      "requires authentication"
+    ],
+    "context": "These versions of SNMP do not support login with\npassword and user names; instead, communities are used. The disadvantage is that every user in the network\nwith a suitable program can read data and even change values.\nSNMPv3 supplies encryption and improved authentication. The access to any MIB requires authentication and\nencryption by default. If you have a running SNMP config from the versions lower than V9.90, make sure that\nthe access control model is hardened. For security, for SIPROTEC 5 devices, you cannot change any settings or\nvalues of the device via SNMP, except for settings affecting SNMP.\nBy default, 2 users are created in a group which is named initial, with read and write access.",
+    "contexts": [
+      "These versions of SNMP do not support login with\npassword and user names; instead, communities are used. The disadvantage is that every user in the network\nwith a suitable program can read data and even change values.\nSNMPv3 supplies encryption and improved authentication. The access to any MIB requires authentication and\nencryption by default. If you have a running SNMP config from the versions lower than V9.90, make sure that\nthe access control model is hardened. For security, for SIPROTEC 5 devices, you cannot change any settings or\nvalues of the device via SNMP, except for settings affecting SNMP.\nBy default, 2 users are created in a group which is named initial, with read and write access."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "11.12.4 SNMPv3 Features"
+  },
+  {
+    "id": "94e5964b894dd5df8507",
+    "source_id": "90af19b73a184231fb1b",
+    "product_id": "siemens_6md86",
+    "feature": "default_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:31",
+    "matched": [
+      "default value Not configured , issuing and authentication"
+    ],
+    "context": "Table 3-1 Explanations of LDAP-Related Parameters in DIGSI 5\nParameter Names Descriptions\nGeneral\nTLS connection CA CA that issues the LDAP server certificate for the TLS connection between\nthe SIPROTEC 5 device and the LDAP server\nUser root CA The CA that issues the user intermediate CAs or the user certificates\nUser intermediate CA/AA User intermediate certificate authority or attribute authority\n• If you keep the default value Not configured , issuing and authentication of the user certificates are done by the set User root CA .\n• If you set the parameter User intermediate CA/AA  to issue user\ncertificates, authentication of the issued user certificates must be done\nby the intermediate CA/AA.\nFor attribute certificates, the parameter is mandatory.\nUse DN for login With this checkbox, you can show or hide the parameter User parent\nDN.",
+    "contexts": [
+      "Table 3-1 Explanations of LDAP-Related Parameters in DIGSI 5\nParameter Names Descriptions\nGeneral\nTLS connection CA CA that issues the LDAP server certificate for the TLS connection between\nthe SIPROTEC 5 device and the LDAP server\nUser root CA The CA that issues the user intermediate CAs or the user certificates\nUser intermediate CA/AA User intermediate certificate authority or attribute authority\n• If you keep the default value Not configured , issuing and authentication of the user certificates are done by the set User root CA .\n• If you set the parameter User intermediate CA/AA  to issue user\ncertificates, authentication of the issued user certificates must be done\nby the intermediate CA/AA.\nFor attribute certificates, the parameter is mandatory.\nUse DN for login With this checkbox, you can show or hide the parameter User parent\nDN."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "3.2.2.4 Configurations for the LDAP-Server-Connection"
+  },
+  {
+    "id": "28e67f359b68094a44da",
+    "source_id": "90af19b73a184231fb1b",
+    "product_id": "siemens_6md86",
+    "feature": "default_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:39",
+    "matched": [
+      "Authentication Configuration for the User Name Viewer The parameter is unchecked by default"
+    ],
+    "context": "For more information on logging-on to the device via DIGSI 5, see also DIGSI Online help.\nLogin without Authentication\nIf you want to access a device with the user name VIEWER and without any credentials, select the parameter\nWithout authentication  in DIGSI 5.\n[sc_no_authentication, 1, en_US]\nFigure 3-17 Authentication Configuration for the User Name Viewer\nThe parameter is unchecked by default.\n3.2.9\nAccess Control\n3.2 Role-Based Access Control (RBAC) in SIPROTEC 5\nSIPROTEC 5, Security, Manual 39\nC53000-H5040-C081-C, Edition 07.2023",
+    "contexts": [
+      "For more information on logging-on to the device via DIGSI 5, see also DIGSI Online help.\nLogin without Authentication\nIf you want to access a device with the user name VIEWER and without any credentials, select the parameter\nWithout authentication  in DIGSI 5.\n[sc_no_authentication, 1, en_US]\nFigure 3-17 Authentication Configuration for the User Name Viewer\nThe parameter is unchecked by default.\n3.2.9\nAccess Control\n3.2 Role-Based Access Control (RBAC) in SIPROTEC 5\nSIPROTEC 5, Security, Manual 39\nC53000-H5040-C081-C, Edition 07.2023"
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "3.2.9 Login without Authentication"
+  },
+  {
+    "id": "0980f5fdd3e169dc1cf6",
+    "source_id": "90af19b73a184231fb1b",
+    "product_id": "siemens_6md86",
+    "feature": "non_support_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:44",
+    "matched": [
+      "Do not use them in the authentication"
+    ],
+    "context": "Emergency Access\nUsernames for Emergency Access\nEmergency access is provided if access to the device is needed but the connection to the RBAC server is lost.\nYou can log on with the following usernames for this purpose:\nUsername Role11 Connection Mode Restriction\nEMERGENCYUSER_DIGSI ADMIN Remote These usernames are specific\nfor emergency access. Do not\nuse them in the authentication\nservers.\nEMERGENCYUSER ADMIN Local\nREMOTEEMERGENCY-\nVIEWER\nVIEWER Remote\nEMERGENCYVIEWER VIEWER Local\nEmergency access is not enabled by default. Configurations of the emergency access require the\nsecurity-administrator role. Siemens recommends configuring the emergency access via DIGSI 5 during the\ndevice commissioning or during the configuration of the cybersecurity parameters.\nii\nNOTE\nFor devices in version 8.83 and higher, it is necessary to take the latest DIGSI 5 for the configuration of\nemergency access.",
+    "contexts": [
+      "Emergency Access\nUsernames for Emergency Access\nEmergency access is provided if access to the device is needed but the connection to the RBAC server is lost.\nYou can log on with the following usernames for this purpose:\nUsername Role11 Connection Mode Restriction\nEMERGENCYUSER_DIGSI ADMIN Remote These usernames are specific\nfor emergency access. Do not\nuse them in the authentication\nservers.\nEMERGENCYUSER ADMIN Local\nREMOTEEMERGENCY-\nVIEWER\nVIEWER Remote\nEMERGENCYVIEWER VIEWER Local\nEmergency access is not enabled by default. Configurations of the emergency access require the\nsecurity-administrator role. Siemens recommends configuring the emergency access via DIGSI 5 during the\ndevice commissioning or during the configuration of the cybersecurity parameters.\nii\nNOTE\nFor devices in version 8.83 and higher, it is necessary to take the latest DIGSI 5 for the configuration of\nemergency access."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "3.4 Emergency Access"
+  },
+  {
+    "id": "76ada80b9274054b7b95",
+    "source_id": "90af19b73a184231fb1b",
+    "product_id": "siemens_6md86",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:102",
+    "matched": [
+      "TLS channel requires"
+    ],
+    "context": "EST Server Configuration\nIn a typical application with EST, the EST server is located outside of the substations and centrally controls\ndifferent requests that are sent by these substations. Therefore, the transport layer of the EST requests is over\na secure TLS channel with mutual authentications. This characteristic of the TLS channel requires an initial\ncustomer PKI where the private key of the CA is available and is usable for signing the requests. So, it is\nimpossible to use the default Siemens CA for the EST client.\nTo set the customer CA for the EST and TLS connection, the customer CA must be available in the DIGSI CA\nstore. For more information, refer to 6.5.2.1 Setup the DIGSI 5 CA Store.",
+    "contexts": [
+      "EST Server Configuration\nIn a typical application with EST, the EST server is located outside of the substations and centrally controls\ndifferent requests that are sent by these substations. Therefore, the transport layer of the EST requests is over\na secure TLS channel with mutual authentications. This characteristic of the TLS channel requires an initial\ncustomer PKI where the private key of the CA is available and is usable for signing the requests. So, it is\nimpossible to use the default Siemens CA for the EST client.\nTo set the customer CA for the EST and TLS connection, the customer CA must be available in the DIGSI CA\nstore. For more information, refer to 6.5.2.1 Setup the DIGSI 5 CA Store."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "7.3.1 EST Server Configuration"
+  },
+  {
+    "id": "5e0eabb49e5c76406f9e",
+    "source_id": "babb719edee9b941683a",
+    "product_id": "siemens_a8000",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:87",
+    "matched": [
+      "Plaintext"
+    ],
+    "context": "[...] using auto-simulation\n• Simulating fault records\n• GOOSE publish\n• Network overview analysis - which server is connected to\nwhich client?\n• Test the NTP time server in the network\n• Simple operation - without training\n• Plaintext display for IEC 60870-5-101, -104 and -103 as well,\nusing stored data models by importing long texts as .csv files\n• Long-term recording\nWindows Operating Systems\n• Microsoft Windows 10\n• Microsoft Windows 2016 Server R2\n• Microsoft Windows 2019 Server\nSICAM PTS runs on a PC under MS Windows and is used to\nrecord and simulate process interfaces. A COM port (V.24/V.28)\nor an Ethernet interface is used as an interface.",
+    "contexts": [
+      "[...] using auto-simulation\n• Simulating fault records\n• GOOSE publish\n• Network overview analysis - which server is connected to\nwhich client?\n• Test the NTP time server in the network\n• Simple operation - without training\n• Plaintext display for IEC 60870-5-101, -104 and -103 as well,\nusing stored data models by importing long texts as .csv files\n• Long-term recording\nWindows Operating Systems\n• Microsoft Windows 10\n• Microsoft Windows 2016 Server R2\n• Microsoft Windows 2019 Server\nSICAM PTS runs on a PC under MS Windows and is used to\nrecord and simulate process interfaces. A COM port (V.24/V.28)\nor an Ethernet interface is used as an interface."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Catalog station automation, 11, en_US"
+  },
+  {
+    "id": "e031fb1e9a9c982a5845",
+    "source_id": "babb719edee9b941683a",
+    "product_id": "siemens_a8000",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:88",
+    "matched": [
+      "Plaintext"
+    ],
+    "context": "• Freely definable process-technology address down to bit level,\nincluding saving and loading the definition\n• Plaintext address import of CSV files (display of the data\npoints with their actual name)\n• Possibility of online and offline filtering of IEC 60870-5-2\ntelegrams, type identifications, transmission causes, link\naddresses, object addresses (function type, information\nnumber)\n• Individual adaptation of the display format (for example type\nidentification, tim [...]",
+    "contexts": [
+      "• Freely definable process-technology address down to bit level,\nincluding saving and loading the definition\n• Plaintext address import of CSV files (display of the data\npoints with their actual name)\n• Possibility of online and offline filtering of IEC 60870-5-2\ntelegrams, type identifications, transmission causes, link\naddresses, object addresses (function type, information\nnumber)\n• Individual adaptation of the display format (for example type\nidentification, tim [...]",
+      "[...] owing function is available when using SICAM PTS (IEC\n60870):\n• Time stamping with an accuracy of 1 ms\nSimulation for IEC 60870-5-101, -103 (Figure 4.5/3)\n• Telegram definition using dialog, from existing recordings and\nplaintext imports (for example, data-point tests, in order to\nautomatically generate and transmit telegrams from a datapoint list)\n• Predefined monitoring telegrams (for example end of initialization, general interrogation, counter interrogation)\n• Saving and loading telegram definitions\n• Saving and loading different parameter sets\n• Option to import recor [...]"
+    ],
+    "match_count": 2,
+    "status": "unreviewed",
+    "heading": "Catalog station automation, 11, en_US"
+  },
+  {
+    "id": "748cd48cd5eea3e6bfa4",
+    "source_id": "fd56836e89b1880166b1",
+    "product_id": "siemens_a8000_cp_8050",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:87",
+    "matched": [
+      "Plaintext"
+    ],
+    "context": "[...] using auto-simulation\n• Simulating fault records\n• GOOSE publish\n• Network overview analysis - which server is connected to\nwhich client?\n• Test the NTP time server in the network\n• Simple operation - without training\n• Plaintext display for IEC 60870-5-101, -104 and -103 as well,\nusing stored data models by importing long texts as .csv files\n• Long-term recording\nWindows Operating Systems\n• Microsoft Windows 10\n• Microsoft Windows 2016 Server R2\n• Microsoft Windows 2019 Server\nSICAM PTS runs on a PC under MS Windows and is used to\nrecord and simulate process interfaces. A COM port (V.24/V.28)\nor an Ethernet interface is used as an interface.",
+    "contexts": [
+      "[...] using auto-simulation\n• Simulating fault records\n• GOOSE publish\n• Network overview analysis - which server is connected to\nwhich client?\n• Test the NTP time server in the network\n• Simple operation - without training\n• Plaintext display for IEC 60870-5-101, -104 and -103 as well,\nusing stored data models by importing long texts as .csv files\n• Long-term recording\nWindows Operating Systems\n• Microsoft Windows 10\n• Microsoft Windows 2016 Server R2\n• Microsoft Windows 2019 Server\nSICAM PTS runs on a PC under MS Windows and is used to\nrecord and simulate process interfaces. A COM port (V.24/V.28)\nor an Ethernet interface is used as an interface."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Catalog station automation, 11, en_US"
+  },
+  {
+    "id": "b88953f10dfbe8ed69be",
+    "source_id": "fd56836e89b1880166b1",
+    "product_id": "siemens_a8000_cp_8050",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:88",
+    "matched": [
+      "Plaintext"
+    ],
+    "context": "• Freely definable process-technology address down to bit level,\nincluding saving and loading the definition\n• Plaintext address import of CSV files (display of the data\npoints with their actual name)\n• Possibility of online and offline filtering of IEC 60870-5-2\ntelegrams, type identifications, transmission causes, link\naddresses, object addresses (function type, information\nnumber)\n• Individual adaptation of the display format (for example type\nidentification, tim [...]",
+    "contexts": [
+      "• Freely definable process-technology address down to bit level,\nincluding saving and loading the definition\n• Plaintext address import of CSV files (display of the data\npoints with their actual name)\n• Possibility of online and offline filtering of IEC 60870-5-2\ntelegrams, type identifications, transmission causes, link\naddresses, object addresses (function type, information\nnumber)\n• Individual adaptation of the display format (for example type\nidentification, tim [...]",
+      "[...] owing function is available when using SICAM PTS (IEC\n60870):\n• Time stamping with an accuracy of 1 ms\nSimulation for IEC 60870-5-101, -103 (Figure 4.5/3)\n• Telegram definition using dialog, from existing recordings and\nplaintext imports (for example, data-point tests, in order to\nautomatically generate and transmit telegrams from a datapoint list)\n• Predefined monitoring telegrams (for example end of initialization, general interrogation, counter interrogation)\n• Saving and loading telegram definitions\n• Saving and loading different parameter sets\n• Option to import recor [...]"
+    ],
+    "match_count": 2,
+    "status": "unreviewed",
+    "heading": "Catalog station automation, 11, en_US"
+  },
+  {
+    "id": "af4cd922c9cd915fffbc",
+    "source_id": "da4bc5e3c6c749b90ea3",
+    "product_id": "siemens_q200_power_quality_recorder",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:291",
+    "matched": [
+      "Unencrypted"
+    ],
+    "context": "Individual topics are explained in the\nfollowing chapters.\nTable 8-1 Overview\nTopic Description\nHTTPS The device supports the following HTTPS features:\n• For access to the Web UI of the device, the secure HTTPS communication\nprotocol is used. Unencrypted HTTP access is not supported.\n• The free software OpenSSL is used for the TLS implementation.\n• The integrated web server supports connection requests with the cryptographic protocol versions TLS1.2. Older versions are rejected due to security\nreasons.\n• Only high-strength Cipher Suites (key length ≥ 128 bit) are supported.\n• The device generates a self-signed TLS-certificate and is therefore not signed\nand confirmed by a certification authority.",
+    "contexts": [
+      "Individual topics are explained in the\nfollowing chapters.\nTable 8-1 Overview\nTopic Description\nHTTPS The device supports the following HTTPS features:\n• For access to the Web UI of the device, the secure HTTPS communication\nprotocol is used. Unencrypted HTTP access is not supported.\n• The free software OpenSSL is used for the TLS implementation.\n• The integrated web server supports connection requests with the cryptographic protocol versions TLS1.2. Older versions are rejected due to security\nreasons.\n• Only high-strength Cipher Suites (key length ≥ 128 bit) are supported.\n• The device generates a self-signed TLS-certificate and is therefore not signed\nand confirmed by a certification authority."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "8.1 Overview"
+  },
+  {
+    "id": "940f24fcdd31fa4c7c8c",
+    "source_id": "da4bc5e3c6c749b90ea3",
+    "product_id": "siemens_q200_power_quality_recorder",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:291",
+    "matched": [
+      "TLS communication, required"
+    ],
+    "context": "You can find the recommended way of trusting self-signed certificates in the\ndocument Certificate trusting in web browsers.\n• As the certificate is linked to the IP address of the device, it is generated\nanew with each change of the IP address.\n• The device contains a crypto chip which safely stores the private and public\nkeys for TLS communication, required for the HTTPS protected Web UI. Both\nkeys are stored into the crypto chip in the factory. The public key is read\nby the firmware in order to generate the TLS certificate, while the private\nkey cannot be read out from the crypto chip. Therefore the main cipher\noperation happens in a trusted, dedicated hardware.\nRole-Based Access Control\n(RBAC)\nThe device provides a role-based access control (RBAC) mechanism for the\naccount management.",
+    "contexts": [
+      "You can find the recommended way of trusting self-signed certificates in the\ndocument Certificate trusting in web browsers.\n• As the certificate is linked to the IP address of the device, it is generated\nanew with each change of the IP address.\n• The device contains a crypto chip which safely stores the private and public\nkeys for TLS communication, required for the HTTPS protected Web UI. Both\nkeys are stored into the crypto chip in the factory. The public key is read\nby the firmware in order to generate the TLS certificate, while the private\nkey cannot be read out from the crypto chip. Therefore the main cipher\noperation happens in a trusted, dedicated hardware.\nRole-Based Access Control\n(RBAC)\nThe device provides a role-based access control (RBAC) mechanism for the\naccount management."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "8.1 Overview"
+  },
+  {
+    "id": "1ee996ee3d1404bf5e23",
+    "source_id": "da4bc5e3c6c749b90ea3",
+    "product_id": "siemens_q200_power_quality_recorder",
+    "feature": "default_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:313",
+    "matched": [
+      "by Default Description HTTPS Server TCP 443 Yes TLS"
+    ],
+    "context": "To run the devices in a protected IT environment, Siemens recommends configuring the environment according to the operational guidelines. You can find recommended security guidelines at https://\nwww.siemens.com/gridsecurity.\nTCP/UDP ports used\nCommunication Protocol\nServer/\nClient\nTCP/UD\nP\nPort Activated\nby Default\nDescription\nHTTPS Server TCP 443 Yes TLS connection to a web browser for device\nconfiguration and value view\nFTPS Server TCP 990 Yes TLS connection to an FTP server for secure file\ntransfer\nSNTP Client UDP 123 No Time synchronization\nModbus TCP Server TCP 502 No Communication with a station controller using\nModbus TCP and Modbus default TCP port\nModbus TCP Server TCP 503 to 65 535 No Port number is configurable in the given range.",
+    "contexts": [
+      "To run the devices in a protected IT environment, Siemens recommends configuring the environment according to the operational guidelines. You can find recommended security guidelines at https://\nwww.siemens.com/gridsecurity.\nTCP/UDP ports used\nCommunication Protocol\nServer/\nClient\nTCP/UD\nP\nPort Activated\nby Default\nDescription\nHTTPS Server TCP 443 Yes TLS connection to a web browser for device\nconfiguration and value view\nFTPS Server TCP 990 Yes TLS connection to an FTP server for secure file\ntransfer\nSNTP Client UDP 123 No Time synchronization\nModbus TCP Server TCP 502 No Communication with a station controller using\nModbus TCP and Modbus default TCP port\nModbus TCP Server TCP 503 to 65 535 No Port number is configurable in the given range."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "8.8.3 TCP/UDP ports used"
+  },
+  {
+    "id": "46a1cc56237598113863",
+    "source_id": "da4bc5e3c6c749b90ea3",
+    "product_id": "siemens_q200_power_quality_recorder",
+    "feature": "plaintext_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:314",
+    "matched": [
+      "not encrypted"
+    ],
+    "context": "8.8.4\n70 Unlike Ports 587 and 465, which are encrypted, Port 25 is not encrypted, neither are other user-defined ports.\nCybersecurity\n8.8 System hardening\nSICAM, SICAM Q200 7KG97, Manual 313\nE50417-H1040-C606-B7, Edition 08.2026",
+    "contexts": [
+      "8.8.4\n70 Unlike Ports 587 and 465, which are encrypted, Port 25 is not encrypted, neither are other user-defined ports.\nCybersecurity\n8.8 System hardening\nSICAM, SICAM Q200 7KG97, Manual 313\nE50417-H1040-C606-B7, Edition 08.2026"
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "8.8.4 Hardening Measures"
+  },
+  {
+    "id": "d477f2aef914bf8c71a3",
+    "source_id": "2652200caab7d4265634",
+    "product_id": "siemens_7sj85",
+    "feature": "default_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:370",
+    "matched": [
+      "authentication and encryption by default"
+    ],
+    "context": "These versions of SNMP do not support login with\npassword and user names; instead, communities are used. The disadvantage is that every user in the network\nwith a suitable program can read data and even change values.\nSNMPv3 supplies encryption and improved authentication. The access to any MIB requires authentication and\nencryption by default. If you have a running SNMP config from the versions lower than V9.90, make sure that\nthe access control model is hardened. For security, for SIPROTEC 5 devices, you cannot change any settings or\nvalues of the device via SNMP, except for settings affecting SNMP.\nBy default, 2 users are created in a group which is named initial, with read and write access.",
+    "contexts": [
+      "These versions of SNMP do not support login with\npassword and user names; instead, communities are used. The disadvantage is that every user in the network\nwith a suitable program can read data and even change values.\nSNMPv3 supplies encryption and improved authentication. The access to any MIB requires authentication and\nencryption by default. If you have a running SNMP config from the versions lower than V9.90, make sure that\nthe access control model is hardened. For security, for SIPROTEC 5 devices, you cannot change any settings or\nvalues of the device via SNMP, except for settings affecting SNMP.\nBy default, 2 users are created in a group which is named initial, with read and write access."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "11.12.4 SNMPv3 Features"
+  },
+  {
+    "id": "fa1d400f2919b24f1834",
+    "source_id": "2652200caab7d4265634",
+    "product_id": "siemens_7sj85",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:370",
+    "matched": [
+      "requires authentication"
+    ],
+    "context": "These versions of SNMP do not support login with\npassword and user names; instead, communities are used. The disadvantage is that every user in the network\nwith a suitable program can read data and even change values.\nSNMPv3 supplies encryption and improved authentication. The access to any MIB requires authentication and\nencryption by default. If you have a running SNMP config from the versions lower than V9.90, make sure that\nthe access control model is hardened. For security, for SIPROTEC 5 devices, you cannot change any settings or\nvalues of the device via SNMP, except for settings affecting SNMP.\nBy default, 2 users are created in a group which is named initial, with read and write access.",
+    "contexts": [
+      "These versions of SNMP do not support login with\npassword and user names; instead, communities are used. The disadvantage is that every user in the network\nwith a suitable program can read data and even change values.\nSNMPv3 supplies encryption and improved authentication. The access to any MIB requires authentication and\nencryption by default. If you have a running SNMP config from the versions lower than V9.90, make sure that\nthe access control model is hardened. For security, for SIPROTEC 5 devices, you cannot change any settings or\nvalues of the device via SNMP, except for settings affecting SNMP.\nBy default, 2 users are created in a group which is named initial, with read and write access."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "11.12.4 SNMPv3 Features"
+  },
+  {
+    "id": "3794340c448858a4b7a7",
+    "source_id": "41d8e7d527e7b6bd67df",
+    "product_id": "siemens_7sj85",
+    "feature": "default_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:31",
+    "matched": [
+      "default value Not configured , issuing and authentication"
+    ],
+    "context": "Table 3-1 Explanations of LDAP-Related Parameters in DIGSI 5\nParameter Names Descriptions\nGeneral\nTLS connection CA CA that issues the LDAP server certificate for the TLS connection between\nthe SIPROTEC 5 device and the LDAP server\nUser root CA The CA that issues the user intermediate CAs or the user certificates\nUser intermediate CA/AA User intermediate certificate authority or attribute authority\n• If you keep the default value Not configured , issuing and authentication of the user certificates are done by the set User root CA .\n• If you set the parameter User intermediate CA/AA  to issue user\ncertificates, authentication of the issued user certificates must be done\nby the intermediate CA/AA.\nFor attribute certificates, the parameter is mandatory.\nUse DN for login With this checkbox, you can show or hide the parameter User parent\nDN.",
+    "contexts": [
+      "Table 3-1 Explanations of LDAP-Related Parameters in DIGSI 5\nParameter Names Descriptions\nGeneral\nTLS connection CA CA that issues the LDAP server certificate for the TLS connection between\nthe SIPROTEC 5 device and the LDAP server\nUser root CA The CA that issues the user intermediate CAs or the user certificates\nUser intermediate CA/AA User intermediate certificate authority or attribute authority\n• If you keep the default value Not configured , issuing and authentication of the user certificates are done by the set User root CA .\n• If you set the parameter User intermediate CA/AA  to issue user\ncertificates, authentication of the issued user certificates must be done\nby the intermediate CA/AA.\nFor attribute certificates, the parameter is mandatory.\nUse DN for login With this checkbox, you can show or hide the parameter User parent\nDN."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "3.2.2.4 Configurations for the LDAP-Server-Connection"
+  },
+  {
+    "id": "2748eff69234952be31c",
+    "source_id": "41d8e7d527e7b6bd67df",
+    "product_id": "siemens_7sj85",
+    "feature": "default_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:39",
+    "matched": [
+      "Authentication Configuration for the User Name Viewer The parameter is unchecked by default"
+    ],
+    "context": "For more information on logging-on to the device via DIGSI 5, see also DIGSI Online help.\nLogin without Authentication\nIf you want to access a device with the user name VIEWER and without any credentials, select the parameter\nWithout authentication  in DIGSI 5.\n[sc_no_authentication, 1, en_US]\nFigure 3-17 Authentication Configuration for the User Name Viewer\nThe parameter is unchecked by default.\n3.2.9\nAccess Control\n3.2 Role-Based Access Control (RBAC) in SIPROTEC 5\nSIPROTEC 5, Security, Manual 39\nC53000-H5040-C081-C, Edition 07.2023",
+    "contexts": [
+      "For more information on logging-on to the device via DIGSI 5, see also DIGSI Online help.\nLogin without Authentication\nIf you want to access a device with the user name VIEWER and without any credentials, select the parameter\nWithout authentication  in DIGSI 5.\n[sc_no_authentication, 1, en_US]\nFigure 3-17 Authentication Configuration for the User Name Viewer\nThe parameter is unchecked by default.\n3.2.9\nAccess Control\n3.2 Role-Based Access Control (RBAC) in SIPROTEC 5\nSIPROTEC 5, Security, Manual 39\nC53000-H5040-C081-C, Edition 07.2023"
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "3.2.9 Login without Authentication"
+  },
+  {
+    "id": "e4ca9d2dfe5d4d986e9c",
+    "source_id": "41d8e7d527e7b6bd67df",
+    "product_id": "siemens_7sj85",
+    "feature": "non_support_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:44",
+    "matched": [
+      "Do not use them in the authentication"
+    ],
+    "context": "Emergency Access\nUsernames for Emergency Access\nEmergency access is provided if access to the device is needed but the connection to the RBAC server is lost.\nYou can log on with the following usernames for this purpose:\nUsername Role11 Connection Mode Restriction\nEMERGENCYUSER_DIGSI ADMIN Remote These usernames are specific\nfor emergency access. Do not\nuse them in the authentication\nservers.\nEMERGENCYUSER ADMIN Local\nREMOTEEMERGENCY-\nVIEWER\nVIEWER Remote\nEMERGENCYVIEWER VIEWER Local\nEmergency access is not enabled by default. Configurations of the emergency access require the\nsecurity-administrator role. Siemens recommends configuring the emergency access via DIGSI 5 during the\ndevice commissioning or during the configuration of the cybersecurity parameters.\nii\nNOTE\nFor devices in version 8.83 and higher, it is necessary to take the latest DIGSI 5 for the configuration of\nemergency access.",
+    "contexts": [
+      "Emergency Access\nUsernames for Emergency Access\nEmergency access is provided if access to the device is needed but the connection to the RBAC server is lost.\nYou can log on with the following usernames for this purpose:\nUsername Role11 Connection Mode Restriction\nEMERGENCYUSER_DIGSI ADMIN Remote These usernames are specific\nfor emergency access. Do not\nuse them in the authentication\nservers.\nEMERGENCYUSER ADMIN Local\nREMOTEEMERGENCY-\nVIEWER\nVIEWER Remote\nEMERGENCYVIEWER VIEWER Local\nEmergency access is not enabled by default. Configurations of the emergency access require the\nsecurity-administrator role. Siemens recommends configuring the emergency access via DIGSI 5 during the\ndevice commissioning or during the configuration of the cybersecurity parameters.\nii\nNOTE\nFor devices in version 8.83 and higher, it is necessary to take the latest DIGSI 5 for the configuration of\nemergency access."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "3.4 Emergency Access"
+  },
+  {
+    "id": "527be2610b3d6c108761",
+    "source_id": "41d8e7d527e7b6bd67df",
+    "product_id": "siemens_7sj85",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:102",
+    "matched": [
+      "TLS channel requires"
+    ],
+    "context": "EST Server Configuration\nIn a typical application with EST, the EST server is located outside of the substations and centrally controls\ndifferent requests that are sent by these substations. Therefore, the transport layer of the EST requests is over\na secure TLS channel with mutual authentications. This characteristic of the TLS channel requires an initial\ncustomer PKI where the private key of the CA is available and is usable for signing the requests. So, it is\nimpossible to use the default Siemens CA for the EST client.\nTo set the customer CA for the EST and TLS connection, the customer CA must be available in the DIGSI CA\nstore. For more information, refer to 6.5.2.1 Setup the DIGSI 5 CA Store.",
+    "contexts": [
+      "EST Server Configuration\nIn a typical application with EST, the EST server is located outside of the substations and centrally controls\ndifferent requests that are sent by these substations. Therefore, the transport layer of the EST requests is over\na secure TLS channel with mutual authentications. This characteristic of the TLS channel requires an initial\ncustomer PKI where the private key of the CA is available and is usable for signing the requests. So, it is\nimpossible to use the default Siemens CA for the EST client.\nTo set the customer CA for the EST and TLS connection, the customer CA must be available in the DIGSI CA\nstore. For more information, refer to 6.5.2.1 Setup the DIGSI 5 CA Store."
+    ],
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "7.3.1 EST Server Configuration"
+  }
+]

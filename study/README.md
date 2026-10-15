@@ -1,6 +1,6 @@
 # Study files
 
-What the survey has produced, and how each file was made. The tool is in the same repository, https://github.com/akekulip/ied-security-survey (public). The current outputs were made with version 2.3.0. Commands below are run from the top of the repository. The catalogue study's runs and fetched documents are in `data/` at the top of the repository.
+What the survey has produced, and how each file was made. The tool is in the same repository, https://github.com/akekulip/ied-security-survey (public). The current paper outputs were made with version 2.3.1; the current run and report with 2.2.1 and 2.3.0. Commands below are run from the top of the repository. The catalogue study's runs and fetched documents are in `data/` at the top of the repository.
 
 **Nothing here is a confirmed finding yet.** Every review row was drafted by an AI assistant and says so in its `reviewer` field. The rows of 2026-10-13/14 say "Claude AI draft review; author confirmation pending". The D400 correction of 2026-10-15 says "Codex AI audit correction; author confirmation pending". The follow-up rows of 2026-10-15 say "Claude AI draft (audit follow-up 2026-10-15); author confirmation pending". The reports repeat that under "Reviewers on record". The publication gate (`--require-confirmed`) refuses to make publication output until a person has confirmed every row.
 
@@ -10,8 +10,8 @@ Fetched bytes and run directories are kept outside this folder. The five-product
 
 | Question | Open |
 |---|---|
-| What goes in the paper? | `catalogue_2026-10-13/paper_2026-10-15/`. The folder holds:<br>• `summary.md`<br>• `dnp3_table.csv`<br>• `paper_appendix.tex`<br>• `paragraph.tex`<br>• `paper_manifest.json`<br>All are written by one command (below) and all are marked as an AI draft until the authors confirm the rows. |
-| Which DNP3 entries document DNP3 security, of what kind, by lifecycle group, and which remain unresolved and why? | `catalogue_2026-10-13/paper_2026-10-15/summary.md` |
+| What goes in the paper? | `catalogue_2026-10-13/paper_2026-10-15_v2_3_1/`. The folder holds:<br>• `summary.md`<br>• `dnp3_table.csv`<br>• `paper_appendix.tex`<br>• `paragraph.tex`<br>• `paper_manifest.json`<br>All are written by one command (below) and all are marked as an AI draft until the authors confirm the rows. |
+| Which DNP3 entries document DNP3 security, of what kind, by lifecycle group, and which remain unresolved and why? | `catalogue_2026-10-13/paper_2026-10-15_v2_3_1/summary.md` |
 | Every finding, per device and interface, with quotes and hashes | `catalogue_2026-10-13/reports/targeted_draft_2026-10-15/` (`REPORT.md`, `findings_table.csv`, `dnp3_table.csv`) |
 | What earlier work supports, and what it does not | `catalogue_2026-10-13/prior_work.md` |
 | How the 2026-10-15 audit was applied and checked | `catalogue_2026-10-13/audit_2026-10-15/`. The folder holds:<br>• `commands.json`: every command with its exit code, versions and output hashes;<br>• `approved_urls.json` and `targeted_pass.json`: the bounded pass and its searches;<br>• `targeted_pass_outcomes.json`: what each approved document gave;<br>• `request_check.json`: every request of the pass checked against the approved list. |
@@ -19,7 +19,7 @@ Fetched bytes and run directories are kept outside this folder. The five-product
 
 ## Correction of 2026-10-15
 
-An external audit (`IED_Survey_Tested_Fixes_2026-10-15.zip`, at the top of the repository) found a real error. The Multilin D400 brochure we had retained (source `e9650803a7d08f102554`, pdf-page 1) says "Secure tunneling from master station to the D400 via TLS for DNP3/TCP, Modbus/TCP and IEC 104". The draft review of 2026-10-13/14 counted the D400 as having no DNP3 security, because the tool kept the context of only the first keyword match on a page. Two statements are withdrawn:
+An external audit (`IED_Survey_Tested_Fixes_2026-10-15.zip`, committed in 0f13499 and since removed from the tree; it is in the git history) found a real error. The Multilin D400 brochure we had retained (source `e9650803a7d08f102554`, pdf-page 1) says "Secure tunneling from master station to the D400 via TLS for DNP3/TCP, Modbus/TCP and IEC 104". The draft review of 2026-10-13/14 counted the D400 as having no DNP3 security, because the tool kept the context of only the first keyword match on a page. Two statements are withdrawn:
 
 - that none of the 31 vendor-discontinued sampled devices documents protection of its control traffic;
 - that devices whose documents name no DNP3 security use plaintext. Such an entry is unknown: the retrieved documents establish neither lack of support nor plaintext operation.
@@ -41,7 +41,12 @@ What was done:
    - **Gaps the audit named.**
      - RTAC: SEL white paper 112760 was already held by the pilot.
      - Micro870: manual 2080-UM002 was already held under the Micro830.
-   - **Request control.** `crawl --approved-urls` let the run request only the listed addresses: 21 requests, none outside the list (`request_check.json`).
+   - **Request control.** `crawl --approved-urls` let the run request only the listed document addresses. It made 21 requests (`request_check.json`):
+     - 16 for listed documents;
+     - 4 for the robots.txt of their hosts;
+     - 1 same-host redirect.
+
+     No other document was requested.
    - **What it found.**
      - The RTAC white paper documents TLS for the DNP3 server.
      - The Micro870 manual says DNP3 Secure Authentication ships disabled and, once enabled, defaults to version 2.
@@ -55,6 +60,10 @@ What was done:
    These entries remain unknown. `targeted_pass.json` lists every entry with its searches, and `targeted_pass_outcomes.json` lists what each approved document gave.
 5. **Draft review of 2026-10-15.** `review/reviews_ai_draft_2026-10-15.json` adds draft rows for these documents. Every quote is checked against the retained text.
 6. **The paper outputs.** They come from one command, so their counts are always those of the inputs. They are not repeated here.
+7. **Code review of 0f13499 (`IED_Crawler_Code_Fixes_0f13499.zip`, at the top of the repository): tool 2.3.1.**
+   - **Crawl and cache.** Resume is pinned by `crawl_contract.json` and rebuilds leads from hash-checked text. Cached bytes are checked by hash. A download is reused within a run. A PDF shared by two products is parsed once. Extraction is unchanged (1.4.1).
+   - **Full-cache check.** `verify` and `replay` of the current run with 2.3.1 are in `commands.json` (labels `codefix-`), and the replay is in `$DATA/runs/codefix_replay_0f13499`.
+   - **The paragraph.** It printed "DNP3 authentication without encryption" and "but not of DNP3 itself", which claim more than "encryption not established" and "DNP3 scope not established". It now uses the table's labels. `paper_2026-10-15_v2_3_1/` holds the corrected outputs; the other three files are byte-identical to before.
 
 The lifecycle label of `currently_supported` is now printed "currently listed", which is what it rests on: listed in the vendor catalogue without a notice of discontinuation. The stored states and the definitions are unchanged.
 
@@ -78,7 +87,8 @@ The five vendors' catalogues as listed on 2026-10-13, and a seeded sample of 99 
 | `audit_2026-10-15/` | The audit follow-up's records:<br>• `commands.json`<br>• `approved_urls.json`, `targeted_pass.json` and `targeted_pass_outcomes.json`<br>• `request_check.json`<br>• `recheck_v2_0_vs_rebuilt.json` | the commands named in `commands.json` |
 | `reports/audit_draft_2026-10-15/` | The report of the rebuilt run with the D400 correction. | `report --require-evidence` |
 | `reports/targeted_draft_2026-10-15/` | **The current report**: the targeted run with the current review. | `report --require-evidence` |
-| `paper_2026-10-15/` | **The current paper outputs**, with their receipt. | `paper` |
+| `paper_2026-10-15_v2_3_1/` | **The current paper outputs**, with their receipt. | `paper` (2.3.1) |
+| `paper_2026-10-15/` | The paper outputs as first pushed. Superseded: its paragraph overstates two categories (see `SUPERSEDED.md` in it). | `paper` (2.3.0) |
 | `prior_work.md` | Prior work: what each source supports and what it does not, and what was checked on 2026-10-15. | written by hand |
 | `paper_appendix.tex`, `reports/sample_ai_draft/` | The appendix and report of 2026-10-14. Kept as made, with a superseded notice: they carry the D400 error and the plaintext wording. | an untracked script (appendix); `report` (report) |
 | `reports/worksheet/` | Leads per entry and capability, for the reviewer. | `worksheet` |
@@ -108,7 +118,7 @@ python survey.py verify --run $DATA/runs/sample_2026-10-13_v2_0 --cache $DATA/ca
 python survey.py rebuild --run $DATA/runs/sample_2026-10-13_v2_0 --cache $DATA/cache --out $DATA/runs/sample_audit_2026-10-15
 python survey.py replay --run $DATA/runs/sample_audit_2026-10-15 --cache $DATA/cache --out $DATA/runs/sample_audit_replay_2026-10-15
 
-# The bounded pass: only the approved addresses may be requested
+# The bounded pass: only the approved document addresses may be requested (plus robots.txt and allowed redirects)
 python survey.py crawl --config $S/sample.json --out $DATA/runs/sample_targeted_2026-10-15 --cache $DATA/cache \
     --reuse $DATA/runs/sample_audit_2026-10-15 --reuse runs/run1 --approved-urls $S/audit_2026-10-15/approved_urls.json
 python survey.py verify --run $DATA/runs/sample_targeted_2026-10-15 --cache $DATA/cache
@@ -120,7 +130,7 @@ python survey.py report --run $DATA/runs/sample_targeted_2026-10-15 --reviews $S
     --require-evidence --out $S/reports/targeted_draft_2026-10-15
 python survey.py paper --run $DATA/runs/sample_targeted_2026-10-15 --reviews $S/review/reviews_ai_draft_2026-10-15.json \
     --source-notes $S/review/source_notes_ai_draft.json --device-notes $S/review/device_notes_ai_draft.json \
-    --out $S/paper_2026-10-15
+    --out $S/paper_2026-10-15_v2_3_1
 ```
 
 The crawl of the bounded pass takes the documents it first fetched from `data/cache`, where they are kept with the rest; without them it would request those addresses again.
