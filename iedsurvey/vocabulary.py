@@ -3,7 +3,7 @@
 import re
 
 
-VERSION = '2.3.0'
+VERSION = '2.3.1'
 
 
 # Bumped only when extraction or lead rules change. Replay compares this, so a report-only release keeps runs replayable.

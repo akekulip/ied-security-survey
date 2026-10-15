@@ -5,6 +5,7 @@ import json
 import re
 import sys
 from collections import Counter
+from importlib.metadata import version
 from pathlib import Path
 from urllib.parse import urljoin
 
@@ -12,8 +13,8 @@ from .vocabulary import CAPABILITIES, EXTRACTION, FORMER_LIFECYCLES, LIFECYCLES,
 from .store import SCRIPT_SHA256, digest, dump, load, now
 from .text import norm, text_digest
 from .fetch import Fetcher, LOGIN, allowed, canonical
-from .extract import parse, suggest_doc_type
-from .leads import alias_pattern, candidates, load_leads, profile_items, save_leads
+from .extract import PDFReuse, parse, suggest_doc_type
+from .leads import alias_pattern, candidates, profile_items, save_leads
 
 
 KNOWN_KEYS = {'sampling', 'definitions', 'title', 'max_depth', 'max_pages_per_product', 'delay_seconds', 'timeout_seconds', 'max_bytes',
@@ -104,14 +105,14 @@ def describe(rec, segs, facts, out, alias):
 
 def finish(out, cfg, config_sha256, sources, hits, warnings, **extra):
     """Manifest and the three templates a reviewer fills in. Only a finished run has a manifest."""
-    dump(out / 'manifest.json', {'tool_version': VERSION, 'extraction_version': EXTRACTION, 'finished_at': now(),
+    manifest = {'tool_version': VERSION, 'extraction_version': EXTRACTION, 'finished_at': now(),
         'config_sha256': config_sha256, 'python': sys.version,
         'script_sha256': SCRIPT_SHA256,
         'complete': True, 'source_count': len(sources),
         'candidate_count': sum(h['lead_type'] != 'statement' for h in hits),
         'lead_counts': dict(Counter(h['lead_type'] for h in hits)),
         'source_status': dict(Counter(s['status'] for s in sources)),
-        'config_warnings': warnings, 'sampling': cfg['sampling'], **extra})
+        'config_warnings': warnings, 'sampling': cfg['sampling'], **extra}
     dump(out / 'review_template.json',
          [{'product_id': p['id'], 'feature': feature, 'status': 'unknown',
            'source_ids': [], 'source_hashes': {}, 'location': '', 'protocol': '',
@@ -134,6 +135,35 @@ def finish(out, cfg, config_sha256, sources, hits, warnings, **extra):
            'document_hints': s.get('document_hints', []), 'doc_type_suggested': s.get('doc_type_suggested', ''),
            'doc_type': '', 'coverage': '', 'document_id': '', 'revision': '', 'document_date': '', 'note': ''}
           for s in sources if s['status'] == 'extracted'])
+    # The completion marker comes last. A failed template write remains resumable.
+    dump(out / 'manifest.json', manifest)
+
+
+def recovered_leads(run, sources, cfg, cache):
+    """Sources and segments are authoritative; a crash can leave the derived lead files one checkpoint behind."""
+    aliases = {p['id']: p.get('aliases', []) for p in cfg['products']}
+    hits = []
+    for source in sources:
+        if source['status'] != 'extracted':
+            continue
+        body = (cache / source['sha256']).read_bytes()
+        if digest(body) != source['sha256']:
+            raise ValueError('cached source hash mismatch on resume: ' + source['id'])
+        segments = load(run / (source['id'] + '.segments.json'))
+        if text_digest(segments) != source.get('text_sha256'):
+            raise ValueError('saved source text hash mismatch on resume: ' + source['id'])
+        hits.extend(candidates(source, segments, aliases[source['product_id']]))
+    return hits
+
+
+def crawl_contract(config_bytes, approval, runs):
+    """Pin the inputs and extraction environment before a run makes its first request."""
+    return {'schema_version': 'iedsurvey.crawl-contract.v1',
+            'config_sha256': digest(config_bytes), 'approved_urls': approval.get('approved_urls'),
+            'extraction_version': EXTRACTION, 'script_sha256': SCRIPT_SHA256, 'python': sys.version,
+            'dependencies': {name: version(name) for name in ('pypdf', 'cryptography', 'protego')},
+            'reuse': [{'path': str(run), 'sources_sha256': digest((Path(run) / 'sources.json').read_bytes())}
+                      for run in runs]}
 
 
 class Crawler:
@@ -144,6 +174,7 @@ class Crawler:
         # With an approved list, only its addresses may be requested; everything else comes from an earlier run or waits.
         self.approved = approved
         self.fetcher = Fetcher(cfg, cache)
+        self.pdfs = PDFReuse(out)
         self.fetcher.audit = audit
         self.prior = {(s['product_id'], s['url']): s for s in sources}
         self.byid = {s['id']: s for s in sources}
@@ -186,16 +217,24 @@ class Crawler:
                 body = (self.cache / meta['sha256']).read_bytes()
             else:
                 meta, body = self.fetcher.fetch(rec['url'], product['domains'])
+            if digest(body) != meta['sha256']:
+                raise ValueError('cached source hash mismatch: ' + meta['sha256'])
             rec.update(meta)
             if meta['sha256'] in shas:
                 rec.update(status='duplicate', duplicate_of=shas[meta['sha256']])
                 return []
-            segs, links, facts = parse(body, meta['headers'])
+            segs, links, facts = self.pdfs.parse(rec, body)
             if not any(s['text'].strip() for s in segs):
                 raise ValueError('no extractable text; OCR/manual review required')
             describe(rec, segs, facts, self.out, alias)
             rec['status'] = 'extracted'
             self.hits.extend(candidates(rec, segs, product.get('aliases', [])))
+            self.pdfs.remember(rec, facts)
+            # Reuse a fresh download for another product in this same run, while keeping its own source record/leads.
+            if (self.cache / meta['sha256']).is_file():
+                held = dict(rec, held_by=str(self.out))
+                for key in ((product['id'], rec['url']), rec['url']):
+                    self.known.setdefault(key, held)
             return links
         except Exception as e:
             gated = isinstance(e, ValueError) and str(e).startswith('login required')
@@ -314,6 +353,8 @@ def crawl(config_path, out, cache, resume=False, reuse=None, only=None, approved
         print('config warning:', w, file=sys.stderr)
     import pypdf  # noqa: F401  Fail before the first request, not once per PDF.
     out, cache = Path(out), Path(cache)
+    runs = [reuse] if isinstance(reuse, (str, Path)) else list(reuse or [])
+    contract = crawl_contract(config_bytes, approval, runs)
     sources, hits, audit = [], [], []
     if resume:
         if (out / 'manifest.json').exists():
@@ -321,11 +362,14 @@ def crawl(config_path, out, cache, resume=False, reuse=None, only=None, approved
         if load(out / 'config.json') != cfg:
             raise ValueError('resume needs the config the run was started with')
         sources, audit = (load(out / n) if (out / n).exists() else [] for n in ('sources.json', 'requests.json'))
-        hits = load_leads(out)
+        saved_contract = out / 'crawl_contract.json'
+        if not saved_contract.exists() or load(saved_contract) != contract:
+            raise ValueError('resume contract changed or missing; start a new run instead of mixing inputs or code')
+        hits = recovered_leads(out, sources, cfg, cache)
     else:
         out.mkdir(parents=True, exist_ok=False)
         dump(out / 'config.json', cfg)
-    runs = [reuse] if isinstance(reuse, (str, Path)) else list(reuse or [])
+        dump(out / 'crawl_contract.json', contract)
     crawler, products = Crawler(cfg, out, cache, sources, hits, audit, runs, approved), cfg['products']
     # Product provenance remains separate even when a family document is shared.
     for number, product in enumerate(products, 1):
@@ -336,5 +380,6 @@ def crawl(config_path, out, cache, resume=False, reuse=None, only=None, approved
     # Written once more so a run without any seeds still has all its files.
     crawler.checkpoint()
     finish(out, cfg, digest(config_bytes), sources, hits, warnings, **approval,
+           **({'resumed': True, 'request_log_may_be_incomplete': True} if resume else {}),
            **({'only': only} if only else {}),
            **({'reused_from': str(runs[0]) if len(runs) == 1 else [str(x) for x in runs]} if runs else {}))

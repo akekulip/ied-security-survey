@@ -80,7 +80,7 @@ class Fetcher:
     def store(self, body):
         h = digest(body)
         path = self.cache / h
-        if not path.exists() or path.stat().st_size != len(body):
+        if not path.exists() or path.stat().st_size != len(body) or digest(path.read_bytes()) != h:
             tmp = path.with_name(h + '.tmp')
             tmp.write_bytes(body)
             os.replace(tmp, path)

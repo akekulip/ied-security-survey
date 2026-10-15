@@ -1,11 +1,38 @@
 """From response bytes to located text segments: HTML blocks and PDF pages, with what the document says about itself."""
 
 import io
+import json
 import re
 from html.parser import HTMLParser
+from pathlib import Path
 
 from .text import norm, squash
 from .fetch import header
+from .store import digest
+
+
+class PDFReuse:
+    """Reuse a freshly extracted PDF within one run; keep only metadata and a checked on-disk segment reference."""
+
+    def __init__(self, out):
+        self.out, self.seen = Path(out), {}
+
+    def parse(self, source, body):
+        if digest(body) != source['sha256']:
+            raise ValueError('source bytes hash mismatch before extraction: ' + source['id'])
+        cached = self.seen.get(source['sha256'])
+        if cached:
+            path, expected, facts = cached
+            raw = path.read_bytes()
+            if digest(raw) != expected:
+                raise ValueError('shared PDF segments changed: ' + str(path))
+            return json.loads(raw), [], dict(facts)
+        return parse(body, source['headers'])
+
+    def remember(self, source, facts):
+        if facts.get('kind') == 'pdf' and source['sha256'] not in self.seen:
+            path = self.out / (source['id'] + '.segments.json')
+            self.seen[source['sha256']] = (path, digest(path.read_bytes()), dict(facts))
 
 
 # noscript is deliberately kept: it is the fallback a client without JavaScript, like this one, is meant to read.

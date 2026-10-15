@@ -6,13 +6,37 @@ import unittest
 
 from iedsurvey.crawl import crawl
 from iedsurvey.findings import Findings
-from iedsurvey.paper import PAPER_FILES, paper
+from iedsurvey.paper import PAPER_FILES, paper, paragraph
 from iedsurvey.report import report_manifest
 from iedsurvey.store import digest, dump, load
 from support import SurveyCase
 
 
 class PaperTests(SurveyCase):
+    def test_default_rendering_uses_the_reviewed_state_instead_of_a_word_in_the_quote(self):
+        with tempfile.TemporaryDirectory() as td:
+            p = Path(td)
+            self.fixture(p)
+            found = Findings(p / 'run', p / 'reviews.json', True)
+            # Unit-test rendering of an enabled default whose wording also describes a disabled choice.
+            row = next(r for r in found.claims if r['product_id'] == 'sa')
+            row['default_state'] = 'enabled'
+            next(e for e in row['evidence'] if e.get('about') == 'default')['quote'] = (
+                'The feature can be Disabled or Enabled. Default value is Enabled.')
+            text = '\n'.join(paragraph(found, 'AI draft; author review pending'))
+            self.assertNotIn('is disabled by default', text)
+            self.assertIn('1 entry documents a default', text)
+
+    def test_paragraph_retains_unknown_encryption_and_external_protocol_scope(self):
+        with tempfile.TemporaryDirectory() as td:
+            p = Path(td)
+            self.fixture(p)
+            found = Findings(p / 'run', p / 'reviews.json', True)
+            text = '\n'.join(paragraph(found, 'AI draft; author review pending'))
+            self.assertIn('DNP3 authentication documented; encryption not established', text)
+            self.assertIn('External encryption documented; DNP3 scope not established', text)
+            self.assertNotIn('authentication without encryption', text)
+            self.assertNotIn('but not of DNP3 itself', text)
     PAGES = {'https://vendor.test/tls': b'<p>DNP3 over TLS is supported on the master station link.</p>',
              'https://vendor.test/sa': b'<p>DNP3 Secure Authentication version 5 is supported by the outstation.</p>'
                                        b'<p>Enable Secure Authentication. Default value is Disabled.</p>',
@@ -88,9 +112,10 @@ class PaperTests(SurveyCase):
             self.assertIn('2 of 5 DNP3 entries have no established DNP3 security finding', summary)
             self.assertIn('| v | TLS | currently listed | no | ' + 'not assessed; see tls (supported) | ' * 3, summary)
             paragraph = (p/'paper'/'paragraph.tex').read_text(encoding='utf-8')
-            for expected in ['Of the 5 entries whose documents name DNP3, the documents establish DNP3 over TLS or IPsec for 1, '
-                             'DNP3 authentication without encryption for 1, and encryption of another or an unnamed control '
-                             'protocol, or through a separate device, but not of DNP3 itself for 1. For the remaining 2,',
+            for expected in ['Of the 5 entries whose documents name DNP3, the documented findings are '
+                             '1 (DNP3 over TLS or IPsec documented); '
+                             '1 (DNP3 authentication documented; encryption not established); '
+                             '1 (External encryption documented; DNP3 scope not established). For the remaining 2,',
                              'states that DNP3 Secure Authentication is disabled by default', 'Status: AI draft; author review pending']:
                 self.assertIn(expected, paragraph)
             appendix = (p/'paper'/'paper_appendix.tex').read_text(encoding='utf-8')

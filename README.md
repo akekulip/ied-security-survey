@@ -82,7 +82,7 @@ Checks before going on:
 - **After step 3:** check the `lifecycle_evidence` sentences in `$S/inventory/pages/inventory.csv`.
 - **An interrupted crawl:** run the same command again with `--resume` added. It continues without refetching.
 - **One vendor only:** add `--only <pattern>` to `crawl`, for example `--only sel_`.
-- **Named documents for entries a crawl left unresolved:** list them in a JSON file, one `{"product_id", "url", "reason"}` per document (a `query` saying how it was found is kept too), and crawl again with `--reuse <earlier run> --approved-urls <file>`. Only the listed addresses are requested over the network. Everything else comes from the earlier runs, or is recorded as `not_approved` and not requested. The listed documents are read after each product's own pages, outside its page budget, and their links are not followed. The run's manifest keeps the file's hash.
+- **Named documents for entries a crawl left unresolved:** list them in a JSON file, one `{"product_id", "url", "reason"}` per document (a `query` saying how it was found is kept too), and crawl again with `--reuse <earlier run> --approved-urls <file>`. Of the document addresses the run meets, only the listed ones are requested over the network. The fetcher also reads each host's robots.txt and follows redirects within the allowed domains, as it always does, and the request log records both. Everything else comes from the earlier runs, or is recorded as `not_approved` and not requested. The listed documents are read after each product's own pages, outside its page budget, and their links are not followed. The run's manifest keeps the file's hash.
 
 No command overwrites an existing output; give a new `--out` instead. The one exception is `report`, which replaces the report in its output folder.
 
@@ -183,6 +183,28 @@ Every number is counted from the run and the review when the command runs, so th
 - **HTTPS only,** to the domains listed for each product, with a delay between requests.
 - **Every fetched file is kept by its SHA-256 hash.** The request log, hashes and retrieval times are in the run directory.
 - **A keyword match is a place to read, never a finding.** Findings come only from review rows that quote their source.
+
+## Developer workflow and interruption recovery
+
+Search `iedsurvey/` and `tests/` for implementation work. `data/` and `study/` hold the evidence and generated outputs;
+read the specific run or source needed for a task. The offline unit suite is `python3 -m unittest discover -s tests -v`.
+
+Version 2.3.1 pins a `crawl_contract.json` before a crawl makes requests. Resume requires unchanged configuration,
+approval input, reused source records, code, extractor and dependency versions. An old incomplete run without that
+contract requires a new run; completed historical evidence is preserved. Resume rebuilds derived leads from the saved
+source segments and checks their recorded raw/text hashes. A resumed manifest marks that the request log may omit
+requests in flight when the original process stopped; do not use it to claim an exhaustive network-request count.
+
+The completion manifest is written after all templates. A failed final write therefore leaves a resumable run.
+Cache reuse checks content hashes. One download can have separate product associations, and a shared PDF is parsed once
+per crawl/rebuild/replay, using a checked on-disk extraction reference. Leads and model scope are still derived for each
+product. This adds no dependencies or persistent extraction-cache format.
+
+The paper paragraph uses the table's security vocabulary. Unknown encryption/applicability remains unknown, and default
+wording follows the reviewed default field. AI rows and the publication gate retain their existing meaning.
+
+`PACKAGE_SHA256.json` records an earlier package and does not describe the current implementation. Keep that historical
+record; use the current run/report receipts for provenance rather than treating it as a current code checksum list.
 
 ## Audit correction (2026-10-15)
 

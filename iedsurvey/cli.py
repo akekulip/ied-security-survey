@@ -28,9 +28,10 @@ COMMANDS = {
         ('--reuse', {'action': 'append', 'help': 'earlier run whose fetched files are used instead of new requests; may '
                                                  'be repeated'}),
         ('--only', {'help': 'only the products whose id or vendor matches this pattern'}),
-        ('--approved-urls', {'help': 'JSON list of {product_id, url, reason}: the only addresses this run may request; '
-                                     'everything else comes from --reuse or is recorded as not_approved. Each listed '
-                                     'address is also attempted for its product, outside the page budget'})]),
+        ('--approved-urls', {'help': 'JSON list of {product_id, url, reason}: the only document addresses this run may '
+                                     'request (robots.txt and allowed redirects are fetched as usual); everything else '
+                                     'comes from --reuse or is recorded as not_approved. Each listed address is also '
+                                     'attempted for its product, outside the page budget'})]),
     'inventory': (inventory, 'list every catalogue device of the vendors in a rules file', [
         ('--vendors', REQUIRED | {'help': 'rules file, e.g. configs/vendors.json'}),
         ('--out', REQUIRED | {'help': 'new inventory folder'}),

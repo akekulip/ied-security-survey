@@ -6,7 +6,7 @@ from pathlib import Path
 from .vocabulary import EXTRACTION, VERSION
 from .store import digest, dump, load, now
 from .text import loose, text_digest
-from .extract import extract, parse
+from .extract import PDFReuse
 from .leads import alias_pattern, candidates, save_leads
 from .crawl import describe, finish
 
@@ -21,10 +21,12 @@ def rebuild(run, cache, dest):
     dump(dest / 'config.json', cfg)
     aliases = {p['id']: p.get('aliases', []) for p in cfg['products']}
     sources, hits = [], []
+    pdfs = PDFReuse(dest)
     for s in load(run / 'sources.json'):
         if s['status'] == 'extracted':
-            segs, _, facts = parse((cache / s['sha256']).read_bytes(), s['headers'])
+            segs, _, facts = pdfs.parse(s, (cache / s['sha256']).read_bytes())
             describe(s, segs, facts, dest, alias_pattern(aliases.get(s['product_id'])))
+            pdfs.remember(s, facts)
             hits.extend(candidates(s, segs, aliases.get(s['product_id'], [])))
         sources.append(s)
     dump(dest / 'sources.json', sources)
@@ -59,10 +61,12 @@ def replay(run, cache, dest):
     dest.mkdir(parents=True, exist_ok=False)
     aliases = {p['id']: p.get('aliases', []) for p in load(run / 'config.json')['products']}
     hits, problems = [], []
+    pdfs = PDFReuse(dest)
     for s in load(run / 'sources.json'):
         if s['status'] == 'extracted':
-            segs, _ = extract((Path(cache) / s['sha256']).read_bytes(), s['headers'])
+            segs, _, facts = pdfs.parse(s, (Path(cache) / s['sha256']).read_bytes())
             dump(dest / (s['id'] + '.segments.json'), segs)
+            pdfs.remember(s, facts)
             saved = run / (s['id'] + '.segments.json')
             problems += segment_problems(s['id'], s.get('text_sha256'), load(saved) if saved.exists() else None,
                                          load(dest / (s['id'] + '.segments.json')))
