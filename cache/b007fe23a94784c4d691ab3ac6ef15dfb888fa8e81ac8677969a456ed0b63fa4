@@ -1,0 +1,2219 @@
+<!DOCTYPE HTML>
+<html lang="en-US" data-timezone="America/Chicago">
+    <head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="UTF-8"/>
+    
+    <title>LogixEdge Controllers | Rockwell Automation | US</title>
+    <link rel="canonical" href="https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+
+    
+    
+
+    
+        <link rel="alternate" hreflang="en-ie" href="https://www.rockwellautomation.com/en-ie/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="en-us" href="https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="en-ca" href="https://www.rockwellautomation.com/en-ca/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="es-pr" href="https://www.rockwellautomation.com/es-pr/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="en-il" href="https://www.rockwellautomation.com/en-il/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="en-in" href="https://www.rockwellautomation.com/en-in/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="en-za" href="https://www.rockwellautomation.com/en-za/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="zh-cn" href="https://www.rockwellautomation.com.cn/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="de-at" href="https://www.rockwellautomation.com/de-at/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="fr-ch" href="https://www.rockwellautomation.com/fr-ch/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="en-au" href="https://www.rockwellautomation.com/en-au/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="en-cz" href="https://www.rockwellautomation.com/en-cz/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="de-ch" href="https://www.rockwellautomation.com/de-ch/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="ja-jp" href="https://www.rockwellautomation.com/ja-jp/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="en-ro" href="https://www.rockwellautomation.com/en-ro/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="en-pl" href="https://www.rockwellautomation.com/en-pl/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="de-de" href="https://www.rockwellautomation.com/de-de/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="en-tr" href="https://www.rockwellautomation.com/en-tr/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="en-nl" href="https://www.rockwellautomation.com/en-nl/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="en-no" href="https://www.rockwellautomation.com/en-no/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="zh-tw" href="https://www.rockwellautomation.com/zh-tw/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="en-fi" href="https://www.rockwellautomation.com/en-fi/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="en-ru" href="https://www.rockwellautomation.com/en-ru/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="en-be" href="https://www.rockwellautomation.com/en-be/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="pt-br" href="https://www.rockwellautomation.com/pt-br/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="ko-kr" href="https://www.rockwellautomation.com/ko-kr/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="en-pr" href="https://www.rockwellautomation.com/en-pr/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="es-es" href="https://www.rockwellautomation.com/es-es/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="en-dk" href="https://www.rockwellautomation.com/en-dk/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="fr-ca" href="https://www.rockwellautomation.com/fr-ca/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="es-mx" href="https://www.rockwellautomation.com/es-mx/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="es-co" href="https://www.rockwellautomation.com/es-co/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="en-hu" href="https://www.rockwellautomation.com/en-hu/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="it-it" href="https://www.rockwellautomation.com/it-it/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="en-ua" href="https://www.rockwellautomation.com/en-ua/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="en-nz" href="https://www.rockwellautomation.com/en-nz/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="pt-pt" href="https://www.rockwellautomation.com/pt-pt/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="es-ar" href="https://www.rockwellautomation.com/es-ar/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="fr-be" href="https://www.rockwellautomation.com/fr-be/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="en-se" href="https://www.rockwellautomation.com/en-se/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="en-sg" href="https://www.rockwellautomation.com/en-sg/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="fr-fr" href="https://www.rockwellautomation.com/fr-fr/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="en-gb" href="https://www.rockwellautomation.com/en-gb/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+        <link rel="alternate" hreflang="en-id" href="https://www.rockwellautomation.com/en-id/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    
+
+    
+    <script src="/etc.clientlibs/rockwell-automation/clientlibs/clientlib-site/resources/build/headScripts.bundle.js?1789658970905" data-ot-ignore></script>
+
+    
+    <link rel="preconnect" href="https://rockwellautomation.scene7.com/" crossorigin/>
+    <link rel="dns-prefetch" href="https://rockwellautomation.scene7.com/"/>
+    <link rel="dns-prefetch" href="https://map.rockwellautomation.com/"/>
+    <link rel="dns-prefetch" href="https://raselect.rockwellautomation.com/"/>
+    <link rel="dns-prefetch" href="https://assets.adobedtm.com/"/>
+    <link rel="dns-prefetch" href="https://api.company-target.com/"/>
+    <link rel="dns-prefetch" href="https://cdn.cookielaw.org/"/>
+    <link rel="dns-prefetch" href="https://s.go-mpulse.net/"/>
+    <link rel="dns-prefetch" href="https://www.google-analytics.com/"/>
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com/"/>
+    <link rel="dns-prefetch" href="https://tag.nrich.ai/"/>
+    <link rel="dns-prefetch" href="https://c.oracleinfinity.io/"/>
+
+    
+    <link rel="preload" href="/etc.clientlibs/rockwell-aem-base/clientlibs/clientlib-base/resources/fonts/barlow-bold-webfont.woff2?zdfsaf1" as="font" type="font/woff2" crossorigin/>
+    <link rel="preload" href="/etc.clientlibs/rockwell-aem-base/clientlibs/clientlib-base/resources/fonts/barlow-regular-webfont.woff2?zdfsaf1" as="font" type="font/woff2" crossorigin/>
+    <link rel="preload" href="/etc.clientlibs/rockwell-aem-base/clientlibs/clientlib-base/resources/fonts/barlow-medium-webfont.woff2?zdfsaf1" as="font" type="font/woff2" crossorigin/>
+
+    
+
+    
+    
+    <meta name="description" content="LogixEdge™ Controllers unify Logix control with high‑performance edge computing to enable IT/OT convergence and support advanced workflows and analytics."/>
+    <meta name="template" content="productlistingpage"/>
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    
+    <meta property="language" content="en"/>
+    <meta property="country" content="US"/>
+    
+    
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="Rockwell Automation"/>
+    <meta property="og:title" content="LogixEdge Controllers | Rockwell Automation | US"/>
+    <meta property="og:url" content="https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/logixedge-controllers.html"/>
+    <meta property="og:description" content="LogixEdge™ Controllers unify Logix control with high‑performance edge computing to enable IT/OT convergence and support advanced workflows and analytics."/>
+    <meta property="og:image" content="https://rockwellautomation.scene7.com/is/image/rockwellautomation/LogixEdge-Controllers.1361.jpg"/>
+    <meta name="twitter:card" content="summary"/>
+
+    <!-- Corporation Schema for en-us Homepage Only -->
+    
+
+    
+
+    <!-- Product Schema Markup for Product Category and Family Pages -->
+    
+        
+        
+        
+            
+        
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org/",
+                "@type": "Product",
+                "name": "LogixEdge Controllers",
+                "image": "https://rockwellautomation.scene7.com/is/image/rockwellautomation/LogixEdge-Controllers.1361.jpg",
+                "description": "LogixEdge™ Controllers unify Logix control with high‑performance edge computing to enable IT/OT convergence and support advanced workflows and analytics.",
+                "brand": {
+                    "@type": "Brand",
+                    "name": "Rockwell Automation"
+                }
+            }
+        </script>
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+        <meta name="product" content="Hardware,Programmable Controllers"/>
+    
+
+    
+
+    
+    
+
+    
+
+    <!-- OneTrust Cookies Consent Notice start -->
+    
+        <!-- Privacy Id -->
+        
+            <!-- SDK Script -->
+            <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="78a8d521-a282-4300-8e9d-2eec6c0eaa70"></script>
+            <!-- Auto Block -->
+            <script type="text/javascript" src="https://cdn.cookielaw.org/consent/78a8d521-a282-4300-8e9d-2eec6c0eaa70/OtAutoBlock.js"></script>
+        
+        <!-- OneTrust Wrapper -->
+        
+        <script src="/etc.clientlibs/rockwell-automation/clientlibs/clientlib-site/resources/build/onetrustScripts.bundle.js?1744903565144" type="text/javascript"></script>
+    
+    <!-- OneTrust Cookies Consent Notice end -->
+
+    <!-- Hide breadcrumb, footer and floating-button when hideHeaderFooter=true param is found. This is for Binge Experience. -->
+    
+
+    
+    
+    <script type="text/javascript">
+            if ( !window.CQ_Analytics ) {
+                window.CQ_Analytics = {};
+            }
+            if ( !CQ_Analytics.TestTarget ) {
+                CQ_Analytics.TestTarget = {};
+            }
+            CQ_Analytics.TestTarget.clientCode = 'rockwellautomation';
+            CQ_Analytics.TestTarget.currentPagePath = '\/content\/rockwell\u002Dautomation\/global\/na\/en\/products\/hardware\/programmable\u002Dcontrollers\/logixedge\u002Dcontrollers';
+        </script>
+    <script src="/etc.clientlibs/cq/testandtarget/clientlibs/testandtarget/parameters.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/personalization/integrations/commons.min.js"></script>
+<script src="/etc.clientlibs/cq/testandtarget/clientlibs/testandtarget/atjs-integration.min.js"></script>
+
+
+    
+
+    
+    
+    
+
+
+    
+        <style>
+
+/****** HERO BANNER SECTION ******/
+.hero-banner__container{grid-template-columns:50% !important;}
+.hero-banner__container[data-large-height]{min-height:0vh !important;}
+.hero-banner{color:#fff !important;}
+.hero-banner h1{line-height:1.1 !important;margin-bottom:20px;font-size:56px;font-family: Barlow, Arial, Helvetica Neue, Helvetica, sans-serif !important;font-weight: 700 !important;margin-bottom:4px !important;}
+.hero-banner .button--primary a{background-color:#fff !important;color:#2a79c4;border-color:#fff !important;}
+.hero-banner__copy-text{font-size:24px;font-family: Barlow, Arial, Helvetica Neue, Helvetica, sans-serif !important;margin-bottom:20px;font-weight:500;}
+
+.hero-banner picture{display:flex;justify-content:flex-end;}
+.hero-banner img{max-width:65%;right:0px;}
+
+.hero-banner__subtitle-container .hero-banner__subtitle-text {background: linear-gradient(98deg, var(--core-color-orange, #F58025) 3.88%, var(--core-color-ra-red, #CD163F) 96.26%); padding: 4px 8px; border-radius: 4px; text-transform: none;}
+
+.shard1{position:absolute;top:0px;left:0px;width:65%;min-height:100%;height:auto;}
+.shard-background{display:none;}
+
+@media only screen and (max-width: 1023px){
+     .hero-banner h1{font-size:42px;}
+     .hero-banner__copy-text{font-size:20px;}
+     .hero-banner__container{grid-template-columns:100% !important;}
+     .shard1{position:absolute;top:0px;left:0px;height:100%;width:150%;}
+     .hero-banner__background-image-wrapper {display:flex;position:relative;z-index:5;min-height:300px;order:2;}
+     .hero-banner .hero-banner__text-container{padding-bottom:40px;}
+     .hero-banner img{max-width:100%;}
+}
+
+#system-designer-teaser .teaser__content .teaser__text {
+	display: block !important;
+}
+#system-designer-teaser .teaser__content .teaser__text a {
+	text-decoration: none;
+}
+#system-designer-teaser .teaser__content .teaser__text a:active,
+#system-designer-teaser .teaser__content .teaser__text a:focus,
+#system-designer-teaser .teaser__content .teaser__text a:hover {
+	color: #2A79C4;
+	text-decoration: underline;
+}
+#system-designer-teaser .teaser__content .teaser__subtitle {
+	background: linear-gradient(90deg, rgba(119, 0, 86, 1) 0%, rgba(245, 128, 37, 1) 100%);
+	display: inline-block !important;
+	font-family: Barlow;
+	font-weight: 700;
+    color: white;
+    padding: 3px 22px 4px 14px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+</style>
+
+
+
+<script>
+
+$(document ).ready(function() {
+
+
+
+
+/*$('.hero-banner .hero-banner__container').append('<svg class="shard1" preserveAspectRatio="none" width="1220" height="525" viewBox="0 0 1005 400" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M653.552 467.158H989.253C995.661 467.158 1000.74 465.236 1003.59 458.588C1005.87 453.719 1005.36 447.817 1002.27 443.521L758.578 146.048C750.059 136.317 738.267 130.936 726.015 131.192H-17.4948C-29.2263 131.192 -34.293 136.822 -34.293 149.757V448.345C-34.5116 452.061 -33.9084 455.776 -32.5287 459.176C-30.5533 463.789 -26.4668 466.849 -21.8601 467.158H653.552Z" fill="url(#paint0_linear_0_1420)"/><path d="M628.721 153H850.592C854.828 153 858.181 151.73 860.065 147.337C861.575 144.12 861.236 140.22 859.193 137.381L698.135 -59.1777C692.504 -65.6075 684.71 -69.1636 676.613 -68.9942H7.13116C-0.622498 -68.9942 -3.97107 -65.2738 -3.97107 -56.7273V140.569C-4.1156 143.024 -3.71698 145.479 -2.80505 147.726C-1.49951 150.774 1.20129 152.796 4.24597 153H628.721Z" fill="url(#paint1_linear_0_1420)"/><path d="M1 -19H768V442H1V-19Z" fill="url(#paint2_linear_0_1420)"/><g filter="url(#filter0_f_0_1420)"><path d="M801.974 235.82L960.731 61.9127C963.552 58.7613 964.84 55.4201 962.825 51.0926C961.436 47.8261 958.308 45.4806 954.835 45.1097C953.583 44.9643 952.329 44.9036 951.083 44.9234C864.162 45.3953 783.301 42.3857 696.362 42.841C687.827 42.7477 679.99 46.1777 674.724 52.3153L358.445 399.454C353.281 405.223 353.82 410.193 360.181 415.886L533.157 518.19C535.311 519.49 537.045 520.791 539.26 522.09C542.398 523.149 545.701 522.486 547.881 520.357L801.974 235.82Z" fill="url(#paint3_linear_0_1420)"/></g><path d="M890.626 440.622L992.679 328.83C994.493 326.804 995.321 324.656 994.026 321.875C993.133 319.775 991.122 318.267 988.889 318.029C988.085 317.935 987.278 317.896 986.477 317.909C930.602 318.212 878.623 316.278 822.736 316.57C817.249 316.51 812.212 318.715 808.826 322.661L605.514 545.811C602.195 549.519 602.541 552.714 606.63 556.373L717.824 622.137C719.208 622.973 720.323 623.809 721.747 624.644C723.764 625.325 725.887 624.899 727.288 623.53L890.626 440.622Z" fill="url(#paint4_linear_0_1420)"/><defs><filter id="filter0_f_0_1420" x="351.949" y="39.7939" width="614.856" height="485.792" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="1.5" result="effect1_foregroundBlur_0_1420"/></filter><linearGradient id="paint0_linear_0_1420" x1="883.926" y1="299" x2="13.4258" y2="299" gradientUnits="userSpaceOnUse"><stop stop-color="#F58025" stop-opacity="0.6"/><stop offset="1" stop-color="#CD163F"/></linearGradient><linearGradient id="paint1_linear_0_1420" x1="912" y1="168.5" x2="114.146" y2="114.208" gradientUnits="userSpaceOnUse"><stop stop-color="#CD163F" stop-opacity="0.02"/><stop offset="1" stop-color="#CD163F"/></linearGradient><linearGradient id="paint2_linear_0_1420" x1="0.999948" y1="211.5" x2="768.002" y2="223.904" gradientUnits="userSpaceOnUse"><stop offset="0.19286" stop-color="#CD163F"/><stop offset="0.781174" stop-color="#F58025"/><stop offset="1" stop-color="#F58025" stop-opacity="0"/></linearGradient><linearGradient id="paint3_linear_0_1420" x1="884.331" y1="-20.4155" x2="434.382" y2="482.299" gradientUnits="userSpaceOnUse"><stop stop-color="#F58025" stop-opacity="0.24"/><stop offset="1" stop-color="#CD163F" stop-opacity="0.2"/></linearGradient><linearGradient id="paint4_linear_0_1420" x1="943.567" y1="275.907" x2="762.5" y2="481.5" gradientUnits="userSpaceOnUse"><stop stop-color="#F58025" stop-opacity="0.2"/><stop offset="1" stop-color="#CD163F" stop-opacity="0.7"/></linearGradient></defs></svg>');*/
+
+
+$('.hero-banner .hero-banner__container').append('<svg class="shard1" preserveAspectRatio="none" width="996" height="400" viewBox="0 0 996 400" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_494_3761)"><path d="M652.552 467.158H988.253C994.661 467.158 999.735 465.236 1002.59 458.588C1004.87 453.719 1004.36 447.817 1001.27 443.521L757.578 146.048C749.059 136.317 737.267 130.936 725.015 131.192H-18.4948C-30.2263 131.192 -35.293 136.822 -35.293 149.757V448.345C-35.5116 452.061 -34.9084 455.776 -33.5287 459.176C-31.5533 463.789 -27.4668 466.849 -22.8601 467.158H652.552Z" fill="url(#paint0_linear_494_3761)"/><path d="M627.721 153H849.592C853.828 153 857.181 151.73 859.065 147.337C860.575 144.12 860.236 140.22 858.193 137.381L697.135 -59.1777C691.504 -65.6075 683.71 -69.1636 675.613 -68.9942H6.13116C-1.6225 -68.9942 -4.97107 -65.2738 -4.97107 -56.7273V140.569C-5.1156 143.024 -4.71698 145.479 -3.80505 147.726C-2.49951 150.774 0.201294 152.796 3.24597 153H627.721Z" fill="url(#paint1_linear_494_3761)"/><path d="M0 -19H767V442H0V-19Z" fill="url(#paint2_linear_494_3761)"/><g filter="url(#filter0_f_494_3761)"><path d="M800.974 235.82L959.731 61.9127C962.552 58.7613 963.84 55.4201 961.825 51.0926C960.436 47.8261 957.308 45.4806 953.835 45.1097C952.583 44.9643 951.329 44.9036 950.083 44.9234C863.162 45.3953 782.301 42.3857 695.362 42.841C686.827 42.7477 678.99 46.1777 673.724 52.3153L357.445 399.454C352.281 405.223 352.82 410.193 359.181 415.886L532.157 518.19C534.311 519.49 536.045 520.791 538.26 522.09C541.398 523.149 544.701 522.486 546.881 520.357L800.974 235.82Z" fill="url(#paint3_linear_494_3761)"/></g><path d="M889.626 440.622L991.679 328.83C993.493 326.804 994.321 324.656 993.026 321.875C992.133 319.775 990.122 318.267 987.889 318.029C987.085 317.935 986.278 317.896 985.477 317.909C929.602 318.212 877.623 316.278 821.736 316.57C816.249 316.51 811.212 318.715 807.826 322.661L604.514 545.811C601.195 549.519 601.541 552.714 605.63 556.373L716.824 622.137C718.208 622.973 719.323 623.809 720.747 624.644C722.764 625.325 724.887 624.899 726.288 623.53L889.626 440.622Z" fill="url(#paint4_linear_494_3761)"/></g><defs><filter id="filter0_f_494_3761" x="350.949" y="39.7939" width="614.855" height="485.792" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="1.5" result="effect1_foregroundBlur_494_3761"/></filter><linearGradient id="paint0_linear_494_3761" x1="882.926" y1="299" x2="12.4258" y2="299" gradientUnits="userSpaceOnUse"><stop stop-color="#8D0034" stop-opacity="0.4"/><stop offset="0.438499" stop-color="#8D0034"/><stop offset="1" stop-color="#003E7E"/></linearGradient><linearGradient id="paint1_linear_494_3761" x1="911" y1="168.5" x2="9.49272" y2="167.384" gradientUnits="userSpaceOnUse"><stop stop-color="#003E7E" stop-opacity="0.14"/><stop offset="0.57885" stop-color="#003E7E"/></linearGradient><linearGradient id="paint2_linear_494_3761" x1="3.58411e-05" y1="238" x2="818.5" y2="237.898" gradientUnits="userSpaceOnUse"><stop stop-color="#003E7E"/><stop offset="0.666036" stop-color="#8D0034" stop-opacity="0.89"/><stop offset="0.920901" stop-color="#8D0034" stop-opacity="0"/></linearGradient><linearGradient id="paint3_linear_494_3761" x1="883.331" y1="-20.4155" x2="433.382" y2="482.299" gradientUnits="userSpaceOnUse"><stop stop-color="#8D0034" stop-opacity="0.24"/><stop offset="1" stop-color="#003E7E" stop-opacity="0.2"/></linearGradient><linearGradient id="paint4_linear_494_3761" x1="942.567" y1="275.907" x2="761.5" y2="481.5" gradientUnits="userSpaceOnUse"><stop stop-color="#8D0034" stop-opacity="0.2"/><stop offset="1" stop-color="#003E7E" stop-opacity="0.7"/></linearGradient><clipPath id="clip0_494_3761"><rect width="996" height="400" fill="white" transform="matrix(-1 0 0 1 996 0)"/></clipPath></defs></svg>');
+
+
+
+
+
+});
+
+</script>
+    
+        <style>
+  .product_listing_allen_bradley {
+      padding-bottom: 16px;
+  }
+ .product_listing_logo {
+     width: 200px;
+     margin-left: 30px;
+}
+
+  @media (max-width: 768px) {
+      .product_listing_allen_bradley {
+          font-size: 1.5rem !important;
+      }
+      .product_listing_logo {
+         width: 50%;
+     }
+  }
+
+div.product-family-list__results-sort-options, details.product-family-list__filter-group-mobile-sort {
+    display: none;
+}
+
+</style>
+    
+
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/etc.clientlibs/rockwell-aem-base/clientlibs/clientlib-base/resources/favicons/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/etc.clientlibs/rockwell-aem-base/clientlibs/clientlib-base/resources/favicons/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="/etc.clientlibs/rockwell-aem-base/clientlibs/clientlib-base/resources/favicons/favicon-16x16.png"/>
+    <link rel="manifest" href="/etc.clientlibs/rockwell-aem-base/clientlibs/clientlib-base/resources/favicons/site.webmanifest"/>
+
+    <script type="module" src="https://www.rockwellautomation.com/resources/components/platform/webcomponents/build/racom.esm.js" data-ot-ignore></script>
+    <script nomodule src="https://www.rockwellautomation.com/resources/components/platform/webcomponents/build/racom.js" data-ot-ignore></script>
+    <link rel="stylesheet" href="https://www.rockwellautomation.com/resources/components/platform/webcomponents/build/racom.css"/>
+
+    
+    <link rel="stylesheet" href="/etc.clientlibs/rockwell-automation/clientlibs/clientlib-site/resources/build/site.bundle.css?1789658970868"/>
+
+    
+    
+    
+
+    <!-- Data Layer implementation remains as inline script due to HTL expressions -->
+    <script data-ot-ignore>
+        (function () {
+            var pageEventData = {};
+
+            pageEventData.pageInfo = {};
+            rockwellUtils.addVal(pageEventData.pageInfo, "canonicalUrl", "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/logixedge-controllers.html");
+            // When canonical URL is empty (e.g. error page response) then simply
+            // grab the current URL from the user's browser.
+            if (!pageEventData.pageInfo.canonicalUrl) {
+                pageEventData.pageInfo.canonicalUrl = window.location.href.split('?')[0];
+            }
+            rockwellUtils.addVal(pageEventData.pageInfo, "pageName", "logixedge-controllers");
+            rockwellUtils.addVal(pageEventData.pageInfo, "pageModified", "2026-05-04T11:19:05+0000");
+            rockwellUtils.addVal(pageEventData.pageInfo, "pageType", "");
+            rockwellUtils.addVal(pageEventData.pageInfo, "language", "en");
+            rockwellUtils.addVal(pageEventData.pageInfo, "environment", "prod");
+            rockwellUtils.addVal(pageEventData.pageInfo, "localTimestamp", rockwellUtils.getLocalTimestamp());
+            rockwellUtils.addVal(pageEventData.pageInfo, "siteSection", "products");
+            rockwellUtils.addVal(pageEventData.pageInfo, "siteSubsection1", "hardware");
+            rockwellUtils.addVal(pageEventData.pageInfo, "siteSubsection2", "programmable-controllers");
+            rockwellUtils.addVal(pageEventData.pageInfo, "siteSubsection3", "logixedge-controllers");
+            rockwellUtils.addVal(pageEventData.pageInfo, "siteSubsection4", "");
+
+            pageEventData.contentInfo = {};
+            rockwellUtils.addVal(pageEventData.contentInfo, "author", "");
+            rockwellUtils.addVal(pageEventData.contentInfo, "publicationDate", "");
+            rockwellUtils.addVal(pageEventData.contentInfo, "contentTags", "", ",");
+
+            var pageViewData = {};
+
+            var isHomePage = false;
+            if ("true" === "false") {
+                isHomePage = true;
+            }
+            var isLanguageSelectorPage = "productlistingpage" === "languageselectorpage";
+            var domain = window.location.host.split(".");
+            var webDomain = domain.length > 2 ? domain[1] : domain[0];
+            var subDomain = domain.length > 2 ? (domain[0] != "www" ? domain[0] : "n/a") : "n/a"
+            let pageName = webDomain;
+
+            if (isHomePage) {
+                rockwellUtils.addVal(pageViewData, "slug", "homepage");
+                rockwellUtils.addVal(pageViewData, "path", "/");
+                pageName += ":homepage";
+            } else {
+                pageName += ":products:hardware:programmable-controllers:logixedge-controllers";
+                if (isLanguageSelectorPage) {
+                    pageName +=":lang-selection";
+                }
+                rockwellUtils.addVal(pageViewData, "slug", "logixedge-controllers");
+                rockwellUtils.addVal(pageViewData, "path", window.location.pathname.replace(".html", ""));
+            }
+
+            rockwellUtils.addVal(pageViewData, "pageName", pageName);
+            rockwellUtils.addVal(pageViewData, "pageType", "");
+            // When canonical URL is empty (e.g. error page response) then simply
+            // grab the current URL from the user's browser.
+            var fullUrl = window.location.href;
+            var currentPagePath = fullUrl.split('?')[0];
+            var queryParams = fullUrl.split('?')[1];
+            rockwellUtils.addVal(pageViewData, "pageUrl", currentPagePath);
+            rockwellUtils.addVal(pageViewData, "urlParameter", queryParams);
+            rockwellUtils.addVal(pageViewData, "fullUrl", fullUrl);
+
+            rockwellUtils.addVal(pageViewData, "hostName", window.location.hostname);
+
+            rockwellUtils.addVal(pageViewData, "subDomain", subDomain);
+
+            // Using the cookie instead of referrer as referrer is empty string in some of the scenarios.
+            var referrerUrl = rockwellUtils.getCookie("fullReferringUrl").split('?')[0];
+
+            rockwellUtils.addVal(pageViewData, "referringUrl", referrerUrl);
+            rockwellUtils.addVal(pageViewData, "fullReferringUrl", rockwellUtils.getCookie("fullReferringUrl"));
+
+            rockwellUtils.addVal(pageViewData, "previousPageName", rockwellUtils.getCookie("previousPageName"));
+            rockwellUtils.setCookie("previousPageName", pageName, 30);
+
+            rockwellUtils.addVal(pageViewData, "aemPageTemplateName", "productlistingpage");
+            rockwellUtils.addVal(pageViewData, "siteCountry", "US");
+            rockwellUtils.addVal(pageViewData, "siteLanguage", "en");
+            rockwellUtils.addVal(pageViewData, "primaryCategory", "products");
+            rockwellUtils.addVal(pageViewData, "subCategory1", "hardware");
+            rockwellUtils.addVal(pageViewData, "subCategory2", "programmable-controllers");
+            rockwellUtils.addVal(pageViewData, "subCategory3", "logixedge-controllers");
+
+            digitalData.push({
+                event: "pageView",
+                page: pageViewData
+            });
+
+            var dlmEventHandler = window.dlmEventHandler || function(e) {
+                return e;
+            }
+
+            var subscribedEvents = ["SDI-DLM:affinity"];
+
+            subscribedEvents.forEach(function(subscribedEvent){
+                window.removeEventListener(subscribedEvent, dlmEventHandler, false);
+                window.addEventListener(subscribedEvent, dlmEventHandler, false);
+            });
+        })();
+    </script>
+
+    
+
+    
+    
+        
+        
+            
+            
+            
+                <script type="text/javascript" src="//assets.adobedtm.com/5721cad0347b/09581fb6124d/launch-c9e49922b277.min.js" async data-ot-ignore></script>
+            
+        
+
+        
+    
+    
+
+
+    
+    
+    
+
+    
+    
+
+    <!-- SEO -->
+    
+    <meta name="publication-date" content="2026-05-04"/>
+    <meta name="search-boost" content="1"/>
+    
+    <!-- Schemas -->
+    
+    
+
+
+<script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"","rua.cook":"false","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false","rua.isuxp":"false","rua.texp":"norulematch","rua.ceh":"false","rua.ueh":"false","rua.ieh.st":"0"}]);</script>
+                                <script>!function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="3GB5U-4P5MU-6NE3E-PY6DW-3WWN8",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,r=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);r.src="javascript:void(0)",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="width:0;height:0;border:0;display:none;",o=document.getElementsByTagName("script")[0],o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,r.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"3GB5U-4P5MU-6NE3E-PY6DW-3WWN8",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},_.write("<bo"+'dy onload="document._l();">'),_.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e=""=="true"?1:0,t="",n="qoaerasfyaiee2woqbha-f-75802c5ce-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,_={"ak.v":"41","ak.cp":"52838","ak.ai":parseInt("256021",10),"ak.ol":"0","ak.cr":21,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"7b7556c","ak.r":49626,"ak.a2":e,"ak.m":"b","ak.n":"essl","ak.cport":22468,"ak.gh":"23.52.98.215","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1791918158","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==YiO9UdmUR72tEiaxWCSeZDYSRRMzuldfMO9Y3uVZaZU9G+Xt9kYPXH/rRUg7mtSP4LbwYc/ujaM+ES6XEWPGtCUp1jwqehjtzu5BqSuIaT3vpzROf44OsJNeVbmdRM4Pn05eoQ3nsRw1IB+fEzaihUd1b6IS2s1yVcEf1uwaRlYcUYbXh4bnX/47MQIsZw8GvlhBJgAJDCMMC95RyMiRHNxJ4nCyVdcmhD+d/U99jjBoMfxzyDeC0KvVIrehJSlPrRh8j9WP9thAjbUgx1A1Z1tcDDJGkW1E6TBVoBuuDzUgIfOeYZzIhAyUoBv1Huc4/DO0MkqNHMQ5wXg7WyOjh/Max8mLru2t8dnHAiEwRvxcjQS3Cq/G15WTVVAB6hhf2CH2Js1e6FK9FxqXrHo/2qyVNrrdH9pFaWVAnE2y604=","ak.pv":"263","ak.dpoabenc":"","ak.tf":i};if(""!==t)_["ak.ruds"]=t;var o={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))_["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(_)},rv:function(){var a=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:_,akDNSPreFetchDomain:n,init:function(){if(!o.i){var a=BOOMR.subscribe;a("before_beacon",o.av,null,null),a("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+    <body class="productlistingpage basepage page basicpage enable-animations" data-page-path="/content/rockwell-automation/global/na/en/products/hardware/programmable-controllers/logixedge-controllers/jcr:content">
+        
+
+        <div class="related-content-group" data-resource-path="/en-us/products/hardware/programmable-controllers/logixedge-controllers/jcr:content"/>
+        
+        
+            
+
+
+
+            
+
+    
+        <div class="loader">
+    <div class="loader-dots">
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+    </div>
+    <div class="loader-text">
+        Loading
+    </div>
+</div>
+
+        <header class="global-nav">
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<ra-header origin="https://www.rockwellautomation.com" path="/en-us/config-pages/header-v2-config" variation="racom" selection="normal" font-unit="rem">
+</ra-header>
+</header>
+    
+
+    
+        <div class="alert-banner-config" data-path="https://www.rockwellautomation.com/en-us/config-pages/alert-banner-config.html"></div>
+        <div class="fly-in-config" data-path="https://www.rockwellautomation.com/en-us/config-pages/fly-in-config.html" data-author-run-mode="false"></div>
+        <div class="abm-intent-drawer-config" data-path="https://www.rockwellautomation.com/en-us/config-pages/abm-intent-drawer-config/_jcr_content/root/main-par/abm_intent_drawer.html"></div>
+    
+
+    <div class="root responsivegrid">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <main class="main-wrapper responsivegrid aem-GridColumn aem-GridColumn--default--12" id="main-content">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="hero-banner aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+    
+    
+<script src="/etc.clientlibs/clientlibs/granite/utils.min.js"></script>
+
+
+
+
+
+
+    
+    
+        
+        
+        
+        
+
+        
+        
+        
+        
+
+        
+        
+        
+        
+
+        
+
+        
+        
+
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+        
+
+        
+        
+
+        
+        <div class="hero-banner__container" data-color="darkblue-purple" data-design-variant="investor-relations" data-no-shards data-no-media>
+
+            <picture class="hero-banner__background-image-wrapper">
+                <source media="(max-width: 768px)" srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/16x9-logixedge-controller-npi-hero-mobile.1024.jpg, https://rockwellautomation.scene7.com/is/image/rockwellautomation/16x9-logixedge-controller-npi-hero-mobile.2048.jpg 2x"/>
+                <img class="hero-banner__background-image" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/16x9-logixedge-controller-npi-hero.1920.jpg" srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/16x9-logixedge-controller-npi-hero.3840.jpg 2x" style="object-position: ;" alt="LogixEdge Controller"/>
+            </picture>
+
+            
+            <div class="hero-banner__text-container">
+                <div class="hero-banner__subtitle-container">
+                    
+                    <div class="hero-banner__subtitle-text">
+                        New Product
+                    </div>
+                    
+                </div>
+                <!-- <div data-sly-test="false" class="hero-banner__product-experience-label">
+                    <div class="breadcrumb" data-sly-resource=""></div>
+                </div> -->
+                
+                
+                
+                
+                <h1 class="hero-banner__title">LogixEdge Controllers</h1>
+                <div class="hero-banner__copy-text">LogixEdge™ Controllers unify Logix control with high‑performance edge computing to enable IT/OT convergence and support advanced workflows and analytics.</div>
+
+                
+                
+                <div class="hero-banner__buttons-container">
+                    
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+            
+            
+
+        </div>
+    
+
+    
+    
+
+</div>
+<div class="generic-container push-bottom-full aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="generic-container__inner">
+
+    
+    
+
+    
+    
+
+
+
+
+
+    
+    
+    <div class="column-control">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="column-control__container
+            
+             grid
+             collapse-cols-mobile
+             contextual-fence
+             direct-children-contextual-fence
+            
+            
+            
+            
+            ">
+
+        
+        <div class="row">
+            <div class="col-mobile none">
+
+
+
+
+
+    
+    
+    <div class="tabs panelcontainer">
+
+<div class="cmp-tabs" data-cmp-is="tabs">
+    <ol role="tablist" class="cmp-tabs__tablist" aria-multiselectable="false">
+        
+        <li role="tab" id="overview-tab" data-auto-id="tabs-a7285c7d8b-item-3c2af9803f-tab" class="cmp-tabs__tab cmp-tabs__tab--active" aria-controls="overview-tabpanel" aria-selected="true" tabindex="0" data-cmp-hook-tabs="tab">
+                Overview
+        </li>
+    </ol>
+    <a class="accordion-button">
+        <span class="expand-all active">Open All</span>
+        <span class="close-all">Close All</span>
+    </a>
+    <div class="tab-container">
+        
+        <a class="acc-button active" data-cmp-hook-tabs="accbutton">
+            <span>Overview</span>
+            
+    <span class=" raw-file-contents" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M24.486 12.447l-8.88 5.474-8.063-5.456a.8.8 0 1 0-.897 1.325l8.491 5.745c.261.176.6.184.868.018l9.32-5.745a.8.8 0 1 0-.839-1.36z"/></svg>
+    </span>
+
+        </a>
+        <div id="overview" role="tabpanel" aria-labelledby="overview-tab" tabindex="0" class="cmp-tabs__tabpanel cmp-tabs__tabpanel--active" data-cmp-hook-tabs="tabpanel"><div class="tab parbase">
+
+<div class="cmp-tab">
+    
+    <div class="cmp-tab__content">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="column-control push-top-half aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="column-control__container
+            
+             grid
+             collapse-cols-mobile
+             contextual-fence
+             direct-children-contextual-fence
+            
+            
+             align-items
+            
+             no-nested-padding">
+
+        
+        
+
+        
+        
+
+        
+        <div class="row">
+            <div class="col-desktop-9 col-mobile none">
+
+
+
+
+
+    
+    
+    <div class="text">
+
+<div class="cmp-text">
+    <p><span class="publication">The LogixEdge™ Controller is an IPC‑based platform that combines Logix control with modern edge compute capabilities in a single device, bringing high‑performance computing directly to the control layer to enable IT/OT convergence and support advanced applications such as analytics and containerized workloads.</span></p>
+<p><span class="publication ff-primary-medium-italic-rte">Available Q4 of calendar year 2026</span></p>
+
+</div>
+
+    
+
+</div>
+
+
+
+</div>
+            <div class="col-desktop-3 col-mobile none">
+
+
+
+
+
+    
+    
+    <div class="image">
+
+
+    
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        <picture class=" aspect-ratio--16x9">
+            
+            
+
+            
+            
+
+            
+
+            
+                
+                <source srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/ab-logo-16x9.2550.jpg" media="(min-width: 768px)"/>
+            
+            
+
+            
+            
+                
+                
+                    
+                    
+                    
+                        <img class="  main-image" width="2550" height="auto" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/ab-logo-16x9.2550.jpg" alt="Allen-Bradley logo" data-trackable="true"/>
+                    
+                
+            
+        </picture>
+
+        
+        
+
+        
+    
+
+
+
+
+    
+
+</div>
+
+
+
+</div>
+        </div>
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+    </div>
+
+
+
+</div>
+<div class="column-control push-top-full push-bottom-full aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="column-control__container
+            
+             grid
+             collapse-cols-mobile
+             contextual-fence
+             direct-children-contextual-fence
+            
+            
+            
+            
+             no-nested-padding">
+
+        
+        <div class="row">
+            <div class="col-mobile none">
+
+
+
+
+
+    
+    
+    <div class="divider parbase">
+
+
+
+
+
+
+
+<div class="ra-divider ra-divider--mt-none ra-divider--mb-none">
+    <hr/>
+</div>
+</div>
+
+
+
+</div>
+        </div>
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+    </div>
+
+</div>
+<div class="column-control push-top-full aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="column-control__container
+            
+             grid
+             collapse-cols-mobile
+             contextual-fence
+             direct-children-contextual-fence
+            
+            
+            
+            
+             no-nested-padding">
+
+        
+        <div class="row">
+            <div class="col-mobile none">
+
+
+
+
+
+    
+    
+    <div class="text">
+
+<div class="cmp-text">
+    <p style="text-align: center;"><span class="h3">Recommended for You</span></p>
+
+</div>
+
+    
+
+</div>
+
+
+
+</div>
+        </div>
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+    </div>
+
+</div>
+<div class="column-control push-top-half aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="column-control__container
+            
+             grid
+             collapse-cols-mobile
+             contextual-fence
+             direct-children-contextual-fence
+            
+            
+            
+            
+             no-nested-padding">
+
+        
+        
+
+        
+        
+
+        
+        <div class="row">
+            <div class="col-desktop-4 col-mobile none">
+
+
+
+
+
+    
+    
+    <div class="content-tile">
+
+
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    <div id="content-tile--1556712152" class="content-tile__container vertical layout-card " aria-roledescription="content-tile" data-type="static" data-content-type="all">
+
+        
+
+            <div class="teaser">
+                <div class="teaser__container is-link content-tile__static-container vertical layout-card">
+                    <a href="/en-us/products/software/factorytalk/designsuite/studio-5000/studio-5000-logix-designer.html" class="teaser__link-over">Studio 5000 Logix Designer</a>
+                    <div class="teaser__wrapper">
+                        
+                        <div class="teaser__image content-tile__image aspect-ratio--16x9">
+                            
+    
+    
+    
+        
+        
+        
+
+        
+
+        
+
+        
+        <picture>
+            <img class=" main-image" data-ot-ignore src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/Studio5000LogixDesigner_1515843725.853.jpg" alt="Studio 5000 Logix Designer"/>
+        </picture>
+
+        
+    
+
+                            
+                        </div>
+                        <div class="teaser__content">
+                            <div class="product-experience__teaser-flag">
+                                
+                            </div>
+                            <div class="teaser__text-content">
+                                
+                                <div class="teaser__title">
+                                    Studio 5000 Logix Designer
+                                </div>
+                                <div class="teaser__text">
+                                    Studio 5000 Logix Designer® is an intuitive programming environment that allows users to work collaboratively to design and maintain their systems.
+                                </div>
+                            </div>
+                            
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+         
+        
+        
+
+        
+        
+    </div>
+
+
+</div>
+
+
+
+</div>
+            <div class="col-desktop-4 col-mobile none">
+
+
+
+
+
+    
+    
+    <div class="content-tile">
+
+
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    <div id="content-tile--1394586131" class="content-tile__container vertical layout-card " aria-roledescription="content-tile" data-type="static" data-content-type="all">
+
+        
+
+            <div class="teaser">
+                <div class="teaser__container is-link content-tile__static-container vertical layout-card">
+                    <a href="/en-us/products/software/factorytalk/design-studio.html" class="teaser__link-over">FactoryTalk Design Studio PLC Programming Software</a>
+                    <div class="teaser__wrapper">
+                        
+                        <div class="teaser__image content-tile__image aspect-ratio--16x9">
+                            
+    
+    
+    
+        
+        
+        
+
+        
+
+        
+
+        
+        <picture>
+            <img class=" main-image" data-ot-ignore src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/engineers-using-plc-programming-software-for-factory-automation-ADO567632092-2.853.jpg" alt="FactoryTalk Design Studio PLC Programming Software"/>
+        </picture>
+
+        
+    
+
+                            
+                        </div>
+                        <div class="teaser__content">
+                            <div class="product-experience__teaser-flag">
+                                
+                            </div>
+                            <div class="teaser__text-content">
+                                
+                                <div class="teaser__title">
+                                    FactoryTalk Design Studio PLC Programming Software
+                                </div>
+                                <div class="teaser__text">
+                                    Cloud-based PLC programming software helps controls engineers design safer systems that cost less to build and maintain. Commission projects faster.
+                                </div>
+                            </div>
+                            
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+         
+        
+        
+
+        
+        
+    </div>
+
+
+</div>
+
+
+
+</div>
+            <div class="col-desktop-4 col-mobile none">
+
+
+
+
+
+    
+    
+    <div class="content-tile">
+
+
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    <div id="content-tile-2055909294" class="content-tile__container vertical layout-card " aria-roledescription="content-tile" data-type="static" data-content-type="all">
+
+        
+
+            <div class="teaser">
+                <div class="teaser__container is-link content-tile__static-container vertical layout-card">
+                    <a href="/en-us/products/software/factorytalk/optix.html" class="teaser__link-over">FactoryTalk Optix</a>
+                    <div class="teaser__wrapper">
+                        
+                        <div class="teaser__image content-tile__image aspect-ratio--16x9">
+                            
+    
+    
+    
+        
+        
+        
+
+        
+
+        
+
+        
+        <picture>
+            <img class=" main-image" data-ot-ignore src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/16x9-male-using-ft-optix-panel-hmi-screen.853.jpg" alt="FactoryTalk Optix"/>
+        </picture>
+
+        
+    
+
+                            
+                        </div>
+                        <div class="teaser__content">
+                            <div class="product-experience__teaser-flag">
+                                
+                            </div>
+                            <div class="teaser__text-content">
+                                
+                                <div class="teaser__title">
+                                    FactoryTalk Optix
+                                </div>
+                                <div class="teaser__text">
+                                    Achieve your HMI, IIoT, Edge and Data Platform vision with collaboration, scalability and interoperability that improve deliverables and efficiency.
+                                </div>
+                            </div>
+                            
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+         
+        
+        
+
+        
+        
+    </div>
+
+
+</div>
+
+
+
+</div>
+        </div>
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+    </div>
+
+</div>
+<div class="column-control push-top-full aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="column-control__container
+            
+             grid
+             collapse-cols-mobile
+            
+            
+            
+            
+            
+            
+             no-nested-padding">
+
+        
+        <div class="row">
+            <div class="col-mobile ">
+
+
+
+
+
+    
+    
+    <div class="text">
+
+<div class="cmp-text">
+    <p style="text-align: center;"><span class="h4">You may also be interested in</span></p>
+
+</div>
+
+    
+
+</div>
+
+
+
+</div>
+        </div>
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+    </div>
+
+</div>
+<div class="column-control push-top-small aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="column-control__container
+            
+             grid
+             collapse-cols-mobile
+             contextual-fence
+             direct-children-contextual-fence
+            
+            
+            
+            
+             no-nested-padding">
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        <div class="row">
+            <div class="col-desktop-3 col-mobile none">
+
+
+
+
+
+    
+    
+    <div class="content-tile">
+
+
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    <div id="content-tile-1507400175" class="content-tile__container vertical layout-card " aria-roledescription="content-tile" data-type="dynamic" data-personalization-type="related" data-content-type="product" data-exclude-pdf="true">
+
+         
+        
+        <div class="teaser">
+            <div class="loader">
+    <div class="loader-dots">
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+    </div>
+    <div class="loader-text">
+        Loading
+    </div>
+</div>
+
+        </div>
+
+        
+        
+    </div>
+
+
+</div>
+
+
+
+</div>
+            <div class="col-desktop-3 col-mobile none">
+
+
+
+
+
+    
+    
+    <div class="content-tile">
+
+
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    <div id="content-tile--103248506" class="content-tile__container vertical layout-card " aria-roledescription="content-tile" data-type="dynamic" data-personalization-type="related" data-content-type="product" data-exclude-pdf="true">
+
+         
+        
+        <div class="teaser">
+            <div class="loader">
+    <div class="loader-dots">
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+    </div>
+    <div class="loader-text">
+        Loading
+    </div>
+</div>
+
+        </div>
+
+        
+        
+    </div>
+
+
+</div>
+
+
+
+</div>
+            <div class="col-desktop-3 col-mobile none">
+
+
+
+
+
+    
+    
+    <div class="content-tile">
+
+
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    <div id="content-tile--947720377" class="content-tile__container vertical layout-card " aria-roledescription="content-tile" data-type="dynamic" data-personalization-type="personalized" data-content-type="product" data-exclude-pdf="true">
+
+         
+        
+        <div class="teaser">
+            <div class="loader">
+    <div class="loader-dots">
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+    </div>
+    <div class="loader-text">
+        Loading
+    </div>
+</div>
+
+        </div>
+
+        
+        
+    </div>
+
+
+</div>
+
+
+
+</div>
+            <div class="col-desktop-3 col-mobile none">
+
+
+
+
+
+    
+    
+    <div class="content-tile">
+
+
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    <div id="content-tile--1792192248" class="content-tile__container vertical layout-card " aria-roledescription="content-tile" data-type="dynamic" data-personalization-type="personalized" data-content-type="product" data-exclude-pdf="true">
+
+         
+        
+        <div class="teaser">
+            <div class="loader">
+    <div class="loader-dots">
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+    </div>
+    <div class="loader-text">
+        Loading
+    </div>
+</div>
+
+        </div>
+
+        
+        
+    </div>
+
+
+</div>
+
+
+
+</div>
+        </div>
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+    </div>
+
+</div>
+
+    
+</div>
+
+    </div>
+</div>
+</div>
+</div>
+    </div>
+
+    
+</div>
+</div>
+
+
+
+</div>
+        </div>
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+    </div>
+
+</div>
+
+
+
+
+
+    
+    <div class="generic-container__backgrounds">
+        
+        
+
+        
+        <div class="generic-container__gradient gradient no-gradient"></div>
+        
+
+        
+        <div class="generic-container__responsive-images">
+            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        
+
+        
+        
+
+        
+    
+
+
+        </div>
+
+        
+        
+
+        
+        <div class="generic-container__bg-color generic-container__bg-white"></div>
+    </div>
+</div>
+</div>
+<div class="embed contentfragment aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+    
+
+
+
+    
+
+</div>
+<div class="embed contentfragment aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+    <div class="cmp-embed">
+        <script>
+try {
+    const pathParts = window.location.pathname.replace(/^\/+/, '').split('/');
+
+    // Look for 'hardware' and ensure it's the second-to-last part
+    const hardwareIndex = pathParts.indexOf('products') !== -1 
+        ? pathParts.indexOf('hardware')
+        : -1;
+
+    const isProductCategoryPage = hardwareIndex > -1 && hardwareIndex === pathParts.length - 2;
+
+    if (isProductCategoryPage) {
+        console.log("### is product category page");
+        document.querySelectorAll('.product-family-list__product-title').forEach((titleEl, index) => {
+            const orderStr = String(index + 1).padStart(4, '0');
+            const hiddenSpan = document.createElement('span');
+            hiddenSpan.className = 'hidden';
+            hiddenSpan.textContent = orderStr;
+            titleEl.prepend(hiddenSpan);
+        });
+    } else {
+         console.log("### NOT product category page");
+    }
+} catch (e) {
+    // Optional: log error if needed
+}
+</script>
+    </div>
+
+
+
+    
+
+</div>
+
+    
+</div>
+</main>
+<div class="floating-button aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+</div>
+<div class="footer aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+
+
+<nav class="breadcrumb__nav">
+
+    <ol class="breadcrumb__list" itemscope itemtype="http://schema.org/BreadcrumbList">
+        <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            
+    <span class="breadcrumb__prev-arrow raw-file-contents" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-labelledby="chevronLeftTitle chevronLeftDesc" role="img"><title id="chevronLeftTitle">Chevron Left</title><desc id="chevronLeftDesc">Chevron Left</desc><path d="M14.08 15.606l5.455-8.063a.8.8 0 1 0-1.325-.897l-5.745 8.491a.799.799 0 0 0-.018.868l5.745 9.32a.8.8 0 1 0 1.362-.84l-5.474-8.879z"/></svg>
+    </span>
+
+            <a href="https://www.rockwellautomation.com/en-us.html" class="breadcrumb__link" itemprop="item">
+                <span class="breadcrumb__link_text" itemprop="name">Rockwell Automation Home</span>
+            </a>
+            
+    <span class="breadcrumb__arrow raw-file-contents" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true">    <path d="M12.446 7.514l5.474 8.88-5.455 8.063a.8.8 0 1 0 1.325.897l5.745-8.491a.799.799 0 0 0 .018-.868l-5.745-9.32a.8.8 0 0 0-1.362.839z"/></svg>
+    </span>
+
+            <meta itemprop="position" content="1"/>
+        </li>
+    
+        <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            
+    <span class="breadcrumb__prev-arrow raw-file-contents" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-labelledby="chevronLeftTitle chevronLeftDesc" role="img"><title id="chevronLeftTitle">Chevron Left</title><desc id="chevronLeftDesc">Chevron Left</desc><path d="M14.08 15.606l5.455-8.063a.8.8 0 1 0-1.325-.897l-5.745 8.491a.799.799 0 0 0-.018.868l5.745 9.32a.8.8 0 1 0 1.362-.84l-5.474-8.879z"/></svg>
+    </span>
+
+            <a href="https://www.rockwellautomation.com/en-us/products.html" class="breadcrumb__link" itemprop="item">
+                <span class="breadcrumb__link_text" itemprop="name">Pro...</span>
+            </a>
+            
+    <span class="breadcrumb__arrow raw-file-contents" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true">    <path d="M12.446 7.514l5.474 8.88-5.455 8.063a.8.8 0 1 0 1.325.897l5.745-8.491a.799.799 0 0 0 .018-.868l-5.745-9.32a.8.8 0 0 0-1.362.839z"/></svg>
+    </span>
+
+            <meta itemprop="position" content="2"/>
+        </li>
+    
+        <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            
+    <span class="breadcrumb__prev-arrow raw-file-contents" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-labelledby="chevronLeftTitle chevronLeftDesc" role="img"><title id="chevronLeftTitle">Chevron Left</title><desc id="chevronLeftDesc">Chevron Left</desc><path d="M14.08 15.606l5.455-8.063a.8.8 0 1 0-1.325-.897l-5.745 8.491a.799.799 0 0 0-.018.868l5.745 9.32a.8.8 0 1 0 1.362-.84l-5.474-8.879z"/></svg>
+    </span>
+
+            <a href="https://www.rockwellautomation.com/en-us/products/hardware.html" class="breadcrumb__link" itemprop="item">
+                <span class="breadcrumb__link_text" itemprop="name">Hardware Catalog</span>
+            </a>
+            
+    <span class="breadcrumb__arrow raw-file-contents" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true">    <path d="M12.446 7.514l5.474 8.88-5.455 8.063a.8.8 0 1 0 1.325.897l5.745-8.491a.799.799 0 0 0 .018-.868l-5.745-9.32a.8.8 0 0 0-1.362.839z"/></svg>
+    </span>
+
+            <meta itemprop="position" content="3"/>
+        </li>
+    
+        <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            
+    <span class="breadcrumb__prev-arrow raw-file-contents" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-labelledby="chevronLeftTitle chevronLeftDesc" role="img"><title id="chevronLeftTitle">Chevron Left</title><desc id="chevronLeftDesc">Chevron Left</desc><path d="M14.08 15.606l5.455-8.063a.8.8 0 1 0-1.325-.897l-5.745 8.491a.799.799 0 0 0-.018.868l5.745 9.32a.8.8 0 1 0 1.362-.84l-5.474-8.879z"/></svg>
+    </span>
+
+            <a href="https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers.html" class="breadcrumb__link" itemprop="item">
+                <span class="breadcrumb__link_text" itemprop="name">Programmable Controllers</span>
+            </a>
+            
+    <span class="breadcrumb__arrow raw-file-contents" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true">    <path d="M12.446 7.514l5.474 8.88-5.455 8.063a.8.8 0 1 0 1.325.897l5.745-8.491a.799.799 0 0 0 .018-.868l-5.745-9.32a.8.8 0 0 0-1.362.839z"/></svg>
+    </span>
+
+            <meta itemprop="position" content="4"/>
+        </li>
+    
+        <li class="breadcrumb__item breadcrumb__item--active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            
+    <span class="breadcrumb__prev-arrow raw-file-contents" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-labelledby="chevronLeftTitle chevronLeftDesc" role="img"><title id="chevronLeftTitle">Chevron Left</title><desc id="chevronLeftDesc">Chevron Left</desc><path d="M14.08 15.606l5.455-8.063a.8.8 0 1 0-1.325-.897l-5.745 8.491a.799.799 0 0 0-.018.868l5.745 9.32a.8.8 0 1 0 1.362-.84l-5.474-8.879z"/></svg>
+    </span>
+
+            
+                <span class="breadcrumb__link_text" itemprop="name">LogixEdge Controllers</span>
+            
+            
+    <span class="breadcrumb__arrow raw-file-contents" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true">    <path d="M12.446 7.514l5.474 8.88-5.455 8.063a.8.8 0 1 0 1.325.897l5.745-8.491a.799.799 0 0 0 .018-.868l-5.745-9.32a.8.8 0 0 0-1.362.839z"/></svg>
+    </span>
+
+            <meta itemprop="position" content="5"/>
+        </li>
+    </ol>
+
+</nav>
+
+
+    
+
+
+
+
+<ra-footer origin="https://www.rockwellautomation.com" path="/en-us/config-pages/footer" variation="racom" font-unit="rem"></ra-footer>
+
+
+    
+
+</div>
+
+    
+</div>
+</div>
+
+
+    <div class="ai-translations-disclaimer-text hidden">
+        
+    </div>
+    
+    
+    
+
+            
+            <div class="pdf-viewer__container" style="display: none;">
+  <div class="pdf-viewer__close-button-container">
+    <button class="pdf-viewer__close-button">&#x2715</button>
+  </div>
+  <div id="cmp-pdf-viewer-container" class="cmp-pdf-viewer cmp-pdf-viewer-container"></div>
+</div>
+
+            <div class="cookie-popup" style="display: none;">
+  <div class="cookie-popup__container">
+    <div class="cookie-popup__content">
+      <div class="cookie-popup__header">
+        Please update your cookie preferences to continue.
+      </div>
+      <div class="cookie-popup__text">
+        This feature requires cookies to enhance your experience. Please update your preferences to allow for these cookies:
+      </div>
+      <ul class="cookie-popup__required-cookies">
+        <li class="cookie-popup__social-media-cookies">
+          Social Media Cookies
+        </li>
+        <li class="cookie-popup__functional-cookies">
+          Functional Cookies
+        </li>
+        <li class="cookie-popup__performance-cookies">
+          Performance Cookies
+        </li>
+        <li class="cookie-popup__marketing-cookies">
+          Marketing Cookies
+        </li>
+        <li class="cookie-popup__all-cookies">
+          All Cookies
+        </li>
+      </ul>
+      <div class="cookie-popup__text cookie-popup__privacy-text">
+        You can update your preferences at any time. For more information please see our {0}
+        <a class="cookie-popup__link" href="https://www.rockwellautomation.com/en-us/company/about-us/legal-notices/privacy-and-cookies-policy.html">Privacy Policy</a>
+      </div>
+      <div class="cookie-popup__buttons">
+          <button class="cookie-popup__button cookie-popup__button-cancel">Cancel</button>
+          <button class="cookie-popup__button cookie-popup__button-accept ot-sdk-show-settings">Go to Cookie Settings</button>
+      </div>
+    </div>
+    <div class="cookie-popup__close">
+      
+    <span class=" raw-file-contents" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-labelledby="closeTitle closeDesc" role="img"><title id="closeTitle">Close</title><desc id="closeDesc">Close</desc><path d="M4.83 27.141c.339.343.939.342 1.276.001l9.889-9.835 9.898 9.826c.17.172.396.265.639.265s.469-.093.638-.264a.896.896 0 0 0 .264-.638.896.896 0 0 0-.264-.638l-9.9-9.827 9.9-9.89a.903.903 0 0 0 0-1.276.905.905 0 0 0-1.276 0l-9.9 9.89-9.888-9.89a.896.896 0 0 0-.638-.263.905.905 0 0 0-.637 1.541l9.887 9.888-9.888 9.835a.903.903 0 0 0 0 1.275z"/></svg>
+    </span>
+
+    </div>
+  </div>
+</div>
+
+            
+    
+    
+
+
+    <div class="cloudservice testandtarget"><script type="text/javascript">
+    CQ_Analytics.TestTarget.maxProfileParams = 11;
+
+    if (CQ_Analytics.CCM) {
+        if (CQ_Analytics.CCM.areStoresInitialized) {
+            CQ_Analytics.TestTarget.registerMboxUpdateCalls();
+        } else {
+            CQ_Analytics.CCM.addListener("storesinitialize", function (e) {
+                CQ_Analytics.TestTarget.registerMboxUpdateCalls();
+            });
+        }
+    } else {
+        // client context not there, still register calls
+        CQ_Analytics.TestTarget.registerMboxUpdateCalls();
+    }
+    </script>
+    </div>
+
+
+    
+
+    
+    
+    
+
+            
+
+        
+        
+        
+        <script data-ot-ignore src="/etc.clientlibs/rockwell-automation/clientlibs/clientlib-site/resources/build/site.bundle.js?1789658970888" async></script>
+
+        <!-- External GCDC script - kept outside clientlib since it's an external resource -->
+        <script src="https://app.gatedcontent.com/scripts/14319476/app.js" data-ot-ignore class="optanon-category-C0001" type="text/javascript" async></script>
+    </body>
+</html>

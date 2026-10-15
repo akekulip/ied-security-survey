@@ -1,0 +1,4239 @@
+<!DOCTYPE HTML>
+<html lang="en-US" data-timezone="America/Chicago">
+    <head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="UTF-8"/>
+    
+    <title>Smart Manufacturing Industrial Automation | Rockwell Automation | US</title>
+    <link rel="canonical" href="https://www.rockwellautomation.com/en-us.html"/>
+
+    
+    
+
+    
+        <link rel="alternate" hreflang="en-ie" href="https://www.rockwellautomation.com/en-ie.html"/>
+    
+        <link rel="alternate" hreflang="en-us" href="https://www.rockwellautomation.com/en-us.html"/>
+    
+        <link rel="alternate" hreflang="en-ca" href="https://www.rockwellautomation.com/en-ca.html"/>
+    
+        <link rel="alternate" hreflang="es-pr" href="https://www.rockwellautomation.com/es-pr.html"/>
+    
+        <link rel="alternate" hreflang="en-il" href="https://www.rockwellautomation.com/en-il.html"/>
+    
+        <link rel="alternate" hreflang="en-in" href="https://www.rockwellautomation.com/en-in.html"/>
+    
+        <link rel="alternate" hreflang="en-za" href="https://www.rockwellautomation.com/en-za.html"/>
+    
+        <link rel="alternate" hreflang="zh-cn" href="https://www.rockwellautomation.com.cn"/>
+    
+        <link rel="alternate" hreflang="de-at" href="https://www.rockwellautomation.com/de-at.html"/>
+    
+        <link rel="alternate" hreflang="fr-ch" href="https://www.rockwellautomation.com/fr-ch.html"/>
+    
+        <link rel="alternate" hreflang="en-au" href="https://www.rockwellautomation.com/en-au.html"/>
+    
+        <link rel="alternate" hreflang="en-cz" href="https://www.rockwellautomation.com/en-cz.html"/>
+    
+        <link rel="alternate" hreflang="de-ch" href="https://www.rockwellautomation.com/de-ch.html"/>
+    
+        <link rel="alternate" hreflang="ja-jp" href="https://www.rockwellautomation.com/ja-jp.html"/>
+    
+        <link rel="alternate" hreflang="en-ro" href="https://www.rockwellautomation.com/en-ro.html"/>
+    
+        <link rel="alternate" hreflang="en-pl" href="https://www.rockwellautomation.com/en-pl.html"/>
+    
+        <link rel="alternate" hreflang="de-de" href="https://www.rockwellautomation.com/de-de.html"/>
+    
+        <link rel="alternate" hreflang="en-tr" href="https://www.rockwellautomation.com/en-tr.html"/>
+    
+        <link rel="alternate" hreflang="en-nl" href="https://www.rockwellautomation.com/en-nl.html"/>
+    
+        <link rel="alternate" hreflang="en-no" href="https://www.rockwellautomation.com/en-no.html"/>
+    
+        <link rel="alternate" hreflang="zh-tw" href="https://www.rockwellautomation.com/zh-tw.html"/>
+    
+        <link rel="alternate" hreflang="en-fi" href="https://www.rockwellautomation.com/en-fi.html"/>
+    
+        <link rel="alternate" hreflang="en-ru" href="https://www.rockwellautomation.com/en-ru.html"/>
+    
+        <link rel="alternate" hreflang="en-be" href="https://www.rockwellautomation.com/en-be.html"/>
+    
+        <link rel="alternate" hreflang="pt-br" href="https://www.rockwellautomation.com/pt-br.html"/>
+    
+        <link rel="alternate" hreflang="ko-kr" href="https://www.rockwellautomation.com/ko-kr.html"/>
+    
+        <link rel="alternate" hreflang="en-pr" href="https://www.rockwellautomation.com/en-pr.html"/>
+    
+        <link rel="alternate" hreflang="es-es" href="https://www.rockwellautomation.com/es-es.html"/>
+    
+        <link rel="alternate" hreflang="en-dk" href="https://www.rockwellautomation.com/en-dk.html"/>
+    
+        <link rel="alternate" hreflang="fr-ca" href="https://www.rockwellautomation.com/fr-ca.html"/>
+    
+        <link rel="alternate" hreflang="es-mx" href="https://www.rockwellautomation.com/es-mx.html"/>
+    
+        <link rel="alternate" hreflang="es-co" href="https://www.rockwellautomation.com/es-co.html"/>
+    
+        <link rel="alternate" hreflang="en-hu" href="https://www.rockwellautomation.com/en-hu.html"/>
+    
+        <link rel="alternate" hreflang="it-it" href="https://www.rockwellautomation.com/it-it.html"/>
+    
+        <link rel="alternate" hreflang="en-ua" href="https://www.rockwellautomation.com/en-ua.html"/>
+    
+        <link rel="alternate" hreflang="en-nz" href="https://www.rockwellautomation.com/en-nz.html"/>
+    
+        <link rel="alternate" hreflang="pt-pt" href="https://www.rockwellautomation.com/pt-pt.html"/>
+    
+        <link rel="alternate" hreflang="es-ar" href="https://www.rockwellautomation.com/es-ar.html"/>
+    
+        <link rel="alternate" hreflang="fr-be" href="https://www.rockwellautomation.com/fr-be.html"/>
+    
+        <link rel="alternate" hreflang="en-se" href="https://www.rockwellautomation.com/en-se.html"/>
+    
+        <link rel="alternate" hreflang="en-mde" href="https://www.rockwellautomation.com/en-mde.html"/>
+    
+        <link rel="alternate" hreflang="en-sg" href="https://www.rockwellautomation.com/en-sg.html"/>
+    
+        <link rel="alternate" hreflang="fr-fr" href="https://www.rockwellautomation.com/fr-fr.html"/>
+    
+        <link rel="alternate" hreflang="en-gb" href="https://www.rockwellautomation.com/en-gb.html"/>
+    
+        <link rel="alternate" hreflang="en-id" href="https://www.rockwellautomation.com/en-id.html"/>
+    
+
+    
+    <script src="/etc.clientlibs/rockwell-automation/clientlibs/clientlib-site/resources/build/headScripts.bundle.js?1789661636809" data-ot-ignore></script>
+
+    
+    <link rel="preconnect" href="https://rockwellautomation.scene7.com/" crossorigin/>
+    <link rel="dns-prefetch" href="https://rockwellautomation.scene7.com/"/>
+    <link rel="dns-prefetch" href="https://map.rockwellautomation.com/"/>
+    <link rel="dns-prefetch" href="https://raselect.rockwellautomation.com/"/>
+    <link rel="dns-prefetch" href="https://assets.adobedtm.com/"/>
+    <link rel="dns-prefetch" href="https://api.company-target.com/"/>
+    <link rel="dns-prefetch" href="https://cdn.cookielaw.org/"/>
+    <link rel="dns-prefetch" href="https://s.go-mpulse.net/"/>
+    <link rel="dns-prefetch" href="https://www.google-analytics.com/"/>
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com/"/>
+    <link rel="dns-prefetch" href="https://tag.nrich.ai/"/>
+    <link rel="dns-prefetch" href="https://c.oracleinfinity.io/"/>
+
+    
+    <link rel="preload" href="/etc.clientlibs/rockwell-aem-base/clientlibs/clientlib-base/resources/fonts/barlow-bold-webfont.woff2?zdfsaf1" as="font" type="font/woff2" crossorigin/>
+    <link rel="preload" href="/etc.clientlibs/rockwell-aem-base/clientlibs/clientlib-base/resources/fonts/barlow-regular-webfont.woff2?zdfsaf1" as="font" type="font/woff2" crossorigin/>
+    <link rel="preload" href="/etc.clientlibs/rockwell-aem-base/clientlibs/clientlib-base/resources/fonts/barlow-medium-webfont.woff2?zdfsaf1" as="font" type="font/woff2" crossorigin/>
+
+    
+
+    
+    
+    <meta name="description" content="We connect the imaginations of people with the potential of technology to expand what is humanly possible, making the world more productive and sustainable."/>
+    <meta name="template" content="homepage"/>
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    
+    <meta property="language" content="en"/>
+    <meta property="country" content="US"/>
+    
+    
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="Rockwell Automation"/>
+    <meta property="og:title" content="Smart Manufacturing Industrial Automation | Rockwell Automation | US"/>
+    <meta property="og:url" content="https://www.rockwellautomation.com/en-us.html"/>
+    <meta property="og:description" content="We connect the imaginations of people with the potential of technology to expand what is humanly possible, making the world more productive and sustainable."/>
+    <meta property="og:image" content="https://rockwellautomation.scene7.com/is/image/rockwellautomation/16x9-robot-arms-digital-factory-production-tech-AdobeStock_421975325.3840.jpg"/>
+    <meta name="twitter:card" content="summary"/>
+
+    <!-- Corporation Schema for en-us Homepage Only -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Corporation",
+            "name": "Rockwell Automation",
+            "legalName": "Rockwell Automation, Inc.",
+            "url": "https://www.rockwellautomation.com/",
+            "logo": "https://www.rockwellautomation.com/content/dam/rockwell-automation/sites/images/logos/2019_Logo_rgb_RA_Bug-LeftText_color.svg",
+            "foundingDate": "1903",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "1201 South Second Street",
+                "addressLocality": "Milwaukee",
+                "addressRegion": "WI",
+                "postalCode": "53204-2496",
+                "addressCountry": "US"
+            },
+            "telephone": "+1-414-382-2000",
+            "sameAs": [
+                "https://www.linkedin.com/company/rockwell-automation",
+                "https://x.com/ROKAutomation",
+                "https://www.facebook.com/ROKAutomation/",
+                "https://www.instagram.com/rokautomation/",
+                "https://www.youtube.com/@RockwellautomationInc",
+                "https://en.wikipedia.org/wiki/Rockwell_Automation"
+            ],
+            "contactPoint": [
+                {
+                    "@type": "ContactPoint",
+                    "contactType": "Customer Support",
+                    "telephone": "+1-414-382-2000"
+                },
+                {
+                    "@type": "ContactPoint",
+                    "contactType": "Investor Relations",
+                    "telephone": "+1-414-382-8511"
+                },
+                {
+                    "@type": "ContactPoint",
+                    "contactType": "Shareowner Relations",
+                    "telephone": "+1-414-382-8410"
+                },
+                {
+                    "@type": "ContactPoint",
+                    "contactType": "Media Relations",
+                    "telephone": "+1-414-553-4661",
+                    "email": "mpelzer@rockwellautomation.com"
+                }
+            ]
+        }
+    </script>
+
+    
+
+    <!-- Product Schema Markup for Product Category and Family Pages -->
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    <!-- OneTrust Cookies Consent Notice start -->
+    
+        <!-- Privacy Id -->
+        
+            <!-- SDK Script -->
+            <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="78a8d521-a282-4300-8e9d-2eec6c0eaa70"></script>
+            <!-- Auto Block -->
+            <script type="text/javascript" src="https://cdn.cookielaw.org/consent/78a8d521-a282-4300-8e9d-2eec6c0eaa70/OtAutoBlock.js"></script>
+        
+        <!-- OneTrust Wrapper -->
+        
+        <script src="/etc.clientlibs/rockwell-automation/clientlibs/clientlib-site/resources/build/onetrustScripts.bundle.js?1744903565144" type="text/javascript"></script>
+    
+    <!-- OneTrust Cookies Consent Notice end -->
+
+    <!-- Hide breadcrumb, footer and floating-button when hideHeaderFooter=true param is found. This is for Binge Experience. -->
+    
+
+    
+    
+    <script type="text/javascript">
+            if ( !window.CQ_Analytics ) {
+                window.CQ_Analytics = {};
+            }
+            if ( !CQ_Analytics.TestTarget ) {
+                CQ_Analytics.TestTarget = {};
+            }
+            CQ_Analytics.TestTarget.clientCode = 'rockwellautomation';
+            CQ_Analytics.TestTarget.currentPagePath = '\/content\/rockwell\u002Dautomation\/global\/na\/en';
+        </script>
+    <script src="/etc.clientlibs/cq/testandtarget/clientlibs/testandtarget/parameters.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/personalization/integrations/commons.min.js"></script>
+<script src="/etc.clientlibs/cq/testandtarget/clientlibs/testandtarget/atjs-integration.min.js"></script>
+
+
+    
+
+    
+    
+    
+
+
+    
+        <style>
+.aem-AuthorLayer-Edit .new-hero-wrapper-outer{min-height:500px;}
+</style>
+    
+        <style>
+@media only screen and (min-width: 1269px) {
+div.new-hero-text{width:55%;}
+}
+</style>
+    
+
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/etc.clientlibs/rockwell-aem-base/clientlibs/clientlib-base/resources/favicons/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/etc.clientlibs/rockwell-aem-base/clientlibs/clientlib-base/resources/favicons/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="/etc.clientlibs/rockwell-aem-base/clientlibs/clientlib-base/resources/favicons/favicon-16x16.png"/>
+    <link rel="manifest" href="/etc.clientlibs/rockwell-aem-base/clientlibs/clientlib-base/resources/favicons/site.webmanifest"/>
+
+    <script type="module" src="https://www.rockwellautomation.com/resources/components/platform/webcomponents/build/racom.esm.js" data-ot-ignore></script>
+    <script nomodule src="https://www.rockwellautomation.com/resources/components/platform/webcomponents/build/racom.js" data-ot-ignore></script>
+    <link rel="stylesheet" href="https://www.rockwellautomation.com/resources/components/platform/webcomponents/build/racom.css"/>
+
+    
+    <link rel="stylesheet" href="/etc.clientlibs/rockwell-automation/clientlibs/clientlib-site/resources/build/site.bundle.css?1789661636782"/>
+
+    
+    
+    
+
+    <!-- Data Layer implementation remains as inline script due to HTL expressions -->
+    <script data-ot-ignore>
+        (function () {
+            var pageEventData = {};
+
+            pageEventData.pageInfo = {};
+            rockwellUtils.addVal(pageEventData.pageInfo, "canonicalUrl", "https://www.rockwellautomation.com/en-us.html");
+            // When canonical URL is empty (e.g. error page response) then simply
+            // grab the current URL from the user's browser.
+            if (!pageEventData.pageInfo.canonicalUrl) {
+                pageEventData.pageInfo.canonicalUrl = window.location.href.split('?')[0];
+            }
+            rockwellUtils.addVal(pageEventData.pageInfo, "pageName", "en");
+            rockwellUtils.addVal(pageEventData.pageInfo, "pageModified", "2026-08-06T14:13:06+0000");
+            rockwellUtils.addVal(pageEventData.pageInfo, "pageType", "");
+            rockwellUtils.addVal(pageEventData.pageInfo, "language", "en");
+            rockwellUtils.addVal(pageEventData.pageInfo, "environment", "prod");
+            rockwellUtils.addVal(pageEventData.pageInfo, "localTimestamp", rockwellUtils.getLocalTimestamp());
+            rockwellUtils.addVal(pageEventData.pageInfo, "siteSection", "homepage");
+            rockwellUtils.addVal(pageEventData.pageInfo, "siteSubsection1", "");
+            rockwellUtils.addVal(pageEventData.pageInfo, "siteSubsection2", "");
+            rockwellUtils.addVal(pageEventData.pageInfo, "siteSubsection3", "");
+            rockwellUtils.addVal(pageEventData.pageInfo, "siteSubsection4", "");
+
+            pageEventData.contentInfo = {};
+            rockwellUtils.addVal(pageEventData.contentInfo, "author", "");
+            rockwellUtils.addVal(pageEventData.contentInfo, "publicationDate", "");
+            rockwellUtils.addVal(pageEventData.contentInfo, "contentTags", "", ",");
+
+            var pageViewData = {};
+
+            var isHomePage = false;
+            if ("true" === "true") {
+                isHomePage = true;
+            }
+            var isLanguageSelectorPage = "homepage" === "languageselectorpage";
+            var domain = window.location.host.split(".");
+            var webDomain = domain.length > 2 ? domain[1] : domain[0];
+            var subDomain = domain.length > 2 ? (domain[0] != "www" ? domain[0] : "n/a") : "n/a"
+            let pageName = webDomain;
+
+            if (isHomePage) {
+                rockwellUtils.addVal(pageViewData, "slug", "homepage");
+                rockwellUtils.addVal(pageViewData, "path", "/");
+                pageName += ":homepage";
+            } else {
+                pageName += "";
+                if (isLanguageSelectorPage) {
+                    pageName +=":lang-selection";
+                }
+                rockwellUtils.addVal(pageViewData, "slug", "en");
+                rockwellUtils.addVal(pageViewData, "path", window.location.pathname.replace(".html", ""));
+            }
+
+            rockwellUtils.addVal(pageViewData, "pageName", pageName);
+            rockwellUtils.addVal(pageViewData, "pageType", "");
+            // When canonical URL is empty (e.g. error page response) then simply
+            // grab the current URL from the user's browser.
+            var fullUrl = window.location.href;
+            var currentPagePath = fullUrl.split('?')[0];
+            var queryParams = fullUrl.split('?')[1];
+            rockwellUtils.addVal(pageViewData, "pageUrl", currentPagePath);
+            rockwellUtils.addVal(pageViewData, "urlParameter", queryParams);
+            rockwellUtils.addVal(pageViewData, "fullUrl", fullUrl);
+
+            rockwellUtils.addVal(pageViewData, "hostName", window.location.hostname);
+
+            rockwellUtils.addVal(pageViewData, "subDomain", subDomain);
+
+            // Using the cookie instead of referrer as referrer is empty string in some of the scenarios.
+            var referrerUrl = rockwellUtils.getCookie("fullReferringUrl").split('?')[0];
+
+            rockwellUtils.addVal(pageViewData, "referringUrl", referrerUrl);
+            rockwellUtils.addVal(pageViewData, "fullReferringUrl", rockwellUtils.getCookie("fullReferringUrl"));
+
+            rockwellUtils.addVal(pageViewData, "previousPageName", rockwellUtils.getCookie("previousPageName"));
+            rockwellUtils.setCookie("previousPageName", pageName, 30);
+
+            rockwellUtils.addVal(pageViewData, "aemPageTemplateName", "homepage");
+            rockwellUtils.addVal(pageViewData, "siteCountry", "US");
+            rockwellUtils.addVal(pageViewData, "siteLanguage", "en");
+            rockwellUtils.addVal(pageViewData, "primaryCategory", "homepage");
+            rockwellUtils.addVal(pageViewData, "subCategory1", "");
+            rockwellUtils.addVal(pageViewData, "subCategory2", "");
+            rockwellUtils.addVal(pageViewData, "subCategory3", "");
+
+            digitalData.push({
+                event: "pageView",
+                page: pageViewData
+            });
+
+            var dlmEventHandler = window.dlmEventHandler || function(e) {
+                return e;
+            }
+
+            var subscribedEvents = ["SDI-DLM:affinity"];
+
+            subscribedEvents.forEach(function(subscribedEvent){
+                window.removeEventListener(subscribedEvent, dlmEventHandler, false);
+                window.addEventListener(subscribedEvent, dlmEventHandler, false);
+            });
+        })();
+    </script>
+
+    
+
+    
+    
+        
+        
+            
+            
+            
+                <script type="text/javascript" src="//assets.adobedtm.com/5721cad0347b/09581fb6124d/launch-c9e49922b277.min.js" async data-ot-ignore></script>
+            
+        
+
+        
+    
+    
+
+
+    
+    
+    
+
+    
+    
+
+    <!-- SEO -->
+    
+    <meta name="publication-date" content="2026-08-06"/>
+    <meta name="search-boost" content="1"/>
+    
+    <!-- Schemas -->
+    
+    
+
+
+<script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"","rua.cook":"false","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false","rua.isuxp":"false","rua.texp":"norulematch","rua.ceh":"false","rua.ueh":"false","rua.ieh.st":"0"}]);</script>
+                                <script>!function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="3GB5U-4P5MU-6NE3E-PY6DW-3WWN8",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,r=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);r.src="javascript:void(0)",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="width:0;height:0;border:0;display:none;",o=document.getElementsByTagName("script")[0],o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,r.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"3GB5U-4P5MU-6NE3E-PY6DW-3WWN8",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},_.write("<bo"+'dy onload="document._l();">'),_.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e=""=="true"?1:0,t="",n="qoaerbcfyaiee2wowmva-f-a466316fd-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,_={"ak.v":"41","ak.cp":"52838","ak.ai":parseInt("256021",10),"ak.ol":"0","ak.cr":22,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"8aefebb7","ak.r":49626,"ak.a2":e,"ak.m":"b","ak.n":"essl","ak.cport":34318,"ak.gh":"23.52.98.211","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1791931178","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==1EqKdi5wrIaOOH/Y8YeX8P1H48HrhokhTRSaexhe3fcdYiUcKpKm9XO4xs/cNjNWLxElOw49cezqJ8VvcReePiYAnXcyyfIiSbtuZUMbaU6kioNwfkjYinz4QDR+3GXRlAdFivSBKJcvMQi8g4vMRJCt45iDTgJ4tiW8JF2/bXhW8sTKHLXgNiLGQNETiSht4KLCOFK1ujTs2quBaNENjYt5J4AtluqTYUiOQylcd8eLjDr6h92HosrMnta8YeiX1yP1/Kv7tFLvBFNZUc7kb/08U/vnfDxqT5HcyUMXomvK8n5jAo67pvICdB1rwz4qCCY+DOlIeOeU7AxDUmwgUsz0gXw2LAigpAI5oaKr6J+yxEssLYirzzlfDa94QGFAAGNXN3wVtZ6nSTpi7H0LJoUNMrbAQ9HR6eH4ncwFif4=","ak.pv":"263","ak.dpoabenc":"","ak.tf":i};if(""!==t)_["ak.ruds"]=t;var o={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))_["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(_)},rv:function(){var a=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:_,akDNSPreFetchDomain:n,init:function(){if(!o.i){var a=BOOMR.subscribe;a("before_beacon",o.av,null,null),a("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+    <body class="homepage homepage basepage page basicpage enable-animations" data-page-path="/content/rockwell-automation/global/na/en/jcr:content">
+        
+
+        <div class="related-content-group" data-resource-path="/en-us/jcr:content"/>
+        
+        
+            
+
+
+
+            
+
+    
+
+    
+        <div class="alert-banner-config" data-path="https://www.rockwellautomation.com/en-us/config-pages/alert-banner-config.html"></div>
+        <div class="fly-in-config" data-path="https://www.rockwellautomation.com/en-us/config-pages/fly-in-config.html" data-author-run-mode="false"></div>
+        <div class="abm-intent-drawer-config" data-path="https://www.rockwellautomation.com/en-us/config-pages/abm-intent-drawer-config/_jcr_content/root/main-par/abm_intent_drawer.html"></div>
+    
+
+    <div class="root responsivegrid">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="global-nav aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<ra-header origin="https://www.rockwellautomation.com" path="/en-us/config-pages/header-v2-config" variation="racom" selection="normal" font-unit="rem">
+</ra-header>
+</div>
+<main class="main-wrapper responsivegrid aem-GridColumn aem-GridColumn--default--12" id="main-content">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="experience-fragment experiencefragment aem-GridColumn aem-GridColumn--default--12">
+
+
+    
+    <div data-base-xf-path="/content/experience-fragments/rockwell-automation/global/na/en/homepage-hero/master" id="experience-fragment-8026ceb94b" class="cmp-experiencefragment cmp-experiencefragment--homepage-hero"><div class="xfpage page basicpage">
+
+    
+
+
+
+<div class="xf-content-height">
+    
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <main class="main-wrapper responsivegrid aem-GridColumn aem-GridColumn--default--12" id="main-content">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="generic-container aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="generic-container__inner">
+
+    
+    
+
+    
+    
+
+
+
+
+
+    
+    
+    <div class="hero-carousel carousel panelcontainer">
+
+
+
+
+
+<div class="new-hero-wrapper-outer " id="hero-carousel" data-cmp-is="hero-carousel">
+    <div class="progressBarWrapper">
+        <div class="progressBarContainer">
+
+             <button><span data-slick-index="0" class="progressBar"></span></button>  <button><span data-slick-index="1" class="progressBar"></span></button>  <button><span data-slick-index="2" class="progressBar"></span></button> 
+        </div>
+        <div class="play-pause-wrapper">
+            <button class="play-pause playing">
+                <svg class="play" width="24" height="32" viewBox="0 0 24 32">
+                    <path d="M0.819702 0.00111218C0.712111 0.000966692 0.605547 0.0213586 0.506103 0.0611215C0.406659 0.100884 0.316287 0.159238 0.240156 0.232845C0.164024 0.306453 0.103627 0.393869 0.0624194 0.490095C0.0212115 0.58632 9.53466e-07 0.689468 1.0584e-06 0.793637V31.2062C-0.000228006 31.3441 0.0367282 31.4797 0.107216 31.5996C0.177704 31.7195 0.279283 31.8194 0.40191 31.8897C0.524537 31.9599 0.663967 31.9979 0.806414 31.9999C0.948862 32.002 1.08939 31.968 1.21412 31.9013L23.5758 16.695C23.7043 16.6265 23.8114 16.5259 23.886 16.4036C23.9606 16.2813 24 16.1419 24 15.9999C24 15.8579 23.9606 15.7185 23.886 15.5962C23.8114 15.474 23.7043 15.3733 23.5758 15.3048L1.21412 0.0985173C1.09315 0.0334349 0.956949 -0.000485482 0.818559 5.24988e-06L0.819702 0.00111218Z"/>
+                </svg>
+                <svg class="pause" width="32" height="32" viewBox="0 0 32 32">
+                    <path d="M11.4573 0H4.02236C3.56488 0 3.194 0.36534 3.194 0.816V31.183C3.194 31.635 3.56555 32 4.02236 32H11.4573C11.9148 32 12.2857 31.6347 12.2857 31.184V0.816C12.2857 0.36534 11.9148 0 11.4573 0ZM28.3656 0H20.9307C20.4732 0 20.1023 0.36534 20.1023 0.816V31.183C20.1023 31.634 20.4739 31.999 20.9307 31.999H28.3656C28.8231 31.999 29.194 31.6337 29.194 31.183V0.816C29.194 0.36534 28.8231 0 28.3656 0Z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <!-- SVG FOR GRADIENT COLOR ONLY -->
+    <svg class="hidden-vectors">
+        <defs>
+            <linearGradient id="base-color" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop id="stop1" offset="7.44%"/>
+                <stop id="stop2" offset="93.59%"/>
+            </linearGradient>
+            <linearGradient id="gradient-red" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop id="stop1" offset="7.44%" stop-color="#CD163F"/>
+                <stop id="stop2" offset="93.59%" stop-color="#F58025"/>
+            </linearGradient>
+            <linearGradient id="gradient-outline-red" x1="195.83" y1="-5.09878" x2="32.8242" y2="197.558" gradientUnits="userSpaceOnUse">
+                <stop id="stop1outline" stop-color="#CD163F"/>
+                <stop id="stop2outline" offset="1" stop-color="#F58025"/>
+            </linearGradient>
+            <linearGradient id="gradient-blue-green" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop id="stop1" offset="7.44%" stop-color="#77C14C"/>
+                <stop id="stop2" offset="93.59%" stop-color="#00AEEF"/>
+            </linearGradient>
+            <linearGradient id="gradient-outline-blue-green" x1="195.83" y1="-5.09878" x2="32.8242" y2="197.558" gradientUnits="userSpaceOnUse">
+                <stop id="stop1outline" stop-color="#77C14C"/>
+                <stop id="stop2outline" offset="1" stop-color="#00AEEF"/>
+            </linearGradient>
+            <linearGradient id="gradient-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop id="stop1" offset="7.44%" stop-color="#003E7E"/>
+                <stop id="stop2" offset="93.59%" stop-color="#00AEEF"/>
+            </linearGradient>
+            <linearGradient id="gradient-outline-blue" x1="195.83" y1="-5.09878" x2="32.8242" y2="197.558" gradientUnits="userSpaceOnUse">
+                <stop id="stop1outline" stop-color="#003E7E"/>
+                <stop id="stop2outline" offset="1" stop-color="#00AEEF"/>
+            </linearGradient>
+            <linearGradient id="gradient-ab" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop id="stop1" offset="7.44%" stop-color="#CD163F"/>
+                <stop id="stop2" offset="93.59%" stop-color="#003E7E"/>
+            </linearGradient>
+            <linearGradient id="gradient-outline-ab" x1="195.83" y1="-5.09878" x2="32.8242" y2="197.558" gradientUnits="userSpaceOnUse">
+                <stop id="stop1outline" stop-color="#CD163F"/>
+                <stop id="stop2outline" offset="1" stop-color="#003E7E"/>
+            </linearGradient>
+            <linearGradient id="gradient-white" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop id="stop1" offset="7.44%" stop-color="#FFFFFF"/>
+                <stop id="stop2" offset="93.59%" stop-color="#FFFFFF"/>
+            </linearGradient>
+            <linearGradient id="gradient-outline-white" x1="195.83" y1="-5.09878" x2="32.8242" y2="197.558" gradientUnits="userSpaceOnUse">
+                <stop id="stop1outline" stop-color="#FFFFFF"/>
+                <stop id="stop2outline" offset="1" stop-color="#FFFFFF"/>
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <div class="new-hero-wrapper loading">
+
+        <li class="new-hero slick-active"><div class="hero-carousel-slide parbase"><div class="new-hero slick-active " data-slide-color="ab">
+
+    <!-- DESKTOP SVGS -->
+    <div class="vector-graphics desktop">
+        <div class="Hero-Vector-Left-Container">
+            <svg class="Hero-Vector-Left" viewBox="0 0 377.19 211" preserveAspectRatio="xMaxYMin slice">
+                <polygon class="hero-vector-left" points="0 0 369 0 185.77 211 0 211 0 0"/>
+            </svg>
+        </div>
+        <div class="Hero-Vector-Middle-Container">
+            <svg class="Hero-Vector-Middle" viewBox="0 0 678 436">
+                <path opacity="0.7" d="M3.922 414.453C0.416755 418.351 -1.19002 422.49 1.29305 427.861C3.00391 431.916 6.87252 434.833 11.1754 435.304C12.7261 435.488 14.2799 435.568 15.8242 435.547C123.536 435.235 174.859 436.141 282.594 435.85C293.17 435.993 302.892 431.765 309.437 424.172C309.437 424.172 657.73 22.9096 677.922 0.453325L363.422 0.453253L3.922 414.453Z"/>
+            </svg>
+        </div>
+        <div class="Hero-Vector-Right-Container-A">
+            <svg class="Hero-Vector-Right-A" viewBox="0 0 377 454" preserveAspectRatio="none">
+                <polygon class="hero-vector-right-A" points="0 454 377 454 377 0 0 454"/>
+            </svg>
+        </div>
+        <div class="Hero-Vector-Right-Container-B">
+            <svg class="Hero-Vector-Right-B" viewBox="0 0 377 454" preserveAspectRatio="none">
+                <polygon class="hero-vector-right-B" points="0 454 377 454 377 0 0 454"/>
+            </svg>
+        </div>
+        <div class="Hero-Vector-Right-Container-C">
+            <svg class="Hero-Vector-Right-C" viewBox="0 0 377 454">
+                <path class="hero-vector-right-path-C" d="m0,454h44.16l150.11-184.33c2.88-3.67,7.19-7.12,12.11-7.29,4.92-.17,139.03-.17,139.03-.17.72-.04,1.44-.04,2.17.01,2.01.12,3.87,1.4,4.76,3.24,1.27,2.44.62,4.4-.93,6.29l-149.24,182.24h174.84V0L0,454Z"/>
+            </svg>
+        </div>
+        <div class="Hero-Vector-Solid-Container">
+            <svg class="Hero-Vector-Solid" viewBox="0 0 341 281" preserveAspectRatio="none">
+                <path d="M339.295 7.75613C340.469 6.31958 340.968 4.83 340 2.97302C339.327 1.56873 337.911 0.602245 336.382 0.507929C335.831 0.468783 335.281 0.466804 334.735 0.499986C334.735 0.499986 232.771 0.498755 229.03 0.625488C225.29 0.752221 222.012 3.37386 219.826 6.16715L2.10652 273.514C-0.0419066 276.144 0.132043 277.756 3.02999 280.126L106.5 279.625C119 279.625 121 273.514 131.5 261.5L339.295 7.75613Z"/>
+            </svg>
+        </div>
+        <div class="Hero-Vector-Solid-Container-2">
+            <svg class="Hero-Vector-Solid-2" viewBox="0 0 676 624" preserveAspectRatio="none">
+                <path class="Hero-Vector-Solid-2-Path" d="M4.42786 599.712C0.527773 604.049 -1.25999 608.654 1.50278 614.63C3.40636 619.141 7.71074 622.388 12.4983 622.912C14.2237 623.117 15.9525 623.205 17.6707 623.182C137.516 622.835 194.62 623.843 314.491 623.519C326.258 623.678 337.075 618.974 344.358 610.526L675.927 212.5L675.927 0.000116493L502 7.63962e-05L4.42786 599.712Z"/>
+            </svg>
+        </div>
+        <div class="Hero-Vector-Outline-Container">
+            <svg class="Hero-Vector-Outline" viewBox="0 0 240 198" preserveAspectRatio="none">
+                <path class="Hero-Vector-Outline-Path" d="M237.873 3.26892L237.857 3.23903L237.843 3.20864C237.676 2.85984 237.313 2.62704 236.978 2.60634L236.968 2.60577L236.959 2.60511C236.66 2.58389 236.361 2.58274 236.063 2.60086L236.002 2.60455L235.941 2.60454L235.941 0.604052C235.941 2.60454 235.941 2.60455 235.941 2.60454L235.938 2.60454L235.928 2.60454L235.889 2.60454L235.736 2.60455L235.135 2.60456L232.853 2.60468C230.886 2.60483 228.073 2.60515 224.69 2.6058C217.922 2.60712 208.871 2.60979 199.738 2.61526C181.433 2.62621 162.897 2.64862 161.626 2.69172C159.866 2.75133 158.049 4.04432 156.655 5.82546L156.643 5.84069L156.631 5.85569L3.42379 193.985L3.4218 193.988C2.99496 194.51 2.88543 194.773 2.85855 194.862C2.87341 194.892 2.90183 194.941 2.95391 195.011C3.02615 195.108 3.12959 195.227 3.27523 195.37L75.3244 195.022L75.3341 195.022C77.3722 195.022 78.8673 194.772 80.0767 194.336C81.2722 193.905 82.2864 193.256 83.3228 192.326C84.3859 191.372 85.445 190.148 86.7531 188.556C87.0455 188.2 87.3496 187.827 87.6669 187.438C88.7387 186.122 89.9618 184.621 91.4 182.975L237.602 4.44399C237.602 4.44349 237.603 4.44298 237.603 4.44248C237.902 4.07671 237.98 3.86339 237.999 3.76093C238.01 3.70811 238.033 3.57583 237.873 3.26892ZM2.85024 194.898C2.85031 194.897 2.85054 194.896 2.85074 194.893C2.85026 194.896 2.85018 194.898 2.85024 194.898ZM2.84514 194.832C2.84436 194.829 2.84379 194.828 2.84373 194.828C2.84366 194.828 2.84401 194.829 2.84514 194.832Z"/>
+            </svg>
+        </div>
+    </div>
+
+    <!-- HERO TEXT -->
+    <div class="new-hero-text-wrapper">
+
+        <div class="new-hero-text">
+            <!-- MOBILE SVGS -->
+            <div class="vector-graphics mobile">
+                <div class="m-Hero-Vector-Left-Container">
+                    <svg class="m-Hero-Vector-Left" viewBox="0 0 377.19 211" preserveAspectRatio="xMaxYMin slice">
+                        <polygon class="m-hero-vector-left" points="0 0 369 0 185.77 211 0 211 0 0"/>
+                    </svg>
+                </div>
+                <div class="m-Hero-Background"></div>
+                <div class="m-Hero-Vector-Middle-Container">
+                    <svg class="m-Hero-Vector-Middle" viewBox="0 0 678 436" style="opacity: 1;">
+                        <path opacity="0.7" d="M3.922 414.453C0.416755 418.351 -1.19002 422.49 1.29305 427.861C3.00391 431.916 6.87252 434.833 11.1754 435.304C12.7261 435.488 14.2799 435.568 15.8242 435.547C123.536 435.235 174.859 436.141 282.594 435.85C293.17 435.993 302.892 431.765 309.437 424.172C309.437 424.172 657.73 22.9096 677.922 0.453325L363.422 0.453253L3.922 414.453Z"></path>
+                    </svg>
+                </div>
+                <div class="m-Hero-Vector-Outline-Container">
+                    <svg class="m-Hero-Vector-Outline" viewBox="0 0 240 198" preserveAspectRatio="none">
+                        <path class="m-Hero-Vector-Outline-Path" d="M237.873 3.26892L237.857 3.23903L237.843 3.20864C237.676 2.85984 237.313 2.62704 236.978 2.60634L236.968 2.60577L236.959 2.60511C236.66 2.58389 236.361 2.58274 236.063 2.60086L236.002 2.60455L235.941 2.60454L235.941 0.604052C235.941 2.60454 235.941 2.60455 235.941 2.60454L235.938 2.60454L235.928 2.60454L235.889 2.60454L235.736 2.60455L235.135 2.60456L232.853 2.60468C230.886 2.60483 228.073 2.60515 224.69 2.6058C217.922 2.60712 208.871 2.60979 199.738 2.61526C181.433 2.62621 162.897 2.64862 161.626 2.69172C159.866 2.75133 158.049 4.04432 156.655 5.82546L156.643 5.84069L156.631 5.85569L3.42379 193.985L3.4218 193.988C2.99496 194.51 2.88543 194.773 2.85855 194.862C2.87341 194.892 2.90183 194.941 2.95391 195.011C3.02615 195.108 3.12959 195.227 3.27523 195.37L75.3244 195.022L75.3341 195.022C77.3722 195.022 78.8673 194.772 80.0767 194.336C81.2722 193.905 82.2864 193.256 83.3228 192.326C84.3859 191.372 85.445 190.148 86.7531 188.556C87.0455 188.2 87.3496 187.827 87.6669 187.438C88.7387 186.122 89.9618 184.621 91.4 182.975L237.602 4.44399C237.602 4.44349 237.603 4.44298 237.603 4.44248C237.902 4.07671 237.98 3.86339 237.999 3.76093C238.01 3.70811 238.033 3.57583 237.873 3.26892ZM2.85024 194.898C2.85031 194.897 2.85054 194.896 2.85074 194.893C2.85026 194.896 2.85018 194.898 2.85024 194.898ZM2.84514 194.832C2.84436 194.829 2.84379 194.828 2.84373 194.828C2.84366 194.828 2.84401 194.829 2.84514 194.832Z"/>
+                    </svg>
+                </div>
+                <div class="m-Hero-Vector-Solid-Container">
+                    <svg class="m-Hero-Vector-Solid" viewBox="0 0 341 281" preserveAspectRatio="none">
+                        <path d="M339.295 7.75613C340.469 6.31958 340.968 4.83 340 2.97302C339.327 1.56873 337.911 0.602245 336.382 0.507929C335.831 0.468783 335.281 0.466804 334.735 0.499986C334.735 0.499986 232.771 0.498755 229.03 0.625488C225.29 0.752221 222.012 3.37386 219.826 6.16715L2.10652 273.514C-0.0419066 276.144 0.132043 277.756 3.02999 280.126L106.5 279.625C119 279.625 121 273.514 131.5 261.5L339.295 7.75613Z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="new-hero-text-inner">
+                <h1>Industrial AI Designed for Optimizing Operations</h1>
+                <div class="description">See how Industrial AI improves performance, reduces downtime, and turns operational complexity into competitive advantage.</div>
+                <div class="hero-banner__buttons-container">
+                    <span class="button button--primary button--color-inverted">
+                        <a href="/en-us/future-trends-industrial-operations/industrial-ai" target="_self" data-link-type="cta" data-link-text="Unlock Smarter Operations">
+                            <span>Unlock Smarter Operations</span>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HERO IMAGE -->
+    <div class="new-hero-image">
+        <div id="blur-effect" class="desktop">
+            <svg id="motionPath" viewBox="0 0 270 249">
+                <path id="path" fill="none" d="M226.932 230.765C306.432 198.765 263.432 171.265 183.932 25.7648C140.932 -1.23525 60.4318 -15.2352 14.9318 25.7648C-30.5682 66.7648 42.4318 137.265 42.4318 194.265C42.4318 251.265 147.432 262.765 226.932 230.765Z"/>
+            </svg>
+            <svg id="blur1" width="522" height="481" viewBox="0 0 522 481">
+                <circle cx="261" cy="240.5" r="240.5"/>
+            </svg>
+        </div>
+        <div class="hero">
+            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        <picture class=" aspect-ratio--16x9">
+            
+            
+
+            
+            
+
+            
+
+            
+                
+                <source srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/IndustrialAIHero_AdobeStock_1191988315-flipped-cropped.3153.jpg" media="(min-width: 768px)"/>
+            
+            
+
+            
+            
+                
+                
+                    
+                    
+                    
+                        <img class="  main-image" width="3153" height="auto" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/IndustrialAIHero_AdobeStock_1191988315-flipped-cropped.3153.jpg" alt="neon blue and green waves" data-trackable="true"/>
+                    
+                
+            
+        </picture>
+
+        
+        
+
+        
+    
+
+
+        </div>
+    </div>
+
+</div>
+
+</div>
+</li>
+<li class="new-hero"><div class="hero-carousel-slide parbase"><div class="new-hero slick-active " data-slide-color="red">
+
+    <!-- DESKTOP SVGS -->
+    <div class="vector-graphics desktop">
+        <div class="Hero-Vector-Left-Container">
+            <svg class="Hero-Vector-Left" viewBox="0 0 377.19 211" preserveAspectRatio="xMaxYMin slice">
+                <polygon class="hero-vector-left" points="0 0 369 0 185.77 211 0 211 0 0"/>
+            </svg>
+        </div>
+        <div class="Hero-Vector-Middle-Container">
+            <svg class="Hero-Vector-Middle" viewBox="0 0 678 436">
+                <path opacity="0.7" d="M3.922 414.453C0.416755 418.351 -1.19002 422.49 1.29305 427.861C3.00391 431.916 6.87252 434.833 11.1754 435.304C12.7261 435.488 14.2799 435.568 15.8242 435.547C123.536 435.235 174.859 436.141 282.594 435.85C293.17 435.993 302.892 431.765 309.437 424.172C309.437 424.172 657.73 22.9096 677.922 0.453325L363.422 0.453253L3.922 414.453Z"/>
+            </svg>
+        </div>
+        <div class="Hero-Vector-Right-Container-A">
+            <svg class="Hero-Vector-Right-A" viewBox="0 0 377 454" preserveAspectRatio="none">
+                <polygon class="hero-vector-right-A" points="0 454 377 454 377 0 0 454"/>
+            </svg>
+        </div>
+        <div class="Hero-Vector-Right-Container-B">
+            <svg class="Hero-Vector-Right-B" viewBox="0 0 377 454" preserveAspectRatio="none">
+                <polygon class="hero-vector-right-B" points="0 454 377 454 377 0 0 454"/>
+            </svg>
+        </div>
+        <div class="Hero-Vector-Right-Container-C">
+            <svg class="Hero-Vector-Right-C" viewBox="0 0 377 454">
+                <path class="hero-vector-right-path-C" d="m0,454h44.16l150.11-184.33c2.88-3.67,7.19-7.12,12.11-7.29,4.92-.17,139.03-.17,139.03-.17.72-.04,1.44-.04,2.17.01,2.01.12,3.87,1.4,4.76,3.24,1.27,2.44.62,4.4-.93,6.29l-149.24,182.24h174.84V0L0,454Z"/>
+            </svg>
+        </div>
+        <div class="Hero-Vector-Solid-Container">
+            <svg class="Hero-Vector-Solid" viewBox="0 0 341 281" preserveAspectRatio="none">
+                <path d="M339.295 7.75613C340.469 6.31958 340.968 4.83 340 2.97302C339.327 1.56873 337.911 0.602245 336.382 0.507929C335.831 0.468783 335.281 0.466804 334.735 0.499986C334.735 0.499986 232.771 0.498755 229.03 0.625488C225.29 0.752221 222.012 3.37386 219.826 6.16715L2.10652 273.514C-0.0419066 276.144 0.132043 277.756 3.02999 280.126L106.5 279.625C119 279.625 121 273.514 131.5 261.5L339.295 7.75613Z"/>
+            </svg>
+        </div>
+        <div class="Hero-Vector-Solid-Container-2">
+            <svg class="Hero-Vector-Solid-2" viewBox="0 0 676 624" preserveAspectRatio="none">
+                <path class="Hero-Vector-Solid-2-Path" d="M4.42786 599.712C0.527773 604.049 -1.25999 608.654 1.50278 614.63C3.40636 619.141 7.71074 622.388 12.4983 622.912C14.2237 623.117 15.9525 623.205 17.6707 623.182C137.516 622.835 194.62 623.843 314.491 623.519C326.258 623.678 337.075 618.974 344.358 610.526L675.927 212.5L675.927 0.000116493L502 7.63962e-05L4.42786 599.712Z"/>
+            </svg>
+        </div>
+        <div class="Hero-Vector-Outline-Container">
+            <svg class="Hero-Vector-Outline" viewBox="0 0 240 198" preserveAspectRatio="none">
+                <path class="Hero-Vector-Outline-Path" d="M237.873 3.26892L237.857 3.23903L237.843 3.20864C237.676 2.85984 237.313 2.62704 236.978 2.60634L236.968 2.60577L236.959 2.60511C236.66 2.58389 236.361 2.58274 236.063 2.60086L236.002 2.60455L235.941 2.60454L235.941 0.604052C235.941 2.60454 235.941 2.60455 235.941 2.60454L235.938 2.60454L235.928 2.60454L235.889 2.60454L235.736 2.60455L235.135 2.60456L232.853 2.60468C230.886 2.60483 228.073 2.60515 224.69 2.6058C217.922 2.60712 208.871 2.60979 199.738 2.61526C181.433 2.62621 162.897 2.64862 161.626 2.69172C159.866 2.75133 158.049 4.04432 156.655 5.82546L156.643 5.84069L156.631 5.85569L3.42379 193.985L3.4218 193.988C2.99496 194.51 2.88543 194.773 2.85855 194.862C2.87341 194.892 2.90183 194.941 2.95391 195.011C3.02615 195.108 3.12959 195.227 3.27523 195.37L75.3244 195.022L75.3341 195.022C77.3722 195.022 78.8673 194.772 80.0767 194.336C81.2722 193.905 82.2864 193.256 83.3228 192.326C84.3859 191.372 85.445 190.148 86.7531 188.556C87.0455 188.2 87.3496 187.827 87.6669 187.438C88.7387 186.122 89.9618 184.621 91.4 182.975L237.602 4.44399C237.602 4.44349 237.603 4.44298 237.603 4.44248C237.902 4.07671 237.98 3.86339 237.999 3.76093C238.01 3.70811 238.033 3.57583 237.873 3.26892ZM2.85024 194.898C2.85031 194.897 2.85054 194.896 2.85074 194.893C2.85026 194.896 2.85018 194.898 2.85024 194.898ZM2.84514 194.832C2.84436 194.829 2.84379 194.828 2.84373 194.828C2.84366 194.828 2.84401 194.829 2.84514 194.832Z"/>
+            </svg>
+        </div>
+    </div>
+
+    <!-- HERO TEXT -->
+    <div class="new-hero-text-wrapper">
+
+        <div class="new-hero-text">
+            <!-- MOBILE SVGS -->
+            <div class="vector-graphics mobile">
+                <div class="m-Hero-Vector-Left-Container">
+                    <svg class="m-Hero-Vector-Left" viewBox="0 0 377.19 211" preserveAspectRatio="xMaxYMin slice">
+                        <polygon class="m-hero-vector-left" points="0 0 369 0 185.77 211 0 211 0 0"/>
+                    </svg>
+                </div>
+                <div class="m-Hero-Background"></div>
+                <div class="m-Hero-Vector-Middle-Container">
+                    <svg class="m-Hero-Vector-Middle" viewBox="0 0 678 436" style="opacity: 1;">
+                        <path opacity="0.7" d="M3.922 414.453C0.416755 418.351 -1.19002 422.49 1.29305 427.861C3.00391 431.916 6.87252 434.833 11.1754 435.304C12.7261 435.488 14.2799 435.568 15.8242 435.547C123.536 435.235 174.859 436.141 282.594 435.85C293.17 435.993 302.892 431.765 309.437 424.172C309.437 424.172 657.73 22.9096 677.922 0.453325L363.422 0.453253L3.922 414.453Z"></path>
+                    </svg>
+                </div>
+                <div class="m-Hero-Vector-Outline-Container">
+                    <svg class="m-Hero-Vector-Outline" viewBox="0 0 240 198" preserveAspectRatio="none">
+                        <path class="m-Hero-Vector-Outline-Path" d="M237.873 3.26892L237.857 3.23903L237.843 3.20864C237.676 2.85984 237.313 2.62704 236.978 2.60634L236.968 2.60577L236.959 2.60511C236.66 2.58389 236.361 2.58274 236.063 2.60086L236.002 2.60455L235.941 2.60454L235.941 0.604052C235.941 2.60454 235.941 2.60455 235.941 2.60454L235.938 2.60454L235.928 2.60454L235.889 2.60454L235.736 2.60455L235.135 2.60456L232.853 2.60468C230.886 2.60483 228.073 2.60515 224.69 2.6058C217.922 2.60712 208.871 2.60979 199.738 2.61526C181.433 2.62621 162.897 2.64862 161.626 2.69172C159.866 2.75133 158.049 4.04432 156.655 5.82546L156.643 5.84069L156.631 5.85569L3.42379 193.985L3.4218 193.988C2.99496 194.51 2.88543 194.773 2.85855 194.862C2.87341 194.892 2.90183 194.941 2.95391 195.011C3.02615 195.108 3.12959 195.227 3.27523 195.37L75.3244 195.022L75.3341 195.022C77.3722 195.022 78.8673 194.772 80.0767 194.336C81.2722 193.905 82.2864 193.256 83.3228 192.326C84.3859 191.372 85.445 190.148 86.7531 188.556C87.0455 188.2 87.3496 187.827 87.6669 187.438C88.7387 186.122 89.9618 184.621 91.4 182.975L237.602 4.44399C237.602 4.44349 237.603 4.44298 237.603 4.44248C237.902 4.07671 237.98 3.86339 237.999 3.76093C238.01 3.70811 238.033 3.57583 237.873 3.26892ZM2.85024 194.898C2.85031 194.897 2.85054 194.896 2.85074 194.893C2.85026 194.896 2.85018 194.898 2.85024 194.898ZM2.84514 194.832C2.84436 194.829 2.84379 194.828 2.84373 194.828C2.84366 194.828 2.84401 194.829 2.84514 194.832Z"/>
+                    </svg>
+                </div>
+                <div class="m-Hero-Vector-Solid-Container">
+                    <svg class="m-Hero-Vector-Solid" viewBox="0 0 341 281" preserveAspectRatio="none">
+                        <path d="M339.295 7.75613C340.469 6.31958 340.968 4.83 340 2.97302C339.327 1.56873 337.911 0.602245 336.382 0.507929C335.831 0.468783 335.281 0.466804 334.735 0.499986C334.735 0.499986 232.771 0.498755 229.03 0.625488C225.29 0.752221 222.012 3.37386 219.826 6.16715L2.10652 273.514C-0.0419066 276.144 0.132043 277.756 3.02999 280.126L106.5 279.625C119 279.625 121 273.514 131.5 261.5L339.295 7.75613Z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="new-hero-text-inner">
+                <h2>11th Annual State of Smart Manufacturing</h2>
+                <div class="description">Best practices of top performers, benchmarks for your digital strategy, and 2026 investment trends</div>
+                <div class="hero-banner__buttons-container">
+                    <span class="button button--primary button--color-inverted">
+                        <a href="/en-us/capabilities/digital-transformation/state-of-smart-manufacturing" target="_self" data-link-type="cta" data-link-text="Download report">
+                            <span>Download report</span>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HERO IMAGE -->
+    <div class="new-hero-image">
+        <div id="blur-effect" class="desktop">
+            <svg id="motionPath" viewBox="0 0 270 249">
+                <path id="path" fill="none" d="M226.932 230.765C306.432 198.765 263.432 171.265 183.932 25.7648C140.932 -1.23525 60.4318 -15.2352 14.9318 25.7648C-30.5682 66.7648 42.4318 137.265 42.4318 194.265C42.4318 251.265 147.432 262.765 226.932 230.765Z"/>
+            </svg>
+            <svg id="blur1" width="522" height="481" viewBox="0 0 522 481">
+                <circle cx="261" cy="240.5" r="240.5"/>
+            </svg>
+        </div>
+        <div class="hero">
+            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        <picture class=" aspect-ratio--16x9">
+            
+            
+
+            
+            
+
+            
+
+            
+                
+                <source srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/state-smart-manufacturing-wave-2026.2400.jpg" media="(min-width: 768px)"/>
+            
+            
+
+            
+            
+                
+                
+                    
+                    
+                    
+                        <img class="  main-image" width="2400" height="auto" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/state-smart-manufacturing-wave-2026.2400.jpg" alt="red and orange waves" data-trackable="true"/>
+                    
+                
+            
+        </picture>
+
+        
+        
+
+        
+    
+
+
+        </div>
+    </div>
+
+</div>
+
+</div>
+</li>
+<li class="new-hero"><div class="hero-carousel-slide parbase"><div class="new-hero slick-active " data-slide-color="blue">
+
+    <!-- DESKTOP SVGS -->
+    <div class="vector-graphics desktop">
+        <div class="Hero-Vector-Left-Container">
+            <svg class="Hero-Vector-Left" viewBox="0 0 377.19 211" preserveAspectRatio="xMaxYMin slice">
+                <polygon class="hero-vector-left" points="0 0 369 0 185.77 211 0 211 0 0"/>
+            </svg>
+        </div>
+        <div class="Hero-Vector-Middle-Container">
+            <svg class="Hero-Vector-Middle" viewBox="0 0 678 436">
+                <path opacity="0.7" d="M3.922 414.453C0.416755 418.351 -1.19002 422.49 1.29305 427.861C3.00391 431.916 6.87252 434.833 11.1754 435.304C12.7261 435.488 14.2799 435.568 15.8242 435.547C123.536 435.235 174.859 436.141 282.594 435.85C293.17 435.993 302.892 431.765 309.437 424.172C309.437 424.172 657.73 22.9096 677.922 0.453325L363.422 0.453253L3.922 414.453Z"/>
+            </svg>
+        </div>
+        <div class="Hero-Vector-Right-Container-A">
+            <svg class="Hero-Vector-Right-A" viewBox="0 0 377 454" preserveAspectRatio="none">
+                <polygon class="hero-vector-right-A" points="0 454 377 454 377 0 0 454"/>
+            </svg>
+        </div>
+        <div class="Hero-Vector-Right-Container-B">
+            <svg class="Hero-Vector-Right-B" viewBox="0 0 377 454" preserveAspectRatio="none">
+                <polygon class="hero-vector-right-B" points="0 454 377 454 377 0 0 454"/>
+            </svg>
+        </div>
+        <div class="Hero-Vector-Right-Container-C">
+            <svg class="Hero-Vector-Right-C" viewBox="0 0 377 454">
+                <path class="hero-vector-right-path-C" d="m0,454h44.16l150.11-184.33c2.88-3.67,7.19-7.12,12.11-7.29,4.92-.17,139.03-.17,139.03-.17.72-.04,1.44-.04,2.17.01,2.01.12,3.87,1.4,4.76,3.24,1.27,2.44.62,4.4-.93,6.29l-149.24,182.24h174.84V0L0,454Z"/>
+            </svg>
+        </div>
+        <div class="Hero-Vector-Solid-Container">
+            <svg class="Hero-Vector-Solid" viewBox="0 0 341 281" preserveAspectRatio="none">
+                <path d="M339.295 7.75613C340.469 6.31958 340.968 4.83 340 2.97302C339.327 1.56873 337.911 0.602245 336.382 0.507929C335.831 0.468783 335.281 0.466804 334.735 0.499986C334.735 0.499986 232.771 0.498755 229.03 0.625488C225.29 0.752221 222.012 3.37386 219.826 6.16715L2.10652 273.514C-0.0419066 276.144 0.132043 277.756 3.02999 280.126L106.5 279.625C119 279.625 121 273.514 131.5 261.5L339.295 7.75613Z"/>
+            </svg>
+        </div>
+        <div class="Hero-Vector-Solid-Container-2">
+            <svg class="Hero-Vector-Solid-2" viewBox="0 0 676 624" preserveAspectRatio="none">
+                <path class="Hero-Vector-Solid-2-Path" d="M4.42786 599.712C0.527773 604.049 -1.25999 608.654 1.50278 614.63C3.40636 619.141 7.71074 622.388 12.4983 622.912C14.2237 623.117 15.9525 623.205 17.6707 623.182C137.516 622.835 194.62 623.843 314.491 623.519C326.258 623.678 337.075 618.974 344.358 610.526L675.927 212.5L675.927 0.000116493L502 7.63962e-05L4.42786 599.712Z"/>
+            </svg>
+        </div>
+        <div class="Hero-Vector-Outline-Container">
+            <svg class="Hero-Vector-Outline" viewBox="0 0 240 198" preserveAspectRatio="none">
+                <path class="Hero-Vector-Outline-Path" d="M237.873 3.26892L237.857 3.23903L237.843 3.20864C237.676 2.85984 237.313 2.62704 236.978 2.60634L236.968 2.60577L236.959 2.60511C236.66 2.58389 236.361 2.58274 236.063 2.60086L236.002 2.60455L235.941 2.60454L235.941 0.604052C235.941 2.60454 235.941 2.60455 235.941 2.60454L235.938 2.60454L235.928 2.60454L235.889 2.60454L235.736 2.60455L235.135 2.60456L232.853 2.60468C230.886 2.60483 228.073 2.60515 224.69 2.6058C217.922 2.60712 208.871 2.60979 199.738 2.61526C181.433 2.62621 162.897 2.64862 161.626 2.69172C159.866 2.75133 158.049 4.04432 156.655 5.82546L156.643 5.84069L156.631 5.85569L3.42379 193.985L3.4218 193.988C2.99496 194.51 2.88543 194.773 2.85855 194.862C2.87341 194.892 2.90183 194.941 2.95391 195.011C3.02615 195.108 3.12959 195.227 3.27523 195.37L75.3244 195.022L75.3341 195.022C77.3722 195.022 78.8673 194.772 80.0767 194.336C81.2722 193.905 82.2864 193.256 83.3228 192.326C84.3859 191.372 85.445 190.148 86.7531 188.556C87.0455 188.2 87.3496 187.827 87.6669 187.438C88.7387 186.122 89.9618 184.621 91.4 182.975L237.602 4.44399C237.602 4.44349 237.603 4.44298 237.603 4.44248C237.902 4.07671 237.98 3.86339 237.999 3.76093C238.01 3.70811 238.033 3.57583 237.873 3.26892ZM2.85024 194.898C2.85031 194.897 2.85054 194.896 2.85074 194.893C2.85026 194.896 2.85018 194.898 2.85024 194.898ZM2.84514 194.832C2.84436 194.829 2.84379 194.828 2.84373 194.828C2.84366 194.828 2.84401 194.829 2.84514 194.832Z"/>
+            </svg>
+        </div>
+    </div>
+
+    <!-- HERO TEXT -->
+    <div class="new-hero-text-wrapper">
+
+        <div class="new-hero-text">
+            <!-- MOBILE SVGS -->
+            <div class="vector-graphics mobile">
+                <div class="m-Hero-Vector-Left-Container">
+                    <svg class="m-Hero-Vector-Left" viewBox="0 0 377.19 211" preserveAspectRatio="xMaxYMin slice">
+                        <polygon class="m-hero-vector-left" points="0 0 369 0 185.77 211 0 211 0 0"/>
+                    </svg>
+                </div>
+                <div class="m-Hero-Background"></div>
+                <div class="m-Hero-Vector-Middle-Container">
+                    <svg class="m-Hero-Vector-Middle" viewBox="0 0 678 436" style="opacity: 1;">
+                        <path opacity="0.7" d="M3.922 414.453C0.416755 418.351 -1.19002 422.49 1.29305 427.861C3.00391 431.916 6.87252 434.833 11.1754 435.304C12.7261 435.488 14.2799 435.568 15.8242 435.547C123.536 435.235 174.859 436.141 282.594 435.85C293.17 435.993 302.892 431.765 309.437 424.172C309.437 424.172 657.73 22.9096 677.922 0.453325L363.422 0.453253L3.922 414.453Z"></path>
+                    </svg>
+                </div>
+                <div class="m-Hero-Vector-Outline-Container">
+                    <svg class="m-Hero-Vector-Outline" viewBox="0 0 240 198" preserveAspectRatio="none">
+                        <path class="m-Hero-Vector-Outline-Path" d="M237.873 3.26892L237.857 3.23903L237.843 3.20864C237.676 2.85984 237.313 2.62704 236.978 2.60634L236.968 2.60577L236.959 2.60511C236.66 2.58389 236.361 2.58274 236.063 2.60086L236.002 2.60455L235.941 2.60454L235.941 0.604052C235.941 2.60454 235.941 2.60455 235.941 2.60454L235.938 2.60454L235.928 2.60454L235.889 2.60454L235.736 2.60455L235.135 2.60456L232.853 2.60468C230.886 2.60483 228.073 2.60515 224.69 2.6058C217.922 2.60712 208.871 2.60979 199.738 2.61526C181.433 2.62621 162.897 2.64862 161.626 2.69172C159.866 2.75133 158.049 4.04432 156.655 5.82546L156.643 5.84069L156.631 5.85569L3.42379 193.985L3.4218 193.988C2.99496 194.51 2.88543 194.773 2.85855 194.862C2.87341 194.892 2.90183 194.941 2.95391 195.011C3.02615 195.108 3.12959 195.227 3.27523 195.37L75.3244 195.022L75.3341 195.022C77.3722 195.022 78.8673 194.772 80.0767 194.336C81.2722 193.905 82.2864 193.256 83.3228 192.326C84.3859 191.372 85.445 190.148 86.7531 188.556C87.0455 188.2 87.3496 187.827 87.6669 187.438C88.7387 186.122 89.9618 184.621 91.4 182.975L237.602 4.44399C237.602 4.44349 237.603 4.44298 237.603 4.44248C237.902 4.07671 237.98 3.86339 237.999 3.76093C238.01 3.70811 238.033 3.57583 237.873 3.26892ZM2.85024 194.898C2.85031 194.897 2.85054 194.896 2.85074 194.893C2.85026 194.896 2.85018 194.898 2.85024 194.898ZM2.84514 194.832C2.84436 194.829 2.84379 194.828 2.84373 194.828C2.84366 194.828 2.84401 194.829 2.84514 194.832Z"/>
+                    </svg>
+                </div>
+                <div class="m-Hero-Vector-Solid-Container">
+                    <svg class="m-Hero-Vector-Solid" viewBox="0 0 341 281" preserveAspectRatio="none">
+                        <path d="M339.295 7.75613C340.469 6.31958 340.968 4.83 340 2.97302C339.327 1.56873 337.911 0.602245 336.382 0.507929C335.831 0.468783 335.281 0.466804 334.735 0.499986C334.735 0.499986 232.771 0.498755 229.03 0.625488C225.29 0.752221 222.012 3.37386 219.826 6.16715L2.10652 273.514C-0.0419066 276.144 0.132043 277.756 3.02999 280.126L106.5 279.625C119 279.625 121 273.514 131.5 261.5L339.295 7.75613Z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="new-hero-text-inner">
+                <h2>Future Trends in Industrial Operations</h2>
+                <div class="description">Accelerate your shift from automation to autonomy with a clear strategy and real-world examples that empower people, drive innovation, and build more resilient operations.</div>
+                <div class="hero-banner__buttons-container">
+                    <span class="button button--primary button--color-inverted">
+                        <a href="/en-us/future-trends-industrial-operations" target="_self" data-link-type="cta" data-link-text="Begin Your Transformation">
+                            <span>Begin Your Transformation</span>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HERO IMAGE -->
+    <div class="new-hero-image">
+        <div id="blur-effect" class="desktop">
+            <svg id="motionPath" viewBox="0 0 270 249">
+                <path id="path" fill="none" d="M226.932 230.765C306.432 198.765 263.432 171.265 183.932 25.7648C140.932 -1.23525 60.4318 -15.2352 14.9318 25.7648C-30.5682 66.7648 42.4318 137.265 42.4318 194.265C42.4318 251.265 147.432 262.765 226.932 230.765Z"/>
+            </svg>
+            <svg id="blur1" width="522" height="481" viewBox="0 0 522 481">
+                <circle cx="261" cy="240.5" r="240.5"/>
+            </svg>
+        </div>
+        <div class="hero">
+            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        <picture style="aspect-ratio: 4032/3088;" class=" ">
+            
+            
+
+            
+            
+
+            
+
+            
+                
+                <source srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/thought-leadership-hero-1.4032.jpg" media="(min-width: 768px)"/>
+            
+            
+
+            
+            
+                
+                
+                    
+                    
+                    
+                        <img class="  main-image" width="4032" height="auto" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/thought-leadership-hero-1.4032.jpg" alt="neon blue and green waves" data-trackable="true"/>
+                    
+                
+            
+        </picture>
+
+        
+        
+
+        
+    
+
+
+        </div>
+    </div>
+
+</div>
+
+</div>
+</li>
+
+
+
+    </div>
+
+    
+</div>
+
+
+</div>
+
+
+
+
+
+    
+    <div class="generic-container__backgrounds">
+        
+        
+
+        
+        <div class="generic-container__gradient gradient no-gradient"></div>
+        
+
+        
+        <div class="generic-container__responsive-images">
+            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        
+
+        
+        
+
+        
+    
+
+
+        </div>
+
+        
+        
+
+        
+        <div class="generic-container__bg-color generic-container__bg-white"></div>
+    </div>
+</div>
+</div>
+
+    
+</div>
+</main>
+
+    
+</div>
+
+</div></div>
+</div>
+
+
+    
+
+</div>
+<div class="quick-links aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="quick-links__container homepage-design " data-path-code="-1332671060">
+    
+    <div class="quick-links__svg-gradient">
+        <svg>
+            <defs>
+                <linearGradient id="quick-links__linear-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:var(--gradient-color-a);stop-opacity:1;"></stop>
+                    <stop offset="100%" style="stop-color:var(--gradient-color-b);stop-opacity:1;"></stop>
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
+    <div class="quick-links__mobile-header-container">
+        <div class="quick-links__mobile-header">
+            <div class="quick-links__mobile-header-text">
+                Quicklinks
+            </div>
+            <div class="quick-links__mobile-header-icon">
+                <ra-icon name="chevron-down"></ra-icon>
+            </div>
+        </div>
+    </div>
+    <div class="quick-links__wrapper">
+        
+            <div class="quick-links__item">
+                <a href="https://www.rockwellautomation.com/en-us/support/product/product-downloads/compatability---downloads.html" target="_self" data-link-type="quick-links:item" data-link-text="downloads">
+                    
+                    
+    <span class="normal icon quick-links__icon raw-file-contents" aria-hidden="true">
+        <svg class="ra-homepage-icon" id="Icons_black" xmlns="http://www.w3.org/2000/svg"    viewBox="0 0 72 72">    <g id="Cloud_Sharing">        <g>            <path class="cls-1"                d="M69.39,34.9c-1.11-2.32-3.29-3.88-5.81-4.19-1.27-5.25-5.97-9.03-11.43-9.1-1.42-.04-2.87,.23-4.23,.73-2.61-5.59-8.21-9.27-14.57-9.27s-11.71,3.47-14.41,8.97c-1.39-.57-2.85-.87-4.35-.89-3.2-.06-6.2,1.16-8.47,3.39-2.28,2.22-3.56,5.2-3.6,8.39-.04,3.18,1.16,6.19,3.39,8.47,2.22,2.28,5.2,3.56,8.4,3.6h14.27c.52,0,.94-.42,.94-.94s-.42-.94-.94-.94H14.31c-2.68-.03-5.19-1.11-7.06-3.03-1.87-1.92-2.89-4.45-2.85-7.14,.03-2.68,1.11-5.19,3.03-7.06,1.92-1.87,4.49-2.88,7.14-2.85,1.54,.02,3.02,.39,4.42,1.1l.9,.46,.39-.93c2.25-5.36,7.5-8.79,13.26-8.7,5.77,.07,10.89,3.59,13.02,8.96l.37,.92,.9-.41c1.37-.63,2.79-.94,4.31-.92,4.81,.06,8.91,3.54,9.76,8.27l.13,.76,.77,.02c2.12,.05,4,1.27,4.91,3.18,.22,.47,.78,.67,1.25,.44,.47-.22,.67-.79,.44-1.25Z" />            <path class="cls-1"                d="M39.21,54.27l-6.25,6.26-.02-18.05c0-.52-.42-.94-.94-.94h0c-.52,0-.94,.42-.94,.94l.02,18.05-6.26-6.25c-.37-.37-.96-.37-1.33,0-.37,.37-.37,.96,0,1.33l8.53,8.51,8.51-8.53c.37-.37,.37-.96,0-1.33-.37-.37-.96-.37-1.33,0Z" />            <path class="cls-1"                d="M45.41,37.48c.37-.37,.37-.96,0-1.33l-8.53-8.51-8.51,8.53c-.37,.37-.37,.96,0,1.33,.3,.3,.89,.44,1.33,0l6.25-6.26,.02,18.05c0,.52,.42,.94,.94,.94h0c.52,0,.94-.42,.94-.94l-.02-18.05,6.26,6.25c.37,.37,.96,.37,1.33,0Z" />            <path class="cls-1"                d="M67.25,38.36l-3.6,3.77c-.57,.61-1.35,.96-2.17,.98l-21.08-.05c-.52,0-.93,.49-.93,1.01,0,.52,.4,.93,.92,.93,0,0,21.13-.02,21.13-.02,1.32-.04,2.6-.61,3.5-1.57l3.59-3.77c.36-.38,.34-.97-.03-1.33-.37-.36-.97-.34-1.33,.03Z" />        </g>    </g></svg>
+    </span>
+
+                    <span class="quick-links__label">Downloads</span>
+                </a>
+            </div>
+            <div class="quick-links__item-separator"></div>
+        
+            <div class="quick-links__item">
+                <a href="https://www.rockwellautomation.com/en-us/support/knowledgebase.html" target="_self" data-link-type="quick-links:item" data-link-text="knowledgebase">
+                    
+                    
+    <span class="normal icon quick-links__icon raw-file-contents" aria-hidden="true">
+        <svg class="ra-homepage-icon" id="Icons_black" xmlns="http://www.w3.org/2000/svg"    viewBox="0 0 72 72">    <g id="Speech_Bubble">        <g>            <path class="cls-1"                d="M59.23,24.95V11.26H7.78V48.7h6.97v8.63l8.63-8.63h1.52v5.03s27.22,0,27.22,0l6.87,6.87v-6.87h5.26V24.95s-5.02,0-5.02,0Zm-34.33,0v21.74h-2.35l-5.8,5.8v-5.8h-6.97V13.26H57.23v11.69H24.9Zm37.35,26.77h-5.26v4.04l-4.04-4.04H26.9V26.95h30.33v10.84c0,.64,.46,1,1,1s1-.45,1-1v-10.84h3.03v24.77Z" />            <path class="cls-1"                d="M56.54,41.14l-4.41,4.44c-.62,.62-1.48,.98-2.35,.98H29.91c-.55,0-1,.45-1,1s.45,1,1,1h19.86c1.41,0,2.78-.57,3.77-1.57l4.41-4.44c.39-.39,.39-1.03,0-1.41-.39-.39-1.02-.39-1.41,0Z" />        </g>    </g></svg>
+    </span>
+
+                    <span class="quick-links__label">Knowledgebase</span>
+                </a>
+            </div>
+            <div class="quick-links__item-separator"></div>
+        
+            <div class="quick-links__item">
+                <a href="https://www.rockwellautomation.com/en-us/support/documentation/literature-library.html" target="_self" data-link-type="quick-links:item" data-link-text="literature library">
+                    
+                    
+    <span class="normal icon quick-links__icon raw-file-contents" aria-hidden="true">
+        <svg class="ra-homepage-icon" id="Enterprise" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">    <g id="Envelope">        <g>            <path class="cls-1"                d="M51.14,52.12H13.75s0-32.07,0-32.07H58.53s0,7.26,0,7.26c0,.46,.37,.82,.82,.82s.82-.37,.82-.82v-8.91s-48.08,0-48.08,0V53.76s39.04,0,39.04,0c.46,0,.82-.37,.82-.82s-.37-.82-.82-.82Z" />            <path class="cls-1"                d="M59.36,29.81c-.46,0-.82,.37-.82,.82v15.59c0,.47-.19,.92-.52,1.26l-4.34,4.34c-.32,.32-.32,.84,0,1.17,.34,.34,.85,.31,1.17,0l4.34-4.34c.65-.65,1-1.51,1-2.42v-15.59c0-.46-.37-.82-.82-.82Z" />            <path class="cls-1"                d="M56.91,45.07c0-.46-.37-.82-.82-.82h-5.09v5.09c0,.46,.37,.82,.82,.82s.82-.37,.82-.82v-3.44h3.44c.46,0,.82-.37,.82-.82Z" />            <path class="cls-1"                d="M19.37,26.66h30.67c.46,0,.82-.37,.82-.82s-.37-.82-.82-.82H19.37c-.46,0-.82,.37-.82,.82s.37,.82,.82,.82Z" />            <path class="cls-1"                d="M19.37,31.14h22.14c.46,0,.82-.37,.82-.82s-.37-.82-.82-.82H19.37c-.46,0-.82,.37-.82,.82s.37,.82,.82,.82Z" />            <path class="cls-1"                d="M51.41,34.79c0-.46-.37-.82-.82-.82H19.37c-.46,0-.82,.37-.82,.82s.37,.82,.82,.82h31.22c.46,0,.82-.37,.82-.82Z" />            <path class="cls-1"                d="M19.37,38.44c-.46,0-.82,.37-.82,.82s.37,.82,.82,.82h27.04c.46,0,.82-.37,.82-.82s-.37-.82-.82-.82H19.37Z" />        </g>    </g></svg>
+    </span>
+
+                    <span class="quick-links__label">Literature Library</span>
+                </a>
+            </div>
+            <div class="quick-links__item-separator"></div>
+        
+            <div class="quick-links__item">
+                <a href="https://www.rockwellautomation.com/en-us/tools/product-catalog.html" target="_self" data-link-type="quick-links:item" data-link-text="product catalog">
+                    
+                    
+    <span class="normal icon quick-links__icon raw-file-contents" aria-hidden="true">
+        <svg class="ra-homepage-icon" id="Icons_black" xmlns="http://www.w3.org/2000/svg"    viewBox="0 0 72 72">    <g id="Controller">        <g>            <path class="cls-1"                d="M13.31,22.28l1.28,1.28c.35,.35,.83,.55,1.33,.55h13.65v2.73c0,.51,.41,.92,.92,.92h0c.51,0,.92-.41,.92-.92v-2.73h3.45v2.73c0,.51,.41,.92,.92,.92h0c.51,0,.92-.41,.92-.92v-2.73h3.45v2.73c0,.51,.41,.92,.92,.92h0c.51,0,.92-.41,.92-.92v-2.73h3.45v13.28h-3.45v-2.77c0-.51-.41-.92-.92-.92h0c-.51,0-.92,.41-.92,.92v2.77h-3.45v-2.77c0-.51-.41-.92-.92-.92h0c-.51,0-.92,.41-.92,.92v2.77h-3.45v-2.77c0-.51-.41-.92-.92-.92h0c-.51,0-.92,.41-.92,.92v2.77H7.83v-5.81h6.39l-1.5-1.5c-.21-.21-.51-.34-.81-.34H7.83v-4.02c0-.34-.14-.67-.38-.91l-1.46-1.46v23.62h28.84v2.74h7.31v-2.74h3.35v2.74h7.31v-2.74h3.35v2.74h7.31v-2.74h2.53V22.28H13.31Zm33.95,16.95h3.45v5.92h-3.45v-5.92Zm5.29-7.64h3.45v5.81h-3.45v-5.81Zm0-7.47h3.45v5.64h-3.45v-5.64Zm5.28,15.11h6.34v5.92h-6.34v-5.92Zm-1.83,0v5.92h-3.45v-5.92h3.45Zm8.17-1.83h-6.34v-5.81h6.34v5.81Zm-6.34-7.64v-5.64h6.34v5.64h-6.34Zm-10.57-5.64h3.45v5.64h-3.45v-5.64Zm0,7.47h3.45v5.81h-3.45v-5.81Zm-1.83,7.64v5.92h-3.45v-5.92h3.45Zm-5.29,0v5.92h-3.45v-5.92h3.45Zm-5.29,0v5.92h-3.45v-5.92h3.45Zm-5.29,0v5.92H7.83v-5.92H29.57Zm10.74,8.66h-3.64v-.9h3.64v.9Zm10.66,0h-3.64v-.9h3.64v.9Zm10.66,0h-3.64v-.9h3.64v.9Z" />            <path class="cls-1"                d="M9.4,24.11l6.34,6.34c.08,.08,.18,.15,.27,.22,.68,.57,1.52,.89,2.42,.89l1.29,.02h22.25v-.02h1.02c.51,0,.92-.41,.92-.92,0-.48-.37-.86-.84-.9-.03,0-.05-.02-.08-.02H18.43c-.53,0-1.02-.2-1.4-.58l-5.96-5.96-.58-.58c-.36-.36-.94-.36-1.3,0-.16,.16-.24,.37-.26,.58-.02,.26,.06,.52,.26,.71l.2,.2Z" />        </g>    </g></svg>
+    </span>
+
+                    <span class="quick-links__label">Product Catalog</span>
+                </a>
+            </div>
+            <div class="quick-links__item-separator"></div>
+        
+            <div class="quick-links__item">
+                <a href="https://www.rockwellautomation.com/en-us/support/workforce-development-training.html" target="_self" data-link-type="quick-links:item" data-link-text="training">
+                    
+                    
+    <span class="normal icon quick-links__icon raw-file-contents" aria-hidden="true">
+        <svg class="ra-homepage-icon" id="Cyber_Security" xmlns="http://www.w3.org/2000/svg"    viewBox="0 0 72 72">    <g id="Layer_2">        <g id="Layer_1-2">            <path class="cls-1"                d="M57.04,16.29c-.57,0-1.03,.46-1.03,1.03V63.94H15.99V8.06h9.06c.57,0,1.03-.46,1.03-1.03s-.46-1.03-1.03-1.03H13.93v60H58.07V17.32c0-.57-.46-1.03-1.03-1.03Z" />            <path class="cls-1"                d="M29.21,8.06h19.46c.59,0,1.15,.23,1.56,.65l5.42,5.41c.19,.19,.45,.3,.72,.31,.57,.02,1.04-.42,1.07-.99,.01-.29-.1-.57-.3-.77l-5.44-5.41c-.8-.81-1.89-1.26-3.02-1.25H29.21c-.57,0-1.03,.46-1.03,1.03s.46,1.03,1.03,1.03Z" />            <path class="cls-1"                d="M47.23,10.12c-.57,0-1.03,.46-1.03,1.03v6.35h6.36c.57,0,1.03-.46,1.03-1.03s-.46-1.03-1.03-1.03h-4.3v-4.29c0-.57-.46-1.03-1.03-1.03Z" />            <path class="cls-1"                d="M44.53,40.78l3.01-.15-.66-3.09,2.37-.97-1.25-2.51,2.06-1.87-2.06-1.89,1.47-2.51-2.65-1.03,.66-2.73-2.87-.22-.16-2.96-2.83,.76-1.03-2.75-2.58,1.53-1.81-2.3-1.98,2.3-2.5-1.54-1.1,2.7-2.75-.53-.27,2.77-2.84,.16,.65,2.83-2.68,1.03,1.49,2.48-2.2,1.92,2.28,1.8-1.91,2.52,2.94,1.11-.81,2.95,3.14,.1v.76s-4.8,16.62-4.8,16.62l6.34-3.64,3.58,6.81,3.17-10.05,3.31,10.04,3.56-6.77,6.34,3.64-4.59-15.87-.02-1.46Zm-8.69,5.6l-3.44,10.87-2.59-4.94-4.42,2.53,3.25-11.23h-.03l2.06-.75,.75,2.88,2.83-1.95,1.59,2.59m2.35-2.32l2.33,1.55,1.03-2.66,1.69,.37h.02s3.34,11.56,3.34,11.56l-4.41-2.54-2.61,4.98-2.85-8.63,1.46-4.63Zm8.96-8.22l-2.06,.82,.55,2.53-2.66,.14v2.36h-.24l-2.06-.53-.84,2.06-2.41-1.6-1.31,2.15-1.41-2.16-2.36,1.63-.64-2.4-2.48,.93v-2.54l-2.63-.09,.68-2.42-2.42-.86,1.57-2.06-2-1.57,1.83-1.59-1.25-2.06,2.19-.85-.53-2.35,2.33-.13,.23-2.37,2.32,.46,.88-2.19,2.06,1.27,1.6-1.87,1.48,1.88,2.13-1.27,.89,2.36,2.36-.63,.13,2.41,2.41,.19-.55,2.25,2.23,.91-1.21,2.06,1.78,1.59-1.65,1.51,1.03,2.06Z" />            <path class="cls-1"                d="M36.18,39.95c4.2,0,7.61-3.42,7.6-7.62,0-4.2-3.42-7.61-7.62-7.6-4.2,0-7.6,3.41-7.6,7.61,0,4.21,3.42,7.61,7.62,7.61Zm0-13.17c3.07,0,5.55,2.5,5.54,5.56,0,3.07-2.5,5.55-5.56,5.54-3.06,0-5.54-2.49-5.54-5.55-.01-3.07,2.47-5.57,5.54-5.59,0,0,.01,0,.02,0v.03Z" />        </g>    </g></svg>
+    </span>
+
+                    <span class="quick-links__label">Training</span>
+                </a>
+            </div>
+            <div class="quick-links__item-separator"></div>
+        
+            <div class="quick-links__item">
+                <a href="https://advisor.rockwellautomation.com" target="_self" data-link-type="quick-links:item" data-link-text="advisor">
+                    
+                    
+    <span class="normal icon quick-links__icon raw-file-contents" aria-hidden="true">
+        <svg class="ra-homepage-icon" id="Icons_black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72"><path d="M55.03 12.878a3.886 3.886 0 0 1 1.162 2.703l-.097 26.506a.873.873 0 0 0 .864.878c.483 0 .874-.39.876-.873l.097-26.506a5.632 5.632 0 0 0-1.682-3.94l-3.873-3.865a.875.875 0 0 0-1.224 1.208l3.876 3.889ZM21 14.013a.87.87 0 0 0 0 .096v32.167a.875.875 0 0 0 1.749 0V14.11a.875.875 0 1 0-1.748-.096ZM19.168 45.237V31.308H8.48v1.877a.86.86 0 0 0-.694.85v1.958a.862.862 0 0 0 .694.83v2.448a.862.862 0 0 0-.7.838v1.972a.862.862 0 0 0 .7.83v2.321l10.688.005Zm-1.74-12.186v10.44h-7.195l-.013-10.44h7.208ZM19.168 15.12H8.48v1.89a.857.857 0 0 0-.7.838v1.962c.003.41.296.762.7.838v2.45a.862.862 0 0 0-.7.84V25.9c.003.411.296.763.7.839v2.32h10.688v-13.94Zm-1.74 12.172h-7.195V16.865h7.195v10.427ZM35.872 45.237V31.308h-10.69v1.877a.865.865 0 0 0-.698.85v1.958c.01.407.3.752.699.83v2.448a.865.865 0 0 0-.7.838v1.972c.01.407.3.752.7.83v2.321l10.689.005Zm-1.74-12.186v10.44H26.93l-.008-10.44h7.208ZM35.872 15.12h-10.69v1.89a.86.86 0 0 0-.698.838v1.962c.002.41.295.762.699.838v2.45a.865.865 0 0 0-.7.84V25.9a.86.86 0 0 0 .7.839v2.32h10.689v-13.94Zm-1.74 12.172H26.93V16.865h7.2v10.427Z" class="cls-1"/><path d="M52.57 17.073H41.885V26.5h10.686l-.003-9.428Zm-1.736 7.688h-7.206v-5.94h7.206v5.94ZM51.243 27.743a1.088 1.088 0 0 0-.264.188.88.88 0 0 0 .264 1.431.844.844 0 0 0 .667 0c.11-.045.21-.108.298-.187a.956.956 0 0 0 .185-.3.791.791 0 0 0 .068-.325.905.905 0 0 0-.263-.63c-.09-.077-.19-.14-.298-.187a.952.952 0 0 0-.657.01ZM46.352 28.56a.873.873 0 1 0 1.746 0 .873.873 0 0 0-1.746 0ZM43.21 27.743a.968.968 0 0 0-.678 0 .893.893 0 0 0-.264.195.865.865 0 0 0-.264.599c.002.235.097.46.264.625a.831.831 0 0 0 .264.187.873.873 0 0 0 .957-.187.86.86 0 0 0 0-1.224 1.026 1.026 0 0 0-.28-.195Z" class="cls-1"/><path d="m68.574 59.15-6.634-6.744L46.094 36.3l-.016.019a.848.848 0 0 0-.106-.087L39.5 32.637V14.109a.873.873 0 1 0-1.743 0v18.72a.815.815 0 0 0 0 .549c.003.252.118.49.313.648l3.468 6.558c.02.045.066.063.092.1l-.024.024 8.949 9.083H4.26V9.234h42.816a.875.875 0 0 0 0-1.748H2.513V51.55H52.26l8.885 9.043 2.945 2.985a3.114 3.114 0 0 0 2.215.936h.045a3.106 3.106 0 0 0 2.204-.897 3.164 3.164 0 0 0 .019-4.466ZM40.715 35.314l4.079 2.262-1.89 1.846-2.189-4.108ZM53.263 50.05l-9.178-9.31 1.998-1.972L60.701 53.63l2.465 2.513-1.993 1.959-7.91-8.053Zm14.05 12.31a1.4 1.4 0 0 1-1.977-.018l-2.94-2.971 1.993-1.96 2.94 2.983a1.4 1.4 0 0 1-.016 1.967Z" class="cls-1"/></svg>
+    </span>
+
+                    <span class="quick-links__label">Advisor</span>
+                </a>
+            </div>
+            
+        
+    </div>
+
+</div>
+
+
+    
+
+</div>
+<div class="generic-container pad-top-max aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="generic-container__inner">
+
+    
+    
+
+    
+    
+
+
+
+
+
+    
+    
+    <div class="column-control">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="column-control__container
+            
+             grid
+            
+            
+            
+            
+            
+            
+            
+            ">
+
+        
+        <div class="row">
+            <div class="col-mobile ">
+
+
+
+
+
+    
+    
+    <div class="animated-header">
+
+<div class="animated-header__container" data-is-animated="true">
+    <div class="animated-header__content">
+        <h1 class="animated-header__header">
+            
+            <div class="animated-header__title">
+                <div class="animated-header__title-text"><p>Global leaders in <a href="/en-us/capabilities/digital-transformation.html" title="Digital Transformation">Digital Transformation</a> and <a href="/en-us/capabilities/smart-manufacturing.html" title="Smart Manufacturing">Industrial Automation</a></p>
+</div>
+            </div>
+        </h1>
+        
+        
+        <div class="animated-header__subtitle">
+            <div class="animated-header__subtitle-text"><p>We meet you where you are in your journey with market leading hardware, software, and services to make you more resilient, agile, and sustainable.</p>
+</div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+</div>
+        </div>
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+    </div>
+
+</div>
+
+
+
+
+
+    
+    <div class="generic-container__backgrounds">
+        
+        
+
+        
+        <div class="generic-container__gradient gradient no-gradient"></div>
+        
+
+        
+        <div class="generic-container__responsive-images">
+            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        
+
+        
+        
+
+        
+    
+
+
+        </div>
+
+        
+        
+
+        
+        <div class="generic-container__bg-color generic-container__bg-white"></div>
+    </div>
+</div>
+</div>
+<div class="campaign-tags aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+<div class="campaign-tags__container glide" data-disable-fetch="false" data-resource-path="/en-us/jcr:content/root/main-par/campaign_tags_copy">
+
+    
+    <div class="campaign-tags__background-container">
+        <div class="campaign-tags__shards-container">
+            <svg class="campaign-tags__shards-left" width="889" height="1008" viewBox="0 0 889 1008" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.41" d="M888.366 611.65H-5.67383V16.3723H275.774C286.814 16.3723 297.407 20.7559 305.214 28.5673L828.366 611.655L888.366 611.65Z" fill="url(#paint0_linear_1280_40465)"/>
+                <path opacity="0.1" d="M332.195 213.912L451.214 94.9071H436.422C435.137 94.9071 433.909 95.4159 432.999 96.3255L313.98 215.331H328.772C330.057 215.331 331.286 214.822 332.195 213.912Z" fill="#00ADEE"/>
+                <path d="M302.382 136.416L166.18 0H213.931C218.076 0 222.049 1.6508 224.982 4.58404L361.18 141H313.429C309.283 141 305.31 139.349 302.377 136.416H302.382Z" fill="#00ADEE" fill-opacity="0.5"/>
+                <path opacity="0.4" d="M469.205 423.894L686.648 206.476H610.412C603.797 206.476 597.449 209.102 592.772 213.784L375.33 431.202H451.566C458.181 431.202 464.528 428.576 469.205 423.894Z" fill="url(#paint1_linear_1280_40465)"/>
+                <path opacity="0.5" d="M466.286 620.489L174.149 328.38H445.46C469.005 328.38 491.588 337.733 508.241 354.383L800.377 646.488H529.067C505.522 646.488 482.938 637.135 466.286 620.484V620.489Z" fill="url(#paint2_linear_1280_40465)"/>
+                <path opacity="0.05" d="M462.143 257.384L343.125 138.379H357.917C359.202 138.379 360.43 138.887 361.34 139.797L480.358 258.802H465.566C464.281 258.802 463.053 258.293 462.143 257.384Z" fill="#00ADEE"/>
+                <path opacity="0.5" d="M384.864 386.631L147.912 149.705H177.357C179.911 149.705 182.363 150.722 184.172 152.526L421.125 389.452H391.68C389.125 389.452 386.674 388.435 384.864 386.631Z" fill="#00ADEE"/>
+                <path opacity="0.5" d="M750.132 545.397L513.18 308.471H542.625C545.179 308.471 547.631 309.489 549.44 311.292L786.392 548.219H756.947C754.393 548.219 751.941 547.201 750.132 545.397Z" fill="#003E7E"/>
+                <path d="M-71.6171 988.667L503.682 413.431H301.972C284.467 413.431 267.675 420.384 255.299 432.764L-320 1008H-118.295C-100.79 1008 -83.9985 1001.05 -71.6223 988.667H-71.6171Z" fill="url(#paint3_linear_1280_40465)" fill-opacity="0.5"/>
+                <path d="M166.024 479.453L-232.739 80.7336H137.592C169.735 80.7336 200.557 93.4991 223.285 116.224L622.048 514.943H251.717C219.574 514.943 188.751 502.178 166.024 479.453Z" fill="url(#paint4_linear_1280_40465)" fill-opacity="0.5"/>
+                <defs>
+                <linearGradient id="paint0_linear_1280_40465" x1="74.3262" y1="314.011" x2="828.366" y2="314.011" gradientUnits="userSpaceOnUse">
+                <stop offset="0.1" stop-color="#00ADEE"/>
+                <stop offset="0.7" stop-color="#003E7E" stop-opacity="0.43"/>
+                <stop offset="1" stop-color="#003E7E" stop-opacity="0.1"/>
+                </linearGradient>
+                <linearGradient id="paint1_linear_1280_40465" x1="404.79" y1="436.105" x2="617.4" y2="238.505" gradientUnits="userSpaceOnUse">
+                <stop offset="0.32" stop-color="#00ADEE"/>
+                <stop offset="1" stop-color="#003E7E"/>
+                </linearGradient>
+                <linearGradient id="paint2_linear_1280_40465" x1="350.264" y1="354.188" x2="586.497" y2="584.007" gradientUnits="userSpaceOnUse">
+                <stop offset="0.18" stop-color="#00ADEE"/>
+                <stop offset="1" stop-color="#003E7E"/>
+                </linearGradient>
+                <linearGradient id="paint3_linear_1280_40465" x1="40.4062" y1="733.698" x2="493.283" y2="531.284" gradientUnits="userSpaceOnUse">
+                <stop offset="0.33" stop-color="#00ADEE"/>
+                <stop offset="1" stop-color="#003E7E"/>
+                </linearGradient>
+                <linearGradient id="paint4_linear_1280_40465" x1="-232.739" y1="297.838" x2="622.043" y2="297.838" gradientUnits="userSpaceOnUse">
+                <stop offset="0.25" stop-color="#00ADEE"/>
+                <stop offset="1" stop-color="#003E7E" stop-opacity="0.7"/>
+                </linearGradient>
+                </defs>
+            </svg>
+            <svg class="campaign-tags__shards-right" width="431" height="736" viewBox="0 0 431 736" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M439.183 542.809L287.433 694.589H306.293C307.931 694.589 309.497 693.94 310.657 692.78L462.407 541H443.548C441.909 541 440.343 541.649 439.183 542.809Z" fill="#8D0034" fill-opacity="0.3"/>
+                <path d="M287.065 660.768L233.277 714.567H252.137C253.776 714.567 255.342 713.918 256.502 712.758L310.29 658.959H291.43C289.791 658.959 288.225 659.608 287.065 660.768Z" fill="#8D0034" fill-opacity="0.5"/>
+                <path opacity="0.4" d="M270.198 437.46L216.41 491.258H235.27C236.908 491.258 238.474 490.61 239.634 489.449L293.422 435.651H274.562C272.924 435.651 271.358 436.3 270.198 437.46Z" fill="#8D0034" fill-opacity="0.5"/>
+                <path d="M201.784 221.847L5.20996 418.459H74.1291C80.1121 418.459 85.8461 416.079 90.0794 411.852L286.653 215.24H217.734C211.751 215.24 206.017 217.619 201.784 221.847Z" fill="#8D0034" fill-opacity="0.6"/>
+                <path opacity="0.4" d="M277.243 274.99L0 552.286H97.2024C105.636 552.286 113.729 548.937 119.693 542.966L396.935 265.669H299.733C291.299 265.669 283.206 269.019 277.243 274.99V274.99Z" fill="url(#paint5_linear_1280_40465)" fill-opacity="0.4"/>
+                <path opacity="0.9" d="M381.018 6.60684L184.444 203.219H253.363C259.346 203.219 265.08 200.84 269.314 196.612L465.888 0H396.968C390.985 0 385.251 2.37926 381.018 6.60684Z" fill="#8D0034"/>
+                <path opacity="0.5" d="M169.811 583.97L321.562 735.75H302.702C301.064 735.75 299.497 735.102 298.337 733.942L146.587 582.161H165.447C167.085 582.161 168.651 582.81 169.811 583.97V583.97Z" fill="#8D0034"/>
+                <path opacity="0.2" d="M220.283 458.185L372.033 609.965H353.173C351.535 609.965 349.969 609.316 348.809 608.156L197.059 456.376H215.918C217.557 456.376 219.123 457.025 220.283 458.185V458.185Z" fill="#8D0034"/>
+                <path opacity="0.79" d="M166.815 134.945L318.566 286.725H299.706C298.067 286.725 296.501 286.076 295.341 284.916L143.591 133.135H162.451C164.089 133.135 165.655 133.784 166.815 134.945V134.945Z" fill="#8D0034"/>
+                <path opacity="0.6" d="M189.05 90.0305L491.168 392.208H453.625C450.368 392.208 447.242 390.91 444.936 388.609L142.817 86.4321H180.36C183.617 86.4321 186.743 87.7299 189.05 90.0305Z" fill="#8D0034"/>
+                <defs>
+                <linearGradient id="paint5_linear_1280_40465" x1="359.373" y1="259.423" x2="88.2149" y2="511.36" gradientUnits="userSpaceOnUse">
+                <stop offset="0.32" stop-color="#CB6B80"/>
+                <stop offset="1" stop-color="#8D0034"/>
+                </linearGradient>
+                </defs>
+            </svg>
+        </div>
+    </div>
+
+    
+    <div class="campaign-tags__content-container">
+
+        
+        <div class="campaign-tags__header-container">
+            <div class="campaign-tags__subtitle">Latest Insights</div>
+            <h2 class="campaign-tags__title">Redefining What’s Possible and Achieving Results</h2>
+            <div class="campaign-tags__filter-container">
+                <div class="campaign-tags__filter-text">Select your interest:</div>
+                <div class="campaign-tags__filter-toggle-container">
+                    <label class="campaign-tags__filter-toggle" data-link-type="campaign-tags:tag" data-link-text="Optimize Production">
+                        <input type="checkbox" name="tags" value="0"/>
+                        <span>Optimize Production</span>
+                    </label>
+                
+                    <label class="campaign-tags__filter-toggle" data-link-type="campaign-tags:tag" data-link-text="Empower People">
+                        <input type="checkbox" name="tags" value="1"/>
+                        <span>Empower People</span>
+                    </label>
+                
+                    <label class="campaign-tags__filter-toggle" data-link-type="campaign-tags:tag" data-link-text="Build Resilience">
+                        <input type="checkbox" name="tags" value="2"/>
+                        <span>Build Resilience</span>
+                    </label>
+                
+                    <label class="campaign-tags__filter-toggle" data-link-type="campaign-tags:tag" data-link-text="Drive Sustainability">
+                        <input type="checkbox" name="tags" value="3"/>
+                        <span>Drive Sustainability</span>
+                    </label>
+                
+                    <label class="campaign-tags__filter-toggle" data-link-type="campaign-tags:tag" data-link-text="Accelerate Digital Transformation">
+                        <input type="checkbox" name="tags" value="4"/>
+                        <span>Accelerate Digital Transformation</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="campaign-tags__cards-container-wrapper" data-glide-el="track">
+            <div class="campaign-tags__cards-container">
+
+                
+                
+                    <div class="campaign-tags__card-wrapper" data-tag-index="0">
+                        <a class="campaign-tags__card glide__slide" href="/en-us/company/news/blogs/trends-manufacturing.html" data-link-type="campaign-tags:card" data-link-text="5 Priorities Trending in Manufacturing Today">
+                            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        <picture class=" aspect-ratio--3x2">
+            
+            
+
+            
+            
+
+            
+
+            
+                
+                <source srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/woman-warehouse-manufacturing-ADO-622957510.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/woman-warehouse-manufacturing-ADO-622957510.1280.jpg 2x" media="(min-width: 768px)"/>
+            
+            
+
+            
+            
+                
+                
+                    
+                    
+                        <img class="campaign-tags__card-image  main-image " width="6000" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/woman-warehouse-manufacturing-ADO-622957510.640.jpg" srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/woman-warehouse-manufacturing-ADO-622957510.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/woman-warehouse-manufacturing-ADO-622957510.1280.jpg 2x" alt="Young smart asian business working woman using digital tablet to check goods on shelves for product management in warehouse, Logistics business planning concept." data-aem-asset-id="562bd6d7-93b3-404d-8d59-41bf80b1b5c4" data-trackable="true"/>
+                    
+                    
+                
+            
+        </picture>
+
+        
+        
+
+        
+    
+
+
+                            <div class="campaign-tags__card-text-container">
+                                <div class="campaign-tags__card-subtitle">blog</div>
+                                <div class="campaign-tags__card-title">5 Priorities Trending in Manufacturing Today</div>
+                                <div class="campaign-tags__card-description">The State of Smart Manufacturing report revealed common challenges and opportunities from leaders in the industry. Where does your team rank?</div>
+                                <div class="campaign-tags__card-link">Read More</div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="campaign-tags__card-wrapper" data-tag-index="0">
+                        <a class="campaign-tags__card glide__slide" href="/en-us/company/news/case-studies/clearpack-packaging-solutions.html" data-link-type="campaign-tags:card" data-link-text="Clearpack Delivers Smarter Packaging Automation">
+                            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        <picture class=" aspect-ratio--16x9">
+            
+            
+
+            
+            
+
+            
+
+            
+                
+                <source srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/clearpack-tlp-packaging-machine.640.png 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/clearpack-tlp-packaging-machine.1280.png 2x" media="(min-width: 768px)"/>
+            
+            
+
+            
+            
+                
+                
+                    
+                    
+                        <img class="campaign-tags__card-image  main-image " width="2400" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/clearpack-tlp-packaging-machine.640.png" srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/clearpack-tlp-packaging-machine.640.png 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/clearpack-tlp-packaging-machine.1280.png 2x" alt="Clearpack TLP packaging machine" data-aem-asset-id="4e380a7e-1842-46f5-8931-5b366825352f" data-trackable="true"/>
+                    
+                    
+                
+            
+        </picture>
+
+        
+        
+
+        
+    
+
+
+                            <div class="campaign-tags__card-text-container">
+                                <div class="campaign-tags__card-subtitle">case study</div>
+                                <div class="campaign-tags__card-title">Clearpack Delivers Smarter Packaging Automation</div>
+                                <div class="campaign-tags__card-description">Clearpack collaborates with Rockwell Automation to deliver smarter, scalable packaging solutions that enhance flexibility, and operational efficiency.</div>
+                                <div class="campaign-tags__card-link">Read More</div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="campaign-tags__card-wrapper" data-tag-index="0">
+                        <a class="campaign-tags__card glide__slide" href="/en-us/company/news/case-studies/mining-complex-process-control.html" data-link-type="campaign-tags:card" data-link-text="Mining Operation Modernizes Control Infrastructure">
+                            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        <picture style="aspect-ratio: 7952/4300;" class=" ">
+            
+            
+
+            
+            
+
+            
+
+            
+                
+                <source srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/foreman-showing-worker-in-open-cast-mining-pit-direction-ADO-254160709.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/foreman-showing-worker-in-open-cast-mining-pit-direction-ADO-254160709.1280.jpg 2x" media="(min-width: 768px)"/>
+            
+            
+
+            
+            
+                
+                
+                    
+                    
+                        <img class="campaign-tags__card-image  main-image " width="7952" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/foreman-showing-worker-in-open-cast-mining-pit-direction-ADO-254160709.640.jpg" srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/foreman-showing-worker-in-open-cast-mining-pit-direction-ADO-254160709.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/foreman-showing-worker-in-open-cast-mining-pit-direction-ADO-254160709.1280.jpg 2x" alt="Foreman showing worker in open-cast mining pit direction with arm stretched" data-aem-asset-id="a948f47c-a653-46d1-a0f3-75657026f593" data-trackable="true"/>
+                    
+                    
+                
+            
+        </picture>
+
+        
+        
+
+        
+    
+
+
+                            <div class="campaign-tags__card-text-container">
+                                <div class="campaign-tags__card-subtitle">case study</div>
+                                <div class="campaign-tags__card-title">Mining Operation Modernizes Control Infrastructure</div>
+                                <div class="campaign-tags__card-description">Excelpro helps a major mining operation replace fragmented legacy control systems with a modern platform built for performance, reliability and future growth.</div>
+                                <div class="campaign-tags__card-link">Read More</div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="campaign-tags__card-wrapper" data-tag-index="0">
+                        <a class="campaign-tags__card glide__slide" href="/en-us/company/news/blogs/plantwide-control-with-plantpax.html" data-link-type="campaign-tags:card" data-link-text="Plantwide Control Starts with PlantPAX">
+                            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        <picture class=" aspect-ratio--16x9">
+            
+            
+
+            
+            
+
+            
+
+            
+                
+                <source srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/engineer-monitoring-several-factory-screens-ADO-586259450.640.png 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/engineer-monitoring-several-factory-screens-ADO-586259450.1280.png 2x" media="(min-width: 768px)"/>
+            
+            
+
+            
+            
+                
+                
+                    
+                    
+                        <img class="campaign-tags__card-image  main-image " width="2400" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/engineer-monitoring-several-factory-screens-ADO-586259450.640.png" srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/engineer-monitoring-several-factory-screens-ADO-586259450.640.png 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/engineer-monitoring-several-factory-screens-ADO-586259450.1280.png 2x" alt="Engineer monitoring several factory screens" data-aem-asset-id="542c4c0f-72ed-437d-a0aa-6fc944fc035e" data-trackable="true"/>
+                    
+                    
+                
+            
+        </picture>
+
+        
+        
+
+        
+    
+
+
+                            <div class="campaign-tags__card-text-container">
+                                <div class="campaign-tags__card-subtitle">blog</div>
+                                <div class="campaign-tags__card-title">Plantwide Control Starts with PlantPAX</div>
+                                <div class="campaign-tags__card-description">PlantPAx® helps address these challenges with a distributed control system designed for plant-wide control, lifecycle confidence and long-term scalability. </div>
+                                <div class="campaign-tags__card-link">Read More</div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="campaign-tags__card-wrapper" data-tag-index="0">
+                        <a class="campaign-tags__card glide__slide" href="/en-us/company/news/blogs/smart-vfds-oil-and-gas.html" data-link-type="campaign-tags:card" data-link-text="Smart VFDs boost productivity, cut energy costs">
+                            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        <picture class=" aspect-ratio--16x9">
+            
+            
+
+            
+            
+
+            
+
+            
+                
+                <source srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/thumbnail-16x9-centerline-2100-motor-control-centers-overview.640.png 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/thumbnail-16x9-centerline-2100-motor-control-centers-overview.1280.png 2x" media="(min-width: 768px)"/>
+            
+            
+
+            
+            
+                
+                
+                    
+                    
+                        <img class="campaign-tags__card-image  main-image " width="1600" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/thumbnail-16x9-centerline-2100-motor-control-centers-overview.640.png" srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/thumbnail-16x9-centerline-2100-motor-control-centers-overview.640.png 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/thumbnail-16x9-centerline-2100-motor-control-centers-overview.1280.png 2x" alt="Daytime multi-story offshore construction platform for oil and gas production" data-aem-asset-id="3fe495c2-00ee-49bb-95a8-6c320aae6bfe" data-trackable="true"/>
+                    
+                    
+                
+            
+        </picture>
+
+        
+        
+
+        
+    
+
+
+                            <div class="campaign-tags__card-text-container">
+                                <div class="campaign-tags__card-subtitle">blog</div>
+                                <div class="campaign-tags__card-title">Smart VFDs boost productivity, cut energy costs</div>
+                                <div class="campaign-tags__card-description">When oil and gas producers are under pressure to increase output, uptime and sustainability ... smart VFDs deliver a smarter energy efficiency alternative!</div>
+                                <div class="campaign-tags__card-link">Read More</div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="campaign-tags__card-wrapper" data-tag-index="0">
+                        <a class="campaign-tags__card glide__slide" href="/en-us/company/news/case-studies/oem-standardizes-for-scalability.html" data-link-type="campaign-tags:card" data-link-text="Comact Cuts Lead Times by Up To 80% and Increases Delivery Reliability">
+                            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        <picture style="aspect-ratio: 2400/1250;" class=" ">
+            
+            
+
+            
+            
+
+            
+
+            
+                
+                <source srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/lumber-forest-ADO-327677520.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/lumber-forest-ADO-327677520.1280.jpg 2x" media="(min-width: 768px)"/>
+            
+            
+
+            
+            
+                
+                
+                    
+                    
+                        <img class="campaign-tags__card-image  main-image " width="2400" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/lumber-forest-ADO-327677520.640.jpg" srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/lumber-forest-ADO-327677520.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/lumber-forest-ADO-327677520.1280.jpg 2x" alt="lumber forest pulp paper timber" data-aem-asset-id="2f80993e-e3cd-45b8-b825-a7d28ff0ba3d" data-trackable="true"/>
+                    
+                    
+                
+            
+        </picture>
+
+        
+        
+
+        
+    
+
+
+                            <div class="campaign-tags__card-text-container">
+                                <div class="campaign-tags__card-subtitle">case study</div>
+                                <div class="campaign-tags__card-title">Comact Cuts Lead Times by Up To 80% and Increases Delivery Reliability</div>
+                                <div class="campaign-tags__card-description">Modernizing with standardized motor control centers improves design efficiency, project execution, and automation reliability.</div>
+                                <div class="campaign-tags__card-link">Read More</div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="campaign-tags__card-wrapper" data-tag-index="1" hidden>
+                        <a class="campaign-tags__card glide__slide" href="/en-us/company/news/blogs/trends-manufacturing.html" data-link-type="campaign-tags:card" data-link-text="5 Priorities Trending in Manufacturing Today">
+                            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        <picture class=" aspect-ratio--3x2">
+            
+            
+
+            
+            
+
+            
+
+            
+                
+                <source srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/woman-warehouse-manufacturing-ADO-622957510.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/woman-warehouse-manufacturing-ADO-622957510.1280.jpg 2x" media="(min-width: 768px)"/>
+            
+            
+
+            
+            
+                
+                
+                    
+                    
+                        <img class="campaign-tags__card-image  main-image " width="6000" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/woman-warehouse-manufacturing-ADO-622957510.640.jpg" srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/woman-warehouse-manufacturing-ADO-622957510.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/woman-warehouse-manufacturing-ADO-622957510.1280.jpg 2x" alt="Young smart asian business working woman using digital tablet to check goods on shelves for product management in warehouse, Logistics business planning concept." data-aem-asset-id="562bd6d7-93b3-404d-8d59-41bf80b1b5c4" data-trackable="true"/>
+                    
+                    
+                
+            
+        </picture>
+
+        
+        
+
+        
+    
+
+
+                            <div class="campaign-tags__card-text-container">
+                                <div class="campaign-tags__card-subtitle">blog</div>
+                                <div class="campaign-tags__card-title">5 Priorities Trending in Manufacturing Today</div>
+                                <div class="campaign-tags__card-description">The State of Smart Manufacturing report revealed common challenges and opportunities from leaders in the industry. Where does your team rank?</div>
+                                <div class="campaign-tags__card-link">Read More</div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="campaign-tags__card-wrapper" data-tag-index="1" hidden>
+                        <a class="campaign-tags__card glide__slide" href="/en-us/company/news/blogs/arc-flash-risk-mining-operations.html" data-link-type="campaign-tags:card" data-link-text="Arc Flash Risk in Mining Operations">
+                            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        <picture class=" aspect-ratio--16x9">
+            
+            
+
+            
+            
+
+            
+
+            
+                
+                <source srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/colleagues-having-discussion-talk-cooperation-on-industrial-ADO-1543084713.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/colleagues-having-discussion-talk-cooperation-on-industrial-ADO-1543084713.1280.jpg 2x" media="(min-width: 768px)"/>
+            
+            
+
+            
+            
+                
+                
+                    
+                    
+                        <img class="campaign-tags__card-image  main-image " width="5460" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/colleagues-having-discussion-talk-cooperation-on-industrial-ADO-1543084713.640.jpg" srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/colleagues-having-discussion-talk-cooperation-on-industrial-ADO-1543084713.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/colleagues-having-discussion-talk-cooperation-on-industrial-ADO-1543084713.1280.jpg 2x" alt="Colleagues having discussion talk cooperation on industrial manufacturing workplace during working process on background grinding ball mill with mineral ore." data-aem-asset-id="dac439d1-0783-4e27-8986-9adb3ccd8e8f" data-trackable="true"/>
+                    
+                    
+                
+            
+        </picture>
+
+        
+        
+
+        
+    
+
+
+                            <div class="campaign-tags__card-text-container">
+                                <div class="campaign-tags__card-subtitle">blog</div>
+                                <div class="campaign-tags__card-title">Arc Flash Risk in Mining Operations</div>
+                                <div class="campaign-tags__card-description">Reduce arc flash risk in mining operations through proven electrical safety strategies that help protect workers, improve reliability, and support uptime.</div>
+                                <div class="campaign-tags__card-link">Read More</div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="campaign-tags__card-wrapper" data-tag-index="1" hidden>
+                        <a class="campaign-tags__card glide__slide" href="/en-us/company/news/case-studies/safety-system-upgrade.html" data-link-type="campaign-tags:card" data-link-text="Reducing Trips with AADvance® Control System">
+                            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        <picture class=" aspect-ratio--16x9">
+            
+            
+
+            
+            
+
+            
+
+            
+                
+                <source srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/preventing-false-trips-trusted-and-AADvance-400A-PA-1125-ADO-295930033.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/preventing-false-trips-trusted-and-AADvance-400A-PA-1125-ADO-295930033.1280.jpg 2x" media="(min-width: 768px)"/>
+            
+            
+
+            
+            
+                
+                
+                    
+                    
+                        <img class="campaign-tags__card-image  main-image " width="2400" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/preventing-false-trips-trusted-and-AADvance-400A-PA-1125-ADO-295930033.640.jpg" srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/preventing-false-trips-trusted-and-AADvance-400A-PA-1125-ADO-295930033.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/preventing-false-trips-trusted-and-AADvance-400A-PA-1125-ADO-295930033.1280.jpg 2x" alt="Oil and gas industrial refinery zone. Detail of equipment oil pipeline steel with valve from large oil storage tank." data-aem-asset-id="4a9f153c-5b80-4c21-aa1c-cb17eee08ced" data-trackable="true"/>
+                    
+                    
+                
+            
+        </picture>
+
+        
+        
+
+        
+    
+
+
+                            <div class="campaign-tags__card-text-container">
+                                <div class="campaign-tags__card-subtitle">case study</div>
+                                <div class="campaign-tags__card-title">Reducing Trips with AADvance® Control System</div>
+                                <div class="campaign-tags__card-description">AADvance® system upgrade reduced false trips, improved safety reliability, and enhanced operational continuity for a petroleum processing facility.</div>
+                                <div class="campaign-tags__card-link">Read More</div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="campaign-tags__card-wrapper" data-tag-index="1" hidden>
+                        <a class="campaign-tags__card glide__slide" href="/en-us/company/news/blogs/ai-transform-manufacturing.html" data-link-type="campaign-tags:card" data-link-text="How AI is Transforming Manufacturing">
+                            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        <picture class=" aspect-ratio--16x9">
+            
+            
+
+            
+            
+
+            
+
+            
+                
+                <source srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/mlp-advanced-robot-arm-system-ADO-807684601.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/mlp-advanced-robot-arm-system-ADO-807684601.1280.jpg 2x" media="(min-width: 768px)"/>
+            
+            
+
+            
+            
+                
+                
+                    
+                    
+                        <img class="campaign-tags__card-image  main-image " width="5228" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/mlp-advanced-robot-arm-system-ADO-807684601.640.jpg" srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/mlp-advanced-robot-arm-system-ADO-807684601.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/mlp-advanced-robot-arm-system-ADO-807684601.1280.jpg 2x" alt="MLP Advanced robot arm system for digital industry and factory robotic technology. Automation manufacturing robot controlled by industry engineering using IOT software connected to internet network." data-aem-asset-id="f9c8ec19-1631-4598-826c-1776e2a07439" data-trackable="true"/>
+                    
+                    
+                
+            
+        </picture>
+
+        
+        
+
+        
+    
+
+
+                            <div class="campaign-tags__card-text-container">
+                                <div class="campaign-tags__card-subtitle">blog</div>
+                                <div class="campaign-tags__card-title">How AI is Transforming Manufacturing</div>
+                                <div class="campaign-tags__card-description">AI has moved from pilots to production. Here’s what manufacturing leaders need to know to scale intelligence, resilience, and execution.</div>
+                                <div class="campaign-tags__card-link">Read More</div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="campaign-tags__card-wrapper" data-tag-index="1" hidden>
+                        <a class="campaign-tags__card glide__slide" href="/en-us/company/news/blogs/fragmented-systems-to-orchestrated-operations.html" data-link-type="campaign-tags:card" data-link-text="From fragmented systems to orchestrated operations">
+                            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        <picture class=" aspect-ratio--16x9">
+            
+            
+
+            
+            
+
+            
+
+            
+                
+                <source srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/factorytalk-orchestration-software-smart-manufacturing-ADO-1855875121.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/factorytalk-orchestration-software-smart-manufacturing-ADO-1855875121.1280.jpg 2x" media="(min-width: 768px)"/>
+            
+            
+
+            
+            
+                
+                
+                    
+                    
+                        <img class="campaign-tags__card-image  main-image " width="2401" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/factorytalk-orchestration-software-smart-manufacturing-ADO-1855875121.640.jpg" srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/factorytalk-orchestration-software-smart-manufacturing-ADO-1855875121.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/factorytalk-orchestration-software-smart-manufacturing-ADO-1855875121.1280.jpg 2x" alt="A smart factory with a blue digital overlay on top of it showing data and connectivity" data-aem-asset-id="954b925d-ffae-4a75-8df9-c951f641c821" data-trackable="true"/>
+                    
+                    
+                
+            
+        </picture>
+
+        
+        
+
+        
+    
+
+
+                            <div class="campaign-tags__card-text-container">
+                                <div class="campaign-tags__card-subtitle">blog</div>
+                                <div class="campaign-tags__card-title">From fragmented systems to orchestrated operations</div>
+                                <div class="campaign-tags__card-description">How IT/OT orchestration enables autonomous material movement</div>
+                                <div class="campaign-tags__card-link">Read More</div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="campaign-tags__card-wrapper" data-tag-index="1" hidden>
+                        <a class="campaign-tags__card glide__slide" href="/en-us/company/news/case-studies/cornish-lithium-plant.html" data-link-type="campaign-tags:card" data-link-text="Cornish Lithium Drives Sustainability at UK Plant">
+                            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        <picture class=" aspect-ratio--16x9">
+            
+            
+
+            
+            
+
+            
+
+            
+                
+                <source srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/cornish-lithium-plant.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/cornish-lithium-plant.1280.jpg 2x" media="(min-width: 768px)"/>
+            
+            
+
+            
+            
+                
+                
+                    
+                    
+                        <img class="campaign-tags__card-image  main-image " width="3669" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/cornish-lithium-plant.640.jpg" srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/cornish-lithium-plant.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/cornish-lithium-plant.1280.jpg 2x" alt="Cornish Lithium plant" data-aem-asset-id="7f905300-5259-46b1-84a5-f2002748f3e6" data-trackable="true"/>
+                    
+                    
+                
+            
+        </picture>
+
+        
+        
+
+        
+    
+
+
+                            <div class="campaign-tags__card-text-container">
+                                <div class="campaign-tags__card-subtitle">case study</div>
+                                <div class="campaign-tags__card-title">Cornish Lithium Drives Sustainability at UK Plant</div>
+                                <div class="campaign-tags__card-description">PlantPAx distributed control system helps mineral company prove novel mica processing approach can extract battery metal from Cornish granite rock.</div>
+                                <div class="campaign-tags__card-link">Read More</div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="campaign-tags__card-wrapper" data-tag-index="2" hidden>
+                        <a class="campaign-tags__card glide__slide" href="/en-us/company/news/blogs/trends-manufacturing.html" data-link-type="campaign-tags:card" data-link-text="5 Priorities Trending in Manufacturing Today">
+                            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        <picture class=" aspect-ratio--3x2">
+            
+            
+
+            
+            
+
+            
+
+            
+                
+                <source srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/woman-warehouse-manufacturing-ADO-622957510.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/woman-warehouse-manufacturing-ADO-622957510.1280.jpg 2x" media="(min-width: 768px)"/>
+            
+            
+
+            
+            
+                
+                
+                    
+                    
+                        <img class="campaign-tags__card-image  main-image " width="6000" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/woman-warehouse-manufacturing-ADO-622957510.640.jpg" srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/woman-warehouse-manufacturing-ADO-622957510.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/woman-warehouse-manufacturing-ADO-622957510.1280.jpg 2x" alt="Young smart asian business working woman using digital tablet to check goods on shelves for product management in warehouse, Logistics business planning concept." data-aem-asset-id="562bd6d7-93b3-404d-8d59-41bf80b1b5c4" data-trackable="true"/>
+                    
+                    
+                
+            
+        </picture>
+
+        
+        
+
+        
+    
+
+
+                            <div class="campaign-tags__card-text-container">
+                                <div class="campaign-tags__card-subtitle">blog</div>
+                                <div class="campaign-tags__card-title">5 Priorities Trending in Manufacturing Today</div>
+                                <div class="campaign-tags__card-description">The State of Smart Manufacturing report revealed common challenges and opportunities from leaders in the industry. Where does your team rank?</div>
+                                <div class="campaign-tags__card-link">Read More</div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="campaign-tags__card-wrapper" data-tag-index="2" hidden>
+                        <a class="campaign-tags__card glide__slide" href="/en-us/company/news/case-studies/clearpack-packaging-solutions.html" data-link-type="campaign-tags:card" data-link-text="Clearpack Delivers Smarter Packaging Automation">
+                            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        <picture class=" aspect-ratio--16x9">
+            
+            
+
+            
+            
+
+            
+
+            
+                
+                <source srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/clearpack-tlp-packaging-machine.640.png 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/clearpack-tlp-packaging-machine.1280.png 2x" media="(min-width: 768px)"/>
+            
+            
+
+            
+            
+                
+                
+                    
+                    
+                        <img class="campaign-tags__card-image  main-image " width="2400" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/clearpack-tlp-packaging-machine.640.png" srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/clearpack-tlp-packaging-machine.640.png 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/clearpack-tlp-packaging-machine.1280.png 2x" alt="Clearpack TLP packaging machine" data-aem-asset-id="4e380a7e-1842-46f5-8931-5b366825352f" data-trackable="true"/>
+                    
+                    
+                
+            
+        </picture>
+
+        
+        
+
+        
+    
+
+
+                            <div class="campaign-tags__card-text-container">
+                                <div class="campaign-tags__card-subtitle">case study</div>
+                                <div class="campaign-tags__card-title">Clearpack Delivers Smarter Packaging Automation</div>
+                                <div class="campaign-tags__card-description">Clearpack collaborates with Rockwell Automation to deliver smarter, scalable packaging solutions that enhance flexibility, and operational efficiency.</div>
+                                <div class="campaign-tags__card-link">Read More</div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="campaign-tags__card-wrapper" data-tag-index="2" hidden>
+                        <a class="campaign-tags__card glide__slide" href="/en-us/company/news/case-studies/mining-complex-process-control.html" data-link-type="campaign-tags:card" data-link-text="Mining Operation Modernizes Control Infrastructure">
+                            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        <picture style="aspect-ratio: 7952/4300;" class=" ">
+            
+            
+
+            
+            
+
+            
+
+            
+                
+                <source srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/foreman-showing-worker-in-open-cast-mining-pit-direction-ADO-254160709.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/foreman-showing-worker-in-open-cast-mining-pit-direction-ADO-254160709.1280.jpg 2x" media="(min-width: 768px)"/>
+            
+            
+
+            
+            
+                
+                
+                    
+                    
+                        <img class="campaign-tags__card-image  main-image " width="7952" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/foreman-showing-worker-in-open-cast-mining-pit-direction-ADO-254160709.640.jpg" srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/foreman-showing-worker-in-open-cast-mining-pit-direction-ADO-254160709.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/foreman-showing-worker-in-open-cast-mining-pit-direction-ADO-254160709.1280.jpg 2x" alt="Foreman showing worker in open-cast mining pit direction with arm stretched" data-aem-asset-id="a948f47c-a653-46d1-a0f3-75657026f593" data-trackable="true"/>
+                    
+                    
+                
+            
+        </picture>
+
+        
+        
+
+        
+    
+
+
+                            <div class="campaign-tags__card-text-container">
+                                <div class="campaign-tags__card-subtitle">case study</div>
+                                <div class="campaign-tags__card-title">Mining Operation Modernizes Control Infrastructure</div>
+                                <div class="campaign-tags__card-description">Excelpro helps a major mining operation replace fragmented legacy control systems with a modern platform built for performance, reliability and future growth.</div>
+                                <div class="campaign-tags__card-link">Read More</div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="campaign-tags__card-wrapper" data-tag-index="2" hidden>
+                        <a class="campaign-tags__card glide__slide" href="/en-us/company/news/case-studies/oem-standardizes-for-scalability.html" data-link-type="campaign-tags:card" data-link-text="Comact Cuts Lead Times by Up To 80% and Increases Delivery Reliability">
+                            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        <picture style="aspect-ratio: 2400/1250;" class=" ">
+            
+            
+
+            
+            
+
+            
+
+            
+                
+                <source srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/lumber-forest-ADO-327677520.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/lumber-forest-ADO-327677520.1280.jpg 2x" media="(min-width: 768px)"/>
+            
+            
+
+            
+            
+                
+                
+                    
+                    
+                        <img class="campaign-tags__card-image  main-image " width="2400" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/lumber-forest-ADO-327677520.640.jpg" srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/lumber-forest-ADO-327677520.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/lumber-forest-ADO-327677520.1280.jpg 2x" alt="lumber forest pulp paper timber" data-aem-asset-id="2f80993e-e3cd-45b8-b825-a7d28ff0ba3d" data-trackable="true"/>
+                    
+                    
+                
+            
+        </picture>
+
+        
+        
+
+        
+    
+
+
+                            <div class="campaign-tags__card-text-container">
+                                <div class="campaign-tags__card-subtitle">case study</div>
+                                <div class="campaign-tags__card-title">Comact Cuts Lead Times by Up To 80% and Increases Delivery Reliability</div>
+                                <div class="campaign-tags__card-description">Modernizing with standardized motor control centers improves design efficiency, project execution, and automation reliability.</div>
+                                <div class="campaign-tags__card-link">Read More</div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="campaign-tags__card-wrapper" data-tag-index="2" hidden>
+                        <a class="campaign-tags__card glide__slide" href="/en-us/company/news/blogs/tackling-cyber-threats.html" data-link-type="campaign-tags:card" data-link-text="OT Cybersecurity at the Core of Smart Manufacturing">
+                            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        <picture class=" aspect-ratio--16x9">
+            
+            
+
+            
+            
+
+            
+
+            
+                
+                <source srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/manufacturing-cybersecurity-employee-ADO-621255191.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/manufacturing-cybersecurity-employee-ADO-621255191.1280.jpg 2x" media="(min-width: 768px)"/>
+            
+            
+
+            
+            
+                
+                
+                    
+                    
+                        <img class="campaign-tags__card-image  main-image " width="2400" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/manufacturing-cybersecurity-employee-ADO-621255191.640.jpg" srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/manufacturing-cybersecurity-employee-ADO-621255191.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/manufacturing-cybersecurity-employee-ADO-621255191.1280.jpg 2x" alt="Tablet, lock security and woman in hologram for data safety, software, password or coding in information technology. Cybersecurity, html overlay and person for digital analytics and research of gdpr." data-aem-asset-id="7be9e4c1-76ca-4093-9a3f-87579f84857e" data-trackable="true"/>
+                    
+                    
+                
+            
+        </picture>
+
+        
+        
+
+        
+    
+
+
+                            <div class="campaign-tags__card-text-container">
+                                <div class="campaign-tags__card-subtitle">blog</div>
+                                <div class="campaign-tags__card-title">OT Cybersecurity at the Core of Smart Manufacturing</div>
+                                <div class="campaign-tags__card-description">The need for cybersecurity awareness and action to mitigate the risk of a breach or attack is rising. Discover how manufacturers are taking action.</div>
+                                <div class="campaign-tags__card-link">Read More</div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="campaign-tags__card-wrapper" data-tag-index="2" hidden>
+                        <a class="campaign-tags__card glide__slide" href="/en-us/company/news/case-studies/safety-system-upgrade.html" data-link-type="campaign-tags:card" data-link-text="Reducing Trips with AADvance® Control System">
+                            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        <picture class=" aspect-ratio--16x9">
+            
+            
+
+            
+            
+
+            
+
+            
+                
+                <source srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/preventing-false-trips-trusted-and-AADvance-400A-PA-1125-ADO-295930033.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/preventing-false-trips-trusted-and-AADvance-400A-PA-1125-ADO-295930033.1280.jpg 2x" media="(min-width: 768px)"/>
+            
+            
+
+            
+            
+                
+                
+                    
+                    
+                        <img class="campaign-tags__card-image  main-image " width="2400" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/preventing-false-trips-trusted-and-AADvance-400A-PA-1125-ADO-295930033.640.jpg" srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/preventing-false-trips-trusted-and-AADvance-400A-PA-1125-ADO-295930033.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/preventing-false-trips-trusted-and-AADvance-400A-PA-1125-ADO-295930033.1280.jpg 2x" alt="Oil and gas industrial refinery zone. Detail of equipment oil pipeline steel with valve from large oil storage tank." data-aem-asset-id="4a9f153c-5b80-4c21-aa1c-cb17eee08ced" data-trackable="true"/>
+                    
+                    
+                
+            
+        </picture>
+
+        
+        
+
+        
+    
+
+
+                            <div class="campaign-tags__card-text-container">
+                                <div class="campaign-tags__card-subtitle">case study</div>
+                                <div class="campaign-tags__card-title">Reducing Trips with AADvance® Control System</div>
+                                <div class="campaign-tags__card-description">AADvance® system upgrade reduced false trips, improved safety reliability, and enhanced operational continuity for a petroleum processing facility.</div>
+                                <div class="campaign-tags__card-link">Read More</div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="campaign-tags__card-wrapper" data-tag-index="3" hidden>
+                        <a class="campaign-tags__card glide__slide" href="/en-us/company/news/case-studies/meurer-sustainable-packaging.html" data-link-type="campaign-tags:card" data-link-text="Meurer Redefines Sustainable Multipack Packaging">
+                            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        <picture class=" aspect-ratio--16x9">
+            
+            
+
+            
+            
+
+            
+
+            
+                
+                <source srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/Meurer-Case-Study-Hero-Image.640.png 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/Meurer-Case-Study-Hero-Image.1280.png 2x" media="(min-width: 768px)"/>
+            
+            
+
+            
+            
+                
+                
+                    
+                    
+                        <img class="campaign-tags__card-image  main-image " width="2400" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/Meurer-Case-Study-Hero-Image.640.png" srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/Meurer-Case-Study-Hero-Image.640.png 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/Meurer-Case-Study-Hero-Image.1280.png 2x" alt="Pulp and paper machine" data-aem-asset-id="76d3139f-0b47-4164-880a-83ef7d2b4ed4" data-trackable="true"/>
+                    
+                    
+                
+            
+        </picture>
+
+        
+        
+
+        
+    
+
+
+                            <div class="campaign-tags__card-text-container">
+                                <div class="campaign-tags__card-subtitle">case study</div>
+                                <div class="campaign-tags__card-title">Meurer Redefines Sustainable Multipack Packaging</div>
+                                <div class="campaign-tags__card-description">Meurer Verpackungssysteme partners with Rockwell Automation to replace plastic secondary packaging with paper, cutting energy use while maintaining speed and reliability.</div>
+                                <div class="campaign-tags__card-link">Read More</div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="campaign-tags__card-wrapper" data-tag-index="3" hidden>
+                        <a class="campaign-tags__card glide__slide" href="/en-us/company/news/blogs/trends-manufacturing.html" data-link-type="campaign-tags:card" data-link-text="5 Priorities Trending in Manufacturing Today">
+                            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        <picture class=" aspect-ratio--3x2">
+            
+            
+
+            
+            
+
+            
+
+            
+                
+                <source srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/woman-warehouse-manufacturing-ADO-622957510.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/woman-warehouse-manufacturing-ADO-622957510.1280.jpg 2x" media="(min-width: 768px)"/>
+            
+            
+
+            
+            
+                
+                
+                    
+                    
+                        <img class="campaign-tags__card-image  main-image " width="6000" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/woman-warehouse-manufacturing-ADO-622957510.640.jpg" srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/woman-warehouse-manufacturing-ADO-622957510.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/woman-warehouse-manufacturing-ADO-622957510.1280.jpg 2x" alt="Young smart asian business working woman using digital tablet to check goods on shelves for product management in warehouse, Logistics business planning concept." data-aem-asset-id="562bd6d7-93b3-404d-8d59-41bf80b1b5c4" data-trackable="true"/>
+                    
+                    
+                
+            
+        </picture>
+
+        
+        
+
+        
+    
+
+
+                            <div class="campaign-tags__card-text-container">
+                                <div class="campaign-tags__card-subtitle">blog</div>
+                                <div class="campaign-tags__card-title">5 Priorities Trending in Manufacturing Today</div>
+                                <div class="campaign-tags__card-description">The State of Smart Manufacturing report revealed common challenges and opportunities from leaders in the industry. Where does your team rank?</div>
+                                <div class="campaign-tags__card-link">Read More</div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="campaign-tags__card-wrapper" data-tag-index="3" hidden>
+                        <a class="campaign-tags__card glide__slide" href="/en-us/company/news/blogs/smart-vfds-oil-and-gas.html" data-link-type="campaign-tags:card" data-link-text="Smart VFDs boost productivity, cut energy costs">
+                            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        <picture class=" aspect-ratio--16x9">
+            
+            
+
+            
+            
+
+            
+
+            
+                
+                <source srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/thumbnail-16x9-centerline-2100-motor-control-centers-overview.640.png 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/thumbnail-16x9-centerline-2100-motor-control-centers-overview.1280.png 2x" media="(min-width: 768px)"/>
+            
+            
+
+            
+            
+                
+                
+                    
+                    
+                        <img class="campaign-tags__card-image  main-image " width="1600" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/thumbnail-16x9-centerline-2100-motor-control-centers-overview.640.png" srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/thumbnail-16x9-centerline-2100-motor-control-centers-overview.640.png 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/thumbnail-16x9-centerline-2100-motor-control-centers-overview.1280.png 2x" alt="Daytime multi-story offshore construction platform for oil and gas production" data-aem-asset-id="3fe495c2-00ee-49bb-95a8-6c320aae6bfe" data-trackable="true"/>
+                    
+                    
+                
+            
+        </picture>
+
+        
+        
+
+        
+    
+
+
+                            <div class="campaign-tags__card-text-container">
+                                <div class="campaign-tags__card-subtitle">blog</div>
+                                <div class="campaign-tags__card-title">Smart VFDs boost productivity, cut energy costs</div>
+                                <div class="campaign-tags__card-description">When oil and gas producers are under pressure to increase output, uptime and sustainability ... smart VFDs deliver a smarter energy efficiency alternative!</div>
+                                <div class="campaign-tags__card-link">Read More</div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="campaign-tags__card-wrapper" data-tag-index="3" hidden>
+                        <a class="campaign-tags__card glide__slide" href="/en-us/company/news/blogs/sustainability-value.html" data-link-type="campaign-tags:card" data-link-text="Winning the Long Game: How Sustainability Unlocks Real Business Impact">
+                            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        <picture class=" aspect-ratio--16x9">
+            
+            
+
+            
+            
+
+            
+
+            
+                
+                <source srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/blue-green-wavy-abstract-lines-dots-textured-ADO-874209311.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/blue-green-wavy-abstract-lines-dots-textured-ADO-874209311.1280.jpg 2x" media="(min-width: 768px)"/>
+            
+            
+
+            
+            
+                
+                
+                    
+                    
+                        <img class="campaign-tags__card-image  main-image " width="5364" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/blue-green-wavy-abstract-lines-dots-textured-ADO-874209311.640.jpg" srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/blue-green-wavy-abstract-lines-dots-textured-ADO-874209311.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/blue-green-wavy-abstract-lines-dots-textured-ADO-874209311.1280.jpg 2x" alt="Digital technology speed connect blue green background, cyber nano information, abstract communication, innovation future tech data, internet network connection, Ai big data, line dot illustration 3d --ar 3:2 Job ID: 232e3446-ae3a-4728-b106-133d0d37daad" data-aem-asset-id="f0cfa556-9d27-41f7-8caa-78233a26d50a" data-trackable="true"/>
+                    
+                    
+                
+            
+        </picture>
+
+        
+        
+
+        
+    
+
+
+                            <div class="campaign-tags__card-text-container">
+                                <div class="campaign-tags__card-subtitle">blog</div>
+                                <div class="campaign-tags__card-title">Winning the Long Game: How Sustainability Unlocks Real Business Impact</div>
+                                <div class="campaign-tags__card-description">Manufacturers are turning sustainability into business impact, boosting efficiency, resilience, and growth with data‑based strategies and customer results.</div>
+                                <div class="campaign-tags__card-link">Read More</div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="campaign-tags__card-wrapper" data-tag-index="3" hidden>
+                        <a class="campaign-tags__card glide__slide" href="/en-us/company/news/case-studies/cornish-lithium-plant.html" data-link-type="campaign-tags:card" data-link-text="Cornish Lithium Drives Sustainability at UK Plant">
+                            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        <picture class=" aspect-ratio--16x9">
+            
+            
+
+            
+            
+
+            
+
+            
+                
+                <source srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/cornish-lithium-plant.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/cornish-lithium-plant.1280.jpg 2x" media="(min-width: 768px)"/>
+            
+            
+
+            
+            
+                
+                
+                    
+                    
+                        <img class="campaign-tags__card-image  main-image " width="3669" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/cornish-lithium-plant.640.jpg" srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/cornish-lithium-plant.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/cornish-lithium-plant.1280.jpg 2x" alt="Cornish Lithium plant" data-aem-asset-id="7f905300-5259-46b1-84a5-f2002748f3e6" data-trackable="true"/>
+                    
+                    
+                
+            
+        </picture>
+
+        
+        
+
+        
+    
+
+
+                            <div class="campaign-tags__card-text-container">
+                                <div class="campaign-tags__card-subtitle">case study</div>
+                                <div class="campaign-tags__card-title">Cornish Lithium Drives Sustainability at UK Plant</div>
+                                <div class="campaign-tags__card-description">PlantPAx distributed control system helps mineral company prove novel mica processing approach can extract battery metal from Cornish granite rock.</div>
+                                <div class="campaign-tags__card-link">Read More</div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="campaign-tags__card-wrapper" data-tag-index="3" hidden>
+                        <a class="campaign-tags__card glide__slide" href="/en-us/company/news/case-studies/refrigeration-energy-ai.html" data-link-type="campaign-tags:card" data-link-text="Actemium Optimizes Industrial Refrigeration with AI">
+                            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        <picture class=" aspect-ratio--16x9">
+            
+            
+
+            
+            
+
+            
+
+            
+                
+                <source srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/gloved-hands-holding-frozen-french-fry-bag-ADO-355911637.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/gloved-hands-holding-frozen-french-fry-bag-ADO-355911637.1280.jpg 2x" media="(min-width: 768px)"/>
+            
+            
+
+            
+            
+                
+                
+                    
+                    
+                        <img class="campaign-tags__card-image  main-image " width="3750" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/gloved-hands-holding-frozen-french-fry-bag-ADO-355911637.640.jpg" srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/gloved-hands-holding-frozen-french-fry-bag-ADO-355911637.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/gloved-hands-holding-frozen-french-fry-bag-ADO-355911637.1280.jpg 2x" alt="Gloved-hands-holding-frozen-french-fry-bag-in-supermarket" data-aem-asset-id="405f22bb-6a93-4b86-9354-f107358948b5" data-trackable="true"/>
+                    
+                    
+                
+            
+        </picture>
+
+        
+        
+
+        
+    
+
+
+                            <div class="campaign-tags__card-text-container">
+                                <div class="campaign-tags__card-subtitle">case study</div>
+                                <div class="campaign-tags__card-title">Actemium Optimizes Industrial Refrigeration with AI</div>
+                                <div class="campaign-tags__card-description">How one customer optimized industrial refrigeration with AI‑driven energy optimization on PlantPAx®, reducing energy use, costs, and emissions at scale.</div>
+                                <div class="campaign-tags__card-link">Read More</div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="campaign-tags__card-wrapper" data-tag-index="4" hidden>
+                        <a class="campaign-tags__card glide__slide" href="/en-us/company/news/blogs/trends-manufacturing.html" data-link-type="campaign-tags:card" data-link-text="5 Priorities Trending in Manufacturing Today">
+                            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        <picture class=" aspect-ratio--3x2">
+            
+            
+
+            
+            
+
+            
+
+            
+                
+                <source srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/woman-warehouse-manufacturing-ADO-622957510.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/woman-warehouse-manufacturing-ADO-622957510.1280.jpg 2x" media="(min-width: 768px)"/>
+            
+            
+
+            
+            
+                
+                
+                    
+                    
+                        <img class="campaign-tags__card-image  main-image " width="6000" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/woman-warehouse-manufacturing-ADO-622957510.640.jpg" srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/woman-warehouse-manufacturing-ADO-622957510.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/woman-warehouse-manufacturing-ADO-622957510.1280.jpg 2x" alt="Young smart asian business working woman using digital tablet to check goods on shelves for product management in warehouse, Logistics business planning concept." data-aem-asset-id="562bd6d7-93b3-404d-8d59-41bf80b1b5c4" data-trackable="true"/>
+                    
+                    
+                
+            
+        </picture>
+
+        
+        
+
+        
+    
+
+
+                            <div class="campaign-tags__card-text-container">
+                                <div class="campaign-tags__card-subtitle">blog</div>
+                                <div class="campaign-tags__card-title">5 Priorities Trending in Manufacturing Today</div>
+                                <div class="campaign-tags__card-description">The State of Smart Manufacturing report revealed common challenges and opportunities from leaders in the industry. Where does your team rank?</div>
+                                <div class="campaign-tags__card-link">Read More</div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="campaign-tags__card-wrapper" data-tag-index="4" hidden>
+                        <a class="campaign-tags__card glide__slide" href="/en-us/company/news/case-studies/tien-yuen-machinery-plex-solution.html" data-link-type="campaign-tags:card" data-link-text="TYC Implements Plex to New Phase of Digital Transformation">
+                            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        <picture class=" aspect-ratio--16x9">
+            
+            
+
+            
+            
+
+            
+
+            
+                
+                <source srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/tyc%20taichung-2400.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/tyc%20taichung-2400.1280.jpg 2x" media="(min-width: 768px)"/>
+            
+            
+
+            
+            
+                
+                
+                    
+                    
+                        <img class="campaign-tags__card-image  main-image " width="2400" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/tyc%20taichung-2400.640.jpg" srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/tyc%20taichung-2400.640.jpg 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/tyc%20taichung-2400.1280.jpg 2x" alt="tyh-taichung" data-aem-asset-id="66b247e9-7d89-4f46-ba29-ac69112d25e3" data-trackable="true"/>
+                    
+                    
+                
+            
+        </picture>
+
+        
+        
+
+        
+    
+
+
+                            <div class="campaign-tags__card-text-container">
+                                <div class="campaign-tags__card-subtitle">case study</div>
+                                <div class="campaign-tags__card-title">TYC Implements Plex to New Phase of Digital Transformation</div>
+                                <div class="campaign-tags__card-description">Driving smart manufacturing operations with data, increasing on-time delivery to over 90% while enhancing process quality and operational resilience.</div>
+                                <div class="campaign-tags__card-link">Read More</div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="campaign-tags__card-wrapper" data-tag-index="4" hidden>
+                        <a class="campaign-tags__card glide__slide" href="/en-us/company/news/case-studies/clearpack-packaging-solutions.html" data-link-type="campaign-tags:card" data-link-text="Clearpack Delivers Smarter Packaging Automation">
+                            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        <picture class=" aspect-ratio--16x9">
+            
+            
+
+            
+            
+
+            
+
+            
+                
+                <source srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/clearpack-tlp-packaging-machine.640.png 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/clearpack-tlp-packaging-machine.1280.png 2x" media="(min-width: 768px)"/>
+            
+            
+
+            
+            
+                
+                
+                    
+                    
+                        <img class="campaign-tags__card-image  main-image " width="2400" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/clearpack-tlp-packaging-machine.640.png" srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/clearpack-tlp-packaging-machine.640.png 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/clearpack-tlp-packaging-machine.1280.png 2x" alt="Clearpack TLP packaging machine" data-aem-asset-id="4e380a7e-1842-46f5-8931-5b366825352f" data-trackable="true"/>
+                    
+                    
+                
+            
+        </picture>
+
+        
+        
+
+        
+    
+
+
+                            <div class="campaign-tags__card-text-container">
+                                <div class="campaign-tags__card-subtitle">case study</div>
+                                <div class="campaign-tags__card-title">Clearpack Delivers Smarter Packaging Automation</div>
+                                <div class="campaign-tags__card-description">Clearpack collaborates with Rockwell Automation to deliver smarter, scalable packaging solutions that enhance flexibility, and operational efficiency.</div>
+                                <div class="campaign-tags__card-link">Read More</div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="campaign-tags__card-wrapper" data-tag-index="4" hidden>
+                        <a class="campaign-tags__card glide__slide" href="/en-us/company/news/press-releases/country-maid-plex-production-monitoring.html" data-link-type="campaign-tags:card" data-link-text="Country Maid Selects Rockwell Automation’s Plex Production Monitoring to Improve Production Visibility">
+                            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        <picture class=" aspect-ratio--16x9">
+            
+            
+
+            
+            
+
+            
+
+            
+                
+                <source srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/Country-Maid-Press-Release-Image.640.png 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/Country-Maid-Press-Release-Image.1280.png 2x" media="(min-width: 768px)"/>
+            
+            
+
+            
+            
+                
+                
+                    
+                    
+                        <img class="campaign-tags__card-image  main-image " width="2400" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/Country-Maid-Press-Release-Image.640.png" srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/Country-Maid-Press-Release-Image.640.png 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/Country-Maid-Press-Release-Image.1280.png 2x" alt="Country Maid Frozen Butter Braid Pastry Dough" data-aem-asset-id="539612aa-7ece-4424-a7bf-c61bbb851072" data-trackable="true"/>
+                    
+                    
+                
+            
+        </picture>
+
+        
+        
+
+        
+    
+
+
+                            <div class="campaign-tags__card-text-container">
+                                <div class="campaign-tags__card-subtitle">news press</div>
+                                <div class="campaign-tags__card-title">Country Maid Selects Rockwell Automation’s Plex Production Monitoring to Improve Production Visibility</div>
+                                <div class="campaign-tags__card-description">Baked goods manufacturer Country Maid expands digital transformation with Plex Production Monitoring.</div>
+                                <div class="campaign-tags__card-link">Read More</div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="campaign-tags__card-wrapper" data-tag-index="4" hidden>
+                        <a class="campaign-tags__card glide__slide" href="/en-us/company/news/blogs/secure-by-design.html" data-link-type="campaign-tags:card" data-link-text="Secure by Design: Bringing Trust to Cloud-Based Automation">
+                            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        <picture class=" aspect-ratio--16x9">
+            
+            
+
+            
+            
+
+            
+
+            
+                
+                <source srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/rockwell-plant-floor-manager-cyber-tools.640.png 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/rockwell-plant-floor-manager-cyber-tools.1280.png 2x" media="(min-width: 768px)"/>
+            
+            
+
+            
+            
+                
+                
+                    
+                    
+                        <img class="campaign-tags__card-image  main-image " width="2400" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/rockwell-plant-floor-manager-cyber-tools.640.png" srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/rockwell-plant-floor-manager-cyber-tools.640.png 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/rockwell-plant-floor-manager-cyber-tools.1280.png 2x" alt="Plan floor manager uses cloud based cyber tools and solutions from Rockwell and Microsoft." data-aem-asset-id="71163b31-5953-4f49-903f-f14cecff66a5" data-trackable="true"/>
+                    
+                    
+                
+            
+        </picture>
+
+        
+        
+
+        
+    
+
+
+                            <div class="campaign-tags__card-text-container">
+                                <div class="campaign-tags__card-subtitle">blog</div>
+                                <div class="campaign-tags__card-title">Secure by Design: Bringing Trust to Cloud-Based Automation</div>
+                                <div class="campaign-tags__card-description">Learn how Rockwell Automation and Microsoft help manufacturers modernize with secure, cloud-based automation, AI, and OT expertise.</div>
+                                <div class="campaign-tags__card-link">Read More</div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="campaign-tags__card-wrapper" data-tag-index="4" hidden>
+                        <a class="campaign-tags__card glide__slide" href="/en-us/company/news/case-studies/cooper-surgical-kalypso.html" data-link-type="campaign-tags:card" data-link-text="CooperSurgical Streamlines Product &amp; Regulatory Control">
+                            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        <picture class=" aspect-ratio--16x9">
+            
+            
+
+            
+            
+
+            
+
+            
+                
+                <source srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/CooperSurgical%20Hero%20Image.640.png 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/CooperSurgical%20Hero%20Image.1280.png 2x" media="(min-width: 768px)"/>
+            
+            
+
+            
+            
+                
+                
+                    
+                    
+                        <img class="campaign-tags__card-image  main-image " width="2400" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/CooperSurgical%20Hero%20Image.640.png" srcset="https://rockwellautomation.scene7.com/is/image/rockwellautomation/CooperSurgical%20Hero%20Image.640.png 1x, https://rockwellautomation.scene7.com/is/image/rockwellautomation/CooperSurgical%20Hero%20Image.1280.png 2x" alt="surgical gloved hands handling petri dish" data-aem-asset-id="6ed5edca-1a6c-482e-b03a-f5bc1181a5e2" data-trackable="true"/>
+                    
+                    
+                
+            
+        </picture>
+
+        
+        
+
+        
+    
+
+
+                            <div class="campaign-tags__card-text-container">
+                                <div class="campaign-tags__card-subtitle">case study</div>
+                                <div class="campaign-tags__card-title">CooperSurgical Streamlines Product &amp; Regulatory Control</div>
+                                <div class="campaign-tags__card-description">With support from Rockwell Automation and Kalypso, the medical equipment manufacturer avoided an ERP redeployment.</div>
+                                <div class="campaign-tags__card-link">Read More</div>
+                            </div>
+                        </a>
+                    </div>
+                
+
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </div>
+        </div>
+
+        
+        <div class="campaign-tags__bullet-container">
+            <div data-glide-el="controls">
+                <button class="campaign-tags__arrow campaign-tags__arrow--left" data-glide-dir="<">
+                    
+    <span class=" raw-file-contents" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-labelledby="chevronLeftTitle chevronLeftDesc" role="img"><title id="chevronLeftTitle">Chevron Left</title><desc id="chevronLeftDesc">Chevron Left</desc><path d="M14.08 15.606l5.455-8.063a.8.8 0 1 0-1.325-.897l-5.745 8.491a.799.799 0 0 0-.018.868l5.745 9.32a.8.8 0 1 0 1.362-.84l-5.474-8.879z"/></svg>
+    </span>
+
+                </button>
+            </div>
+
+            <div class="campaign-tags__bullets" role="tablist" data-glide-el="controls[nav]">
+                <button class="campaign-tags__bullet" role="tab" data-glide-dir="=0" aria-label="Slide 1" tabindex="-1"></button>
+            
+                <button class="campaign-tags__bullet" role="tab" data-glide-dir="=1" aria-label="Slide 2" tabindex="-1"></button>
+            
+                <button class="campaign-tags__bullet" role="tab" data-glide-dir="=2" aria-label="Slide 3" tabindex="-1"></button>
+            
+                <button class="campaign-tags__bullet" role="tab" data-glide-dir="=3" aria-label="Slide 4" tabindex="-1"></button>
+            
+                <button class="campaign-tags__bullet" role="tab" data-glide-dir="=4" aria-label="Slide 5" tabindex="-1"></button>
+            
+                <button class="campaign-tags__bullet" role="tab" data-glide-dir="=5" aria-label="Slide 6" tabindex="-1"></button>
+            </div>
+
+            <div data-glide-el="controls">
+                <button class="campaign-tags__arrow campaign-tags__arrow--right" data-glide-dir=">">
+                    
+    <span class=" raw-file-contents" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true">    <path d="M12.446 7.514l5.474 8.88-5.455 8.063a.8.8 0 1 0 1.325.897l5.745-8.491a.799.799 0 0 0 .018-.868l-5.745-9.32a.8.8 0 0 0-1.362.839z"/></svg>
+    </span>
+
+                </button>
+            </div>
+        </div>
+
+        
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+
+    </div>
+
+</div>
+</div>
+<div class="generic-container pad-top-half push-top-full aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="generic-container__inner has-bg">
+
+    
+    
+
+    
+    
+
+
+
+
+
+    
+    
+    <div class="column-control">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="column-control__container
+            
+             grid
+            
+            
+            
+            
+            
+            
+            
+            ">
+
+        
+        <div class="row">
+            <div class="col-mobile ">
+
+
+
+
+
+    
+    
+    <div class="company-news">
+
+
+
+
+
+
+
+
+<company-news class="company-news">
+    <form class="company-news__form">
+        <div class="company-news__data" data-listing-service="/en-us/jcr:content/root/main-par/generic_container_13/GenericContainerParsys/column_control/Col1/company_news.genericSearch.json" hidden></div>
+        <input type="hidden" name="rootPath" value="/content/rockwell-automation/global/na/en"/>
+        <input type="hidden" name="webinarListing"/>
+        
+        
+            <input type="hidden" name="contentType" value="news-press"/>
+        
+        
+        <input type="hidden" name="sort" value="pubAsc"/>
+        <input type="hidden" name="numPerPage" value="3"/>
+    </form>
+    
+    <div class="company-news__container">
+        <div class="company-news__header-container">
+            <h2 class="company-news__header">
+                
+                <div class="company-news__header-title">
+                    Rockwell Automation News
+                </div>
+            </h2>
+        </div>
+        <div class="company-news__results-list">
+            <template class="company-news__result-template">
+                <div class="company-news__result">
+                    <div class="company-news__result-content">
+                        <div class="company-news__result-title" data-xt="text=title"></div>
+                        <a class="company-news__result-link-container" data-xt="href=link;data-link-text=title" data-link-type="company-news:item">
+                            <div class="company-news__result-link">Read More</div>
+                            <div class="company-news__chevron-right company-news__result-link-icon">
+                                
+    <span class=" raw-file-contents" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true">    <path d="M12.446 7.514l5.474 8.88-5.455 8.063a.8.8 0 1 0 1.325.897l5.745-8.491a.799.799 0 0 0 .018-.868l-5.745-9.32a.8.8 0 0 0-1.362.839z"/></svg>
+    </span>
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </template>
+        </div>
+        <div class="company-news__cta-button-container">
+            <div class="company-news__cta-button button button--primary">
+                <span class="button__container">
+                    <a href="/en-us/company/news.html">
+                        <span>
+                            Visit the Newsroom
+                        </span>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="company-news__image-container">
+        <div class="company-news__image company-news__image-1">
+            <img src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/OurCompany-1.800.jpg" alt="our company"/>
+            <div class="company-news__image-1-bg-1">
+                
+    <span class=" raw-file-contents" aria-hidden="true">
+        <svg width="903" height="341" viewBox="0 0 903 341" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M879.01 340.83C888.63 340.83 896.248 338.699 900.526 331.325C903.955 325.924 903.186 319.378 898.545 314.612L558.177 16.6916C545.387 5.89819 527.686 -0.0711795 509.294 0.213077H1.30945L0.935669 340.83H879.01Z" fill="url(#paint0_linear_1359_42562)" fill-opacity="0.67"/><defs><linearGradient id="paint0_linear_1359_42562" x1="965.632" y1="186.526" x2="-436.976" y2="186.526" gradientUnits="userSpaceOnUse"><stop stop-color="#E5E6E9" stop-opacity="0.24"/><stop offset="0.247598" stop-color="#C7C8CB" stop-opacity="0.353895"/><stop offset="1" stop-color="#6D6E71" stop-opacity="0.7"/></linearGradient></defs></svg>
+    </span>
+
+            </div>
+            <div class="company-news__image-1-bg-2">
+                
+    <span class=" raw-file-contents" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="384" height="233" viewBox="0 0 384 233" fill="none"><path d="M382.256 6.99324C383.467 5.99741 384.02 4.94162 383.155 3.57416C382.559 2.54197 381.216 1.80081 379.725 1.68362C379.188 1.63767 378.65 1.61849 378.115 1.62476C340.805 1.77388 306.097 0.822848 268.779 0.966724C265.115 0.937237 261.752 2.02109 259.491 3.96054L2.4457 193.442C0.229338 195.265 0.460609 196.836 3.19075 198.635L77.4386 230.962C78.363 231.373 79.1073 231.784 80.0582 232.194C81.4051 232.529 82.8231 232.319 83.7586 231.646L382.256 6.99324Z" fill="#E5E6E9" fill-opacity="0.6"/></svg>
+    </span>
+
+            </div>
+        </div>
+        <div class="company-news__image company-news__image-2">
+            <img src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/16x9-rockwell-automation-employee-partner-trust-office-building-RA-0396-2.800.jpg" alt="Rockwell Automation employee standing in long white hallway with arms crossed presenting himself as a trusted partner to collaborate with"/>
+        </div>
+        <div class="company-news__image company-news__image-3">
+            <img src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/2019_11_20_Rockwell_1699.800.jpg" alt="tablet"/>
+            <div class="company-news__image-3-bg">
+                
+    <span class=" raw-file-contents" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="310" height="317" viewBox="0 0 310 317" fill="none"><path d="M308.745 5.93491C311 3.67929 309.5 9.78122e-05 306.001 0.000131494L262.501 8.26045e-05C258.744 -0.0301433 255.169 0.837786 252.851 2.82598L2.25495 310.07C-0.999711 313.324 -0.499711 317 3.01899 317L46.5004 317C48.5005 317 51.8597 316.254 53.6402 314.234L308.745 5.93491Z" fill="url(#paint0_linear_1280_40589)" fill-opacity="0.8"/><defs><linearGradient id="paint0_linear_1280_40589" x1="291.662" y1="27.9824" x2="88.6548" y2="340.537" gradientUnits="userSpaceOnUse"><stop stop-color="#CD163F"/><stop offset="1" stop-color="#F58025"/></linearGradient></defs></svg>
+    </span>
+
+            </div>
+        </div>
+        <div class="company-news__image company-news__image-4">
+            <img src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/16x9-project-engineers-industrial-data-center-SHS-1936528474.800.jpg" alt="focus"/>
+        </div>
+        <div class="company-news__image company-news__image-5">
+            <img src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/16x9-automation-fair-2022-attendees-hands-on-labs-AQ-raf-2022-2912.800.jpg" alt="Automation Fair 2022 hands-on labs"/>
+            <div class="company-news__image-5-bg">
+                
+    <span class=" raw-file-contents" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="266" height="217" viewBox="0 0 266 217" fill="none"><path d="M1.43908 5.83497C0.304818 4.90236 -0.213171 3.91361 0.597032 2.63297C1.15556 1.66631 2.41335 0.972217 3.81004 0.862471C4.3134 0.819439 4.8177 0.801471 5.3188 0.80735C40.2718 0.946995 72.7876 0.0563453 107.748 0.191086C111.18 0.163475 114.331 1.17851 116.449 2.99482L357.257 180.446C359.334 182.153 359.117 183.624 356.559 185.309L287.002 215.583C286.136 215.968 285.438 216.353 284.548 216.737C283.286 217.051 281.957 216.855 281.081 216.224L1.43908 5.83497Z" fill="url(#paint0_linear_1359_42908)"/><defs><linearGradient id="paint0_linear_1359_42908" x1="68.3554" y1="-11.5234" x2="231.909" y2="240.32" gradientUnits="userSpaceOnUse"><stop stop-color="#F58025"/><stop offset="1" stop-color="#770056"/></linearGradient></defs></svg>
+    </span>
+
+            </div>
+        </div>
+    </div>
+    <div class="company-news__icon-container">
+        <div class="company-news__image-mask company-news__image-mask-1-xl">
+            
+    <span class=" raw-file-contents" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="627" height="215" viewBox="0 0 627 215"><clipPath id="image-mask-1-xl"><path d="M612.906 215C625.295 215 631.063 208.325 623.588 200.63L403.047 9.03693C396.054 3.12125 386.375 -0.150476 376.319 0.00532048H-29.8384V215H612.906Z" shape-rendering="crispEdges"/></clipPath></svg>
+    </span>
+
+        </div>
+        <div class="company-news__image-mask company-news__image-mask-1">
+            
+    <span class=" raw-file-contents" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="429" height="195" viewBox="0 0 429 195"><clipPath id="image-mask-1"><path d="M416.304 195C427.528 195 432.754 188.946 425.981 181.967L226.179 8.19629C219.843 2.8309 211.075 -0.136478 201.964 0.00482555H-166V195H416.304Z" shape-rendering="crispEdges"/></clipPath></svg>
+    </span>
+
+        </div>
+        <div class="company-news__image-mask company-news__image-mask-1-m">
+            
+    <span class=" raw-file-contents" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="345" height="147" viewBox="0 0 345 147"><clipPath id="image-mask-1-m"><path d="M335.398 147C343.887 147 347.839 142.436 342.717 137.175L191.606 6.17874C186.814 2.13406 180.183 -0.102884 173.292 0.00363773H-105V147H335.398Z" shape-rendering="crispEdges"/></clipPath></svg>
+    </span>
+
+        </div>
+        <div class="company-news__image-mask company-news__image-mask-1-s">
+            
+    <span class=" raw-file-contents" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="228" height="114" viewBox="0 0 228 114"><clipPath id="image-mask-1-s"><path d="M220.553 114C227.137 114 230.202 110.461 226.229 106.381L109.034 4.79168C105.318 1.65499 100.175 -0.0797873 94.8309 0.00282109H-121V114H220.553Z" shape-rendering="crispEdges"/></clipPath></svg>
+    </span>
+
+        </div>
+        <div class="company-news__image-mask company-news__image-mask-2">
+            
+    <span class=" raw-file-contents" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="425" height="341" viewBox="0 0 425 341"><clipPath id="image-mask-2"><path d="M412.439 285H73.9499C64.8581 285 60.9566 276.399 70.6324 266.478L241.027 63.6478C250.076 56.023 255.048 51.806 268.061 52.0069H427.701L427.748 285H412.439Z" shape-rendering="crispEdges"/></clipPath></svg>
+    </span>
+
+        </div>
+        <div class="company-news__image-mask company-news__image-mask-2-m">
+            
+    <span class=" raw-file-contents" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="344" height="293" viewBox="0 0 344 293"><clipPath id="image-mask-2-m"><path d="M339.976 236.953H72.6541C65.4739 236.953 62.3927 230.16 70.0342 222.325L204.603 62.1398C211.75 56.1181 215.677 52.7877 225.954 52.9463H352.029L352.066 236.953H339.976Z" shape-rendering="crispEdges"/></clipPath></svg>
+    </span>
+
+        </div>
+        <div class="company-news__image-mask company-news__image-mask-2-s">
+            
+    <span class=" raw-file-contents" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="236" height="222" viewBox="0 0 236 222"><clipPath id="image-mask-2-s"><path d="M235.488 166H69.3917C64.9304 166 63.0159 161.792 67.7638 156.938L151.376 57.6989C155.817 53.9683 158.256 51.9051 164.642 52.0034H242.977L243 166H235.488Z" shape-rendering="crispEdges"/></clipPath></svg>
+    </span>
+
+        </div>
+        <div class="company-news__image-mask company-news__image-mask-3">
+            
+    <span class=" raw-file-contents" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="625" height="382" viewBox="0 0 625 382"><clipPath id="image-mask-3"><path d="M615.898 0H353.011C347.708 0 340.57 0.509333 332.922 8.14933C227.889 120.203 7.62693 357.552 7.62693 357.552C-4.61052 369.776 -1.55096 382 12.7256 382H300.29C314.057 382 318.85 379.453 325.784 371.813C422.488 256.195 622.526 16.2987 622.526 16.2987C627.625 11.2053 624.565 0 615.898 0Z" shape-rendering="crispEdges"/></clipPath></svg>
+    </span>
+
+        </div>
+        <div class="company-news__image-mask company-news__image-mask-3-m">
+            
+    <span class=" raw-file-contents" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="495" height="302" viewBox="0 0 495 302"><clipPath id="image-mask-3-m"><path d="M486.881 0.128784H279.266C275.078 0.128784 269.441 0.53103 263.401 6.56472C180.451 95.0589 6.49896 282.506 6.49896 282.506C-3.16557 292.159 -0.749288 301.813 10.5256 301.813H237.63C248.502 301.813 252.287 299.802 257.763 293.768C334.136 202.459 492.116 13.0007 492.116 13.0007C496.142 8.9782 493.726 0.128784 486.881 0.128784Z" shape-rendering="crispEdges"/></clipPath></svg>
+    </span>
+
+        </div>
+        <div class="company-news__image-mask company-news__image-mask-3-s">
+            
+    <span class=" raw-file-contents" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="307" height="187" viewBox="0 0 307 187"><clipPath id="image-mask-3-s"><path d="M302.529 0H173.399C170.794 0 167.288 0.249333 163.531 3.98933C111.939 58.8427 3.74635 175.032 3.74635 175.032C-2.26469 181.016 -0.761833 187 6.25081 187H147.503C154.265 187 156.619 185.753 160.025 182.013C207.526 125.415 305.785 7.97867 305.785 7.97867C308.289 5.48533 306.787 0 302.529 0Z" shape-rendering="crispEdges"/></clipPath></svg>
+    </span>
+
+        </div>
+        <div class="company-news__image-mask company-news__image-mask-4">
+            
+    <span class=" raw-file-contents" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="348" height="213" viewBox="0 0 348 213"><clipPath id="image-mask-4"><path d="M342.932 0H196.556C193.604 0 189.629 0.284 185.371 4.544C126.889 67.024 4.24667 199.368 4.24667 199.368C-2.56714 206.184 -0.863577 213 7.08561 213H167.202C174.867 213 177.536 211.58 181.396 207.32C235.241 142.852 346.622 9.088 346.622 9.088C349.461 6.248 347.758 0 342.932 0Z" shape-rendering="crispEdges"/></clipPath></svg>
+    </span>
+
+        </div>
+        <div class="company-news__image-mask company-news__image-mask-4-m">
+            
+    <span class=" raw-file-contents" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="276" height="169" viewBox="0 0 276 169"><clipPath id="image-mask-4-m"><path d="M271.419 0.583496H155.819C153.487 0.583496 150.348 0.807785 146.985 4.17212C100.799 53.5157 3.94219 158.034 3.94219 158.034C-1.43902 163.417 -0.0936311 168.8 6.18424 168.8H132.636C138.69 168.8 140.797 167.679 143.846 164.314C186.37 113.401 274.333 7.76075 274.333 7.76075C276.576 5.51786 275.23 0.583496 271.419 0.583496Z" shape-rendering="crispEdges"/></clipPath></svg>
+    </span>
+
+        </div>
+        <div class="company-news__image-mask company-news__image-mask-5-xl">
+            
+    <span class=" raw-file-contents" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="730" height="308" viewBox="0 0 839 416"><clipPath id="image-mask-5-xl"><path d="M76.8162 360C64.8126 360 59.6617 348.631 72.4363 335.517L297.402 67.3971C309.349 57.318 315.913 51.7436 333.094 52.0091H795.429L795.55 360H76.8162Z" shape-rendering="crispEdges"/></clipPath></svg>
+    </span>
+
+        </div>
+        <div class="company-news__image-mask company-news__image-mask-5">
+            
+    <span class=" raw-file-contents" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="565" height="416" viewBox="0 0 565 416"><clipPath id="image-mask-5"><path d="M76.8162 360C64.8126 360 59.6617 348.631 72.4363 335.517L297.402 67.3971C309.349 57.318 315.913 51.7436 333.094 52.0091H795.429L795.55 360H76.8162Z" shape-rendering="crispEdges"/></clipPath></svg>
+    </span>
+
+        </div>
+        <div class="company-news__image-mask company-news__image-mask-5-m">
+            
+    <span class=" raw-file-contents" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="360" height="351" viewBox="0 0 360 351"><clipPath id="image-mask-5-m"><path d="M74.3326 295C64.852 295 60.7837 286.03 70.8733 275.684L248.554 64.1477C257.99 56.1957 263.175 51.7977 276.745 52.0072H641.904L642 295H74.3326Z" shape-rendering="crispEdges"/></clipPath></svg>
+    </span>
+
+        </div>
+    </div>
+</company-news>
+</div>
+
+
+
+</div>
+        </div>
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+    </div>
+
+</div>
+
+
+
+
+
+    
+    <div class="generic-container__backgrounds">
+        
+        
+
+        
+        <div class="generic-container__gradient gradient no-gradient"></div>
+        
+
+        
+        <div class="generic-container__responsive-images">
+            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        
+
+        
+        
+
+        
+    
+
+
+        </div>
+
+        
+        
+
+        
+        <div class="generic-container__bg-color generic-container__bg-light-gray"></div>
+    </div>
+</div>
+</div>
+<div class="generic-container push-bottom-full aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="generic-container__inner">
+
+    
+    
+
+    
+    
+
+
+
+
+
+    
+    
+    <div class="column-control">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="column-control__container
+            
+             grid
+            
+            
+            
+            
+            
+            
+            
+            ">
+
+        
+        <div class="row">
+            <div class="col-mobile ">
+
+
+
+
+
+    
+    
+    <div class="logo-links">
+
+
+
+
+
+
+
+<div class="logo-links__shard">
+    <svg width="207" height="177" viewBox="0 0 207 177" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M205.958 5.33246C206.896 4.50511 207.324 3.62797 206.654 2.49188C206.192 1.63433 205.152 1.01857 203.997 0.921214C203.581 0.883038 203.164 0.867099 202.749 0.872315C173.842 0.996194 146.95 0.206082 118.036 0.325608C115.198 0.30111 112.591 1.20158 110.84 2.81288L-73.5203 144.158C-75.2376 145.672 -75.0584 146.977 -72.9431 148.472L-15.4159 175.329C-14.6998 175.671 -14.1231 176.012 -13.3863 176.353C-12.3427 176.631 -11.2441 176.457 -10.5192 175.898L205.958 5.33246Z" fill="url(#paint0_linear_1359_42899)" fill-opacity="0.9"/>
+        <defs>
+        <linearGradient id="paint0_linear_1359_42899" x1="164.633" y1="13.4867" x2="-21.5608" y2="128.04" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#2A79C4"/>
+        <stop offset="1" stop-color="#00AEEF" stop-opacity="0.28"/>
+        </linearGradient>
+        </defs>
+    </svg>
+</div>
+
+<div class="logo-links__container">
+    <h2 class="logo-links__title">
+        Working together, we&#39;ll drive better outcomes and achieve results.
+    </h2>
+    <div class="logo-links__logo-container">
+        <a class="logo-links__logo-link" href="/en-us/products/hardware.html" data-link-type="logo-links:logo" data-link-text="Allen-Bradley logo">
+            <img class="logo-links__logo-image" src="/content/dam/rockwell-automation/images/logos/ra-brands/AllenBradley_Logo_white-no-padding.svg" alt="Allen-Bradley logo"/>
+        </a>
+    
+        <a class="logo-links__logo-link" href="/en-us/products/software/factorytalk.html" data-link-type="logo-links:logo" data-link-text="FactoryTalk logo">
+            <img class="logo-links__logo-image" src="/content/dam/rockwell-automation/images/logos/ra-brands/FactoryTalk_Logo_white-no-padding.svg" alt="FactoryTalk logo"/>
+        </a>
+    
+        <a class="logo-links__logo-link" href="/en-us/capabilities/lifecycle-services.html" data-link-type="logo-links:logo" data-link-text="LifecycleIQ Services logo">
+            <img class="logo-links__logo-image" src="/content/dam/rockwell-automation/images/logos/ra-brands/RA-Logo_Lifecycle-IQ-Services_white-no-padding.svg" alt="LifecycleIQ Services logo"/>
+        </a>
+    </div>
+</div>
+</div>
+
+
+
+</div>
+        </div>
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+    </div>
+
+</div>
+
+
+
+
+
+    
+    <div class="generic-container__backgrounds">
+        
+        
+
+        
+        <div class="generic-container__gradient gradient no-gradient"></div>
+        
+
+        
+        <div class="generic-container__responsive-images">
+            
+
+
+
+
+
+
+    
+    
+    
+        
+        
+        
+
+        
+
+        
+
+        
+        
+
+        
+    
+
+
+        </div>
+
+        
+        
+
+        
+        <div class="generic-container__bg-color generic-container__bg-white"></div>
+    </div>
+</div>
+</div>
+<div class="embed contentfragment aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+    
+
+
+
+    
+
+</div>
+<div class="embed contentfragment aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+    
+
+
+
+    
+
+</div>
+
+    
+</div>
+</main>
+<div class="footer aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+<ra-footer origin="https://www.rockwellautomation.com" path="/en-us/config-pages/footer" variation="racom" font-unit="rem"></ra-footer>
+
+
+    
+
+</div>
+
+    
+</div>
+</div>
+
+
+    <div class="ai-translations-disclaimer-text hidden">
+        
+    </div>
+    
+    
+    
+
+            
+            <div class="pdf-viewer__container" style="display: none;">
+  <div class="pdf-viewer__close-button-container">
+    <button class="pdf-viewer__close-button">&#x2715</button>
+  </div>
+  <div id="cmp-pdf-viewer-container" class="cmp-pdf-viewer cmp-pdf-viewer-container"></div>
+</div>
+
+            <div class="cookie-popup" style="display: none;">
+  <div class="cookie-popup__container">
+    <div class="cookie-popup__content">
+      <div class="cookie-popup__header">
+        Please update your cookie preferences to continue.
+      </div>
+      <div class="cookie-popup__text">
+        This feature requires cookies to enhance your experience. Please update your preferences to allow for these cookies:
+      </div>
+      <ul class="cookie-popup__required-cookies">
+        <li class="cookie-popup__social-media-cookies">
+          Social Media Cookies
+        </li>
+        <li class="cookie-popup__functional-cookies">
+          Functional Cookies
+        </li>
+        <li class="cookie-popup__performance-cookies">
+          Performance Cookies
+        </li>
+        <li class="cookie-popup__marketing-cookies">
+          Marketing Cookies
+        </li>
+        <li class="cookie-popup__all-cookies">
+          All Cookies
+        </li>
+      </ul>
+      <div class="cookie-popup__text cookie-popup__privacy-text">
+        You can update your preferences at any time. For more information please see our {0}
+        <a class="cookie-popup__link" href="https://www.rockwellautomation.com/en-us/company/about-us/legal-notices/privacy-and-cookies-policy.html">Privacy Policy</a>
+      </div>
+      <div class="cookie-popup__buttons">
+          <button class="cookie-popup__button cookie-popup__button-cancel">Cancel</button>
+          <button class="cookie-popup__button cookie-popup__button-accept ot-sdk-show-settings">Go to Cookie Settings</button>
+      </div>
+    </div>
+    <div class="cookie-popup__close">
+      
+    <span class=" raw-file-contents" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-labelledby="closeTitle closeDesc" role="img"><title id="closeTitle">Close</title><desc id="closeDesc">Close</desc><path d="M4.83 27.141c.339.343.939.342 1.276.001l9.889-9.835 9.898 9.826c.17.172.396.265.639.265s.469-.093.638-.264a.896.896 0 0 0 .264-.638.896.896 0 0 0-.264-.638l-9.9-9.827 9.9-9.89a.903.903 0 0 0 0-1.276.905.905 0 0 0-1.276 0l-9.9 9.89-9.888-9.89a.896.896 0 0 0-.638-.263.905.905 0 0 0-.637 1.541l9.887 9.888-9.888 9.835a.903.903 0 0 0 0 1.275z"/></svg>
+    </span>
+
+    </div>
+  </div>
+</div>
+
+            
+    
+    
+
+
+    <div class="cloudservice testandtarget"><script type="text/javascript">
+    CQ_Analytics.TestTarget.maxProfileParams = 11;
+
+    if (CQ_Analytics.CCM) {
+        if (CQ_Analytics.CCM.areStoresInitialized) {
+            CQ_Analytics.TestTarget.registerMboxUpdateCalls();
+        } else {
+            CQ_Analytics.CCM.addListener("storesinitialize", function (e) {
+                CQ_Analytics.TestTarget.registerMboxUpdateCalls();
+            });
+        }
+    } else {
+        // client context not there, still register calls
+        CQ_Analytics.TestTarget.registerMboxUpdateCalls();
+    }
+    </script>
+    </div>
+
+
+    
+
+    
+    
+    
+
+            
+
+        
+        
+        
+        <script data-ot-ignore src="/etc.clientlibs/rockwell-automation/clientlibs/clientlib-site/resources/build/site.bundle.js?1789661636793" async></script>
+
+        <!-- External GCDC script - kept outside clientlib since it's an external resource -->
+        <script src="https://app.gatedcontent.com/scripts/14319476/app.js" data-ot-ignore class="optanon-category-C0001" type="text/javascript" async></script>
+    </body>
+</html>
