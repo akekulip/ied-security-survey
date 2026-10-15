@@ -4,8 +4,8 @@ import re
 from collections import Counter
 from pathlib import Path
 
-from .vocabulary import CAPABILITIES, INTERFACE_CLASSES, NOT_ASSESSED, PROPERTIES, life_words
-from .store import load
+from .vocabulary import VERSION, CAPABILITIES, INTERFACE_CLASSES, NOT_ASSESSED, PROPERTIES, life_words
+from .store import load, dump, digest, now, SCRIPT_SHA256
 from .text import clip
 from .review import facts, named
 from .findings import COLUMNS, DNP3_KINDS, POSITIVE, Findings, flat, md, words
@@ -86,13 +86,14 @@ def dnp3(found):
     share = lambda n, of: f'{n} of {of} ({100 * n / of:.0f}%)' if of else '-'
     left_out = [pid for pid in products if found.dnp3_sources.get(pid) and pid not in members]
     text = (['', '## DNP3 security', '',
-             'Devices whose own retrieved documents name DNP3, by the strongest DNP3 protection the review establishes '
-             'for them. "Plaintext" means that no DNP3 security is documented: DNP3 then travels readable unless '
-             'something outside the device, such as a VPN or an encrypting radio, protects it. DNP3 Secure '
-             'Authentication authenticates messages and does not encrypt them. These are documented capabilities of '
-             'sampled catalogue entries, not the settings of installed devices or shares of real traffic. A device '
-             'counts as plaintext when the documents retrieved for it name no DNP3 security; a document the crawl did '
-             'not retrieve may, so the plaintext count is an upper bound and the others are lower bounds.', '']
+             'Catalogue entries whose own retrieved documents name DNP3, grouped by documented security. '
+             'An entry without an applicable security finding remains unknown. Absence from the retrieved '
+             'documents establishes neither lack of support nor plaintext operation. Authentication does not '
+             'establish encryption, and an integrity-only statement does not establish authentication. '
+             'DNP3 Secure Authentication version 5 (SAv5) provides authentication rather than payload confidentiality. '
+             'Protection described for another or an unspecified control protocol is kept separate from '
+             'DNP3-specific protection. These are unweighted sample counts, not vendor-wide estimates, '
+             'installed-device settings or traffic measurements.', '']
             + ([f"Left out by the device notes, because DNP3 is named only in documents about other products: "
                 f"{', '.join(found.model(p) for p in left_out)}.", ''] if left_out else [])
             + ['| DNP3 security documented | ' + ' | '.join(columns) + ' | Total |', '|---|' + '---|' * (len(columns) + 1)])
@@ -411,14 +412,55 @@ SECTIONS = (dnp3, devices, summary, interfaces, counts, matrix, defaults, eviden
             sources_missing, closing)
 
 
-def report(run, review_path, dest, require_evidence=False, source_notes=None, device_notes=None):
+def report(run, review_path, dest, require_evidence=False, source_notes=None, device_notes=None, require_confirmed=False):
+    require_evidence = require_evidence or require_confirmed
     found, dest = Findings(run, review_path, require_evidence, source_notes, device_notes), Path(dest)
+    if require_confirmed:
+        pending = [r for r in found.rows if r.get('review_status') != 'confirmed']
+        if pending or found.blank or len(found.reviewed) != found.expected:
+            raise ValueError(f'publication report requires confirmed review of every cell: '
+                             f'{len(pending)} draft rows; {found.expected - len(found.reviewed)} unreviewed cells')
     dest.mkdir(parents=True, exist_ok=True)
     write_tables(found, dest)
     text = opening(found) + definitions(found)
     for section in SECTIONS:
         text += section(found)
     (dest / 'REPORT.md').write_text('\n'.join(text) + '\n', encoding='utf-8', newline='\n')
+    report_manifest(found, review_path, source_notes, device_notes, dest, require_evidence, require_confirmed)
     print(f'Report written to {dest}: {len(found.reviewed)} of {found.expected} cells reviewed in {len(found.rows)} '
           f'rows'
           + (f'; {found.blank} untouched template rows left out as not reviewed' if found.blank else ''))
+
+
+def report_manifest(found, review_path, source_notes, device_notes, dest, require_evidence, require_confirmed):
+    """Bind a generated report to its inputs without claiming unperformed raw-byte or deployment verification."""
+    from importlib.metadata import PackageNotFoundError, version
+
+    def record(path):
+        path = Path(path)
+        return {'path': str(path), 'sha256': digest(path.read_bytes())}
+
+    inputs = {name: record(found.run / name) for name in
+              ('manifest.json', 'config.json', 'sources.json', 'candidates.json', 'statement_leads.json') if (found.run / name).exists()}
+    inputs['reviews'] = record(review_path)
+    for name, path in [('source_notes', source_notes), ('device_notes', device_notes)]:
+        if path:
+            inputs[name] = record(path)
+    inputs['extracted_segments'] = [record(found.run / (s['id'] + '.segments.json'))
+                                   for s in found.sources if s['status'] == 'extracted']
+    dependencies = {}
+    for name in ('pypdf', 'cryptography', 'protego'):
+        try:
+            dependencies[name] = version(name)
+        except PackageNotFoundError:
+            dependencies[name] = 'not installed'
+    names = ('REPORT.md', 'findings.json', 'sources.json', 'evidence_index.json', 'candidate_counts.json',
+             'findings.csv', 'findings_table.csv', 'devices.csv', 'dnp3.csv')
+    dump(dest / 'report_manifest.json', {
+        'schema_version': 'iedsurvey.report.v1', 'created_at': now(), 'tool_version': VERSION,
+        'script_sha256': SCRIPT_SHA256, 'dependencies': dependencies, 'inputs': inputs,
+        'acceptance': {'require_evidence': require_evidence, 'require_confirmed': require_confirmed,
+                       'draft_rows': sum(r.get('review_status') != 'confirmed' for r in found.rows),
+                       'unreviewed_cells': found.expected - len(found.reviewed),
+                       'raw_document_bytes_verified_by_report': False},
+        'outputs': {name: digest((dest / name).read_bytes()) for name in names}})

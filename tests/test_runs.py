@@ -53,6 +53,29 @@ class RunTests(SurveyCase):
             with self.assertRaisesRegex(ValueError,'extraction rules 1.2.0'): replay(p/'run', p/'cache', p/'replay')
             self.assertFalse((p/'replay').exists())
 
+    def test_replay_checks_saved_segments_text_and_location_not_only_leads(self):
+        with tempfile.TemporaryDirectory() as td:
+            p, calls = Path(td), []
+            cfg = self.config(p, [{'id':'p','seeds':['https://vendor.test/a']}])
+            page = b'<p>TLS is supported for DNP3 sessions.</p><p>The front panel has four keys.</p>'
+            with self.site({'https://vendor.test/a': page}, calls): crawl(cfg, p/'run', p/'cache')
+            sid = load(p/'run'/'sources.json')[0]['id']
+            saved = p/'run'/(sid + '.segments.json')
+            original = load(saved)
+            self.assertEqual([x['location'] for x in original], ['html-block:1', 'html-block:2'])
+            replay(p/'run', p/'cache', p/'replay_ok')
+            # A changed passage without any lead word: the lead files still agree, the recorded digest does not.
+            dump(saved, [original[0], dict(original[1], text='The front panel has five keys.')])
+            with self.assertRaisesRegex(ValueError, sid + ': saved text does not match the recorded text_sha256'):
+                replay(p/'run', p/'cache', p/'replay_text')
+            # A passage moved to another location keeps the digest, which ignores location labels.
+            dump(saved, [original[0], dict(original[1], location='html-block:7')])
+            with self.assertRaisesRegex(ValueError, sid + ': segment 2 differs at html-block:7'):
+                replay(p/'run', p/'cache', p/'replay_location')
+            saved.unlink()
+            with self.assertRaisesRegex(ValueError, sid + ': saved segments missing'):
+                replay(p/'run', p/'cache', p/'replay_missing')
+
     def test_recheck_locates_old_excerpts_in_a_fresh_run(self):
         with tempfile.TemporaryDirectory() as td:
             p, calls = Path(td), []

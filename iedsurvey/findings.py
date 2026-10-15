@@ -11,7 +11,7 @@ from .vocabulary import (
     CAPABILITIES, COMPLETE_TYPES, DOC_TYPES, INTERFACE_CLASSES, NOT_ASSESSED, PROPERTIES, RELATES, lead_type, legacy_states,
     life_words)
 from .store import load
-from .text import squash
+from .text import squash, text_digest
 from .leads import load_leads
 from .review import facts, grounded, named, silent, token, untouched, validate_reviews
 from .devices import device_records
@@ -29,13 +29,15 @@ RANK = ('supported', 'conditional', 'gateway', 'conflict', 'explicitly_unsupport
 POSITIVE = ('supported', 'conditional')
 # DNP3 named in a document. It marks a device as a DNP3 device; it is not a finding about the device's security.
 DNP3 = re.compile(r'\bDNP\s?3i?\b|\bDNP\b|IEEE\s*(?:Std\s*)?1815', re.I)
-# A DNP3 device's own protection, strongest first. Plaintext means that no DNP3 security is documented.
-DNP3_KINDS = (('tls', 'Encrypted: DNP3 over TLS or IPsec'),
-              ('authenticated', 'Authenticated, not encrypted (e.g. DNP3 Secure Authentication)'),
-              ('tunnel', 'Encryption documented for its control protocols, DNP3 not named'),
-              ('external', 'Only through a separate encrypting device'),
-              ('denied', 'Vendor states DNP3 is not protected'),
-              ('none', 'No DNP3 security documented (plaintext)'))
+# Summary of documented DNP3 security. The ordering is for display, not a security-strength ranking.
+DNP3_KINDS = (('tls', 'DNP3 over TLS or IPsec documented'),
+              ('authenticated', 'DNP3 authentication documented; encryption not established'),
+              ('integrity', 'DNP3 integrity documented; authentication and encryption not established'),
+              ('tunnel', 'Control-traffic encryption documented; DNP3 scope not established'),
+              ('external', 'External encryption documented for DNP3'),
+              ('external_scope_unknown', 'External encryption documented; DNP3 scope not established'),
+              ('denied', 'A specific DNP3 security feature explicitly unsupported'),
+              ('none', 'DNP3 security not established from retrieved documents'))
 
 
 def md(x):
@@ -72,9 +74,19 @@ class Findings:
         self.cfg, self.sources, rows = load(run / 'config.json'), load(run / 'sources.json'), load(review_path)
         self.products = {p['id']: p for p in self.cfg['products']}
 
-        def segments(sid):
-            return load(run / (sid + '.segments.json'))
+        source_by_id = {s['id']: s for s in self.sources}
+        extracted = {}
 
+        def segments(sid):
+            if sid not in extracted:
+                value = load(run / (sid + '.segments.json'))
+                expected = source_by_id[sid].get('text_sha256')
+                if expected and text_digest(value) != expected:
+                    raise ValueError(f'extracted text hash mismatch: {sid}; rebuild and review this source')
+                extracted[sid] = value
+            return extracted[sid]
+
+        self._segments = segments
         self.devices = device_records(self.cfg, self.sources, device_notes, segments)
         # Lets a review proceed in stages. A partly filled row is still an error, never silently dropped.
         self.blank = sum(map(untouched, rows))
@@ -168,7 +180,7 @@ class Findings:
     def _find_dnp3(self):
         self.dnp3_sources = defaultdict(list)
         for s in self.sources:
-            if s['status'] == 'extracted' and any(DNP3.search(g['text']) for g in load(self.run / (s['id'] + '.segments.json'))):
+            if s['status'] == 'extracted' and any(DNP3.search(g['text']) for g in self._segments(s['id'])):
                 self.dnp3_sources[s['product_id']].append(s['id'])
 
     def _interface_rows(self):
@@ -270,11 +282,14 @@ class Findings:
                 continue
             named_dnp3, positive = bool(DNP3.search(f"{r.get('interface', '')} {r.get('protocol', '')}")), r['status'] in POSITIVE
             if positive and r.get('support_basis') == ['external_gateway']:
-                found['external'].append(r)
+                if r['feature'] in ('tls', 'encryption', 'ipsec', 'ssh'):
+                    found['external' if named_dnp3 else 'external_scope_unknown'].append(r)
             elif positive and named_dnp3 and r['feature'] in ('tls', 'encryption', 'ipsec'):
                 found['tls'].append(r)
-            elif positive and named_dnp3 and r['feature'] in ('dnp3_secure_authentication', 'authentication', 'integrity'):
+            elif positive and named_dnp3 and r['feature'] in ('dnp3_secure_authentication', 'authentication'):
                 found['authenticated'].append(r)
+            elif positive and named_dnp3 and r['feature'] == 'integrity':
+                found['integrity'].append(r)
             elif positive and r['feature'] in ('tls', 'encryption', 'ipsec', 'ssh'):
                 found['tunnel'].append(r)
             elif r['status'] == 'explicitly_unsupported' and named_dnp3:

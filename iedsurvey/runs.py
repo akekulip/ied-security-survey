@@ -1,10 +1,11 @@
 """What can be done with a finished run without the network: verify, replay, rebuild, recheck."""
 
+from itertools import zip_longest
 from pathlib import Path
 
 from .vocabulary import EXTRACTION, VERSION
 from .store import digest, dump, load, now
-from .text import loose
+from .text import loose, text_digest
 from .extract import extract, parse
 from .leads import alias_pattern, candidates, save_leads
 from .crawl import describe, finish
@@ -57,17 +58,36 @@ def replay(run, cache, dest):
     dest = Path(dest)
     dest.mkdir(parents=True, exist_ok=False)
     aliases = {p['id']: p.get('aliases', []) for p in load(run / 'config.json')['products']}
-    hits = []
+    hits, problems = [], []
     for s in load(run / 'sources.json'):
         if s['status'] == 'extracted':
             segs, _ = extract((Path(cache) / s['sha256']).read_bytes(), s['headers'])
             dump(dest / (s['id'] + '.segments.json'), segs)
+            saved = run / (s['id'] + '.segments.json')
+            problems += segment_problems(s['id'], s.get('text_sha256'), load(saved) if saved.exists() else None,
+                                         load(dest / (s['id'] + '.segments.json')))
             hits.extend(candidates(s, segs, aliases.get(s['product_id'], [])))
+    if problems:
+        raise ValueError(f'extracted text differs from recorded run in {len(problems)} sources: ' + '; '.join(problems[:10]))
     save_leads(dest, hits)
     for name in ('candidates.json', 'statement_leads.json'):
         if load(dest / name) != (load(run / name) if (run / name).exists() else []):
             raise ValueError('extraction differs from recorded run; investigate tool/version changes')
-    print('Offline extraction and candidates match recorded run exactly')
+    print('Offline extraction, saved segments, text digests and candidates match recorded run exactly')
+
+
+def segment_problems(sid, recorded, saved, fresh):
+    """Where a source's saved and freshly extracted segments disagree with each other or with the recorded digest."""
+    if saved is None:
+        return [f'{sid}: saved segments missing']
+    problems = [f'{sid}: {name} text does not match the recorded text_sha256'
+                for name, segs in (('saved', saved), ('fresh', fresh)) if recorded and text_digest(segs) != recorded]
+    # The digest ignores location labels, so a passage moved to another page keeps it: compare segment by segment.
+    for i, (old, new) in enumerate(zip_longest(saved, fresh)):
+        if old != new:
+            problems.append(f'{sid}: segment {i + 1} differs at {(old or new).get("location")}')
+            break
+    return problems
 
 
 def recheck(old, new, dest=None):

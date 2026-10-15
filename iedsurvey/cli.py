@@ -53,7 +53,8 @@ COMMANDS = {
         ('--out', REQUIRED | {'help': 'report folder; a report already there is replaced'}),
         ('--require-evidence', {'action': 'store_true', 'help': 'every result must quote its source'}),
         ('--source-notes', {'help': 'source notes file'}),
-        ('--device-notes', {'help': 'device notes file'})]),
+        ('--device-notes', {'help': 'device notes file'}),
+        ('--require-confirmed', {'action': 'store_true', 'help': 'refuse publication output while any cell is draft or unreviewed'})]),
     'verify': (verify, 'check that the cached files of a run still match their recorded hashes', [
         ('--run', RUN),
         ('--cache', CACHE)]),

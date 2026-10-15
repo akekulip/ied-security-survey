@@ -3,11 +3,11 @@
 import re
 
 
-VERSION = '2.2.0'
+VERSION = '2.2.1'
 
 
 # Bumped only when extraction or lead rules change. Replay compares this, so a report-only release keeps runs replayable.
-EXTRACTION = '1.4.0'
+EXTRACTION = '1.4.1'
 
 
 # Review cells. Changing this tuple changes every denominator; lead groups below may grow freely.

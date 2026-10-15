@@ -82,6 +82,8 @@ def candidates(source, segments, aliases=()):
                    # The words that matched, so SFTP is never read as an SSH statement nor VPN as IPsec.
                    'matched': list(terms.values())[:12],
                    'context': passage(text, match.start(), match.end()),
+                   # A page may discuss management TLS first and control TLS later. Keep every distinct passage.
+                   'contexts': list(dict.fromkeys(passage(text, m.start(), m.end()) for m in found)),
                    'match_count': len(found), 'status': 'unreviewed'}
             if segment['location'].startswith('html-block'):
                 # A heading or table label alone decides nothing; its neighbours travel with it.

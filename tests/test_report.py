@@ -539,15 +539,15 @@ class ReportTests(SurveyCase):
             for expected in [
                 'Left out by the device notes, because DNP3 is named only in documents about other products: FAMILY.',
                 '| DNP3 security documented | Currently sold | Legacy | Total |',
-                '| Encrypted: DNP3 over TLS or IPsec | 1 of 3 (33%) | 0 of 1 (0%) | 1 of 4 (25%) |',
-                '| Authenticated, not encrypted (e.g. DNP3 Secure Authentication) | 1 of 3 (33%) | 0 of 1 (0%) | 1 of 4 (25%) |',
-                '| No DNP3 security documented (plaintext) | 1 of 3 (33%) | 1 of 1 (100%) | 2 of 4 (50%) |',
+                '| DNP3 over TLS or IPsec documented | 1 of 3 (33%) | 0 of 1 (0%) | 1 of 4 (25%) |',
+                '| DNP3 authentication documented; encryption not established | 1 of 3 (33%) | 0 of 1 (0%) | 1 of 4 (25%) |',
+                '| DNP3 security not established from retrieved documents | 1 of 3 (33%) | 1 of 1 (100%) | 2 of 4 (50%) |',
                 '| Devices whose documents name DNP3 | 3 | 1 | 4 |',
                 '| Legacy | Lifecycle | Vendor | Model | Type | DNP3 security | Source |',
-                '| no | currently supported | v | TLS | relay | Encrypted: DNP3 over TLS or IPsec | [S1 html-block:1](https://vendor.test/tls) |',
-                '| no | currently supported | v | SA | relay | Authenticated, not encrypted (e.g. DNP3 Secure Authentication) | [S2 html-block:1](https://vendor.test/sa) |',
-                '| no | currently supported | v | PLAIN | relay | No DNP3 security documented (plaintext) | [S3](https://vendor.test/plain) |',
-                '| yes | discontinued, support not stated | v | OLD | relay | No DNP3 security documented (plaintext) | [S6](https://vendor.test/old) |']:
+                '| no | currently supported | v | TLS | relay | DNP3 over TLS or IPsec documented | [S1 html-block:1](https://vendor.test/tls) |',
+                '| no | currently supported | v | SA | relay | DNP3 authentication documented; encryption not established | [S2 html-block:1](https://vendor.test/sa) |',
+                '| no | currently supported | v | PLAIN | relay | DNP3 security not established from retrieved documents | [S3](https://vendor.test/plain) |',
+                '| yes | discontinued, support not stated | v | OLD | relay | DNP3 security not established from retrieved documents | [S6](https://vendor.test/old) |']:
                 self.assertIn(expected, section)
             # Devices whose documents never name DNP3, and those a note leaves out, are not counted at all.
             self.assertNotIn('| MODBUS |', section)

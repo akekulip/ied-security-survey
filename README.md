@@ -4,7 +4,7 @@ Collects what five IED vendors (SEL, Schneider Electric, Rockwell Automation, GE
 
 The current study's own files (inventory, sample, review, reports, paper appendix) are described in `study/README.md`.
 
-This repository is private and holds everything on its `main` branch:
+The `main` branch contains the following study files:
 
 | Folder | What it holds |
 |---|---|
@@ -125,13 +125,17 @@ python survey.py report --run $DATA/runs/sample --reviews $S/reviews.json --sour
 
 The report refuses a row that breaks a rule and names the device and capability, for example a quote that is not at the cited location, or a hash that does not match the run. It writes:
 
-- `REPORT.md`, which opens with the DNP3 table: the devices whose documents name DNP3, the strongest DNP3 protection documented for each (TLS, Secure Authentication, a separate device, or none: plaintext), counted for current and legacy devices, and listed with vendor, model, type and a link to the source;
+- `REPORT.md`, which opens with the DNP3 table: the devices whose documents name DNP3, the applicable DNP3 security documentation for each entry (TLS, Secure Authentication, external protection, or unresolved), counted for current and legacy devices, and listed with vendor, model, type and a link to the source;
 - `findings_table.csv`, one line per device and interface;
 - `devices.csv`, with lifecycle evidence;
 - `dnp3.csv`, the DNP3 table one line per device;
 - `findings.csv`, `evidence_index.json` and `sources.json`.
 
-`--require-evidence` makes a verbatim quote mandatory for every result.
+`--require-evidence` makes a verbatim quote mandatory for every result. It does not turn an AI draft into author verification.
+
+Add `--require-confirmed` for publication output. It refuses draft or unreviewed cells before writing any report. Default and deployment states remain separate. Reports validate extracted-text digests when the run records them; use `verify` and `replay` as well to check retained bytes and re-extraction. Historical reports remain unchanged.
+
+The DNP3 summary does not classify silence as plaintext. Protocol capabilities, vendor defaults and deployed settings are separate questions. Other-protocol encryption and external encryption without explicit DNP3 scope remain qualified as such.
 
 ## 6. Other commands
 
@@ -159,3 +163,9 @@ The report refuses a row that breaks a rule and names the device and capability,
 - **HTTPS only,** to the domains listed for each product, with a delay between requests.
 - **Every fetched file is kept by its SHA-256 hash.** The request log, hashes and retrieval times are in the run directory.
 - **A keyword match is a place to read, never a finding.** Findings come only from review rows that quote their source.
+
+## Audit correction (2026-10-15)
+
+Version 2.2.1 keeps all distinct keyword contexts on a page, because a first mention about management access must not hide a later control-protocol statement. Extraction revision 1.4.1 therefore needs a new offline `rebuild` before replay; keep existing runs and their reviews unchanged. Compare rebuilt text hashes and validate every review again.
+
+The retained D400 brochure, PDF page 1, explicitly documents TLS tunnelling for DNP3/TCP, Modbus/TCP and IEC 104. The historical AI review missed it. The claim that no sampled vendor-discontinued product documents control-traffic protection must be withdrawn. The audit supplies a separate draft correction and regenerated tables. It does not mark any row author-confirmed.
