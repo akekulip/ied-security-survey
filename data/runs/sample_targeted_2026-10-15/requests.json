@@ -1,0 +1,132 @@
+[
+  {
+    "at": "2026-10-15T20:49:44.410890+00:00",
+    "url": "https://www.gevernova.com/robots.txt",
+    "status": 200,
+    "bytes": 5207,
+    "sha256": "38174ab81da1da9ba9bec5746eb246576af3f2d13361da1fa7a8a9e90ef0dfa8"
+  },
+  {
+    "at": "2026-10-15T20:49:45.606904+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/manuals/c60/C60-1601-0100-85x-AP1-GEV.pdf",
+    "status": 200,
+    "bytes": 23175743
+  },
+  {
+    "at": "2026-10-15T20:50:10.477620+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-05/994-0145-D20E-Ethernet-IO-Module-Instruction-Manual-V100-R5.pdf",
+    "status": 200,
+    "bytes": 4030450
+  },
+  {
+    "at": "2026-10-15T20:50:17.496862+00:00",
+    "url": "https://www.gevernova.com/grid-solutions/sites/default/files/resources/products/software/d20mx/prbt-0440%20d20mx%20v2.10%20release%20notification%20v100%20r0.pdf",
+    "status": 301,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-15T20:50:18.695832+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/d20mx/prbt-0440%20d20mx%20v2.10%20release%20notification%20v100%20r0.pdf",
+    "status": 200,
+    "bytes": 182002
+  },
+  {
+    "at": "2026-10-15T20:50:19.898720+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/specs/d20/prbt-0397_d20mx_guideform_specs_v100_r1.pdf",
+    "status": 200,
+    "bytes": 428953
+  },
+  {
+    "at": "2026-10-15T20:51:22.177084+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/manuals/8series/8SCG-1601-0702-29x-AD-GEV.pdf",
+    "status": 200,
+    "bytes": 3160684
+  },
+  {
+    "at": "2026-10-15T20:51:24.926498+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/applications/8series/850_fast_secure_redundant_communications.pdf",
+    "status": 200,
+    "bytes": 528297
+  },
+  {
+    "at": "2026-10-15T20:58:49.362212+00:00",
+    "url": "https://selinc.com/robots.txt",
+    "status": 200,
+    "bytes": 686,
+    "sha256": "5e08edd75de604c0966b1d4c076064640b4ca1dfc6f31c8eb9eeb65d3ba64211"
+  },
+  {
+    "at": "2026-10-15T20:58:50.566182+00:00",
+    "url": "https://selinc.com/api/download/120794/",
+    "status": 200,
+    "bytes": 2613887
+  },
+  {
+    "at": "2026-10-15T20:58:53.957652+00:00",
+    "url": "https://www.se.com/robots.txt",
+    "status": 200,
+    "bytes": 46157,
+    "sha256": "3e2dd49000b1c451deca6457c489da60371648e8a567b89ea4a9793bab996f7c"
+  },
+  {
+    "at": "2026-10-15T20:58:55.166554+00:00",
+    "url": "https://www.se.com/ww/en/download/document/70022-0120-01/",
+    "status": 200,
+    "bytes": 21304
+  },
+  {
+    "at": "2026-10-15T20:58:56.370973+00:00",
+    "url": "https://www.se.com/ww/en/download/document/70072-0105-02/",
+    "status": 200,
+    "bytes": 20481
+  },
+  {
+    "at": "2026-10-15T20:58:58.171732+00:00",
+    "url": "https://cache.industry.siemens.com/robots.txt",
+    "status": 200,
+    "bytes": 80,
+    "sha256": "6aab259f4636c0e6e47c2e633650adf367091ec58beac80ead90d2e398635318"
+  },
+  {
+    "at": "2026-10-15T20:58:59.386418+00:00",
+    "url": "https://cache.industry.siemens.com/dl/files/443/109742443/att_1360880/v1/SIP5_ComProt_V11.00_Manual_C055-N_en.pdf",
+    "status": 200,
+    "bytes": 14365489
+  },
+  {
+    "at": "2026-10-15T20:59:07.414607+00:00",
+    "url": "https://cache.industry.siemens.com/dl/files/375/109768375/att_1150302/v1/SIP5_Security_V09.60_Manual_C081-C_en.pdf",
+    "status": 200,
+    "bytes": 3985572
+  },
+  {
+    "at": "2026-10-15T20:59:50.037437+00:00",
+    "url": "https://cache.industry.siemens.com/dl/files/897/109744897/att_1053741/v1/SICAM_Q200_7KG97_CM_US.pdf",
+    "status": 200,
+    "bytes": 1187743
+  },
+  {
+    "at": "2026-10-15T20:59:51.238123+00:00",
+    "url": "https://cache.industry.siemens.com/dl/files/896/109744896/att_1375401/v1/SICAM_Q200_7KG97_MAN_US.pdf",
+    "status": 200,
+    "bytes": 12977980
+  },
+  {
+    "at": "2026-10-15T21:00:09.035452+00:00",
+    "url": "https://cache.industry.siemens.com/dl/files/336/109752336/att_1025493/v1/SICAM_T_7KG966_US.pdf",
+    "status": 404,
+    "bytes": 10
+  },
+  {
+    "at": "2026-10-15T21:00:26.612575+00:00",
+    "url": "https://cache.industry.siemens.com/dl/files/443/109742443/att_1360880/v1/SIP5_ComProt_V11.00_Manual_C055-N_en.pdf",
+    "status": 200,
+    "bytes": 14365489
+  },
+  {
+    "at": "2026-10-15T21:00:34.756031+00:00",
+    "url": "https://cache.industry.siemens.com/dl/files/375/109768375/att_1150302/v1/SIP5_Security_V09.60_Manual_C081-C_en.pdf",
+    "status": 200,
+    "bytes": 3985572
+  }
+]

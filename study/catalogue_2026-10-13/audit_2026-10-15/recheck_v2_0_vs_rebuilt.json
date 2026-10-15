@@ -1,0 +1,2870 @@
+{
+  "tool_version": "2.2.1",
+  "checked_at": "2026-10-15T20:42:26.863123+00:00",
+  "old": "data\\runs\\sample_2026-10-13_v2_0",
+  "new": "data\\runs\\sample_audit_2026-10-15",
+  "sources": [
+    {
+      "product_id": "ge_multilin_c60c95",
+      "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/controllers/multilin-c60c95",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_c60c95",
+      "url": "https://www.gevernova.com/electrification/resources?prod=c60&type=3&node_id=4547",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_c60c95",
+      "url": "https://www.gevernova.com/electrification/passport/login?destination=/electrification/resources?prod=c60&type=3&node_id=4547",
+      "old_status": "login_required",
+      "new_status": "login_required"
+    },
+    {
+      "product_id": "ge_multilin_c60c95",
+      "url": "https://www.gevernova.com/electrification/resources?prod=c60&type=1&node_id=4547",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_c60c95",
+      "url": "https://www.gevernova.com/electrification/resources?prod=c60&type=4&node_id=4547",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_c60c95",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-11/Multilin-C60-Brochure-EN-12654K-Hybrid-202504-R003.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_c60c95",
+      "url": "https://www.gevernova.com/grid-solutions/sites/default/files/2025-11/Multilin-UR-and-URPlus-Brochure-EN-12657H-Hybrid-202504-R002.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_d20e",
+      "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/gateways-rtus/multilin-d20e",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_d20e",
+      "url": "https://www.gevernova.com/electrification/resources?prod=d20e&type=3&node_id=4553",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_d20e",
+      "url": "https://www.gevernova.com/electrification/passport/login?destination=/electrification/resources?prod=d20e&type=3&node_id=4553",
+      "old_status": "login_required",
+      "new_status": "login_required"
+    },
+    {
+      "product_id": "ge_multilin_d20e",
+      "url": "https://www.gevernova.com/electrification/resources?prod=d20e&type=1&node_id=4553",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_d20e",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-11/Multilin-D20E-Brochure-EN-32042-Hybrid-202504-R002.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilintm_g100",
+      "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/gateways-rtus/multilintm-g100",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilintm_g100",
+      "url": "https://www.gevernova.com/electrification/resources?prod=G100&type=3&node_id=4550",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilintm_g100",
+      "url": "https://www.gevernova.com/electrification/passport/login?destination=/electrification/resources?prod=G100&type=3&node_id=4550",
+      "old_status": "login_required",
+      "new_status": "login_required"
+    },
+    {
+      "product_id": "ge_multilintm_g100",
+      "url": "https://www.gevernova.com/electrification/resources?prod=G100&type=1&node_id=4550",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilintm_g100",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-09/Multilin-G100-Brochure-EN-33196-Hybrid-202504-R002.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilintm_g500",
+      "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/gateways-rtus/multilintm-g500",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilintm_g500",
+      "url": "https://www.gevernova.com/electrification/resources?prod=G500&type=3&node_id=4551",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilintm_g500",
+      "url": "https://www.gevernova.com/electrification/passport/login?destination=/electrification/resources?prod=G500&type=3&node_id=4551",
+      "old_status": "login_required",
+      "new_status": "login_required"
+    },
+    {
+      "product_id": "ge_multilintm_g500",
+      "url": "https://www.gevernova.com/electrification/resources?prod=G500&type=1&node_id=4551",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilintm_g500",
+      "url": "https://www.gevernova.com/electrification/resources?prod=G500&type=4&node_id=4551",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilintm_g500",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-11/Multilin-G500-Brochure-RU-32056-Hybrid-202509-R002.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilintm_g500",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-09/Multilin-G500-Advanced-Substation-Gateway-Brochure-EN-35437-Hybrid-202504-R002.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_dart_legacy",
+      "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/dart-legacy",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_dart_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=dart&type=4&node_id=4998",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_dart_legacy",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4861-DART-A.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_d20mx_substation_controller_legacy",
+      "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-d20mx-substation-controller-legacy",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_d20mx_substation_controller_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=d20mx&type=3&node_id=4861",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_d20mx_substation_controller_legacy",
+      "url": "https://www.gevernova.com/electrification/passport/login?destination=/electrification/resources?prod=d20mx&type=3&node_id=4861",
+      "old_status": "login_required",
+      "new_status": "login_required"
+    },
+    {
+      "product_id": "ge_multilin_d20mx_substation_controller_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=d20mx&type=1&node_id=4861",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_d20mx_substation_controller_legacy",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-11/GER-4927-D20MX-Portfolio-D.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_d20mx_substation_controller_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=d20mx&type=4&node_id=4861",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_d20mx_substation_controller_legacy",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/Multilin-D20-Analog-Input-Module-Brochure-EN-12792-Hybrid-202505-R002.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_d20mx_substation_controller_legacy",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/Multilin-D20-Combination-Module-Brochure-EN-12802A-Hybrid-202505-R002.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_d20mx_substation_controller_legacy",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-09/Multilin-D20MX-Brochure-EN-12711G-Hybrid-202504-R001.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_d20mx_substation_controller_legacy",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2026-08/Multilin-D20-Status-Input-Module-Brochure-EN-12793-Hybrid-202505-R002.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_d20mx_substation_controller_legacy",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2026-08/Multilin-D20-Control-Output-Module-Brochure-EN-12711A-Hybrid-202505-R002.pdf",
+      "old_status": "skipped",
+      "new_status": "skipped"
+    },
+    {
+      "product_id": "ge_multilin_d20mx_substation_controller_legacy",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/d20mx/prbt-0436_d20mx_v2.01_release_notification_v100_r1.pdf",
+      "old_status": "skipped",
+      "new_status": "skipped"
+    },
+    {
+      "product_id": "ge_multilin_d400_legacy",
+      "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-d400-legacy",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_d400_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=d400&type=3&node_id=4996",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_d400_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=d400&type=1&node_id=4996",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_d400_legacy",
+      "url": "https://www.gevernova.com/grid-solutions/sites/default/files/2025-11/GER-4919-D400-Portfolio-B.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_d400_legacy",
+      "url": "https://www.gevernova.com/grid-solutions/sites/default/files/2025-11/GER-4919-DMC-490-B.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_d400_legacy",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-09/Multilin-D-20-RIO-Brochure-EN-12805-Hybrid-202505-R002.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_d400_legacy",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-09/Multilin-D400-Brochure-EN-12806D-Hybrid-202505-001.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_h500_legacy",
+      "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-h500-legacy",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_h500_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=H500&type=3&node_id=4552",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_h500_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=H500&type=1&node_id=4552",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_h500_legacy",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-11/GER-4978-H500-B.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_h500_legacy",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-11/Multilin-H500-Brochure-EN-33139-Hybrid-202504-R002.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_2200_digital_power_meter",
+      "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/metering/epm-2200-digital-power-meter",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_2200_digital_power_meter",
+      "url": "https://www.gevernova.com/electrification/resources?prod=epm2200&type=3&node_id=4889",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_2200_digital_power_meter",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/brochures/epm_meter_encl.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_2200_digital_power_meter",
+      "url": "https://www.gevernova.com/electrification/resources?prod=epm2200&type=1&node_id=4889",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_2200_digital_power_meter",
+      "url": "https://www.gevernova.com/electrification/resources?prod=epm2200&type=4&node_id=4889",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_2200_digital_power_meter",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/manuals/epm/ge-communicator-ae-GEV.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_2200_digital_power_meter",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/manuals/epm/gek-119545c-GEV.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_2200_digital_power_meter",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/manuals/epm/epm2200-a7-GEV.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_2200_digital_power_meter",
+      "url": "https://www.gevernova.com/grid-solutions/sites/default/files/resources/products/manuals/epm/get-20081-GEV.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_2200_digital_power_meter",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2026-03/GE-Vernova-EPM-2200-Brochure-032026.pdf",
+      "old_status": "skipped",
+      "new_status": "skipped"
+    },
+    {
+      "product_id": "ge_epm_2200_digital_power_meter",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/EPM-Meter-Enclosure-Brochure-EN-12771C-Hybrid-202505-R001.pdf",
+      "old_status": "skipped",
+      "new_status": "skipped"
+    },
+    {
+      "product_id": "ge_epm_2200_digital_power_meter",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/specs/epm/epm2200_bacnet-GEV.pdf",
+      "old_status": "skipped",
+      "new_status": "skipped"
+    },
+    {
+      "product_id": "ge_epm_6010",
+      "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/metering/epm-6010",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_6010",
+      "url": "https://www.gevernova.com/electrification/resources?prod=epm6010&type=3&node_id=4897",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_6010",
+      "url": "https://www.gevernova.com/electrification/resources?prod=epm6010&type=1&node_id=4897",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_6010",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4900-EPM6010T-A.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_6010",
+      "url": "https://www.gevernova.com/electrification/resources?prod=epm6010&type=4&node_id=4897",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_6010",
+      "url": "https://www.gevernova.com/grid-solutions/sites/default/files/resources/products/manuals/epm/ge-communicator-ae-GEV.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_6010",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/manuals/epm/gek-119545c-GEV.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_6010",
+      "url": "https://www.gevernova.com/grid-solutions/sites/default/files/resources/products/manuals/epm/get-20081-GEV.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_istat_i400",
+      "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/metering/istat-i400",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_istat_i400",
+      "url": "https://www.gevernova.com/electrification/resources?prod=i400&type=3&node_id=4928",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_istat_i400",
+      "url": "https://www.gevernova.com/electrification/resources?prod=i400&type=1&node_id=4928",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_istat_i400",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4938-i4CA-i4DA-i4DC-i4DG-A.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_istat_i400",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4900-iSTAT-I4DF-Transducers-A.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_istat_i400",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4900-I4VA-Transducers-B.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_istat_i400",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4900-iSTAT-I4XS-Transducers-A.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_istat_i400",
+      "url": "https://www.gevernova.com/electrification/resources?prod=i400&type=4&node_id=4928",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_istat_i400",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/manuals/I4X-EN-CO-D-GB-new-GEV.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_istat_i400",
+      "url": "https://www.gevernova.com/grid-solutions/sites/default/files/resources/products/manuals/I400-EN-M-F-new-GEV.pdf",
+      "old_status": "skipped",
+      "new_status": "skipped"
+    },
+    {
+      "product_id": "ge_istat_m2x2",
+      "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/metering/istat-m2x2",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_istat_m2x2",
+      "url": "https://www.gevernova.com/electrification/resources?prod=m2x2&type=3&node_id=25696",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_istat_m2x2",
+      "url": "https://www.gevernova.com/electrification/resources?prod=m2x2&type=1&node_id=25696",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_istat_m2x2",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4844-M212-A.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_istat_m2x2",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/manuals/M2x2-EN-M-F-new-GEV.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_istat_m2x2",
+      "url": "https://www.gevernova.com/grid-solutions/sites/default/files/resources/products/manuals/M2x2-FR-M-C-new-GEV.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_istat_m2x2",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-11/iSTAT-M232-Communicating-Measurement-Centre-Brochure-EN-33180-Hybrid-202505-R002.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_4000_sub_meter_legacy",
+      "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-4000-sub-meter-legacy",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_4000_sub_meter_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=em-epm4000s&type=3&node_id=4890",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_5300_legacy",
+      "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-5300-legacy",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_5300_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=em-epm5300p&type=3&node_id=4894",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_5300_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=em-epm5300p&type=1&node_id=4894",
+      "old_status": "duplicate",
+      "new_status": "duplicate",
+      "raw_bytes": "same",
+      "extracted_text": "no text hash in old run"
+    },
+    {
+      "product_id": "ge_epm_5300_legacy",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4451-EPM5300-EPM5350-B.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_5300_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=em-epm5300p&type=4&node_id=4894",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_7100_legacy",
+      "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-7100-legacy",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_7100_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=epm7100&type=3&node_id=4899",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_7100_legacy",
+      "url": "https://www.gevernova.com/electrification/passport/login?destination=/electrification/resources?prod=epm7100&type=3&node_id=4899",
+      "old_status": "login_required",
+      "new_status": "login_required"
+    },
+    {
+      "product_id": "ge_epm_7100_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=epm7100&type=1&node_id=4899",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_7100_legacy",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4938-EPM7100-A.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_7100_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=epm7100&type=4&node_id=4899",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_7100_legacy",
+      "url": "https://www.gevernova.com/grid-solutions/sites/default/files/resources/products/manuals/epm/ge-communicator-ae-GEV.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_7100_legacy",
+      "url": "https://www.gevernova.com/grid-solutions/sites/default/files/resources/products/manuals/epm/get-20081-GEV.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_9900_advanced_power_quality_meter_legacy",
+      "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-9900-advanced-power-quality-meter-legacy",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_9900_advanced_power_quality_meter_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=epm9900&type=3&node_id=4903",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_9900_advanced_power_quality_meter_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=epm9900&type=1&node_id=4903",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_9900_advanced_power_quality_meter_legacy",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/EPM9900-B.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_9900_advanced_power_quality_meter_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=epm9900&type=4&node_id=4903",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_9900_advanced_power_quality_meter_legacy",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/manuals/epm/epm9000-dnp-a1-GEV.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_9900_advanced_power_quality_meter_legacy",
+      "url": "https://www.gevernova.com/grid-solutions/sites/default/files/resources/products/manuals/epm/ge-communicator-ae-GEV.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_9900_advanced_power_quality_meter_legacy",
+      "url": "https://www.gevernova.com/grid-solutions/sites/default/files/resources/products/manuals/epm/get-20081-GEV.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_epm_9900_advanced_power_quality_meter_legacy",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-09/Multilin-EPM-9900-High-Performance-Power-Brochure-EN-12791-Hybrid-202505-R001.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_bitronics_70_series_legacy",
+      "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/bitronics-70-series-legacy",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_bitronics_70_series_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=70Series&type=3&node_id=4840",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_bitronics_70_series_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=70Series&type=1L&node_id=4840",
+      "old_status": "duplicate",
+      "new_status": "duplicate",
+      "raw_bytes": "same",
+      "extracted_text": "no text hash in old run"
+    },
+    {
+      "product_id": "ge_bitronics_70_series_legacy",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4885-M871-M872-A.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_ifc_time_overcurrent_relay",
+      "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/single-function/ifc-time-overcurrent-relay",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_ifc_time_overcurrent_relay",
+      "url": "https://www.gevernova.com/electrification/resources?prod=ifc&type=3&node_id=4499",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_ifc_time_overcurrent_relay",
+      "url": "https://www.gevernova.com/electrification/passport/login?destination=/electrification/resources?prod=ifc&type=3&node_id=4499",
+      "old_status": "login_required",
+      "new_status": "login_required"
+    },
+    {
+      "product_id": "ge_ifc_time_overcurrent_relay",
+      "url": "https://www.gevernova.com/electrification/resources?prod=ifc&type=1&node_id=4499",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_ifc_time_overcurrent_relay",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4938-IFC95-IFC99-A.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_ifc_time_overcurrent_relay",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-09/IFC-Time-overcurrent-Brochure-EN-N50260-Hybrid-202508-R002.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_339",
+      "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/motor-protection/multilin-339",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_339",
+      "url": "https://www.gevernova.com/electrification/resources?prod=339&type=3&node_id=4493",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_339",
+      "url": "https://www.gevernova.com/electrification/passport/login?destination=/electrification/resources?prod=339&type=3&node_id=4493",
+      "old_status": "login_required",
+      "new_status": "login_required"
+    },
+    {
+      "product_id": "ge_multilin_339",
+      "url": "https://www.gevernova.com/electrification/resources?prod=339&type=1&node_id=4493",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_339",
+      "url": "https://www.gevernova.com/electrification/resources?prod=339&type=4&node_id=4493",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_339",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-11/Multilin-339-Brochure-EN-12779O-Hybrid-202504-R003.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_850",
+      "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/feeder-protection/multilin-850",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_850",
+      "url": "https://www.gevernova.com/electrification/resources?prod=850&type=3&node_id=4480",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_850",
+      "url": "https://www.gevernova.com/electrification/passport/login?destination=/electrification/resources?prod=850&type=3&node_id=4480",
+      "old_status": "login_required",
+      "new_status": "login_required"
+    },
+    {
+      "product_id": "ge_multilin_850",
+      "url": "https://www.gevernova.com/electrification/resources?prod=850&type=1&node_id=4480",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_850",
+      "url": "https://www.gevernova.com/electrification/resources?prod=850&type=4&node_id=4480",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_850",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4922-850P-A.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_850",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-11/Multilin-850-Brochure-PO-32050-Hybrid-202509-R001.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_850",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-11/Multilin-850P-Brochure-EN-12739L-Hybrid-202504-R001.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_850",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-11/Multilin-850-Brochure-GE-32050-Hybrid-202509-R002.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_850",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-06/Multilin%20850-brochure-EN-32050A-Hybrid-202503-R002.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_p64_micom_5th_generation",
+      "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/transformer-protection/p64-micom-5th-generation",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_p64_micom_5th_generation",
+      "url": "https://www.gevernova.com/electrification/resources?prod=P64X&type=3&node_id=4110",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_p64_micom_5th_generation",
+      "url": "https://www.gevernova.com/electrification/passport/login?destination=/electrification/resources?prod=P64X&type=3&node_id=4110",
+      "old_status": "login_required",
+      "new_status": "login_required"
+    },
+    {
+      "product_id": "ge_p64_micom_5th_generation",
+      "url": "https://www.gevernova.com/electrification/resources?prod=P64X&type=1&node_id=4110",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_p64_micom_5th_generation",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-01/transformer%20protection%20theory.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_p64_micom_5th_generation",
+      "url": "https://www.gevernova.com/electrification/resources?prod=P64X&type=4&node_id=4110",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_p64_micom_5th_generation",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/manuals/p64-tm-en-1-gev.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_p64_micom_5th_generation",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-09/MiCOM-Agile-P64-Brochure-EN-35502-Hybrid-202504-R002.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_dfp200_digital_feeder_protection_legacy",
+      "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/dfp200-digital-feeder-protection-legacy",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_dlpd_digital_line_protection_system",
+      "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/dlpd-digital-line-protection-system",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_dlpd_digital_line_protection_system",
+      "url": "https://www.gevernova.com/electrification/resources?prod=dlpd&type=4&node_id=4882",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_kavs_legacy",
+      "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/kavs-legacy",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_kavs_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=KAVS&type=3&node_id=5127",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_kavs_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=KAVS&type=1&node_id=5127",
+      "old_status": "duplicate",
+      "new_status": "duplicate",
+      "raw_bytes": "same",
+      "extracted_text": "no text hash in old run"
+    },
+    {
+      "product_id": "ge_kavs_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=KAVS&type=4&node_id=5127",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_a60_legacy",
+      "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-a60-legacy",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_a60_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=A60&type=3&node_id=4846",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_a60_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=A60&type=1&node_id=4846",
+      "old_status": "duplicate",
+      "new_status": "duplicate",
+      "raw_bytes": "same",
+      "extracted_text": "no text hash in old run"
+    },
+    {
+      "product_id": "ge_multilin_a60_legacy",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4820-A60-Arc-Flash-System-A.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_multilin_a60_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=A60&type=4&node_id=4846",
+      "old_status": "duplicate",
+      "new_status": "duplicate",
+      "raw_bytes": "same",
+      "extracted_text": "no text hash in old run"
+    },
+    {
+      "product_id": "ge_mbci_mcri_mrtp_and_mvtw_legacy",
+      "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/mbci-mcri-mrtp-and-mvtw-legacy",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_mbci_mcri_mrtp_and_mvtw_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=MBCI&type=3&node_id=4520",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_mbci_mcri_mrtp_and_mvtw_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=MBCI&type=1&node_id=4520",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_mbci_mcri_mrtp_and_mvtw_legacy",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2026-06/GER-5001-MBCI-B.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_mbci_mcri_mrtp_and_mvtw_legacy",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2026-06/GER-5001-MCRI-B.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_mbci_mcri_mrtp_and_mvtw_legacy",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4820-MBCI02-A.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_mbci_mcri_mrtp_and_mvtw_legacy",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2026-07/GER-4820-MVTW-D.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_mbci_mcri_mrtp_and_mvtw_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=MBCI&type=4&node_id=4520",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_mbci_mcri_mrtp_and_mvtw_legacy",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-11/MRTP-Supervision-for-AC-Pilot-Circuits-Brochure-EN-N50152-Hybrid-202505-R002.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_micom_agile_p24x_legacy",
+      "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/micom-agile-p24x-legacy",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_micom_agile_p24x_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=P24x&type=3&node_id=4489",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_micom_agile_p24x_legacy",
+      "url": "https://www.gevernova.com/electrification/passport/login?destination=/electrification/resources?prod=P24x&type=3&node_id=4489",
+      "old_status": "login_required",
+      "new_status": "login_required"
+    },
+    {
+      "product_id": "ge_micom_agile_p24x_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=P24x&type=1&node_id=4489",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_micom_agile_p24x_legacy",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2026-06/GER-5022-P241-P242-P243.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_micom_agile_p24x_legacy",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2024-12/motor%20protection%20theory.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_micom_agile_p24x_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=P24x&type=4&node_id=4489",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_micom_agile_p24x_legacy",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-11/MiCOM-Agile-P24x-Rotating-Machine-Brochure-EN-N50123-Hybrid-202504-R002.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_micom_agile_p24x_legacy",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2026-02/P24x-TM-EN-J82-GEV.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_micom_agile_p541_p542_legacy",
+      "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/micom-agile-p541-p542-legacy",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_micom_agile_p541_p542_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=P541&type=3&node_id=4970",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_micom_agile_p541_p542_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=P541&type=1&node_id=4970",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_micom_agile_p541_p542_legacy",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4938-P541-B.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_micom_agile_p541_p542_legacy",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4938-P542-B.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_micom_agile_p541_p542_legacy",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2024-12/transmission%20line%20protection%20theory.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_micom_agile_p541_p542_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=P541&type=4&node_id=4970",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_micom_agile_p541_p542_legacy",
+      "url": "https://www.gevernova.com/grid-solutions/sites/default/files/2025-12/GER-4938-P541-B.pdf",
+      "old_status": "duplicate",
+      "new_status": "duplicate",
+      "raw_bytes": "same",
+      "extracted_text": "no text hash in old run"
+    },
+    {
+      "product_id": "ge_micom_agile_p541_p542_legacy",
+      "url": "https://www.gevernova.com/grid-solutions/sites/default/files/2025-12/GER-4938-P542-B.pdf",
+      "old_status": "duplicate",
+      "new_status": "duplicate",
+      "raw_bytes": "same",
+      "extracted_text": "no text hash in old run"
+    },
+    {
+      "product_id": "ge_micom_agile_p541_p542_legacy",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-11/LFCB-Replacement-Brochure-EN-N50256-Hybrid-202505-R001.pdf",
+      "old_status": "skipped",
+      "new_status": "skipped"
+    },
+    {
+      "product_id": "ge_micom_agile_p541_p542_legacy",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-11/MiCOM-Agile-P541-and-542-Brochure-EN-N50077-Hybrid-202504-R002.pdf",
+      "old_status": "skipped",
+      "new_status": "skipped"
+    },
+    {
+      "product_id": "ge_tccv_directional_overcurrent_relay_legacy",
+      "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/tccv-directional-overcurrent-relay-legacy",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "ge_tccv_directional_overcurrent_relay_legacy",
+      "url": "https://www.gevernova.com/electrification/resources?prod=tccv&type=1&node_id=4981",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_powermonitor_1000",
+      "url": "https://www.rockwellautomation.com/en-us/products/hardware/energy-monitoring/1408-powermonitor-1000.html",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_powermonitor_1000",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/ftem-um003_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_powermonitor_1000",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/1408-um002_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_powermonitor_1000",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/sg/1400-sg001_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_powermonitor_1000",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/at/1400-at001_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_powermonitor_1000",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/at/1400-at002_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_powermonitor_1000",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/pp/1408-pp001_-en-p.pdf",
+      "old_status": "skipped",
+      "new_status": "skipped"
+    },
+    {
+      "product_id": "rockwell_powermonitor_500",
+      "url": "https://www.rockwellautomation.com/en-us/products/hardware/energy-monitoring/1420-powermonitor-500.html",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_powermonitor_500",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/ftem-um003_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_powermonitor_500",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/1420-um001_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_powermonitor_500",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/sg/1400-sg001_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_powermonitor_500",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/at/1400-at001_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_powermonitor_500",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/at/1400-at002_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_powermonitor_500",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/pp/1420-pp001_-en-p.pdf",
+      "old_status": "skipped",
+      "new_status": "skipped"
+    },
+    {
+      "product_id": "rockwell_powermonitor_5000",
+      "url": "https://www.rockwellautomation.com/en-us/products/hardware/energy-monitoring/1426-powermonitor-5000.html",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_powermonitor_5000",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/ftem-um003_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_powermonitor_5000",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/1426-um001_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_powermonitor_5000",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/sg/1400-sg001_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_powermonitor_5000",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/at/1400-at001_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_powermonitor_5000",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/at/1400-at002_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_powermonitor_5000",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/pp/1426-pp001_-en-p.pdf",
+      "old_status": "skipped",
+      "new_status": "skipped"
+    },
+    {
+      "product_id": "rockwell_compactlogix_5380_controllers",
+      "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/compactlogix-5380-controllers.html",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_compactlogix_5380_controllers",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/5069-um001_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_compactlogix_5380_controllers",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/rm/1756-rm012_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_compactlogix_5380_controllers",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/rm/1756-rm094_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_compactlogix_5380_controllers",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/rm/logix-rm002_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_compactlogix_5380_controllers",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/rm/1756-rm003_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_compactlogix_5380_controllers",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/rm/1756-rm006_-en-p.pdf",
+      "old_status": "skipped",
+      "new_status": "skipped"
+    },
+    {
+      "product_id": "rockwell_compactlogix_5380_controllers",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/sg/1769-sg003_-en-p.pdf",
+      "old_status": "skipped",
+      "new_status": "skipped"
+    },
+    {
+      "product_id": "rockwell_compactlogix_5380_controllers",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/td/5069-td002_-en-p.pdf",
+      "old_status": "skipped",
+      "new_status": "skipped"
+    },
+    {
+      "product_id": "rockwell_compactlogix_5380_controllers",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/pp/5069-pp003_-en-p.pdf",
+      "old_status": "skipped",
+      "new_status": "skipped"
+    },
+    {
+      "product_id": "rockwell_compactlogix_5380_controllers",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/pp/migrat-pp004_-en-e.pdf",
+      "old_status": "skipped",
+      "new_status": "skipped"
+    },
+    {
+      "product_id": "rockwell_compactlogix_5380_controllers",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/pp/migrat-pp037_-en-e.pdf",
+      "old_status": "skipped",
+      "new_status": "skipped"
+    },
+    {
+      "product_id": "rockwell_controllogix_5590",
+      "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/1756-controllogix-5590.html",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_controllogix_5590",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/pp/1756-pp001_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_controllogix_5590",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/pp/1756-pp030_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_logixedge_controllers",
+      "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/logixedge-controllers.html",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_micro870_controllers",
+      "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/micro870-controllers.html",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_micro870_controllers",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/pp/migrat-pp012_-en-e.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_compactlogix_1768_controllers",
+      "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/compactlogix-1768-controllers.html",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_compactlogix_1768_controllers",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/pp/migrat-pp037_-en-e.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_micro830_controllers",
+      "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/micro830-controllers.html",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_micro830_controllers",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/2080-um002_-en-e.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_micrologix_1100_controllers",
+      "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/micrologix-1100-controllers.html",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_micrologix_1200_controllers",
+      "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/micrologix-1200-controllers.html",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_compactlogix_5370_controllers",
+      "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/compactlogix-5370-controllers.html",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_compactlogix_5370_controllers",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/rm/1756-rm100_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_compactlogix_5370_controllers",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/1769-um021_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_compactlogix_5370_controllers",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/rm/1756-rm099_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_compactlogix_5370_controllers",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/1769-um022_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_compactlogix_5370_controllers",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/rm/1756-rm094_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_compactlogix_5370_controllers",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/rm/logix-rm002_-en-p.pdf",
+      "old_status": "skipped",
+      "new_status": "skipped"
+    },
+    {
+      "product_id": "rockwell_compactlogix_5370_controllers",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/rm/1756-rm003_-en-p.pdf",
+      "old_status": "skipped",
+      "new_status": "skipped"
+    },
+    {
+      "product_id": "rockwell_compactlogix_5370_controllers",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/rm/1756-rm006_-en-p.pdf",
+      "old_status": "skipped",
+      "new_status": "skipped"
+    },
+    {
+      "product_id": "rockwell_compactlogix_5370_controllers",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/sg/1769-sg003_-en-p.pdf",
+      "old_status": "skipped",
+      "new_status": "skipped"
+    },
+    {
+      "product_id": "rockwell_compactlogix_5370_controllers",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/pp/1769-pp010_-en-e.pdf",
+      "old_status": "skipped",
+      "new_status": "skipped"
+    },
+    {
+      "product_id": "rockwell_compactlogix_5370_controllers",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/pp/1769-pp011_-en-e.pdf",
+      "old_status": "skipped",
+      "new_status": "skipped"
+    },
+    {
+      "product_id": "rockwell_compactlogix_5370_controllers",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/pp/1769-pp012_-en-e.pdf",
+      "old_status": "skipped",
+      "new_status": "skipped"
+    },
+    {
+      "product_id": "rockwell_compactlogix_5370_controllers",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/pp/1769-pp014_-en-p.pdf",
+      "old_status": "skipped",
+      "new_status": "skipped"
+    },
+    {
+      "product_id": "rockwell_compactlogix_5370_controllers",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/pp/1769-pp016_-en-p.pdf",
+      "old_status": "skipped",
+      "new_status": "skipped"
+    },
+    {
+      "product_id": "rockwell_slc_500_controllers",
+      "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/slc-500-controllers.html",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_slc_500_controllers",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/1747-um011_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_slc_500_controllers",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/1747-um009_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_slc_500_controllers",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/rm/1747-rm001_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_slc_500_controllers",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/rm/1746-rm003_-en-e.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_slc_500_controllers",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/pp/migrat-pp004_-en-e.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_differential_protection_relay",
+      "url": "https://www.rockwellautomation.com/en-us/products/hardware/circuit-and-load-protection/865-differential-protection-relay.html",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_differential_protection_relay",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/857-um002_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_differential_protection_relay",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/865-um001_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_protection_relay",
+      "url": "https://www.rockwellautomation.com/en-us/products/hardware/circuit-and-load-protection/857-protection-relay.html",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_protection_relay",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/857-um004_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_protection_relay",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/857-um002_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_protection_relay",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/857-um003_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_protection_relay",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/857-um001_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "rockwell_protection_relay",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/857-um005_-en-p.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "sel_2431",
+      "url": "https://selinc.com/api/download/3608/",
+      "old_status": "login_required",
+      "new_status": "login_required"
+    },
+    {
+      "product_id": "sel_2431",
+      "url": "https://selinc.com/api/download/2835/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "sel_2431",
+      "url": "https://selinc.com/api/download/2910/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "sel_3505_3505_3",
+      "url": "https://selinc.com/api/download/100623/",
+      "old_status": "login_required",
+      "new_status": "login_required"
+    },
+    {
+      "product_id": "sel_3505_3505_3",
+      "url": "https://selinc.com/api/download/100620/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "sel_3505_3505_3",
+      "url": "https://selinc.com/api/download/100963/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "sel_3560",
+      "url": "https://selinc.com/api/download/124708/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "sel_3560",
+      "url": "https://selinc.com/api/download/126035/",
+      "old_status": "login_required",
+      "new_status": "login_required"
+    },
+    {
+      "product_id": "sel_3560",
+      "url": "https://selinc.com/api/download/126036/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "sel_real_time_automation_controller_rtac",
+      "url": "https://selinc.com/api/download/111397/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "sel_real_time_automation_controller_rtac",
+      "url": "https://selinc.com/api/download/129976/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "sel_real_time_automation_controller_rtac",
+      "url": "https://selinc.com/api/download/122716/",
+      "old_status": "failed",
+      "new_status": "failed",
+      "raw_bytes": "same",
+      "extracted_text": "no text hash in old run"
+    },
+    {
+      "product_id": "sel_734_734t",
+      "url": "https://selinc.com/api/download/3954/",
+      "old_status": "login_required",
+      "new_status": "login_required"
+    },
+    {
+      "product_id": "sel_734_734t",
+      "url": "https://selinc.com/api/download/1386/",
+      "old_status": "failed",
+      "new_status": "failed",
+      "raw_bytes": "same",
+      "extracted_text": "no text hash in old run"
+    },
+    {
+      "product_id": "sel_735",
+      "url": "https://selinc.com/api/download/97801/",
+      "old_status": "login_required",
+      "new_status": "login_required"
+    },
+    {
+      "product_id": "sel_735",
+      "url": "https://selinc.com/api/download/10343/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "sel_735",
+      "url": "https://selinc.com/api/download/128658/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "sel_2664s",
+      "url": "https://selinc.com/api/download/105260/",
+      "old_status": "login_required",
+      "new_status": "login_required"
+    },
+    {
+      "product_id": "sel_2664s",
+      "url": "https://selinc.com/api/download/105257/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "sel_2664s",
+      "url": "https://selinc.com/api/download/104471/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "sel_351a",
+      "url": "https://selinc.com/api/download/5520/",
+      "old_status": "login_required",
+      "new_status": "login_required"
+    },
+    {
+      "product_id": "sel_351a",
+      "url": "https://selinc.com/api/download/5523/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "sel_351a",
+      "url": "https://selinc.com/api/download/5532/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "sel_387",
+      "url": "https://selinc.com/api/download/3636/",
+      "old_status": "login_required",
+      "new_status": "login_required"
+    },
+    {
+      "product_id": "sel_387",
+      "url": "https://selinc.com/api/download/292/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "sel_387",
+      "url": "https://selinc.com/api/download/236/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "sel_421",
+      "url": "https://selinc.com/api/download/116330/",
+      "old_status": "login_required",
+      "new_status": "login_required"
+    },
+    {
+      "product_id": "sel_421",
+      "url": "https://selinc.com/api/download/99010/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "sel_421",
+      "url": "https://selinc.com/api/download/222/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "schneider_easergy_micom_c434",
+      "url": "https://www.se.com/us/en/product-range/60785-easergy-micom-c434/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "schneider_sage_remote_terminal_units",
+      "url": "https://www.se.com/us/en/product-range/61746-sage-remote-terminal-units/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "schneider_saitel_remote_terminal_unit_controller",
+      "url": "https://www.se.com/us/en/product-range/61747-saitel-remote-terminal-unit-controller/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "schneider_scadapack_500e",
+      "url": "https://www.se.com/us/en/product-range/63000-scadapack-500e/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "schneider_powerlogic_ion7550_rtu",
+      "url": "https://www.se.com/us/en/product-range/1872-powerlogic-ion7550-rtu/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "schneider_powerlogic_em4200_series_enercept",
+      "url": "https://www.se.com/us/en/product-range/63381-powerlogic-em4200-series-enercept/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "schneider_powerlogic_pm3000_power_meters",
+      "url": "https://www.se.com/us/en/product-range/61274-powerlogic-pm3000-power-meters/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "schneider_powerlogic_pm5000_power_meters",
+      "url": "https://www.se.com/us/en/product-range/61281-powerlogic-pm5000-power-meters/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "schneider_powerlogic_pm8000_power_quality_meters",
+      "url": "https://www.se.com/us/en/product-range/62252-powerlogic-pm8000-power-quality-meters/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "schneider_pm800_series",
+      "url": "https://www.se.com/us/en/product-range/918-pm800-series/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "schneider_powerlogic_enercept",
+      "url": "https://www.se.com/us/en/product-range/1703-powerlogic-enercept/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "schneider_powerlogic_energy_meters",
+      "url": "https://www.se.com/us/en/product-range/1717-powerlogic-energy-meters/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "schneider_powerlogic_ion6200_series",
+      "url": "https://www.se.com/us/en/product-range/1505-powerlogic-ion6200-series/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "schneider_modicon_m171_m172_logic_controller",
+      "url": "https://www.se.com/us/en/product-range/62420-modicon-m171-m172-logic-controller/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "schneider_modicon_m241_micro_plc",
+      "url": "https://www.se.com/us/en/product-range/62129-modicon-m241-micro-plc/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "schneider_modicon_m258_compact_plc_for_machine_automation",
+      "url": "https://www.se.com/us/en/product-range/2730-modicon-m258-compact-plc-for-machine-automation/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "schneider_modicon_mcm",
+      "url": "https://www.se.com/us/en/product-range/1438-modicon-mcm/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "schneider_compact_plc",
+      "url": "https://www.se.com/us/en/product-range/61593-compact-plc/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "schneider_modicon_lmc058_lmc078",
+      "url": "https://www.se.com/us/en/product-range/7744-modicon-lmc058-lmc078/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "schneider_modicon_premium_pac",
+      "url": "https://www.se.com/us/en/product-range/537-modicon-premium-pac/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "schneider_twido_programmable_controller",
+      "url": "https://www.se.com/us/en/product-range/533-twido-programmable-controller/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "schneider_micom_p59x",
+      "url": "https://www.se.com/us/en/product-range/60750-micom-p59x/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "schneider_micom_p841",
+      "url": "https://www.se.com/us/en/product-range/60735-micom-p841/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "schneider_sepam_series_80",
+      "url": "https://www.se.com/us/en/product-range/935-sepam-series-80/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "schneider_vamp_arc_protection_relay_system",
+      "url": "https://www.se.com/us/en/product-range/62049-vamp-arc-protection-relay-system/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "schneider_micom_p22x",
+      "url": "https://www.se.com/us/en/product-range/60752-micom-p22x/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "schneider_micom_p521",
+      "url": "https://www.se.com/us/en/product-range/60745-micom-p521/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "schneider_micom_p821",
+      "url": "https://www.se.com/us/en/product-range/60739-micom-p821/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "schneider_sepam_series_20",
+      "url": "https://www.se.com/us/en/product-range/933-sepam-series-20/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_6md86",
+      "url": "https://www.siemens.com/en-us/products/siprotec/6md86/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_6md86",
+      "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:88ed23f5-d148-49a4-b830-6e301094e0ab/emdgb10022004ausbrochuresiprotec5us.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_6md86",
+      "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:163e4814-2ae6-40c0-b198-35ed52e610e1/SIPROTEC-6MD86-Profile.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_6md86",
+      "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:ec46e951-39dd-4c08-ba85-2064a2b02071/SIPROTEC-Conformal-Coated-Profile_original.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_a8000",
+      "url": "https://www.siemens.com/en-us/products/sicam/a8000/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_a8000",
+      "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:df58aadc-aa55-4293-a4a7-ceecdfc5b530/Substation-Automation-Catalog.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_a8000",
+      "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:d4dc2b88-c34d-4f33-bbef-ca9fb3488fbd/SICAM-A8000-Industry-Profile-EN.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_a8000",
+      "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:e0938714-7b9d-48e4-94dc-99b8ce1f7ffb/sicama8000rackprofile.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_a8000_cp_8050",
+      "url": "https://www.siemens.com/en-us/products/sicam/a8000-cp-8050/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_a8000_cp_8050",
+      "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:df58aadc-aa55-4293-a4a7-ceecdfc5b530/Substation-Automation-Catalog.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_a8000_cp_8050",
+      "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:d4dc2b88-c34d-4f33-bbef-ca9fb3488fbd/SICAM-A8000-Industry-Profile-EN.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_a8000_cp_8050",
+      "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:e0938714-7b9d-48e4-94dc-99b8ce1f7ffb/sicama8000rackprofile.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_multipurpose_automation_box",
+      "url": "https://www.siemens.com/en-us/products/sicam/multipurpose-automation-box/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_measuring_devices",
+      "url": "https://www.siemens.com/en-us/products/sentron/measuring-devices/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_measuring_devices",
+      "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:64703693-bf61-45a3-9f93-208b5b4aa5a0/siep-b10239-00sentroncybersecuritytopicpaperdeenus-144.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_measuring_devices",
+      "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:3f79e314-a6c3-4b80-8108-62228eaa763d/siep-b10515-00-7600qsgmessstellenkonzeptupdateen-144.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_measuring_devices",
+      "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:fe9aec46-e175-4518-95c4-510238833456/siep-t10343-00-00deeuropaeischemessgeraeterichtlinieenus-72.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_measuring_devices",
+      "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:c02a0965-9667-419d-8bdc-141e2a6d4073/siep-b10238-00whitepaperpowerqualitydeenus-144.pdf",
+      "old_status": "skipped",
+      "new_status": "skipped"
+    },
+    {
+      "product_id": "siemens_measuring_devices",
+      "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:f93b87a4-0a86-40d5-afb9-73f2bcefd71c/siep-b10091-00-00dewhitepaperiso50003deo2eenus-72.pdf",
+      "old_status": "skipped",
+      "new_status": "skipped"
+    },
+    {
+      "product_id": "siemens_measuring_devices",
+      "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:3b7cf7fa-f22c-4b75-8484-85f4459bd688/sentronpowercenter3000-factsheet.pdf",
+      "old_status": "skipped",
+      "new_status": "skipped"
+    },
+    {
+      "product_id": "siemens_q200_power_quality_recorder",
+      "url": "https://www.siemens.com/en-us/products/sicam/q200-power-quality-recorder/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_q200_power_quality_recorder",
+      "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:09a829eb-0676-4680-8f95-1adaba01a911/SICAM-PQ-Catalog.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_q200_power_quality_recorder",
+      "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:16e30661-1286-49b8-b194-94516bb56fa6/SICAM-Q200-Profile-EN.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_sentron_measuring_devices",
+      "url": "https://www.siemens.com/en-us/products/sentron/sentron-measuring-devices/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_sentron_measuring_devices",
+      "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:64703693-bf61-45a3-9f93-208b5b4aa5a0/siep-b10239-00sentroncybersecuritytopicpaperdeenus-144.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_sentron_measuring_devices",
+      "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:3f79e314-a6c3-4b80-8108-62228eaa763d/siep-b10515-00-7600qsgmessstellenkonzeptupdateen-144.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_sentron_measuring_devices",
+      "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:fe9aec46-e175-4518-95c4-510238833456/siep-t10343-00-00deeuropaeischemessgeraeterichtlinieenus-72.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_sentron_measuring_devices",
+      "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:c02a0965-9667-419d-8bdc-141e2a6d4073/siep-b10238-00whitepaperpowerqualitydeenus-144.pdf",
+      "old_status": "skipped",
+      "new_status": "skipped"
+    },
+    {
+      "product_id": "siemens_sentron_measuring_devices",
+      "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:f93b87a4-0a86-40d5-afb9-73f2bcefd71c/siep-b10091-00-00dewhitepaperiso50003deo2eenus-72.pdf",
+      "old_status": "skipped",
+      "new_status": "skipped"
+    },
+    {
+      "product_id": "siemens_sentron_measuring_devices",
+      "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:3b7cf7fa-f22c-4b75-8484-85f4459bd688/sentronpowercenter3000-factsheet.pdf",
+      "old_status": "skipped",
+      "new_status": "skipped"
+    },
+    {
+      "product_id": "siemens_transducer_sicam_t",
+      "url": "https://www.siemens.com/en-us/products/sicam/transducer-sicam-t/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_transducer_sicam_t",
+      "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:09a829eb-0676-4680-8f95-1adaba01a911/SICAM-PQ-Catalog.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_s7_1200_g2",
+      "url": "https://www.siemens.com/en-us/products/simatic/s7-1200-g2/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_s7_1200_g2",
+      "url": "https://www.siemens.com/catalog-st-70",
+      "old_status": "failed",
+      "new_status": "failed"
+    },
+    {
+      "product_id": "siemens_s7_1500_rh_cpus",
+      "url": "https://www.siemens.com/en-us/products/simatic/s7-1500-rh-cpus/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_s7_1500s_controller",
+      "url": "https://www.siemens.com/en-us/products/simatic/s7-1500s-controller/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_s7_400",
+      "url": "https://www.siemens.com/en-us/products/simatic/s7-400/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_7sj85",
+      "url": "https://www.siemens.com/en-us/products/siprotec/7sj85/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_7sj85",
+      "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:279cb01d-fd3b-4df4-8e04-f1fe98b81d6b/SIPROTEC-5-Catalog-EN.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_7sj85",
+      "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:6ef1c43e-cfe6-4f28-88a2-63e18e469d2b/SIPROTEC-7SJ85-Profile.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_7sj85",
+      "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:ec46e951-39dd-4c08-ba85-2064a2b02071/SIPROTEC-Conformal-Coated-Profile_original.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_7sr157",
+      "url": "https://www.siemens.com/en-us/products/reyrolle/7sr157/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_7sr157",
+      "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:59399f23-91ed-4201-a854-84d24c6d166c/7sr157cataloguesheet.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_7sr157",
+      "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:2ff7a1f9-2d04-4252-91c1-d11e6895ad51/Reyrolle-7SR157-Profile-EN.pdf",
+      "old_status": "duplicate",
+      "new_status": "duplicate",
+      "raw_bytes": "same",
+      "extracted_text": "no text hash in old run"
+    },
+    {
+      "product_id": "siemens_7sr46",
+      "url": "https://www.siemens.com/en-us/products/reyrolle/7sr46/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_7sr46",
+      "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:88d16eeb-cd0c-428e-a97e-fb2160492ec7/Reyrolle-7SR46-Catalog.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_7sy82",
+      "url": "https://www.siemens.com/en-us/products/siprotec/7sy82/",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_7sy82",
+      "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:6714e059-38de-435a-8804-4884604df824/SIPROTEC-7SY82-Profile.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    },
+    {
+      "product_id": "siemens_7sy82",
+      "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:3f2ed08a-b7f9-4922-859b-663ca497d796/SIPROTEC-7SY82-Linecard-EN.pdf",
+      "old_status": "extracted",
+      "new_status": "extracted",
+      "raw_bytes": "same",
+      "extracted_text": "same"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "tool_version": "2.2.1",
+  "extraction_version": "1.4.1",
+  "finished_at": "2026-10-15T20:32:53.746669+00:00",
+  "config_sha256": "b93ada157dee7f231392f0ac37e68210d46fe2b52c980a5576cd1107a257346d",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "script_sha256": "c16c0843c6b3a6609fa981159ddc75c39c209508a080c1630ce0381940596343",
+  "complete": true,
+  "source_count": 371,
+  "candidate_count": 588,
+  "lead_counts": {
+    "capability": 511,
+    "related": 77,
+    "statement": 28
+  },
+  "source_status": {
+    "extracted": 308,
+    "login_required": 20,
+    "skipped": 32,
+    "duplicate": 8,
+    "failed": 3
+  },
+  "config_warnings": [],
+  "sampling": "Stratified random sample: up to 4 devices per vendor, category and lifecycle stratum, seed 20261013, drawn from 484 classified catalogue entries; strata with fewer entries are taken whole. A sample of catalogue entries, not of installed devices. Inventory of 2026-10-13; categories and lifecycle come from the vendors' own catalogues and pages.",
+  "rebuilt_from": {
+    "run": "data\\runs\\sample_2026-10-13_v2_0",
+    "tool_version": "2.0.0",
+    "finished_at": "2026-10-14T03:33:51.791212+00:00"
+  }
+}

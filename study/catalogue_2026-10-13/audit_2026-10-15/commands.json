@@ -1,0 +1,394 @@
+[
+  {
+    "label": "verify-original",
+    "command": "python survey.py verify --run data/runs/sample_2026-10-13_v2_0 --cache data/cache",
+    "started_at": "2026-10-15T20:23:41.228422+00:00",
+    "seconds": 1.4,
+    "exit_code": 0,
+    "tool_version": "2.2.1",
+    "extraction_version": "1.4.1",
+    "python": "3.12.10",
+    "output_tail": [
+      "All recorded source bytes verified"
+    ],
+    "output_sha256": {}
+  },
+  {
+    "label": "rebuild",
+    "command": "python survey.py rebuild --run data/runs/sample_2026-10-13_v2_0 --cache data/cache --out data/runs/sample_audit_2026-10-15",
+    "started_at": "2026-10-15T20:23:42.826976+00:00",
+    "seconds": 551.0,
+    "exit_code": 0,
+    "tool_version": "2.2.1",
+    "extraction_version": "1.4.1",
+    "python": "3.12.10",
+    "output_tail": [
+      "All recorded source bytes verified",
+      "Rebuilt 308 sources into data\\runs\\sample_audit_2026-10-15 with tool version 2.2.1"
+    ],
+    "output_sha256": {
+      "data/runs/sample_audit_2026-10-15/manifest.json": "766ae72ecc1d43a6118030e6351694d40c626647ebc68989d4e32fb0598869d9",
+      "data/runs/sample_audit_2026-10-15/sources.json": "50693bf72487a28316b25cfdf6bc7a8c177019f0238120a2f272a2ff477a2bee",
+      "data/runs/sample_audit_2026-10-15/candidates.json": "a137e49afae4be867667ace8608d43764df49ceb8be6659964a04b2a83e83c34",
+      "data/runs/sample_audit_2026-10-15/statement_leads.json": "6743afa2fc14db33e842708442c9e8b0bbd66513edc1cf1dc10cc80c957db2c3",
+      "data/runs/sample_audit_2026-10-15/requests.json": "b487f30d2d9129b8f43cf5c5eed3fafa962c7419016fd12280ab8b265a5bb934"
+    }
+  },
+  {
+    "label": "replay-rebuilt",
+    "command": "python survey.py replay --run data/runs/sample_audit_2026-10-15 --cache data/cache --out data/runs/sample_audit_replay_2026-10-15",
+    "started_at": "2026-10-15T20:33:03.683230+00:00",
+    "seconds": 562.8,
+    "exit_code": 0,
+    "tool_version": "2.2.1",
+    "extraction_version": "1.4.1",
+    "python": "3.12.10",
+    "output_tail": [
+      "All recorded source bytes verified",
+      "Offline extraction, saved segments, text digests and candidates match recorded run exactly"
+    ],
+    "output_sha256": {
+      "data/runs/sample_audit_replay_2026-10-15/candidates.json": "a137e49afae4be867667ace8608d43764df49ceb8be6659964a04b2a83e83c34",
+      "data/runs/sample_audit_replay_2026-10-15/statement_leads.json": "6743afa2fc14db33e842708442c9e8b0bbd66513edc1cf1dc10cc80c957db2c3"
+    }
+  },
+  {
+    "label": "recheck-original-vs-rebuilt",
+    "command": "python survey.py recheck --old data/runs/sample_2026-10-13_v2_0 --new data/runs/sample_audit_2026-10-15 --out study/catalogue_2026-10-13/audit_2026-10-15/recheck_v2_0_vs_rebuilt.json",
+    "started_at": "2026-10-15T20:42:26.705999+00:00",
+    "seconds": 0.2,
+    "exit_code": 0,
+    "tool_version": "2.2.1",
+    "extraction_version": "1.4.1",
+    "python": "3.12.10",
+    "output_tail": [
+      "siemens_7sj85: extracted -> extracted; raw bytes same; extracted text same; excerpts found 0/0",
+      "siemens_7sj85: extracted -> extracted; raw bytes same; extracted text same; excerpts found 0/0",
+      "siemens_7sj85: extracted -> extracted; raw bytes same; extracted text same; excerpts found 0/0",
+      "siemens_7sj85: extracted -> extracted; raw bytes same; extracted text same; excerpts found 0/0",
+      "siemens_7sr157: extracted -> extracted; raw bytes same; extracted text same; excerpts found 0/0",
+      "siemens_7sr157: extracted -> extracted; raw bytes same; extracted text same; excerpts found 0/0",
+      "siemens_7sr157: duplicate -> duplicate; raw bytes same; extracted text no text hash in old run; excerpts found 0/0",
+      "siemens_7sr46: extracted -> extracted; raw bytes same; extracted text same; excerpts found 0/0",
+      "siemens_7sr46: extracted -> extracted; raw bytes same; extracted text same; excerpts found 0/0",
+      "siemens_7sy82: extracted -> extracted; raw bytes same; extracted text same; excerpts found 0/0",
+      "siemens_7sy82: extracted -> extracted; raw bytes same; extracted text same; excerpts found 0/0",
+      "siemens_7sy82: extracted -> extracted; raw bytes same; extracted text same; excerpts found 0/0"
+    ],
+    "output_sha256": {
+      "study/catalogue_2026-10-13/audit_2026-10-15/recheck_v2_0_vs_rebuilt.json": "13ba18e8f29200c11992e7df6d5af2f66aa99ce56f772cc8adc97ffd8aab2f0d"
+    }
+  },
+  {
+    "label": "rebind-audit-review",
+    "command": "python survey.py rebind --reviews study/catalogue_2026-10-13/review/reviews_ai_audit_2026-10-15.json --old data/runs/sample_2026-10-13_v2_0 --run data/runs/sample_audit_2026-10-15 --out study/catalogue_2026-10-13/review/reviews_audit_rebound_2026-10-15.json",
+    "started_at": "2026-10-15T20:42:39.733964+00:00",
+    "seconds": 0.2,
+    "exit_code": 0,
+    "tool_version": "2.2.1",
+    "extraction_version": "1.4.1",
+    "python": "3.12.10",
+    "output_tail": [
+      "0 rows re-bound to 0 refetched sources with unchanged text; written to study\\catalogue_2026-10-13\\review\\reviews_audit_rebound_2026-10-15.json. Evidence quotes are checked against the new run when the report is made."
+    ],
+    "output_sha256": {
+      "study/catalogue_2026-10-13/review/reviews_audit_rebound_2026-10-15.json": "64bedff6d97a811c5dcf95b8bdf2895c373460fbdf1cde57e9edc4ed16c4a2b2"
+    }
+  },
+  {
+    "label": "report-rebuilt-require-evidence",
+    "command": "python survey.py report --run data/runs/sample_audit_2026-10-15 --reviews study/catalogue_2026-10-13/review/reviews_audit_rebound_2026-10-15.json --source-notes study/catalogue_2026-10-13/review/source_notes_ai_draft.json --device-notes study/catalogue_2026-10-13/review/device_notes_ai_draft.json --require-evidence --out study/catalogue_2026-10-13/reports/audit_draft_2026-10-15",
+    "started_at": "2026-10-15T20:42:40.294160+00:00",
+    "seconds": 3.8,
+    "exit_code": 0,
+    "tool_version": "2.2.1",
+    "extraction_version": "1.4.1",
+    "python": "3.12.10",
+    "output_tail": [
+      "Report written to study\\catalogue_2026-10-13\\reports\\audit_draft_2026-10-15: 792 of 792 cells reviewed in 820 rows"
+    ],
+    "output_sha256": {
+      "study/catalogue_2026-10-13/reports/audit_draft_2026-10-15/sources.json": "d123d7cf64e7376b16ceca4dfe4505b2a39ae2d0b6c0ca0e64472e34e39847ce",
+      "study/catalogue_2026-10-13/reports/audit_draft_2026-10-15/report_manifest.json": "7d6789db4dd638894d06af93682af42e6fa54942b7a96f45efc79ba56961d5fe",
+      "study/catalogue_2026-10-13/reports/audit_draft_2026-10-15/REPORT.md": "2f5b65455609dd6da267e2d6c808b21b8471ca77178df53250947265f0bb5865"
+    }
+  },
+  {
+    "label": "gate-expected-to-refuse",
+    "command": "python survey.py report --run data/runs/sample_audit_2026-10-15 --reviews study/catalogue_2026-10-13/review/reviews_audit_rebound_2026-10-15.json --source-notes study/catalogue_2026-10-13/review/source_notes_ai_draft.json --device-notes study/catalogue_2026-10-13/review/device_notes_ai_draft.json --require-evidence --require-confirmed --out C:/Users/Philip/AppData/Local/Temp/claude/c--Users-Philip-OneDrive---University-of-Rhode-Island-Documents-ied-security-survey/b0364b6a-4a52-4ad9-9a01-4097a17b1738/scratchpad/gate_check",
+    "started_at": "2026-10-15T20:42:44.307574+00:00",
+    "seconds": 3.4,
+    "exit_code": 1,
+    "tool_version": "2.2.1",
+    "extraction_version": "1.4.1",
+    "python": "3.12.10",
+    "output_tail": [
+      "error: publication report requires confirmed review of every cell: 820 draft rows; 0 unreviewed cells"
+    ],
+    "output_sha256": {}
+  },
+  {
+    "label": "crawl-targeted",
+    "command": "python survey.py crawl --config study/catalogue_2026-10-13/sample.json --out data/runs/sample_targeted_2026-10-15 --cache data/cache --reuse data/runs/sample_audit_2026-10-15 --reuse runs/run1 --approved-urls study/catalogue_2026-10-13/audit_2026-10-15/approved_urls.json",
+    "started_at": "2026-10-15T20:49:41.625235+00:00",
+    "seconds": 657.6,
+    "exit_code": 0,
+    "tool_version": "2.2.1",
+    "extraction_version": "1.4.1",
+    "python": "3.12.10",
+    "output_tail": [
+      "[96/99] siemens_7sj85 extracted https://assets.new.siemens.com/siemens/assets/api/uuid:6ef1c43e-cfe6-4f28-88a2-63e18e469d2b/SIPROTEC-7SJ85-Profile.pdf",
+      "[96/99] siemens_7sj85 extracted https://assets.new.siemens.com/siemens/assets/api/uuid:ec46e951-39dd-4c08-ba85-2064a2b02071/SIPROTEC-Conformal-Coated-Profile_original.pdf",
+      "[96/99] siemens_7sj85 extracted https://cache.industry.siemens.com/dl/files/443/109742443/att_1360880/v1/SIP5_ComProt_V11.00_Manual_C055-N_en.pdf",
+      "[96/99] siemens_7sj85 extracted https://cache.industry.siemens.com/dl/files/375/109768375/att_1150302/v1/SIP5_Security_V09.60_Manual_C081-C_en.pdf",
+      "[97/99] siemens_7sr157 extracted https://www.siemens.com/en-us/products/reyrolle/7sr157/",
+      "[97/99] siemens_7sr157 extracted https://assets.new.siemens.com/siemens/assets/api/uuid:59399f23-91ed-4201-a854-84d24c6d166c/7sr157cataloguesheet.pdf",
+      "[97/99] siemens_7sr157 duplicate https://assets.new.siemens.com/siemens/assets/api/uuid:2ff7a1f9-2d04-4252-91c1-d11e6895ad51/Reyrolle-7SR157-Profile-EN.pdf",
+      "[98/99] siemens_7sr46 extracted https://www.siemens.com/en-us/products/reyrolle/7sr46/",
+      "[98/99] siemens_7sr46 extracted https://assets.new.siemens.com/siemens/assets/api/uuid:88d16eeb-cd0c-428e-a97e-fb2160492ec7/Reyrolle-7SR46-Catalog.pdf",
+      "[99/99] siemens_7sy82 extracted https://www.siemens.com/en-us/products/siprotec/7sy82/",
+      "[99/99] siemens_7sy82 extracted https://assets.new.siemens.com/siemens/assets/api/uuid:6714e059-38de-435a-8804-4884604df824/SIPROTEC-7SY82-Profile.pdf",
+      "[99/99] siemens_7sy82 extracted https://assets.new.siemens.com/siemens/assets/api/uuid:3f2ed08a-b7f9-4922-859b-663ca497d796/SIPROTEC-7SY82-Linecard-EN.pdf"
+    ],
+    "output_sha256": {
+      "data/runs/sample_targeted_2026-10-15/manifest.json": "9b70652008dc20c0fd224e659eb8be50e8ad8906e7b9ecbec85f02f596666dab",
+      "data/runs/sample_targeted_2026-10-15/sources.json": "3ea870280e75fec5877eb944ccf2ff828f357bc951eb46811651d8b1feb0d4d5",
+      "data/runs/sample_targeted_2026-10-15/candidates.json": "d55282d3507a825790121ae8c4f9bd63b861d978ef8729e2b6a61197766267e4",
+      "data/runs/sample_targeted_2026-10-15/statement_leads.json": "20a26ce2fb2c37ed07d8cebc682277f32bb333e01f70b4fd8638383b2172946b",
+      "data/runs/sample_targeted_2026-10-15/requests.json": "745c497dfb05d06a3717e7ec0f1a260ed1b18ec05d1aeb68c0b55f93fc8b8da8"
+    },
+    "note": "run with tool 2.2.1 plus the uncommitted --approved-urls and replay changes, committed as 2.3.0."
+  },
+  {
+    "label": "check-requests",
+    "command": "python -I C:/Users/Philip/AppData/Local/Temp/claude/c--Users-Philip-OneDrive---University-of-Rhode-Island-Documents-ied-security-survey/b0364b6a-4a52-4ad9-9a01-4097a17b1738/scratchpad/tools/check_requests.py data/runs/sample_targeted_2026-10-15 study/catalogue_2026-10-13/audit_2026-10-15/approved_urls.json study/catalogue_2026-10-13/audit_2026-10-15/request_check.json",
+    "started_at": "2026-10-15T21:01:27.647572+00:00",
+    "seconds": 0.1,
+    "exit_code": 0,
+    "tool_version": "2.2.1",
+    "extraction_version": "1.4.1",
+    "python": "3.12.10",
+    "output_tail": [
+      "  extracted rockwell_micro870_controllers .com/idc/groups/literature/documents/um/2080-um002_-en-e.pdf reused ",
+      "  extracted sel_real_time_automation_controller_rtac https://selinc.com/api/download/112760/ reused ",
+      "  extracted sel_421 https://selinc.com/api/download/120794/  ",
+      "  extracted schneider_powerlogic_ion7550_rtu https://www.se.com/ww/en/download/document/70022-0120-01/  ",
+      "  extracted schneider_powerlogic_ion7550_rtu https://www.se.com/ww/en/download/document/70072-0105-02/  ",
+      "  extracted siemens_6md86 2443/att_1360880/v1/SIP5_ComProt_V11.00_Manual_C055-N_en.pdf  ",
+      "  extracted siemens_6md86 375/att_1150302/v1/SIP5_Security_V09.60_Manual_C081-C_en.pdf  ",
+      "  extracted siemens_q200_power_quality_recorder iles/897/109744897/att_1053741/v1/SICAM_Q200_7KG97_CM_US.pdf  ",
+      "  extracted siemens_q200_power_quality_recorder les/896/109744896/att_1375401/v1/SICAM_Q200_7KG97_MAN_US.pdf  ",
+      "  failed siemens_transducer_sicam_t /dl/files/336/109752336/att_1025493/v1/SICAM_T_7KG966_US.pdf  ValueError: HTTP 404",
+      "  extracted siemens_7sj85 2443/att_1360880/v1/SIP5_ComProt_V11.00_Manual_C055-N_en.pdf  ",
+      "  extracted siemens_7sj85 375/att_1150302/v1/SIP5_Security_V09.60_Manual_C081-C_en.pdf"
+    ],
+    "output_sha256": {
+      "study/catalogue_2026-10-13/audit_2026-10-15/request_check.json": "f64936bb7715cad6151c2cf048b8bfa7620861af38c4e1ab09ec1092375f5c24"
+    },
+    "note": "run with tool 2.2.1 plus the uncommitted --approved-urls and replay changes, committed as 2.3.0."
+  },
+  {
+    "label": "verify-targeted",
+    "command": "python survey.py verify --run data/runs/sample_targeted_2026-10-15 --cache data/cache",
+    "started_at": "2026-10-15T21:01:27.949891+00:00",
+    "seconds": 2.0,
+    "exit_code": 0,
+    "tool_version": "2.2.1",
+    "extraction_version": "1.4.1",
+    "python": "3.12.10",
+    "output_tail": [
+      "All recorded source bytes verified"
+    ],
+    "output_sha256": {},
+    "note": "run with tool 2.2.1 plus the uncommitted --approved-urls and replay changes, committed as 2.3.0."
+  },
+  {
+    "label": "rebind-onto-targeted",
+    "command": "python survey.py rebind --reviews study/catalogue_2026-10-13/review/reviews_audit_rebound_2026-10-15.json --old data/runs/sample_audit_2026-10-15 --run data/runs/sample_targeted_2026-10-15 --out study/catalogue_2026-10-13/review/reviews_targeted_rebound_2026-10-15.json",
+    "started_at": "2026-10-15T21:04:32.440960+00:00",
+    "seconds": 0.2,
+    "exit_code": 0,
+    "tool_version": "2.2.1",
+    "extraction_version": "1.4.1",
+    "python": "3.12.10",
+    "output_tail": [
+      "0 rows re-bound to 0 refetched sources with unchanged text; written to study\\catalogue_2026-10-13\\review\\reviews_targeted_rebound_2026-10-15.json. Evidence quotes are checked against the new run when the report is made."
+    ],
+    "output_sha256": {
+      "study/catalogue_2026-10-13/review/reviews_targeted_rebound_2026-10-15.json": "64bedff6d97a811c5dcf95b8bdf2895c373460fbdf1cde57e9edc4ed16c4a2b2"
+    },
+    "note": "run with tool 2.2.1 plus the uncommitted --approved-urls and replay changes, committed as 2.3.0."
+  },
+  {
+    "label": "report-targeted-require-evidence",
+    "command": "python survey.py report --run data/runs/sample_targeted_2026-10-15 --reviews study/catalogue_2026-10-13/review/reviews_ai_draft_2026-10-15.json --source-notes study/catalogue_2026-10-13/review/source_notes_ai_draft.json --device-notes study/catalogue_2026-10-13/review/device_notes_ai_draft.json --require-evidence --out study/catalogue_2026-10-13/reports/targeted_draft_2026-10-15",
+    "started_at": "2026-10-15T21:07:58.220040+00:00",
+    "seconds": 4.6,
+    "exit_code": 0,
+    "tool_version": "2.3.0",
+    "extraction_version": "1.4.1",
+    "python": "3.12.10",
+    "output_tail": [
+      "Report written to study\\catalogue_2026-10-13\\reports\\targeted_draft_2026-10-15: 792 of 792 cells reviewed in 821 rows"
+    ],
+    "output_sha256": {
+      "study/catalogue_2026-10-13/reports/targeted_draft_2026-10-15/sources.json": "f1b975f156f0523fee507066d8e0b2ec68b98564739e52a450253f3b9476c950",
+      "study/catalogue_2026-10-13/reports/targeted_draft_2026-10-15/report_manifest.json": "198f327d6f59d09a27a4c8e50f958d9b3e952e33d7f26b034234554aecc12a6c",
+      "study/catalogue_2026-10-13/reports/targeted_draft_2026-10-15/REPORT.md": "7f17081563b46c3221035a32bba39e6fc958b1a08f942ee25d759a9e50b9969b"
+    },
+    "note": "superseded: the outputs were made again by the -final entries after wording fixes in the paper command; the folder was replaced."
+  },
+  {
+    "label": "gate-targeted-expected-to-refuse",
+    "command": "python survey.py report --run data/runs/sample_targeted_2026-10-15 --reviews study/catalogue_2026-10-13/review/reviews_ai_draft_2026-10-15.json --source-notes study/catalogue_2026-10-13/review/source_notes_ai_draft.json --device-notes study/catalogue_2026-10-13/review/device_notes_ai_draft.json --require-confirmed --out C:/Users/Philip/AppData/Local/Temp/claude/c--Users-Philip-OneDrive---University-of-Rhode-Island-Documents-ied-security-survey/b0364b6a-4a52-4ad9-9a01-4097a17b1738/scratchpad/gate_check2",
+    "started_at": "2026-10-15T21:08:03.017827+00:00",
+    "seconds": 4.4,
+    "exit_code": 1,
+    "tool_version": "2.3.0",
+    "extraction_version": "1.4.1",
+    "python": "3.12.10",
+    "output_tail": [
+      "error: publication report requires confirmed review of every cell: 821 draft rows; 0 unreviewed cells"
+    ],
+    "output_sha256": {}
+  },
+  {
+    "label": "paper-targeted",
+    "command": "python survey.py paper --run data/runs/sample_targeted_2026-10-15 --reviews study/catalogue_2026-10-13/review/reviews_ai_draft_2026-10-15.json --source-notes study/catalogue_2026-10-13/review/source_notes_ai_draft.json --device-notes study/catalogue_2026-10-13/review/device_notes_ai_draft.json --out study/catalogue_2026-10-13/paper_2026-10-15",
+    "started_at": "2026-10-15T21:08:07.574668+00:00",
+    "seconds": 4.5,
+    "exit_code": 0,
+    "tool_version": "2.3.0",
+    "extraction_version": "1.4.1",
+    "python": "3.12.10",
+    "output_tail": [
+      "Paper evidence written to study\\catalogue_2026-10-13\\paper_2026-10-15 (AI draft; author review pending): 32 DNP3 entries, 19 without an established finding"
+    ],
+    "output_sha256": {},
+    "note": "superseded: the outputs were made again by the -final entries after wording fixes in the paper command; the folder was replaced."
+  },
+  {
+    "label": "paper-targeted-again",
+    "command": "python survey.py paper --run data/runs/sample_targeted_2026-10-15 --reviews study/catalogue_2026-10-13/review/reviews_ai_draft_2026-10-15.json --source-notes study/catalogue_2026-10-13/review/source_notes_ai_draft.json --device-notes study/catalogue_2026-10-13/review/device_notes_ai_draft.json --out C:/Users/Philip/AppData/Local/Temp/claude/c--Users-Philip-OneDrive---University-of-Rhode-Island-Documents-ied-security-survey/b0364b6a-4a52-4ad9-9a01-4097a17b1738/scratchpad/paper_again",
+    "started_at": "2026-10-15T21:08:12.229298+00:00",
+    "seconds": 4.3,
+    "exit_code": 0,
+    "tool_version": "2.3.0",
+    "extraction_version": "1.4.1",
+    "python": "3.12.10",
+    "output_tail": [
+      "Paper evidence written to C:\\Users\\Philip\\AppData\\Local\\Temp\\claude\\c--Users-Philip-OneDrive---University-of-Rhode-Island-Documents-ied-security-survey\\b0364b6a-4a52-4ad9-9a01-4097a17b1738\\scratchpad\\paper_again (AI draft; author review pending): 32 DNP3 entries, 19 without an established finding"
+    ],
+    "output_sha256": {},
+    "note": "superseded: the outputs were made again by the -final entries after wording fixes in the paper command; the folder was replaced."
+  },
+  {
+    "label": "paper-gate-expected-to-refuse",
+    "command": "python survey.py paper --run data/runs/sample_targeted_2026-10-15 --reviews study/catalogue_2026-10-13/review/reviews_ai_draft_2026-10-15.json --source-notes study/catalogue_2026-10-13/review/source_notes_ai_draft.json --device-notes study/catalogue_2026-10-13/review/device_notes_ai_draft.json --require-confirmed --out C:/Users/Philip/AppData/Local/Temp/claude/c--Users-Philip-OneDrive---University-of-Rhode-Island-Documents-ied-security-survey/b0364b6a-4a52-4ad9-9a01-4097a17b1738/scratchpad/paper_final",
+    "started_at": "2026-10-15T21:08:16.755062+00:00",
+    "seconds": 4.3,
+    "exit_code": 1,
+    "tool_version": "2.3.0",
+    "extraction_version": "1.4.1",
+    "python": "3.12.10",
+    "output_tail": [
+      "error: publication report requires confirmed review of every cell: 821 draft rows; 0 unreviewed cells"
+    ],
+    "output_sha256": {}
+  },
+  {
+    "label": "report-targeted-final",
+    "command": "python survey.py report --run data/runs/sample_targeted_2026-10-15 --reviews study/catalogue_2026-10-13/review/reviews_ai_draft_2026-10-15.json --source-notes study/catalogue_2026-10-13/review/source_notes_ai_draft.json --device-notes study/catalogue_2026-10-13/review/device_notes_ai_draft.json --require-evidence --out study/catalogue_2026-10-13/reports/targeted_draft_2026-10-15",
+    "started_at": "2026-10-15T21:11:48.363808+00:00",
+    "seconds": 4.7,
+    "exit_code": 0,
+    "tool_version": "2.3.0",
+    "extraction_version": "1.4.1",
+    "python": "3.12.10",
+    "output_tail": [
+      "Report written to study\\catalogue_2026-10-13\\reports\\targeted_draft_2026-10-15: 792 of 792 cells reviewed in 821 rows"
+    ],
+    "output_sha256": {
+      "study/catalogue_2026-10-13/reports/targeted_draft_2026-10-15/sources.json": "f1b975f156f0523fee507066d8e0b2ec68b98564739e52a450253f3b9476c950",
+      "study/catalogue_2026-10-13/reports/targeted_draft_2026-10-15/report_manifest.json": "51b623cdc77bfeefb96eff5f43b878cd25899d47d7393283259e42334a40ca98",
+      "study/catalogue_2026-10-13/reports/targeted_draft_2026-10-15/REPORT.md": "7f17081563b46c3221035a32bba39e6fc958b1a08f942ee25d759a9e50b9969b"
+    }
+  },
+  {
+    "label": "paper-targeted-final",
+    "command": "python survey.py paper --run data/runs/sample_targeted_2026-10-15 --reviews study/catalogue_2026-10-13/review/reviews_ai_draft_2026-10-15.json --source-notes study/catalogue_2026-10-13/review/source_notes_ai_draft.json --device-notes study/catalogue_2026-10-13/review/device_notes_ai_draft.json --out study/catalogue_2026-10-13/paper_2026-10-15",
+    "started_at": "2026-10-15T21:11:53.334358+00:00",
+    "seconds": 4.3,
+    "exit_code": 0,
+    "tool_version": "2.3.0",
+    "extraction_version": "1.4.1",
+    "python": "3.12.10",
+    "output_tail": [
+      "Paper evidence written to study\\catalogue_2026-10-13\\paper_2026-10-15 (AI draft; author review pending): 32 DNP3 entries, 19 without an established finding"
+    ],
+    "output_sha256": {},
+    "note": "superseded: made again by the paper-current entries after the appendix table was made compact; the folder was replaced."
+  },
+  {
+    "label": "paper-targeted-final-again",
+    "command": "python survey.py paper --run data/runs/sample_targeted_2026-10-15 --reviews study/catalogue_2026-10-13/review/reviews_ai_draft_2026-10-15.json --source-notes study/catalogue_2026-10-13/review/source_notes_ai_draft.json --device-notes study/catalogue_2026-10-13/review/device_notes_ai_draft.json --out C:/Users/Philip/AppData/Local/Temp/claude/c--Users-Philip-OneDrive---University-of-Rhode-Island-Documents-ied-security-survey/b0364b6a-4a52-4ad9-9a01-4097a17b1738/scratchpad/paper_again",
+    "started_at": "2026-10-15T21:11:57.890063+00:00",
+    "seconds": 4.7,
+    "exit_code": 0,
+    "tool_version": "2.3.0",
+    "extraction_version": "1.4.1",
+    "python": "3.12.10",
+    "output_tail": [
+      "Paper evidence written to C:\\Users\\Philip\\AppData\\Local\\Temp\\claude\\c--Users-Philip-OneDrive---University-of-Rhode-Island-Documents-ied-security-survey\\b0364b6a-4a52-4ad9-9a01-4097a17b1738\\scratchpad\\paper_again (AI draft; author review pending): 32 DNP3 entries, 19 without an established finding"
+    ],
+    "output_sha256": {},
+    "note": "superseded: made again by the paper-current entries after the appendix table was made compact; the folder was replaced."
+  },
+  {
+    "label": "replay-targeted",
+    "command": "python survey.py replay --run data/runs/sample_targeted_2026-10-15 --cache data/cache --out data/runs/sample_targeted_replay_2026-10-15",
+    "started_at": "2026-10-15T21:01:30.092647+00:00",
+    "seconds": 683.2,
+    "exit_code": 0,
+    "tool_version": "2.3.0",
+    "extraction_version": "1.4.1",
+    "python": "3.12.10",
+    "output_tail": [
+      "All recorded source bytes verified",
+      "Offline extraction, saved segments, text digests and candidates match recorded run exactly"
+    ],
+    "output_sha256": {
+      "data/runs/sample_targeted_replay_2026-10-15/candidates.json": "d55282d3507a825790121ae8c4f9bd63b861d978ef8729e2b6a61197766267e4",
+      "data/runs/sample_targeted_replay_2026-10-15/statement_leads.json": "20a26ce2fb2c37ed07d8cebc682277f32bb333e01f70b4fd8638383b2172946b"
+    },
+    "note": "tool_version was read after the command ended; the process started before the version was raised to 2.3.0 and ran with 2.2.1 plus the uncommitted replay and crawl changes, which leave extraction rules 1.4.1 unchanged."
+  },
+  {
+    "label": "paper-current",
+    "command": "python survey.py paper --run data/runs/sample_targeted_2026-10-15 --reviews study/catalogue_2026-10-13/review/reviews_ai_draft_2026-10-15.json --source-notes study/catalogue_2026-10-13/review/source_notes_ai_draft.json --device-notes study/catalogue_2026-10-13/review/device_notes_ai_draft.json --out study/catalogue_2026-10-13/paper_2026-10-15",
+    "started_at": "2026-10-15T21:16:03.164625+00:00",
+    "seconds": 4.0,
+    "exit_code": 0,
+    "tool_version": "2.3.0",
+    "extraction_version": "1.4.1",
+    "python": "3.12.10",
+    "output_tail": [
+      "Paper evidence written to study\\catalogue_2026-10-13\\paper_2026-10-15 (AI draft; author review pending): 32 DNP3 entries, 19 without an established finding"
+    ],
+    "output_sha256": {}
+  },
+  {
+    "label": "paper-current-again",
+    "command": "python survey.py paper --run data/runs/sample_targeted_2026-10-15 --reviews study/catalogue_2026-10-13/review/reviews_ai_draft_2026-10-15.json --source-notes study/catalogue_2026-10-13/review/source_notes_ai_draft.json --device-notes study/catalogue_2026-10-13/review/device_notes_ai_draft.json --out C:/Users/Philip/AppData/Local/Temp/claude/c--Users-Philip-OneDrive---University-of-Rhode-Island-Documents-ied-security-survey/b0364b6a-4a52-4ad9-9a01-4097a17b1738/scratchpad/paper_again",
+    "started_at": "2026-10-15T21:16:07.364540+00:00",
+    "seconds": 4.0,
+    "exit_code": 0,
+    "tool_version": "2.3.0",
+    "extraction_version": "1.4.1",
+    "python": "3.12.10",
+    "output_tail": [
+      "Paper evidence written to C:\\Users\\Philip\\AppData\\Local\\Temp\\claude\\c--Users-Philip-OneDrive---University-of-Rhode-Island-Documents-ied-security-survey\\b0364b6a-4a52-4ad9-9a01-4097a17b1738\\scratchpad\\paper_again (AI draft; author review pending): 32 DNP3 entries, 19 without an established finding"
+    ],
+    "output_sha256": {}
+  }
+]

@@ -1,0 +1,214 @@
+{
+  "pass": "bounded targeted pass of 2026-10-15",
+  "rules": [
+    "entries: every catalogue entry whose DNP3 security was not established in reviews_audit_rebound_2026-10-15.json, plus the two associations the audit names (RTAC 112760, Micro870 2080-UM002)",
+    "at most two searches per entry, restricted to the vendor's own site, and at most two documents per entry",
+    "official vendor documents only: manuals, device profiles, communication or security guides, data sheets",
+    "no search for an entry whose complete manual or protocol guide was already retrieved",
+    "a sign-in, a missing document or an empty search leaves the entry unknown; the search is not widened",
+    "only the approved addresses may be requested: crawl --approved-urls"
+  ],
+  "search_tool": "web search restricted to the vendor domain (allowed_domains)",
+  "approved": [
+    {
+      "product_id": "sel_real_time_automation_controller_rtac",
+      "url": "https://selinc.com/api/download/112760/",
+      "reason": "Named by the audit: SEL white paper 'Leveraging Security - Using the SEL RTAC's Built-In Security Features', pp. 9-10 and Figure 9 on SCADA encryption. Already retrieved by the five-product pilot (runs/run1, source b8d90efe1e476caca1e9); its bytes are reused, not requested.",
+      "query": "none: named in the audit",
+      "chosen_at": "2026-10-15",
+      "expected_sha256": "379cfbfd5432e521e9dcf3028633cf34d07570aeed3e1a26f89c33dbbb1a2f20"
+    },
+    {
+      "product_id": "rockwell_micro870_controllers",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/2080-um002_-en-e.pdf",
+      "reason": "Named by the audit: user manual 2080-UM002S-EN-E covers Micro830, Micro850 and Micro870; printed page 89 gives the DNP3 Secure Authentication settings and defaults. Retrieved in sample_2026-10-13_v2_0 under rockwell_micro830_controllers (source 5f6f1b22b4fd07d375a5); its bytes are reused, not requested.",
+      "query": "none: named in the audit",
+      "chosen_at": "2026-10-15",
+      "expected_sha256": "0f6f1715c95afefc8813cd311af7da5859139c073b8554ad3e52a28ac38d1bdb"
+    },
+    {
+      "product_id": "ge_multilin_c60c95",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/manuals/c60/C60-1601-0100-85x-AP1-GEV.pdf",
+      "reason": "C60 instruction manual, firmware 8.5x (1601-0100-AP1): the retrieved documents are brochures; the manual has the security chapter and the DNP3 device profile.",
+      "query": "site:gevernova.com Multilin C60 instruction manual DNP3 security",
+      "chosen_at": "2026-10-15"
+    },
+    {
+      "product_id": "ge_multilin_d20e",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-05/994-0145-D20E-Ethernet-IO-Module-Instruction-Manual-V100-R5.pdf",
+      "reason": "D20E instruction manual 994-0145 V1.00 R5 (2025): has the D20E DNP3 server profile; only a brochure was retrieved.",
+      "query": "site:gevernova.com Multilin D20E DNP3 manual",
+      "chosen_at": "2026-10-15"
+    },
+    {
+      "product_id": "ge_multilin_d20mx_substation_controller_legacy",
+      "url": "https://www.gevernova.com/grid-solutions/sites/default/files/resources/products/software/d20mx/prbt-0440%20d20mx%20v2.10%20release%20notification%20v100%20r0.pdf",
+      "reason": "D20MX v2.10 release notification PRBT-0440 (2022): latest firmware notes found, with changes to the DNP3 client application. The D20MX manuals are only in the sign-in resources area.",
+      "query": "site:gevernova.com D20MX substation controller security DNP3 user manual pdf",
+      "chosen_at": "2026-10-15"
+    },
+    {
+      "product_id": "ge_multilin_d20mx_substation_controller_legacy",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/specs/d20/prbt-0397_d20mx_guideform_specs_v100_r1.pdf",
+      "reason": "D20MX guide-form specification PRBT-0397: lists a 'Secure DNP3 DPA/DCA' enhancement; to be read for what it actually specifies.",
+      "query": "site:gevernova.com D20MX DNP3 secure authentication manual",
+      "chosen_at": "2026-10-15"
+    },
+    {
+      "product_id": "ge_multilin_850",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/manuals/8series/8SCG-1601-0702-29x-AD-GEV.pdf",
+      "reason": "8 Series Communications Guide 2.9x (1601-0702-AD): the DNP3 device profile and protocol settings of the 850; only brochures were retrieved.",
+      "query": "site:gevernova.com Multilin 850 instruction manual DNP3 security",
+      "chosen_at": "2026-10-15"
+    },
+    {
+      "product_id": "ge_multilin_850",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/applications/8series/850_fast_secure_redundant_communications.pdf",
+      "reason": "GE application note on the 850's communication security and cybersecurity.",
+      "query": "site:gevernova.com Multilin 850 instruction manual DNP3 security",
+      "chosen_at": "2026-10-15"
+    },
+    {
+      "product_id": "sel_421",
+      "url": "https://selinc.com/api/download/120794/",
+      "reason": "SEL-421-7 data sheet, the current model of the family; the retrieved data sheet is for SEL-421-4, -5 and the instruction manual is behind a sign-in.",
+      "query": "site:selinc.com SEL-421 DNP3 secure authentication",
+      "chosen_at": "2026-10-15"
+    },
+    {
+      "product_id": "schneider_powerlogic_ion7550_rtu",
+      "url": "https://www.se.com/ww/en/download/document/70022-0120-01/",
+      "reason": "PowerLogic ION7550/ION7650 DNP 3.0 Device Profile 70022-0120-01: only the product range page was retrieved.",
+      "query": "site:se.com PowerLogic ION7550 ION7650 DNP 3.0 protocol document",
+      "chosen_at": "2026-10-15"
+    },
+    {
+      "product_id": "schneider_powerlogic_ion7550_rtu",
+      "url": "https://www.se.com/ww/en/download/document/70072-0105-02/",
+      "reason": "Schneider technical note 'DNP 3.0 and PowerLogic ION Technology' 70072-0105-02, which covers the ION7550/ION7650.",
+      "query": "site:se.com PowerLogic ION7550 ION7650 DNP 3.0 protocol document",
+      "chosen_at": "2026-10-15"
+    },
+    {
+      "product_id": "siemens_6md86",
+      "url": "https://cache.industry.siemens.com/dl/files/443/109742443/att_1360880/v1/SIP5_ComProt_V11.00_Manual_C055-N_en.pdf",
+      "reason": "SIPROTEC 5 Communication Protocols manual V11.00 (C53000-L1840-C055-N): the DNP3 chapter for SIPROTEC 5 devices; the retrieved documents are catalogues and profiles.",
+      "query": "site:siemens.com SIPROTEC 5 communication protocols manual DNP3 TLS secure authentication",
+      "chosen_at": "2026-10-15"
+    },
+    {
+      "product_id": "siemens_6md86",
+      "url": "https://cache.industry.siemens.com/dl/files/375/109768375/att_1150302/v1/SIP5_Security_V09.60_Manual_C081-C_en.pdf",
+      "reason": "SIPROTEC 5 Security manual V9.60 (C53000-H5040-C081-C): where the security of the communication protocols is described.",
+      "query": "site:siemens.com SIPROTEC 5 communication protocols manual DNP3 TLS secure authentication",
+      "chosen_at": "2026-10-15"
+    },
+    {
+      "product_id": "siemens_7sj85",
+      "url": "https://cache.industry.siemens.com/dl/files/443/109742443/att_1360880/v1/SIP5_ComProt_V11.00_Manual_C055-N_en.pdf",
+      "reason": "SIPROTEC 5 Communication Protocols manual V11.00 (C53000-L1840-C055-N): the DNP3 chapter for SIPROTEC 5 devices; the retrieved documents are catalogues and profiles.",
+      "query": "site:siemens.com SIPROTEC 7SJ85 manual DNP3 security",
+      "chosen_at": "2026-10-15"
+    },
+    {
+      "product_id": "siemens_7sj85",
+      "url": "https://cache.industry.siemens.com/dl/files/375/109768375/att_1150302/v1/SIP5_Security_V09.60_Manual_C081-C_en.pdf",
+      "reason": "SIPROTEC 5 Security manual V9.60 (C53000-H5040-C081-C): where the security of the communication protocols is described.",
+      "query": "site:siemens.com SIPROTEC 7SJ85 manual DNP3 security",
+      "chosen_at": "2026-10-15"
+    },
+    {
+      "product_id": "siemens_q200_power_quality_recorder",
+      "url": "https://cache.industry.siemens.com/dl/files/897/109744897/att_1053741/v1/SICAM_Q200_7KG97_CM_US.pdf",
+      "reason": "SICAM Q200 Communication manual V02.60: the DNP3 IP chapter; only the catalogue and profile were retrieved.",
+      "query": "site:siemens.com SICAM Q200 manual DNP3 communication",
+      "chosen_at": "2026-10-15"
+    },
+    {
+      "product_id": "siemens_q200_power_quality_recorder",
+      "url": "https://cache.industry.siemens.com/dl/files/896/109744896/att_1375401/v1/SICAM_Q200_7KG97_MAN_US.pdf",
+      "reason": "SICAM Q200 device manual V2.86 (2026): DNP3 IP settings and the device security settings.",
+      "query": "site:siemens.com SICAM Q200 manual DNP3 communication",
+      "chosen_at": "2026-10-15"
+    },
+    {
+      "product_id": "siemens_transducer_sicam_t",
+      "url": "https://cache.industry.siemens.com/dl/files/336/109752336/att_1025493/v1/SICAM_T_7KG966_US.pdf",
+      "reason": "SICAM T 7KG966 manual V02.18 (English): whether the device offers DNP3 at all; the shared catalogue names DNP3 for other devices. The V3.0 edition is on support.industry.siemens.com, whose robots.txt answered 403 in the earlier run.",
+      "query": "site:siemens.com SICAM T 7KG966 manual DNP3",
+      "chosen_at": "2026-10-15"
+    }
+  ],
+  "searched_nothing_approved": [
+    {
+      "product_id": "ge_multilin_339",
+      "queries": [
+        "site:gevernova.com Multilin 339 instruction manual DNP communication",
+        "site:gevernova.com 339 Motor Protection System instruction manual GEK-113562 pdf"
+      ],
+      "outcome": "Instruction manual GEK-113562 is offered only through the resources page that the crawl found behind a sign-in; no public copy was found. Remains unknown."
+    },
+    {
+      "product_id": "ge_epm_5300_legacy",
+      "queries": [
+        "site:gevernova.com EPM 5300 instruction manual DNP3",
+        "site:gevernova.com EPM 5300 EPM 5350 power meter instruction manual pdf"
+      ],
+      "outcome": "No instruction manual on the vendor site; only a brochure, a Word guide-form specification and the end-of-supply notice. Remains unknown."
+    },
+    {
+      "product_id": "sel_2431",
+      "queries": [
+        "site:selinc.com SEL-2431 voltage regulator control DNP3 instruction manual"
+      ],
+      "outcome": "The instruction manual is behind a sign-in (recorded in the run); the search found only data sheets and ordering information, which list DNP3 Level 2 without security. Remains unknown."
+    },
+    {
+      "product_id": "sel_2664s",
+      "queries": [
+        "site:selinc.com SEL-2664S stator ground relay instruction manual communications"
+      ],
+      "outcome": "The instruction manual is behind a sign-in (recorded in the run); the search found only the data sheet and flyer already retrieved. Remains unknown."
+    },
+    {
+      "product_id": "sel_351a",
+      "queries": [
+        "site:selinc.com SEL-351A instruction manual DNP3"
+      ],
+      "outcome": "The instruction manual is behind a sign-in (recorded in the run); the search found only data sheets and ordering information. Remains unknown."
+    },
+    {
+      "product_id": "sel_387",
+      "queries": [
+        "site:selinc.com SEL-387 instruction manual DNP3"
+      ],
+      "outcome": "The instruction manual is behind a sign-in (recorded in the run); the search found only data sheets and ordering information. Remains unknown."
+    }
+  ],
+  "not_searched_complete_document_held": [
+    {
+      "product_id": "ge_epm_9900_advanced_power_quality_meter_legacy",
+      "outcome": "EPM 9000 Series DNP Guide (device profile) already retrieved"
+    },
+    {
+      "product_id": "ge_istat_m2x2",
+      "outcome": "iSTAT M2x2 manual already retrieved"
+    },
+    {
+      "product_id": "ge_p64_micom_5th_generation",
+      "outcome": "P64 technical manual already retrieved"
+    },
+    {
+      "product_id": "ge_micom_agile_p24x_legacy",
+      "outcome": "P24x technical manual already retrieved"
+    },
+    {
+      "product_id": "rockwell_differential_protection_relay",
+      "outcome": "Bulletin 865 user manual 865-UM001 already retrieved"
+    },
+    {
+      "product_id": "rockwell_protection_relay",
+      "outcome": "Bulletin 857 user manual 857-UM001 already retrieved"
+    }
+  ]
+}

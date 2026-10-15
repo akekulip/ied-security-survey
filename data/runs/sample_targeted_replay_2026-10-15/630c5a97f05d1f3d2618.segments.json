@@ -1,0 +1,819 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "Multilin 339 | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "Multilin 339"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Motor protection systems"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Solution Video",
+    "heading": "Motor protection systems"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Contact Sales Buy Now",
+    "heading": "Motor protection systems"
+  },
+  {
+    "location": "html-block:8",
+    "text": "The Multilin™ 339 is a member of the Multilin 3 Series protective relay platform and has been designed for the protection, control and management of medium voltage motors in industrial applications. The Multilin 339 delivers unparalleled protection, control, diagnostics and communications in an industry leading drawout construction. Providing simplified setup configuration through the use of the Motor Settings Auto-Configurator, advanced graphical diagnostics with the Motor Health Report and support for multiple communication protocols including IEC® 61850, the 339 Motor Protection System provides comprehensive motor protection for most small and medium sized motors.",
+    "heading": "Motor protection systems"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Cost-effective and flexible protection and control device for motors",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Field-proven algorithms and reliable protection to avoid unwanted trips or under-protection",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Ease of use and standardization with simplified motor setup and universal CT inputs",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Enhanced Thermal Model including RTD and current unbalance biasing",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Environmental monitoring system to monitor operating conditions and plan preventative maintenance",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Time stamped event reports, waveform capture, motor start and motor trending",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Powerful security and hierarchical password control for centralized management",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Reduced wiring via remote RTD’s using the RMIO module and support for 3 internal RTDs",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Advanced power system and switchgear diagnostics",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Customized motor overload curve Flex curves",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Detailed Motor Health Report with critical data",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Switchgear diagnostics and easy troubleshooting by CT/VT supervision, trip/close circuit supervision and LED/IO Test Mode",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Drawout design simplifies testing, commissioning and maintenance, thereby increasing process uptime",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Flexible communications with multiple ports and protocols allowing seamless integration",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Robust design exceeding industry standards, with Automotive Grade components and advanced testing procedures such as accelerated life cycle testing",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Migration of legacy MII Family relays to the 3 Series platform",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Intuitive configuration software and user-friendly logic configuration tool",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Protection and control of LV or MV motors of various sizes",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Protection of pumps, conveyors, fans, compressors, and others in process or manufacturing industries.",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Applications requiring fast and secure communications",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Harsh environments requiring protection against corrosive chemicals and humid environments",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:33",
+    "text": "RMIO Remote I/O Module"
+  },
+  {
+    "location": "html-block:34",
+    "text": "SR 3 Series"
+  },
+  {
+    "location": "html-block:35",
+    "text": "EnerVista Software"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Software / Firmware"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Drawings"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Solution Video",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:46",
+    "text": "RMIO Remote I/O Module"
+  },
+  {
+    "location": "html-block:47",
+    "text": "SR 3 Series"
+  },
+  {
+    "location": "html-block:48",
+    "text": "EnerVista Software"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:50",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:51",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Software / Firmware"
+  },
+  {
+    "location": "html-block:53",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Drawings"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Multilin 339"
+  },
+  {
+    "location": "html-block:58",
+    "text": "Motor protection systems"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Contact Sales Buy Now",
+    "heading": "Motor protection systems"
+  },
+  {
+    "location": "html-block:60",
+    "text": "The Multilin™ 339 is a member of the Multilin 3 Series protective relay platform and has been designed for the protection, control and management of medium voltage motors in industrial applications. The Multilin 339 delivers unparalleled protection, control, diagnostics and communications in an industry leading drawout construction. Providing simplified setup configuration through the use of the Motor Settings Auto-Configurator, advanced graphical diagnostics with the Motor Health Report and support for multiple communication protocols including IEC® 61850, the 339 Motor Protection System provides comprehensive motor protection for most small and medium sized motors.",
+    "heading": "Motor protection systems"
+  },
+  {
+    "location": "html-block:61",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:62",
+    "text": "Cost-effective and flexible protection and control device for motors",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:63",
+    "text": "Field-proven algorithms and reliable protection to avoid unwanted trips or under-protection",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:64",
+    "text": "Ease of use and standardization with simplified motor setup and universal CT inputs",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:65",
+    "text": "Enhanced Thermal Model including RTD and current unbalance biasing",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:66",
+    "text": "Environmental monitoring system to monitor operating conditions and plan preventative maintenance",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:67",
+    "text": "Time stamped event reports, waveform capture, motor start and motor trending",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:68",
+    "text": "Powerful security and hierarchical password control for centralized management",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:69",
+    "text": "Reduced wiring via remote RTD’s using the RMIO module and support for 3 internal RTDs",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:70",
+    "text": "Advanced power system and switchgear diagnostics",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:71",
+    "text": "Customized motor overload curve Flex curves",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:72",
+    "text": "Detailed Motor Health Report with critical data",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:73",
+    "text": "Switchgear diagnostics and easy troubleshooting by CT/VT supervision, trip/close circuit supervision and LED/IO Test Mode",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:74",
+    "text": "Drawout design simplifies testing, commissioning and maintenance, thereby increasing process uptime",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:75",
+    "text": "Flexible communications with multiple ports and protocols allowing seamless integration",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:76",
+    "text": "Robust design exceeding industry standards, with Automotive Grade components and advanced testing procedures such as accelerated life cycle testing",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:77",
+    "text": "Migration of legacy MII Family relays to the 3 Series platform",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:78",
+    "text": "Intuitive configuration software and user-friendly logic configuration tool",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:79",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:80",
+    "text": "Protection and control of LV or MV motors of various sizes",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:81",
+    "text": "Protection of pumps, conveyors, fans, compressors, and others in process or manufacturing industries.",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:82",
+    "text": "Applications requiring fast and secure communications",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:83",
+    "text": "Harsh environments requiring protection against corrosive chemicals and humid environments",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:84",
+    "text": "Protection & Control"
+  },
+  {
+    "location": "html-block:85",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:86",
+    "text": "Thermal model biased with RTD and negative sequence current feedback",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:87",
+    "text": "Under Voltage",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:88",
+    "text": "Over Voltage",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:89",
+    "text": "Under/Over Frequency",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:90",
+    "text": "Phase and ground TOC and IOC",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:91",
+    "text": "Start supervision and inhibit",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:92",
+    "text": "Mechanical Jam",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:93",
+    "text": "Current Phase Reversal",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:94",
+    "text": "Acceleration Time",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:95",
+    "text": "Undercurrent / Underpower",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:96",
+    "text": "Starts per Hour",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:97",
+    "text": "Protection & Control"
+  },
+  {
+    "location": "html-block:98",
+    "text": "The 339 motor protection system is designed to protect and manage various sizes of LV and MV asynchronous motors motors and driven equipment. Flexible and powerful, the 339 provides advanced motor protection, control and monitoring in one integrated, economical drawout or non-drawout design. The 339 contains a full range of self contained protection and control elements as detailed in the Functional Block Diagram and Features table.",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:99",
+    "text": "Block Diagram and Features table.",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:100",
+    "text": "Sixteen logic elements available for applications such as manual control, interlocking and peer to peer tripping.",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:101",
+    "text": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:102",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:103",
+    "text": "Comprehensive metering",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:104",
+    "text": "Programmable oscillography up to 32 samples per cycle and digital states",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:105",
+    "text": "SNTP or IRIG-B clock synchronization",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:106",
+    "text": "4X20 character LCD display",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:107",
+    "text": "Control panel with 12 LED indicators",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:108",
+    "text": "Motor health and switchgear diagnostics including breaker monitoring, CT/VT and close/trip coil supervision",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:109",
+    "text": "Relay health diagnostics",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:110",
+    "text": "Power System Troubleshooting"
+  },
+  {
+    "location": "html-block:111",
+    "text": "Analyze power system disturbances with transient fault recorder and event records",
+    "heading": "Power System Troubleshooting"
+  },
+  {
+    "location": "html-block:112",
+    "text": "Metering, Monitoring & Diagnostics"
+  },
+  {
+    "location": "html-block:113",
+    "text": "Time Synchronization and IRIG-B:"
+  },
+  {
+    "location": "html-block:114",
+    "text": "An IRIG-B input is provided in the 339 to allow time synchronization using a GPS clock over a wide area. The 339 IRIG-B supports both AM and DC time synchronization, with an auto detect feature that that eliminates the need for configuration.",
+    "heading": "Time Synchronization and IRIG-B:"
+  },
+  {
+    "location": "html-block:115",
+    "text": "Temperature Monitoring:"
+  },
+  {
+    "location": "html-block:116",
+    "text": "The 339 continually monitors ambient temperature around the relay and alarms when device is exposed to extreme temperatures.",
+    "heading": "Temperature Monitoring:"
+  },
+  {
+    "location": "html-block:117",
+    "text": "Advanced Device Health Diagnostic:"
+  },
+  {
+    "location": "html-block:118",
+    "text": "The 339 performs comprehensive device health diagnostic tests during startup and continuously at runtime to test major functions and critical hardware. These diagnostic tests monitor for conditions that could impact system reliability.",
+    "heading": "Advanced Device Health Diagnostic:"
+  },
+  {
+    "location": "html-block:119",
+    "text": "The Motor Heath Report allows you to easily “see” how your motor is doing:",
+    "heading": "Advanced Device Health Diagnostic:"
+  },
+  {
+    "location": "html-block:120",
+    "text": "Start/stop history",
+    "heading": "Advanced Device Health Diagnostic:"
+  },
+  {
+    "location": "html-block:121",
+    "text": "Comprehensive trip details",
+    "heading": "Advanced Device Health Diagnostic:"
+  },
+  {
+    "location": "html-block:122",
+    "text": "Learned acceleration time and starting current",
+    "heading": "Advanced Device Health Diagnostic:"
+  },
+  {
+    "location": "html-block:123",
+    "text": "Many other motor health details",
+    "heading": "Advanced Device Health Diagnostic:"
+  },
+  {
+    "location": "html-block:124",
+    "text": "Communications"
+  },
+  {
+    "location": "html-block:125",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:126",
+    "text": "Front USB and rear serial, Ethernet and Fiber ports",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:127",
+    "text": "Multiple Protocols: IEC 61850, MODBUS TCP/IP, MODBUS RTU, DNP 3.0,IEC60870-5-104, IEC60870-5-103",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:128",
+    "text": "Advanced Communications"
+  },
+  {
+    "location": "html-block:129",
+    "text": "The 339 utilizes the most advanced communication technologies today making it the easiest and most flexible motor protection relay to use and integrate into new and existing infrastructures. Multiple communication ports and protocols allow control and easy access to information from the 339. All communication ports are capable of communicating simultaneously. With our advanced draw-out construction, the 339 relay can be drawn-out without having to disconnect any communication cables.",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:130",
+    "text": "The 339 supports the most popular industry standard protocols enabling easy, direct integration into electrical SCADA and HMI systems. Modbus RTU is provided as standard with a RS485 networking port. The following optional protocols are available:",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:131",
+    "text": "IEC 61850 GOOSE",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:132",
+    "text": "DNP 3.0",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:133",
+    "text": "Modbus RTU",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:134",
+    "text": "Modbus TCP/IP",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:135",
+    "text": "IEC 60870-5-103",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:136",
+    "text": "IEC 60870-5-104",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:137",
+    "text": "These protocols make it easy to connect to a Utility or Industrial automation system, eliminating the need for external protocol converter devices.",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:138",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:139",
+    "text": "EnerVista Software"
+  },
+  {
+    "location": "html-block:140",
+    "text": "The EnerVista suite is an industry leading set of software programs that simplifies every aspect of using the 339 relay. The EnerVista suite provides all the tools to monitor the status of the protected asset, maintain the relay, and integrate the information measured into DCS or SCADA monitoring systems. Convenient COMTRADE and sequence of event viewers are an integral part of the 339 set up software and are included to ensure proper protection and system.",
+    "heading": "EnerVista Software"
+  },
+  {
+    "location": "html-block:141",
+    "text": "Learn More",
+    "heading": "EnerVista Software"
+  },
+  {
+    "location": "html-block:142",
+    "text": "Feeder protection settings in one easy step"
+  },
+  {
+    "location": "html-block:143",
+    "text": "Access Control"
+  },
+  {
+    "location": "html-block:144",
+    "text": "Multilin devices and relays are designed with simple but powerful security to enable reliability and compliance for virtually any project or implementation. Password security is an optional feature of the 3 Series which can be setup using the SR3 EnerVista Setup software. The password system has been designed to facilitate a hierarchy for centralized management. This is accomplished through a Master level access password which can be used for resetting lower level access passwords and higher level privileged operations.",
+    "heading": "Access Control"
+  },
+  {
+    "location": "html-block:145",
+    "text": "Auditing and Reporting"
+  },
+  {
+    "location": "html-block:146",
+    "text": "With the Security Audit Trail reporting feature, available in GE Vernova’s ViewPoint Monitoring software, operators are able to obtain Event logging reports of key activities such as configuration changes. These pre-formatted reports can be used to help ensure device and protection system integrity and perform forensic auditing of activities and changes for compliance.",
+    "heading": "Auditing and Reporting"
+  },
+  {
+    "location": "html-block:147",
+    "text": "Trace any setting changes with security audit trail",
+    "heading": "Auditing and Reporting"
+  },
+  {
+    "location": "html-block:148",
+    "text": "Hardware"
+  },
+  {
+    "location": "html-block:149",
+    "text": "Hardware"
+  },
+  {
+    "location": "html-block:150",
+    "text": "Inputs and Outputs"
+  },
+  {
+    "location": "html-block:151",
+    "text": "The 339 features the following inputs and outputs for monitoring and control of typical motor applications:",
+    "heading": "Inputs and Outputs"
+  },
+  {
+    "location": "html-block:152",
+    "text": "10 contact Inputs with programmable thresholds",
+    "heading": "Inputs and Outputs"
+  },
+  {
+    "location": "html-block:153",
+    "text": "7 Outputs (2 Form A, 5 Form C) as standard and 4 Outputs (1 Form A, 3 Form C) when internal RTD option is selected",
+    "heading": "Inputs and Outputs"
+  },
+  {
+    "location": "html-block:154",
+    "text": "5 Form C output relays",
+    "heading": "Inputs and Outputs"
+  },
+  {
+    "location": "html-block:155",
+    "text": "Drawout & Non-Drawout Construction"
+  },
+  {
+    "location": "html-block:156",
+    "text": "The 339 is offered in both a drawout or a non-drawout construction. In the drawout case design the 339 simplifies installation and improves site safety as the need to open switchgear doors or rewire the device after testing is eliminated.",
+    "heading": "Drawout & Non-Drawout Construction"
+  },
+  {
+    "location": "html-block:157",
+    "text": "The 339 protection relay chassis used with a draw out relay is available separately, for use as a partial replacement or in test environments. The draw out relay with no chassis is also available to order as a spare unit.",
+    "heading": "Drawout & Non-Drawout Construction"
+  },
+  {
+    "location": "html-block:158",
+    "text": "Application Flexibility & Ease of Wiring"
+  },
+  {
+    "location": "html-block:159",
+    "text": "Removable terminals ease wiring and in-system testing or troubleshooting.",
+    "heading": "Application Flexibility & Ease of Wiring"
+  },
+  {
+    "location": "html-block:160",
+    "text": "Optional RTD"
+  },
+  {
+    "location": "html-block:161",
+    "text": "Reduce wiring via remote RTD’s using the RMIO module and support for 3 internal RTD",
+    "heading": "Optional RTD"
+  },
+  {
+    "location": "html-block:162",
+    "text": "Drawout",
+    "heading": "Optional RTD"
+  },
+  {
+    "location": "html-block:163",
+    "text": "Non-drawout",
+    "heading": "Optional RTD"
+  },
+  {
+    "location": "html-block:164",
+    "text": "Remote RTD Module",
+    "heading": "Optional RTD"
+  },
+  {
+    "location": "html-block:165",
+    "text": "User Interface"
+  },
+  {
+    "location": "html-block:166",
+    "text": "Retrofit"
+  },
+  {
+    "location": "html-block:167",
+    "text": "Retrofit Existing Multilin MII Family Devices"
+  },
+  {
+    "location": "html-block:168",
+    "text": "Traditionally, retrofitting or upgrading an existing relay has been a challenging and time consuming task often requiring re-engineering, panel modifications and re-wiring. Similar features and form factor of some models of MII family devices allow users to replace their existing relays with 3 Series relays with enhanced protection and control features and advanced communications.",
+    "heading": "Retrofit Existing Multilin MII Family Devices"
+  },
+  {
+    "location": "html-block:169",
+    "text": "The SR3 EnerVista Setup software allows users to create new setting files based on existing MIFII and MIVII setting files and can be uploaded to a 350 relay with a compatible model number. Retrofit is smooth and simplified with minor wiring or switchgear modifications.",
+    "heading": "Retrofit Existing Multilin MII Family Devices"
+  },
+  {
+    "location": "html-block:170",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:171",
+    "text": "Multilin Agile Motor Protection"
+  },
+  {
+    "location": "html-block:172",
+    "text": "GE Vernova’s Multilin Agile Motor Protection, with its compact footprint and advanced...",
+    "heading": "Multilin Agile Motor Protection"
+  },
+  {
+    "location": "html-block:173",
+    "text": "View More",
+    "heading": "Multilin Agile Motor Protection"
+  },
+  {
+    "location": "html-block:174",
+    "text": "MM300"
+  },
+  {
+    "location": "html-block:175",
+    "text": "The MM300 integrates protection, control, automation, metering, diagnostics and multiple...",
+    "heading": "MM300"
+  },
+  {
+    "location": "html-block:176",
+    "text": "View More",
+    "heading": "MM300"
+  }
+]

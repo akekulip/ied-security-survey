@@ -1,3 +1,5 @@
+> **Superseded on 2026-10-15; kept as written.** An external audit found what this pass missed. The Multilin D400 brochure kept as source `e9650803a7d08f102554` says on pdf-page 1: "Secure tunneling from master station to the D400 via TLS for DNP3/TCP, Modbus/TCP and IEC 104". This pass looked only at the D400's VPN server and management access: the tool kept the context of the first match on each page and not of later ones (fixed in tool version 2.2.1), so that sentence never reached the review. The row "None of the 31 discontinued devices documents protection of its control traffic" is therefore wrong, and the D400 question at the end is answered by that sentence. The audit also showed that "no DNP3 security documented" had been printed as "plaintext", which the documents do not establish. Current results: `paper_2026-10-15/` (see `study/README.md`).
+
 # Second pass over the draft review and the paper's sources (2026-10-14)
 
 A second reading, by the same AI assistant that drafted the review. It checks the draft against the retained documents and checks the outside sources the paper cites. It is not the author's confirmation and not an independent review.

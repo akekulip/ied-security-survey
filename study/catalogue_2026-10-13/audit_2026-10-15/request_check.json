@@ -1,0 +1,287 @@
+{
+  "run": "data\\runs\\sample_targeted_2026-10-15",
+  "approved_list": "study\\catalogue_2026-10-13\\audit_2026-10-15\\approved_urls.json",
+  "requests": 21,
+  "not_approved_requests": 0,
+  "approved_addresses": 18,
+  "approved_documents": [
+    {
+      "product_id": "ge_multilin_c60c95",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/manuals/c60/C60-1601-0100-85x-AP1-GEV.pdf",
+      "status": "extracted",
+      "reused_from": "",
+      "sha256": "c558fa2d54673bcecbb54717756893c31b6375baaa6a7303a71936b499d016b9",
+      "error": ""
+    },
+    {
+      "product_id": "ge_multilin_d20e",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-05/994-0145-D20E-Ethernet-IO-Module-Instruction-Manual-V100-R5.pdf",
+      "status": "extracted",
+      "reused_from": "",
+      "sha256": "41aa1b0866d18cc3cbbce83baff1bd068fc45103003682339cd7a5130b7efe68",
+      "error": ""
+    },
+    {
+      "product_id": "ge_multilin_d20mx_substation_controller_legacy",
+      "url": "https://www.gevernova.com/grid-solutions/sites/default/files/resources/products/software/d20mx/prbt-0440%20d20mx%20v2.10%20release%20notification%20v100%20r0.pdf",
+      "status": "extracted",
+      "reused_from": "",
+      "sha256": "e3fc239bee2829f7f59f2353eb07e4a4beefbbd1834495dd6f8a90e6e3ac2e73",
+      "error": ""
+    },
+    {
+      "product_id": "ge_multilin_d20mx_substation_controller_legacy",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/specs/d20/prbt-0397_d20mx_guideform_specs_v100_r1.pdf",
+      "status": "extracted",
+      "reused_from": "",
+      "sha256": "3041042847027c22f5370e2c478384918e9a0fffbbea0b2d5d44a5af5ad0e22c",
+      "error": ""
+    },
+    {
+      "product_id": "ge_multilin_850",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/manuals/8series/8SCG-1601-0702-29x-AD-GEV.pdf",
+      "status": "extracted",
+      "reused_from": "",
+      "sha256": "b3aac2de79a290de850cdc62aff398e790035af0f8eb40762a746c1c950256dc",
+      "error": ""
+    },
+    {
+      "product_id": "ge_multilin_850",
+      "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/applications/8series/850_fast_secure_redundant_communications.pdf",
+      "status": "extracted",
+      "reused_from": "",
+      "sha256": "8a36048b8b4189a86051a807668d7cf061a6ddb1b391823868d1a6d2f4f3bca3",
+      "error": ""
+    },
+    {
+      "product_id": "rockwell_micro870_controllers",
+      "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/2080-um002_-en-e.pdf",
+      "status": "extracted",
+      "reused_from": "data/runs/sample_audit_2026-10-15",
+      "sha256": "0f6f1715c95afefc8813cd311af7da5859139c073b8554ad3e52a28ac38d1bdb",
+      "error": ""
+    },
+    {
+      "product_id": "sel_real_time_automation_controller_rtac",
+      "url": "https://selinc.com/api/download/112760/",
+      "status": "extracted",
+      "reused_from": "runs/run1",
+      "sha256": "379cfbfd5432e521e9dcf3028633cf34d07570aeed3e1a26f89c33dbbb1a2f20",
+      "error": ""
+    },
+    {
+      "product_id": "sel_421",
+      "url": "https://selinc.com/api/download/120794/",
+      "status": "extracted",
+      "reused_from": "",
+      "sha256": "717841d955adc163212ba9608cfc0fa65b537eaeebfdc0ecaf5286fda0ece59f",
+      "error": ""
+    },
+    {
+      "product_id": "schneider_powerlogic_ion7550_rtu",
+      "url": "https://www.se.com/ww/en/download/document/70022-0120-01/",
+      "status": "extracted",
+      "reused_from": "",
+      "sha256": "0c63218f4303a81386b425f72cf0dd9adfb01915ec92b08c693ca1acb0453633",
+      "error": ""
+    },
+    {
+      "product_id": "schneider_powerlogic_ion7550_rtu",
+      "url": "https://www.se.com/ww/en/download/document/70072-0105-02/",
+      "status": "extracted",
+      "reused_from": "",
+      "sha256": "2467db3fd3d795bf1537316cc2cf0000996eee7d6acc2f95dcbf44fba42e6010",
+      "error": ""
+    },
+    {
+      "product_id": "siemens_6md86",
+      "url": "https://cache.industry.siemens.com/dl/files/443/109742443/att_1360880/v1/SIP5_ComProt_V11.00_Manual_C055-N_en.pdf",
+      "status": "extracted",
+      "reused_from": "",
+      "sha256": "7e422ce28572143c3753c4b4c61ff457c3f26864781acfc26a087dba8019cf80",
+      "error": ""
+    },
+    {
+      "product_id": "siemens_6md86",
+      "url": "https://cache.industry.siemens.com/dl/files/375/109768375/att_1150302/v1/SIP5_Security_V09.60_Manual_C081-C_en.pdf",
+      "status": "extracted",
+      "reused_from": "",
+      "sha256": "bf3dc2ceef86cbb130b10fb213594fffe1c1e33aa2fb511b00686a790d9e1e39",
+      "error": ""
+    },
+    {
+      "product_id": "siemens_q200_power_quality_recorder",
+      "url": "https://cache.industry.siemens.com/dl/files/897/109744897/att_1053741/v1/SICAM_Q200_7KG97_CM_US.pdf",
+      "status": "extracted",
+      "reused_from": "",
+      "sha256": "a2ce7c5a14a9103e1ab6366120cca08421048ee94f214aac2696b3968c20d36c",
+      "error": ""
+    },
+    {
+      "product_id": "siemens_q200_power_quality_recorder",
+      "url": "https://cache.industry.siemens.com/dl/files/896/109744896/att_1375401/v1/SICAM_Q200_7KG97_MAN_US.pdf",
+      "status": "extracted",
+      "reused_from": "",
+      "sha256": "784a6d58423ec9199e3ba8f2532e180941f20593a9dfc1cc20df8d6e0f2205fc",
+      "error": ""
+    },
+    {
+      "product_id": "siemens_transducer_sicam_t",
+      "url": "https://cache.industry.siemens.com/dl/files/336/109752336/att_1025493/v1/SICAM_T_7KG966_US.pdf",
+      "status": "failed",
+      "reused_from": "",
+      "sha256": "",
+      "error": "ValueError: HTTP 404"
+    },
+    {
+      "product_id": "siemens_7sj85",
+      "url": "https://cache.industry.siemens.com/dl/files/443/109742443/att_1360880/v1/SIP5_ComProt_V11.00_Manual_C055-N_en.pdf",
+      "status": "extracted",
+      "reused_from": "",
+      "sha256": "7e422ce28572143c3753c4b4c61ff457c3f26864781acfc26a087dba8019cf80",
+      "error": ""
+    },
+    {
+      "product_id": "siemens_7sj85",
+      "url": "https://cache.industry.siemens.com/dl/files/375/109768375/att_1150302/v1/SIP5_Security_V09.60_Manual_C081-C_en.pdf",
+      "status": "extracted",
+      "reused_from": "",
+      "sha256": "bf3dc2ceef86cbb130b10fb213594fffe1c1e33aa2fb511b00686a790d9e1e39",
+      "error": ""
+    }
+  ],
+  "sources_not_approved": [
+    {
+      "product_id": "siemens_s7_1200_g2",
+      "url": "https://www.siemens.com/catalog-st-70"
+    }
+  ],
+  "log": [
+    {
+      "url": "https://www.gevernova.com/robots.txt",
+      "status": 200,
+      "error": "",
+      "basis": "robots.txt of an approved address's host"
+    },
+    {
+      "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/manuals/c60/C60-1601-0100-85x-AP1-GEV.pdf",
+      "status": 200,
+      "error": "",
+      "basis": "approved address"
+    },
+    {
+      "url": "https://www.gevernova.com/electrification/sites/default/files/2025-05/994-0145-D20E-Ethernet-IO-Module-Instruction-Manual-V100-R5.pdf",
+      "status": 200,
+      "error": "",
+      "basis": "approved address"
+    },
+    {
+      "url": "https://www.gevernova.com/grid-solutions/sites/default/files/resources/products/software/d20mx/prbt-0440%20d20mx%20v2.10%20release%20notification%20v100%20r0.pdf",
+      "status": 301,
+      "error": "",
+      "basis": "approved address"
+    },
+    {
+      "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/software/d20mx/prbt-0440%20d20mx%20v2.10%20release%20notification%20v100%20r0.pdf",
+      "status": 200,
+      "error": "",
+      "basis": "redirect hop on the same host as the request before it"
+    },
+    {
+      "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/specs/d20/prbt-0397_d20mx_guideform_specs_v100_r1.pdf",
+      "status": 200,
+      "error": "",
+      "basis": "approved address"
+    },
+    {
+      "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/manuals/8series/8SCG-1601-0702-29x-AD-GEV.pdf",
+      "status": 200,
+      "error": "",
+      "basis": "approved address"
+    },
+    {
+      "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/applications/8series/850_fast_secure_redundant_communications.pdf",
+      "status": 200,
+      "error": "",
+      "basis": "approved address"
+    },
+    {
+      "url": "https://selinc.com/robots.txt",
+      "status": 200,
+      "error": "",
+      "basis": "robots.txt of an approved address's host"
+    },
+    {
+      "url": "https://selinc.com/api/download/120794/",
+      "status": 200,
+      "error": "",
+      "basis": "approved address"
+    },
+    {
+      "url": "https://www.se.com/robots.txt",
+      "status": 200,
+      "error": "",
+      "basis": "robots.txt of an approved address's host"
+    },
+    {
+      "url": "https://www.se.com/ww/en/download/document/70022-0120-01/",
+      "status": 200,
+      "error": "",
+      "basis": "approved address"
+    },
+    {
+      "url": "https://www.se.com/ww/en/download/document/70072-0105-02/",
+      "status": 200,
+      "error": "",
+      "basis": "approved address"
+    },
+    {
+      "url": "https://cache.industry.siemens.com/robots.txt",
+      "status": 200,
+      "error": "",
+      "basis": "robots.txt of an approved address's host"
+    },
+    {
+      "url": "https://cache.industry.siemens.com/dl/files/443/109742443/att_1360880/v1/SIP5_ComProt_V11.00_Manual_C055-N_en.pdf",
+      "status": 200,
+      "error": "",
+      "basis": "approved address"
+    },
+    {
+      "url": "https://cache.industry.siemens.com/dl/files/375/109768375/att_1150302/v1/SIP5_Security_V09.60_Manual_C081-C_en.pdf",
+      "status": 200,
+      "error": "",
+      "basis": "approved address"
+    },
+    {
+      "url": "https://cache.industry.siemens.com/dl/files/897/109744897/att_1053741/v1/SICAM_Q200_7KG97_CM_US.pdf",
+      "status": 200,
+      "error": "",
+      "basis": "approved address"
+    },
+    {
+      "url": "https://cache.industry.siemens.com/dl/files/896/109744896/att_1375401/v1/SICAM_Q200_7KG97_MAN_US.pdf",
+      "status": 200,
+      "error": "",
+      "basis": "approved address"
+    },
+    {
+      "url": "https://cache.industry.siemens.com/dl/files/336/109752336/att_1025493/v1/SICAM_T_7KG966_US.pdf",
+      "status": 404,
+      "error": "",
+      "basis": "approved address"
+    },
+    {
+      "url": "https://cache.industry.siemens.com/dl/files/443/109742443/att_1360880/v1/SIP5_ComProt_V11.00_Manual_C055-N_en.pdf",
+      "status": 200,
+      "error": "",
+      "basis": "approved address"
+    },
+    {
+      "url": "https://cache.industry.siemens.com/dl/files/375/109768375/att_1150302/v1/SIP5_Security_V09.60_Manual_C081-C_en.pdf",
+      "status": 200,
+      "error": "",
+      "basis": "approved address"
+    }
+  ]
+}

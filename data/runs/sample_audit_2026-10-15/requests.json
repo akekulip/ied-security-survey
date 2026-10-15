@@ -1,0 +1,21 @@
+[
+  {
+    "at": "2026-10-14T03:33:32.013061+00:00",
+    "url": "https://www.siemens.com/robots.txt",
+    "status": 200,
+    "bytes": 130,
+    "sha256": "6431c135b6bc319415db219c33e76ddcfb612b4330f21a982a15ee85edeb91aa"
+  },
+  {
+    "at": "2026-10-14T03:33:33.213274+00:00",
+    "url": "https://www.siemens.com/catalog-st-70",
+    "status": 301,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-14T03:33:33.493404+00:00",
+    "url": "https://support.industry.siemens.com/robots.txt",
+    "status": 403,
+    "bytes": 400
+  }
+]

@@ -1,3 +1,5 @@
+> **Superseded on 2026-10-15; kept as generated.** Built with tool version 2.2.0 from `review/reviews_ai_draft.json`. It counts the Multilin D400 as having no DNP3 security, although its brochure documents a TLS tunnel for DNP3/TCP (source `e9650803a7d08f102554`, pdf-page 1: "Secure tunneling from master station to the D400 via TLS for DNP3/TCP, Modbus/TCP and IEC 104"), and it prints "no DNP3 security documented" as "plaintext", which the documents do not establish. The tables in this folder carry the same errors. Current results: `../../paper_2026-10-15/` (see `study/README.md`).
+
 # IED security documentation survey: catalogue inventory
 
 Sampling: Stratified random sample: up to 4 devices per vendor, category and lifecycle stratum, seed 20261013, drawn from 484 classified catalogue entries; strata with fewer entries are taken whole. A sample of catalogue entries, not of installed devices. Inventory of 2026-10-13; categories and lifecycle come from the vendors' own catalogues and pages.

@@ -1,0 +1,1987 @@
+{
+  "ge_multilin_c60c95": {
+    "capability": {
+      "total": 10,
+      "by_group": {
+        "authentication": 10
+      }
+    },
+    "related": {
+      "total": 3,
+      "by_group": {
+        "iec_62351": 1,
+        "sftp": 2
+      }
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "ge_multilin_d20e": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "ge_multilintm_g100": {
+    "capability": {
+      "total": 8,
+      "by_group": {
+        "authentication": 3,
+        "ssh": 3,
+        "tls": 2
+      }
+    },
+    "related": {
+      "total": 5,
+      "by_group": {
+        "sftp": 4,
+        "vpn": 1
+      }
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "ge_multilintm_g500": {
+    "capability": {
+      "total": 18,
+      "by_group": {
+        "authentication": 3,
+        "encryption": 4,
+        "ssh": 7,
+        "tls": 4
+      }
+    },
+    "related": {
+      "total": 10,
+      "by_group": {
+        "sftp": 8,
+        "vpn": 2
+      }
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "ge_dart_legacy": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "ge_multilin_d20mx_substation_controller_legacy": {
+    "capability": {
+      "total": 7,
+      "by_group": {
+        "authentication": 5,
+        "ssh": 2
+      }
+    },
+    "related": {
+      "total": 2,
+      "by_group": {
+        "sftp": 2
+      }
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "ge_multilin_d400_legacy": {
+    "capability": {
+      "total": 24,
+      "by_group": {
+        "authentication": 10,
+        "ssh": 8,
+        "tls": 6
+      }
+    },
+    "related": {
+      "total": 11,
+      "by_group": {
+        "sftp": 9,
+        "vpn": 2
+      }
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "ge_multilin_h500_legacy": {
+    "capability": {
+      "total": 9,
+      "by_group": {
+        "authentication": 2,
+        "encryption": 7
+      }
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "ge_epm_2200_digital_power_meter": {
+    "capability": {
+      "total": 14,
+      "by_group": {
+        "authentication": 1,
+        "encryption": 11,
+        "integrity": 1,
+        "tls": 1
+      }
+    },
+    "related": {
+      "total": 2,
+      "by_group": {
+        "vpn": 2
+      }
+    },
+    "statement": {
+      "total": 1,
+      "by_group": {
+        "requirement_statement": 1
+      }
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "ge_epm_6010": {
+    "capability": {
+      "total": 11,
+      "by_group": {
+        "encryption": 9,
+        "integrity": 1,
+        "tls": 1
+      }
+    },
+    "related": {
+      "total": 2,
+      "by_group": {
+        "vpn": 2
+      }
+    },
+    "statement": {
+      "total": 1,
+      "by_group": {
+        "requirement_statement": 1
+      }
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "ge_istat_i400": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "ge_istat_m2x2": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "ge_epm_4000_sub_meter_legacy": {
+    "capability": {
+      "total": 2,
+      "by_group": {
+        "integrity": 2
+      }
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "ge_epm_5300_legacy": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "ge_epm_7100_legacy": {
+    "capability": {
+      "total": 11,
+      "by_group": {
+        "encryption": 9,
+        "integrity": 1,
+        "tls": 1
+      }
+    },
+    "related": {
+      "total": 2,
+      "by_group": {
+        "vpn": 2
+      }
+    },
+    "statement": {
+      "total": 1,
+      "by_group": {
+        "requirement_statement": 1
+      }
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "ge_epm_9900_advanced_power_quality_meter_legacy": {
+    "capability": {
+      "total": 11,
+      "by_group": {
+        "encryption": 9,
+        "integrity": 1,
+        "tls": 1
+      }
+    },
+    "related": {
+      "total": 2,
+      "by_group": {
+        "vpn": 2
+      }
+    },
+    "statement": {
+      "total": 1,
+      "by_group": {
+        "requirement_statement": 1
+      }
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "ge_bitronics_70_series_legacy": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "ge_ifc_time_overcurrent_relay": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "ge_multilin_339": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "ge_multilin_850": {
+    "capability": {
+      "total": 12,
+      "by_group": {
+        "authentication": 9,
+        "encryption": 1,
+        "ssh": 2
+      }
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "ge_p64_micom_5th_generation": {
+    "capability": {
+      "total": 46,
+      "by_group": {
+        "authentication": 33,
+        "encryption": 4,
+        "integrity": 1,
+        "ssh": 8
+      }
+    },
+    "related": {
+      "total": 13,
+      "by_group": {
+        "iec_62351": 13
+      }
+    },
+    "statement": {
+      "total": 5,
+      "by_group": {
+        "default_statement": 1,
+        "non_support_statement": 1,
+        "plaintext_statement": 1,
+        "requirement_statement": 2
+      }
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "ge_dfp200_digital_feeder_protection_legacy": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "ge_dlpd_digital_line_protection_system": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "ge_kavs_legacy": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "ge_multilin_a60_legacy": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "ge_mbci_mcri_mrtp_and_mvtw_legacy": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "ge_micom_agile_p24x_legacy": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "ge_micom_agile_p541_p542_legacy": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "ge_tccv_directional_overcurrent_relay_legacy": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "rockwell_powermonitor_1000": {
+    "capability": {
+      "total": 2,
+      "by_group": {
+        "authentication": 1,
+        "tls": 1
+      }
+    },
+    "related": {
+      "total": 1,
+      "by_group": {
+        "vpn": 1
+      }
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "rockwell_powermonitor_500": {
+    "capability": {
+      "total": 1,
+      "by_group": {
+        "authentication": 1
+      }
+    },
+    "related": {
+      "total": 1,
+      "by_group": {
+        "vpn": 1
+      }
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "rockwell_powermonitor_5000": {
+    "capability": {
+      "total": 1,
+      "by_group": {
+        "authentication": 1
+      }
+    },
+    "related": {
+      "total": 1,
+      "by_group": {
+        "vpn": 1
+      }
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "rockwell_compactlogix_5380_controllers": {
+    "capability": {
+      "total": 49,
+      "by_group": {
+        "authentication": 8,
+        "cip_security": 20,
+        "encryption": 8,
+        "integrity": 11,
+        "tls": 2
+      }
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 6,
+      "by_group": {
+        "default_statement": 1,
+        "plaintext_statement": 1,
+        "requirement_statement": 4
+      }
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "rockwell_controllogix_5590": {
+    "capability": {
+      "total": 6,
+      "by_group": {
+        "authentication": 1,
+        "cip_security": 4,
+        "encryption": 1
+      }
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 1,
+      "by_group": {
+        "requirement_statement": 1
+      }
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "rockwell_logixedge_controllers": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "rockwell_micro870_controllers": {
+    "capability": {
+      "total": 2,
+      "by_group": {
+        "authentication": 1,
+        "dnp3_secure_authentication": 1
+      }
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "rockwell_compactlogix_1768_controllers": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "rockwell_micro830_controllers": {
+    "capability": {
+      "total": 29,
+      "by_group": {
+        "authentication": 11,
+        "dnp3_secure_authentication": 7,
+        "encryption": 5,
+        "integrity": 5,
+        "ipsec": 1
+      }
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 4,
+      "by_group": {
+        "non_support_statement": 1,
+        "plaintext_statement": 2,
+        "requirement_statement": 1
+      }
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "rockwell_micrologix_1100_controllers": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "rockwell_micrologix_1200_controllers": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "rockwell_compactlogix_5370_controllers": {
+    "capability": {
+      "total": 33,
+      "by_group": {
+        "authentication": 1,
+        "cip_security": 15,
+        "encryption": 2,
+        "integrity": 14,
+        "tls": 1
+      }
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "rockwell_slc_500_controllers": {
+    "capability": {
+      "total": 8,
+      "by_group": {
+        "authentication": 4,
+        "encryption": 1,
+        "integrity": 3
+      }
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "rockwell_differential_protection_relay": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 1,
+      "by_group": {
+        "plaintext_statement": 1
+      }
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "rockwell_protection_relay": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 1,
+      "by_group": {
+        "plaintext_statement": 1
+      }
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "sel_2431": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "sel_3505_3505_3": {
+    "capability": {
+      "total": 9,
+      "by_group": {
+        "authentication": 5,
+        "encryption": 2,
+        "ssh": 1,
+        "tls": 1
+      }
+    },
+    "related": {
+      "total": 2,
+      "by_group": {
+        "sftp": 2
+      }
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "sel_3560": {
+    "capability": {
+      "total": 13,
+      "by_group": {
+        "authentication": 6,
+        "encryption": 3,
+        "ssh": 2,
+        "tls": 2
+      }
+    },
+    "related": {
+      "total": 2,
+      "by_group": {
+        "sftp": 2
+      }
+    },
+    "statement": {
+      "total": 1,
+      "by_group": {
+        "requirement_statement": 1
+      }
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "sel_real_time_automation_controller_rtac": {
+    "capability": {
+      "total": 2,
+      "by_group": {
+        "authentication": 2
+      }
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "sel_734_734t": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "sel_735": {
+    "capability": {
+      "total": 3,
+      "by_group": {
+        "encryption": 1,
+        "integrity": 1,
+        "ssh": 1
+      }
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "sel_2664s": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "sel_351a": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "sel_387": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "sel_421": {
+    "capability": {
+      "total": 1,
+      "by_group": {
+        "authentication": 1
+      }
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 1,
+      "by_group": {
+        "requirement_statement": 1
+      }
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "schneider_easergy_micom_c434": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "schneider_sage_remote_terminal_units": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "schneider_saitel_remote_terminal_unit_controller": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "schneider_scadapack_500e": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "schneider_powerlogic_ion7550_rtu": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "schneider_powerlogic_em4200_series_enercept": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "schneider_powerlogic_pm3000_power_meters": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "schneider_powerlogic_pm5000_power_meters": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "schneider_powerlogic_pm8000_power_quality_meters": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "schneider_pm800_series": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "schneider_powerlogic_enercept": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "schneider_powerlogic_energy_meters": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "schneider_powerlogic_ion6200_series": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "schneider_modicon_m171_m172_logic_controller": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "schneider_modicon_m241_micro_plc": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "schneider_modicon_m258_compact_plc_for_machine_automation": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "schneider_modicon_mcm": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "schneider_compact_plc": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "schneider_modicon_lmc058_lmc078": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "schneider_modicon_premium_pac": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "schneider_twido_programmable_controller": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "schneider_micom_p59x": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "schneider_micom_p841": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "schneider_sepam_series_80": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "schneider_vamp_arc_protection_relay_system": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "schneider_micom_p22x": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "schneider_micom_p521": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "schneider_micom_p821": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "schneider_sepam_series_20": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "siemens_6md86": {
+    "capability": {
+      "total": 3,
+      "by_group": {
+        "authentication": 2,
+        "encryption": 1
+      }
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "siemens_a8000": {
+    "capability": {
+      "total": 47,
+      "by_group": {
+        "authentication": 10,
+        "encryption": 11,
+        "integrity": 1,
+        "ipsec": 11,
+        "ssh": 3,
+        "tls": 11
+      }
+    },
+    "related": {
+      "total": 7,
+      "by_group": {
+        "iec_62351": 6,
+        "vpn": 1
+      }
+    },
+    "statement": {
+      "total": 2,
+      "by_group": {
+        "plaintext_statement": 2
+      }
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "siemens_a8000_cp_8050": {
+    "capability": {
+      "total": 48,
+      "by_group": {
+        "authentication": 10,
+        "encryption": 11,
+        "integrity": 2,
+        "ipsec": 11,
+        "ssh": 3,
+        "tls": 11
+      }
+    },
+    "related": {
+      "total": 7,
+      "by_group": {
+        "iec_62351": 6,
+        "vpn": 1
+      }
+    },
+    "statement": {
+      "total": 2,
+      "by_group": {
+        "plaintext_statement": 2
+      }
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "siemens_multipurpose_automation_box": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "siemens_measuring_devices": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "siemens_q200_power_quality_recorder": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "siemens_sentron_measuring_devices": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "siemens_transducer_sicam_t": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "siemens_s7_1200_g2": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "siemens_s7_1500_rh_cpus": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "siemens_s7_1500s_controller": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "siemens_s7_400": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "siemens_7sj85": {
+    "capability": {
+      "total": 71,
+      "by_group": {
+        "authentication": 64,
+        "encryption": 3,
+        "integrity": 2,
+        "tls": 2
+      }
+    },
+    "related": {
+      "total": 4,
+      "by_group": {
+        "iec_62351": 2,
+        "vpn": 2
+      }
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "siemens_7sr157": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "siemens_7sr46": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  },
+  "siemens_7sy82": {
+    "capability": {
+      "total": 0,
+      "by_group": {}
+    },
+    "related": {
+      "total": 0,
+      "by_group": {}
+    },
+    "statement": {
+      "total": 0,
+      "by_group": {}
+    },
+    "profile": {
+      "total": 0,
+      "by_group": {}
+    }
+  }
+}

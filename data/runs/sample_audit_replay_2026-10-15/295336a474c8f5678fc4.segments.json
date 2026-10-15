@@ -1,0 +1,381 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "SENTRON measuring devices for energy transparency | Siemens"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Why SENTRON measuring devices?"
+  },
+  {
+    "location": "html-block:4",
+    "text": "Energy savings start with a solid foundation of reproducible power values. Across all levels of low-voltage distribution, our portfolio enables you to optimize operations and build smart energy management setups. Whether in infrastructure, building management, manufacturing, EV charging, or renewables, these devices integrate seamlessly into your automation environment. By doing so, they help you meet strict regulatory standards and drive your long-term sustainability initiatives forward.",
+    "heading": "Why SENTRON measuring devices?"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Key benefits"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Gain full transparency of energy consumption"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Monitor energy, power quality, and system conditions across all levels of your installation. SENTRON devices deliver precise, reproducible data for informed decisions and targeted efficiency improvements.",
+    "heading": "Gain full transparency of energy consumption"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Improve efficiency and reduce energy costs"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Identify energy waste, peak loads, and inefficiencies early. With detailed consumption data, you can optimize operations, allocate costs accurately, and support energy management standards such as ISO 50001.",
+    "heading": "Improve efficiency and reduce energy costs"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Build a future-ready, scalable energy monitoring setup"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Choose from a comprehensive portfolio covering DIN rail to front-panel devices, Modbus to PROFINET connectivity, MID-certified options. SENTRON integrates seamlessly with software solutions, growing with your application.",
+    "heading": "Build a future-ready, scalable energy monitoring setup"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Choose the optimal SENTRON measuring device"
+  },
+  {
+    "location": "html-block:13",
+    "text": "From basic energy meters to advanced multifunction devices: Find the optimal SENTRON measuring solution for every stage of your plant. Enable reliable data, seamless communication, and efficient power monitoring from the start.",
+    "heading": "Choose the optimal SENTRON measuring device"
+  },
+  {
+    "location": "html-block:14",
+    "text": "SENTRON energy meters"
+  },
+  {
+    "location": "html-block:15",
+    "text": "all",
+    "heading": "SENTRON energy meters"
+  },
+  {
+    "location": "html-block:16",
+    "text": "SENTRON 7KT PAC1600 energy measuring devices"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Monitor consumer loads with these compact, entry-level measuring devices to prevent peak loads and reduce energy costs. Designed to facilitate energy redistribution, they feature direct on-device readings.",
+    "heading": "SENTRON 7KT PAC1600 energy measuring devices"
+  },
+  {
+    "location": "html-block:18",
+    "text": "all",
+    "heading": "SENTRON 7KT PAC1600 energy measuring devices"
+  },
+  {
+    "location": "html-block:19",
+    "text": "SENTRON 7KM PAC1020 measuring device"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Deploy cost-effective power meters for reliable energy monitoring and full transparency. Easy to install and freely configurable with LED display. Operate stand-alone or integrate into the SENTRON ecosystem.",
+    "heading": "SENTRON 7KM PAC1020 measuring device"
+  },
+  {
+    "location": "html-block:21",
+    "text": "all",
+    "heading": "SENTRON 7KM PAC1020 measuring device"
+  },
+  {
+    "location": "html-block:22",
+    "text": "SENTRON 7KM PAC2200 measuring device"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Track energy consumption globally with compact DIN-rail meters. Self-powered via measuring voltage, they require no extra supply. Integrate via Modbus, M-Bus or PROFINET using the SPP2000 proxy. MID-certified variants for billing.",
+    "heading": "SENTRON 7KM PAC2200 measuring device"
+  },
+  {
+    "location": "html-block:24",
+    "text": "all",
+    "heading": "SENTRON 7KM PAC2200 measuring device"
+  },
+  {
+    "location": "html-block:25",
+    "text": "SENTRON 7KM PAC2200 CLP measuring device /MID-certified"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Ensure legally compliant billing with MID-certified, PTB-approved energy meters. A non-reactive Ethernet interface with Modbus TCP supports PROFINET via the SPP2000 proxy. They record quarter-hourly active energy values.",
+    "heading": "SENTRON 7KM PAC2200 CLP measuring device /MID-certified"
+  },
+  {
+    "location": "html-block:27",
+    "text": "all",
+    "heading": "SENTRON 7KM PAC2200 CLP measuring device /MID-certified"
+  },
+  {
+    "location": "html-block:28",
+    "text": "SENTRON 7KM PAC3200T measuring device"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Assess system condition and power quality with precise DIN-rail meters monitoring over 50 electrical values. Integrated web interface and Modbus TCP support PROFINET via the SPP2000 proxy for accurate monitoring.",
+    "heading": "SENTRON 7KM PAC3200T measuring device"
+  },
+  {
+    "location": "html-block:30",
+    "text": "all",
+    "heading": "SENTRON 7KM PAC3200T measuring device"
+  },
+  {
+    "location": "html-block:31",
+    "text": "SENTRON PROFINET Proxy SPP2000 measuring device"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Integrate up to 8 Modbus TCP devices into PROFINET and PROFIenergy networks without extra software. This compact DIN-rail proxy enables direct TIA Portal configuration and supports Conformance Class C (IRT).",
+    "heading": "SENTRON PROFINET Proxy SPP2000 measuring device"
+  },
+  {
+    "location": "html-block:33",
+    "text": "SENTRON multifunction measuring devices"
+  },
+  {
+    "location": "html-block:34",
+    "text": "all",
+    "heading": "SENTRON multifunction measuring devices"
+  },
+  {
+    "location": "html-block:35",
+    "text": "SENTRON 7KM PAC3120 & PAC3120 MID"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Deploy versatile IEC/UL-certified multifunction meters for infrastructure. With 24 V AC supply, they record energy, power and THD. Status LED and serial communication included. Available: calibrated, tamper-proof MID.",
+    "heading": "SENTRON 7KM PAC3120 & PAC3120 MID"
+  },
+  {
+    "location": "html-block:37",
+    "text": "all",
+    "heading": "SENTRON 7KM PAC3120 & PAC3120 MID"
+  },
+  {
+    "location": "html-block:38",
+    "text": "SENTRON 7KM PAC3220 & PAC3220 MID"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Capture highly accurate energy and power data with industrial IEC/UL-certified meters. Integrated web interface, dual Ethernet ports, expansion modules and status LED included. Calibrated, tamper-proof MID variant.",
+    "heading": "SENTRON 7KM PAC3220 & PAC3220 MID"
+  },
+  {
+    "location": "html-block:40",
+    "text": "all",
+    "heading": "SENTRON 7KM PAC3220 & PAC3220 MID"
+  },
+  {
+    "location": "html-block:41",
+    "text": "SENTRON 7KM PAC4220 measuring device"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Track power quality and multi-energy use, incl. gas and water, with this Linux-based meter. Offers 8 GB memory, a crypto chip for cybersecurity, versatile I/Os and dual Ethernet ports supporting up to 12 Modbus TCP connections.",
+    "heading": "SENTRON 7KM PAC4220 measuring device"
+  },
+  {
+    "location": "html-block:43",
+    "text": "SENTRON meters & multichannel current measuring systems"
+  },
+  {
+    "location": "html-block:44",
+    "text": "all",
+    "heading": "SENTRON meters & multichannel current measuring systems"
+  },
+  {
+    "location": "html-block:45",
+    "text": "SENTRON 7KM PAC5200 measuring device"
+  },
+  {
+    "location": "html-block:46",
+    "text": "Analyze advanced power quality with meters compliant to IEC 61000-4-30 class S and EN 50160. Flexible recorders enable long-term logging, while an integrated web server supports reporting. With 2 GB memory.",
+    "heading": "SENTRON 7KM PAC5200 measuring device"
+  },
+  {
+    "location": "html-block:47",
+    "text": "all",
+    "heading": "SENTRON 7KM PAC5200 measuring device"
+  },
+  {
+    "location": "html-block:48",
+    "text": "SENTRON 7KT PAC1261 measuring device"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Monitor up to 96 branch circuits with flexible sensor bars for cost-effective energy management. Integrates SENTRON COM protection devices and VersiCharge wallboxes for charging control with real-time transparency.",
+    "heading": "SENTRON 7KT PAC1261 measuring device"
+  },
+  {
+    "location": "html-block:50",
+    "text": "all",
+    "heading": "SENTRON 7KT PAC1261 measuring device"
+  },
+  {
+    "location": "html-block:51",
+    "text": "SEM3 multichannel current measuring system"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Scale multichannel current monitoring in main distribution boards by recording up to 45 points. The system offers 2 GB memory for long-term logging, detects load peaks and enables direct comparison.",
+    "heading": "SEM3 multichannel current measuring system"
+  },
+  {
+    "location": "html-block:53",
+    "text": "Frequently asked questions"
+  },
+  {
+    "location": "html-block:54",
+    "text": "What is low-voltage condition monitoring with SENTRON and how does it enhance energy monitoring?"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Low-voltage condition monitoring with SENTRON is a digital ecosystem that extends the value of SENTRON measuring devices by transforming collected measurement data into actionable insights – enabling timely maintenance before failures occur, without replacing functional components too early.",
+    "heading": "What is low-voltage condition monitoring with SENTRON and how does it enhance energy monitoring?"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Whether used for an entry-level monitoring setup or advanced energy management, SENTRON low-voltage condition monitoring helps organizations operate electrical systems more efficiently, sustainably, and securely.",
+    "heading": "What is low-voltage condition monitoring with SENTRON and how does it enhance energy monitoring?"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Learn more about condition monitoring with SENTRON",
+    "heading": "What is low-voltage condition monitoring with SENTRON and how does it enhance energy monitoring?"
+  },
+  {
+    "location": "html-block:58",
+    "text": "What is SENTRON Powerconfig and what is it used for?"
+  },
+  {
+    "location": "html-block:59",
+    "text": "SENTRON Powerconfig is a PC-based commissioning software designed for communication-capable devices within the SENTRON portfolio. It simplifies device setup and significantly reduces configuration time, especially when multiple devices must be parameterized.",
+    "heading": "What is SENTRON Powerconfig and what is it used for?"
+  },
+  {
+    "location": "html-block:60",
+    "text": "Learn more about SENTRON Powerconfig",
+    "heading": "What is SENTRON Powerconfig and what is it used for?"
+  },
+  {
+    "location": "html-block:61",
+    "text": "How does power distribution integrate into the TIA Portal?"
+  },
+  {
+    "location": "html-block:62",
+    "text": "Power distribution can be seamlessly integrated into automation engineering through the TIA Portal by connecting SENTRON measuring devices directly to the Totally Integrated Automation environment.",
+    "heading": "How does power distribution integrate into the TIA Portal?"
+  },
+  {
+    "location": "html-block:63",
+    "text": "By integrating SENTRON measuring devices into the TIA Portal, users can:",
+    "heading": "How does power distribution integrate into the TIA Portal?"
+  },
+  {
+    "location": "html-block:64",
+    "text": "Access energy and diagnostics data within one unified engineering framework",
+    "heading": "How does power distribution integrate into the TIA Portal?"
+  },
+  {
+    "location": "html-block:65",
+    "text": "Parameterize and commission devices centrally and intuitively",
+    "heading": "How does power distribution integrate into the TIA Portal?"
+  },
+  {
+    "location": "html-block:66",
+    "text": "Collect energy data directly alongside automation data",
+    "heading": "How does power distribution integrate into the TIA Portal?"
+  },
+  {
+    "location": "html-block:67",
+    "text": "Synchronize electrical power distribution with machine and process operations",
+    "heading": "How does power distribution integrate into the TIA Portal?"
+  },
+  {
+    "location": "html-block:68",
+    "text": "This integration enables greater transparency, simplified engineering workflows, and optimized coordination between electrification and automation systems.",
+    "heading": "How does power distribution integrate into the TIA Portal?"
+  },
+  {
+    "location": "html-block:69",
+    "text": "Learn more about TIA Portal",
+    "heading": "How does power distribution integrate into the TIA Portal?"
+  },
+  {
+    "location": "html-block:70",
+    "text": "Explore resources"
+  },
+  {
+    "location": "html-block:71",
+    "text": "SENTRON measuring devices"
+  },
+  {
+    "location": "html-block:72",
+    "text": "Quick Selection Guide | Portfolio overview",
+    "heading": "SENTRON measuring devices"
+  },
+  {
+    "location": "html-block:73",
+    "text": "Flyer | European Measuring Instruments Directive (MID)",
+    "heading": "SENTRON measuring devices"
+  },
+  {
+    "location": "html-block:74",
+    "text": "White paper | Power quality during the transition to a new energy mix",
+    "heading": "SENTRON measuring devices"
+  },
+  {
+    "location": "html-block:75",
+    "text": "Catalog | LV 10 – LV Power Distribution + Electrical Installation",
+    "heading": "SENTRON measuring devices"
+  },
+  {
+    "location": "html-block:76",
+    "text": "Siemens EcoTech Profile | SENTRON Power Monitoring Devices PAC 7KM",
+    "heading": "SENTRON measuring devices"
+  },
+  {
+    "location": "html-block:77",
+    "text": "Your entry into IIoT"
+  },
+  {
+    "location": "html-block:78",
+    "text": "White paper | Compulsory verification for energy efficiency",
+    "heading": "Your entry into IIoT"
+  },
+  {
+    "location": "html-block:79",
+    "text": "Topic paper | Cybersecure digitalization of power distribution in infrastructures and buildings",
+    "heading": "Your entry into IIoT"
+  },
+  {
+    "location": "html-block:80",
+    "text": "Factsheet | SENTRON Powercenter 3000",
+    "heading": "Your entry into IIoT"
+  },
+  {
+    "location": "html-block:81",
+    "text": "More info about SENTRON Powercenter 3000"
+  },
+  {
+    "location": "html-block:82",
+    "text": "Video | SENTRON Powercenter 3000 – unique IoT data platform",
+    "heading": "More info about SENTRON Powercenter 3000"
+  }
+]
