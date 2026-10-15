@@ -1,0 +1,961 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "Multilin Voltage Regulator Controller"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "Multilin Voltage Regulator Controller - Legacy"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Contact Sales",
+    "heading": "Multilin Voltage Regulator Controller - Legacy"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Manufacturing for this product has been discontinued. Please contact us to discuss alternatives.",
+    "heading": "Multilin Voltage Regulator Controller - Legacy"
+  },
+  {
+    "location": "html-block:7",
+    "text": "The Multilin DGCV Voltage Regulator Controller enables a utility to optimize operational planning, enables short and long-term load for forecasting, and asset tracking through Power Quality monitoring. This is accomplished through the monitoring of feeder voltages and issuing Raise/Lower commands to a connected Voltage Regulator to increase or decrease the downstream voltage, when required.",
+    "heading": "Multilin Voltage Regulator Controller - Legacy"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Increases grid efficiency",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Through deployment of the Volt/VAR system, the Multilin Voltage Regulator Controller:",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:11",
+    "text": "- Enables up to a 6% reduction in energy demand",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:12",
+    "text": "- Improves load management and power quality",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Enhances and optimizes asset utilization",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Lowers operational costs",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Performs real-time control from remote or local locations",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Integrates with industry leading voltage regulator manufacturers",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Rugged construction for use in harsh environments (-40°C to +60°C)",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Reduces time associated with setup and commissioning",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Local Raise/Lower control",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Advanced logic engine using FlexLogic™",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Common platform with other Multilin Distribution Automation (DA) controllers",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Regulator control for pole-top or pad mounted voltage regulators for Distribution and Industrial feeders",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Integrated into centralized or decentralized Volt/VAR systems",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Ideal for medium and small size Distribution transformers with On-Load Tap Changer (OLTC)",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Capacitor Bank Controller"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Field RTU"
+  },
+  {
+    "location": "html-block:29",
+    "text": "URC"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Substation Gateways & RTUs"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Distribution Feeder"
+  },
+  {
+    "location": "html-block:32",
+    "text": "EMS / DMS / OMS"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Distribution Automation Solutions"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Capacitor Bank Controller"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Field RTU"
+  },
+  {
+    "location": "html-block:43",
+    "text": "URC"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Substation Gateways & RTUs"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Distribution Feeder"
+  },
+  {
+    "location": "html-block:46",
+    "text": "EMS / DMS / OMS"
+  },
+  {
+    "location": "html-block:47",
+    "text": "Distribution Automation Solutions"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:50",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:51",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:53",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Multilin Voltage Regulator Controller - Legacy"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Contact Sales",
+    "heading": "Multilin Voltage Regulator Controller - Legacy"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Manufacturing for this product has been discontinued. Please contact us to discuss alternatives.",
+    "heading": "Multilin Voltage Regulator Controller - Legacy"
+  },
+  {
+    "location": "html-block:57",
+    "text": "The Multilin DGCV Voltage Regulator Controller enables a utility to optimize operational planning, enables short and long-term load for forecasting, and asset tracking through Power Quality monitoring. This is accomplished through the monitoring of feeder voltages and issuing Raise/Lower commands to a connected Voltage Regulator to increase or decrease the downstream voltage, when required.",
+    "heading": "Multilin Voltage Regulator Controller - Legacy"
+  },
+  {
+    "location": "html-block:58",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Increases grid efficiency",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:60",
+    "text": "Through deployment of the Volt/VAR system, the Multilin Voltage Regulator Controller:",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:61",
+    "text": "- Enables up to a 6% reduction in energy demand",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:62",
+    "text": "- Improves load management and power quality",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:63",
+    "text": "Enhances and optimizes asset utilization",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:64",
+    "text": "Lowers operational costs",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:65",
+    "text": "Performs real-time control from remote or local locations",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:66",
+    "text": "Integrates with industry leading voltage regulator manufacturers",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:67",
+    "text": "Rugged construction for use in harsh environments (-40°C to +60°C)",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:68",
+    "text": "Reduces time associated with setup and commissioning",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:69",
+    "text": "Local Raise/Lower control",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:70",
+    "text": "Advanced logic engine using FlexLogic™",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:71",
+    "text": "Common platform with other Multilin Distribution Automation (DA) controllers",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:72",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:73",
+    "text": "Regulator control for pole-top or pad mounted voltage regulators for Distribution and Industrial feeders",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:74",
+    "text": "Integrated into centralized or decentralized Volt/VAR systems",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:75",
+    "text": "Ideal for medium and small size Distribution transformers with On-Load Tap Changer (OLTC)",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:76",
+    "text": "Voltage Regulation"
+  },
+  {
+    "location": "html-block:77",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:78",
+    "text": "Auto/Manual or Local/Remote control",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:79",
+    "text": "Adjustable Voltage Bandwidth",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:80",
+    "text": "Configurable Voltage ratio correction",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:81",
+    "text": "Tap change time delay",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:82",
+    "text": "Voltage runback limits",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:83",
+    "text": "3 stage Voltage reduction",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:84",
+    "text": "Line Drop Compensation",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:85",
+    "text": "(forward & reverse)",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:86",
+    "text": "Reverse Power Operation & Override",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:87",
+    "text": "Tap change inhibits",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:88",
+    "text": "Tap position limits",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:89",
+    "text": "Sequential and non-sequential type",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:90",
+    "text": "Bi-directional mode of operation",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:91",
+    "text": "Drag hands operation",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:92",
+    "text": "3 setting groups",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:93",
+    "text": "Volt/VAR control"
+  },
+  {
+    "location": "html-block:94",
+    "text": "Voltage regulator controllers and Capacitor bank controllers can operate as part of an integrated Volt/VAR Control (IVVC) scheme or as a Centralized Volt/VAR control (CVVC) system. The IVVC or CVVC system works to achieve two key objectives:",
+    "heading": "Volt/VAR control"
+  },
+  {
+    "location": "html-block:95",
+    "text": "Optimize Voltage - through ‘Conservation of Voltage’ that leads to reduced demand, that may result in decreased generation up to 6%.",
+    "heading": "Volt/VAR control"
+  },
+  {
+    "location": "html-block:96",
+    "text": "Increased efficiency- through improved power factor and reduced VAR which helps to reduce power line losses.",
+    "heading": "Volt/VAR control"
+  },
+  {
+    "location": "html-block:97",
+    "text": "Voltage regulator control"
+  },
+  {
+    "location": "html-block:98",
+    "text": "Robust Design"
+  },
+  {
+    "location": "html-block:99",
+    "text": "Based on GE Vernova’s proven controller platform with tens of thousands of units installed globally, the Multilin Voltage Regulator Controller underwent extensive Accelerated Life Testing (ALT) and Highly Accelerated Life Testing (HALT) to validate accurate functionality under specified conditions and to ensure accurate performance in extreme operating conditions and harsh environments.",
+    "heading": "Robust Design"
+  },
+  {
+    "location": "html-block:100",
+    "text": "Mode of Operation"
+  },
+  {
+    "location": "html-block:101",
+    "text": "To provide optimal application flexibility, the Multilin Voltage Regulator Controller offers two modes or methods of operation in which the device can be implemented to control the voltage regulator: a) Manual Mode (Local Control or Remote Control). b) Automatic Mode",
+    "heading": "Mode of Operation"
+  },
+  {
+    "location": "html-block:102",
+    "text": "Manual Mode – Local Control"
+  },
+  {
+    "location": "html-block:103",
+    "text": "In this mode, it is possible to Raise or Lower the tap locally from the Push buttons that are available on the front panel of the Multilin Voltage Regulator Controller. For added operational reliability and operator safety, inhibit functions configured in the unit continue to operate as defined.",
+    "heading": "Manual Mode – Local Control"
+  },
+  {
+    "location": "html-block:104",
+    "text": "Manual Mode – Remote Control"
+  },
+  {
+    "location": "html-block:105",
+    "text": "In this mode, the commands for Tap Raise and Lower are received from SCADA or the Integrated Volt/VAR systems via communications. This communications channel can be provided via optional radio or cellular communications.",
+    "heading": "Manual Mode – Remote Control"
+  },
+  {
+    "location": "html-block:106",
+    "text": "Automatic Mode"
+  },
+  {
+    "location": "html-block:107",
+    "text": "In automatic mode, the Multilin Voltage Regulator Controller compares the measured voltage to the set voltage level, and if the difference exceeds the set bandwidth (voltage limits), the Multilin Voltage Regulator Controller issues a Raise or Lower tap commands to maintain the desired voltage levels.",
+    "heading": "Automatic Mode"
+  },
+  {
+    "location": "html-block:108",
+    "text": "Key Features to Optimize Voltage Regulation:"
+  },
+  {
+    "location": "html-block:109",
+    "text": "Voltage Level (Bandcenter)",
+    "heading": "Key Features to Optimize Voltage Regulation:"
+  },
+  {
+    "location": "html-block:110",
+    "text": "Voltage Bandwidth",
+    "heading": "Key Features to Optimize Voltage Regulation:"
+  },
+  {
+    "location": "html-block:111",
+    "text": "Voltage Reduction",
+    "heading": "Key Features to Optimize Voltage Regulation:"
+  },
+  {
+    "location": "html-block:112",
+    "text": "Computation Time Delay",
+    "heading": "Key Features to Optimize Voltage Regulation:"
+  },
+  {
+    "location": "html-block:113",
+    "text": "Line Drop Compensation (LDC)",
+    "heading": "Key Features to Optimize Voltage Regulation:"
+  },
+  {
+    "location": "html-block:114",
+    "text": "Reverse Power LDC",
+    "heading": "Key Features to Optimize Voltage Regulation:"
+  },
+  {
+    "location": "html-block:115",
+    "text": "Reverse Power",
+    "heading": "Key Features to Optimize Voltage Regulation:"
+  },
+  {
+    "location": "html-block:116",
+    "text": "Reverse Power Override",
+    "heading": "Key Features to Optimize Voltage Regulation:"
+  },
+  {
+    "location": "html-block:117",
+    "text": "Voltage Runback Limits",
+    "heading": "Key Features to Optimize Voltage Regulation:"
+  },
+  {
+    "location": "html-block:118",
+    "text": "Inhibit Operations",
+    "heading": "Key Features to Optimize Voltage Regulation:"
+  },
+  {
+    "location": "html-block:119",
+    "text": "Overcurrent Inhibit",
+    "heading": "Key Features to Optimize Voltage Regulation:"
+  },
+  {
+    "location": "html-block:120",
+    "text": "Overvoltage Inhibit",
+    "heading": "Key Features to Optimize Voltage Regulation:"
+  },
+  {
+    "location": "html-block:121",
+    "text": "Under-Voltage Inhibit",
+    "heading": "Key Features to Optimize Voltage Regulation:"
+  },
+  {
+    "location": "html-block:122",
+    "text": "Automation"
+  },
+  {
+    "location": "html-block:123",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:124",
+    "text": "Multiple setpoint groups",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:125",
+    "text": "Expandable inputs and outputs for advanced applications",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:126",
+    "text": "Customized automation schemes using FlexLogic™",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:127",
+    "text": "Automation"
+  },
+  {
+    "location": "html-block:128",
+    "text": "The Multilin Voltage Regulator Controller offers powerful I/O and programmable logic (FlexLogic™) options for advanced automation control, reducing the need and costs associated with additional programmable controllers or discrete control devices.",
+    "heading": "Automation"
+  },
+  {
+    "location": "html-block:129",
+    "text": "Set point group control"
+  },
+  {
+    "location": "html-block:130",
+    "text": "The Multilin Voltage Regulator Controller has three identical set point groups. The activation of the group can be done either from the HMI or via a Digital Input.",
+    "heading": "Set point group control"
+  },
+  {
+    "location": "html-block:131",
+    "text": "Virtual Inputs and Outputs"
+  },
+  {
+    "location": "html-block:132",
+    "text": "The Multilin Voltage Regulator Controller provides 32 virtual inputs and 32 virtual outputs that provide users the ability to send commands to the device. The Multilin Voltage Regulator Controller can accept commands from SCADA, through the front HMI, or front USB port to issue commands such as Raise or Lower tap position.",
+    "heading": "Virtual Inputs and Outputs"
+  },
+  {
+    "location": "html-block:133",
+    "text": "Command Setting"
+  },
+  {
+    "location": "html-block:134",
+    "text": "The Multilin Voltage Regulator Controller has the ability to force commands from the menu structure. This can also be achieved via the EnerVista software that runs on a PC. This simulation ensures that the Raise and Lower commands can be safely issued from a distance without using the HMI.",
+    "heading": "Command Setting"
+  },
+  {
+    "location": "html-block:135",
+    "text": "Drag-Hands Reset"
+  },
+  {
+    "location": "html-block:136",
+    "text": "The Drag – Hand Reset provides the ability to reset the Drag hands to the current tap position. Commands can be sent to the Multilin Voltage Regulator Controller to reset the Drag Hand position from the front HMI , from SCADA or through the front panel USB communications.",
+    "heading": "Drag-Hands Reset"
+  },
+  {
+    "location": "html-block:137",
+    "text": "FlexLogic™"
+  },
+  {
+    "location": "html-block:138",
+    "text": "FlexLogic in the Multilin Voltage Regulator Controller, provides the ability to create customized control schemes. This minimizes the need and costs associated with auxiliary components and wiring.",
+    "heading": "FlexLogic™"
+  },
+  {
+    "location": "html-block:139",
+    "text": "Metering & Monitoring"
+  },
+  {
+    "location": "html-block:140",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:141",
+    "text": "Metering - current, voltage, power, frequency, PF, Harmonics",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:142",
+    "text": "Event Recorder - Up to 256 time tagged events",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:143",
+    "text": "Enhanced system diagnostics & reporting",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:144",
+    "text": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:145",
+    "text": "The Multilin Voltage Regulator Controller provides high accuracy metering and recording of AC signals. The following are the parameters that are metered by the Multilin Voltage Regulator Controller",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:146",
+    "text": "Phase-Ground Voltages (kV)",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:147",
+    "text": "Phase to phase Voltages (kV)",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:148",
+    "text": "Line Voltage (kV)",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:149",
+    "text": "Phase A, B, and C currents (A)",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:150",
+    "text": "Line Current (A)",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:151",
+    "text": "Ground Current (A)",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:152",
+    "text": "3-Phase Active power (KW)",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:153",
+    "text": "3-Phase Reactive power (KVar)",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:154",
+    "text": "3-Phase Apparent Power",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:155",
+    "text": "Power Factor (Lag or Lead)",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:156",
+    "text": "2nd to 8th harmonic up to 20% – for current",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:157",
+    "text": "2nd to 8th harmonic up to 20% – for voltage",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:158",
+    "text": "THD in 20% – for current",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:159",
+    "text": "THD in 20% – for voltage",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:160",
+    "text": "These metering data can be easily integrated with a customers’ database and can also be easily viewed in their SCADA or DMS system.",
+    "heading": "Metering & monitoring"
+  },
+  {
+    "location": "html-block:161",
+    "text": "Event recorder"
+  },
+  {
+    "location": "html-block:162",
+    "text": "To significantly reduce time and enable more effective disturbance, post fault analysis and troubleshooting, the Multilin Voltage Regulator Controller provides an integrated event recorder and detailed diagnostic features.",
+    "heading": "Event recorder"
+  },
+  {
+    "location": "html-block:163",
+    "text": "Data Management and Diagnostics"
+  },
+  {
+    "location": "html-block:164",
+    "text": "The advanced disturbance diagnostic features included in the Multilin Voltage Regulator Controller includes recording functions through an enhanced Data Logger with 10 channel RMS recorder, statistics & counters.",
+    "heading": "Data Management and Diagnostics"
+  },
+  {
+    "location": "html-block:165",
+    "text": "Statistics & Counters"
+  },
+  {
+    "location": "html-block:166",
+    "text": "Multilin Voltage Regulator Controller includes two tap changer counters which records the following information:",
+    "heading": "Statistics & Counters"
+  },
+  {
+    "location": "html-block:167",
+    "text": "DAILY TAP OPERATIONS",
+    "heading": "Statistics & Counters"
+  },
+  {
+    "location": "html-block:168",
+    "text": "TOTAL TAP OPERATIONS",
+    "heading": "Statistics & Counters"
+  },
+  {
+    "location": "html-block:169",
+    "text": "The MIN/MAX TAP in the Multilin Voltage Regulator Controller provides information on the lowest (minimum), and the highest (maximum) tap position the tap changer reached during one 24 hour day period.",
+    "heading": "Statistics & Counters"
+  },
+  {
+    "location": "html-block:170",
+    "text": "Advanced Device Health Diagnostics"
+  },
+  {
+    "location": "html-block:171",
+    "text": "A comprehensive device health diagnostic test is performed by the Multilin Voltage Regulator Controller during startup and continuously at runtime to test its own major functions and critical hardware. These diagnostic tests monitor for conditions that could impact the Multilin Voltage Regulator Controller’s performance, evaluate the criticality of this impact and present device status via SCADA communications and front panel display.",
+    "heading": "Advanced Device Health Diagnostics"
+  },
+  {
+    "location": "html-block:172",
+    "text": "Communications"
+  },
+  {
+    "location": "html-block:173",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:174",
+    "text": "Networking Interface",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:175",
+    "text": "- Two Wire RS485",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:176",
+    "text": "- Multiple Protocols (Modbus®, DNP3.0)",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:177",
+    "text": "- Optional wireless communications",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:178",
+    "text": "(radio or cellular)",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:179",
+    "text": "User Interface",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:180",
+    "text": "- Front panel USB port",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:181",
+    "text": "- 4 line HMI Display",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:182",
+    "text": "- 18 System status LED’s",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:183",
+    "text": "- 6 quick setting keys",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:184",
+    "text": "Front panel"
+  },
+  {
+    "location": "html-block:185",
+    "text": "Front Panel Quick Keys"
+  },
+  {
+    "location": "html-block:186",
+    "text": "Front panel quick keys provides direct access to key individual setting parameters",
+    "heading": "Front Panel Quick Keys"
+  },
+  {
+    "location": "html-block:187",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:188",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:189",
+    "text": "4-Level device security to maintain authorized access only",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:190",
+    "text": "Simplified device configuration software tool and industry leading suite of software tools to manage and maintain Multilin devices.",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:191",
+    "text": "Security"
+  },
+  {
+    "location": "html-block:192",
+    "text": "The Multilin Voltage Regulator Controller and associated software tools provide a suite of security features that ensure only approved personnel can make changes to the device configuration or execute operational commands.",
+    "heading": "Security"
+  },
+  {
+    "location": "html-block:193",
+    "text": "Password Security"
+  },
+  {
+    "location": "html-block:194",
+    "text": "The Multilin Voltage Regulator Controller offers multiple levels of password security to limit access control based on settings or command levels. There are four levels of password security provided:",
+    "heading": "Password Security"
+  },
+  {
+    "location": "html-block:195",
+    "text": "Local Settings Access",
+    "heading": "Password Security"
+  },
+  {
+    "location": "html-block:196",
+    "text": "Local Control Access",
+    "heading": "Password Security"
+  },
+  {
+    "location": "html-block:197",
+    "text": "Remote Settings Access",
+    "heading": "Password Security"
+  },
+  {
+    "location": "html-block:198",
+    "text": "Remote Control Access",
+    "heading": "Password Security"
+  },
+  {
+    "location": "html-block:199",
+    "text": "Local Access refers to users making changes using the front USB serial port and the HMI. Remote Access refers to users making changes using the rear RS485 port.",
+    "heading": "Password Security"
+  },
+  {
+    "location": "html-block:200",
+    "text": "Enervista Software"
+  },
+  {
+    "location": "html-block:201",
+    "text": "The EnerVista™ Suite is an industry-leading set of software programs that simplifies every aspect of using the Multilin Voltage Regulator Controller. The EnerVista™ suite provides all the tools to monitor the status of the protected asset, maintain the controller, and integrate information measured by the Multilin Voltage Regulator Controller into SCADA or the DMS monitoring systems. The ability to easily view sequence of events is an integral part of the setup software, as postmortem event analysis is critical to proper system operation.",
+    "heading": "Enervista Software"
+  },
+  {
+    "location": "html-block:202",
+    "text": "Learn More",
+    "heading": "Enervista Software"
+  },
+  {
+    "location": "html-block:203",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:204",
+    "text": "Controllers"
+  },
+  {
+    "location": "html-block:205",
+    "text": "GE Vernova offers an industry-leading suite of controllers that support a variety of...",
+    "heading": "Controllers"
+  },
+  {
+    "location": "html-block:206",
+    "text": "View More",
+    "heading": "Controllers"
+  }
+]

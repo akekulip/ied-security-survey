@@ -1,0 +1,3673 @@
+[
+  {
+    "at": "2026-10-13T18:55:12.463720+00:00",
+    "url": "https://www.gevernova.com/robots.txt",
+    "status": 200,
+    "bytes": 5207,
+    "sha256": "38174ab81da1da9ba9bec5746eb246576af3f2d13361da1fa7a8a9e90ef0dfa8"
+  },
+  {
+    "at": "2026-10-13T18:55:13.666513+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/agile-p24xm-legacy",
+    "status": 200,
+    "bytes": 406204
+  },
+  {
+    "at": "2026-10-13T18:55:14.989334+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/b95plus-legacy",
+    "status": 200,
+    "bytes": 422615
+  },
+  {
+    "at": "2026-10-13T18:55:16.730974+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/bdd-percentage-differential-harmonic-restraint-legacy",
+    "status": 200,
+    "bytes": 385231
+  },
+  {
+    "at": "2026-10-13T18:55:17.920741+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/bitronics-70-series-legacy",
+    "status": 200,
+    "bytes": 389361
+  },
+  {
+    "at": "2026-10-13T18:55:19.113661+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/bitronics-m650-legacy",
+    "status": 200,
+    "bytes": 388456
+  },
+  {
+    "at": "2026-10-13T18:55:20.318368+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/bitronics-m651-legacy",
+    "status": 200,
+    "bytes": 389672
+  },
+  {
+    "at": "2026-10-13T18:55:21.518704+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/bitronics-m653-legacy",
+    "status": 200,
+    "bytes": 390211
+  },
+  {
+    "at": "2026-10-13T18:55:22.730113+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/bitronics-m870d-legacy",
+    "status": 200,
+    "bytes": 386809
+  },
+  {
+    "at": "2026-10-13T18:55:23.924625+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/bitronics-m871-legacy",
+    "status": 200,
+    "bytes": 393307
+  },
+  {
+    "at": "2026-10-13T18:55:25.375109+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/bitronics-m872-legacy",
+    "status": 200,
+    "bytes": 390067
+  },
+  {
+    "at": "2026-10-13T18:55:26.571444+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/bus-protection/hid",
+    "status": 200,
+    "bytes": 393729
+  },
+  {
+    "at": "2026-10-13T18:55:27.769184+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/bus-protection/mcag",
+    "status": 200,
+    "bytes": 393045
+  },
+  {
+    "at": "2026-10-13T18:55:29.268966+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/bus-protection/mfac",
+    "status": 200,
+    "bytes": 392387
+  },
+  {
+    "at": "2026-10-13T18:55:30.476230+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/bus-protection/micom-agile-p746",
+    "status": 200,
+    "bytes": 407336
+  },
+  {
+    "at": "2026-10-13T18:55:31.950656+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/bus-protection/micom-agile-p74x-series",
+    "status": 200,
+    "bytes": 409719
+  },
+  {
+    "at": "2026-10-13T18:55:33.307685+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/bus-protection/multilin-b30",
+    "status": 200,
+    "bytes": 423961
+  },
+  {
+    "at": "2026-10-13T18:55:34.510753+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/bus-protection/multilin-b90",
+    "status": 200,
+    "bytes": 419666
+  },
+  {
+    "at": "2026-10-13T18:55:35.700969+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/bus-protection/mvtp",
+    "status": 200,
+    "bytes": 392125
+  },
+  {
+    "at": "2026-10-13T18:55:37.447028+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/bus10002000-bus-bar-protection-legacy",
+    "status": 200,
+    "bytes": 389229
+  },
+  {
+    "at": "2026-10-13T18:55:38.881841+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/c90plus-legacy",
+    "status": 200,
+    "bytes": 417940
+  },
+  {
+    "at": "2026-10-13T18:55:41.088842+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/capacitor-bank-controller-legacy",
+    "status": 200,
+    "bytes": 420238
+  },
+  {
+    "at": "2026-10-13T18:55:42.566056+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/ceb-offset-mho-directional-distance-legacy",
+    "status": 200,
+    "bytes": 385331
+  },
+  {
+    "at": "2026-10-13T18:55:43.765621+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/ceh-loss-excitation-relay-legacy",
+    "status": 200,
+    "bytes": 385760
+  },
+  {
+    "at": "2026-10-13T18:55:45.271409+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/cex-angle-impedance-relay-legacy",
+    "status": 200,
+    "bytes": 386481
+  },
+  {
+    "at": "2026-10-13T18:55:46.511592+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/cey-reactance-and-mho-phase-directional-distance-legacy",
+    "status": 200,
+    "bytes": 386470
+  },
+  {
+    "at": "2026-10-13T18:55:48.137080+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/ceyg-legacy",
+    "status": 200,
+    "bytes": 386712
+  },
+  {
+    "at": "2026-10-13T18:55:49.337293+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/cfd-high-speed-differential-relay-legacy",
+    "status": 200,
+    "bytes": 385628
+  },
+  {
+    "at": "2026-10-13T18:55:52.420118+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/cfvb-voltage-balance-relay-legacy",
+    "status": 200,
+    "bytes": 385111
+  },
+  {
+    "at": "2026-10-13T18:55:54.471358+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/chc-instantaneous-overcurrent-legacy",
+    "status": 200,
+    "bytes": 385602
+  },
+  {
+    "at": "2026-10-13T18:55:58.619583+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/controllers/micom-c264",
+    "status": 200,
+    "bytes": 394367
+  },
+  {
+    "at": "2026-10-13T18:55:59.810611+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/controllers/multilin-c30",
+    "status": 200,
+    "bytes": 421253
+  },
+  {
+    "at": "2026-10-13T18:56:01.383070+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/controllers/multilin-c60c95",
+    "status": 200,
+    "bytes": 424884
+  },
+  {
+    "at": "2026-10-13T18:56:02.583844+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/controllers/multilin-c650",
+    "status": 200,
+    "bytes": 412031
+  },
+  {
+    "at": "2026-10-13T18:56:03.784769+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/d20200me-substation-controler-legacy",
+    "status": 200,
+    "bytes": 391895
+  },
+  {
+    "at": "2026-10-13T18:56:04.990780+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/d25-legacy",
+    "status": 200,
+    "bytes": 396880
+  },
+  {
+    "at": "2026-10-13T18:56:06.195584+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/dapserver-legacy",
+    "status": 200,
+    "bytes": 396051
+  },
+  {
+    "at": "2026-10-13T18:56:07.397096+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/dar-modular-reclosing-relays",
+    "status": 200,
+    "bytes": 380725
+  },
+  {
+    "at": "2026-10-13T18:56:08.602335+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/dart-legacy",
+    "status": 200,
+    "bytes": 389709
+  },
+  {
+    "at": "2026-10-13T18:56:09.798573+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/dbf-digital-breaker-failure-legacy",
+    "status": 200,
+    "bytes": 388030
+  },
+  {
+    "at": "2026-10-13T18:56:11.009489+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/dbt-digital-breaker-supervision-legacy",
+    "status": 200,
+    "bytes": 388215
+  },
+  {
+    "at": "2026-10-13T18:56:12.202138+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/dff-digital-frequency-relay-legacy",
+    "status": 200,
+    "bytes": 390569
+  },
+  {
+    "at": "2026-10-13T18:56:13.437526+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/dfp100-digital-feeder-relay",
+    "status": 200,
+    "bytes": 382421
+  },
+  {
+    "at": "2026-10-13T18:56:14.631478+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/dfp200-digital-feeder-protection-legacy",
+    "status": 200,
+    "bytes": 383183
+  },
+  {
+    "at": "2026-10-13T18:56:15.837700+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/dgcm-field-rtu-legacy",
+    "status": 200,
+    "bytes": 406618
+  },
+  {
+    "at": "2026-10-13T18:56:17.727864+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/dlpd-digital-line-protection-system",
+    "status": 200,
+    "bytes": 389139
+  },
+  {
+    "at": "2026-10-13T18:56:18.929811+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/drs-legacy",
+    "status": 200,
+    "bytes": 388436
+  },
+  {
+    "at": "2026-10-13T18:56:20.137476+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/ds-agile-h38-legacy",
+    "status": 200,
+    "bytes": 391100
+  },
+  {
+    "at": "2026-10-13T18:56:21.340679+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/dtp-b-digital-transformer-protection",
+    "status": 200,
+    "bytes": 389792
+  },
+  {
+    "at": "2026-10-13T18:56:22.530729+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/dtr-transformer-tap-changer-controller-legacy",
+    "status": 200,
+    "bytes": 386690
+  },
+  {
+    "at": "2026-10-13T18:56:23.728378+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-1000-sub-meter-legacy",
+    "status": 200,
+    "bytes": 390618
+  },
+  {
+    "at": "2026-10-13T18:56:24.920797+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-2000-legacy",
+    "status": 200,
+    "bytes": 388760
+  },
+  {
+    "at": "2026-10-13T18:56:26.107207+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-4000-sub-meter-legacy",
+    "status": 200,
+    "bytes": 399417
+  },
+  {
+    "at": "2026-10-13T18:56:27.307747+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-5100-legacy",
+    "status": 200,
+    "bytes": 393210
+  },
+  {
+    "at": "2026-10-13T18:56:28.502688+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-5200-power-metering-system",
+    "status": 200,
+    "bytes": 398422
+  },
+  {
+    "at": "2026-10-13T18:56:29.706244+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-5300-legacy",
+    "status": 200,
+    "bytes": 389280
+  },
+  {
+    "at": "2026-10-13T18:56:30.909123+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-5350-legacy",
+    "status": 200,
+    "bytes": 389338
+  },
+  {
+    "at": "2026-10-13T18:56:32.318325+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-6100-legacy",
+    "status": 200,
+    "bytes": 406467
+  },
+  {
+    "at": "2026-10-13T18:56:33.528171+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-7000-power-quality-meter",
+    "status": 200,
+    "bytes": 433310
+  },
+  {
+    "at": "2026-10-13T18:56:34.726117+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-7000p",
+    "status": 200,
+    "bytes": 432371
+  },
+  {
+    "at": "2026-10-13T18:56:37.188276+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-7100-legacy",
+    "status": 200,
+    "bytes": 412042
+  },
+  {
+    "at": "2026-10-13T18:56:38.389538+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-9450-legacy",
+    "status": 200,
+    "bytes": 409326
+  },
+  {
+    "at": "2026-10-13T18:56:39.586919+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-9650-legacy",
+    "status": 200,
+    "bytes": 408834
+  },
+  {
+    "at": "2026-10-13T18:56:40.778716+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-9700",
+    "status": 200,
+    "bytes": 412393
+  },
+  {
+    "at": "2026-10-13T18:56:41.970510+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-9800-legacy",
+    "status": 200,
+    "bytes": 400252
+  },
+  {
+    "at": "2026-10-13T18:56:43.763881+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-9900-advanced-power-quality-meter-legacy",
+    "status": 200,
+    "bytes": 404476
+  },
+  {
+    "at": "2026-10-13T18:56:44.953591+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-9900p",
+    "status": 200,
+    "bytes": 435106
+  },
+  {
+    "at": "2026-10-13T18:56:46.162467+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/feeder-protection/agile-p153",
+    "status": 200,
+    "bytes": 389576
+  },
+  {
+    "at": "2026-10-13T18:56:47.362961+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/feeder-protection/agile-p154",
+    "status": 200,
+    "bytes": 392600
+  },
+  {
+    "at": "2026-10-13T18:56:48.570014+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/feeder-protection/agile-p15d",
+    "status": 200,
+    "bytes": 392320
+  },
+  {
+    "at": "2026-10-13T18:56:49.778698+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/feeder-protection/multilin-350",
+    "status": 200,
+    "bytes": 425941
+  },
+  {
+    "at": "2026-10-13T18:56:50.979723+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/feeder-protection/multilin-850",
+    "status": 200,
+    "bytes": 435721
+  },
+  {
+    "at": "2026-10-13T18:56:52.180151+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/feeder-protection/multilin-f35",
+    "status": 200,
+    "bytes": 425884
+  },
+  {
+    "at": "2026-10-13T18:56:53.383728+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/feeder-protection/multilin-f60",
+    "status": 200,
+    "bytes": 425754
+  },
+  {
+    "at": "2026-10-13T18:56:55.284471+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/feeder-protection/multilin-f650",
+    "status": 200,
+    "bytes": 413680
+  },
+  {
+    "at": "2026-10-13T18:56:56.482880+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/feeder-protection/p40-agile-p14n-p14d-p94v",
+    "status": 200,
+    "bytes": 435230
+  },
+  {
+    "at": "2026-10-13T18:56:57.683277+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/feeder-protection/p84-micom-5th-generation",
+    "status": 200,
+    "bytes": 407371
+  },
+  {
+    "at": "2026-10-13T18:56:58.883871+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/g650-legacy",
+    "status": 200,
+    "bytes": 391871
+  },
+  {
+    "at": "2026-10-13T18:57:00.087658+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/gateways-rtus/multilin-d20e",
+    "status": 200,
+    "bytes": 392850
+  },
+  {
+    "at": "2026-10-13T18:57:01.324626+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/gateways-rtus/multilintm-g100",
+    "status": 200,
+    "bytes": 390490
+  },
+  {
+    "at": "2026-10-13T18:57:02.514691+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/gateways-rtus/multilintm-g500",
+    "status": 200,
+    "bytes": 391720
+  },
+  {
+    "at": "2026-10-13T18:57:03.705180+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/gcx-phase-packaged-directional-distance-relay-legacy",
+    "status": 200,
+    "bytes": 386733
+  },
+  {
+    "at": "2026-10-13T18:57:04.982756+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/gcy-phase-packaged-directional-distance-relay-legacy",
+    "status": 200,
+    "bytes": 386307
+  },
+  {
+    "at": "2026-10-13T18:57:06.183046+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/gdc-current-detecting-relay-legacy",
+    "status": 200,
+    "bytes": 379713
+  },
+  {
+    "at": "2026-10-13T18:57:07.512534+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/generator-protection/gpm-f-field-ground-protection-module",
+    "status": 200,
+    "bytes": 398700
+  },
+  {
+    "at": "2026-10-13T18:57:08.702357+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/generator-protection/gpm-s",
+    "status": 200,
+    "bytes": 398345
+  },
+  {
+    "at": "2026-10-13T18:57:09.896533+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/generator-protection/micom-agile-p34x",
+    "status": 200,
+    "bytes": 414798
+  },
+  {
+    "at": "2026-10-13T18:57:11.106246+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/generator-protection/multilin-889",
+    "status": 200,
+    "bytes": 431386
+  },
+  {
+    "at": "2026-10-13T18:57:12.297822+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/generator-protection/multilin-g60",
+    "status": 200,
+    "bytes": 428031
+  },
+  {
+    "at": "2026-10-13T18:57:13.801146+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/gsy-mho-distance-relay-legacy",
+    "status": 200,
+    "bytes": 386073
+  },
+  {
+    "at": "2026-10-13T18:57:15.182295+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/gxs-automatic-synchronizing-relay-legacy",
+    "status": 200,
+    "bytes": 385891
+  },
+  {
+    "at": "2026-10-13T18:57:16.386666+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/hfc-instantaneous-overcurrent-relay-legacy",
+    "status": 200,
+    "bytes": 385587
+  },
+  {
+    "at": "2026-10-13T18:57:17.583286+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/ibcibcg-directional-overcurrent-relay-legacy",
+    "status": 200,
+    "bytes": 387279
+  },
+  {
+    "at": "2026-10-13T18:57:18.785108+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/iboxtm-legacy",
+    "status": 200,
+    "bytes": 393122
+  },
+  {
+    "at": "2026-10-13T18:57:19.986557+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/icr-phase-sequence-and-undervoltage-legacy",
+    "status": 200,
+    "bytes": 385164
+  },
+  {
+    "at": "2026-10-13T18:57:21.187590+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/icw-power-directional-protection-relay-legacy",
+    "status": 200,
+    "bytes": 385503
+  },
+  {
+    "at": "2026-10-13T18:57:22.380468+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/ifcs-tocvoltage-control-relay-legacy",
+    "status": 200,
+    "bytes": 384954
+  },
+  {
+    "at": "2026-10-13T18:57:23.581118+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/ifv-time-delay-voltage-relay-legacy",
+    "status": 200,
+    "bytes": 385353
+  },
+  {
+    "at": "2026-10-13T18:57:24.783797+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/ijc-current-balance-relay",
+    "status": 200,
+    "bytes": 386257
+  },
+  {
+    "at": "2026-10-13T18:57:25.982921+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/ijd-percentage-differential-relay-legacy",
+    "status": 200,
+    "bytes": 386319
+  },
+  {
+    "at": "2026-10-13T18:57:27.169423+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/ijs-synchronism-check-relay-legacy",
+    "status": 200,
+    "bytes": 385529
+  },
+  {
+    "at": "2026-10-13T18:57:28.367706+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/istat-m355-legacy",
+    "status": 200,
+    "bytes": 390125
+  },
+  {
+    "at": "2026-10-13T18:57:29.569087+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/jbcjbcgjbcv-phase-and-ground-overcurrent-relay-legacy",
+    "status": 200,
+    "bytes": 386389
+  },
+  {
+    "at": "2026-10-13T18:57:30.771797+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/k-series-legacy",
+    "status": 200,
+    "bytes": 393072
+  },
+  {
+    "at": "2026-10-13T18:57:31.968530+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/kavr-series-legacy",
+    "status": 200,
+    "bytes": 385126
+  },
+  {
+    "at": "2026-10-13T18:57:33.167711+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/kavs-legacy",
+    "status": 200,
+    "bytes": 385681
+  },
+  {
+    "at": "2026-10-13T18:57:34.363856+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/kitz10x-legacy",
+    "status": 200,
+    "bytes": 390615
+  },
+  {
+    "at": "2026-10-13T18:57:35.574874+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/kvtr-legacy",
+    "status": 200,
+    "bytes": 384644
+  },
+  {
+    "at": "2026-10-13T18:57:36.769572+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/line-protection/micom-agile-p441-p442-p444",
+    "status": 200,
+    "bytes": 416106
+  },
+  {
+    "at": "2026-10-13T18:57:37.969463+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/line-protection/micom-agile-p44t",
+    "status": 200,
+    "bytes": 411818
+  },
+  {
+    "at": "2026-10-13T18:57:39.479045+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/line-protection/micom-agile-p543-p544-p545-p546",
+    "status": 200,
+    "bytes": 416416
+  },
+  {
+    "at": "2026-10-13T18:57:40.882052+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/line-protection/micom-agile-p54a-p54b-p54c-p54e",
+    "status": 200,
+    "bytes": 422456
+  },
+  {
+    "at": "2026-10-13T18:57:42.206460+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/line-protection/micom-agile-p59123",
+    "status": 200,
+    "bytes": 391615
+  },
+  {
+    "at": "2026-10-13T18:57:43.407034+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/line-protection/micomho-agile-p443-p445-p446",
+    "status": 200,
+    "bytes": 415597
+  },
+  {
+    "at": "2026-10-13T18:57:45.117713+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/line-protection/multilin-c70",
+    "status": 200,
+    "bytes": 423598
+  },
+  {
+    "at": "2026-10-13T18:57:46.437581+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/line-protection/multilin-d30",
+    "status": 200,
+    "bytes": 427963
+  },
+  {
+    "at": "2026-10-13T18:57:47.719069+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/line-protection/multilin-d60",
+    "status": 200,
+    "bytes": 429518
+  },
+  {
+    "at": "2026-10-13T18:57:49.055910+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/line-protection/multilin-l30",
+    "status": 200,
+    "bytes": 430615
+  },
+  {
+    "at": "2026-10-13T18:57:50.468763+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/line-protection/multilin-l60",
+    "status": 200,
+    "bytes": 426761
+  },
+  {
+    "at": "2026-10-13T18:57:52.231561+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/line-protection/multilin-l90",
+    "status": 200,
+    "bytes": 433326
+  },
+  {
+    "at": "2026-10-13T18:57:54.133535+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/line-protection/p44-micom-5th-generation",
+    "status": 200,
+    "bytes": 417095
+  },
+  {
+    "at": "2026-10-13T18:57:55.558550+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/lps-line-protection-system-legacy",
+    "status": 200,
+    "bytes": 392214
+  },
+  {
+    "at": "2026-10-13T18:57:56.762372+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/lps-o-generator-backupout-step-protection-legacy",
+    "status": 200,
+    "bytes": 392160
+  },
+  {
+    "at": "2026-10-13T18:57:57.953135+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/m-family-modular-microprocessor-relays-legacy",
+    "status": 200,
+    "bytes": 388359
+  },
+  {
+    "at": "2026-10-13T18:57:59.145947+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/mbci-mcri-mrtp-and-mvtw-legacy",
+    "status": 200,
+    "bytes": 393616
+  },
+  {
+    "at": "2026-10-13T18:58:00.357132+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/mcp-digital-capacitor-bank-protection-legacy",
+    "status": 200,
+    "bytes": 381268
+  },
+  {
+    "at": "2026-10-13T18:58:01.550138+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/metering/epm-2200-digital-power-meter",
+    "status": 200,
+    "bytes": 413243
+  },
+  {
+    "at": "2026-10-13T18:58:02.756073+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/metering/epm-4600-power-meter",
+    "status": 200,
+    "bytes": 418064
+  },
+  {
+    "at": "2026-10-13T18:58:03.954745+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/metering/epm-6000-power-meter",
+    "status": 200,
+    "bytes": 421951
+  },
+  {
+    "at": "2026-10-13T18:58:05.923086+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/metering/epm-6010",
+    "status": 200,
+    "bytes": 424240
+  },
+  {
+    "at": "2026-10-13T18:58:09.619491+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/metering/istat-i400",
+    "status": 200,
+    "bytes": 422005
+  },
+  {
+    "at": "2026-10-13T18:58:12.342491+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/metering/istat-i4mx",
+    "status": 200,
+    "bytes": 393123
+  },
+  {
+    "at": "2026-10-13T18:58:14.211233+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/metering/istat-i500",
+    "status": 200,
+    "bytes": 397081
+  },
+  {
+    "at": "2026-10-13T18:58:15.407118+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/metering/istat-m2x2",
+    "status": 200,
+    "bytes": 392887
+  },
+  {
+    "at": "2026-10-13T18:58:16.625387+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/metering/istat-m2x3",
+    "status": 200,
+    "bytes": 394048
+  },
+  {
+    "at": "2026-10-13T18:58:17.838554+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/metering/istat-m365",
+    "status": 200,
+    "bytes": 419937
+  },
+  {
+    "at": "2026-10-13T18:58:19.433455+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/metering/qdsp",
+    "status": 200,
+    "bytes": 387020
+  },
+  {
+    "at": "2026-10-13T18:58:20.625476+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/mff-digital-frequency-relay-legacy",
+    "status": 200,
+    "bytes": 383506
+  },
+  {
+    "at": "2026-10-13T18:58:21.838811+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/mgc-digital-generator-protection-relay",
+    "status": 200,
+    "bytes": 383824
+  },
+  {
+    "at": "2026-10-13T18:58:23.041799+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/mib-high-impedance-busbar-differential-relay",
+    "status": 200,
+    "bytes": 394916
+  },
+  {
+    "at": "2026-10-13T18:58:24.238811+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/mic-digital-overcurrent-relay-legacy",
+    "status": 200,
+    "bytes": 385579
+  },
+  {
+    "at": "2026-10-13T18:58:25.439710+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/micom-agile-p24x-legacy",
+    "status": 200,
+    "bytes": 411689
+  },
+  {
+    "at": "2026-10-13T18:58:26.640946+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/micom-agile-p341-legacy",
+    "status": 200,
+    "bytes": 399109
+  },
+  {
+    "at": "2026-10-13T18:58:28.097858+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/micom-agile-p541-p542-legacy",
+    "status": 200,
+    "bytes": 398742
+  },
+  {
+    "at": "2026-10-13T18:58:29.298511+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/micom-agile-p547-legacy",
+    "status": 200,
+    "bytes": 397095
+  },
+  {
+    "at": "2026-10-13T18:58:30.508307+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/micom-agile-p747",
+    "status": 200,
+    "bytes": 406395
+  },
+  {
+    "at": "2026-10-13T18:58:32.563263+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/micom-agile-p841-legacy",
+    "status": 200,
+    "bytes": 394851
+  },
+  {
+    "at": "2026-10-13T18:58:33.795054+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/micom-agile-p842-legacy",
+    "status": 200,
+    "bytes": 393958
+  },
+  {
+    "at": "2026-10-13T18:58:35.315654+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/micom-agile-p847-legacy",
+    "status": 200,
+    "bytes": 403249
+  },
+  {
+    "at": "2026-10-13T18:58:36.515892+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/mid-digital-distribution-system-family",
+    "status": 200,
+    "bytes": 392974
+  },
+  {
+    "at": "2026-10-13T18:58:37.703846+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/mif-ii-legacy",
+    "status": 200,
+    "bytes": 393190
+  },
+  {
+    "at": "2026-10-13T18:58:38.908970+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/mif-legacy",
+    "status": 200,
+    "bytes": 392560
+  },
+  {
+    "at": "2026-10-13T18:58:40.107979+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/mig-machine-protection-relay-legacy",
+    "status": 200,
+    "bytes": 391468
+  },
+  {
+    "at": "2026-10-13T18:58:41.309039+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/migii-generator-protection-system-legacy",
+    "status": 200,
+    "bytes": 391169
+  },
+  {
+    "at": "2026-10-13T18:58:42.502057+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/min-digital-ground-protection-legacy",
+    "status": 200,
+    "bytes": 392165
+  },
+  {
+    "at": "2026-10-13T18:58:43.708915+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/min-ii-legacy",
+    "status": 200,
+    "bytes": 393088
+  },
+  {
+    "at": "2026-10-13T18:58:44.908630+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/miv-ii-legacy",
+    "status": 200,
+    "bytes": 393486
+  },
+  {
+    "at": "2026-10-13T18:58:46.117398+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/miv-voltagefrequency-m-family-relay-legacy",
+    "status": 200,
+    "bytes": 391961
+  },
+  {
+    "at": "2026-10-13T18:58:47.311670+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/miw-directional-powerloss-field-legacy",
+    "status": 200,
+    "bytes": 390882
+  },
+  {
+    "at": "2026-10-13T18:58:48.506863+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/miw-ii-directional-power-protection-system",
+    "status": 200,
+    "bytes": 393080
+  },
+  {
+    "at": "2026-10-13T18:58:49.711378+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/mlj-digital-synchronism-check-relay-legacy",
+    "status": 200,
+    "bytes": 385565
+  },
+  {
+    "at": "2026-10-13T18:58:50.912237+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/mlp-digital-distance-protection",
+    "status": 200,
+    "bytes": 385787
+  },
+  {
+    "at": "2026-10-13T18:58:52.109457+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/mm2-intelligent-mcc-controller-legacy",
+    "status": 200,
+    "bytes": 391634
+  },
+  {
+    "at": "2026-10-13T18:58:53.308311+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/mm200-legacy",
+    "status": 200,
+    "bytes": 406303
+  },
+  {
+    "at": "2026-10-13T18:58:54.730234+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/mm3-intelligent-mcc-controller-legacy",
+    "status": 200,
+    "bytes": 391104
+  },
+  {
+    "at": "2026-10-13T18:58:55.930378+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/mmc-digital-motor-protection-relay",
+    "status": 200,
+    "bytes": 381360
+  },
+  {
+    "at": "2026-10-13T18:58:57.130191+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/motor-protection/agile-p253",
+    "status": 200,
+    "bytes": 391347
+  },
+  {
+    "at": "2026-10-13T18:58:58.330642+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/motor-protection/mm300",
+    "status": 200,
+    "bytes": 424919
+  },
+  {
+    "at": "2026-10-13T18:58:59.529595+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/motor-protection/multilin-339",
+    "status": 200,
+    "bytes": 422000
+  },
+  {
+    "at": "2026-10-13T18:59:00.718910+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/motor-protection/multilin-859",
+    "status": 200,
+    "bytes": 422877
+  },
+  {
+    "at": "2026-10-13T18:59:01.917447+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/motor-protection/multilin-869",
+    "status": 200,
+    "bytes": 437438
+  },
+  {
+    "at": "2026-10-13T18:59:03.119383+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/motor-protection/multilin-agile-motor-p24nd-protection",
+    "status": 200,
+    "bytes": 414993
+  },
+  {
+    "at": "2026-10-13T18:59:04.315126+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/motor-protection/multilin-m60",
+    "status": 200,
+    "bytes": 425202
+  },
+  {
+    "at": "2026-10-13T18:59:05.731031+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/motor-protection/rmio-remote-module-io",
+    "status": 200,
+    "bytes": 393355
+  },
+  {
+    "at": "2026-10-13T18:59:07.143449+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/motor-protection/rrtd-remote-rtd-module",
+    "status": 200,
+    "bytes": 386187
+  },
+  {
+    "at": "2026-10-13T18:59:08.353236+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/mov-digital-multifunction-protective-relay-legacy",
+    "status": 200,
+    "bytes": 385794
+  },
+  {
+    "at": "2026-10-13T18:59:09.553035+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/mpm-motor-protection-meter",
+    "status": 200,
+    "bytes": 387362
+  },
+  {
+    "at": "2026-10-13T18:59:10.748947+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/mrs-transmission-line-reclosing-system-legacy",
+    "status": 200,
+    "bytes": 383474
+  },
+  {
+    "at": "2026-10-13T18:59:12.225793+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-369-legacy",
+    "status": 200,
+    "bytes": 411915
+  },
+  {
+    "at": "2026-10-13T18:59:13.833634+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-469-legacy",
+    "status": 200,
+    "bytes": 414609
+  },
+  {
+    "at": "2026-10-13T18:59:15.031784+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-489-legacy",
+    "status": 200,
+    "bytes": 413802
+  },
+  {
+    "at": "2026-10-13T18:59:20.270438+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-745-legacy",
+    "status": 200,
+    "bytes": 414301
+  },
+  {
+    "at": "2026-10-13T18:59:21.952503+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-750760-legacy",
+    "status": 200,
+    "bytes": 419101
+  },
+  {
+    "at": "2026-10-13T18:59:23.183095+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-8-series",
+    "status": 200,
+    "bytes": 414223
+  },
+  {
+    "at": "2026-10-13T18:59:24.383980+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-850r-legacy",
+    "status": 200,
+    "bytes": 418737
+  },
+  {
+    "at": "2026-10-13T18:59:25.587922+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-a60-legacy",
+    "status": 200,
+    "bytes": 404518
+  },
+  {
+    "at": "2026-10-13T18:59:26.788379+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-d20mx-substation-controller-legacy",
+    "status": 200,
+    "bytes": 410511
+  },
+  {
+    "at": "2026-10-13T18:59:27.984739+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-d400-legacy",
+    "status": 200,
+    "bytes": 432707
+  },
+  {
+    "at": "2026-10-13T18:59:29.200111+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-dgcr-legacy",
+    "status": 200,
+    "bytes": 412630
+  },
+  {
+    "at": "2026-10-13T18:59:30.934985+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-g30-legacy",
+    "status": 200,
+    "bytes": 423003
+  },
+  {
+    "at": "2026-10-13T18:59:32.225172+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-h500-legacy",
+    "status": 200,
+    "bytes": 390588
+  },
+  {
+    "at": "2026-10-13T18:59:33.422764+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-p30-legacy",
+    "status": 200,
+    "bytes": 410778
+  },
+  {
+    "at": "2026-10-13T18:59:34.724422+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-r650-legacy",
+    "status": 200,
+    "bytes": 409407
+  },
+  {
+    "at": "2026-10-13T18:59:35.930093+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-switch-controller-legacy",
+    "status": 200,
+    "bytes": 413331
+  },
+  {
+    "at": "2026-10-13T18:59:37.128239+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-ur-family",
+    "status": 200,
+    "bytes": 440386
+  },
+  {
+    "at": "2026-10-13T18:59:38.662592+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-voltage-regulator-controller-legacy",
+    "status": 200,
+    "bytes": 417916
+  },
+  {
+    "at": "2026-10-13T18:59:39.864884+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/nbt-breaker-trip-circuit-supervision",
+    "status": 200,
+    "bytes": 382495
+  },
+  {
+    "at": "2026-10-13T18:59:41.071022+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/nbv-voltage-unbalance-relay-legacy",
+    "status": 200,
+    "bytes": 385442
+  },
+  {
+    "at": "2026-10-13T18:59:42.278827+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/p14x",
+    "status": 200,
+    "bytes": 414089
+  },
+  {
+    "at": "2026-10-13T18:59:43.675179+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/p161-p162-p163-legacy",
+    "status": 200,
+    "bytes": 393214
+  },
+  {
+    "at": "2026-10-13T18:59:44.877473+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/p54-micom-5th-generation",
+    "status": 200,
+    "bytes": 417295
+  },
+  {
+    "at": "2026-10-13T18:59:46.087943+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/p891",
+    "status": 200,
+    "bytes": 387619
+  },
+  {
+    "at": "2026-10-13T18:59:47.289190+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/pjc-instantaneous-overcurrent-relay-legacy",
+    "status": 200,
+    "bytes": 383602
+  },
+  {
+    "at": "2026-10-13T18:59:48.488618+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/pjg-machine-field-ground-relay-legacy",
+    "status": 200,
+    "bytes": 386421
+  },
+  {
+    "at": "2026-10-13T18:59:49.687148+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/pjv-instantaneous-voltage-relay-legacy",
+    "status": 200,
+    "bytes": 384931
+  },
+  {
+    "at": "2026-10-13T18:59:50.970128+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/ppqm-portable-power-quality-meter-legacy",
+    "status": 200,
+    "bytes": 389825
+  },
+  {
+    "at": "2026-10-13T18:59:52.183365+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/pqm-ii",
+    "status": 200,
+    "bytes": 399296
+  },
+  {
+    "at": "2026-10-13T18:59:53.375471+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/pqm-legacy",
+    "status": 200,
+    "bytes": 391706
+  },
+  {
+    "at": "2026-10-13T18:59:54.697039+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/sbc-static-breaker-backup-relays-legacy",
+    "status": 200,
+    "bytes": 385631
+  },
+  {
+    "at": "2026-10-13T18:59:55.891954+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/sff-static-digital-frequency-relay-legacy",
+    "status": 200,
+    "bytes": 385713
+  },
+  {
+    "at": "2026-10-13T18:59:57.093225+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/sgc-negative-sequence-overcurrent-legacy",
+    "status": 200,
+    "bytes": 386784
+  },
+  {
+    "at": "2026-10-13T18:59:58.289133+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/single-function/ggp-power-directional-relays",
+    "status": 200,
+    "bytes": 383614
+  },
+  {
+    "at": "2026-10-13T18:59:59.495070+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/single-function/iac-time-overcurrent-relay",
+    "status": 200,
+    "bytes": 391693
+  },
+  {
+    "at": "2026-10-13T19:00:00.695163+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/single-function/iav-time-delay-voltage-relay",
+    "status": 200,
+    "bytes": 389920
+  },
+  {
+    "at": "2026-10-13T19:00:02.471502+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/single-function/ifc-time-overcurrent-relay",
+    "status": 200,
+    "bytes": 389555
+  },
+  {
+    "at": "2026-10-13T19:00:03.801854+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/single-function/ifcv-toc-relay-voltage-restraint",
+    "status": 200,
+    "bytes": 385685
+  },
+  {
+    "at": "2026-10-13T19:00:05.000727+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/single-function/ngv-voltage-relay",
+    "status": 200,
+    "bytes": 385038
+  },
+  {
+    "at": "2026-10-13T19:00:06.367444+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/single-function/pvd-differential-voltage-relay",
+    "status": 200,
+    "bytes": 387239
+  },
+  {
+    "at": "2026-10-13T19:00:07.568177+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/single-function/sbd-differential-voltage-relay",
+    "status": 200,
+    "bytes": 386015
+  },
+  {
+    "at": "2026-10-13T19:00:08.773402+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/slj-static-synchronism-check-relay-legacy",
+    "status": 200,
+    "bytes": 385125
+  },
+  {
+    "at": "2026-10-13T19:00:09.968008+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/smor-b-legacy",
+    "status": 200,
+    "bytes": 389858
+  },
+  {
+    "at": "2026-10-13T19:00:11.165593+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/spm-legacy",
+    "status": 200,
+    "bytes": 388813
+  },
+  {
+    "at": "2026-10-13T19:00:12.361192+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/sr-family-legacy",
+    "status": 200,
+    "bytes": 389766
+  },
+  {
+    "at": "2026-10-13T19:00:13.566938+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/std-percentage-differential-harmonic-restraint-legacy",
+    "status": 200,
+    "bytes": 387791
+  },
+  {
+    "at": "2026-10-13T19:00:14.965677+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/stv-overexcitation-relay-legacy",
+    "status": 200,
+    "bytes": 386659
+  },
+  {
+    "at": "2026-10-13T19:00:16.158982+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/tccv-directional-overcurrent-relay-legacy",
+    "status": 200,
+    "bytes": 381686
+  },
+  {
+    "at": "2026-10-13T19:00:17.357782+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/tcw-modular-power-reversal-relay-legacy",
+    "status": 200,
+    "bytes": 380540
+  },
+  {
+    "at": "2026-10-13T19:00:18.547931+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/tmedic-legacy",
+    "status": 200,
+    "bytes": 389360
+  },
+  {
+    "at": "2026-10-13T19:00:19.756080+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/tov-modular-voltage-relay-legacy",
+    "status": 200,
+    "bytes": 384524
+  },
+  {
+    "at": "2026-10-13T19:00:20.962418+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/transformer-protection/agile-p652",
+    "status": 200,
+    "bytes": 391738
+  },
+  {
+    "at": "2026-10-13T19:00:22.156501+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/transformer-protection/multilin-345",
+    "status": 200,
+    "bytes": 412728
+  },
+  {
+    "at": "2026-10-13T19:00:24.306432+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/transformer-protection/multilin-845",
+    "status": 200,
+    "bytes": 431321
+  },
+  {
+    "at": "2026-10-13T19:00:30.537312+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/transformer-protection/multilin-t35",
+    "status": 200,
+    "bytes": 423157
+  },
+  {
+    "at": "2026-10-13T19:00:31.813340+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/transformer-protection/multilin-t60",
+    "status": 200,
+    "bytes": 430618
+  },
+  {
+    "at": "2026-10-13T19:00:33.184168+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/transformer-protection/p64-micom-5th-generation",
+    "status": 200,
+    "bytes": 410946
+  },
+  {
+    "at": "2026-10-13T19:00:34.385652+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/transformer-protection/p64x-gen4",
+    "status": 200,
+    "bytes": 410898
+  },
+  {
+    "at": "2026-10-13T19:00:35.601273+00:00",
+    "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/w650-wind-generator-protection-system-legacy",
+    "status": 200,
+    "bytes": 393184
+  },
+  {
+    "at": "2026-10-13T19:00:36.245159+00:00",
+    "url": "https://www.siemens.com/robots.txt",
+    "status": 200,
+    "bytes": 130,
+    "sha256": "6431c135b6bc319415db219c33e76ddcfb612b4330f21a982a15ee85edeb91aa"
+  },
+  {
+    "at": "2026-10-13T19:00:37.450381+00:00",
+    "url": "https://www.siemens.com/en-us/products/reyrolle/7sg68/",
+    "status": 200,
+    "bytes": 166920
+  },
+  {
+    "at": "2026-10-13T19:00:38.654471+00:00",
+    "url": "https://www.siemens.com/en-us/products/reyrolle/7sr10/",
+    "status": 200,
+    "bytes": 153793
+  },
+  {
+    "at": "2026-10-13T19:00:39.847366+00:00",
+    "url": "https://www.siemens.com/en-us/products/reyrolle/7sr105/",
+    "status": 200,
+    "bytes": 151895
+  },
+  {
+    "at": "2026-10-13T19:00:41.047180+00:00",
+    "url": "https://www.siemens.com/en-us/products/reyrolle/7sr110/",
+    "status": 200,
+    "bytes": 151944
+  },
+  {
+    "at": "2026-10-13T19:00:42.259311+00:00",
+    "url": "https://www.siemens.com/en-us/products/reyrolle/7sr119/",
+    "status": 200,
+    "bytes": 152802
+  },
+  {
+    "at": "2026-10-13T19:00:43.458462+00:00",
+    "url": "https://www.siemens.com/en-us/products/reyrolle/7sr120/",
+    "status": 200,
+    "bytes": 154055
+  },
+  {
+    "at": "2026-10-13T19:00:44.666399+00:00",
+    "url": "https://www.siemens.com/en-us/products/reyrolle/7sr157/",
+    "status": 200,
+    "bytes": 151701
+  },
+  {
+    "at": "2026-10-13T19:00:45.862073+00:00",
+    "url": "https://www.siemens.com/en-us/products/reyrolle/7sr158/",
+    "status": 200,
+    "bytes": 151847
+  },
+  {
+    "at": "2026-10-13T19:00:47.074251+00:00",
+    "url": "https://www.siemens.com/en-us/products/reyrolle/7sr17/",
+    "status": 301,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:00:48.266157+00:00",
+    "url": "https://www.siemens.com/en-us/products/reyrolle/",
+    "status": 200,
+    "bytes": 128714
+  },
+  {
+    "at": "2026-10-13T19:00:49.475233+00:00",
+    "url": "https://www.siemens.com/en-us/products/reyrolle/7sr18/",
+    "status": 200,
+    "bytes": 153251
+  },
+  {
+    "at": "2026-10-13T19:00:50.683242+00:00",
+    "url": "https://www.siemens.com/en-us/products/reyrolle/7sr191/",
+    "status": 200,
+    "bytes": 153041
+  },
+  {
+    "at": "2026-10-13T19:00:51.888019+00:00",
+    "url": "https://www.siemens.com/en-us/products/reyrolle/7sr210/",
+    "status": 301,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:00:53.127355+00:00",
+    "url": "https://www.siemens.com/en-us/products/reyrolle/",
+    "status": 200,
+    "bytes": 128714
+  },
+  {
+    "at": "2026-10-13T19:00:54.328156+00:00",
+    "url": "https://www.siemens.com/en-us/products/reyrolle/7sr220/",
+    "status": 301,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:00:55.520592+00:00",
+    "url": "https://www.siemens.com/en-us/products/reyrolle/",
+    "status": 200,
+    "bytes": 128714
+  },
+  {
+    "at": "2026-10-13T19:00:56.729693+00:00",
+    "url": "https://www.siemens.com/en-us/products/reyrolle/7sr224/",
+    "status": 301,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:00:57.930861+00:00",
+    "url": "https://www.siemens.com/en-us/products/reyrolle/",
+    "status": 200,
+    "bytes": 128714
+  },
+  {
+    "at": "2026-10-13T19:00:59.134760+00:00",
+    "url": "https://www.siemens.com/en-us/products/reyrolle/7sr23/",
+    "status": 200,
+    "bytes": 153037
+  },
+  {
+    "at": "2026-10-13T19:01:00.332222+00:00",
+    "url": "https://www.siemens.com/en-us/products/reyrolle/7sr242/",
+    "status": 301,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:01:01.533207+00:00",
+    "url": "https://www.siemens.com/en-us/products/reyrolle/",
+    "status": 200,
+    "bytes": 128714
+  },
+  {
+    "at": "2026-10-13T19:01:02.743027+00:00",
+    "url": "https://www.siemens.com/en-us/products/reyrolle/7sr45/",
+    "status": 200,
+    "bytes": 153299
+  },
+  {
+    "at": "2026-10-13T19:01:03.946880+00:00",
+    "url": "https://www.siemens.com/en-us/products/reyrolle/7sr46/",
+    "status": 200,
+    "bytes": 152674
+  },
+  {
+    "at": "2026-10-13T19:01:05.143510+00:00",
+    "url": "https://www.siemens.com/en-us/products/reyrolle/7sr51/",
+    "status": 200,
+    "bytes": 152447
+  },
+  {
+    "at": "2026-10-13T19:01:06.356783+00:00",
+    "url": "https://www.siemens.com/en-us/products/reyrolle/7sr54/",
+    "status": 200,
+    "bytes": 153791
+  },
+  {
+    "at": "2026-10-13T19:01:07.550954+00:00",
+    "url": "https://www.siemens.com/en-us/products/reyrolle/7sr57/",
+    "status": 200,
+    "bytes": 153495
+  },
+  {
+    "at": "2026-10-13T19:01:08.751323+00:00",
+    "url": "https://www.siemens.com/en-us/products/sentron/measuring-devices/",
+    "status": 200,
+    "bytes": 214420
+  },
+  {
+    "at": "2026-10-13T19:01:09.966498+00:00",
+    "url": "https://www.siemens.com/en-us/products/sentron/sentron-measuring-devices/",
+    "status": 301,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:01:11.160001+00:00",
+    "url": "https://www.siemens.com/en-us/products/sentron/measuring-devices/",
+    "status": 200,
+    "bytes": 215532
+  },
+  {
+    "at": "2026-10-13T19:01:12.363459+00:00",
+    "url": "https://www.siemens.com/en-us/products/sicam/a8000-cp-8050/",
+    "status": 200,
+    "bytes": 158996
+  },
+  {
+    "at": "2026-10-13T19:01:13.566858+00:00",
+    "url": "https://www.siemens.com/en-us/products/sicam/a8000-cp8010-12/",
+    "status": 200,
+    "bytes": 247910
+  },
+  {
+    "at": "2026-10-13T19:01:14.779345+00:00",
+    "url": "https://www.siemens.com/en-us/products/sicam/a8000-cp8031/",
+    "status": 200,
+    "bytes": 245952
+  },
+  {
+    "at": "2026-10-13T19:01:15.968278+00:00",
+    "url": "https://www.siemens.com/en-us/products/sicam/a8000-cp8050/",
+    "status": 200,
+    "bytes": 239822
+  },
+  {
+    "at": "2026-10-13T19:01:17.160340+00:00",
+    "url": "https://www.siemens.com/en-us/products/sicam/a8000/",
+    "status": 200,
+    "bytes": 167320
+  },
+  {
+    "at": "2026-10-13T19:01:18.360922+00:00",
+    "url": "https://www.siemens.com/en-us/products/sicam/mmu-measurement-monitoring-unit/",
+    "status": 200,
+    "bytes": 148872
+  },
+  {
+    "at": "2026-10-13T19:01:19.567454+00:00",
+    "url": "https://www.siemens.com/en-us/products/sicam/multipurpose-automation-box/",
+    "status": 200,
+    "bytes": 154850
+  },
+  {
+    "at": "2026-10-13T19:01:20.776158+00:00",
+    "url": "https://www.siemens.com/en-us/products/sicam/p50-55-power-meter-device/",
+    "status": 200,
+    "bytes": 153629
+  },
+  {
+    "at": "2026-10-13T19:01:21.981117+00:00",
+    "url": "https://www.siemens.com/en-us/products/sicam/p855-power-quality-recorder/",
+    "status": 200,
+    "bytes": 153933
+  },
+  {
+    "at": "2026-10-13T19:01:23.179275+00:00",
+    "url": "https://www.siemens.com/en-us/products/sicam/power-meter-device-sicam-p850/",
+    "status": 200,
+    "bytes": 153940
+  },
+  {
+    "at": "2026-10-13T19:01:24.376120+00:00",
+    "url": "https://www.siemens.com/en-us/products/sicam/q100-power-quality-instrument/",
+    "status": 200,
+    "bytes": 154810
+  },
+  {
+    "at": "2026-10-13T19:01:25.901553+00:00",
+    "url": "https://www.siemens.com/en-us/products/sicam/q200-power-quality-recorder/",
+    "status": 200,
+    "bytes": 154178
+  },
+  {
+    "at": "2026-10-13T19:01:27.093430+00:00",
+    "url": "https://www.siemens.com/en-us/products/sicam/s8000/",
+    "status": 200,
+    "bytes": 241399
+  },
+  {
+    "at": "2026-10-13T19:01:28.466635+00:00",
+    "url": "https://www.siemens.com/en-us/products/sicam/transducer-sicam-t/",
+    "status": 200,
+    "bytes": 152986
+  },
+  {
+    "at": "2026-10-13T19:01:29.659348+00:00",
+    "url": "https://www.siemens.com/en-us/products/simatic/advanced-controller/",
+    "status": 200,
+    "bytes": 59897
+  },
+  {
+    "at": "2026-10-13T19:01:30.871339+00:00",
+    "url": "https://www.siemens.com/en-us/products/simatic/distributed-controllers/",
+    "status": 200,
+    "bytes": 156935
+  },
+  {
+    "at": "2026-10-13T19:01:32.074948+00:00",
+    "url": "https://www.siemens.com/en-us/products/simatic/s7-1200-g2/",
+    "status": 200,
+    "bytes": 200567
+  },
+  {
+    "at": "2026-10-13T19:01:33.268575+00:00",
+    "url": "https://www.siemens.com/en-us/products/simatic/s7-1500-rh-cpus/",
+    "status": 200,
+    "bytes": 156530
+  },
+  {
+    "at": "2026-10-13T19:01:34.472866+00:00",
+    "url": "https://www.siemens.com/en-us/products/simatic/s7-1500/",
+    "status": 200,
+    "bytes": 184228
+  },
+  {
+    "at": "2026-10-13T19:01:35.683028+00:00",
+    "url": "https://www.siemens.com/en-us/products/simatic/s7-1500s-controller/",
+    "status": 200,
+    "bytes": 158761
+  },
+  {
+    "at": "2026-10-13T19:01:36.884047+00:00",
+    "url": "https://www.siemens.com/en-us/products/simatic/s7-1500v/",
+    "status": 200,
+    "bytes": 172669
+  },
+  {
+    "at": "2026-10-13T19:01:38.077244+00:00",
+    "url": "https://www.siemens.com/en-us/products/simatic/s7-200-smart-g2/",
+    "status": 301,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:01:39.263558+00:00",
+    "url": "https://www.siemens.com/en-us/products/simatic/",
+    "status": 200,
+    "bytes": 166898
+  },
+  {
+    "at": "2026-10-13T19:01:40.461214+00:00",
+    "url": "https://www.siemens.com/en-us/products/simatic/s7-300/",
+    "status": 200,
+    "bytes": 157978
+  },
+  {
+    "at": "2026-10-13T19:01:41.659451+00:00",
+    "url": "https://www.siemens.com/en-us/products/simatic/s7-400/",
+    "status": 200,
+    "bytes": 152042
+  },
+  {
+    "at": "2026-10-13T19:01:42.860348+00:00",
+    "url": "https://www.siemens.com/en-us/products/siprotec/6md85/",
+    "status": 200,
+    "bytes": 153350
+  },
+  {
+    "at": "2026-10-13T19:01:44.067084+00:00",
+    "url": "https://www.siemens.com/en-us/products/siprotec/6md86/",
+    "status": 200,
+    "bytes": 153106
+  },
+  {
+    "at": "2026-10-13T19:01:45.265004+00:00",
+    "url": "https://www.siemens.com/en-us/products/siprotec/7sa82/",
+    "status": 200,
+    "bytes": 153165
+  },
+  {
+    "at": "2026-10-13T19:01:46.456871+00:00",
+    "url": "https://www.siemens.com/en-us/products/siprotec/7sa86/",
+    "status": 200,
+    "bytes": 153175
+  },
+  {
+    "at": "2026-10-13T19:01:47.664588+00:00",
+    "url": "https://www.siemens.com/en-us/products/siprotec/7sa87/",
+    "status": 200,
+    "bytes": 152596
+  },
+  {
+    "at": "2026-10-13T19:01:48.860348+00:00",
+    "url": "https://www.siemens.com/en-us/products/siprotec/7sd8/",
+    "status": 200,
+    "bytes": 149484
+  },
+  {
+    "at": "2026-10-13T19:01:50.072383+00:00",
+    "url": "https://www.siemens.com/en-us/products/siprotec/7sd80/",
+    "status": 200,
+    "bytes": 152184
+  },
+  {
+    "at": "2026-10-13T19:01:51.277380+00:00",
+    "url": "https://www.siemens.com/en-us/products/siprotec/7sd82/",
+    "status": 200,
+    "bytes": 149251
+  },
+  {
+    "at": "2026-10-13T19:01:52.469242+00:00",
+    "url": "https://www.siemens.com/en-us/products/siprotec/7sd86/",
+    "status": 200,
+    "bytes": 152606
+  },
+  {
+    "at": "2026-10-13T19:01:53.675694+00:00",
+    "url": "https://www.siemens.com/en-us/products/siprotec/7sd87/",
+    "status": 200,
+    "bytes": 153195
+  },
+  {
+    "at": "2026-10-13T19:01:54.874705+00:00",
+    "url": "https://www.siemens.com/en-us/products/siprotec/7se20/",
+    "status": 200,
+    "bytes": 159714
+  },
+  {
+    "at": "2026-10-13T19:01:56.065632+00:00",
+    "url": "https://www.siemens.com/en-us/products/siprotec/7sj66/",
+    "status": 200,
+    "bytes": 152311
+  },
+  {
+    "at": "2026-10-13T19:01:57.279553+00:00",
+    "url": "https://www.siemens.com/en-us/products/siprotec/7sj82/",
+    "status": 200,
+    "bytes": 166580
+  },
+  {
+    "at": "2026-10-13T19:01:58.477998+00:00",
+    "url": "https://www.siemens.com/en-us/products/siprotec/7sj85/",
+    "status": 200,
+    "bytes": 152906
+  },
+  {
+    "at": "2026-10-13T19:01:59.673699+00:00",
+    "url": "https://www.siemens.com/en-us/products/siprotec/7sj86/",
+    "status": 200,
+    "bytes": 153379
+  },
+  {
+    "at": "2026-10-13T19:02:00.880406+00:00",
+    "url": "https://www.siemens.com/en-us/products/siprotec/7sk82/",
+    "status": 200,
+    "bytes": 152556
+  },
+  {
+    "at": "2026-10-13T19:02:02.086553+00:00",
+    "url": "https://www.siemens.com/en-us/products/siprotec/7sk85/",
+    "status": 200,
+    "bytes": 154616
+  },
+  {
+    "at": "2026-10-13T19:02:03.286507+00:00",
+    "url": "https://www.siemens.com/en-us/products/siprotec/7sl82/",
+    "status": 200,
+    "bytes": 153271
+  },
+  {
+    "at": "2026-10-13T19:02:04.490311+00:00",
+    "url": "https://www.siemens.com/en-us/products/siprotec/7sl86/",
+    "status": 200,
+    "bytes": 153004
+  },
+  {
+    "at": "2026-10-13T19:02:05.695180+00:00",
+    "url": "https://www.siemens.com/en-us/products/siprotec/7sl87/",
+    "status": 200,
+    "bytes": 154397
+  },
+  {
+    "at": "2026-10-13T19:02:06.895554+00:00",
+    "url": "https://www.siemens.com/en-us/products/siprotec/7ss85/",
+    "status": 200,
+    "bytes": 152656
+  },
+  {
+    "at": "2026-10-13T19:02:08.105261+00:00",
+    "url": "https://www.siemens.com/en-us/products/siprotec/7sx800/",
+    "status": 200,
+    "bytes": 166960
+  },
+  {
+    "at": "2026-10-13T19:02:09.301420+00:00",
+    "url": "https://www.siemens.com/en-us/products/siprotec/7sx82/",
+    "status": 200,
+    "bytes": 162217
+  },
+  {
+    "at": "2026-10-13T19:02:10.503150+00:00",
+    "url": "https://www.siemens.com/en-us/products/siprotec/7sx85/",
+    "status": 200,
+    "bytes": 167676
+  },
+  {
+    "at": "2026-10-13T19:02:11.707494+00:00",
+    "url": "https://www.siemens.com/en-us/products/siprotec/7sy82/",
+    "status": 200,
+    "bytes": 159485
+  },
+  {
+    "at": "2026-10-13T19:02:12.909399+00:00",
+    "url": "https://www.siemens.com/en-us/products/siprotec/7um85/",
+    "status": 200,
+    "bytes": 154214
+  },
+  {
+    "at": "2026-10-13T19:02:14.121289+00:00",
+    "url": "https://www.siemens.com/en-us/products/siprotec/7ut82/",
+    "status": 200,
+    "bytes": 152784
+  },
+  {
+    "at": "2026-10-13T19:02:15.325046+00:00",
+    "url": "https://www.siemens.com/en-us/products/siprotec/7ut85/",
+    "status": 200,
+    "bytes": 152890
+  },
+  {
+    "at": "2026-10-13T19:02:16.522643+00:00",
+    "url": "https://www.siemens.com/en-us/products/siprotec/7ut86/",
+    "status": 200,
+    "bytes": 154506
+  },
+  {
+    "at": "2026-10-13T19:02:17.724199+00:00",
+    "url": "https://www.siemens.com/en-us/products/siprotec/7ut87/",
+    "status": 200,
+    "bytes": 152415
+  },
+  {
+    "at": "2026-10-13T19:02:18.927914+00:00",
+    "url": "https://www.siemens.com/en-us/products/siprotec/7ve85/",
+    "status": 200,
+    "bytes": 153372
+  },
+  {
+    "at": "2026-10-13T19:02:20.134974+00:00",
+    "url": "https://www.siemens.com/en-us/products/siprotec/7vk87/",
+    "status": 200,
+    "bytes": 153051
+  },
+  {
+    "at": "2026-10-13T19:02:21.328030+00:00",
+    "url": "https://www.siemens.com/en-us/products/siprotec/7vu85/",
+    "status": 200,
+    "bytes": 152810
+  },
+  {
+    "at": "2026-10-13T19:02:21.605155+00:00",
+    "url": "https://www.rockwellautomation.com/robots.txt",
+    "status": 200,
+    "bytes": 5064,
+    "sha256": "3f3b8289063afb02205c5669e96142fc13c385b232b0b62345418f2642cd47d7"
+  },
+  {
+    "at": "2026-10-13T19:02:22.798713+00:00",
+    "url": "https://www.rockwellautomation.com/en-us/products/hardware/circuit-and-load-protection/857-protection-relay.html",
+    "status": 200,
+    "bytes": 137711
+  },
+  {
+    "at": "2026-10-13T19:02:24.006545+00:00",
+    "url": "https://www.rockwellautomation.com/en-us/products/hardware/circuit-and-load-protection/865-differential-protection-relay.html",
+    "status": 200,
+    "bytes": 137284
+  },
+  {
+    "at": "2026-10-13T19:02:25.214474+00:00",
+    "url": "https://www.rockwellautomation.com/en-us/products/hardware/energy-monitoring/1408-powermonitor-1000.html",
+    "status": 200,
+    "bytes": 178832
+  },
+  {
+    "at": "2026-10-13T19:02:26.410866+00:00",
+    "url": "https://www.rockwellautomation.com/en-us/products/hardware/energy-monitoring/1420-powermonitor-500.html",
+    "status": 200,
+    "bytes": 162133
+  },
+  {
+    "at": "2026-10-13T19:02:27.620704+00:00",
+    "url": "https://www.rockwellautomation.com/en-us/products/hardware/energy-monitoring/1426-powermonitor-5000.html",
+    "status": 200,
+    "bytes": 178547
+  },
+  {
+    "at": "2026-10-13T19:02:28.819265+00:00",
+    "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/1756-controllogix-5590.html",
+    "status": 200,
+    "bytes": 244276
+  },
+  {
+    "at": "2026-10-13T19:02:30.021463+00:00",
+    "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/1756controllogix5580.html",
+    "status": 200,
+    "bytes": 248537
+  },
+  {
+    "at": "2026-10-13T19:02:31.226516+00:00",
+    "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/compactLogix-5390-controllers.html",
+    "status": 200,
+    "bytes": 181725
+  },
+  {
+    "at": "2026-10-13T19:02:32.431275+00:00",
+    "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/compactlogix-1768-controllers.html",
+    "status": 200,
+    "bytes": 68884
+  },
+  {
+    "at": "2026-10-13T19:02:33.635562+00:00",
+    "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/compactlogix-1769-controllers.html",
+    "status": 200,
+    "bytes": 68887
+  },
+  {
+    "at": "2026-10-13T19:02:34.841109+00:00",
+    "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/compactlogix-5370-controllers.html",
+    "status": 200,
+    "bytes": 197943
+  },
+  {
+    "at": "2026-10-13T19:02:36.032494+00:00",
+    "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/compactlogix-5380-controllers.html",
+    "status": 200,
+    "bytes": 233211
+  },
+  {
+    "at": "2026-10-13T19:02:37.243055+00:00",
+    "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/compactlogix-5480-controllers.html",
+    "status": 200,
+    "bytes": 169299
+  },
+  {
+    "at": "2026-10-13T19:02:38.447209+00:00",
+    "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/logixedge-controllers.html",
+    "status": 200,
+    "bytes": 70719
+  },
+  {
+    "at": "2026-10-13T19:02:39.648692+00:00",
+    "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/micro810-controllers.html",
+    "status": 200,
+    "bytes": 194149
+  },
+  {
+    "at": "2026-10-13T19:02:40.844341+00:00",
+    "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/micro820-controllers.html",
+    "status": 200,
+    "bytes": 200330
+  },
+  {
+    "at": "2026-10-13T19:02:42.052961+00:00",
+    "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/micro830-controllers.html",
+    "status": 200,
+    "bytes": 134956
+  },
+  {
+    "at": "2026-10-13T19:02:43.253078+00:00",
+    "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/micro850-controllers.html",
+    "status": 200,
+    "bytes": 207532
+  },
+  {
+    "at": "2026-10-13T19:02:44.463340+00:00",
+    "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/micro870-controllers.html",
+    "status": 200,
+    "bytes": 208280
+  },
+  {
+    "at": "2026-10-13T19:02:45.669469+00:00",
+    "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/micrologix-1100-controllers.html",
+    "status": 200,
+    "bytes": 129458
+  },
+  {
+    "at": "2026-10-13T19:02:46.863387+00:00",
+    "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/micrologix-1200-controllers.html",
+    "status": 200,
+    "bytes": 129622
+  },
+  {
+    "at": "2026-10-13T19:02:48.064059+00:00",
+    "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/micrologix-1400-controllers.html",
+    "status": 200,
+    "bytes": 167601
+  },
+  {
+    "at": "2026-10-13T19:02:49.277075+00:00",
+    "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/process-controllers.html",
+    "status": 200,
+    "bytes": 91714
+  },
+  {
+    "at": "2026-10-13T19:02:50.468159+00:00",
+    "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/slc-500-controllers.html",
+    "status": 200,
+    "bytes": 164682
+  },
+  {
+    "at": "2026-10-13T19:02:51.656102+00:00",
+    "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/smartguard-controllers.html",
+    "status": 200,
+    "bytes": 160087
+  },
+  {
+    "at": "2026-10-13T19:02:52.851637+00:00",
+    "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/softlogix-controllers.html",
+    "status": 200,
+    "bytes": 135414
+  },
+  {
+    "at": "2026-10-13T19:02:53.147125+00:00",
+    "url": "https://www.se.com/robots.txt",
+    "status": 200,
+    "bytes": 46157,
+    "sha256": "3e2dd49000b1c451deca6457c489da60371648e8a567b89ea4a9793bab996f7c"
+  },
+  {
+    "at": "2026-10-13T19:02:54.356315+00:00",
+    "url": "https://www.se.com/us/en/product-range/107518494-powerlogic-p7-protection-and-control-platform/",
+    "status": 200,
+    "bytes": 1420056
+  },
+  {
+    "at": "2026-10-13T19:02:55.561111+00:00",
+    "url": "https://www.se.com/us/en/product-range/1438-modicon-mcm/",
+    "status": 200,
+    "bytes": 1453858
+  },
+  {
+    "at": "2026-10-13T19:02:56.749598+00:00",
+    "url": "https://www.se.com/us/en/product-range/1460-powerlogic-ion7550-ion7650-series/",
+    "status": 200,
+    "bytes": 1357861
+  },
+  {
+    "at": "2026-10-13T19:02:57.938846+00:00",
+    "url": "https://www.se.com/us/en/product-range/1468-modicon-m340-pac/",
+    "status": 200,
+    "bytes": 1524066
+  },
+  {
+    "at": "2026-10-13T19:02:59.153863+00:00",
+    "url": "https://www.se.com/us/en/product-range/1505-powerlogic-ion6200-series/",
+    "status": 200,
+    "bytes": 1351299
+  },
+  {
+    "at": "2026-10-13T19:03:01.862956+00:00",
+    "url": "https://www.se.com/us/en/product-range/1703-powerlogic-enercept/",
+    "status": 200,
+    "bytes": 1352740
+  },
+  {
+    "at": "2026-10-13T19:03:05.895148+00:00",
+    "url": "https://www.se.com/us/en/product-range/1717-powerlogic-energy-meters/",
+    "status": 200,
+    "bytes": 1357288
+  },
+  {
+    "at": "2026-10-13T19:03:07.093304+00:00",
+    "url": "https://www.se.com/us/en/product-range/1829-sepam-series-10/",
+    "status": 200,
+    "bytes": 1329265
+  },
+  {
+    "at": "2026-10-13T19:03:08.280000+00:00",
+    "url": "https://www.se.com/us/en/product-range/1872-powerlogic-ion7550-rtu/",
+    "status": 200,
+    "bytes": 1353606
+  },
+  {
+    "at": "2026-10-13T19:03:09.467240+00:00",
+    "url": "https://www.se.com/us/en/product-range/203452520-powerlogic-t500-substation-controller/",
+    "status": 200,
+    "bytes": 1361199
+  },
+  {
+    "at": "2026-10-13T19:03:10.657612+00:00",
+    "url": "https://www.se.com/us/en/product-range/2730-modicon-m258-compact-plc-for-machine-automation/",
+    "status": 200,
+    "bytes": 1476528
+  },
+  {
+    "at": "2026-10-13T19:03:11.857722+00:00",
+    "url": "https://www.se.com/us/en/product-range/274563785-modicon-m660/",
+    "status": 200,
+    "bytes": 1572357
+  },
+  {
+    "at": "2026-10-13T19:03:14.882212+00:00",
+    "url": "https://www.se.com/us/en/product-range/2808-powerlogic-em4800/",
+    "status": 200,
+    "bytes": 1353914
+  },
+  {
+    "at": "2026-10-13T19:03:16.079882+00:00",
+    "url": "https://www.se.com/us/en/product-range/35344468-scadapack-47x-47xi-470r-47xd/",
+    "status": 200,
+    "bytes": 1714256
+  },
+  {
+    "at": "2026-10-13T19:03:17.281990+00:00",
+    "url": "https://www.se.com/us/en/product-range/533-twido-programmable-controller/",
+    "status": 200,
+    "bytes": 1370764
+  },
+  {
+    "at": "2026-10-13T19:03:19.768554+00:00",
+    "url": "https://www.se.com/us/en/product-range/535-modicon-momentum/",
+    "status": 200,
+    "bytes": 1489980
+  },
+  {
+    "at": "2026-10-13T19:03:20.977875+00:00",
+    "url": "https://www.se.com/us/en/product-range/537-modicon-premium-pac/",
+    "status": 200,
+    "bytes": 1361712
+  },
+  {
+    "at": "2026-10-13T19:03:24.318482+00:00",
+    "url": "https://www.se.com/us/en/product-range/538-modicon-quantum-pac/",
+    "status": 200,
+    "bytes": 1331278
+  },
+  {
+    "at": "2026-10-13T19:03:25.527206+00:00",
+    "url": "https://www.se.com/us/en/product-range/60732-micom-e124/",
+    "status": 200,
+    "bytes": 1349735
+  },
+  {
+    "at": "2026-10-13T19:03:26.727559+00:00",
+    "url": "https://www.se.com/us/en/product-range/60735-micom-p841/",
+    "status": 200,
+    "bytes": 1350618
+  },
+  {
+    "at": "2026-10-13T19:03:28.661981+00:00",
+    "url": "https://www.se.com/us/en/product-range/60737-micom-p740/",
+    "status": 200,
+    "bytes": 1455746
+  },
+  {
+    "at": "2026-10-13T19:03:29.861483+00:00",
+    "url": "https://www.se.com/us/en/product-range/60738-micom-p746/",
+    "status": 200,
+    "bytes": 1350487
+  },
+  {
+    "at": "2026-10-13T19:03:32.044431+00:00",
+    "url": "https://www.se.com/us/en/product-range/60739-micom-p821/",
+    "status": 200,
+    "bytes": 1327273
+  },
+  {
+    "at": "2026-10-13T19:03:33.241515+00:00",
+    "url": "https://www.se.com/us/en/product-range/60741-micom-p43x/",
+    "status": 200,
+    "bytes": 1352358
+  },
+  {
+    "at": "2026-10-13T19:03:36.700865+00:00",
+    "url": "https://www.se.com/us/en/product-range/60742-micom-p44x/",
+    "status": 200,
+    "bytes": 1381722
+  },
+  {
+    "at": "2026-10-13T19:03:40.479645+00:00",
+    "url": "https://www.se.com/us/en/product-range/60744-micom-p341-and-micom-p922g/",
+    "status": 200,
+    "bytes": 1350189
+  },
+  {
+    "at": "2026-10-13T19:03:42.687223+00:00",
+    "url": "https://www.se.com/us/en/product-range/60745-micom-p521/",
+    "status": 200,
+    "bytes": 1350670
+  },
+  {
+    "at": "2026-10-13T19:03:44.874263+00:00",
+    "url": "https://www.se.com/us/en/product-range/60746-micom-p53x/",
+    "status": 200,
+    "bytes": 1455402
+  },
+  {
+    "at": "2026-10-13T19:03:46.061394+00:00",
+    "url": "https://www.se.com/us/en/product-range/60747-micom-p54x/",
+    "status": 200,
+    "bytes": 1403670
+  },
+  {
+    "at": "2026-10-13T19:03:47.256726+00:00",
+    "url": "https://www.se.com/us/en/product-range/60748-micom-p547/",
+    "status": 200,
+    "bytes": 1350159
+  },
+  {
+    "at": "2026-10-13T19:03:49.995144+00:00",
+    "url": "https://www.se.com/us/en/product-range/60750-micom-p59x/",
+    "status": 200,
+    "bytes": 1331481
+  },
+  {
+    "at": "2026-10-13T19:03:51.198278+00:00",
+    "url": "https://www.se.com/us/en/product-range/60751-micom-p211/",
+    "status": 200,
+    "bytes": 1349124
+  },
+  {
+    "at": "2026-10-13T19:03:53.970113+00:00",
+    "url": "https://www.se.com/us/en/product-range/60752-micom-p22x/",
+    "status": 200,
+    "bytes": 1350552
+  },
+  {
+    "at": "2026-10-13T19:03:57.095427+00:00",
+    "url": "https://www.se.com/us/en/product-range/60753-micom-p24x/",
+    "status": 200,
+    "bytes": 1379443
+  },
+  {
+    "at": "2026-10-13T19:03:59.389078+00:00",
+    "url": "https://www.se.com/us/en/product-range/60755-powerlogic-micom-p115-and-p116/",
+    "status": 200,
+    "bytes": 1404236
+  },
+  {
+    "at": "2026-10-13T19:04:00.584267+00:00",
+    "url": "https://www.se.com/us/en/product-range/60758-micom-p12x/",
+    "status": 200,
+    "bytes": 1327861
+  },
+  {
+    "at": "2026-10-13T19:04:01.788275+00:00",
+    "url": "https://www.se.com/us/en/product-range/60761-micom-p13x/",
+    "status": 200,
+    "bytes": 1438362
+  },
+  {
+    "at": "2026-10-13T19:04:05.778718+00:00",
+    "url": "https://www.se.com/us/en/product-range/60765-micom-p14x/",
+    "status": 200,
+    "bytes": 1379633
+  },
+  {
+    "at": "2026-10-13T19:04:06.976767+00:00",
+    "url": "https://www.se.com/us/en/product-range/60766-micom-p638/",
+    "status": 200,
+    "bytes": 1330109
+  },
+  {
+    "at": "2026-10-13T19:04:08.181461+00:00",
+    "url": "https://www.se.com/us/en/product-range/60767-micom-p138/",
+    "status": 200,
+    "bytes": 1482779
+  },
+  {
+    "at": "2026-10-13T19:04:10.571939+00:00",
+    "url": "https://www.se.com/us/en/product-range/60768-micom-p436-and-micom-p438/",
+    "status": 200,
+    "bytes": 1331873
+  },
+  {
+    "at": "2026-10-13T19:04:11.774436+00:00",
+    "url": "https://www.se.com/us/en/product-range/60772-micom-p63x/",
+    "status": 200,
+    "bytes": 1351374
+  },
+  {
+    "at": "2026-10-13T19:04:14.676894+00:00",
+    "url": "https://www.se.com/us/en/product-range/60773-micom-p64x/",
+    "status": 200,
+    "bytes": 1380991
+  },
+  {
+    "at": "2026-10-13T19:04:17.128987+00:00",
+    "url": "https://www.se.com/us/en/product-range/60775-micom-p9xx/",
+    "status": 200,
+    "bytes": 1330627
+  },
+  {
+    "at": "2026-10-13T19:04:18.339942+00:00",
+    "url": "https://www.se.com/us/en/product-range/60784-micom-c264/",
+    "status": 200,
+    "bytes": 1386191
+  },
+  {
+    "at": "2026-10-13T19:04:19.536777+00:00",
+    "url": "https://www.se.com/us/en/product-range/60785-easergy-micom-c434/",
+    "status": 200,
+    "bytes": 1333840
+  },
+  {
+    "at": "2026-10-13T19:04:20.746491+00:00",
+    "url": "https://www.se.com/us/en/product-range/61053-powerlogic-ion8650-series/",
+    "status": 200,
+    "bytes": 1418169
+  },
+  {
+    "at": "2026-10-13T19:04:21.944930+00:00",
+    "url": "https://www.se.com/us/en/product-range/61057-micom-p34x/",
+    "status": 200,
+    "bytes": 1331188
+  },
+  {
+    "at": "2026-10-13T19:04:23.139366+00:00",
+    "url": "https://www.se.com/us/en/product-range/61182-micom-p72x/",
+    "status": 200,
+    "bytes": 1351663
+  },
+  {
+    "at": "2026-10-13T19:04:25.945627+00:00",
+    "url": "https://www.se.com/us/en/product-range/61273-acti-9-iem3000-series/",
+    "status": 200,
+    "bytes": 1466769
+  },
+  {
+    "at": "2026-10-13T19:04:27.153487+00:00",
+    "url": "https://www.se.com/us/en/product-range/61274-powerlogic-pm3000-power-meters/",
+    "status": 200,
+    "bytes": 1479051
+  },
+  {
+    "at": "2026-10-13T19:04:28.342924+00:00",
+    "url": "https://www.se.com/us/en/product-range/61281-powerlogic-pm5000-power-meters/",
+    "status": 200,
+    "bytes": 1430953
+  },
+  {
+    "at": "2026-10-13T19:04:29.536630+00:00",
+    "url": "https://www.se.com/us/en/product-range/61336-powerlogic-em3500-series/",
+    "status": 200,
+    "bytes": 1462573
+  },
+  {
+    "at": "2026-10-13T19:04:30.745014+00:00",
+    "url": "https://www.se.com/us/en/product-range/61505-micom-p849/",
+    "status": 200,
+    "bytes": 1353110
+  },
+  {
+    "at": "2026-10-13T19:04:31.947845+00:00",
+    "url": "https://www.se.com/us/en/product-range/61593-compact-plc/",
+    "status": 200,
+    "bytes": 1346448
+  },
+  {
+    "at": "2026-10-13T19:04:33.142740+00:00",
+    "url": "https://www.se.com/us/en/product-range/61746-sage-remote-terminal-units/",
+    "status": 200,
+    "bytes": 1330828
+  },
+  {
+    "at": "2026-10-13T19:04:34.342195+00:00",
+    "url": "https://www.se.com/us/en/product-range/61747-saitel-remote-terminal-unit-controller/",
+    "status": 200,
+    "bytes": 1333984
+  },
+  {
+    "at": "2026-10-13T19:04:35.538145+00:00",
+    "url": "https://www.se.com/us/en/product-range/62049-vamp-arc-protection-relay-system/",
+    "status": 200,
+    "bytes": 1393178
+  },
+  {
+    "at": "2026-10-13T19:04:36.741696+00:00",
+    "url": "https://www.se.com/us/en/product-range/62098-modicon-m580-pac-controller/",
+    "status": 200,
+    "bytes": 1517364
+  },
+  {
+    "at": "2026-10-13T19:04:37.943557+00:00",
+    "url": "https://www.se.com/us/en/product-range/62128-modicon-m221-nano-plc/",
+    "status": 200,
+    "bytes": 1514432
+  },
+  {
+    "at": "2026-10-13T19:04:39.144004+00:00",
+    "url": "https://www.se.com/us/en/product-range/62129-modicon-m241-micro-plc/",
+    "status": 200,
+    "bytes": 1584938
+  },
+  {
+    "at": "2026-10-13T19:04:40.349947+00:00",
+    "url": "https://www.se.com/us/en/product-range/62130-modicon-m251-micro-plc-with-dual-channel-comm/",
+    "status": 200,
+    "bytes": 1579495
+  },
+  {
+    "at": "2026-10-13T19:04:41.545819+00:00",
+    "url": "https://www.se.com/us/en/product-range/62252-powerlogic-pm8000-power-quality-meters/",
+    "status": 200,
+    "bytes": 1431112
+  },
+  {
+    "at": "2026-10-13T19:04:42.738895+00:00",
+    "url": "https://www.se.com/us/en/product-range/62396-modicon-mc80/",
+    "status": 200,
+    "bytes": 1502610
+  },
+  {
+    "at": "2026-10-13T19:04:43.944921+00:00",
+    "url": "https://www.se.com/us/en/product-range/62399-powerlogic-t300/",
+    "status": 200,
+    "bytes": 1469358
+  },
+  {
+    "at": "2026-10-13T19:04:45.140586+00:00",
+    "url": "https://www.se.com/us/en/product-range/62400-powerlogic-p5-protection-relays/",
+    "status": 200,
+    "bytes": 1442010
+  },
+  {
+    "at": "2026-10-13T19:04:46.334075+00:00",
+    "url": "https://www.se.com/us/en/product-range/62420-modicon-m171-m172-logic-controller/",
+    "status": 200,
+    "bytes": 1585333
+  },
+  {
+    "at": "2026-10-13T19:04:47.627842+00:00",
+    "url": "https://www.se.com/us/en/product-range/63000-scadapack-500e/",
+    "status": 200,
+    "bytes": 1450910
+  },
+  {
+    "at": "2026-10-13T19:04:48.835552+00:00",
+    "url": "https://www.se.com/us/en/product-range/63370-pm2000-series/",
+    "status": 200,
+    "bytes": 1398277
+  },
+  {
+    "at": "2026-10-13T19:04:50.036387+00:00",
+    "url": "https://www.se.com/us/en/product-range/63381-powerlogic-em4200-series-enercept/",
+    "status": 200,
+    "bytes": 1459623
+  },
+  {
+    "at": "2026-10-13T19:04:51.234257+00:00",
+    "url": "https://www.se.com/us/en/product-range/63502-powerlogic-ion7400-series/",
+    "status": 200,
+    "bytes": 1466556
+  },
+  {
+    "at": "2026-10-13T19:04:52.433089+00:00",
+    "url": "https://www.se.com/us/en/product-range/63678-foxboro-scada-rtus/",
+    "status": 200,
+    "bytes": 1449158
+  },
+  {
+    "at": "2026-10-13T19:04:53.637191+00:00",
+    "url": "https://www.se.com/us/en/product-range/64241-powerlogic-ion9000-series/",
+    "status": 200,
+    "bytes": 1585226
+  },
+  {
+    "at": "2026-10-13T19:04:54.835553+00:00",
+    "url": "https://www.se.com/us/en/product-range/64884-powerlogic-p3-protection-relays/",
+    "status": 200,
+    "bytes": 1430423
+  },
+  {
+    "at": "2026-10-13T19:04:56.031462+00:00",
+    "url": "https://www.se.com/us/en/product-range/65771-logic-motion-controller-modicon-m262/",
+    "status": 200,
+    "bytes": 1478328
+  },
+  {
+    "at": "2026-10-13T19:04:57.232141+00:00",
+    "url": "https://www.se.com/us/en/product-range/66030-scadapack-57x/",
+    "status": 200,
+    "bytes": 1460131
+  },
+  {
+    "at": "2026-10-13T19:04:58.427130+00:00",
+    "url": "https://www.se.com/us/en/product-range/7744-modicon-lmc058-lmc078/",
+    "status": 200,
+    "bytes": 1427953
+  },
+  {
+    "at": "2026-10-13T19:04:59.625820+00:00",
+    "url": "https://www.se.com/us/en/product-range/8297113-powerlogic-hdpm6000-highdensity-metering-system/",
+    "status": 200,
+    "bytes": 1495205
+  },
+  {
+    "at": "2026-10-13T19:05:00.837652+00:00",
+    "url": "https://www.se.com/us/en/product-range/918-pm800-series/",
+    "status": 200,
+    "bytes": 1330497
+  },
+  {
+    "at": "2026-10-13T19:05:02.042910+00:00",
+    "url": "https://www.se.com/us/en/product-range/933-sepam-series-20/",
+    "status": 200,
+    "bytes": 1360327
+  },
+  {
+    "at": "2026-10-13T19:05:03.244611+00:00",
+    "url": "https://www.se.com/us/en/product-range/934-sepam-series-40/",
+    "status": 200,
+    "bytes": 1331360
+  },
+  {
+    "at": "2026-10-13T19:05:04.449290+00:00",
+    "url": "https://www.se.com/us/en/product-range/935-sepam-series-80/",
+    "status": 200,
+    "bytes": 1330594
+  },
+  {
+    "at": "2026-10-13T19:05:04.793141+00:00",
+    "url": "https://selinc.com/robots.txt",
+    "status": 200,
+    "bytes": 686,
+    "sha256": "5e08edd75de604c0966b1d4c076064640b4ca1dfc6f31c8eb9eeb65d3ba64211"
+  },
+  {
+    "at": "2026-10-13T19:05:05.984661+00:00",
+    "url": "https://selinc.com/api/download/1345/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:05:07.180292+00:00",
+    "url": "https://selinc.com/api/download/3665/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:05:08.387110+00:00",
+    "url": "https://selinc.com/api/download/3036/",
+    "status": 200,
+    "bytes": 574342
+  },
+  {
+    "at": "2026-10-13T19:05:10.077931+00:00",
+    "url": "https://selinc.com/api/download/2897/",
+    "status": 200,
+    "bytes": 460633
+  },
+  {
+    "at": "2026-10-13T19:05:12.489244+00:00",
+    "url": "https://selinc.com/api/download/97906/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:05:13.691563+00:00",
+    "url": "https://selinc.com/api/download/10595/",
+    "status": 200,
+    "bytes": 5346118
+  },
+  {
+    "at": "2026-10-13T19:05:21.007620+00:00",
+    "url": "https://selinc.com/api/download/97809/",
+    "status": 200,
+    "bytes": 2834658
+  },
+  {
+    "at": "2026-10-13T19:05:28.116983+00:00",
+    "url": "https://selinc.com/api/download/3614/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:05:29.318455+00:00",
+    "url": "https://selinc.com/api/download/1184/",
+    "status": 200,
+    "bytes": 3359887
+  },
+  {
+    "at": "2026-10-13T19:05:36.994970+00:00",
+    "url": "https://selinc.com/api/download/1193/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:05:38.197745+00:00",
+    "url": "https://selinc.com/api/download/1193/?lang=en&dest=ektronAsset",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:05:39.400304+00:00",
+    "url": "https://selinc.com/notfound/",
+    "status": 200,
+    "bytes": 5590
+  },
+  {
+    "at": "2026-10-13T19:05:40.606879+00:00",
+    "url": "https://selinc.com/api/download/117424/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:05:41.807603+00:00",
+    "url": "https://selinc.com/api/download/117425/",
+    "status": 200,
+    "bytes": 812601
+  },
+  {
+    "at": "2026-10-13T19:05:45.131561+00:00",
+    "url": "https://selinc.com/api/download/118557/",
+    "status": 200,
+    "bytes": 848655
+  },
+  {
+    "at": "2026-10-13T19:05:46.419469+00:00",
+    "url": "https://selinc.com/api/download/3604/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:05:47.617804+00:00",
+    "url": "https://selinc.com/api/download/9015/",
+    "status": 200,
+    "bytes": 2594275
+  },
+  {
+    "at": "2026-10-13T19:05:52.591894+00:00",
+    "url": "https://selinc.com/api/download/1194/",
+    "status": 200,
+    "bytes": 1554074
+  },
+  {
+    "at": "2026-10-13T19:05:56.921888+00:00",
+    "url": "https://selinc.com/api/download/3608/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:05:58.107422+00:00",
+    "url": "https://selinc.com/api/download/2835/",
+    "status": 200,
+    "bytes": 1928964
+  },
+  {
+    "at": "2026-10-13T19:06:01.294115+00:00",
+    "url": "https://selinc.com/api/download/2910/",
+    "status": 200,
+    "bytes": 1866310
+  },
+  {
+    "at": "2026-10-13T19:06:05.979726+00:00",
+    "url": "https://selinc.com/api/download/3599/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:06:07.172572+00:00",
+    "url": "https://selinc.com/api/download/1186/",
+    "status": 200,
+    "bytes": 2429100
+  },
+  {
+    "at": "2026-10-13T19:06:13.393506+00:00",
+    "url": "https://selinc.com/api/download/1195/",
+    "status": 200,
+    "bytes": 2309502
+  },
+  {
+    "at": "2026-10-13T19:06:21.175743+00:00",
+    "url": "https://selinc.com/api/download/105260/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:06:22.386212+00:00",
+    "url": "https://selinc.com/api/download/105257/",
+    "status": 200,
+    "bytes": 2807995
+  },
+  {
+    "at": "2026-10-13T19:06:27.782815+00:00",
+    "url": "https://selinc.com/api/download/104471/",
+    "status": 200,
+    "bytes": 812022
+  },
+  {
+    "at": "2026-10-13T19:06:29.324056+00:00",
+    "url": "https://selinc.com/api/download/1572/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:06:30.528828+00:00",
+    "url": "https://selinc.com/api/download/2858/",
+    "status": 200,
+    "bytes": 1624533
+  },
+  {
+    "at": "2026-10-13T19:06:35.654473+00:00",
+    "url": "https://selinc.com/api/download/2866/",
+    "status": 200,
+    "bytes": 937654
+  },
+  {
+    "at": "2026-10-13T19:06:36.844097+00:00",
+    "url": "https://selinc.com/api/download/10139/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:06:38.058458+00:00",
+    "url": "https://selinc.com/api/download/10133/",
+    "status": 200,
+    "bytes": 2239491
+  },
+  {
+    "at": "2026-10-13T19:06:41.945505+00:00",
+    "url": "https://selinc.com/api/download/10245/",
+    "status": 200,
+    "bytes": 1889725
+  },
+  {
+    "at": "2026-10-13T19:06:45.797605+00:00",
+    "url": "https://selinc.com/api/download/3625/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:06:47.011647+00:00",
+    "url": "https://selinc.com/api/download/3622/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:06:48.200996+00:00",
+    "url": "https://selinc.com/api/download/2844/",
+    "status": 200,
+    "bytes": 1834227
+  },
+  {
+    "at": "2026-10-13T19:06:51.537655+00:00",
+    "url": "https://selinc.com/api/download/3628/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:06:52.745284+00:00",
+    "url": "https://selinc.com/api/download/3623/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:06:53.948046+00:00",
+    "url": "https://selinc.com/api/download/100623/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:06:55.139894+00:00",
+    "url": "https://selinc.com/api/download/100620/",
+    "status": 200,
+    "bytes": 1817825
+  },
+  {
+    "at": "2026-10-13T19:06:58.036559+00:00",
+    "url": "https://selinc.com/api/download/100963/",
+    "status": 200,
+    "bytes": 1858365
+  },
+  {
+    "at": "2026-10-13T19:07:04.582709+00:00",
+    "url": "https://selinc.com/api/download/5530/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:07:05.783014+00:00",
+    "url": "https://selinc.com/api/download/5527/",
+    "status": 200,
+    "bytes": 2859166
+  },
+  {
+    "at": "2026-10-13T19:07:14.332438+00:00",
+    "url": "https://selinc.com/api/download/5534/",
+    "status": 200,
+    "bytes": 1307801
+  },
+  {
+    "at": "2026-10-13T19:07:17.660045+00:00",
+    "url": "https://selinc.com/api/download/5520/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:07:18.863397+00:00",
+    "url": "https://selinc.com/api/download/5523/",
+    "status": 200,
+    "bytes": 2332796
+  },
+  {
+    "at": "2026-10-13T19:07:21.651967+00:00",
+    "url": "https://selinc.com/api/download/5532/",
+    "status": 200,
+    "bytes": 1418776
+  },
+  {
+    "at": "2026-10-13T19:07:22.842309+00:00",
+    "url": "https://selinc.com/api/download/100464/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:07:24.042544+00:00",
+    "url": "https://selinc.com/api/download/100456/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:07:25.246032+00:00",
+    "url": "https://selinc.com/api/download/100456/?lang=en&dest=ektronAsset",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:07:26.440612+00:00",
+    "url": "https://selinc.com/notfound/",
+    "status": 200,
+    "bytes": 5590
+  },
+  {
+    "at": "2026-10-13T19:07:27.653042+00:00",
+    "url": "https://selinc.com/api/download/100443/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:07:28.842027+00:00",
+    "url": "https://selinc.com/api/download/100443/?lang=en&dest=ektronAsset",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:07:30.031646+00:00",
+    "url": "https://selinc.com/notfound/",
+    "status": 200,
+    "bytes": 5590
+  },
+  {
+    "at": "2026-10-13T19:07:31.234996+00:00",
+    "url": "https://selinc.com/api/download/7678/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:07:32.440362+00:00",
+    "url": "https://selinc.com/api/download/7674/",
+    "status": 200,
+    "bytes": 1478103
+  },
+  {
+    "at": "2026-10-13T19:07:34.635914+00:00",
+    "url": "https://selinc.com/api/download/7221/",
+    "status": 200,
+    "bytes": 1224537
+  },
+  {
+    "at": "2026-10-13T19:07:37.048239+00:00",
+    "url": "https://selinc.com/api/download/3631/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:07:38.248919+00:00",
+    "url": "https://selinc.com/api/download/3443/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:07:39.448425+00:00",
+    "url": "https://selinc.com/api/download/3443/?lang=en&dest=ektronAsset",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:07:40.648725+00:00",
+    "url": "https://selinc.com/notfound/",
+    "status": 200,
+    "bytes": 5590
+  },
+  {
+    "at": "2026-10-13T19:07:41.851731+00:00",
+    "url": "https://selinc.com/api/download/2868/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:07:43.058668+00:00",
+    "url": "https://selinc.com/api/download/2868/?lang=en&dest=ektronAsset",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:07:44.260171+00:00",
+    "url": "https://selinc.com/notfound/",
+    "status": 200,
+    "bytes": 5725
+  },
+  {
+    "at": "2026-10-13T19:07:45.460636+00:00",
+    "url": "https://selinc.com/api/download/5512/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:07:46.668627+00:00",
+    "url": "https://selinc.com/api/download/5514/",
+    "status": 200,
+    "bytes": 2664568
+  },
+  {
+    "at": "2026-10-13T19:07:52.469496+00:00",
+    "url": "https://selinc.com/api/download/5533/",
+    "status": 200,
+    "bytes": 1705545
+  },
+  {
+    "at": "2026-10-13T19:07:55.510799+00:00",
+    "url": "https://selinc.com/api/download/3465/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:07:56.707906+00:00",
+    "url": "https://selinc.com/api/download/3056/",
+    "status": 200,
+    "bytes": 854607
+  },
+  {
+    "at": "2026-10-13T19:07:58.679561+00:00",
+    "url": "https://selinc.com/api/download/2872/",
+    "status": 200,
+    "bytes": 1287317
+  },
+  {
+    "at": "2026-10-13T19:08:00.126880+00:00",
+    "url": "https://selinc.com/api/download/97911/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:08:01.354692+00:00",
+    "url": "https://selinc.com/api/download/8273/",
+    "status": 200,
+    "bytes": 1478254
+  },
+  {
+    "at": "2026-10-13T19:08:03.204186+00:00",
+    "url": "https://selinc.com/api/download/2936/",
+    "status": 200,
+    "bytes": 1378646
+  },
+  {
+    "at": "2026-10-13T19:08:04.623467+00:00",
+    "url": "https://selinc.com/api/download/126000/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:08:05.811148+00:00",
+    "url": "https://selinc.com/api/download/126001/",
+    "status": 200,
+    "bytes": 1830293
+  },
+  {
+    "at": "2026-10-13T19:08:08.286378+00:00",
+    "url": "https://selinc.com/api/download/107948/",
+    "status": 200,
+    "bytes": 898606
+  },
+  {
+    "at": "2026-10-13T19:08:09.497354+00:00",
+    "url": "https://selinc.com/api/download/124708/",
+    "status": 200,
+    "bytes": 2020080
+  },
+  {
+    "at": "2026-10-13T19:08:12.218711+00:00",
+    "url": "https://selinc.com/api/download/126035/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:08:13.413400+00:00",
+    "url": "https://selinc.com/api/download/126036/",
+    "status": 200,
+    "bytes": 2555441
+  },
+  {
+    "at": "2026-10-13T19:08:15.203258+00:00",
+    "url": "https://selinc.com/api/download/3636/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:08:16.399703+00:00",
+    "url": "https://selinc.com/api/download/292/",
+    "status": 200,
+    "bytes": 1293474
+  },
+  {
+    "at": "2026-10-13T19:08:19.796843+00:00",
+    "url": "https://selinc.com/api/download/236/",
+    "status": 200,
+    "bytes": 1389326
+  },
+  {
+    "at": "2026-10-13T19:08:21.263879+00:00",
+    "url": "https://selinc.com/api/download/3637/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:08:22.466634+00:00",
+    "url": "https://selinc.com/api/download/2857/",
+    "status": 200,
+    "bytes": 1329525
+  },
+  {
+    "at": "2026-10-13T19:08:25.674063+00:00",
+    "url": "https://selinc.com/api/download/2873/",
+    "status": 200,
+    "bytes": 975577
+  },
+  {
+    "at": "2026-10-13T19:08:28.460785+00:00",
+    "url": "https://selinc.com/api/download/3639/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:08:29.656602+00:00",
+    "url": "https://selinc.com/api/download/3024/",
+    "status": 200,
+    "bytes": 1781198
+  },
+  {
+    "at": "2026-10-13T19:08:33.800881+00:00",
+    "url": "https://selinc.com/api/download/2877/",
+    "status": 200,
+    "bytes": 1171113
+  },
+  {
+    "at": "2026-10-13T19:08:35.010029+00:00",
+    "url": "https://selinc.com/api/download/944/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:08:36.201833+00:00",
+    "url": "https://selinc.com/api/download/2840/",
+    "status": 200,
+    "bytes": 1016980
+  },
+  {
+    "at": "2026-10-13T19:08:38.595590+00:00",
+    "url": "https://selinc.com/api/download/2878/",
+    "status": 200,
+    "bytes": 921267
+  },
+  {
+    "at": "2026-10-13T19:08:39.807967+00:00",
+    "url": "https://selinc.com/api/download/130743/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:08:41.011406+00:00",
+    "url": "https://selinc.com/api/download/130746/",
+    "status": 200,
+    "bytes": 3031615
+  },
+  {
+    "at": "2026-10-13T19:08:48.878581+00:00",
+    "url": "https://selinc.com/api/download/128932/",
+    "status": 200,
+    "bytes": 1337393
+  },
+  {
+    "at": "2026-10-13T19:08:50.686575+00:00",
+    "url": "https://selinc.com/api/download/115593/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:08:51.874100+00:00",
+    "url": "https://selinc.com/api/download/10519/",
+    "status": 200,
+    "bytes": 3488011
+  },
+  {
+    "at": "2026-10-13T19:08:55.336144+00:00",
+    "url": "https://selinc.com/api/download/8725/",
+    "status": 200,
+    "bytes": 2250848
+  },
+  {
+    "at": "2026-10-13T19:08:58.591638+00:00",
+    "url": "https://selinc.com/api/download/116330/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:08:59.779289+00:00",
+    "url": "https://selinc.com/api/download/99010/",
+    "status": 200,
+    "bytes": 2226991
+  },
+  {
+    "at": "2026-10-13T19:09:02.550696+00:00",
+    "url": "https://selinc.com/api/download/222/",
+    "status": 200,
+    "bytes": 2989889
+  },
+  {
+    "at": "2026-10-13T19:09:07.280948+00:00",
+    "url": "https://selinc.com/api/download/116757/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:09:08.470928+00:00",
+    "url": "https://selinc.com/api/download/7413/",
+    "status": 200,
+    "bytes": 1938226
+  },
+  {
+    "at": "2026-10-13T19:09:12.798010+00:00",
+    "url": "https://selinc.com/api/download/2876/",
+    "status": 200,
+    "bytes": 2617473
+  },
+  {
+    "at": "2026-10-13T19:09:14.533214+00:00",
+    "url": "https://selinc.com/api/download/116519/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:09:15.739434+00:00",
+    "url": "https://selinc.com/api/download/2842/",
+    "status": 200,
+    "bytes": 2465488
+  },
+  {
+    "at": "2026-10-13T19:09:19.013715+00:00",
+    "url": "https://selinc.com/api/download/2883/",
+    "status": 200,
+    "bytes": 2004976
+  },
+  {
+    "at": "2026-10-13T19:09:20.644834+00:00",
+    "url": "https://selinc.com/api/download/116360/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:09:21.853402+00:00",
+    "url": "https://selinc.com/api/download/99384/",
+    "status": 200,
+    "bytes": 3375184
+  },
+  {
+    "at": "2026-10-13T19:09:26.141503+00:00",
+    "url": "https://selinc.com/api/download/2880/",
+    "status": 200,
+    "bytes": 2488627
+  },
+  {
+    "at": "2026-10-13T19:09:27.511299+00:00",
+    "url": "https://selinc.com/api/download/137865/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:09:28.707386+00:00",
+    "url": "https://selinc.com/api/download/6603/",
+    "status": 200,
+    "bytes": 2242342
+  },
+  {
+    "at": "2026-10-13T19:09:31.471085+00:00",
+    "url": "https://selinc.com/api/download/6359/",
+    "status": 200,
+    "bytes": 1655070
+  },
+  {
+    "at": "2026-10-13T19:09:32.732162+00:00",
+    "url": "https://selinc.com/api/download/100136/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:09:33.924456+00:00",
+    "url": "https://selinc.com/api/download/100135/",
+    "status": 200,
+    "bytes": 2179031
+  },
+  {
+    "at": "2026-10-13T19:09:36.420169+00:00",
+    "url": "https://selinc.com/api/download/100134/",
+    "status": 200,
+    "bytes": 2042207
+  },
+  {
+    "at": "2026-10-13T19:09:39.502569+00:00",
+    "url": "https://selinc.com/api/download/113968/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:09:40.706771+00:00",
+    "url": "https://selinc.com/api/download/113964/",
+    "status": 200,
+    "bytes": 2317307
+  },
+  {
+    "at": "2026-10-13T19:09:46.417692+00:00",
+    "url": "https://selinc.com/api/download/111332/",
+    "status": 200,
+    "bytes": 2078137
+  },
+  {
+    "at": "2026-10-13T19:09:48.089499+00:00",
+    "url": "https://selinc.com/api/download/132531/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:09:49.283510+00:00",
+    "url": "https://selinc.com/api/download/132528/",
+    "status": 200,
+    "bytes": 1772554
+  },
+  {
+    "at": "2026-10-13T19:09:54.997237+00:00",
+    "url": "https://selinc.com/api/download/131972/",
+    "status": 200,
+    "bytes": 3168814
+  },
+  {
+    "at": "2026-10-13T19:09:56.349791+00:00",
+    "url": "https://selinc.com/api/download/7577/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:09:57.553103+00:00",
+    "url": "https://selinc.com/api/download/7574/",
+    "status": 200,
+    "bytes": 3050450
+  },
+  {
+    "at": "2026-10-13T19:10:00.336195+00:00",
+    "url": "https://selinc.com/api/download/6340/",
+    "status": 200,
+    "bytes": 3262005
+  },
+  {
+    "at": "2026-10-13T19:10:01.971519+00:00",
+    "url": "https://selinc.com/api/download/3651/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:10:03.183827+00:00",
+    "url": "https://selinc.com/api/download/102318/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:10:04.383552+00:00",
+    "url": "https://selinc.com/api/download/102315/",
+    "status": 200,
+    "bytes": 2764267
+  },
+  {
+    "at": "2026-10-13T19:10:08.227747+00:00",
+    "url": "https://selinc.com/api/download/102240/",
+    "status": 200,
+    "bytes": 2320475
+  },
+  {
+    "at": "2026-10-13T19:10:13.794844+00:00",
+    "url": "https://selinc.com/api/download/3652/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:10:14.992512+00:00",
+    "url": "https://selinc.com/api/download/106868/",
+    "status": 200,
+    "bytes": 1649634
+  },
+  {
+    "at": "2026-10-13T19:10:17.634761+00:00",
+    "url": "https://selinc.com/api/download/115929/",
+    "status": 200,
+    "bytes": 3075570
+  },
+  {
+    "at": "2026-10-13T19:10:18.997342+00:00",
+    "url": "https://selinc.com/api/download/3954/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:10:20.187631+00:00",
+    "url": "https://selinc.com/api/download/1386/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:10:21.373449+00:00",
+    "url": "https://selinc.com/api/download/1386/?lang=en&dest=ektronAsset",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:10:22.570683+00:00",
+    "url": "https://selinc.com/notfound/",
+    "status": 200,
+    "bytes": 5590
+  },
+  {
+    "at": "2026-10-13T19:10:23.774789+00:00",
+    "url": "https://selinc.com/api/download/3954/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:10:24.977331+00:00",
+    "url": "https://selinc.com/api/download/106178/",
+    "status": 200,
+    "bytes": 7532027
+  },
+  {
+    "at": "2026-10-13T19:10:28.197647+00:00",
+    "url": "https://selinc.com/api/download/97801/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:10:29.388787+00:00",
+    "url": "https://selinc.com/api/download/10343/",
+    "status": 200,
+    "bytes": 3807113
+  },
+  {
+    "at": "2026-10-13T19:10:41.094373+00:00",
+    "url": "https://selinc.com/api/download/128658/",
+    "status": 200,
+    "bytes": 2456655
+  },
+  {
+    "at": "2026-10-13T19:10:42.562042+00:00",
+    "url": "https://selinc.com/api/download/3657/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:10:43.759399+00:00",
+    "url": "https://selinc.com/api/download/2895/",
+    "status": 200,
+    "bytes": 2457569
+  },
+  {
+    "at": "2026-10-13T19:10:51.500772+00:00",
+    "url": "https://selinc.com/api/download/10737/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:10:52.716032+00:00",
+    "url": "https://selinc.com/api/download/10734/",
+    "status": 200,
+    "bytes": 3412102
+  },
+  {
+    "at": "2026-10-13T19:11:07.338720+00:00",
+    "url": "https://selinc.com/api/download/8313/",
+    "status": 200,
+    "bytes": 2393603
+  },
+  {
+    "at": "2026-10-13T19:11:09.744514+00:00",
+    "url": "https://selinc.com/api/download/3656/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:11:10.948846+00:00",
+    "url": "https://selinc.com/api/download/2822/",
+    "status": 200,
+    "bytes": 1601428
+  },
+  {
+    "at": "2026-10-13T19:11:18.615718+00:00",
+    "url": "https://selinc.com/api/download/2893/",
+    "status": 200,
+    "bytes": 1783267
+  },
+  {
+    "at": "2026-10-13T19:11:25.543477+00:00",
+    "url": "https://selinc.com/api/download/106698/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:11:26.737648+00:00",
+    "url": "https://selinc.com/api/download/106696/",
+    "status": 200,
+    "bytes": 4006991
+  },
+  {
+    "at": "2026-10-13T19:11:32.769305+00:00",
+    "url": "https://selinc.com/api/download/110044/",
+    "status": 200,
+    "bytes": 2771712
+  },
+  {
+    "at": "2026-10-13T19:11:39.685473+00:00",
+    "url": "https://selinc.com/api/download/3659/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:11:40.879974+00:00",
+    "url": "https://selinc.com/api/download/2818/",
+    "status": 200,
+    "bytes": 1214862
+  },
+  {
+    "at": "2026-10-13T19:11:43.149762+00:00",
+    "url": "https://selinc.com/api/download/220/",
+    "status": 200,
+    "bytes": 970584
+  },
+  {
+    "at": "2026-10-13T19:11:44.345434+00:00",
+    "url": "https://selinc.com/api/download/139124/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:11:45.552230+00:00",
+    "url": "https://selinc.com/api/download/138589/",
+    "status": 200,
+    "bytes": 4207799
+  },
+  {
+    "at": "2026-10-13T19:11:55.207591+00:00",
+    "url": "https://selinc.com/api/download/138588/",
+    "status": 200,
+    "bytes": 2531431
+  },
+  {
+    "at": "2026-10-13T19:12:01.387815+00:00",
+    "url": "https://selinc.com/api/download/138685/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:12:02.587428+00:00",
+    "url": "https://selinc.com/api/download/137960/",
+    "status": 200,
+    "bytes": 2743399
+  },
+  {
+    "at": "2026-10-13T19:12:11.448201+00:00",
+    "url": "https://selinc.com/api/download/137905/",
+    "status": 200,
+    "bytes": 1565817
+  },
+  {
+    "at": "2026-10-13T19:12:16.294524+00:00",
+    "url": "https://selinc.com/api/download/21474836976/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:12:17.494541+00:00",
+    "url": "https://selinc.com/api/download/21474836975/",
+    "status": 200,
+    "bytes": 5958836
+  },
+  {
+    "at": "2026-10-13T19:12:34.475491+00:00",
+    "url": "https://selinc.com/api/download/100537/",
+    "status": 200,
+    "bytes": 1085927
+  },
+  {
+    "at": "2026-10-13T19:12:36.293789+00:00",
+    "url": "https://selinc.com/api/download/134972/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:12:37.497181+00:00",
+    "url": "https://selinc.com/api/download/133394/",
+    "status": 200,
+    "bytes": 3656851
+  },
+  {
+    "at": "2026-10-13T19:12:51.843755+00:00",
+    "url": "https://selinc.com/api/download/132759/",
+    "status": 200,
+    "bytes": 1233075
+  },
+  {
+    "at": "2026-10-13T19:12:53.135644+00:00",
+    "url": "https://selinc.com/api/download/111397/",
+    "status": 200,
+    "bytes": 1211394
+  },
+  {
+    "at": "2026-10-13T19:12:56.230270+00:00",
+    "url": "https://selinc.com/api/download/129976/",
+    "status": 200,
+    "bytes": 5356942
+  },
+  {
+    "at": "2026-10-13T19:13:12.787412+00:00",
+    "url": "https://selinc.com/api/download/122716/",
+    "status": 200,
+    "bytes": 1206555
+  },
+  {
+    "at": "2026-10-13T19:13:14.814687+00:00",
+    "url": "https://selinc.com/api/download/119049/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:13:16.020586+00:00",
+    "url": "https://selinc.com/api/download/116461/",
+    "status": 200,
+    "bytes": 1605165
+  },
+  {
+    "at": "2026-10-13T19:13:18.062237+00:00",
+    "url": "https://selinc.com/api/download/114940/",
+    "status": 200,
+    "bytes": 1624363
+  },
+  {
+    "at": "2026-10-13T19:13:22.197336+00:00",
+    "url": "https://selinc.com/api/download/131993/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:13:23.400673+00:00",
+    "url": "https://selinc.com/api/download/131997/",
+    "status": 200,
+    "bytes": 3658037
+  },
+  {
+    "at": "2026-10-13T19:13:36.074803+00:00",
+    "url": "https://selinc.com/api/download/131988/",
+    "status": 200,
+    "bytes": 2548177
+  }
+]

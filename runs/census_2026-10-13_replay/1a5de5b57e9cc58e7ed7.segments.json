@@ -1,0 +1,96 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "SIMATIC S7-300 | Siemens"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Why SIMATIC S7-300?"
+  },
+  {
+    "location": "html-block:4",
+    "text": "The SIMATIC S7-300 is a universal controller used in many applications worldwide. It saves on installation space and features a modular design, providing flexibility for various automation tasks. Proven successful millions of times, SIMATIC ensures continuity and quality for future-proof applications.",
+    "heading": "Why SIMATIC S7-300?"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Key benefits"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Save valuable space"
+  },
+  {
+    "location": "html-block:7",
+    "text": "The SIMATIC S7-300 saves on PLC installation space and can be mounted with both horizontal and vertical arrangements to optimize available cabinet layouts.",
+    "heading": "Save valuable space"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Rely on long-term availability"
+  },
+  {
+    "location": "html-block:9",
+    "text": "You want your application to be trustworthy and future-proof? The SIMATIC S7-300/ET 200M system families will be available until 2033.",
+    "heading": "Rely on long-term availability"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Enjoy maintenance-free automation"
+  },
+  {
+    "location": "html-block:11",
+    "text": "The only maintenance tasks you'll need to perform are simple and infrequent: backing up the operating system, replacing modules, swapping backup batteries, and changing fuses.",
+    "heading": "Enjoy maintenance-free automation"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Featured capabilities"
+  },
+  {
+    "location": "html-block:13",
+    "text": "all",
+    "heading": "Featured capabilities"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Modular design"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Your system configuration is flexible — choose between a single rack or multiple racks based on your application requirements.",
+    "heading": "Modular design"
+  },
+  {
+    "location": "html-block:16",
+    "text": "all",
+    "heading": "Modular design"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Single rack configuration"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Enjoy a compact footprint — a space-efficient layout that keeps all modules centralized. Manage fewer signal connections through simplified wiring. Future-proof your investment with room to grow with easy expansion opportunities.",
+    "heading": "Single rack configuration"
+  },
+  {
+    "location": "html-block:19",
+    "text": "all",
+    "heading": "Single rack configuration"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Multiple rack configuration"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Process more signals across distributed modules with higher I/O capacity. Accommodate larger system architectures with additional slots. Distribute modules across multiple locations with flexible placement.",
+    "heading": "Multiple rack configuration"
+  }
+]

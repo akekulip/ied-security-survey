@@ -1,0 +1,133 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "Digital Transducer - SICAM T | Siemens"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Why SICAM T transducer?"
+  },
+  {
+    "location": "html-block:4",
+    "text": "SICAM T is a digital transducer that precisely measures electrical quantities in your network. Use this single unit for comprehensive monitoring.",
+    "heading": "Why SICAM T transducer?"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Accurate, timely electrical network data is crucial for effective control and operational awareness. SICAM T provides up to 60 measured values for precise control, immediate notifications and clear visualization. The compact design allows for flexible application in industrial and utility environments.",
+    "heading": "Why SICAM T transducer?"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Enable reliable control and rapid response to critical events with 4 fast analog outputs and 2 binary outputs to minimize downtime. Simplify operation with a user-friendly web server, eliminating extra software and making setup straightforward.",
+    "heading": "Why SICAM T transducer?"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Key benefits"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Improve network monitoring"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Precisely monitor electrical networks with the SICAM T digital transducer. Access up to 60 measured values for comprehensive insights and informed decision-making in your industrial applications.",
+    "heading": "Improve network monitoring"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Automate processes"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Use fast analog and binary outputs for reliable automation. Integrate with substation automation, protection or SCADA via protocols. React quickly to operational changes for system stability.",
+    "heading": "Automate processes"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Keep operations running"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Deploy a transducer to operate reliably in extreme temperatures with high EMC immunity. Minimize downtime and reduce maintenance for sustained performance.",
+    "heading": "Keep operations running"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Featured capabilities"
+  },
+  {
+    "location": "html-block:15",
+    "text": "all",
+    "heading": "Featured capabilities"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Time synchronization"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Create a common time basis when communicating: external time synchronization via Ethernet NTP or via field bus using the MODBUS RTU or the IEC 60870-5-103 communication protocol. Internal time synchronization via RTC.",
+    "heading": "Time synchronization"
+  },
+  {
+    "location": "html-block:18",
+    "text": "all",
+    "heading": "Time synchronization"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Input and output circuits"
+  },
+  {
+    "location": "html-block:20",
+    "text": "4 inputs for alternating voltage measurement and 3 inputs for alternating current measurements up to 10 A continuous. 4 optional DC analog outputs freely configurable and individually programmable binary outputs.",
+    "heading": "Input and output circuits"
+  },
+  {
+    "location": "html-block:21",
+    "text": "all",
+    "heading": "Input and output circuits"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Measurands"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Record and calculate true RMS for voltage, current, power and energy. Also record power frequency, phase angle, power factor and active power factor so you can make informed decisions.",
+    "heading": "Measurands"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Explore resources"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Downloads"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Catalog SICAM Power Quality and Measurement",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Tender specifications",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:28",
+    "text": "SiePortal - Online shop"
+  },
+  {
+    "location": "html-block:29",
+    "text": "SICAM T on SiePortal",
+    "heading": "SiePortal - Online shop"
+  }
+]

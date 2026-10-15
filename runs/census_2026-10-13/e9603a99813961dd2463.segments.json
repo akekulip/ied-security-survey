@@ -1,0 +1,256 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "tMEDIC - Legacy | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "tMEDIC - Legacy"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Contact Us",
+    "heading": "tMEDIC - Legacy"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Manufacturing for the product has been discontinued. As an alternative, please refer to MS 3000 or DGA 900 Plus.",
+    "heading": "tMEDIC - Legacy"
+  },
+  {
+    "location": "html-block:7",
+    "text": "The FARADAY tMEDIC system combines the strengths of a number of GE Vernova technologies to form an integrated, scalable transformer monitoring and analysis system. Placing this highly intelligent system at a transformer adds new functionality and value to substation operations.",
+    "heading": "tMEDIC - Legacy"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Features and Benefits"
+  },
+  {
+    "location": "html-block:9",
+    "text": "The FARADAY tMEDIC draws on data from sensors and computes IEEE and IEC analysis models to accurately assess the condition and capacity of a transformer unit. The FARADAY tMEDIC incorporates proven technologies such as programmable logic control, database manipulation, high-speed processors and the latest in communications interfaces to provide a comprehensive set of functions:",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Data acquisition: scans status and analog measurements from transformer sensors",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Digital outputs for alarms, warnings and control signals",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Local control outputs to cooling equipment",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Sophisticated IEEE and IEC model computations to determine current transformer operating conditions",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Diagnosis and warning of developing problems from model computation results",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Temporary storage of data and analysis results for periodic access by remote users",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Secure access by authorized users",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Monitoring of analog limit violations and digital status changes",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Major and/or minor alarm logic for SCADA applications",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Communication of data and information via serial, fiber, modem, wireless, pager, LAN/WAN and Internet",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Local alarm annunciator display",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Technical Support"
+  },
+  {
+    "location": "html-block:23",
+    "text": "GSA Schedule"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Support"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Subscribe",
+    "heading": "Support"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Technical Support"
+  },
+  {
+    "location": "html-block:30",
+    "text": "GSA Schedule"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Support"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Subscribe",
+    "heading": "Support"
+  },
+  {
+    "location": "html-block:35",
+    "text": "tMEDIC - Legacy"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Contact Us",
+    "heading": "tMEDIC - Legacy"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Manufacturing for the product has been discontinued. As an alternative, please refer to MS 3000 or DGA 900 Plus.",
+    "heading": "tMEDIC - Legacy"
+  },
+  {
+    "location": "html-block:38",
+    "text": "The FARADAY tMEDIC system combines the strengths of a number of GE Vernova technologies to form an integrated, scalable transformer monitoring and analysis system. Placing this highly intelligent system at a transformer adds new functionality and value to substation operations.",
+    "heading": "tMEDIC - Legacy"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Features and Benefits"
+  },
+  {
+    "location": "html-block:40",
+    "text": "The FARADAY tMEDIC draws on data from sensors and computes IEEE and IEC analysis models to accurately assess the condition and capacity of a transformer unit. The FARADAY tMEDIC incorporates proven technologies such as programmable logic control, database manipulation, high-speed processors and the latest in communications interfaces to provide a comprehensive set of functions:",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Data acquisition: scans status and analog measurements from transformer sensors",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Digital outputs for alarms, warnings and control signals",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Local control outputs to cooling equipment",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Sophisticated IEEE and IEC model computations to determine current transformer operating conditions",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Diagnosis and warning of developing problems from model computation results",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:46",
+    "text": "Temporary storage of data and analysis results for periodic access by remote users",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:47",
+    "text": "Secure access by authorized users",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Monitoring of analog limit violations and digital status changes",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Major and/or minor alarm logic for SCADA applications",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:50",
+    "text": "Communication of data and information via serial, fiber, modem, wireless, pager, LAN/WAN and Internet",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:51",
+    "text": "Local alarm annunciator display",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:53",
+    "text": "Gateways and RTUs"
+  },
+  {
+    "location": "html-block:54",
+    "text": "GE Vernova offers an industry-leading suite of multifunction servers, gateways, RTUs, and...",
+    "heading": "Gateways and RTUs"
+  },
+  {
+    "location": "html-block:55",
+    "text": "View More",
+    "heading": "Gateways and RTUs"
+  }
+]

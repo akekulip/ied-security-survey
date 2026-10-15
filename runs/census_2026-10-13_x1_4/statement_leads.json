@@ -1,0 +1,121 @@
+[
+  {
+    "id": "6dc8d78dabe6203d3afb",
+    "source_id": "a2d8a35dec0a09ed328f",
+    "product_id": "sel_3560",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:2",
+    "matched": [
+      "Optional encryption"
+    ],
+    "context": "Secure\nDesigned for secure operation and access\n• SEL allowlist antivirus exe-GUARD technology to protect \nagainst malware and other cybersecurity threats \n• Individual and role-based accounts for configuration \nsoftware and HMI operation \n• Centralized authentication through the Lightweight \nDirectory Access Protocol (LDAP)\n• Alerts via Syslog, text/email, and Sequence of Events \n(SOE) logging\n• Optional encryption for Ethernet-tunneled serial SCADA \nprotocols and engineering access via Secure Shell \n(SSH) and Secure Sockets Layer (SSL)/Transport Layer \nSecurity (TLS) tunneling\nDeterministic\nBuilt for time-sensitive control applications  \n• Two deterministic processing tasks with configurable \ncycle times\n• Configurable task cycle times as fast as 1 ms\n• Dia [...]",
+    "match_count": 1,
+    "status": "unreviewed"
+  },
+  {
+    "id": "d7f3e95cac4b7626a5f1",
+    "source_id": "86d5743cd3aca8e43922",
+    "product_id": "sel_400g",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:24",
+    "matched": [
+      "require authentication"
+    ],
+    "context": "SEL-400G Data Sheet Schweitzer Engineering Laboratories, Inc.\n24\nMMS Authentication\nWhen enabled via a setting in the CID file, the relay will \nrequire authentication from any client requesting to initiate an MMS session. The client request must be accompanied by the Access Level 2 password. \nACSELERATOR Architect SEL-5032 Software\nUse Architect to manage the IEC 61850 configuration \nfor devices on the network. This Microsoft Windowsbased software provides easy-to-use displays for identifying and binding IEC 61850 network data between logical nodes by using IEC 61850-compliant CID files.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Metering Capabilities"
+  },
+  {
+    "id": "2a7dc523f8577b08868c",
+    "source_id": "43773f3f73615adb5ce4",
+    "product_id": "sel_411l",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:19",
+    "matched": [
+      "requires authentication"
+    ],
+    "context": "MMS File Services\nThis service of IEC 61850 MMS provides support for file \ntransfers completely within an MMS session. All relay \nfiles that can be transferred via FTP can also be transferred \nvia MMS file services.\nMMS Authentication\nWhen enabled via a setting in the Configured IED Description (CID) file, the relay requires authentication from any \nclient requesting to initiate an MMS session. \nArchitect Software\nUse ACSELERATOR Architect SEL-5032 Software to \nmanage the IEC 61850 configuration for devices on the \nnetwork. This Windows-based software provides easyto-use displays for identifying and binding IEC 61850 \nnetwork data among logical nodes that use IEC 61850-\ncompliant CID files.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Open Communications Protocols"
+  },
+  {
+    "id": "ece825cadb5cd327f502",
+    "source_id": "b85088d2298892e8ea42",
+    "product_id": "sel_421",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:13",
+    "matched": [
+      "requires authentication"
+    ],
+    "context": "Schweitzer Engineering Laboratories, Inc. SEL-421-4, -5 Data Sheet\n13\nMMS Authentication\nWhen enabled via a setting in the Configured IED Description (CID) file, the relay requires authentication from any \nclient requesting to initiate an MMS session. \nArchitect Software\nUse ACSELERATOR Architect SEL-5032 Software to \nmanage the IEC 61850 configuration for devices on the \nnetwork. This Windows-based software provides easyto-use displays for identifying and binding IEC 61850 \nnetwork data among logical nodes that use IEC 61850-\ncompliant CID files.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Open Communications Protocols"
+  },
+  {
+    "id": "14ab1e4e762e1fae4964",
+    "source_id": "4d8b02aaa84092bb61d1",
+    "product_id": "sel_451",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:11",
+    "matched": [
+      "requires authentication"
+    ],
+    "context": "MMS File Services\nThis service of IEC 61850 MMS provides support for file \ntransfers completely within an MMS session. All relay \nfiles that can be transferred via FTP can also be transferred \nvia MMS file services.\nMMS Authentication\nWhen enabled via a setting in the Configured IED Description (CID) file, the relay requires authentication from any \nclient requesting to initiate an MMS session. \nArchitect Software\nUse ACSELERATOR Architect SEL-5032 Software to \nmanage the IEC 61850 configuration for devices on the \nnetwork. This Windows-based software provides easyto-use displays for identifying and binding IEC 61850 \nnetwork data among logical nodes that use IEC 61850-\ncompliant CID files.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Mirrored Bits Communications"
+  },
+  {
+    "id": "b07eccac4887847f1ed5",
+    "source_id": "68bef0be9bcbe44411b0",
+    "product_id": "sel_487b",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:14",
+    "matched": [
+      "requires authentication"
+    ],
+    "context": "MMS File Services\nThis service of IEC 61850 MMS provides support for file \ntransfers completely within an MMS session. All relay \nfiles that can be transferred via FTP can also be transferred \nvia MMS file services.\nMMS Authentication\nWhen enabled via a setting in the Configured IED Description (CID) file, the relay requires authentication from any \nclient requesting to initiate an MMS session. \nArchitect Software\nUse ACSELERATOR Architect SEL-5032 Software to \nmanage the IEC 61850 configuration for devices on the \nnetwork. This Windows-based software provides easyto-use displays for identifying and binding IEC 61850 \nnetwork data among logical nodes that use IEC 61850-\ncompliant CID files.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Open Communications Protocols"
+  },
+  {
+    "id": "9378ac541b2e271e6f01",
+    "source_id": "360a24f69e26be4bd886",
+    "product_id": "sel_487e",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:14",
+    "matched": [
+      "requires authentication"
+    ],
+    "context": "MMS File Services\nThis service of IEC 61850 MMS provides support for file \ntransfers completely within an MMS session. All relay \nfiles that can be transferred via FTP can also be transferred \nvia MMS file services.\nMMS Authentication\nWhen enabled via a setting in the Configured IED Description (CID) file, the relay requires authentication from any \nclient requesting to initiate an MMS session. \nArchitect Software\nUse ACSELERATOR Architect SEL-5032 Software to \nmanage the IEC 61850 configuration for devices on the \nnetwork. This Windows-based software provides easyto-use displays for identifying and binding IEC 61850 \nnetwork data among logical nodes that use IEC 61850-\ncompliant CID files.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Mirrored Bits Communications"
+  },
+  {
+    "id": "fed9dace5a84d657dbf4",
+    "source_id": "bb62cae15a83c84af563",
+    "product_id": "sel_487v",
+    "feature": "requirement_statement",
+    "lead_type": "statement",
+    "location": "pdf-page:14",
+    "matched": [
+      "requires authentication"
+    ],
+    "context": "SEL-487V Data Sheet Schweitzer Engineering Laboratories, Inc.\n14\nMMS Authentication\nWhen enabled via a setting in the Configured IED Description (CID) file, the relay requires authentication from any \nclient requesting to initiate an MMS session. \nArchitect Software\nUse ACSELERATOR Architect SEL-5032 Software to \nmanage the IEC 61850 configuration for devices on the \nnetwork. This Windows-based software provides easyto-use displays for identifying and binding IEC 61850 \nnetwork data among logical nodes that use IEC 61850-\ncompliant CID files.",
+    "match_count": 1,
+    "status": "unreviewed",
+    "heading": "Open Communications Protocols"
+  }
+]

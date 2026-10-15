@@ -1,0 +1,370 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "EPM/EPM 5100 Drawout Power Metering System"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "EPM/EPM 5100 - Legacy"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Drawout Power Quality Metering System"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Contact Us",
+    "heading": "Drawout Power Quality Metering System"
+  },
+  {
+    "location": "html-block:7",
+    "text": "GE Vernova’s Electrification has discontinued sales of EPM 5100 meters. As an alternative, please refer to EPM 6000.",
+    "heading": "Drawout Power Quality Metering System"
+  },
+  {
+    "location": "html-block:8",
+    "text": "The EPM 5100 is a full function microprocessor-based meter that displays more than 50 metered values with revenue-class accuracy of 0.5% for power. The meter is available in industry standard S1-compatible case to maintain draw-out capability, allowing easy upgrade or retrofit from existing DS-63, DS-64 or DS-65 electromechanical watthour meters.",
+    "heading": "Drawout Power Quality Metering System"
+  },
+  {
+    "location": "html-block:9",
+    "text": "EPM 5100 continuously monitors metered values and displays the desired functions and the calculated parameters on a built-in two line, alphanumeric LCD display on the front panel. The meter can easily be mounted in panel applications including generator monitoring and substation automation. The meter can also provide data to RTUs, PLCs and other control devices. The EPM 5100 is fully compatible with GE Vernova EnerVista suite of software for remote monitoring.",
+    "heading": "Drawout Power Quality Metering System"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Features & Benefits"
+  },
+  {
+    "location": "html-block:11",
+    "text": "3 Phase RMS revenue class multifunction power meter",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Internally powered electronics. No external control power transformer is required for up to 600 VAC",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Automatic self test feature for internal electronics failure and data validation",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Large alphanumeric 2-line LCD backlit display with contrast adjustment",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:15",
+    "text": "User-defined security access to critical data guarantees data integrity",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Economical design for panel mount with industry standard S1 draw-out case",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Modbus open protocol communications and KYZ pulse outputs to PLCs and other devices.",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Continuous metering of electrical loads such as motor control centers, generator panels, feeders, switchgear etc",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Track power usage and demand for billing",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:21",
+    "text": "With its 2.5\" depth, the panel-mount EPM is perfect for switchboard metering applications",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Provide remote status when used with EnerVista suite of software",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Retrofit existing DS-63, DS-64 or DS-65 electromechanical watt-hour meters. S1 draw-out case design provides easy upgrade.",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Low and medium voltage applications",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:26",
+    "text": "RMS measurement of over electrical parameters with ANSI accuracy standards - CSA revenue certified",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Measures 3 phase real time amps, volts, power, energy, power factor and frequency",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Direct Voltage input for 69 to 600 Volts and operating frequency of 45 to 65 Hz",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:29",
+    "text": "User Interface"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Modbus open protocol communication over industry standard RS 485",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:31",
+    "text": "KYZ pulse output for PLC and other device interfaces",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Support"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Subscribe",
+    "heading": "Support"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Support"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Subscribe",
+    "heading": "Support"
+  },
+  {
+    "location": "html-block:42",
+    "text": "EPM/EPM 5100 - Legacy"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Drawout Power Quality Metering System"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Contact Us",
+    "heading": "Drawout Power Quality Metering System"
+  },
+  {
+    "location": "html-block:45",
+    "text": "GE Vernova’s Electrification has discontinued sales of EPM 5100 meters. As an alternative, please refer to EPM 6000.",
+    "heading": "Drawout Power Quality Metering System"
+  },
+  {
+    "location": "html-block:46",
+    "text": "The EPM 5100 is a full function microprocessor-based meter that displays more than 50 metered values with revenue-class accuracy of 0.5% for power. The meter is available in industry standard S1-compatible case to maintain draw-out capability, allowing easy upgrade or retrofit from existing DS-63, DS-64 or DS-65 electromechanical watthour meters.",
+    "heading": "Drawout Power Quality Metering System"
+  },
+  {
+    "location": "html-block:47",
+    "text": "EPM 5100 continuously monitors metered values and displays the desired functions and the calculated parameters on a built-in two line, alphanumeric LCD display on the front panel. The meter can easily be mounted in panel applications including generator monitoring and substation automation. The meter can also provide data to RTUs, PLCs and other control devices. The EPM 5100 is fully compatible with GE Vernova EnerVista suite of software for remote monitoring.",
+    "heading": "Drawout Power Quality Metering System"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Features & Benefits"
+  },
+  {
+    "location": "html-block:49",
+    "text": "3 Phase RMS revenue class multifunction power meter",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:50",
+    "text": "Internally powered electronics. No external control power transformer is required for up to 600 VAC",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:51",
+    "text": "Automatic self test feature for internal electronics failure and data validation",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Large alphanumeric 2-line LCD backlit display with contrast adjustment",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:53",
+    "text": "User-defined security access to critical data guarantees data integrity",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Economical design for panel mount with industry standard S1 draw-out case",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Modbus open protocol communications and KYZ pulse outputs to PLCs and other devices.",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Continuous metering of electrical loads such as motor control centers, generator panels, feeders, switchgear etc",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:58",
+    "text": "Track power usage and demand for billing",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:59",
+    "text": "With its 2.5\" depth, the panel-mount EPM is perfect for switchboard metering applications",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:60",
+    "text": "Provide remote status when used with EnerVista suite of software",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:61",
+    "text": "Retrofit existing DS-63, DS-64 or DS-65 electromechanical watt-hour meters. S1 draw-out case design provides easy upgrade.",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:62",
+    "text": "Low and medium voltage applications",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:63",
+    "text": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:64",
+    "text": "RMS measurement of over electrical parameters with ANSI accuracy standards - CSA revenue certified",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:65",
+    "text": "Measures 3 phase real time amps, volts, power, energy, power factor and frequency",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:66",
+    "text": "Direct Voltage input for 69 to 600 Volts and operating frequency of 45 to 65 Hz",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:67",
+    "text": "User Interface"
+  },
+  {
+    "location": "html-block:68",
+    "text": "Modbus open protocol communication over industry standard RS 485",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:69",
+    "text": "KYZ pulse output for PLC and other device interfaces",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:70",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:71",
+    "text": "PQM II"
+  },
+  {
+    "location": "html-block:72",
+    "text": "The PQM II is an ideal choice when continuous monitoring of a three phase system is...",
+    "heading": "PQM II"
+  },
+  {
+    "location": "html-block:73",
+    "text": "View More",
+    "heading": "PQM II"
+  },
+  {
+    "location": "html-block:74",
+    "text": "EPM"
+  },
+  {
+    "location": "html-block:75",
+    "text": "GE Vernova provides a wide range of high accuracy power quality, power meters and...",
+    "heading": "EPM"
+  },
+  {
+    "location": "html-block:76",
+    "text": "View More",
+    "heading": "EPM"
+  },
+  {
+    "location": "html-block:77",
+    "text": "EPM 7000P"
+  },
+  {
+    "location": "html-block:78",
+    "text": "The Multilin™ EPM 7000P is a versatile power quality meter offering that can be used...",
+    "heading": "EPM 7000P"
+  },
+  {
+    "location": "html-block:79",
+    "text": "View More",
+    "heading": "EPM 7000P"
+  }
+]

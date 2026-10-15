@@ -1,0 +1,34 @@
+[
+  {
+    "location": "pdf-page:1",
+    "text": "SEL -2664S\nStator Ground Protection Relay\n100 Percent Stator Ground Protection,  \n100 Percent of the Time\n• Provide 100 percent stator ground protection with a combination \nof signal injection and neutral overvoltage elements. \n• Eliminate frequency blind spots during generator startup by using \nthe unique multisine injection.\n• Reduce cost by using the SEL -2664S Stator Ground Protection \nRelay as a standalone protection device or with SEL or third-party \ngenerator protection.\n• Simplify commissioning with the SEL -4664 Calibration Module."
+  },
+  {
+    "location": "pdf-page:2",
+    "text": "Functional Overview\nSEL-2664S\nVN\nIN\nNGT‡\n‡Neutral grounding transformer\n◊Neutral grounding resistor\nNGR◊\nDC Field\nExcitation\nSEL-2664\n59N1\n64S\n59N\nRMS\nNGR\n64F\nDFR HMI LDP/\nCPRO LGC MET SER\nANSI Numbers/Acronyms and Functions \n59N Neutral Overvoltage\n64F Field Ground\n64S Stator Ground\nAdditional Functions\nDFR Event Reports\nHMI Operator Interface\nLDP Profile Report Monitoring\nCPRO Compressed Profile Report\nLGC SELogic ® Control Equations\nMET Metering\nNGR Neutral Grounding Resistor Open/Short\nSER Sequential Events Recorder\n *Optional features\n"
+  },
+  {
+    "location": "pdf-page:3",
+    "text": "Key Features \nSecure and Reliable 100 Percent Stator Winding Ground Protection\nProtect generators from stator ground faults at standstill, during startup, \nand while running with the multisine frequency injection and neutral \novervoltage-based protection in the SEL -2664S. This solution is intended \nfor use with high-resistance grounded generator applications. \nStator Protection for Retrofit and New Equipment Applications\nUse the SEL -2664S as a standalone protection device or with SEL or third-\nparty generator protection. The SEL -2664S is ideal for all high-resistance-\ngrounded, synchronous-machine applications.\nRotor Field Ground Protection\nDetect field ground faults by connecting the SEL -2664S to the SEL -2664 \nField Ground Module to measure field insulation-to-ground resistance using \na switched dc voltage injection method.\nElimination of Protection Blind Spots\nInject up to four individual frequencies using the unique multisine frequency \ninjection to ensure that the protection does not have a blind spot during \ngenerator startup.\nRugged Design for Extreme Environments\nBuilt to the same high standards as SEL protective relays, the SEL -2664S \nwithstands vibration, electrical surges, fast transients, and extreme \ntemperatures, meeting stringent industry standards. The printed circuit \nboards are conformally coated to provide an additional barrier to airborne \ncontaminants, such as hydrogen sulfide, chlorine, salt, and moisture.\nFlexible Communications\nEasily integrate the SEL -2664S into your system with multiple \ncommunications protocols, including Modbus, DNP3, Telnet, IEC 61850, and \nFTP. You can implement communications-assisted tripping schemes with \nstandard protocols, including Mirrored  Bits ® communications and IEC 61850 \nGOOSE. The SEL -2664S offers one fiber serial  port, two fiber Ethernet \nports, and two EIA-232 serial ports. \nSimplified Calibration\nThe SEL -2664S automated field calibration procedure uses the SEL -4664 \nCalibration Module, streamlining the setup and commissioning process."
+  },
+  {
+    "location": "pdf-page:4",
+    "text": "SEL -2664S Product Overview\nFiber-optic EIA-232  \nserial port\nDual fiber-optic \nEthernet ports\n \nEIA-232 serial port\n \nPower supply:  \n125/250 Vdc or  \n110/240 Vac\nTwo digital inputs, optically isolated \nand internally wetted with 24 Vdc\nFour digital outputs: OUT01—Form C; \nOUT02, 03, 04—Form A\nNeutral voltage VN/injection source (I_SRC)Neutral current input"
+  },
+  {
+    "location": "pdf-page:5",
+    "text": " \nEight status LEDs \nfor an easy-to-use \ninterface\nTarget/trip reset button\nFront EIA-232 serial port\nFront and Side \nFaceplates\nEight status LEDs for an \neasy-to-use interface"
+  },
+  {
+    "location": "pdf-page:6",
+    "text": "SEL -4664 Product Overview\n \nLEDs indicate applied \ncalibration resistance\nTest lead ports \n(not polarity sensitive)\n9 V battery  \ncompartment\nRemovable fuse"
+  },
+  {
+    "location": "pdf-page:7",
+    "text": "General\nInjection Source \n(I_SRC)\nSource rating: 50 VA continuous\nNominal injected current amplitude: 0.5–5.0 A rms\nContinuous thermal rating: 5 A rms\nAmplifier clipping level: >±74 V peak\nFour-Frequency Multisine Injection\n   For 60 Hz nominal: 18, 24, 36, and 48 Hz\n   For 50 Hz nominal: 15, 20, 30, and 40 Hz\nMaximum open-terminal voltage: 80 V peak\nProtection: Self-protecting\nNeutral Voltage \nInputs\nRated operating voltage (Ue): 2.5–240 Vac\nRated insulation voltage (Ui): 300 Vac\nMaximum continuous overvoltage rating: 275 Vac\nCore-Balanced \nCurrent  \nTransformer \n(CBCT) Current \nInput\nNominal input current: 5 mA ac rms\nContinuous thermal rating: 1 A\nMeasurement Clipping Level\n   100 mA peak (when CTN_LOC = SEC)\n   12 mA peak (when CTN_LOC = PRIM)\nOne-second thermal rating: 10 A\nBurden rating: 4 Ω\nRated insulation voltage (Ui): 300 Vac\nOutput Contacts This relay supports Form A and C outputs.\nDC Output Ratings\n   Operational voltage: 24–250 Vdc\n   Continuous carry: 6 A @ 70°C, 4 A @ 85°C\nAC Output Ratings\n   Maximum operational voltage: 240 Vac\n   Rated operational current (Ie): 3 A @ 120 Vac, 1.5 A @ 240 Vac\nCommunications \nProtocols\nSEL, Modbus, DNP3, FTP, TCP/IP, Telnet, Simple Network Time Protocol (SNTP), IEC 61850, \nand Mirrored  Bits  communications\nOperating  \nTemperature\n–40° to + 85°C (–40° to + 185°F)\nMounting Options Available with wall-, panel-, and rack-mount options\nCertifications To view certifications for the SEL -2664S, please visit: selinc.com/company/certifications\nInjection Source, Neutral Voltage Inputs, and CBCT Current Input specifications shown are for the most recent amplifier version.  \nFor previous versions, please see Hardware Features in the instruction manual for more detail.\nSEL -2664S Specifications"
+  },
+  {
+    "location": "pdf-page:8",
+    "text": "© 2023 by Schweitzer Engineering Laboratories, Inc. \nPF00324 · 20230119\nMaking Electric Power Safer , More Reliable, and More Economical  \n+1.509.332.1890 | info@selinc.com | selinc.com"
+  }
+]

@@ -1,0 +1,332 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "HID | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "HID"
+  },
+  {
+    "location": "html-block:5",
+    "text": "High Impedance Differential Module"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Contact Us Buy Now",
+    "heading": "High Impedance Differential Module"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Use the HID module in conjunction with a high-speed overcurrent relay to provide three phase high impedance differential protection for substation busbars of any voltage level. Additionally, it can also be used to protect electrical machines like transformers, generators or motors against restricted ground faults.",
+    "heading": "High Impedance Differential Module"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Each HID module includes resistors that provide the associated high impedance relay with stability againstexternal faults, and varistors (MOV - Metal Oxide Varistors) in order to limit the secondary peak voltage below 2 kV during fault conditions.",
+    "heading": "High Impedance Differential Module"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Use the auxiliary contacts provided by an optional latching relay to short-circuit the resistors once the associated relay has tripped, to prevent the fault current from circulating through the resistors.",
+    "heading": "High Impedance Differential Module"
+  },
+  {
+    "location": "html-block:10",
+    "text": "The HID front panel incorporates a Reset pushbutton to reset the latching relay once the fault has been cleared, in order to eliminatethe resistors short circuit.",
+    "heading": "High Impedance Differential Module"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Features & Benefits:"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Single-zone bus protection, reactor protection, or sensitive restricted earth fault protection on grounded, wye-connected power transformer windings",
+    "heading": "Features & Benefits:"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Provides metal oxide varistors (MOV) to clamp secondary peak voltage to less than 2 kV",
+    "heading": "Features & Benefits:"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Single-zone bus protection, reactor protection, or sensitive restricted earth fault protection on grounded, wye-connected power transformer windings",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:16",
+    "text": "High impedance differential protection for electrical machines such as generators or motors, including lockout logic.",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Protection & Control"
+  },
+  {
+    "location": "html-block:18",
+    "text": "The combination of HID module with a high-speed overcurrent relay can be applied for bus protection in most cases where CTs having negligible leakage reactance are used.",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Additional functionality provided by the additional overcurrent device includes:",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:20",
+    "text": "time stamped sequence of event recorder",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:21",
+    "text": "waveform capture",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:22",
+    "text": "data logger",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:23",
+    "text": "communication to remote control centers",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Interactive Selector Guide"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Typical Applications"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Bus Principles & Protection"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Legacy Bus Protection"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Support"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Subscribe",
+    "heading": "Support"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Interactive Selector Guide"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Typical Applications"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Bus Principles & Protection"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Legacy Bus Protection"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Support"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Subscribe",
+    "heading": "Support"
+  },
+  {
+    "location": "html-block:44",
+    "text": "HID"
+  },
+  {
+    "location": "html-block:45",
+    "text": "High Impedance Differential Module"
+  },
+  {
+    "location": "html-block:46",
+    "text": "Contact Us Buy Now",
+    "heading": "High Impedance Differential Module"
+  },
+  {
+    "location": "html-block:47",
+    "text": "Use the HID module in conjunction with a high-speed overcurrent relay to provide three phase high impedance differential protection for substation busbars of any voltage level. Additionally, it can also be used to protect electrical machines like transformers, generators or motors against restricted ground faults.",
+    "heading": "High Impedance Differential Module"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Each HID module includes resistors that provide the associated high impedance relay with stability againstexternal faults, and varistors (MOV - Metal Oxide Varistors) in order to limit the secondary peak voltage below 2 kV during fault conditions.",
+    "heading": "High Impedance Differential Module"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Use the auxiliary contacts provided by an optional latching relay to short-circuit the resistors once the associated relay has tripped, to prevent the fault current from circulating through the resistors.",
+    "heading": "High Impedance Differential Module"
+  },
+  {
+    "location": "html-block:50",
+    "text": "The HID front panel incorporates a Reset pushbutton to reset the latching relay once the fault has been cleared, in order to eliminatethe resistors short circuit.",
+    "heading": "High Impedance Differential Module"
+  },
+  {
+    "location": "html-block:51",
+    "text": "Features & Benefits:"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Single-zone bus protection, reactor protection, or sensitive restricted earth fault protection on grounded, wye-connected power transformer windings",
+    "heading": "Features & Benefits:"
+  },
+  {
+    "location": "html-block:53",
+    "text": "Provides metal oxide varistors (MOV) to clamp secondary peak voltage to less than 2 kV",
+    "heading": "Features & Benefits:"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Single-zone bus protection, reactor protection, or sensitive restricted earth fault protection on grounded, wye-connected power transformer windings",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:56",
+    "text": "High impedance differential protection for electrical machines such as generators or motors, including lockout logic.",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Protection & Control"
+  },
+  {
+    "location": "html-block:58",
+    "text": "The combination of HID module with a high-speed overcurrent relay can be applied for bus protection in most cases where CTs having negligible leakage reactance are used.",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Additional functionality provided by the additional overcurrent device includes:",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:60",
+    "text": "time stamped sequence of event recorder",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:61",
+    "text": "waveform capture",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:62",
+    "text": "data logger",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:63",
+    "text": "communication to remote control centers",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:64",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:65",
+    "text": "P40 Agile P14N, P14D, P94V"
+  },
+  {
+    "location": "html-block:66",
+    "text": "The P14N non-directional feeder, P14D directional feeder and P94V voltage and frequency...",
+    "heading": "P40 Agile P14N, P14D, P94V"
+  },
+  {
+    "location": "html-block:67",
+    "text": "View More",
+    "heading": "P40 Agile P14N, P14D, P94V"
+  },
+  {
+    "location": "html-block:68",
+    "text": "MCAG"
+  },
+  {
+    "location": "html-block:69",
+    "text": "High Impedance Bus Differential Relay MCAG relays provide high-speed differential...",
+    "heading": "MCAG"
+  },
+  {
+    "location": "html-block:70",
+    "text": "View More",
+    "heading": "MCAG"
+  },
+  {
+    "location": "html-block:71",
+    "text": "MFAC"
+  },
+  {
+    "location": "html-block:72",
+    "text": "MFAC relays provide high-speed differential protection for various types of power system...",
+    "heading": "MFAC"
+  },
+  {
+    "location": "html-block:73",
+    "text": "View More",
+    "heading": "MFAC"
+  }
+]

@@ -1,0 +1,1682 @@
+[
+  {
+    "at": "2026-10-13T19:22:55.252621+00:00",
+    "url": "https://www.gevernova.com/robots.txt",
+    "status": 200,
+    "bytes": 5207,
+    "sha256": "38174ab81da1da9ba9bec5746eb246576af3f2d13361da1fa7a8a9e90ef0dfa8"
+  },
+  {
+    "at": "2026-10-13T19:22:56.465786+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=c30&type=3&node_id=4549",
+    "status": 200,
+    "bytes": 424015
+  },
+  {
+    "at": "2026-10-13T19:22:57.660153+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=c30&type=1&node_id=4549",
+    "status": 200,
+    "bytes": 383706
+  },
+  {
+    "at": "2026-10-13T19:22:58.870249+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=c30&type=4&node_id=4549",
+    "status": 200,
+    "bytes": 382371
+  },
+  {
+    "at": "2026-10-13T19:23:00.071195+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-11/Multilin-C30-Brochure-EN-12655K-Hybrid-202504-R003.pdf",
+    "status": 200,
+    "bytes": 2232445
+  },
+  {
+    "at": "2026-10-13T19:23:01.269384+00:00",
+    "url": "https://www.gevernova.com/grid-solutions/sites/default/files/2025-11/Multilin-UR-and-URPlus-Brochure-EN-12657H-Hybrid-202504-R002.pdf",
+    "status": 301,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:23:02.473008+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-11/Multilin-UR-and-URPlus-Brochure-EN-12657H-Hybrid-202504-R002.pdf",
+    "status": 200,
+    "bytes": 4943876
+  },
+  {
+    "at": "2026-10-13T19:23:04.002420+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=c60&type=3&node_id=4547",
+    "status": 200,
+    "bytes": 437691
+  },
+  {
+    "at": "2026-10-13T19:23:05.207751+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=c60&type=1&node_id=4547",
+    "status": 200,
+    "bytes": 383678
+  },
+  {
+    "at": "2026-10-13T19:23:06.418964+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=c60&type=4&node_id=4547",
+    "status": 200,
+    "bytes": 383464
+  },
+  {
+    "at": "2026-10-13T19:23:07.614823+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-11/Multilin-C60-Brochure-EN-12654K-Hybrid-202504-R003.pdf",
+    "status": 200,
+    "bytes": 3549253
+  },
+  {
+    "at": "2026-10-13T19:23:08.889086+00:00",
+    "url": "https://www.gevernova.com/grid-solutions/sites/default/files/2025-11/Multilin-UR-and-URPlus-Brochure-EN-12657H-Hybrid-202504-R002.pdf",
+    "status": 301,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:23:10.084239+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-11/Multilin-UR-and-URPlus-Brochure-EN-12657H-Hybrid-202504-R002.pdf",
+    "status": 200,
+    "bytes": 4943876
+  },
+  {
+    "at": "2026-10-13T19:23:11.505668+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=d20e&type=3&node_id=4553",
+    "status": 200,
+    "bytes": 381384
+  },
+  {
+    "at": "2026-10-13T19:23:12.714548+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=d20e&type=1&node_id=4553",
+    "status": 200,
+    "bytes": 381375
+  },
+  {
+    "at": "2026-10-13T19:23:13.916086+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-11/Multilin-D20E-Brochure-EN-32042-Hybrid-202504-R002.pdf",
+    "status": 200,
+    "bytes": 1362728
+  },
+  {
+    "at": "2026-10-13T19:23:15.109732+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=G500&type=3&node_id=4551",
+    "status": 200,
+    "bytes": 389281
+  },
+  {
+    "at": "2026-10-13T19:23:16.318671+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=G500&type=1&node_id=4551",
+    "status": 200,
+    "bytes": 382576
+  },
+  {
+    "at": "2026-10-13T19:23:17.516540+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=G500&type=4&node_id=4551",
+    "status": 302,
+    "bytes": 28398
+  },
+  {
+    "at": "2026-10-13T19:23:18.718601+00:00",
+    "url": "https://www.gevernova.com/electrification/document-not-available",
+    "status": 200,
+    "bytes": 374224
+  },
+  {
+    "at": "2026-10-13T19:23:19.911929+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-11/Multilin-G500-Brochure-RU-32056-Hybrid-202509-R002.pdf",
+    "status": 200,
+    "bytes": 5737726
+  },
+  {
+    "at": "2026-10-13T19:23:22.641032+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-09/Multilin-G500-Advanced-Substation-Gateway-Brochure-EN-35437-Hybrid-202504-R002.pdf",
+    "status": 200,
+    "bytes": 4537729
+  },
+  {
+    "at": "2026-10-13T19:23:23.852648+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=dgcc&type=3&node_id=4874",
+    "status": 302,
+    "bytes": 28399
+  },
+  {
+    "at": "2026-10-13T19:23:25.053977+00:00",
+    "url": "https://www.gevernova.com/electrification/document-not-available",
+    "status": 200,
+    "bytes": 374224
+  },
+  {
+    "at": "2026-10-13T19:23:26.256474+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=dgcc&type=1&node_id=4874",
+    "status": 302,
+    "bytes": 28399
+  },
+  {
+    "at": "2026-10-13T19:23:27.457030+00:00",
+    "url": "https://www.gevernova.com/electrification/document-not-available",
+    "status": 200,
+    "bytes": 374224
+  },
+  {
+    "at": "2026-10-13T19:23:28.667815+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4820-DGC-Family-%28DGCC-DGCR-DGCS-DGCV%29-A.pdf",
+    "status": 200,
+    "bytes": 108274
+  },
+  {
+    "at": "2026-10-13T19:23:29.857518+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=d20&type=3&node_id=4992",
+    "status": 302,
+    "bytes": 28399
+  },
+  {
+    "at": "2026-10-13T19:23:31.050549+00:00",
+    "url": "https://www.gevernova.com/electrification/document-not-available",
+    "status": 200,
+    "bytes": 374224
+  },
+  {
+    "at": "2026-10-13T19:23:32.262149+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=d20&type=1&node_id=4992",
+    "status": 200,
+    "bytes": 385616
+  },
+  {
+    "at": "2026-10-13T19:23:33.463310+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4844-D20-D200ME-G.pdf",
+    "status": 200,
+    "bytes": 106341
+  },
+  {
+    "at": "2026-10-13T19:23:34.663104+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=d20&type=4&node_id=4992",
+    "status": 302,
+    "bytes": 28398
+  },
+  {
+    "at": "2026-10-13T19:23:35.867781+00:00",
+    "url": "https://www.gevernova.com/electrification/document-not-available",
+    "status": 200,
+    "bytes": 374224
+  },
+  {
+    "at": "2026-10-13T19:23:37.069134+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/Multilin-D20-Analog-Input-Module-Brochure-EN-12792-Hybrid-202505-R002.pdf",
+    "status": 200,
+    "bytes": 1109049
+  },
+  {
+    "at": "2026-10-13T19:23:38.273657+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/Multilin-D20-Combination-Module-Brochure-EN-12802A-Hybrid-202505-R002.pdf",
+    "status": 200,
+    "bytes": 1737034
+  },
+  {
+    "at": "2026-10-13T19:23:39.480219+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-11/Multilin-D20-D200-Substation-Controllers-Brochure-EN-12807A-Hybrid-202505-R002.pdf",
+    "status": 200,
+    "bytes": 2077828
+  },
+  {
+    "at": "2026-10-13T19:23:40.673734+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2026-08/Multilin-D20-Status-Input-Module-Brochure-EN-12793-Hybrid-202505-R002.pdf",
+    "status": 200,
+    "bytes": 1926249
+  },
+  {
+    "at": "2026-10-13T19:23:41.883512+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=h38&type=1&node_id=5000",
+    "status": 302,
+    "bytes": 28399
+  },
+  {
+    "at": "2026-10-13T19:23:43.081551+00:00",
+    "url": "https://www.gevernova.com/electrification/document-not-available",
+    "status": 200,
+    "bytes": 374224
+  },
+  {
+    "at": "2026-10-13T19:23:44.289964+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=H500&type=3&node_id=4552",
+    "status": 302,
+    "bytes": 28399
+  },
+  {
+    "at": "2026-10-13T19:23:45.482869+00:00",
+    "url": "https://www.gevernova.com/electrification/document-not-available",
+    "status": 200,
+    "bytes": 374224
+  },
+  {
+    "at": "2026-10-13T19:23:46.678951+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=H500&type=1&node_id=4552",
+    "status": 200,
+    "bytes": 379532
+  },
+  {
+    "at": "2026-10-13T19:23:47.881434+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-11/GER-4978-H500-B.pdf",
+    "status": 200,
+    "bytes": 89326
+  },
+  {
+    "at": "2026-10-13T19:23:49.082241+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-11/Multilin-H500-Brochure-EN-33139-Hybrid-202504-R002.pdf",
+    "status": 200,
+    "bytes": 4789947
+  },
+  {
+    "at": "2026-10-13T19:23:50.286663+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=d20mx&type=3&node_id=4861",
+    "status": 200,
+    "bytes": 384116
+  },
+  {
+    "at": "2026-10-13T19:23:51.485487+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=d20mx&type=1&node_id=4861",
+    "status": 200,
+    "bytes": 387536
+  },
+  {
+    "at": "2026-10-13T19:23:52.689012+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-11/GER-4927-D20MX-Portfolio-D.pdf",
+    "status": 200,
+    "bytes": 140100
+  },
+  {
+    "at": "2026-10-13T19:23:53.895416+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=d20mx&type=4&node_id=4861",
+    "status": 302,
+    "bytes": 28399
+  },
+  {
+    "at": "2026-10-13T19:23:55.105608+00:00",
+    "url": "https://www.gevernova.com/electrification/document-not-available",
+    "status": 200,
+    "bytes": 374224
+  },
+  {
+    "at": "2026-10-13T19:23:56.297869+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/Multilin-D20-Analog-Input-Module-Brochure-EN-12792-Hybrid-202505-R002.pdf",
+    "status": 200,
+    "bytes": 1109049
+  },
+  {
+    "at": "2026-10-13T19:23:57.498997+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/Multilin-D20-Combination-Module-Brochure-EN-12802A-Hybrid-202505-R002.pdf",
+    "status": 200,
+    "bytes": 1737034
+  },
+  {
+    "at": "2026-10-13T19:23:59.557186+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-09/Multilin-D20MX-Brochure-EN-12711G-Hybrid-202504-R001.pdf",
+    "status": 200,
+    "bytes": 1243726
+  },
+  {
+    "at": "2026-10-13T19:24:00.763525+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2026-08/Multilin-D20-Status-Input-Module-Brochure-EN-12793-Hybrid-202505-R002.pdf",
+    "status": 200,
+    "bytes": 1926249
+  },
+  {
+    "at": "2026-10-13T19:24:01.965979+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=epm2200&type=3&node_id=4889",
+    "status": 200,
+    "bytes": 386213
+  },
+  {
+    "at": "2026-10-13T19:24:03.162636+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/brochures/epm_meter_encl.pdf",
+    "status": 200,
+    "bytes": 1421495
+  },
+  {
+    "at": "2026-10-13T19:24:05.027872+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=epm2200&type=1&node_id=4889",
+    "status": 200,
+    "bytes": 382640
+  },
+  {
+    "at": "2026-10-13T19:24:06.231352+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=epm2200&type=4&node_id=4889",
+    "status": 200,
+    "bytes": 383683
+  },
+  {
+    "at": "2026-10-13T19:24:07.429781+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/manuals/epm/ge-communicator-ae-GEV.pdf",
+    "status": 200,
+    "bytes": 37490737
+  },
+  {
+    "at": "2026-10-13T19:24:16.349664+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/manuals/epm/gek-119545c-GEV.pdf",
+    "status": 200,
+    "bytes": 3749943
+  },
+  {
+    "at": "2026-10-13T19:24:18.046250+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/manuals/epm/epm2200-a7-GEV.pdf",
+    "status": 200,
+    "bytes": 21680706
+  },
+  {
+    "at": "2026-10-13T19:24:24.680200+00:00",
+    "url": "https://www.gevernova.com/grid-solutions/sites/default/files/resources/products/manuals/epm/get-20081-GEV.pdf",
+    "status": 301,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:24:25.885657+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/manuals/epm/get-20081-GEV.pdf",
+    "status": 200,
+    "bytes": 837935
+  },
+  {
+    "at": "2026-10-13T19:24:27.080713+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=epm6010&type=3&node_id=4897",
+    "status": 200,
+    "bytes": 385661
+  },
+  {
+    "at": "2026-10-13T19:24:28.281253+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=epm6010&type=1&node_id=4897",
+    "status": 302,
+    "bytes": 28399
+  },
+  {
+    "at": "2026-10-13T19:24:29.480679+00:00",
+    "url": "https://www.gevernova.com/electrification/document-not-available",
+    "status": 200,
+    "bytes": 374224
+  },
+  {
+    "at": "2026-10-13T19:24:30.684435+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4900-EPM6010T-A.pdf",
+    "status": 200,
+    "bytes": 107012
+  },
+  {
+    "at": "2026-10-13T19:24:31.877079+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=epm6010&type=4&node_id=4897",
+    "status": 200,
+    "bytes": 381993
+  },
+  {
+    "at": "2026-10-13T19:24:33.119346+00:00",
+    "url": "https://www.gevernova.com/grid-solutions/sites/default/files/resources/products/manuals/epm/ge-communicator-ae-GEV.pdf",
+    "status": 301,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:24:34.318180+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/manuals/epm/ge-communicator-ae-GEV.pdf",
+    "status": 200,
+    "bytes": 37490737
+  },
+  {
+    "at": "2026-10-13T19:24:43.439430+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/manuals/epm/gek-119545c-GEV.pdf",
+    "status": 200,
+    "bytes": 3749943
+  },
+  {
+    "at": "2026-10-13T19:24:44.676584+00:00",
+    "url": "https://www.gevernova.com/grid-solutions/sites/default/files/resources/products/manuals/epm/get-20081-GEV.pdf",
+    "status": 301,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:24:45.883019+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/manuals/epm/get-20081-GEV.pdf",
+    "status": 200,
+    "bytes": 837935
+  },
+  {
+    "at": "2026-10-13T19:24:47.083690+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=i500&type=3&node_id=4930",
+    "status": 200,
+    "bytes": 382228
+  },
+  {
+    "at": "2026-10-13T19:24:48.286546+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=i500&type=1&node_id=4930",
+    "status": 200,
+    "bytes": 382402
+  },
+  {
+    "at": "2026-10-13T19:24:49.484902+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4873-iSTAT-i5ML-Single-Phase-Power-Transducer-Recorder-A.pdf",
+    "status": 200,
+    "bytes": 108177
+  },
+  {
+    "at": "2026-10-13T19:24:50.695086+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4844-i5MS-A.pdf",
+    "status": 200,
+    "bytes": 113596
+  },
+  {
+    "at": "2026-10-13T19:24:51.901701+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4873-iSTAT-i5MQ-Multifunction-Quality-Transducer-A.pdf",
+    "status": 200,
+    "bytes": 107048
+  },
+  {
+    "at": "2026-10-13T19:24:53.098968+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4844-i5MR-C.pdf",
+    "status": 200,
+    "bytes": 89323
+  },
+  {
+    "at": "2026-10-13T19:24:54.308546+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4938-i5RD-A.pdf",
+    "status": 200,
+    "bytes": 87059
+  },
+  {
+    "at": "2026-10-13T19:24:55.512574+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=i500&type=4&node_id=4930",
+    "status": 200,
+    "bytes": 384526
+  },
+  {
+    "at": "2026-10-13T19:24:56.708285+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=qdsp&type=3&node_id=4441",
+    "status": 302,
+    "bytes": 28399
+  },
+  {
+    "at": "2026-10-13T19:24:57.907793+00:00",
+    "url": "https://www.gevernova.com/electrification/document-not-available",
+    "status": 200,
+    "bytes": 374224
+  },
+  {
+    "at": "2026-10-13T19:24:59.119145+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=M650&type=3&node_id=25698",
+    "status": 302,
+    "bytes": 28399
+  },
+  {
+    "at": "2026-10-13T19:25:00.317852+00:00",
+    "url": "https://www.gevernova.com/electrification/document-not-available",
+    "status": 200,
+    "bytes": 374224
+  },
+  {
+    "at": "2026-10-13T19:25:01.523787+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=M650&type=1&node_id=25698",
+    "status": 200,
+    "bytes": 378996
+  },
+  {
+    "at": "2026-10-13T19:25:02.719953+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4820-M65x-M66x-B.pdf",
+    "status": 200,
+    "bytes": 115803
+  },
+  {
+    "at": "2026-10-13T19:25:03.920962+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=M650&type=4&node_id=25698",
+    "status": 200,
+    "bytes": 378871
+  },
+  {
+    "at": "2026-10-13T19:25:05.118316+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-09/BiTRONICS-M65x-Transducers-Measurement-Centres-Brochure-EN-N50158-Hybrid-202504-R002.pdf",
+    "status": 200,
+    "bytes": 3454558
+  },
+  {
+    "at": "2026-10-13T19:25:06.313817+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=m872&type=3&node_id=4933",
+    "status": 302,
+    "bytes": 28399
+  },
+  {
+    "at": "2026-10-13T19:25:07.522865+00:00",
+    "url": "https://www.gevernova.com/electrification/document-not-available",
+    "status": 200,
+    "bytes": 374224
+  },
+  {
+    "at": "2026-10-13T19:25:08.723530+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=m872&type=1&node_id=4933",
+    "status": 302,
+    "bytes": 28399
+  },
+  {
+    "at": "2026-10-13T19:25:09.934624+00:00",
+    "url": "https://www.gevernova.com/electrification/document-not-available",
+    "status": 200,
+    "bytes": 374224
+  },
+  {
+    "at": "2026-10-13T19:25:11.136078+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4885-M871-M872-A.pdf",
+    "status": 200,
+    "bytes": 107228
+  },
+  {
+    "at": "2026-10-13T19:25:12.333904+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=epm7100&type=3&node_id=4899",
+    "status": 200,
+    "bytes": 383944
+  },
+  {
+    "at": "2026-10-13T19:25:13.541860+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=epm7100&type=1&node_id=4899",
+    "status": 302,
+    "bytes": 28399
+  },
+  {
+    "at": "2026-10-13T19:25:14.737697+00:00",
+    "url": "https://www.gevernova.com/electrification/document-not-available",
+    "status": 200,
+    "bytes": 374224
+  },
+  {
+    "at": "2026-10-13T19:25:15.941179+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4938-EPM7100-A.pdf",
+    "status": 200,
+    "bytes": 107512
+  },
+  {
+    "at": "2026-10-13T19:25:17.142765+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=epm7100&type=4&node_id=4899",
+    "status": 200,
+    "bytes": 381465
+  },
+  {
+    "at": "2026-10-13T19:25:18.349689+00:00",
+    "url": "https://www.gevernova.com/grid-solutions/sites/default/files/resources/products/manuals/epm/ge-communicator-ae-GEV.pdf",
+    "status": 301,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:25:19.555227+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/manuals/epm/ge-communicator-ae-GEV.pdf",
+    "status": 200,
+    "bytes": 37490737
+  },
+  {
+    "at": "2026-10-13T19:25:27.902235+00:00",
+    "url": "https://www.gevernova.com/grid-solutions/sites/default/files/resources/products/manuals/epm/get-20081-GEV.pdf",
+    "status": 301,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:25:29.097938+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/manuals/epm/get-20081-GEV.pdf",
+    "status": 200,
+    "bytes": 837935
+  },
+  {
+    "at": "2026-10-13T19:25:30.303493+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=epm9800&type=3&node_id=4902",
+    "status": 200,
+    "bytes": 385090
+  },
+  {
+    "at": "2026-10-13T19:25:31.499451+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=epm9800&type=1&node_id=4902",
+    "status": 302,
+    "bytes": 28399
+  },
+  {
+    "at": "2026-10-13T19:25:32.696211+00:00",
+    "url": "https://www.gevernova.com/electrification/document-not-available",
+    "status": 200,
+    "bytes": 374224
+  },
+  {
+    "at": "2026-10-13T19:25:33.896323+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4912-EPM9800-C.pdf",
+    "status": 200,
+    "bytes": 88649
+  },
+  {
+    "at": "2026-10-13T19:25:35.105721+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=epm9800&type=4&node_id=4902",
+    "status": 200,
+    "bytes": 381435
+  },
+  {
+    "at": "2026-10-13T19:25:36.303930+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/manuals/epm/epm9000-dnp-a1-GEV.pdf",
+    "status": 200,
+    "bytes": 1278761
+  },
+  {
+    "at": "2026-10-13T19:25:40.233200+00:00",
+    "url": "https://www.gevernova.com/grid-solutions/sites/default/files/resources/products/manuals/epm/ge-communicator-ae-GEV.pdf",
+    "status": 301,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:25:41.423292+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/manuals/epm/ge-communicator-ae-GEV.pdf",
+    "status": 200,
+    "bytes": 37490737
+  },
+  {
+    "at": "2026-10-13T19:25:50.393987+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/resources/products/manuals/epm/get-20081-GEV.pdf",
+    "status": 200,
+    "bytes": 837935
+  },
+  {
+    "at": "2026-10-13T19:25:51.604759+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=70Series&type=3&node_id=4840",
+    "status": 302,
+    "bytes": 28399
+  },
+  {
+    "at": "2026-10-13T19:25:52.806372+00:00",
+    "url": "https://www.gevernova.com/electrification/document-not-available",
+    "status": 200,
+    "bytes": 374224
+  },
+  {
+    "at": "2026-10-13T19:25:54.009317+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=70Series&type=1L&node_id=4840",
+    "status": 302,
+    "bytes": 28399
+  },
+  {
+    "at": "2026-10-13T19:25:55.212601+00:00",
+    "url": "https://www.gevernova.com/electrification/document-not-available",
+    "status": 200,
+    "bytes": 374224
+  },
+  {
+    "at": "2026-10-13T19:25:56.417844+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4885-M871-M872-A.pdf",
+    "status": 200,
+    "bytes": 107228
+  },
+  {
+    "at": "2026-10-13T19:25:57.616733+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=ggp&type=3&node_id=4506",
+    "status": 302,
+    "bytes": 28399
+  },
+  {
+    "at": "2026-10-13T19:25:58.811373+00:00",
+    "url": "https://www.gevernova.com/electrification/document-not-available",
+    "status": 200,
+    "bytes": 374224
+  },
+  {
+    "at": "2026-10-13T19:26:00.003483+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=ggp&type=1&node_id=4506",
+    "status": 200,
+    "bytes": 379091
+  },
+  {
+    "at": "2026-10-13T19:26:01.392392+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GGP-Brochure-EN-N50799-Hybrid-202509-R001.pdf",
+    "status": 200,
+    "bytes": 185315
+  },
+  {
+    "at": "2026-10-13T19:26:02.601427+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=P543&type=3&node_id=4116",
+    "status": 200,
+    "bytes": 384773
+  },
+  {
+    "at": "2026-10-13T19:26:03.797585+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=P543&type=1&node_id=4116",
+    "status": 200,
+    "bytes": 384805
+  },
+  {
+    "at": "2026-10-13T19:26:05.007620+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-01/transmission%20line%20protection%20theory.pdf",
+    "status": 200,
+    "bytes": 1265429
+  },
+  {
+    "at": "2026-10-13T19:26:06.214436+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=P543&type=4&node_id=4116",
+    "status": 200,
+    "bytes": 386951
+  },
+  {
+    "at": "2026-10-13T19:26:07.414683+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4938-P544-A.pdf",
+    "status": 200,
+    "bytes": 87388
+  },
+  {
+    "at": "2026-10-13T19:26:08.612135+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2026-06/GER-4978-P546-B.pdf",
+    "status": 200,
+    "bytes": 144309
+  },
+  {
+    "at": "2026-10-13T19:26:09.824385+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-11/MiCOM-Agile-brochure-EN-N50111-hybrid-202504-R002.pdf",
+    "status": 200,
+    "bytes": 2405603
+  },
+  {
+    "at": "2026-10-13T19:26:11.018766+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-09/MiCOM-Agile-P543-P545-Brochure-EN-N50065-Hybrid-202505-R002.pdf",
+    "status": 200,
+    "bytes": 2844527
+  },
+  {
+    "at": "2026-10-13T19:26:12.217030+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=mm300&type=3&node_id=4494",
+    "status": 200,
+    "bytes": 389974
+  },
+  {
+    "at": "2026-10-13T19:26:13.412939+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=mm300&type=1&node_id=4494",
+    "status": 200,
+    "bytes": 382484
+  },
+  {
+    "at": "2026-10-13T19:26:14.612318+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=mm300&type=4&node_id=4494",
+    "status": 200,
+    "bytes": 381172
+  },
+  {
+    "at": "2026-10-13T19:26:15.811217+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4938-MM300-Accessories-D.pdf",
+    "status": 200,
+    "bytes": 114949
+  },
+  {
+    "at": "2026-10-13T19:26:16.998932+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-11/Multilin-MM300-Brochure-EN-12854-Hybrid-202503-R002.pdf",
+    "status": 200,
+    "bytes": 6804714
+  },
+  {
+    "at": "2026-10-13T19:26:19.140711+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-06/MM300-Enhanced-Brochure-EN-33219-Hybrid-202504-R002.pdf",
+    "status": 200,
+    "bytes": 3954115
+  },
+  {
+    "at": "2026-10-13T19:26:21.457093+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=f650&type=3&node_id=4482",
+    "status": 200,
+    "bytes": 382565
+  },
+  {
+    "at": "2026-10-13T19:26:22.668109+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=f650&type=1&node_id=4482",
+    "status": 200,
+    "bytes": 383769
+  },
+  {
+    "at": "2026-10-13T19:26:23.863201+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=f650&type=4&node_id=4482",
+    "status": 200,
+    "bytes": 383644
+  },
+  {
+    "at": "2026-10-13T19:26:25.069885+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=f650&type=13&node_id=4482",
+    "status": 302,
+    "bytes": 28398
+  },
+  {
+    "at": "2026-10-13T19:26:26.279535+00:00",
+    "url": "https://www.gevernova.com/electrification/document-not-available",
+    "status": 200,
+    "bytes": 374224
+  },
+  {
+    "at": "2026-10-13T19:26:27.469583+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-09/650-Family-Brochure-EN-N50101-Hybrid-202504-R002.pdf",
+    "status": 200,
+    "bytes": 971915
+  },
+  {
+    "at": "2026-10-13T19:26:28.674549+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-09/Multilin-F650-Brochure-EN-12818C-Hybrid-202504-R003.pdf",
+    "status": 200,
+    "bytes": 2283171
+  },
+  {
+    "at": "2026-10-13T19:26:30.425887+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=cfvb&type=3&node_id=4859",
+    "status": 302,
+    "bytes": 28399
+  },
+  {
+    "at": "2026-10-13T19:26:31.637342+00:00",
+    "url": "https://www.gevernova.com/electrification/document-not-available",
+    "status": 200,
+    "bytes": 374224
+  },
+  {
+    "at": "2026-10-13T19:26:32.836505+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=cfvb&type=1&node_id=4859",
+    "status": 302,
+    "bytes": 28399
+  },
+  {
+    "at": "2026-10-13T19:26:34.035139+00:00",
+    "url": "https://www.gevernova.com/electrification/document-not-available",
+    "status": 200,
+    "bytes": 374224
+  },
+  {
+    "at": "2026-10-13T19:26:35.236547+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4900-CFVB-A.pdf",
+    "status": 200,
+    "bytes": 106277
+  },
+  {
+    "at": "2026-10-13T19:26:36.437296+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=mm3&type=3&node_id=4949",
+    "status": 302,
+    "bytes": 28399
+  },
+  {
+    "at": "2026-10-13T19:26:37.623392+00:00",
+    "url": "https://www.gevernova.com/electrification/document-not-available",
+    "status": 200,
+    "bytes": 374224
+  },
+  {
+    "at": "2026-10-13T19:26:38.825290+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=mm3&type=1&node_id=4949",
+    "status": 200,
+    "bytes": 380767
+  },
+  {
+    "at": "2026-10-13T19:26:40.024843+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4475-MM3-A.pdf",
+    "status": 200,
+    "bytes": 64414
+  },
+  {
+    "at": "2026-10-13T19:26:41.222868+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=mm3&type=4&node_id=4949",
+    "status": 302,
+    "bytes": 28399
+  },
+  {
+    "at": "2026-10-13T19:26:42.421032+00:00",
+    "url": "https://www.gevernova.com/electrification/document-not-available",
+    "status": 200,
+    "bytes": 374224
+  },
+  {
+    "at": "2026-10-13T19:26:43.611537+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-11/MM300-Retrofit-Kits-Brochure-EN-32002-Hybrid-202504-R002.pdf",
+    "status": 200,
+    "bytes": 7389859
+  },
+  {
+    "at": "2026-10-13T19:26:47.474473+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=slj&type=3&node_id=25730",
+    "status": 302,
+    "bytes": 28399
+  },
+  {
+    "at": "2026-10-13T19:26:48.669840+00:00",
+    "url": "https://www.gevernova.com/electrification/document-not-available",
+    "status": 200,
+    "bytes": 374224
+  },
+  {
+    "at": "2026-10-13T19:26:49.865808+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=slj&type=1&node_id=25730",
+    "status": 302,
+    "bytes": 28399
+  },
+  {
+    "at": "2026-10-13T19:26:51.063748+00:00",
+    "url": "https://www.gevernova.com/electrification/document-not-available",
+    "status": 200,
+    "bytes": 374224
+  },
+  {
+    "at": "2026-10-13T19:26:52.276671+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4473-Selected-Electromechanical-Auxiliary-Relays-A.pdf",
+    "status": 200,
+    "bytes": 78900
+  },
+  {
+    "at": "2026-10-13T19:26:53.472904+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=MBCI&type=3&node_id=4520",
+    "status": 302,
+    "bytes": 28399
+  },
+  {
+    "at": "2026-10-13T19:26:55.015115+00:00",
+    "url": "https://www.gevernova.com/electrification/document-not-available",
+    "status": 200,
+    "bytes": 374224
+  },
+  {
+    "at": "2026-10-13T19:26:56.212217+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=MBCI&type=1&node_id=4520",
+    "status": 200,
+    "bytes": 379007
+  },
+  {
+    "at": "2026-10-13T19:26:57.408481+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2026-06/GER-5001-MBCI-B.pdf",
+    "status": 200,
+    "bytes": 140051
+  },
+  {
+    "at": "2026-10-13T19:26:58.609794+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2026-06/GER-5001-MCRI-B.pdf",
+    "status": 200,
+    "bytes": 140095
+  },
+  {
+    "at": "2026-10-13T19:26:59.816933+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4820-MBCI02-A.pdf",
+    "status": 200,
+    "bytes": 87193
+  },
+  {
+    "at": "2026-10-13T19:27:01.014663+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2026-07/GER-4820-MVTW-D.pdf",
+    "status": 200,
+    "bytes": 127878
+  },
+  {
+    "at": "2026-10-13T19:27:02.213560+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=MBCI&type=4&node_id=4520",
+    "status": 200,
+    "bytes": 380145
+  },
+  {
+    "at": "2026-10-13T19:27:03.470711+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-11/MRTP-Supervision-for-AC-Pilot-Circuits-Brochure-EN-N50152-Hybrid-202505-R002.pdf",
+    "status": 200,
+    "bytes": 827391
+  },
+  {
+    "at": "2026-10-13T19:27:04.671189+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=P24x&type=3&node_id=4489",
+    "status": 200,
+    "bytes": 382784
+  },
+  {
+    "at": "2026-10-13T19:27:05.858323+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=P24x&type=1&node_id=4489",
+    "status": 200,
+    "bytes": 381583
+  },
+  {
+    "at": "2026-10-13T19:27:07.050799+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2026-06/GER-5022-P241-P242-P243.pdf",
+    "status": 200,
+    "bytes": 118674
+  },
+  {
+    "at": "2026-10-13T19:27:08.252125+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2024-12/motor%20protection%20theory.pdf",
+    "status": 200,
+    "bytes": 1064853
+  },
+  {
+    "at": "2026-10-13T19:27:09.451735+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=P24x&type=4&node_id=4489",
+    "status": 200,
+    "bytes": 383871
+  },
+  {
+    "at": "2026-10-13T19:27:10.649464+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-11/MiCOM-Agile-P24x-Rotating-Machine-Brochure-EN-N50123-Hybrid-202504-R002.pdf",
+    "status": 200,
+    "bytes": 1637544
+  },
+  {
+    "at": "2026-10-13T19:27:11.843428+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2026-02/P24x-TM-EN-J82-GEV.pdf",
+    "status": 200,
+    "bytes": 6152494,
+    "error": "ValueError: response shorter than its Content-Length"
+  },
+  {
+    "at": "2026-10-13T19:27:13.036020+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=P541&type=3&node_id=4970",
+    "status": 302,
+    "bytes": 28399
+  },
+  {
+    "at": "2026-10-13T19:27:14.239371+00:00",
+    "url": "https://www.gevernova.com/electrification/document-not-available",
+    "status": 200,
+    "bytes": 374224
+  },
+  {
+    "at": "2026-10-13T19:27:15.440351+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=P541&type=1&node_id=4970",
+    "status": 200,
+    "bytes": 382928
+  },
+  {
+    "at": "2026-10-13T19:27:16.652077+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4938-P541-B.pdf",
+    "status": 200,
+    "bytes": 110517
+  },
+  {
+    "at": "2026-10-13T19:27:17.849601+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4938-P542-B.pdf",
+    "status": 200,
+    "bytes": 110536
+  },
+  {
+    "at": "2026-10-13T19:27:19.047128+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2024-12/transmission%20line%20protection%20theory.pdf",
+    "status": 200,
+    "bytes": 1265429
+  },
+  {
+    "at": "2026-10-13T19:27:20.236674+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=P541&type=4&node_id=4970",
+    "status": 200,
+    "bytes": 383957
+  },
+  {
+    "at": "2026-10-13T19:27:21.444071+00:00",
+    "url": "https://www.gevernova.com/grid-solutions/sites/default/files/2025-12/GER-4938-P541-B.pdf",
+    "status": 301,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:27:22.649573+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4938-P541-B.pdf",
+    "status": 200,
+    "bytes": 110517
+  },
+  {
+    "at": "2026-10-13T19:27:23.854561+00:00",
+    "url": "https://www.gevernova.com/grid-solutions/sites/default/files/2025-12/GER-4938-P542-B.pdf",
+    "status": 301,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:27:25.051334+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4938-P542-B.pdf",
+    "status": 200,
+    "bytes": 110536
+  },
+  {
+    "at": "2026-10-13T19:27:26.250777+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=tccv&type=1&node_id=4981",
+    "status": 302,
+    "bytes": 28399
+  },
+  {
+    "at": "2026-10-13T19:27:27.462070+00:00",
+    "url": "https://www.gevernova.com/electrification/document-not-available",
+    "status": 200,
+    "bytes": 374224
+  },
+  {
+    "at": "2026-10-13T19:27:28.063792+00:00",
+    "url": "https://literature.rockwellautomation.com/robots.txt",
+    "status": 301,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:27:28.959256+00:00",
+    "url": "https://www.rockwellautomation.com/global/literature-library/overview.page",
+    "status": 301,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:27:30.162788+00:00",
+    "url": "https://www.rockwellautomation.com/en-us.html?utm_source=literature-library-overview---&utm_medium=redirect&utm_content=teamsite",
+    "status": 200,
+    "bytes": 191874,
+    "sha256": "0a01fae5ca7bf78c1735a5ad85d5e163d8fff5f406ef2e3696d7b6bbfef41f78"
+  },
+  {
+    "at": "2026-10-13T19:27:30.378777+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/ftem-um003_-en-p.pdf",
+    "status": 200,
+    "bytes": 7679009
+  },
+  {
+    "at": "2026-10-13T19:27:42.326178+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/1408-um002_-en-p.pdf",
+    "status": 200,
+    "bytes": 6686286
+  },
+  {
+    "at": "2026-10-13T19:27:45.997808+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/sg/1400-sg001_-en-p.pdf",
+    "status": 200,
+    "bytes": 2029944
+  },
+  {
+    "at": "2026-10-13T19:27:47.193086+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/at/1400-at001_-en-p.pdf",
+    "status": 200,
+    "bytes": 1417969
+  },
+  {
+    "at": "2026-10-13T19:27:48.394231+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/at/1400-at002_-en-p.pdf",
+    "status": 200,
+    "bytes": 678540
+  },
+  {
+    "at": "2026-10-13T19:27:49.596126+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/ftem-um003_-en-p.pdf",
+    "status": 200,
+    "bytes": 7679009
+  },
+  {
+    "at": "2026-10-13T19:28:01.635008+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/1420-um001_-en-p.pdf",
+    "status": 200,
+    "bytes": 6814093
+  },
+  {
+    "at": "2026-10-13T19:28:06.943506+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/sg/1400-sg001_-en-p.pdf",
+    "status": 200,
+    "bytes": 2029944
+  },
+  {
+    "at": "2026-10-13T19:28:08.380766+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/at/1400-at001_-en-p.pdf",
+    "status": 200,
+    "bytes": 1417969
+  },
+  {
+    "at": "2026-10-13T19:28:09.588560+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/at/1400-at002_-en-p.pdf",
+    "status": 200,
+    "bytes": 678540
+  },
+  {
+    "at": "2026-10-13T19:28:10.782093+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/ftem-um003_-en-p.pdf",
+    "status": 200,
+    "bytes": 7679009
+  },
+  {
+    "at": "2026-10-13T19:28:22.596779+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/1426-um001_-en-p.pdf",
+    "status": 200,
+    "bytes": 28586211
+  },
+  {
+    "at": "2026-10-13T19:28:30.835855+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/sg/1400-sg001_-en-p.pdf",
+    "status": 200,
+    "bytes": 2029944
+  },
+  {
+    "at": "2026-10-13T19:28:32.034493+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/at/1400-at001_-en-p.pdf",
+    "status": 200,
+    "bytes": 1417969
+  },
+  {
+    "at": "2026-10-13T19:28:33.317191+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/at/1400-at002_-en-p.pdf",
+    "status": 200,
+    "bytes": 678540
+  },
+  {
+    "at": "2026-10-13T19:28:34.523281+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/td/5034-td900_-en-p.pdf",
+    "status": 200,
+    "bytes": 4351179
+  },
+  {
+    "at": "2026-10-13T19:28:55.409473+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/pp/5390-pp001_-en-p.pdf",
+    "status": 200,
+    "bytes": 1474392
+  },
+  {
+    "at": "2026-10-13T19:28:56.616360+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/pp/migrat-pp012_-en-e.pdf",
+    "status": 200,
+    "bytes": 10718190
+  },
+  {
+    "at": "2026-10-13T19:28:57.816970+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/1766-um001_-en-p.pdf",
+    "status": 200,
+    "bytes": 16829248
+  },
+  {
+    "at": "2026-10-13T19:29:14.012320+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/1766-um002_-en-p.pdf",
+    "status": 200,
+    "bytes": 6040442
+  },
+  {
+    "at": "2026-10-13T19:29:15.434965+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/rm/1766-rm001_-en-p.pdf",
+    "status": 200,
+    "bytes": 18813780
+  },
+  {
+    "at": "2026-10-13T19:29:28.560498+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/sg/1761-sg001_-en-p.pdf",
+    "status": 200,
+    "bytes": 2553979
+  },
+  {
+    "at": "2026-10-13T19:29:29.959977+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/rm/2080-rm002_-en-e.pdf",
+    "status": 200,
+    "bytes": 20770113
+  },
+  {
+    "at": "2026-10-13T19:29:37.632388+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/pp/migrat-pp037_-en-e.pdf",
+    "status": 200,
+    "bytes": 1461062
+  },
+  {
+    "at": "2026-10-13T19:29:38.841000+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/2080-um002_-en-e.pdf",
+    "status": 200,
+    "bytes": 40364275
+  },
+  {
+    "at": "2026-10-13T19:29:53.480412+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/rm/1756-rm100_-en-p.pdf",
+    "status": 200,
+    "bytes": 22169542
+  },
+  {
+    "at": "2026-10-13T19:30:17.822456+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/1769-um021_-en-p.pdf",
+    "status": 200,
+    "bytes": 28645341
+  },
+  {
+    "at": "2026-10-13T19:31:03.156178+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/rm/1756-rm099_-en-p.pdf",
+    "status": 200,
+    "bytes": 3878066
+  },
+  {
+    "at": "2026-10-13T19:31:06.013828+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/1769-um022_-en-p.pdf",
+    "status": 200,
+    "bytes": 14316539
+  },
+  {
+    "at": "2026-10-13T19:31:30.252969+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/rm/1756-rm094_-en-p.pdf",
+    "status": 200,
+    "bytes": 4690300
+  },
+  {
+    "at": "2026-10-13T19:31:32.648151+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/1747-um011_-en-p.pdf",
+    "status": 200,
+    "bytes": 3505327
+  },
+  {
+    "at": "2026-10-13T19:31:36.951815+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/1747-um009_-en-p.pdf",
+    "status": 200,
+    "bytes": 1701338
+  },
+  {
+    "at": "2026-10-13T19:31:39.274687+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/rm/1747-rm001_-en-p.pdf",
+    "status": 200,
+    "bytes": 7167992
+  },
+  {
+    "at": "2026-10-13T19:31:45.376998+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/rm/1746-rm003_-en-e.pdf",
+    "status": 200,
+    "bytes": 10832671
+  },
+  {
+    "at": "2026-10-13T19:31:52.600469+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/pp/migrat-pp004_-en-e.pdf",
+    "status": 200,
+    "bytes": 3621770
+  },
+  {
+    "at": "2026-10-13T19:31:53.806693+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/1789-um002_-en-p.pdf",
+    "status": 200,
+    "bytes": 9688797
+  },
+  {
+    "at": "2026-10-13T19:31:58.957103+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/857-um002_-en-p.pdf",
+    "status": 200,
+    "bytes": 2187554
+  },
+  {
+    "at": "2026-10-13T19:32:00.794868+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/865-um001_-en-p.pdf",
+    "status": 200,
+    "bytes": 7947083
+  },
+  {
+    "at": "2026-10-13T19:32:12.051931+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/857-um004_-en-p.pdf",
+    "status": 200,
+    "bytes": 2805122
+  },
+  {
+    "at": "2026-10-13T19:32:14.328884+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/857-um002_-en-p.pdf",
+    "status": 200,
+    "bytes": 2187554
+  },
+  {
+    "at": "2026-10-13T19:32:15.540049+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/857-um003_-en-p.pdf",
+    "status": 200,
+    "bytes": 327095
+  },
+  {
+    "at": "2026-10-13T19:32:16.740286+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/857-um001_-en-p.pdf",
+    "status": 200,
+    "bytes": 20791214
+  },
+  {
+    "at": "2026-10-13T19:32:27.223636+00:00",
+    "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/um/857-um005_-en-p.pdf",
+    "status": 200,
+    "bytes": 5242202
+  },
+  {
+    "at": "2026-10-13T19:32:33.130017+00:00",
+    "url": "https://selinc.com/robots.txt",
+    "status": 200,
+    "bytes": 686,
+    "sha256": "5e08edd75de604c0966b1d4c076064640b4ca1dfc6f31c8eb9eeb65d3ba64211"
+  },
+  {
+    "at": "2026-10-13T19:32:34.331518+00:00",
+    "url": "https://selinc.com/api/download/1386/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:32:35.531244+00:00",
+    "url": "https://selinc.com/api/download/1386/?lang=en&dest=ektronAsset",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:32:36.726773+00:00",
+    "url": "https://selinc.com/notfound/",
+    "status": 200,
+    "bytes": 5724
+  },
+  {
+    "at": "2026-10-13T19:32:47.093256+00:00",
+    "url": "https://assets.new.siemens.com/robots.txt",
+    "status": 200,
+    "bytes": 85,
+    "sha256": "5bcef21211a1ea304878a317e09d57fd9073e429909003302ecbee639fbf7cc5"
+  },
+  {
+    "at": "2026-10-13T19:32:48.282430+00:00",
+    "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:4040745d-455d-4cc7-b849-68376db0f5e7/emdgb10022007600brochuresiprotec5en.pdf",
+    "status": 200,
+    "bytes": 854041
+  },
+  {
+    "at": "2026-10-13T19:32:49.496937+00:00",
+    "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:ae1d9c03-0cc1-4333-be61-f4115c6a82be/SIPROTEC-6MD85-Profile_original.pdf",
+    "status": 200,
+    "bytes": 536600
+  },
+  {
+    "at": "2026-10-13T19:32:50.684767+00:00",
+    "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:ec46e951-39dd-4c08-ba85-2064a2b02071/SIPROTEC-Conformal-Coated-Profile_original.pdf",
+    "status": 200,
+    "bytes": 303022
+  },
+  {
+    "at": "2026-10-13T19:32:51.878907+00:00",
+    "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:4010fa07-93c7-4415-9898-693dc68250f4/SICAM-A8000-CP-8010-12-Profile_original.pdf",
+    "status": 200,
+    "bytes": 2078986
+  },
+  {
+    "at": "2026-10-13T19:32:53.082943+00:00",
+    "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:d4dc2b88-c34d-4f33-bbef-ca9fb3488fbd/SICAM-A8000-Profile-EN_original.pdf",
+    "status": 200,
+    "bytes": 623423
+  },
+  {
+    "at": "2026-10-13T19:32:53.640026+00:00",
+    "url": "https://support.industry.siemens.com/robots.txt",
+    "status": 403,
+    "bytes": 400
+  },
+  {
+    "at": "2026-10-13T19:32:54.286781+00:00",
+    "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:6a70847e-d326-4229-a53e-359ad220fb36/SICAM-S8000-Profile.pdf",
+    "status": 200,
+    "bytes": 218061
+  },
+  {
+    "at": "2026-10-13T19:32:55.487007+00:00",
+    "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:736a74c1-2407-4a0e-9776-82aaaa345621/SICAM-8-Profile.pdf",
+    "status": 200,
+    "bytes": 292005
+  },
+  {
+    "at": "2026-10-13T19:32:57.024158+00:00",
+    "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:64703693-bf61-45a3-9f93-208b5b4aa5a0/siep-b10239-00sentroncybersecuritytopicpaperdeenus-144.pdf",
+    "status": 200,
+    "bytes": 282956
+  },
+  {
+    "at": "2026-10-13T19:32:58.232962+00:00",
+    "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:3f79e314-a6c3-4b80-8108-62228eaa763d/siep-b10515-00-7600qsgmessstellenkonzeptupdateen-144.pdf",
+    "status": 200,
+    "bytes": 3916389
+  },
+  {
+    "at": "2026-10-13T19:33:03.940188+00:00",
+    "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:fe9aec46-e175-4518-95c4-510238833456/siep-t10343-00-00deeuropaeischemessgeraeterichtlinieenus-72.pdf",
+    "status": 302,
+    "bytes": 45
+  },
+  {
+    "at": "2026-10-13T19:33:04.275183+00:00",
+    "url": "https://www.siemens.com/robots.txt",
+    "status": 200,
+    "bytes": 130,
+    "sha256": "6431c135b6bc319415db219c33e76ddcfb612b4330f21a982a15ee85edeb91aa"
+  },
+  {
+    "at": "2026-10-13T19:33:05.472725+00:00",
+    "url": "https://www.siemens.com/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:33:06.685454+00:00",
+    "url": "https://www.siemens.com/en-us/index.html",
+    "status": 301,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:33:07.876273+00:00",
+    "url": "https://www.siemens.com/en-us/",
+    "status": 200,
+    "bytes": 339462
+  },
+  {
+    "at": "2026-10-13T19:33:08.684084+00:00",
+    "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:09a829eb-0676-4680-8f95-1adaba01a911/SICAM-PQ-Catalog.pdf",
+    "status": 200,
+    "bytes": 30443030
+  },
+  {
+    "at": "2026-10-13T19:33:15.904936+00:00",
+    "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:09a829eb-0676-4680-8f95-1adaba01a911/SICAM-PQ-Catalog.pdf",
+    "status": 200,
+    "bytes": 30443030
+  },
+  {
+    "at": "2026-10-13T19:33:21.733235+00:00",
+    "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:09a829eb-0676-4680-8f95-1adaba01a911/SICAM-PQ-Catalog.pdf",
+    "status": 200,
+    "bytes": 30443030
+  },
+  {
+    "at": "2026-10-13T19:33:28.056112+00:00",
+    "url": "https://www.siemens.com/catalog-st-70",
+    "status": 301,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:33:28.410835+00:00",
+    "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:279cb01d-fd3b-4df4-8e04-f1fe98b81d6b/SIPROTEC-5-Catalog-EN.pdf",
+    "status": 200,
+    "bytes": 15612607
+  },
+  {
+    "at": "2026-10-13T19:33:44.434541+00:00",
+    "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:419b1cab-edf3-47df-9533-2ea762a420f5/SIPROTEC-7SA82-Profile.pdf",
+    "status": 200,
+    "bytes": 518027
+  },
+  {
+    "at": "2026-10-13T19:33:45.638551+00:00",
+    "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:ec46e951-39dd-4c08-ba85-2064a2b02071/SIPROTEC-Conformal-Coated-Profile_original.pdf",
+    "status": 200,
+    "bytes": 303022
+  },
+  {
+    "at": "2026-10-13T19:33:46.834222+00:00",
+    "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:279cb01d-fd3b-4df4-8e04-f1fe98b81d6b/SIPROTEC-5-Catalog-EN.pdf",
+    "status": 200,
+    "bytes": 15612607
+  },
+  {
+    "at": "2026-10-13T19:34:03.097912+00:00",
+    "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:afafafb7-75df-451f-b280-b3adae26f7ad/SIPROTEC-7SJ82-Profile.pdf",
+    "status": 302,
+    "bytes": 45
+  },
+  {
+    "at": "2026-10-13T19:34:03.388444+00:00",
+    "url": "https://www.siemens.com/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:34:04.578602+00:00",
+    "url": "https://www.siemens.com/en-us/index.html",
+    "status": 301,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:34:05.779939+00:00",
+    "url": "https://www.siemens.com/en-us/",
+    "status": 200,
+    "bytes": 339462
+  },
+  {
+    "at": "2026-10-13T19:34:06.123619+00:00",
+    "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:ec46e951-39dd-4c08-ba85-2064a2b02071/SIPROTEC-Conformal-Coated-Profile_original.pdf",
+    "status": 200,
+    "bytes": 303022
+  },
+  {
+    "at": "2026-10-13T19:34:07.316984+00:00",
+    "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:f31cfc7d-61dc-4420-a0dc-a2bbe4d99e69/Reyrolle-7SR119-Catalog.pdf",
+    "status": 302,
+    "bytes": 45
+  },
+  {
+    "at": "2026-10-13T19:34:07.645728+00:00",
+    "url": "https://www.siemens.com/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:34:08.847694+00:00",
+    "url": "https://www.siemens.com/en-us/index.html",
+    "status": 301,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:34:10.057009+00:00",
+    "url": "https://www.siemens.com/en-us/",
+    "status": 200,
+    "bytes": 339462
+  },
+  {
+    "at": "2026-10-13T19:34:10.382779+00:00",
+    "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:0088072b-aade-4a22-9000-60483f67c057/Reyrolle-7SR119-Profile-EN.pdf",
+    "status": 302,
+    "bytes": 45
+  },
+  {
+    "at": "2026-10-13T19:34:11.253143+00:00",
+    "url": "https://www.siemens.com/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:34:12.462969+00:00",
+    "url": "https://www.siemens.com/en-us/index.html",
+    "status": 301,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:34:13.659769+00:00",
+    "url": "https://www.siemens.com/en-us/",
+    "status": 200,
+    "bytes": 339462
+  },
+  {
+    "at": "2026-10-13T19:34:13.985981+00:00",
+    "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:6ed9fe8d-c6fa-4b9d-b245-0527126aa05f/Reyrolle-7SR45-Catalog_original.pdf",
+    "status": 200,
+    "bytes": 7532008
+  },
+  {
+    "at": "2026-10-13T19:34:18.291884+00:00",
+    "url": "https://assets.new.siemens.com/siemens/assets/api/uuid:f304c9bd-3b2f-4f58-8eed-3edd15a74a41/Reyrolle-7SR45-Profile-EN_original.pdf",
+    "status": 302,
+    "bytes": 45
+  },
+  {
+    "at": "2026-10-13T19:34:18.599398+00:00",
+    "url": "https://www.siemens.com/",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:34:19.799945+00:00",
+    "url": "https://www.siemens.com/en-us/index.html",
+    "status": 301,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:34:21.002371+00:00",
+    "url": "https://www.siemens.com/en-us/",
+    "status": 200,
+    "bytes": 339462
+  }
+]

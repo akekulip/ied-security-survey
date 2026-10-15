@@ -1,0 +1,952 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "MiCOM Agile P54A, P54B, P54C & P54E | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "MiCOM Agile P54A, P54B, P54C & P54E"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Multi-ended Line Differential Protection Systems"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Contact Us Buy Now",
+    "heading": "Multi-ended Line Differential Protection Systems"
+  },
+  {
+    "location": "html-block:7",
+    "text": "The MiCOM P54A/B/C/E range is designed for overhead line and cable applications up to 6 terminals, interfacing readily with the longitudinal (end-to-end) communications channel between line terminals. Previously, transmission and distribution circuits would have two or three ends only, whereas five or more ends are becoming common to connect renewable generation. All models are ready for protection topologies ranging from two to six terminals, whether those multi-terminals exist now, or are provisioned for connection in the future.",
+    "heading": "Multi-ended Line Differential Protection Systems"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Multi-ended current differential protection uses a high-speed and innovative biased differential characteristic. Phase-segregated differential elements provide consistent detection of solid and resistive faults.",
+    "heading": "Multi-ended Line Differential Protection Systems"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Key features:"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Current differential protection for up to 6 line or cable ends, maximising connection of renewable generation, reducing greenhouse gas emissions",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Subcycle tripping time up to 4-ended topology (<1.25 cycle for 5 or 6 ends)",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Highly selective and sensitive unit protection, with capacitive current compensation for long lines or cables",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Ability to locally take any end off-line for maintenance",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Full support of SONET/SDH channel switching",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Suitable for direct fibre and multiplexed (IEEE C37.94) networks, including MPLS systems",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Full suite of monitoring, control and recording capabilities plus fault locator, autoreclose and check synchronism",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:17",
+    "text": "8 teleprotection logic bits from and to each end via MODEM, fibre, or MUX channel",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Compatibility with modern Ethernet communications equipment",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:19",
+    "text": "New CT saturation technique reduces CT dimensioning requirements and saves on scheme cost",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Advanced IEC61850 Edition 2 implementation with complete settings via SCL files",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Redundant communications with zero downtime using optional PRP/HSR protocols",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Wide range of supported protocols Courier/K-Bus, IEC 60870-5-103, DNP 3.0 (EAI-485 or Ethernet) and IEC 61850 Edition 2",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Harsh environment coating as standard to all MiCOM relays to protect against corrosive gases such as H2S or SO2",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Application:"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Adapted to suit many different substation and protected feeder topologies:",
+    "heading": "Application:"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Current differential protection for up to 6 line or cable ends, maximising connection of renewable generation, reducing greenhouse gas emissions",
+    "heading": "Application:"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Highly selective and sensitive unit protection, with capacitive current compensation for long lines or cables",
+    "heading": "Application:"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Ability to locally take any end off-line for maintenance",
+    "heading": "Application:"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Transmission and subtransmission: P54C and P54E use the same hardware as well-proven MiCOM Agile P543 and P545 models, offering scalability for large numbers of binary inputs/outputs",
+    "heading": "Application:"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Distribution: P54A and P54B offer compact feeder differential in a 40TE half-rack case",
+    "heading": "Application:"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Interactive Selector Guide - Line Differential"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Interactive Selector Guide - Line Distance"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Spotlight Application"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Typical Applications"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Transmission Principles & Protection"
+  },
+  {
+    "location": "html-block:37",
+    "text": "GSA Schedule"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Legacy Transmission Protection"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Software / Firmware"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:46",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:47",
+    "text": "Interactive Selector Guide - Line Differential"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Interactive Selector Guide - Line Distance"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Spotlight Application"
+  },
+  {
+    "location": "html-block:50",
+    "text": "Typical Applications"
+  },
+  {
+    "location": "html-block:51",
+    "text": "Transmission Principles & Protection"
+  },
+  {
+    "location": "html-block:52",
+    "text": "GSA Schedule"
+  },
+  {
+    "location": "html-block:53",
+    "text": "Legacy Transmission Protection"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:58",
+    "text": "Software / Firmware"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:60",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:61",
+    "text": "MiCOM Agile P54A, P54B, P54C & P54E"
+  },
+  {
+    "location": "html-block:62",
+    "text": "Multi-ended Line Differential Protection Systems"
+  },
+  {
+    "location": "html-block:63",
+    "text": "Contact Us Buy Now",
+    "heading": "Multi-ended Line Differential Protection Systems"
+  },
+  {
+    "location": "html-block:64",
+    "text": "The MiCOM P54A/B/C/E range is designed for overhead line and cable applications up to 6 terminals, interfacing readily with the longitudinal (end-to-end) communications channel between line terminals. Previously, transmission and distribution circuits would have two or three ends only, whereas five or more ends are becoming common to connect renewable generation. All models are ready for protection topologies ranging from two to six terminals, whether those multi-terminals exist now, or are provisioned for connection in the future.",
+    "heading": "Multi-ended Line Differential Protection Systems"
+  },
+  {
+    "location": "html-block:65",
+    "text": "Multi-ended current differential protection uses a high-speed and innovative biased differential characteristic. Phase-segregated differential elements provide consistent detection of solid and resistive faults.",
+    "heading": "Multi-ended Line Differential Protection Systems"
+  },
+  {
+    "location": "html-block:66",
+    "text": "Key features:"
+  },
+  {
+    "location": "html-block:67",
+    "text": "Current differential protection for up to 6 line or cable ends, maximising connection of renewable generation, reducing greenhouse gas emissions",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:68",
+    "text": "Subcycle tripping time up to 4-ended topology (<1.25 cycle for 5 or 6 ends)",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:69",
+    "text": "Highly selective and sensitive unit protection, with capacitive current compensation for long lines or cables",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:70",
+    "text": "Ability to locally take any end off-line for maintenance",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:71",
+    "text": "Full support of SONET/SDH channel switching",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:72",
+    "text": "Suitable for direct fibre and multiplexed (IEEE C37.94) networks, including MPLS systems",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:73",
+    "text": "Full suite of monitoring, control and recording capabilities plus fault locator, autoreclose and check synchronism",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:74",
+    "text": "8 teleprotection logic bits from and to each end via MODEM, fibre, or MUX channel",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:75",
+    "text": "Compatibility with modern Ethernet communications equipment",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:76",
+    "text": "New CT saturation technique reduces CT dimensioning requirements and saves on scheme cost",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:77",
+    "text": "Advanced IEC61850 Edition 2 implementation with complete settings via SCL files",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:78",
+    "text": "Redundant communications with zero downtime using optional PRP/HSR protocols",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:79",
+    "text": "Wide range of supported protocols Courier/K-Bus, IEC 60870-5-103, DNP 3.0 (EAI-485 or Ethernet) and IEC 61850 Edition 2",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:80",
+    "text": "Harsh environment coating as standard to all MiCOM relays to protect against corrosive gases such as H2S or SO2",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:81",
+    "text": "Application:"
+  },
+  {
+    "location": "html-block:82",
+    "text": "Adapted to suit many different substation and protected feeder topologies:",
+    "heading": "Application:"
+  },
+  {
+    "location": "html-block:83",
+    "text": "Current differential protection for up to 6 line or cable ends, maximising connection of renewable generation, reducing greenhouse gas emissions",
+    "heading": "Application:"
+  },
+  {
+    "location": "html-block:84",
+    "text": "Highly selective and sensitive unit protection, with capacitive current compensation for long lines or cables",
+    "heading": "Application:"
+  },
+  {
+    "location": "html-block:85",
+    "text": "Ability to locally take any end off-line for maintenance",
+    "heading": "Application:"
+  },
+  {
+    "location": "html-block:86",
+    "text": "Transmission and subtransmission: P54C and P54E use the same hardware as well-proven MiCOM Agile P543 and P545 models, offering scalability for large numbers of binary inputs/outputs",
+    "heading": "Application:"
+  },
+  {
+    "location": "html-block:87",
+    "text": "Distribution: P54A and P54B offer compact feeder differential in a 40TE half-rack case",
+    "heading": "Application:"
+  },
+  {
+    "location": "html-block:88",
+    "text": "What's New"
+  },
+  {
+    "location": "html-block:89",
+    "text": "What's New"
+  },
+  {
+    "location": "html-block:90",
+    "text": "Protection & Control"
+  },
+  {
+    "location": "html-block:91",
+    "text": "Protect lines with up to 6 terminals"
+  },
+  {
+    "location": "html-block:92",
+    "text": "For more than 100 years, electric power plants have mainly been large, utility-owned facilities, feeding distributed load based on unidirectional power flow. Over the past 20 years, smaller, independent power generation plants have been developed and distributed within electrical networks. The increasing number of Distributed Generation (DG) sites, and their increasing power ratings from kW to hundreds of MW, create new challenges for network planning and operation.",
+    "heading": "Protect lines with up to 6 terminals"
+  },
+  {
+    "location": "html-block:93",
+    "text": "Distributed Generation Tee Infeeds to Existing Transmission Lines"
+  },
+  {
+    "location": "html-block:94",
+    "text": "Circuits near the coast may be candidates for tee infeeds to evacuate renewable energy from onshore and offshore wind generation. A tee infeed to a nearby transmission line can be a more cost effective solution to connect the generation to the grid than building a new substation. This economy enables more Distributed Generation connections to penetrate the network helping to meet green energy connection targets and reduce greenhouse gas emissions.",
+    "heading": "Distributed Generation Tee Infeeds to Existing Transmission Lines"
+  },
+  {
+    "location": "html-block:95",
+    "text": "Multi-Ended Circuit Differential Lines"
+  },
+  {
+    "location": "html-block:96",
+    "text": "Previously transmission and distribution circuits would have two or three ends only. However, five or more ends are becoming common because large Distributed Generation sites such as onshore or offshore windfarms and solar farms are being connected to the grid. As the power networks evolve to transport power in ever more complex ring and meshed networks, line/cable differential protection becomes increasingly attractive, with its inherent ability to address grading/selectivity challenges and is scalable for multi-terminal circuits able to accommodate many connections of distributed generation along the line. GE Vernova’s Electrification’ multi-ended current differential protection is now ready for any protection topology from two to six terminals, whether those multi-terminals exist now, or are provisioned for connection in the future.",
+    "heading": "Multi-Ended Circuit Differential Lines"
+  },
+  {
+    "location": "html-block:97",
+    "text": "Functional Block Diagram",
+    "heading": "Multi-Ended Circuit Differential Lines"
+  },
+  {
+    "location": "html-block:98",
+    "text": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:99",
+    "text": "Device Number | Function",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:100",
+    "text": "25 | Check Synchronising",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:101",
+    "text": "27 | Phase and Line Undervoltage",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:102",
+    "text": "46 | Negative Sequence Overcurrent",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:103",
+    "text": "49 | Thermal Overload",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:104",
+    "text": "50 | Phase Definitive Time Overcurrent",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:105",
+    "text": "51 | Phase Inverse-Time Overcurrent",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:106",
+    "text": "52 | Circuit Breaker Control",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:107",
+    "text": "59 | Phase and Line Overvoltage",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:108",
+    "text": "67 | Directional Phase Overcurrent",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:109",
+    "text": "79 | Autoreclose",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:110",
+    "text": "Device Number | Function",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:111",
+    "text": "85 | Teleprotection Channel Schemes",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:112",
+    "text": "86 | Latching/Lockout Contacts",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:113",
+    "text": "87 | Line Differential- 2 to 6 Ends",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:114",
+    "text": "21FL | Fault Locator",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:115",
+    "text": "46BC | Broken Conductor",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:116",
+    "text": "49SR | Silicon Rectifier Thermal",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:117",
+    "text": "50BF | CB Failure",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:118",
+    "text": "50N | Earth Fault Definitive Time Overcurrent",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:119",
+    "text": "51N | Neutral/Ground IDMT Overcurrent",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:120",
+    "text": "59N | Neutral Voltage Displacement",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:121",
+    "text": "59R | Remote End Overvoltage",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:122",
+    "text": "Device Number | Function",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:123",
+    "text": "64N | Restricted Earth Fault",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:124",
+    "text": "67N | Directional Neutral/Ground Overcurrent",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:125",
+    "text": "81df/dt | Rate of Change Frequency",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:126",
+    "text": "81O | Overfrequency",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:127",
+    "text": "81U | Underfrequency",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:128",
+    "text": "81V | Undervoltage Blocking",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:129",
+    "text": "CTS | CT Supervision",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:130",
+    "text": "PSL | Programmable Logic",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:131",
+    "text": "SEF | Sensitive Earth Fault",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:132",
+    "text": "TCS | Trip Circuit Supervision",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:133",
+    "text": "VTS | VT Supervision",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:134",
+    "text": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:135",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:136",
+    "text": "Powerful graphical Programmable Scheme Logic (PSL) customise relay logic",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:137",
+    "text": "Real-time monitoring of remote, local and differential per-phase currents",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:138",
+    "text": "Oscillography - 48 samples/cycle, up to 10.5 seconds record length",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:139",
+    "text": "Event Recorder - 1024 time tagged events, time tagged to a resolution of 1 ms",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:140",
+    "text": "Programmable Scheme Logic"
+  },
+  {
+    "location": "html-block:141",
+    "text": "Powerful graphical logic allows the user to customise the protection and control functions. The logic includes 32 timers, gates (OR, AND, MAJORITY) and set/reset latch functions, with the ability to invert the inputs and outputs and provide feedback.",
+    "heading": "Programmable Scheme Logic"
+  },
+  {
+    "location": "html-block:142",
+    "text": "The system is optimised to ensure that the protection outputs are not delayed by PSL operation. The programmable scheme logic is configured using the graphical S1 Agile software. The relay outputs may be configured as latching (lockout) or self-reset. All aspects of MiCOM P40 IED configuration are managed using the S1 Agile software.",
+    "heading": "Programmable Scheme Logic"
+  },
+  {
+    "location": "html-block:143",
+    "text": "Measurement and Recording Facilities"
+  },
+  {
+    "location": "html-block:144",
+    "text": "All events, fault and disturbance records are time tagged to a resolution of 1 ms. An optional IRIG-B port is available for accurate time synchronisation.",
+    "heading": "Measurement and Recording Facilities"
+  },
+  {
+    "location": "html-block:145",
+    "text": "Power System Measurements",
+    "heading": "Measurement and Recording Facilities"
+  },
+  {
+    "location": "html-block:146",
+    "text": "Instantaneous and time integrated voltage, current and power measurements are provided. These may be viewed in primary, or secondary values.",
+    "heading": "Measurement and Recording Facilities"
+  },
+  {
+    "location": "html-block:147",
+    "text": "Fault Location",
+    "heading": "Measurement and Recording Facilities"
+  },
+  {
+    "location": "html-block:148",
+    "text": "A fault location algorithm provides distance to fault in miles, kilometres, ohms or percentage of the line length. The proven algorithm employed tolerates pre-fault loading and fault arc resistance.",
+    "heading": "Measurement and Recording Facilities"
+  },
+  {
+    "location": "html-block:149",
+    "text": "Event Records",
+    "heading": "Measurement and Recording Facilities"
+  },
+  {
+    "location": "html-block:150",
+    "text": "Up to 1024 time-tagged event records can be stored. An optional modulated or demodulated IRIG-B port is available for accurate time synchronisation.",
+    "heading": "Measurement and Recording Facilities"
+  },
+  {
+    "location": "html-block:151",
+    "text": "fault Records",
+    "heading": "Measurement and Recording Facilities"
+  },
+  {
+    "location": "html-block:152",
+    "text": "The last 15 fault records are stored.",
+    "heading": "Measurement and Recording Facilities"
+  },
+  {
+    "location": "html-block:153",
+    "text": "Disturbance Records",
+    "heading": "Measurement and Recording Facilities"
+  },
+  {
+    "location": "html-block:154",
+    "text": "The oscillography has 16 analogue channels, 64 digital and 1 time channel, all at a resolution of 48 samples/cycle.",
+    "heading": "Measurement and Recording Facilities"
+  },
+  {
+    "location": "html-block:155",
+    "text": "Communications"
+  },
+  {
+    "location": "html-block:156",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:157",
+    "text": "Advanced IEC61850 Edition 2 implementation with complete settings via SCL files",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:158",
+    "text": "Embedded IEEE 1588 time synch protocol support eliminates dedicated IRIG-B wiring requirements for IEDs",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:159",
+    "text": "Redundant communications with zero downtime using optional PRP/HSR protocols",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:160",
+    "text": "Wide range of supported protocols Courier/K-Bus, IEC 60870-5-103, DNP 3.0 (EAI-485 or Ethernet) and IEC 61850",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:161",
+    "text": "Protection Communications Interfacing"
+  },
+  {
+    "location": "html-block:162",
+    "text": "To ensure compatibility with standard communications equipment, the MiCOM P54x Agile multi-ended line differential series is designed to work with IEEE C37.94TM. A direct fibre optic connection to a MUX is possible if the MUX is IEEE C37.94TM compliant.",
+    "heading": "Protection Communications Interfacing"
+  },
+  {
+    "location": "html-block:163",
+    "text": "In direct fibre optic applications, 1300 nm and 1550 nm channel options are available. The transmitters are designed with a large \"optical budget\" to support up to 150 km.",
+    "heading": "Protection Communications Interfacing"
+  },
+  {
+    "location": "html-block:164",
+    "text": "Communications Supervision"
+  },
+  {
+    "location": "html-block:165",
+    "text": "Dependable communications are essential for high-performance differential protection. Each active longitudinal channel is independently monitored and reports error statistics in line with guidance from ITU-T G.821.",
+    "heading": "Communications Supervision"
+  },
+  {
+    "location": "html-block:166",
+    "text": "Multi-ended line differential works in a ring connection, which provide comms redundancy. In the event of degraded communications, the ring communications channels will continue to provide protection, thus providing duplicated links via diverse communications paths.",
+    "heading": "Communications Supervision"
+  },
+  {
+    "location": "html-block:167",
+    "text": "Alternatively, back-up overcurrent elements can be switched into service, either as permanent parallel main protection, or temporary protection only during channel outages.",
+    "heading": "Communications Supervision"
+  },
+  {
+    "location": "html-block:168",
+    "text": "Communications with Remote Operators and Substation Automation"
+  },
+  {
+    "location": "html-block:169",
+    "text": "Rear Scada Communication"
+  },
+  {
+    "location": "html-block:170",
+    "text": "The wide range of communications options, including IEC 61850, provides interfacing with almost any type of substation automation system or SCADA system.",
+    "heading": "Rear Scada Communication"
+  },
+  {
+    "location": "html-block:171",
+    "text": "The following protocols are available:",
+    "heading": "Rear Scada Communication"
+  },
+  {
+    "location": "html-block:172",
+    "text": "Courier/K-Bus",
+    "heading": "Rear Scada Communication"
+  },
+  {
+    "location": "html-block:173",
+    "text": "IEC 60870-5-103",
+    "heading": "Rear Scada Communication"
+  },
+  {
+    "location": "html-block:174",
+    "text": "DNP 3.0 (EAI-485 or Ethernet)",
+    "heading": "Rear Scada Communication"
+  },
+  {
+    "location": "html-block:175",
+    "text": "IEC 61850 Edition 2",
+    "heading": "Rear Scada Communication"
+  },
+  {
+    "location": "html-block:176",
+    "text": "P54x devices can be enhanced with an optional redundant Ethernet board. The redundancy is managed by the market's fastest recovery time protocols: IEC 62439-3 PRP and HSR allowing bumpless redundancy and RSTP, offering multi-vendor interoperability. The redundant Ethernet board supports either modulated or demodulated IRIG-B and the SNTP protocol for time synchronisation. The redundant Ethernet board also has a watchdog relay contact to alarm in case of a failure.",
+    "heading": "Rear Scada Communication"
+  },
+  {
+    "location": "html-block:177",
+    "text": "Second Rear Courier Port"
+  },
+  {
+    "location": "html-block:178",
+    "text": "An additional second rear port can be ordered as an option, designed typically for dial-up modem access by protection engineers/operators when the main port is reserved for SCADA traffic. This port also offers the option of -103 communications when IEC 61850 is the chosen first port protocol.",
+    "heading": "Second Rear Courier Port"
+  },
+  {
+    "location": "html-block:179",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:180",
+    "text": "MiCOM S1 Agile"
+  },
+  {
+    "location": "html-block:181",
+    "text": "Key benefits:"
+  },
+  {
+    "location": "html-block:182",
+    "text": "Powerful, free of charge, PC toolsuite",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:183",
+    "text": "Optimum management of the installed base, structured as per the substation topology",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:184",
+    "text": "Intuitive and versatile interface with file management facilities",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:185",
+    "text": "Logical structure based on substation, voltage level and bay",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:186",
+    "text": "Version control and cross-checking facilities for IED settings",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:187",
+    "text": "Real-time measurement visualization – MiCOM S1 Agile extends to all MiCOM Agile IEDs - including P847 PMU and busbar schemes",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:188",
+    "text": "Engineering Tool Suite"
+  },
+  {
+    "location": "html-block:189",
+    "text": "S1 Agile is the truly universal PC tool for MiCOM Agile relay, assemble all tools in a palette for simple entry, with intuitive navigation via fewer mouse-clicks. No-longer are separate tools required for redundant Ethernet configuration, phasor measurement unit commissioning, busbar scheme operational dashboards, programmable curve profiles or automatic disturbance record extraction – applications are embedded. MiCOM S1 Agile supports all existing MiCOM, K-Series and Modulex, including a utility for automatic conversion of setting files from previous generations of numerical relays like K-series and MiCOM P20 to the latest P40 Agile models.",
+    "heading": "Engineering Tool Suite"
+  },
+  {
+    "location": "html-block:190",
+    "text": "To move to the future, with no loss of functionality, no loss of device support, and full compatibility with your installed base and system architecture – request a copy of S1 Agile with the contact form link below.",
+    "heading": "Engineering Tool Suite"
+  },
+  {
+    "location": "html-block:191",
+    "text": "Key features in the MiCOM S1 family:"
+  },
+  {
+    "location": "html-block:192",
+    "text": "GE Vernova’s integrated engineering tool that provides users with access to automation IED configuration and record data",
+    "heading": "Key features in the MiCOM S1 family:"
+  },
+  {
+    "location": "html-block:193",
+    "text": "Integrated configuration and monitoring features",
+    "heading": "Key features in the MiCOM S1 family:"
+  },
+  {
+    "location": "html-block:194",
+    "text": "Send and extract setting files",
+    "heading": "Key features in the MiCOM S1 family:"
+  },
+  {
+    "location": "html-block:195",
+    "text": "Event and disturbance record extraction and analysis",
+    "heading": "Key features in the MiCOM S1 family:"
+  },
+  {
+    "location": "html-block:196",
+    "text": "MiCOM S1 Agile software request"
+  },
+  {
+    "location": "html-block:197",
+    "text": "To receive the MiCOM S1 Agile, please use our Contact form. This will also ensure that you are kept up-to-date with the latest enhancements, including updates and bug fixes.",
+    "heading": "MiCOM S1 Agile software request"
+  },
+  {
+    "location": "html-block:198",
+    "text": "Models"
+  },
+  {
+    "location": "html-block:199",
+    "text": "Models"
+  },
+  {
+    "location": "html-block:200",
+    "text": "P54A compact (40TE), economical line differential protection without VT inputs, offering non-directional backup protection.",
+    "heading": "Models"
+  },
+  {
+    "location": "html-block:201",
+    "text": "P54B compact (40TE), economical line differential protection with directionalised back-up protection and inbuilt reclosing and check synchronism.",
+    "heading": "Models"
+  },
+  {
+    "location": "html-block:202",
+    "text": "P54C transmission-class 1/3-pole tripping line differential protection with backup protection and inbuilt reclosing and check synchronism (built from today’s P543 hardware).",
+    "heading": "Models"
+  },
+  {
+    "location": "html-block:203",
+    "text": "P54E transmission-class 1/3-pole tripping line differential protection with back-up protection and inbuilt reclosing and check synchronism with a large number of binary I/O for traditional hardwired schemes (built from P545 hardware).",
+    "heading": "Models"
+  }
+]

@@ -1,0 +1,198 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "iSTAT M355 - Legacy :: GE Grid Solutions"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "iSTAT M355 - Legacy"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Power Quality Analyser"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Contact Us",
+    "heading": "Power Quality Analyser"
+  },
+  {
+    "location": "html-block:7",
+    "text": "GE Vernova’s Electrification has discontinued sales of this product. Please contact us to discuss alternatives.",
+    "heading": "Power Quality Analyser"
+  },
+  {
+    "location": "html-block:8",
+    "text": "2008 Class A and reports Power Quality compliance to EN50160: 2011. Sampling at a rate of 31 kHz (620 samples per cycle at 50Hz) and true RMS measurement gives accurate readings under all harmonic conditions, with Measurement accuracy better than 0.1% and Class 0.2S Energy.",
+    "heading": "Power Quality Analyser"
+  },
+  {
+    "location": "html-block:9",
+    "text": "The M355 is also a fully functioning communicating measurement centre, with 4 voltage and 4 current inputs, providing more than 150 measurement quantities and harmonic analysis on current and voltage inputs to the 63rd harmonic. The M355 also includes a Trend data recorder capable of recording up to 128 channels of analogue measurement data and an alarm status recorder. The M355provides all of the power quality measurements required by EN50160 including Flicker (EN61000-4-15) and Harmonics (EN61000-4-7 Class 1) and also calculates inter hamonics.",
+    "heading": "Power Quality Analyser"
+  },
+  {
+    "location": "html-block:10",
+    "text": "To achieve Class A to IEC 61000-4-30:2008 synchronisation of the Real Time Clock (RTC) is required. M355 allows RTC synchronisation using modulated or demodulated IRIGB, 1PPS, GPS modem or SNTP (if Ethernet available). If clock synchronisation is not implemented the M355 operates as a Class S instrument.",
+    "heading": "Power Quality Analyser"
+  },
+  {
+    "location": "html-block:11",
+    "text": "The M355 can be defined with serial (RS232/RS485), USB or Ethernet communications ports using Modbus RTU/TCP and DNP3 (level 1) protocols. Also the M355 has a front mounted memory card slot (MMC or SD) for extracting data stored in the meter for later analysis, so connection to a communications network is not required to retrieve data.",
+    "heading": "Power Quality Analyser"
+  },
+  {
+    "location": "html-block:12",
+    "text": "The M355 has 4 input/output modules, 2 dual channel modules which can be factory fitted with a wide range of options, selected from analogue, alarm, pulse or watchdog outputs or analogue, temperature (PT100) or digital inputs. And 2x8 channel factory fitted digital input or output (relay) modules with status indicators on the front panel.",
+    "heading": "Power Quality Analyser"
+  },
+  {
+    "location": "html-block:13",
+    "text": "The M355 requires the QDSP2 software, to define and store settings, and to configure, download and analyse trend, alarm and power quality data.",
+    "heading": "Power Quality Analyser"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:24",
+    "text": "iSTAT M355 - Legacy"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Power Quality Analyser"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Contact Us",
+    "heading": "Power Quality Analyser"
+  },
+  {
+    "location": "html-block:27",
+    "text": "GE Vernova’s Electrification has discontinued sales of this product. Please contact us to discuss alternatives.",
+    "heading": "Power Quality Analyser"
+  },
+  {
+    "location": "html-block:28",
+    "text": "2008 Class A and reports Power Quality compliance to EN50160: 2011. Sampling at a rate of 31 kHz (620 samples per cycle at 50Hz) and true RMS measurement gives accurate readings under all harmonic conditions, with Measurement accuracy better than 0.1% and Class 0.2S Energy.",
+    "heading": "Power Quality Analyser"
+  },
+  {
+    "location": "html-block:29",
+    "text": "The M355 is also a fully functioning communicating measurement centre, with 4 voltage and 4 current inputs, providing more than 150 measurement quantities and harmonic analysis on current and voltage inputs to the 63rd harmonic. The M355 also includes a Trend data recorder capable of recording up to 128 channels of analogue measurement data and an alarm status recorder. The M355provides all of the power quality measurements required by EN50160 including Flicker (EN61000-4-15) and Harmonics (EN61000-4-7 Class 1) and also calculates inter hamonics.",
+    "heading": "Power Quality Analyser"
+  },
+  {
+    "location": "html-block:30",
+    "text": "To achieve Class A to IEC 61000-4-30:2008 synchronisation of the Real Time Clock (RTC) is required. M355 allows RTC synchronisation using modulated or demodulated IRIGB, 1PPS, GPS modem or SNTP (if Ethernet available). If clock synchronisation is not implemented the M355 operates as a Class S instrument.",
+    "heading": "Power Quality Analyser"
+  },
+  {
+    "location": "html-block:31",
+    "text": "The M355 can be defined with serial (RS232/RS485), USB or Ethernet communications ports using Modbus RTU/TCP and DNP3 (level 1) protocols. Also the M355 has a front mounted memory card slot (MMC or SD) for extracting data stored in the meter for later analysis, so connection to a communications network is not required to retrieve data.",
+    "heading": "Power Quality Analyser"
+  },
+  {
+    "location": "html-block:32",
+    "text": "The M355 has 4 input/output modules, 2 dual channel modules which can be factory fitted with a wide range of options, selected from analogue, alarm, pulse or watchdog outputs or analogue, temperature (PT100) or digital inputs. And 2x8 channel factory fitted digital input or output (relay) modules with status indicators on the front panel.",
+    "heading": "Power Quality Analyser"
+  },
+  {
+    "location": "html-block:33",
+    "text": "The M355 requires the QDSP2 software, to define and store settings, and to configure, download and analyse trend, alarm and power quality data.",
+    "heading": "Power Quality Analyser"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:35",
+    "text": "PQM II"
+  },
+  {
+    "location": "html-block:36",
+    "text": "The PQM II is an ideal choice when continuous monitoring of a three phase system is...",
+    "heading": "PQM II"
+  },
+  {
+    "location": "html-block:37",
+    "text": "View More",
+    "heading": "PQM II"
+  },
+  {
+    "location": "html-block:38",
+    "text": "EPM"
+  },
+  {
+    "location": "html-block:39",
+    "text": "GE Vernova provides a wide range of high accuracy power quality, power meters and...",
+    "heading": "EPM"
+  },
+  {
+    "location": "html-block:40",
+    "text": "View More",
+    "heading": "EPM"
+  },
+  {
+    "location": "html-block:41",
+    "text": "EPM 7000P"
+  },
+  {
+    "location": "html-block:42",
+    "text": "The Multilin™ EPM 7000P is a versatile power quality meter offering that can be used...",
+    "heading": "EPM 7000P"
+  },
+  {
+    "location": "html-block:43",
+    "text": "View More",
+    "heading": "EPM 7000P"
+  }
+]

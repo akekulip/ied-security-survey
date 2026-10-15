@@ -1,0 +1,568 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "MiCOM Agile P847 - Legacy | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "MiCOM Agile P847 - Legacy"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Phasor Measurement Unit"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Contact Sales",
+    "heading": "Phasor Measurement Unit"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Manufacturing for the P847 as been discontinued. As an alternative, please refer to N60, DR60, and RPV311.",
+    "heading": "Phasor Measurement Unit"
+  },
+  {
+    "location": "html-block:8",
+    "text": "The P847 Phasor Measurement Unit forms part of GE Vernova’s system monitoring and control. It is used to measure power system data in real time and report to the PDC (Phasor Data Concentrator) for visualization, data storage and most importantly for running a variety of ‘on line’ and ‘off line’ applications in systems analysis and control. The ultimate goal is to run the system economically and preserve system stability following major disturbances.",
+    "heading": "Phasor Measurement Unit"
+  },
+  {
+    "location": "html-block:9",
+    "text": "The P847 is GPS synchronized externally through a fiber-optic input (1PPS) and connected to an accurate IRIG-B source (P594/RT430). The PMU function is designed to support IEEE C37.118 – 2011 (2014 amendment) with enhanced performance under off-nominal and dynamic system conditions due to an advanced frequency tracking algorithm.",
+    "heading": "Phasor Measurement Unit"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Basic description:"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Measures accurate, time-synchronized power system data",
+    "heading": "Basic description:"
+  },
+  {
+    "location": "html-block:12",
+    "text": "A key component of wide area monitoring, protection and control systems (WAMPACs)",
+    "heading": "Basic description:"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Applications include: state estimation, situational awareness, stability monitoring, forensic analysis, network resynchronization",
+    "heading": "Basic description:"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Available in 3 CT/3 VT, 6 CT/6 VT or 12 CT/6 VT configurations",
+    "heading": "Basic description:"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Supports IEEE C37.118.2 synchrophasor protocols – TCP/IP, UDP unicast and UDP multicast (commanded or spontaneous)",
+    "heading": "Basic description:"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Dual streaming of phasors via 2 independently configurable Ethernet ports",
+    "heading": "Basic description:"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Overall differentiation factors:"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Stand-alone PMU function in hardware familiar, hardened and well-proven in the substation environment",
+    "heading": "Overall differentiation factors:"
+  },
+  {
+    "location": "html-block:19",
+    "text": "2014 standard compliant - essential to ensure correct PMU response under dynamic system events when the PMU is most needed",
+    "heading": "Overall differentiation factors:"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Real-time monitoring and control of the power system, especially when coupled with GE Vernova's e-terra and Psymetrix PhasorPoint solutions",
+    "heading": "Overall differentiation factors:"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Set and commissioned within the same MiCOM S1 Agile tool suite as per MiCOM P40 protection relays",
+    "heading": "Overall differentiation factors:"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Key customer benefits:"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Real time monitoring and control of the power system",
+    "heading": "Key customer benefits:"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Improved accuracy, latency and reporting rates versus SCADA data",
+    "heading": "Key customer benefits:"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Flexible communications",
+    "heading": "Key customer benefits:"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Graphical programmable scheme logic (PSL) eases protection scheme creation, and avoids the need for external logic controllers",
+    "heading": "Key customer benefits:"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Main characteristics:"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Transmits IEEE C37.118-2005 synchrophasor data at up to 60 frames per second",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Available with a full suite of back-up protection functions",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:30",
+    "text": "IEC 61850 or DNP3 Ethernet station bus communication",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Transmitted time-tagged signals are phase currents, voltages, their derivatives, frequency, rate of change of frequency plus binary signals",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Technical Manual"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Technical Manual"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:46",
+    "text": "MiCOM Agile P847 - Legacy"
+  },
+  {
+    "location": "html-block:47",
+    "text": "Phasor Measurement Unit"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Contact Sales",
+    "heading": "Phasor Measurement Unit"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Manufacturing for the P847 as been discontinued. As an alternative, please refer to N60, DR60, and RPV311.",
+    "heading": "Phasor Measurement Unit"
+  },
+  {
+    "location": "html-block:50",
+    "text": "The P847 Phasor Measurement Unit forms part of GE Vernova’s system monitoring and control. It is used to measure power system data in real time and report to the PDC (Phasor Data Concentrator) for visualization, data storage and most importantly for running a variety of ‘on line’ and ‘off line’ applications in systems analysis and control. The ultimate goal is to run the system economically and preserve system stability following major disturbances.",
+    "heading": "Phasor Measurement Unit"
+  },
+  {
+    "location": "html-block:51",
+    "text": "The P847 is GPS synchronized externally through a fiber-optic input (1PPS) and connected to an accurate IRIG-B source (P594/RT430). The PMU function is designed to support IEEE C37.118 – 2011 (2014 amendment) with enhanced performance under off-nominal and dynamic system conditions due to an advanced frequency tracking algorithm.",
+    "heading": "Phasor Measurement Unit"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Basic description:"
+  },
+  {
+    "location": "html-block:53",
+    "text": "Measures accurate, time-synchronized power system data",
+    "heading": "Basic description:"
+  },
+  {
+    "location": "html-block:54",
+    "text": "A key component of wide area monitoring, protection and control systems (WAMPACs)",
+    "heading": "Basic description:"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Applications include: state estimation, situational awareness, stability monitoring, forensic analysis, network resynchronization",
+    "heading": "Basic description:"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Available in 3 CT/3 VT, 6 CT/6 VT or 12 CT/6 VT configurations",
+    "heading": "Basic description:"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Supports IEEE C37.118.2 synchrophasor protocols – TCP/IP, UDP unicast and UDP multicast (commanded or spontaneous)",
+    "heading": "Basic description:"
+  },
+  {
+    "location": "html-block:58",
+    "text": "Dual streaming of phasors via 2 independently configurable Ethernet ports",
+    "heading": "Basic description:"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Overall differentiation factors:"
+  },
+  {
+    "location": "html-block:60",
+    "text": "Stand-alone PMU function in hardware familiar, hardened and well-proven in the substation environment",
+    "heading": "Overall differentiation factors:"
+  },
+  {
+    "location": "html-block:61",
+    "text": "2014 standard compliant - essential to ensure correct PMU response under dynamic system events when the PMU is most needed",
+    "heading": "Overall differentiation factors:"
+  },
+  {
+    "location": "html-block:62",
+    "text": "Real-time monitoring and control of the power system, especially when coupled with GE Vernova's e-terra and Psymetrix PhasorPoint solutions",
+    "heading": "Overall differentiation factors:"
+  },
+  {
+    "location": "html-block:63",
+    "text": "Set and commissioned within the same MiCOM S1 Agile tool suite as per MiCOM P40 protection relays",
+    "heading": "Overall differentiation factors:"
+  },
+  {
+    "location": "html-block:64",
+    "text": "Key customer benefits:"
+  },
+  {
+    "location": "html-block:65",
+    "text": "Real time monitoring and control of the power system",
+    "heading": "Key customer benefits:"
+  },
+  {
+    "location": "html-block:66",
+    "text": "Improved accuracy, latency and reporting rates versus SCADA data",
+    "heading": "Key customer benefits:"
+  },
+  {
+    "location": "html-block:67",
+    "text": "Flexible communications",
+    "heading": "Key customer benefits:"
+  },
+  {
+    "location": "html-block:68",
+    "text": "Graphical programmable scheme logic (PSL) eases protection scheme creation, and avoids the need for external logic controllers",
+    "heading": "Key customer benefits:"
+  },
+  {
+    "location": "html-block:69",
+    "text": "Main characteristics:"
+  },
+  {
+    "location": "html-block:70",
+    "text": "Transmits IEEE C37.118-2005 synchrophasor data at up to 60 frames per second",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:71",
+    "text": "Available with a full suite of back-up protection functions",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:72",
+    "text": "IEC 61850 or DNP3 Ethernet station bus communication",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:73",
+    "text": "Transmitted time-tagged signals are phase currents, voltages, their derivatives, frequency, rate of change of frequency plus binary signals",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:74",
+    "text": "What's New"
+  },
+  {
+    "location": "html-block:75",
+    "text": "What's New"
+  },
+  {
+    "location": "html-block:76",
+    "text": "The new software features:"
+  },
+  {
+    "location": "html-block:77",
+    "text": "2014 standard compliant - essential to ensure correct PMU response under dynamic system events when the PMU is most needed",
+    "heading": "The new software features:"
+  },
+  {
+    "location": "html-block:78",
+    "text": "Supports IEEE C37.118.2 synchrophasor protocols – TCP/IP, UDP unicast and UDP multicast (commanded or spontaneous)",
+    "heading": "The new software features:"
+  },
+  {
+    "location": "html-block:79",
+    "text": "Dual streaming of phasors via 2 independently configurable Ethernet ports",
+    "heading": "The new software features:"
+  },
+  {
+    "location": "html-block:80",
+    "text": "Overview"
+  },
+  {
+    "location": "html-block:81",
+    "text": "Overview"
+  },
+  {
+    "location": "html-block:82",
+    "text": "Stand-alone PMU function in hardware familiar, hardened and well-proven in the substation environment",
+    "heading": "Overview"
+  },
+  {
+    "location": "html-block:83",
+    "text": "2014 standard compliant - essential to ensure correct PMU response under dynamic system events when the PMU is most needed",
+    "heading": "Overview"
+  },
+  {
+    "location": "html-block:84",
+    "text": "Real-time monitoring and control of the power system, especially when coupled with GE Vernova’s e-terra and Psymetrix PhasorPoint solutions",
+    "heading": "Overview"
+  },
+  {
+    "location": "html-block:85",
+    "text": "Set and commissioned within the same MiCOM S1 Agile tool suite as per MiCOM P40 protection relays",
+    "heading": "Overview"
+  },
+  {
+    "location": "html-block:86",
+    "text": "Transmits IEEE C37.118-2005 synchrophasor data at up to 60 frames per second",
+    "heading": "Overview"
+  },
+  {
+    "location": "html-block:87",
+    "text": "Available with a full suite of back-up protection functions",
+    "heading": "Overview"
+  },
+  {
+    "location": "html-block:88",
+    "text": "IEC 61850 or DNP3 Ethernet station bus communication",
+    "heading": "Overview"
+  },
+  {
+    "location": "html-block:89",
+    "text": "Transmitted time-tagged signals are phase currents, voltages, their derivatives, frequency, rate of change of frequency plus binary signals",
+    "heading": "Overview"
+  },
+  {
+    "location": "html-block:90",
+    "text": "Key customer benefits:"
+  },
+  {
+    "location": "html-block:91",
+    "text": "Real time monitoring and control of the power system",
+    "heading": "Key customer benefits:"
+  },
+  {
+    "location": "html-block:92",
+    "text": "Improved accuracy, latency and reporting rates versus SCADA data",
+    "heading": "Key customer benefits:"
+  },
+  {
+    "location": "html-block:93",
+    "text": "Flexible communications",
+    "heading": "Key customer benefits:"
+  },
+  {
+    "location": "html-block:94",
+    "text": "Graphical programmable scheme logic (PSL) eases scheme creation, and avoids the need for external logic controllers",
+    "heading": "Key customer benefits:"
+  },
+  {
+    "location": "html-block:95",
+    "text": "Field proven device with over 2500 PMU’s are in service up to 765 kV Voltage level",
+    "heading": "Key customer benefits:"
+  },
+  {
+    "location": "html-block:96",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:97",
+    "text": "MiCOM S1 Agile"
+  },
+  {
+    "location": "html-block:98",
+    "text": "Key benefits:"
+  },
+  {
+    "location": "html-block:99",
+    "text": "Powerful, free of charge, PC toolsuite",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:100",
+    "text": "Optimum management of the installed base, structured as per the substation topology",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:101",
+    "text": "Intuitive and versatile interface with file management facilities",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:102",
+    "text": "Logical structure based on substation, voltage level and bay",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:103",
+    "text": "Version control and cross-checking facilities for IED settings",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:104",
+    "text": "Real-time measurement visualization – MiCOM S1 Agile extends to all MiCOM Agile IEDs - including P847 PMU and busbar schemes",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:105",
+    "text": "Engineering Tool Suite"
+  },
+  {
+    "location": "html-block:106",
+    "text": "S1 Agile is the truly universal PC tool for MiCOM Agile relay, assemble all tools in a palette for simple entry, with intuitive navigation via fewer mouse-clicks. No-longer are separate tools required for redundant Ethernet configuration, phasor measurement unit commissioning, busbar scheme operational dashboards, programmable curve profiles or automatic disturbance record extraction – applications are embedded. MiCOM S1 Agile supports all existing MiCOM, K-Series and Modulex, including a utility for automatic conversion of setting files from previous generations of numerical relays like K-series and MiCOM P20 to the latest P40 Agile models.",
+    "heading": "Engineering Tool Suite"
+  },
+  {
+    "location": "html-block:107",
+    "text": "To move to the future, with no loss of functionality, no loss of device support, and full compatibility with your installed base and system architecture – request a copy of S1 Agile with the contact form link below.",
+    "heading": "Engineering Tool Suite"
+  },
+  {
+    "location": "html-block:108",
+    "text": "Key features in the MiCOM S1 family:"
+  },
+  {
+    "location": "html-block:109",
+    "text": "GE Vernova’s integrated engineering tool that provides users with access to automation IED configuration and record data",
+    "heading": "Key features in the MiCOM S1 family:"
+  },
+  {
+    "location": "html-block:110",
+    "text": "Integrated configuration and monitoring features",
+    "heading": "Key features in the MiCOM S1 family:"
+  },
+  {
+    "location": "html-block:111",
+    "text": "Send and extract setting files",
+    "heading": "Key features in the MiCOM S1 family:"
+  },
+  {
+    "location": "html-block:112",
+    "text": "Event and disturbance record extraction and analysis",
+    "heading": "Key features in the MiCOM S1 family:"
+  },
+  {
+    "location": "html-block:113",
+    "text": "MiCOM S1 Agile software request"
+  },
+  {
+    "location": "html-block:114",
+    "text": "To receive the MiCOM S1 Agile, please use our Contact form. This will also ensure that you are kept up-to-date with the latest enhancements, including updates and bug fixes.",
+    "heading": "MiCOM S1 Agile software request"
+  },
+  {
+    "location": "html-block:115",
+    "text": "Retrofit/Refurbish"
+  },
+  {
+    "location": "html-block:116",
+    "text": "Refurbishment Solutions"
+  },
+  {
+    "location": "html-block:117",
+    "text": "Refurbishment Solutions – “If It’s Blue Think to Renew”"
+  },
+  {
+    "location": "html-block:118",
+    "text": "GE Vernova’s latest MiCOM P847 offer an ideal path to refurbish an older installed base of MiCOM P847 PMU’s. Advantageously, users can benefit from the advancements made in protection, control, communications, hardware that have taken place in the intervening years. The new P40 retains form, fit and function compatibility but delivers the latest platform and software ready for today’s environment, and for future-proofed application for the decades ahead.",
+    "heading": "Refurbishment Solutions – “If It’s Blue Think to Renew”"
+  },
+  {
+    "location": "html-block:119",
+    "text": "Contact us for advice and support",
+    "heading": "Refurbishment Solutions – “If It’s Blue Think to Renew”"
+  },
+  {
+    "location": "html-block:120",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:121",
+    "text": "Fault Recorders & PMUs"
+  },
+  {
+    "location": "html-block:122",
+    "text": "View More",
+    "heading": "Fault Recorders & PMUs"
+  }
+]

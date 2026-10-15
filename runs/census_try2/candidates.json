@@ -1,0 +1,48 @@
+[
+  {
+    "id": "bf14bb6d9c58b3a17ba0",
+    "source_id": "60a6dd1862abdd1466b5",
+    "product_id": "ge_multilin_d20mx_substation_controller_legacy",
+    "feature": "authentication",
+    "lead_type": "capability",
+    "location": "html-block:70",
+    "matched": [
+      "Authentication",
+      "RADIUS"
+    ],
+    "context": "The Multilin D20MX supports a comprehensive set of security functions to allow a seamless integration with existing IT department policies. Built-in cyber security features, such as Remote Authentication Dial-In User Service (RADIUS), Role Based Access Control (RBAC), and user activity logging, provide a complete security toolkit required to enable simpler and more efficient compliance with NERC-CIP requirements, using open and trusted standards and protocols, that allow integration with modern cyber security systems and tools.",
+    "match_count": 2,
+    "status": "unreviewed",
+    "context_before": [
+      "Security",
+      "Integration into NERC-CIP Environments"
+    ],
+    "context_after": [
+      "Centralized Authentication and Authorization",
+      "Hardware Overview"
+    ],
+    "heading": "Integration into NERC-CIP Environments"
+  },
+  {
+    "id": "3fa05894e1524c12202f",
+    "source_id": "60a6dd1862abdd1466b5",
+    "product_id": "ge_multilin_d20mx_substation_controller_legacy",
+    "feature": "authentication",
+    "lead_type": "capability",
+    "location": "html-block:71",
+    "matched": [
+      "Authentication"
+    ],
+    "context": "Centralized Authentication and Authorization",
+    "match_count": 1,
+    "status": "unreviewed",
+    "context_before": [
+      "Integration into NERC-CIP Environments",
+      "The Multilin D20MX supports a comprehensive set of security functions to allow a seamless integration with existing IT department policies. Built-in cyber security features, such as Remote Authentication Dial-In User Service (RADIUS), Role Based Access Control (RBAC), and user activity logging, [...]"
+    ],
+    "context_after": [
+      "Hardware Overview",
+      "Hardware Overview"
+    ]
+  }
+]

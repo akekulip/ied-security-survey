@@ -1,0 +1,2820 @@
+{
+  "title": "IED security documentation survey: catalogue inventory",
+  "sampling": "Stratified random sample: up to 4 devices per vendor, category and lifecycle stratum, seed 20261013, drawn from 484 classified catalogue entries; strata with fewer entries are taken whole. A sample of catalogue entries, not of installed devices. Inventory of 2026-10-13; categories and lifecycle come from the vendors' own catalogues and pages.",
+  "definitions": {
+    "defined_at": "2026-10-13",
+    "legacy": "A device is counted as legacy only when the vendor states, in a dated source, that support for it has ended (end of support, end of service, end of life). A discontinued device without such a statement is reported in its own group and is not legacy. The protocol a device speaks, a security feature it lacks and the age of its manual never decide this.",
+    "lifecycle_statuses": {
+      "currently_supported": "Listed in the vendor's current catalogue on the inventory date without a notice of discontinuation, or stated by the vendor to be on sale and supported.",
+      "discontinued_supported": "The vendor states that manufacture or sale has ended and that support continues.",
+      "discontinued_support_not_stated": "The vendor states that manufacture or sale has ended; no statement about support was found.",
+      "end_of_support": "The vendor states that support has ended. This is the legacy group.",
+      "unknown": "None of the above is established. This includes products the vendor only labels legacy, products under a last-time-buy notice and families that are partly withdrawn."
+    },
+    "release_date": "Recorded separately when a vendor source states it. It never decides lifecycle status."
+  },
+  "seed": 20261013,
+  "per_stratum": 4,
+  "census": false,
+  "inventory": {
+    "path": "inventory/2026-10-13-v1_6-pages/inventory.json",
+    "sha256": "c785b0ddcf16cb331b69eb1c9e5b1d4f5e43dbd2601af079e3910ee995091046",
+    "created_at": "2026-10-13T22:34:40.654121+00:00"
+  },
+  "frame": [
+    {
+      "vendor": "GE Vernova / Multilin",
+      "category": "controller_rtu",
+      "lifecycle": "currently_supported",
+      "in_catalogue": 7,
+      "selected": 4
+    },
+    {
+      "vendor": "GE Vernova / Multilin",
+      "category": "controller_rtu",
+      "lifecycle": "discontinued_support_not_stated",
+      "in_catalogue": 15,
+      "selected": 4
+    },
+    {
+      "vendor": "GE Vernova / Multilin",
+      "category": "meter",
+      "lifecycle": "currently_supported",
+      "in_catalogue": 16,
+      "selected": 4
+    },
+    {
+      "vendor": "GE Vernova / Multilin",
+      "category": "meter",
+      "lifecycle": "discontinued_support_not_stated",
+      "in_catalogue": 23,
+      "selected": 4
+    },
+    {
+      "vendor": "GE Vernova / Multilin",
+      "category": "meter",
+      "lifecycle": "unknown",
+      "in_catalogue": 1,
+      "selected": 1
+    },
+    {
+      "vendor": "GE Vernova / Multilin",
+      "category": "protective_relay",
+      "lifecycle": "currently_supported",
+      "in_catalogue": 66,
+      "selected": 4
+    },
+    {
+      "vendor": "GE Vernova / Multilin",
+      "category": "protective_relay",
+      "lifecycle": "discontinued_support_not_stated",
+      "in_catalogue": 103,
+      "selected": 4
+    },
+    {
+      "vendor": "GE Vernova / Multilin",
+      "category": "protective_relay",
+      "lifecycle": "unknown",
+      "in_catalogue": 4,
+      "selected": 4
+    },
+    {
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "category": "meter",
+      "lifecycle": "currently_supported",
+      "in_catalogue": 3,
+      "selected": 3
+    },
+    {
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "category": "plc",
+      "lifecycle": "currently_supported",
+      "in_catalogue": 14,
+      "selected": 4
+    },
+    {
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "category": "plc",
+      "lifecycle": "discontinued_support_not_stated",
+      "in_catalogue": 5,
+      "selected": 4
+    },
+    {
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "category": "plc",
+      "lifecycle": "unknown",
+      "in_catalogue": 2,
+      "selected": 2
+    },
+    {
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "category": "protective_relay",
+      "lifecycle": "discontinued_support_not_stated",
+      "in_catalogue": 2,
+      "selected": 2
+    },
+    {
+      "vendor": "SEL",
+      "category": "controller_rtu",
+      "lifecycle": "currently_supported",
+      "in_catalogue": 15,
+      "selected": 4
+    },
+    {
+      "vendor": "SEL",
+      "category": "meter",
+      "lifecycle": "currently_supported",
+      "in_catalogue": 2,
+      "selected": 2
+    },
+    {
+      "vendor": "SEL",
+      "category": "protective_relay",
+      "lifecycle": "currently_supported",
+      "in_catalogue": 44,
+      "selected": 4
+    },
+    {
+      "vendor": "Schneider Electric",
+      "category": "controller_rtu",
+      "lifecycle": "currently_supported",
+      "in_catalogue": 10,
+      "selected": 4
+    },
+    {
+      "vendor": "Schneider Electric",
+      "category": "controller_rtu",
+      "lifecycle": "discontinued_support_not_stated",
+      "in_catalogue": 1,
+      "selected": 1
+    },
+    {
+      "vendor": "Schneider Electric",
+      "category": "meter",
+      "lifecycle": "currently_supported",
+      "in_catalogue": 12,
+      "selected": 4
+    },
+    {
+      "vendor": "Schneider Electric",
+      "category": "meter",
+      "lifecycle": "discontinued_support_not_stated",
+      "in_catalogue": 5,
+      "selected": 4
+    },
+    {
+      "vendor": "Schneider Electric",
+      "category": "plc",
+      "lifecycle": "currently_supported",
+      "in_catalogue": 13,
+      "selected": 4
+    },
+    {
+      "vendor": "Schneider Electric",
+      "category": "plc",
+      "lifecycle": "discontinued_support_not_stated",
+      "in_catalogue": 4,
+      "selected": 4
+    },
+    {
+      "vendor": "Schneider Electric",
+      "category": "protective_relay",
+      "lifecycle": "currently_supported",
+      "in_catalogue": 27,
+      "selected": 4
+    },
+    {
+      "vendor": "Schneider Electric",
+      "category": "protective_relay",
+      "lifecycle": "discontinued_support_not_stated",
+      "in_catalogue": 10,
+      "selected": 4
+    },
+    {
+      "vendor": "Siemens",
+      "category": "controller_rtu",
+      "lifecycle": "currently_supported",
+      "in_catalogue": 9,
+      "selected": 4
+    },
+    {
+      "vendor": "Siemens",
+      "category": "meter",
+      "lifecycle": "currently_supported",
+      "in_catalogue": 9,
+      "selected": 4
+    },
+    {
+      "vendor": "Siemens",
+      "category": "plc",
+      "lifecycle": "currently_supported",
+      "in_catalogue": 10,
+      "selected": 4
+    },
+    {
+      "vendor": "Siemens",
+      "category": "protective_relay",
+      "lifecycle": "currently_supported",
+      "in_catalogue": 52,
+      "selected": 4
+    }
+  ],
+  "max_depth": 0,
+  "max_pages_per_product": 4,
+  "delay_seconds": 1.2,
+  "timeout_seconds": 60,
+  "max_bytes": 60000000,
+  "robots_follow_redirects": [
+    "rockwellautomation.com"
+  ],
+  "products": [
+    {
+      "id": "ge_multilin_c60c95",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin C60/C95",
+      "category": "controller_rtu",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/controllers/multilin-c60c95"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.gevernova.com/electrification/sitemap.xml",
+          "sha256": "fb0c0e174366a6d18e1d13244a3fcba06b69266414e09f40f54f9e534984254b",
+          "retrieved_at": "2026-10-13T18:52:08.358645+00:00"
+        }
+      ],
+      "max_depth": 2,
+      "max_pages_per_product": 9,
+      "follow_pattern": "resources\\?prod=[^ ]*&type=(1L?|3|4|13)&|/sites/default/files/[^ ]*\\.pdf"
+    },
+    {
+      "id": "ge_multilin_d20e",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin D20E",
+      "category": "controller_rtu",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/gateways-rtus/multilin-d20e"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.gevernova.com/electrification/sitemap.xml",
+          "sha256": "fb0c0e174366a6d18e1d13244a3fcba06b69266414e09f40f54f9e534984254b",
+          "retrieved_at": "2026-10-13T18:52:08.358645+00:00"
+        }
+      ],
+      "max_depth": 2,
+      "max_pages_per_product": 9,
+      "follow_pattern": "resources\\?prod=[^ ]*&type=(1L?|3|4|13)&|/sites/default/files/[^ ]*\\.pdf"
+    },
+    {
+      "id": "ge_multilintm_g100",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin G100 Advanced Substation Gateway",
+      "category": "controller_rtu",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/gateways-rtus/multilintm-g100"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.gevernova.com/electrification/sitemap.xml",
+          "sha256": "fb0c0e174366a6d18e1d13244a3fcba06b69266414e09f40f54f9e534984254b",
+          "retrieved_at": "2026-10-13T18:52:08.358645+00:00"
+        }
+      ],
+      "max_depth": 2,
+      "max_pages_per_product": 9,
+      "follow_pattern": "resources\\?prod=[^ ]*&type=(1L?|3|4|13)&|/sites/default/files/[^ ]*\\.pdf"
+    },
+    {
+      "id": "ge_multilintm_g500",
+      "vendor": "GE Vernova / Multilin",
+      "model": "G500 Advanced Substation Gateway",
+      "category": "controller_rtu",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/gateways-rtus/multilintm-g500"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.gevernova.com/electrification/sitemap.xml",
+          "sha256": "fb0c0e174366a6d18e1d13244a3fcba06b69266414e09f40f54f9e534984254b",
+          "retrieved_at": "2026-10-13T18:52:08.358645+00:00"
+        }
+      ],
+      "max_depth": 2,
+      "max_pages_per_product": 9,
+      "follow_pattern": "resources\\?prod=[^ ]*&type=(1L?|3|4|13)&|/sites/default/files/[^ ]*\\.pdf"
+    },
+    {
+      "id": "ge_dart_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "DART-Legacy",
+      "category": "controller_rtu",
+      "lifecycle": "discontinued_support_not_stated",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/dart-legacy"
+      ],
+      "vendor_label": "legacy",
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "DART-Legacy | GE Vernova | Electrification Skip to main content Explore GE Vernova DART-Legacy Distribution Automation Remote Terminal Contact Us Manufacturing for this product has been discontinued. The DART, a pioneer of transducer-less feeder-resident IEDs, has proven to be reliable in some of the harshest conditions on the planet. The entire product family is composed of devices that operate from -40°C to +80°C at 100% humidity without the need for any environmental control.",
+          "stated_date": "",
+          "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/dart-legacy",
+          "sha256": "5d16ba67dcdbe77b78e3c8c31d598f4078422491fd1e2ca13e5b723f425053e3",
+          "retrieved_at": "2026-10-13T18:56:09.295435+00:00"
+        }
+      ],
+      "max_depth": 2,
+      "max_pages_per_product": 9,
+      "follow_pattern": "resources\\?prod=[^ ]*&type=(1L?|3|4|13)&|/sites/default/files/[^ ]*\\.pdf"
+    },
+    {
+      "id": "ge_multilin_d20mx_substation_controller_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin D20MX - Advanced Substation Automation Controller",
+      "category": "controller_rtu",
+      "lifecycle": "discontinued_support_not_stated",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-d20mx-substation-controller-legacy"
+      ],
+      "vendor_label": "legacy",
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "Multilin D20MX - Advanced Substation Automation Controller Skip to main content Explore GE Vernova Multilin D20MX Substation Controller Legacy Simple to Advanced Substation Automation Control Contact Us Manufacturing for the D20MX portfolio has been discontinued. Please contact GE Vernova for availability. As an alternative, please refer to the G100 or G500. The Multilin D20MX Substation Controller is designed to execute communications and energy management applications for the monitoring and control of electrical substations.",
+          "stated_date": "",
+          "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-d20mx-substation-controller-legacy",
+          "sha256": "606ea8b8fa2eaeabed88c4174279160200b616ca85254f473e1555dc2da29317",
+          "retrieved_at": "2026-10-13T18:59:27.062234+00:00"
+        }
+      ],
+      "max_depth": 2,
+      "max_pages_per_product": 9,
+      "follow_pattern": "resources\\?prod=[^ ]*&type=(1L?|3|4|13)&|/sites/default/files/[^ ]*\\.pdf"
+    },
+    {
+      "id": "ge_multilin_d400_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin D400 Advanced Substation Gateway",
+      "category": "controller_rtu",
+      "lifecycle": "discontinued_support_not_stated",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-d400-legacy"
+      ],
+      "vendor_label": "legacy",
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "Multilin D400 Advanced Substation Gateway | GE Vernova | Electrification Skip to main content Explore GE Vernova Multilin D400 - Legacy Advanced Substation Gateway Contact Us Manufacturing for the D400 has been discontinued. As an alternative, please refer to the G100 or G500. Manufacturing for the DMC-490 has been discontinued. As an alternative, please refer to the GridNodeMicroGrid solution.",
+          "stated_date": "",
+          "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-d400-legacy",
+          "sha256": "111484140771b5119fdf5785ea3f87928d9a96dbffc4663b4c603968db3b1b69",
+          "retrieved_at": "2026-10-13T18:59:28.235606+00:00"
+        }
+      ],
+      "max_depth": 2,
+      "max_pages_per_product": 9,
+      "follow_pattern": "resources\\?prod=[^ ]*&type=(1L?|3|4|13)&|/sites/default/files/[^ ]*\\.pdf"
+    },
+    {
+      "id": "ge_multilin_h500_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin H500 - Legacy",
+      "category": "controller_rtu",
+      "lifecycle": "discontinued_support_not_stated",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-h500-legacy"
+      ],
+      "vendor_label": "legacy",
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "Multilin H500 - Legacy | GE Vernova | Electrification Skip to main content Explore GE Vernova Multilin H500 - Legacy Substation Hardened Industrial Computer Contact Us Manufacturing for the H500 has been discontinued Designed to withstand the stresses of substation environments, the H500 provides a reliable platform to run Windows applications for industrial and utility applications that fit into a company’s existing Windows environment.",
+          "stated_date": "",
+          "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-h500-legacy",
+          "sha256": "e9e5505c04ab55f320c2992aa8eab9c1b2beb051ef47186540e4c4647f736bd4",
+          "retrieved_at": "2026-10-13T18:59:32.989992+00:00"
+        }
+      ],
+      "max_depth": 2,
+      "max_pages_per_product": 9,
+      "follow_pattern": "resources\\?prod=[^ ]*&type=(1L?|3|4|13)&|/sites/default/files/[^ ]*\\.pdf"
+    },
+    {
+      "id": "ge_epm_2200_digital_power_meter",
+      "vendor": "GE Vernova / Multilin",
+      "model": "EPM 2200 Digital Power Meter",
+      "category": "meter",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/metering/epm-2200-digital-power-meter"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.gevernova.com/electrification/sitemap.xml",
+          "sha256": "fb0c0e174366a6d18e1d13244a3fcba06b69266414e09f40f54f9e534984254b",
+          "retrieved_at": "2026-10-13T18:52:08.358645+00:00"
+        }
+      ],
+      "max_depth": 2,
+      "max_pages_per_product": 9,
+      "follow_pattern": "resources\\?prod=[^ ]*&type=(1L?|3|4|13)&|/sites/default/files/[^ ]*\\.pdf"
+    },
+    {
+      "id": "ge_epm_6010",
+      "vendor": "GE Vernova / Multilin",
+      "model": "EPM 6010 Building Automation Power Meter",
+      "category": "meter",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/metering/epm-6010"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.gevernova.com/electrification/sitemap.xml",
+          "sha256": "fb0c0e174366a6d18e1d13244a3fcba06b69266414e09f40f54f9e534984254b",
+          "retrieved_at": "2026-10-13T18:52:08.358645+00:00"
+        }
+      ],
+      "max_depth": 2,
+      "max_pages_per_product": 9,
+      "follow_pattern": "resources\\?prod=[^ ]*&type=(1L?|3|4|13)&|/sites/default/files/[^ ]*\\.pdf"
+    },
+    {
+      "id": "ge_istat_i400",
+      "vendor": "GE Vernova / Multilin",
+      "model": "iSTAT i400 Standard Transducers",
+      "category": "meter",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/metering/istat-i400"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.gevernova.com/electrification/sitemap.xml",
+          "sha256": "fb0c0e174366a6d18e1d13244a3fcba06b69266414e09f40f54f9e534984254b",
+          "retrieved_at": "2026-10-13T18:52:08.358645+00:00"
+        }
+      ],
+      "max_depth": 2,
+      "max_pages_per_product": 9,
+      "follow_pattern": "resources\\?prod=[^ ]*&type=(1L?|3|4|13)&|/sites/default/files/[^ ]*\\.pdf"
+    },
+    {
+      "id": "ge_istat_m2x2",
+      "vendor": "GE Vernova / Multilin",
+      "model": "iSTAT M2x2 Communicating Measurement Centre",
+      "category": "meter",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/metering/istat-m2x2"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.gevernova.com/electrification/sitemap.xml",
+          "sha256": "fb0c0e174366a6d18e1d13244a3fcba06b69266414e09f40f54f9e534984254b",
+          "retrieved_at": "2026-10-13T18:52:08.358645+00:00"
+        }
+      ],
+      "max_depth": 2,
+      "max_pages_per_product": 9,
+      "follow_pattern": "resources\\?prod=[^ ]*&type=(1L?|3|4|13)&|/sites/default/files/[^ ]*\\.pdf"
+    },
+    {
+      "id": "ge_epm_4000_sub_meter_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "EPM 4000 Sub-meter (Discontinued)",
+      "category": "meter",
+      "lifecycle": "discontinued_support_not_stated",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-4000-sub-meter-legacy"
+      ],
+      "vendor_label": "legacy",
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "EPM 4000 Sub-meter (Discontinued) Skip to main content Explore GE Vernova EPM 4000 Sub-meter - Legacy EPM 4000 is an easy to use energy/demand data logging meter suitable for multi-tenant new construction or retrofit application.",
+          "stated_date": "",
+          "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-4000-sub-meter-legacy",
+          "sha256": "71c49950a514955c92acc53b1e73c54bb1cc8c5d35278fe5310fd436c6c6a26a",
+          "retrieved_at": "2026-10-13T18:56:26.737484+00:00"
+        }
+      ],
+      "max_depth": 2,
+      "max_pages_per_product": 9,
+      "follow_pattern": "resources\\?prod=[^ ]*&type=(1L?|3|4|13)&|/sites/default/files/[^ ]*\\.pdf"
+    },
+    {
+      "id": "ge_epm_5300_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "EPM 5300 Power Metering System",
+      "category": "meter",
+      "lifecycle": "discontinued_support_not_stated",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-5300-legacy"
+      ],
+      "vendor_label": "legacy",
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "EPM 5300 Power Metering System Skip to main content Explore GE Vernova EPM 5300 - Legacy Power Metering System Contact Us GE Vernova’s Electrification has discontinued sales of EPM 5300. As an alternative, please refer to EPM 6000. The EPM 5300 advanced power meter measures voltage, current, power, energy, demand and harmonics with revenue accuracy.",
+          "stated_date": "",
+          "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-5300-legacy",
+          "sha256": "b173d00f440680ac5905fad8fa4e5e39566c2789b8b0ab56d8502d5611fbe47e",
+          "retrieved_at": "2026-10-13T18:56:30.301682+00:00"
+        }
+      ],
+      "max_depth": 2,
+      "max_pages_per_product": 9,
+      "follow_pattern": "resources\\?prod=[^ ]*&type=(1L?|3|4|13)&|/sites/default/files/[^ ]*\\.pdf"
+    },
+    {
+      "id": "ge_epm_7100_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "EPM 7100 Power Quality Meter",
+      "category": "meter",
+      "lifecycle": "discontinued_support_not_stated",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-7100-legacy"
+      ],
+      "vendor_label": "legacy",
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "EPM 7100 Power Quality Meter | GE Vernova | Electrification Skip to main content Explore GE Vernova EPM 7100 - Legacy Power Quality Meter Contact Sales GE Vernova has discontinued sales of the EPM 7100. Please contact us to discuss alternatives. The EPM 7100 is a powerful tool that allows customers to monitor and manage their energy usage within factories, businesses and across campuses.",
+          "stated_date": "",
+          "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-7100-legacy",
+          "sha256": "01453aaf0834c50d064f4394d11dfe5d48b74fe4932b77c6db6b717409207dea",
+          "retrieved_at": "2026-10-13T18:56:37.410163+00:00"
+        }
+      ],
+      "max_depth": 2,
+      "max_pages_per_product": 9,
+      "follow_pattern": "resources\\?prod=[^ ]*&type=(1L?|3|4|13)&|/sites/default/files/[^ ]*\\.pdf"
+    },
+    {
+      "id": "ge_epm_9900_advanced_power_quality_meter_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "EPM 9900 Advanced Power Quality Meter",
+      "category": "meter",
+      "lifecycle": "discontinued_support_not_stated",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-9900-advanced-power-quality-meter-legacy"
+      ],
+      "vendor_label": "legacy",
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "EPM 9900 Advanced Power Quality Meter Skip to main content Explore GE Vernova EPM 9900 Advanced Power Quality Meter - Legacy Contact Us GE Vernova’s Electrification has discontinued sales of EPM 9900. As an alternative, please refer to EPM 9900P. The EPM 9900 is one of the most advanced monitoring products on the market today, providing you with the total picture of energy usage and power quality from any metered point in a power distribution network.",
+          "stated_date": "",
+          "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-9900-advanced-power-quality-meter-legacy",
+          "sha256": "e46fdac64825b915759704b30dce74848c6f18c0a21caabf64ee4c146741e571",
+          "retrieved_at": "2026-10-13T18:56:44.144927+00:00"
+        }
+      ],
+      "max_depth": 2,
+      "max_pages_per_product": 9,
+      "follow_pattern": "resources\\?prod=[^ ]*&type=(1L?|3|4|13)&|/sites/default/files/[^ ]*\\.pdf"
+    },
+    {
+      "id": "ge_bitronics_70_series_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "BiTRONICS 70 Series - Legacy",
+      "category": "meter",
+      "lifecycle": "unknown",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/bitronics-70-series-legacy"
+      ],
+      "vendor_label": "legacy",
+      "lifecycle_basis": "catalogue listing matches legacy",
+      "lifecycle_evidence": [
+        {
+          "basis": "catalogue listing matches legacy",
+          "url": "https://www.gevernova.com/electrification/sitemap.xml",
+          "sha256": "fb0c0e174366a6d18e1d13244a3fcba06b69266414e09f40f54f9e534984254b",
+          "retrieved_at": "2026-10-13T18:52:08.358645+00:00"
+        }
+      ],
+      "max_depth": 2,
+      "max_pages_per_product": 9,
+      "follow_pattern": "resources\\?prod=[^ ]*&type=(1L?|3|4|13)&|/sites/default/files/[^ ]*\\.pdf"
+    },
+    {
+      "id": "ge_ifc_time_overcurrent_relay",
+      "vendor": "GE Vernova / Multilin",
+      "model": "IFC Time-overcurrent Relay",
+      "category": "protective_relay",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/single-function/ifc-time-overcurrent-relay"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.gevernova.com/electrification/sitemap.xml",
+          "sha256": "fb0c0e174366a6d18e1d13244a3fcba06b69266414e09f40f54f9e534984254b",
+          "retrieved_at": "2026-10-13T18:52:08.358645+00:00"
+        }
+      ],
+      "max_depth": 2,
+      "max_pages_per_product": 9,
+      "follow_pattern": "resources\\?prod=[^ ]*&type=(1L?|3|4|13)&|/sites/default/files/[^ ]*\\.pdf"
+    },
+    {
+      "id": "ge_multilin_339",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin 339",
+      "category": "protective_relay",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/motor-protection/multilin-339"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.gevernova.com/electrification/sitemap.xml",
+          "sha256": "fb0c0e174366a6d18e1d13244a3fcba06b69266414e09f40f54f9e534984254b",
+          "retrieved_at": "2026-10-13T18:52:08.358645+00:00"
+        }
+      ],
+      "max_depth": 2,
+      "max_pages_per_product": 9,
+      "follow_pattern": "resources\\?prod=[^ ]*&type=(1L?|3|4|13)&|/sites/default/files/[^ ]*\\.pdf"
+    },
+    {
+      "id": "ge_multilin_850",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin 850: Advanced Feeder Protection & Bay Controller",
+      "category": "protective_relay",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/feeder-protection/multilin-850"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.gevernova.com/electrification/sitemap.xml",
+          "sha256": "fb0c0e174366a6d18e1d13244a3fcba06b69266414e09f40f54f9e534984254b",
+          "retrieved_at": "2026-10-13T18:52:08.358645+00:00"
+        }
+      ],
+      "max_depth": 2,
+      "max_pages_per_product": 9,
+      "follow_pattern": "resources\\?prod=[^ ]*&type=(1L?|3|4|13)&|/sites/default/files/[^ ]*\\.pdf"
+    },
+    {
+      "id": "ge_p64_micom_5th_generation",
+      "vendor": "GE Vernova / Multilin",
+      "model": "P64 MiCOM 5th Generation",
+      "category": "protective_relay",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/transformer-protection/p64-micom-5th-generation"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.gevernova.com/electrification/sitemap.xml",
+          "sha256": "fb0c0e174366a6d18e1d13244a3fcba06b69266414e09f40f54f9e534984254b",
+          "retrieved_at": "2026-10-13T18:52:08.358645+00:00"
+        }
+      ],
+      "max_depth": 2,
+      "max_pages_per_product": 9,
+      "follow_pattern": "resources\\?prod=[^ ]*&type=(1L?|3|4|13)&|/sites/default/files/[^ ]*\\.pdf"
+    },
+    {
+      "id": "ge_dfp200_digital_feeder_protection_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "DFP200 Digital Feeder Relay (Discontinued)",
+      "category": "protective_relay",
+      "lifecycle": "discontinued_support_not_stated",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/dfp200-digital-feeder-protection-legacy"
+      ],
+      "vendor_label": "legacy",
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "DFP200 Digital Feeder Relay (Discontinued) Skip to main content Explore GE Vernova DFP200 Digital Feeder Protection - Legacy Contact Us Manufacturing for this product has been discontinued. For more information, contact us.",
+          "stated_date": "",
+          "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/dfp200-digital-feeder-protection-legacy",
+          "sha256": "d7e2a361d3d3682cbbc273fad3f1ad53ec846a2309cadd27389a459cb032a5cb",
+          "retrieved_at": "2026-10-13T18:56:15.239535+00:00"
+        }
+      ],
+      "max_depth": 2,
+      "max_pages_per_product": 9,
+      "follow_pattern": "resources\\?prod=[^ ]*&type=(1L?|3|4|13)&|/sites/default/files/[^ ]*\\.pdf"
+    },
+    {
+      "id": "ge_dlpd_digital_line_protection_system",
+      "vendor": "GE Vernova / Multilin",
+      "model": "DLPD Digital Line Protection System",
+      "category": "protective_relay",
+      "lifecycle": "discontinued_support_not_stated",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/dlpd-digital-line-protection-system"
+      ],
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "DLPD Digital Line Protection System Skip to main content Explore GE Vernova DLPD Digital Line Protection System - Legacy Contact Us Manufacturing for this product has been discontinued. For more information, contact us. The DLPD provides distance protection for HV and EHV transmission lines. It may be used for single or three phase tripping applications.",
+          "stated_date": "",
+          "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/dlpd-digital-line-protection-system",
+          "sha256": "0504b66c81a9a07ff8eb7769eb60f065d7a9cd5dd3611eb704b5c6adfb33e8b1",
+          "retrieved_at": "2026-10-13T18:56:18.532082+00:00"
+        }
+      ],
+      "max_depth": 2,
+      "max_pages_per_product": 9,
+      "follow_pattern": "resources\\?prod=[^ ]*&type=(1L?|3|4|13)&|/sites/default/files/[^ ]*\\.pdf"
+    },
+    {
+      "id": "ge_kavs_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "KAVS Check Synchronising Relay",
+      "category": "protective_relay",
+      "lifecycle": "discontinued_support_not_stated",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/kavs-legacy"
+      ],
+      "vendor_label": "legacy",
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "KAVS Check Synchronising Relay | GE Vernova | Electrification Skip to main content Explore GE Vernova KAVS - legacy Contact Us Check Synchronising Relay Manufacturing for KAVS has been discontinued. As an alternative, please refer to P94V. KAVS is a stand-alone synchronism check relay that can be applied on all power systems from distribution to transmission voltages.",
+          "stated_date": "",
+          "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/kavs-legacy",
+          "sha256": "41d152591c5de555f25d59b9a00959cb2ad03f277f0361b9f7bfb6e0d0734594",
+          "retrieved_at": "2026-10-13T18:57:33.483569+00:00"
+        }
+      ],
+      "max_depth": 2,
+      "max_pages_per_product": 9,
+      "follow_pattern": "resources\\?prod=[^ ]*&type=(1L?|3|4|13)&|/sites/default/files/[^ ]*\\.pdf"
+    },
+    {
+      "id": "ge_multilin_a60_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin A60 - Legacy",
+      "category": "protective_relay",
+      "lifecycle": "discontinued_support_not_stated",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-a60-legacy"
+      ],
+      "vendor_label": "legacy",
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "Multilin A60 - Legacy | GE Vernova | Electrification Skip to main content Explore GE Vernova Multilin A60 - Legacy Contact Us Manufacturing for this product has been discontinued. As an alternative, please refer to the 350 or 8 Series relays. The Multilin A60 Arc Flash System utilizes GE Vernova's patented light and pressure signal fiber sensor to help ensure fast and reliable protection against arcing events.",
+          "stated_date": "",
+          "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-a60-legacy",
+          "sha256": "9ab873002f5d052a999a80df2a4531c5631d71508393e0b08724213423c52d70",
+          "retrieved_at": "2026-10-13T18:59:26.620001+00:00"
+        }
+      ],
+      "max_depth": 2,
+      "max_pages_per_product": 9,
+      "follow_pattern": "resources\\?prod=[^ ]*&type=(1L?|3|4|13)&|/sites/default/files/[^ ]*\\.pdf"
+    },
+    {
+      "id": "ge_mbci_mcri_mrtp_and_mvtw_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "MBCI, MCRI, MRTP AND MVTW – Legacy",
+      "category": "protective_relay",
+      "lifecycle": "unknown",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/mbci-mcri-mrtp-and-mvtw-legacy"
+      ],
+      "vendor_label": "legacy, under last-time buy",
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "MBCI, MCRI, MRTP AND MVTW - Legacy | GE Vernova | Electrification Skip to main content Explore GE Vernova MBCI, MCRI, MRTP AND MVTW - Legacy Differential Feeder Contact Us MBCI - Buy Now MCRI - Buy Now MRTP - Buy Now MBCI and MCRI are under last time buy. Orders may be placed until 27th January 2027 and will be fulfilled based upon availability. For MRTP, Contact Us for availability. Differential feeder protection requires a comparison of the currents entering and leaving the protected zone.",
+          "stated_date": "",
+          "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/mbci-mcri-mrtp-and-mvtw-legacy",
+          "sha256": "a1da7dc98d8db7f5d0b8373a6b5217d25c95bcc066988a82a2f2e212f7c577ce",
+          "retrieved_at": "2026-10-13T18:58:00.063249+00:00"
+        }
+      ],
+      "max_depth": 2,
+      "max_pages_per_product": 9,
+      "follow_pattern": "resources\\?prod=[^ ]*&type=(1L?|3|4|13)&|/sites/default/files/[^ ]*\\.pdf"
+    },
+    {
+      "id": "ge_micom_agile_p24x_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "MiCOM Agile P24x - Legacy",
+      "category": "protective_relay",
+      "lifecycle": "unknown",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/micom-agile-p24x-legacy"
+      ],
+      "vendor_label": "legacy, under last-time buy",
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "MiCOM Agile P24x - Legacy | GE Vernova | Electrification Skip to main content Explore GE Vernova MiCOM Agile P24x - Legacy Motor Protection Contact Us Buy Now P24x is under last-time buy. Orders may be placed until 5th November 2027 and will be fulfilled based upon availability. As an alternative, please refer to Multilin Agile Motor Protection, 859, or 869.",
+          "stated_date": "",
+          "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/micom-agile-p24x-legacy",
+          "sha256": "d1cd58e590cdfeb2f3491592d84bafbf424e3c50f179925be9ce0e96c812ecf9",
+          "retrieved_at": "2026-10-13T18:58:25.702805+00:00"
+        }
+      ],
+      "max_depth": 2,
+      "max_pages_per_product": 9,
+      "follow_pattern": "resources\\?prod=[^ ]*&type=(1L?|3|4|13)&|/sites/default/files/[^ ]*\\.pdf"
+    },
+    {
+      "id": "ge_micom_agile_p541_p542_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "MiCOM Agile P541 & P542 Line Differential Protection",
+      "category": "protective_relay",
+      "lifecycle": "unknown",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/micom-agile-p541-p542-legacy"
+      ],
+      "vendor_label": "legacy, under last-time buy",
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "MiCOM Agile P541 & P542 Line Differential Protection | GE Vernova | Electrification Skip to main content Explore GE Vernova MiCOM Agile P541 & P542 - Legacy Line Differential Protection Systems Contact Us Buy P541 Buy P542 P541 and P542 are under last-time buy. Orders may be placed until 14th December 2027 and will be fulfilled based upon availability. As an alternative, please refer to P54. The MiCOM Agile P541 & P542 series provide high speed current differential unit protection.",
+          "stated_date": "",
+          "url": "https://www.gevernova.com/electrification/automation/protection-control-metering/micom-agile-p541-p542-legacy",
+          "sha256": "2edd4d115b0943af6123eca11acb131cbe66dddcdc3f095ab2cd99aa0c41b22d",
+          "retrieved_at": "2026-10-13T18:58:28.799594+00:00"
+        }
+      ],
+      "max_depth": 2,
+      "max_pages_per_product": 9,
+      "follow_pattern": "resources\\?prod=[^ ]*&type=(1L?|3|4|13)&|/sites/default/files/[^ ]*\\.pdf"
+    },
+    {
+      "id": "ge_tccv_directional_overcurrent_relay_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "TCCV Directional Overcurrent Relay",
+      "category": "protective_relay",
+      "lifecycle": "unknown",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/tccv-directional-overcurrent-relay-legacy"
+      ],
+      "vendor_label": "legacy",
+      "lifecycle_basis": "catalogue listing matches legacy",
+      "lifecycle_evidence": [
+        {
+          "basis": "catalogue listing matches legacy",
+          "url": "https://www.gevernova.com/electrification/sitemap.xml",
+          "sha256": "fb0c0e174366a6d18e1d13244a3fcba06b69266414e09f40f54f9e534984254b",
+          "retrieved_at": "2026-10-13T18:52:08.358645+00:00"
+        }
+      ],
+      "max_depth": 2,
+      "max_pages_per_product": 9,
+      "follow_pattern": "resources\\?prod=[^ ]*&type=(1L?|3|4|13)&|/sites/default/files/[^ ]*\\.pdf"
+    },
+    {
+      "id": "rockwell_powermonitor_1000",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "1408 PowerMonitor 1000",
+      "category": "meter",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/energy-monitoring/1408-powermonitor-1000.html"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.rockwellautomation.com/en-us/sitemap.content.xml",
+          "sha256": "bd77486c18b4377f821455c2b8fc525fc267ac111e4eee025a902438f22a5f12",
+          "retrieved_at": "2026-10-13T18:52:13.403468+00:00"
+        },
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.rockwellautomation.com/en-us/sitemap.docs-1.xml",
+          "sha256": "ef80215ee5c47c3811b3427e6a5e99e426d455bfb5b2e984968b212b05bcb02e",
+          "retrieved_at": "2026-10-13T18:52:14.385358+00:00"
+        }
+      ],
+      "max_depth": 1,
+      "max_pages_per_product": 6,
+      "follow_pattern": "literature\\.rockwellautomation\\.com/[^ ]*-(um|rm|at|td|sg|pp)[0-9]{3}|/docs/"
+    },
+    {
+      "id": "rockwell_powermonitor_500",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "1420 PowerMonitor 500",
+      "category": "meter",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/energy-monitoring/1420-powermonitor-500.html"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.rockwellautomation.com/en-us/sitemap.content.xml",
+          "sha256": "bd77486c18b4377f821455c2b8fc525fc267ac111e4eee025a902438f22a5f12",
+          "retrieved_at": "2026-10-13T18:52:13.403468+00:00"
+        },
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.rockwellautomation.com/en-us/sitemap.docs-1.xml",
+          "sha256": "ef80215ee5c47c3811b3427e6a5e99e426d455bfb5b2e984968b212b05bcb02e",
+          "retrieved_at": "2026-10-13T18:52:14.385358+00:00"
+        }
+      ],
+      "max_depth": 1,
+      "max_pages_per_product": 6,
+      "follow_pattern": "literature\\.rockwellautomation\\.com/[^ ]*-(um|rm|at|td|sg|pp)[0-9]{3}|/docs/"
+    },
+    {
+      "id": "rockwell_powermonitor_5000",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "1426 PowerMonitor 5000",
+      "category": "meter",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/energy-monitoring/1426-powermonitor-5000.html"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.rockwellautomation.com/en-us/sitemap.content.xml",
+          "sha256": "bd77486c18b4377f821455c2b8fc525fc267ac111e4eee025a902438f22a5f12",
+          "retrieved_at": "2026-10-13T18:52:13.403468+00:00"
+        },
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.rockwellautomation.com/en-us/sitemap.docs-1.xml",
+          "sha256": "ef80215ee5c47c3811b3427e6a5e99e426d455bfb5b2e984968b212b05bcb02e",
+          "retrieved_at": "2026-10-13T18:52:14.385358+00:00"
+        }
+      ],
+      "max_depth": 1,
+      "max_pages_per_product": 6,
+      "follow_pattern": "literature\\.rockwellautomation\\.com/[^ ]*-(um|rm|at|td|sg|pp)[0-9]{3}|/docs/"
+    },
+    {
+      "id": "rockwell_compactlogix_5380_controllers",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "CompactLogix 5380 Controllers",
+      "category": "plc",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/compactlogix-5380-controllers.html"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.rockwellautomation.com/en-us/sitemap.content.xml",
+          "sha256": "bd77486c18b4377f821455c2b8fc525fc267ac111e4eee025a902438f22a5f12",
+          "retrieved_at": "2026-10-13T18:52:13.403468+00:00"
+        },
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.rockwellautomation.com/en-us/sitemap.docs-1.xml",
+          "sha256": "ef80215ee5c47c3811b3427e6a5e99e426d455bfb5b2e984968b212b05bcb02e",
+          "retrieved_at": "2026-10-13T18:52:14.385358+00:00"
+        }
+      ],
+      "max_depth": 1,
+      "max_pages_per_product": 6,
+      "follow_pattern": "literature\\.rockwellautomation\\.com/[^ ]*-(um|rm|at|td|sg|pp)[0-9]{3}|/docs/"
+    },
+    {
+      "id": "rockwell_controllogix_5590",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "ControlLogix 5590 Controllers",
+      "category": "plc",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/1756-controllogix-5590.html"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.rockwellautomation.com/en-us/sitemap.content.xml",
+          "sha256": "bd77486c18b4377f821455c2b8fc525fc267ac111e4eee025a902438f22a5f12",
+          "retrieved_at": "2026-10-13T18:52:13.403468+00:00"
+        },
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.rockwellautomation.com/en-us/sitemap.docs-1.xml",
+          "sha256": "ef80215ee5c47c3811b3427e6a5e99e426d455bfb5b2e984968b212b05bcb02e",
+          "retrieved_at": "2026-10-13T18:52:14.385358+00:00"
+        }
+      ],
+      "max_depth": 1,
+      "max_pages_per_product": 6,
+      "follow_pattern": "literature\\.rockwellautomation\\.com/[^ ]*-(um|rm|at|td|sg|pp)[0-9]{3}|/docs/"
+    },
+    {
+      "id": "rockwell_logixedge_controllers",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "LogixEdge Controllers",
+      "category": "plc",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/logixedge-controllers.html"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.rockwellautomation.com/en-us/sitemap.content.xml",
+          "sha256": "bd77486c18b4377f821455c2b8fc525fc267ac111e4eee025a902438f22a5f12",
+          "retrieved_at": "2026-10-13T18:52:13.403468+00:00"
+        },
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.rockwellautomation.com/en-us/sitemap.docs-1.xml",
+          "sha256": "ef80215ee5c47c3811b3427e6a5e99e426d455bfb5b2e984968b212b05bcb02e",
+          "retrieved_at": "2026-10-13T18:52:14.385358+00:00"
+        }
+      ],
+      "max_depth": 1,
+      "max_pages_per_product": 6,
+      "follow_pattern": "literature\\.rockwellautomation\\.com/[^ ]*-(um|rm|at|td|sg|pp)[0-9]{3}|/docs/"
+    },
+    {
+      "id": "rockwell_micro870_controllers",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "Micro870 Controllers",
+      "category": "plc",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/micro870-controllers.html"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.rockwellautomation.com/en-us/sitemap.content.xml",
+          "sha256": "bd77486c18b4377f821455c2b8fc525fc267ac111e4eee025a902438f22a5f12",
+          "retrieved_at": "2026-10-13T18:52:13.403468+00:00"
+        },
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.rockwellautomation.com/en-us/sitemap.docs-1.xml",
+          "sha256": "ef80215ee5c47c3811b3427e6a5e99e426d455bfb5b2e984968b212b05bcb02e",
+          "retrieved_at": "2026-10-13T18:52:14.385358+00:00"
+        }
+      ],
+      "max_depth": 1,
+      "max_pages_per_product": 6,
+      "follow_pattern": "literature\\.rockwellautomation\\.com/[^ ]*-(um|rm|at|td|sg|pp)[0-9]{3}|/docs/"
+    },
+    {
+      "id": "rockwell_compactlogix_1768_controllers",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "CompactLogix 1768 Controllers",
+      "category": "plc",
+      "lifecycle": "discontinued_support_not_stated",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/compactlogix-1768-controllers.html"
+      ],
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "CompactLogix 1768 Controllers | Rockwell Automation | US Loading CompactLogix 1768 Controllers Allen-Bradley Our CompactLogix 1768-L4x and L4xS controllers are discontinued and no longer available for sale. We have the resources to help you migrate to our CompactLogix and Compact GuardLogix 5380 Control Systems. Loading Overview Open All Close All Overview Our CompactLogix 1768-L4x and L4xS controllers are discontinued and no longer available for sale.",
+          "stated_date": "",
+          "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/compactlogix-1768-controllers.html",
+          "sha256": "02d05267dd773aae493767937c7acaa3330d9301c297c8e8f6a7fcb5023d7c3f",
+          "retrieved_at": "2026-10-13T19:02:32.584124+00:00"
+        }
+      ],
+      "max_depth": 1,
+      "max_pages_per_product": 6,
+      "follow_pattern": "literature\\.rockwellautomation\\.com/[^ ]*-(um|rm|at|td|sg|pp)[0-9]{3}|/docs/"
+    },
+    {
+      "id": "rockwell_micro830_controllers",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "Micro830 Controllers",
+      "category": "plc",
+      "lifecycle": "discontinued_support_not_stated",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/micro830-controllers.html"
+      ],
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "Micro830 Controllers | Rockwell Automation | US Loading Micro830 Controllers Allen-Bradley Rockwell Automation announces that as of December 31, 2023, the Micro830 2080-LC30 controllers will be discontinued and no longer available for sale. Customers are encouraged to migrate to our Micro820 2080-LC20 controllers or to the newer Micro850 2080-L50E controllers.",
+          "stated_date": "December 31, 2023",
+          "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/micro830-controllers.html",
+          "sha256": "08ab266e577c0539f61e967f36da9bdd7584aa6cafa2a9e4cd17ce0c1fc9e668",
+          "retrieved_at": "2026-10-13T19:02:42.276405+00:00"
+        }
+      ],
+      "max_depth": 1,
+      "max_pages_per_product": 6,
+      "follow_pattern": "literature\\.rockwellautomation\\.com/[^ ]*-(um|rm|at|td|sg|pp)[0-9]{3}|/docs/"
+    },
+    {
+      "id": "rockwell_micrologix_1100_controllers",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "MicroLogix 1100 Controllers",
+      "category": "plc",
+      "lifecycle": "discontinued_support_not_stated",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/micrologix-1100-controllers.html"
+      ],
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "MicroLogix 1100 Controllers | Rockwell Automation | US Loading MicroLogix 1100 Controllers Allen-Bradley Our Bulletin 1763 MicroLogix 1100 controllers are discontinued and no longer available for sale. Customers are encouraged to migrate to our Micro800 control platform.",
+          "stated_date": "",
+          "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/micrologix-1100-controllers.html",
+          "sha256": "04bc61dd4872efc2cd402a62cfe5011ca30ffcce1edeafeabd653443a0cb7f30",
+          "retrieved_at": "2026-10-13T19:02:45.811060+00:00"
+        }
+      ],
+      "max_depth": 1,
+      "max_pages_per_product": 6,
+      "follow_pattern": "literature\\.rockwellautomation\\.com/[^ ]*-(um|rm|at|td|sg|pp)[0-9]{3}|/docs/"
+    },
+    {
+      "id": "rockwell_micrologix_1200_controllers",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "MicroLogix 1200 Controllers",
+      "category": "plc",
+      "lifecycle": "discontinued_support_not_stated",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/micrologix-1200-controllers.html"
+      ],
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "MicroLogix 1200 Controllers | Rockwell Automation | US Loading MicroLogix 1200 Controllers Allen-Bradley Our Bulletin 1762 MicroLogix 1200 controllers are discontinued and no longer available for sale. Customers are encouraged to migrate to our Micro800 control platform.",
+          "stated_date": "",
+          "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/micrologix-1200-controllers.html",
+          "sha256": "6fe32c4905f2f04782e482151791611e6f124be93cf9fe71de8f7cbae07ed9b3",
+          "retrieved_at": "2026-10-13T19:02:46.997140+00:00"
+        }
+      ],
+      "max_depth": 1,
+      "max_pages_per_product": 6,
+      "follow_pattern": "literature\\.rockwellautomation\\.com/[^ ]*-(um|rm|at|td|sg|pp)[0-9]{3}|/docs/"
+    },
+    {
+      "id": "rockwell_compactlogix_5370_controllers",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "CompactLogix 5370 Controllers",
+      "category": "plc",
+      "lifecycle": "unknown",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/compactlogix-5370-controllers.html"
+      ],
+      "vendor_label": "partly discontinued",
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "CompactLogix 5370 Controllers | Rockwell Automation | US Loading CompactLogix 5370 Controllers Allen-Bradley Some CompactLogix 5370 controllers are discontinued and no longer available. Migrate to our newer CompactLogix 5380 controllers for continued support.",
+          "stated_date": "",
+          "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/compactlogix-5370-controllers.html",
+          "sha256": "a8e4efff0da8703e90ecdb856d5d1e4645dc6e1d91d32457399ee05f1aa6bc1f",
+          "retrieved_at": "2026-10-13T19:02:35.035670+00:00"
+        }
+      ],
+      "max_depth": 1,
+      "max_pages_per_product": 6,
+      "follow_pattern": "literature\\.rockwellautomation\\.com/[^ ]*-(um|rm|at|td|sg|pp)[0-9]{3}|/docs/"
+    },
+    {
+      "id": "rockwell_slc_500_controllers",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "SLC 500 Controllers",
+      "category": "plc",
+      "lifecycle": "unknown",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/slc-500-controllers.html"
+      ],
+      "vendor_label": "partly discontinued",
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "SLC 500 Controllers | Rockwell Automation | US Loading SLC 500 Controllers Allen-Bradley Some SLC 500 Bulletin numbers are discontinued and no longer available for sale. Customers are encouraged to migrate to our newer CompactLogix 5380 control platforms.",
+          "stated_date": "",
+          "url": "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/slc-500-controllers.html",
+          "sha256": "65af35eac5170b2553d20738be73eb3e83171e41948cd83986a9b64fce3a142a",
+          "retrieved_at": "2026-10-13T19:02:50.631255+00:00"
+        }
+      ],
+      "max_depth": 1,
+      "max_pages_per_product": 6,
+      "follow_pattern": "literature\\.rockwellautomation\\.com/[^ ]*-(um|rm|at|td|sg|pp)[0-9]{3}|/docs/"
+    },
+    {
+      "id": "rockwell_differential_protection_relay",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "Bulletin 865 Motor-feeder Protection Relays",
+      "category": "protective_relay",
+      "lifecycle": "discontinued_support_not_stated",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/circuit-and-load-protection/865-differential-protection-relay.html"
+      ],
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "Bulletin 865 Motor-feeder Protection Relays | Rockwell Automation | US Loading Bulletin 865 Motor-feeder Protection Relays Allen-Bradley Our Medium Voltage Bulletin 865 Motor-feeder Protection Relays are discontinued and no longer available for sale. We have tools to help you transition to more modern technologies.",
+          "stated_date": "",
+          "url": "https://www.rockwellautomation.com/en-us/products/hardware/circuit-and-load-protection/865-differential-protection-relay.html",
+          "sha256": "b44ddd9ed4ad8499a98f1cb89114b9d1b2b1c50c6bd4d1ea45891659971d941a",
+          "retrieved_at": "2026-10-13T19:02:24.176346+00:00"
+        }
+      ],
+      "max_depth": 1,
+      "max_pages_per_product": 6,
+      "follow_pattern": "literature\\.rockwellautomation\\.com/[^ ]*-(um|rm|at|td|sg|pp)[0-9]{3}|/docs/"
+    },
+    {
+      "id": "rockwell_protection_relay",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "Bulletin 857 Motor-feeder Protection Relays",
+      "category": "protective_relay",
+      "lifecycle": "discontinued_support_not_stated",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/circuit-and-load-protection/857-protection-relay.html"
+      ],
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "Bulletin 857 Motor-feeder Protection Relays | Rockwell Automation | US Loading Bulletin 857 Motor-feeder Protection Relays Allen-Bradley Our Medium Voltage Bulletin 857 Motor-feeder Protection Relays are discontinued and no longer available for sale. We have tools to help you transition to more modern technologies.",
+          "stated_date": "",
+          "url": "https://www.rockwellautomation.com/en-us/products/hardware/circuit-and-load-protection/857-protection-relay.html",
+          "sha256": "68dd547e658c90d899de174cd56d06840ed1df1eef81069945c2207b738d53b8",
+          "retrieved_at": "2026-10-13T19:02:22.943918+00:00"
+        }
+      ],
+      "max_depth": 1,
+      "max_pages_per_product": 6,
+      "follow_pattern": "literature\\.rockwellautomation\\.com/[^ ]*-(um|rm|at|td|sg|pp)[0-9]{3}|/docs/"
+    },
+    {
+      "id": "sel_2431",
+      "vendor": "SEL",
+      "model": "SEL-2431",
+      "category": "controller_rtu",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/3608/",
+        "https://selinc.com/api/download/2835/",
+        "https://selinc.com/api/download/2910/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://selinc.com/api/cms/contenttype/productselector/",
+          "sha256": "f4b0d53dd7c4a029e4fcd88a72f8f08aadc22f9f163616e87b357f06ac11e7b2",
+          "retrieved_at": "2026-10-13T18:52:20.202981+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "sel_3505_3505_3",
+      "vendor": "SEL",
+      "model": "SEL-3505/3505-3",
+      "category": "controller_rtu",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/100623/",
+        "https://selinc.com/api/download/100620/",
+        "https://selinc.com/api/download/100963/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://selinc.com/api/cms/contenttype/productselector/",
+          "sha256": "f4b0d53dd7c4a029e4fcd88a72f8f08aadc22f9f163616e87b357f06ac11e7b2",
+          "retrieved_at": "2026-10-13T18:52:20.202981+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "sel_3560",
+      "vendor": "SEL",
+      "model": "SEL-3560",
+      "category": "controller_rtu",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/124708/",
+        "https://selinc.com/api/download/126035/",
+        "https://selinc.com/api/download/126036/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://selinc.com/api/cms/contenttype/productselector/",
+          "sha256": "f4b0d53dd7c4a029e4fcd88a72f8f08aadc22f9f163616e87b357f06ac11e7b2",
+          "retrieved_at": "2026-10-13T18:52:20.202981+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "sel_real_time_automation_controller_rtac",
+      "vendor": "SEL",
+      "model": "SEL Real-Time Automation Controller (RTAC)",
+      "category": "controller_rtu",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/111397/",
+        "https://selinc.com/api/download/129976/",
+        "https://selinc.com/api/download/122716/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://selinc.com/api/cms/contenttype/productselector/",
+          "sha256": "f4b0d53dd7c4a029e4fcd88a72f8f08aadc22f9f163616e87b357f06ac11e7b2",
+          "retrieved_at": "2026-10-13T18:52:20.202981+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "sel_734_734t",
+      "vendor": "SEL",
+      "model": "SEL-734/734T",
+      "category": "meter",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/3954/",
+        "https://selinc.com/api/download/1386/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://selinc.com/api/cms/contenttype/productselector/",
+          "sha256": "f4b0d53dd7c4a029e4fcd88a72f8f08aadc22f9f163616e87b357f06ac11e7b2",
+          "retrieved_at": "2026-10-13T18:52:20.202981+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "sel_735",
+      "vendor": "SEL",
+      "model": "SEL-735",
+      "category": "meter",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/97801/",
+        "https://selinc.com/api/download/10343/",
+        "https://selinc.com/api/download/128658/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://selinc.com/api/cms/contenttype/productselector/",
+          "sha256": "f4b0d53dd7c4a029e4fcd88a72f8f08aadc22f9f163616e87b357f06ac11e7b2",
+          "retrieved_at": "2026-10-13T18:52:20.202981+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "sel_2664s",
+      "vendor": "SEL",
+      "model": "SEL-2664S",
+      "category": "protective_relay",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/105260/",
+        "https://selinc.com/api/download/105257/",
+        "https://selinc.com/api/download/104471/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://selinc.com/api/cms/contenttype/productselector/",
+          "sha256": "f4b0d53dd7c4a029e4fcd88a72f8f08aadc22f9f163616e87b357f06ac11e7b2",
+          "retrieved_at": "2026-10-13T18:52:20.202981+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "sel_351a",
+      "vendor": "SEL",
+      "model": "SEL-351A",
+      "category": "protective_relay",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/5520/",
+        "https://selinc.com/api/download/5523/",
+        "https://selinc.com/api/download/5532/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://selinc.com/api/cms/contenttype/productselector/",
+          "sha256": "f4b0d53dd7c4a029e4fcd88a72f8f08aadc22f9f163616e87b357f06ac11e7b2",
+          "retrieved_at": "2026-10-13T18:52:20.202981+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "sel_387",
+      "vendor": "SEL",
+      "model": "SEL-387",
+      "category": "protective_relay",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/3636/",
+        "https://selinc.com/api/download/292/",
+        "https://selinc.com/api/download/236/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://selinc.com/api/cms/contenttype/productselector/",
+          "sha256": "f4b0d53dd7c4a029e4fcd88a72f8f08aadc22f9f163616e87b357f06ac11e7b2",
+          "retrieved_at": "2026-10-13T18:52:20.202981+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "sel_421",
+      "vendor": "SEL",
+      "model": "SEL-421",
+      "category": "protective_relay",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/116330/",
+        "https://selinc.com/api/download/99010/",
+        "https://selinc.com/api/download/222/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://selinc.com/api/cms/contenttype/productselector/",
+          "sha256": "f4b0d53dd7c4a029e4fcd88a72f8f08aadc22f9f163616e87b357f06ac11e7b2",
+          "retrieved_at": "2026-10-13T18:52:20.202981+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "schneider_easergy_micom_c434",
+      "vendor": "Schneider Electric",
+      "model": "Easergy MiCOM C434",
+      "category": "controller_rtu",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/60785-easergy-micom-c434/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.se.com/us/en/product-range/google-range-sitemap-US-en.xml",
+          "sha256": "8fad9199ddaf4e1016508d957a5e6cc90b595837eab3b91f8d41b7210bb2b3fe",
+          "retrieved_at": "2026-10-13T18:52:17.328084+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "schneider_sage_remote_terminal_units",
+      "vendor": "Schneider Electric",
+      "model": "SAGE Remote Terminal Units",
+      "category": "controller_rtu",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/61746-sage-remote-terminal-units/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.se.com/us/en/product-range/google-range-sitemap-US-en.xml",
+          "sha256": "8fad9199ddaf4e1016508d957a5e6cc90b595837eab3b91f8d41b7210bb2b3fe",
+          "retrieved_at": "2026-10-13T18:52:17.328084+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "schneider_saitel_remote_terminal_unit_controller",
+      "vendor": "Schneider Electric",
+      "model": "SAITEL Remote Terminal Unit & Controller",
+      "category": "controller_rtu",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/61747-saitel-remote-terminal-unit-controller/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.se.com/us/en/product-range/google-range-sitemap-US-en.xml",
+          "sha256": "8fad9199ddaf4e1016508d957a5e6cc90b595837eab3b91f8d41b7210bb2b3fe",
+          "retrieved_at": "2026-10-13T18:52:17.328084+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "schneider_scadapack_500e",
+      "vendor": "Schneider Electric",
+      "model": "SCADAPack 500E",
+      "category": "controller_rtu",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/63000-scadapack-500e/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.se.com/us/en/product-range/google-range-sitemap-US-en.xml",
+          "sha256": "8fad9199ddaf4e1016508d957a5e6cc90b595837eab3b91f8d41b7210bb2b3fe",
+          "retrieved_at": "2026-10-13T18:52:17.328084+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "schneider_powerlogic_ion7550_rtu",
+      "vendor": "Schneider Electric",
+      "model": "PowerLogic ION7550 RTU",
+      "category": "controller_rtu",
+      "lifecycle": "discontinued_support_not_stated",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/1872-powerlogic-ion7550-rtu/"
+      ],
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "[...] lligent, web-enabled device provides a cost-effective, dedicated WAGES solution and helps to improve energy efficiency. Discontinued Contact sales Support Center Read more Discontinued Contact sales Support Center Overview Features The PowerLogic ION7550 RTU (remote terminal unit) is an intelligent, web-enabled device ideal for combined utilities metering of water, air, gas, electricity and steam (WAGES).",
+          "stated_date": "",
+          "url": "https://www.se.com/us/en/product-range/1872-powerlogic-ion7550-rtu/",
+          "sha256": "ad0ff87f0872a5e62fb5212a88737c29bdf01c8b5fcf4649077dc453d1f40e40",
+          "retrieved_at": "2026-10-13T19:03:08.554889+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "schneider_powerlogic_em4200_series_enercept",
+      "vendor": "Schneider Electric",
+      "model": "PowerLogic EM4200 Series Enercept",
+      "category": "meter",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/63381-powerlogic-em4200-series-enercept/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.se.com/us/en/product-range/google-range-sitemap-US-en.xml",
+          "sha256": "8fad9199ddaf4e1016508d957a5e6cc90b595837eab3b91f8d41b7210bb2b3fe",
+          "retrieved_at": "2026-10-13T18:52:17.328084+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "schneider_powerlogic_pm3000_power_meters",
+      "vendor": "Schneider Electric",
+      "model": "PowerLogic™ PM3000 Power Meters",
+      "category": "meter",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/61274-powerlogic-pm3000-power-meters/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.se.com/us/en/product-range/google-range-sitemap-US-en.xml",
+          "sha256": "8fad9199ddaf4e1016508d957a5e6cc90b595837eab3b91f8d41b7210bb2b3fe",
+          "retrieved_at": "2026-10-13T18:52:17.328084+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "schneider_powerlogic_pm5000_power_meters",
+      "vendor": "Schneider Electric",
+      "model": "PowerLogic™ PM5000 Power Meters",
+      "category": "meter",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/61281-powerlogic-pm5000-power-meters/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.se.com/us/en/product-range/google-range-sitemap-US-en.xml",
+          "sha256": "8fad9199ddaf4e1016508d957a5e6cc90b595837eab3b91f8d41b7210bb2b3fe",
+          "retrieved_at": "2026-10-13T18:52:17.328084+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "schneider_powerlogic_pm8000_power_quality_meters",
+      "vendor": "Schneider Electric",
+      "model": "PowerLogic™ PM8000 Power Quality Meters",
+      "category": "meter",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/62252-powerlogic-pm8000-power-quality-meters/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.se.com/us/en/product-range/google-range-sitemap-US-en.xml",
+          "sha256": "8fad9199ddaf4e1016508d957a5e6cc90b595837eab3b91f8d41b7210bb2b3fe",
+          "retrieved_at": "2026-10-13T18:52:17.328084+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "schneider_pm800_series",
+      "vendor": "Schneider Electric",
+      "model": "PM800 series",
+      "category": "meter",
+      "lifecycle": "discontinued_support_not_stated",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/918-pm800-series/"
+      ],
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "96x96mm PowerLogic power-monitoring units for HV and LV networks Discontinued Contact sales Support Center Read more Discontinued Contact sales Support Center Support Help Center Contact Sales Find our Offices Where to Buy Tech Support: 877-342-5173 C [...]",
+          "stated_date": "",
+          "url": "https://www.se.com/us/en/product-range/918-pm800-series/",
+          "sha256": "f5dfe61a866f844784ae3136b28056912177ac673e39eee722000e888fd79f22",
+          "retrieved_at": "2026-10-13T19:05:01.129104+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "schneider_powerlogic_enercept",
+      "vendor": "Schneider Electric",
+      "model": "PowerLogic Enercept",
+      "category": "meter",
+      "lifecycle": "discontinued_support_not_stated",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/1703-powerlogic-enercept/"
+      ],
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "[...] split-core CTs combines highly accurate digital metering and communications electronics inside one of the CT housings. Discontinued Contact sales Support Center Read more Discontinued Contact sales Support Center Overview Features This innovative form factor eliminates the need for a separate meter enclosure, which could reduce installation costs by as much as 70 percent.",
+          "stated_date": "",
+          "url": "https://www.se.com/us/en/product-range/1703-powerlogic-enercept/",
+          "sha256": "7a61cd7cd8149ecb506675cf4c93fb5882830071dc4e5570dbf1b1c4d995622c",
+          "retrieved_at": "2026-10-13T19:03:05.857363+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "schneider_powerlogic_energy_meters",
+      "vendor": "Schneider Electric",
+      "model": "PowerLogic Energy Meters",
+      "category": "meter",
+      "lifecycle": "discontinued_support_not_stated",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/1717-powerlogic-energy-meters/"
+      ],
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "[...] ity PowerLogic Energy Meters Complete, stand-alone tenant sub-metering Accurate energy metering and simple installation Discontinued Contact sales Support Center Read more Discontinued Contact sales Support Center Products Overview Features The PowerLogic Energy Meter combines highly accurate industrial grade split-core CTs and precision microprocessor based metering electronics to provide exceptional metering accuracy and greatly reduce the total metering system installed cost.",
+          "stated_date": "",
+          "url": "https://www.se.com/us/en/product-range/1717-powerlogic-energy-meters/",
+          "sha256": "bf2028f28f4fceea963cb0e62c3f6ad89a47f2c7a88c415f9873e3315badd8a3",
+          "retrieved_at": "2026-10-13T19:03:06.478130+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "schneider_powerlogic_ion6200_series",
+      "vendor": "Schneider Electric",
+      "model": "PowerLogic ION6200 series",
+      "category": "meter",
+      "lifecycle": "discontinued_support_not_stated",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/1505-powerlogic-ion6200-series/"
+      ],
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "Simple to use, easy to wire and mount, the meter features a compact design and modular architecture for scalability. Discontinued Contact sales Support Center Read more Discontinued Contact sales Support Center Overview Features Panel-mount, LED display 3-phase, 4-quadrant metering, class 0.5 accuracy [...]",
+          "stated_date": "",
+          "url": "https://www.se.com/us/en/product-range/1505-powerlogic-ion6200-series/",
+          "sha256": "a8cc2370486d1554a672ec14c951f92a32fb826afaed3cc598da22a2d487017c",
+          "retrieved_at": "2026-10-13T19:03:01.821549+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "schneider_modicon_m171_m172_logic_controller",
+      "vendor": "Schneider Electric",
+      "model": "Modicon M171/M172 Logic Controller",
+      "category": "plc",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/62420-modicon-m171-m172-logic-controller/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.se.com/us/en/product-range/google-range-sitemap-US-en.xml",
+          "sha256": "8fad9199ddaf4e1016508d957a5e6cc90b595837eab3b91f8d41b7210bb2b3fe",
+          "retrieved_at": "2026-10-13T18:52:17.328084+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "schneider_modicon_m241_micro_plc",
+      "vendor": "Schneider Electric",
+      "model": "Modicon M241 Micro PLC",
+      "category": "plc",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/62129-modicon-m241-micro-plc/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.se.com/us/en/product-range/google-range-sitemap-US-en.xml",
+          "sha256": "8fad9199ddaf4e1016508d957a5e6cc90b595837eab3b91f8d41b7210bb2b3fe",
+          "retrieved_at": "2026-10-13T18:52:17.328084+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "schneider_modicon_m258_compact_plc_for_machine_automation",
+      "vendor": "Schneider Electric",
+      "model": "Modicon M258 Compact PLC for Machine Automation",
+      "category": "plc",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/2730-modicon-m258-compact-plc-for-machine-automation/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.se.com/us/en/product-range/google-range-sitemap-US-en.xml",
+          "sha256": "8fad9199ddaf4e1016508d957a5e6cc90b595837eab3b91f8d41b7210bb2b3fe",
+          "retrieved_at": "2026-10-13T18:52:17.328084+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "schneider_modicon_mcm",
+      "vendor": "Schneider Electric",
+      "model": "Modicon MCM",
+      "category": "plc",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/1438-modicon-mcm/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.se.com/us/en/product-range/google-range-sitemap-US-en.xml",
+          "sha256": "8fad9199ddaf4e1016508d957a5e6cc90b595837eab3b91f8d41b7210bb2b3fe",
+          "retrieved_at": "2026-10-13T18:52:17.328084+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "schneider_compact_plc",
+      "vendor": "Schneider Electric",
+      "model": "Compact PLC",
+      "category": "plc",
+      "lifecycle": "discontinued_support_not_stated",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/61593-compact-plc/"
+      ],
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "[...] nal Links View all customer success stories Schneider Electric University Compact PLC Modicon Compact Part of Modicon - Discontinued Contact sales Support Center Read more Discontinued Contact sales Support Center Overview Features - Support Help Center Contact Sales Find our Offices Where to Buy Tech Sup [...]",
+          "stated_date": "",
+          "url": "https://www.se.com/us/en/product-range/61593-compact-plc/",
+          "sha256": "2116b2fbe57a997f4911537ceb5278f4adb5ba812368e99b6aa5e141f9df09fc",
+          "retrieved_at": "2026-10-13T19:04:32.339992+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "schneider_modicon_lmc058_lmc078",
+      "vendor": "Schneider Electric",
+      "model": "Modicon LMC058 / LMC078",
+      "category": "plc",
+      "lifecycle": "discontinued_support_not_stated",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/7744-modicon-lmc058-lmc078/"
+      ],
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "[...] oftware suite, SoMachine, including the same Motion Libraries based on PLCopen, Embedded I/O, and numerous field buses. Discontinued Contact sales Support Center Read more Discontinued Contact sales Support Center Support Help Center Contact Sales Find our Offices Where to Buy Tech Support: 877-342-5173 C [...]",
+          "stated_date": "",
+          "url": "https://www.se.com/us/en/product-range/7744-modicon-lmc058-lmc078/",
+          "sha256": "a4ab7919545baddb25b675b3108ef5a5e1e8cfbaa492147018da051bc19e121f",
+          "retrieved_at": "2026-10-13T19:04:58.758424+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "schneider_modicon_premium_pac",
+      "vendor": "Schneider Electric",
+      "model": "Modicon Premium PAC",
+      "category": "plc",
+      "lifecycle": "discontinued_support_not_stated",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/537-modicon-premium-pac/"
+      ],
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "[...] AC for Discrete or Process applications and high availability solutions Part of Modicon PLC for manufacturing processes Discontinued Contact sales Support Center Read more Discontinued Contact sales Support Center Products Overview Features With the new Premium processors in the Unity range, there is no need to worry about restrictions...",
+          "stated_date": "",
+          "url": "https://www.se.com/us/en/product-range/537-modicon-premium-pac/",
+          "sha256": "fc52d34d2ccbf43f2a24cc830c56792a8743b4eebe1e11a809ba5b7f8ee429aa",
+          "retrieved_at": "2026-10-13T19:03:24.274627+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "schneider_twido_programmable_controller",
+      "vendor": "Schneider Electric",
+      "model": "Twido - Programmable Controller",
+      "category": "plc",
+      "lifecycle": "discontinued_support_not_stated",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/533-twido-programmable-controller/"
+      ],
+      "vendor_label": "obsolete",
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "[...] Legal Additional Links View all customer success stories Schneider Electric University Twido - Programmable Controller Obsolete December 2016. Update or replace with Modicon M221 PLC. Obsolete December 2016. Update or replace with Modicon M221 PLC. This webpage and materials are provided to support existing Twido PLC installations.",
+          "stated_date": "December 2016",
+          "url": "https://www.se.com/us/en/product-range/533-twido-programmable-controller/",
+          "sha256": "b45df24f35745626b8b7e738301e434954f8ddb79c05d4ecd88eeed7869e347e",
+          "retrieved_at": "2026-10-13T19:03:19.730160+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "schneider_micom_p59x",
+      "vendor": "Schneider Electric",
+      "model": "MiCOM P59x",
+      "category": "protective_relay",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/60750-micom-p59x/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.se.com/us/en/product-range/google-range-sitemap-US-en.xml",
+          "sha256": "8fad9199ddaf4e1016508d957a5e6cc90b595837eab3b91f8d41b7210bb2b3fe",
+          "retrieved_at": "2026-10-13T18:52:17.328084+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "schneider_micom_p841",
+      "vendor": "Schneider Electric",
+      "model": "MiCOM P841",
+      "category": "protective_relay",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/60735-micom-p841/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.se.com/us/en/product-range/google-range-sitemap-US-en.xml",
+          "sha256": "8fad9199ddaf4e1016508d957a5e6cc90b595837eab3b91f8d41b7210bb2b3fe",
+          "retrieved_at": "2026-10-13T18:52:17.328084+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "schneider_sepam_series_80",
+      "vendor": "Schneider Electric",
+      "model": "Sepam series 80",
+      "category": "protective_relay",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/935-sepam-series-80/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.se.com/us/en/product-range/google-range-sitemap-US-en.xml",
+          "sha256": "8fad9199ddaf4e1016508d957a5e6cc90b595837eab3b91f8d41b7210bb2b3fe",
+          "retrieved_at": "2026-10-13T18:52:17.328084+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "schneider_vamp_arc_protection_relay_system",
+      "vendor": "Schneider Electric",
+      "model": "Vamp Arc Protection Relay System",
+      "category": "protective_relay",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/62049-vamp-arc-protection-relay-system/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.se.com/us/en/product-range/google-range-sitemap-US-en.xml",
+          "sha256": "8fad9199ddaf4e1016508d957a5e6cc90b595837eab3b91f8d41b7210bb2b3fe",
+          "retrieved_at": "2026-10-13T18:52:17.328084+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "schneider_micom_p22x",
+      "vendor": "Schneider Electric",
+      "model": "MiCOM P22x",
+      "category": "protective_relay",
+      "lifecycle": "discontinued_support_not_stated",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/60752-micom-p22x/"
+      ],
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "[...] er success stories Schneider Electric University MiCOM P22x Motor and Overcurrent Protection Relay Part of PowerLogic - Discontinued Contact sales Support Center Read more Discontinued Contact sales Support Center Overview Features The MiCOM P22x is a range of protection relays designed for motor protection applications.",
+          "stated_date": "",
+          "url": "https://www.se.com/us/en/product-range/60752-micom-p22x/",
+          "sha256": "b7a147dc8e90c2f83756a0260f66eb2bc2562e1c34d31da7cf3672a3bda3d50b",
+          "retrieved_at": "2026-10-13T19:03:57.054987+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "schneider_micom_p521",
+      "vendor": "Schneider Electric",
+      "model": "MiCOM P521",
+      "category": "protective_relay",
+      "lifecycle": "discontinued_support_not_stated",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/60745-micom-p521/"
+      ],
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "[...] tomer success stories Schneider Electric University MiCOM P521 Fast Feeder Differential Protection Part of PowerLogic - Discontinued Contact sales Support Center Read more Discontinued Contact sales Support Center Overview Features The MiCOM P521 relay provides high-speed, two-ended current differential unit protection of overhead lines and underground cables in applications such as ring mains and parallel feeders.",
+          "stated_date": "",
+          "url": "https://www.se.com/us/en/product-range/60745-micom-p521/",
+          "sha256": "7359019f13b72b5dda1ff43acffac9b40e848f703bf573441f01d63ab72390c2",
+          "retrieved_at": "2026-10-13T19:03:44.833746+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "schneider_micom_p821",
+      "vendor": "Schneider Electric",
+      "model": "MiCOM P821",
+      "category": "protective_relay",
+      "lifecycle": "discontinued_support_not_stated",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/60739-micom-p821/"
+      ],
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "[...] w all customer success stories Schneider Electric University MiCOM P821 Breaker Failure Protection Part of PowerLogic - Discontinued Contact sales Support Center Read more Discontinued Contact sales Support Center Support Help Center Contact Sales Find our Offices Where to Buy Tech Support: 877-342-5173 C [...]",
+          "stated_date": "",
+          "url": "https://www.se.com/us/en/product-range/60739-micom-p821/",
+          "sha256": "636fe9222faa5f814b38465938af4bc8e219f2170f97a276ccd13893c0ada7e4",
+          "retrieved_at": "2026-10-13T19:03:32.265189+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "schneider_sepam_series_20",
+      "vendor": "Schneider Electric",
+      "model": "Sepam series 20",
+      "category": "protective_relay",
+      "lifecycle": "discontinued_support_not_stated",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/933-sepam-series-20/"
+      ],
+      "lifecycle_basis": "product page wording",
+      "lifecycle_evidence": [
+        {
+          "basis": "product page wording",
+          "quote": "[...] rotection functions with ZSI applications for motors and substation feeders and transformers in any distribution system Discontinued Contact sales Support Center Read more Discontinued Contact sales Support Center Products Overview Features Remote and Advanced displays available Digital I/O: 0-10 Inputs/4 [...]",
+          "stated_date": "",
+          "url": "https://www.se.com/us/en/product-range/933-sepam-series-20/",
+          "sha256": "47470bfbdd351885907250d605ee90549cb393f69422f7232d6e34399f4d41f1",
+          "retrieved_at": "2026-10-13T19:05:02.296121+00:00"
+        }
+      ],
+      "max_depth": 0,
+      "max_pages_per_product": 3
+    },
+    {
+      "id": "siemens_6md86",
+      "vendor": "Siemens",
+      "model": "Bay controller – SIPROTEC 6MD86",
+      "category": "controller_rtu",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/6md86/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.siemens.com/en-us/sitemap-en-us.xml",
+          "sha256": "ba5cbd8f1ff6687b277f2ea604a6c23f8277bbf976b9675ca01f23ed2b87ed4e",
+          "retrieved_at": "2026-10-13T18:52:10.569481+00:00"
+        }
+      ],
+      "max_depth": 1,
+      "max_pages_per_product": 4,
+      "follow_pattern": "/assets/api/[^ ]*\\.pdf|\\bmanuals?\\b|siemens\\.com/catalog-"
+    },
+    {
+      "id": "siemens_a8000",
+      "vendor": "Siemens",
+      "model": "SICAM A8000 Series",
+      "category": "controller_rtu",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/sicam/a8000/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.siemens.com/en-us/sitemap-en-us.xml",
+          "sha256": "ba5cbd8f1ff6687b277f2ea604a6c23f8277bbf976b9675ca01f23ed2b87ed4e",
+          "retrieved_at": "2026-10-13T18:52:10.569481+00:00"
+        }
+      ],
+      "max_depth": 1,
+      "max_pages_per_product": 4,
+      "follow_pattern": "/assets/api/[^ ]*\\.pdf|\\bmanuals?\\b|siemens\\.com/catalog-"
+    },
+    {
+      "id": "siemens_a8000_cp_8050",
+      "vendor": "Siemens",
+      "model": "Substation automation unit",
+      "category": "controller_rtu",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/sicam/a8000-cp-8050/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.siemens.com/en-us/sitemap-en-us.xml",
+          "sha256": "ba5cbd8f1ff6687b277f2ea604a6c23f8277bbf976b9675ca01f23ed2b87ed4e",
+          "retrieved_at": "2026-10-13T18:52:10.569481+00:00"
+        }
+      ],
+      "max_depth": 1,
+      "max_pages_per_product": 4,
+      "follow_pattern": "/assets/api/[^ ]*\\.pdf|\\bmanuals?\\b|siemens\\.com/catalog-"
+    },
+    {
+      "id": "siemens_multipurpose_automation_box",
+      "vendor": "Siemens",
+      "model": "MAB-Multipurpose-Automation-Box",
+      "category": "controller_rtu",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/sicam/multipurpose-automation-box/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.siemens.com/en-us/sitemap-en-us.xml",
+          "sha256": "ba5cbd8f1ff6687b277f2ea604a6c23f8277bbf976b9675ca01f23ed2b87ed4e",
+          "retrieved_at": "2026-10-13T18:52:10.569481+00:00"
+        }
+      ],
+      "max_depth": 1,
+      "max_pages_per_product": 4,
+      "follow_pattern": "/assets/api/[^ ]*\\.pdf|\\bmanuals?\\b|siemens\\.com/catalog-"
+    },
+    {
+      "id": "siemens_measuring_devices",
+      "vendor": "Siemens",
+      "model": "SENTRON measuring devices for energy transparency",
+      "category": "meter",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/sentron/measuring-devices/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.siemens.com/en-us/sitemap-en-us.xml",
+          "sha256": "ba5cbd8f1ff6687b277f2ea604a6c23f8277bbf976b9675ca01f23ed2b87ed4e",
+          "retrieved_at": "2026-10-13T18:52:10.569481+00:00"
+        }
+      ],
+      "max_depth": 1,
+      "max_pages_per_product": 4,
+      "follow_pattern": "/assets/api/[^ ]*\\.pdf|\\bmanuals?\\b|siemens\\.com/catalog-"
+    },
+    {
+      "id": "siemens_q200_power_quality_recorder",
+      "vendor": "Siemens",
+      "model": "Power quality recorder - SICAM Q200",
+      "category": "meter",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/sicam/q200-power-quality-recorder/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.siemens.com/en-us/sitemap-en-us.xml",
+          "sha256": "ba5cbd8f1ff6687b277f2ea604a6c23f8277bbf976b9675ca01f23ed2b87ed4e",
+          "retrieved_at": "2026-10-13T18:52:10.569481+00:00"
+        }
+      ],
+      "max_depth": 1,
+      "max_pages_per_product": 4,
+      "follow_pattern": "/assets/api/[^ ]*\\.pdf|\\bmanuals?\\b|siemens\\.com/catalog-"
+    },
+    {
+      "id": "siemens_sentron_measuring_devices",
+      "vendor": "Siemens",
+      "model": "SENTRON measuring devices for energy transparency",
+      "category": "meter",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/sentron/sentron-measuring-devices/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.siemens.com/en-us/sitemap-en-us.xml",
+          "sha256": "ba5cbd8f1ff6687b277f2ea604a6c23f8277bbf976b9675ca01f23ed2b87ed4e",
+          "retrieved_at": "2026-10-13T18:52:10.569481+00:00"
+        }
+      ],
+      "max_depth": 1,
+      "max_pages_per_product": 4,
+      "follow_pattern": "/assets/api/[^ ]*\\.pdf|\\bmanuals?\\b|siemens\\.com/catalog-"
+    },
+    {
+      "id": "siemens_transducer_sicam_t",
+      "vendor": "Siemens",
+      "model": "Digital Transducer - SICAM T",
+      "category": "meter",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/sicam/transducer-sicam-t/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.siemens.com/en-us/sitemap-en-us.xml",
+          "sha256": "ba5cbd8f1ff6687b277f2ea604a6c23f8277bbf976b9675ca01f23ed2b87ed4e",
+          "retrieved_at": "2026-10-13T18:52:10.569481+00:00"
+        }
+      ],
+      "max_depth": 1,
+      "max_pages_per_product": 4,
+      "follow_pattern": "/assets/api/[^ ]*\\.pdf|\\bmanuals?\\b|siemens\\.com/catalog-"
+    },
+    {
+      "id": "siemens_s7_1200_g2",
+      "vendor": "Siemens",
+      "model": "SIMATIC S7-1200 G2",
+      "category": "plc",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/simatic/s7-1200-g2/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.siemens.com/en-us/sitemap-en-us.xml",
+          "sha256": "ba5cbd8f1ff6687b277f2ea604a6c23f8277bbf976b9675ca01f23ed2b87ed4e",
+          "retrieved_at": "2026-10-13T18:52:10.569481+00:00"
+        }
+      ],
+      "max_depth": 1,
+      "max_pages_per_product": 4,
+      "follow_pattern": "/assets/api/[^ ]*\\.pdf|\\bmanuals?\\b|siemens\\.com/catalog-"
+    },
+    {
+      "id": "siemens_s7_1500_rh_cpus",
+      "vendor": "Siemens",
+      "model": "SIMATIC S7-1500 R/H CPUs - High Availability",
+      "category": "plc",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/simatic/s7-1500-rh-cpus/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.siemens.com/en-us/sitemap-en-us.xml",
+          "sha256": "ba5cbd8f1ff6687b277f2ea604a6c23f8277bbf976b9675ca01f23ed2b87ed4e",
+          "retrieved_at": "2026-10-13T18:52:10.569481+00:00"
+        }
+      ],
+      "max_depth": 1,
+      "max_pages_per_product": 4,
+      "follow_pattern": "/assets/api/[^ ]*\\.pdf|\\bmanuals?\\b|siemens\\.com/catalog-"
+    },
+    {
+      "id": "siemens_s7_1500s_controller",
+      "vendor": "Siemens",
+      "model": "SIMATIC S7-1500 Software Controller",
+      "category": "plc",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/simatic/s7-1500s-controller/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.siemens.com/en-us/sitemap-en-us.xml",
+          "sha256": "ba5cbd8f1ff6687b277f2ea604a6c23f8277bbf976b9675ca01f23ed2b87ed4e",
+          "retrieved_at": "2026-10-13T18:52:10.569481+00:00"
+        }
+      ],
+      "max_depth": 1,
+      "max_pages_per_product": 4,
+      "follow_pattern": "/assets/api/[^ ]*\\.pdf|\\bmanuals?\\b|siemens\\.com/catalog-"
+    },
+    {
+      "id": "siemens_s7_400",
+      "vendor": "Siemens",
+      "model": "SIMATIC S7-400",
+      "category": "plc",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/simatic/s7-400/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.siemens.com/en-us/sitemap-en-us.xml",
+          "sha256": "ba5cbd8f1ff6687b277f2ea604a6c23f8277bbf976b9675ca01f23ed2b87ed4e",
+          "retrieved_at": "2026-10-13T18:52:10.569481+00:00"
+        }
+      ],
+      "max_depth": 1,
+      "max_pages_per_product": 4,
+      "follow_pattern": "/assets/api/[^ ]*\\.pdf|\\bmanuals?\\b|siemens\\.com/catalog-"
+    },
+    {
+      "id": "siemens_7sj85",
+      "vendor": "Siemens",
+      "model": "Overcurrent and feeder protection – SIPROTEC 7SJ85",
+      "category": "protective_relay",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/7sj85/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.siemens.com/en-us/sitemap-en-us.xml",
+          "sha256": "ba5cbd8f1ff6687b277f2ea604a6c23f8277bbf976b9675ca01f23ed2b87ed4e",
+          "retrieved_at": "2026-10-13T18:52:10.569481+00:00"
+        }
+      ],
+      "max_depth": 1,
+      "max_pages_per_product": 4,
+      "follow_pattern": "/assets/api/[^ ]*\\.pdf|\\bmanuals?\\b|siemens\\.com/catalog-"
+    },
+    {
+      "id": "siemens_7sr157",
+      "vendor": "Siemens",
+      "model": "Reyrolle 7SR157: Check Synchronising",
+      "category": "protective_relay",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/reyrolle/7sr157/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.siemens.com/en-us/sitemap-en-us.xml",
+          "sha256": "ba5cbd8f1ff6687b277f2ea604a6c23f8277bbf976b9675ca01f23ed2b87ed4e",
+          "retrieved_at": "2026-10-13T18:52:10.569481+00:00"
+        }
+      ],
+      "max_depth": 1,
+      "max_pages_per_product": 4,
+      "follow_pattern": "/assets/api/[^ ]*\\.pdf|\\bmanuals?\\b|siemens\\.com/catalog-"
+    },
+    {
+      "id": "siemens_7sr46",
+      "vendor": "Siemens",
+      "model": "Reyrolle 7SR46: CT-powered overcurrent protection",
+      "category": "protective_relay",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/reyrolle/7sr46/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.siemens.com/en-us/sitemap-en-us.xml",
+          "sha256": "ba5cbd8f1ff6687b277f2ea604a6c23f8277bbf976b9675ca01f23ed2b87ed4e",
+          "retrieved_at": "2026-10-13T18:52:10.569481+00:00"
+        }
+      ],
+      "max_depth": 1,
+      "max_pages_per_product": 4,
+      "follow_pattern": "/assets/api/[^ ]*\\.pdf|\\bmanuals?\\b|siemens\\.com/catalog-"
+    },
+    {
+      "id": "siemens_7sy82",
+      "vendor": "Siemens",
+      "model": "SIPROTEC 7SY82",
+      "category": "protective_relay",
+      "lifecycle": "currently_supported",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/7sy82/"
+      ],
+      "lifecycle_basis": "listed in the vendor catalogue without a notice of discontinuation",
+      "lifecycle_evidence": [
+        {
+          "basis": "listed in the vendor catalogue without a notice of discontinuation",
+          "url": "https://www.siemens.com/en-us/sitemap-en-us.xml",
+          "sha256": "ba5cbd8f1ff6687b277f2ea604a6c23f8277bbf976b9675ca01f23ed2b87ed4e",
+          "retrieved_at": "2026-10-13T18:52:10.569481+00:00"
+        }
+      ],
+      "max_depth": 1,
+      "max_pages_per_product": 4,
+      "follow_pattern": "/assets/api/[^ ]*\\.pdf|\\bmanuals?\\b|siemens\\.com/catalog-"
+    }
+  ]
+}

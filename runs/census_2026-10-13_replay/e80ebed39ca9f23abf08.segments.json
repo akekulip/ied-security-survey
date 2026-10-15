@@ -1,0 +1,450 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "MIW II Directional Power Protection System | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "MIW II Directional Power Protection System - Legacy"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Contact Us",
+    "heading": "MIW II Directional Power Protection System - Legacy"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Manufacturing for this product has been discontinued. As an alternative, please refer to the Multilin 350 or 889 relays.",
+    "heading": "MIW II Directional Power Protection System - Legacy"
+  },
+  {
+    "location": "html-block:7",
+    "text": "The MIW II, a member of the M II Family of Relays, is a digital device that provides directional power and loss of field protection for generators. Operation of the MIW II is based on the calculated direction of 3 phase power flow. The MIW II can be ordered with either one of the following two option packages:",
+    "heading": "MIW II Directional Power Protection System - Legacy"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Four protection elements for directional power",
+    "heading": "MIW II Directional Power Protection System - Legacy"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Three protection elements for directional power, one loss of field element, and one fuse failure element",
+    "heading": "MIW II Directional Power Protection System - Legacy"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Features & Benefits"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Configurable logic, curves, I/Os and LEDs",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Flash memory for field upgrades",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Two settings groups",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Password protection for local operation",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Automatic display of information from last 5 faults",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Drawout case for easy maintenance",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:17",
+    "text": "AC/DC power supply",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Access via front panel keypad or communication links",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Diagnostic features - event recording and analog/digital oscillography",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Isolated front RS232 serial port",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Controlling power flow in AC generator applications of any size",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Protection & Control"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Available versions are three power protection elements (32_x) for MIWII1000 and four power protection elements for MIWII2000",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Loss of field/excitation protection element (40)",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:26",
+    "text": "VT fuse failure protection element (60)",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:27",
+    "text": "6 outputs, four configurable, plus trip and alarm",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Metering values for Ia, voltage values, P, Q, S, V1, V2, and angle",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:30",
+    "text": "24-event record",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Analog/digital oscillography - 24 cycles at 8 samples per cycle",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Information displayed on last 5 relay trips",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:33",
+    "text": "User Interface"
+  },
+  {
+    "location": "html-block:34",
+    "text": "2x16 character LCD display",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:35",
+    "text": "6 LED indicators with 4 configurable in function and in color",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Front RS232 and rear RS485 ports using ModBus® RTU protocol up to 19,200 bps",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:37",
+    "text": "EnerVista software - an industry leading suite of software tools that simplifies every aspect of working with GE Vernova Multilin devices",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:39",
+    "text": "MultiNet"
+  },
+  {
+    "location": "html-block:40",
+    "text": "USB-to-Serial Cable"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:46",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:47",
+    "text": "White Papers"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Subscribe",
+    "heading": "White Papers"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:50",
+    "text": "MultiNet"
+  },
+  {
+    "location": "html-block:51",
+    "text": "USB-to-Serial Cable"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:53",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:58",
+    "text": "White Papers"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Subscribe",
+    "heading": "White Papers"
+  },
+  {
+    "location": "html-block:60",
+    "text": "MIW II Directional Power Protection System - Legacy"
+  },
+  {
+    "location": "html-block:61",
+    "text": "Contact Us",
+    "heading": "MIW II Directional Power Protection System - Legacy"
+  },
+  {
+    "location": "html-block:62",
+    "text": "Manufacturing for this product has been discontinued. As an alternative, please refer to the Multilin 350 or 889 relays.",
+    "heading": "MIW II Directional Power Protection System - Legacy"
+  },
+  {
+    "location": "html-block:63",
+    "text": "The MIW II, a member of the M II Family of Relays, is a digital device that provides directional power and loss of field protection for generators. Operation of the MIW II is based on the calculated direction of 3 phase power flow. The MIW II can be ordered with either one of the following two option packages:",
+    "heading": "MIW II Directional Power Protection System - Legacy"
+  },
+  {
+    "location": "html-block:64",
+    "text": "Four protection elements for directional power",
+    "heading": "MIW II Directional Power Protection System - Legacy"
+  },
+  {
+    "location": "html-block:65",
+    "text": "Three protection elements for directional power, one loss of field element, and one fuse failure element",
+    "heading": "MIW II Directional Power Protection System - Legacy"
+  },
+  {
+    "location": "html-block:66",
+    "text": "Features & Benefits"
+  },
+  {
+    "location": "html-block:67",
+    "text": "Configurable logic, curves, I/Os and LEDs",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:68",
+    "text": "Flash memory for field upgrades",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:69",
+    "text": "Two settings groups",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:70",
+    "text": "Password protection for local operation",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:71",
+    "text": "Automatic display of information from last 5 faults",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:72",
+    "text": "Drawout case for easy maintenance",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:73",
+    "text": "AC/DC power supply",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:74",
+    "text": "Access via front panel keypad or communication links",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:75",
+    "text": "Diagnostic features - event recording and analog/digital oscillography",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:76",
+    "text": "Isolated front RS232 serial port",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:77",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:78",
+    "text": "Controlling power flow in AC generator applications of any size",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:79",
+    "text": "Protection & Control"
+  },
+  {
+    "location": "html-block:80",
+    "text": "Available versions are three power protection elements (32_x) for MIWII1000 and four power protection elements for MIWII2000",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:81",
+    "text": "Loss of field/excitation protection element (40)",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:82",
+    "text": "VT fuse failure protection element (60)",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:83",
+    "text": "6 outputs, four configurable, plus trip and alarm",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:84",
+    "text": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:85",
+    "text": "Metering values for Ia, voltage values, P, Q, S, V1, V2, and angle",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:86",
+    "text": "24-event record",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:87",
+    "text": "Analog/digital oscillography - 24 cycles at 8 samples per cycle",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:88",
+    "text": "Information displayed on last 5 relay trips",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:89",
+    "text": "User Interface"
+  },
+  {
+    "location": "html-block:90",
+    "text": "2x16 character LCD display",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:91",
+    "text": "6 LED indicators with 4 configurable in function and in color",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:92",
+    "text": "Front RS232 and rear RS485 ports using ModBus® RTU protocol up to 19,200 bps",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:93",
+    "text": "EnerVista software - an industry leading suite of software tools that simplifies every aspect of working with GE Vernova Multilin devices",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:94",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:95",
+    "text": "Generator Protection"
+  },
+  {
+    "location": "html-block:96",
+    "text": "GE Vernova's generator protection devices provide innovative solutions for the...",
+    "heading": "Generator Protection"
+  },
+  {
+    "location": "html-block:97",
+    "text": "View More",
+    "heading": "Generator Protection"
+  }
+]

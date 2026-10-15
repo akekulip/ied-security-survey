@@ -1,0 +1,927 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "Multilin F35 | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "Multilin F35"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Feeder Protection System"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Contact Sales Buy Now",
+    "heading": "Feeder Protection System"
+  },
+  {
+    "location": "html-block:7",
+    "text": "The F35, a member of the UR Family of protection relays, provides cost-effective feeder protection, control and metering for up to five feeders with busbar voltage measurement, or six feeders without busbar voltage in one integrated package. Use the F35 as a stand-alone device or as a component of an automated substation control system.",
+    "heading": "Feeder Protection System"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Advanced IEC 61850 Ed. 1 and Ed. 2 certified implementation, complete settings via SCL files and flexible process bus support (IEC 61850-9-2LE, IEC 61869 or IEC 61850-9-2 Hardfiber) ensures interoperability, device managing optimization and reduced cost of ownership",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Routable GOOSE (R-GOOSE) enables GOOSE messages going beyond the substation, which enables wide area protection and control applications",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:11",
+    "text": "High-end fault and disturbance recording, including internal relay operating signals",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Advance Cyber security features “CyberSentryTM” that helps meet modern industry requirements",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Simplified system integration with communications supporting serial and Ethernet interfaces and multiple protocols",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Supports latest edition of waveform capture (COMTRADE 2013) simplifying fault records management",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Application flexibility with multiple I/O options including high density I/O, programmable logic, modularity, and specific customization",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:16",
+    "text": "An integrated large, full color display, provides real-time visualization and control of the protected bay, via a bay mimic as well as annunciator functionality and graphical visualization of phasors",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Primary protection and control for multiple distribution feeders",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Distribution load shedding schemes based on voltage and frequency elements",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Busblocking/interlocking schemes",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Throwover schemes (bus transfer scheme applications)",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Distributed generation (DG) interconnect protection, including active and passive anti-islanding",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Interactive Selector Guide"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Spotlight Application"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Typical Applications"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Feeder Principles & Protection"
+  },
+  {
+    "location": "html-block:28",
+    "text": "GSA Schedule"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Legacy Feeder Protection"
+  },
+  {
+    "location": "html-block:30",
+    "text": "How-to Videos"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Drawings"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Product & Cyber Security Advisories"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Application Notes"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Subscribe",
+    "heading": "Application Notes"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Interactive Selector Guide"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Spotlight Application"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Typical Applications"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Feeder Principles & Protection"
+  },
+  {
+    "location": "html-block:46",
+    "text": "GSA Schedule"
+  },
+  {
+    "location": "html-block:47",
+    "text": "Legacy Feeder Protection"
+  },
+  {
+    "location": "html-block:48",
+    "text": "How-to Videos"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:50",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:51",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:53",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Drawings"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Product & Cyber Security Advisories"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Application Notes"
+  },
+  {
+    "location": "html-block:58",
+    "text": "Subscribe",
+    "heading": "Application Notes"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Multilin F35"
+  },
+  {
+    "location": "html-block:60",
+    "text": "Feeder Protection System"
+  },
+  {
+    "location": "html-block:61",
+    "text": "Contact Sales Buy Now",
+    "heading": "Feeder Protection System"
+  },
+  {
+    "location": "html-block:62",
+    "text": "The F35, a member of the UR Family of protection relays, provides cost-effective feeder protection, control and metering for up to five feeders with busbar voltage measurement, or six feeders without busbar voltage in one integrated package. Use the F35 as a stand-alone device or as a component of an automated substation control system.",
+    "heading": "Feeder Protection System"
+  },
+  {
+    "location": "html-block:63",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:64",
+    "text": "Advanced IEC 61850 Ed. 1 and Ed. 2 certified implementation, complete settings via SCL files and flexible process bus support (IEC 61850-9-2LE, IEC 61869 or IEC 61850-9-2 Hardfiber) ensures interoperability, device managing optimization and reduced cost of ownership",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:65",
+    "text": "Routable GOOSE (R-GOOSE) enables GOOSE messages going beyond the substation, which enables wide area protection and control applications",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:66",
+    "text": "High-end fault and disturbance recording, including internal relay operating signals",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:67",
+    "text": "Advance Cyber security features “CyberSentryTM” that helps meet modern industry requirements",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:68",
+    "text": "Simplified system integration with communications supporting serial and Ethernet interfaces and multiple protocols",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:69",
+    "text": "Supports latest edition of waveform capture (COMTRADE 2013) simplifying fault records management",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:70",
+    "text": "Application flexibility with multiple I/O options including high density I/O, programmable logic, modularity, and specific customization",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:71",
+    "text": "An integrated large, full color display, provides real-time visualization and control of the protected bay, via a bay mimic as well as annunciator functionality and graphical visualization of phasors",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:72",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:73",
+    "text": "Primary protection and control for multiple distribution feeders",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:74",
+    "text": "Distribution load shedding schemes based on voltage and frequency elements",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:75",
+    "text": "Busblocking/interlocking schemes",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:76",
+    "text": "Throwover schemes (bus transfer scheme applications)",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:77",
+    "text": "Distributed generation (DG) interconnect protection, including active and passive anti-islanding",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:78",
+    "text": "What's New"
+  },
+  {
+    "location": "html-block:79",
+    "text": "New and Enhanced Communication Capabilities",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:80",
+    "text": "New process bus module supports IEC 61869 sample values, PTP master capabilities and SV switching (FW 7.9x)",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:81",
+    "text": "New UR process bus modules supporting IEC61850-9-2LE Merging Units (FW 7.8x) Module Training available here",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:82",
+    "text": "Support switchable IEC 61850 Ed. 1 and Ed. 2 and redundant SNTP (FW 7.7x)",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:83",
+    "text": "New UR front panel with integrated 7” color, graphical display - providing operators with enhanced situational awareness (FW 7.6x)",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:84",
+    "text": "High density I/O module supporting up to 120 inputs or up to 72 contact outputs – eliminating the need for additional discrete devices (FW 7.6x)",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:85",
+    "text": "Cyber Security - CyberSentry UR (FW v7.xx)",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:86",
+    "text": "CyberSentryTM enables UR devices to deliver full cyber security features that help customers to comply with cyber security requirements (NERC CIP, IEEE 1686, IEC 62443, etc):",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:87",
+    "text": "Secured firmware upgrade: FW file includes hash code that enables authentication prior to being used for upgrading UR Relay (FW 7.9x)",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:88",
+    "text": "Fully Compatible with IEC 61850-9-2LE or IEC61869 process bus schemes:",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:89",
+    "text": "Can connect to up to 8 merging units over -9-2LE or 61869",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:90",
+    "text": "Supports PRP, HSR, dual HSR and point-to-point process bus topology",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:91",
+    "text": "Provides support for GE Vernova’s IEC 61850 HardFiber Process Bus Solution",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:92",
+    "text": "Extended Oscillography Records (FW v7.xx)",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:93",
+    "text": "Increased number of digital and analog channels (FW 7.90)",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:94",
+    "text": "Supports IEEE C37.111-1999/2013, IEC 60255-24 Ed 2.0 COMTRADE 2013 standard (FW v7.40)",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:95",
+    "text": "Configurable events allow for records of up to 45s at 64 samples per cycle",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:96",
+    "text": "New and Enhanced Protection and Control Functionality",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:97",
+    "text": "New TGFD and Inrush detection elements (FW 8.0)",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:98",
+    "text": "Expanded Bay Controller Capabilities – providing a one box solution (FW 7.6x)",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:99",
+    "text": "Protection & Control"
+  },
+  {
+    "location": "html-block:100",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:101",
+    "text": "Instantaneous and time phase overcurrent protection",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:102",
+    "text": "Thermal overload, instantaneous and time ground/neutral overcurrent protection, wattmetric ground fault directional",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:103",
+    "text": "Transient ground fault detection (TGFD)",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:104",
+    "text": "Dedicated harmonic inrush detection",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:105",
+    "text": "Neutral and auxiliary overvoltage",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:106",
+    "text": "Phase and auxiliary undervoltage",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:107",
+    "text": "Underfrequency",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:108",
+    "text": "Four-shot automatic reclosers for up to six breakers",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:109",
+    "text": "Built-in selector switch",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:110",
+    "text": "Protection & Control"
+  },
+  {
+    "location": "html-block:111",
+    "text": "The F35 feeder protection system provides feeder protection, control, monitoring and metering in an integrated, economical, and compact package. As part of the Universal Relay (UR) Family, the F35 provides cost-effective solutions and features high performance protection, expandable I/O options, integrated monitoring and metering, high-speed communications, and extensive programming and configuration capabilities. The F35 can be configured to protect up to six feeders or protect up to five feeders when bus voltage measurement is required. It also provides fast and deterministic execution of programmable logic necessary for substation automation applications. Graphical programming tools (Viewpoint Engineer), supported by a library of logic components, make the F35 simple to use and configure.",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:112",
+    "text": "A sensitive wattmetric zero-sequence directional function can be used on isolated or resonant (Petersen coil) grounded, low-resistance grounded and solidly grounded systems to detect ground faults. This function determines the presence and direction of ground faults by measuring the value and direction of zero-sequence power. This flexible element responds to power derived from zero-sequence voltage and current in a direction specified by the element characteristic angle. Power can be selected as active, reactive, or apparent. Therefore, the element may be used to sense either forward or reverse ground.",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:113",
+    "text": "The F35 has a wide range of protection elements that have many years of proven field experience.",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:114",
+    "text": "Functional Block Diagram",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:115",
+    "text": "ANSI® Device Numbers & Functions",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:116",
+    "text": "Device Number | Function",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:117",
+    "text": "27P | Phase Undervoltage",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:118",
+    "text": "27X | Auxiliary Undervoltage",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:119",
+    "text": "32N | Wattmettric Zero-Sequence Directional",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:120",
+    "text": "49 | Thermal overload protection",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:121",
+    "text": "50DD | Disturbance detector",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:122",
+    "text": "50G | Ground Instantaneous Overcurrent",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:123",
+    "text": "50N | Neutral Instantaneous Overcurrent",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:124",
+    "text": "Device Number | Function",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:125",
+    "text": "50P | Phase Instantaneous Overcurrent",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:126",
+    "text": "50_2 | Negative Sequence Instantaneous",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:127",
+    "text": "Overcurrent",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:128",
+    "text": "51G | Ground Time Overcurrent",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:129",
+    "text": "51N | Neutral Time Overcurrent",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:130",
+    "text": "51P | Phase Time Overcurrent",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:131",
+    "text": "51_2 | Negative-sequence time overcurrent",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:132",
+    "text": "52 | AC circuit breaker",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:133",
+    "text": "Device Number | Function",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:134",
+    "text": "59N | Neutral Overvoltage",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:135",
+    "text": "59P | Phase overvoltage",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:136",
+    "text": "59X | Auxiliary Overvoltage",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:137",
+    "text": "79 | Automatic Recloser",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:138",
+    "text": "81U | Under Frequency",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:139",
+    "text": "TGFD | Transient ground fault detection",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:140",
+    "text": "TGFD | Harmonic/Inrush detection",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:141",
+    "text": "Monitoring & Diagnostics"
+  },
+  {
+    "location": "html-block:142",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:143",
+    "text": "Metering - current, voltage, power, energy, frequency and harmonics",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:144",
+    "text": "Oscillography – analog and digital parameters at 64 samples/cycle",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:145",
+    "text": "Event Recorder - 1024 time tagged events with 0.5ms scan of digital inputs",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:146",
+    "text": "Data Logger - 16 channels with sampling rate up to 1 sample / cycle",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:147",
+    "text": "Setting for security audit trails for tracking changes to F35 configurations",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:148",
+    "text": "Monitoring & Diagnostics",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:149",
+    "text": "The F35 includes high accuracy metering and recording for all AC signals. Voltage, current, and power metering are built into the relay as a standard feature. Current and voltage parameters are available as total RMS magnitude, and as fundamental frequency magnitude and angle.",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:150",
+    "text": "The F35 is the single point for protection, control, metering, and monitoring in one integrated device that can easily be connected directly into DCS or SCADA monitoring and control systems like Viewpoint Monitoring as shown.",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:151",
+    "text": "Advanced Automation",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:152",
+    "text": "The F35 incorporates advanced automation features including powerful FlexLogic™ programmable logic, communication, and SCADA capabilities that far surpass what is found in the average line relay. The F35 integrates seamlessly with other UR relays for complete system protection, including unit and auxiliary transformers, and balance of plant protection.",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:153",
+    "text": "The F35 is the single point for protection, control, metering, and monitoring in one integrated device that can easily be connected directly into DCS or SCADA monitoring and control systems like Viewpoint Monitoring as shown.",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:154",
+    "text": "Communications"
+  },
+  {
+    "location": "html-block:155",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:156",
+    "text": "Complete IEC 61850 Process Bus solution providing resource optimization and minimizing total P & C life cycle costs",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:157",
+    "text": "Three independent 100Mbps Ethernet ports enable purpose specific LAN support that eliminates latency effect of heavy traffic protocols on mission critical communication services",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:158",
+    "text": "Embedded IEEE 1588 time-synch protocol support eliminates dedicated IRIG-B wiring requirements for IEDs",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:159",
+    "text": "Direct I/O secures high-speed exchange of binary data between URs",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:160",
+    "text": "Increase network availability by reducing failover time to zero through IEC62439-3 PRP, HSR or dual HSR support",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:161",
+    "text": "Advanced Communications"
+  },
+  {
+    "location": "html-block:162",
+    "text": "The F35 provides advanced communications technologies for remote data and engineering access, making it the easiest and most flexible feeder protection relay to use and integrate into new and existing infrastructures. Direct support for fiber optic Ethernet provides high-bandwidth communications allowing for low-latency controls and high-speed file transfers of relay fault and event record information. The available three independent and redundant Ethernet options provide the means to create fault tolerant communication architectures in an easy, cost-effective manner.",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:163",
+    "text": "The F35 supports the most popular industry standard protocols enabling easy, direct integration into DCS and SCADA systems.",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:164",
+    "text": "IEC 61850-9-2LE networked or IEC61850-9-2 Hardfiber process bus support",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:165",
+    "text": "DNP 3.0 (serial & TCP/IP)",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:166",
+    "text": "Ethernet Global Data (EGD)",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:167",
+    "text": "IEC 60870-5-103 and IEC 60870-5-104",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:168",
+    "text": "Modbus RTU, Modbus TCP/IP",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:169",
+    "text": "HTTP, TFTP, SFTP and MMS file transfer",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:170",
+    "text": "Redundant SNTP and IEEE 1588 for time synchronization",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:171",
+    "text": "PRP as per IEC 62439-3",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:172",
+    "text": "Supports Routable GOOSE (R-GOOSE)",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:173",
+    "text": "Interoperability with Enbedded IEC 61850"
+  },
+  {
+    "location": "html-block:174",
+    "text": "Use the F35 with integrated IEC 61850 to lower costs associated with multi-feeder protection, control and automation. GE Vernova’s leadership in IEC 61850 comes from thousands of installed devices and follows on years of development experience with UCA 2.0.",
+    "heading": "Interoperability with Enbedded IEC 61850"
+  },
+  {
+    "location": "html-block:175",
+    "text": "The F35’s IEC 61850 Process Bus module is designed to interface with the Multilin HardFiber System, allowing bi-directional IEC 61850 fiber optic communications. The HardFiber System is designed to integrate seamlessly with existing Universal Relay applications, including protection functions, FlexLogic, metering and communications.",
+    "heading": "Interoperability with Enbedded IEC 61850"
+  },
+  {
+    "location": "html-block:176",
+    "text": "Learn More",
+    "heading": "Interoperability with Enbedded IEC 61850"
+  },
+  {
+    "location": "html-block:177",
+    "text": "The F35 can also connect to GE Vernova MU320 or third-party merging units using standard IEC 61869 or IEC 61850-9-2LE communication protocols.",
+    "heading": "Interoperability with Enbedded IEC 61850"
+  },
+  {
+    "location": "html-block:178",
+    "text": "Software & Security"
+  },
+  {
+    "location": "html-block:179",
+    "text": "Cyber Security - CyberSentry™ UR (FW v7.4xx)"
+  },
+  {
+    "location": "html-block:180",
+    "text": "CyberSentry enables UR devices to deliver full cyber security features that help customers to comply with NERC CIP and NITIR 7628 cyber security requirements through supporting the following core features:",
+    "heading": "Cyber Security - CyberSentry™ UR (FW v7.4xx)"
+  },
+  {
+    "location": "html-block:181",
+    "text": "Secure FW upgrade",
+    "heading": "Cyber Security - CyberSentry™ UR (FW v7.4xx)"
+  },
+  {
+    "location": "html-block:182",
+    "text": "UR FW files v7.9 and up now include a hash code that allows for authentication prior to being used for upgrading UR devices.",
+    "heading": "Cyber Security - CyberSentry™ UR (FW v7.4xx)"
+  },
+  {
+    "location": "html-block:183",
+    "text": "Password Complexity",
+    "heading": "Cyber Security - CyberSentry™ UR (FW v7.4xx)"
+  },
+  {
+    "location": "html-block:184",
+    "text": "Supporting up to 20 alpha- numeric or special characters, UR passwords exceed NERC CIP requirements for password complexity. Individual passwords per role are available.",
+    "heading": "Cyber Security - CyberSentry™ UR (FW v7.4xx)"
+  },
+  {
+    "location": "html-block:185",
+    "text": "AAA Server Support (Radius)",
+    "heading": "Cyber Security - CyberSentry™ UR (FW v7.4xx)"
+  },
+  {
+    "location": "html-block:186",
+    "text": "Enables integration with centrally managed authentication and accounting of all user activities and uses modern industry best practices and standards that meet and exceed NERC CIP requirements for authentication and password management.",
+    "heading": "Cyber Security - CyberSentry™ UR (FW v7.4xx)"
+  },
+  {
+    "location": "html-block:187",
+    "text": "Role Based Access Control (RBAC)",
+    "heading": "Cyber Security - CyberSentry™ UR (FW v7.4xx)"
+  },
+  {
+    "location": "html-block:188",
+    "text": "Efficiently administrate users and roles within UR devices. The new and advanced access functions allow users to configure up to five roles for up to eight configurable users with independent passwords. The standard “Remote Authentication Dial In User Service” (Radius) is used for authentication.",
+    "heading": "Cyber Security - CyberSentry™ UR (FW v7.4xx)"
+  },
+  {
+    "location": "html-block:189",
+    "text": "Event Recorder (Syslog for SEM)",
+    "heading": "Cyber Security - CyberSentry™ UR (FW v7.4xx)"
+  },
+  {
+    "location": "html-block:190",
+    "text": "Capture all cyber security related events within a SOE element (login, logout, invalid password attempts, remote/local access, user in session, settings change, FW update, etc), and then serve and classify data by security level using standard Syslog data format. This enables UR devices integration with established SEM (Security Event Management) systems.",
+    "heading": "Cyber Security - CyberSentry™ UR (FW v7.4xx)"
+  },
+  {
+    "location": "html-block:191",
+    "text": "EnerVista™ Software"
+  },
+  {
+    "location": "html-block:192",
+    "text": "The EnerVista™ suite is an industry-leading set of software programs that simplifies every aspect of using the F35 relay. The EnerVista™ suite provides all the tools to monitor the status of the protected asset, maintain the relay, and integrate information measured by the F35 into DCS or SCADA monitoring systems. Convenient COMTRADE and Sequence of Events viewers are an integral part of the UR setup software included with every UR relay, to carry out postmortem event analysis and ensure proper protection system operation.",
+    "heading": "EnerVista™ Software"
+  },
+  {
+    "location": "html-block:193",
+    "text": "Learn More",
+    "heading": "EnerVista™ Software"
+  },
+  {
+    "location": "html-block:194",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:195",
+    "text": "Multilin 850"
+  },
+  {
+    "location": "html-block:196",
+    "text": "The Multilin™ 850 relay is a member of the Multilin 8 Series protective relay platform...",
+    "heading": "Multilin 850"
+  },
+  {
+    "location": "html-block:197",
+    "text": "View More",
+    "heading": "Multilin 850"
+  }
+]

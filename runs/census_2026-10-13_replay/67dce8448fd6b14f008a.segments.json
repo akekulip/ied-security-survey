@@ -1,0 +1,989 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "Multilin D30 | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "Multilin D30"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Line Distance Protection System"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Contact Sales Buy Now",
+    "heading": "Line Distance Protection System"
+  },
+  {
+    "location": "html-block:7",
+    "text": "The D30 is a cost-effective distance protection system suitable for primary protection of sub-transmission lines and as a backup protection for HV, EHV lines, reactors and generators. The D30 provides five zones of phase and ground distance protection along with complete overcurrent and voltage protection functions intended for three-pole tripping applications. The D30 comes with versatile automation features using custom pilot schemes, which can be built.",
+    "heading": "Line Distance Protection System"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Cost effective, five zone quad or mho, phase and ground distance protection",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Advanced IEC 61850 Ed. 1 and Ed. 2 certified implementation, complete settings via SCL files and flexible process bus support (IEC 61850-9-2LE, IEC 61869 or IEC 61850-9-2 Hardfiber) ensures interoperability, device managing optimization and reduced cost of ownership",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Routable GOOSE (R-GOOSE) enables GOOSE messages going beyond the substation, which enables wide area protection and control applications",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Programmable logic for building customized pilot schemes",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Simplified teleprotection interfaces with direct I/O communications hardware",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Advanced Cyber security features “CyberSentryTM” that helps meet modern industry requirements",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Ambient temperature monitoring",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Application flexibility with multiple I/O options including high density I/O, programmable logic, modularity, and specific customization",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:17",
+    "text": "An integrated large, full color display, provides real-time visualization and control of the protected bay, via a bay mimic as well as annunciator functionality and graphical visualization of phasors",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Overhead sub-transmission lines and underground cables including series-compensated lines",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Circuits requiring three-pole autoreclosing and independent synchrocheck supervision",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Circuits with in-zone power transformers",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Secure application with Capacitively-Coupled Voltage Transformers (CCVTs)",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Backup protection for generators, transformers and reactors",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Interactive Selector Guide - Line Differential"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Interactive Selector Guide - Line Distance"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Spotlight Application"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Typical Applications"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Transmission Principles & Protection"
+  },
+  {
+    "location": "html-block:30",
+    "text": "GSA Schedule"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Legacy Transmission Protection"
+  },
+  {
+    "location": "html-block:32",
+    "text": "How-to Videos"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Drawings"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Product & Cyber Security Advisories"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Application Notes"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Subscribe",
+    "heading": "Application Notes"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Interactive Selector Guide - Line Differential"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Interactive Selector Guide - Line Distance"
+  },
+  {
+    "location": "html-block:46",
+    "text": "Spotlight Application"
+  },
+  {
+    "location": "html-block:47",
+    "text": "Typical Applications"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Transmission Principles & Protection"
+  },
+  {
+    "location": "html-block:49",
+    "text": "GSA Schedule"
+  },
+  {
+    "location": "html-block:50",
+    "text": "Legacy Transmission Protection"
+  },
+  {
+    "location": "html-block:51",
+    "text": "How-to Videos"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:53",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Drawings"
+  },
+  {
+    "location": "html-block:58",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Product & Cyber Security Advisories"
+  },
+  {
+    "location": "html-block:60",
+    "text": "Application Notes"
+  },
+  {
+    "location": "html-block:61",
+    "text": "Subscribe",
+    "heading": "Application Notes"
+  },
+  {
+    "location": "html-block:62",
+    "text": "Multilin D30"
+  },
+  {
+    "location": "html-block:63",
+    "text": "Line Distance Protection System"
+  },
+  {
+    "location": "html-block:64",
+    "text": "Contact Sales Buy Now",
+    "heading": "Line Distance Protection System"
+  },
+  {
+    "location": "html-block:65",
+    "text": "The D30 is a cost-effective distance protection system suitable for primary protection of sub-transmission lines and as a backup protection for HV, EHV lines, reactors and generators. The D30 provides five zones of phase and ground distance protection along with complete overcurrent and voltage protection functions intended for three-pole tripping applications. The D30 comes with versatile automation features using custom pilot schemes, which can be built.",
+    "heading": "Line Distance Protection System"
+  },
+  {
+    "location": "html-block:66",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:67",
+    "text": "Cost effective, five zone quad or mho, phase and ground distance protection",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:68",
+    "text": "Advanced IEC 61850 Ed. 1 and Ed. 2 certified implementation, complete settings via SCL files and flexible process bus support (IEC 61850-9-2LE, IEC 61869 or IEC 61850-9-2 Hardfiber) ensures interoperability, device managing optimization and reduced cost of ownership",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:69",
+    "text": "Routable GOOSE (R-GOOSE) enables GOOSE messages going beyond the substation, which enables wide area protection and control applications",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:70",
+    "text": "Programmable logic for building customized pilot schemes",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:71",
+    "text": "Simplified teleprotection interfaces with direct I/O communications hardware",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:72",
+    "text": "Advanced Cyber security features “CyberSentryTM” that helps meet modern industry requirements",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:73",
+    "text": "Ambient temperature monitoring",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:74",
+    "text": "Application flexibility with multiple I/O options including high density I/O, programmable logic, modularity, and specific customization",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:75",
+    "text": "An integrated large, full color display, provides real-time visualization and control of the protected bay, via a bay mimic as well as annunciator functionality and graphical visualization of phasors",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:76",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:77",
+    "text": "Overhead sub-transmission lines and underground cables including series-compensated lines",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:78",
+    "text": "Circuits requiring three-pole autoreclosing and independent synchrocheck supervision",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:79",
+    "text": "Circuits with in-zone power transformers",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:80",
+    "text": "Secure application with Capacitively-Coupled Voltage Transformers (CCVTs)",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:81",
+    "text": "Backup protection for generators, transformers and reactors",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:82",
+    "text": "What's New"
+  },
+  {
+    "location": "html-block:83",
+    "text": "New and Enhanced Communication Capabilities"
+  },
+  {
+    "location": "html-block:84",
+    "text": "New process bus module supports IEC 61869 sample values, PTP master capabilities and SV switching (FW 7.9x)",
+    "heading": "New and Enhanced Communication Capabilities"
+  },
+  {
+    "location": "html-block:85",
+    "text": "New UR process bus modules supporting IEC61850-9-2LE Merging Units (FW 7.8x) Module Training available here",
+    "heading": "New and Enhanced Communication Capabilities"
+  },
+  {
+    "location": "html-block:86",
+    "text": "Support switchable IEC 61850 Ed. 1 and Ed. 2 and redundant SNTP (FW 7.7x)",
+    "heading": "New and Enhanced Communication Capabilities"
+  },
+  {
+    "location": "html-block:87",
+    "text": "New UR front panel with integrated 7” color, graphical display - providing operators with enhanced situational awareness (FW 7.6x)",
+    "heading": "New and Enhanced Communication Capabilities"
+  },
+  {
+    "location": "html-block:88",
+    "text": "High density I/O module supporting up to 120 inputs or up to 72 contact outputs – eliminating the need for additional discrete devices (FW 7.6x)",
+    "heading": "New and Enhanced Communication Capabilities"
+  },
+  {
+    "location": "html-block:89",
+    "text": "Cyber Security - CyberSentry UR (FW v7.xx)"
+  },
+  {
+    "location": "html-block:90",
+    "text": "CyberSentryTM enables UR devices to deliver full cyber security features that help customers to comply with cyber security requirements (NERC CIP, IEEE 1686, IEC 62443, etc):",
+    "heading": "Cyber Security - CyberSentry UR (FW v7.xx)"
+  },
+  {
+    "location": "html-block:91",
+    "text": "Secured firmware upgrade: FW file includes hash code that enables authentication prior to being used for upgrading UR Relay (FW 7.9x)",
+    "heading": "Cyber Security - CyberSentry UR (FW v7.xx)"
+  },
+  {
+    "location": "html-block:92",
+    "text": "Fully Compatible with IEC 61850-9-2LE or IEC61869 process bus schemes:"
+  },
+  {
+    "location": "html-block:93",
+    "text": "Can connect to up to 8 merging units over -9-2LE or 61869",
+    "heading": "Fully Compatible with IEC 61850-9-2LE or IEC61869 process bus schemes:"
+  },
+  {
+    "location": "html-block:94",
+    "text": "Supports PRP, HSR, dual HSR and point-to-point process bus topology",
+    "heading": "Fully Compatible with IEC 61850-9-2LE or IEC61869 process bus schemes:"
+  },
+  {
+    "location": "html-block:95",
+    "text": "Provides support for GE Vernova’s IEC 61850 HardFiber Process Bus Solution",
+    "heading": "Fully Compatible with IEC 61850-9-2LE or IEC61869 process bus schemes:"
+  },
+  {
+    "location": "html-block:96",
+    "text": "Extended Oscillography Records (FW v7.xx)"
+  },
+  {
+    "location": "html-block:97",
+    "text": "Increased number of digital and analog channels (FW 7.90)",
+    "heading": "Extended Oscillography Records (FW v7.xx)"
+  },
+  {
+    "location": "html-block:98",
+    "text": "Supports IEEE C37.111-1999/2013, IEC 60255-24 Ed 2.0 COMTRADE 2013 standard (FW v7.40)",
+    "heading": "Extended Oscillography Records (FW v7.xx)"
+  },
+  {
+    "location": "html-block:99",
+    "text": "Configurable events allow for records of up to 45s at 64 samples per cycle",
+    "heading": "Extended Oscillography Records (FW v7.xx)"
+  },
+  {
+    "location": "html-block:100",
+    "text": "New and Enhanced Protection and Control Functionality"
+  },
+  {
+    "location": "html-block:101",
+    "text": "New Inrush detection element (FW 8.0)",
+    "heading": "New and Enhanced Protection and Control Functionality"
+  },
+  {
+    "location": "html-block:102",
+    "text": "Expanded Bay Controller Capabilities – providing a one box solution (FW 7.6x)",
+    "heading": "New and Enhanced Protection and Control Functionality"
+  },
+  {
+    "location": "html-block:103",
+    "text": "Protection & Control"
+  },
+  {
+    "location": "html-block:104",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:105",
+    "text": "Phase distance (five zones) with independent compensation settings",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:106",
+    "text": "Ground distance (five zones) with independent self and mutual zero-sequence compensation",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:107",
+    "text": "Out-of-step tripping and power swing blocking",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:108",
+    "text": "Phase and negative sequence directional overcurrent, neutral directional with dual polarity criteria, broken conductor and thermal overload",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:109",
+    "text": "Line pickup",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:110",
+    "text": "Dedicated harmonic/inrush detection",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:111",
+    "text": "Synchronism check",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:112",
+    "text": "Four-shot autorecloser",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:113",
+    "text": "VT fuse failure detector",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:114",
+    "text": "Customize protection and control functions with FlexLogic™, FlexCurves™, and FlexElements™",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:115",
+    "text": "Protection & Control"
+  },
+  {
+    "location": "html-block:116",
+    "text": "The D30 is a cost-effective distance protection relay intended for protecting sub-transmission lines and underground cables of different voltage levels. Part of the Universal Relay family, the D30 comes with a variety of versatile features, truly integrating protection, monitoring, metering, communication and control in one easy-to-use device. The Universal Relay family offers a high degree of modularity in its design and functionality, providing superior performance in protection and control, while meeting the toughest requirements of the marketplace.",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:117",
+    "text": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:118",
+    "text": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:119",
+    "text": "Device Number | Function",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:120",
+    "text": "21G | Ground Distance",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:121",
+    "text": "21P | Phase Distance",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:122",
+    "text": "25 | Synchrocheck",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:123",
+    "text": "27P | Phase Undervoltage",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:124",
+    "text": "27X | Auxiliary Undervoltage",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:125",
+    "text": "32N | Wattmetric Zero-Sequence Directional",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:126",
+    "text": "49 | Thermal Overload",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:127",
+    "text": "50DD | Current Disturbance Detector",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:128",
+    "text": "50G | Ground Instantaneous Overcurrent",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:129",
+    "text": "50N | Neutral Instantaneous Overcurrent",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:130",
+    "text": "Device Number | Function",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:131",
+    "text": "50P | Phase Instantaneous Overcurrent",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:132",
+    "text": "50_2 | Negative Sequence Instantaneous Overcurrent",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:133",
+    "text": "51G | Ground Time Overcurrent",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:134",
+    "text": "51N | Neutral Time Overcurrent",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:135",
+    "text": "51P | Phase Time Overcurrent",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:136",
+    "text": "51_2 | Negative Sequence Time Overcurrent",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:137",
+    "text": "52 | AC Circuit Breaker",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:138",
+    "text": "59N | Neutral Overvoltage",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:139",
+    "text": "59P | Phase Overvoltage",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:140",
+    "text": "59X | Auxiliary Overvoltage",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:141",
+    "text": "Device Number | Function",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:142",
+    "text": "59_2 | Negative Sequence Overvoltage",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:143",
+    "text": "67N | Neutral Directional Overcurrent",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:144",
+    "text": "67P | Phase Directional Overcurrent",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:145",
+    "text": "68 | Power Swing Blocking",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:146",
+    "text": "67W | Wattmetric Ground Fault Protection",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:147",
+    "text": "68 | Power Swing Blocking",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:148",
+    "text": "78 | Out-of-Step Tripping",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:149",
+    "text": "79 | Automatic Recloser",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:150",
+    "text": "81R | Rate of change frequency",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:151",
+    "text": "81U | Underfrequency",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:152",
+    "text": "Harmonic/Inrush detection",
+    "heading": "ANSI® Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:153",
+    "text": "Monitoring & Diagnostics"
+  },
+  {
+    "location": "html-block:154",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:155",
+    "text": "Metering - current, voltage, power, energy, frequency",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:156",
+    "text": "Oscillography – analog and digital parameters at 64 samples/cycle",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:157",
+    "text": "Event Recorder - 1024 time tagged events with 0.5ms scan of digital inputs",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:158",
+    "text": "Data Logger - 16 channels with sampling rate up to 1 sample / cycle",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:159",
+    "text": "Setting for security audit trails for tracking changes to D30 configurations",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:160",
+    "text": "Monitoring & Diagnostics"
+  },
+  {
+    "location": "html-block:161",
+    "text": "The D30 is the single point for protection, control, metering, and monitoring in one integrated device that can be easily connected directly to HMI or SCADA monitoring and control systems.",
+    "heading": "Monitoring & Diagnostics"
+  },
+  {
+    "location": "html-block:162",
+    "text": "Advanced Automation"
+  },
+  {
+    "location": "html-block:163",
+    "text": "The D30 incorporates advanced automation features including powerful FlexLogic™ programmable logic, communication, and SCADA capabilities that far surpass what is found in the average line protection relay used for subtransmission. The D30 integrates seamlessly with other UR relays for complete system protection.",
+    "heading": "Advanced Automation"
+  },
+  {
+    "location": "html-block:164",
+    "text": "FlexLogic™ allows for the customization of D30 for custom protection, control and automation, allowing users to build line protection schemes and applications for their equipment.",
+    "heading": "Advanced Automation"
+  },
+  {
+    "location": "html-block:165",
+    "text": "Communications"
+  },
+  {
+    "location": "html-block:166",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:167",
+    "text": "Complete IEC 61850 Process Bus solution providing resource optimization and minimizing total P & C life cycle costs",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:168",
+    "text": "Three independent 100Mbps Ethernet ports enable purpose specific LAN support that eliminates latency effect of heavy traffic protocols on mission critical communication services",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:169",
+    "text": "Embedded IEEE 1588 time-synch protocol support eliminates dedicated IRIG-B wiring requirements for IEDs",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:170",
+    "text": "Direct I/O secures high-speed exchange of binary data between URs",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:171",
+    "text": "Increase network availability by reducing failover time to zero through IEC62439-3 PRP, HSR or dual HSR support",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:172",
+    "text": "Advanced Communications"
+  },
+  {
+    "location": "html-block:173",
+    "text": "The D30 provides advanced communications technologies for remote data and engineering access, making it easy and flexible to use and integrate into new and existing infrastructures. Direct support for fiber optic Ethernet provides high-bandwidth communications allowing for low-latency controls and high-speed file transfers of relay fault and event record information. The available three independent and redundant Ethernet options provide the means to create fault tolerant communication architectures in an easy, cost-effective manner.",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:174",
+    "text": "The D30 supports the most popular industry standard protocols enabling easy, direct integration into monitoring and SCADA systems.",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:175",
+    "text": "IEC 61850-9-2LE or IEC 61869 point-to-point or networked networked or IEC61850-9-2 Hardfiber",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:176",
+    "text": "DNP 3.0 (serial & TCP/IP)",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:177",
+    "text": "IEC 60870-5-103 and IEC 60870-5-104",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:178",
+    "text": "Modbus RTU, Modbus TCP/IP",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:179",
+    "text": "HTTP, TFTP, SFTP and MMS file transfer",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:180",
+    "text": "Redundant SNTP and IEEE 1588 for time synchronization",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:181",
+    "text": "PRP as per IEC 62439-3",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:182",
+    "text": "Supports Routable GOOSE (R-GOOSE)",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:183",
+    "text": "Interoperability with Embedded IEC 61850"
+  },
+  {
+    "location": "html-block:184",
+    "text": "Use the D30 with integrated IEC 61850 to lower costs associated with distance protection, control and automation. GE Vernova’s leadership in IEC 61850 comes from thousands of installed devices and follows on years of development experience with UCA 2.0.",
+    "heading": "Interoperability with Embedded IEC 61850"
+  },
+  {
+    "location": "html-block:185",
+    "text": "The D30’s IEC 61850 Process Bus module is designed to interface with the Multilin HardFiber System, allowing bi-directional IEC 61850 fiber optic communications. The HardFiber System is designed to integrate seamlessly with existing Universal Relay applications, including protection functions, FlexLogic, metering and communications.",
+    "heading": "Interoperability with Embedded IEC 61850"
+  },
+  {
+    "location": "html-block:186",
+    "text": "Learn More",
+    "heading": "Interoperability with Embedded IEC 61850"
+  },
+  {
+    "location": "html-block:187",
+    "text": "The B30 can also connect to GE Vernova MU320 or third-party merging units using standard IEC 61869 or IEC 61850-9-2LE communication protocols",
+    "heading": "Interoperability with Embedded IEC 61850"
+  },
+  {
+    "location": "html-block:188",
+    "text": "Software & Security"
+  },
+  {
+    "location": "html-block:189",
+    "text": "Cyber Security - CyberSentry™ UR (FW v7.4xx)"
+  },
+  {
+    "location": "html-block:190",
+    "text": "CyberSentry enables UR devices to deliver full cyber security features that help customers to comply with NERC CIP and NITIR 7628 cyber security requirements through supporting the following core features:",
+    "heading": "Cyber Security - CyberSentry™ UR (FW v7.4xx)"
+  },
+  {
+    "location": "html-block:191",
+    "text": "Secure FW upgrade"
+  },
+  {
+    "location": "html-block:192",
+    "text": "UR FW files v7.9 and up now include a hash code that allows for authentication prior to being used for upgrading UR devices.",
+    "heading": "Secure FW upgrade"
+  },
+  {
+    "location": "html-block:193",
+    "text": "Password Complexity"
+  },
+  {
+    "location": "html-block:194",
+    "text": "Supporting up to 20 alpha- numeric or special characters, UR passwords exceed NERC CIP requirements for password complexity. Individual passwords per role are available.",
+    "heading": "Password Complexity"
+  },
+  {
+    "location": "html-block:195",
+    "text": "AAA Server Support (Radius)"
+  },
+  {
+    "location": "html-block:196",
+    "text": "Enables integration with centrally managed authentication and accounting of all user activities and uses modern industry best practices and standards that meet and exceed NERC CIP requirements for authentication and password management.",
+    "heading": "AAA Server Support (Radius)"
+  },
+  {
+    "location": "html-block:197",
+    "text": "Role Based Access Control (RBAC)"
+  },
+  {
+    "location": "html-block:198",
+    "text": "Efficiently administrate users and roles within UR devices. The new and advanced access functions allow users to configure up to five roles for up to eight configurable users with independent passwords. The standard “Remote Authentication Dial In User Service” (Radius) is used for authentication.",
+    "heading": "Role Based Access Control (RBAC)"
+  },
+  {
+    "location": "html-block:199",
+    "text": "Event Recorder (Syslog for SEM)"
+  },
+  {
+    "location": "html-block:200",
+    "text": "Capture all cyber security related events within a SOE element (login, logout, invalid password attempts, remote/local access, user in session, settings change, FW update, etc), and then serve and classify data by security level using standard Syslog data format. This enables UR devices integration with established SEM (Security Event Management) systems.",
+    "heading": "Event Recorder (Syslog for SEM)"
+  },
+  {
+    "location": "html-block:201",
+    "text": "EnerVista™ Software"
+  },
+  {
+    "location": "html-block:202",
+    "text": "The EnerVista™ suite is an industry-leading set of software programs that simplifies every aspect of using the D30 relay. The EnerVista™ suite provides all the tools to monitor the status of the protected asset, maintain the relay, and integrate information measured by the D30 into DCS or SCADA monitoring systems. Convenient COMTRADE and Sequence of Events viewers are an integral part of the UR setup software included with every UR relay, to carry out postmortem event analysis and ensure proper protection system operation.",
+    "heading": "EnerVista™ Software"
+  },
+  {
+    "location": "html-block:203",
+    "text": "Learn More",
+    "heading": "EnerVista™ Software"
+  },
+  {
+    "location": "html-block:204",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:205",
+    "text": "Multilin L30"
+  },
+  {
+    "location": "html-block:206",
+    "text": "The L30 is a cost-effective line current differential protection relay intended for...",
+    "heading": "Multilin L30"
+  },
+  {
+    "location": "html-block:207",
+    "text": "View More",
+    "heading": "Multilin L30"
+  },
+  {
+    "location": "html-block:208",
+    "text": "Multilin L60"
+  },
+  {
+    "location": "html-block:209",
+    "text": "The L60 provides fast and secure sub-cycle phase comparison protection, for both...",
+    "heading": "Multilin L60"
+  },
+  {
+    "location": "html-block:210",
+    "text": "View More",
+    "heading": "Multilin L60"
+  },
+  {
+    "location": "html-block:211",
+    "text": "Multilin C70"
+  },
+  {
+    "location": "html-block:212",
+    "text": "The C70 is an integrated protection, control, and monitoring device for shunt capacitor...",
+    "heading": "Multilin C70"
+  },
+  {
+    "location": "html-block:213",
+    "text": "View More",
+    "heading": "Multilin C70"
+  }
+]

@@ -1,0 +1,425 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "MID Digital Distribution System Family"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "MID Digital Distribution System Family"
+  },
+  {
+    "location": "html-block:5",
+    "text": "The DDS family of devices provide economical protection, control, metering and monitoring functionality to electrical utilities and industrial customers.",
+    "heading": "MID Digital Distribution System Family"
+  },
+  {
+    "location": "html-block:6",
+    "text": "The DDS family substitute with one box a complete set of discrete devices such as electromechanical relays, meters, annunciator panels, pushbuttons, transducer, auxiliary relays, and mimic drawings.",
+    "heading": "MID Digital Distribution System Family"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Features & Benefits"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Distributed protection and control per bay, through graphic display",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:9",
+    "text": "IRIG-B time synchronization",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Common GE VERNOVA-NESIS software platform",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Multifunction protection and control devices for feeders, transformers, busbars",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Substation automation",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Distributed RTUs for control automation",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Protection & Control"
+  },
+  {
+    "location": "html-block:16",
+    "text": "DMS: Bay protection and control unit",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:17",
+    "text": "SMOR-B: Multifunction feeder protection",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:18",
+    "text": "DTP-B: Digital transformer protection",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:19",
+    "text": "DBF: Digital breaker failure protection",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:20",
+    "text": "DRS: Digital reclosing system",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:21",
+    "text": "DTR: Digital tap changer",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:22",
+    "text": "DFF: Digital frequency protection",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Alarm management",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:25",
+    "text": "System metering",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Oscillography recording",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Reports and trends",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Remote device status and operations",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Substation RTU",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:30",
+    "text": "User Interface"
+  },
+  {
+    "location": "html-block:31",
+    "text": "LCD Display and keypad for local communications",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:32",
+    "text": "M-Link and ModBus ® protocols for PC communications",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:33",
+    "text": "User defined graphical information",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:35",
+    "text": "DMS bay protection"
+  },
+  {
+    "location": "html-block:36",
+    "text": "SMOR-B feeder protection"
+  },
+  {
+    "location": "html-block:37",
+    "text": "DTP transformer protection"
+  },
+  {
+    "location": "html-block:38",
+    "text": "DBF breaker failure"
+  },
+  {
+    "location": "html-block:39",
+    "text": "DRS reclosing system"
+  },
+  {
+    "location": "html-block:40",
+    "text": "DTR tap changer"
+  },
+  {
+    "location": "html-block:41",
+    "text": "DFF frequency protection"
+  },
+  {
+    "location": "html-block:42",
+    "text": "GE-NESIS"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Subscribe",
+    "heading": "GE-NESIS"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:45",
+    "text": "DMS bay protection"
+  },
+  {
+    "location": "html-block:46",
+    "text": "SMOR-B feeder protection"
+  },
+  {
+    "location": "html-block:47",
+    "text": "DTP transformer protection"
+  },
+  {
+    "location": "html-block:48",
+    "text": "DBF breaker failure"
+  },
+  {
+    "location": "html-block:49",
+    "text": "DRS reclosing system"
+  },
+  {
+    "location": "html-block:50",
+    "text": "DTR tap changer"
+  },
+  {
+    "location": "html-block:51",
+    "text": "DFF frequency protection"
+  },
+  {
+    "location": "html-block:52",
+    "text": "GE-NESIS"
+  },
+  {
+    "location": "html-block:53",
+    "text": "Subscribe",
+    "heading": "GE-NESIS"
+  },
+  {
+    "location": "html-block:54",
+    "text": "MID Digital Distribution System Family"
+  },
+  {
+    "location": "html-block:55",
+    "text": "The DDS family of devices provide economical protection, control, metering and monitoring functionality to electrical utilities and industrial customers.",
+    "heading": "MID Digital Distribution System Family"
+  },
+  {
+    "location": "html-block:56",
+    "text": "The DDS family substitute with one box a complete set of discrete devices such as electromechanical relays, meters, annunciator panels, pushbuttons, transducer, auxiliary relays, and mimic drawings.",
+    "heading": "MID Digital Distribution System Family"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Features & Benefits"
+  },
+  {
+    "location": "html-block:58",
+    "text": "Distributed protection and control per bay, through graphic display",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:59",
+    "text": "IRIG-B time synchronization",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:60",
+    "text": "Common GE VERNOVA-NESIS software platform",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:61",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:62",
+    "text": "Multifunction protection and control devices for feeders, transformers, busbars",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:63",
+    "text": "Substation automation",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:64",
+    "text": "Distributed RTUs for control automation",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:65",
+    "text": "Protection & Control"
+  },
+  {
+    "location": "html-block:66",
+    "text": "DMS: Bay protection and control unit",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:67",
+    "text": "SMOR-B: Multifunction feeder protection",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:68",
+    "text": "DTP-B: Digital transformer protection",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:69",
+    "text": "DBF: Digital breaker failure protection",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:70",
+    "text": "DRS: Digital reclosing system",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:71",
+    "text": "DTR: Digital tap changer",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:72",
+    "text": "DFF: Digital frequency protection",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:73",
+    "text": "Alarm management",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:74",
+    "text": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:75",
+    "text": "System metering",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:76",
+    "text": "Oscillography recording",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:77",
+    "text": "Reports and trends",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:78",
+    "text": "Remote device status and operations",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:79",
+    "text": "Substation RTU",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:80",
+    "text": "User Interface"
+  },
+  {
+    "location": "html-block:81",
+    "text": "LCD Display and keypad for local communications",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:82",
+    "text": "M-Link and ModBus ® protocols for PC communications",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:83",
+    "text": "User defined graphical information",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:84",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:85",
+    "text": "GridBeats™ APS"
+  },
+  {
+    "location": "html-block:86",
+    "text": "View More",
+    "heading": "GridBeats™ APS"
+  },
+  {
+    "location": "html-block:87",
+    "text": "P54 MiCOM 5th Generation"
+  },
+  {
+    "location": "html-block:88",
+    "text": "The P54, part of the MiCOM P40 Agile 5th Generation family, is a line differential and...",
+    "heading": "P54 MiCOM 5th Generation"
+  },
+  {
+    "location": "html-block:89",
+    "text": "View More",
+    "heading": "P54 MiCOM 5th Generation"
+  },
+  {
+    "location": "html-block:90",
+    "text": "Multilin 8 Series"
+  },
+  {
+    "location": "html-block:91",
+    "text": "The Multilin™ 8 Series platform of advanced protection and control relays delivers high...",
+    "heading": "Multilin 8 Series"
+  },
+  {
+    "location": "html-block:92",
+    "text": "View More",
+    "heading": "Multilin 8 Series"
+  }
+]

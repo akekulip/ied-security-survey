@@ -1,0 +1,745 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "369 Motor Protection System | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "Multilin 369 - Legacy"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Integrated protection and control for medium sized AC motors"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Contact Sales",
+    "heading": "Integrated protection and control for medium sized AC motors"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Manufacturing for the 369 has been discontinued. As an alternative, please refer to 859.",
+    "heading": "Integrated protection and control for medium sized AC motors"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Designed for medium voltage motors, the 369 delivers simple setup configuration through the use of the Motor Settings Auto-Configurator, advanced graphical diagnostics with the Motor Health Report, comprehensive communications with multiple communication options and complete traceability of all setting changes with the Security Setting Change History Report, providing unparalleled motor protection for medium sized AC motors.",
+    "heading": "Integrated protection and control for medium sized AC motors"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Enhanced Thermal Model",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Complete Asset monitoring",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Enhanced reporting",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Reduce troubleshooting time and maintenance costs",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Multiple communication protocols",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Simplified programming with the EnerVista™ 369 Motor Settings Auto-Configurator",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Optional Conformal coating",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Field upgradeable settings and firmware",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Suitable for hazardous locations",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Installation flexibility",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Safe and reliable motor re-start on “Down Hole” pump applications",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:21",
+    "text": "User definable parameters and data size for DeviceNet polling",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:22",
+    "text": "User definable parameters and data size for Profibus DPV1 cyclic data",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Motor learned data on historical start characteristics",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Protection and control for medium sized AC motors",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:26",
+    "text": "“Down Hole” pump applications",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Suitable for applications involving Variable Frequency Drives",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Two Speed motor application",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Technical Training"
+  },
+  {
+    "location": "html-block:31",
+    "text": "MultiNet"
+  },
+  {
+    "location": "html-block:32",
+    "text": "USB-to-Serial Cable"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Motor Protection Innovations"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Drawings"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Product & Cyber Security Advisories"
+  },
+  {
+    "location": "html-block:42",
+    "text": "White Papers"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Application Notes"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Subscribe",
+    "heading": "Application Notes"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:46",
+    "text": "Technical Training"
+  },
+  {
+    "location": "html-block:47",
+    "text": "MultiNet"
+  },
+  {
+    "location": "html-block:48",
+    "text": "USB-to-Serial Cable"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Motor Protection Innovations"
+  },
+  {
+    "location": "html-block:50",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:51",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:53",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Drawings"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Product & Cyber Security Advisories"
+  },
+  {
+    "location": "html-block:58",
+    "text": "White Papers"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Application Notes"
+  },
+  {
+    "location": "html-block:60",
+    "text": "Subscribe",
+    "heading": "Application Notes"
+  },
+  {
+    "location": "html-block:61",
+    "text": "Multilin 369 - Legacy"
+  },
+  {
+    "location": "html-block:62",
+    "text": "Integrated protection and control for medium sized AC motors"
+  },
+  {
+    "location": "html-block:63",
+    "text": "Contact Sales",
+    "heading": "Integrated protection and control for medium sized AC motors"
+  },
+  {
+    "location": "html-block:64",
+    "text": "Manufacturing for the 369 has been discontinued. As an alternative, please refer to 859.",
+    "heading": "Integrated protection and control for medium sized AC motors"
+  },
+  {
+    "location": "html-block:65",
+    "text": "Designed for medium voltage motors, the 369 delivers simple setup configuration through the use of the Motor Settings Auto-Configurator, advanced graphical diagnostics with the Motor Health Report, comprehensive communications with multiple communication options and complete traceability of all setting changes with the Security Setting Change History Report, providing unparalleled motor protection for medium sized AC motors.",
+    "heading": "Integrated protection and control for medium sized AC motors"
+  },
+  {
+    "location": "html-block:66",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:67",
+    "text": "Enhanced Thermal Model",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:68",
+    "text": "Complete Asset monitoring",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:69",
+    "text": "Enhanced reporting",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:70",
+    "text": "Reduce troubleshooting time and maintenance costs",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:71",
+    "text": "Multiple communication protocols",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:72",
+    "text": "Simplified programming with the EnerVista™ 369 Motor Settings Auto-Configurator",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:73",
+    "text": "Optional Conformal coating",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:74",
+    "text": "Field upgradeable settings and firmware",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:75",
+    "text": "Suitable for hazardous locations",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:76",
+    "text": "Installation flexibility",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:77",
+    "text": "Safe and reliable motor re-start on “Down Hole” pump applications",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:78",
+    "text": "User definable parameters and data size for DeviceNet polling",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:79",
+    "text": "User definable parameters and data size for Profibus DPV1 cyclic data",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:80",
+    "text": "Motor learned data on historical start characteristics",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:81",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:82",
+    "text": "Protection and control for medium sized AC motors",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:83",
+    "text": "“Down Hole” pump applications",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:84",
+    "text": "Suitable for applications involving Variable Frequency Drives",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:85",
+    "text": "Two Speed motor application",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:86",
+    "text": "PROTECTION & CONTROL"
+  },
+  {
+    "location": "html-block:87",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:88",
+    "text": "Enhanced thermal model",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:89",
+    "text": "Stall / Jam protection",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:90",
+    "text": "Undervoltage, overvoltage",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:91",
+    "text": "Underfrequency",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:92",
+    "text": "Thermal overload",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:93",
+    "text": "Undercurrent/current unbalance",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:94",
+    "text": "Variable lockout time",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:95",
+    "text": "Overtemperature 12 RTDs (R option)",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:96",
+    "text": "Starts/hour, time between starts",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:97",
+    "text": "Voltage Phase Reversal (M option)",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:98",
+    "text": "Current based phase reversal",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:99",
+    "text": "Undervoltage Auto-restart",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:100",
+    "text": "Protection & Control"
+  },
+  {
+    "location": "html-block:101",
+    "text": "The 369 is a digital motor protection system designed to protect and manage medium sized AC motors and their driven equipment. It contains a full range of selectively enabled, self contained protection and control elements as detailed in the Functional Block Diagram and Features table.",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:102",
+    "text": "MONITORING & METERING"
+  },
+  {
+    "location": "html-block:103",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:104",
+    "text": "Metering - current, voltage, power, energy, frequency, RTD Temperature, Remote RTD",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:105",
+    "text": "Fault diagnosis, - Event Record, Oscillography, Motor Starting Data Logger",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:106",
+    "text": "Motor Health Report",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:107",
+    "text": "Statistical information & learned motor data",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:108",
+    "text": "Voltage/frequency/power display (M option)",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:109",
+    "text": "4 analog outputs (M option)",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:110",
+    "text": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:111",
+    "text": "The 369 offers a choice of optional monitoring and metering functions including:",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:112",
+    "text": "Actual Values",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:113",
+    "text": "Metering (Option M)",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:114",
+    "text": "Pre-Trip Alarms",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:115",
+    "text": "Event Recorder",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:116",
+    "text": "Oscillography",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:117",
+    "text": "Statistical Data",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:118",
+    "text": "Learned Information",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:119",
+    "text": "Motor Start Data Logger",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:120",
+    "text": "Testing",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:121",
+    "text": "Track changes in motor starting characteristics, identifying potential failures before they become critical",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:122",
+    "text": "Troubleshoot faults that occur during motor starts using the Motor Start Data logger.",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:123",
+    "text": "COMMUNICATIONS"
+  },
+  {
+    "location": "html-block:124",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:125",
+    "text": "Front Panel RS232 port for programming and troubleshooting",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:126",
+    "text": "Optional embedded Ethernet port",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:127",
+    "text": "Optional Profibus DP/DPV1 or DeviceNet via dedicated port",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:128",
+    "text": "Multiple Protocols - Modbus RTU, Modbus TCP/IP",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:129",
+    "text": "A front RS232 port is provided for downloading setpoints and interrogating the relay using the EnerVista™ 369.",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:130",
+    "text": "Three independent rear RS485 ports offer the customer flexibility and performance for their communication network. The 369 can",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:131",
+    "text": "communicate at baud rates up to 19,200 bps using the industry standard Modbus® RTU protocol. Fiber optic (option F) Profibus interface (option P), DeviceNet (option D), and Ethernet (option E) ports are also available. The optional direct connect RJ45 Ethernet port can be used to connect the 369 to 10 Mbps Ethernet networks. The communication system of the 369 is designed to allow simultaneous communication via all ports.",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:132",
+    "text": "Using Ethernet as the physical media to integrate the 369 to Local or Wide Area Networks replaces a multipoint wired",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:133",
+    "text": "network (e.g., serial Modbus®), and eliminates expensive leased or dial-up connections, reducing operating costs.",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:134",
+    "text": "Front Panel"
+  },
+  {
+    "location": "html-block:135",
+    "text": "Display",
+    "heading": "Front Panel"
+  },
+  {
+    "location": "html-block:136",
+    "text": "40 Character LCD display for viewing actual values and programming setpoints Rugged, corrosion and flame retardant case",
+    "heading": "Front Panel"
+  },
+  {
+    "location": "html-block:137",
+    "text": "Status Indicators",
+    "heading": "Front Panel"
+  },
+  {
+    "location": "html-block:138",
+    "text": "4 LEDs indicate when an output is activated",
+    "heading": "Front Panel"
+  },
+  {
+    "location": "html-block:139",
+    "text": "Motor Status Indicators",
+    "heading": "Front Panel"
+  },
+  {
+    "location": "html-block:140",
+    "text": "LEDs indicated if motor Stopped, Starting, Running, Overloaded or Locked out due to an active Satart Inhibit element",
+    "heading": "Front Panel"
+  },
+  {
+    "location": "html-block:141",
+    "text": "Keypad",
+    "heading": "Front Panel"
+  },
+  {
+    "location": "html-block:142",
+    "text": "Used to display actual values, causes of alarms, causes of trips, fault diagnosis information, and to program setpoints",
+    "heading": "Front Panel"
+  },
+  {
+    "location": "html-block:143",
+    "text": "Computer Interface",
+    "heading": "Front Panel"
+  },
+  {
+    "location": "html-block:144",
+    "text": "RS232 comm part for connecting to a PC, Use for downloading setpoints, monitoring, data collection & printing reports",
+    "heading": "Front Panel"
+  },
+  {
+    "location": "html-block:145",
+    "text": "SOFTWARE"
+  },
+  {
+    "location": "html-block:146",
+    "text": "EnerVista™ Software"
+  },
+  {
+    "location": "html-block:147",
+    "text": "The EnerVista™ Suite is an industry leading set of software programs that will simplify every aspect of using the 369 relay. Tools to monitor the status of the motor, maintain the relay, and integrate information measured by the 369 into HMI or SCADA monitoring systems are available. Also provided are the utilities to analyze the cause of faults and system disturbances using the powerful waveform and Sequence of Event viewers that come with the EnerVista™ 369 Setup Software that is included with each relay. Learn More",
+    "heading": "EnerVista™ Software"
+  },
+  {
+    "location": "html-block:148",
+    "text": "Motor Settings Auto-Configurator"
+  },
+  {
+    "location": "html-block:149",
+    "text": "Automatically generate a complete settings file, eliminating the need to manually program hundreds of individual protection settings.",
+    "heading": "Motor Settings Auto-Configurator"
+  },
+  {
+    "location": "html-block:150",
+    "text": "269 TO 369 DRAWOUT"
+  },
+  {
+    "location": "html-block:151",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:152",
+    "text": "Seamless upgrade for existing Drawout Multilin 269 Motor Management Relays",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:153",
+    "text": "Reduce system downtime utilizing the existing Multilin 269 Motor Management Relay drawout chassis",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:154",
+    "text": "Reduce maintenance & operational costs - eliminates the need for mounting kits, re-work to existing cutouts and re-wiring of the chassis",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:155",
+    "text": "Upgrade with ease using automated setting file conversion tool",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:156",
+    "text": "Take advantage of newer, more advanced hardware and feature set",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:157",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:158",
+    "text": "Motor Protection"
+  },
+  {
+    "location": "html-block:159",
+    "text": "GE Vernova’s motor protection systems use advanced thermal modeling to provide...",
+    "heading": "Motor Protection"
+  },
+  {
+    "location": "html-block:160",
+    "text": "View More",
+    "heading": "Motor Protection"
+  }
+]

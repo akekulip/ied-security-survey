@@ -1,0 +1,518 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "MIGII Generator Protection System | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "MIGII Generator Protection System - Legacy"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Contact Us",
+    "heading": "MIGII Generator Protection System - Legacy"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Manufacturing for this product has been discontinued. As an alternative, please refer to the Multilin 339, 345, 850 or P40 Agile P34x relays.",
+    "heading": "MIGII Generator Protection System - Legacy"
+  },
+  {
+    "location": "html-block:7",
+    "text": "The MIGII, part of the M II Family of economical and highly functional digital relays, provides comprehensive protection for small generators. It can also be used to protect small motors, or as a backup protection for transformers, and large motors. To complement its protection and control features, the MIGIIs user-friendly controls and plug and play EnerVista compatible setup software make this product very easy to configure and use.",
+    "heading": "MIGII Generator Protection System - Legacy"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Features & Benefits"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Reduce troubleshooting and maintenance cost - event recording, and analog/digital oscillography",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Design flexibility - Easy to use programming logic",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Access to information - Modbus RTU™ communications",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Configurable logic, curves, digital I/Os, and LEDs",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Flash memory for product field upgrade",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Two settings groups",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Password protection for local operation",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Automatic display of last fault information",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:17",
+    "text": "AC/DC power supply",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Access via front panel keypad or communication links",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:19",
+    "text": "EnerVista compatible",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Isolated RS232 port",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Main protection for small generators and motors",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:23",
+    "text": "System Component for large generator packages",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Main protection for standby/critical power",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Back up protection for transformers & large motors",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Protection & Control"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Complete time & instantaneous phase, neutral and ground overcurrent",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Thermal image protection",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Circuit breaker control (open and close)",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Negative Sequence",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Restricted Ground Differential Element",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Undercurrent",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Maximum number of starts",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Locked rotor",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Configurable I/O",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Six outputs: trip, service, 4 auxiliary",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:37",
+    "text": "4 preconfigured overcurrent curves (ANSI, IEC)",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:39",
+    "text": "24-event record",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Analog/digital oscillography",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Per phase current metering",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Monitoring of the last 5 trips information from the display",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:43",
+    "text": "User Interface"
+  },
+  {
+    "location": "html-block:44",
+    "text": "2x16 character LCD display",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:45",
+    "text": "6 LED indicators, 4 configurable in function and color",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:46",
+    "text": "Front RS232 and rear RS485 ports using ModBus RTU protocol up to 19,200 bps",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:47",
+    "text": "EnerVista software - an industry leading suite of software tools that simplifies every aspect of working with GE Vernova Multilin devices",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:50",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:51",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:53",
+    "text": "White Papers"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Subscribe",
+    "heading": "White Papers"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:58",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:60",
+    "text": "White Papers"
+  },
+  {
+    "location": "html-block:61",
+    "text": "Subscribe",
+    "heading": "White Papers"
+  },
+  {
+    "location": "html-block:62",
+    "text": "MIGII Generator Protection System - Legacy"
+  },
+  {
+    "location": "html-block:63",
+    "text": "Contact Us",
+    "heading": "MIGII Generator Protection System - Legacy"
+  },
+  {
+    "location": "html-block:64",
+    "text": "Manufacturing for this product has been discontinued. As an alternative, please refer to the Multilin 339, 345, 850 or P40 Agile P34x relays.",
+    "heading": "MIGII Generator Protection System - Legacy"
+  },
+  {
+    "location": "html-block:65",
+    "text": "The MIGII, part of the M II Family of economical and highly functional digital relays, provides comprehensive protection for small generators. It can also be used to protect small motors, or as a backup protection for transformers, and large motors. To complement its protection and control features, the MIGIIs user-friendly controls and plug and play EnerVista compatible setup software make this product very easy to configure and use.",
+    "heading": "MIGII Generator Protection System - Legacy"
+  },
+  {
+    "location": "html-block:66",
+    "text": "Features & Benefits"
+  },
+  {
+    "location": "html-block:67",
+    "text": "Reduce troubleshooting and maintenance cost - event recording, and analog/digital oscillography",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:68",
+    "text": "Design flexibility - Easy to use programming logic",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:69",
+    "text": "Access to information - Modbus RTU™ communications",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:70",
+    "text": "Configurable logic, curves, digital I/Os, and LEDs",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:71",
+    "text": "Flash memory for product field upgrade",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:72",
+    "text": "Two settings groups",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:73",
+    "text": "Password protection for local operation",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:74",
+    "text": "Automatic display of last fault information",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:75",
+    "text": "AC/DC power supply",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:76",
+    "text": "Access via front panel keypad or communication links",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:77",
+    "text": "EnerVista compatible",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:78",
+    "text": "Isolated RS232 port",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:79",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:80",
+    "text": "Main protection for small generators and motors",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:81",
+    "text": "System Component for large generator packages",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:82",
+    "text": "Main protection for standby/critical power",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:83",
+    "text": "Back up protection for transformers & large motors",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:84",
+    "text": "Protection & Control"
+  },
+  {
+    "location": "html-block:85",
+    "text": "Complete time & instantaneous phase, neutral and ground overcurrent",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:86",
+    "text": "Thermal image protection",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:87",
+    "text": "Circuit breaker control (open and close)",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:88",
+    "text": "Negative Sequence",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:89",
+    "text": "Restricted Ground Differential Element",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:90",
+    "text": "Undercurrent",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:91",
+    "text": "Maximum number of starts",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:92",
+    "text": "Locked rotor",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:93",
+    "text": "Configurable I/O",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:94",
+    "text": "Six outputs: trip, service, 4 auxiliary",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:95",
+    "text": "4 preconfigured overcurrent curves (ANSI, IEC)",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:96",
+    "text": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:97",
+    "text": "24-event record",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:98",
+    "text": "Analog/digital oscillography",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:99",
+    "text": "Per phase current metering",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:100",
+    "text": "Monitoring of the last 5 trips information from the display",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:101",
+    "text": "User Interface"
+  },
+  {
+    "location": "html-block:102",
+    "text": "2x16 character LCD display",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:103",
+    "text": "6 LED indicators, 4 configurable in function and color",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:104",
+    "text": "Front RS232 and rear RS485 ports using ModBus RTU protocol up to 19,200 bps",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:105",
+    "text": "EnerVista software - an industry leading suite of software tools that simplifies every aspect of working with GE Vernova Multilin devices",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:106",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:107",
+    "text": "Generator Protection"
+  },
+  {
+    "location": "html-block:108",
+    "text": "GE Vernova's generator protection devices provide innovative solutions for the...",
+    "heading": "Generator Protection"
+  },
+  {
+    "location": "html-block:109",
+    "text": "View More",
+    "heading": "Generator Protection"
+  }
+]

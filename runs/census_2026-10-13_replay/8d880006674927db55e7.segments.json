@@ -1,0 +1,292 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "D25 Automation Controller (legacy)"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "D25 - Legacy"
+  },
+  {
+    "location": "html-block:5",
+    "text": "A Critical Analytical Tool"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Contact Us",
+    "heading": "A Critical Analytical Tool"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Manufacturing for D25 has been discontinued. For bay controller applications, please refer to C30 or C60 as an alternative. For gateway applications, please refer to G100 an alternative. For RTU applications, please refer to G100 plus D20.IO or G100 plus C30/C60 an alternative.",
+    "heading": "A Critical Analytical Tool"
+  },
+  {
+    "location": "html-block:8",
+    "text": "GE Vernova’s D25 is a flexible, modular, and upgradable automation controller, suitable for both large and small substation automation projects in either new or retrofit situations. The D25 provides the tools and flexibility necessary to create customized automation and control applications including; communications & data concentrator, automation controller, metering & sequence of events fault recording, and transformer monitoring & control.",
+    "heading": "A Critical Analytical Tool"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Features and Benefits"
+  },
+  {
+    "location": "html-block:10",
+    "text": "The D25 controller replaces multiple devices with a single unit. Unified design reduces wiring and maintenance costs. The D25 controller retrieves data from legacy and third-party devices such as relays, transfers it to a host or enterprise system, monitors and runs diagnostics of primary equipment and expands to meet future physical and functional station requirements.",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Local HMI(Human Machine Interface)"
+  },
+  {
+    "location": "html-block:12",
+    "text": "D25 has the option of being equipped with two different built-in screens. First option is a Data Display Panel to show status of different points (digital or analog) to the operator. The second option is a Graphical Display Panel (GDP) which is a touch screen monochrome LCD allowing users to configure dynamic displays with one-line diagrams and alarm screens. Local control is also supported with the GDP option making the GDP a fully-fledged local HMI.",
+    "heading": "Local HMI(Human Machine Interface)"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Power Quality Information"
+  },
+  {
+    "location": "html-block:14",
+    "text": "The D25 measures and records total harmonic distortion, harmonic spectrum (DC to 21st harmonic), RMS trending, RMS profiling, voltage sags, swells and interruptions, allowing operators and analysts to examine the consistency of power going through the system and pinpoint problem area.",
+    "heading": "Power Quality Information"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Digital Fault Recording"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Fault records can be transferred automatically via a LAN to the substation computer or directly to a remote PC via email. Utility engineers can analyze these recordings to ensure the relay settings are correct.",
+    "heading": "Digital Fault Recording"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Substation Metering"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Software modules allow 1, 2, 2½ and 3 element metering on as many as six feeders on the same bus in a three-wire configuration, or as many as four feeders on the same bus in a four-wire configuration with revenue class metering accuracy (non-certified).",
+    "heading": "Substation Metering"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Soft Logic Automation Function"
+  },
+  {
+    "location": "html-block:20",
+    "text": "LogicLinx® is a soft logic automation tool that eliminates the costs of hardwiring automation schemes. The application allows you to create software automation applications that link components accurately and logically.",
+    "heading": "Soft Logic Automation Function"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Substation Automation Systems"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Multifunction Servers, Gateways & RTUs"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Substation Controllers"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Technical Support"
+  },
+  {
+    "location": "html-block:26",
+    "text": "GSA Schedule"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Instruction Manuals"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Product & Cyber Security Advisories"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Subscribe",
+    "heading": "Product & Cyber Security Advisories"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Substation Automation Systems"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Multifunction Servers, Gateways & RTUs"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Substation Controllers"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Technical Support"
+  },
+  {
+    "location": "html-block:39",
+    "text": "GSA Schedule"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Instruction Manuals"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Product & Cyber Security Advisories"
+  },
+  {
+    "location": "html-block:46",
+    "text": "Subscribe",
+    "heading": "Product & Cyber Security Advisories"
+  },
+  {
+    "location": "html-block:47",
+    "text": "D25 - Legacy"
+  },
+  {
+    "location": "html-block:48",
+    "text": "A Critical Analytical Tool"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Contact Us",
+    "heading": "A Critical Analytical Tool"
+  },
+  {
+    "location": "html-block:50",
+    "text": "Manufacturing for D25 has been discontinued. For bay controller applications, please refer to C30 or C60 as an alternative. For gateway applications, please refer to G100 an alternative. For RTU applications, please refer to G100 plus D20.IO or G100 plus C30/C60 an alternative.",
+    "heading": "A Critical Analytical Tool"
+  },
+  {
+    "location": "html-block:51",
+    "text": "GE Vernova’s D25 is a flexible, modular, and upgradable automation controller, suitable for both large and small substation automation projects in either new or retrofit situations. The D25 provides the tools and flexibility necessary to create customized automation and control applications including; communications & data concentrator, automation controller, metering & sequence of events fault recording, and transformer monitoring & control.",
+    "heading": "A Critical Analytical Tool"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Features and Benefits"
+  },
+  {
+    "location": "html-block:53",
+    "text": "The D25 controller replaces multiple devices with a single unit. Unified design reduces wiring and maintenance costs. The D25 controller retrieves data from legacy and third-party devices such as relays, transfers it to a host or enterprise system, monitors and runs diagnostics of primary equipment and expands to meet future physical and functional station requirements.",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Local HMI(Human Machine Interface)"
+  },
+  {
+    "location": "html-block:55",
+    "text": "D25 has the option of being equipped with two different built-in screens. First option is a Data Display Panel to show status of different points (digital or analog) to the operator. The second option is a Graphical Display Panel (GDP) which is a touch screen monochrome LCD allowing users to configure dynamic displays with one-line diagrams and alarm screens. Local control is also supported with the GDP option making the GDP a fully-fledged local HMI.",
+    "heading": "Local HMI(Human Machine Interface)"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Power Quality Information"
+  },
+  {
+    "location": "html-block:57",
+    "text": "The D25 measures and records total harmonic distortion, harmonic spectrum (DC to 21st harmonic), RMS trending, RMS profiling, voltage sags, swells and interruptions, allowing operators and analysts to examine the consistency of power going through the system and pinpoint problem area.",
+    "heading": "Power Quality Information"
+  },
+  {
+    "location": "html-block:58",
+    "text": "Digital Fault Recording"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Fault records can be transferred automatically via a LAN to the substation computer or directly to a remote PC via email. Utility engineers can analyze these recordings to ensure the relay settings are correct.",
+    "heading": "Digital Fault Recording"
+  },
+  {
+    "location": "html-block:60",
+    "text": "Substation Metering"
+  },
+  {
+    "location": "html-block:61",
+    "text": "Software modules allow 1, 2, 2½ and 3 element metering on as many as six feeders on the same bus in a three-wire configuration, or as many as four feeders on the same bus in a four-wire configuration with revenue class metering accuracy (non-certified).",
+    "heading": "Substation Metering"
+  },
+  {
+    "location": "html-block:62",
+    "text": "Soft Logic Automation Function"
+  },
+  {
+    "location": "html-block:63",
+    "text": "LogicLinx® is a soft logic automation tool that eliminates the costs of hardwiring automation schemes. The application allows you to create software automation applications that link components accurately and logically.",
+    "heading": "Soft Logic Automation Function"
+  },
+  {
+    "location": "html-block:64",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:65",
+    "text": "Gateways and RTUs"
+  },
+  {
+    "location": "html-block:66",
+    "text": "GE Vernova offers an industry-leading suite of multifunction servers, gateways, RTUs, and...",
+    "heading": "Gateways and RTUs"
+  },
+  {
+    "location": "html-block:67",
+    "text": "View More",
+    "heading": "Gateways and RTUs"
+  }
+]

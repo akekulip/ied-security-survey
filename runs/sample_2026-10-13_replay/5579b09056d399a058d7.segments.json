@@ -1,0 +1,133 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "Power meter device - SICAM P50/55 | Siemens"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Why SICAM P50/55 power meter device?"
+  },
+  {
+    "location": "html-block:4",
+    "text": "SICAM P50/55 is a power meter for electrical systems. Acquire and display over 100 measured values to monitor energy consumption and power quality across your grid networks.",
+    "heading": "Why SICAM P50/55 power meter device?"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Struggling with stable power supply or optimizing energy use? Our SICAM P50/55 power meter continuously logs energy data to provide operational insights. Identify consumption sources and peak times to lower energy costs and prevent power quality fluctuations.",
+    "heading": "Why SICAM P50/55 power meter device?"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Measure over 100 electrical values, including harmonics, for power quality analysis. Integrate with existing systems using PROFIBUS-DP, MODBUS RTU/ASCII or IEC 60870-5-103 protocols. Rely on the graphic display and 1 MB memory for data recording and monitoring so you can preserve data during outages.",
+    "heading": "Why SICAM P50/55 power meter device?"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Key benefits"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Lower energy usage"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Identify energy consumption sources and peak usage times in your electrical systems. Gain insights to allocate and reduce energy costs.",
+    "heading": "Lower energy usage"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Maintain power stability"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Prevent power quality fluctuations and grid disturbances. Optimize monitoring, control and automation systems for stable electric power during energy transitions.",
+    "heading": "Maintain power stability"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Optimize with data"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Process and analyze data from grid components and get valuable insights on your grid's state for advanced analysis. Improve asset performance and extend service life with informed decisions.",
+    "heading": "Optimize with data"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Featured capabilities"
+  },
+  {
+    "location": "html-block:15",
+    "text": "all",
+    "heading": "Featured capabilities"
+  },
+  {
+    "location": "html-block:16",
+    "text": "100+ electrical value measurement"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Measure over 100 electrical values: RMS voltages, currents, active and reactive power, energy, power factor and harmonics up to the 21st. Get external signals and states for comprehensive analysis of your power supply systems.",
+    "heading": "100+ electrical value measurement"
+  },
+  {
+    "location": "html-block:18",
+    "text": "all",
+    "heading": "100+ electrical value measurement"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Communication protocol integration"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Connect using PROFIBUS-DP, MODBUS RTU/ASCII or IEC 60870-5-103 protocols for communication with your infrastructure. Parameterize via front key or RS485 port with SICAM P Manager software.",
+    "heading": "Communication protocol integration"
+  },
+  {
+    "location": "html-block:21",
+    "text": "all",
+    "heading": "Communication protocol integration"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Data storage and records"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Record measured values and states with precise time stamps. Use 1 MB of programmable non-volatile memory. Store limit value violations and energy counter values safely for up to three months during power outages.",
+    "heading": "Data storage and records"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Explore resources"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Downloads"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Catalog Power Quality and Measurement",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Tender specifications",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:28",
+    "text": "SiePortal - Online shop"
+  },
+  {
+    "location": "html-block:29",
+    "text": "SICAM P50/P55 on SiePortal",
+    "heading": "SiePortal - Online shop"
+  }
+]

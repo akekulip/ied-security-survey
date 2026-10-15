@@ -1,0 +1,596 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "MiCOM Agile P74x Series | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "MiCOM Agile P74x Series"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Distributed Busbar Differential Relays – P741 Central Unit , P742 Peripheral Unit , P743 Extended Peripheral Unit"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Interactive Selector Guide",
+    "heading": "Distributed Busbar Differential Relays – P741 Central Unit , P742 Peripheral Unit , P743 Extended Peripheral Unit"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Buy P741 Buy P742 Buy P743 Contact Us",
+    "heading": "Distributed Busbar Differential Relays – P741 Central Unit , P742 Peripheral Unit , P743 Extended Peripheral Unit"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Part of the MiCOM P40 platform, the Agile P74x offers high performance, secure and sensitive protection for all types of busbar configurations at all voltage levels, accommodating up to 28 terminals in eight differential zones (three phase). Consisting of the Agile P741, P742 and P743 relays, the P74x platform is engineered to provide a centralized or distributed architecture with CT saturation detection, dynamic topology processing algorithms and a fast reset (less than 1 cycle) circuit breaker failure element.",
+    "heading": "Distributed Busbar Differential Relays – P741 Central Unit , P742 Peripheral Unit , P743 Extended Peripheral Unit"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Key benefits:"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Tripping time is constant, less than 1 cycle and independent of the fault current, the substation topology and the number of feeders",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Suitable for application on solidly grounded, impedance grounded, Petersen coil grounded and isolated systems",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Free of charge software tools for easy scheme configuration and monitoring",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Connection between central and peripheral units is by redundant fiber, eliminating EMC, touch and step potential issues",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:14",
+    "text": "No internal batteries in GE Vernova-branded models – removes a maintenance item and eases air-freight logistics",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Advanced binary inputs comply with the harshest norms for surge withstand, plus the ESI 48-4 EB2 standard. Spurious wiring pickup is eliminated without the use of interposing relays, external resistors or time delays. Battery/wiring faults, switching noise, and induction from long parallel circuits are tolerated without mis-operation",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Interactive Selector Guide"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Typical Applications"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Bus Principles & Protection"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Legacy Bus Protection"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Software / Firmware"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Interactive Selector Guide",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Interactive Selector Guide"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Typical Applications"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Bus Principles & Protection"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Legacy Bus Protection"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Software / Firmware"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:41",
+    "text": "MiCOM Agile P74x Series"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Distributed Busbar Differential Relays – P741 Central Unit , P742 Peripheral Unit , P743 Extended Peripheral Unit"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Buy P741 Buy P742 Buy P743 Contact Us",
+    "heading": "Distributed Busbar Differential Relays – P741 Central Unit , P742 Peripheral Unit , P743 Extended Peripheral Unit"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Part of the MiCOM P40 platform, the Agile P74x offers high performance, secure and sensitive protection for all types of busbar configurations at all voltage levels, accommodating up to 28 terminals in eight differential zones (three phase). Consisting of the Agile P741, P742 and P743 relays, the P74x platform is engineered to provide a centralized or distributed architecture with CT saturation detection, dynamic topology processing algorithms and a fast reset (less than 1 cycle) circuit breaker failure element.",
+    "heading": "Distributed Busbar Differential Relays – P741 Central Unit , P742 Peripheral Unit , P743 Extended Peripheral Unit"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Key benefits:"
+  },
+  {
+    "location": "html-block:46",
+    "text": "Tripping time is constant, less than 1 cycle and independent of the fault current, the substation topology and the number of feeders",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:47",
+    "text": "Suitable for application on solidly grounded, impedance grounded, Petersen coil grounded and isolated systems",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Free of charge software tools for easy scheme configuration and monitoring",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Connection between central and peripheral units is by redundant fiber, eliminating EMC, touch and step potential issues",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:50",
+    "text": "No internal batteries in GE Vernova-branded models – removes a maintenance item and eases air-freight logistics",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:51",
+    "text": "Advanced binary inputs comply with the harshest norms for surge withstand, plus the ESI 48-4 EB2 standard. Spurious wiring pickup is eliminated without the use of interposing relays, external resistors or time delays. Battery/wiring faults, switching noise, and induction from long parallel circuits are tolerated without mis-operation",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:52",
+    "text": "What's New"
+  },
+  {
+    "location": "html-block:53",
+    "text": "What's New"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Enhanced Ethernet board module with switchable Ethernet redundancy delivered in a single model.",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:55",
+    "text": "It supports PRP, HSR and RSTP in one model, allowing a single P40 model to be used in any application requiring redundant Ethernet communications. The new module is designed to handle high density traffic in the IEC 61850-8-1 network, with time latency halved. Larger architecture digital substations can also be supported, with up to 50 nodes now possible in HSR rings.",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Key Features & Benefits:"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Universal IRIG-B – Modulated and demodulated supported in the same model",
+    "heading": "Key Features & Benefits:"
+  },
+  {
+    "location": "html-block:58",
+    "text": "HSR Ring – Extended to 50 node support for larger substation architectures",
+    "heading": "Key Features & Benefits:"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Fast performance, particularly in onerous applications such as where process bus GOOSE is used for tripping purposes",
+    "heading": "Key Features & Benefits:"
+  },
+  {
+    "location": "html-block:60",
+    "text": "Overview"
+  },
+  {
+    "location": "html-block:61",
+    "text": "Overview"
+  },
+  {
+    "location": "html-block:62",
+    "text": "Typical operating time of 8ms with high speed/high break contacts, 13ms with standard contacts",
+    "heading": "Overview"
+  },
+  {
+    "location": "html-block:63",
+    "text": "Sensitive earth fault elements improve detection of resistive or arcing faults",
+    "heading": "Overview"
+  },
+  {
+    "location": "html-block:64",
+    "text": "Phase segregated biased current differential high speed busbar protection",
+    "heading": "Overview"
+  },
+  {
+    "location": "html-block:65",
+    "text": "Easy maintenance, operation and future expansion of the busbar supported",
+    "heading": "Overview"
+  },
+  {
+    "location": "html-block:66",
+    "text": "Up to 28 peripheral units supported - scalable busbar solutions from medium to large substations",
+    "heading": "Overview"
+  },
+  {
+    "location": "html-block:67",
+    "text": "Key benefits:"
+  },
+  {
+    "location": "html-block:68",
+    "text": "Interoperable with all classes of CT: IEEE, IEC, air-gapped, non-gapped, and CTs with moderate knee point voltage",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:69",
+    "text": "True sub-cycle busbar protection - transmission class security and dependability",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:70",
+    "text": "High-Availability communications - automatic self-healing on fiber disconnection between central and peripheral units",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:71",
+    "text": "IEC 61850 redundant Ethernet with RSTP and IEC 62439 PRP and HSR – with HSR support for up to 50 nodes in a ring",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:72",
+    "text": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:73",
+    "text": "ANSI© Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:74",
+    "text": "Device Number | Function",
+    "heading": "ANSI© Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:75",
+    "text": "87BB | Bus Differential",
+    "heading": "ANSI© Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:76",
+    "text": "50 | Phase Definite Time Overcurrent",
+    "heading": "ANSI© Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:77",
+    "text": "51 | Phase Inverse-Time Overcurrent",
+    "heading": "ANSI© Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:78",
+    "text": "86 | Latching/Lockout Contacts",
+    "heading": "ANSI© Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:79",
+    "text": "50BF | CB Failure",
+    "heading": "ANSI© Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:80",
+    "text": "50N | Earth Fault Definite Time Overcurrent",
+    "heading": "ANSI© Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:81",
+    "text": "50ST | Short Zone Earth Fault",
+    "heading": "ANSI© Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:82",
+    "text": "51N | Neutral/Ground IDMT Overcurrent",
+    "heading": "ANSI© Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:83",
+    "text": "52 | Circuit Breaker Control",
+    "heading": "ANSI© Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:84",
+    "text": "CTS | CT Supervision",
+    "heading": "ANSI© Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:85",
+    "text": "PSL | Programmable Logic",
+    "heading": "ANSI© Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:86",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:87",
+    "text": "MiCOM S1 Agile"
+  },
+  {
+    "location": "html-block:88",
+    "text": "Key benefits:"
+  },
+  {
+    "location": "html-block:89",
+    "text": "Powerful, free of charge, PC toolsuite",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:90",
+    "text": "Optimum management of the installed base, structured as per the substation topology",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:91",
+    "text": "Intuitive and versatile interface with file management facilities",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:92",
+    "text": "Logical structure based on substation, voltage level and bay",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:93",
+    "text": "Version control and cross-checking facilities for IED settings",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:94",
+    "text": "Real-time measurement visualization – MiCOM S1 Agile extends to all MiCOM Agile IEDs - including P847 PMU and busbar schemes",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:95",
+    "text": "Engineering Tool Suite"
+  },
+  {
+    "location": "html-block:96",
+    "text": "S1 Agile is the truly universal PC tool for MiCOM Agile relay, assemble all tools in a palette for simple entry, with intuitive navigation via fewer mouse-clicks. No-longer are separate tools required for redundant Ethernet configuration, phasor measurement unit commissioning, busbar scheme operational dashboards, programmable curve profiles or automatic disturbance record extraction – applications are embedded. MiCOM S1 Agile supports all existing MiCOM, K-Series and Modulex, including a utility for automatic conversion of setting files from previous generations of numerical relays like K-series and MiCOM P20 to the latest P40 Agile models.",
+    "heading": "Engineering Tool Suite"
+  },
+  {
+    "location": "html-block:97",
+    "text": "To move to the future, with no loss of functionality, no loss of device support, and full compatibility with your installed base and system architecture – request a copy of S1 Agile with the contact form link below.",
+    "heading": "Engineering Tool Suite"
+  },
+  {
+    "location": "html-block:98",
+    "text": "Key features in the MiCOM S1 family:"
+  },
+  {
+    "location": "html-block:99",
+    "text": "GE Vernova’s integrated engineering tool that provides users with access to automation IED configuration and record data",
+    "heading": "Key features in the MiCOM S1 family:"
+  },
+  {
+    "location": "html-block:100",
+    "text": "Integrated configuration and monitoring features",
+    "heading": "Key features in the MiCOM S1 family:"
+  },
+  {
+    "location": "html-block:101",
+    "text": "Send and extract setting files",
+    "heading": "Key features in the MiCOM S1 family:"
+  },
+  {
+    "location": "html-block:102",
+    "text": "Event and disturbance record extraction and analysis",
+    "heading": "Key features in the MiCOM S1 family:"
+  },
+  {
+    "location": "html-block:103",
+    "text": "MiCOM S1 Agile software request"
+  },
+  {
+    "location": "html-block:104",
+    "text": "To receive the MiCOM S1 Agile, please use our Contact form. This will also ensure that you are kept up-to-date with the latest enhancements, including updates and bug fixes.",
+    "heading": "MiCOM S1 Agile software request"
+  },
+  {
+    "location": "html-block:105",
+    "text": "Tool & Remote HMI"
+  },
+  {
+    "location": "html-block:106",
+    "text": "MiCOM Agile P74x Busbar Topology Configuration Tool and Remote HMI Tool Features",
+    "heading": "Tool & Remote HMI"
+  },
+  {
+    "location": "html-block:107",
+    "text": "Scheme editor: allows the user to define and create a P74x busbar scheme using busbar, CT, circuit breaker and isolator graphical icons",
+    "heading": "Tool & Remote HMI"
+  },
+  {
+    "location": "html-block:108",
+    "text": "Synoptic: allows the user to allocate IEDs (P741, P742, P743) to the busbar scheme synoptic.",
+    "heading": "Tool & Remote HMI"
+  },
+  {
+    "location": "html-block:109",
+    "text": "Dynamic synoptic: allows the user to display the P74x measured analogue quantities and DDB (digital data bus) status information via the user defined P74x scheme created using the scheme editor in accordance with downloaded embedded configuration of P74x IEDs",
+    "heading": "Tool & Remote HMI"
+  },
+  {
+    "location": "html-block:110",
+    "text": "File merge: with this feature the user can automatically create the synoptic settings from above tools into a default setting file of IEDs",
+    "heading": "Tool & Remote HMI"
+  },
+  {
+    "location": "html-block:111",
+    "text": "Retrofit/Refurbish"
+  },
+  {
+    "location": "html-block:112",
+    "text": "Refurbishment Solutions"
+  },
+  {
+    "location": "html-block:113",
+    "text": "Refurbishment Solutions – “If It’s Blue Think to Renew”"
+  },
+  {
+    "location": "html-block:114",
+    "text": "GE Vernova’s latest MiCOM P74x series models P741, P742, P743 inclusive offer an ideal path to refurbish an older installed base of MiCOM P74x relays. Whether those older products were initially sold as GE VERNOVA or AREVA-branded products, newer models retain pin-pin refurbishment capability. Advantageously, users can benefit from the advancements made in protection, control, communications, hardware and cybersecurity that have taken place in the intervening years. The new P40 retains form, fit and function compatibility but delivers the latest platform and software ready for today’s environment, and for future-proofed application for the decades ahead.&#xD;",
+    "heading": "Refurbishment Solutions – “If It’s Blue Think to Renew”"
+  },
+  {
+    "location": "html-block:115",
+    "text": "Take the order code (CORTEC) of the older relay being removed, typically a blue case relay",
+    "heading": "Refurbishment Solutions – “If It’s Blue Think to Renew”"
+  },
+  {
+    "location": "html-block:116",
+    "text": "Translate to today’s latest GE Vernova MiCOM model, adding Ethernet options if required",
+    "heading": "Refurbishment Solutions – “If It’s Blue Think to Renew”"
+  },
+  {
+    "location": "html-block:117",
+    "text": "Order the new P40 relay",
+    "heading": "Refurbishment Solutions – “If It’s Blue Think to Renew”"
+  },
+  {
+    "location": "html-block:118",
+    "text": "Extract settings and logic, use S1 Agile toolsuite to convert settings",
+    "heading": "Refurbishment Solutions – “If It’s Blue Think to Renew”"
+  },
+  {
+    "location": "html-block:119",
+    "text": "Detach the terminal blocks from old relay, leaving wiring attached / detach terminal blocks from the new.",
+    "heading": "Refurbishment Solutions – “If It’s Blue Think to Renew”"
+  },
+  {
+    "location": "html-block:120",
+    "text": "Carefully examine the terminal blocks to see that no physical damage has occurred since installation",
+    "heading": "Refurbishment Solutions – “If It’s Blue Think to Renew”"
+  },
+  {
+    "location": "html-block:121",
+    "text": "Mount new relay. Old relay blocks fit straight onto the new relay - safer, less wiring to reconnect.",
+    "heading": "Refurbishment Solutions – “If It’s Blue Think to Renew”"
+  },
+  {
+    "location": "html-block:122",
+    "text": "It is recommended to apply rated current and voltage to the relay CT/VT inputs during secondary injection testing to check the continuity of the CT/VT terminal block connections to the relay.",
+    "heading": "Refurbishment Solutions – “If It’s Blue Think to Renew”"
+  },
+  {
+    "location": "html-block:123",
+    "text": "Download converted files",
+    "heading": "Refurbishment Solutions – “If It’s Blue Think to Renew”"
+  },
+  {
+    "location": "html-block:124",
+    "text": "Test, return circuit to service with only minutes of downtime",
+    "heading": "Refurbishment Solutions – “If It’s Blue Think to Renew”"
+  },
+  {
+    "location": "html-block:125",
+    "text": "Contact us for advice and support",
+    "heading": "Refurbishment Solutions – “If It’s Blue Think to Renew”"
+  },
+  {
+    "location": "html-block:126",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:127",
+    "text": "Multilin B30"
+  },
+  {
+    "location": "html-block:128",
+    "text": "The Multilin B30 bus protection relay features integrated protection, visualization and...",
+    "heading": "Multilin B30"
+  },
+  {
+    "location": "html-block:129",
+    "text": "View More",
+    "heading": "Multilin B30"
+  }
+]

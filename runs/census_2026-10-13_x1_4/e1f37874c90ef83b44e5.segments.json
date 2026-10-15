@@ -1,0 +1,312 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "DFP100 Digital Feeder Relay (Discontinued)"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "DFP100 Digital Feeder Relay - Legacy"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Contact Us",
+    "heading": "DFP100 Digital Feeder Relay - Legacy"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Manufacturing for this product has been discontinued. For more information, contact us.",
+    "heading": "DFP100 Digital Feeder Relay - Legacy"
+  },
+  {
+    "location": "html-block:7",
+    "text": "The DFP100 is a digital protection, control, metering, and monitoring system. It uses waveform sampling of the current and voltage inputs together with appropriate algorithms to provide distribution feeder protection. The DFP100 incorporates the protection, control, metering, and both local and remote human interfaces in one assembly. This eliminates the need for expensive discrete components.",
+    "heading": "DFP100 Digital Feeder Relay - Legacy"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Primary feeder protection",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Backup bus, transformer line protection",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Protection and Control"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Low-set and high-set overcurrent",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Directional overcurrent",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Under and overvoltage",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Under and overfrequency",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:16",
+    "text": "6 protection setting groups",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Cold load pickup",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Breaker failure protection",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Four-shot recloser (optional)",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Configurable inputs/outputs",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Reliable fault location",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Breaker health",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Metering: A V W var Hz",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Demand ammeter",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:26",
+    "text": "200 event record",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Waveform capture of I and V",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:28",
+    "text": "User Interface"
+  },
+  {
+    "location": "html-block:29",
+    "text": "10 target/alarm LEDs",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Optional display and keypad",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:31",
+    "text": "RS232 and RS485",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Fiber optics",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:33",
+    "text": "DFP100 Digital Feeder Relay - Legacy"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Contact Us",
+    "heading": "DFP100 Digital Feeder Relay - Legacy"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Manufacturing for this product has been discontinued. For more information, contact us.",
+    "heading": "DFP100 Digital Feeder Relay - Legacy"
+  },
+  {
+    "location": "html-block:36",
+    "text": "The DFP100 is a digital protection, control, metering, and monitoring system. It uses waveform sampling of the current and voltage inputs together with appropriate algorithms to provide distribution feeder protection. The DFP100 incorporates the protection, control, metering, and both local and remote human interfaces in one assembly. This eliminates the need for expensive discrete components.",
+    "heading": "DFP100 Digital Feeder Relay - Legacy"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Primary feeder protection",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Backup bus, transformer line protection",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Protection and Control"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Low-set and high-set overcurrent",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Directional overcurrent",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Under and overvoltage",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Under and overfrequency",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:45",
+    "text": "6 protection setting groups",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:46",
+    "text": "Cold load pickup",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:47",
+    "text": "Breaker failure protection",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Four-shot recloser (optional)",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Configurable inputs/outputs",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:50",
+    "text": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:51",
+    "text": "Reliable fault location",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Breaker health",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:53",
+    "text": "Metering: A V W var Hz",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Demand ammeter",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:55",
+    "text": "200 event record",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Waveform capture of I and V",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:57",
+    "text": "User Interface"
+  },
+  {
+    "location": "html-block:58",
+    "text": "10 target/alarm LEDs",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Optional display and keypad",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:60",
+    "text": "RS232 and RS485",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:61",
+    "text": "Fiber optics",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:62",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:63",
+    "text": "Feeder Protection"
+  },
+  {
+    "location": "html-block:64",
+    "text": "GE Vernova’s distribution feeder protection systems provide advanced protection with...",
+    "heading": "Feeder Protection"
+  },
+  {
+    "location": "html-block:65",
+    "text": "View More",
+    "heading": "Feeder Protection"
+  }
+]

@@ -1,0 +1,414 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "MiCOM Agile P547 Phase Comparison System | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "MiCOM Agile P547 - Legacy"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Phase Comparison System"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Contact Us",
+    "heading": "Phase Comparison System"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Manufacturing for P547 has been discontinued. As an alternative, please refer to L60.",
+    "heading": "Phase Comparison System"
+  },
+  {
+    "location": "html-block:8",
+    "text": "MiCOM Agile P547 phase comparison relay provides comprehensive phase comparison line protection including unit protection, subcycle distance and directional earth fault (DEF) for single and three pole tripping applications. It is adapted to two and three-terminal lines, and lines with transformer tee-off feeds.",
+    "heading": "Phase Comparison System"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Interfacing with the Power Line Carrier equipment, which operates via the power line, means that the end-to-end scheme communication requires no external signaling channel. VT inputs may be added to enhance protection stability and sensitivity in long line applications, and where single pole tripping is required. Adding voltage inputs supports distance protection and fault location and enhances other MiCOM Agile P547 functions.",
+    "heading": "Phase Comparison System"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Key features:"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Distance to fault location assists dispatching of maintenance crews",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Graphical programmable scheme logic eases protection scheme creation, and avoids the need for external logic controllers",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:13",
+    "text": "IEC 61850 redundant Ethernet, supporting self healing ring, RSTP, dual homing, PRP or HSR",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Optional mho and quadrilaterial subcycle distance protection",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Full suite of monitoring, control and recording capabilities plus fault locator, autoreclose and check synchronism",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Harsh environment coating as standard to all MiCOM relay to protect against corrosive gases such as H2S or SO2",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Main characteristics:"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Highly selective unit protection",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Cost effective alternative to current differential",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:20",
+    "text": "The signaling medium is the power line itself - fully within the maintenance and operational control of the utility, no external communications dependence",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Advanced charging current compensation and angle-shifting to avoid corona issues - design features to target long-line transmission applications",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Adaptive mixing of sequence components boosts earth fault sensitivity without compromising detection of phase-phase and three-phase faults",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:23",
+    "text": "What's New"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Enhanced Ethernet board module with switchable Ethernet redundancy delivered in a single model.",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:25",
+    "text": "The new board module is supported on P547 SW 79.",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:26",
+    "text": "It supports PRP, HSR and RSTP in one model, allowing a single P40 model to be used in any application requiring redundant Ethernet communications. The new module is designed to handle high density traffic in the IEC 61850-8-1 network, with time latency halved. Larger architecture digital substations can also be supported, with up to 50 nodes now possible in HSR rings.",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Key Features & Benefits:",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Universal IRIG-B – Modulated and demodulated supported in the same model",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:29",
+    "text": "HSR Ring – Extended to 50 node support for larger substation architectures",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Fast performance, particularly in onerous applications such as where process bus GOOSE is used for tripping purposes",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Interactive Selector Guide - Line Differential"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Interactive Selector Guide - Line Distance"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Spotlight Application"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Typical Applications"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Transmission Principles & Protection"
+  },
+  {
+    "location": "html-block:37",
+    "text": "GSA Schedule"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Legacy Transmission Protection"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Software / Firmware"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:46",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:47",
+    "text": "Interactive Selector Guide - Line Differential"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Interactive Selector Guide - Line Distance"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Spotlight Application"
+  },
+  {
+    "location": "html-block:50",
+    "text": "Typical Applications"
+  },
+  {
+    "location": "html-block:51",
+    "text": "Transmission Principles & Protection"
+  },
+  {
+    "location": "html-block:52",
+    "text": "GSA Schedule"
+  },
+  {
+    "location": "html-block:53",
+    "text": "Legacy Transmission Protection"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:58",
+    "text": "Software / Firmware"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:60",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:61",
+    "text": "MiCOM Agile P547 - Legacy"
+  },
+  {
+    "location": "html-block:62",
+    "text": "Phase Comparison System"
+  },
+  {
+    "location": "html-block:63",
+    "text": "Contact Us",
+    "heading": "Phase Comparison System"
+  },
+  {
+    "location": "html-block:64",
+    "text": "Manufacturing for P547 has been discontinued. As an alternative, please refer to L60.",
+    "heading": "Phase Comparison System"
+  },
+  {
+    "location": "html-block:65",
+    "text": "MiCOM Agile P547 phase comparison relay provides comprehensive phase comparison line protection including unit protection, subcycle distance and directional earth fault (DEF) for single and three pole tripping applications. It is adapted to two and three-terminal lines, and lines with transformer tee-off feeds.",
+    "heading": "Phase Comparison System"
+  },
+  {
+    "location": "html-block:66",
+    "text": "Interfacing with the Power Line Carrier equipment, which operates via the power line, means that the end-to-end scheme communication requires no external signaling channel. VT inputs may be added to enhance protection stability and sensitivity in long line applications, and where single pole tripping is required. Adding voltage inputs supports distance protection and fault location and enhances other MiCOM Agile P547 functions.",
+    "heading": "Phase Comparison System"
+  },
+  {
+    "location": "html-block:67",
+    "text": "Key features:"
+  },
+  {
+    "location": "html-block:68",
+    "text": "Distance to fault location assists dispatching of maintenance crews",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:69",
+    "text": "Graphical programmable scheme logic eases protection scheme creation, and avoids the need for external logic controllers",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:70",
+    "text": "IEC 61850 redundant Ethernet, supporting self healing ring, RSTP, dual homing, PRP or HSR",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:71",
+    "text": "Optional mho and quadrilaterial subcycle distance protection",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:72",
+    "text": "Full suite of monitoring, control and recording capabilities plus fault locator, autoreclose and check synchronism",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:73",
+    "text": "Harsh environment coating as standard to all MiCOM relay to protect against corrosive gases such as H2S or SO2",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:74",
+    "text": "Main characteristics:"
+  },
+  {
+    "location": "html-block:75",
+    "text": "Highly selective unit protection",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:76",
+    "text": "Cost effective alternative to current differential",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:77",
+    "text": "The signaling medium is the power line itself - fully within the maintenance and operational control of the utility, no external communications dependence",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:78",
+    "text": "Advanced charging current compensation and angle-shifting to avoid corona issues - design features to target long-line transmission applications",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:79",
+    "text": "Adaptive mixing of sequence components boosts earth fault sensitivity without compromising detection of phase-phase and three-phase faults",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:80",
+    "text": "What's New"
+  },
+  {
+    "location": "html-block:81",
+    "text": "Enhanced Ethernet board module with switchable Ethernet redundancy delivered in a single model.",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:82",
+    "text": "The new board module is supported on P547 SW 79.",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:83",
+    "text": "It supports PRP, HSR and RSTP in one model, allowing a single P40 model to be used in any application requiring redundant Ethernet communications. The new module is designed to handle high density traffic in the IEC 61850-8-1 network, with time latency halved. Larger architecture digital substations can also be supported, with up to 50 nodes now possible in HSR rings.",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:84",
+    "text": "Key Features & Benefits:",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:85",
+    "text": "Universal IRIG-B – Modulated and demodulated supported in the same model",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:86",
+    "text": "HSR Ring – Extended to 50 node support for larger substation architectures",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:87",
+    "text": "Fast performance, particularly in onerous applications such as where process bus GOOSE is used for tripping purposes",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:88",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:89",
+    "text": "Line Protection"
+  },
+  {
+    "location": "html-block:90",
+    "text": "GE Vernova's transmission protection solutions deliver the speed and security necessary...",
+    "heading": "Line Protection"
+  },
+  {
+    "location": "html-block:91",
+    "text": "View More",
+    "heading": "Line Protection"
+  }
+]

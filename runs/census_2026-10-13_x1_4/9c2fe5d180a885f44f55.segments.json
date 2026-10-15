@@ -1,0 +1,471 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "EPM 9650 - Legacy | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "EPM 9650 - Legacy"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Contact Us",
+    "heading": "EPM 9650 - Legacy"
+  },
+  {
+    "location": "html-block:6",
+    "text": "GE Vernova’s Electrification has discontinued sales of this product. As an alternative, please refer to EPM 9700.",
+    "heading": "EPM 9650 - Legacy"
+  },
+  {
+    "location": "html-block:7",
+    "text": "The EPM 9650 is GE Vernova's most advanced 9000 series meter with advanced power quality capability and waveform recording functions. The unit utilizes ACCU-Measure® Technology to provide highly accurate revenue grade readings coupled with advanced data analysis. The unit measures over 15,000 electrical parameters including real time harmonics to the 128th order, voltage surges and sags, waveform recordings, transients and a large assortment of advanced monitoring functionality. The unit also provides advanced expandable I/O with up to 256 points for control, data acquisition and alarms functions.",
+    "heading": "EPM 9650 - Legacy"
+  },
+  {
+    "location": "html-block:8",
+    "text": "This meter is ideally suited for critical power applications, common couplings with Utilities, load or process control and most other power monitoring applications.",
+    "heading": "EPM 9650 - Legacy"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Features & Benefits"
+  },
+  {
+    "location": "html-block:10",
+    "text": "High-performance power quality and revenue class metering for critical power applications",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:11",
+    "text": "EN50160 flicker with up to 512 waveform samples per cycle & high-speed transient recording",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Built-in GPS clock sync capability for accurate time stamping of events and alarms for synchronized system monitoring",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Exceeds ANSI C-12 and IEC 687 specifications for accuracy with auto calibration using temperature compensation",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Software and hardware triggers record waveform events enabling fault analysis, system apparatus monitoring and many other applications",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Real time phasor analyzer monitors phase angles between the voltages and currents",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Record THD to the 255th order peak and real-time harmonic magnitudes analysis to the 128th order for every channel",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Simplified system integration with communication option for 10/100 BaseT Ethernet with Modbus/TCP",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Expandable analog and digital output modules for polling, logging, and transfer of data to master station devices",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:20",
+    "text": "EPM Metering Device Family"
+  },
+  {
+    "location": "html-block:21",
+    "text": "EPM 2200"
+  },
+  {
+    "location": "html-block:22",
+    "text": "EPM 6000"
+  },
+  {
+    "location": "html-block:23",
+    "text": "EPM 9450"
+  },
+  {
+    "location": "html-block:24",
+    "text": "EPM 9900"
+  },
+  {
+    "location": "html-block:25",
+    "text": "EnerVista"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Energy Aggregator"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:35",
+    "text": "EPM Metering Device Family"
+  },
+  {
+    "location": "html-block:36",
+    "text": "EPM 2200"
+  },
+  {
+    "location": "html-block:37",
+    "text": "EPM 6000"
+  },
+  {
+    "location": "html-block:38",
+    "text": "EPM 9450"
+  },
+  {
+    "location": "html-block:39",
+    "text": "EPM 9900"
+  },
+  {
+    "location": "html-block:40",
+    "text": "EnerVista"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Energy Aggregator"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:46",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:47",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:49",
+    "text": "EPM 9650 - Legacy"
+  },
+  {
+    "location": "html-block:50",
+    "text": "Contact Us",
+    "heading": "EPM 9650 - Legacy"
+  },
+  {
+    "location": "html-block:51",
+    "text": "GE Vernova’s Electrification has discontinued sales of this product. As an alternative, please refer to EPM 9700.",
+    "heading": "EPM 9650 - Legacy"
+  },
+  {
+    "location": "html-block:52",
+    "text": "The EPM 9650 is GE Vernova's most advanced 9000 series meter with advanced power quality capability and waveform recording functions. The unit utilizes ACCU-Measure® Technology to provide highly accurate revenue grade readings coupled with advanced data analysis. The unit measures over 15,000 electrical parameters including real time harmonics to the 128th order, voltage surges and sags, waveform recordings, transients and a large assortment of advanced monitoring functionality. The unit also provides advanced expandable I/O with up to 256 points for control, data acquisition and alarms functions.",
+    "heading": "EPM 9650 - Legacy"
+  },
+  {
+    "location": "html-block:53",
+    "text": "This meter is ideally suited for critical power applications, common couplings with Utilities, load or process control and most other power monitoring applications.",
+    "heading": "EPM 9650 - Legacy"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Features & Benefits"
+  },
+  {
+    "location": "html-block:55",
+    "text": "High-performance power quality and revenue class metering for critical power applications",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:56",
+    "text": "EN50160 flicker with up to 512 waveform samples per cycle & high-speed transient recording",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Built-in GPS clock sync capability for accurate time stamping of events and alarms for synchronized system monitoring",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:58",
+    "text": "Exceeds ANSI C-12 and IEC 687 specifications for accuracy with auto calibration using temperature compensation",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Software and hardware triggers record waveform events enabling fault analysis, system apparatus monitoring and many other applications",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:60",
+    "text": "Real time phasor analyzer monitors phase angles between the voltages and currents",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:61",
+    "text": "Record THD to the 255th order peak and real-time harmonic magnitudes analysis to the 128th order for every channel",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:62",
+    "text": "Simplified system integration with communication option for 10/100 BaseT Ethernet with Modbus/TCP",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:63",
+    "text": "Expandable analog and digital output modules for polling, logging, and transfer of data to master station devices",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:64",
+    "text": "Metering"
+  },
+  {
+    "location": "html-block:65",
+    "text": "Metering"
+  },
+  {
+    "location": "html-block:66",
+    "text": "Precision Power Quality Measurement"
+  },
+  {
+    "location": "html-block:67",
+    "text": "EPM 9650 captures up to 512 samples per cycle for an event. Voltage and current are recorded with pre- and post-event analysis. Hardware and software triggers are available to activate a waveform reading, which can be used for power quality surveys, fault analysis, breaker timing, motor start-up, etc.",
+    "heading": "Precision Power Quality Measurement"
+  },
+  {
+    "location": "html-block:68",
+    "text": "Measure harmonics magnitude up to the 255th order for each voltage and current channel. Real-time harmonics magnitude are resolved to the 128th order. Percent THD and K-factor are also calculated. Harmonic magnitude analysis allows users to conduct power quality analysis at the high end of the harmonic spectrum.",
+    "heading": "Precision Power Quality Measurement"
+  },
+  {
+    "location": "html-block:69",
+    "text": "EnerVista Viewpoint Monitoring waveform viewer for analyzing fault data DNP 3.0",
+    "heading": "Precision Power Quality Measurement"
+  },
+  {
+    "location": "html-block:70",
+    "text": "Communications"
+  },
+  {
+    "location": "html-block:71",
+    "text": "Robust Communications"
+  },
+  {
+    "location": "html-block:72",
+    "text": "The EPM 9650 offers four built-in communication ports. Each port can communicate independently using supported protocols. Standard protocols include Modbus RTU/ASCII and DNP 3.0. Logs and waveform events are available in Modbus format. Port 3 and Port 4 can be used as a Modbus slave for external output modules.",
+    "heading": "Robust Communications"
+  },
+  {
+    "location": "html-block:73",
+    "text": "The EPM 9650 also offers high speed-transducer outputs for control purposes. These outputs offer 50 msec updates for all instantaneous readings. The unit can be used as a high-speed control transducer for power generation, transmission line synchronization and other control schemes.",
+    "heading": "Robust Communications"
+  },
+  {
+    "location": "html-block:74",
+    "text": "Multiple Communication Paths"
+  },
+  {
+    "location": "html-block:75",
+    "text": "Multiple socket Internet or Intranet meter access up to 12 sockets simultaneously",
+    "heading": "Multiple Communication Paths"
+  },
+  {
+    "location": "html-block:76",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:77",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:78",
+    "text": "Viewpoint Monitoring"
+  },
+  {
+    "location": "html-block:79",
+    "text": "Viewpoint monitoring is a simple-to-use, full-featured monitoring and data recording software package for small systems. Viewpoint Monitoring provides a complete HMI package that instantly puts critical real-time device data on your PC through pre-configured graphical screens with the following functionality:",
+    "heading": "Viewpoint Monitoring"
+  },
+  {
+    "location": "html-block:80",
+    "text": "Plug-&-Play Device Monitoring",
+    "heading": "Viewpoint Monitoring"
+  },
+  {
+    "location": "html-block:81",
+    "text": "System Single-Line Monitoring & Control",
+    "heading": "Viewpoint Monitoring"
+  },
+  {
+    "location": "html-block:82",
+    "text": "Annunciator Alarm Screens",
+    "heading": "Viewpoint Monitoring"
+  },
+  {
+    "location": "html-block:83",
+    "text": "Trending Reports",
+    "heading": "Viewpoint Monitoring"
+  },
+  {
+    "location": "html-block:84",
+    "text": "Automatic Event Retrieval",
+    "heading": "Viewpoint Monitoring"
+  },
+  {
+    "location": "html-block:85",
+    "text": "Automatic Waveform Retrieval",
+    "heading": "Viewpoint Monitoring"
+  },
+  {
+    "location": "html-block:86",
+    "text": "EnerVista Integrator"
+  },
+  {
+    "location": "html-block:87",
+    "text": "EnerVista Integrator is a toolkit that allows seamless integration of GE Vernova Multilin devices into new or existing automation systems by sending GE Vernova device data to HMI, DCS, and SCADA systems. Included in EnerVista Integrator is:",
+    "heading": "EnerVista Integrator"
+  },
+  {
+    "location": "html-block:88",
+    "text": "OPC/DDE Server",
+    "heading": "EnerVista Integrator"
+  },
+  {
+    "location": "html-block:89",
+    "text": "GE Vernova Multilin Drivers",
+    "heading": "EnerVista Integrator"
+  },
+  {
+    "location": "html-block:90",
+    "text": "Automatic Event Retrieval",
+    "heading": "EnerVista Integrator"
+  },
+  {
+    "location": "html-block:91",
+    "text": "Automatic Waveform Retrieval",
+    "heading": "EnerVista Integrator"
+  },
+  {
+    "location": "html-block:92",
+    "text": "EnerVista Viewpoint Monitoring - Monitor the status of digital inputs and review the magnitude of system highs and lows",
+    "heading": "EnerVista Integrator"
+  },
+  {
+    "location": "html-block:93",
+    "text": "Wiring"
+  },
+  {
+    "location": "html-block:94",
+    "text": "Typical Wiring"
+  },
+  {
+    "location": "html-block:95",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:96",
+    "text": "PQM II"
+  },
+  {
+    "location": "html-block:97",
+    "text": "The PQM II is an ideal choice when continuous monitoring of a three phase system is...",
+    "heading": "PQM II"
+  },
+  {
+    "location": "html-block:98",
+    "text": "View More",
+    "heading": "PQM II"
+  },
+  {
+    "location": "html-block:99",
+    "text": "EPM"
+  },
+  {
+    "location": "html-block:100",
+    "text": "GE Vernova provides a wide range of high accuracy power quality, power meters and...",
+    "heading": "EPM"
+  },
+  {
+    "location": "html-block:101",
+    "text": "View More",
+    "heading": "EPM"
+  },
+  {
+    "location": "html-block:102",
+    "text": "EPM 7000P"
+  },
+  {
+    "location": "html-block:103",
+    "text": "The Multilin™ EPM 7000P is a versatile power quality meter offering that can be used...",
+    "heading": "EPM 7000P"
+  },
+  {
+    "location": "html-block:104",
+    "text": "View More",
+    "heading": "EPM 7000P"
+  }
+]

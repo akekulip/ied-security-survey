@@ -1,0 +1,777 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "MiCOM Agile P441, P442 & P444 | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "MiCOM Agile P441, P442 & P444"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Distance Protection Relays"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Contact Us Buy Now",
+    "heading": "Distance Protection Relays"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Part of the MiCOM P40 platform, the Agile P441, P442 and P444 numerical full scheme distance relays provide flexible, fast and reliable protection of transmission and sub-transmission lines. They include full scheme 6-zone distance, plus aided directional earth fault (DEF) and comprehensive backup protection for utility lines and cables at all voltage levels, particularly oriented towards transmission grids.",
+    "heading": "Distance Protection Relays"
+  },
+  {
+    "location": "html-block:8",
+    "text": "These distance protection systems are ideal for single circuit breaker application, single and/or 3-pole tripping, and includes a full suite of monitoring, control and recording capabilities plus fault locator, autoreclose and check synchronism.",
+    "heading": "Distance Protection Relays"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Key features:"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Dual algorithm distance operation for maximum fault detection dependability",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Deploy in traditional CT/VT applications, or digital substation architectures with merging units and non-conventional instrument transformers using IEC 61850-9-2 process bus",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Distance to fault location assists dispatching of maintenance crews",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Full-scheme relay offers fast, discriminative response to double-circuit, cross-country and evolving faults",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:14",
+    "text": "No internal batteries in GE Vernova-branded models – removes a maintenance item and eases air-freight logistics",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:15",
+    "text": "NERC CIP cybersecurity including role-based access control (RBAC), RADIUS and SysLog",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Advanced binary inputs comply with the harshest norms for surge withstand, plus the ESI 48-4 EB2 standard. Spurious wiring pickup is eliminated without the use of interposing relays, external resistors or time delays. Battery/wiring faults, switching noise, and induction from long parallel circuits are tolerated without misoperation",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Interactive Selector Guide - Line Differential"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Interactive Selector Guide - Line Distance"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Spotlight Application"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Typical Applications"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Transmission Principles & Protection"
+  },
+  {
+    "location": "html-block:23",
+    "text": "GSA Schedule"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Legacy Transmission Protection"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Software/Firmware"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Interactive Selector Guide - Line Differential"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Interactive Selector Guide - Line Distance"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Spotlight Application"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Typical Applications"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Transmission Principles & Protection"
+  },
+  {
+    "location": "html-block:38",
+    "text": "GSA Schedule"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Legacy Transmission Protection"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Software/Firmware"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:46",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:47",
+    "text": "MiCOM Agile P441, P442 & P444"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Distance Protection Relays"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Contact Us Buy Now",
+    "heading": "Distance Protection Relays"
+  },
+  {
+    "location": "html-block:50",
+    "text": "Part of the MiCOM P40 platform, the Agile P441, P442 and P444 numerical full scheme distance relays provide flexible, fast and reliable protection of transmission and sub-transmission lines. They include full scheme 6-zone distance, plus aided directional earth fault (DEF) and comprehensive backup protection for utility lines and cables at all voltage levels, particularly oriented towards transmission grids.",
+    "heading": "Distance Protection Relays"
+  },
+  {
+    "location": "html-block:51",
+    "text": "These distance protection systems are ideal for single circuit breaker application, single and/or 3-pole tripping, and includes a full suite of monitoring, control and recording capabilities plus fault locator, autoreclose and check synchronism.",
+    "heading": "Distance Protection Relays"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Key features:"
+  },
+  {
+    "location": "html-block:53",
+    "text": "Dual algorithm distance operation for maximum fault detection dependability",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Deploy in traditional CT/VT applications, or digital substation architectures with merging units and non-conventional instrument transformers using IEC 61850-9-2 process bus",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Distance to fault location assists dispatching of maintenance crews",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Full-scheme relay offers fast, discriminative response to double-circuit, cross-country and evolving faults",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:57",
+    "text": "No internal batteries in GE Vernova-branded models – removes a maintenance item and eases air-freight logistics",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:58",
+    "text": "NERC CIP cybersecurity including role-based access control (RBAC), RADIUS and SysLog",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Advanced binary inputs comply with the harshest norms for surge withstand, plus the ESI 48-4 EB2 standard. Spurious wiring pickup is eliminated without the use of interposing relays, external resistors or time delays. Battery/wiring faults, switching noise, and induction from long parallel circuits are tolerated without misoperation",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:60",
+    "text": "What's New"
+  },
+  {
+    "location": "html-block:61",
+    "text": "What's New"
+  },
+  {
+    "location": "html-block:62",
+    "text": "Enhanced Ethernet board module with switchable Ethernet redundancy delivered in a single model. The new board module is supported on P442 and P444, also delivered along with the NERC CIP v6 Cybersecurity release, software 91.",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:63",
+    "text": "It supports PRP, HSR and RSTP in one model, allowing a single P40 model to be used in any application requiring redundant Ethernet communications.",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:64",
+    "text": "The new module is designed to handle high density traffic in the IEC 61850-8-1 network, with time latency halved. Larger architecture digital substations can also be supported, with up to 50 nodes now possible in IEC 62439 HSR rings.",
+    "heading": "What's New"
+  },
+  {
+    "location": "html-block:65",
+    "text": "Key Features & Benefits:"
+  },
+  {
+    "location": "html-block:66",
+    "text": "Universal IRIG-B – Modulated and demodulated supported in the same model",
+    "heading": "Key Features & Benefits:"
+  },
+  {
+    "location": "html-block:67",
+    "text": "HSR Ring – Extended to 50 node support for larger substation architectures",
+    "heading": "Key Features & Benefits:"
+  },
+  {
+    "location": "html-block:68",
+    "text": "Fast performance, particularly in onerous applications such as where process bus GOOSE is used for tripping purposes",
+    "heading": "Key Features & Benefits:"
+  },
+  {
+    "location": "html-block:69",
+    "text": "NERC CIP cybersecurity including role-based access control (RBAC), RADIUS and SysLog",
+    "heading": "Key Features & Benefits:"
+  },
+  {
+    "location": "html-block:70",
+    "text": "Overview"
+  },
+  {
+    "location": "html-block:71",
+    "text": "Overview"
+  },
+  {
+    "location": "html-block:72",
+    "text": "The Agile P441, P442 and P444 have a settable quadrilateral operating characteristic that offers consistent 0.85-1.1 cycle zone 1 operating time for general distance application. Customers have a choice of cost-effective built-in teleprotection with InterMiCOM, to implement permissive, blocking and intertripping schemes.",
+    "heading": "Overview"
+  },
+  {
+    "location": "html-block:73",
+    "text": "The IEC 61850 redundant Ethernet option offers RSTP and IEC 62439 PRP/HSR – with the HSR support extending for up to 50 nodes in a station bus ring.",
+    "heading": "Overview"
+  },
+  {
+    "location": "html-block:74",
+    "text": "Key benefits:"
+  },
+  {
+    "location": "html-block:75",
+    "text": "Comprehensive communication options including IEC 61850 and redundant Ethernet ports",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:76",
+    "text": "IEC61850-9-2 interface option allows integration within digital substation process bus architectures",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:77",
+    "text": "Unparallelled speed, security and selectivity",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:78",
+    "text": "User customisable with graphical tools",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:79",
+    "text": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:80",
+    "text": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:81",
+    "text": "Device Number | Function",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:82",
+    "text": "25 | Check Synchronising",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:83",
+    "text": "27 | Phase and Line Undervoltage",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:84",
+    "text": "37 | Undercurrent",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:85",
+    "text": "46 | Negative Sequence Overcurrent",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:86",
+    "text": "49 | Thermal Overload",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:87",
+    "text": "50 | Phase Definitive Time Overcurrent",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:88",
+    "text": "51 | Phase Inverse-Time Overcurrent",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:89",
+    "text": "52 | Circuit Breaker Control",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:90",
+    "text": "59 | Phase and Line Overvoltage",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:91",
+    "text": "67 | Directional Phase Overcurrent",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:92",
+    "text": "68 | Power Swing Blocking",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:93",
+    "text": "Device Number | Function",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:94",
+    "text": "79 | Autoreclose",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:95",
+    "text": "85 | InterMiCOM Teleprotection",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:96",
+    "text": "86 | Latching/Lockout Contacts",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:97",
+    "text": "21BL | Load Encroachment/Blinder",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:98",
+    "text": "21FL | Fault Locator",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:99",
+    "text": "21FG | Ground Distance",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:100",
+    "text": "21P | Phase Distance",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:101",
+    "text": "32N | Directional Zero-Sequence Power",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:102",
+    "text": "46BC | Broken Conductor",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:103",
+    "text": "50/27 | Switch-on to Fault",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:104",
+    "text": "50BF | CB Failure",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:105",
+    "text": "Device Number | Function",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:106",
+    "text": "50N | Earth Fault Definite Time Overcurrent",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:107",
+    "text": "50ST | Stub Bus Protection",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:108",
+    "text": "51FF | VT Fail Overcurrent",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:109",
+    "text": "51N | Neutral/Ground IDMT Overcurrent",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:110",
+    "text": "67N | Directional Neutral/Ground Overcurrent",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:111",
+    "text": "81O | Overfrequency",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:112",
+    "text": "81U | Underfrequency",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:113",
+    "text": "CTS | CT Supervision",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:114",
+    "text": "CVTS | Capacitor VT Supervision",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:115",
+    "text": "TCS | Trip Circuit Supervision",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:116",
+    "text": "VTS | VT Supervision",
+    "heading": "ANSI ® Device Numbers and Functions"
+  },
+  {
+    "location": "html-block:117",
+    "text": "Models"
+  },
+  {
+    "location": "html-block:118",
+    "text": "Models"
+  },
+  {
+    "location": "html-block:119",
+    "text": "Manufacturing for P441 has been discontinued. As an alternative, please refer to P44 or P444.",
+    "heading": "Models"
+  },
+  {
+    "location": "html-block:120",
+    "text": "P442 Line-Distance Management IED",
+    "heading": "Models"
+  },
+  {
+    "location": "html-block:121",
+    "text": "The P442 is under last-time buy. Orders may be placed until 6th December 2027 and will be fulfilled based upon availability. As an alternative, please refer to P44 or P444.",
+    "heading": "Models"
+  },
+  {
+    "location": "html-block:122",
+    "text": "Buy Now",
+    "heading": "Models"
+  },
+  {
+    "location": "html-block:123",
+    "text": "P444 Line-Distance Management IED for Transmission",
+    "heading": "Models"
+  },
+  {
+    "location": "html-block:124",
+    "text": "Buy Now",
+    "heading": "Models"
+  },
+  {
+    "location": "html-block:125",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:126",
+    "text": "MiCOM S1 Agile"
+  },
+  {
+    "location": "html-block:127",
+    "text": "Key benefits:"
+  },
+  {
+    "location": "html-block:128",
+    "text": "Powerful, free of charge, PC toolsuite",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:129",
+    "text": "Optimum management of the installed base, structured as per the substation topology",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:130",
+    "text": "Intuitive and versatile interface with file management facilities",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:131",
+    "text": "Logical structure based on substation, voltage level and bay",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:132",
+    "text": "Version control and cross-checking facilities for IED settings",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:133",
+    "text": "Real-time measurement visualization – MiCOM S1 Agile extends to all MiCOM Agile IEDs - including P847 PMU and busbar schemes",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:134",
+    "text": "Engineering Tool Suite"
+  },
+  {
+    "location": "html-block:135",
+    "text": "S1 Agile is the truly universal PC tool for MiCOM Agile relay, assemble all tools in a palette for simple entry, with intuitive navigation via fewer mouse-clicks. No-longer are separate tools required for redundant Ethernet configuration, phasor measurement unit commissioning, busbar scheme operational dashboards, programmable curve profiles or automatic disturbance record extraction – applications are embedded. MiCOM S1 Agile supports all existing MiCOM, K-Series and Modulex, including a utility for automatic conversion of setting files from previous generations of numerical relays like K-series and MiCOM P20 to the latest P40 Agile models.",
+    "heading": "Engineering Tool Suite"
+  },
+  {
+    "location": "html-block:136",
+    "text": "To move to the future, with no loss of functionality, no loss of device support, and full compatibility with your installed base and system architecture – request a copy of S1 Agile with the contact form link below.",
+    "heading": "Engineering Tool Suite"
+  },
+  {
+    "location": "html-block:137",
+    "text": "Key features in the MiCOM S1 family:"
+  },
+  {
+    "location": "html-block:138",
+    "text": "GE Vernova\\’s integrated engineering tool that provides users with access to automation IED configuration and record data",
+    "heading": "Key features in the MiCOM S1 family:"
+  },
+  {
+    "location": "html-block:139",
+    "text": "Integrated configuration and monitoring features",
+    "heading": "Key features in the MiCOM S1 family:"
+  },
+  {
+    "location": "html-block:140",
+    "text": "Send and extract setting files",
+    "heading": "Key features in the MiCOM S1 family:"
+  },
+  {
+    "location": "html-block:141",
+    "text": "Event and disturbance record extraction and analysis",
+    "heading": "Key features in the MiCOM S1 family:"
+  },
+  {
+    "location": "html-block:142",
+    "text": "MiCOM S1 Agile software request"
+  },
+  {
+    "location": "html-block:143",
+    "text": "To receive the MiCOM S1 Agile, please use our Contact form. This will also ensure that you are kept up-to-date with the latest enhancements, including updates and bug fixes.",
+    "heading": "MiCOM S1 Agile software request"
+  },
+  {
+    "location": "html-block:144",
+    "text": "Retrofit/Refurbish"
+  },
+  {
+    "location": "html-block:145",
+    "text": "Refurbishment Solutions – “If It’s Blue Think to Renew”"
+  },
+  {
+    "location": "html-block:146",
+    "text": "GE Vernova\\’s latest MiCOM P440 series models P441 to P444 inclusive offer an ideal path to refurbish an older installed base of MiCOM P440 relays. Whether those older products were initially sold as GE VERNOVA or AREVA-branded products, newer models retain pin-pin refurbishment capability. Advantageously, users can benefit from the advancements made in protection, control, communications, hardware and cybersecurity that have taken place in the intervening years. The new P40 retains form, fit and function compatibility but delivers the latest platform and software ready for today\\’s environment, and for future-proofed application for the decades ahead.",
+    "heading": "Refurbishment Solutions – “If It’s Blue Think to Renew”"
+  },
+  {
+    "location": "html-block:147",
+    "text": "Pin-Pin Upgrade Methodology:"
+  },
+  {
+    "location": "html-block:148",
+    "text": "Take the order code (CORTEC) of the older relay being removed, typically a blue case relay",
+    "heading": "Pin-Pin Upgrade Methodology:"
+  },
+  {
+    "location": "html-block:149",
+    "text": "Translate to today\\’s latest GE Vernova MiCOM model, adding Ethernet options if required",
+    "heading": "Pin-Pin Upgrade Methodology:"
+  },
+  {
+    "location": "html-block:150",
+    "text": "Order the new P40 relay",
+    "heading": "Pin-Pin Upgrade Methodology:"
+  },
+  {
+    "location": "html-block:151",
+    "text": "Extract settings and logic, use S1 Agile toolsuite to convert settings",
+    "heading": "Pin-Pin Upgrade Methodology:"
+  },
+  {
+    "location": "html-block:152",
+    "text": "Detach the terminal blocks from old relay, leaving wiring attached / detach terminal blocks from the new.",
+    "heading": "Pin-Pin Upgrade Methodology:"
+  },
+  {
+    "location": "html-block:153",
+    "text": "Carefully examine the terminal blocks to see that no physical damage has occurred since installation",
+    "heading": "Pin-Pin Upgrade Methodology:"
+  },
+  {
+    "location": "html-block:154",
+    "text": "Mount new relay. Old relay blocks fit straight onto the new relay - safer, less wiring to reconnect.",
+    "heading": "Pin-Pin Upgrade Methodology:"
+  },
+  {
+    "location": "html-block:155",
+    "text": "It is recommended to apply rated current and voltage to the relay CT/VT inputs during secondary injection testing to check the continuity of the CT/VT terminal block connections to the relay.",
+    "heading": "Pin-Pin Upgrade Methodology:"
+  },
+  {
+    "location": "html-block:156",
+    "text": "Download converted files",
+    "heading": "Pin-Pin Upgrade Methodology:"
+  },
+  {
+    "location": "html-block:157",
+    "text": "Test, return circuit to service with only minutes of downtime",
+    "heading": "Pin-Pin Upgrade Methodology:"
+  },
+  {
+    "location": "html-block:158",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:159",
+    "text": "Multilin D60"
+  },
+  {
+    "location": "html-block:160",
+    "text": "Line Distance Protection System The D60 is suitable for protecting transmission lines and...",
+    "heading": "Multilin D60"
+  },
+  {
+    "location": "html-block:161",
+    "text": "View More",
+    "heading": "Multilin D60"
+  },
+  {
+    "location": "html-block:162",
+    "text": "P44 MiCOM 5th Generation"
+  },
+  {
+    "location": "html-block:163",
+    "text": "The P44, part of the MiCOM P40 Agile 5th Generation family, is a line distance Protection...",
+    "heading": "P44 MiCOM 5th Generation"
+  },
+  {
+    "location": "html-block:164",
+    "text": "View More",
+    "heading": "P44 MiCOM 5th Generation"
+  },
+  {
+    "location": "html-block:165",
+    "text": "MiCOMho Agile P443, P445, P446"
+  },
+  {
+    "location": "html-block:166",
+    "text": "Part of the MiCOM P40 platform, the MiCOMho Agile P443, P445 and P446 relays operate with...",
+    "heading": "MiCOMho Agile P443, P445, P446"
+  },
+  {
+    "location": "html-block:167",
+    "text": "View More",
+    "heading": "MiCOMho Agile P443, P445, P446"
+  }
+]

@@ -1,0 +1,622 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "Multilin DGCM Field RTU - Legacy"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "DGCM Field RTU - Legacy"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Contact Us",
+    "heading": "DGCM Field RTU - Legacy"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Manufacturing for this product has been discontinued. As an alternative, please refer to the iBox.",
+    "heading": "DGCM Field RTU - Legacy"
+  },
+  {
+    "location": "html-block:7",
+    "text": "The Multilin™ DGCM is a versatile Field RTU (Remote Terminal Unit) that can monitor and control a wide range of pole top, pad mount, and underground distribution assets. This compact solution is designed for easy installation on new equipment and retrofit on installed assets, making distribution modernization a cost-effective endeavor.",
+    "heading": "DGCM Field RTU - Legacy"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Improve efficiency and reliability by integrating remote feeders into DMS/OMS/SCADA",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Track non-technical losses with real-time energy monitoring",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Receive early warning signs of asset failure and approaching capacity limits",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Eliminate the need for fault passage indicators with built-in per-phase fault detection",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Develop customized control schemes with an advanced logic engine and expandable I/O",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Enhance fault location and load flow studies using sequence of event records & trending",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Reduce setup and commissioning time with easy-to-use software tools",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Use outdoors in harsh environments (-40° C to +65° C)",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Automate & control RMU/Pad Mounted Switchgear",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Fault detection for Cables in Vaults",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Load monitoring & theft identification at Consumer Substations, LV Systems",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Identify overload for Pad Mount/Underground Transformer",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Monitoring & Control for Pole Top Applications",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:23",
+    "text": "End of Line Monitoring for optimizing Volt/Var schemes",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Capacitor Bank Controller"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Voltage Regulator Controller"
+  },
+  {
+    "location": "html-block:27",
+    "text": "URC"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Substation Gateways & RTUs"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Distribution Feeder"
+  },
+  {
+    "location": "html-block:30",
+    "text": "EMS / DMS / OMS"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Distribution Automation Solutions"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Capacitor Bank Controller"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Voltage Regulator Controller"
+  },
+  {
+    "location": "html-block:41",
+    "text": "URC"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Substation Gateways & RTUs"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Distribution Feeder"
+  },
+  {
+    "location": "html-block:44",
+    "text": "EMS / DMS / OMS"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Distribution Automation Solutions"
+  },
+  {
+    "location": "html-block:46",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:47",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:50",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:51",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:52",
+    "text": "DGCM Field RTU - Legacy"
+  },
+  {
+    "location": "html-block:53",
+    "text": "Contact Us",
+    "heading": "DGCM Field RTU - Legacy"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Manufacturing for this product has been discontinued. As an alternative, please refer to the iBox.",
+    "heading": "DGCM Field RTU - Legacy"
+  },
+  {
+    "location": "html-block:55",
+    "text": "The Multilin™ DGCM is a versatile Field RTU (Remote Terminal Unit) that can monitor and control a wide range of pole top, pad mount, and underground distribution assets. This compact solution is designed for easy installation on new equipment and retrofit on installed assets, making distribution modernization a cost-effective endeavor.",
+    "heading": "DGCM Field RTU - Legacy"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Improve efficiency and reliability by integrating remote feeders into DMS/OMS/SCADA",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:58",
+    "text": "Track non-technical losses with real-time energy monitoring",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Receive early warning signs of asset failure and approaching capacity limits",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:60",
+    "text": "Eliminate the need for fault passage indicators with built-in per-phase fault detection",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:61",
+    "text": "Develop customized control schemes with an advanced logic engine and expandable I/O",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:62",
+    "text": "Enhance fault location and load flow studies using sequence of event records & trending",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:63",
+    "text": "Reduce setup and commissioning time with easy-to-use software tools",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:64",
+    "text": "Use outdoors in harsh environments (-40° C to +65° C)",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:65",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:66",
+    "text": "Automate & control RMU/Pad Mounted Switchgear",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:67",
+    "text": "Fault detection for Cables in Vaults",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:68",
+    "text": "Load monitoring & theft identification at Consumer Substations, LV Systems",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:69",
+    "text": "Identify overload for Pad Mount/Underground Transformer",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:70",
+    "text": "Monitoring & Control for Pole Top Applications",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:71",
+    "text": "End of Line Monitoring for optimizing Volt/Var schemes",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:72",
+    "text": "Fault Detection"
+  },
+  {
+    "location": "html-block:73",
+    "text": "Fault/Level Detections"
+  },
+  {
+    "location": "html-block:74",
+    "text": "Effective fault isolation is a key feature for grid reliability. The Multilin DGCM provides early warning for downstream overcurrent and earth faults. It can be programmed to isolate a faulted segment, either independently or from the remote. The Multilin DGCM also offers control, monitoring and diagnostics in one integrated, efficient design.",
+    "heading": "Fault/Level Detections"
+  },
+  {
+    "location": "html-block:75",
+    "text": "Overcurrent Protection"
+  },
+  {
+    "location": "html-block:76",
+    "text": "Instantaneous and time overcurrent functions are available for phase, neutral and negative sequence currents. A variety of time curves are provided, including IEEE/ANSI, IEC A/B/C/long time inverse/short time inverse, definite time and user-programmable curves.",
+    "heading": "Overcurrent Protection"
+  },
+  {
+    "location": "html-block:77",
+    "text": "Cold Load Pickup"
+  },
+  {
+    "location": "html-block:78",
+    "text": "The Multilin DGCM can be programmed to block instantaneous overcurrent elements, and raise the pickup time of overcurrent elements, when a cold load condition is detected. The cold load condition is detected during the closing of the breaker on a feeder that has been de-energized for a long time. The feeder inrush and motor accelerating currents during breaker closing may be above some overcurrent protection settings.",
+    "heading": "Cold Load Pickup"
+  },
+  {
+    "location": "html-block:79",
+    "text": "Overvoltage (OV) Detection"
+  },
+  {
+    "location": "html-block:80",
+    "text": "The phase OV protection guards voltage sensitive feeder loads and circuits against sustained OV conditions. It generates alarms when the voltage exceeds the selected voltage level for the specified time delay.",
+    "heading": "Overvoltage (OV) Detection"
+  },
+  {
+    "location": "html-block:81",
+    "text": "Undervoltage (UV) Detection"
+  },
+  {
+    "location": "html-block:82",
+    "text": "The phase UV detection alerts utilities against sustained UV conditions. The UV detector generates an alarm when the voltage drops below the selected voltage level after a specified time delay.",
+    "heading": "Undervoltage (UV) Detection"
+  },
+  {
+    "location": "html-block:83",
+    "text": "Power Loss"
+  },
+  {
+    "location": "html-block:84",
+    "text": "The Multilin DGCM can detect a power loss condition in each phase of the power distribution line. Open/close commands are blocked, unless currents and voltages of each phase fall below minimum set values.",
+    "heading": "Power Loss"
+  },
+  {
+    "location": "html-block:85",
+    "text": "Application Overview"
+  },
+  {
+    "location": "html-block:86",
+    "text": "Metering & Monitoring"
+  },
+  {
+    "location": "html-block:87",
+    "text": "Metering & Monitoring"
+  },
+  {
+    "location": "html-block:88",
+    "text": "The Multilin DGCM provides high accuracy metering and recording of all AC signals, measuring the following key parameters:",
+    "heading": "Metering & Monitoring"
+  },
+  {
+    "location": "html-block:89",
+    "text": "Basic Measurements"
+  },
+  {
+    "location": "html-block:90",
+    "text": "Current: Ia, Ib, Ic, In",
+    "heading": "Basic Measurements"
+  },
+  {
+    "location": "html-block:91",
+    "text": "Phase-to-phase and phase-to-ground voltages for bus and line: Van, Vbn, Vcn, Vbb, Vab, Vbc, Vca",
+    "heading": "Basic Measurements"
+  },
+  {
+    "location": "html-block:92",
+    "text": "Active power (per-phase and total): Wa, Wb, Wc, W",
+    "heading": "Basic Measurements"
+  },
+  {
+    "location": "html-block:93",
+    "text": "Reactive power (per-phase and total): VARa, VARb, VARc, VAR",
+    "heading": "Basic Measurements"
+  },
+  {
+    "location": "html-block:94",
+    "text": "Total active, reactive and apparent energy: MWh, MVARh, MVAh",
+    "heading": "Basic Measurements"
+  },
+  {
+    "location": "html-block:95",
+    "text": "Power factor (per-phase and total)",
+    "heading": "Basic Measurements"
+  },
+  {
+    "location": "html-block:96",
+    "text": "Frequency",
+    "heading": "Basic Measurements"
+  },
+  {
+    "location": "html-block:97",
+    "text": "Power Quality Measurements"
+  },
+  {
+    "location": "html-block:98",
+    "text": "Voltage sag/swell",
+    "heading": "Power Quality Measurements"
+  },
+  {
+    "location": "html-block:99",
+    "text": "Current unbalance",
+    "heading": "Power Quality Measurements"
+  },
+  {
+    "location": "html-block:100",
+    "text": "Demand: voltage, current, active power, apparent power, energy, temperature",
+    "heading": "Power Quality Measurements"
+  },
+  {
+    "location": "html-block:101",
+    "text": "2nd to 15th harmonic for current",
+    "heading": "Power Quality Measurements"
+  },
+  {
+    "location": "html-block:102",
+    "text": "2nd to 15th harmonic for voltage",
+    "heading": "Power Quality Measurements"
+  },
+  {
+    "location": "html-block:103",
+    "text": "THD in 20% for current",
+    "heading": "Power Quality Measurements"
+  },
+  {
+    "location": "html-block:104",
+    "text": "THD in 20% for voltage",
+    "heading": "Power Quality Measurements"
+  },
+  {
+    "location": "html-block:105",
+    "text": "Data Management & Diagnostic"
+  },
+  {
+    "location": "html-block:106",
+    "text": "Event Recorder"
+  },
+  {
+    "location": "html-block:107",
+    "text": "To enable more effective distribution, post fault analysis and troubleshooting, the Multilin DGCM provides an integrated event recorder and detailed diagnostic features. The event recorder offers:",
+    "heading": "Event Recorder"
+  },
+  {
+    "location": "html-block:108",
+    "text": "• Storage for up to 1024 consecutive events",
+    "heading": "Event Recorder"
+  },
+  {
+    "location": "html-block:109",
+    "text": "Trending and Data Logging"
+  },
+  {
+    "location": "html-block:110",
+    "text": "The Multilin DGCM provides a 200 channel RMS recorder for advanced disturbance diagnostic features.",
+    "heading": "Trending and Data Logging"
+  },
+  {
+    "location": "html-block:111",
+    "text": "The Multilin DGCM data logger helps in better understanding the analog channel behavior, by sampling at a selectable time interval rate of 1 to 60 minutes.",
+    "heading": "Trending and Data Logging"
+  },
+  {
+    "location": "html-block:112",
+    "text": "The Multilin DGCM event recorder enables users to analyze the sequence of events . Each event is stored with the event number, date, time and analog data of interest.",
+    "heading": "Trending and Data Logging"
+  },
+  {
+    "location": "html-block:113",
+    "text": "Communications"
+  },
+  {
+    "location": "html-block:114",
+    "text": "Communications"
+  },
+  {
+    "location": "html-block:115",
+    "text": "The Multilin DGCM utilizes industry standard communications technologies, making it one of easiest and flexible controllers to use and integrate into new and existing SCADA or DMS infrastructures.",
+    "heading": "Communications"
+  },
+  {
+    "location": "html-block:116",
+    "text": "Multiple Protocol Support"
+  },
+  {
+    "location": "html-block:117",
+    "text": "Multiple communication ports and protocols allow for remote control and easy access to device and system information. All communication ports are capable of simultaneous communications.",
+    "heading": "Multiple Protocol Support"
+  },
+  {
+    "location": "html-block:118",
+    "text": "Simultaneous industry standard protocols supported:",
+    "heading": "Multiple Protocol Support"
+  },
+  {
+    "location": "html-block:119",
+    "text": "DNP 3.0 – Serial and Ethernet",
+    "heading": "Multiple Protocol Support"
+  },
+  {
+    "location": "html-block:120",
+    "text": "Modbus Serial and Ethernet",
+    "heading": "Multiple Protocol Support"
+  },
+  {
+    "location": "html-block:121",
+    "text": "IEC 60870-5-104",
+    "heading": "Multiple Protocol Support"
+  },
+  {
+    "location": "html-block:122",
+    "text": "Integrated Cellular"
+  },
+  {
+    "location": "html-block:123",
+    "text": "The Multilin DGCM’s integrated cellular modem eliminates the need for external wireless devices, which reduces infrastructure costs.",
+    "heading": "Integrated Cellular"
+  },
+  {
+    "location": "html-block:124",
+    "text": "Several options for MDS™ radios when purchased with enclosure:",
+    "heading": "Integrated Cellular"
+  },
+  {
+    "location": "html-block:125",
+    "text": "MDS iNET-II",
+    "heading": "Integrated Cellular"
+  },
+  {
+    "location": "html-block:126",
+    "text": "MDS TransNet",
+    "heading": "Integrated Cellular"
+  },
+  {
+    "location": "html-block:127",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:128",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:129",
+    "text": "Software and Configuration"
+  },
+  {
+    "location": "html-block:130",
+    "text": "The EnerVista Suite is an industry-leading set of software programs that simplifies every aspect of using the Multilin DGCM. EnerVista provides the tools to monitor the status of the protected asset, maintain the controller and integrate information measured by the Multilin DGCM into SCADA or DMS monitoring systems.",
+    "heading": "Software and Configuration"
+  },
+  {
+    "location": "html-block:131",
+    "text": "EnerVista Launchpad"
+  },
+  {
+    "location": "html-block:132",
+    "text": "EnerVista Launchpad is a powerful software package that provides users with of the setup and support tools needed for configuring and maintaining GE Vernova’s Multilin products. The setup software within Launchpad allows the configuration of devices in real-time, by communicating via serial, Ethernet or modem connections, or offline, by creating device setting files to be sent to devices at a later time.",
+    "heading": "EnerVista Launchpad"
+  },
+  {
+    "location": "html-block:133",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:134",
+    "text": "Controllers"
+  },
+  {
+    "location": "html-block:135",
+    "text": "GE Vernova offers an industry-leading suite of controllers that support a variety of...",
+    "heading": "Controllers"
+  },
+  {
+    "location": "html-block:136",
+    "text": "View More",
+    "heading": "Controllers"
+  }
+]

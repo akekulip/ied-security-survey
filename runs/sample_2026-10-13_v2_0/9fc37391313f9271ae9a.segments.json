@@ -1,0 +1,430 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "EPM 4000 Sub-meter (Discontinued)"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "EPM 4000 Sub-meter - Legacy"
+  },
+  {
+    "location": "html-block:5",
+    "text": "EPM 4000 is an easy to use energy/demand data logging meter suitable for multi-tenant new construction or retrofit application. The EPM 4000 is available in 3, 6, 9 or 12 meter versions to suit a large variety of multi-tenant high-rise of garden-style apartments, condos or office suites. Its rugged metal enclosure is designed for fast installation as well as tamper resistance. The integral LCD display provides access to over 50 electrical parameters in real-time or historical format. These packages can be purchased as 120/208V or 277/480V ranges with either solid or split core CTs.",
+    "heading": "EPM 4000 Sub-meter - Legacy"
+  },
+  {
+    "location": "html-block:6",
+    "text": "The EPM 4000 also provides two modes of communication: (a) Standard PLC (Power Line Communication) where the AC lines act as the communication medium - Perfect for retrofit applications where pulling new communication lines is difficult and expensive or, (b) Optional RS-485 Modbus Open Protocol Communication for networking to third party systems through the EPM 4000’s communication transponder.",
+    "heading": "EPM 4000 Sub-meter - Legacy"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Integrable in various GE Vernova panelboards or power panel products",
+    "heading": "EPM 4000 Sub-meter - Legacy"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Meters up to 12 tenants",
+    "heading": "EPM 4000 Sub-meter - Legacy"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Reliable power line communications",
+    "heading": "EPM 4000 Sub-meter - Legacy"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Interval data & time of use capability",
+    "heading": "EPM 4000 Sub-meter - Legacy"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Load profiling",
+    "heading": "EPM 4000 Sub-meter - Legacy"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Collects data from water and gas meters",
+    "heading": "EPM 4000 Sub-meter - Legacy"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Easy to install",
+    "heading": "EPM 4000 Sub-meter - Legacy"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Proven accuracy-ANSI compliant",
+    "heading": "EPM 4000 Sub-meter - Legacy"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Features & Benefits"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Space Saver- Small footprint takes up a fraction of the space of a typical meter bank installation",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Cost Effective- Saves on equipment cost and installation",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Integrated Power Line Communications- Utilizes existing electrical wiring for communications; Requires no dedicated hard wires, additional modules or attachments for communications",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Flexible Data Programming-Interval data down to 5 minutes allows flexible load profiling and time of use billing options",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Accurate - Meets ANSI C12.16 specifications and stringent requirements of measurement Canada (AE-1148)",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Comprehensive Information- Event reporting with date and time stamps regarding power consumption, demand resets, power ups and power downs, time changes, and tampers",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Liquid Crystal Display LCD - provides consumption readings for each tenant",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Multi-utility Submetering System- Integrates and stores pulse data from gas and water meters",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Power Quality Data- Measures four-quadrant energy to analyze power quality",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Tamper Resistant -Rugged steel enclosure design",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Data Integrity -Utilizes flash memory for accurate data storage and integrity without battery reliance",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Installation Verification- Display allows on-site verification of proper installation",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Manufacturers Warranty- Three year meter warranty",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Easy Access To Data -Software package available for on or off-site meter reading",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:31",
+    "text": "EPM Metering Device Family"
+  },
+  {
+    "location": "html-block:32",
+    "text": "EPM 2000"
+  },
+  {
+    "location": "html-block:33",
+    "text": "EPM 5200"
+  },
+  {
+    "location": "html-block:34",
+    "text": "EPM 5300"
+  },
+  {
+    "location": "html-block:35",
+    "text": "EPM 6000"
+  },
+  {
+    "location": "html-block:36",
+    "text": "EPM 9450"
+  },
+  {
+    "location": "html-block:37",
+    "text": "EPM 9650"
+  },
+  {
+    "location": "html-block:38",
+    "text": "EPM 9800"
+  },
+  {
+    "location": "html-block:39",
+    "text": "PQM"
+  },
+  {
+    "location": "html-block:40",
+    "text": "PQM II"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Subscribe",
+    "heading": "Manuals"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:45",
+    "text": "EPM Metering Device Family"
+  },
+  {
+    "location": "html-block:46",
+    "text": "EPM 2000"
+  },
+  {
+    "location": "html-block:47",
+    "text": "EPM 5200"
+  },
+  {
+    "location": "html-block:48",
+    "text": "EPM 5300"
+  },
+  {
+    "location": "html-block:49",
+    "text": "EPM 6000"
+  },
+  {
+    "location": "html-block:50",
+    "text": "EPM 9450"
+  },
+  {
+    "location": "html-block:51",
+    "text": "EPM 9650"
+  },
+  {
+    "location": "html-block:52",
+    "text": "EPM 9800"
+  },
+  {
+    "location": "html-block:53",
+    "text": "PQM"
+  },
+  {
+    "location": "html-block:54",
+    "text": "PQM II"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Subscribe",
+    "heading": "Manuals"
+  },
+  {
+    "location": "html-block:58",
+    "text": "EPM 4000 Sub-meter - Legacy"
+  },
+  {
+    "location": "html-block:59",
+    "text": "EPM 4000 is an easy to use energy/demand data logging meter suitable for multi-tenant new construction or retrofit application. The EPM 4000 is available in 3, 6, 9 or 12 meter versions to suit a large variety of multi-tenant high-rise of garden-style apartments, condos or office suites. Its rugged metal enclosure is designed for fast installation as well as tamper resistance. The integral LCD display provides access to over 50 electrical parameters in real-time or historical format. These packages can be purchased as 120/208V or 277/480V ranges with either solid or split core CTs.",
+    "heading": "EPM 4000 Sub-meter - Legacy"
+  },
+  {
+    "location": "html-block:60",
+    "text": "The EPM 4000 also provides two modes of communication: (a) Standard PLC (Power Line Communication) where the AC lines act as the communication medium - Perfect for retrofit applications where pulling new communication lines is difficult and expensive or, (b) Optional RS-485 Modbus Open Protocol Communication for networking to third party systems through the EPM 4000’s communication transponder.",
+    "heading": "EPM 4000 Sub-meter - Legacy"
+  },
+  {
+    "location": "html-block:61",
+    "text": "Integrable in various GE Vernova panelboards or power panel products",
+    "heading": "EPM 4000 Sub-meter - Legacy"
+  },
+  {
+    "location": "html-block:62",
+    "text": "Meters up to 12 tenants",
+    "heading": "EPM 4000 Sub-meter - Legacy"
+  },
+  {
+    "location": "html-block:63",
+    "text": "Reliable power line communications",
+    "heading": "EPM 4000 Sub-meter - Legacy"
+  },
+  {
+    "location": "html-block:64",
+    "text": "Interval data & time of use capability",
+    "heading": "EPM 4000 Sub-meter - Legacy"
+  },
+  {
+    "location": "html-block:65",
+    "text": "Load profiling",
+    "heading": "EPM 4000 Sub-meter - Legacy"
+  },
+  {
+    "location": "html-block:66",
+    "text": "Collects data from water and gas meters",
+    "heading": "EPM 4000 Sub-meter - Legacy"
+  },
+  {
+    "location": "html-block:67",
+    "text": "Easy to install",
+    "heading": "EPM 4000 Sub-meter - Legacy"
+  },
+  {
+    "location": "html-block:68",
+    "text": "Proven accuracy-ANSI compliant",
+    "heading": "EPM 4000 Sub-meter - Legacy"
+  },
+  {
+    "location": "html-block:69",
+    "text": "Features & Benefits"
+  },
+  {
+    "location": "html-block:70",
+    "text": "Space Saver- Small footprint takes up a fraction of the space of a typical meter bank installation",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:71",
+    "text": "Cost Effective- Saves on equipment cost and installation",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:72",
+    "text": "Integrated Power Line Communications- Utilizes existing electrical wiring for communications; Requires no dedicated hard wires, additional modules or attachments for communications",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:73",
+    "text": "Flexible Data Programming-Interval data down to 5 minutes allows flexible load profiling and time of use billing options",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:74",
+    "text": "Accurate - Meets ANSI C12.16 specifications and stringent requirements of measurement Canada (AE-1148)",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:75",
+    "text": "Comprehensive Information- Event reporting with date and time stamps regarding power consumption, demand resets, power ups and power downs, time changes, and tampers",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:76",
+    "text": "Liquid Crystal Display LCD - provides consumption readings for each tenant",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:77",
+    "text": "Multi-utility Submetering System- Integrates and stores pulse data from gas and water meters",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:78",
+    "text": "Power Quality Data- Measures four-quadrant energy to analyze power quality",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:79",
+    "text": "Tamper Resistant -Rugged steel enclosure design",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:80",
+    "text": "Data Integrity -Utilizes flash memory for accurate data storage and integrity without battery reliance",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:81",
+    "text": "Installation Verification- Display allows on-site verification of proper installation",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:82",
+    "text": "Manufacturers Warranty- Three year meter warranty",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:83",
+    "text": "Easy Access To Data -Software package available for on or off-site meter reading",
+    "heading": "Features & Benefits"
+  },
+  {
+    "location": "html-block:84",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:85",
+    "text": "PQM II"
+  },
+  {
+    "location": "html-block:86",
+    "text": "The PQM II is an ideal choice when continuous monitoring of a three phase system is...",
+    "heading": "PQM II"
+  },
+  {
+    "location": "html-block:87",
+    "text": "View More",
+    "heading": "PQM II"
+  },
+  {
+    "location": "html-block:88",
+    "text": "EPM"
+  },
+  {
+    "location": "html-block:89",
+    "text": "GE Vernova provides a wide range of high accuracy power quality, power meters and...",
+    "heading": "EPM"
+  },
+  {
+    "location": "html-block:90",
+    "text": "View More",
+    "heading": "EPM"
+  },
+  {
+    "location": "html-block:91",
+    "text": "EPM 7000P"
+  },
+  {
+    "location": "html-block:92",
+    "text": "The Multilin™ EPM 7000P is a versatile power quality meter offering that can be used...",
+    "heading": "EPM 7000P"
+  },
+  {
+    "location": "html-block:93",
+    "text": "View More",
+    "heading": "EPM 7000P"
+  }
+]

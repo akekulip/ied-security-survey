@@ -1,0 +1,246 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "DS Agile H38 Redbox PRP Switch | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "DS Agile H38 - Legacy"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Contact Us",
+    "heading": "DS Agile H38 - Legacy"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Redbox PRP Switch"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Manufacturing for the product has been discontinued. As an alternative please refer to the Reason H49 PRP/HSR Redbox Switch.",
+    "heading": "Redbox PRP Switch"
+  },
+  {
+    "location": "html-block:8",
+    "text": "The DS Agile H38 is a range of standalone Ethernet switches compliant with the IEC 62439-3 Clause-4 PRP protocol, providing redundant, inter-operable, data communication. This redundancy box – ‘RedBox’- also supports the Precision Time Protocol (PTP) according to IEEE 1588 v2, to deliver precise local time synchronization to the IRIG-B port.",
+    "heading": "Redbox PRP Switch"
+  },
+  {
+    "location": "html-block:9",
+    "text": "The DS Agile H38 is designed as a metal-enclosed, DIN-rail mounting Ethernet network switch, embedded with the Parallel Redundancy Protocol (PRP) defined by the IEC 62439-3 standard, and compatible with the IEEE 1588 v2 Precision Time Protocol (PTP).",
+    "heading": "Redbox PRP Switch"
+  },
+  {
+    "location": "html-block:10",
+    "text": "DS Agile H38 Range"
+  },
+  {
+    "location": "html-block:11",
+    "text": "The H38 switch enables Ethernet-communicating devices to be inter-connected via the PRP in accordance with IEC 62439-3 Clause 4. The devices are connected to the PRP switch by means of RJ45 connectors compliant with 10/100Base-Tx. Three ports are provided for this. Each port detects, independently, the speed of the connected device (10Mbps or 100Mbps) and whether the link is half-duplex or full-duplex. It then automatically adjusts the port configuration to suit. Note that Ethernet copper links are limited in distance and subject to interference.",
+    "heading": "DS Agile H38 Range"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Ports | 10/100 Base-Tx Copper | 100 Base-Fx Multimode (PRP) | 100 Base-Fx Single Mode (PRP)",
+    "heading": "DS Agile H38 Range"
+  },
+  {
+    "location": "html-block:13",
+    "text": "DS Agile H382 | 3 | 2(LC) | -",
+    "heading": "DS Agile H38 Range"
+  },
+  {
+    "location": "html-block:14",
+    "text": "DS Agile H384 | 3 | - | 2(LC)",
+    "heading": "DS Agile H38 Range"
+  },
+  {
+    "location": "html-block:15",
+    "text": "DS Agile H38x Functional Composition"
+  },
+  {
+    "location": "html-block:16",
+    "text": "The PRP connection uses fiber-optic inter-switch connections. A multi-mode fiber-optic version is available for short distance connections and a single-mode version is available for longer distances. The PRP ports support 100Base-Fx using LC connectors.",
+    "heading": "DS Agile H38x Functional Composition"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Time Synchronization in DS Agile H38x"
+  },
+  {
+    "location": "html-block:18",
+    "text": "The DS Agile H38x switches support real-time clock synchronization using either PTP, in accordance with IEEE1588 v2, or Network Time Protocol (NTP). A one-pulse-per-second (PPS) signal is generated and displayed via a LED labeled as “Heartbeat” on the display. Time synchronization is available as an NTP service or via IRIG-B.",
+    "heading": "Time Synchronization in DS Agile H38x"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Substation Automation Systems"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Multifunction Servers, Gateways & RTUs"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Substation Controllers"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Technical Support"
+  },
+  {
+    "location": "html-block:24",
+    "text": "GSA Schedule"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Subscribe",
+    "heading": "Brochures"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Substation Automation Systems"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Multifunction Servers, Gateways & RTUs"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Substation Controllers"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Technical Support"
+  },
+  {
+    "location": "html-block:33",
+    "text": "GSA Schedule"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Subscribe",
+    "heading": "Brochures"
+  },
+  {
+    "location": "html-block:37",
+    "text": "DS Agile H38 - Legacy"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Contact Us",
+    "heading": "DS Agile H38 - Legacy"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Redbox PRP Switch"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Manufacturing for the product has been discontinued. As an alternative please refer to the Reason H49 PRP/HSR Redbox Switch.",
+    "heading": "Redbox PRP Switch"
+  },
+  {
+    "location": "html-block:41",
+    "text": "The DS Agile H38 is a range of standalone Ethernet switches compliant with the IEC 62439-3 Clause-4 PRP protocol, providing redundant, inter-operable, data communication. This redundancy box – ‘RedBox’- also supports the Precision Time Protocol (PTP) according to IEEE 1588 v2, to deliver precise local time synchronization to the IRIG-B port.",
+    "heading": "Redbox PRP Switch"
+  },
+  {
+    "location": "html-block:42",
+    "text": "The DS Agile H38 is designed as a metal-enclosed, DIN-rail mounting Ethernet network switch, embedded with the Parallel Redundancy Protocol (PRP) defined by the IEC 62439-3 standard, and compatible with the IEEE 1588 v2 Precision Time Protocol (PTP).",
+    "heading": "Redbox PRP Switch"
+  },
+  {
+    "location": "html-block:43",
+    "text": "DS Agile H38 Range"
+  },
+  {
+    "location": "html-block:44",
+    "text": "The H38 switch enables Ethernet-communicating devices to be inter-connected via the PRP in accordance with IEC 62439-3 Clause 4. The devices are connected to the PRP switch by means of RJ45 connectors compliant with 10/100Base-Tx. Three ports are provided for this. Each port detects, independently, the speed of the connected device (10Mbps or 100Mbps) and whether the link is half-duplex or full-duplex. It then automatically adjusts the port configuration to suit. Note that Ethernet copper links are limited in distance and subject to interference.",
+    "heading": "DS Agile H38 Range"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Ports | 10/100 Base-Tx Copper | 100 Base-Fx Multimode (PRP) | 100 Base-Fx Single Mode (PRP)",
+    "heading": "DS Agile H38 Range"
+  },
+  {
+    "location": "html-block:46",
+    "text": "DS Agile H382 | 3 | 2(LC) | -",
+    "heading": "DS Agile H38 Range"
+  },
+  {
+    "location": "html-block:47",
+    "text": "DS Agile H384 | 3 | - | 2(LC)",
+    "heading": "DS Agile H38 Range"
+  },
+  {
+    "location": "html-block:48",
+    "text": "DS Agile H38x Functional Composition"
+  },
+  {
+    "location": "html-block:49",
+    "text": "The PRP connection uses fiber-optic inter-switch connections. A multi-mode fiber-optic version is available for short distance connections and a single-mode version is available for longer distances. The PRP ports support 100Base-Fx using LC connectors.",
+    "heading": "DS Agile H38x Functional Composition"
+  },
+  {
+    "location": "html-block:50",
+    "text": "Time Synchronization in DS Agile H38x"
+  },
+  {
+    "location": "html-block:51",
+    "text": "The DS Agile H38x switches support real-time clock synchronization using either PTP, in accordance with IEEE1588 v2, or Network Time Protocol (NTP). A one-pulse-per-second (PPS) signal is generated and displayed via a LED labeled as “Heartbeat” on the display. Time synchronization is available as an NTP service or via IRIG-B.",
+    "heading": "Time Synchronization in DS Agile H38x"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:53",
+    "text": "Controllers"
+  },
+  {
+    "location": "html-block:54",
+    "text": "GE Vernova offers an industry-leading suite of controllers that support a variety of...",
+    "heading": "Controllers"
+  },
+  {
+    "location": "html-block:55",
+    "text": "View More",
+    "heading": "Controllers"
+  }
+]

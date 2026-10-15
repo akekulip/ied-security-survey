@@ -1,0 +1,938 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "B95Plus Bus Protection System | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "B95Plus – Legacy"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Contact Sales",
+    "heading": "B95Plus – Legacy"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Manufacturing for this product has been discontinued. As an alternative, please refer to the B30, P747 and P74x relays.",
+    "heading": "B95Plus – Legacy"
+  },
+  {
+    "location": "html-block:7",
+    "text": "The Multilin™ B95Plus Bus Protection System is the ideal solution for one of the biggest challenges for large bus protection: the time and cost involved in the design, installation and commissioning of the field wiring between measurements from the switchyardand the bus protection relay in the room. The HardFiber Brick, the environmentally hardened distributed bay unit of the B95Plus bus protection relay, directly reduces the time and costs involved in field wiring in both the short term and the long term.",
+    "heading": "B95Plus – Legacy"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Save time and money in the short term with flexible mounting options for the HardFiber Brick bay unit. The compact size and rugged design allows for installation in the switchyard, in equipment cabinets or in the control room. Data signals are converted to digital signals per the IEC 61850 standard and communicated over a single fiber optic cable. Installation next to the primary signal source virtually eliminates all field wiring.",
+    "heading": "B95Plus – Legacy"
+  },
+  {
+    "location": "html-block:9",
+    "text": "To save money in the long term, use the HardFiber Brick bay unit as an IEC 61850 process bus merging unit. This becomes the complete I/O interface for protective relays and all zones of protection. Relay installation for any future zone of protection becomes plug-and-play: mount the relay on a panel, plug the relay into the HardFiber Brick bay unit and commission.",
+    "heading": "B95Plus – Legacy"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Reduce field wiring costs by replacing multiple copper wires and terminations with a fiber optic cable",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Save installation costs by mounting the bay unit in harsh environments without requiring specialized enclosures",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Increase savings by connecting other relays to the same process bus bay unit",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Protect six three-phase differential zones with one central device",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Interactive Selector Guide"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Typical Applications"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Bus Principles & Protection"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Legacy Bus Protection"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Interactive Selector Guide"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Typical Applications"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Bus Principles & Protection"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Legacy Bus Protection"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:37",
+    "text": "B95Plus – Legacy"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Contact Sales",
+    "heading": "B95Plus – Legacy"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Manufacturing for this product has been discontinued. As an alternative, please refer to the B30, P747 and P74x relays.",
+    "heading": "B95Plus – Legacy"
+  },
+  {
+    "location": "html-block:40",
+    "text": "The Multilin™ B95Plus Bus Protection System is the ideal solution for one of the biggest challenges for large bus protection: the time and cost involved in the design, installation and commissioning of the field wiring between measurements from the switchyardand the bus protection relay in the room. The HardFiber Brick, the environmentally hardened distributed bay unit of the B95Plus bus protection relay, directly reduces the time and costs involved in field wiring in both the short term and the long term.",
+    "heading": "B95Plus – Legacy"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Save time and money in the short term with flexible mounting options for the HardFiber Brick bay unit. The compact size and rugged design allows for installation in the switchyard, in equipment cabinets or in the control room. Data signals are converted to digital signals per the IEC 61850 standard and communicated over a single fiber optic cable. Installation next to the primary signal source virtually eliminates all field wiring.",
+    "heading": "B95Plus – Legacy"
+  },
+  {
+    "location": "html-block:42",
+    "text": "To save money in the long term, use the HardFiber Brick bay unit as an IEC 61850 process bus merging unit. This becomes the complete I/O interface for protective relays and all zones of protection. Relay installation for any future zone of protection becomes plug-and-play: mount the relay on a panel, plug the relay into the HardFiber Brick bay unit and commission.",
+    "heading": "B95Plus – Legacy"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Reduce field wiring costs by replacing multiple copper wires and terminations with a fiber optic cable",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Save installation costs by mounting the bay unit in harsh environments without requiring specialized enclosures",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:46",
+    "text": "Increase savings by connecting other relays to the same process bus bay unit",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:47",
+    "text": "Protect six three-phase differential zones with one central device",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Field Wiring"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Field Wiring"
+  },
+  {
+    "location": "html-block:50",
+    "text": "We Solve the Field Wiring Challenge with the B95Plus Bus Protection System",
+    "heading": "Field Wiring"
+  },
+  {
+    "location": "html-block:51",
+    "text": "The Multilin B95Plus Bus Protection System changes the focus of bus protection to that of application by replacing most of the field wiring with distributed I/O and fiber optic cables. The bus protection system consists of a distributed process interface (data acquisition and tripping) architecture using HardFiber Bricks as bay units, with centralized processing performed by the B95Plus protection relay. All copper field wiring is between primary equipment in the switchyard and Bricks, which ideally should be located at the primary equipment in the switchyard. Fiber optic cables connect Bricks to the B95Plus. For all applications, the installation is then identical: the physical interface consists of Bricks connected to a fiber optic cable. A single B95Plus is mounted in a relay cabinet, with the process cards in the unit patched to the fiber optic cables coming from the Bricks.",
+    "heading": "Field Wiring"
+  },
+  {
+    "location": "html-block:52",
+    "text": "HardFiber Brick System"
+  },
+  {
+    "location": "html-block:53",
+    "text": "The HardFiber Brick System can easily be incrementally scaled to include new equipment as stations evolve. Duplicated Bricks in the switchyard provide a drastic improvement in reliability and security over today’s technology.",
+    "heading": "HardFiber Brick System"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Hardware"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Hardware"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Multilin B95Plus Bus Protection Relay"
+  },
+  {
+    "location": "html-block:57",
+    "text": "The B95Plus bus protection relay unit is the heart of the system. This unit performs all processing functionality, including protection functions, metering, monitoring, FlexLogic and SCADA communications.",
+    "heading": "Multilin B95Plus Bus Protection Relay"
+  },
+  {
+    "location": "html-block:58",
+    "text": "Simplifies use through a Graphical User Interface (GUI) that includes configurable single line diagrams for bus sources, local control and status indication of breakers and disconnects, 20 programmable pushbuttons, and a configurable digital alarm annunciator",
+    "heading": "Multilin B95Plus Bus Protection Relay"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Connects up to 8 Bricks for each process card while, supporting up to 12 bus sources per card",
+    "heading": "Multilin B95Plus Bus Protection Relay"
+  },
+  {
+    "location": "html-block:60",
+    "text": "Supports 2 process cards per unit, for a total of 16 Bricks and 24 bus sources",
+    "heading": "Multilin B95Plus Bus Protection Relay"
+  },
+  {
+    "location": "html-block:61",
+    "text": "Provides identical connections and installation for all bus configurations",
+    "heading": "Multilin B95Plus Bus Protection Relay"
+  },
+  {
+    "location": "html-block:62",
+    "text": "HardFiber Brick as Bay Unit"
+  },
+  {
+    "location": "html-block:63",
+    "text": "Measurement and control for primary apparatus, including AC measurements (4 currents and 4 voltages, or 8 currents) and contact I/O (18 digital inputs and 7 digital outputs including a latching relay)",
+    "heading": "HardFiber Brick as Bay Unit"
+  },
+  {
+    "location": "html-block:64",
+    "text": "Simple device with no field configuration or configuration settings",
+    "heading": "HardFiber Brick as Bay Unit"
+  },
+  {
+    "location": "html-block:65",
+    "text": "Environmentally hardened for outdoor mounting in switchyards",
+    "heading": "HardFiber Brick as Bay Unit"
+  },
+  {
+    "location": "html-block:66",
+    "text": "Connectorized cables for simple, tools-free field installation and removal",
+    "heading": "HardFiber Brick as Bay Unit"
+  },
+  {
+    "location": "html-block:67",
+    "text": "IEC 61850 message formats for communications, including sampled value messaging for currents and voltages",
+    "heading": "HardFiber Brick as Bay Unit"
+  },
+  {
+    "location": "html-block:68",
+    "text": "Cables"
+  },
+  {
+    "location": "html-block:69",
+    "text": "The HardFiber Brick uses connectorized cables to interface with primary equipment and with system measurements, and to interface to the B95Plus itself. The cables at the Brick end uses an IP67 certified industry standard connector designed for rugged environments. These connectors screw onto the Brick for a simple, tools-free connection. Three of the cables are copper cables used to acquire AC measurements, acquire equipment status, and provide equipment control. The fourth cable provides the fiber interface to the B95Plus central unit as well as DC power to the Brick. These cables therefore can become standard parts, manufactured in advance of installation by any cable manufacturer. These cables are also directly available from GE Vernova.",
+    "heading": "Cables"
+  },
+  {
+    "location": "html-block:70",
+    "text": "Protection"
+  },
+  {
+    "location": "html-block:71",
+    "text": "Protection"
+  },
+  {
+    "location": "html-block:72",
+    "text": "The B95Plus bus protection relay system provides robust and reliable protection for all bus protection applications. Highlights of the protection functions related to bus protection include:",
+    "heading": "Protection"
+  },
+  {
+    "location": "html-block:73",
+    "text": "Multi-zone differential protection with both restrained (dual-slope percent or biased) and unrestrained (unbiased or instantaneous) functions incorporated.",
+    "heading": "Protection"
+  },
+  {
+    "location": "html-block:74",
+    "text": "Differential protection is fast (typical response time: 1 power system cycle) and secure. Security is achieved by using a fast and reliable CT saturation detection algorithm and a phase comparison operating principle. Security is further enhanced by support for redundant process interface units (Bricks). Supports both three-phase tripping and individual phase tripping.",
+    "heading": "Protection"
+  },
+  {
+    "location": "html-block:75",
+    "text": "Dynamic bus replica functionality and multi-zone protection (up to 6 zones) is supported allowing application of the B95Plus to multi-section reconfigurable buses. A zone expansion/contraction to an open breaker feature is included. Isolator position monitoring for up to 48 isolators.",
+    "heading": "Protection"
+  },
+  {
+    "location": "html-block:76",
+    "text": "Check-zone functionality configured by programming one of the differential zones to enclose the entire bus.",
+    "heading": "Protection"
+  },
+  {
+    "location": "html-block:77",
+    "text": "Additional bus protection functions including end fault protection, breaker fail and overcurrent protection for each bus source, CT trouble monitoring for each bus zone.",
+    "heading": "Protection"
+  },
+  {
+    "location": "html-block:78",
+    "text": "Multilin B95Plus Functional Block Diagram"
+  },
+  {
+    "location": "html-block:79",
+    "text": "ANSI Divice Numbers & Functions"
+  },
+  {
+    "location": "html-block:80",
+    "text": "Device Number | Function",
+    "heading": "ANSI Divice Numbers & Functions"
+  },
+  {
+    "location": "html-block:81",
+    "text": "87B | Percent bus differential",
+    "heading": "ANSI Divice Numbers & Functions"
+  },
+  {
+    "location": "html-block:82",
+    "text": "27 | Undervoltage",
+    "heading": "ANSI Divice Numbers & Functions"
+  },
+  {
+    "location": "html-block:83",
+    "text": "50 | Instantaneous overcurrent",
+    "heading": "ANSI Divice Numbers & Functions"
+  },
+  {
+    "location": "html-block:84",
+    "text": "50/74 | CT Trouble",
+    "heading": "ANSI Divice Numbers & Functions"
+  },
+  {
+    "location": "html-block:85",
+    "text": "Device Number | Function",
+    "heading": "ANSI Divice Numbers & Functions"
+  },
+  {
+    "location": "html-block:86",
+    "text": "50/87 | Unrestrained Bus Differential",
+    "heading": "ANSI Divice Numbers & Functions"
+  },
+  {
+    "location": "html-block:87",
+    "text": "51EF | End fault protection",
+    "heading": "ANSI Divice Numbers & Functions"
+  },
+  {
+    "location": "html-block:88",
+    "text": "51 | Time overcurrent",
+    "heading": "ANSI Divice Numbers & Functions"
+  },
+  {
+    "location": "html-block:89",
+    "text": "50BF | Breaker failure",
+    "heading": "ANSI Divice Numbers & Functions"
+  },
+  {
+    "location": "html-block:90",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:91",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:92",
+    "text": "Reconfigurable multi-section bus bar with up to 24 feeders",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:93",
+    "text": "Retrofit and greenfield installations for power generation, transmission and distribution systems",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:94",
+    "text": "Reconfigurable bus bars for single bus, breaker-and-a-half and double bus with and without bus couplers",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:95",
+    "text": "Air-insulated and GIS stations",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:96",
+    "text": "Standardize on the B95Plus for Any Bus Configuration"
+  },
+  {
+    "location": "html-block:97",
+    "text": "The B95Plus can be applied on a multitude of bus configurations due to the distributed architecture, and includes support for up to 6 zones of bus differential protection and support for up to 24 bus sources. The physical connection and wiring architecture for the B95Plus system will be identical for any bus configuration: Bricks installed to acquire measurements and equipment status, with the B95Plus unit connected to Bricks via fiber optic cables. The relay panel design will be identical for all applications, for all bus configurations. The only difference from application to application is the number and location of Bricks, and the programming of the B95Plus unit.",
+    "heading": "Standardize on the B95Plus for Any Bus Configuration"
+  },
+  {
+    "location": "html-block:98",
+    "text": "Some typical bus configurations that can be protected by the B95Plus:",
+    "heading": "Standardize on the B95Plus for Any Bus Configuration"
+  },
+  {
+    "location": "html-block:99",
+    "text": "Two single buses with a bus coupler",
+    "heading": "Standardize on the B95Plus for Any Bus Configuration"
+  },
+  {
+    "location": "html-block:100",
+    "text": "Double bus with a bus coupler",
+    "heading": "Standardize on the B95Plus for Any Bus Configuration"
+  },
+  {
+    "location": "html-block:101",
+    "text": "Breaker-and-a-half arrangement",
+    "heading": "Standardize on the B95Plus for Any Bus Configuration"
+  },
+  {
+    "location": "html-block:102",
+    "text": "Process Bus"
+  },
+  {
+    "location": "html-block:103",
+    "text": "Process Bus"
+  },
+  {
+    "location": "html-block:104",
+    "text": "Quickly Expand Protection through Process Bus"
+  },
+  {
+    "location": "html-block:105",
+    "text": "The B95Plus Bus Protection System is intended to operate as a standalone, distributed bus protection system. The bay units for this system are Bricks, part of the HardFiber IEC 61850 process bus solution. Once the Bricks for the B95Plus are installed process bus data is available for use for any other zone of protection. The Bricks, then, are a distributed I/O interface for all protection functions and zones, not just the B95Plus. With the B95Plus in place, installing line protection or feeder protection is a simple process: mount the relays in a panel, and patch to the fiber optic cable from the appropriate Bricks. The only requirement is the relays must implement the appropriate IEC 61850 datasets to interface successfully with the Bricks. All members of the Universal Relay family have the ability to interface with Bricks.",
+    "heading": "Quickly Expand Protection through Process Bus"
+  },
+  {
+    "location": "html-block:106",
+    "text": "Expand protection through process bus",
+    "heading": "Quickly Expand Protection through Process Bus"
+  },
+  {
+    "location": "html-block:107",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:108",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:109",
+    "text": "BUS DIFFERENTIAL PROTECTION",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:110",
+    "text": "Number of differential zones | Six 3-phase zones",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:111",
+    "text": "Max number of currents: | Total dynamic number of bus source to zone connections closed at any one moment in time up to 120",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:112",
+    "text": "CT ratio compensation range | 32:1",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:113",
+    "text": "Operating time | < 1 power system cycle - typical bus fault",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:114",
+    "text": "BUS REPLICA",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:115",
+    "text": "Features | Dynamic bus source current assignment to each zone, dynamic zone trip assignment to each bus source, dynamic blocking of zones on CT bypassed, 1 user programmable auxiliary zone trip inputs, 3 user programmable bus source trip inputs, dynamic zone expansion/reduction",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:116",
+    "text": "BUS SOURCES",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:117",
+    "text": "Number of bus sources | 12 per process card included in the order code",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:118",
+    "text": "Current inputs | 3-phase currents",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:119",
+    "text": "CT rated primary | 1 to 65000 A",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:120",
+    "text": "CT rated secondary | 1 A or 5 A",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:121",
+    "text": "Nominal frequency | 50 or 60 Hz",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:122",
+    "text": "CT Trouble Monitoring | 1 element per bus source",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:123",
+    "text": "Breaker failure protection | 1 element per bus source",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:124",
+    "text": "Instantaneous Phase Overcurrent | 1 element per bus source",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:125",
+    "text": "Inverse Time Phase Overcurrent | 1 element per bus source",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:126",
+    "text": "VOLTAGE SOURCES",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:127",
+    "text": "Number of voltage sources | 2 per process card included in the order code",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:128",
+    "text": "Voltage inputs | 3-phase voltages, wye or delta",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:129",
+    "text": "VT ratio | 1.00 V to 24000.00 /td>",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:130",
+    "text": "VT rated secondary | 25.0 V to 240.0 V",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:131",
+    "text": "Nominal frequency | 50 or 60 Hz",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:132",
+    "text": "ISOLATORS",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:133",
+    "text": "Number of isolators | 48 per process card included in the order code",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:134",
+    "text": "Isolator status inputs | Form “a” and form “b” contact inputs, each optionally dual redundant",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:135",
+    "text": "Configurable failsafe modes | 2Open, closed, last valid state",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:136",
+    "text": "Monitoring | Alarm on inconsistent inputs persisting longer than a user set time",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:137",
+    "text": "TRANSIENT RECORDER",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:138",
+    "text": "Storage capacity | Five records with all channels recorded, at 128 samples per cycle, spanning 1 second with no retriggers",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:139",
+    "text": "Number of records | 1, 2, 5, 10, 20, 30, 40, or 50 records",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:140",
+    "text": "Sampling rate | 16, 32, 64 or 128 samples per power cycle",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:141",
+    "text": "AC waveform channels | All enabled bus sources and voltages sources",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:142",
+    "text": "Analog channels | Magnitudes and angles of all ac waveforms recorded plus all enabled zone differential and zone restraint phase current magnitudes and angles",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:143",
+    "text": "Digital channels | 128 user configurable channels on the main card and 128 user configurable channels on each process card",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:144",
+    "text": "Configurable digital data | Any FlexLogic™ operand",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:145",
+    "text": "Storage modes | Automatic overwrite, protected",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:146",
+    "text": "Triggering modes | Time window from rising edge of trigger, continuous recording up to 4 additional basic record lengths as long as retrigger is active",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:147",
+    "text": "Pre-trigger window | 0 to 100% of the basic record length",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:148",
+    "text": "Data storage | non-volatile memory",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:149",
+    "text": "EVENT RECORDER",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:150",
+    "text": "Storage capacity | 8,192 events plus 8,192 events on each process card",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:151",
+    "text": "Time tag: | to 1 µs",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:152",
+    "text": "Triggers | all FlexLogic™ operand activations",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:153",
+    "text": "PROCESS I/O",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:154",
+    "text": "Number of process bus ports | 8 per process card",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:155",
+    "text": "Port type | 100Base-BX-D, in SFP package with LC 50/125µm multi-mode connector",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:156",
+    "text": "Transceiver diagnostics | per SFF-8472",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:157",
+    "text": "Brick synch frame jitter | ±1µs",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:158",
+    "text": "POWER SUPPLY",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:159",
+    "text": "Nominal DC voltage | 125 to 250 V",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:160",
+    "text": "Minimum DC voltage | 80 V",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:161",
+    "text": "1Maximum DC voltage | 300 V",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:162",
+    "text": "Nominal AC voltage | 100 to 240 V at 50/60 Hz",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:163",
+    "text": "Minimum AC voltage | 80 V at 48 to 62 Hz",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:164",
+    "text": "Maximum AC voltage | 275 V at 48 to 62 Hz",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:165",
+    "text": "Voltage withstand | 2 × highest nominal voltage for 10 ms",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:166",
+    "text": "Voltage loss ride-through | 200 ms duration at nominal input voltage",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:167",
+    "text": "Power consumption | 150 VA maximum",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:168",
+    "text": "PROCESS CARD OPTICAL",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:169",
+    "text": "Number of transceivers | 8",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:170",
+    "text": "Transceiver type: | Transmit 1550 nm, receive 1310 nm, 100Mb/s, bi-directional single-fiber 50/125µm multi-mode module (levels comply with IEEE 802.3 standard 100Base-BX-D)",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:171",
+    "text": "Optical transmit power | –14 to –8 dBm",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:172",
+    "text": "Maximum optical input power | –8dBm",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:173",
+    "text": "Optical receiver sensitivity | –30dBm",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:174",
+    "text": "Termination | LC fiber connector",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:175",
+    "text": "Laser class | Class 1. This product is eye-safe under all operating conditions.",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:176",
+    "text": "REMOTE RESOURCE SPECIFICATIONS",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:177",
+    "text": "Number of field units | 8 per process card",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:178",
+    "text": "Number of field contact inputs | 1 for each brick contact input",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:179",
+    "text": "Number of field contact outputs | 1 for each brick contact output",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:180",
+    "text": "Number of field latching outputs | 1 for each brick latching output",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:181",
+    "text": "Number of shared inputs | 16 per process card",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:182",
+    "text": "Number of shared outputs | 16 per process card",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:183",
+    "text": "APPROVALS AND CERTIFICATION",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:184",
+    "text": "Compliance | CE, UL, ISO",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:185",
+    "text": "Compliance | Applicable Council | Directive According To",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:186",
+    "text": "CE | Low voltage directive | EN 60255-27",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:187",
+    "text": "(normative sections)",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:188",
+    "text": "EMC directive | EN 60255-26 / EN 50263",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:189",
+    "text": "EN 61000-6-5 (Area G)",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:190",
+    "text": "UL | cULus | UL 508",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:191",
+    "text": "UL 1053",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:192",
+    "text": "C22.2 No 14",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:193",
+    "text": "ISO | Quality management system | ISO 9001",
+    "heading": "Specifications"
+  },
+  {
+    "location": "html-block:194",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:195",
+    "text": "Bus Protection"
+  },
+  {
+    "location": "html-block:196",
+    "text": "GE Vernova provides enhanced reliability through advanced protection for a wide range of...",
+    "heading": "Bus Protection"
+  },
+  {
+    "location": "html-block:197",
+    "text": "View More",
+    "heading": "Bus Protection"
+  }
+]

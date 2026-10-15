@@ -1,0 +1,885 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "Multilin B30 | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "Multilin B30"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Multiple Sections Low Impedance Busbar Protection"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Contact Sales Buy Now",
+    "heading": "Multiple Sections Low Impedance Busbar Protection"
+  },
+  {
+    "location": "html-block:7",
+    "text": "The Multilin B30 bus protection relay features integrated protection, visualization and metering for LV, MV, HV and EHV busbars, providing cost-effective, feature-focused centralized or distributed busbar protection scheme. Use the B30 to protect busbars with up to 6 feeders 2-zones (conventional CT inputs) or up to 16 feeders 6-zones (with process bus module) with up to six three-phase differential zones. The Multilin B30 relay is a cost-effective alternative to high-impedance schemes, ideal for breaker-and-half bus schemes, with integrated feeder backup protection.",
+    "heading": "Multiple Sections Low Impedance Busbar Protection"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:9",
+    "text": "High speed differential protection algorithm for sub-cycle trip times of 0.75 power cycle with CT saturation detection with only 2ms of saturation-free current",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Multiple ethernet ports for station and process bus with Advanced IEC 61850 Ed. 1 and Ed. 2 certified implementation, complete settings via SCL files and highly flexible process bus support (IEC 61850-9-2LE or IEC 61850-9-2 Hardfiber) ensures interoperability, device managing optimization and reduced cost of ownership",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Routable GOOSE (R-GOOSE) enables GOOSE messages going beyond the substation",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Application flexibility with multiple I/O options including high density I/O, programmable logic, modularity, and specific customization",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Advance Cyber security features “CyberSentryTM” that helps meet modern industry requirements",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:14",
+    "text": "An integrated large, full color display, provides real-time visualization and control of the protected bay, via a bay mimic as well as annunciator functionality and graphical visualization of phasors",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Re-configurable simple bus applications, up to 16 feeders and 6 differential zones with breaker failure",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Conventional CT/VT or digital S/S via IEC 61850-9-2LE or IEC 61869 process bus",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Centralized (six feeders, two zones) or distributed (sixteen feeders, six zones) busbar schemes",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Integrated bus differential, backup protection visualization and metering for LV, MV, HV and EHV substations",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:20",
+    "text": "CPC schemes - multiple feeders",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Interactive Selector Guide"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Typical Applications"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Bus Principles & Protection"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Legacy Bus Protection"
+  },
+  {
+    "location": "html-block:26",
+    "text": "How-to Videos"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Industry Expert Talks"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Drawings"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Product & Cyber Security Advisories"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Application Notes"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Subscribe",
+    "heading": "Application Notes"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Interactive Selector Guide"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Typical Applications"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Bus Principles & Protection"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Legacy Bus Protection"
+  },
+  {
+    "location": "html-block:43",
+    "text": "How-to Videos"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Industry Expert Talks"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:46",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:47",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:50",
+    "text": "Drawings"
+  },
+  {
+    "location": "html-block:51",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Product & Cyber Security Advisories"
+  },
+  {
+    "location": "html-block:53",
+    "text": "Application Notes"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Subscribe",
+    "heading": "Application Notes"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Multilin B30"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Multiple Sections Low Impedance Busbar Protection"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Contact Sales Buy Now",
+    "heading": "Multiple Sections Low Impedance Busbar Protection"
+  },
+  {
+    "location": "html-block:58",
+    "text": "The Multilin B30 bus protection relay features integrated protection, visualization and metering for LV, MV, HV and EHV busbars, providing cost-effective, feature-focused centralized or distributed busbar protection scheme. Use the B30 to protect busbars with up to 6 feeders 2-zones (conventional CT inputs) or up to 16 feeders 6-zones (with process bus module) with up to six three-phase differential zones. The Multilin B30 relay is a cost-effective alternative to high-impedance schemes, ideal for breaker-and-half bus schemes, with integrated feeder backup protection.",
+    "heading": "Multiple Sections Low Impedance Busbar Protection"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:60",
+    "text": "High speed differential protection algorithm for sub-cycle trip times of 0.75 power cycle with CT saturation detection with only 2ms of saturation-free current",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:61",
+    "text": "Multiple ethernet ports for station and process bus with Advanced IEC 61850 Ed. 1 and Ed. 2 certified implementation, complete settings via SCL files and highly flexible process bus support (IEC 61850-9-2LE or IEC 61850-9-2 Hardfiber) ensures interoperability, device managing optimization and reduced cost of ownership",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:62",
+    "text": "Routable GOOSE (R-GOOSE) enables GOOSE messages going beyond the substation",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:63",
+    "text": "Application flexibility with multiple I/O options including high density I/O, programmable logic, modularity, and specific customization",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:64",
+    "text": "Advance Cyber security features “CyberSentryTM” that helps meet modern industry requirements",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:65",
+    "text": "An integrated large, full color display, provides real-time visualization and control of the protected bay, via a bay mimic as well as annunciator functionality and graphical visualization of phasors",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:66",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:67",
+    "text": "Re-configurable simple bus applications, up to 16 feeders and 6 differential zones with breaker failure",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:68",
+    "text": "Conventional CT/VT or digital S/S via IEC 61850-9-2LE or IEC 61869 process bus",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:69",
+    "text": "Centralized (six feeders, two zones) or distributed (sixteen feeders, six zones) busbar schemes",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:70",
+    "text": "Integrated bus differential, backup protection visualization and metering for LV, MV, HV and EHV substations",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:71",
+    "text": "CPC schemes - multiple feeders",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:72",
+    "text": "What's New"
+  },
+  {
+    "location": "html-block:73",
+    "text": "New and Enhanced Communication Capabilities"
+  },
+  {
+    "location": "html-block:74",
+    "text": "New B30 with process bus module supports IEC 61869 sample values, PTP master capabilities and SV switching (FW 7.9x)",
+    "heading": "New and Enhanced Communication Capabilities"
+  },
+  {
+    "location": "html-block:75",
+    "text": "New UR process bus modules supporting IEC61850-9-2LE Merging Units and IEC61850-9-2 Hardfiber (FW 7.8x) Module Training available here",
+    "heading": "New and Enhanced Communication Capabilities"
+  },
+  {
+    "location": "html-block:76",
+    "text": "Support switchable IEC 61850 Ed. 1 and Ed. 2 and redundant SNTP (FW 7.7x)",
+    "heading": "New and Enhanced Communication Capabilities"
+  },
+  {
+    "location": "html-block:77",
+    "text": "New UR front panel with integrated 7” color, graphical display - providing operators with enhanced situational awareness (FW 7.6x)",
+    "heading": "New and Enhanced Communication Capabilities"
+  },
+  {
+    "location": "html-block:78",
+    "text": "Cyber Security - CyberSentry UR (FW v7.xx)"
+  },
+  {
+    "location": "html-block:79",
+    "text": "CyberSentryTM enables UR devices to deliver full cyber security features that help customers to comply with cyber security requirements (NERC CIP, IEEE 1686, IEC 62443, etc):",
+    "heading": "Cyber Security - CyberSentry UR (FW v7.xx)"
+  },
+  {
+    "location": "html-block:80",
+    "text": "Secured firmware upgrade: FW file includes hash code that enables authentication prior to being used for upgrading UR Relay (FW 7.9x)",
+    "heading": "Cyber Security - CyberSentry UR (FW v7.xx)"
+  },
+  {
+    "location": "html-block:81",
+    "text": "Fully Compatible with IEC 61850-9-2LE or IEC61869 process bus schemes:"
+  },
+  {
+    "location": "html-block:82",
+    "text": "Can connect to up to 16 merging units over -9-2LE or 61869",
+    "heading": "Fully Compatible with IEC 61850-9-2LE or IEC61869 process bus schemes:"
+  },
+  {
+    "location": "html-block:83",
+    "text": "Supports PRP, HSR, dual HSR and point-to-point process bus topology",
+    "heading": "Fully Compatible with IEC 61850-9-2LE or IEC61869 process bus schemes:"
+  },
+  {
+    "location": "html-block:84",
+    "text": "Provides support for GE Vernova’s IEC 61850 HardFiber Process Bus Solution",
+    "heading": "Fully Compatible with IEC 61850-9-2LE or IEC61869 process bus schemes:"
+  },
+  {
+    "location": "html-block:85",
+    "text": "Extended Oscillography Records (FW v7.xx)"
+  },
+  {
+    "location": "html-block:86",
+    "text": "Increased number of digital and analog channels (FW 7.90)",
+    "heading": "Extended Oscillography Records (FW v7.xx)"
+  },
+  {
+    "location": "html-block:87",
+    "text": "Supports IEEE C37.111-1999/2013, IEC 60255-24 Ed 2.0 COMTRADE 2013 standard (FW v7.40)",
+    "heading": "Extended Oscillography Records (FW v7.xx)"
+  },
+  {
+    "location": "html-block:88",
+    "text": "Configurable events allow for records of up to 45s at 64 samples per cycle",
+    "heading": "Extended Oscillography Records (FW v7.xx)"
+  },
+  {
+    "location": "html-block:89",
+    "text": "Protection and Control Functionality"
+  },
+  {
+    "location": "html-block:90",
+    "text": "B30 supports up to sixteen feeders and six differential bus zones when equipped with -9-2LE process bus module, end-fault protection, partial P&C blocking due to SV status (FW 7.9).",
+    "heading": "Protection and Control Functionality"
+  },
+  {
+    "location": "html-block:91",
+    "text": "Optional extended feeder protection functionality including auto-reclose, current directional elements synch-check and under-frequency (FW 7.91)",
+    "heading": "Protection and Control Functionality"
+  },
+  {
+    "location": "html-block:92",
+    "text": "Protection & Control"
+  },
+  {
+    "location": "html-block:93",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:94",
+    "text": "Differential bus protection with restrained and unrestrained functions",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:95",
+    "text": "Fast and reliable CT saturation detection",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:96",
+    "text": "Breaker failure protection",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:97",
+    "text": "External check-zone",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:98",
+    "text": "CT ratio mismatch compensation",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:99",
+    "text": "Dynamic bus replica",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:100",
+    "text": "Backup time and instantaneous overcurrent elements",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:101",
+    "text": "Undervoltage function for supervision purposes",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:102",
+    "text": "Protection & Control"
+  },
+  {
+    "location": "html-block:103",
+    "text": "The B30 can be deployed as either centralized or distributed phase segregated scheme. As centralized Bus Bar Protection, it does not rely on extensive communications between IEDs, an approach that increases overall reliability. As distributed Bus Bar protection, the B30 uses either \"61850-9-2LE or IEC61869 merging units\" or \"61850-9-2 Brick\" as bay units. This type of scheme is superior when expecting future busbar expansions.",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:104",
+    "text": "The B30 bus differential protection system provides secure, sub-cycle low-impedance bus protection for up to sixteen feeders and up to six busbar sections. The B30 is ideally suited for applications where high-impedance schemes were typically used. Overall system costs can be reduced with the B30, since there is no need for dedicated, or interposing, CTs. The B30 comes with advanced features, such as breaker failure, CT trouble detection, undervoltage supervision, and dynamic bus replica. With its extreme flexibility, which includes a CT ratio mismatch of up to 32:1 between terminals, the B30 is the ideal solution in a wide variety of bus differential applications.",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:105",
+    "text": "Part of the Universal Relay family, the B30 comes with a variety of versatile features, truly integrating protection, monitoring, metering, communication and control in one easy-to-use relay. The Universal Relay family offers a high degree of modularity in its design and functionality, providing superior performance in protection and control, while meeting the toughest requirements of the marketplace.",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:106",
+    "text": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:107",
+    "text": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:108",
+    "text": "Device Number | Function",
+    "heading": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:109",
+    "text": "25 | Synchrocheck",
+    "heading": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:110",
+    "text": "27P | Phase Undervoltage",
+    "heading": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:111",
+    "text": "27x | Auxiliary undervoltage",
+    "heading": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:112",
+    "text": "49 | Thermal Overload Protection",
+    "heading": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:113",
+    "text": "50BF | Breaker Failure",
+    "heading": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:114",
+    "text": "50DD | Disturbance detector",
+    "heading": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:115",
+    "text": "50EF | End Fault Protection",
+    "heading": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:116",
+    "text": "50G | Ground Instantaneous Overcurrent",
+    "heading": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:117",
+    "text": "50N | Neutral Instantaneous Overcurrent",
+    "heading": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:118",
+    "text": "50P | Phase Instantaneous Overcurrent",
+    "heading": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:119",
+    "text": "50/74 | CT Trouble",
+    "heading": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:120",
+    "text": "50/87 | Unrestrained Bus Differential",
+    "heading": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:121",
+    "text": "51G | Ground Time Overcurrent",
+    "heading": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:122",
+    "text": "51N | Neutral Time Overcurrent",
+    "heading": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:123",
+    "text": "51P | Phase Time Overcurrent",
+    "heading": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:124",
+    "text": "59N | Neutral Overvoltage",
+    "heading": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:125",
+    "text": "59P | Neutral Overvoltage",
+    "heading": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:126",
+    "text": "59X | Auxiliary Overvoltage",
+    "heading": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:127",
+    "text": "67N | Neutral directional overcurrent",
+    "heading": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:128",
+    "text": "67P | Phase Directional",
+    "heading": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:129",
+    "text": "79 | Autoreclose",
+    "heading": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:130",
+    "text": "81U | Underfrequency",
+    "heading": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:131",
+    "text": "87B | Restrained Bus Differential",
+    "heading": "ANSI Device Numbers & Functions"
+  },
+  {
+    "location": "html-block:132",
+    "text": "Monitoring & Diagnostic"
+  },
+  {
+    "location": "html-block:133",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:134",
+    "text": "Isolator and breaker status monitoring",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:135",
+    "text": "CT trouble monitoring, VT supervision",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:136",
+    "text": "Metering - current, voltage, frequency, power, energy",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:137",
+    "text": "Oscillography - 64 samples/cycle, up to 64 records",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:138",
+    "text": "Event Recorder - 1024 time tagged events, with 0.5 ms scan of digital input",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:139",
+    "text": "User configurable fault report",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:140",
+    "text": "Data logger for analog channels",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:141",
+    "text": "Monitoring & Diagnostic"
+  },
+  {
+    "location": "html-block:142",
+    "text": "The B30 is the single point for protection, control, metering, and monitoring in one integrated device that can easily be connected directly into DCS or SCADA monitoring and control systems like Viewpoint Monitoring.",
+    "heading": "Monitoring & Diagnostic"
+  },
+  {
+    "location": "html-block:143",
+    "text": "Advanced Automation"
+  },
+  {
+    "location": "html-block:144",
+    "text": "The B30 incorporates advanced automation features including powerful FlexLogic programmable logic, communication, and SCADA capabilities that far surpass what is found in the average bus relay. The B30 integrates seamlessly with other UR relays for complete system protection.",
+    "heading": "Advanced Automation"
+  },
+  {
+    "location": "html-block:145",
+    "text": "The internal operation of the B30 elements, logic, and outputs can be monitored in real-time to simplify commissioning and troubleshooting procedures.",
+    "heading": "Advanced Automation"
+  },
+  {
+    "location": "html-block:146",
+    "text": "Communications"
+  },
+  {
+    "location": "html-block:147",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:148",
+    "text": "Complete IEC 61850 Process Bus solution providing resource optimization and minimizing total P & C life cycle costs",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:149",
+    "text": "Three independent 100Mbps Ethernet ports enable purpose specific LAN support that eliminates latency effect of heavy traffic protocols on mission critical communication services",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:150",
+    "text": "Embedded IEEE 1588 time-synch protocol support eliminates dedicated IRIG-B wiring requirements for IEDs",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:151",
+    "text": "Direct I/O secures high-speed exchange of binary data between URs",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:152",
+    "text": "Increase network availability by reducing failover time to zero through IEC62439-3 PRP, HSR or dual HSR support",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:153",
+    "text": "Advanced Communications"
+  },
+  {
+    "location": "html-block:154",
+    "text": "The Multilin B30 bus protection relay provides for secure remote data and engineering access, making it easy and flexible to use and integrate into new and existing infrastructures. Fiber optic Ethernet provides high-bandwidth communications allowing for low-latency controls and high-speed file transfers of relay fault and event record information. The available three independent and redundant Ethernet options provide the means to create fault tolerant communication architectures in an easy, cost-effective manner.",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:155",
+    "text": "The B30 supports the most popular industry standard protocols enabling easy, direct integration into DCS and SCADA systems.",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:156",
+    "text": "IEC 61850-9-2LE or IEC 61869 point-to-point or networked or IEC61850-9-2 Hardfiber process bus support",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:157",
+    "text": "DNP 3.0 (serial & TCP/IP)",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:158",
+    "text": "Ethernet Global Data (EGD)",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:159",
+    "text": "IEC 60870-5-103 and IEC 60870-5-104",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:160",
+    "text": "Modbus RTU, Modbus TCP/IP",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:161",
+    "text": "HTTP, TFTP, SFTP and MMS file transfer",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:162",
+    "text": "Redundant SNTP and IEEE 1588 for time synchronization",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:163",
+    "text": "PRP as per IEC 62439-3",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:164",
+    "text": "Supports Routable GOOSE (R-GOOSE)",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:165",
+    "text": "Interoperability with Enbedded IEC 61850"
+  },
+  {
+    "location": "html-block:166",
+    "text": "Use the B30 with integrated IEC 61850 to lower costs associated with busbar protection, control and automation. GE Vernova’s leadership in IEC 61850 comes from thousands of installed devices and follows on years of development experience with UCA 2.0.",
+    "heading": "Interoperability with Enbedded IEC 61850"
+  },
+  {
+    "location": "html-block:167",
+    "text": "The B30’s IEC 61850 Process Bus module is designed to interface with the Multilin HardFiber System, allowing bi-directional IEC 61850 fiber optic communications. The HardFiber System is designed to integrate seamlessly with existing Universal Relay applications, including protection functions, FlexLogic, metering and communications.",
+    "heading": "Interoperability with Enbedded IEC 61850"
+  },
+  {
+    "location": "html-block:168",
+    "text": "Learn More",
+    "heading": "Interoperability with Enbedded IEC 61850"
+  },
+  {
+    "location": "html-block:169",
+    "text": "The B30 can also connect to GE Vernova MU320 or third-party merging units using standard IEC 61869 or IEC 61850-9-2LE communication protocols.",
+    "heading": "Interoperability with Enbedded IEC 61850"
+  },
+  {
+    "location": "html-block:170",
+    "text": "Software & Security"
+  },
+  {
+    "location": "html-block:171",
+    "text": "Cyber Security - CyberSentry™ UR (FW v7.4xx)"
+  },
+  {
+    "location": "html-block:172",
+    "text": "CyberSentry enables UR devices to deliver full cyber security features that help customers to comply with NERC CIP and NITIR 7628 cyber security requirements through supporting the following core features:",
+    "heading": "Cyber Security - CyberSentry™ UR (FW v7.4xx)"
+  },
+  {
+    "location": "html-block:173",
+    "text": "Secure FW upgrade"
+  },
+  {
+    "location": "html-block:174",
+    "text": "UR FW files v7.9 and up now include a hash code that allows for authentication prior to being used for upgrading UR devices.",
+    "heading": "Secure FW upgrade"
+  },
+  {
+    "location": "html-block:175",
+    "text": "Password Complexity"
+  },
+  {
+    "location": "html-block:176",
+    "text": "Supporting up to 20 alpha- numeric or special characters, UR passwords exceed NERC CIP requirements for password complexity. Individual passwords per role are available.",
+    "heading": "Password Complexity"
+  },
+  {
+    "location": "html-block:177",
+    "text": "AAA Server Support (Radius)"
+  },
+  {
+    "location": "html-block:178",
+    "text": "Enables integration with centrally managed authentication and accounting of all user activities and uses modern industry best practices and standards that meet and exceed NERC CIP requirements for authentication and password management.",
+    "heading": "AAA Server Support (Radius)"
+  },
+  {
+    "location": "html-block:179",
+    "text": "Role Based Access Control (RBAC)"
+  },
+  {
+    "location": "html-block:180",
+    "text": "Efficiently administrate users and roles within UR devices. The new and advanced access functions allow users to configure up to five roles for up to eight configurable users with independent passwords. The standard “Remote Authentication Dial In User Service” (Radius) is used for authentication.",
+    "heading": "Role Based Access Control (RBAC)"
+  },
+  {
+    "location": "html-block:181",
+    "text": "Event Recorder (Syslog for SEM)"
+  },
+  {
+    "location": "html-block:182",
+    "text": "Capture all cyber security related events within a SOE element (login, logout, invalid password attempts, remote/local access, user in session, settings change, FW update, etc), and then serve and classify data by security level using standard Syslog data format. This enables UR devices integration with established SEM (Security Event Management) systems.",
+    "heading": "Event Recorder (Syslog for SEM)"
+  },
+  {
+    "location": "html-block:183",
+    "text": "EnerVista™ Software"
+  },
+  {
+    "location": "html-block:184",
+    "text": "The EnerVista suite is an industry-leading set of software programs that simplifies every aspect of using the B30 protection relay. The EnerVista suite provides all the tools to monitor the status of the protected asset, maintain the relay, and integrate information measured by the B30relay into DCS or SCADA monitoring systems. Convenient COMTRADE and Sequence of Events viewers are an integral part of the UR setup software included with every UR relay, to carry out postmortem event analysis and ensure proper protection system operation.",
+    "heading": "EnerVista™ Software"
+  },
+  {
+    "location": "html-block:185",
+    "text": "Learn More",
+    "heading": "EnerVista™ Software"
+  },
+  {
+    "location": "html-block:186",
+    "text": "Record the operation of the internal B30 elements and external connected devices with 1ms time-stamped accuracy.",
+    "heading": "EnerVista™ Software"
+  },
+  {
+    "location": "html-block:187",
+    "text": "Create B30 setting file templates to ensure critical settings are not altered.",
+    "heading": "EnerVista™ Software"
+  },
+  {
+    "location": "html-block:188",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:189",
+    "text": "MiCOM Agile P74x Series"
+  },
+  {
+    "location": "html-block:190",
+    "text": "Part of the MiCOM P40 platform, the Agile P74x offers high performance, secure and...",
+    "heading": "MiCOM Agile P74x Series"
+  },
+  {
+    "location": "html-block:191",
+    "text": "View More",
+    "heading": "MiCOM Agile P74x Series"
+  }
+]

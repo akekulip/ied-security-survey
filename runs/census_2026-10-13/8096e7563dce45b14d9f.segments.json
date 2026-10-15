@@ -1,0 +1,592 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "PQMII Power Quality Meter | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "PQM II"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Power Quality Meter"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Buy Now Contact Sales",
+    "heading": "Power Quality Meter"
+  },
+  {
+    "location": "html-block:7",
+    "text": "The PQM II is an ideal choice when continuous monitoring of a three phase system is required. It provides metering for current, voltage, real and reactive power, energy use, cost of power, power factor and frequency. Programmable setpoints and 4 assignable output relays allow control functions to be added for specific applications. This includes basic alarm on over/under current or voltage, unbalance, demand based load shedding, and capacitor power factor correction control. More complex control is possible using the 4 switch inputs which also can be used for status such as breaker open/closed, flow information etc.",
+    "heading": "Power Quality Meter"
+  },
+  {
+    "location": "html-block:8",
+    "text": "New In Version 2.10:"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Voltage Disturbance Recorder (VDR) to monitor voltage dips (voltage sags) and voltage spikes (voltage swells) with capacity for 500 sag/swell events.",
+    "heading": "New In Version 2.10:"
+  },
+  {
+    "location": "html-block:10",
+    "text": "DNP 3.0 Communications Protocol standard feature.",
+    "heading": "New In Version 2.10:"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Features and Benefits"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Mounting Versatility",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Keypad with large illuminated 40-character display",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Any assignable output may be used to trigger an alarm",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:15",
+    "text": "May be connected to DCA or SCADA systems",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Flash upgradeable",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Compatible with MultiNet Serial to Ethernet Converter",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Metering of distribution feeders, transformers, generators, capacitor banks and motors",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Medium and low voltage systems",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Commercial, industrial, utility",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Flexible control for demand load shedding, power factor, etc.",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Power Quality analysis tool",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Protection and Control"
+  },
+  {
+    "location": "html-block:25",
+    "text": "A V W var VA varh Wh PF Hz unbalance",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:26",
+    "text": "A W var VA demand",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Load shedding",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Power factor control",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Pulse input totalizing",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Ia Ib Ic In",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Va Vb Vc Vab Vbc Vca",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:33",
+    "text": "V I unbalance",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:34",
+    "text": "True PF crest and K factor",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Hz W var VA",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Wh varh VAh W cost",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Demand: A W var VA",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Harmonic analysis through 63rd with THD and TIF",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Event recorder - 150 events",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Waveform capture",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Data logger - 98,000 events",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Voltage Disturbance Recorder (VDR)",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:43",
+    "text": "User Interface"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Front RS232 serial port (1,200 to 19,200 bps)",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Two Rear RS485 serial ports",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:46",
+    "text": "Ethernet connectivity provided by MultiNet",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:47",
+    "text": "EnerVista software is provided for setup and monitoring functions",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Dial-in modem capabilities",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:50",
+    "text": "MultiNet"
+  },
+  {
+    "location": "html-block:51",
+    "text": "EnerVista Viewpoint"
+  },
+  {
+    "location": "html-block:52",
+    "text": "USB-to-Serial Cable"
+  },
+  {
+    "location": "html-block:53",
+    "text": "EPM 9900"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:58",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:60",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:61",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:62",
+    "text": "MultiNet"
+  },
+  {
+    "location": "html-block:63",
+    "text": "EnerVista Viewpoint"
+  },
+  {
+    "location": "html-block:64",
+    "text": "USB-to-Serial Cable"
+  },
+  {
+    "location": "html-block:65",
+    "text": "EPM 9900"
+  },
+  {
+    "location": "html-block:66",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:67",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:68",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:69",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:70",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:71",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:72",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:73",
+    "text": "PQM II"
+  },
+  {
+    "location": "html-block:74",
+    "text": "Power Quality Meter"
+  },
+  {
+    "location": "html-block:75",
+    "text": "Buy Now Contact Sales",
+    "heading": "Power Quality Meter"
+  },
+  {
+    "location": "html-block:76",
+    "text": "The PQM II is an ideal choice when continuous monitoring of a three phase system is required. It provides metering for current, voltage, real and reactive power, energy use, cost of power, power factor and frequency. Programmable setpoints and 4 assignable output relays allow control functions to be added for specific applications. This includes basic alarm on over/under current or voltage, unbalance, demand based load shedding, and capacitor power factor correction control. More complex control is possible using the 4 switch inputs which also can be used for status such as breaker open/closed, flow information etc.",
+    "heading": "Power Quality Meter"
+  },
+  {
+    "location": "html-block:77",
+    "text": "New In Version 2.10:"
+  },
+  {
+    "location": "html-block:78",
+    "text": "Voltage Disturbance Recorder (VDR) to monitor voltage dips (voltage sags) and voltage spikes (voltage swells) with capacity for 500 sag/swell events.",
+    "heading": "New In Version 2.10:"
+  },
+  {
+    "location": "html-block:79",
+    "text": "DNP 3.0 Communications Protocol standard feature.",
+    "heading": "New In Version 2.10:"
+  },
+  {
+    "location": "html-block:80",
+    "text": "Features and Benefits"
+  },
+  {
+    "location": "html-block:81",
+    "text": "Mounting Versatility",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:82",
+    "text": "Keypad with large illuminated 40-character display",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:83",
+    "text": "Any assignable output may be used to trigger an alarm",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:84",
+    "text": "May be connected to DCA or SCADA systems",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:85",
+    "text": "Flash upgradeable",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:86",
+    "text": "Compatible with MultiNet Serial to Ethernet Converter",
+    "heading": "Features and Benefits"
+  },
+  {
+    "location": "html-block:87",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:88",
+    "text": "Metering of distribution feeders, transformers, generators, capacitor banks and motors",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:89",
+    "text": "Medium and low voltage systems",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:90",
+    "text": "Commercial, industrial, utility",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:91",
+    "text": "Flexible control for demand load shedding, power factor, etc.",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:92",
+    "text": "Power Quality analysis tool",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:93",
+    "text": "Protection and Control"
+  },
+  {
+    "location": "html-block:94",
+    "text": "A V W var VA varh Wh PF Hz unbalance",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:95",
+    "text": "A W var VA demand",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:96",
+    "text": "Load shedding",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:97",
+    "text": "Power factor control",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:98",
+    "text": "Pulse input totalizing",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:99",
+    "text": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:100",
+    "text": "Ia Ib Ic In",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:101",
+    "text": "Va Vb Vc Vab Vbc Vca",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:102",
+    "text": "V I unbalance",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:103",
+    "text": "True PF crest and K factor",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:104",
+    "text": "Hz W var VA",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:105",
+    "text": "Wh varh VAh W cost",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:106",
+    "text": "Demand: A W var VA",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:107",
+    "text": "Harmonic analysis through 63rd with THD and TIF",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:108",
+    "text": "Event recorder - 150 events",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:109",
+    "text": "Waveform capture",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:110",
+    "text": "Data logger - 98,000 events",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:111",
+    "text": "Voltage Disturbance Recorder (VDR)",
+    "heading": "Monitoring and Metering"
+  },
+  {
+    "location": "html-block:112",
+    "text": "User Interface"
+  },
+  {
+    "location": "html-block:113",
+    "text": "Front RS232 serial port (1,200 to 19,200 bps)",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:114",
+    "text": "Two Rear RS485 serial ports",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:115",
+    "text": "Ethernet connectivity provided by MultiNet",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:116",
+    "text": "EnerVista software is provided for setup and monitoring functions",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:117",
+    "text": "Dial-in modem capabilities",
+    "heading": "User Interface"
+  },
+  {
+    "location": "html-block:118",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:119",
+    "text": "EPM"
+  },
+  {
+    "location": "html-block:120",
+    "text": "GE Vernova provides a wide range of high accuracy power quality, power meters and...",
+    "heading": "EPM"
+  },
+  {
+    "location": "html-block:121",
+    "text": "View More",
+    "heading": "EPM"
+  },
+  {
+    "location": "html-block:122",
+    "text": "EPM 7000P"
+  },
+  {
+    "location": "html-block:123",
+    "text": "The Multilin™ EPM 7000P is a versatile power quality meter offering that can be used...",
+    "heading": "EPM 7000P"
+  },
+  {
+    "location": "html-block:124",
+    "text": "View More",
+    "heading": "EPM 7000P"
+  },
+  {
+    "location": "html-block:125",
+    "text": "EPM 7000 Power Quality Meter"
+  },
+  {
+    "location": "html-block:126",
+    "text": "The EPM 7000 provides continuous metering of three-phase systems with waveform and data...",
+    "heading": "EPM 7000 Power Quality Meter"
+  },
+  {
+    "location": "html-block:127",
+    "text": "View More",
+    "heading": "EPM 7000 Power Quality Meter"
+  }
+]

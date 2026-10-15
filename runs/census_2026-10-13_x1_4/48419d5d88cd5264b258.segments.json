@@ -1,0 +1,404 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "MIN Digital Ground Protection"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "MIN Digital Ground Protection - Legacy"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Contact Us",
+    "heading": "MIN Digital Ground Protection - Legacy"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Manufacturing for this product has been discontinued. As an alternative, please refer to the 350 relay.",
+    "heading": "MIN Digital Ground Protection - Legacy"
+  },
+  {
+    "location": "html-block:7",
+    "text": "The MIN, a member of the M Family of protection relays, is a digital",
+    "heading": "MIN Digital Ground Protection - Legacy"
+  },
+  {
+    "location": "html-block:8",
+    "text": "relay that provides ground directional protection for feeders of any voltage level and backup/auxiliary ground directional protection for transformers, generators and motors. The MIN offers advanced",
+    "heading": "MIN Digital Ground Protection - Legacy"
+  },
+  {
+    "location": "html-block:9",
+    "text": "protection that includes the features listed below.",
+    "heading": "MIN Digital Ground Protection - Legacy"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Directional ground protection relay",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Backup/auxiliary protection for line schemes",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Component relay for generator, motor, and transformer packages Protection and Control",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Two ground IOC (high and low) units for grounded systems",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Two ground TOC (high and low) units for grounded systems",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Two directional units (6\"N) for grounded systems",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Two directional units for undergrounded or Petersen coil systems",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Configurable breaker failure to open",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Directional comparison: scheme logic (MIN L models)",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:20",
+    "text": "4 preconfigured overcurrent curves (ANSI or IEC)",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Configurable breaker failure protection (50BF)",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Configurable I/O",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:24",
+    "text": "32 Event record",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Analog/digital oscillography",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:26",
+    "text": "KI2 counter for breaker maintenance",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Ground current metering User Interfaces",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:28",
+    "text": "M+ Setup software for setting, monitoring",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:29",
+    "text": "RS232 port, faceplate accessible (19.2 kbps, ModBus ® RTU)",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:30",
+    "text": "RS485 rear port (19.2 kbps, ModBus ® RTU)",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:31",
+    "text": "LED dot matrix display and keypad",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:33",
+    "text": "MultiNet Serial Converter"
+  },
+  {
+    "location": "html-block:34",
+    "text": "USB-to-Serial Cable"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:41",
+    "text": "White Papers"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Application Notes"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Subscribe",
+    "heading": "Application Notes"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:45",
+    "text": "MultiNet Serial Converter"
+  },
+  {
+    "location": "html-block:46",
+    "text": "USB-to-Serial Cable"
+  },
+  {
+    "location": "html-block:47",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:50",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:51",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:53",
+    "text": "White Papers"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Application Notes"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Subscribe",
+    "heading": "Application Notes"
+  },
+  {
+    "location": "html-block:56",
+    "text": "MIN Digital Ground Protection - Legacy"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Contact Us",
+    "heading": "MIN Digital Ground Protection - Legacy"
+  },
+  {
+    "location": "html-block:58",
+    "text": "Manufacturing for this product has been discontinued. As an alternative, please refer to the 350 relay.",
+    "heading": "MIN Digital Ground Protection - Legacy"
+  },
+  {
+    "location": "html-block:59",
+    "text": "The MIN, a member of the M Family of protection relays, is a digital",
+    "heading": "MIN Digital Ground Protection - Legacy"
+  },
+  {
+    "location": "html-block:60",
+    "text": "relay that provides ground directional protection for feeders of any voltage level and backup/auxiliary ground directional protection for transformers, generators and motors. The MIN offers advanced",
+    "heading": "MIN Digital Ground Protection - Legacy"
+  },
+  {
+    "location": "html-block:61",
+    "text": "protection that includes the features listed below.",
+    "heading": "MIN Digital Ground Protection - Legacy"
+  },
+  {
+    "location": "html-block:62",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:63",
+    "text": "Directional ground protection relay",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:64",
+    "text": "Backup/auxiliary protection for line schemes",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:65",
+    "text": "Component relay for generator, motor, and transformer packages Protection and Control",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:66",
+    "text": "Two ground IOC (high and low) units for grounded systems",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:67",
+    "text": "Two ground TOC (high and low) units for grounded systems",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:68",
+    "text": "Two directional units (6\"N) for grounded systems",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:69",
+    "text": "Two directional units for undergrounded or Petersen coil systems",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:70",
+    "text": "Configurable breaker failure to open",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:71",
+    "text": "Directional comparison: scheme logic (MIN L models)",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:72",
+    "text": "4 preconfigured overcurrent curves (ANSI or IEC)",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:73",
+    "text": "Configurable breaker failure protection (50BF)",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:74",
+    "text": "Configurable I/O",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:75",
+    "text": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:76",
+    "text": "32 Event record",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:77",
+    "text": "Analog/digital oscillography",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:78",
+    "text": "KI2 counter for breaker maintenance",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:79",
+    "text": "Ground current metering User Interfaces",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:80",
+    "text": "M+ Setup software for setting, monitoring",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:81",
+    "text": "RS232 port, faceplate accessible (19.2 kbps, ModBus ® RTU)",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:82",
+    "text": "RS485 rear port (19.2 kbps, ModBus ® RTU)",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:83",
+    "text": "LED dot matrix display and keypad",
+    "heading": "Monitoring & Metering"
+  },
+  {
+    "location": "html-block:84",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:85",
+    "text": "Feeder Protection"
+  },
+  {
+    "location": "html-block:86",
+    "text": "GE Vernova’s distribution feeder protection systems provide advanced protection with...",
+    "heading": "Feeder Protection"
+  },
+  {
+    "location": "html-block:87",
+    "text": "View More",
+    "heading": "Feeder Protection"
+  }
+]

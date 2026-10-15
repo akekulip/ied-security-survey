@@ -1,0 +1,6463 @@
+{
+  "title": "IED security documentation survey: catalogue inventory",
+  "sampling": "Census of the vendor catalogues: one product page for each of 485 catalogue entries (473 classified, 12 awaiting classification from their own page). Inventory of 2026-10-13; categories and lifecycle come from the vendors' own catalogues and pages.",
+  "seed": 0,
+  "per_stratum": null,
+  "census": true,
+  "inventory": {
+    "path": "inventory/2026-10-13/inventory.json",
+    "sha256": "2ef01443c1a6ad21fad55f554c61e18a90e41b9b114f1890ddc600ae75c71ca4",
+    "created_at": "2026-10-13T18:54:11.259524+00:00"
+  },
+  "frame": [
+    {
+      "vendor": "GE Vernova / Multilin",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "in_catalogue": 7,
+      "selected": 7
+    },
+    {
+      "vendor": "GE Vernova / Multilin",
+      "category": "controller_rtu",
+      "lifecycle": "legacy",
+      "in_catalogue": 15,
+      "selected": 15
+    },
+    {
+      "vendor": "GE Vernova / Multilin",
+      "category": "meter",
+      "lifecycle": "active",
+      "in_catalogue": 18,
+      "selected": 18
+    },
+    {
+      "vendor": "GE Vernova / Multilin",
+      "category": "meter",
+      "lifecycle": "legacy",
+      "in_catalogue": 22,
+      "selected": 22
+    },
+    {
+      "vendor": "GE Vernova / Multilin",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "in_catalogue": 77,
+      "selected": 77
+    },
+    {
+      "vendor": "GE Vernova / Multilin",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "in_catalogue": 85,
+      "selected": 85
+    },
+    {
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "category": "meter",
+      "lifecycle": "active",
+      "in_catalogue": 3,
+      "selected": 3
+    },
+    {
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "category": "plc",
+      "lifecycle": "active",
+      "in_catalogue": 21,
+      "selected": 21
+    },
+    {
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "in_catalogue": 2,
+      "selected": 2
+    },
+    {
+      "vendor": "SEL",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "in_catalogue": 15,
+      "selected": 15
+    },
+    {
+      "vendor": "SEL",
+      "category": "meter",
+      "lifecycle": "active",
+      "in_catalogue": 2,
+      "selected": 2
+    },
+    {
+      "vendor": "SEL",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "in_catalogue": 44,
+      "selected": 44
+    },
+    {
+      "vendor": "Schneider Electric",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "in_catalogue": 11,
+      "selected": 11
+    },
+    {
+      "vendor": "Schneider Electric",
+      "category": "meter",
+      "lifecycle": "active",
+      "in_catalogue": 17,
+      "selected": 17
+    },
+    {
+      "vendor": "Schneider Electric",
+      "category": "plc",
+      "lifecycle": "active",
+      "in_catalogue": 17,
+      "selected": 17
+    },
+    {
+      "vendor": "Schneider Electric",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "in_catalogue": 37,
+      "selected": 37
+    },
+    {
+      "vendor": "Siemens",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "in_catalogue": 9,
+      "selected": 9
+    },
+    {
+      "vendor": "Siemens",
+      "category": "meter",
+      "lifecycle": "active",
+      "in_catalogue": 9,
+      "selected": 9
+    },
+    {
+      "vendor": "Siemens",
+      "category": "plc",
+      "lifecycle": "active",
+      "in_catalogue": 10,
+      "selected": 10
+    },
+    {
+      "vendor": "Siemens",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "in_catalogue": 52,
+      "selected": 52
+    }
+  ],
+  "max_depth": 0,
+  "max_pages_per_product": 4,
+  "delay_seconds": 1.2,
+  "timeout_seconds": 60,
+  "max_bytes": 60000000,
+  "robots_follow_redirects": [
+    "rockwellautomation.com"
+  ],
+  "products": [
+    {
+      "id": "ge_agile_p24xm_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Agile P24XM Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/agile-p24xm-legacy"
+      ]
+    },
+    {
+      "id": "ge_b95plus_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "B95PLUS Legacy",
+      "category": "unclassified",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/b95plus-legacy"
+      ]
+    },
+    {
+      "id": "ge_bdd_percentage_differential_harmonic_restraint_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Bdd Percentage Differential Harmonic Restraint Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/bdd-percentage-differential-harmonic-restraint-legacy"
+      ]
+    },
+    {
+      "id": "ge_bitronics_70_series_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Bitronics 70 Series Legacy",
+      "category": "meter",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/bitronics-70-series-legacy"
+      ]
+    },
+    {
+      "id": "ge_bitronics_m650_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Bitronics M650 Legacy",
+      "category": "meter",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/bitronics-m650-legacy"
+      ]
+    },
+    {
+      "id": "ge_bitronics_m651_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Bitronics M651 Legacy",
+      "category": "meter",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/bitronics-m651-legacy"
+      ]
+    },
+    {
+      "id": "ge_bitronics_m653_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Bitronics M653 Legacy",
+      "category": "meter",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/bitronics-m653-legacy"
+      ]
+    },
+    {
+      "id": "ge_bitronics_m870d_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Bitronics M870D Legacy",
+      "category": "meter",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/bitronics-m870d-legacy"
+      ]
+    },
+    {
+      "id": "ge_bitronics_m871_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Bitronics M871 Legacy",
+      "category": "meter",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/bitronics-m871-legacy"
+      ]
+    },
+    {
+      "id": "ge_bitronics_m872_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Bitronics M872 Legacy",
+      "category": "meter",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/bitronics-m872-legacy"
+      ]
+    },
+    {
+      "id": "ge_hid",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Hid",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/bus-protection/hid"
+      ]
+    },
+    {
+      "id": "ge_mcag",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Mcag",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/bus-protection/mcag"
+      ]
+    },
+    {
+      "id": "ge_mfac",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Mfac",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/bus-protection/mfac"
+      ]
+    },
+    {
+      "id": "ge_micom_agile_p746",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Micom Agile P746",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/bus-protection/micom-agile-p746"
+      ]
+    },
+    {
+      "id": "ge_micom_agile_p74x_series",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Micom Agile P74X Series",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/bus-protection/micom-agile-p74x-series"
+      ]
+    },
+    {
+      "id": "ge_multilin_b30",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin B30",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/bus-protection/multilin-b30"
+      ]
+    },
+    {
+      "id": "ge_multilin_b90",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin B90",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/bus-protection/multilin-b90"
+      ]
+    },
+    {
+      "id": "ge_mvtp",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Mvtp",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/bus-protection/mvtp"
+      ]
+    },
+    {
+      "id": "ge_bus10002000_bus_bar_protection_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "BUS10002000 Bus Bar Protection Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/bus10002000-bus-bar-protection-legacy"
+      ]
+    },
+    {
+      "id": "ge_c90plus_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "C90PLUS Legacy",
+      "category": "controller_rtu",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/c90plus-legacy"
+      ]
+    },
+    {
+      "id": "ge_capacitor_bank_controller_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Capacitor Bank Controller Legacy",
+      "category": "controller_rtu",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/capacitor-bank-controller-legacy"
+      ]
+    },
+    {
+      "id": "ge_ceb_offset_mho_directional_distance_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Ceb Offset Mho Directional Distance Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/ceb-offset-mho-directional-distance-legacy"
+      ]
+    },
+    {
+      "id": "ge_ceh_loss_excitation_relay_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Ceh Loss Excitation Relay Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/ceh-loss-excitation-relay-legacy"
+      ]
+    },
+    {
+      "id": "ge_cex_angle_impedance_relay_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Cex Angle Impedance Relay Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/cex-angle-impedance-relay-legacy"
+      ]
+    },
+    {
+      "id": "ge_cey_reactance_and_mho_phase_directional_distance_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Cey Reactance And Mho Phase Directional Distance Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/cey-reactance-and-mho-phase-directional-distance-legacy"
+      ]
+    },
+    {
+      "id": "ge_ceyg_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Ceyg Legacy",
+      "category": "unclassified",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/ceyg-legacy"
+      ]
+    },
+    {
+      "id": "ge_cfd_high_speed_differential_relay_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Cfd High Speed Differential Relay Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/cfd-high-speed-differential-relay-legacy"
+      ]
+    },
+    {
+      "id": "ge_cfvb_voltage_balance_relay_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Cfvb Voltage Balance Relay Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/cfvb-voltage-balance-relay-legacy"
+      ]
+    },
+    {
+      "id": "ge_chc_instantaneous_overcurrent_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Chc Instantaneous Overcurrent Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/chc-instantaneous-overcurrent-legacy"
+      ]
+    },
+    {
+      "id": "ge_micom_c264",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Micom C264",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/controllers/micom-c264"
+      ]
+    },
+    {
+      "id": "ge_multilin_c30",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin C30",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/controllers/multilin-c30"
+      ]
+    },
+    {
+      "id": "ge_multilin_c60c95",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin C60C95",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/controllers/multilin-c60c95"
+      ]
+    },
+    {
+      "id": "ge_multilin_c650",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin C650",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/controllers/multilin-c650"
+      ]
+    },
+    {
+      "id": "ge_d20200me_substation_controler_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "D20200ME Substation Controler Legacy",
+      "category": "controller_rtu",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/d20200me-substation-controler-legacy"
+      ]
+    },
+    {
+      "id": "ge_d25_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "D25 Legacy",
+      "category": "controller_rtu",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/d25-legacy"
+      ]
+    },
+    {
+      "id": "ge_dapserver_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Dapserver Legacy",
+      "category": "controller_rtu",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/dapserver-legacy"
+      ]
+    },
+    {
+      "id": "ge_dar_modular_reclosing_relays",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Dar Modular Reclosing Relays",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/dar-modular-reclosing-relays"
+      ]
+    },
+    {
+      "id": "ge_dart_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Dart Legacy",
+      "category": "controller_rtu",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/dart-legacy"
+      ]
+    },
+    {
+      "id": "ge_dbf_digital_breaker_failure_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Dbf Digital Breaker Failure Legacy",
+      "category": "unclassified",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/dbf-digital-breaker-failure-legacy"
+      ]
+    },
+    {
+      "id": "ge_dbt_digital_breaker_supervision_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Dbt Digital Breaker Supervision Legacy",
+      "category": "unclassified",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/dbt-digital-breaker-supervision-legacy"
+      ]
+    },
+    {
+      "id": "ge_dff_digital_frequency_relay_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Dff Digital Frequency Relay Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/dff-digital-frequency-relay-legacy"
+      ]
+    },
+    {
+      "id": "ge_dfp100_digital_feeder_relay",
+      "vendor": "GE Vernova / Multilin",
+      "model": "DFP100 Digital Feeder Relay",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/dfp100-digital-feeder-relay"
+      ]
+    },
+    {
+      "id": "ge_dfp200_digital_feeder_protection_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "DFP200 Digital Feeder Protection Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/dfp200-digital-feeder-protection-legacy"
+      ]
+    },
+    {
+      "id": "ge_dgcm_field_rtu_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Dgcm Field Rtu Legacy",
+      "category": "controller_rtu",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/dgcm-field-rtu-legacy"
+      ]
+    },
+    {
+      "id": "ge_dlpd_digital_line_protection_system",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Dlpd Digital Line Protection System",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/dlpd-digital-line-protection-system"
+      ]
+    },
+    {
+      "id": "ge_drs_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Drs Legacy",
+      "category": "unclassified",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/drs-legacy"
+      ]
+    },
+    {
+      "id": "ge_ds_agile_h38_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Ds Agile H38 Legacy",
+      "category": "controller_rtu",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/ds-agile-h38-legacy"
+      ]
+    },
+    {
+      "id": "ge_dtp_b_digital_transformer_protection",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Dtp B Digital Transformer Protection",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/dtp-b-digital-transformer-protection"
+      ]
+    },
+    {
+      "id": "ge_dtr_transformer_tap_changer_controller_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Dtr Transformer Tap Changer Controller Legacy",
+      "category": "controller_rtu",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/dtr-transformer-tap-changer-controller-legacy"
+      ]
+    },
+    {
+      "id": "ge_epm_1000_sub_meter_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Epm 1000 Sub Meter Legacy",
+      "category": "meter",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-1000-sub-meter-legacy"
+      ]
+    },
+    {
+      "id": "ge_epm_2000_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Epm 2000 Legacy",
+      "category": "meter",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-2000-legacy"
+      ]
+    },
+    {
+      "id": "ge_epm_4000_sub_meter_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Epm 4000 Sub Meter Legacy",
+      "category": "meter",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-4000-sub-meter-legacy"
+      ]
+    },
+    {
+      "id": "ge_epm_5100_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Epm 5100 Legacy",
+      "category": "meter",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-5100-legacy"
+      ]
+    },
+    {
+      "id": "ge_epm_5200_power_metering_system",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Epm 5200 Power Metering System",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-5200-power-metering-system"
+      ]
+    },
+    {
+      "id": "ge_epm_5300_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Epm 5300 Legacy",
+      "category": "meter",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-5300-legacy"
+      ]
+    },
+    {
+      "id": "ge_epm_5350_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Epm 5350 Legacy",
+      "category": "meter",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-5350-legacy"
+      ]
+    },
+    {
+      "id": "ge_epm_6100_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Epm 6100 Legacy",
+      "category": "meter",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-6100-legacy"
+      ]
+    },
+    {
+      "id": "ge_epm_7000_power_quality_meter",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Epm 7000 Power Quality Meter",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-7000-power-quality-meter"
+      ]
+    },
+    {
+      "id": "ge_epm_7000p",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Epm 7000P",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-7000p"
+      ]
+    },
+    {
+      "id": "ge_epm_7100_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Epm 7100 Legacy",
+      "category": "meter",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-7100-legacy"
+      ]
+    },
+    {
+      "id": "ge_epm_9450_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Epm 9450 Legacy",
+      "category": "meter",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-9450-legacy"
+      ]
+    },
+    {
+      "id": "ge_epm_9650_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Epm 9650 Legacy",
+      "category": "meter",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-9650-legacy"
+      ]
+    },
+    {
+      "id": "ge_epm_9700",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Epm 9700",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-9700"
+      ]
+    },
+    {
+      "id": "ge_epm_9800_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Epm 9800 Legacy",
+      "category": "meter",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-9800-legacy"
+      ]
+    },
+    {
+      "id": "ge_epm_9900_advanced_power_quality_meter_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Epm 9900 Advanced Power Quality Meter Legacy",
+      "category": "meter",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-9900-advanced-power-quality-meter-legacy"
+      ]
+    },
+    {
+      "id": "ge_epm_9900p",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Epm 9900P",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/epm-9900p"
+      ]
+    },
+    {
+      "id": "ge_agile_p153",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Agile P153",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/feeder-protection/agile-p153"
+      ]
+    },
+    {
+      "id": "ge_agile_p154",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Agile P154",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/feeder-protection/agile-p154"
+      ]
+    },
+    {
+      "id": "ge_agile_p15d",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Agile P15D",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/feeder-protection/agile-p15d"
+      ]
+    },
+    {
+      "id": "ge_multilin_350",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin 350",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/feeder-protection/multilin-350"
+      ]
+    },
+    {
+      "id": "ge_multilin_850",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin 850",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/feeder-protection/multilin-850"
+      ]
+    },
+    {
+      "id": "ge_multilin_f35",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin F35",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/feeder-protection/multilin-f35"
+      ]
+    },
+    {
+      "id": "ge_multilin_f60",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin F60",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/feeder-protection/multilin-f60"
+      ]
+    },
+    {
+      "id": "ge_multilin_f650",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin F650",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/feeder-protection/multilin-f650"
+      ]
+    },
+    {
+      "id": "ge_p40_agile_p14n_p14d_p94v",
+      "vendor": "GE Vernova / Multilin",
+      "model": "P40 Agile P14N P14D P94V",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/feeder-protection/p40-agile-p14n-p14d-p94v"
+      ]
+    },
+    {
+      "id": "ge_p84_micom_5th_generation",
+      "vendor": "GE Vernova / Multilin",
+      "model": "P84 Micom 5TH Generation",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/feeder-protection/p84-micom-5th-generation"
+      ]
+    },
+    {
+      "id": "ge_g650_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "G650 Legacy",
+      "category": "unclassified",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/g650-legacy"
+      ]
+    },
+    {
+      "id": "ge_multilin_d20e",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin D20E",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/gateways-rtus/multilin-d20e"
+      ]
+    },
+    {
+      "id": "ge_multilintm_g100",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilintm G100",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/gateways-rtus/multilintm-g100"
+      ]
+    },
+    {
+      "id": "ge_multilintm_g500",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilintm G500",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/gateways-rtus/multilintm-g500"
+      ]
+    },
+    {
+      "id": "ge_gcx_phase_packaged_directional_distance_relay_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Gcx Phase Packaged Directional Distance Relay Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/gcx-phase-packaged-directional-distance-relay-legacy"
+      ]
+    },
+    {
+      "id": "ge_gcy_phase_packaged_directional_distance_relay_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Gcy Phase Packaged Directional Distance Relay Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/gcy-phase-packaged-directional-distance-relay-legacy"
+      ]
+    },
+    {
+      "id": "ge_gdc_current_detecting_relay_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Gdc Current Detecting Relay Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/gdc-current-detecting-relay-legacy"
+      ]
+    },
+    {
+      "id": "ge_gpm_f_field_ground_protection_module",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Gpm F Field Ground Protection Module",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/generator-protection/gpm-f-field-ground-protection-module"
+      ]
+    },
+    {
+      "id": "ge_gpm_s",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Gpm S",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/generator-protection/gpm-s"
+      ]
+    },
+    {
+      "id": "ge_micom_agile_p34x",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Micom Agile P34X",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/generator-protection/micom-agile-p34x"
+      ]
+    },
+    {
+      "id": "ge_multilin_889",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin 889",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/generator-protection/multilin-889"
+      ]
+    },
+    {
+      "id": "ge_multilin_g60",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin G60",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/generator-protection/multilin-g60"
+      ]
+    },
+    {
+      "id": "ge_gsy_mho_distance_relay_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Gsy Mho Distance Relay Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/gsy-mho-distance-relay-legacy"
+      ]
+    },
+    {
+      "id": "ge_gxs_automatic_synchronizing_relay_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Gxs Automatic Synchronizing Relay Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/gxs-automatic-synchronizing-relay-legacy"
+      ]
+    },
+    {
+      "id": "ge_hfc_instantaneous_overcurrent_relay_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Hfc Instantaneous Overcurrent Relay Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/hfc-instantaneous-overcurrent-relay-legacy"
+      ]
+    },
+    {
+      "id": "ge_ibcibcg_directional_overcurrent_relay_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Ibcibcg Directional Overcurrent Relay Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/ibcibcg-directional-overcurrent-relay-legacy"
+      ]
+    },
+    {
+      "id": "ge_iboxtm_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Iboxtm Legacy",
+      "category": "controller_rtu",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/iboxtm-legacy"
+      ]
+    },
+    {
+      "id": "ge_icr_phase_sequence_and_undervoltage_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Icr Phase Sequence And Undervoltage Legacy",
+      "category": "unclassified",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/icr-phase-sequence-and-undervoltage-legacy"
+      ]
+    },
+    {
+      "id": "ge_icw_power_directional_protection_relay_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Icw Power Directional Protection Relay Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/icw-power-directional-protection-relay-legacy"
+      ]
+    },
+    {
+      "id": "ge_ifcs_tocvoltage_control_relay_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Ifcs Tocvoltage Control Relay Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/ifcs-tocvoltage-control-relay-legacy"
+      ]
+    },
+    {
+      "id": "ge_ifv_time_delay_voltage_relay_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Ifv Time Delay Voltage Relay Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/ifv-time-delay-voltage-relay-legacy"
+      ]
+    },
+    {
+      "id": "ge_ijc_current_balance_relay",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Ijc Current Balance Relay",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/ijc-current-balance-relay"
+      ]
+    },
+    {
+      "id": "ge_ijd_percentage_differential_relay_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Ijd Percentage Differential Relay Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/ijd-percentage-differential-relay-legacy"
+      ]
+    },
+    {
+      "id": "ge_ijs_synchronism_check_relay_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Ijs Synchronism Check Relay Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/ijs-synchronism-check-relay-legacy"
+      ]
+    },
+    {
+      "id": "ge_istat_m355_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Istat M355 Legacy",
+      "category": "meter",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/istat-m355-legacy"
+      ]
+    },
+    {
+      "id": "ge_jbcjbcgjbcv_phase_and_ground_overcurrent_relay_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Jbcjbcgjbcv Phase And Ground Overcurrent Relay Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/jbcjbcgjbcv-phase-and-ground-overcurrent-relay-legacy"
+      ]
+    },
+    {
+      "id": "ge_k_series_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "K Series Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/k-series-legacy"
+      ]
+    },
+    {
+      "id": "ge_kavr_series_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Kavr Series Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/kavr-series-legacy"
+      ]
+    },
+    {
+      "id": "ge_kavs_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Kavs Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/kavs-legacy"
+      ]
+    },
+    {
+      "id": "ge_kitz10x_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "KITZ10X Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/kitz10x-legacy"
+      ]
+    },
+    {
+      "id": "ge_kvtr_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Kvtr Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/kvtr-legacy"
+      ]
+    },
+    {
+      "id": "ge_micom_agile_p441_p442_p444",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Micom Agile P441 P442 P444",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/line-protection/micom-agile-p441-p442-p444"
+      ]
+    },
+    {
+      "id": "ge_micom_agile_p44t",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Micom Agile P44T",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/line-protection/micom-agile-p44t"
+      ]
+    },
+    {
+      "id": "ge_micom_agile_p543_p544_p545_p546",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Micom Agile P543 P544 P545 P546",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/line-protection/micom-agile-p543-p544-p545-p546"
+      ]
+    },
+    {
+      "id": "ge_micom_agile_p54a_p54b_p54c_p54e",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Micom Agile P54A P54B P54C P54E",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/line-protection/micom-agile-p54a-p54b-p54c-p54e"
+      ]
+    },
+    {
+      "id": "ge_micom_agile_p59123",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Micom Agile P59123",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/line-protection/micom-agile-p59123"
+      ]
+    },
+    {
+      "id": "ge_micomho_agile_p443_p445_p446",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Micomho Agile P443 P445 P446",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/line-protection/micomho-agile-p443-p445-p446"
+      ]
+    },
+    {
+      "id": "ge_multilin_c70",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin C70",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/line-protection/multilin-c70"
+      ]
+    },
+    {
+      "id": "ge_multilin_d30",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin D30",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/line-protection/multilin-d30"
+      ]
+    },
+    {
+      "id": "ge_multilin_d60",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin D60",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/line-protection/multilin-d60"
+      ]
+    },
+    {
+      "id": "ge_multilin_l30",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin L30",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/line-protection/multilin-l30"
+      ]
+    },
+    {
+      "id": "ge_multilin_l60",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin L60",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/line-protection/multilin-l60"
+      ]
+    },
+    {
+      "id": "ge_multilin_l90",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin L90",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/line-protection/multilin-l90"
+      ]
+    },
+    {
+      "id": "ge_p44_micom_5th_generation",
+      "vendor": "GE Vernova / Multilin",
+      "model": "P44 Micom 5TH Generation",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/line-protection/p44-micom-5th-generation"
+      ]
+    },
+    {
+      "id": "ge_lps_line_protection_system_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Lps Line Protection System Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/lps-line-protection-system-legacy"
+      ]
+    },
+    {
+      "id": "ge_lps_o_generator_backupout_step_protection_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Lps O Generator Backupout Step Protection Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/lps-o-generator-backupout-step-protection-legacy"
+      ]
+    },
+    {
+      "id": "ge_m_family_modular_microprocessor_relays_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "M Family Modular Microprocessor Relays Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/m-family-modular-microprocessor-relays-legacy"
+      ]
+    },
+    {
+      "id": "ge_mbci_mcri_mrtp_and_mvtw_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Mbci Mcri Mrtp And Mvtw Legacy",
+      "category": "unclassified",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/mbci-mcri-mrtp-and-mvtw-legacy"
+      ]
+    },
+    {
+      "id": "ge_mcp_digital_capacitor_bank_protection_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Mcp Digital Capacitor Bank Protection Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/mcp-digital-capacitor-bank-protection-legacy"
+      ]
+    },
+    {
+      "id": "ge_epm_2200_digital_power_meter",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Epm 2200 Digital Power Meter",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/metering/epm-2200-digital-power-meter"
+      ]
+    },
+    {
+      "id": "ge_epm_4600_power_meter",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Epm 4600 Power Meter",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/metering/epm-4600-power-meter"
+      ]
+    },
+    {
+      "id": "ge_epm_6000_power_meter",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Epm 6000 Power Meter",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/metering/epm-6000-power-meter"
+      ]
+    },
+    {
+      "id": "ge_epm_6010",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Epm 6010",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/metering/epm-6010"
+      ]
+    },
+    {
+      "id": "ge_istat_i400",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Istat I400",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/metering/istat-i400"
+      ]
+    },
+    {
+      "id": "ge_istat_i4mx",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Istat I4MX",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/metering/istat-i4mx"
+      ]
+    },
+    {
+      "id": "ge_istat_i500",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Istat I500",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/metering/istat-i500"
+      ]
+    },
+    {
+      "id": "ge_istat_m2x2",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Istat M2X2",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/metering/istat-m2x2"
+      ]
+    },
+    {
+      "id": "ge_istat_m2x3",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Istat M2X3",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/metering/istat-m2x3"
+      ]
+    },
+    {
+      "id": "ge_istat_m365",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Istat M365",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/metering/istat-m365"
+      ]
+    },
+    {
+      "id": "ge_qdsp",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Qdsp",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/metering/qdsp"
+      ]
+    },
+    {
+      "id": "ge_mff_digital_frequency_relay_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Mff Digital Frequency Relay Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/mff-digital-frequency-relay-legacy"
+      ]
+    },
+    {
+      "id": "ge_mgc_digital_generator_protection_relay",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Mgc Digital Generator Protection Relay",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/mgc-digital-generator-protection-relay"
+      ]
+    },
+    {
+      "id": "ge_mib_high_impedance_busbar_differential_relay",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Mib High Impedance Busbar Differential Relay",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/mib-high-impedance-busbar-differential-relay"
+      ]
+    },
+    {
+      "id": "ge_mic_digital_overcurrent_relay_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Mic Digital Overcurrent Relay Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/mic-digital-overcurrent-relay-legacy"
+      ]
+    },
+    {
+      "id": "ge_micom_agile_p24x_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Micom Agile P24X Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/micom-agile-p24x-legacy"
+      ]
+    },
+    {
+      "id": "ge_micom_agile_p341_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Micom Agile P341 Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/micom-agile-p341-legacy"
+      ]
+    },
+    {
+      "id": "ge_micom_agile_p541_p542_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Micom Agile P541 P542 Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/micom-agile-p541-p542-legacy"
+      ]
+    },
+    {
+      "id": "ge_micom_agile_p547_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Micom Agile P547 Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/micom-agile-p547-legacy"
+      ]
+    },
+    {
+      "id": "ge_micom_agile_p747",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Micom Agile P747",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/micom-agile-p747"
+      ]
+    },
+    {
+      "id": "ge_micom_agile_p841_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Micom Agile P841 Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/micom-agile-p841-legacy"
+      ]
+    },
+    {
+      "id": "ge_micom_agile_p842_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Micom Agile P842 Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/micom-agile-p842-legacy"
+      ]
+    },
+    {
+      "id": "ge_micom_agile_p847_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Micom Agile P847 Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/micom-agile-p847-legacy"
+      ]
+    },
+    {
+      "id": "ge_mid_digital_distribution_system_family",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Mid Digital Distribution System Family",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/mid-digital-distribution-system-family"
+      ]
+    },
+    {
+      "id": "ge_mif_ii_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Mif Ii Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/mif-ii-legacy"
+      ]
+    },
+    {
+      "id": "ge_mif_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Mif Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/mif-legacy"
+      ]
+    },
+    {
+      "id": "ge_mig_machine_protection_relay_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Mig Machine Protection Relay Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/mig-machine-protection-relay-legacy"
+      ]
+    },
+    {
+      "id": "ge_migii_generator_protection_system_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Migii Generator Protection System Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/migii-generator-protection-system-legacy"
+      ]
+    },
+    {
+      "id": "ge_min_digital_ground_protection_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Min Digital Ground Protection Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/min-digital-ground-protection-legacy"
+      ]
+    },
+    {
+      "id": "ge_min_ii_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Min Ii Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/min-ii-legacy"
+      ]
+    },
+    {
+      "id": "ge_miv_ii_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Miv Ii Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/miv-ii-legacy"
+      ]
+    },
+    {
+      "id": "ge_miv_voltagefrequency_m_family_relay_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Miv Voltagefrequency M Family Relay Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/miv-voltagefrequency-m-family-relay-legacy"
+      ]
+    },
+    {
+      "id": "ge_miw_directional_powerloss_field_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Miw Directional Powerloss Field Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/miw-directional-powerloss-field-legacy"
+      ]
+    },
+    {
+      "id": "ge_miw_ii_directional_power_protection_system",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Miw Ii Directional Power Protection System",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/miw-ii-directional-power-protection-system"
+      ]
+    },
+    {
+      "id": "ge_mlj_digital_synchronism_check_relay_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Mlj Digital Synchronism Check Relay Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/mlj-digital-synchronism-check-relay-legacy"
+      ]
+    },
+    {
+      "id": "ge_mlp_digital_distance_protection",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Mlp Digital Distance Protection",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/mlp-digital-distance-protection"
+      ]
+    },
+    {
+      "id": "ge_mm2_intelligent_mcc_controller_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "MM2 Intelligent Mcc Controller Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/mm2-intelligent-mcc-controller-legacy"
+      ]
+    },
+    {
+      "id": "ge_mm200_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "MM200 Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/mm200-legacy"
+      ]
+    },
+    {
+      "id": "ge_mm3_intelligent_mcc_controller_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "MM3 Intelligent Mcc Controller Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/mm3-intelligent-mcc-controller-legacy"
+      ]
+    },
+    {
+      "id": "ge_mmc_digital_motor_protection_relay",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Mmc Digital Motor Protection Relay",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/mmc-digital-motor-protection-relay"
+      ]
+    },
+    {
+      "id": "ge_agile_p253",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Agile P253",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/motor-protection/agile-p253"
+      ]
+    },
+    {
+      "id": "ge_mm300",
+      "vendor": "GE Vernova / Multilin",
+      "model": "MM300",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/motor-protection/mm300"
+      ]
+    },
+    {
+      "id": "ge_multilin_339",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin 339",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/motor-protection/multilin-339"
+      ]
+    },
+    {
+      "id": "ge_multilin_859",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin 859",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/motor-protection/multilin-859"
+      ]
+    },
+    {
+      "id": "ge_multilin_869",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin 869",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/motor-protection/multilin-869"
+      ]
+    },
+    {
+      "id": "ge_multilin_agile_motor_p24nd_protection",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin Agile Motor P24ND Protection",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/motor-protection/multilin-agile-motor-p24nd-protection"
+      ]
+    },
+    {
+      "id": "ge_multilin_m60",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin M60",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/motor-protection/multilin-m60"
+      ]
+    },
+    {
+      "id": "ge_rmio_remote_module_io",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Rmio Remote Module Io",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/motor-protection/rmio-remote-module-io"
+      ]
+    },
+    {
+      "id": "ge_rrtd_remote_rtd_module",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Rrtd Remote Rtd Module",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/motor-protection/rrtd-remote-rtd-module"
+      ]
+    },
+    {
+      "id": "ge_mov_digital_multifunction_protective_relay_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Mov Digital Multifunction Protective Relay Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/mov-digital-multifunction-protective-relay-legacy"
+      ]
+    },
+    {
+      "id": "ge_mpm_motor_protection_meter",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Mpm Motor Protection Meter",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/mpm-motor-protection-meter"
+      ]
+    },
+    {
+      "id": "ge_mrs_transmission_line_reclosing_system_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Mrs Transmission Line Reclosing System Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/mrs-transmission-line-reclosing-system-legacy"
+      ]
+    },
+    {
+      "id": "ge_multilin_369_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin 369 Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-369-legacy"
+      ]
+    },
+    {
+      "id": "ge_multilin_469_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin 469 Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-469-legacy"
+      ]
+    },
+    {
+      "id": "ge_multilin_489_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin 489 Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-489-legacy"
+      ]
+    },
+    {
+      "id": "ge_multilin_745_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin 745 Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-745-legacy"
+      ]
+    },
+    {
+      "id": "ge_multilin_750760_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin 750760 Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-750760-legacy"
+      ]
+    },
+    {
+      "id": "ge_multilin_8_series",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin 8 Series",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-8-series"
+      ]
+    },
+    {
+      "id": "ge_multilin_850r_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin 850R Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-850r-legacy"
+      ]
+    },
+    {
+      "id": "ge_multilin_a60_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin A60 Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-a60-legacy"
+      ]
+    },
+    {
+      "id": "ge_multilin_d20mx_substation_controller_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin D20MX Substation Controller Legacy",
+      "category": "controller_rtu",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-d20mx-substation-controller-legacy"
+      ]
+    },
+    {
+      "id": "ge_multilin_d400_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin D400 Legacy",
+      "category": "controller_rtu",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-d400-legacy"
+      ]
+    },
+    {
+      "id": "ge_multilin_dgcr_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin Dgcr Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-dgcr-legacy"
+      ]
+    },
+    {
+      "id": "ge_multilin_g30_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin G30 Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-g30-legacy"
+      ]
+    },
+    {
+      "id": "ge_multilin_h500_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin H500 Legacy",
+      "category": "controller_rtu",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-h500-legacy"
+      ]
+    },
+    {
+      "id": "ge_multilin_p30_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin P30 Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-p30-legacy"
+      ]
+    },
+    {
+      "id": "ge_multilin_r650_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin R650 Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-r650-legacy"
+      ]
+    },
+    {
+      "id": "ge_multilin_switch_controller_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin Switch Controller Legacy",
+      "category": "controller_rtu",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-switch-controller-legacy"
+      ]
+    },
+    {
+      "id": "ge_multilin_ur_family",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin Ur Family",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-ur-family"
+      ]
+    },
+    {
+      "id": "ge_multilin_voltage_regulator_controller_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin Voltage Regulator Controller Legacy",
+      "category": "controller_rtu",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/multilin-voltage-regulator-controller-legacy"
+      ]
+    },
+    {
+      "id": "ge_nbt_breaker_trip_circuit_supervision",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Nbt Breaker Trip Circuit Supervision",
+      "category": "unclassified",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/nbt-breaker-trip-circuit-supervision"
+      ]
+    },
+    {
+      "id": "ge_nbv_voltage_unbalance_relay_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Nbv Voltage Unbalance Relay Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/nbv-voltage-unbalance-relay-legacy"
+      ]
+    },
+    {
+      "id": "ge_p14x",
+      "vendor": "GE Vernova / Multilin",
+      "model": "P14X",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/p14x"
+      ]
+    },
+    {
+      "id": "ge_p161_p162_p163_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "P161 P162 P163 Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/p161-p162-p163-legacy"
+      ]
+    },
+    {
+      "id": "ge_p54_micom_5th_generation",
+      "vendor": "GE Vernova / Multilin",
+      "model": "P54 Micom 5TH Generation",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/p54-micom-5th-generation"
+      ]
+    },
+    {
+      "id": "ge_p891",
+      "vendor": "GE Vernova / Multilin",
+      "model": "P891",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/p891"
+      ]
+    },
+    {
+      "id": "ge_pjc_instantaneous_overcurrent_relay_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Pjc Instantaneous Overcurrent Relay Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/pjc-instantaneous-overcurrent-relay-legacy"
+      ]
+    },
+    {
+      "id": "ge_pjg_machine_field_ground_relay_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Pjg Machine Field Ground Relay Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/pjg-machine-field-ground-relay-legacy"
+      ]
+    },
+    {
+      "id": "ge_pjv_instantaneous_voltage_relay_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Pjv Instantaneous Voltage Relay Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/pjv-instantaneous-voltage-relay-legacy"
+      ]
+    },
+    {
+      "id": "ge_ppqm_portable_power_quality_meter_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Ppqm Portable Power Quality Meter Legacy",
+      "category": "meter",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/ppqm-portable-power-quality-meter-legacy"
+      ]
+    },
+    {
+      "id": "ge_pqm_ii",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Pqm Ii",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/pqm-ii"
+      ]
+    },
+    {
+      "id": "ge_pqm_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Pqm Legacy",
+      "category": "meter",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/pqm-legacy"
+      ]
+    },
+    {
+      "id": "ge_sbc_static_breaker_backup_relays_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Sbc Static Breaker Backup Relays Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/sbc-static-breaker-backup-relays-legacy"
+      ]
+    },
+    {
+      "id": "ge_sff_static_digital_frequency_relay_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Sff Static Digital Frequency Relay Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/sff-static-digital-frequency-relay-legacy"
+      ]
+    },
+    {
+      "id": "ge_sgc_negative_sequence_overcurrent_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Sgc Negative Sequence Overcurrent Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/sgc-negative-sequence-overcurrent-legacy"
+      ]
+    },
+    {
+      "id": "ge_ggp_power_directional_relays",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Ggp Power Directional Relays",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/single-function/ggp-power-directional-relays"
+      ]
+    },
+    {
+      "id": "ge_iac_time_overcurrent_relay",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Iac Time Overcurrent Relay",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/single-function/iac-time-overcurrent-relay"
+      ]
+    },
+    {
+      "id": "ge_iav_time_delay_voltage_relay",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Iav Time Delay Voltage Relay",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/single-function/iav-time-delay-voltage-relay"
+      ]
+    },
+    {
+      "id": "ge_ifc_time_overcurrent_relay",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Ifc Time Overcurrent Relay",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/single-function/ifc-time-overcurrent-relay"
+      ]
+    },
+    {
+      "id": "ge_ifcv_toc_relay_voltage_restraint",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Ifcv Toc Relay Voltage Restraint",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/single-function/ifcv-toc-relay-voltage-restraint"
+      ]
+    },
+    {
+      "id": "ge_ngv_voltage_relay",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Ngv Voltage Relay",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/single-function/ngv-voltage-relay"
+      ]
+    },
+    {
+      "id": "ge_pvd_differential_voltage_relay",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Pvd Differential Voltage Relay",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/single-function/pvd-differential-voltage-relay"
+      ]
+    },
+    {
+      "id": "ge_sbd_differential_voltage_relay",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Sbd Differential Voltage Relay",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/single-function/sbd-differential-voltage-relay"
+      ]
+    },
+    {
+      "id": "ge_slj_static_synchronism_check_relay_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Slj Static Synchronism Check Relay Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/slj-static-synchronism-check-relay-legacy"
+      ]
+    },
+    {
+      "id": "ge_smor_b_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Smor B Legacy",
+      "category": "unclassified",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/smor-b-legacy"
+      ]
+    },
+    {
+      "id": "ge_spm_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Spm Legacy",
+      "category": "unclassified",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/spm-legacy"
+      ]
+    },
+    {
+      "id": "ge_sr_family_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Sr Family Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/sr-family-legacy"
+      ]
+    },
+    {
+      "id": "ge_std_percentage_differential_harmonic_restraint_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Std Percentage Differential Harmonic Restraint Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/std-percentage-differential-harmonic-restraint-legacy"
+      ]
+    },
+    {
+      "id": "ge_stv_overexcitation_relay_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Stv Overexcitation Relay Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/stv-overexcitation-relay-legacy"
+      ]
+    },
+    {
+      "id": "ge_tccv_directional_overcurrent_relay_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Tccv Directional Overcurrent Relay Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/tccv-directional-overcurrent-relay-legacy"
+      ]
+    },
+    {
+      "id": "ge_tcw_modular_power_reversal_relay_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Tcw Modular Power Reversal Relay Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/tcw-modular-power-reversal-relay-legacy"
+      ]
+    },
+    {
+      "id": "ge_tmedic_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Tmedic Legacy",
+      "category": "unclassified",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/tmedic-legacy"
+      ]
+    },
+    {
+      "id": "ge_tov_modular_voltage_relay_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Tov Modular Voltage Relay Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/tov-modular-voltage-relay-legacy"
+      ]
+    },
+    {
+      "id": "ge_agile_p652",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Agile P652",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/transformer-protection/agile-p652"
+      ]
+    },
+    {
+      "id": "ge_multilin_345",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin 345",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/transformer-protection/multilin-345"
+      ]
+    },
+    {
+      "id": "ge_multilin_845",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin 845",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/transformer-protection/multilin-845"
+      ]
+    },
+    {
+      "id": "ge_multilin_t35",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin T35",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/transformer-protection/multilin-t35"
+      ]
+    },
+    {
+      "id": "ge_multilin_t60",
+      "vendor": "GE Vernova / Multilin",
+      "model": "Multilin T60",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/transformer-protection/multilin-t60"
+      ]
+    },
+    {
+      "id": "ge_p64_micom_5th_generation",
+      "vendor": "GE Vernova / Multilin",
+      "model": "P64 Micom 5TH Generation",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/transformer-protection/p64-micom-5th-generation"
+      ]
+    },
+    {
+      "id": "ge_p64x_gen4",
+      "vendor": "GE Vernova / Multilin",
+      "model": "P64X GEN4",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/transformer-protection/p64x-gen4"
+      ]
+    },
+    {
+      "id": "ge_w650_wind_generator_protection_system_legacy",
+      "vendor": "GE Vernova / Multilin",
+      "model": "W650 Wind Generator Protection System Legacy",
+      "category": "protective_relay",
+      "lifecycle": "legacy",
+      "domains": [
+        "gevernova.com"
+      ],
+      "seeds": [
+        "https://www.gevernova.com/electrification/automation/protection-control-metering/w650-wind-generator-protection-system-legacy"
+      ]
+    },
+    {
+      "id": "siemens_7sg68",
+      "vendor": "Siemens",
+      "model": "7SG68",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/reyrolle/7sg68/"
+      ]
+    },
+    {
+      "id": "siemens_7sr10",
+      "vendor": "Siemens",
+      "model": "7SR10",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/reyrolle/7sr10/"
+      ]
+    },
+    {
+      "id": "siemens_7sr105",
+      "vendor": "Siemens",
+      "model": "7SR105",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/reyrolle/7sr105/"
+      ]
+    },
+    {
+      "id": "siemens_7sr110",
+      "vendor": "Siemens",
+      "model": "7SR110",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/reyrolle/7sr110/"
+      ]
+    },
+    {
+      "id": "siemens_7sr119",
+      "vendor": "Siemens",
+      "model": "7SR119",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/reyrolle/7sr119/"
+      ]
+    },
+    {
+      "id": "siemens_7sr120",
+      "vendor": "Siemens",
+      "model": "7SR120",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/reyrolle/7sr120/"
+      ]
+    },
+    {
+      "id": "siemens_7sr157",
+      "vendor": "Siemens",
+      "model": "7SR157",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/reyrolle/7sr157/"
+      ]
+    },
+    {
+      "id": "siemens_7sr158",
+      "vendor": "Siemens",
+      "model": "7SR158",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/reyrolle/7sr158/"
+      ]
+    },
+    {
+      "id": "siemens_7sr17",
+      "vendor": "Siemens",
+      "model": "7SR17",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/reyrolle/7sr17/"
+      ]
+    },
+    {
+      "id": "siemens_7sr18",
+      "vendor": "Siemens",
+      "model": "7SR18",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/reyrolle/7sr18/"
+      ]
+    },
+    {
+      "id": "siemens_7sr191",
+      "vendor": "Siemens",
+      "model": "7SR191",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/reyrolle/7sr191/"
+      ]
+    },
+    {
+      "id": "siemens_7sr210",
+      "vendor": "Siemens",
+      "model": "7SR210",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/reyrolle/7sr210/"
+      ]
+    },
+    {
+      "id": "siemens_7sr220",
+      "vendor": "Siemens",
+      "model": "7SR220",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/reyrolle/7sr220/"
+      ]
+    },
+    {
+      "id": "siemens_7sr224",
+      "vendor": "Siemens",
+      "model": "7SR224",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/reyrolle/7sr224/"
+      ]
+    },
+    {
+      "id": "siemens_7sr23",
+      "vendor": "Siemens",
+      "model": "7SR23",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/reyrolle/7sr23/"
+      ]
+    },
+    {
+      "id": "siemens_7sr242",
+      "vendor": "Siemens",
+      "model": "7SR242",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/reyrolle/7sr242/"
+      ]
+    },
+    {
+      "id": "siemens_7sr45",
+      "vendor": "Siemens",
+      "model": "7SR45",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/reyrolle/7sr45/"
+      ]
+    },
+    {
+      "id": "siemens_7sr46",
+      "vendor": "Siemens",
+      "model": "7SR46",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/reyrolle/7sr46/"
+      ]
+    },
+    {
+      "id": "siemens_7sr51",
+      "vendor": "Siemens",
+      "model": "7SR51",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/reyrolle/7sr51/"
+      ]
+    },
+    {
+      "id": "siemens_7sr54",
+      "vendor": "Siemens",
+      "model": "7SR54",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/reyrolle/7sr54/"
+      ]
+    },
+    {
+      "id": "siemens_7sr57",
+      "vendor": "Siemens",
+      "model": "7SR57",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/reyrolle/7sr57/"
+      ]
+    },
+    {
+      "id": "siemens_measuring_devices",
+      "vendor": "Siemens",
+      "model": "Measuring Devices",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/sentron/measuring-devices/"
+      ]
+    },
+    {
+      "id": "siemens_sentron_measuring_devices",
+      "vendor": "Siemens",
+      "model": "Sentron Measuring Devices",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/sentron/sentron-measuring-devices/"
+      ]
+    },
+    {
+      "id": "siemens_a8000_cp_8050",
+      "vendor": "Siemens",
+      "model": "A8000 Cp 8050",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/sicam/a8000-cp-8050/"
+      ]
+    },
+    {
+      "id": "siemens_a8000_cp8010_12",
+      "vendor": "Siemens",
+      "model": "A8000 CP8010 12",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/sicam/a8000-cp8010-12/"
+      ]
+    },
+    {
+      "id": "siemens_a8000_cp8031",
+      "vendor": "Siemens",
+      "model": "A8000 CP8031",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/sicam/a8000-cp8031/"
+      ]
+    },
+    {
+      "id": "siemens_a8000_cp8050",
+      "vendor": "Siemens",
+      "model": "A8000 CP8050",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/sicam/a8000-cp8050/"
+      ]
+    },
+    {
+      "id": "siemens_a8000",
+      "vendor": "Siemens",
+      "model": "A8000",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/sicam/a8000/"
+      ]
+    },
+    {
+      "id": "siemens_mmu_measurement_monitoring_unit",
+      "vendor": "Siemens",
+      "model": "Mmu Measurement Monitoring Unit",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/sicam/mmu-measurement-monitoring-unit/"
+      ]
+    },
+    {
+      "id": "siemens_multipurpose_automation_box",
+      "vendor": "Siemens",
+      "model": "Multipurpose Automation Box",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/sicam/multipurpose-automation-box/"
+      ]
+    },
+    {
+      "id": "siemens_p50_55_power_meter_device",
+      "vendor": "Siemens",
+      "model": "P50 55 Power Meter Device",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/sicam/p50-55-power-meter-device/"
+      ]
+    },
+    {
+      "id": "siemens_p855_power_quality_recorder",
+      "vendor": "Siemens",
+      "model": "P855 Power Quality Recorder",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/sicam/p855-power-quality-recorder/"
+      ]
+    },
+    {
+      "id": "siemens_power_meter_device_sicam_p850",
+      "vendor": "Siemens",
+      "model": "Power Meter Device Sicam P850",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/sicam/power-meter-device-sicam-p850/"
+      ]
+    },
+    {
+      "id": "siemens_q100_power_quality_instrument",
+      "vendor": "Siemens",
+      "model": "Q100 Power Quality Instrument",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/sicam/q100-power-quality-instrument/"
+      ]
+    },
+    {
+      "id": "siemens_q200_power_quality_recorder",
+      "vendor": "Siemens",
+      "model": "Q200 Power Quality Recorder",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/sicam/q200-power-quality-recorder/"
+      ]
+    },
+    {
+      "id": "siemens_s8000",
+      "vendor": "Siemens",
+      "model": "S8000",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/sicam/s8000/"
+      ]
+    },
+    {
+      "id": "siemens_transducer_sicam_t",
+      "vendor": "Siemens",
+      "model": "Transducer Sicam T",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/sicam/transducer-sicam-t/"
+      ]
+    },
+    {
+      "id": "siemens_advanced_controller",
+      "vendor": "Siemens",
+      "model": "Advanced Controller",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/simatic/advanced-controller/"
+      ]
+    },
+    {
+      "id": "siemens_distributed_controllers",
+      "vendor": "Siemens",
+      "model": "Distributed Controllers",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/simatic/distributed-controllers/"
+      ]
+    },
+    {
+      "id": "siemens_s7_1200_g2",
+      "vendor": "Siemens",
+      "model": "S7 1200 G2",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/simatic/s7-1200-g2/"
+      ]
+    },
+    {
+      "id": "siemens_s7_1500_rh_cpus",
+      "vendor": "Siemens",
+      "model": "S7 1500 Rh Cpus",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/simatic/s7-1500-rh-cpus/"
+      ]
+    },
+    {
+      "id": "siemens_s7_1500",
+      "vendor": "Siemens",
+      "model": "S7 1500",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/simatic/s7-1500/"
+      ]
+    },
+    {
+      "id": "siemens_s7_1500s_controller",
+      "vendor": "Siemens",
+      "model": "S7 1500S Controller",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/simatic/s7-1500s-controller/"
+      ]
+    },
+    {
+      "id": "siemens_s7_1500v",
+      "vendor": "Siemens",
+      "model": "S7 1500V",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/simatic/s7-1500v/"
+      ]
+    },
+    {
+      "id": "siemens_s7_200_smart_g2",
+      "vendor": "Siemens",
+      "model": "S7 200 Smart G2",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/simatic/s7-200-smart-g2/"
+      ]
+    },
+    {
+      "id": "siemens_s7_300",
+      "vendor": "Siemens",
+      "model": "S7 300",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/simatic/s7-300/"
+      ]
+    },
+    {
+      "id": "siemens_s7_400",
+      "vendor": "Siemens",
+      "model": "S7 400",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/simatic/s7-400/"
+      ]
+    },
+    {
+      "id": "siemens_6md85",
+      "vendor": "Siemens",
+      "model": "6MD85",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/6md85/"
+      ]
+    },
+    {
+      "id": "siemens_6md86",
+      "vendor": "Siemens",
+      "model": "6MD86",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/6md86/"
+      ]
+    },
+    {
+      "id": "siemens_7sa82",
+      "vendor": "Siemens",
+      "model": "7SA82",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/7sa82/"
+      ]
+    },
+    {
+      "id": "siemens_7sa86",
+      "vendor": "Siemens",
+      "model": "7SA86",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/7sa86/"
+      ]
+    },
+    {
+      "id": "siemens_7sa87",
+      "vendor": "Siemens",
+      "model": "7SA87",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/7sa87/"
+      ]
+    },
+    {
+      "id": "siemens_7sd8",
+      "vendor": "Siemens",
+      "model": "7SD8",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/7sd8/"
+      ]
+    },
+    {
+      "id": "siemens_7sd80",
+      "vendor": "Siemens",
+      "model": "7SD80",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/7sd80/"
+      ]
+    },
+    {
+      "id": "siemens_7sd82",
+      "vendor": "Siemens",
+      "model": "7SD82",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/7sd82/"
+      ]
+    },
+    {
+      "id": "siemens_7sd86",
+      "vendor": "Siemens",
+      "model": "7SD86",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/7sd86/"
+      ]
+    },
+    {
+      "id": "siemens_7sd87",
+      "vendor": "Siemens",
+      "model": "7SD87",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/7sd87/"
+      ]
+    },
+    {
+      "id": "siemens_7se20",
+      "vendor": "Siemens",
+      "model": "7SE20",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/7se20/"
+      ]
+    },
+    {
+      "id": "siemens_7sj66",
+      "vendor": "Siemens",
+      "model": "7SJ66",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/7sj66/"
+      ]
+    },
+    {
+      "id": "siemens_7sj82",
+      "vendor": "Siemens",
+      "model": "7SJ82",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/7sj82/"
+      ]
+    },
+    {
+      "id": "siemens_7sj85",
+      "vendor": "Siemens",
+      "model": "7SJ85",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/7sj85/"
+      ]
+    },
+    {
+      "id": "siemens_7sj86",
+      "vendor": "Siemens",
+      "model": "7SJ86",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/7sj86/"
+      ]
+    },
+    {
+      "id": "siemens_7sk82",
+      "vendor": "Siemens",
+      "model": "7SK82",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/7sk82/"
+      ]
+    },
+    {
+      "id": "siemens_7sk85",
+      "vendor": "Siemens",
+      "model": "7SK85",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/7sk85/"
+      ]
+    },
+    {
+      "id": "siemens_7sl82",
+      "vendor": "Siemens",
+      "model": "7SL82",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/7sl82/"
+      ]
+    },
+    {
+      "id": "siemens_7sl86",
+      "vendor": "Siemens",
+      "model": "7SL86",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/7sl86/"
+      ]
+    },
+    {
+      "id": "siemens_7sl87",
+      "vendor": "Siemens",
+      "model": "7SL87",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/7sl87/"
+      ]
+    },
+    {
+      "id": "siemens_7ss85",
+      "vendor": "Siemens",
+      "model": "7SS85",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/7ss85/"
+      ]
+    },
+    {
+      "id": "siemens_7sx800",
+      "vendor": "Siemens",
+      "model": "7SX800",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/7sx800/"
+      ]
+    },
+    {
+      "id": "siemens_7sx82",
+      "vendor": "Siemens",
+      "model": "7SX82",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/7sx82/"
+      ]
+    },
+    {
+      "id": "siemens_7sx85",
+      "vendor": "Siemens",
+      "model": "7SX85",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/7sx85/"
+      ]
+    },
+    {
+      "id": "siemens_7sy82",
+      "vendor": "Siemens",
+      "model": "7SY82",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/7sy82/"
+      ]
+    },
+    {
+      "id": "siemens_7um85",
+      "vendor": "Siemens",
+      "model": "7UM85",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/7um85/"
+      ]
+    },
+    {
+      "id": "siemens_7ut82",
+      "vendor": "Siemens",
+      "model": "7UT82",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/7ut82/"
+      ]
+    },
+    {
+      "id": "siemens_7ut85",
+      "vendor": "Siemens",
+      "model": "7UT85",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/7ut85/"
+      ]
+    },
+    {
+      "id": "siemens_7ut86",
+      "vendor": "Siemens",
+      "model": "7UT86",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/7ut86/"
+      ]
+    },
+    {
+      "id": "siemens_7ut87",
+      "vendor": "Siemens",
+      "model": "7UT87",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/7ut87/"
+      ]
+    },
+    {
+      "id": "siemens_7ve85",
+      "vendor": "Siemens",
+      "model": "7VE85",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/7ve85/"
+      ]
+    },
+    {
+      "id": "siemens_7vk87",
+      "vendor": "Siemens",
+      "model": "7VK87",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/7vk87/"
+      ]
+    },
+    {
+      "id": "siemens_7vu85",
+      "vendor": "Siemens",
+      "model": "7VU85",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "siemens.com"
+      ],
+      "seeds": [
+        "https://www.siemens.com/en-us/products/siprotec/7vu85/"
+      ]
+    },
+    {
+      "id": "rockwell_protection_relay",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "Protection Relay",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/circuit-and-load-protection/857-protection-relay.html"
+      ]
+    },
+    {
+      "id": "rockwell_differential_protection_relay",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "Differential Protection Relay",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/circuit-and-load-protection/865-differential-protection-relay.html"
+      ]
+    },
+    {
+      "id": "rockwell_powermonitor_1000",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "Powermonitor 1000",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/energy-monitoring/1408-powermonitor-1000.html"
+      ]
+    },
+    {
+      "id": "rockwell_powermonitor_500",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "Powermonitor 500",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/energy-monitoring/1420-powermonitor-500.html"
+      ]
+    },
+    {
+      "id": "rockwell_powermonitor_5000",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "Powermonitor 5000",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/energy-monitoring/1426-powermonitor-5000.html"
+      ]
+    },
+    {
+      "id": "rockwell_controllogix_5590",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "Controllogix 5590",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/1756-controllogix-5590.html"
+      ]
+    },
+    {
+      "id": "rockwell_1756controllogix5580",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "1756CONTROLLOGIX5580",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/1756controllogix5580.html"
+      ]
+    },
+    {
+      "id": "rockwell_compactlogix_5390_controllers",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "Compactlogix 5390 Controllers",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/compactLogix-5390-controllers.html"
+      ]
+    },
+    {
+      "id": "rockwell_compactlogix_1768_controllers",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "Compactlogix 1768 Controllers",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/compactlogix-1768-controllers.html"
+      ]
+    },
+    {
+      "id": "rockwell_compactlogix_1769_controllers",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "Compactlogix 1769 Controllers",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/compactlogix-1769-controllers.html"
+      ]
+    },
+    {
+      "id": "rockwell_compactlogix_5370_controllers",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "Compactlogix 5370 Controllers",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/compactlogix-5370-controllers.html"
+      ]
+    },
+    {
+      "id": "rockwell_compactlogix_5380_controllers",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "Compactlogix 5380 Controllers",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/compactlogix-5380-controllers.html"
+      ]
+    },
+    {
+      "id": "rockwell_compactlogix_5480_controllers",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "Compactlogix 5480 Controllers",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/compactlogix-5480-controllers.html"
+      ]
+    },
+    {
+      "id": "rockwell_logixedge_controllers",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "Logixedge Controllers",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/logixedge-controllers.html"
+      ]
+    },
+    {
+      "id": "rockwell_micro810_controllers",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "MICRO810 Controllers",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/micro810-controllers.html"
+      ]
+    },
+    {
+      "id": "rockwell_micro820_controllers",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "MICRO820 Controllers",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/micro820-controllers.html"
+      ]
+    },
+    {
+      "id": "rockwell_micro830_controllers",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "MICRO830 Controllers",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/micro830-controllers.html"
+      ]
+    },
+    {
+      "id": "rockwell_micro850_controllers",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "MICRO850 Controllers",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/micro850-controllers.html"
+      ]
+    },
+    {
+      "id": "rockwell_micro870_controllers",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "MICRO870 Controllers",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/micro870-controllers.html"
+      ]
+    },
+    {
+      "id": "rockwell_micrologix_1100_controllers",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "Micrologix 1100 Controllers",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/micrologix-1100-controllers.html"
+      ]
+    },
+    {
+      "id": "rockwell_micrologix_1200_controllers",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "Micrologix 1200 Controllers",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/micrologix-1200-controllers.html"
+      ]
+    },
+    {
+      "id": "rockwell_micrologix_1400_controllers",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "Micrologix 1400 Controllers",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/micrologix-1400-controllers.html"
+      ]
+    },
+    {
+      "id": "rockwell_process_controllers",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "Process Controllers",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/process-controllers.html"
+      ]
+    },
+    {
+      "id": "rockwell_slc_500_controllers",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "Slc 500 Controllers",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/slc-500-controllers.html"
+      ]
+    },
+    {
+      "id": "rockwell_smartguard_controllers",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "Smartguard Controllers",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/smartguard-controllers.html"
+      ]
+    },
+    {
+      "id": "rockwell_softlogix_controllers",
+      "vendor": "Rockwell Automation / Allen-Bradley",
+      "model": "Softlogix Controllers",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "rockwellautomation.com"
+      ],
+      "seeds": [
+        "https://www.rockwellautomation.com/en-us/products/hardware/programmable-controllers/softlogix-controllers.html"
+      ]
+    },
+    {
+      "id": "schneider_powerlogic_p7_protection_and_control_platform",
+      "vendor": "Schneider Electric",
+      "model": "Powerlogic P7 Protection And Control Platform",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/107518494-powerlogic-p7-protection-and-control-platform/"
+      ]
+    },
+    {
+      "id": "schneider_modicon_mcm",
+      "vendor": "Schneider Electric",
+      "model": "Modicon Mcm",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/1438-modicon-mcm/"
+      ]
+    },
+    {
+      "id": "schneider_powerlogic_ion7550_ion7650_series",
+      "vendor": "Schneider Electric",
+      "model": "Powerlogic ION7550 ION7650 Series",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/1460-powerlogic-ion7550-ion7650-series/"
+      ]
+    },
+    {
+      "id": "schneider_modicon_m340_pac",
+      "vendor": "Schneider Electric",
+      "model": "Modicon M340 Pac",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/1468-modicon-m340-pac/"
+      ]
+    },
+    {
+      "id": "schneider_powerlogic_ion6200_series",
+      "vendor": "Schneider Electric",
+      "model": "Powerlogic ION6200 Series",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/1505-powerlogic-ion6200-series/"
+      ]
+    },
+    {
+      "id": "schneider_powerlogic_enercept",
+      "vendor": "Schneider Electric",
+      "model": "Powerlogic Enercept",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/1703-powerlogic-enercept/"
+      ]
+    },
+    {
+      "id": "schneider_powerlogic_energy_meters",
+      "vendor": "Schneider Electric",
+      "model": "Powerlogic Energy Meters",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/1717-powerlogic-energy-meters/"
+      ]
+    },
+    {
+      "id": "schneider_sepam_series_10",
+      "vendor": "Schneider Electric",
+      "model": "Sepam Series 10",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/1829-sepam-series-10/"
+      ]
+    },
+    {
+      "id": "schneider_powerlogic_ion7550_rtu",
+      "vendor": "Schneider Electric",
+      "model": "Powerlogic ION7550 Rtu",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/1872-powerlogic-ion7550-rtu/"
+      ]
+    },
+    {
+      "id": "schneider_powerlogic_t500_substation_controller",
+      "vendor": "Schneider Electric",
+      "model": "Powerlogic T500 Substation Controller",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/203452520-powerlogic-t500-substation-controller/"
+      ]
+    },
+    {
+      "id": "schneider_modicon_m258_compact_plc_for_machine_automation",
+      "vendor": "Schneider Electric",
+      "model": "Modicon M258 Compact Plc For Machine Automation",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/2730-modicon-m258-compact-plc-for-machine-automation/"
+      ]
+    },
+    {
+      "id": "schneider_modicon_m660",
+      "vendor": "Schneider Electric",
+      "model": "Modicon M660",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/274563785-modicon-m660/"
+      ]
+    },
+    {
+      "id": "schneider_powerlogic_em4800",
+      "vendor": "Schneider Electric",
+      "model": "Powerlogic EM4800",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/2808-powerlogic-em4800/"
+      ]
+    },
+    {
+      "id": "schneider_scadapack_47x_47xi_470r_47xd",
+      "vendor": "Schneider Electric",
+      "model": "Scadapack 47X 47XI 470R 47XD",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/35344468-scadapack-47x-47xi-470r-47xd/"
+      ]
+    },
+    {
+      "id": "schneider_twido_programmable_controller",
+      "vendor": "Schneider Electric",
+      "model": "Twido Programmable Controller",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/533-twido-programmable-controller/"
+      ]
+    },
+    {
+      "id": "schneider_modicon_momentum",
+      "vendor": "Schneider Electric",
+      "model": "Modicon Momentum",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/535-modicon-momentum/"
+      ]
+    },
+    {
+      "id": "schneider_modicon_premium_pac",
+      "vendor": "Schneider Electric",
+      "model": "Modicon Premium Pac",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/537-modicon-premium-pac/"
+      ]
+    },
+    {
+      "id": "schneider_modicon_quantum_pac",
+      "vendor": "Schneider Electric",
+      "model": "Modicon Quantum Pac",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/538-modicon-quantum-pac/"
+      ]
+    },
+    {
+      "id": "schneider_micom_e124",
+      "vendor": "Schneider Electric",
+      "model": "Micom E124",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/60732-micom-e124/"
+      ]
+    },
+    {
+      "id": "schneider_micom_p841",
+      "vendor": "Schneider Electric",
+      "model": "Micom P841",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/60735-micom-p841/"
+      ]
+    },
+    {
+      "id": "schneider_micom_p740",
+      "vendor": "Schneider Electric",
+      "model": "Micom P740",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/60737-micom-p740/"
+      ]
+    },
+    {
+      "id": "schneider_micom_p746",
+      "vendor": "Schneider Electric",
+      "model": "Micom P746",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/60738-micom-p746/"
+      ]
+    },
+    {
+      "id": "schneider_micom_p821",
+      "vendor": "Schneider Electric",
+      "model": "Micom P821",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/60739-micom-p821/"
+      ]
+    },
+    {
+      "id": "schneider_micom_p43x",
+      "vendor": "Schneider Electric",
+      "model": "Micom P43X",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/60741-micom-p43x/"
+      ]
+    },
+    {
+      "id": "schneider_micom_p44x",
+      "vendor": "Schneider Electric",
+      "model": "Micom P44X",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/60742-micom-p44x/"
+      ]
+    },
+    {
+      "id": "schneider_micom_p341_and_micom_p922g",
+      "vendor": "Schneider Electric",
+      "model": "Micom P341 And Micom P922G",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/60744-micom-p341-and-micom-p922g/"
+      ]
+    },
+    {
+      "id": "schneider_micom_p521",
+      "vendor": "Schneider Electric",
+      "model": "Micom P521",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/60745-micom-p521/"
+      ]
+    },
+    {
+      "id": "schneider_micom_p53x",
+      "vendor": "Schneider Electric",
+      "model": "Micom P53X",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/60746-micom-p53x/"
+      ]
+    },
+    {
+      "id": "schneider_micom_p54x",
+      "vendor": "Schneider Electric",
+      "model": "Micom P54X",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/60747-micom-p54x/"
+      ]
+    },
+    {
+      "id": "schneider_micom_p547",
+      "vendor": "Schneider Electric",
+      "model": "Micom P547",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/60748-micom-p547/"
+      ]
+    },
+    {
+      "id": "schneider_micom_p59x",
+      "vendor": "Schneider Electric",
+      "model": "Micom P59X",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/60750-micom-p59x/"
+      ]
+    },
+    {
+      "id": "schneider_micom_p211",
+      "vendor": "Schneider Electric",
+      "model": "Micom P211",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/60751-micom-p211/"
+      ]
+    },
+    {
+      "id": "schneider_micom_p22x",
+      "vendor": "Schneider Electric",
+      "model": "Micom P22X",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/60752-micom-p22x/"
+      ]
+    },
+    {
+      "id": "schneider_micom_p24x",
+      "vendor": "Schneider Electric",
+      "model": "Micom P24X",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/60753-micom-p24x/"
+      ]
+    },
+    {
+      "id": "schneider_powerlogic_micom_p115_and_p116",
+      "vendor": "Schneider Electric",
+      "model": "Powerlogic Micom P115 And P116",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/60755-powerlogic-micom-p115-and-p116/"
+      ]
+    },
+    {
+      "id": "schneider_micom_p12x",
+      "vendor": "Schneider Electric",
+      "model": "Micom P12X",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/60758-micom-p12x/"
+      ]
+    },
+    {
+      "id": "schneider_micom_p13x",
+      "vendor": "Schneider Electric",
+      "model": "Micom P13X",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/60761-micom-p13x/"
+      ]
+    },
+    {
+      "id": "schneider_micom_p14x",
+      "vendor": "Schneider Electric",
+      "model": "Micom P14X",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/60765-micom-p14x/"
+      ]
+    },
+    {
+      "id": "schneider_micom_p638",
+      "vendor": "Schneider Electric",
+      "model": "Micom P638",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/60766-micom-p638/"
+      ]
+    },
+    {
+      "id": "schneider_micom_p138",
+      "vendor": "Schneider Electric",
+      "model": "Micom P138",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/60767-micom-p138/"
+      ]
+    },
+    {
+      "id": "schneider_micom_p436_and_micom_p438",
+      "vendor": "Schneider Electric",
+      "model": "Micom P436 And Micom P438",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/60768-micom-p436-and-micom-p438/"
+      ]
+    },
+    {
+      "id": "schneider_micom_p63x",
+      "vendor": "Schneider Electric",
+      "model": "Micom P63X",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/60772-micom-p63x/"
+      ]
+    },
+    {
+      "id": "schneider_micom_p64x",
+      "vendor": "Schneider Electric",
+      "model": "Micom P64X",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/60773-micom-p64x/"
+      ]
+    },
+    {
+      "id": "schneider_micom_p9xx",
+      "vendor": "Schneider Electric",
+      "model": "Micom P9XX",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/60775-micom-p9xx/"
+      ]
+    },
+    {
+      "id": "schneider_micom_c264",
+      "vendor": "Schneider Electric",
+      "model": "Micom C264",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/60784-micom-c264/"
+      ]
+    },
+    {
+      "id": "schneider_easergy_micom_c434",
+      "vendor": "Schneider Electric",
+      "model": "Easergy Micom C434",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/60785-easergy-micom-c434/"
+      ]
+    },
+    {
+      "id": "schneider_powerlogic_ion8650_series",
+      "vendor": "Schneider Electric",
+      "model": "Powerlogic ION8650 Series",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/61053-powerlogic-ion8650-series/"
+      ]
+    },
+    {
+      "id": "schneider_micom_p34x",
+      "vendor": "Schneider Electric",
+      "model": "Micom P34X",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/61057-micom-p34x/"
+      ]
+    },
+    {
+      "id": "schneider_micom_p72x",
+      "vendor": "Schneider Electric",
+      "model": "Micom P72X",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/61182-micom-p72x/"
+      ]
+    },
+    {
+      "id": "schneider_acti_9_iem3000_series",
+      "vendor": "Schneider Electric",
+      "model": "Acti 9 IEM3000 Series",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/61273-acti-9-iem3000-series/"
+      ]
+    },
+    {
+      "id": "schneider_powerlogic_pm3000_power_meters",
+      "vendor": "Schneider Electric",
+      "model": "Powerlogic PM3000 Power Meters",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/61274-powerlogic-pm3000-power-meters/"
+      ]
+    },
+    {
+      "id": "schneider_powerlogic_pm5000_power_meters",
+      "vendor": "Schneider Electric",
+      "model": "Powerlogic PM5000 Power Meters",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/61281-powerlogic-pm5000-power-meters/"
+      ]
+    },
+    {
+      "id": "schneider_powerlogic_em3500_series",
+      "vendor": "Schneider Electric",
+      "model": "Powerlogic EM3500 Series",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/61336-powerlogic-em3500-series/"
+      ]
+    },
+    {
+      "id": "schneider_micom_p849",
+      "vendor": "Schneider Electric",
+      "model": "Micom P849",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/61505-micom-p849/"
+      ]
+    },
+    {
+      "id": "schneider_compact_plc",
+      "vendor": "Schneider Electric",
+      "model": "Compact Plc",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/61593-compact-plc/"
+      ]
+    },
+    {
+      "id": "schneider_sage_remote_terminal_units",
+      "vendor": "Schneider Electric",
+      "model": "Sage Remote Terminal Units",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/61746-sage-remote-terminal-units/"
+      ]
+    },
+    {
+      "id": "schneider_saitel_remote_terminal_unit_controller",
+      "vendor": "Schneider Electric",
+      "model": "Saitel Remote Terminal Unit Controller",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/61747-saitel-remote-terminal-unit-controller/"
+      ]
+    },
+    {
+      "id": "schneider_vamp_arc_protection_relay_system",
+      "vendor": "Schneider Electric",
+      "model": "Vamp Arc Protection Relay System",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/62049-vamp-arc-protection-relay-system/"
+      ]
+    },
+    {
+      "id": "schneider_modicon_m580_pac_controller",
+      "vendor": "Schneider Electric",
+      "model": "Modicon M580 Pac Controller",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/62098-modicon-m580-pac-controller/"
+      ]
+    },
+    {
+      "id": "schneider_modicon_m221_nano_plc",
+      "vendor": "Schneider Electric",
+      "model": "Modicon M221 Nano Plc",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/62128-modicon-m221-nano-plc/"
+      ]
+    },
+    {
+      "id": "schneider_modicon_m241_micro_plc",
+      "vendor": "Schneider Electric",
+      "model": "Modicon M241 Micro Plc",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/62129-modicon-m241-micro-plc/"
+      ]
+    },
+    {
+      "id": "schneider_modicon_m251_micro_plc_with_dual_channel_comm",
+      "vendor": "Schneider Electric",
+      "model": "Modicon M251 Micro Plc With Dual Channel Comm",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/62130-modicon-m251-micro-plc-with-dual-channel-comm/"
+      ]
+    },
+    {
+      "id": "schneider_powerlogic_pm8000_power_quality_meters",
+      "vendor": "Schneider Electric",
+      "model": "Powerlogic PM8000 Power Quality Meters",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/62252-powerlogic-pm8000-power-quality-meters/"
+      ]
+    },
+    {
+      "id": "schneider_modicon_mc80",
+      "vendor": "Schneider Electric",
+      "model": "Modicon MC80",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/62396-modicon-mc80/"
+      ]
+    },
+    {
+      "id": "schneider_powerlogic_t300",
+      "vendor": "Schneider Electric",
+      "model": "Powerlogic T300",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/62399-powerlogic-t300/"
+      ]
+    },
+    {
+      "id": "schneider_powerlogic_p5_protection_relays",
+      "vendor": "Schneider Electric",
+      "model": "Powerlogic P5 Protection Relays",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/62400-powerlogic-p5-protection-relays/"
+      ]
+    },
+    {
+      "id": "schneider_modicon_m171_m172_logic_controller",
+      "vendor": "Schneider Electric",
+      "model": "Modicon M171 M172 Logic Controller",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/62420-modicon-m171-m172-logic-controller/"
+      ]
+    },
+    {
+      "id": "schneider_scadapack_500e",
+      "vendor": "Schneider Electric",
+      "model": "Scadapack 500E",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/63000-scadapack-500e/"
+      ]
+    },
+    {
+      "id": "schneider_pm2000_series",
+      "vendor": "Schneider Electric",
+      "model": "PM2000 Series",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/63370-pm2000-series/"
+      ]
+    },
+    {
+      "id": "schneider_powerlogic_em4200_series_enercept",
+      "vendor": "Schneider Electric",
+      "model": "Powerlogic EM4200 Series Enercept",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/63381-powerlogic-em4200-series-enercept/"
+      ]
+    },
+    {
+      "id": "schneider_powerlogic_ion7400_series",
+      "vendor": "Schneider Electric",
+      "model": "Powerlogic ION7400 Series",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/63502-powerlogic-ion7400-series/"
+      ]
+    },
+    {
+      "id": "schneider_foxboro_scada_rtus",
+      "vendor": "Schneider Electric",
+      "model": "Foxboro Scada Rtus",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/63678-foxboro-scada-rtus/"
+      ]
+    },
+    {
+      "id": "schneider_powerlogic_ion9000_series",
+      "vendor": "Schneider Electric",
+      "model": "Powerlogic ION9000 Series",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/64241-powerlogic-ion9000-series/"
+      ]
+    },
+    {
+      "id": "schneider_powerlogic_p3_protection_relays",
+      "vendor": "Schneider Electric",
+      "model": "Powerlogic P3 Protection Relays",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/64884-powerlogic-p3-protection-relays/"
+      ]
+    },
+    {
+      "id": "schneider_logic_motion_controller_modicon_m262",
+      "vendor": "Schneider Electric",
+      "model": "Logic Motion Controller Modicon M262",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/65771-logic-motion-controller-modicon-m262/"
+      ]
+    },
+    {
+      "id": "schneider_scadapack_57x",
+      "vendor": "Schneider Electric",
+      "model": "Scadapack 57X",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/66030-scadapack-57x/"
+      ]
+    },
+    {
+      "id": "schneider_modicon_lmc058_lmc078",
+      "vendor": "Schneider Electric",
+      "model": "Modicon LMC058 LMC078",
+      "category": "plc",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/7744-modicon-lmc058-lmc078/"
+      ]
+    },
+    {
+      "id": "schneider_powerlogic_hdpm6000_highdensity_metering_system",
+      "vendor": "Schneider Electric",
+      "model": "Powerlogic HDPM6000 Highdensity Metering System",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/8297113-powerlogic-hdpm6000-highdensity-metering-system/"
+      ]
+    },
+    {
+      "id": "schneider_pm800_series",
+      "vendor": "Schneider Electric",
+      "model": "PM800 Series",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/918-pm800-series/"
+      ]
+    },
+    {
+      "id": "schneider_sepam_series_20",
+      "vendor": "Schneider Electric",
+      "model": "Sepam Series 20",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/933-sepam-series-20/"
+      ]
+    },
+    {
+      "id": "schneider_sepam_series_40",
+      "vendor": "Schneider Electric",
+      "model": "Sepam Series 40",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/934-sepam-series-40/"
+      ]
+    },
+    {
+      "id": "schneider_sepam_series_80",
+      "vendor": "Schneider Electric",
+      "model": "Sepam Series 80",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "se.com"
+      ],
+      "seeds": [
+        "https://www.se.com/us/en/product-range/935-sepam-series-80/"
+      ]
+    },
+    {
+      "id": "sel_2032",
+      "vendor": "SEL",
+      "model": "SEL-2032",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/1345/"
+      ]
+    },
+    {
+      "id": "sel_2100",
+      "vendor": "SEL",
+      "model": "SEL-2100",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/3665/"
+      ]
+    },
+    {
+      "id": "sel_2240",
+      "vendor": "SEL",
+      "model": "SEL-2240",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/97906/"
+      ]
+    },
+    {
+      "id": "sel_2411",
+      "vendor": "SEL",
+      "model": "SEL-2411",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/3614/"
+      ]
+    },
+    {
+      "id": "sel_2411p",
+      "vendor": "SEL",
+      "model": "SEL-2411P",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/117424/"
+      ]
+    },
+    {
+      "id": "sel_2414",
+      "vendor": "SEL",
+      "model": "SEL-2414",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/3604/"
+      ]
+    },
+    {
+      "id": "sel_2431",
+      "vendor": "SEL",
+      "model": "SEL-2431",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/3608/"
+      ]
+    },
+    {
+      "id": "sel_2440",
+      "vendor": "SEL",
+      "model": "SEL-2440",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/3599/"
+      ]
+    },
+    {
+      "id": "sel_2664s",
+      "vendor": "SEL",
+      "model": "SEL-2664S",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/105260/"
+      ]
+    },
+    {
+      "id": "sel_300g",
+      "vendor": "SEL",
+      "model": "SEL-300G",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/1572/"
+      ]
+    },
+    {
+      "id": "sel_311c",
+      "vendor": "SEL",
+      "model": "SEL-311C",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/10139/"
+      ]
+    },
+    {
+      "id": "sel_311l",
+      "vendor": "SEL",
+      "model": "SEL-311L",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/3625/"
+      ]
+    },
+    {
+      "id": "sel_321_5",
+      "vendor": "SEL",
+      "model": "SEL-321-5",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/3628/"
+      ]
+    },
+    {
+      "id": "sel_321",
+      "vendor": "SEL",
+      "model": "SEL-321",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/3623/"
+      ]
+    },
+    {
+      "id": "sel_3505_3505_3",
+      "vendor": "SEL",
+      "model": "SEL-3505/3505-3",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/100623/"
+      ]
+    },
+    {
+      "id": "sel_351",
+      "vendor": "SEL",
+      "model": "SEL-351",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/5530/"
+      ]
+    },
+    {
+      "id": "sel_351a",
+      "vendor": "SEL",
+      "model": "SEL-351A",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/5520/"
+      ]
+    },
+    {
+      "id": "sel_351r",
+      "vendor": "SEL",
+      "model": "SEL-351R",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/100464/"
+      ]
+    },
+    {
+      "id": "sel_351rs_kestrel",
+      "vendor": "SEL",
+      "model": "SEL-351RS Kestrel",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/7678/"
+      ]
+    },
+    {
+      "id": "sel_351r_falcon",
+      "vendor": "SEL",
+      "model": "SEL-351R Falcon",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/3631/"
+      ]
+    },
+    {
+      "id": "sel_351s",
+      "vendor": "SEL",
+      "model": "SEL-351S",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/5512/"
+      ]
+    },
+    {
+      "id": "sel_352",
+      "vendor": "SEL",
+      "model": "SEL-352",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/3465/"
+      ]
+    },
+    {
+      "id": "sel_3530_4",
+      "vendor": "SEL",
+      "model": "SEL-3530-4",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/97911/"
+      ]
+    },
+    {
+      "id": "sel_3530",
+      "vendor": "SEL",
+      "model": "SEL-3530",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": []
+    },
+    {
+      "id": "sel_3555",
+      "vendor": "SEL",
+      "model": "SEL-3555",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/126000/"
+      ]
+    },
+    {
+      "id": "sel_3560",
+      "vendor": "SEL",
+      "model": "SEL-3560",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/124708/"
+      ]
+    },
+    {
+      "id": "sel_387",
+      "vendor": "SEL",
+      "model": "SEL-387",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/3636/"
+      ]
+    },
+    {
+      "id": "sel_387a",
+      "vendor": "SEL",
+      "model": "SEL-387A",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/3637/"
+      ]
+    },
+    {
+      "id": "sel_387e",
+      "vendor": "SEL",
+      "model": "SEL-387E",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/3639/"
+      ]
+    },
+    {
+      "id": "sel_387l",
+      "vendor": "SEL",
+      "model": "SEL-387L",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/944/"
+      ]
+    },
+    {
+      "id": "sel_400g",
+      "vendor": "SEL",
+      "model": "SEL-400G",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/130743/"
+      ]
+    },
+    {
+      "id": "sel_411l",
+      "vendor": "SEL",
+      "model": "SEL-411L",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/115593/"
+      ]
+    },
+    {
+      "id": "sel_421",
+      "vendor": "SEL",
+      "model": "SEL-421",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/116330/"
+      ]
+    },
+    {
+      "id": "sel_451",
+      "vendor": "SEL",
+      "model": "SEL-451",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/116757/"
+      ]
+    },
+    {
+      "id": "sel_487b",
+      "vendor": "SEL",
+      "model": "SEL-487B",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/116519/"
+      ]
+    },
+    {
+      "id": "sel_487e",
+      "vendor": "SEL",
+      "model": "SEL-487E",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/116360/"
+      ]
+    },
+    {
+      "id": "sel_487v",
+      "vendor": "SEL",
+      "model": "SEL-487V",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/137865/"
+      ]
+    },
+    {
+      "id": "sel_547",
+      "vendor": "SEL",
+      "model": "SEL-547",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": []
+    },
+    {
+      "id": "sel_651r",
+      "vendor": "SEL",
+      "model": "SEL-651R",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/100136/"
+      ]
+    },
+    {
+      "id": "sel_651ra",
+      "vendor": "SEL",
+      "model": "SEL-651RA",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/113968/"
+      ]
+    },
+    {
+      "id": "sel_700bt",
+      "vendor": "SEL",
+      "model": "SEL-700BT",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/132531/"
+      ]
+    },
+    {
+      "id": "sel_700g",
+      "vendor": "SEL",
+      "model": "SEL-700G",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/7577/"
+      ]
+    },
+    {
+      "id": "sel_701",
+      "vendor": "SEL",
+      "model": "SEL-701",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/3651/"
+      ]
+    },
+    {
+      "id": "sel_710_5",
+      "vendor": "SEL",
+      "model": "SEL-710-5",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/102318/"
+      ]
+    },
+    {
+      "id": "sel_710",
+      "vendor": "SEL",
+      "model": "SEL-710",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/3652/"
+      ]
+    },
+    {
+      "id": "sel_734_734t",
+      "vendor": "SEL",
+      "model": "SEL-734/734T",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/3954/"
+      ]
+    },
+    {
+      "id": "sel_734b",
+      "vendor": "SEL",
+      "model": "SEL-734B",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/3954/"
+      ]
+    },
+    {
+      "id": "sel_735",
+      "vendor": "SEL",
+      "model": "SEL-735",
+      "category": "meter",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/97801/"
+      ]
+    },
+    {
+      "id": "sel_749m",
+      "vendor": "SEL",
+      "model": "SEL-749M",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/3657/"
+      ]
+    },
+    {
+      "id": "sel_751",
+      "vendor": "SEL",
+      "model": "SEL-751",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/10737/"
+      ]
+    },
+    {
+      "id": "sel_751a",
+      "vendor": "SEL",
+      "model": "SEL-751A",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/3656/"
+      ]
+    },
+    {
+      "id": "sel_787_2_3_4",
+      "vendor": "SEL",
+      "model": "SEL-787-2/-3/-4",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/106698/"
+      ]
+    },
+    {
+      "id": "sel_787",
+      "vendor": "SEL",
+      "model": "SEL-787",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/3659/"
+      ]
+    },
+    {
+      "id": "sel_787l",
+      "vendor": "SEL",
+      "model": "SEL-787L",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/139124/"
+      ]
+    },
+    {
+      "id": "sel_787z",
+      "vendor": "SEL",
+      "model": "SEL-787Z",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/138685/"
+      ]
+    },
+    {
+      "id": "sel_849",
+      "vendor": "SEL",
+      "model": "SEL-849",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/21474836976/"
+      ]
+    },
+    {
+      "id": "sel_851",
+      "vendor": "SEL",
+      "model": "SEL-851",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/134972/"
+      ]
+    },
+    {
+      "id": "sel_9l",
+      "vendor": "SEL",
+      "model": "SEL-9L",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": []
+    },
+    {
+      "id": "sel_real_time_automation_controller_rtac",
+      "vendor": "SEL",
+      "model": "SEL Real-Time Automation Controller (RTAC)",
+      "category": "controller_rtu",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/111397/"
+      ]
+    },
+    {
+      "id": "sel_t400l",
+      "vendor": "SEL",
+      "model": "SEL-T400L",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/119049/"
+      ]
+    },
+    {
+      "id": "sel_t401l",
+      "vendor": "SEL",
+      "model": "SEL-T401L",
+      "category": "protective_relay",
+      "lifecycle": "active",
+      "domains": [
+        "selinc.com"
+      ],
+      "seeds": [
+        "https://selinc.com/api/download/131993/"
+      ]
+    }
+  ]
+}

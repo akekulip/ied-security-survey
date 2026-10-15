@@ -1,0 +1,183 @@
+[
+  {
+    "at": "2026-10-13T19:18:52.133201+00:00",
+    "url": "https://www.gevernova.com/robots.txt",
+    "status": 200,
+    "bytes": 5207,
+    "sha256": "38174ab81da1da9ba9bec5746eb246576af3f2d13361da1fa7a8a9e90ef0dfa8"
+  },
+  {
+    "at": "2026-10-13T19:18:53.334648+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=c30&type=3&node_id=4549",
+    "status": 200,
+    "bytes": 424015
+  },
+  {
+    "at": "2026-10-13T19:18:54.541347+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=c30&type=21&node_id=4549",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:18:55.740829+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=c30&type=1&node_id=4549",
+    "status": 200,
+    "bytes": 383706
+  },
+  {
+    "at": "2026-10-13T19:18:56.938729+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=c30&type=4&node_id=4549",
+    "status": 200,
+    "bytes": 382371
+  },
+  {
+    "at": "2026-10-13T19:18:58.152380+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=c30&type=7&node_id=4549",
+    "status": 200,
+    "bytes": 431768
+  },
+  {
+    "at": "2026-10-13T19:18:59.601612+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=c60&type=3&node_id=4547",
+    "status": 200,
+    "bytes": 437691
+  },
+  {
+    "at": "2026-10-13T19:19:00.949287+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=c60&type=21&node_id=4547",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:19:02.150240+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=c60&type=1&node_id=4547",
+    "status": 200,
+    "bytes": 383678
+  },
+  {
+    "at": "2026-10-13T19:19:03.345998+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=c60&type=4&node_id=4547",
+    "status": 200,
+    "bytes": 383464
+  },
+  {
+    "at": "2026-10-13T19:19:04.558398+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=c60&type=7&node_id=4547",
+    "status": 200,
+    "bytes": 431740
+  },
+  {
+    "at": "2026-10-13T19:19:05.936500+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=d20e&type=3&node_id=4553",
+    "status": 200,
+    "bytes": 381384
+  },
+  {
+    "at": "2026-10-13T19:19:07.130767+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=d20e&type=21&node_id=4553",
+    "status": 302,
+    "bytes": 28398
+  },
+  {
+    "at": "2026-10-13T19:19:08.337646+00:00",
+    "url": "https://www.gevernova.com/electrification/document-not-available",
+    "status": 200,
+    "bytes": 374224
+  },
+  {
+    "at": "2026-10-13T19:19:09.531266+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=d20e&type=1&node_id=4553",
+    "status": 200,
+    "bytes": 381375
+  },
+  {
+    "at": "2026-10-13T19:19:10.726746+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=d20e&type=7&node_id=4553",
+    "status": 200,
+    "bytes": 385853
+  },
+  {
+    "at": "2026-10-13T19:19:11.924745+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=G500&type=3&node_id=4551",
+    "status": 200,
+    "bytes": 389281
+  },
+  {
+    "at": "2026-10-13T19:19:13.134781+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=G500&type=21&node_id=4551",
+    "status": 302,
+    "bytes": 0
+  },
+  {
+    "at": "2026-10-13T19:19:14.328845+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=G500&type=1&node_id=4551",
+    "status": 200,
+    "bytes": 382576
+  },
+  {
+    "at": "2026-10-13T19:19:15.533787+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=G500&type=4&node_id=4551",
+    "status": 302,
+    "bytes": 28398
+  },
+  {
+    "at": "2026-10-13T19:19:16.731659+00:00",
+    "url": "https://www.gevernova.com/electrification/document-not-available",
+    "status": 200,
+    "bytes": 374224
+  },
+  {
+    "at": "2026-10-13T19:19:17.929515+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=G500&type=7&node_id=4551",
+    "status": 200,
+    "bytes": 425055
+  },
+  {
+    "at": "2026-10-13T19:19:19.130389+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=dgcc&type=3&node_id=4874",
+    "status": 302,
+    "bytes": 28399
+  },
+  {
+    "at": "2026-10-13T19:19:20.326246+00:00",
+    "url": "https://www.gevernova.com/electrification/document-not-available",
+    "status": 200,
+    "bytes": 374224
+  },
+  {
+    "at": "2026-10-13T19:19:21.517766+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=dgcc&type=1&node_id=4874",
+    "status": 302,
+    "bytes": 28399
+  },
+  {
+    "at": "2026-10-13T19:19:22.718498+00:00",
+    "url": "https://www.gevernova.com/electrification/document-not-available",
+    "status": 200,
+    "bytes": 374224
+  },
+  {
+    "at": "2026-10-13T19:19:23.915229+00:00",
+    "url": "https://www.gevernova.com/electrification/sites/default/files/2025-12/GER-4820-DGC-Family-%28DGCC-DGCR-DGCS-DGCV%29-A.pdf",
+    "status": 200,
+    "bytes": 108274
+  },
+  {
+    "at": "2026-10-13T19:19:25.114530+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=dgcc&type=7&node_id=4874",
+    "status": 200,
+    "bytes": 381706
+  },
+  {
+    "at": "2026-10-13T19:19:26.324954+00:00",
+    "url": "https://www.gevernova.com/electrification/resources?prod=d20&type=3&node_id=4992",
+    "status": 302,
+    "bytes": 28399
+  },
+  {
+    "at": "2026-10-13T19:19:27.521941+00:00",
+    "url": "https://www.gevernova.com/electrification/document-not-available",
+    "status": 200,
+    "bytes": 374224
+  }
+]

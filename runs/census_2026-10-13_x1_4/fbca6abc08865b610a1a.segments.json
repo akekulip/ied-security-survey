@@ -1,0 +1,157 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "Distance protection – SIPROTEC 7SA87 | Siemens"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Why SIPROTEC 7SA87?"
+  },
+  {
+    "location": "html-block:4",
+    "text": "SIPROTEC 7SA87 is a modular distance protection device for high-voltage lines. It provides essential protection for electrical equipment by detecting and isolating faults with 1-pole or 3-pole tripping capabilities.",
+    "heading": "Why SIPROTEC 7SA87?"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Electrical systems face challenges from short circuits and ground faults, leading to potential damage and downtime. SIPROTEC 7SA87 detects and selectively trips short circuits and ground faults across various network configurations to maintain system stability. Expect fast fault isolation with a minimum tripping time of 9 ms to minimize damage.",
+    "heading": "Why SIPROTEC 7SA87?"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Secure your operations with cybersecurity features compliant with NERC CIP and BDEW Whitepaper requirements.",
+    "heading": "Why SIPROTEC 7SA87?"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Key benefits"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Enhance safety"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Protect electrical equipment for selective 1- and 3-pole short circuit trips. Detect ground faults in power systems to safeguard personnel and assets and minimize downtime.",
+    "heading": "Enhance safety"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Operate easily"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Handle devices and software confidently with a user-friendly design. Access information and diagnostic data quickly and securely via a web browser.",
+    "heading": "Operate easily"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Achieve high availability"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Maintain high availability in extreme conditions with conformal coating. Enable continuous operation and data integrity with strong redundancy protocols.",
+    "heading": "Achieve high availability"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Featured capabilities"
+  },
+  {
+    "location": "html-block:15",
+    "text": "all",
+    "heading": "Featured capabilities"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Protection features"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Detect current-transformer saturation for fast tripping with high accuracy. Use the Fault Locator Plus for accurate fault location with inhomogenous line sections and targeted automatic overhead line section reclosing (AREC).",
+    "heading": "Protection features"
+  },
+  {
+    "location": "html-block:18",
+    "text": "all",
+    "heading": "Protection features"
+  },
+  {
+    "location": "html-block:19",
+    "text": "DIGSI 5 engineering tool"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Use DIGSI 5 to configure and combine protection, control, automation, monitoring and PQ functions. Adjust I/O flexibly in the SIPROTEC 5 modular system. Create automation functions with the graphical logic editor.",
+    "heading": "DIGSI 5 engineering tool"
+  },
+  {
+    "location": "html-block:21",
+    "text": "all",
+    "heading": "DIGSI 5 engineering tool"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Communication protocols"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Integrate up to four pluggable communication modules for diverse, redundant protocols. Transmit data reliably via PRP and HSR.",
+    "heading": "Communication protocols"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Explore resources and related products"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Downloads"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Profile SIPROTEC 7SA87",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Profile SIPROTEC 5 - conformal coating",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Catalog SIPROTEC 5",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Tender specification",
+    "heading": "Downloads"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Configuration"
+  },
+  {
+    "location": "html-block:31",
+    "text": "SIPROTEC 5 configurator",
+    "heading": "Configuration"
+  },
+  {
+    "location": "html-block:32",
+    "text": "SiePortal - Online shop"
+  },
+  {
+    "location": "html-block:33",
+    "text": "SIPROTEC 7SA87 on SiePortal",
+    "heading": "SiePortal - Online shop"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Technical documentation, Firmware, Software application examples and FAQ",
+    "heading": "SiePortal - Online shop"
+  }
+]

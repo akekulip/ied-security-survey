@@ -1,0 +1,161 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "STD Percentage Differential (Legacy) | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "STD Percentage Differential with Harmonic Restraint - Legacy"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Contact Us",
+    "heading": "STD Percentage Differential with Harmonic Restraint - Legacy"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Manufacturing for STD relays has been discontinued. As an alternative, please refer to 845, P64x, T35, or 345.",
+    "heading": "STD Percentage Differential with Harmonic Restraint - Legacy"
+  },
+  {
+    "location": "html-block:7",
+    "text": "The STD is a harmonic restrained percentage differential relay specifically designed for transformer fault protection. The STD15 through 21 relays differ from each other only in the number of restraint circuits that they include (see Selection Guide). The STD25 through 29 relays differ from STD15 through 21 relays in that they utilize only second harmonics for the harmonic restraint circuit while the others use all the harmonics. Harmonic restraint is employed to prevent undesired tripping as a result of exciting current inrush to the transformer being protected. Inrush to a transformer usually occurs when the transformer is energized or when a nearby fault is cleared thus suddenly restoring normal voltage to the bank. The second harmonic component is the predominant harmonic transformer inrush current.",
+    "heading": "STD Percentage Differential with Harmonic Restraint - Legacy"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Power and autotransformer protection",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Protection and Control"
+  },
+  {
+    "location": "html-block:11",
+    "text": "High-speed percentage differential",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Harmonic restraint",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Application Notes"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Subscribe",
+    "heading": "Application Notes"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Application Notes"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Subscribe",
+    "heading": "Application Notes"
+  },
+  {
+    "location": "html-block:25",
+    "text": "STD Percentage Differential with Harmonic Restraint - Legacy"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Contact Us",
+    "heading": "STD Percentage Differential with Harmonic Restraint - Legacy"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Manufacturing for STD relays has been discontinued. As an alternative, please refer to 845, P64x, T35, or 345.",
+    "heading": "STD Percentage Differential with Harmonic Restraint - Legacy"
+  },
+  {
+    "location": "html-block:28",
+    "text": "The STD is a harmonic restrained percentage differential relay specifically designed for transformer fault protection. The STD15 through 21 relays differ from each other only in the number of restraint circuits that they include (see Selection Guide). The STD25 through 29 relays differ from STD15 through 21 relays in that they utilize only second harmonics for the harmonic restraint circuit while the others use all the harmonics. Harmonic restraint is employed to prevent undesired tripping as a result of exciting current inrush to the transformer being protected. Inrush to a transformer usually occurs when the transformer is energized or when a nearby fault is cleared thus suddenly restoring normal voltage to the bank. The second harmonic component is the predominant harmonic transformer inrush current.",
+    "heading": "STD Percentage Differential with Harmonic Restraint - Legacy"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Power and autotransformer protection",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Protection and Control"
+  },
+  {
+    "location": "html-block:32",
+    "text": "High-speed percentage differential",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Harmonic restraint",
+    "heading": "Protection and Control"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Single Function Protection Products"
+  },
+  {
+    "location": "html-block:36",
+    "text": "View More",
+    "heading": "Single Function Protection Products"
+  }
+]

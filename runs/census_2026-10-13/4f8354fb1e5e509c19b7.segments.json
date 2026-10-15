@@ -1,0 +1,704 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "MiCOM P642/3/5 Agile | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "MiCOM P642/3/5 Agile"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Transformer Protection Relays"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Part of the MiCOM P40 platform, the Agile P64x transformer protection relays helps preserve transformer service life and provides fast protection for transformer faults. The platform consists of three model variants (P642, P643 and P645) that cover two and three-winding transformers (including auto-transformers), with up to five sets of 3-phase CT inputs, and offers high and low impedance restricted earth fault, and has integral asset management capability.",
+    "heading": "Transformer Protection Relays"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Key features:"
+  },
+  {
+    "location": "html-block:8",
+    "text": "High stability during external fault with heavy CT saturation due to transient bias technique",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:9",
+    "text": "No slow-down of differential elements due to 2nd harmonic component in fault currents",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Adaptable to transformers with considerable CT mismatch between terminals – matching factor up to 20",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Current transformer supervision operates with or without voltage inputs, fast enough to prevent any spurious tripping and alarm",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Asset health monitoring - transformer Loss of Life estimation according to IEEE model",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:13",
+    "text": "10 integrated function keys, tri-color LEDs, and graphical programmable logic permit the creation of comprehensive, tailored schemes",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Simple settings - wizard requires only nameplate data",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:15",
+    "text": "No internal batteries in GE Vernova-branded models – removes a maintenance item and eases air-freight logistics",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Supports all major digital control system protocols, easing integration into DCS, SCADA and engineering workstations",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:17",
+    "text": "NERC CIP cybersecurity",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Binary inputs ESI48-4 EB2 compliant",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Harsh environment coating as standard for all GE Vernova MiCOM P40 relays protects against corrosive gases such as H₂S or SO₂",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Advanced Security including AAA, Radius, RBAC, and Syslog",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Interactive Selector Guide"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Spotlight Application"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Transformer Principles & Protection"
+  },
+  {
+    "location": "html-block:25",
+    "text": "GSA Schedule"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Legacy Transformer Protection"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Software / Firmware"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Interactive Selector Guide"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Spotlight Application"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Transformer Principles & Protection"
+  },
+  {
+    "location": "html-block:38",
+    "text": "GSA Schedule"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Legacy Transformer Protection"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Software / Firmware"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:46",
+    "text": "Subscribe",
+    "heading": "Support Documents"
+  },
+  {
+    "location": "html-block:47",
+    "text": "MiCOM P642/3/5 Agile"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Transformer Protection Relays"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Part of the MiCOM P40 platform, the Agile P64x transformer protection relays helps preserve transformer service life and provides fast protection for transformer faults. The platform consists of three model variants (P642, P643 and P645) that cover two and three-winding transformers (including auto-transformers), with up to five sets of 3-phase CT inputs, and offers high and low impedance restricted earth fault, and has integral asset management capability.",
+    "heading": "Transformer Protection Relays"
+  },
+  {
+    "location": "html-block:50",
+    "text": "Key features:"
+  },
+  {
+    "location": "html-block:51",
+    "text": "High stability during external fault with heavy CT saturation due to transient bias technique",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:52",
+    "text": "No slow-down of differential elements due to 2nd harmonic component in fault currents",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:53",
+    "text": "Adaptable to transformers with considerable CT mismatch between terminals – matching factor up to 20",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Current transformer supervision operates with or without voltage inputs, fast enough to prevent any spurious tripping and alarm",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Asset health monitoring - transformer Loss of Life estimation according to IEEE model",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:56",
+    "text": "10 integrated function keys, tri-color LEDs, and graphical programmable logic permit the creation of comprehensive, tailored schemes",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Simple settings - wizard requires only nameplate data",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:58",
+    "text": "No internal batteries in GE Vernova-branded models – removes a maintenance item and eases air-freight logistics",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Supports all major digital control system protocols, easing integration into DCS, SCADA and engineering workstations",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:60",
+    "text": "NERC CIP cybersecurity",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:61",
+    "text": "Binary inputs ESI48-4 EB2 compliant",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:62",
+    "text": "Harsh environment coating as standard for all GE Vernova MiCOM P40 relays protects against corrosive gases such as H₂S or SO₂",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:63",
+    "text": "Advanced Security including AAA, Radius, RBAC, and Syslog",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:64",
+    "text": "What's New"
+  },
+  {
+    "location": "html-block:65",
+    "text": "What's New"
+  },
+  {
+    "location": "html-block:66",
+    "text": "Overview"
+  },
+  {
+    "location": "html-block:67",
+    "text": "Overview"
+  },
+  {
+    "location": "html-block:68",
+    "text": "Transformers are high capital assets in electrical power systems. Elimination of all electrical and mechanical stresses, although desirable to preserve transformer life, is impractical. Adaptive techniques to measure, alarm (or trip) and advise on cumulative service can help to schedule preventive maintenance before a costly failure occurs. Internal faults are a risk for all transformers, with short-circuits dissipating the highest localized energy. Unless cleared quickly, the possibility to rewind windings reduces and core damage may become irreparable.",
+    "heading": "Overview"
+  },
+  {
+    "location": "html-block:69",
+    "text": "GE Vernova's P642, P643 and P645 address all these issues, preserving service life and offering fast protection for transformer faults. A transient bias technique has been included, enhancing relay stability and CT requirements. Hosted on an advanced IED platform, the P64x incorporates differential, REF, thermal, and overfluxing protection, plus backup protection for uncleared external faults. Model variants cover two and three-winding transformers (including auto-transformers), with up to five sets of 3-phase CT inputs.",
+    "heading": "Overview"
+  },
+  {
+    "location": "html-block:70",
+    "text": "Key benefits:"
+  },
+  {
+    "location": "html-block:71",
+    "text": "Backup and logging of through faults",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:72",
+    "text": "Simple settings – wizard requires only nameplate data",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:73",
+    "text": "Integrated backup overcurrent per winding or CT input - optional directionalizing when relay fitted with a 3-phase VT",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:74",
+    "text": "Ordering the 3-phase VT permits full monitoring and measurement of power and energy quantities",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:75",
+    "text": "Main characteristics:"
+  },
+  {
+    "location": "html-block:76",
+    "text": "Current loop analogue inputs [CLIO] and analogue outputs [RTD] for remote monitoring",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:77",
+    "text": "Optional single or dual redundant Ethernet available for IEC 61850 or DNP3",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:78",
+    "text": "Transient biasing reduces CT knee point dimensioning by typically 25% compared to historical applications",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:79",
+    "text": "ANSI ® Device Numbers and Functions",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:80",
+    "text": "Device Number | Function",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:81",
+    "text": "24 | Overfluxing",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:82",
+    "text": "27 | Undervoltage",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:83",
+    "text": "46 | Negative Sequence Overcurrent",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:84",
+    "text": "47 | Negative Sequence Overvoltage",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:85",
+    "text": "49 | Thermal Overload",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:86",
+    "text": "50 | Phase Definite Time Overcurrent",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:87",
+    "text": "51 | Phase Inverse-Time Overcurrent",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:88",
+    "text": "52 | Circuit Breaker Control",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:89",
+    "text": "59 | Overvoltage",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:90",
+    "text": "67 | Directional Phase Overcurrent",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:91",
+    "text": "Device Number | Function",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:92",
+    "text": "68 | Inrush Detection",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:93",
+    "text": "89 | Latching/Lockout Contacts",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:94",
+    "text": "50BF | CB Failure",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:95",
+    "text": "50N | Earth Fault Definite Time Overcurrent",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:96",
+    "text": "51N | Neutral/Ground IDMT Overcurrent",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:97",
+    "text": "51R | Voltage Restrained Overcurrent",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:98",
+    "text": "51V | Voltage Controlled Overurrent",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:99",
+    "text": "59N | Neutral Voltage Displacement",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:100",
+    "text": "64N | Restricted Earth Fault",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:101",
+    "text": "67N | Directional Neutral/Ground Overcurrent",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:102",
+    "text": "Device Number | Function",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:103",
+    "text": "81O | Overfrequency",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:104",
+    "text": "81U | Underfrequency",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:105",
+    "text": "87T | Transformer Differential",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:106",
+    "text": "CLIO | Current Loop Transducer I/O",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:107",
+    "text": "CTS | CT Supervision",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:108",
+    "text": "LoL | Loss of Life",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:109",
+    "text": "PSL | Programmable Logic",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:110",
+    "text": "RTD | Temperature Measurement",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:111",
+    "text": "TCS | Trip Circuit Supervision",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:112",
+    "text": "Thru | Through Fault Monitoring",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:113",
+    "text": "VTS | VT Supervision",
+    "heading": "Main characteristics:"
+  },
+  {
+    "location": "html-block:114",
+    "text": "Models"
+  },
+  {
+    "location": "html-block:115",
+    "text": "Agile P64x Model"
+  },
+  {
+    "location": "html-block:116",
+    "text": "P642 2 Winding transformer management IED Buy Now",
+    "heading": "Agile P64x Model"
+  },
+  {
+    "location": "html-block:117",
+    "text": "P643 3-End transformer management IED Buy Now",
+    "heading": "Agile P64x Model"
+  },
+  {
+    "location": "html-block:118",
+    "text": "P645 5-End transformer management IED Buy Now",
+    "heading": "Agile P64x Model"
+  },
+  {
+    "location": "html-block:119",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:120",
+    "text": "MiCOM S1 Agile"
+  },
+  {
+    "location": "html-block:121",
+    "text": "Key benefits:"
+  },
+  {
+    "location": "html-block:122",
+    "text": "Powerful, free of charge, PC toolsuite",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:123",
+    "text": "Optimum management of the installed base, structured as per the substation topology",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:124",
+    "text": "Intuitive and versatile interface with file management facilities",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:125",
+    "text": "Logical structure based on substation, voltage level and bay",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:126",
+    "text": "Version control and cross-checking facilities for IED settings",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:127",
+    "text": "Real-time measurement visualization – MiCOM S1 Agile extends to all MiCOM Agile IEDs - including P847 PMU and busbar schemes",
+    "heading": "Key benefits:"
+  },
+  {
+    "location": "html-block:128",
+    "text": "Engineering Tool Suite"
+  },
+  {
+    "location": "html-block:129",
+    "text": "S1 Agile is the truly universal PC tool for MiCOM Agile relay, assemble all tools in a palette for simple entry, with intuitive navigation via fewer mouse-clicks. No-longer are separate tools required for redundant Ethernet configuration, phasor measurement unit commissioning, busbar scheme operational dashboards, programmable curve profiles or automatic disturbance record extraction – applications are embedded. MiCOM S1 Agile supports all existing MiCOM, K-Series and Modulex, including a utility for automatic conversion of setting files from previous generations of numerical relays like K-series and MiCOM P20 to the latest P40 Agile models.",
+    "heading": "Engineering Tool Suite"
+  },
+  {
+    "location": "html-block:130",
+    "text": "To move to the future, with no loss of functionality, no loss of device support, and full compatibility with your installed base and system architecture – request a copy of S1 Agile with the contact form link below.",
+    "heading": "Engineering Tool Suite"
+  },
+  {
+    "location": "html-block:131",
+    "text": "Key features in the MiCOM S1 family:"
+  },
+  {
+    "location": "html-block:132",
+    "text": "GE Vernova’s integrated engineering tool that provides users with access to automation IED configuration and record data",
+    "heading": "Key features in the MiCOM S1 family:"
+  },
+  {
+    "location": "html-block:133",
+    "text": "Integrated configuration and monitoring features",
+    "heading": "Key features in the MiCOM S1 family:"
+  },
+  {
+    "location": "html-block:134",
+    "text": "Send and extract setting files",
+    "heading": "Key features in the MiCOM S1 family:"
+  },
+  {
+    "location": "html-block:135",
+    "text": "Event and disturbance record extraction and analysis",
+    "heading": "Key features in the MiCOM S1 family:"
+  },
+  {
+    "location": "html-block:136",
+    "text": "MiCOM S1 Agile software request"
+  },
+  {
+    "location": "html-block:137",
+    "text": "To receive the MiCOM S1 Agile, please use our Contact form. This will also ensure that you are kept up-to-date with the latest enhancements, including updates and bug fixes.",
+    "heading": "MiCOM S1 Agile software request"
+  },
+  {
+    "location": "html-block:138",
+    "text": "Retrofit/Refurbish"
+  },
+  {
+    "location": "html-block:139",
+    "text": "Refurbishment Solutions"
+  },
+  {
+    "location": "html-block:140",
+    "text": "The MiCOM P642/3/5 part of the MiCOM P40 Agile family offer a perfect functional match for our MBCH and KBCH family of transformer differential relays, from the heritage installed-base brands GEC Measurements, GEC Alsthom, GE VERNOVA and Areva:",
+    "heading": "Refurbishment Solutions"
+  },
+  {
+    "location": "html-block:141",
+    "text": "Advantages:"
+  },
+  {
+    "location": "html-block:142",
+    "text": "Same 4U rack mounting format",
+    "heading": "Advantages:"
+  },
+  {
+    "location": "html-block:143",
+    "text": "KBCH, P642/P643/P645 share the same S1 Agile PC toolsuite",
+    "heading": "Advantages:"
+  },
+  {
+    "location": "html-block:144",
+    "text": "Contact us for advice and support",
+    "heading": "Advantages:"
+  },
+  {
+    "location": "html-block:145",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:146",
+    "text": "Multilin T60"
+  },
+  {
+    "location": "html-block:147",
+    "text": "The T60 is designed for various power applications, including autotransformers, generator...",
+    "heading": "Multilin T60"
+  },
+  {
+    "location": "html-block:148",
+    "text": "View More",
+    "heading": "Multilin T60"
+  },
+  {
+    "location": "html-block:149",
+    "text": "P64 MiCOM 5th Generation"
+  },
+  {
+    "location": "html-block:150",
+    "text": "Transformer Protection Relays - P642, P643, P645 The P64, part of the MiCOM P40 Agile 5th...",
+    "heading": "P64 MiCOM 5th Generation"
+  },
+  {
+    "location": "html-block:151",
+    "text": "View More",
+    "heading": "P64 MiCOM 5th Generation"
+  }
+]

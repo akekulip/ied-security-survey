@@ -1,0 +1,1014 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "Multilin D60 | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "Multilin D60"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Contact Sales Buy Now",
+    "heading": "Multilin D60"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Line Distance Protection System"
+  },
+  {
+    "location": "html-block:7",
+    "text": "The D60 is suitable for protecting transmission lines and cables including lines equipped with series compensation. The D60 supports dual-breaker applications and can be applied in single-pole or three-pole tripping applications. The D60 is applicable to different teleprotection schemes and includes inter-relay protection communications via direct fiber as well as different interfaces. The D60 also provides synchrophasor measurement over Ethernet per IEEE C37.118.",
+    "heading": "Line Distance Protection System"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:9",
+    "text": "Five zone quad or mho, phase and ground distance protection with optional 6-zones and sub-cycle distance performance",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:10",
+    "text": "Advanced IEC 61850 Ed. 1 and Ed. 2 certified implementation, complete settings via SCL files and flexible process bus support (IEC 61850-9-2LE, IEC 61869 or IEC 61850-9-2 Hardfiber) ensures interoperability, device managing optimization and reduced cost of ownership",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Routable GOOSE (R-GOOSE) enables GOOSE messages going beyond the substation, which enables wide area protection and control applications",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Reliable and secure protection on series-compensated lines",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Flexible programmable logic for building customized schemes",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Simplified teleprotection interfaces with direct I/O communications",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Advance Cyber security features “CyberSentryTM” that helps meet modern industry requirements",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Phasor Measurement Unit (synchrophasor) according to IEEE® C37.118 (2014) and IEC® 61850-90-5 support",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Application flexibility with multiple I/O options including high density I/O, programmable logic, modularity, and specific customization",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:18",
+    "text": "An integrated large, full color display, provides real-time visualization and control of the protected bay, via a bay mimic as well as annunciator functionality and graphical visualization of phasors",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Overhead lines including series-compensated lines and underground cables",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Single and dual-breaker circuits requiring single pole/three-pole autoreclosing",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Circuits with in-zone power transformers",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Secure application with CCVTs backup protection for generators, transformers and reactors",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Ground isolated and Peterson-coil systems",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Interactive Selector Guide - Line Differential"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Interactive Selector Guide - Line Distance"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Spotlight Application"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Typical Applications"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Transmission Principles & Protection"
+  },
+  {
+    "location": "html-block:31",
+    "text": "GSA Schedule"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Legacy Transmission Protection"
+  },
+  {
+    "location": "html-block:33",
+    "text": "How-to Videos"
+  },
+  {
+    "location": "html-block:34",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:35",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Drawings"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Product & Cyber Security Advisories"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Application Notes"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Subscribe",
+    "heading": "Application Notes"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Interactive Selector Guide - Line Differential"
+  },
+  {
+    "location": "html-block:46",
+    "text": "Interactive Selector Guide - Line Distance"
+  },
+  {
+    "location": "html-block:47",
+    "text": "Spotlight Application"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Typical Applications"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Transmission Principles & Protection"
+  },
+  {
+    "location": "html-block:50",
+    "text": "GSA Schedule"
+  },
+  {
+    "location": "html-block:51",
+    "text": "Legacy Transmission Protection"
+  },
+  {
+    "location": "html-block:52",
+    "text": "How-to Videos"
+  },
+  {
+    "location": "html-block:53",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Specifications"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:58",
+    "text": "Drawings"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Support Documents"
+  },
+  {
+    "location": "html-block:60",
+    "text": "Product & Cyber Security Advisories"
+  },
+  {
+    "location": "html-block:61",
+    "text": "Application Notes"
+  },
+  {
+    "location": "html-block:62",
+    "text": "Subscribe",
+    "heading": "Application Notes"
+  },
+  {
+    "location": "html-block:63",
+    "text": "Multilin D60"
+  },
+  {
+    "location": "html-block:64",
+    "text": "Contact Sales Buy Now",
+    "heading": "Multilin D60"
+  },
+  {
+    "location": "html-block:65",
+    "text": "Line Distance Protection System"
+  },
+  {
+    "location": "html-block:66",
+    "text": "The D60 is suitable for protecting transmission lines and cables including lines equipped with series compensation. The D60 supports dual-breaker applications and can be applied in single-pole or three-pole tripping applications. The D60 is applicable to different teleprotection schemes and includes inter-relay protection communications via direct fiber as well as different interfaces. The D60 also provides synchrophasor measurement over Ethernet per IEEE C37.118.",
+    "heading": "Line Distance Protection System"
+  },
+  {
+    "location": "html-block:67",
+    "text": "Key Benefits"
+  },
+  {
+    "location": "html-block:68",
+    "text": "Five zone quad or mho, phase and ground distance protection with optional 6-zones and sub-cycle distance performance",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:69",
+    "text": "Advanced IEC 61850 Ed. 1 and Ed. 2 certified implementation, complete settings via SCL files and flexible process bus support (IEC 61850-9-2LE, IEC 61869 or IEC 61850-9-2 Hardfiber) ensures interoperability, device managing optimization and reduced cost of ownership",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:70",
+    "text": "Routable GOOSE (R-GOOSE) enables GOOSE messages going beyond the substation, which enables wide area protection and control applications",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:71",
+    "text": "Reliable and secure protection on series-compensated lines",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:72",
+    "text": "Flexible programmable logic for building customized schemes",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:73",
+    "text": "Simplified teleprotection interfaces with direct I/O communications",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:74",
+    "text": "Advance Cyber security features “CyberSentryTM” that helps meet modern industry requirements",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:75",
+    "text": "Phasor Measurement Unit (synchrophasor) according to IEEE® C37.118 (2014) and IEC® 61850-90-5 support",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:76",
+    "text": "Application flexibility with multiple I/O options including high density I/O, programmable logic, modularity, and specific customization",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:77",
+    "text": "An integrated large, full color display, provides real-time visualization and control of the protected bay, via a bay mimic as well as annunciator functionality and graphical visualization of phasors",
+    "heading": "Key Benefits"
+  },
+  {
+    "location": "html-block:78",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:79",
+    "text": "Overhead lines including series-compensated lines and underground cables",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:80",
+    "text": "Single and dual-breaker circuits requiring single pole/three-pole autoreclosing",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:81",
+    "text": "Circuits with in-zone power transformers",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:82",
+    "text": "Secure application with CCVTs backup protection for generators, transformers and reactors",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:83",
+    "text": "Ground isolated and Peterson-coil systems",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:84",
+    "text": "What's New"
+  },
+  {
+    "location": "html-block:85",
+    "text": "New and Enhanced Communication Capabilities"
+  },
+  {
+    "location": "html-block:86",
+    "text": "New UR process bus modules supporting IEC61850-9-2LE Merging Units and IEC61850-9-2 Hardfiber (FW 7.8x) Module Training available here",
+    "heading": "New and Enhanced Communication Capabilities"
+  },
+  {
+    "location": "html-block:87",
+    "text": "Support switchable IEC 61850 Ed. 1 and Ed. 2 and redundant SNTP (FW 7.7x)",
+    "heading": "New and Enhanced Communication Capabilities"
+  },
+  {
+    "location": "html-block:88",
+    "text": "New UR front panel with integrated 7” color, graphical display - providing operators with enhanced situational awareness (FW 7.6x)",
+    "heading": "New and Enhanced Communication Capabilities"
+  },
+  {
+    "location": "html-block:89",
+    "text": "High density I/O module supporting up to 120 inputs or up to 72 contact outputs – eliminating the need for additional discrete devices (FW 7.6x)",
+    "heading": "New and Enhanced Communication Capabilities"
+  },
+  {
+    "location": "html-block:90",
+    "text": "Cyber Security - CyberSentry UR (FW v7.xx)"
+  },
+  {
+    "location": "html-block:91",
+    "text": "CyberSentryTM enables UR devices to deliver full cyber security features that help customers to comply with cyber security requirements (NERC CIP, IEEE 1686, IEC 62443, etc):",
+    "heading": "Cyber Security - CyberSentry UR (FW v7.xx)"
+  },
+  {
+    "location": "html-block:92",
+    "text": "Secured firmware upgrade: FW file includes hash code that enables authentication prior to being used for upgrading UR Relay (FW 7.9x)",
+    "heading": "Cyber Security - CyberSentry UR (FW v7.xx)"
+  },
+  {
+    "location": "html-block:93",
+    "text": "Fully Compatible with GE Vernova's Multlilin HardFiber System - Provides support for GE Vernova's IEC 61850 HardFiber Process Bus Solution:"
+  },
+  {
+    "location": "html-block:94",
+    "text": "Complete IEC 61850 Process Bus Solution providing resource optimization and minimizing total P&C life cycle costs.",
+    "heading": "Fully Compatible with GE Vernova's Multlilin HardFiber System - Provides support for GE Vernova's IEC 61850 HardFiber Process Bus Solution:"
+  },
+  {
+    "location": "html-block:95",
+    "text": "Learn more",
+    "heading": "Fully Compatible with GE Vernova's Multlilin HardFiber System - Provides support for GE Vernova's IEC 61850 HardFiber Process Bus Solution:"
+  },
+  {
+    "location": "html-block:96",
+    "text": "Extended Oscillography Records (FW v7.xx)"
+  },
+  {
+    "location": "html-block:97",
+    "text": "Increased number of digital and analog channels (FW 7.90)",
+    "heading": "Extended Oscillography Records (FW v7.xx)"
+  },
+  {
+    "location": "html-block:98",
+    "text": "Supports IEEE C37.111-1999/2013, IEC 60255-24 Ed 2.0 COMTRADE 2013 standard (FW v7.40)",
+    "heading": "Extended Oscillography Records (FW v7.xx)"
+  },
+  {
+    "location": "html-block:99",
+    "text": "Configurable events allow for records of up to 45s at 64 samples per cycle",
+    "heading": "Extended Oscillography Records (FW v7.xx)"
+  },
+  {
+    "location": "html-block:100",
+    "text": "New and Enhanced Protection and Control Functionality (FW version 5.90)"
+  },
+  {
+    "location": "html-block:101",
+    "text": "Expanded Bay Controller Capabilities – providing a one box solution (FW 7.6x)",
+    "heading": "New and Enhanced Protection and Control Functionality (FW version 5.90)"
+  },
+  {
+    "location": "html-block:102",
+    "text": "Added backup protection functions with sensitive reverse power element \"32S\"",
+    "heading": "New and Enhanced Protection and Control Functionality (FW version 5.90)"
+  },
+  {
+    "location": "html-block:103",
+    "text": "Added over/under/rate of change of frequency elements",
+    "heading": "New and Enhanced Protection and Control Functionality (FW version 5.90)"
+  },
+  {
+    "location": "html-block:104",
+    "text": "New thermal overload element",
+    "heading": "New and Enhanced Protection and Control Functionality (FW version 5.90)"
+  },
+  {
+    "location": "html-block:105",
+    "text": "New broken conductor element",
+    "heading": "New and Enhanced Protection and Control Functionality (FW version 5.90)"
+  },
+  {
+    "location": "html-block:106",
+    "text": "Customizable version of the POTT and DCB schemes \"POTT1 and DCB1\" (FW v7.20)",
+    "heading": "New and Enhanced Protection and Control Functionality (FW version 5.90)"
+  },
+  {
+    "location": "html-block:107",
+    "text": "Neutral directional overcurrent with dual polarity criteria \"67N\" (FW v 7.20)",
+    "heading": "New and Enhanced Protection and Control Functionality (FW version 5.90)"
+  },
+  {
+    "location": "html-block:108",
+    "text": "Protection and Control Functionality"
+  },
+  {
+    "location": "html-block:109",
+    "text": "6-distance zones and sub-cycle performance SW options (FW 8.0)",
+    "heading": "Protection and Control Functionality"
+  },
+  {
+    "location": "html-block:110",
+    "text": "New TGFD and Inrush detection elements (FW 8.0)",
+    "heading": "Protection and Control Functionality"
+  },
+  {
+    "location": "html-block:111",
+    "text": "Expanded Bay Controller Capabilities – providing a one box solution (FW 7.6x)",
+    "heading": "Protection and Control Functionality"
+  },
+  {
+    "location": "html-block:112",
+    "text": "Protection & Control"
+  },
+  {
+    "location": "html-block:113",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:114",
+    "text": "Up to six phase distance with independent compensation settings for in-zone power transformers",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:115",
+    "text": "Up to six ground distance with independent self and mutual zero-sequence compensation",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:116",
+    "text": "Sub-cycle distance performance available",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:117",
+    "text": "Out-of-step tripping and power swing blocking",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:118",
+    "text": "Synchronism check for dual-breaker applications",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:119",
+    "text": "Four-shot dual-breaker autorecloser",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:120",
+    "text": "VT fuse failure detector, compensated overvoltage",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:121",
+    "text": "Phase and negative sequence directional overcurrent, neutral directional with dual polarity criteria, broken conductor, TGFD thermal overload and more.",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:122",
+    "text": "Protection & Control"
+  },
+  {
+    "location": "html-block:123",
+    "text": "The D60 is a high-end, cost-effective distance protection relay intended for protecting transmission lines and cables, providing reliable and secure operation even under the worst case power system conditions. Part of the Universal Relay family, the D60 comes with a variety of versatile features, truly integrating protection, monitoring, metering, communication and control in one easy-to-use device. The Universal Relay family offers a high degree of modularity in its design and functionality, providing superior performance in protection and control, while meeting the toughest requirements of the marketplace.",
+    "heading": "Protection & Control"
+  },
+  {
+    "location": "html-block:124",
+    "text": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:125",
+    "text": "Device Number | Function",
+    "heading": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:126",
+    "text": "21G | Ground Distance",
+    "heading": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:127",
+    "text": "21P | Phase Distance",
+    "heading": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:128",
+    "text": "25 | Synchrocheck",
+    "heading": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:129",
+    "text": "27P | Phase Undervoltage",
+    "heading": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:130",
+    "text": "27X | Auxiliary Undervoltage",
+    "heading": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:131",
+    "text": "32 | Sensitive Directional Power",
+    "heading": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:132",
+    "text": "49 | Thermal Overload",
+    "heading": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:133",
+    "text": "50BF | Breaker Failure",
+    "heading": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:134",
+    "text": "50DD | Current Disturbance Detector",
+    "heading": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:135",
+    "text": "50G | Ground Instantaneous Overcurrent",
+    "heading": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:136",
+    "text": "50N | Neutral Instantaneous Overcurrent",
+    "heading": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:137",
+    "text": "Device Number | Function",
+    "heading": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:138",
+    "text": "50P | Phase Instantaneous Overcurrent",
+    "heading": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:139",
+    "text": "50_2 | Negative Sequence Instantaneous Overcurrent",
+    "heading": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:140",
+    "text": "51G | Ground Time Overcurrent",
+    "heading": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:141",
+    "text": "51N | Neutral Time Overcurrent",
+    "heading": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:142",
+    "text": "51P | Phase Time Overcurrent",
+    "heading": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:143",
+    "text": "51_2 | Negative Sequence Time Overcurrent",
+    "heading": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:144",
+    "text": "52 | AC Circuit Breaker",
+    "heading": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:145",
+    "text": "59C | Compensated Overvoltage",
+    "heading": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:146",
+    "text": "59N | Neutral Overvoltage",
+    "heading": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:147",
+    "text": "59P | Phase Overvoltage",
+    "heading": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:148",
+    "text": "Device Number | Function",
+    "heading": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:149",
+    "text": "59X | Auxiliary Overvoltage",
+    "heading": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:150",
+    "text": "59_2 | Negative Sequence Overvoltage",
+    "heading": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:151",
+    "text": "67N | Neutral Directional Overcurrent",
+    "heading": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:152",
+    "text": "67P | Phase Directional Overcurrent",
+    "heading": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:153",
+    "text": "67_2 | Negative Sequence Directional Overcurrent",
+    "heading": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:154",
+    "text": "68 | Power Swing Blocking",
+    "heading": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:155",
+    "text": "78 | Out-of-Step Tripping",
+    "heading": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:156",
+    "text": "79 | Automatic Recloser",
+    "heading": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:157",
+    "text": "81U/O | Under/Over Frequency, df/dt",
+    "heading": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:158",
+    "text": "ROCOF | Rate of Change of Frequency",
+    "heading": "Functional Block Diagram"
+  },
+  {
+    "location": "html-block:159",
+    "text": "Monitoring & Diagnostics"
+  },
+  {
+    "location": "html-block:160",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:161",
+    "text": "P & M class synchrophasors of voltage, current and sequence components – 1 to 120 frames/sec",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:162",
+    "text": "Metering - current, voltage, power, energy, frequency",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:163",
+    "text": "Oscillography – analog and digital parameters at 64 samples/cycle",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:164",
+    "text": "Event Recorder - 1024 time tagged events with 0.5ms scan of digital inputs",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:165",
+    "text": "Setting for security audit trails for tracking changes to D60 configurations",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:166",
+    "text": "Monitoring & Diagnostics"
+  },
+  {
+    "location": "html-block:167",
+    "text": "The D60 is the single point for protection, control, metering, and monitoring in one integrated device that can be easily connected directly to HMI or SCADA monitoring and control systems.",
+    "heading": "Monitoring & Diagnostics"
+  },
+  {
+    "location": "html-block:168",
+    "text": "Advanced Automation"
+  },
+  {
+    "location": "html-block:169",
+    "text": "The D60 incorporates advanced automation features including powerful FlexLogic™ programmable logic, communication, and SCADA capabilities that far surpass what is found in the average line protection relay. The D60 integrates seamlessly with other UR relays for complete system protection, including unit and auxiliary transformers, and balance of plant protection.",
+    "heading": "Advanced Automation"
+  },
+  {
+    "location": "html-block:170",
+    "text": "FlexLogic™ allows for the customization of D60 for custom protection, control and automation, allowing users to build line protection schemes and applications for their equipment.",
+    "heading": "Advanced Automation"
+  },
+  {
+    "location": "html-block:171",
+    "text": "Communications"
+  },
+  {
+    "location": "html-block:172",
+    "text": "Key Features"
+  },
+  {
+    "location": "html-block:173",
+    "text": "Complete IEC 61850 Process Bus solution providing resource optimization and minimizing total P & C life cycle costs",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:174",
+    "text": "Three independent 100Mbps Ethernet ports enable purpose specific LAN support that eliminates latency effect of heavy traffic protocols on mission critical communication services",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:175",
+    "text": "Embedded IEEE 1588 time-synch protocol support eliminates dedicated IRIG-B wiring requirements for IEDs",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:176",
+    "text": "Direct I/O secures high-speed exchange of binary data between URs",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:177",
+    "text": "Increase network availability by reducing failover time to zero through IEC62439-3 PRP, HSR or dual HSR support",
+    "heading": "Key Features"
+  },
+  {
+    "location": "html-block:178",
+    "text": "Advanced Communications"
+  },
+  {
+    "location": "html-block:179",
+    "text": "The D60 provides for secure remote data and engineering access, making it easy and flexible to use and integrate into new and existing infrastructures. Fiber optic Ethernet provides high-bandwidth communications allowing for low-latency controls and high-speed file transfers of relay fault and event record information.The available three independent and redundant Ethernet options provide the means to create fault tolerant communication architectures in an easy, cost-effective manner.",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:180",
+    "text": "The D60 supports the most popular industry standard protocols enabling easy, direct integration into monitoring and SCADA systems.",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:181",
+    "text": "IEC 61850-9-2LE or IEC 61869 point-to-point or networked networked or IEC61850-9-2 Hardfiber process bus support",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:182",
+    "text": "DNP 3.0 (serial & TCP/IP)",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:183",
+    "text": "IEC 60870-5-103 and IEC 60870-5-104",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:184",
+    "text": "Modbus RTU, Modbus TCP/IP",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:185",
+    "text": "HTTP, TFTP, SFTP and MMS file transfer",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:186",
+    "text": "Redundant SNTP and IEEE 1588 for time synchronization",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:187",
+    "text": "PRP as per IEC 62439-3",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:188",
+    "text": "IRC module that combines C37.92 multimode and direct connection singlemode",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:189",
+    "text": "Supports Routable GOOSE (R-GOOSE)",
+    "heading": "Advanced Communications"
+  },
+  {
+    "location": "html-block:190",
+    "text": "Interoperability with Enbedded IEC 61850"
+  },
+  {
+    "location": "html-block:191",
+    "text": "Use the D60 with integrated IEC 61850 to lower costs associated with line distance protection, control and automation. GE Vernova’s leadership in IEC 61850 comes from thousands of installed devices and follows on years of development experience with UCA 2.0.",
+    "heading": "Interoperability with Enbedded IEC 61850"
+  },
+  {
+    "location": "html-block:192",
+    "text": "The D60’s IEC 61850 Process Bus module is designed to interface with the Multilin HardFiber System, allowing bi-directional IEC 61850 fiber optic communications. The HardFiber System is designed to integrate seamlessly with existing Universal Relay applications, including protection functions, FlexLogic, metering and communications. Learn more",
+    "heading": "Interoperability with Enbedded IEC 61850"
+  },
+  {
+    "location": "html-block:193",
+    "text": "The D60 can also connect to GE Vernova MU320 or third-party merging units using standard IEC 61869 or IEC 61850-9-2LE communication protocols.",
+    "heading": "Interoperability with Enbedded IEC 61850"
+  },
+  {
+    "location": "html-block:194",
+    "text": "Software & Security"
+  },
+  {
+    "location": "html-block:195",
+    "text": "Cyber Security - CyberSentry™ UR (FW v7.4xx)"
+  },
+  {
+    "location": "html-block:196",
+    "text": "CyberSentry enables UR devices to deliver full cyber security features that help customers to comply with NERC CIP and NITIR 7628 cyber security requirements through supporting the following core features:",
+    "heading": "Cyber Security - CyberSentry™ UR (FW v7.4xx)"
+  },
+  {
+    "location": "html-block:197",
+    "text": "Secure FW upgrade"
+  },
+  {
+    "location": "html-block:198",
+    "text": "UR FW files v7.9 and up now include a hash code that allows for authentication prior to being used for upgrading UR devices.",
+    "heading": "Secure FW upgrade"
+  },
+  {
+    "location": "html-block:199",
+    "text": "Password Complexity"
+  },
+  {
+    "location": "html-block:200",
+    "text": "Supporting up to 20 alpha- numeric or special characters, UR passwords exceed NERC CIP requirements for password complexity. Individual passwords per role are available.",
+    "heading": "Password Complexity"
+  },
+  {
+    "location": "html-block:201",
+    "text": "AAA Server Support (Radius)"
+  },
+  {
+    "location": "html-block:202",
+    "text": "Enables integration with centrally managed authentication and accounting of all user activities and uses modern industry best practices and standards that meet and exceed NERC CIP requirements for authentication and password management.",
+    "heading": "AAA Server Support (Radius)"
+  },
+  {
+    "location": "html-block:203",
+    "text": "Role Based Access Control (RBAC)"
+  },
+  {
+    "location": "html-block:204",
+    "text": "Efficiently administrate users and roles within UR devices. The new and advanced access functions allow users to configure up to five roles for up to eight configurable users with independent passwords. The standard “Remote Authentication Dial In User Service” (Radius) is used for authentication.",
+    "heading": "Role Based Access Control (RBAC)"
+  },
+  {
+    "location": "html-block:205",
+    "text": "Event Recorder (Syslog for SEM)"
+  },
+  {
+    "location": "html-block:206",
+    "text": "Capture all cyber security related events within a SOE element (login, logout, invalid password attempts, remote/local access, user in session, settings change, FW update, etc), and then serve and classify data by security level using standard Syslog data format. This enables UR devices integration with established SEM (Security Event Management) systems.",
+    "heading": "Event Recorder (Syslog for SEM)"
+  },
+  {
+    "location": "html-block:207",
+    "text": "EnerVista™ Software"
+  },
+  {
+    "location": "html-block:208",
+    "text": "The EnerVista™ suite is an industry-leading set of software programs that simplifies every aspect of using the D60 relay. The EnerVista™ suite provides all the tools to monitor the status of the protected asset, maintain the relay, and integrate information measured by the D60 into DCS or SCADA monitoring systems. Convenient COMTRADE and Sequence of Events viewers are an integral part of the UR setup software included with every UR relay, to carry out postmortem event analysis and ensure proper protection system operation. Learn More",
+    "heading": "EnerVista™ Software"
+  },
+  {
+    "location": "html-block:209",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:210",
+    "text": "MiCOM Agile P441, P442 & P444"
+  },
+  {
+    "location": "html-block:211",
+    "text": "Part of the MiCOM P40 platform, the Agile P441, P442 and P444 numerical full scheme...",
+    "heading": "MiCOM Agile P441, P442 & P444"
+  },
+  {
+    "location": "html-block:212",
+    "text": "View More",
+    "heading": "MiCOM Agile P441, P442 & P444"
+  },
+  {
+    "location": "html-block:213",
+    "text": "P44 MiCOM 5th Generation"
+  },
+  {
+    "location": "html-block:214",
+    "text": "The P44, part of the MiCOM P40 Agile 5th Generation family, is a line distance Protection...",
+    "heading": "P44 MiCOM 5th Generation"
+  },
+  {
+    "location": "html-block:215",
+    "text": "View More",
+    "heading": "P44 MiCOM 5th Generation"
+  },
+  {
+    "location": "html-block:216",
+    "text": "MiCOMho Agile P443, P445, P446"
+  },
+  {
+    "location": "html-block:217",
+    "text": "Part of the MiCOM P40 platform, the MiCOMho Agile P443, P445 and P446 relays operate with...",
+    "heading": "MiCOMho Agile P443, P445, P446"
+  },
+  {
+    "location": "html-block:218",
+    "text": "View More",
+    "heading": "MiCOMho Agile P443, P445, P446"
+  }
+]

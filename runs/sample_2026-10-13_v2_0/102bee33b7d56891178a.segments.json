@@ -1,0 +1,1188 @@
+[
+  {
+    "location": "html-block:1",
+    "text": "Multilin D400 Advanced Substation Gateway | GE Vernova | Electrification"
+  },
+  {
+    "location": "html-block:2",
+    "text": "Skip to main content"
+  },
+  {
+    "location": "html-block:3",
+    "text": "Explore GE Vernova"
+  },
+  {
+    "location": "html-block:4",
+    "text": "Multilin D400 - Legacy"
+  },
+  {
+    "location": "html-block:5",
+    "text": "Advanced Substation Gateway"
+  },
+  {
+    "location": "html-block:6",
+    "text": "Contact Us",
+    "heading": "Advanced Substation Gateway"
+  },
+  {
+    "location": "html-block:7",
+    "text": "Manufacturing for the D400 has been discontinued. As an alternative, please refer to the G100 or G500.",
+    "heading": "Advanced Substation Gateway"
+  },
+  {
+    "location": "html-block:8",
+    "text": "Manufacturing for the DMC-490 has been discontinued. As an alternative, please refer to the GridNodeMicroGrid solution.",
+    "heading": "Advanced Substation Gateway"
+  },
+  {
+    "location": "html-block:9",
+    "text": "GE Vernova's Multilin™ D400 is a secure, substation-hardened gateway that collects metering, status, event, and fault report data from serial or LAN based Intelligent substation devices. The D400 summarizes data from the substation devices and makes it available locally/remotely through a standard secure web browser (HTTPS).",
+    "heading": "Advanced Substation Gateway"
+  },
+  {
+    "location": "html-block:10",
+    "text": "The Multilin D400 supports serial and/or LAN connections to SCADA masters. TCP/IP network connections are supported over the built-in Ethernet and the modem interface.",
+    "heading": "Advanced Substation Gateway"
+  },
+  {
+    "location": "html-block:11",
+    "text": "Key benefits"
+  },
+  {
+    "location": "html-block:12",
+    "text": "Increase the operational and non-operational analog data management through Analog Report Generation capability",
+    "heading": "Key benefits"
+  },
+  {
+    "location": "html-block:13",
+    "text": "Increase the availability and reliability of data through the presence of a third Ethernet interface, hot-standby functionality and Parallel Redundancy Protocol (PRP), IEC 62439-3 Ed 2 scheme",
+    "heading": "Key benefits"
+  },
+  {
+    "location": "html-block:14",
+    "text": "Advanced security features including centralized user authentication (LDAP & TACACS+), access control, and auditing enabling compliance with latest NERC/CIP requirements",
+    "heading": "Key benefits"
+  },
+  {
+    "location": "html-block:15",
+    "text": "Full suite of SCADA protocols allow for direct communications with Master Stations",
+    "heading": "Key benefits"
+  },
+  {
+    "location": "html-block:16",
+    "text": "Secure pass through / terminal services allow personnel to access all substation devices, remotely",
+    "heading": "Key benefits"
+  },
+  {
+    "location": "html-block:17",
+    "text": "Secure pass through / terminal server, with support for SSH and TLS, allowing personnel to access substation devices locally or remotely",
+    "heading": "Key benefits"
+  },
+  {
+    "location": "html-block:18",
+    "text": "Direct support for industry standard communication protocols (including IEC 61850) ensures connectivity with new and legacy substation devices",
+    "heading": "Key benefits"
+  },
+  {
+    "location": "html-block:19",
+    "text": "Graphical configuration with pre-configured device maps, offline editor, and secure LogicLinx connection simplifies device configuration utilizing SGConfig software toolset",
+    "heading": "Key benefits"
+  },
+  {
+    "location": "html-block:20",
+    "text": "Application flexibility with complete IEC 61131 SoftLogic Capabilities",
+    "heading": "Key benefits"
+  },
+  {
+    "location": "html-block:21",
+    "text": "Enable predictive maintenance with local or remote access to device status, annunciator, and data log",
+    "heading": "Key benefits"
+  },
+  {
+    "location": "html-block:22",
+    "text": "Advanced HMI including File Explorer interface and streamlined Alarm page, simplifying device and system management",
+    "heading": "Key benefits"
+  },
+  {
+    "location": "html-block:23",
+    "text": "Supports automatic record retrieval from IEDs via TFTP, FTP, SFTP, 61850 MMS, and SEL ASCII",
+    "heading": "Key benefits"
+  },
+  {
+    "location": "html-block:24",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:25",
+    "text": "Advanced Gateway - Substation Data collection, concentration and visualization",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:26",
+    "text": "Advanced Automation - Automate substation procedures using IEC 61131 compliant tools",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:27",
+    "text": "Fault Recording & Data Logging - Extract valuable data such as digital fault records and event files",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:28",
+    "text": "Secure Remote Access - Securely access substation device locally and remotely",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:29",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:30",
+    "text": "Substation Automation Systems"
+  },
+  {
+    "location": "html-block:31",
+    "text": "Multifunction Servers, Gateways & RTUs"
+  },
+  {
+    "location": "html-block:32",
+    "text": "Substation Controllers"
+  },
+  {
+    "location": "html-block:33",
+    "text": "Technical Support"
+  },
+  {
+    "location": "html-block:34",
+    "text": "GSA Schedule"
+  },
+  {
+    "location": "html-block:35",
+    "text": "D.20 RIO Distributed I/O Controller"
+  },
+  {
+    "location": "html-block:36",
+    "text": "Substation Automation"
+  },
+  {
+    "location": "html-block:37",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:38",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:39",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:40",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:41",
+    "text": "Presentations"
+  },
+  {
+    "location": "html-block:42",
+    "text": "Product & Cyber Security Advisories"
+  },
+  {
+    "location": "html-block:43",
+    "text": "Support"
+  },
+  {
+    "location": "html-block:44",
+    "text": "Subscribe",
+    "heading": "Support"
+  },
+  {
+    "location": "html-block:45",
+    "text": "Related Links"
+  },
+  {
+    "location": "html-block:46",
+    "text": "Substation Automation Systems"
+  },
+  {
+    "location": "html-block:47",
+    "text": "Multifunction Servers, Gateways & RTUs"
+  },
+  {
+    "location": "html-block:48",
+    "text": "Substation Controllers"
+  },
+  {
+    "location": "html-block:49",
+    "text": "Technical Support"
+  },
+  {
+    "location": "html-block:50",
+    "text": "GSA Schedule"
+  },
+  {
+    "location": "html-block:51",
+    "text": "D.20 RIO Distributed I/O Controller"
+  },
+  {
+    "location": "html-block:52",
+    "text": "Substation Automation"
+  },
+  {
+    "location": "html-block:53",
+    "text": "Resources"
+  },
+  {
+    "location": "html-block:54",
+    "text": "Brochures"
+  },
+  {
+    "location": "html-block:55",
+    "text": "Manuals"
+  },
+  {
+    "location": "html-block:56",
+    "text": "Software"
+  },
+  {
+    "location": "html-block:57",
+    "text": "Presentations"
+  },
+  {
+    "location": "html-block:58",
+    "text": "Product & Cyber Security Advisories"
+  },
+  {
+    "location": "html-block:59",
+    "text": "Support"
+  },
+  {
+    "location": "html-block:60",
+    "text": "Subscribe",
+    "heading": "Support"
+  },
+  {
+    "location": "html-block:61",
+    "text": "Multilin D400 - Legacy"
+  },
+  {
+    "location": "html-block:62",
+    "text": "Advanced Substation Gateway"
+  },
+  {
+    "location": "html-block:63",
+    "text": "Contact Us",
+    "heading": "Advanced Substation Gateway"
+  },
+  {
+    "location": "html-block:64",
+    "text": "Manufacturing for the D400 has been discontinued. As an alternative, please refer to the G100 or G500.",
+    "heading": "Advanced Substation Gateway"
+  },
+  {
+    "location": "html-block:65",
+    "text": "Manufacturing for the DMC-490 has been discontinued. As an alternative, please refer to the GridNodeMicroGrid solution.",
+    "heading": "Advanced Substation Gateway"
+  },
+  {
+    "location": "html-block:66",
+    "text": "GE Vernova's Multilin™ D400 is a secure, substation-hardened gateway that collects metering, status, event, and fault report data from serial or LAN based Intelligent substation devices. The D400 summarizes data from the substation devices and makes it available locally/remotely through a standard secure web browser (HTTPS).",
+    "heading": "Advanced Substation Gateway"
+  },
+  {
+    "location": "html-block:67",
+    "text": "The Multilin D400 supports serial and/or LAN connections to SCADA masters. TCP/IP network connections are supported over the built-in Ethernet and the modem interface.",
+    "heading": "Advanced Substation Gateway"
+  },
+  {
+    "location": "html-block:68",
+    "text": "Key benefits"
+  },
+  {
+    "location": "html-block:69",
+    "text": "Increase the operational and non-operational analog data management through Analog Report Generation capability",
+    "heading": "Key benefits"
+  },
+  {
+    "location": "html-block:70",
+    "text": "Increase the availability and reliability of data through the presence of a third Ethernet interface, hot-standby functionality and Parallel Redundancy Protocol (PRP), IEC 62439-3 Ed 2 scheme",
+    "heading": "Key benefits"
+  },
+  {
+    "location": "html-block:71",
+    "text": "Advanced security features including centralized user authentication (LDAP & TACACS+), access control, and auditing enabling compliance with latest NERC/CIP requirements",
+    "heading": "Key benefits"
+  },
+  {
+    "location": "html-block:72",
+    "text": "Full suite of SCADA protocols allow for direct communications with Master Stations",
+    "heading": "Key benefits"
+  },
+  {
+    "location": "html-block:73",
+    "text": "Secure pass through / terminal services allow personnel to access all substation devices, remotely",
+    "heading": "Key benefits"
+  },
+  {
+    "location": "html-block:74",
+    "text": "Secure pass through / terminal server, with support for SSH and TLS, allowing personnel to access substation devices locally or remotely",
+    "heading": "Key benefits"
+  },
+  {
+    "location": "html-block:75",
+    "text": "Direct support for industry standard communication protocols (including IEC 61850) ensures connectivity with new and legacy substation devices",
+    "heading": "Key benefits"
+  },
+  {
+    "location": "html-block:76",
+    "text": "Graphical configuration with pre-configured device maps, offline editor, and secure LogicLinx connection simplifies device configuration utilizing SGConfig software toolset",
+    "heading": "Key benefits"
+  },
+  {
+    "location": "html-block:77",
+    "text": "Application flexibility with complete IEC 61131 SoftLogic Capabilities",
+    "heading": "Key benefits"
+  },
+  {
+    "location": "html-block:78",
+    "text": "Enable predictive maintenance with local or remote access to device status, annunciator, and data log",
+    "heading": "Key benefits"
+  },
+  {
+    "location": "html-block:79",
+    "text": "Advanced HMI including File Explorer interface and streamlined Alarm page, simplifying device and system management",
+    "heading": "Key benefits"
+  },
+  {
+    "location": "html-block:80",
+    "text": "Supports automatic record retrieval from IEDs via TFTP, FTP, SFTP, 61850 MMS, and SEL ASCII",
+    "heading": "Key benefits"
+  },
+  {
+    "location": "html-block:81",
+    "text": "Applications"
+  },
+  {
+    "location": "html-block:82",
+    "text": "Advanced Gateway - Substation Data collection, concentration and visualization",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:83",
+    "text": "Advanced Automation - Automate substation procedures using IEC 61131 compliant tools",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:84",
+    "text": "Fault Recording & Data Logging - Extract valuable data such as digital fault records and event files",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:85",
+    "text": "Secure Remote Access - Securely access substation device locally and remotely",
+    "heading": "Applications"
+  },
+  {
+    "location": "html-block:86",
+    "text": "Overview"
+  },
+  {
+    "location": "html-block:87",
+    "text": "Advanced Gateway"
+  },
+  {
+    "location": "html-block:88",
+    "text": "The D400 collects data from substation protection, control, monitoring, RTU, and intelligent devices, pre-processes the data and moves it up to EMS and DMS SCADA systems providing centralized substation management.",
+    "heading": "Advanced Gateway"
+  },
+  {
+    "location": "html-block:89",
+    "text": "Advanced Automation"
+  },
+  {
+    "location": "html-block:90",
+    "text": "The D400 provides the computing platform necessary to automate substation procedures, such that intricate processes are carried out safely and efficiently by creating custom automation programs using IEC 61131 compliant tools, and perform basic math functions on data points using the built-in Calculator tool.",
+    "heading": "Advanced Automation"
+  },
+  {
+    "location": "html-block:91",
+    "text": "Fault Recording/Data Logging"
+  },
+  {
+    "location": "html-block:92",
+    "text": "Using pass-through connections, users can extract valuable non-operational data such as digital fault recording (DFR) records and event files. The user can also access the historical log files and upload the archived data for trending and analysis.",
+    "heading": "Fault Recording/Data Logging"
+  },
+  {
+    "location": "html-block:93",
+    "text": "Secure Remote Access"
+  },
+  {
+    "location": "html-block:94",
+    "text": "The D400 allows maintenance and relay engineers to securely access substation devices, locally or remotely, through advanced visualizations and communication tools, increasing productivity.",
+    "heading": "Secure Remote Access"
+  },
+  {
+    "location": "html-block:95",
+    "text": "Hardware"
+  },
+  {
+    "location": "html-block:96",
+    "text": "The D400 is built on a flexible, high performance, expandable disk-less and fan-less platform that is powered by a 1.0Ghz processor.",
+    "heading": "Hardware"
+  },
+  {
+    "location": "html-block:97",
+    "text": "Two Ethernet networks are supported with separate multiport switches. An IRIG-B format time protocol input/distribution module is also supported. Isolated serial port media is selected for each pair of ports.",
+    "heading": "Hardware"
+  },
+  {
+    "location": "html-block:98",
+    "text": "Redundant power supplies"
+  },
+  {
+    "location": "html-block:99",
+    "text": "The D400 has dual redundant, hot swappable power supplies, ensuring continuous uptime. Each power supply can be connected to a different source. As an example Power supply 1 can be connected to Mains, while power supply 2 is connected to the battery system. Power Supply Health Monitoring raises a SCADA point alarm when either power supply fails. This allows an alarm to be transmitted to the EMS /OMS or DMS system, where a field personnel can be dispatched to replace the failed supply, all without service disruption.",
+    "heading": "Redundant power supplies"
+  },
+  {
+    "location": "html-block:100",
+    "text": "Time Sync Support"
+  },
+  {
+    "location": "html-block:101",
+    "text": "The D400 has extensive support for various time sync methodologies and will accept time sync signals from SNTP/NTP Servers, IRIG-B (un-modulated/modulated), and SCADA protocols. The D400 can also distribute this time sync information through its built-in IRIG-B distribution interface, SCADA protocols, and/or through the RS232 ports directly.",
+    "heading": "Time Sync Support"
+  },
+  {
+    "location": "html-block:102",
+    "text": "Advanced Gateway"
+  },
+  {
+    "location": "html-block:103",
+    "text": "Advanced Gateway Connectivity"
+  },
+  {
+    "location": "html-block:104",
+    "text": "Data collection, concentration and visualization"
+  },
+  {
+    "location": "html-block:105",
+    "text": "The D400 Substation Data Manager, when operating as a SCADA host, collects, filters, and sorts data from a wide range of intelligent devices (RTUs, relays, meters) in the substation and preserves original data time stamp for accurate sequence of event. Data can be presented to multiple SCADA hosts. The D400 comes with a built-in suite of protocols and security applications to facilitate communication with various substation devices and SCADA hosts, including:",
+    "heading": "Data collection, concentration and visualization"
+  },
+  {
+    "location": "html-block:106",
+    "text": "DNP3 serial and TCP/IP (client & server)",
+    "heading": "Data collection, concentration and visualization"
+  },
+  {
+    "location": "html-block:107",
+    "text": "IEC 61850 (client)",
+    "heading": "Data collection, concentration and visualization"
+  },
+  {
+    "location": "html-block:108",
+    "text": "Modbus serial & TCP/IP (client & server)",
+    "heading": "Data collection, concentration and visualization"
+  },
+  {
+    "location": "html-block:109",
+    "text": "IEC60870-5-101/103/104 client",
+    "heading": "Data collection, concentration and visualization"
+  },
+  {
+    "location": "html-block:110",
+    "text": "IEC60870-5-101/104 server",
+    "heading": "Data collection, concentration and visualization"
+  },
+  {
+    "location": "html-block:111",
+    "text": "SELFast Meter/SEL ASCII",
+    "heading": "Data collection, concentration and visualization"
+  },
+  {
+    "location": "html-block:112",
+    "text": "Hydran Host",
+    "heading": "Data collection, concentration and visualization"
+  },
+  {
+    "location": "html-block:113",
+    "text": "GE Vernova modem",
+    "heading": "Data collection, concentration and visualization"
+  },
+  {
+    "location": "html-block:114",
+    "text": "Generic ASCII protocols",
+    "heading": "Data collection, concentration and visualization"
+  },
+  {
+    "location": "html-block:115",
+    "text": "IEC 61850 Gateway",
+    "heading": "Data collection, concentration and visualization"
+  },
+  {
+    "location": "html-block:116",
+    "text": "The IEC 16850 Client application allows the D400 to act as a powerful IEC 61850 data concentrator. The D400 also includes valuable features such as Dynamic Data Sets, Buffered Control blocks, Enhanced Security controls.",
+    "heading": "Data collection, concentration and visualization"
+  },
+  {
+    "location": "html-block:117",
+    "text": "Device Redundancy (Hybrid Model)",
+    "heading": "Data collection, concentration and visualization"
+  },
+  {
+    "location": "html-block:118",
+    "text": "Dual D400 units can be deployed creating a redundant system where accumulators, SOE logs, and configurations are automatically synchronized between the two systems. Serial communication links are automatically switched between the units based on system health.",
+    "heading": "Data collection, concentration and visualization"
+  },
+  {
+    "location": "html-block:119",
+    "text": "The D400 100Base-FX redundant Ethernet card enables automatic switchover between two sets of Ethernet switches ensuring there is no single point of failure in the system.",
+    "heading": "Data collection, concentration and visualization"
+  },
+  {
+    "location": "html-block:120",
+    "text": "D400 now supports PRP by actively communicating on two physical Ethernet ports connected to two independent network LANs simultaneously. PRP allows systems to overcome any single network failure without affecting the data transmission. It provides seamless failover redundancy.",
+    "heading": "Data collection, concentration and visualization"
+  },
+  {
+    "location": "html-block:121",
+    "text": "The D400 supports three modes of operation:",
+    "heading": "Data collection, concentration and visualization"
+  },
+  {
+    "location": "html-block:122",
+    "text": "Standalone",
+    "heading": "Data collection, concentration and visualization"
+  },
+  {
+    "location": "html-block:123",
+    "text": "Warm standby and",
+    "heading": "Data collection, concentration and visualization"
+  },
+  {
+    "location": "html-block:124",
+    "text": "Hot standby",
+    "heading": "Data collection, concentration and visualization"
+  },
+  {
+    "location": "html-block:125",
+    "text": "The D400 can be configured to operate in one mode at any given time.",
+    "heading": "Data collection, concentration and visualization"
+  },
+  {
+    "location": "html-block:126",
+    "text": "Built in Media Conversion",
+    "heading": "Data collection, concentration and visualization"
+  },
+  {
+    "location": "html-block:127",
+    "text": "The D400 supports various communication media types—Serial: RS-232, RS-485, Glass Fiber, and Plastic Fiber; and Ethernet: 10/100Base-T, 10Base-FL, and 100Base-FX. Hot swappable communications modules eliminate the need for dongle type media converters used to convert to glass or plastic fiber, reducing total cost of deployment.",
+    "heading": "Data collection, concentration and visualization"
+  },
+  {
+    "location": "html-block:128",
+    "text": "Advanced Automation"
+  },
+  {
+    "location": "html-block:129",
+    "text": "Advanced Automation"
+  },
+  {
+    "location": "html-block:130",
+    "text": "The D400 acts as the centralized, rugged computing platform in advanced Automation systems. Using the calculator tool and/or GE Vernova's programmable logic (LogicLinx), users can create custom automation programs for a variety of applications such as:",
+    "heading": "Advanced Automation"
+  },
+  {
+    "location": "html-block:131",
+    "text": "Sequence switching",
+    "heading": "Advanced Automation"
+  },
+  {
+    "location": "html-block:132",
+    "text": "Interlocking",
+    "heading": "Advanced Automation"
+  },
+  {
+    "location": "html-block:133",
+    "text": "Auto-sectionalizing",
+    "heading": "Advanced Automation"
+  },
+  {
+    "location": "html-block:134",
+    "text": "Autoreclosing",
+    "heading": "Advanced Automation"
+  },
+  {
+    "location": "html-block:135",
+    "text": "Load Tap Changer Control",
+    "heading": "Advanced Automation"
+  },
+  {
+    "location": "html-block:136",
+    "text": "Capacitor Bank Control",
+    "heading": "Advanced Automation"
+  },
+  {
+    "location": "html-block:137",
+    "text": "Reactor Switching",
+    "heading": "Advanced Automation"
+  },
+  {
+    "location": "html-block:138",
+    "text": "Alarm grouping",
+    "heading": "Advanced Automation"
+  },
+  {
+    "location": "html-block:139",
+    "text": "HMI, one-line viewer & Annunciator"
+  },
+  {
+    "location": "html-block:140",
+    "text": "The D400 supports a web based HMI/Annunciator feature, that is accessible remotely, using a standard Internet browser or locally, through a direct connection to the unit. Users have access to all data points in the systems, alarm screens, communications status screens ,and dynamic One-Line diagrams, all through the secure web interface.",
+    "heading": "HMI, one-line viewer & Annunciator"
+  },
+  {
+    "location": "html-block:141",
+    "text": "The web based HMI supports the following security features to ensure secure remote or local access:",
+    "heading": "HMI, one-line viewer & Annunciator"
+  },
+  {
+    "location": "html-block:142",
+    "text": "Configurable auto logout/login for Remote and Local HMI access Disabling of Remote HMI Non-Observer Privileges",
+    "heading": "HMI, one-line viewer & Annunciator"
+  },
+  {
+    "location": "html-block:143",
+    "text": "Login to specific custom screens for added security to sensitive displays",
+    "heading": "HMI, one-line viewer & Annunciator"
+  },
+  {
+    "location": "html-block:144",
+    "text": "Remote access to Redundant or Active HMI screens",
+    "heading": "HMI, one-line viewer & Annunciator"
+  },
+  {
+    "location": "html-block:145",
+    "text": "Support for forcing points from one line diagram",
+    "heading": "HMI, one-line viewer & Annunciator"
+  },
+  {
+    "location": "html-block:146",
+    "text": "Web based HMI/Annunciator feature, that is accessible using a standard Internet browser or through a VGA monitor and USB keyboard/mouse attached directly to the unit.",
+    "heading": "HMI, one-line viewer & Annunciator"
+  },
+  {
+    "location": "html-block:147",
+    "text": "Mathematical Control Logic"
+  },
+  {
+    "location": "html-block:148",
+    "text": "Using the Calculator tool, users can create advanced solutions that group, manage and control points to produce the required automation results. The calculator tool can perform mathematical, logical, or timer based operations on any data points stored in the D400. Using a graphical interface, users can define logical expressions using mathematical functions such as; addition, multiplication, logarithm, greater than, less than, as well as other boolean functions.",
+    "heading": "Mathematical Control Logic"
+  },
+  {
+    "location": "html-block:149",
+    "text": "Programmable Logic (LogicLinx)"
+  },
+  {
+    "location": "html-block:150",
+    "text": "For more advanced applications, programmable logic (LogicLinx) software provides PLC functionality on the D400 platform. LogicLinx offers textual and graphical languages as defined in the IEC 61131-3 standard for PLC programming environments, including Sequential Functions Chart, Instruction List, Structured Text, Ladder Diagram and Function Block Diagram. In addition, a wide range of arithmetic, Boolean and logical operations are supported.",
+    "heading": "Programmable Logic (LogicLinx)"
+  },
+  {
+    "location": "html-block:151",
+    "text": "Fault Recording"
+  },
+  {
+    "location": "html-block:152",
+    "text": "Fault Recording/Data Logging"
+  },
+  {
+    "location": "html-block:153",
+    "text": "Data Logger"
+  },
+  {
+    "location": "html-block:154",
+    "text": "The Analog Data Logger provides a variety of means to monitor and record any analog input point value changes into data files that can be retrieved by the user. A variety of recording methodologies are supported including, Continuous (all changes), Periodic, Time weighted, Out of range and Triggered by a digital input point.",
+    "heading": "Data Logger"
+  },
+  {
+    "location": "html-block:155",
+    "text": "Trend Viewer"
+  },
+  {
+    "location": "html-block:156",
+    "text": "All data recorded by the Analog/Digital Data Logger can be viewed by the Digital event recorder using the built in web-based Trend Viewer. Users can select the range of data to be used by time and date, alternately a real time streaming view can be displayed. Up to 8 data points (pens) can be displayed on a single view and support for curve fitting is available.",
+    "heading": "Trend Viewer"
+  },
+  {
+    "location": "html-block:157",
+    "text": "Data Base Exporter"
+  },
+  {
+    "location": "html-block:158",
+    "text": "The Database Exporter tool allows users to save Analog Data Logger and Digital event recorder points from the D400 to your local PC, using the WEB interface, in comma-separated values (CSV) format.",
+    "heading": "Data Base Exporter"
+  },
+  {
+    "location": "html-block:159",
+    "text": "Automatic Record Retrieval"
+  },
+  {
+    "location": "html-block:160",
+    "text": "The Automated Record Retrieval Manager (ARRM) retrieves and stores record files from devices connected to the D400. ARRM uses the Distributed Network Protocol (DNP) and the IEC 61850 protocol to communicate with a variety of devices, and uses the Trivial File Transfer Protocol (TFTP) or MMS to transmit the files from the IED to the device over a Local Area Network (LAN) or serial connection.",
+    "heading": "Automatic Record Retrieval"
+  },
+  {
+    "location": "html-block:161",
+    "text": "You can also retrieve downloaded records from the D400 using any FTP/SCP/SFTP client as needed or on a scheduled basis.",
+    "heading": "Automatic Record Retrieval"
+  },
+  {
+    "location": "html-block:162",
+    "text": "ARRM supports a configurable interval for polling connected devices. This can be activated or deactivated through the runtime viewer display screen.",
+    "heading": "Automatic Record Retrieval"
+  },
+  {
+    "location": "html-block:163",
+    "text": "The connection status of the devices, in addition to the data retrieved from the IEDs can also be displayed or made available directly to the Tarigma Grid Enterprise Manager (GEM) software.",
+    "heading": "Automatic Record Retrieval"
+  },
+  {
+    "location": "html-block:164",
+    "text": "The D400 fault recording capability allows system event information to be collected and viewed using a web-based trend viewer.",
+    "heading": "Automatic Record Retrieval"
+  },
+  {
+    "location": "html-block:165",
+    "text": "PRP"
+  },
+  {
+    "location": "html-block:166",
+    "text": "Parallel Redundancy Protocol"
+  },
+  {
+    "location": "html-block:167",
+    "text": "IEC 62439-3 (Edition 2), Parallel Redundancy Protocol"
+  },
+  {
+    "location": "html-block:168",
+    "text": "Substation LAN redundancy has been traditionally accomplished by reconfiguring the active network topology in case of failure. Regardless of the type of LAN architecture (tree, mesh, etc.), reconfiguring the active LAN requires time to switchover, during which the LAN is unavailable.",
+    "heading": "IEC 62439-3 (Edition 2), Parallel Redundancy Protocol"
+  },
+  {
+    "location": "html-block:169",
+    "text": "Parallel Redundancy Protocol is an IEC 62439-3 data communication network standard which is often used to overcome single network failure without affecting the data transmission. PRP is independent of the communication protocols and provides no packet loss (“zero recovery time”) availability by using connected nodes which transmit and receive over two independent network active paths. Under PRP, each network node has two Ethernet ports attached to two different local area networks, using standard bridges, and similar topology.",
+    "heading": "IEC 62439-3 (Edition 2), Parallel Redundancy Protocol"
+  },
+  {
+    "location": "html-block:170",
+    "text": "Existing D400 systems with 1 GHz or newer CPU can be upgraded via firmware in order to enable the Parallel Redundancy Protocol. The D400 can communicate simultaneously to devices connected to a common network, carrying mixed traffic: single LAN, legacy redundant or dual LAN, and PRP. This aids in implementing PRP in brown field installations, taking advantage of possible spare ports on existing managed switches LAN infrastructure. Additional LAN switches may be added as needed.",
+    "heading": "IEC 62439-3 (Edition 2), Parallel Redundancy Protocol"
+  },
+  {
+    "location": "html-block:171",
+    "text": "Analog Report"
+  },
+  {
+    "location": "html-block:172",
+    "text": "Analog Report Generation"
+  },
+  {
+    "location": "html-block:173",
+    "text": "In addition to the data logging capability within the D400, users can configure the D400 to record and generate online and offline reports from operational and non-operation analog data. While online reports can be retrieved instantly and are an extension of the data logger periodic reports, offline reports can be retrieved daily, weekly or monthly.",
+    "heading": "Analog Report Generation"
+  },
+  {
+    "location": "html-block:174",
+    "text": "Offline Reports:"
+  },
+  {
+    "location": "html-block:175",
+    "text": "Users can use the Analog report application to generate offline reports",
+    "heading": "Offline Reports:"
+  },
+  {
+    "location": "html-block:176",
+    "text": "Users can configure different types of analog reports. For example: Shift, daily, weekly and monthly",
+    "heading": "Offline Reports:"
+  },
+  {
+    "location": "html-block:177",
+    "text": "Users can use the offline report viewer to view generated reports",
+    "heading": "Offline Reports:"
+  },
+  {
+    "location": "html-block:178",
+    "text": "Output format types includes: PDF, Excel and HTML",
+    "heading": "Offline Reports:"
+  },
+  {
+    "location": "html-block:179",
+    "text": "Offline Reports"
+  },
+  {
+    "location": "html-block:180",
+    "text": "This is an extension of the data logger periodic reports",
+    "heading": "Offline Reports"
+  },
+  {
+    "location": "html-block:181",
+    "text": "Users can use the online report viewer to view periodic data logger reports",
+    "heading": "Offline Reports"
+  },
+  {
+    "location": "html-block:182",
+    "text": "Output format types includes: PDF, Excel and HTML",
+    "heading": "Offline Reports"
+  },
+  {
+    "location": "html-block:183",
+    "text": "Report Configuration Steps"
+  },
+  {
+    "location": "html-block:184",
+    "text": "Create report template using iReport Designer",
+    "heading": "Report Configuration Steps"
+  },
+  {
+    "location": "html-block:185",
+    "text": "Import template to D400",
+    "heading": "Report Configuration Steps"
+  },
+  {
+    "location": "html-block:186",
+    "text": "Configure Offline Reports",
+    "heading": "Report Configuration Steps"
+  },
+  {
+    "location": "html-block:187",
+    "text": "Types of Offline Reports and Key Parameters:"
+  },
+  {
+    "location": "html-block:188",
+    "text": "report type | report duration | start time alignment | logging interval | logging alignment",
+    "heading": "Types of Offline Reports and Key Parameters:"
+  },
+  {
+    "location": "html-block:189",
+    "text": "Shift | Configurable",
+    "heading": "Types of Offline Reports and Key Parameters:"
+  },
+  {
+    "location": "html-block:190",
+    "text": "4, 6, 8 or 12 hours | Configurable",
+    "heading": "Types of Offline Reports and Key Parameters:"
+  },
+  {
+    "location": "html-block:191",
+    "text": "0-23 hour | Configurable",
+    "heading": "Types of Offline Reports and Key Parameters:"
+  },
+  {
+    "location": "html-block:192",
+    "text": "15, 30, 60 minutes | Configurable",
+    "heading": "Types of Offline Reports and Key Parameters:"
+  },
+  {
+    "location": "html-block:193",
+    "text": "00:00, 00:15, 00:30 or 00:45",
+    "heading": "Types of Offline Reports and Key Parameters:"
+  },
+  {
+    "location": "html-block:194",
+    "text": "Daily | Fixed",
+    "heading": "Types of Offline Reports and Key Parameters:"
+  },
+  {
+    "location": "html-block:195",
+    "text": "1 day | Configurable",
+    "heading": "Types of Offline Reports and Key Parameters:"
+  },
+  {
+    "location": "html-block:196",
+    "text": "0-23 hour | Configurable",
+    "heading": "Types of Offline Reports and Key Parameters:"
+  },
+  {
+    "location": "html-block:197",
+    "text": "15, 30, 60 min and 4, 6, 8 hours | Configurable",
+    "heading": "Types of Offline Reports and Key Parameters:"
+  },
+  {
+    "location": "html-block:198",
+    "text": "00:00, 00:15, 00:30 or 00:45",
+    "heading": "Types of Offline Reports and Key Parameters:"
+  },
+  {
+    "location": "html-block:199",
+    "text": "Weekly | Fixed",
+    "heading": "Types of Offline Reports and Key Parameters:"
+  },
+  {
+    "location": "html-block:200",
+    "text": "7 days | Configurable",
+    "heading": "Types of Offline Reports and Key Parameters:"
+  },
+  {
+    "location": "html-block:201",
+    "text": "0-23 hour | Configurable 12 and 24 hours | Configurable 0-23 hours",
+    "heading": "Types of Offline Reports and Key Parameters:"
+  },
+  {
+    "location": "html-block:202",
+    "text": "Monthly | Fixed",
+    "heading": "Types of Offline Reports and Key Parameters:"
+  },
+  {
+    "location": "html-block:203",
+    "text": "7 days | Configurable",
+    "heading": "Types of Offline Reports and Key Parameters:"
+  },
+  {
+    "location": "html-block:204",
+    "text": "1-31 date | Configurable",
+    "heading": "Types of Offline Reports and Key Parameters:"
+  },
+  {
+    "location": "html-block:205",
+    "text": "12 and 24 hours | Configurable",
+    "heading": "Types of Offline Reports and Key Parameters:"
+  },
+  {
+    "location": "html-block:206",
+    "text": "0-23 hours",
+    "heading": "Types of Offline Reports and Key Parameters:"
+  },
+  {
+    "location": "html-block:207",
+    "text": "OpenVPN Architecture Example"
+  },
+  {
+    "location": "html-block:208",
+    "text": "Key features:"
+  },
+  {
+    "location": "html-block:209",
+    "text": "Support for 8 clients",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:210",
+    "text": "Max 3 clients allowed",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:211",
+    "text": "Pk12 certificate-key format support for openvpn client [Windows]",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:212",
+    "text": "Network interface combination available for Routing",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:213",
+    "text": "Support for 1024 Rules in Whitelist",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:214",
+    "text": "Rules includes support for:",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:215",
+    "text": "Any ICMP",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:216",
+    "text": "Useful ICMP",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:217",
+    "text": "TCP & UDP",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:218",
+    "text": "Supports Redundancy (Warm/Hot)",
+    "heading": "Key features:"
+  },
+  {
+    "location": "html-block:219",
+    "text": "Secure Access"
+  },
+  {
+    "location": "html-block:220",
+    "text": "Secure Remote Access"
+  },
+  {
+    "location": "html-block:221",
+    "text": "D400 provides robust security environment, providing seamless integration with existing IT department policies. Role based Access Control, Secure Web Interface, Secure File Transfer, and extensive user activity logging provide a complete security toolkit required to achieve NERC-CIP compliance.",
+    "heading": "Secure Remote Access"
+  },
+  {
+    "location": "html-block:222",
+    "text": "Non-operational Data"
+  },
+  {
+    "location": "html-block:223",
+    "text": "Using pass-through connections, the utility user can extract valuable non-operational data such as digital fault recording (DFR) records and event files. The user can also access the historical log files and upload the archived data for trending and analysis.",
+    "heading": "Non-operational Data"
+  },
+  {
+    "location": "html-block:224",
+    "text": "Pass-through/Terminal Server"
+  },
+  {
+    "location": "html-block:225",
+    "text": "A built-in terminal server emulator allows pass-through connections to be initiated to substation device (relay, meter, RTU or other device). Once the connection is established, the local event records can be uploaded from the substation devices and viewed remotely. Remote access can be secured with TLS or SSH.",
+    "heading": "Pass-through/Terminal Server"
+  },
+  {
+    "location": "html-block:226",
+    "text": "Virtual Serial Ports"
+  },
+  {
+    "location": "html-block:227",
+    "text": "Virtual serial ports eliminate copper wire communications to feeder bays when a serial-only device is located in the bay. A small terminal server can be placed in the bay and connected to the Ethernet network, allowing all D400 serial client applications to connect directly to the serial device.",
+    "heading": "Virtual Serial Ports"
+  },
+  {
+    "location": "html-block:228",
+    "text": "Role Based Access Control"
+  },
+  {
+    "location": "html-block:229",
+    "text": "Role Based Access Control is achieved using LDAP, TACACS+, RADIUS or the D400’s internal database; ensuring only authenticated and authorized users gain access the system. When using LDAP, TACACS+, or RADIUS, revoking user privileges, system wide, is as simple as updating the centralized user database.",
+    "heading": "Role Based Access Control"
+  },
+  {
+    "location": "html-block:230",
+    "text": "Network security protocols:",
+    "heading": "Role Based Access Control"
+  },
+  {
+    "location": "html-block:231",
+    "text": "HTTPS",
+    "heading": "Role Based Access Control"
+  },
+  {
+    "location": "html-block:232",
+    "text": "SSH",
+    "heading": "Role Based Access Control"
+  },
+  {
+    "location": "html-block:233",
+    "text": "SCP",
+    "heading": "Role Based Access Control"
+  },
+  {
+    "location": "html-block:234",
+    "text": "Syslog",
+    "heading": "Role Based Access Control"
+  },
+  {
+    "location": "html-block:235",
+    "text": "SFTP",
+    "heading": "Role Based Access Control"
+  },
+  {
+    "location": "html-block:236",
+    "text": "CHAP",
+    "heading": "Role Based Access Control"
+  },
+  {
+    "location": "html-block:237",
+    "text": "SFTP",
+    "heading": "Role Based Access Control"
+  },
+  {
+    "location": "html-block:238",
+    "text": "CHAP",
+    "heading": "Role Based Access Control"
+  },
+  {
+    "location": "html-block:239",
+    "text": "RADIUS",
+    "heading": "Role Based Access Control"
+  },
+  {
+    "location": "html-block:240",
+    "text": "TACACS+",
+    "heading": "Role Based Access Control"
+  },
+  {
+    "location": "html-block:241",
+    "text": "LDAP",
+    "heading": "Role Based Access Control"
+  },
+  {
+    "location": "html-block:242",
+    "text": "Built-in Firewall"
+  },
+  {
+    "location": "html-block:243",
+    "text": "Multilin D400 is equipped with a built-in firewall for enhanced gateway cyber security. D400's firewall is designed to drop unsolicited or invalid routed packages. The firewall is preconfigured to block outbound traffic on external interfaces and inbound traffic on both internal and external interfaces. The D400 automatically generates rules allowing inbound traffic on internal interfaces for all configured services. The rules are user configurable for inbound/outbound traffic customization.",
+    "heading": "Built-in Firewall"
+  },
+  {
+    "location": "html-block:244",
+    "text": "HMI, One Line & Annunciator"
+  },
+  {
+    "location": "html-block:245",
+    "text": "The Multilin D400 supports a web based HMI/ Annunciator feature, that is accessible using a standard Internet browser or through a VGA monitor and USB keyboard/mouse attached directly to the unit. Users have access to all data points in the systems, alarm screens, communications status screens and dynamic one line diagrams, all through the secure web interface.",
+    "heading": "HMI, One Line & Annunciator"
+  },
+  {
+    "location": "html-block:246",
+    "text": "The D400's web based HMI supports the following security features to ensure secure remote or local access:",
+    "heading": "HMI, One Line & Annunciator"
+  },
+  {
+    "location": "html-block:247",
+    "text": "Configurable auto logout/login for Remote and Local HMI access",
+    "heading": "HMI, One Line & Annunciator"
+  },
+  {
+    "location": "html-block:248",
+    "text": "Disabling of Remote HMI Non-Observer Privileges",
+    "heading": "HMI, One Line & Annunciator"
+  },
+  {
+    "location": "html-block:249",
+    "text": "Login to specific custom screens for added security to sensitive displays",
+    "heading": "HMI, One Line & Annunciator"
+  },
+  {
+    "location": "html-block:250",
+    "text": "Remote access to Redundant or Active HMI screens",
+    "heading": "HMI, One Line & Annunciator"
+  },
+  {
+    "location": "html-block:251",
+    "text": "Recommended Products & services"
+  },
+  {
+    "location": "html-block:252",
+    "text": "Gateways and RTUs"
+  },
+  {
+    "location": "html-block:253",
+    "text": "GE Vernova offers an industry-leading suite of multifunction servers, gateways, RTUs, and...",
+    "heading": "Gateways and RTUs"
+  },
+  {
+    "location": "html-block:254",
+    "text": "View More",
+    "heading": "Gateways and RTUs"
+  }
+]
